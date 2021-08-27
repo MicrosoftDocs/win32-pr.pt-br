@@ -3,7 +3,7 @@ title: Mensagem de LVM_SETEXTENDEDLISTVIEWSTYLE (commctrl. h)
 description: Define estilos estendidos em controles de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView SetExtendedListViewStyle ou ListView \_ SetExtendedListViewStyleEx.
 ms.assetid: eb3f47ed-484a-49a8-94b0-e50ee081bd69
 keywords:
-- Controles de LVM_SETEXTENDEDLISTVIEWSTYLE de mensagens do Windows
+- controles de Windows de mensagem de LVM_SETEXTENDEDLISTVIEWSTYLE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7d36869283d863bef7b31187a002125c9cd79bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 336732b927c7ee6170e777f2f7c1cd57eac6baa2c7706870e681f602e2309c37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077276"
 ---
 # <a name="lvm_setextendedlistviewstyle-message"></a>\_Mensagem SETEXTENDEDLISTVIEWSTYLE LVM
 
@@ -43,7 +43,7 @@ Valor **DWORD** que especifica os estilos de controle de exibição de lista est
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **DWORD** que contém os estilos de controle de exibição de lista estendida anteriores.
 
@@ -61,9 +61,9 @@ Quando você usa essa mensagem para definir o estilo de [**\_ caixas de \_ sele�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -4,20 +4,20 @@ ms.assetid: 526e51c7-9ff2-4590-b092-172f4942ce8e
 title: Enumerando e liberando serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 859abe590ccaf2f71df676d5989778d5b391be57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc6472851fbf5f7f84a499d2e9e04804279d397f31452d9617a8868e05cb8ebb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086606"
 ---
 # <a name="enumerating-and-freeing-services"></a>Enumerando e liberando serviços
 
-O aplicativo ELS chama a função [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) para determinar os serviços que estão disponíveis no sistema operacional. A função pode ser usada para enumerar todos os serviços ELSs disponíveis ou para filtrar os serviços com base nos critérios de pesquisa fornecidos pelo aplicativo. Quando os serviços não são mais necessários, o aplicativo chama [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices).
+O aplicativo ELS chama a [**função MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) para determinar os serviços disponíveis no sistema operacional. A função pode ser usada para enumerar todos os serviços ELS disponíveis ou filtrar os serviços com base nos critérios de pesquisa fornecidos pelo aplicativo. Quando os serviços não são mais necessários, o aplicativo chama [**MappingFreeServices.**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices)
 
 ## <a name="get-all-supported-services"></a>Obter todos os serviços com suporte
 
-Este exemplo de código ilustra o uso de [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) para enumerar e, em seguida, liberar todos os serviços disponíveis no sistema operacional. Para fazer isso, o aplicativo passa **nulo** para o parâmetro *pOptions* de **MappingGetServices**.
+Este exemplo de código ilustra o uso de [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) para enumerar e liberar todos os serviços disponíveis no sistema operacional. Para fazer isso, o aplicativo passa **NULL para** o parâmetro *pOptions* **de MappingGetServices.**
 
 
 ```C++
@@ -54,7 +54,7 @@ int __cdecl main()
 
 ## <a name="get-specific-services"></a>Obter serviços específicos
 
-O exemplo a seguir ilustra o uso de [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) para enumerar e, em seguida, liberar todos os serviços da categoria "detecção de idioma". Para obter mais informações sobre essa categoria de serviço, consulte [**Microsoft detecção de idioma**](microsoft-language-detection.md).
+O exemplo a seguir ilustra o uso de [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) e [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices) para enumerar e liberar todos os serviços da categoria "Detecção de Idioma". Para obter mais informações sobre essa categoria de serviço, consulte [**Microsoft Detecção de Idioma**](microsoft-language-detection.md).
 
 
 ```C++
@@ -101,7 +101,7 @@ int __cdecl main()
 
 <dl> <dt>
 
-[Usando serviços lingüísticos estendidos](using-extended-linguistic-services.md)
+[Usando serviços linguísticos estendidos](using-extended-linguistic-services.md)
 </dt> <dt>
 
 [**MappingFreeServices**](/windows/desktop/api/Elscore/nf-elscore-mappingfreeservices)

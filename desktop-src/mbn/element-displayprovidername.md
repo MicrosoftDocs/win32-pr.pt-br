@@ -7,20 +7,20 @@ MSHAttr:
 title: DisplayProviderName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 906f844d483789decb88a9d97fca083ef10f5550
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa88313744962d18c72ea206d87f0cac8fa0d3c6
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010469"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988039"
 ---
 # <a name="span-idwwan_profile_v2element_displayprovidernamespandisplayprovidername"></a><span id="WWAN_profile_v2.element_DisplayProviderName"></span>DisplayProviderName
 
-O elemento [**DisplayProviderName**](element-displayprovidername.md) é um [**providernametype**](./schema-providernametype-simpletype.md) opcional que contém o nome de conexão de rede a ser exibido no Gerenciador de conexões do Windows. Esse nome será exibido somente se o Assinante estiver em uma rede doméstica e não em roaming. O nome da rede de roaming é exibido com base nas informações do dispositivo de banda larga móvel.
+O [**elemento DisplayProviderName**](element-displayprovidername.md) é um [**providerNameType**](./schema-providernametype-simpletype.md) opcional que contém o nome da conexão de rede a ser exibido no Windows Gerenciador de Conexões. Esse nome só será exibido se o assinante estiver em uma rede base e não em roaming. O nome da rede móvel é exibido com base nas informações do dispositivo de banda larga móvel.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-**<DisplayProviderName>**
+**&lt;DisplayProviderName&gt;**
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,22 +44,15 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-Esse elemento mais externo (documento) pode não estar contido em outros elementos.
+Esse elemento mais externo (documento) pode não estar contido por outros elementos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v2</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
+
 
  
 

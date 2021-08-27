@@ -1,23 +1,23 @@
 ---
-description: Os serviços de certificados, um serviço em execução em um sistema operacional Windows Server, recebem solicitações para novos certificados digitais em transportes como RPC ou HTTP.
+description: os serviços de certificados, um serviço em execução em um sistema operacional Windows server, recebe solicitações para novos certificados digitais em transportes, como RPC ou HTTP.
 ms.assetid: 4c0098be-6b1b-4ce0-b3a0-942c1290b5b4
 title: Serviços de Certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1a3f25972f98a79a208719eb2bcb08de07d7894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaac2e1ee01b588beedbe2e632e52ef41459a885782a7975e460182f8a211bef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126846"
 ---
 # <a name="certificate-services"></a>Serviços de Certificados
 
-Os [*serviços de certificados*](../secgloss/c-gly.md), um serviço em execução em um sistema operacional Windows Server, recebem solicitações para novos certificados digitais em transportes como RPC ou http. Ele verifica cada solicitação em políticas personalizadas ou específicas do site, define propriedades opcionais para um certificado a ser emitido e emite o certificado. Os serviços de certificados permitem que os administradores adicionem elementos a uma CRL ( [*lista de certificados revogados*](../secgloss/c-gly.md) ) e publiquem CRLs assinadas regularmente.
+os [*serviços de certificados*](../secgloss/c-gly.md), um serviço em execução em um sistema operacional Windows server, recebe solicitações para novos certificados digitais em transportes, como RPC ou HTTP. Ele verifica cada solicitação em políticas personalizadas ou específicas do site, define propriedades opcionais para um certificado a ser emitido e emite o certificado. Os serviços de certificados permitem que os administradores adicionem elementos a uma CRL ( [*lista de certificados revogados*](../secgloss/c-gly.md) ) e publiquem CRLs assinadas regularmente.
 
 Os serviços de certificados incluem interfaces programáveis para a criação de suporte para transportes adicionais, políticas e propriedades e formatos de certificado.
 
-No Windows Server 2003, os serviços de certificados 2,0 podem ser instalados no **painel de controle** clicando em **Adicionar ou remover programas** e, em seguida, clicando em **Adicionar/remover componentes do Windows** para instalar ou desinstalar os serviços de certificados.
+no Windows Server 2003, os serviços de certificados 2,0 podem ser instalados no **painel de controle** clicando em **adicionar ou remover programas** e, em seguida, clicando em **adicionar/remover Windows componentes** para instalar ou desinstalar os serviços de certificados.
 
 Os conceitos dos serviços de certificados são detalhados nas seções a seguir. O conteúdo destina-se a ajudá-lo a desenvolver aplicativos que irão interagir com os serviços de certificados.
 

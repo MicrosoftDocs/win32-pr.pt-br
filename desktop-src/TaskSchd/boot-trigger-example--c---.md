@@ -1,48 +1,48 @@
 ---
 title: Exemplo de gatilho de inicialização (C++)
-description: Este tópico contém um exemplo de código C++ que mostra como criar uma tarefa que está agendada para executar Notepad.exe quando o sistema é iniciado.
+description: Este tópico contém um exemplo de código C++ que mostra como criar uma tarefa agendada para Notepad.exe quando o sistema é iniciado.
 ms.assetid: d4dbbfe5-bde9-4a1c-8e11-24cd1e14646c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdbd5a5a73d100394b90e91f8b9c30c1bd495ac0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1b1f556b2b0754d913e44c2874a7fa01f9aea7ea50f5ccc0aa15fa769dfdca95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100496"
 ---
 # <a name="boot-trigger-example-c"></a>Exemplo de gatilho de inicialização (C++)
 
-Este tópico contém um exemplo de código C++ que mostra como criar uma tarefa que está agendada para executar Notepad.exe quando o sistema é iniciado. A tarefa contém um gatilho de inicialização que especifica um limite inicial e um tempo de atraso para a tarefa ser iniciada após o sistema ser iniciado. A tarefa também contém uma ação que especifica a execução da tarefa Notepad.exe. A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.
+Este tópico contém um exemplo de código C++ que mostra como criar uma tarefa agendada para Notepad.exe quando o sistema é iniciado. A tarefa contém um gatilho de inicialização que especifica um limite inicial e um tempo de atraso para que a tarefa seja iniciada depois que o sistema é iniciado. A tarefa também contém uma ação que especifica a execução da tarefa Notepad.exe. A tarefa é registrada usando a conta de Serviço Local como um contexto de segurança para executar a tarefa.
 
 O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável quando o sistema é iniciado.
 
-**Para agendar o bloco de notas para iniciar quando o sistema for iniciado**
+**Para agendar Bloco de notas iniciar quando o sistema é iniciado**
 
-1.  Inicialize COM e defina a segurança COM geral.
-2.  Crie o objeto [**o ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inicializar COM e definir a segurança COM geral.
+2.  Crie o [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Esse objeto permite que você crie tarefas em uma pasta especificada.
 
-3.  Obtenha uma pasta de tarefas na qual criar uma tarefa.
+3.  Obter uma pasta de tarefas na onde criar uma tarefa.
 
-    Use o método [**o ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**O ITaskService:: NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use o [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina informações sobre a tarefa usando o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como as informações de registro para a tarefa.
+4.  Defina informações sobre a tarefa usando [**o objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como as informações de registro da tarefa.
 
-    Use a [**Propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir as informações da tarefa.
+    Use a [**propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir as informações da tarefa.
 
-5.  Crie um gatilho de inicialização usando a [**Propriedade Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar o [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para a tarefa.
+5.  Crie um gatilho de inicialização usando a propriedade [**Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar [**iTriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para a tarefa.
 
-    Use o método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que você deseja criar um gatilho de inicialização. Você pode definir o limite inicial e o atraso do gatilho para que as ações da tarefa sejam agendadas para execução em uma hora especificada quando o sistema for iniciado.
+    Use o [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que você deseja criar um gatilho de inicialização. Você pode definir o limite inicial e o atraso do gatilho para que as ações da tarefa sejam agendadas para serem executadas em um momento especificado quando o sistema for iniciado.
 
-6.  Crie uma ação para a tarefa Executar usando a [**Propriedade Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a coleção [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) para a tarefa.
+6.  Crie uma ação para a tarefa a ser executada usando a propriedade Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a [**coleção IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) para a tarefa.
 
-    Use o método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa uma ação que executa uma operação de linha de comando.
+    Use o [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um [**objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa uma ação que executa uma operação de linha de comando.
 
-7.  Registre a tarefa usando o método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registre a tarefa usando [**o método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-O exemplo de código C++ a seguir mostra como agendar uma tarefa para execução Notepad.exe 30 segundos após o sistema ser iniciado.
+O exemplo de código C++ a seguir mostra como agendar uma tarefa para executar Notepad.exe 30 segundos após o sistema ser iniciado.
 
 
 ```C++
@@ -377,9 +377,9 @@ int __cdecl wmain()
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

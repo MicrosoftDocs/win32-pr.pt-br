@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38b669fdf38d6dcaffe5d8a0ac77c8ac362142faca2df03fb23eb45d869ed0ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 464fbc228acc1d73b50253b2312edd3889289e2d
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117704040"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987249"
 ---
 # <a name="jetrestore2-function"></a>Função JetRestore2
 
@@ -60,50 +60,19 @@ O ponteiro opcional para a função que será chamada como informações de noti
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errAlreadyInitialized</p></td>
-<td><p>A operação falhou porque o mecanismo já foi inicializado para essa instância.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidLogSequence</p></td>
-<td><p>O conjunto de arquivos de log do conjunto de backup e do caminho de log atual não é igual.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Esse erro será retornado por <a href="gg269306(v=exchg.10).md">JetRestoreInstance</a> quando o mecanismo estiver no modo de várias instâncias e o pinstance se referir a uma instância inválida Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>A operação falhou porque alguns dos caminhos fornecidos são inválidos (o caminho de backup, o caminho de destino, o log ou o caminho do sistema para a instância).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errPageSizeMismatch</p></td>
-<td><p>A operação falhou porque o mecanismo está configurado para usar um tamanho de página de banco de dados (usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> para JET_paramDatabasePageSize ) que não corresponder ao tamanho da página do banco de dados usado para criar os arquivos de log de transações ou os bancos de dados associados <a href="gg269337(v=exchg.10).md">aos</a>arquivos de log de transações.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque os parâmetros implicaram no modo de instância única (Windows modo de compatibilidade 2000) e o mecanismo já está no modo de várias instâncias.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errAlreadyInitialized</p> | <p>A operação falhou porque o mecanismo já foi inicializado para essa instância.</p> | 
+| <p>JET_errInvalidLogSequence</p> | <p>O conjunto de arquivos de log do conjunto de backup e do caminho de log atual não é igual.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Esse erro será retornado por <a href="gg269306(v=exchg.10).md">JetRestoreInstance</a> quando o mecanismo estiver no modo de várias instâncias e o pinstance se referir a uma instância inválida Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidPath</p> | <p>A operação falhou porque alguns dos caminhos fornecidos são inválidos (o caminho de backup, o caminho de destino, o log ou o caminho do sistema para a instância).</p> | 
+| <p>JET_errPageSizeMismatch</p> | <p>A operação falhou porque o mecanismo está configurado para usar um tamanho de página de banco de dados (usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> para JET_paramDatabasePageSize ) que não corresponder ao tamanho da página do banco de dados usado para criar os arquivos de log de transações ou os bancos de dados associados <a href="gg269337(v=exchg.10).md">aos</a>arquivos de log de transações.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>A operação falhou porque os parâmetros implicaram no modo de instância única (Windows modo de compatibilidade 2000) e o mecanismo já está no modo de várias instâncias.</p> | 
+
 
 
 Em caso de êxito, os arquivos de banco de dados do conjunto de backup serão restaurados para seu local e a recuperação será realizada de forma que os bancos de dados estarão em um estado de consistência transacional limpo. A recuperação repetirá os arquivos de log do conjunto de backup e os arquivos de log do caminho de log se esses arquivos existirem. Essa recuperação resultará em alterações no arquivo de ponto de verificação, nos arquivos de log de transações e em todos os bancos de dados referenciados por esses arquivos de log de transações.
@@ -116,44 +85,22 @@ O processo de recuperação reconstruirá os bancos de dados anexados à instân
 
 [As funções JetRestore](./jetrestore-function.md) devem ser chamadas em uma instância antes que [JetInit](./jetinit-function.md) seja chamado para essa instância.
 
-Como durante a recuperação um número significativo de páginas de banco de dados e logs de transações será usado, há uma série inteira de erros que pode ser retornada por essas funções. Esses erros podem ser de falhas temporárias de alocação de recursos, como Jet_errOutOfMemory a erros que representam danos físicos, como JET_errReadVerifyFailure, JET_errLogFileCorrupt ou JET_errBadPageLink. Esses erros quase sempre são causados por problemas de hardware e, portanto, não podem ser evitados. O erro de uso do arquivo se manifesta com mais frequência JET_errMissingLogFile ou JET_errAttachedDatabaseMismatch ou JET_errDatabaseSharingViolation ou JET_errInvalidLogSequence. Esses erros são impedidas pelo aplicativo. O aplicativo deve ter cuidado para proteger o repositório desses arquivos contra manipulação por força externas, como o usuário ou outros aplicativos. Se o aplicativo desejar destruir uma instância inteiramente, todos os arquivos associados à instância deverão ser excluídos. Isso inclui o arquivo de ponto de verificação, os arquivos de log de transações e todos os arquivos de banco de dados anexados à instância.
+Como durante a recuperação um número significativo de páginas de banco de dados e logs de transações será usado, há uma série inteira de erros que pode ser retornada por essas funções. Esses erros podem ser de falhas temporárias de alocação de recursos, como Jet_errOutOfMemory a erros que representam danos físicos, como JET_errReadVerifyFailure, JET_errLogFileCorrupt ou JET_errBadPageLink. Esses erros quase sempre são causados por problemas de hardware e, portanto, não podem ser evitados. O erro de uso do arquivo se manifesta com mais frequência, JET_errMissingLogFile ou JET_errAttachedDatabaseMismatch ou JET_errDatabaseSharingViolation ou JET_errInvalidLogSequence. Esses erros são impedidas pelo aplicativo. O aplicativo deve ter cuidado para proteger o repositório desses arquivos contra manipulação por força externas, como o usuário ou outros aplicativos. Se o aplicativo desejar destruir uma instância inteiramente, todos os arquivos associados à instância deverão ser excluídos. Isso inclui o arquivo de ponto de verificação, os arquivos de log de transações e todos os arquivos de banco de dados anexados à instância.
 
 As diferentes etapas da recuperação terão entradas do Log de Eventos geradas, incluindo o progresso da reprodução do log de transações e o resultado final da restauração.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetRestore2W</strong> (Unicode) e <strong>JetRestore2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetRestore2W</strong> (Unicode) e <strong>JetRestore2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

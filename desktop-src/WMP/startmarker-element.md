@@ -1,9 +1,9 @@
 ---
 title: Elemento STARTMARKER
-description: O elemento STARTMARKER especifica um marcador do qual o Windows Media Player começará a renderizar o fluxo.
+description: o elemento STARTMARKER especifica um marcador do qual Windows Media Player começará a renderizar o fluxo.
 ms.assetid: b5c2422b-a59c-43f7-bac3-5722418192dc
 keywords:
-- Elemento STARTMARKER do Windows Media Player
+- Windows Media Player do elemento STARTMARKER
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c3b3afbc3ab4a922d17f6a0269ed89c22f4dfeb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fa80da249edc4b9e3ab7d8796bc6ff135cb7cfb2b19a1cb11216ebe4a9c122c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123036"
 ---
 # <a name="startmarker-element"></a>Elemento STARTMARKER
 
-O elemento **STARTMARKER** especifica um marcador do qual o Windows Media Player começará a renderizar o fluxo.
+o elemento **STARTMARKER** especifica um marcador do qual Windows Media Player começará a renderizar o fluxo.
 
 ``` syntax
 <STARTMARKER
@@ -56,7 +56,7 @@ O nome de um marcador nomeado no índice. O valor padrão é o início do conte�
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento Especifica o marcador do qual o Windows Media Player deve começar a renderizar o fluxo definido na **entrada** pai ou no elemento **ref** .
+esse elemento especifica o marcador do qual Windows Media Player é iniciar a renderização do fluxo definido na **entrada** pai ou no elemento **REF** .
 
 **Observação**
 
@@ -90,10 +90,10 @@ Se o marcador especificado por um elemento **STARTMARKER** ocorrer posteriorment
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

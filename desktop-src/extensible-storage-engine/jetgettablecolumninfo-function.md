@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 63e913e68a3aea8f220c713b07becdeecb785a619b73a833bb6a0e9c3c1d37a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3940c07cc641d8c8d077c420f8c492ab5122b3f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984729"
 ---
 # <a name="jetgettablecolumninfo-function"></a>Função JetGetTableColumnInfo
 
@@ -79,120 +79,36 @@ O tipo de informações que serão recuperadas para a coluna especificada por *s
 
 As seguintes opções podem ser definidas para este parâmetro:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_ColInfo</p></td>
-<td><p><em>pvResult</em> é interpretado como um <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>e os campos da estrutura de <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> são preenchidos adequadamente. JET_ColInfo e JET_ColInfoByColid recuperam as mesmas informações.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ColInfoBase</p></td>
-<td><p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269194(v=exchg.10).md">JET_COLUMNBASE</a> . Isso é semelhante a uma estrutura de <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Se essa função falhar, a estrutura conterá dados indefinidos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ColInfoByColid</p></td>
-<td><p><em>pvResult</em> é interpretado como um <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>, exceto que esse <em>InfoLevel</em> indica que a coluna solicitada (<em>szColumName</em>) não é o nome da coluna de cadeia de caracteres, mas um ponteiro para um <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>. JET_ColInfo e JET_ColInfoByColid recuperam as mesmas informações.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ColInfoList</p></td>
-<td><p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Uma tabela temporária é aberta e identificada pelo membro <em>TableName</em> de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a>. A tabela deve ser fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>. Se essa função falhar, a estrutura conterá dados indefinidos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ColInfoListCompact</p></td>
-<td><p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Uma tabela temporária é aberta e identificada pelo membro <em>TableName</em> de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a>. A tabela deve ser fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>. Se essa função falhar, a estrutura conterá dados indefinidos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ColInfoListSortColumnid</p></td>
-<td><p>O mesmo que JET_ColInfoList, no entanto, a tabela resultante é classificada por <em>columnid</em>, em vez do nome da coluna.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ColInfoSysTabCursor</p></td>
-<td><p>JET_ColInfoSysTabCursor for preterido e o uso dele retornará JET_errFeatureNotAvailable.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ColInfoBaseByColId</p></td>
-<td><p>O mesmo que JET_ColInfoBase, <em>pvResult</em> é interpretado como um <a href="gg269194(v=exchg.10).md">JET_COLUMNBASE</a>, exceto que esse <em>InfoLevel</em> indica que a coluna solicitada (<em>szColumName</em>) não é o nome da coluna de cadeia de caracteres, mas um ponteiro para um <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>.</p>
-<p><strong>Windows Vista:</strong> isso está disponível no Windows Vista e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ColInfoGrbitNonDerivedColumnsOnly</p></td>
-<td><p>Retornar apenas colunas não derivadas (se a tabela for derivada de um modelo).</p>
-<p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_ColInfoGrbitMinimalInfo</p></td>
-<td><p>Retorna apenas o nome da coluna e columnid de cada coluna.</p>
-<p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_ColInfoGrbitSortByColumnid</p></td>
-<td><p>Classifique a lista de colunas retornada por ColumnID (o padrão é classificar a lista por nome de coluna).</p>
-<p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_ColInfo</p> | <p><em>pvResult</em> é interpretado como um <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>e os campos da estrutura de <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> são preenchidos adequadamente. JET_ColInfo e JET_ColInfoByColid recuperam as mesmas informações.</p> | 
+| <p>JET_ColInfoBase</p> | <p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269194(v=exchg.10).md">JET_COLUMNBASE</a> . Isso é semelhante a uma estrutura de <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Se essa função falhar, a estrutura conterá dados indefinidos.</p> | 
+| <p>JET_ColInfoByColid</p> | <p><em>pvResult</em> é interpretado como um <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a>, exceto que esse <em>InfoLevel</em> indica que a coluna solicitada (<em>szColumName</em>) não é o nome da coluna de cadeia de caracteres, mas um ponteiro para um <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>. JET_ColInfo e JET_ColInfoByColid recuperam as mesmas informações.</p> | 
+| <p>JET_ColInfoList</p> | <p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Uma tabela temporária é aberta e identificada pelo membro <em>TableName</em> de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a>. A tabela deve ser fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>. Se essa função falhar, a estrutura conterá dados indefinidos.</p> | 
+| <p>JET_ColInfoListCompact</p> | <p><em>pvResult</em> é interpretado como uma estrutura de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a> . Se essa função for realizada com sucesso, a estrutura será populada com os valores apropriados. Uma tabela temporária é aberta e identificada pelo membro <em>TableName</em> de <a href="gg269228(v=exchg.10).md">JET_COLUMNLIST</a>. A tabela deve ser fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>. Se essa função falhar, a estrutura conterá dados indefinidos.</p> | 
+| <p>JET_ColInfoListSortColumnid</p> | <p>O mesmo que JET_ColInfoList, no entanto, a tabela resultante é classificada por <em>columnid</em>, em vez do nome da coluna.</p> | 
+| <p>JET_ColInfoSysTabCursor</p> | <p>JET_ColInfoSysTabCursor for preterido e o uso dele retornará JET_errFeatureNotAvailable.</p> | 
+| <p>JET_ColInfoBaseByColId</p> | <p>O mesmo que JET_ColInfoBase, <em>pvResult</em> é interpretado como um <a href="gg269194(v=exchg.10).md">JET_COLUMNBASE</a>, exceto que esse <em>InfoLevel</em> indica que a coluna solicitada (<em>szColumName</em>) não é o nome da coluna de cadeia de caracteres, mas um ponteiro para um <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>.</p><p><strong>Windows Vista:</strong> isso está disponível no Windows Vista e versões posteriores.</p> | 
+| <p>JET_ColInfoGrbitNonDerivedColumnsOnly</p> | <p>Retornar apenas colunas não derivadas (se a tabela for derivada de um modelo).</p><p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p><p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p> | 
+| <p>JET_ColInfoGrbitMinimalInfo</p> | <p>Retorna apenas o nome da coluna e columnid de cada coluna.</p><p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p><p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p> | 
+| <p>JET_ColInfoGrbitSortByColumnid</p> | <p>Classifique a lista de colunas retornada por ColumnID (o padrão é classificar a lista por nome de coluna).</p><p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p><p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
 Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnNotFound</p></td>
-<td><p>A coluna denominada <em>szColumnName</em> não foi encontrada na tabela.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFeatureNotAvailable</p></td>
-<td><p>Um <em>InfoLevel</em> inadequado foi especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidName</p></td>
-<td><p>Esse erro pode ser retornado se:</p>
-<ul>
-<li><p>Um nome inadequado para <em>szTableName</em> foi fornecido.</p></li>
-<li><p>Um nome inadequado para <em>szColumnName</em> foi fornecido.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Esse erro pode ser retornado se:</p>
-<ul>
-<li><p>Um <em>InfoLevel</em> inadequado foi especificado.</p></li>
-<li><p>Um <em>SZTABLENAME</em> nulo foi passado.</p></li>
-<li><p>O buffer é muito pequeno.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errColumnNotFound</p> | <p>A coluna denominada <em>szColumnName</em> não foi encontrada na tabela.</p> | 
+| <p>JET_errFeatureNotAvailable</p> | <p>Um <em>InfoLevel</em> inadequado foi especificado.</p> | 
+| <p>JET_errInvalidName</p> | <p>Esse erro pode ser retornado se:</p><ul><li><p>Um nome inadequado para <em>szTableName</em> foi fornecido.</p></li><li><p>Um nome inadequado para <em>szColumnName</em> foi fornecido.</p></li></ul> | 
+| <p>JET_errInvalidParameter</p> | <p>Esse erro pode ser retornado se:</p><ul><li><p>Um <em>InfoLevel</em> inadequado foi especificado.</p></li><li><p>Um <em>SZTABLENAME</em> nulo foi passado.</p></li><li><p>O buffer é muito pequeno.</p></li></ul> | 
+
 
 
 #### <a name="remarks"></a>Comentários
@@ -207,38 +123,16 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetGetTableColumnInfoW</strong> (Unicode) e <strong>JetGetTableColumnInfoA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetGetTableColumnInfoW</strong> (Unicode) e <strong>JetGetTableColumnInfoA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

@@ -4,12 +4,12 @@ ms.assetid: 821ab1dc-7a42-407f-8fcd-8662036a6fa5
 title: Propriedade TitlesAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 388f81cab788fb440d55d4bb5a80e99d13c54db0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 980870b0aa56ca472fa839c9560b93f5c3f069fa9376e950d9d65f6a3fb6fed3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078726"
 ---
 # <a name="titlesavailable-property"></a>Propriedade TitlesAvailable
 
@@ -26,11 +26,11 @@ A `TitlesAvailable` propriedade recupera o número de títulos disponíveis no d
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna o número de títulos disponíveis como um valor inteiro de 1 a 99.
+Retorna o número de títulos disponíveis como um valor Inteiro de 1 a 99.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é somente leitura sem valor padrão.
+Essa propriedade é somente leitura sem valor padrão.
 
  
 

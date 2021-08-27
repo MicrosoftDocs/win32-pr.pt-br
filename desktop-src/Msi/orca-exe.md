@@ -1,23 +1,23 @@
 ---
-description: Orca.exe é um editor de tabela de banco de dados para criar e editar Windows Installer pacotes e Mesclar módulos.
+description: Orca.exe é um editor de tabela de banco de dados para criar e editar Windows Installer pacotes e mesclar módulos.
 ms.assetid: 4dddc262-1271-4e00-a986-53380b957b17
 title: Orca.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4647b137650bfba521dba3976ea7a1ae66451ce
-ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
+ms.openlocfilehash: b9f1b0d31936bf81e60efd8eb9799ddb30b4d5a6f78363e2ff5d3d638ae40c4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113102155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082676"
 ---
 # <a name="orcaexe"></a>Orca.exe
 
-Orca.exe é um editor de tabela de banco de dados para criar e editar Windows Installer pacotes e Mesclar módulos. A ferramenta fornece uma interface gráfica para validação, destacando as entradas específicas em que ocorrem erros de validação ou avisos.
+Orca.exe é um editor de tabela de banco de dados para criar e editar Windows Installer pacotes e mesclar módulos. A ferramenta fornece uma interface gráfica para validação, destacando as entradas específicas em que ocorrem erros de validação ou avisos.
 
-Essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Ele é fornecido como um arquivo de Orca.msi. Depois de instalar os componentes de SDK do Windows para os desenvolvedores de Windows Installer, clique duas vezes em Orca.msi para instalar o arquivo de Orca.exe.
+essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Ele é fornecido como um arquivo de Orca.msi. depois de instalar os componentes de SDK do Windows para os desenvolvedores de Windows Installer, clique duas vezes em Orca.msi para instalar o arquivo de Orca.exe.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 **Orca***\[\<options>\]\[\<source file>\]*
 
@@ -64,7 +64,7 @@ Orca.exe usa as seguintes opções de linha de comando que não diferenciam mai�
 
 <dl> <dt>
 
-[Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+[Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
 </dt> <dt>
 
 [Versões, ferramentas e redistribuíveis liberados](released-versions-tools-and-redistributables.md)

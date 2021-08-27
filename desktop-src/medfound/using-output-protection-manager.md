@@ -4,12 +4,12 @@ ms.assetid: 01edc17e-e71c-4772-a03c-09c9a2b8400f
 title: Usando o Gerenciador de proteção de saída
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57bf4def3b0575dd706ae5f0c62924b6f1375a05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73e37dd548603a6f9d7769a9e724df3477e2fcde
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105795470"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475512"
 ---
 # <a name="using-output-protection-manager"></a>Usando o Gerenciador de proteção de saída
 
@@ -22,7 +22,7 @@ Este tópico descreve como usar o OPM (Gerenciador de proteção de saída) para
 -   [Manipulando uma saída de vídeo desabilitada](#sending-opm-commands)
 -   [Usando o HDCP para proteger o conteúdo](#using-hdcp-to-protect-content)
 
-O conteúdo de vídeo Premium geralmente é criptografado para protegê-lo contra duplicação não autorizada. É claro que o vídeo deve ser descriptografado antes de ser exibido. Os quadros descriptografados e descompactados devem viajar por um conector físico para o dispositivo de vídeo. Os provedores de conteúdo podem exigir que os quadros de vídeo sejam protegidos neste ponto, à medida que viajam pelo conector físico.
+Premium conteúdo de vídeo geralmente é criptografado para protegê-lo contra duplicação não autorizada. É claro que o vídeo deve ser descriptografado antes de ser exibido. Os quadros descriptografados e descompactados devem viajar por um conector físico para o dispositivo de vídeo. Os provedores de conteúdo podem exigir que os quadros de vídeo sejam protegidos neste ponto, à medida que viajam pelo conector físico.
 
 Existem vários mecanismos de proteção para essa finalidade, incluindo High-Bandwidth Proteção de Conteúdo Digital (HDCP) e Proteção de Conteúdo de DisplayPort (DPCP) para saídas digitais; e sistema de gerenciamento de geração de cópia – analógico (CGMS-A) para saídas analógicas. Em geral, esses mecanismos envolvem criptografar ou embaralhar o sinal antes que ele vá para a tela.
 
@@ -41,7 +41,7 @@ OPM substitui a Border de proteção de saída certificada (COPP) e usa uma API 
 
 Se seu aplicativo usar o caminho de mídia protegido (PMP) para reproduzir conteúdo de vídeo, você não precisará usar a API OPM, pois o PMP faz todas as chamadas OPM necessárias. A API OPM está disponível para aplicativos que não usam o PMP.
 
-O OPM está disponível no Windows Vista e versões posteriores, mas a API não foi feita em público até o Windows 7. Para usar o OPM em um aplicativo, você deve ter os cabeçalhos e os arquivos de biblioteca do SDK do Windows 7. Você não precisa redistribuir nenhuma dll para usar o OPM no Windows Vista ou no Windows Server 2008.
+o OPM está disponível no Windows Vista e posterior, mas a API não foi disponibilizada até Windows 7. para usar o OPM em um aplicativo, você deve ter os cabeçalhos e os arquivos de biblioteca do SDK do Windows 7. você não precisa redistribuir nenhuma dll para usar o OPM no Windows Vista ou no Windows Server 2008.
 
 ## <a name="video-outputs"></a>Saídas de vídeo
 
@@ -109,93 +109,64 @@ Para enviar uma solicitação de status, execute as etapas a seguir.
      
 
 2.  Calcule o OMAC-1 do CBC de chave para calcular um hash para o bloco de dados que aparece após o membro **OMAC** e, em seguida, defina o membro **OMAC** com esse valor. Consulte [código de exemplo OPM](opm-example-code.md).
-3.  Chame o método [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) . Passe um ponteiro para a estrutura [**de \_ \_ \_ parâmetros Get Info de OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) e um ponteiro para uma estrutura de [**\_ \_ informações solicitada em OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) . A resposta do driver é gravada na estrutura de **\_ \_ informações de OPM solicitado** .
-    -   O membro **OMAC** dessa estrutura contém um OMAC computado para os dados que seguem esse membro.
-    -   O membro **abRequestedInformation** é uma matriz de bytes que contém os dados de saída para a resposta. O formato dos dados de saída é listado no tópico de referência para cada solicitação de status.
-4.  Calcule um OMAC para a estrutura de [**\_ \_ informações de OPM solicitado**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) , não incluindo o membro **OMAC** . Verifique se OMAC corresponde ao valor no membro **OMAC** .
-5.  Verifique se o membro **cbRequestedInformationSize** da estrutura [**de \_ \_ informações requeridas de OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) fornece o tamanho correto para os dados de saída. Por exemplo, os dados de saída para a consulta de [**tipo de conector do OPM \_ \_ \_ Get**](opm-get-connector-type.md) são uma estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) , portanto, o valor de **cbRequestedInformationSize** deve ser `sizeof(OPM_STANDARD_INFORMATION)` .
-6.  Converta o membro **abRequestedInformation** da estrutura de [**informações de OPM \_ solicitada \_**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) na estrutura de dados de saída correta. Por exemplo, se a solicitação de status [**for \_ \_ \_ tipo de conector de obtenção de OPM**](opm-get-connector-type.md), converta **abRequestedInformation** em uma estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) .
-7.  Verifique se o membro **rnRandomNumber** da estrutura de dados de saída corresponde ao valor de **rnRandomNumber** da etapa 1.
-8.  Verifique o membro **ulStatusFlags** da estrutura de dados de saída, conforme descrito em [lidando com uma saída de vídeo desabilitada](#handling-a-disabled-video-output).
+3.  Chame o método [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) . Passe um ponteiro para a estrutura [**\_ GET INFO \_ \_ PARAMETERS**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) do OPM e um ponteiro para uma estrutura DE INFORMAÇÕES [**\_ SOLICITADAS \_ do OPM.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) A resposta do driver é escrita na estrutura **\_ OPM REQUESTED \_ INFORMATION.**
+    -   O **membro omac** dessa estrutura contém um OMAC computado para os dados que seguem esse membro.
+    -   O **membro abRequestedInformation é** uma matriz de byte que contém dados de saída para a resposta. O formato dos dados de saída é listado no tópico de referência para cada solicitação de status.
+4.  Calcule um OMAC para a [**estrutura \_ OPM REQUESTED \_ INFORMATION,**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) não incluindo **o membro omac.** Verifique se o OMAC corresponde ao valor no **membro omac.**
+5.  Certifique-se de que o membro **cbRequestedInformationSize** da estrutura [**\_ OPM REQUESTED \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) fornece o tamanho correto para os dados de saída. Por exemplo, os dados de saída para a consulta [**OPM \_ GET CONNECTOR \_ \_ TYPE**](opm-get-connector-type.md) são uma estrutura de INFORMAÇÕES PADRÃO do [**OPM, \_ \_**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) portanto, o valor **de cbRequestedInformationSize** deve ser `sizeof(OPM_STANDARD_INFORMATION)` .
+6.  Caste **o membro abRequestedInformation da** estrutura [**\_ OPM REQUESTED \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) para a estrutura de dados de saída correta. Por exemplo, se a solicitação de status for [**OPM \_ GET CONNECTOR \_ \_ TYPE**](opm-get-connector-type.md), cast **abRequestedInformation** em uma [**estrutura de INFORMAÇÕES PADRÃO \_ \_ do OPM.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information)
+7.  Certifique-se **de que o membro rnRandomNumber** da estrutura de dados de saída corresponde ao valor de **rnRandomNumber** da etapa 1.
+8.  Verifique o **membro ulStatusFlags** da estrutura de dados de saída, conforme descrito em Manipulando [uma saída de vídeo desabilitada.](#handling-a-disabled-video-output)
 
 Se qualquer uma das verificações nas etapas 5 a 8 falhar, o aplicativo deverá parar de mostrar o conteúdo protegido.
 
 ## <a name="sending-opm-commands"></a>Enviando comandos OPM
 
-Os comandos OPM são usados para definir o nível de proteção e outras configurações na saída de vídeo. O envio de um comando OPM é semelhante ao envio de uma solicitação de status, exceto que não há dados de resposta do driver. Para obter uma lista de comandos, consulte [comandos OPM](opm-commands.md).
+Comandos OPM são usados para definir o nível de proteção e outras configurações na saída do vídeo. Enviar um comando OPM é semelhante ao envio de uma solicitação de status, exceto que não há dados de resposta do driver. Para ver uma lista de comandos, consulte [Comandos OPM](opm-commands.md).
 
 Para enviar um comando OPM, execute as etapas a seguir.
 
-1.  Preencha uma estrutura [**de \_ configuração de \_ parâmetros de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) , conforme mostrado na tabela a seguir.
+1.  Preencha uma estrutura [**CONFIGURE \_ \_ PARAMETERS do OPM,**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) conforme mostrado na tabela a seguir.
 
     | Membro                | DESCRIÇÃO                                                                                                                                                                                                                                                                                                                                                   |
     |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **omac**              | Ignore este campo por enquanto.                                                                                                                                                                                                                                                                                                                                      |
-    | **guidSetting**       | Um GUID que identifica o comando. Para obter uma lista de comandos, consulte [comandos OPM](opm-commands.md).                                                                                                                                                                                                                                                             |
-    | **ulSequenceNumber**  | O número de sequência. Para o primeiro comando, use o número de sequência inicial que você especificou no método [**IOPMVideoOutput:: FinishInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) (etapa 5 de [inicialização de uma sessão OPM](#initializing-an-opm-session).) Cada vez que você enviar outro comando, aumente esse número em 1. |
-    | **abParameters**      | Uma matriz de bytes que contém dados de entrada adicionais para o comando. O formato dos dados de entrada é listado no tópico de referência para cada comando.                                                                                                                                                                                                             |
-    | **cbSettingDataSize** | O tamanho dos dados válidos na matriz **abParameters** . O conteúdo do restante da matriz é indefinido.                                                                                                                                                                                                                                                |
+    | **omac**              | Ignore esse campo por enquanto.                                                                                                                                                                                                                                                                                                                                      |
+    | **guidSetting**       | Um GUID que identifica o comando. Para ver uma lista de comandos, consulte [Comandos OPM](opm-commands.md).                                                                                                                                                                                                                                                             |
+    | **ulSequenceNumber**  | O número de sequência. Para o primeiro comando, use o número de sequência inicial que você especificou no método [**IOPMVideoOutput::FinishInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) (etapa 5 de Inicializando uma sessão [OPM](#initializing-an-opm-session).) Sempre que você enviar outro comando, incremente esse número em 1. |
+    | **abParameters**      | Uma matriz de byte que contém dados de entrada adicionais para o comando. O formato dos dados de entrada é listado no tópico de referência para cada comando.                                                                                                                                                                                                             |
+    | **cbSettingDataSize** | O tamanho dos dados válidos na **matriz abParameters.** O conteúdo do restante da matriz é indefinido.                                                                                                                                                                                                                                                |
 
     
 
      
 
-2.  Calcule um OMAC para o bloco de dados que aparece após o membro **OMAC** e, em seguida, defina o membro **OMAC** como esse valor.
-3.  Chame [**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure).
+2.  Calcule um OMAC para o bloco de dados que aparece após o membro **omac** e, em seguida, de definir o **membro omac** para esse valor.
+3.  Chame [**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure).
 
-Para a maioria dos comandos, há uma solicitação de status correspondente que retorna o status do comando. Por exemplo, o comando de [**\_ Configurar \_ \_ nível de proteção OPM**](opm-set-protection-level.md) define o nível de proteção e o comando [**OPM \_ obter \_ \_ \_ nível de proteção virtual**](opm-get-virtual-protection-level.md) Obtém o nível de proteção atual.
+Para a maioria dos comandos, há uma solicitação de status correspondente que retorna o status do comando. Por exemplo, o [**comando OPM \_ SET PROTECTION \_ \_ LEVEL**](opm-set-protection-level.md) define o nível de proteção e o comando GET VIRTUAL PROTECTION [**\_ \_ \_ \_ LEVEL**](opm-get-virtual-protection-level.md) do OPM obtém o nível de proteção atual.
 
 ## <a name="handling-a-disabled-video-output"></a>Manipulando uma saída de vídeo desabilitada
 
-Uma saída de vídeo pode ser desativada a qualquer momento para evitar o uso não autorizado de conteúdo de vídeo. Isso pode ocorrer porque um mecanismo de proteção para de funcionar, pois o driver detecta violação ou porque a tela foi desconectada do conector físico. Enquanto uma saída de vídeo está desabilitada, nenhum quadro de vídeo é exibido.
+Uma saída de vídeo pode se desabilitar a qualquer momento para impedir o uso não autorizado de conteúdo de vídeo. Isso pode ocorrer porque um mecanismo de proteção para de funcionar, porque o driver detecta adulteração ou porque a exibição foi desconectada do conector físico. Enquanto uma saída de vídeo está desabilitada, nenhum quadro de vídeo é exibido.
 
-Enquanto a proteção de conteúdo está habilitada, um aplicativo deve periodicamente (pelo menos uma vez a cada 2 segundos) para executar as etapas a seguir.
+Embora a proteção de conteúdo seja habilitada, um aplicativo deve executar periodicamente (pelo menos uma vez a cada 2 segundos) as etapas a seguir.
 
-1.  Chame [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) para enviar a solicitação de status do [**OPM \_ obter \_ \_ \_ nível de proteção real**](opm-get-actual-protection-level.md) ou [**OPM \_ obter \_ \_ \_ nível de proteção virtual**](opm-get-virtual-protection-level.md) . Os dados de retorno de ambos os comandos são uma estrutura de [**\_ \_ informações de OPM padrão**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) .
-2.  Verifique o membro **ulInformation** da estrutura [**de \_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) . Esse membro contém um sinalizador que indica se a proteção de conteúdo ainda está habilitada. Se a proteção de conteúdo estiver desativada, pare de executar o vídeo imediatamente.
-3.  Se a proteção de conteúdo estiver ativada, verifique o membro **ulStatusFlags** da estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) . Se nenhum sinalizador for definido, a saída de vídeo estará funcionando corretamente. Caso contrário, a saída de vídeo será desabilitada.
+1.  Chame [**IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) para enviar a solicitação de status [**GET ACTUAL PROTECTION \_ \_ \_ \_ LEVEL**](opm-get-actual-protection-level.md) ou [**OPM GET VIRTUAL PROTECTION \_ \_ \_ \_ LEVEL.**](opm-get-virtual-protection-level.md) Os dados de retorno para ambos os comandos são uma [**estrutura OPM \_ STANDARD \_ INFORMATION.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information)
+2.  Verifique o **membro ulInformation** da estrutura [**OPM \_ STANDARD \_ INFORMATION.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) Esse membro contém um sinalizador que indica se a proteção de conteúdo ainda está habilitada. Se a proteção de conteúdo estiver desligada, pare de tocar o vídeo imediatamente.
+3.  Se a proteção de conteúdo estiver em, verifique **o membro ulStatusFlags** da estrutura [**OPM STANDARD \_ \_ INFORMATION.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) Se nenhum sinalizador for definido, a saída do vídeo funcionará corretamente. Caso contrário, a saída do vídeo será desabilitada.
 
-Os sinalizadores a seguir são definidos para **ulStatusFlags**.
+Os sinalizadores a seguir são definidos **para ulStatusFlags**.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sinalizador</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>OPM_STATUS_LINK_LOST</strong></td>
-<td>A proteção de saída parou de funcionar por algum motivo; por exemplo, o dispositivo de vídeo pode ser desconectado do conntector. Pare a reprodução e desative todos os mecanismos de proteção de saída.</td>
-</tr>
-<tr class="even">
-<td><strong>OPM_STATUS_RENEGOTIATION_REQUIRED</strong></td>
-<td>O aplicativo deve restabelecer a sessão OPM. Responda da seguinte maneira:
-<ol>
-<li>Pare a reprodução.</li>
-<li>Desative todos os mecanismos de proteção.</li>
-<li>Libere a interface <a href="/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput"><strong>IOPMVideoOutput</strong></a> .</li>
-<li>Recrie todas as superfícies de vídeo.</li>
-<li>Crie um novo objeto OPM e tente restabelecer a proteção de conteúdo. Se isso falhar, exiba uma mensagem de erro para o usuário. Não reproduza mais conteúdo de vídeo.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong></td>
-<td>Esse sinalizador se aplica somente quando HDCP é usado e indica a presença de um dispositivo HDCP revogado. Pare a reprodução e desative todos os mecanismos de proteção nesta saída de vídeo. Quando esse sinalizador é definido, o sinalizador de <strong>OPM_STATUS_LINK_LOST</strong> também é definido.</td>
-</tr>
-<tr class="even">
-<td><strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong></td>
-<td>O driver detectou violação. Pare a reprodução e não reproduza mais vídeo usando esta saída de vídeo. Também é uma boa ideia parar de usar qualquer outra saída de vídeo, pois o sistema pode estar comprometido.</td>
-</tr>
-</tbody>
-</table>
+
+| Sinalizador | Descrição | 
+|------|-------------|
+| <strong>OPM_STATUS_LINK_LOST</strong> | A proteção de saída parou de funcionar por algum motivo; por exemplo, o dispositivo de exibição pode ser desconectado do conntector. Pare a reprodução e desligue todos os mecanismos de proteção de saída. | 
+| <strong>OPM_STATUS_RENEGOTIATION_REQUIRED</strong> | O aplicativo deve restabelecer a sessão do OPM. Responda da seguinte forma:<ol><li>Pare a reprodução.</li><li>Desligue todos os mecanismos de proteção.</li><li>Libere a <a href="/windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput"><strong>interface IOPMVideoOutput.</strong></a></li><li>Recrie todas as superfícies de vídeo.</li><li>Crie um novo objeto OPM e tente restabelecer a proteção de conteúdo. Se isso falhar, exibirá uma mensagem de erro para o usuário. Não reproduza mais conteúdo de vídeo.</li></ol> | 
+| <strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong> | Esse sinalizador se aplica somente quando o HDCP é usado e indica a presença de um dispositivo HDCP revogado. Pare a reprodução e desligue todos os mecanismos de proteção nesta saída de vídeo. Quando esse sinalizador é definido, o <strong>sinalizador OPM_STATUS_LINK_LOST</strong> também é definido. | 
+| <strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong> | O driver detectou adulteração. Pare a reprodução e não reproduza mais nenhum vídeo usando essa saída de vídeo. Também é uma boa ideia parar de usar outras saídas de vídeo, pois o sistema pode estar comprometido. | 
+
 
 
 
@@ -203,24 +174,24 @@ Os sinalizadores a seguir são definidos para **ulStatusFlags**.
 
 ## <a name="using-hdcp-to-protect-content"></a>Usando o HDCP para proteger o conteúdo
 
-Esta seção descreve como habilitar a proteção de saída de HDCP usando OPM. Aqui está uma descrição geral das etapas que o aplicativo deve executar. Os detalhes são fornecidos posteriormente nesta seção.
+Esta seção descreve como habilitar a proteção de saída HDCP usando o OPM. Aqui está uma delineia geral das etapas que o aplicativo deve seguir. Detalhes são dados posteriormente nesta seção.
 
-1.  O aplicativo pode precisar fornecer um SRM para a saída de vídeo. O mecanismo para o recebimento de SRMs está fora do escopo da interface OPM. Por exemplo, SRMs pode ser entregue como parte de um fluxo de difusão.
-2.  O aplicativo habilita a proteção de saída de HDCP.
-3.  O aplicativo reproduz o conteúdo do vídeo. Periodicamente, o aplicativo sonda o driver para verificar se o HDCP está ativado.
-4.  Quando a reprodução é concluída, o aplicativo desativa HDCP.
+1.  O aplicativo pode ter que fornecer um SRM para a saída de vídeo. O mecanismo para receber SRMs está fora do escopo da interface OPM. Por exemplo, SRMs podem ser entregues como parte de um fluxo de difusão.
+2.  O aplicativo habilita a proteção de saída HDCP.
+3.  O aplicativo reproduz o conteúdo do vídeo. Periodicamente, o aplicativo sonda o driver para verificar se o HDCP está.
+4.  Quando a reprodução for concluída, o aplicativo desligará o HDCP.
 
-### <a name="setting-the-srm"></a>Configurando o SRM
+### <a name="setting-the-srm"></a>Definindo o SRM
 
 Para definir o SRM, execute as etapas a seguir.
 
-1.  Inicialize uma estrutura de [**\_ parâmetros de \_ \_ SRM \_ de HDCP definido de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_hdcp_srm_parameters) com o número de versão do SRM.
+1.  Inicialize uma [**estrutura OPM \_ SET \_ HDCP \_ SRM \_ PARAMETERS**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_hdcp_srm_parameters) com o número de versão srm.
 2.  Armazene o SRM em uma variável.
-3.  Envie um comando [**OPM \_ set \_ HDCP \_ SRM**](opm-set-hdcp-srm.md) para a saída de vídeo. Use o procedimento descrito em [enviando comandos OPM](#sending-opm-commands).
-    -   O membro **abParameters** da estrutura [**de \_ Configurar \_ parâmetros de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) contém a estrutura de [**\_ \_ \_ \_ parâmetros de SRM de HDCP definido**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_hdcp_srm_parameters) .
-    -   O parâmetro *pbAdditionalParameters* do método [**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) aponta para a variável que contém o SRM.
-4.  Envie um OPM para obter a solicitação de status de [**\_ versão de \_ \_ \_ SRM \_ de HDCP atual**](opm-get-current-hdcp-srm-version.md) para a saída de vídeo. Use o procedimento descrito em [enviando solicitações de status OPM](#sending-opm-status-requests). Essa solicitação de status não tem dados de entrada, portanto, o conteúdo do membro **abParameters** da estrutura de [**\_ \_ \_ parâmetros Get Info de OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) não está definido.
-5.  Quando o método [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) retorna, a matriz **abRequestedInformation** na estrutura [**de \_ \_ informações de OPM solicitado**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) contém uma estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) . O membro **ulInformation** dessa estrutura contém o número de versão do SRM atual. Esse valor deve ser igual ao valor da etapa 2.
+3.  Envie um [**comando OPM \_ SET \_ HDCP \_ SRM**](opm-set-hdcp-srm.md) para a saída de vídeo. Use o procedimento descrito em [Enviando comandos OPM.](#sending-opm-commands)
+    -   O **membro abParameters** da estrutura [**OPM CONFIGURE \_ \_ PARAMETERS**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) contém a estrutura [**OPM SET \_ \_ HDCP \_ SRM \_ PARAMETERS.**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_hdcp_srm_parameters)
+    -   O *parâmetro pbAdditionalParameters* do método [**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure) aponta para a variável que contém o SRM.
+4.  Envie uma solicitação de status DO [**\_ \_ \_ OPM GET CURRENT HDCP \_ SRM \_ VERSION**](opm-get-current-hdcp-srm-version.md) para a saída do vídeo. Use o procedimento descrito em [Enviando solicitações de status do OPM.](#sending-opm-status-requests) Essa solicitação de status não tem dados de entrada, portanto, o conteúdo do membro **abParameters** da estrutura [**GET INFO \_ \_ \_ PARAMETERS**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) do OPM é indefinido.
+5.  Quando o [**método IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) retorna, a matriz **abRequestedInformation** na estrutura [**\_ OPM REQUESTED \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) contém uma estrutura [**OPM \_ STANDARD \_ INFORMATION.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) O membro **ulInformation** dessa estrutura contém o número de versão do SRM atual. Esse valor deve ser igual ao valor da etapa 2.
 
 ### <a name="enabling-hdcp"></a>Habilitando HDCP
 

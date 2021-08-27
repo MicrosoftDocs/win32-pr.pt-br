@@ -1,12 +1,12 @@
 ---
-title: Propriedade de nome IMsRdpDrive
+title: Propriedade Nome do IMsRdpDrive
 description: Recupera o nome da unidade.
 ms.assetid: 5aabb7df-fd46-48aa-ad1d-51da45495782
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de propriedade de nome
-- Propriedade Name Serviços de Área de Trabalho Remota, interface IMsRdpDrive
-- Serviços de Área de Trabalho Remota de interface IMsRdpDrive, Propriedade Name
+- Nome da propriedade Serviços de Área de Trabalho Remota
+- Propriedade name Serviços de Área de Trabalho Remota , interface IMsRdpDrive
+- Interface IMsRdpDrive Serviços de Área de Trabalho Remota propriedade , Nome
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c38eeb0f6112983f508bb43ba69d721aeb52c314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bde69814f38c39315a02a76bd52b8c3c38baffc2c0a92601ef383cb60b0bc492
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125636"
 ---
-# <a name="imsrdpdrivename-property"></a>Propriedade IMsRdpDrive:: Name
+# <a name="imsrdpdrivename-property"></a>Propriedade IMsRdpDrive::Name
 
 Recupera o nome da unidade.
 
@@ -48,7 +48,7 @@ O nome da unidade.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor **HRESULT** indica que a chamada falhou.
+Se o método for bem-sucedido, **S \_ OK** será retornado. Qualquer outro **valor HRESULT** indica que a chamada falhou.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpDrive é definido como d28b5458-f694-47a8-8e61-40356a767e46<br/>         |
+| IID<br/>                      | IID IMsRdpDrive é definido como \_ d28b5458-f694-47a8-8e61-40356a767e46<br/>         |
 
 
 

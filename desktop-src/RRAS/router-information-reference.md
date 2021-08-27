@@ -4,12 +4,12 @@ ms.assetid: 9d4e2cf6-3e02-4872-9632-933da653efee
 description: 'Saiba mais sobre: referência de informações do roteador'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 581240c16e207ebdd3faa13fcb694169cae9a048
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ccf4c0c32b90a674ae6fbffb38be5eafc2612e4278978808af8420823cfeb7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081116"
 ---
 # <a name="router-information-reference"></a>Referência de informações do roteador
 

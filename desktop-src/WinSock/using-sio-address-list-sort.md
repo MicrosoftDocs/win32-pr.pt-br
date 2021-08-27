@@ -1,21 +1,21 @@
 ---
-description: O IOCTL de classificação da lista de endereços do SIO \_ \_ \_ permite que os desenvolvedores de aplicativos classifiquem uma lista de endereços de destino IPv6 e IPv4 para determinar o melhor endereço disponível para fazer uma conexão. O \_ IOCTL de classificação da lista de endereços sio \_ \_ tem suporte no Windows XP e versões posteriores.
+description: O IOCTL de classificação da lista de endereços do SIO \_ \_ \_ permite que os desenvolvedores de aplicativos classifiquem uma lista de endereços de destino IPv6 e IPv4 para determinar o melhor endereço disponível para fazer uma conexão. o IOCTL de classificação da lista de endereços SIO tem \_ \_ \_ suporte no Windows XP e versões posteriores.
 ms.assetid: bf380ddf-8171-4ef4-be47-94c7a6aabf0a
 title: Usando SIO_ADDRESS_LIST_SORT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6452023b69ccf72c78b393c5059fee497997af51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f0bce27088052bfc029047d5f498ad90962567b50015a5331b26016e455d770
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121136"
 ---
 # <a name="using-sio_address_list_sort"></a>Usando a \_ \_ classificação da lista de endereços do sio \_
 
-O IOCTL de classificação da lista de endereços do sio permite que os desenvolvedores de aplicativos classifiquem uma lista de endereços de destino IPv6 e IPv4 para determinar o melhor endereço disponível para fazer uma conexão. **\_ \_ \_** O IOCTL de **\_ classificação da \_ lista \_ de endereços sio** tem suporte no Windows XP e versões posteriores.
+O IOCTL de classificação da lista de endereços do sio permite que os desenvolvedores de aplicativos classifiquem uma lista de endereços de destino IPv6 e IPv4 para determinar o melhor endereço disponível para fazer uma conexão. **\_ \_ \_** o IOCTL de **\_ classificação da \_ lista \_ de endereços SIO** tem suporte no Windows XP e versões posteriores.
 
-No Windows Vista e posterior, a função [**CreateSortedAddressPairs**](/windows/win32/api/netioapi/nf-netioapi-createsortedaddresspairs) usa uma lista fornecida de possíveis endereços IP de destino, emparelha os endereços de destino com os endereços IP locais da máquina host e classifica os pares de acordo com o qual o par de endereços é mais adequado para a comunicação entre os dois pares. A função **CreateSortedAddressPairs** deve ser usada em vez do IOCTL de classificação da lista de endereços do **sio \_ \_ \_** no Windows Vista e posterior.
+no Windows Vista e posterior, a função [**CreateSortedAddressPairs**](/windows/win32/api/netioapi/nf-netioapi-createsortedaddresspairs) usa uma lista fornecida de possíveis endereços ip de destino, emparelha os endereços de destino com os endereços ip locais da máquina host e classifica os pares de acordo com o qual o par de endereços é mais adequado para a comunicação entre os dois pares. a função **CreateSortedAddressPairs** deve ser usada em vez da **lista de endereços do SIO de \_ \_ \_ classificação** do IOCTL no Windows Vista e posterior.
 
 As seções a seguir descrevem as considerações de uso para a **classificação da lista de endereços do sio \_ \_ \_**.
 
@@ -23,9 +23,9 @@ As seções a seguir descrevem as considerações de uso para a **classificaçã
 
 O buffer passado para **a \_ \_ \_ classificação da lista de endereços sio** é uma estrutura de [**\_ \_ lista de endereços de soquete**](/previous-versions/windows/desktop/legacy/aa385467(v=vs.85)) . Cada [**\_ endereço de soquete**](/windows/desktop/api/Ws2def/ns-ws2def-socket_address) na lista deve estar no \_ formato SOCKADDR In6.
 
-O IOCTL de classificação da lista de endereços do sio classifica os endereços IPv6 e IPv4 no Windows Vista e versões posteriores. **\_ \_ \_** Todos os endereços IPv4 na lista a serem classificados devem estar no formato de endereço IPv6 mapeado para IPv4. Para obter mais informações sobre o formato de endereço IPv6 mapeado para IPv4, consulte [soquetes de pilha dupla](dual-stack-sockets.md).
+o IOCTL de **\_ classificação da \_ lista \_ de endereços SIO** classifica os endereços IPv6 e IPv4 no Windows Vista e posterior. Todos os endereços IPv4 na lista a serem classificados devem estar no formato de endereço IPv6 mapeado para IPv4. Para obter mais informações sobre o formato de endereço IPv6 mapeado para IPv4, consulte [soquetes de pilha dupla](dual-stack-sockets.md).
 
-No Windows Server 2003 e no Windows XP, **a \_ \_ \_ classificação da lista de endereços do sio** classifica somente endereços IPv6. Não há suporte para endereços IPv4 no formato de endereço IPv6 mapeados para IPv4.
+no Windows Server 2003 e Windows XP, a **\_ classificação da \_ lista \_ de endereços SIO** classifica apenas endereços IPv6. Não há suporte para endereços IPv4 no formato de endereço IPv6 mapeados para IPv4.
 
 Na saída, o membro **iAddressCount** da estrutura [**da \_ \_ lista de endereços de soquete**](/previous-versions/windows/desktop/legacy/aa385467(v=vs.85)) pode ser menor do que na entrada se o código do IOCTL determinar que alguns endereços de destino são inválidos.
 
@@ -41,7 +41,7 @@ netsh interface ipv6 set prefixpolicy ::/96 3 4
 ```
 
 > [!Note]  
-> No Windows Server 2003 e no Windows XP, o primeiro comando netsh listado acima foi o seguinte. Todos os outros comandos relacionados são os mesmos.
+> no Windows Server 2003 e Windows XP, o primeiro comando netsh listado acima foi o seguinte. Todos os outros comandos relacionados são os mesmos.
 
  
 
@@ -55,13 +55,13 @@ O **IOCTL \_ \_ \_ classificação da lista de endereços do sio** classifica os
 
 O IOCTL de **\_ classificação da \_ lista \_ de endereços sio** ignora o endereço de origem associado ao soquete e classifica apenas pela lista de endereços de destino passada como um parâmetro.
 
-A função [**CreateSortedAddressPairs**](/windows/win32/api/netioapi/nf-netioapi-createsortedaddresspairs) deve ser usada em vez do IOCTL de classificação da lista de endereços do **sio \_ \_ \_** no Windows Vista e posterior. A função **CreateSortedAddressPairs** retorna uma lista de pares de endereços que contém um endereço de origem local e um endereço de destino. Isso fornece um aplicativo o endereço de origem correto a ser usado para cada endereço de destino. Um aplicativo também pode filtrar os resultados procurando por um endereço de origem específico. nos resultados.
+a função [**CreateSortedAddressPairs**](/windows/win32/api/netioapi/nf-netioapi-createsortedaddresspairs) deve ser usada em vez da **lista de endereços do SIO de \_ \_ \_ classificação** do IOCTL no Windows Vista e posterior. A função **CreateSortedAddressPairs** retorna uma lista de pares de endereços que contém um endereço de origem local e um endereço de destino. Isso fornece um aplicativo o endereço de origem correto a ser usado para cada endereço de destino. Um aplicativo também pode filtrar os resultados procurando por um endereço de origem específico. nos resultados.
 
 ## <a name="requirements"></a>Requisitos
 
-O IOCTL de **\_ classificação da \_ lista \_ de endereços sio** é definido no arquivo de cabeçalho *Winsock2. h* . No SDK (Software Development Kit) do Microsoft Windows lançado para o Windows Vista e posterior, a organização dos arquivos de cabeçalho foi alterada e o **sio de classificação da \_ \_ lista \_ de endereços** é definido no arquivo de cabeçalho *Ws2def. h* . Observe que o arquivo de cabeçalho *Ws2def. h* é incluído automaticamente no *Winsock2. h* e nunca deve ser usado diretamente.
+O IOCTL de **\_ classificação da \_ lista \_ de endereços sio** é definido no arquivo de cabeçalho *Winsock2. h* . no SDK (Software Development Kit) do Microsoft Windows lançado para o Windows Vista e posterior, a organização dos arquivos de cabeçalho foi alterada e o **SIO de classificação da \_ \_ lista \_ de endereços** é definido no arquivo de cabeçalho *Ws2def. h* . Observe que o arquivo de cabeçalho *Ws2def. h* é incluído automaticamente no *Winsock2. h* e nunca deve ser usado diretamente.
 
-O IOCTL de **\_ classificação da \_ lista \_ de endereços sio** tem suporte no Windows XP e versões posteriores.
+o IOCTL de **\_ classificação da \_ lista \_ de endereços SIO** tem suporte no Windows XP e versões posteriores.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

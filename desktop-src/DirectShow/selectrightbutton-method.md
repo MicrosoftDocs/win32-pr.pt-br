@@ -1,15 +1,15 @@
 ---
-description: O método SelectRightButton seleciona o botão direcional direito no menu exibido.
+description: O método SelectRightButton seleciona o botão direcional à direita no menu exibido.
 ms.assetid: 03e6034a-8db1-4724-9923-f19c4e835db7
-title: Método SelectRightButton (Segment. h)
+title: Método SelectRightButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96adb93cb81e59fd43ec4aa4438ae17085ee1b51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e04eb19addba14b285955daa6752fda497f657435cf7655e3071de3ee345edc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078886"
 ---
 # <a name="selectrightbutton-method"></a>Método SelectRightButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "105785479"
 
  
 
-O `SelectRightButton` método seleciona o botão direcional direito no menu exibido.
+O `SelectRightButton` método seleciona o botão direcional à direita no menu exibido.
 
 ``` syntax
 MSWebDVD.SelectRightButton()
@@ -34,7 +34,7 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

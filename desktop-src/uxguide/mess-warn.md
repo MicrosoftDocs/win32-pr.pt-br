@@ -4,17 +4,17 @@ description: Uma mensagem de aviso é uma caixa de diálogo modal, mensagem in-p
 ms.assetid: 4a2c3be9-9dc6-4d62-bd3d-72a2e5b621f4
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 42f7c669a68790ec290f931165b4aa937b5008d5
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: d12962cb8e984ffcb9f7f91875be7c6a724cea95
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524500"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982099"
 ---
 # <a name="warning-messages"></a>Mensagens de aviso
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
 Uma mensagem de aviso é uma caixa de diálogo modal, mensagem in-place, notificação ou balão que alerta o usuário de uma condição que pode causar um problema no futuro.
 
@@ -31,7 +31,7 @@ A característica fundamental dos avisos é que eles envolvem o risco de perder 
 
 Por outro lado, uma confirmação é uma caixa de diálogo modal que pergunta se o usuário deseja continuar com uma ação. Alguns tipos de avisos são apresentados como confirmações e, em caso afirmativos, as diretrizes de confirmação também se aplicam.
 
-**Observação:** Diretrizes relacionadas a [caixas de diálogo,](win-dialog-box.md)confirmações [,](mess-confirm.md) [](mess-error.md)[ícones](vis-std-icons.md)padrão de mensagens de erro, notificações e [layout](vis-layout.md) são [apresentadas](mess-notif.md)em artigos separados.
+**Observação:** As diretrizes relacionadas às [caixas de diálogo](win-dialog-box.md), [confirmações](mess-confirm.md) [,](mess-error.md)[ícones](vis-std-icons.md)padrão de mensagens de erro, notificações e [layout](vis-layout.md) são [apresentadas](mess-notif.md)em artigos separados.
 
 ## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
@@ -39,17 +39,17 @@ Para decidir, considere estas perguntas:
 
 -   **O usuário está sendo alertado de uma condição que pode causar um problema no futuro?** Caso não seja, a mensagem não será um aviso.
 -   **A interface do usuário está apresentando um erro ou um problema que já ocorreu?** Em caso afirmado, use uma mensagem de erro.
--   **Os usuários provavelmente executarão uma ação ou alterarão seu comportamento como resultado da mensagem?** Caso não seja, a condição não justifica a interrupção do usuário, portanto, é melhor suprimir o aviso.
+-   **É provável que os usuários executem uma ação ou alterem seu comportamento como resultado da mensagem?** Caso não seja, a condição não justifica a interrupção do usuário, portanto, é melhor suprimir o aviso.
 -   **A condição é o resultado direto de uma ação iniciada pelo usuário?** Caso não seja, considere o uso [de notificações de eventos não críticas.](mess-notif.md)
 -   **A condição é uma condição especial em um controle?** Em caso afirmado, use um [balão.](ctrl-balloons.md)
 -   **Para confirmações, o usuário está prestes a executar uma ação arriscada?** Em caso afirmativa, um aviso será apropriado se a ação tiver consequências significativas ou não puder ser facilmente desfeita.
--   **Para outros tipos de avisos, o usuário precisa agir agora ou no futuro imediato?** Não exibir avisos se os usuários puderem continuar a trabalhar de forma produtiva sem problemas imediatos. Adia o aviso até que a condição seja mais imediata e relevante.
+-   **Para outros tipos de avisos, o usuário precisa agir agora ou no futuro imediato?** Não exibir avisos se os usuários puderem continuar trabalhando de forma produtiva sem problemas imediatos. Adia o aviso até que a condição seja mais imediata e relevante.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
 ### <a name="avoid-overwarning"></a>Evitar o excesso de avisos
 
-Estamos em excesso em programas do Microsoft Windows. O programa típico do Windows tem avisos aparentemente em todos os lugares, aviso sobre coisas que têm pouca importância. Em alguns programas, quase todas as perguntas são apresentadas como um aviso. O excesso de avisos faz com que o uso de um programa se sinta como uma atividade perigosa e prejudica problemas realmente significativos.
+Estamos em excesso nos programas Windows Microsoft. O programa Windows tem avisos aparentemente em todos os lugares, avisos sobre coisas que têm pouca importância. Em alguns programas, quase todas as perguntas são apresentadas como um aviso. O excesso de avisos faz com que o uso de um programa se sinta como uma atividade perigosa e prejudica problemas realmente significativos.
 
 **Incorreto:**
 
@@ -57,7 +57,7 @@ Estamos em excesso em programas do Microsoft Windows. O programa típico do Wind
 
 O excesso de avisos faz com que o programa se sinta perigoso e pareça que ele foi projetado por profissionais.
 
-O potencial de perda de dados ou um problema futuro sozinho é insuficiente para chamar um aviso. Além disso, todos os resultados indesejáveis devem ser inesperados ou não intencionais e não facilmente corrigidos. Caso contrário, qualquer erro do usuário pode ser interpretado para resultar em perda de dados ou em um possível problema de algum tipo e um aviso.
+O potencial de perda de dados ou um problema futuro sozinho é insuficiente para chamar um aviso. Além disso, todos os resultados indesejáveis devem ser inesperados ou não intencionais e não facilmente corrigidos. Caso contrário, qualquer erro do usuário poderia ser interpretado para resultar em perda de dados ou em um possível problema de algum tipo e ter um aviso.
 
 ### <a name="characteristics-of-good-warnings"></a>Características de bons avisos
 
@@ -107,10 +107,10 @@ Uma mensagem que não tem essas características ainda pode ser uma boa mensagem
 
 ### <a name="determine-the-appropriate-message-type"></a>Determinar o tipo de mensagem apropriado
 
-Alguns problemas podem ser apresentados como um erro, aviso ou informações, dependendo da ênfase e frase. Por exemplo, suponha que uma página da Web não possa carregar um controle ActiveX não assinado com base na configuração atual do Windows Internet Explorer:
+Alguns problemas podem ser apresentados como um erro, aviso ou informações, dependendo da ênfase e frase. Por exemplo, suponha que uma página da Web não possa carregar um controle ActiveX com base na configuração Windows Internet Explorer atual:
 
 -   **Erro.** "Esta página não pode carregar um controle ActiveX não assinado." (Formulado como um problema existente.)
--   **Aviso.** "Esta página pode não se comportar conforme o esperado porque o Windows Internet Explorer não está configurado para carregar controles ActiveX não assinados." ou "Permitir que esta página instale um controle ActiveX não assinado? Fazer isso de fontes não confiáveis pode prejudicar o computador." (Ambos frases como condições que podem causar problemas futuros.)
+-   **Aviso.** "Esta página pode não se comportar conforme o esperado Windows Internet Explorer não está configurado para carregar controles ActiveX não assinados." ou "Permitir que esta página instale um controle ActiveX não assinado? Fazer isso de fontes não confiáveis pode prejudicar o computador." (Ambos frases como condições que podem causar problemas futuros.)
 -   **Informações.** "Você configurou o Windows Internet Explorer para bloquear controles ActiveX não assinados." (Formulado como uma instrução de fato.)
 
 **Para determinar o tipo de mensagem apropriado, concentre-se no aspecto mais importante do problema que os usuários precisam conhecer ou agir.** Normalmente, se um problema bloquear o andamento do usuário, você deverá apresentá-lo como um erro; se o usuário puder continuar, apresente-o como um aviso. Crie a [instrução principal](text-ui.md) ou outro texto correspondente com base nesse foco e escolha um ícone[(padrão](vis-std-icons.md) ou não) que corresponda ao texto. O texto de instrução principal e os ícones devem sempre corresponder.
@@ -136,7 +136,7 @@ Neste exemplo, qual é o problema potencial? O que o usuário deve fazer, além 
 
 Neste exemplo, o problema e as consequências são claros.
 
-Às vezes, há um problema potencial legítimo que se deve informar aos usuários sobre, mas a solução e as consequências não são conhecidas com certeza. Em vez de dar um aviso vaga, seja específico, dando as informações mais prováveis ou o exemplo mais comum.
+Às vezes, há um problema potencial legítimo que não permite informar os usuários sobre isso, mas a solução e as consequências não são conhecidas com certeza. Em vez de dar um aviso vaga, seja específico, dando as informações mais prováveis ou o exemplo mais comum.
 
 **Correto:**
 
@@ -158,7 +158,7 @@ No exemplo incorreto, os usuários serão confundidos se o cabo estiver claramen
 
 **Se você fizer apenas duas coisas...**
 
-1. Não se preocupe. Limite avisos a condições que envolvem risco e são imediatamente relevantes, ativas, não óbvias e pouco frequentes. Caso contrário, remova ou refrase a mensagem.
+1. Não se sobreajuste. Limite avisos a condições que envolvem risco e são imediatamente relevantes, ativas, não óbvias e pouco frequentes. Caso contrário, remova ou refrase a mensagem.
 
 2. Forneça informações específicas e úteis.
 
@@ -168,46 +168,14 @@ Os avisos têm vários padrões de uso:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Reconhecimento</strong><br/> Tornar o usuário ciente de uma condição ou possível problema, mas o usuário pode não ter que fazer nada agora. <br/></td>
-<td><img src="images/mess-warn-image13.png" alt="Screen shot of warning of network problems " /><br/> <img src="images/mess-warn-image14.png" alt="Screen shot of low-battery warning " /><br/> <img src="images/mess-warn-image15.png" alt="Screen shot of &#39;caps-lock-is-on&#39; warning " /><br/> <img src="images/mess-warn-image16.png" alt="Screen shot of &#39;TPM-not-found&#39; warning " /><br/> Exemplos de avisos de reconhecimento.<br/> Os avisos de reconhecimento têm a seguinte apresentação: <br/>
-<ul>
-<li><strong>Instrução principal:</strong> Descreva a condição ou o possível problema.</li>
-<li><strong>Instrução complementar:</strong> Explique a implicação e por que ela é importante.</li>
-<li><strong>Botões de commit:</strong> Perto.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Prevenção de erros</strong><br/> Tornar o usuário ciente das informações que podem impedir um problema, especialmente ao fazer escolhas. <br/></td>
-<td>Os avisos de prevenção de erros são apresentados melhor usando um ícone de aviso in-locar e um texto explicativo. <br/> <img src="images/mess-warn-image17.png" alt="Screen shot of Not-enough-free-space warning " /><br/> <img src="images/mess-warn-image18.png" alt="Screen shot of Use-installation-CD warning " /><br/> Exemplos de avisos de prevenção de erros.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Problema iminente</strong><br/> O usuário precisa fazer algo agora para evitar um problema iminente. <br/></td>
-<td><img src="images/mess-warn-image19.png" alt="Screen shot of Close-programs warning " /><br/> Um exemplo de um aviso de problema iminente.<br/> Os avisos de problema iminente têm a seguinte apresentação: <br/>
-<ul>
-<li><strong>Instrução principal:</strong> Descrever o que o usuário precisa fazer agora.</li>
-<li><strong>Instrução complementar:</strong> Explique a condição e por que ela é importante.</li>
-<li><strong>Botões de commit:</strong> Um botão de comando ou um link de comando para cada opção ou OK se a ação ocorrer fora da caixa de diálogo.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Confirmação de ação arriscada</strong><br/> Confirme se o usuário deseja prosseguir com uma ação que tem algum risco e não pode ser facilmente desfeita. <br/></td>
-<td><img src="images/mess-warn-image20.png" alt="Screen shot of Formatting-will-erase-data warning " /><br/> Um exemplo de confirmação de ação arriscada.<br/> As confirmações de ação arriscada têm a seguinte apresentação: <br/>
-<ul>
-<li><strong>Instrução principal:</strong> Faça uma pergunta para determinar se o usuário deseja continuar.</li>
-<li><strong>Instrução complementar:</strong> Explique os motivos não óbvios pelos quais o usuário talvez não queira continuar.</li>
-<li><strong>Botões de commit:</strong> Sim, não.</li>
-</ul>
-Para ver diretrizes sobre esse padrão, consulte <a href="mess-confirm.md">Confirmações</a>. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| <strong>Reconhecimento</strong><br /> Tornar o usuário ciente de uma condição ou possível problema, mas o usuário pode não ter que fazer nada agora. <br /> | <img src="images/mess-warn-image13.png" alt="Screen shot of warning of network problems " /><br /><img src="images/mess-warn-image14.png" alt="Screen shot of low-battery warning " /><br /><img src="images/mess-warn-image15.png" alt="Screen shot of 'caps-lock-is-on' warning " /><br /><img src="images/mess-warn-image16.png" alt="Screen shot of 'TPM-not-found' warning " /><br /> Exemplos de avisos de reconhecimento.<br /> Os avisos de reconhecimento têm a seguinte apresentação: <br /><ul><li><strong>Instrução principal:</strong> Descreva a condição ou o possível problema.</li><li><strong>Instrução complementar:</strong> Explique a implicação e por que ela é importante.</li><li><strong>Botões de commit:</strong> Perto.</li></ul> | 
+| <strong>Prevenção de erros</strong><br /> Tornar o usuário ciente das informações que podem impedir um problema, especialmente ao fazer escolhas. <br /> | Os avisos de prevenção de erros são apresentados melhor usando um ícone de aviso in-locar e um texto explicativo. <br /><img src="images/mess-warn-image17.png" alt="Screen shot of Not-enough-free-space warning " /><br /><img src="images/mess-warn-image18.png" alt="Screen shot of Use-installation-CD warning " /><br /> Exemplos de avisos de prevenção de erros.<br /> | 
+| <strong>Problema iminente</strong><br /> O usuário precisa fazer algo agora para evitar um problema iminente. <br /> | <img src="images/mess-warn-image19.png" alt="Screen shot of Close-programs warning " /><br /> Um exemplo de um aviso de problema iminente.<br /> Os avisos de problema iminente têm a seguinte apresentação: <br /><ul><li><strong>Instrução principal:</strong> Descrever o que o usuário precisa fazer agora.</li><li><strong>Instrução complementar:</strong> Explique a condição e por que ela é importante.</li><li><strong>Botões de commit:</strong> Um botão de comando ou um link de comando para cada opção ou OK se a ação ocorrer fora da caixa de diálogo.</li></ul> | 
+| <strong>Confirmação de ação arriscada</strong><br /> Confirme se o usuário deseja prosseguir com uma ação que tem algum risco e não pode ser facilmente desfeita. <br /> | <img src="images/mess-warn-image20.png" alt="Screen shot of Formatting-will-erase-data warning " /><br /> Um exemplo de confirmação de ação arriscada.<br /> As confirmações de ação arriscada têm a seguinte apresentação: <br /><ul><li><strong>Instrução principal:</strong> Faça uma pergunta para determinar se o usuário deseja continuar.</li><li><strong>Instrução complementar:</strong> Explique os motivos não óbvios pelos quais o usuário talvez não queira continuar.</li><li><strong>Botões de commit:</strong> Sim, não.</li></ul>Para ver diretrizes sobre esse padrão, consulte <a href="mess-confirm.md">Confirmações</a>. <br /> | 
+
 
 
 
@@ -224,7 +192,7 @@ Para ver diretrizes sobre esse padrão, consulte <a href="mess-confirm.md">Confi
 | Interface do usuário  | Melhor usado para |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Caixas de diálogo modais<br/> | Avisos críticos (incluindo confirmações) aos quais os usuários devem responder agora.<br/>                                                 |
-| In-place<br/>           | Informações que podem impedir um problema, especialmente quando os usuários estão fazendo escolhas.<br/>                                         |
+| No local<br/>           | Informações que podem impedir um problema, especialmente quando os usuários estão fazendo escolhas.<br/>                                         |
 | Banners<br/>            | Informações que podem impedir um problema, especialmente quando relacionadas à conclusão de uma tarefa.<br/>                                     |
 | Notificações<br/>      | Eventos significativos ou status que podem ser ignorados com segurança, pelo menos temporariamente.<br/>                                              |
 | Balões<br/>           | Um controle está em um estado que afeta a entrada. Esse estado provavelmente não é intencional e o usuário pode não perceber que a entrada é afetada.<br/> |
@@ -234,7 +202,7 @@ Para ver diretrizes sobre esse padrão, consulte <a href="mess-confirm.md">Confi
  
 
 -   **Para caixas de diálogo modais:**
-    -   **Use caixas de diálogo de tarefa sempre que apropriado para obter uma aparência e layout consistentes.** As caixas de diálogo de tarefa exigem o Windows Vista ou posterior, portanto, elas não são adequadas para versões anteriores do Windows.
+    -   **Use caixas de diálogo de tarefa sempre que apropriado para obter uma aparência e layout consistentes.** As caixas de diálogo de tarefa Windows vista ou posterior, portanto, não são adequadas para versões anteriores do Windows.
     -   **Exibe apenas uma mensagem de aviso por condição.** Por exemplo, exibe um único aviso que explica completamente uma condição em vez de descrevê-la um detalhe por vez por mensagem. Exibir uma sequência de caixas de diálogo de aviso para uma única condição é confuso e entediante.
     -   **Não exibir um aviso mais de uma vez por condição.** Avisos constantes tornam-se rapidamente ineficaz e entediantes. Os usuários geralmente se concentram mais em se desfazer do aviso do que resolver o problema. Se você tiver que avisar repetidamente para uma única condição, use [o escalonamento progressivo](mess-notif.md).
 -   **Não acompanhe avisos com um efeito de som ou um aviso.** Fazer isso é jarring e desnecessário.
@@ -260,63 +228,63 @@ Para ver diretrizes sobre esse padrão, consulte <a href="mess-confirm.md">Confi
 
     Neste exemplo, a nota de rodapé tem o ícone de aviso.
 
-Para obter mais diretrizes e exemplos, consulte [ícones padrão](vis-std-icons.md).
+Para obter mais diretrizes e exemplos, consulte [Ícones Padrão.](vis-std-icons.md)
 
-### <a name="dont-show-this-message-again"></a>Não mostrar esta mensagem novamente
+### <a name="dont-show-this-message-again"></a>Não mostre essa mensagem novamente
 
--   **Se uma caixa de diálogo de aviso precisar dessa opção, reconsidere o aviso e sua frequência.** Se ele tem todas as características de um bom aviso (envolve risco e é imediatamente relevante, acionável, não óbvio e incomum), não deve fazer sentido para os usuários suprimirem.
+-   **Se uma caixa de diálogo de aviso precisar dessa opção, refrescar o aviso e sua frequência.** Se ele tiver todas as características de um bom aviso (envolve risco e é imediatamente relevante, a ação, não óbvio e pouco frequente), não deve fazer sentido para os usuários suprimi-lo.
 
-Para obter mais diretrizes, consulte [caixas de diálogo](win-dialog-box.md).
+Para obter mais diretrizes, consulte Caixas [de diálogo](win-dialog-box.md).
 
 ### <a name="progressive-disclosure"></a>Divulgação progressiva
 
--   **Se você precisar incluir informações avançadas em uma mensagem de aviso, revele-as usando botões de divulgação progressiva** (por exemplo, "mostrar detalhes"). Fazer isso simplifica o aviso para uso típico. Não oculte as informações necessárias porque os usuários talvez não as encontrem.
--   **Não use "mostrar detalhes", a menos que realmente haja mais detalhes.** Não apenas redeclare as informações existentes em um formato diferente.
+-   **Se você precisa incluir informações avançadas em** uma mensagem de aviso, mostre-as usando botões de divulgação progressiva (por exemplo, "Mostrar detalhes"). Isso simplifica o aviso para uso típico. Não o oculta as informações necessárias porque os usuários podem não encontrá-los.
+-   **Não use "Mostrar detalhes", a menos que realmente haja mais detalhes.** Não apenas restate as informações existentes em um formato diferente.
 
-Para obter diretrizes de rotulamento, consulte [divulgação progressiva](ctrl-progressive-disclosure-controls.md).
+Para diretrizes de rotulagem, consulte [Divulgação progressiva.](ctrl-progressive-disclosure-controls.md)
 
 ### <a name="default-values"></a>Valores padrão
 
 -   **Selecione a resposta mais segura, menos destrutiva ou mais segura para ser o padrão.**
 
-## <a name="text"></a>Text
+## <a name="text"></a>Texto
 
 ### <a name="general"></a>Geral
 
--   **Remova o texto redundante.** Procure por ele em títulos, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de confirmação. Em geral, deixe texto completo em instruções e controles interativos e remova qualquer redundância dos outros locais.
--   **Não use os termos "aviso" ou "cuidado" no texto.** Quando [usado corretamente](vis-std-icons.md), o ícone de aviso comunica suficientemente que os usuários devem continuar com cautela.
+-   **Remova texto redundante.** Procure-o em títulos, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de commit. Em geral, deixe texto completo em instruções e controles interativos e remova qualquer redundância de outros locais.
+-   **Não use os termos "aviso" ou "cuidado" no texto.** Quando [usado corretamente,](vis-std-icons.md)o ícone de aviso comunica suficientemente que os usuários devem continuar com cuidado.
 
 **Incorreto:**
 
-![captura de tela de uso desnecessário de aviso no texto ](images/mess-warn-image23.png)
+![captura de tela do uso desnecessário de aviso no texto ](images/mess-warn-image23.png)
 
 Neste exemplo, o termo "aviso" é desnecessário.
 
 ### <a name="titles"></a>Títulos
 
--   **Use o título para identificar o comando ou recurso do qual o aviso veio.** Exceções:
-    -   Se um aviso for exibido por vários comandos diferentes, considere usar o nome do programa em vez disso.
-    -   Se esse título fosse redundante ou confuso com a instrução principal, use o nome do programa em vez disso.
+-   **Use o título para identificar o comando ou o recurso de onde o aviso veio.** Exceções:
+    -   Se um aviso for exibido por muitos comandos diferentes, considere usar o nome do programa.
+    -   Se esse título for redundante ou confuso com a instrução principal, use o nome do programa.
 
 **Incorreto:**
 
 ![captura de tela do título da caixa de diálogo de aviso de segurança ](images/mess-warn-image24.png)
 
-Neste exemplo, "aviso de segurança" não identifica o comando ou o recurso do qual veio o aviso.
+Neste exemplo, "Aviso de Segurança" não identifica o comando ou o recurso de onde o aviso veio.
 
--   **Não use o título para explicar o que fazer na caixa de diálogo** que é a finalidade da instrução principal.
--   Use [maiúsculas e minúsculas no estilo de título](glossary.md), sem pontuação final.
+-   **Não use o título para explicar o que fazer na caixa** de diálogo que é a finalidade da instrução principal.
+-   Use [a capitalização de estilo de título](glossary.md), sem terminar a pontuação.
 
 ### <a name="main-instructions"></a>Instruções principais
 
--   A instrução principal para um aviso se baseia em seu padrão de design:
+-   A instrução principal de um aviso baseia-se em seu padrão de design:
 
 
 
 | Padrão                        | Instrução principal                                               |
 |--------------------------------------|----------------------------------------------------------------------|
-| Reconhecimento<br/>                 | Descreva a condição ou o problema potencial.<br/>              |
-| Problema iminente<br/>          | Descreva o que o usuário precisa fazer agora.<br/>                   |
+| Reconhecimento<br/>                 | Descreva a condição ou o possível problema.<br/>              |
+| Problema iminente<br/>          | Descrever o que o usuário precisa fazer agora.<br/>                   |
 | Confirmação de ação arriscada<br/> | Faça uma pergunta para determinar se o usuário deseja continuar.<br/> |
 
 
@@ -324,17 +292,17 @@ Neste exemplo, "aviso de segurança" não identifica o comando ou o recurso do q
  
 
 -   ![captura de tela de uma notificação de bateria fraca ](images/mess-warn-image25.png)
--   Neste exemplo, a notificação de bateria fraca é um aviso de conscientização, portanto, a instrução principal descreve a condição.
--   ![captura de tela de alterar a bateria imediatamente aviso ](images/mess-warn-image1.png)
--   Neste exemplo, a caixa de diálogo de bateria fraca é um problema iminente, portanto, a instrução principal descreve o que o usuário precisa fazer agora.
--   **Seja conciso Use apenas uma única frase completa.** Remova a instrução principal para as informações essenciais. Se você precisar explicar algo mais, use uma instrução complementar.
--   **Use palavras como "Now" e "imediatamente" se o usuário precisar agir imediatamente.** Não use essas palavras se não houver urgência.
--   **Seja específico se houver objetos envolvidos, forneça seus nomes completos.**
--   Use [a capitalização no estilo de frase](glossary.md).
+-   Neste exemplo, a notificação de bateria fraca é um aviso de reconhecimento, portanto, a instrução principal descreve a condição.
+-   ![captura de tela do aviso de bateria de alteração imediatamente ](images/mess-warn-image1.png)
+-   Neste exemplo, a caixa de diálogo bateria fraca é um problema iminente, portanto, a instrução principal descreve o que o usuário precisa fazer agora.
+-   **Seja conciso, use apenas uma única frase completa.** Desmtrua a instrução principal para as informações essenciais. Se você precisa explicar mais alguma coisa, use uma instrução complementar.
+-   **Use palavras como "agora" e "imediatamente" se o usuário deve agir imediatamente.** Não use essas palavras se não houver urgência.
+-   **Seja específico se houver objetos envolvidos, dê seus nomes completos.**
+-   Use [a capitalização de estilo de frase](glossary.md).
 
 ### <a name="supplemental-instructions"></a>Instruções complementares
 
--   A instrução complementar para um aviso se baseia em seu padrão de design:
+-   A instrução complementar para um aviso baseia-se em seu padrão de design:
 
 
 
@@ -342,25 +310,25 @@ Neste exemplo, "aviso de segurança" não identifica o comando ou o recurso do q
 |--------------------------------------|------------------------------------------------------------------------------------|
 | Reconhecimento<br/>                 | Explique a implicação e por que ela é importante.<br/>                        |
 | Problema iminente<br/>          | Explique a condição e por que ela é importante.<br/>                          |
-| Confirmação de ação arriscada<br/> | Explique quaisquer motivos não óbvios pelos quais o usuário talvez não queira continuar.<br/> |
+| Confirmação de ação arriscada<br/> | Explique os motivos não óbvios pelos quais o usuário talvez não queira continuar.<br/> |
 
 
 
  
 
--   **Não repita a instrução principal com uma palavra ligeiramente diferente.** Em vez disso, omita a instrução complementar se não houver mais a adicionar.
--   Use frases completas, maiúsculas e minúsculas no estilo da frase e pontuação final.
+-   **Não repita a instrução principal com um texto ligeiramente diferente.** Em vez disso, omita a instrução complementar se não houver mais a adicionar.
+-   Use frases completas, capitalização de estilo de frase e pontuação final.
 
-### <a name="commit-buttons"></a>Botões de confirmação
+### <a name="commit-buttons"></a>Botões de commit
 
--   Para caixas de diálogo de aviso, os botões de confirmação se baseiam em seu padrão de design:
+-   Para caixas de diálogo de aviso, os botões de confirmação são baseados em seu padrão de design:
 
 
 
-| Padrão               | Botões de confirmação        |
+| Padrão               | Botões de commit        |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Reconhecimento<br/>                 | Fechar. Não use OK porque ele sugere que problemas potenciais estão OK.<br/>                              |
-| Problema iminente<br/>          | Um botão de comando ou link de comando para cada opção ou OK se a ação ocorrer fora da caixa de diálogo.<br/> |
+| Reconhecimento<br/>                 | Fechar. Não use OK porque sugere que os possíveis problemas estão ok.<br/>                              |
+| Problema iminente<br/>          | Um botão de comando ou um link de comando para cada opção ou OK se a ação ocorrer fora da caixa de diálogo.<br/> |
 | Confirmação de ação arriscada<br/> | Sim, não.<br/>                                                                                             |
 
 
@@ -369,17 +337,17 @@ Neste exemplo, "aviso de segurança" não identifica o comando ou o recurso do q
 
 -   **Incorreto:**
 -   ![captura de tela da caixa de diálogo de aviso com o botão OK ](images/mess-warn-image26.png)
--   Os problemas não estão OK, portanto, use fechar.
+-   Os problemas não estão ok, portanto, use Fechar em vez disso.
 
 ## <a name="documentation"></a>Documentação
 
-Ao fazer referência a avisos:
+Ao se referir a avisos:
 
--   Se o aviso faz uma pergunta, consulte um aviso por sua pergunta; caso contrário, use a instrução principal. Se a pergunta ou a instrução principal for longa ou detalhada, resuma-a.
+-   Se o aviso faz uma pergunta, consulte um aviso por sua pergunta; caso contrário, use a instrução principal. Se a pergunta ou a instrução principal for longa ou detalhada, resumi-a.
 -   Se necessário, você pode se referir a uma caixa de diálogo de aviso como uma mensagem.
--   Quando possível, formate o texto usando negrito. Caso contrário, coloque o texto entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja o texto usando negrito. Caso contrário, coloque o texto entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na mensagem **deseja exibir os itens não seguros?** , clique em Sim.
+Exemplo: na **mensagem Você deseja exibir os itens não secretivos?** , clique em Sim.
 
  
 

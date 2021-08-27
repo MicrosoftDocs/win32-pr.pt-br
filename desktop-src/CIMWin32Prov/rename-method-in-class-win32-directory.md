@@ -2,7 +2,7 @@
 description: Renomeia o arquivo de entrada de diretório especificado no caminho do objeto.
 ms.assetid: 8bfe1b69-5f93-4408-a742-f03a9cb16bfe
 ms.tgt_platform: multiple
-title: Método Rename da classe Win32_Directory
+title: Renomear o método da Win32_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 874151e1ff8c9feca375df3eb441665863d1070d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 86b6bd35b14ee2a342dee27615c1ff21d9274a5f3020c4f804df5065f430813f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077436"
 ---
-# <a name="rename-method-of-the-win32_directory-class"></a>Método Rename da classe do \_ diretório Win32
+# <a name="rename-method-of-the-win32_directory-class"></a>Renomear o método da classe De diretório \_ Win32
 
-O método **renomear** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) renomeia o arquivo de entrada de diretório especificado no caminho do objeto. Não haverá suporte para renomear se o destino estiver em outra unidade ou se for necessário substituir um arquivo lógico existente.
+O **método renomear** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) renomeia o arquivo de entrada de diretório especificado no caminho do objeto. Não há suporte para renomeação se o destino estiver em outra unidade ou se for necessário sobrescrever um arquivo lógico existente.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,13 +45,13 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Novo nome totalmente qualificado do arquivo (ou diretório). Exemplo: c: \\ temp \\newfile.txt.
+Nome totalmente qualificado do arquivo (ou diretório). Exemplo: c: \\ temp \\newfile.txt.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo tiver sido renomeado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido renomeado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -128,7 +128,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -148,19 +148,19 @@ Um parâmetro especificado não é válido.
 
 ## <a name="remarks"></a>Comentários
 
-Para renomear uma pasta, primeiro associe-se à pasta em questão e, em seguida, chame o método Rename. Como o único parâmetro para o método, passe o novo nome da pasta como um nome de caminho completo. Por exemplo, se a pasta no backup de logs de scripts C: \\ \\ \\ for renomeada como c: \\ script \\ arquivo, você deverá passar \\ o arquivo c: scripts \\ como o nome de pasta completo. Passar somente o nome da pasta-arquivo-resulta em um erro de caminho inválido.
+Para renomear uma pasta, primeiro a bind à pasta em questão e, em seguida, chame o método Renomear. Como o único parâmetro para o método , passe o novo nome para a pasta como um nome de caminho completo. Por exemplo, se a pasta no Backup de Logs de Scripts C: for renomeada C: Arquivo de Scripts, você deverá passar \\ \\ \\ \\ \\ C: \\ Arquivo morto de scripts como o \\ nome completo da pasta. Passar apenas o nome da pasta – Arquivo Morto – resulta em um erro de caminho inválido.
 
-A classe de diretório Win32 não \_ fornece um método de uma etapa para mover pastas. Em vez disso, mover uma pasta geralmente envolve duas etapas:
+A classe Diretório Win32 \_ não fornece um método de uma etapa para mover pastas. Em vez disso, mover uma pasta geralmente envolve duas etapas:
 
 <dl> 1. Copiando a pasta para seu novo local  
 2. Excluindo a pasta original  
 </dl>
 
-A única exceção para esse processo de duas etapas envolve mover uma pasta para um novo local na mesma unidade. Por exemplo, suponha que você deseja mover C: \\ Temp para c: \\ scripts \\ arquivos temporários \\ arquivo morto. Desde que o local atual e o novo local estejam na mesma unidade, você pode mover a pasta simplesmente chamando o método Rename e passando o novo local como o parâmetro Method. Essa abordagem permite efetivamente que você mova a pasta em uma única etapa. No entanto, o script falhará se a unidade atual e a nova unidade forem diferentes. Uma tentativa de Renomear C: \\ Temp para D: \\ Temp falha com um erro "a unidade não é o mesmo".
+A única exceção para esse processo de duas etapas envolve mover uma pasta para um novo local na mesma unidade. Por exemplo, suponha que você queira mover C: \\ Temp para C: \\ Scripts de arquivos \\ \\ temporários. Desde que o local atual e o novo local estão na mesma unidade, você pode mover a pasta simplesmente chamando o método Renomear e passando o novo local como o parâmetro de método. Essa abordagem permite efetivamente que você mova a pasta em uma única etapa. No entanto, o script falhará se a unidade atual e a nova unidade são diferentes. Uma tentativa de renomear C: \\ Temp para D: \\ Temp falha com um erro "Unidade não é a mesma".
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir, a partir da amostra [mover uma pasta usando o WMI](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) VBScript na galeria do TechNet, usa o método Rename para mover a pasta c: \\ scripts para C: \\ Admins \\ documentam o \\ \\ VBScript.
+O código a seguir, da amostra Mover uma Pasta Usando O VBScript do [WMI](https://Gallery.TechNet.Microsoft.Com/f4f9643c-d7ed-4f54-b155-c6515396431f) na Galeria do TechNet, usa o método Renomear para mover a pasta C: Scripts para \\ C: Documentos administradores Arquivo \\ \\ \\ \\ VBScript.
 
 
 ```VB
@@ -186,8 +186,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -199,7 +199,7 @@ Next
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Diretório Win32**](win32-directory.md)
+[**Diretório \_ Win32**](win32-directory.md)
 </dt> </dl>
 
  

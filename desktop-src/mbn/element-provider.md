@@ -16,26 +16,26 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5c5baad13a99f021c676f135714be7cd54ab008c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 73d9018797770f206dbb518685c7b5dac5a6f9af
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479522"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982719"
 ---
 # <a name="span-idwwan_profile_v4element_providerspanprovider"></a><span id="WWAN_profile_v4.element_Provider"></span>Provedor
 
 Especifica um provedor de rede preferencial em uma lista de provedores a serem usados durante o roaming.
 
-O valor desse elemento é uma instância do tipo complexo v1 [**ProviderType**](./schema-providertype-complextype.md) .
+O valor desse elemento é uma instância do tipo complexo [**providerType**](./schema-providertype-complextype.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<DataRoamingPartners>](element-dataroamingpartners.md)  
-**<Provider>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;DataRoamingPartners&gt;](element-dataroamingpartners.md)  
+**&lt;Provedor&gt;**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Provider>
@@ -60,7 +60,7 @@ Nenhum.
 
 | Elemento pai | Descrição | 
 |----------------|-------------|
-| <a href="element-dataroamingpartners.md">DataRoamingPartners</a> | <p>Especifica uma lista de provedores de rede preferenciais durante o roaming.</p><p>Para obter detalhes, consulte a documentação do elemento v1 <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>DataRoamingPartners</strong></a> .</p> | 
+| <a href="element-dataroamingpartners.md">DataRoamingPartners</a> | <p>Especifica uma lista de provedores de rede preferenciais ao roaming.</p><p>Para obter detalhes, consulte a documentação do <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>elemento DataRoamingPartners</strong></a> v1.</p> | 
 
 
  
@@ -68,7 +68,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

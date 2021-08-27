@@ -1,6 +1,6 @@
 ---
 title: Estrutura de CD3DX12_PIPELINE_STATE_STREAM1 (D3dx12. h)
-description: Uma estrutura auxiliar para criar e trabalhar com os Estados de pipeline de computação e elementos gráficos por meio de uma interface combinada. Consulte D3D12 \_ gráficos \_ pipeline \_ State \_ DESC e D3D12 \_ Compute \_ pipeline \_ State \_ desc. | Estrutura de CD3DX12_PIPELINE_STATE_STREAM1 (D3dx12. h)
+description: Uma estrutura auxiliar para criar e trabalhar com os Estados de pipeline de computação e elementos gráficos por meio de uma interface combinada. Consulte [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) e [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
 ms.assetid: 4D3E4D99-E820-4220-92F3-4924791E780F
 keywords:
 - Estrutura de CD3DX12_PIPELINE_STATE_STREAM1
@@ -15,18 +15,20 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd04f58f4f123850c60b67ff9358f6f1f934373
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 219b198ae5c2da6d6e74db933d4c26771aa63975
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812534"
 ---
-# <a name="cd3dx12_pipeline_state_stream1-structure"></a>\_ \_ Estrutura STREAM1 do estado do pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream1-structure"></a>Estrutura de CD3DX12_PIPELINE_STATE_STREAM1
 
-Uma estrutura auxiliar para criar e trabalhar com os Estados de pipeline de computação e elementos gráficos por meio de uma interface combinada. Consulte [**D3D12 \_ gráficos \_ pipeline \_ State \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) e [**D3D12 \_ Compute \_ pipeline \_ State \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
+Uma estrutura auxiliar para criar e trabalhar com os Estados de pipeline de computação e elementos gráficos por meio de uma interface combinada. Consulte [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) e [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
 
-\_ \_ \_ O estado do pipeline do CD3DX12 STREAM1 dá suporte à atualização dos criadores de outono do Windows 10 com novos recursos, como exibir a instanciação.
+CD3DX12_PIPELINE_STATE_STREAM1 dá suporte ao Windows 10 Fall Creators Update com novos recursos, como exibir a instanciação.
+
+Consulte [CD3DX12_PIPELINE_STATE_STREAM2](cd3dx12-pipeline-state-stream2.md) para obter suporte para o Build do sistema operacional 19041 + (onde há um pipeline do sombreador de malha).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,38 +70,38 @@ struct CD3DX12_PIPELINE_STATE_STREAM1 {
 
 <dl> <dt>
 
-**CD3DX12 \_ \_ de estado \_ de pipeline STREAM1 ()**
+**CD3DX12_PIPELINE_STATE_STREAM1 ()**
 </dt> <dd>
 
-Cria uma instância nova e não inicializada de um STREAM1 de \_ estado de pipeline CD3DX12 \_ \_ .
+Cria uma nova instância, não inicializada, de um CD3DX12_PIPELINE_STATE_STREAM1.
 
 </dd> <dt>
 
-**\_ \_ Estado de pipeline CD3DX12 \_ STREAM1 (const \_ D3D12 \_ Graphics \_ estado pipeline \_ desc& DESC)**
+**CD3DX12_PIPELINE_STATE_STREAM1 (const D3D12_GRAPHICS_PIPELINE_STATE_DESC& DESC)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ estado de pipeline CD3DX12 \_ \_ STREAM1, inicializada com valores copiados de uma estrutura **\_ \_ \_ STREAM1 de estado de pipeline CD3DX12** .
+Cria uma nova instância de uma CD3DX12_PIPELINE_STATE_STREAM1, inicializada com valores copiados de uma estrutura de **CD3DX12_PIPELINE_STATE_STREAM1** .
 
 </dd> <dt>
 
-**\_ \_ Estado de pipeline CD3DX12 \_ STREAM1 (const D3D12 \_ COMPUTE \_ pipeline \_ estado \_ desc& DESC)**
+**CD3DX12_PIPELINE_STATE_STREAM1 (const D3D12_COMPUTE_PIPELINE_STATE_DESC& DESC)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ estado de pipeline CD3DX12 \_ \_ STREAM1, inicializada com valores copiados de uma estrutura **\_ \_ \_ STREAM1 de estado de pipeline CD3DX12** .
+Cria uma nova instância de uma CD3DX12_PIPELINE_STATE_STREAM1, inicializada com valores copiados de uma estrutura de **CD3DX12_PIPELINE_STATE_STREAM1** .
 
 </dd> <dt>
 
 **GraphicsDescV0()**
 </dt> <dd>
 
-Retorna o conteúdo do \_ objeto STREAM1 do estado do pipeline CD3DX12 \_ \_ como um \_ estado de pipeline de gráficos D3D12 \_ \_ \_ estrutura desc por valor. Observe que \_ o estado de pipeline de gráficos D3D12 \_ \_ \_ DESC não inclui o membro **cs** , portanto, esse valor é perdido na conversão.
+Retorna o conteúdo do objeto CD3DX12_PIPELINE_STATE_STREAM1 como uma estrutura de D3D12_GRAPHICS_PIPELINE_STATE_DESC por valor. Observe que D3D12_GRAPHICS_PIPELINE_STATE_DESC não inclui o membro **cs** , portanto, esse valor é perdido na conversão.
 
 </dd> <dt>
 
 **ComputeDescV0()**
 </dt> <dd>
 
-Retorna o conteúdo do \_ objeto STREAM1 do estado do pipeline CD3DX12 \_ \_ como uma \_ estrutura desc de estado do pipeline de computação D3D12 \_ \_ \_ por valor. Observe que \_ \_ \_ o estado Desc do pipeline de computação D3D12 não \_ inclui os membros **InputLayout**, **IBStripCutValue**, **PrimitiveTopologyType**, **vs**, **GS**, **StreamOutput**, **HS**, **DS**, **PS**, **blendstate**, **DepthStencilState**, **DSVFormat**, **RasterizerState**, **NumRootSignature**, **RTVFormats**, **SampleDesc** ou **SampleMask** , para que esses valores sejam perdidos na conversão.
+Retorna o conteúdo do objeto CD3DX12_PIPELINE_STATE_STREAM1 como uma estrutura de D3D12_COMPUTE_PIPELINE_STATE_DESC por valor. Observe que D3D12_COMPUTE_PIPELINE_STATE_DESC não inclui os membros **InputLayout**, **IBStripCutValue**, **PrimitiveTopologyType**, **vs**, **GS**, **StreamOutput**, **HS**, **DS**, **PS**, **blendstate**, **DepthStencilState**, **DSVFormat**, **RasterizerState**, **NumRootSignature**, **RTVFormats**, **SampleDesc** ou **SampleMask** , para que esses valores sejam perdidos na conversão.
 
 </dd> <dt>
 
@@ -252,45 +254,19 @@ Descreve um PSO armazenado em cache.
 
 ## <a name="remarks"></a>Comentários
 
-[**CD3DX12 \_ O \_ \_ fluxo de estado do pipeline**](https://www.bing.com/search?q=**CD3DX12\_PIPELINE\_STATE\_STREAM**) dá suporte à atualização dos criadores de outono do Windows 10, mas não dá suporte a tipos de subobjetos adicionados à atualização de criadores de outono do Windows 10, como para a criação de instâncias de exibição. Para dar suporte aos novos tipos de subobjetos, use CD3DX12 \_ pipeline \_ State \_ STREAM1 em vez disso.
+o [CD3DX12_PIPELINE_STATE_STREAM](cd3dx12-pipeline-state-stream.md) dá suporte à Windows 10 Fall Creators Update, mas não dá suporte a tipos de subobjetos adicionados na atualização Windows 10 de criadores de outono, como para exibição de instanciação. Para dar suporte aos novos tipos de subobjetos, use **CD3DX12_PIPELINE_STATE_STREAM1** em vez disso.
 
-As variáveis de membro acessíveis dessa estrutura são todos os TYPEDEFs do \_ modelo de \_ subobjeto Stream do estado do pipeline CD3DX12 \_ \_ , que combina os dados do marcador de tipo de subobjeto e subobjeto em um único objeto adequado para uma descrição de fluxo.
-
-Esses TYPEDEFs são:
-
-<dl> </dl>
+As variáveis de membro acessíveis dessa estrutura são todos os TYPEDEFs do modelo de [**CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT**](/windows/win32/direct3d12/cd3dx12-pipeline-state-stream-subobject) , que combina os dados de tipo de subobjeto-marcador e subobjeto em um único objeto adequado para uma descrição de fluxo.
 
 ## <a name="requirements"></a>Requisitos
 
-
-
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
-
-
+| parâmetro | [D3dx12. h](https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h) |
 
 ## <a name="see-also"></a>Confira também
 
-<dl> <dt>
-
-[Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)
-</dt> <dt>
-
-[**\_Fluxo de \_ estado do pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream.md)
-</dt> <dt>
-
-[**Desc. de estado do pipeline de \_ gráficos D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc)
-</dt> <dt>
-
-[**\_Desc de \_ estado do pipeline de computação D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
-
+* [Estruturas auxiliares para D3D12](helper-structures-for-d3d12.md)
+* [**CD3DX12_PIPELINE_STATE_STREAM**](cd3dx12-pipeline-state-stream.md)
+* [**D3D12_GRAPHICS_PIPELINE_STATE_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc)
+* [**D3D12_COMPUTE_PIPELINE_STATE_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc)

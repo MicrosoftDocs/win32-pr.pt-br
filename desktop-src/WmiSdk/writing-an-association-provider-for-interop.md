@@ -1,37 +1,37 @@
 ---
-description: Um provedor de associação fornece um mecanismo para registrar perfis e associá-los a perfis que são implementados em namespaces diferentes.
+description: Um provedor de associação fornece um mecanismo para registrar perfis e associá-los a perfis implementados em namespaces diferentes.
 ms.assetid: e6aab944-4ed8-4678-ad35-426f7b4f9a35
 ms.tgt_platform: multiple
-title: Escrevendo um provedor de associação para interoperabilidade
+title: Escrevendo um provedor de associação para interop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d45ceebf9f3465bf9485f4105d9ea2e4438a25c9d169193a8b68c19669b51b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 57ef4e73c35c942e56b2636b7fced4c7e468e120
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794266"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887435"
 ---
-# <a name="writing-an-association-provider-for-interop"></a>Escrevendo um provedor de associação para interoperabilidade
+# <a name="writing-an-association-provider-for-interop"></a>Escrevendo um provedor de associação para interop
 
-Um provedor de associação fornece um mecanismo para registrar perfis e associá-los a perfis que são implementados em namespaces diferentes.
+Um provedor de associação fornece um mecanismo para registrar perfis e associá-los a perfis implementados em namespaces diferentes.
 
-Provedores de associação são usados para expor perfis padrão, como um perfil de energia. Isso é feito escrevendo um provedor de associação no namespace root/Interop que expõe instâncias de associação implementando uma classe, que é derivada do [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)). O provedor deve ser registrado tanto na raiz/na interoperabilidade quanto na raiz/ <implemented> namespace para dar suporte à passagem entre namespaces.
+Provedores de associação são usados para expor perfis padrão, como um perfil de energia. Isso é feito escrevendo um provedor de associação no namespace raiz/de interop que expõe instâncias de associação implementando uma classe , que é derivada de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)). O provedor deve ser registrado na raiz/interop e no namespace raiz/implementado para dar suporte à travessia entre &lt; &gt; namespaces.
 
-Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associação sempre que uma consulta de associação é executada no namespace root/Interop.
+Windows A Instrumentação de Gerenciamento (WMI) carrega o provedor de associação sempre que uma consulta de associação é executado no namespace raiz/de interop.
 
-**Para implementar um provedor de associação para interoperabilidade**
+**Para implementar um provedor de associação para interop**
 
-1.  Derive uma classe do [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) e crie uma instância estática dessa classe derivada no namespace root \\ Interop. No mínimo, as seguintes propriedades devem ser propagadas com valores válidos:
+1.  Derive uma classe de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) e crie uma instância estática dessa classe derivada no namespace de \\ interop raiz. No mínimo, as seguintes propriedades devem ser propagadas com valores válidos:
 
-    -   [**InstanceID**](/previous-versions//ee309375(v=vs.85))
-    -   [**Registeredname**](/previous-versions//ee309375(v=vs.85))
+    -   [**Instanceid**](/previous-versions//ee309375(v=vs.85))
+    -   [**RegisteredName**](/previous-versions//ee309375(v=vs.85))
     -   [**RegisteredOrganization**](/previous-versions//ee309375(v=vs.85))
     -   [**RegisteredVersion**](/previous-versions//ee309375(v=vs.85))
 
-    Embora [**InstanceId**](/previous-versions//ee309375(v=vs.85)) defina exclusivamente a instância do **\_ RegisteredProfile CIM**, a combinação de **registeredname**, **RegisteredOrganization** e **RegisteredVersion** deve identificar exclusivamente o perfil registrado no escopo da organização. Para obter mais informações sobre as propriedades individuais, consulte [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+    Embora [**InstanceID**](/previous-versions//ee309375(v=vs.85)) defina exclusivamente a instância do **CIM \_ RegisteredProfile,** a combinação de **RegisteredName,** **RegisteredOrganization** e **RegisteredVersion** deve identificar exclusivamente o perfil registrado dentro do escopo da organização. Para obter mais informações sobre as propriedades individuais, consulte [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
 
-    O exemplo de código a seguir descreve a sintaxe para derivar a classe **ProcessProfile** de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) e preencher a instância estática.
+    O exemplo de código a seguir descreve a sintaxe para derivar a **classe ProcessProfile** de [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) e popular a instância estática.
 
     ```syntax
     class ProcessProfile : CIM_RegisteredProfile
@@ -49,15 +49,15 @@ Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associa�
     ```
 
     > [!Note]  
-    > para clientes Windows, a propriedade **RegisteredOrganization** deve ser definida como 1 e a propriedade **OtherRegisteredOrganization** definida como "Microsoft".
+    > Para Windows clientes, a propriedade **RegisteredOrganization** deve ser definida como 1 e a propriedade **OtherRegisteredOrganization** definida como "Microsoft".
 
      
 
-2.  Crie um provedor que retorne instâncias de associação do [**CIM \_ ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile). Esse é um processo de duas etapas.
+2.  Crie um provedor que retorna instâncias de associação de [**\_ ElementConformsToProfile do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) Esse é um processo de duas etapas.
 
-    1.  Crie uma classe que seja derivada do [**CIM \_ ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) nos namespaces de interoperabilidade e implementação. Como o mesmo perfil pode ser implementado por diferentes fornecedores, o nome da classe deve ser exclusivo. A Convenção de nomenclatura recomendada é " <Organization> \_ <ProductName> \_ <ClassName> \_ <Version> ". A propriedade **ConformantStandard** ou **managedelement** deve especificar o qualificador **\_ targetNamespace de MSFT** que contém o namespace ao qual essa classe pertence.
+    1.  Crie uma classe derivada de [**\_ ElementConformsToProfile do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) nos namespaces de interop e implementação. Como o mesmo perfil pode ser implementado por fornecedores diferentes, o nome da classe deve ser exclusivo. A convenção de nomen efetivação recomendada é " &lt; Organization &gt; \_ &lt; ProductName &gt; \_ &lt; ClassName &gt; \_ &lt; Version &gt; ". A propriedade **ConformantStandard** ou **ManagedElement** deve especificar o qualificador **MSFT \_ TargetNamespace** que contém o namespace ao qual essa classe pertence.
 
-        O exemplo de código a seguir descreve a sintaxe para derivar \_ a \_ classe Microsoft Process ElementConformsToProfile \_ v1 do [**CIM \_ ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no \\ namespace root Interop. Neste exemplo, o \_ elemento gerenciado pelo processo Win32 faz referência ao \\ namespace raiz cimv2 usando o qualificador **\_ targetNamespace do MSFT** .
+        O exemplo de código a seguir descreve a sintaxe para derivar a classe \_ \_ ElementConformsToProfile v1 do \_ [**\_ ElementConformsToProfile do CIM ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no namespace de \\ interop raiz. Neste exemplo, o elemento gerenciado processo Win32 faz referência ao namespace raiz cimv2 usando o \_ \\ qualificador **MSFT \_ TargetNamespace.**
 
         ```syntax
         #pragma namespace("\\\\.\\root\\interop")
@@ -69,7 +69,7 @@ Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associa�
         };
         ```
 
-        O exemplo de código a seguir descreve a sintaxe para derivar \_ a \_ classe Microsoft Process ElementConformsToProfile \_ v1 do [**CIM \_ ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no \\ namespace root cimv2. Neste exemplo, o padrão de conformidade do [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) faz referência ao \\ namespace de interoperabilidade de raiz usando o qualificador **\_ targetNamespace do MSFT** .
+        O exemplo de código a seguir descreve a sintaxe para derivar a classe \_ \_ ElementConformsToProfile v1 do \_ [**\_ ElementConformsToProfile do CIM ElementConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no \\ namespace raiz cimv2. Neste exemplo, o padrão compatível com [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) faz referência ao namespace de interop raiz usando o \\ qualificador **MSFT \_ TargetNamespace.**
 
         ```syntax
         #pragma namespace("\\\\.\\root\\cimv2")
@@ -81,17 +81,17 @@ Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associa�
         };
         ```
 
-        Se o qualificador **\_ targetNamespace do MSFT** não for especificado na propriedade que faz referência ao namespace implementado, o filtro **ResultClass** da instrução "ASSOCIATORS of" não funcionará. por exemplo, se o qualificador **\_ TargetNamespace do MSFT** não for especificado, a seguinte Windows PowerShell linha de comando não retornará um objeto: **get-wmiobject-query "associators of {ProcessProfile. InstanceID = ' Process '}, em que resultclass = ' Win32 \_ Process '"**.
+        Se o qualificador **\_ MSFT TargetNamespace** não for especificado na propriedade que está referenciando o namespace implementado, o filtro **ResultClass** da instrução "Associatores de" não funcionará. Por exemplo, se o qualificador **MSFT \_ TargetNamespace** não for especificado, a seguinte linha de comando do Windows PowerShell não retornará um objeto: **get-wmiobject -query "associators de {ProcessProfile.InstanceID='Process'} em que resultclass='Win32 \_ Process'"**.
 
-        O qualificador de **\_ targetNamespace do MSFT** não pode apontar para um namespace em um computador remoto. Por exemplo, não há suporte para o namespace a seguir: MSFT \_ targetNamespace ( \\ \\ \\ \\ <RemoteMachine> \\ \\ \\ \\ interoperabilidade raiz).
+        O **qualificador \_ MSFT TargetNamespace** não pode apontar para um namespace em um computador remoto. Por exemplo, não há suporte para o namespace a seguir: MSFT \_ TargetNamespace( \\ \\ \\ \\ &lt; interop raiz RemoteMachine). &gt; \\ \\ \\ \\
 
-    2.  Escreva um provedor que retorne instâncias da classe derivada criada. Para obter mais informações, consulte [escrevendo um provedor de instância](writing-an-instance-provider.md). Ao acessar instâncias de namespace cruzado, talvez seja necessário acessar os níveis de segurança do cliente. Para obter mais informações, consulte [representando um cliente](impersonating-a-client.md).
+    2.  Escreva um provedor que retorna instâncias da classe derivada criada. Para obter mais informações, consulte [Escrevendo um provedor de instância](writing-an-instance-provider.md). Ao acessar instâncias entre namespaces, talvez seja preciso acessar os níveis de segurança do cliente. Para obter mais informações, consulte [Representando um cliente](impersonating-a-client.md).
 
-        O provedor de associação deve implementar os métodos [**IWbemServices. CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) e [**IWbemServices. GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) . A implementação do método [**IWbemServices.ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) é opcional. Como esse provedor pode ser acessado de ambos os \\ namespaces de interoperabilidade raiz e raiz \\ <implemented> , não deve haver uma dependência explícita em um namespace dentro do provedor.
+        O provedor de associação deve implementar os métodos [**IWbemServices.CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) e [**IWbemServices.GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) Implementar o método [**IWbemServices.ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) é opcional. Como esse provedor pode ser acessado da interop raiz e dos \\ \\ &lt; namespaces implementados por raiz, não deve haver uma dependência explícita em um namespace dentro &gt; do provedor.
 
-3.  Registre o provedor de associação nos \\ namespaces de interoperabilidade raiz e raiz \\ <implemented> . Para obter mais informações, consulte [registrando um provedor de instância](registering-an-instance-provider.md).
+3.  Registre o provedor de associação na \\ interop raiz e nos \\ &lt; &gt; namespaces implementados por raiz. Para obter mais informações, consulte [Registrando um provedor de instância](registering-an-instance-provider.md).
 
-    O exemplo de código a seguir descreve a sintaxe para registrar o provedor de associação no \\ namespace de interoperabilidade raiz.
+    O exemplo de código a seguir descreve a sintaxe para registrar o provedor de associação no namespace de \\ interop raiz.
 
     ```syntax
     #pragma namespace("\\\\.\\root\\interop")
@@ -131,22 +131,22 @@ Windows A instrumentação de gerenciamento (WMI) carrega o provedor de associa�
     };
     ```
 
-4.  Coloque o esquema para o [**\_ ElementConformsToProfile CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no namespace implementado. para clientes Windows, esse é o arquivo interop. mof que está localizado na pasta% systemroot% \\ system32 \\ wbem.
+4.  Coloque o esquema para o [**\_ ElementConformsToProfile do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) no namespace implementado. Para Windows clientes, esse é o arquivo interop.mof localizado na pasta %systemroot% \\ system32 \\ wbem.
 5.  Implemente a interface [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para seu provedor.
 
-    O WMI usa [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para carregar e inicializar um provedor. O método [**tialize deIWbemProviderInit.Ini**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) deve ser implementado de forma que permita que ele seja chamado para dois namespaces diferentes. Para obter mais informações, consulte [inicializando um provedor](initializing-a-provider.md).
+    O WMI [**usa IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para carregar e inicializar um provedor. O [**IWbemProviderInit.Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) deve ser implementado de uma maneira que permita que ele seja chamado para dois namespaces diferentes. Para obter mais informações, consulte [Inicializando um provedor](initializing-a-provider.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**\_ELEMENTCONFORMSTOPROFILE CIM**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile)
+[**Elemento \_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile)
 </dt> <dt>
 
-[**\_REGISTEREDPROFILE CIM**](/previous-versions//ee309375(v=vs.85))
+[**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85))
 </dt> <dt>
 
-[Gravando um provedor de instância](writing-an-instance-provider.md)
+[Escrevendo um provedor de instância](writing-an-instance-provider.md)
 </dt> <dt>
 
 [Registrando um provedor de instância](registering-an-instance-provider.md)

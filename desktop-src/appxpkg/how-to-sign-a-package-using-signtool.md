@@ -1,29 +1,29 @@
 ---
 title: Como assinar um pacote do aplicativo usando a SignTool
-description: Saiba como usar o SignTool para assinar seus pacotes de aplicativos do Windows para que eles possam ser implantados.
+description: saiba como usar o SignTool para assinar seus pacotes de aplicativo Windows para que eles possam ser implantados.
 ms.assetid: 93541EB4-3419-45D1-AA63-563E6C6D3055
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49f1abfdf0e43fb4d87dbf892f30c2a3ba63e775
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 2b4e4c0941cbcced30053b8fd31e44100adc9aa7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105764375"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474882"
 ---
 # <a name="how-to-sign-an-app-package-using-signtool"></a>Como assinar um pacote do aplicativo usando a SignTool
 
 > [!Note]  
-> Para assinar um pacote de aplicativos do Windows, consulte [assinar um pacote de aplicativo usando Signtool](/windows/msix/package/sign-app-package-using-signtool).
+> para assinar um pacote de aplicativo Windows, consulte [assinar um pacote de aplicativo usando SignTool](/windows/msix/package/sign-app-package-using-signtool).
 
  
 
-Saiba como usar o [**SignTool**](/windows-hardware/drivers/devtest/signtool) para assinar seus pacotes de aplicativos do Windows para que eles possam ser implantados. O [**SignTool**](/windows-hardware/drivers/devtest/signtool) faz parte do SDK (Software Development Kit) do Windows.
+saiba como usar o [**SignTool**](/windows-hardware/drivers/devtest/signtool) para assinar seus pacotes de aplicativo Windows para que eles possam ser implantados. o [**SignTool**](/windows-hardware/drivers/devtest/signtool) faz parte do SDK (Software Development Kit) do Windows.
 
-Todos os pacotes de aplicativos do Windows devem ser assinados digitalmente antes que possam ser implantados. Embora Microsoft Visual Studio 2012 e posterior possam assinar um pacote de aplicativo durante sua criação, os pacotes que você cria usando a ferramenta [MakeAppx.exe (App Packager)](make-appx-package--makeappx-exe-.md) do SDK do Windows não são assinados.
+todos os pacotes de aplicativos Windows devem ser assinados digitalmente antes que possam ser implantados. embora Microsoft Visual Studio 2012 e posterior possam assinar um pacote de aplicativo durante sua criação, os pacotes que você cria usando a ferramenta [MakeAppx.exe (app packager)](make-appx-package--makeappx-exe-.md) do SDK do Windows não são assinados.
 
 > [!Note]  
-> Você só pode usar [**SignTool**](/windows-hardware/drivers/devtest/signtool) para assinar seus pacotes de aplicativos do Windows no Windows 8 e posterior ou no windows Server 2012 e posterior. Você não pode usar **SignTool** para assinar pacotes de aplicativos em sistemas operacionais de nível inferior, como o Windows 7 ou o windows Server 2008 R2.
+> você só pode usar [**SignTool**](/windows-hardware/drivers/devtest/signtool) para assinar seus pacotes de aplicativos Windows no Windows 8 e posterior ou Windows Server 2012 e posterior. você não pode usar **SignTool** para assinar pacotes de aplicativos em sistemas operacionais de nível inferior, como Windows 7 ou Windows Server 2008 R2.
 
  
 
@@ -38,17 +38,17 @@ Todos os pacotes de aplicativos do Windows devem ser assinados digitalmente ante
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   [**SignTool**](/windows-hardware/drivers/devtest/signtool), que faz parte do SDK do Windows
--   Um certificado de assinatura de código válido, por exemplo, um arquivo de troca de informações pessoais (. pfx) criado com as ferramentas [**MakeCert.exe**](/windows-hardware/drivers/devtest/makecert) e [**Pvk2Pfx.exe**](/windows-hardware/drivers/devtest/pvk2pfx)
+-   um certificado de assinatura de código válido, por exemplo, um arquivo de informações pessoais Exchange (. pfx) criado com as ferramentas [**MakeCert.exe**](/windows-hardware/drivers/devtest/makecert) e [**Pvk2Pfx.exe**](/windows-hardware/drivers/devtest/pvk2pfx)
 
     Para obter informações sobre como criar um certificado de assinatura de código válido, consulte [como criar um certificado de assinatura de pacote de aplicativo](how-to-create-a-package-signing-certificate.md).
 
--   Um aplicativo do Windows empacotado, por exemplo, um arquivo. Appx criado usando a ferramenta [app Packager (MakeAppx.exe)](make-appx-package--makeappx-exe-.md)
+-   um aplicativo de Windows empacotado, por exemplo, um arquivo. appx criado usando a ferramenta do [app packager (MakeAppx.exe)](make-appx-package--makeappx-exe-.md)
 
 **Considerações adicionais**
 
 O certificado que você usa para assinar o pacote de aplicativo deve atender a estes critérios:
 
--   O nome da entidade do certificado deve corresponder ao atributo de **Editor** contido no elemento [**Identity**](/uwp/schemas/appxpackage/appxmanifestschema/element-identity) do arquivo de AppxManifest.xml armazenado no pacote. O nome do editor faz parte da identidade de um aplicativo do Windows empacotado, portanto, você precisa fazer com que o nome da entidade do certificado corresponda ao nome do editor do aplicativo. Isso permite que a identidade de pacotes assinados seja verificada em relação à assinatura digital. Para obter informações sobre erros de assinatura que podem surgir na assinatura de um pacote de aplicativo usando [**SignTool**](/windows-hardware/drivers/devtest/signtool), consulte a seção comentários de [como criar um certificado de assinatura de pacote de aplicativo](how-to-create-a-package-signing-certificate.md).
+-   o nome da entidade do certificado deve corresponder ao atributo **Publisher** que está contido no elemento [**Identity**](/uwp/schemas/appxpackage/appxmanifestschema/element-identity) do arquivo AppxManifest.xml armazenado no pacote. o nome do editor faz parte da identidade de um aplicativo Windows empacotado, portanto, você precisa fazer com que o nome da entidade do certificado corresponda ao nome do editor do aplicativo. Isso permite que a identidade de pacotes assinados seja verificada em relação à assinatura digital. Para obter informações sobre erros de assinatura que podem surgir na assinatura de um pacote de aplicativo usando [**SignTool**](/windows-hardware/drivers/devtest/signtool), consulte a seção comentários de [como criar um certificado de assinatura de pacote de aplicativo](how-to-create-a-package-signing-certificate.md).
 -   O certificado deve ser válido para assinatura de código. Isso significa que ambos os itens devem ser verdadeiros:
 
     -   O campo EKU (uso estendido de chave) do certificado deve ser desdefinido ou conter o valor de EKU para assinatura de código (1.3.6.1.5.5.7.3.3).
@@ -132,47 +132,18 @@ Mais comumente, o erro é 0x8007000B ( \_ formato inadequado do erro \_ ). Nesse
 **Para pesquisar o log de eventos**
 
 1.  Execute eventvwr. msc.
-2.  Abra o log de eventos: Visualizador de Eventos (local) > logs de aplicativos e serviços > Microsoft > Windows > AppxPackagingOM > Microsoft-Windows-AppxPackaging/Operational
+2.  abra o log de eventos: Visualizador de Eventos (Local) > Logs de aplicativos e serviços > microsoft > Windows > AppxPackagingOM > microsoft-Windows-AppxPackaging/operational
 3.  Procure o evento de erro mais recente.
 
 O erro interno geralmente corresponde a um destes:
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ID do evento</th>
-<th>Cadeia de caracteres de evento de exemplo</th>
-<th>Sugestão</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>150</td>
-<td>Erro 0x8007000B: O nome do editor de manifesto de aplicativo (CN = Contoso) deve coincidir com o nome do requerente do certificado de autenticação (CN = Contoso, C = US).</td>
-<td>O nome do editor de manifesto de aplicativo deve corresponder exatamente ao nome do assunto após a assinatura.
-<blockquote>
-[!Note]<br />
-Esses nomes são especificados entre aspas e são diferenciais de maiúsculas e minúsculas e de espaço em branco.
-</blockquote>
-<br/> Você pode atualizar a cadeia de caracteres de atributo do <strong>Publicador</strong> que é definida para o elemento <a href="/uwp/schemas/appxpackage/appxmanifestschema/element-identity"><strong>Identity</strong></a> no arquivo AppxManifest.xml para corresponder ao nome da entidade do certificado de autenticação pretendido. Ou então, selecione um certificado de autenticação diferente com um nome de entidade que corresponda ao nome do editor do manifesto do aplicativo. O nome do editor do manifesto e o nome da entidade do certificado estão listados na mensagem do evento.</td>
-</tr>
-<tr class="even">
-<td>151</td>
-<td>Erro 0x8007000B: O método de hash de assinatura especificado (SHA512) deve coincidir com o método de hash usado no mapa de blocos do pacote de aplicativos (SHA256).</td>
-<td>O hashAlgorithm especificado no parâmetro/FD está incorreto (consulte a etapa 1: determinar o algoritmo de hash a ser usado). Execute o <a href="/windows-hardware/drivers/devtest/signtool"><strong>SignTool</strong></a> novamente com o hashAlgorithm que corresponde ao mapa do bloco do pacote do aplicativo.</td>
-</tr>
-<tr class="odd">
-<td>152</td>
-<td>Erro 0x8007000B: O conteúdo do pacote de aplicativos deve ser validado em relação ao mapa de blocos.</td>
-<td>O pacote de aplicativos está corrompido e precisa ser recompilado para gerar um novo mapa de blocos. Para obter mais informações sobre como criar um pacote de aplicativo, consulte Criando um pacote de aplicativo com o <a href="make-appx-package--makeappx-exe-.md">app Packager</a> ou <a href="/previous-versions/hh975357(v=vs.110)">criando um pacote de aplicativo com o Visual Studio 2012</a>.</td>
-</tr>
-</tbody>
-</table>
+
+| ID do evento | Cadeia de caracteres de evento de exemplo | Sugestão | 
+|----------|----------------------|------------|
+| 150 | Erro 0x8007000B: O nome do editor de manifesto de aplicativo (CN = Contoso) deve coincidir com o nome do requerente do certificado de autenticação (CN = Contoso, C = US). | O nome do editor de manifesto de aplicativo deve corresponder exatamente ao nome do assunto após a assinatura.<blockquote>[!Note]<br />Esses nomes são especificados entre aspas e são diferenciais de maiúsculas e minúsculas e de espaço em branco.</blockquote><br /> você pode atualizar a cadeia de caracteres do atributo <strong>Publisher</strong> que é definida para o elemento <a href="/uwp/schemas/appxpackage/appxmanifestschema/element-identity"><strong>Identity</strong></a> no arquivo AppxManifest.xml para corresponder ao nome da entidade do certificado de autenticação pretendido. Ou então, selecione um certificado de autenticação diferente com um nome de entidade que corresponda ao nome do editor do manifesto do aplicativo. O nome do editor do manifesto e o nome da entidade do certificado estão listados na mensagem do evento. | 
+| 151 | Erro 0x8007000B: O método de hash de assinatura especificado (SHA512) deve coincidir com o método de hash usado no mapa de blocos do pacote de aplicativos (SHA256). | O hashAlgorithm especificado no parâmetro/FD está incorreto (consulte a etapa 1: determinar o algoritmo de hash a ser usado). Execute o <a href="/windows-hardware/drivers/devtest/signtool"><strong>SignTool</strong></a> novamente com o hashAlgorithm que corresponde ao mapa do bloco do pacote do aplicativo. | 
+| 152 | Erro 0x8007000B: O conteúdo do pacote de aplicativos deve ser validado em relação ao mapa de blocos. | O pacote de aplicativos está corrompido e precisa ser recompilado para gerar um novo mapa de blocos. para obter mais informações sobre como criar um pacote de aplicativo, consulte criando um pacote de aplicativo com o <a href="make-appx-package--makeappx-exe-.md">app packager</a> ou <a href="/previous-versions/hh975357(v=vs.110)">criando um pacote de aplicativo com o Visual Studio 2012</a>. | 
+
 
 
 
@@ -189,7 +160,7 @@ Depois que o pacote é assinado, o certificado que você usou para assinar o pac
 **Amostras**
 </dt> <dt>
 
-[Criar exemplo de pacote de aplicativo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
+[Criar exemplo de pacote de aplicativos](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
 </dt> <dt>
 
 **Conceitos**
@@ -204,7 +175,7 @@ Depois que o pacote é assinado, o certificado que você usou para assinar o pac
 [SignTool](/windows/desktop/SecCrypto/signtool)
 </dt> <dt>
 
-[App Packager (MakeAppx.exe)](make-appx-package--makeappx-exe-.md)
+[Empacotador de aplicativos (MakeAppx.exe)](make-appx-package--makeappx-exe-.md)
 </dt> <dt>
 
 [Como criar um certificado de assinatura de pacote de aplicativos](how-to-create-a-package-signing-certificate.md)

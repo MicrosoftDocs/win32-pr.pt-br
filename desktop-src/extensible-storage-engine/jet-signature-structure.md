@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura JET_SIGNATURE dados'
-title: estrutura JET_SIGNATURE de dados
+description: 'Saiba mais sobre: estrutura de JET_SIGNATURE'
+title: Estrutura de JET_SIGNATURE
 TOCTitle: JET_SIGNATURE Structure
 ms:assetid: 90d3fd56-be65-4126-b50c-b53e3c3f38f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269340(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9d254a392ade9daa43382d8418f2dda90729eddc81f6c3bbd7013d89ae8f2e74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 456eadecbaba7295753a18ec2ca739f5e3fc8391
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616186"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987819"
 ---
-# <a name="jet_signature-structure"></a>estrutura JET_SIGNATURE de dados
+# <a name="jet_signature-structure"></a>Estrutura de JET_SIGNATURE
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_signature-structure"></a>estrutura JET_SIGNATURE de dados
+## <a name="jet_signature-structure"></a>Estrutura de JET_SIGNATURE
 
-A **JET_SIGNATURE** contém informações que identificam exclusivamente um banco de dados.
+A estrutura de **JET_SIGNATURE** contém informações que identificam exclusivamente um banco de dados.
 
 ```cpp
     typedef struct {
@@ -45,13 +45,13 @@ A **JET_SIGNATURE** contém informações que identificam exclusivamente um banc
 
 Um número atribuído aleatoriamente.
 
-**logtimeCriar**
+**logtimeCreate**
 
-O [JET_LOGTIME](./jet-logtime-structure.md) no momento em que [JetCreateDatabase](./jetcreatedatabase-function.md) é executado.
+O [JET_LOGTIME](./jet-logtime-structure.md) no momento da [JetCreateDatabase](./jetcreatedatabase-function.md) é executado.
 
 **szComputerName**
 
-O valor de cadeia de caracteres opcional do nome NetBIOS para o computador. Esse valor pode não ser definido.
+O valor de cadeia de caracteres opcional do nome NetBIOS para o computador. Esse valor não pode ser definido.
 
 ### <a name="remarks"></a>Comentários
 
@@ -59,26 +59,13 @@ Isso pode ser encontrado como um elemento de [JET_DBINFOMISC](./jet-dbinfomisc-s
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

@@ -4,12 +4,12 @@ ms.assetid: c5238a2f-d69d-4ce5-a5aa-66a6c18d5f69
 title: Tipos de recurso (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ec6ec9b57a2e504c137d424b19c61f2353d685e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8b0f757eac93fac8c0ffd49641441fa4570824670dfcca9c3d271f954054548b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104558373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120044"
 ---
 # <a name="resource-types-direct3d-10"></a>Tipos de recurso (Direct3D 10)
 
@@ -176,17 +176,17 @@ Uma matriz de textura 2D com 6 texturas pode ser lida nos sombreadores com as fu
 
 ### <a name="3d-texture"></a>Textura 3D
 
-Um recurso Texture3D (também conhecido como textura de volume) contém um volume 3D de texels. Como é um recurso de textura, pode conter níveis de mipmap. Uma [**textura 3D**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture3d) totalmente preenchida é semelhante à ilustração a seguir.
+Um recurso Texture3D (também conhecido como textura de volume) contém um volume 3D de texels. Como é um recurso de textura, pode conter níveis de mipmap. Uma textura [**3D totalmente preenchida se**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture3d) parece com a ilustração a seguir.
 
 ![ilustração de um recurso de textura 3D](images/d3d10-resource-texture3d.png)
 
-Quando uma fatia de mipmap da textura 3D é vinculada como uma saída de destino de renderização (com um modo de exibição de renderização de destino), a textura 3D se comporta de forma idêntica à matriz de textura 2D com n fatias. A fatia de renderização específica é escolhida no estágio Geometry-Shader, declarando um componente escalar de dados de saída como o \_ valor do sistema RENDERTARGETARRAYINDEX VA.
+Quando uma fatia de mipmap da textura 3D é vinculada como uma saída de destino de renderização (com um modo de exibição de renderização de destino), a textura 3D se comporta de forma idêntica à matriz de textura 2D com n fatias. A fatia de renderização específica é escolhida no estágio geometry-shader, declarando um componente escalar dos dados de saída como o valor do sistema \_ RenderTargetArrayIndex do SV.
 
 Não há nenhum conceito de matriz de textura 3D; portanto, um sub-recurso de textura 3D é um nível de mipmap único.
 
 ### <a name="subresources"></a>Sub-recursos
 
-A API do Direct3D 10 faz referência a recursos inteiros ou subconjuntos de recursos. Para especificar a parte dos recursos, o Direct3D reinventau os subrecursos do termo, o que significa um subconjunto de um recurso.
+A API do Direct3D 10 faz referência a recursos inteiros ou subconjunto de recursos. Para especificar uma parte dos recursos, o Direct3D cunhou o termo sub-recursos, o que significa um subconjunto de um recurso.
 
 Um buffer é definido como um sub-recurso único. Texturas são um pouco mais complicadas, já que existem vários tipos diferentes de textura (1D, 2D, etc), e algumas suportam níveis de mipmap e/ou matrizes de textura. Começando com o caso mais simples, uma textura 1D é definida como um sub-recurso único, conforme mostrado na ilustração a seguir.
 
@@ -204,7 +204,7 @@ Pense nisso como uma textura única composta por três subtexturas. Cada subtext
 
 ### <a name="selecting-subresources"></a>Selecionando sub-recursos
 
-Algumas APIs acessam um recurso inteiro (por exemplo, [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource)), outras pessoas acessam uma parte de um recurso (por exemplo, [**UpdateSubresource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-updatesubresource) ou [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion)). As APIs que acessam uma parte de um recurso geralmente usam uma descrição de exibição ( [**como \_ \_ \_ DSV de matriz d3d10 TEX2D**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_tex2d_array_dsv)) para especificar os subrecursos a serem acessados.
+Algumas APIs acessam um recurso inteiro (por [**exemplo, CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource)), outras acessam uma parte de um recurso (por [**exemplo, UpdateSubresource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-updatesubresource) ou [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion)). As APIs que acessam uma parte de um recurso geralmente usam uma descrição de exibição (como [**D3D10 \_ TEX2D \_ ARRAY \_ DSV**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_tex2d_array_dsv)) para especificar as sub-fontes a acessar.
 
 Essas figuras ilustram os termos usados por uma descrição do modo de exibição ao acessar uma matriz de texturas.
 
@@ -232,15 +232,15 @@ Ou você pode usar esses dois tipos de fatias com o número de níveis de mipmap
 
 ![ilustração de escolha de vários sub-recursos](images/d3d10-resource-subresources-2.png)
 
-Independentemente do tipo de textura que você está usando, com ou sem mipmaps, com ou sem uma matriz de textura, você pode usar a função auxiliar, [**D3D10CalcSubresource**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource), para calcular o índice de um determinado subrecurso.
+Independentemente do tipo de textura que você está usando, com ou sem mipmaps, com ou sem uma matriz de textura, você pode usar a função [**auxiliar, D3D10CalcSubresource**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource), para calcular o índice de uma sub-fonte específica.
 
 ### <a name="strong-vs-weak-typing"></a>Tipo forte versus fraco
 
-Criar um recurso totalmente com tipo restringe o recurso ao formato com o qual ele foi criado. Isso permite que o tempo de execução Otimize o acesso, especialmente se o recurso for criado com sinalizadores indicando que ele não pode ser [mapeado](d3d10-graphics-programming-guide-resources-mapping.md) pelo aplicativo. Recursos criados com um tipo específico não podem ser reinterpretados usando o mecanismo de exibição.
+Criar um recurso totalmente com tipo restringe o recurso ao formato com o qual ele foi criado. Isso permite que o runtime otimize o acesso, especialmente se o recurso for criado com sinalizadores indicando que ele não pode [ser mapeado](d3d10-graphics-programming-guide-resources-mapping.md) pelo aplicativo. Recursos criados com um tipo específico não podem ser reinterpretados usando o mecanismo de exibição.
 
-Em um tipo menos recurso, o tipo de dados é desconhecido quando o recurso é criado pela primeira vez. O aplicativo deve escolher entre os formatos de tipo menos disponíveis (consulte o [**\_ formato dxgi**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)). Você deve especificar o tamanho da memória a alocar e se o tempo de execução precisará gerar as subtexturas em mipmap. No entanto, o formato exato dos dados (seja a memória interpretada como inteiros, valores de ponto flutuante, inteiros não atribuídos, etc.) não é determinado até que o recurso seja associado ao pipeline com um modo de exibição. Como o formato de textura permanece flexível até a textura ser associada ao pipeline, o recurso será referido como armazenamento com tipo fraco. O armazenamento com tipo fraco tem a vantagem de poder ser reutilizado ou reinterpretado (em outro formato), desde que o bit de componente do novo formato corresponda à contagem de bit do formato antigo.
+Em um recurso de tipo menor, o tipo de dados é desconhecido quando o recurso é criado pela primeira vez. O aplicativo deve escolher entre os formatos sem tipo disponíveis (consulte [**FORMATO DXGI \_**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)). Você deve especificar o tamanho da memória a alocar e se o tempo de execução precisará gerar as subtexturas em mipmap. No entanto, o formato exato dos dados (seja a memória interpretada como inteiros, valores de ponto flutuante, inteiros não atribuídos, etc.) não é determinado até que o recurso seja associado ao pipeline com um modo de exibição. Como o formato de textura permanece flexível até a textura ser associada ao pipeline, o recurso será referido como armazenamento com tipo fraco. O armazenamento com tipo fraco tem a vantagem de poder ser reutilizado ou reinterpretado (em outro formato), desde que o bit de componente do novo formato corresponda à contagem de bit do formato antigo.
 
-Um recurso único pode ser vinculado a vários estágios de pipeline, desde que cada um tenha um modo de exibição exclusivo que qualifique totalmente os formatos em cada local. Por exemplo, um recurso criado com o formato DXGI \_ \_ R32G32B32A32 sem \_ tipo pode ser usado como um formato dxgi \_ \_ R32G32B32A32 \_ float e um formato dxgi \_ \_ R32G32B32A32 \_ uint em locais diferentes no pipeline simultaneamente.
+Um recurso único pode ser vinculado a vários estágios de pipeline, desde que cada um tenha um modo de exibição exclusivo que qualifique totalmente os formatos em cada local. Por exemplo, um recurso criado com o formato DXGI \_ FORMAT \_ R32G32B32A32 TYPELESS pode ser usado como um \_ FORMATO DXGI \_ \_ R32G32B32A32 FLOAT e um \_ UINT DXGI \_ FORMAT \_ R32G32B32A32 \_ em diferentes locais no pipeline simultaneamente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

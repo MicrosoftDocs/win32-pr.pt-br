@@ -4,18 +4,18 @@ ms.assetid: 59332096-bdfe-4208-b99a-1f434652f287
 title: Filtro de renderização de tela inteira
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d331ff6f31d1c985c7e255b23381a289931da60
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5013bee81d92c1ade3da4574f576f519b94c025c60c563ab70a35d0956e82865
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102776"
 ---
 # <a name="full-screen-renderer-filter"></a>Filtro de renderização de tela inteira
 
 O filtro Renderização de Tela Inteira fornece renderização de vídeo de tela inteira em hardware mais antigo. As placas de vídeo mais novas podem ampliar o vídeo com eficiência suficiente para que o Renderização de Tela Inteira não seja necessário. Portanto, o uso desse filtro agora foi preterido.
 
-Não adicione manualmente esse filtro ao grafo de filtro. Se um aplicativo chamar [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)o Gerenciador do Graph de Filtro selecionará automaticamente o renderador de vídeo apropriado para o modo de tela inteira. A seleção é transparente para o aplicativo. Com as placas de vídeo atuais, é improvável que o Gerenciador de Grafo de Filtros selecione o Renderdor de Tela Inteira.
+Não adicione manualmente esse filtro ao grafo de filtro. Se um aplicativo chamar [**IVideoWindow::p ut \_ FullScreenMode,**](/windows/desktop/api/Control/nf-control-ivideowindow-put_fullscreenmode)o Gerenciador de filtros Graph selecionará automaticamente o renderador de vídeo apropriado para o modo de tela inteira. A seleção é transparente para o aplicativo. Com as placas de vídeo atuais, é improvável que o Gerenciador Graph Filtro selecione o Renderdor de Tela Inteira.
 
 
 
@@ -65,17 +65,17 @@ O Renderdor de Tela Inteira dá suporte a um conjunto estático de modos de exib
 
  
 
-(Todos os modos são RGB.) No entanto, essa lista está sujeita a alterações. Use o [**método IFullScreenVideoEx::GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) para obter informações sobre os modos. O Renderador de Tela Inteira sempre escolhe o modo de resolução mais baixa disponível, limitado por uma propriedade chamada fator de clipe *,* que determina quanto do vídeo o Renderador de Tela Inteira tem permissão para reclipe. Para obter mais informações, [**consulte IFullScreenVideoEx::GetClipFactor**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor).
+(Todos os modos são RGB.) No entanto, essa lista está sujeita a alterações. Use o método [**IFullScreenVideoEx:: GetModeInfo**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getmodeinfo) para obter informações sobre os modos. O processador de tela inteira sempre escolhe o modo de resolução mais baixa disponível, limitado por uma propriedade chamada *clip factor*, que determina a quantidade de vídeo que o processador de tela inteira pode recortar. Para obter mais informações, consulte [**IFullScreenVideoEx:: GetClipFactor**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-ifullscreenvideoex-getclipfactor).
 
-Quando o aplicativo executa ou pausa o grafo de filtro, o Renderdor de Tela Inteira alterna para o modo de exibição escolhido. Quando o grafo é interrompido, o Renderização de Tela Inteira restaura o modo de exibição original.
+Quando o aplicativo executa ou pausa o gráfico de filtro, o renderizador de tela completo alterna para o modo de exibição que foi escolhido. Quando o grafo para, o processador de tela inteira restaura o modo de exibição original.
 
-O Renderdor de Tela Inteira só pode funcionar como a janela ativa de primeiro plano. Se o usuário alterna para outro aplicativo, o Renderdor de Tela Inteira oculta o vídeo minimizando ou ocultando a janela de vídeo.
+O processador de tela inteira só pode funcionar como a janela ativa em primeiro plano. Se o usuário alternar para outro aplicativo, o processador de tela inteira ocultará o vídeo, minimizando ou ocultando a janela de vídeo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

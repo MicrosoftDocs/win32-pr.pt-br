@@ -4,26 +4,26 @@ description: Com uma caixa de seleção, os usuários tomarão uma decisão entr
 ms.assetid: 7c39987d-807b-41c1-9788-65c3d468b976
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 29666991d0a0659f7ff3a95f12953504b70c6dc782049ac8d93d70df73afa5d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90d8c342f24c1c34f20a7a8d7ec5f0e9e150fb80
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118040549"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884325"
 ---
 # <a name="check-boxes"></a>Caixas de seleção
 
 > [!NOTE]
-> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-Com uma caixa de seleção, os usuários tomarão uma decisão entre duas opções claramente opostas. O rótulo da caixa de seleção indica o estado selecionado, enquanto o significado do estado limpo deve ser o oposto não ambíguo do estado selecionado. Consequentemente, as caixas de seleção devem ser usadas apenas para alternar ou desligar uma opção ou selecionar ou **desmarcar um item.**
+Com uma caixa de seleção, os usuários tomarão uma decisão entre duas opções claramente opostas. O rótulo da caixa de seleção indica o estado selecionado, enquanto o significado do estado limpo deve ser o oposto não ambíguo do estado selecionado. Consequentemente, as **caixas de seleção devem ser usadas apenas para ativar ou desativar uma opção ou para selecionar ou desmarcar um item.**
 
 ![captura de tela de uma das quatro caixas de seleção selecionadas ](images/ctrl-check-boxes-image1.png)
 
 Um grupo típico de caixas de seleção.
 
 > [!Note]  
-> As diretrizes relacionadas [ao layout](vis-layout.md) são apresentadas em um artigo separado.
+> As diretrizes relacionadas ao [layout](vis-layout.md) são apresentadas em um artigo separado.
 
  
 
@@ -31,43 +31,43 @@ Um grupo típico de caixas de seleção.
 
 Para decidir, considere estas perguntas:
 
--   **A caixa de seleção é usada para alternar ou desligar uma opção ou selecionar ou desmarcar um item?** Se não, use outro controle.
--   **Os estados selecionados e limpos são opostos claros e não ambíguos?** Caso não, use [botões de rádio](ctrl-radio-buttons.md) ou uma lista [de](/windows/desktop/uxguide/ctrl-drop) listas listadas para que você possa rotular os estados de forma independente.
--   **Quando usado em um grupo, o grupo compreende opções independentes, das quais os usuários podem escolher zero ou mais?** Caso não, considere os controles para opções dependentes, como botões de opção e exibições [de árvore de caixa de seleção](ctrl-tree-views.md).
--   **Quando usado em um grupo, o grupo compreende opções dependentes, das quais os usuários devem escolher uma ou mais?** Se sim, use um grupo de caixas de seleção e tratar o erro quando nenhuma das opções estiver selecionada.
--   **O número de opções em um grupo é 10 ou menos?** Como o espaço de tela usado é proporcional ao número de opções, mantenha o número de caixas de seleção como 10 ou menos. Para mais de 10 opções, use uma lista [de caixas de seleção](ctrl-list-boxes.md).
--   **Um botão de opção seria uma opção melhor?** Quando as caixas de seleção são adequadas apenas para ligar ou desligar uma opção, os botões de opção podem ser usados para opções completamente diferentes. Se ambas as soluções são possíveis:
-    -   Use botões de rádio se o significado da caixa de seleção des limpa não for completamente óbvio.
+-   **A caixa de seleção é usada para ativar ou desativar uma opção ou para selecionar ou desmarcar um item?** Se não, use outro controle.
+-   **Os Estados selecionado e limpo são opostos claros e não ambíguos?** Caso contrário, use [botões de opção](ctrl-radio-buttons.md) ou uma [lista suspensa](/windows/desktop/uxguide/ctrl-drop) para que você possa rotular os Estados de forma independente.
+-   **Quando usado em um grupo, o grupo consiste em opções independentes, das quais os usuários podem escolher zero ou mais?** Caso contrário, considere os controles para as opções dependentes, como botões de opção e [exibições de árvore da caixa de seleção](ctrl-tree-views.md).
+-   **Quando usado em um grupo, o grupo é composto por opções dependentes, das quais os usuários devem escolher um ou mais?** Nesse caso, use um grupo de caixas de seleção e manipule o erro quando nenhuma das opções estiver selecionada.
+-   **O número de opções em um grupo é de 10 ou menos?** Como o espaço da tela usado é proporcional ao número de opções, mantenha o número de caixas de seleção para 10 ou menos. Para obter mais de 10 opções, use uma [lista de caixas de seleção](ctrl-list-boxes.md).
+-   **Um botão de opção seria uma opção melhor?** Onde as caixas de seleção são adequadas apenas para ativar ou desativar uma opção, os botões de opção podem ser usados para opções completamente diferentes. Se ambas as soluções forem possíveis:
+    -   Use botões de opção se o significado da caixa de seleção desmarcada não for completamente óbvio.
 
         **Incorreto:**
 
         ![captura de tela de uma caixa de seleção rotulada paisagem ](images/ctrl-check-boxes-image2.png)
 
-        Neste exemplo, a opção oposta de Paisagem não está clara, portanto, a caixa de seleção não é uma boa opção.
+        Neste exemplo, a escolha oposta da paisagem não é clara, portanto, a caixa de seleção não é uma boa opção.
 
         **Correto:**
 
-        ![captura de tela de dois botões de rádio ](images/ctrl-check-boxes-image3.png)
+        ![captura de tela de dois botões de opção ](images/ctrl-check-boxes-image3.png)
 
         Neste exemplo, as opções não são opostas, portanto, os botões de opção são a melhor opção.
 
-    -   Use botões de opção em páginas do assistente para limpar as alternativas, mesmo que uma caixa de seleção seja aceitável.
-    -   Use botões de opção se você tiver espaço suficiente na tela e as opções são importantes o suficiente para ser um bom uso desse espaço na tela. Caso contrário, use uma caixa de seleção ou uma lista de listas.
+    -   Use botões de opção em páginas de assistente para tornar as alternativas desclaradas, mesmo que uma caixa de seleção seja aceitável de outra forma.
+    -   Use botões de opção se você tiver espaço de tela suficiente e as opções forem importantes o suficiente para ser um bom uso desse espaço de tela. Caso contrário, use uma caixa de seleção ou uma lista suspensa.
 
         **Incorreto:**
 
-        ![captura de tela de mostrar e não mostrar botões de proporção ](images/ctrl-check-boxes-image4.png)
+        ![captura de tela de botões Mostrar e não mostrar taxa ](images/ctrl-check-boxes-image4.png)
 
         Neste exemplo, as opções não são importantes o suficiente para usar botões de opção.
 
         **Correto:**
 
-        ![captura de tela da caixa de seleção com não mostrar mensagem ](images/ctrl-check-boxes-image5.png)
+        ![captura de tela de caixa de seleção com não mostrar mensagem ](images/ctrl-check-boxes-image5.png)
 
-        Neste exemplo, uma caixa de seleção é um uso eficiente do espaço de tela para essa opção de periférico.
+        Neste exemplo, uma caixa de seleção é um uso eficiente do espaço da tela para essa opção de periférico.
 
 -   Use uma caixa de seleção se houver outras caixas de seleção na janela.
--   **A opção apresenta uma opção de programa, em vez de dados?** Os valores da opção não devem ser baseados no contexto ou em outros dados. Para dados, use uma lista de caixas de seleção ou [lista de seleção múltipla](ctrl-list-boxes.md).
+-   **A opção apresenta uma opção de programa, em vez de dados?** Os valores da opção não devem ser baseados em contexto ou outros dados. Para dados, use uma lista de caixas de seleção ou uma [lista de seleção múltipla](ctrl-list-boxes.md).
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -77,10 +77,10 @@ As caixas de seleção têm vários padrões de uso:
 
 |    Uso                                                                          |         Exemplo                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Uma escolha individual** Uma única caixa de seleção é usada para selecionar uma opção individual. <br/>                                                                                                             | ![captura de tela de uma caixa de seleção com lembretes rótulo ](images/ctrl-check-boxes-image6.png)<br/> Uma única caixa de seleção é usada para uma escolha individual.<br/>                                                                                                                                                                                                                                                                                                                        |
-| **Opções independentes (zero ou mais)** Um grupo de caixas de seleção é usado para selecionar de um conjunto de zero ou mais opções.<br/>                                                                              | ao contrário de controles de seleção única, como [botões de](ctrl-radio-buttons.md)opção , os usuários podem selecionar qualquer combinação de opções em um grupo de caixas de seleção.<br/> ![captura de tela de duas das três caixas de seleção selecionadas ](images/ctrl-check-boxes-image7.png)<br/> Um grupo de caixas de seleção é usado para opções independentes.<br/>                                                                                                                                                  |
-| **Opções dependentes (uma ou mais)** Um grupo de caixas de seleção também pode ser usado para selecionar um conjunto de uma ou mais opções.<br/>                                                                         | **talvez seja necessário representar uma seleção de uma ou mais opções dependentes.** como microsoft?windows não tem um controle que dá suporte diretamente a esse tipo de entrada, a melhor solução é usar um grupo de caixas de seleção e tratar o erro quando nenhuma das opções for selecionada.<br/> ![captura de tela de uma das duas caixas de seleção selecionadas ](images/ctrl-check-boxes-image8.png)<br/> Um grupo de caixas de seleção é usado em que pelo menos um protocolo deve ser selecionado.<br/> |
-| **Opção mista** Além dos estados selecionados e limpos, as caixas de seleção também têm um estado misto para várias seleções para indicar que a opção está definida para alguns objetos, mas não para todos.<br/> | ![captura de tela de uma caixa de seleção somente leitura azul sólida ](images/ctrl-check-boxes-image9.png)<br/> Uma caixa de seleção de estado misto.<br/>                                                                                                                                                                                                                                                                                                                                                      |
+| **Uma opção individual** Uma única caixa de seleção é usada para selecionar uma opção individual. <br/>                                                                                                             | ![captura de tela de uma caixa de seleção com o rótulo lembrar-me ](images/ctrl-check-boxes-image6.png)<br/> Uma única caixa de seleção é usada para uma escolha individual.<br/>                                                                                                                                                                                                                                                                                                                        |
+| **Opções independentes (zero ou mais)** Um grupo de caixas de seleção é usado para selecionar de um conjunto de zero ou mais opções.<br/>                                                                              | ao contrário dos controles de seleção única, como [botões de opção](ctrl-radio-buttons.md), os usuários podem selecionar qualquer combinação de opções em um grupo de caixas de seleção.<br/> ![captura de tela de duas das três caixas de seleção selecionadas ](images/ctrl-check-boxes-image7.png)<br/> Um grupo de caixas de seleção é usado para escolhas independentes.<br/>                                                                                                                                                  |
+| **Opções dependentes (um ou mais)** Um grupo de caixas de seleção também pode ser usado para selecionar de um conjunto de uma ou mais opções.<br/>                                                                         | **talvez seja necessário representar uma seleção de uma ou mais opções dependentes**. como o Microsoft? Windows não tem um controle que dá suporte diretamente a esse tipo de entrada, a melhor solução é usar um grupo de caixas de seleção e manipular o erro quando nenhuma das opções estiver selecionada.<br/> ![captura de tela de uma das duas caixas de seleção selecionadas ](images/ctrl-check-boxes-image8.png)<br/> Um grupo de caixas de seleção é usado onde pelo menos um protocolo deve ser selecionado.<br/> |
+| **Opção mista** Além dos Estados selecionados e limpos, as caixas de seleção também têm um estado misto para seleção múltipla para indicar que a opção está definida para alguns objetos, mas não todos.<br/> | ![captura de tela de uma caixa de seleção azul somente leitura sólida ](images/ctrl-check-boxes-image9.png)<br/> Uma caixa de seleção de estado misto.<br/>                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
@@ -90,44 +90,44 @@ As caixas de seleção têm vários padrões de uso:
 
 ### <a name="general"></a>Geral
 
--   **Caixas de seleção relacionadas ao grupo**. Combine opções relacionadas e separe opções não relacionadas em grupos de 10 ou menos, usando vários grupos, se necessário.
+-   **Caixas de seleção relacionadas ao grupo**. Combine opções relacionadas e separe as opções não relacionadas em grupos de 10 ou menos, usando vários grupos, se necessário.
 
-    ![captura de tela de caixas de seleção relacionadas e não relacionadas ](images/ctrl-check-boxes-image10.png)
+    ![captura de tela das caixas de seleção relacionadas e não relacionadas ](images/ctrl-check-boxes-image10.png)
 
-    Um exemplo de grupos de opções independentes relacionadas.
+    Um exemplo de grupos de opções relacionadas e independentes.
 
--   **A reação ao uso de caixas de grupo para organizar grupos de caixas de** seleção geralmente resulta em uma desorganização desnecessária da tela.
--   **Marque as caixas de seleção** em uma ordem lógica, como agrupar opções altamente relacionadas ou colocar as opções mais comuns primeiro ou seguir alguma outra progressão natural. A ordenação alfabética não é recomendada porque é dependente de idioma e, portanto, não é localizável.
--   **Alinhe as caixas de seleção verticalmente, não horizontalmente.** O alinhamento horizontal é mais difícil de ler.
+-   **Reconsidere o uso de caixas de grupo para organizar grupos de caixas de seleção** isso geralmente resulta em uma desordem de tela desnecessária.
+-   **Listar caixas de seleção em uma ordem lógica**, como agrupar opções altamente relacionadas juntos ou colocar as opções mais comuns primeiro ou seguir alguma outra progressão natural. A ordenação alfabética não é recomendada porque é dependente de idioma e, portanto, não é localizável.
+-   **Alinhar caixas de seleção verticalmente, não horizontalmente**. O alinhamento horizontal é mais difícil de ler.
 
     **Correto:**
 
-    ![captura de tela de caixas de seleção alinhadas verticalmente ](images/ctrl-check-boxes-image11.png)
+    ![captura de tela das caixas de seleção alinhadas verticalmente ](images/ctrl-check-boxes-image11.png)
 
     Neste exemplo, as caixas de seleção estão alinhadas corretamente.
 
     **Incorreto:**
 
-    ![captura de tela de caixas de seleção alinhadas horizontalmente ](images/ctrl-check-boxes-image12.png)
+    ![captura de tela das caixas de seleção alinhadas horizontalmente ](images/ctrl-check-boxes-image12.png)
 
     Neste exemplo, o alinhamento horizontal é mais difícil de ler.
 
--   **Não use o estado misto para representar um terceiro estado.** O estado misto é usado para indicar que uma opção é definida para alguns objetos filho, mas não todos. Os usuários não devem ser capazes de definir um estado misto diretamente, em vez disso, o estado misto é um reflexão dos objetos filho. O estado misto não é usado como um terceiro estado para um item individual. Para representar um terceiro estado, use botões de rádio ou uma lista de listas listadas.
+-   **Não use o estado misto para representar um terceiro estado.** O estado misto é usado para indicar que uma opção está definida para alguns objetos filho, mas não todos. Os usuários não devem ser capazes de definir um estado misto diretamente, em vez disso, o estado misto é uma reflexão dos objetos filho. O estado misto não é usado como um terceiro estado para um item individual. Para representar um terceiro estado, use botões de opção ou uma lista suspensa em vez disso.
 
     **Incorreto:**
 
-    ![captura de tela da caixa de seleção do serviço de tema azul sólido ](images/ctrl-check-boxes-image13.png)
+    ![captura de tela da caixa de seleção de serviço de tema azul sólido ](images/ctrl-check-boxes-image13.png)
 
-    Neste exemplo, o estado misto deve indicar que o serviço Tema não está instalado.
+    Neste exemplo, o estado misto deve indicar que o serviço tema não está instalado.
 
     **Correto:**
 
-    ![captura de tela da listada com três opções ](images/ctrl-check-boxes-image14.png)
+    ![captura de tela da lista suspensa com três opções ](images/ctrl-check-boxes-image14.png)
 
-    Neste exemplo, os usuários podem escolher em uma lista de três opções claras.
+    Neste exemplo, os usuários podem escolher entre uma lista de três opções claras.
 
--   **Clicar em uma caixa de seleção de estado misto deve passar por todos os estados selecionados, todos limpos e mistos originais.** Por questões de saúde, é importante poder restaurar o estado misto original porque as configurações podem ser complexas ou desconhecidas para o usuário. Caso contrário, a única maneira de restaurar o estado misto com confiança seria cancelar a tarefa e começar de novo.
--   **Não use caixas de seleção como um indicador de progresso.** Em vez disso, [use um controle de indicador](progress-bars.md) de progresso.
+-   **Clicar em uma caixa de seleção de estado misto deve percorrer todos os Estados mistos selecionados, todos limpos e originais.** Para Forgiveness, é importante poder restaurar o estado misto original, pois as configurações podem ser complexas ou desconhecidas para o usuário. Caso contrário, a única maneira de restaurar o estado misto com confiança seria cancelar a tarefa e começar novamente.
+-   **Não use as caixas de seleção como um indicador de progresso**. Em vez disso, use um controle de [indicador de progresso](progress-bars.md) .
 
     **Incorreto:**
 
@@ -154,9 +154,9 @@ As caixas de seleção têm vários padrões de uso:
     -   Exibir outras janelas, como uma caixa de diálogo para coletar mais entradas.
     -   Exibir dinamicamente outros controles relacionados ao controle selecionado (leitores de tela não podem detectar esses eventos).
 
-### <a name="dont-show-this-item-again"></a>Não mostre isso <item> Novamente
+### <a name="dont-show-this-ltitemgt-again"></a>Não mostrar este &lt; item &gt; novamente
 
--   **Considere usar uma opção Não mostrar novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente somente se não <item> houver uma alternativa melhor.** Tente determinar com antecedência se os usuários realmente precisam da caixa de diálogo; se fizerem isso, sempre mostre a caixa de diálogo e, se não o fizerem, elimine a caixa de diálogo.
+-   **Considere usar uma opção Não mostrar este item novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente somente se não &lt; &gt; houver uma alternativa melhor.** Tente determinar com antecedência se os usuários realmente precisam da caixa de diálogo; se fizerem isso, sempre mostre a caixa de diálogo e, se não o fizerem, elimine a caixa de diálogo.
 
 Para obter mais diretrizes e exemplos, consulte Caixas [de diálogo](win-dialog-box.md).
 
@@ -230,7 +230,7 @@ O espaçamento e o espaçamento recomendados para caixas de seleção.
 -   Para um grupo de caixas de seleção, concentre o texto do rótulo nas diferenças entre as opções. Se todas as opções têm o mesmo texto introdutório, mova esse texto para o rótulo do grupo.
 -   Use frases positivas. Não expresse um rótulo para que a seleção de uma caixa de seleção significa não executar uma ação.
 
-    -   **Exceção: não mostre isso novamente <item> nas caixas** de seleção.
+    -   **Exceção: não mostrar este &lt; item novamente. &gt;**
 
     **Incorreto:**
 
@@ -284,7 +284,7 @@ O espaçamento e o espaçamento recomendados para caixas de seleção.
 Ao fazer referência às caixas de seleção:
 
 -   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua o sublinhado ou dois-pontos da chave de acesso. Inclua a caixa de seleção palavra.
--   Veja uma caixa de seleção como uma caixa de seleção, não uma opção, uma caixa de seleção ou apenas uma caixa, pois a caixa é ambígua para localizadores.
+-   Veja uma caixa de seleção como uma caixa de seleção, não uma opção, uma caixa de seleção ou apenas uma caixa, porque a caixa é ambígua para localizadores.
 -   Para descrever a interação do usuário, use selecionar e limpar.
 -   Quando possível, forja o rótulo usando texto em negrito. Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.
 

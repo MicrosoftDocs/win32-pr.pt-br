@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6300543bbf589c704da6d941bd743f693e0ed5fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e4b079d0eb83f401eb7e906cb399fab18e5b2fd22f06299fcc62b1e6b4a02e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082126"
 ---
 # <a name="glblendfunc-function"></a>função glBlendFunc
 
@@ -134,29 +134,29 @@ Apesar da precisão aparente das equações acima, a aritmética de mistura não
 
 B <sub>d</sub>  =  *b*?
 
-*R*<sub>d</sub>  =  *a*?
+*A*<sub>d</sub>  =  *A*?
 
 ## <a name="examples"></a>Exemplos
 
-A transparência é melhor implementada usando **glBlendFunc**(GL \_ src \_ Alpha, GL \_ um \_ menos \_ src \_ Alpha) com primitivos classificados do mais distante para o mais próximo. Observe que esse cálculo de transparência não requer a presença de bitplanes alfa no framebuffer.
+A transparência é melhor implementada usando **glBlendFunc**(GL \_ SRC \_ ALPHA, GL \_ ONE MINUS \_ SRC ALPHA) com \_ \_ primitivos organizados do mais distante para o mais próximo. Observe que esse cálculo de transparência não requer a presença de bitplanes alfa no framebuffer.
 
-Você também pode usar **glBlendFunc**(GL \_ src \_ alfa, GL \_ um \_ menos \_ src \_ Alpha) para renderizar pontos e linhas AntiAlias em ordem arbitrária.
+Você também pode usar **glBlendFunc**(GL SRC ALPHA, GL ONE MINUS SRC ALPHA) para renderizar pontos e linhas \_ \_ \_ \_ \_ \_ antialiasdos em ordem arbitrária.
 
-Para otimizar a suavização do polígono, use **glBlendFunc**(GL \_ src \_ Alpha \_ saturação, GL \_ One) com polígonos classificados do mais próximo ao mais distante. (Consulte o GL \_ \_Argumento Smooth de Polygon em [**glEnable**](glenable.md) para obter informações sobre a anti-aliasing no polígono.) Bitplanes alfa de destino, que deve estar presente para que essa função Blend opere corretamente, armazene a cobertura acumulada.
+Para otimizar a antialiação de polígono, use **glBlendFunc**(GL \_ SRC \_ ALPHA \_ SATURATE, GL ONE) com polígonos classificação do mais próximo ao \_ mais distante. (Consulte o GL \_ Argumento \_ POLYGON SMOOTH [**em glEnable para**](glenable.md) obter informações sobre suavização de polígono.) Os bitplanes alfa de destino, que devem estar presentes para que essa função blend opere corretamente, armazene a cobertura acumulada.
 
-O alfa de entrada (origem) é uma opacidade de material, variando de 1,0 (*K*<sub>a</sub> ), representando a opacidade completa, para 0,0 (0), representando a transparência completa.
+O alfa de entrada (origem) é uma opacidade de material, variando de 1,0 (*K*<sub>A</sub> ), representando opacidade completa, a 0,0 (0), representando transparência completa.
 
-Quando você habilita mais de um buffer de cores para o desenho, cada buffer habilitado é mesclado separadamente e o conteúdo do buffer é usado para a cor de destino. (Consulte [**glDrawBuffer**](gldrawbuffer.md).)
+Quando você habilita mais de um buffer de cores para desenho, cada buffer habilitado é mesclado separadamente e o conteúdo do buffer é usado para a cor de destino. (Consulte [**glDrawBuffer**](gldrawbuffer.md).)
 
-A mesclagem afeta apenas a renderização RGBA. Ele é ignorado por renderizadores de índice de cor.
+A combinação afeta apenas a renderização RGBA. Ele é ignorado por renderadores de índice de cores.
 
-As funções a seguir recuperam informações relacionadas ao **glBlendFunc**:
+As seguintes funções recuperam informações relacionadas **a glBlendFunc**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ Blend \_ src
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ BLEND \_ SRC
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com Argument GL \_ Blend \_ DST
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ BLEND \_ DST
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ Blend
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ BLEND
 
 ## <a name="requirements"></a>Requisitos
 
@@ -166,8 +166,8 @@ As funções a seguir recuperam informações relacionadas ao **glBlendFunc**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

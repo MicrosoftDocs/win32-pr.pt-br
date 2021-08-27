@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/05/2021
-ms.openlocfilehash: 153d7f777909cf3622f6c0ededeea79b9d6a27072da35d06f9fe7dce4347b357
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd453455f6090d814e3e53dfb6d9ac32f25a6fb7
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120132239"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812203"
 ---
 # <a name="cd3dx12_raytracing_pipeline_config_subobject-class"></a>CD3DX12_RAYTRACING_PIPELINE_CONFIG_SUBOBJECT classe
 
@@ -49,7 +49,7 @@ Construtor padrão. Cria uma nova instância inicializada por padrão de um **CD
 
 `CD3DX12_RAYTRACING_PIPELINE_CONFIG_SUBOBJECT(CD3DX12_STATE_OBJECT_DESC&)`
 
-Construtor que cria uma nova instância de um **CD3DX12_RAYTRACING_PIPELINE_CONFIG_SUBOBJECT** inicializado com o conteúdo de um [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto.
+Construtor que cria uma nova instância de um **CD3DX12_RAYTRACING_PIPELINE_CONFIG_SUBOBJECT** inicializado com o conteúdo de um [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto .
 
 `Config(UINT)`
 

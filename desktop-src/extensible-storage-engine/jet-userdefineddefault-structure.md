@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e5f588588a1a6769e997264321f8911a86e169c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8c34c7677a100488dfbc533aed3ca07f5b3af4c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988089"
 ---
 # <a name="jet_userdefineddefault-structure"></a>Estrutura de JET_USERDEFINEDDEFAULT
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_userdefineddefault-structure"></a>Estrutura de JET_USERDEFINEDDEFAULT
 
 A estrutura de **JET_USERDEFINEDDEFAULT** é especificada em conjunto com JET_bitColumnUserDefinedDefault para dar uma nova coluna um valor padrão que é determinado usando um retorno de chamada. Essa técnica pode ser usada para implementar colunas computadas.
 
-**Windows XP:** A estrutura de **JET_USERDEFINEDDEFAULT** é introduzida no Windows XP.
+**Windows XP:** a estrutura de **JET_USERDEFINEDDEFAULT** é introduzida no Windows XP.
 
 ```cpp
     typedef struct tag_JET_USERDEFINEDDEFAULT {
@@ -80,30 +80,14 @@ Esse membro sempre deve ser definido como nulo.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JET_ USERDEFINEDDEFAULT_W</strong> (Unicode) e <strong>JET_ USERDEFINEDDEFAULT_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_ USERDEFINEDDEFAULT_W</strong> (Unicode) e <strong>JET_ USERDEFINEDDEFAULT_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

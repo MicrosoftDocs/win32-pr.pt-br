@@ -6,12 +6,12 @@ keywords:
 - UPnP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 022ede01a62230194969d7789e0ace70f960debb
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: dfadd64dbee845f62052e8b140ca1f0b69837ece78cf7b0cc5f24e61563a6e22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104084975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124796"
 ---
 # <a name="upnp-apis"></a>APIs de UPnP
 
@@ -32,15 +32,15 @@ Os desenvolvedores que usam as APIs do ponto de controle e as APIs de host do di
 
 Os desenvolvedores que estão usando as APIs de host do dispositivo devem estar familiarizados com as interfaces de Active Template Library (ATL) e COM.
 
-As APIs do ponto de controle e as APIs de host do dispositivo são usadas por uma variedade de aplicativos, desde scripts inseridos em páginas HTML até programas completos de C++ e Microsoft Visual Basic.
+as apis do ponto de controle e as apis de Host do dispositivo são usadas por uma variedade de aplicativos, desde scripts inseridos em páginas HTML até programas completos de C++ e Microsoft Visual Basic.
 
-Somente a API do ponto de controle dá suporte a Visual Basic Scripting Edition (VBScript).
+somente a API do ponto de controle dá suporte a Visual Basic scripting Edition (VBScript).
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-A API do ponto de controle é usada em computadores que executam o Microsoft Windows Millennium Edition, o Windows XP, o Windows XP Professional e o Windows CE .NET.
+a API do ponto de controle é usada em computadores que executam o Microsoft Windows Millennium Edition, Windows xp, Windows xp Professional e Windows CE .net.
 
-A API de host do dispositivo é usada em computadores que executam o Windows XP, o Windows XP Professional e o Windows CE .NET.
+a API de Host do dispositivo é usada em computadores que executam o Windows xp, Windows xp Professional e Windows CE .net.
 
 Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte "requisitos" na documentação.
 

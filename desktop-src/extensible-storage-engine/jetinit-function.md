@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 308c012bc5eb144e0ac0d608c64d63ccf39aeca1
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: d074e07dec88bf0b33ec56b1391986758fbd388c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104298892"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984529"
 ---
 # <a name="jetinit-function"></a>Função JetInit
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetinit-function"></a>Função JetInit
 
@@ -46,9 +46,9 @@ JET_ERR JET_API JetInit(
 
 A instância a ser usada para esta chamada.
 
-Para o Windows 2000, esse parâmetro é ignorado e sempre deve ser nulo.
+para Windows 2000, esse parâmetro é ignorado e sempre deve ser nulo.
 
-Para o Windows XP e versões posteriores, o uso desse parâmetro depende do modo de operação do mecanismo. Se o mecanismo estiver operando no modo herdado (modo de compatibilidade do Windows 2000) em que apenas uma instância tem suporte, esse parâmetro poderá ser nulo ou poderá ser definido como um buffer de saída válido que retornará o identificador de instância global criado como um efeito colateral da inicialização. Esse buffer de saída deve ser definido como nulo ou JET_instanceNil. Esse identificador de instância pode então ser passado para qualquer outra função que use uma instância do. Se o mecanismo estiver operando no modo de várias instâncias, esse parâmetro deverá ser definido como um buffer de entrada válido que contenha o identificador de instância retornado pela instância de função [JetCreateInstance](./jetcreateinstance-function.md) que está sendo inicializada.
+para o Windows XP e versões posteriores, o uso desse parâmetro depende do modo de operação do mecanismo. se o mecanismo estiver operando no modo herdado (Windows modo de compatibilidade 2000) em que apenas uma instância tem suporte, esse parâmetro poderá ser nulo ou poderá ser definido como um buffer de saída válido que retornará o identificador de instância global criado como um efeito colateral da inicialização. Esse buffer de saída deve ser definido como nulo ou JET_instanceNil. Esse identificador de instância pode então ser passado para qualquer outra função que use uma instância do. Se o mecanismo estiver operando no modo de várias instâncias, esse parâmetro deverá ser definido como um buffer de entrada válido que contenha o identificador de instância retornado pela instância de função [JetCreateInstance](./jetcreateinstance-function.md) que está sendo inicializada.
 
 
 #### <a name="remarks"></a>Comentários
@@ -81,49 +81,30 @@ Esses erros são quase sempre causados por problemas de hardware e, portanto, n�
 
 Se a recuperação estiver em execução em um conjunto de logs, para os quais nem todos os bancos de dados estão presentes (o que retornará o erro JET_errAttachedDatabaseMismatch em circunstâncias normais) e o cliente desejar que a recuperação continue apesar dos bancos de dados ausentes, o JET_ bitReplayIgnoreMissingDB poderá ser usado para continuar a recuperação para os bancos de dados disponíveis. Esses erros são impedidos pelo aplicativo. O aplicativo deve ter cuidado para proteger o repositório desses arquivos contra a manipulação por forças externas, como o usuário ou outros aplicativos. Se o aplicativo desejar destruir uma instância inteiramente, todos os arquivos associados à instância deverão ser excluídos. Isso inclui o arquivo de ponto de verificação, os arquivos de log de transações e os arquivos de banco de dados anexados à instância.
 
-A função **JetInit** se comporta de forma diferente, com relação aos arquivos de banco de dados anexados à instância, entre o Windows 2000 e versões posteriores.
+a função **JetInit** se comporta de forma diferente, com relação aos arquivos de banco de dados anexados à instância, entre Windows 2000 e versões posteriores.
 
-**Windows 2000:**  No Windows 2000, qualquer banco de dados anexado à instância durante uma encarnação anterior dessa instância permanece anexado à instância depois que o **JetInit** é concluído com êxito. Não é necessário chamar [JetAttachDatabase](./jetattachdatabase-function.md) após **JetInit** para garantir o acesso ao banco de dados posteriormente. Se a função [JetAttachDatabase](./jetattachdatabase-function.md) for chamada após a função **JetInit** , o aviso de JET_wrnDatabaseAttached será retornado. Esse aviso indica que o anexo do banco de dados foi preservado e pode ser ignorado.
+**Windows 2000:**  no Windows 2000, qualquer banco de dados anexado à instância durante uma encarnação anterior dessa instância permanecerá anexado à instância depois que **JetInit** for concluído com êxito. Não é necessário chamar [JetAttachDatabase](./jetattachdatabase-function.md) após **JetInit** para garantir o acesso ao banco de dados posteriormente. Se a função [JetAttachDatabase](./jetattachdatabase-function.md) for chamada após a função **JetInit** , o aviso de JET_wrnDatabaseAttached será retornado. Esse aviso indica que o anexo do banco de dados foi preservado e pode ser ignorado.
 
-**Windows XP:**  No Windows XP e versões posteriores, todos os bancos de dados são automaticamente desanexados da instância pelo **JetInit**. Isso significa que [JetAttachDatabase](./jetattachdatabase-function.md) sempre deve ser chamado depois de **JetInit** nesse caso.
+**Windows XP:**  no Windows XP e versões posteriores, todos os bancos de dados são automaticamente desanexados da instância pelo **JetInit**. Isso significa que [JetAttachDatabase](./jetattachdatabase-function.md) sempre deve ser chamado depois de **JetInit** nesse caso.
 
-Qualquer aplicativo escrito para ser executado no Windows 2000 e em versões posteriores deve sempre chamar [JetAttachDatabase](./jetattachdatabase-function.md) após **JetInit**. Se o aplicativo for executado no Windows 2000, ele deverá esperar ver JET_wrnDatabaseAttached em alguns casos. Consulte [JetAttachDatabase](./jetattachdatabase-function.md) para obter mais informações.
+qualquer aplicativo escrito para ser executado no Windows 2000 e em versões posteriores sempre deve chamar [JetAttachDatabase](./jetattachdatabase-function.md) após **JetInit**. se o aplicativo for executado no Windows 2000, ele deverá esperar ver JET_wrnDatabaseAttached em alguns casos. Consulte [JetAttachDatabase](./jetattachdatabase-function.md) para obter mais informações.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
 
-[Arquivos do mecanismo de armazenamento extensível](./extensible-storage-engine-files.md)  
+[arquivos do mecanismo de Armazenamento extensível](./extensible-storage-engine-files.md)  
 [JET_ERR](./jet-err.md)  
 [JET_GRBIT](./jet-grbit.md)  
 [JET_INSTANCE](./jet-instance.md)  

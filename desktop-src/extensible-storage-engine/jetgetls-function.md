@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a359bb2899a2dea604e236a7118c914e795bffba7ca675229e28ad3a7f25dc5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9eb6eed0bbec7be0acd377fa3b34d1b91a8b3fed
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979056"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982539"
 ---
 # <a name="jetgetls-function"></a>Função JetGetLS
 
@@ -63,89 +63,31 @@ O buffer de saída que recebe o identificador de contexto atualmente associado a
 
 Um grupo de bits que especifica zero ou mais das opções a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitLSCursor</p></td>
-<td><p>Indica que o identificador de contexto associado ao cursor fornecido deve ser recuperado.</p>
-<p>Se nem JET_bitLSCursor nem JET_bitLSTable forem especificadas, JET_bitLSCursor será presumido.</p>
-<p>Esta opção não pode ser usada com JET_bitLSTable. A operação falhará com JET_errInvalidgrbit se for tentada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitLSTable</p></td>
-<td><p>Indica que o identificador de contexto associado à tabela que contém o cursor fornecido deve ser recuperado. É ilegal usar essa opção com JET_bitLSCursor. A operação falhará com JET_errInvalidgrbit se for tentada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitLSReset</p></td>
-<td><p>Indica que o identificador de contexto para o objeto escolhido deve ser redefinido para JET_LSNil. O valor atual do identificador de contexto é retornado no buffer de saída.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitLSCursor</p> | <p>Indica que o identificador de contexto associado ao cursor fornecido deve ser recuperado.</p><p>Se nem JET_bitLSCursor nem JET_bitLSTable forem especificadas, JET_bitLSCursor será presumido.</p><p>Esta opção não pode ser usada com JET_bitLSTable. A operação falhará com JET_errInvalidgrbit se for tentada.</p> | 
+| <p>JET_bitLSTable</p> | <p>Indica que o identificador de contexto associado à tabela que contém o cursor fornecido deve ser recuperado. É ilegal usar essa opção com JET_bitLSCursor. A operação falhará com JET_errInvalidgrbit se for tentada.</p> | 
+| <p>JET_bitLSReset</p> | <p>Indica que o identificador de contexto para o objeto escolhido deve ser redefinido para JET_LSNil. O valor atual do identificador de contexto é retornado no buffer de saída.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
 Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p>esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Uma das opções solicitadas era inválida, usada de maneira ilegal ou não implementada.</p>
-<p>Isso pode ocorrer para <strong>JetGetLS</strong> quando JET_bitLSCursor e JET_bitLSTable são definidos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errLSNotSet</p></td>
-<td><p>O identificador de contexto não pôde ser retornado porque nenhum identificador de contexto está associado no momento ao objeto solicitado.</p>
-<p><strong>Observação  </strong> Esse erro não será retornado se JET_bitLSReset for especificado, mas nenhum identificador de contexto foi associado ao objeto solicitado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p>esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Uma das opções solicitadas era inválida, usada de maneira ilegal ou não implementada.</p><p>Isso pode ocorrer para <strong>JetGetLS</strong> quando JET_bitLSCursor e JET_bitLSTable são definidos.</p> | 
+| <p>JET_errLSNotSet</p> | <p>O identificador de contexto não pôde ser retornado porque nenhum identificador de contexto está associado no momento ao objeto solicitado.</p><p><strong>Observação  </strong> Esse erro não será retornado se JET_bitLSReset for especificado, mas nenhum identificador de contexto foi associado ao objeto solicitado.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p> | 
+
 
 
 Em caso de sucesso, o identificador de contexto foi recuperado com êxito do objeto solicitado. Se JET_bitLSReset tiver sido especificado, esse identificador de contexto também foi removido com êxito do objeto. Nenhuma alteração no estado do banco de dados ocorrerá.
@@ -154,34 +96,15 @@ Em caso de falha, nenhuma alteração no estado do objeto solicitado ocorreu. Ne
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista ou Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
