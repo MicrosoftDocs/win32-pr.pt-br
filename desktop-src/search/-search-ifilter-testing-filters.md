@@ -4,12 +4,12 @@ ms.assetid: 5ee02af1-1dc9-4d21-868f-4c439970b1ba
 title: Testando manipuladores de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b77fe098c2413e4f582ebfd98985dd09bf0ab9b5fc2def85fc7e954804dc1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf58f14f0f8de4458dd887bf52b32fb68f869d64
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118463085"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621942"
 ---
 # <a name="testing-filter-handlers"></a>Testando manipuladores de filtro
 
@@ -36,7 +36,7 @@ Este tópico é organizado da seguinte forma:
 > [!NOTE]  
 > Se um novo manipulador de filtro para um tipo de arquivo estiver sendo instalado como uma substituição para um registro de filtro existente, o instalador deverá salvar o registro atual e restaurá-lo se o novo manipulador de filtros for desinstalado. Não há nenhum mecanismo para encadear filtros. Portanto, o novo manipulador de filtro é responsável por replicar qualquer funcionalidade necessária do filtro antigo.
 
-## <a name="command-line-invocation"></a>invocação Command-Line dados
+## <a name="command-line-invocation"></a>invocação Command-Line de Command-Line
 
 O conjunto de testes [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) consiste em três aplicativos de linha de comando [ –ifilttst.exe](#ifilttstexe), [filtdump.exe](#filtdumpexe)e [filtreg.exe](#filtregexe) e um arquivo de inicialização, [ifilttst.ini](#ifilttstini).
 
@@ -45,7 +45,7 @@ O conjunto de testes [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) 
 
 ### <a name="ifilttstexe"></a>ifilttst.exe
 
-O ifilttst.exe executa vários testes para validar um manipulador de filtro. O exemplo a seguir ilustra como invocar o programa ifilttst.exe da linha de comando:
+O ifilttst.exe executa vários testes para validar um manipulador de filtros. O exemplo a seguir ilustra como invocar o programa ifilttst.exe da linha de comando:
 
 
 ```
@@ -63,8 +63,8 @@ Para que o comando anterior funcione, três arquivos devem estar localizados no 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -123,12 +123,12 @@ Para que o comando anterior funcione, três arquivos devem estar localizados no 
 
 ### <a name="filtdumpexe"></a>filtdump.exe
 
-O filtdump.exe carrega um manipulador de filtro para um documento especificado e imprime a saída produzida pela [**DLL de IFilter.**](/windows/win32/api/filter/nn-filter-ifilter) O exemplo a seguir ilustra como invocar o filtdump.exe programa.
+O filtdump.exe carrega um manipulador de filtro para um documento especificado e imprime a saída produzida pela [**DLL de IFilter.**](/windows/win32/api/filter/nn-filter-ifilter) O exemplo a seguir ilustra como invocar o programa filtdump.exe.
 
 ```
 filtdump filename.ext
 ```
-Filtdump.exe usa o [método ILoadFilter::LoadIFilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) para carregar a DLL [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) apropriada para a extensão de nome de arquivo especificada e imprime os resultados. Por exemplo, o comando a seguir instrui filtdump.exe carregar o manipulador de filtro smpfilt.dll para a extensão .smp, extrair todo o texto e propriedades do arquivo myfile.smp e imprimir os resultados.
+Filtdump.exe usa o método [ILoadFilter::LoadIFilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) para carregar a DLL [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) apropriada para a extensão de nome de arquivo especificada e imprime os resultados. Por exemplo, o comando a seguir instrui filtdump.exe carregar o manipulador de filtro smpfilt.dll para a extensão .smp, extrair todo o texto e propriedades do arquivo myfile.smp e imprimir os resultados.
 
 ```
 filtdump myfile.smp

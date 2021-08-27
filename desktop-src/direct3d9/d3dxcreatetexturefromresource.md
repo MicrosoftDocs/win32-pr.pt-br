@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4ce9101caed2a60dc3be7fe0039a1e391423f1fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5b8ddea67d6c47984edc76bc833a24a0a1800ab292683b3f441f008a9ab71def
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119306"
 ---
 # <a name="d3dxcreatetexturefromresource-function"></a>Função D3DXCreateTextureFromResource
 
@@ -79,7 +79,7 @@ Endereço de um ponteiro para uma interface [**IDirect3DTexture9**](/windows/win
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -91,9 +91,9 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 A função é equivalente a D3DXCreateTextureFromResourceEx (pDevice, hSrcModule, pSrcResource, D3DX \_ padrão, D3DX padrão \_ , D3DX padrão \_ , 0, D3DFMT \_ Unknown, D3DPOOL \_ gerenciado, D3DX \_ padrão, D3DX \_ Default, 0, **NULL**, **null**, ppTexture).
 
-O recurso que está sendo carregado deve ser do tipo \_ bitmap RT ou RT \_ RCDATA. O tipo de recurso RT \_ RCDATA é usado para carregar formatos diferentes de bitmaps (como. tga,. jpg e. DDS).
+O recurso que está sendo carregado deve ser do tipo \_ bitmap RT ou RT \_ RCDATA. O tipo de recurso RT \_ RCDATA é usado para carregar formatos diferentes de bitmaps (como. tga, .jpg e. DDS).
 
-Essa função dá suporte aos seguintes formatos de arquivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Essa função dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
 Observe que um recurso criado com essa função quando chamado de um objeto IDirect3DDevice9 será colocado na classe de memória denotada por D3DPOOL \_ gerenciado. Quando esse método é chamado de um objeto IDirect3DDevice9Ex, o recurso será colocado na classe de memória denotada por D3DPOOL \_ padrão.
 

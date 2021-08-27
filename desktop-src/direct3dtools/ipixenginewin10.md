@@ -1,5 +1,5 @@
 ---
-description: Determina se o mecanismo é do Windows 10.
+description: Determina se o mecanismo é de Windows 10.
 MS-HAID: vspixengine.IPixEngineWin10
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a890bbe2ca0f325dd7ab3e36b8b1db834a2a7105
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 39a04505fc214bb0c5ae45e9ac7910c5eedeb694
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103826002"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631914"
 ---
 # <a name="span-idvspixengineipixenginewin10spanipixenginewin10-interface"></a><span id="vspixengine.ipixenginewin10"></span>Interface IPixEngineWin10
 
-Determina se o mecanismo é do Windows 10.
+Determina se o mecanismo é de Windows 10.
 
 ## <a name="members"></a>Membros
 
@@ -34,7 +34,7 @@ A interface **IPixEngineWin10** herda da interface [**IUnknown**](/windows/deskt
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

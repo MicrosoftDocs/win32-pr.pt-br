@@ -4,12 +4,12 @@ ms.assetid: 91387a2d-3927-4285-a09b-9ce247e6bfdd
 title: D3DCREATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b525c24529c725b8b7c7f71c53718d56ceb50603
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 09cfd220e3fae2af079ba4eceba8f820a9267b4d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011279"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630224"
 ---
 # <a name="d3dcreate"></a>D3DCREATE
 
@@ -19,8 +19,8 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -58,7 +58,7 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 <table>
 <tbody>
 <tr class="odd">
-<td>Diferenças entre o Windows XP e o Windows Vista:<br/> Esse sinalizador está disponível no Windows Vista, no Windows Server 2008 e no Windows 7.<br/></td>
+<td>diferenças entre o Windows XP e o Windows Vista:<br/> esse sinalizador está disponível no Windows Vista, no Windows Server 2008 e no Windows 7.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -92,15 +92,15 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 </tr>
 <tr class="even">
 <td>D3DCREATE_MIXED_VERTEXPROCESSING</td>
-<td>Especifica o processamento de vértice misto (software e hardware). Para o Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Consulte D3DCREATE_SOFTWARE_VERTEXPROCESSING.</td>
+<td>Especifica o processamento de vértice misto (software e hardware). para Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Consulte D3DCREATE_SOFTWARE_VERTEXPROCESSING.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_SOFTWARE_VERTEXPROCESSING</td>
-<td>Especifica o processamento de vértice de software. Para o Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Use D3DCREATE_HARDWARE_VERTEXPROCESSING.
+<td>Especifica o processamento de vértice de software. para Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Use D3DCREATE_HARDWARE_VERTEXPROCESSING.
 <div class="alert">
 <blockquote>
 [!Note]<br />
-A menos que o processamento de vértice de hardware não esteja disponível, o uso do processamento de vértice de software não é recomendado no Windows 10, versão 1607 (e versões posteriores) porque a eficiência do processamento de vértice de software foi significativamente reduzida e, ao mesmo tempo, melhora a segurança da implementação.
+a menos que o processamento de vértice de hardware não esteja disponível, o uso do processamento de vértice de software não é recomendado no Windows 10, versão 1607 (e versões posteriores) porque a eficiência do processamento de vértice de software foi significativamente reduzida e, ao mesmo tempo, melhora a segurança da implementação.
 </blockquote>
 </div>
 <div>

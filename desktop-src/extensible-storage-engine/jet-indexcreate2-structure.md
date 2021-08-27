@@ -17,21 +17,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d792bba4641f4fdadd873bac194ff409e15ffef1
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 00d5a788113b7427fb96a4f270478c1dd7572d54
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983979"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473202"
 ---
 # <a name="jet_indexcreate2-structure"></a>Estrutura JET_INDEXCREATE2
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-A **JET_INDEXCREATE2** de dados contém as informações necessárias para criar um índice sobre dados em um banco de dados ESE (Extensible Armazenamento Engine). A estrutura é usada por funções como [JetCreateIndex2](./jetcreateindex2-function.md)e em estruturas como [JET_TABLECREATE](./jet-tablecreate-structure.md) e [JET_TABLECREATE2](./jet-tablecreate2-structure.md).
+A **JET_INDEXCREATE2** contém as informações necessárias para criar um índice sobre dados em um banco de dados ESE (Extensible Armazenamento Engine). A estrutura é usada por funções como [JetCreateIndex2](./jetcreateindex2-function.md)e em estruturas como [JET_TABLECREATE](./jet-tablecreate-structure.md) e [JET_TABLECREATE2](./jet-tablecreate2-structure.md).
 
-A **estrutura JET_INDEXCREATE2** foi introduzida no sistema operacional Windows 7.
+A **JET_INDEXCREATE2** foi introduzida no sistema operacional Windows 7.
 
 ```cpp
 typedef struct tagJET_INDEXCREATE2 {
@@ -71,7 +71,7 @@ O nome deve atender às seguintes condições:
 
   - Ele deve ser menor que JET_cbNameMost, não incluindo o nulo de terminação.
 
-  - Ele deve consistir no seguinte conjunto de caracteres: 0 (zero) a 9, A a Z, a a z e todas as outras pontuações, exceto " \! " (ponto de exclamação), "," (vírgula), " " (colchete de abertura) e " " (colchete de fechamento) — ou seja, caracteres \[ ASCII 0x20, 0x22 0x2d, 0x2f por meio de 0x5a, 0x5c e \] 0x5d por meio 0x7f.
+  - Ele deve consistir no seguinte conjunto de caracteres: 0 (zero) a 9, A a Z, a a z e todas as outras pontuações, exceto " \! " (ponto de exclamação), "," (vírgula), " " (colchete de abertura) e " " (colchete de fechamento) — ou seja, caracteres ASCII 0x20, 0x22 por meio de 0x2d, 0x2f por meio \[ \] de 0x5a, 0x5c e 0x5d por meio 0x7f.
 
   - Ele não deve começar com um espaço.
 
@@ -108,15 +108,15 @@ Um grupo de bits que contém zero ou mais das opções de valor listadas na tabe
 | <p>JET_bitIndexIgnoreNull</p> | <p>Não adicione uma entrada de índice para uma linha se todas as colunas que estão sendo indexadas são <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreAnyNull</p> | <p>Não adicione uma entrada de índice para uma linha se qualquer uma das colunas que está sendo indexada for <strong>NULL.</strong></p> | 
 | <p>JET_bitIndexIgnoreFirstNull</p> | <p>Não adicione uma entrada de índice para uma linha se a primeira coluna que está sendo indexada for <strong>NULL.</strong></p> | 
-| <p>JET_bitIndexLazyFlush</p> | <p>Especifica que as operações de índice serão registradas em lozily.</p><p>JET_bitIndexLazyFlush não afeta a disposição das atualizações de dados. Se a operação de indexação for interrompida pelo encerramento do processo, a Recuperação Suave ainda poderá fazer com que o banco de dados tenha um estado consistente, mas o índice pode não estar presente.</p> | 
+| <p>JET_bitIndexLazyFlush</p> | <p>Especifica que as operações de índice serão registradas em lozily.</p><p>JET_bitIndexLazyFlush não afeta aziez das atualizações de dados. Se a operação de indexação for interrompida pelo encerramento do processo, a Recuperação Suave ainda poderá fazer com que o banco de dados tenha um estado consistente, mas o índice pode não estar presente.</p> | 
 | <p>JET_bitIndexEmpty</p> | <p>Não tente criar o índice, pois todas as entradas serão avaliadas como <strong>NULL.</strong> <strong>grbit</strong> TAMBÉM DEVE especificar JET_bitIgnoreAnyNull quando JET_bitIndexEmpty é passado. Esse é um aprimoramento de desempenho. Por exemplo, se uma nova coluna for adicionada a uma tabela e, em seguida, um índice for criado nessa coluna recém-adicionada, todos os registros na tabela serão verificados mesmo que não sejam adicionados ao índice. Especificar JET_bitIndexEmpty ignora a verificação da tabela, o que pode levar muito tempo.</p> | 
 | <p>JET_bitIndexUnversioned</p> | <p>JET_bitIndexUnversioned faz com que a criação do índice seja visível para outras transações. Normalmente, uma sessão em uma transação não poderá ver uma operação de criação de índice em outra sessão. Esse sinalizador poderá ser útil se outra transação tiver a probabilidade de criar o mesmo índice. A segunda criação de índice simplesmente falhará em vez de potencialmente causar muitas operações desnecessárias de banco de dados. A segunda transação pode não ser capaz de usar o índice imediatamente. A operação de criação de índice precisa ser concluída antes de ser acessível. No momento, a sessão não deve estar em uma transação para criar um índice sem informações de versão.</p> | 
 | <p>JET_bitIndexSortNullsHigh</p> | <p>Especificar esse sinalizador faz com <strong>que os valores NULL</strong> sejam classificação após os dados de todas as colunas no índice.</p> | 
 | <p>JET_bitIndexUnicode</p> | <p>Especificar esse sinalizador afeta a interpretação do campo de união lcid/pidxunicde na estrutura. Definir o bit significa que o campo pidxunicode realmente aponta para uma <a href="gg294097(v=exchg.10).md">estrutura JET_UNICODEINDEX</a> dados. JET_bitIndexUnicode é necessário para indexar dados Unicode. Ele só é necessário para personalizar a normalização de dados Unicode.</p> | 
-| <p>JET_bitIndexTuples</p> | <p>Especifica que o índice é um índice de tupla. Consulte <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> uma descrição de um índice de tupla.</p><p>O JET_bitIndexTuples foi introduzido no sistema operacional Windows XP.</p> | 
+| <p>JET_bitIndexTuples</p> | <p>Especifica que o índice é um índice de tupla. Consulte <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> para ver uma descrição de um índice de tupla.</p><p>O JET_bitIndexTuples valor foi introduzido no sistema operacional Windows XP.</p> | 
 | <p>JET_bitIndexTupleLimits</p> | <p>Especificar esse sinalizador afeta a interpretação do campo de união <strong>cbVarSegMac/ptuplelimits</strong> na estrutura. Definir esse bit significa que o <strong>campo ptuplelimits</strong> realmente aponta para uma estrutura <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> para permitir limites de índice de tupla personalizados (implica JET_bitIndexTuples).</p><p>O <strong>JET_bitIndexTupleLimits</strong> foi introduzido no sistema operacional Windows Server 2003.</p> | 
-| <p>JET_bitIndexCrossProduct<br />0x00004000</p> | <p>Especificar esse sinalizador para um índice que tem mais de uma coluna de chave que é uma coluna de vários valores resultará na criação de uma entrada de índice para cada resultado de um produto cruzado de todos os valores nessas colunas de chave. Caso contrário, o índice teria apenas uma entrada para cada multivalor na coluna de chave mais significativa que é uma coluna de vários valores e cada uma dessas entradas de índice usaria o primeiro multivalor de qualquer outra coluna de chave que são colunas com valores múltiplos.</p><p>Por exemplo, se você especificou esse sinalizador para um índice sobre a coluna A que tem os valores "vermelho" e "azul" e sobre a coluna B que tem os valores "1" e "2", as seguintes entradas de índice serão criadas: "vermelho", "1"; "red", "2"; "blue", "1"; "blue", "2". Caso contrário, as seguintes entradas de índice seriam criadas: "red", "1"; "blue", "1".</p><p>O <strong>JET_bitIndexCrossProduct</strong> foi introduzido no Windows Vista.</p> | 
-| <p>JET_bitIndexKeyMost<br />0x00008000</p> | <p>Especificar esse sinalizador fará com que o índice use o tamanho máximo da chave especificado no <strong>campo cbKeyMost</strong> na estrutura. Caso contrário, o índice usará JET_cbKeyMost (255) como seu tamanho máximo de chave.</p><p>O <strong>JET_bitIndexKeyMost</strong> valor foi introduzido no Windows Vista.</p> | 
+| <p>JET_bitIndexCrossProduct<br />0x00004000</p> | <p>Especificar esse sinalizador para um índice que tem mais de uma coluna de chave que é uma coluna de vários valores resultará na criação de uma entrada de índice para cada resultado de um produto cruzado de todos os valores nessas colunas de chave. Caso contrário, o índice teria apenas uma entrada para cada multivalor na coluna de chave mais significativa que é uma coluna de vários valores e cada uma dessas entradas de índice usaria o primeiro multivalor de qualquer outra coluna de chave que são colunas com valores múltiplos.</p><p>Por exemplo, se você especificou esse sinalizador para um índice sobre a coluna A que tem os valores "vermelho" e "azul" e sobre a coluna B que tem os valores "1" e "2", as seguintes entradas de índice serão criadas: "vermelho", "1"; "red", "2"; "blue", "1"; "blue", "2". Caso contrário, as seguintes entradas de índice seriam criadas: "red", "1"; "blue", "1".</p><p>O <strong>JET_bitIndexCrossProduct</strong> valor foi introduzido no Windows Vista.</p> | 
+| <p>JET_bitIndexKeyMost<br />0x00008000</p> | <p>Especificar esse sinalizador fará com que o índice use o tamanho máximo da chave especificado no <strong>campo cbKeyMost</strong> na estrutura. Caso contrário, o índice usará JET_cbKeyMost (255) como seu tamanho máximo de chave.</p><p>O <strong>JET_bitIndexKeyMost</strong> foi introduzido no Windows Vista.</p> | 
 | <p>JET_bitIndexDisallowTruncation<br />0x00010000</p> | <p>Especificar esse sinalizador fará com que qualquer atualização no índice que resulte em uma chave truncada falhe com o código JET_errKeyTruncated resposta. Caso contrário, as chaves serão silenciosamente truncadas. Para obter mais informações sobre truncamento de chave, <a href="gg269329(v=exchg.10).md">consulte JetMakeKey</a>.</p><p>O <strong>JET_bitIndexDisallowTruncation</strong> valor foi introduzido no Windows Vista.</p> | 
 
 
@@ -135,7 +135,7 @@ Um ponteiro para uma [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) se o va
 
 **cbVarSegMac**
 
-O comprimento máximo, em bytes, de cada coluna a ser armazenada no índice quando o JET_bitIndexTupleLimits valor não for especificado no *parâmetro grbit.*
+O comprimento máximo, em bytes, de cada coluna a ser armazenada no índice quando o JET_bitIndexTupleLimits valor não for especificado no parâmetro *grbit.*
 
 Especificar um valor de 0 (zero) para esse campo é equivalente ao seguinte:
 
@@ -145,7 +145,7 @@ Especificar um valor de 0 (zero) para esse campo é equivalente ao seguinte:
 
 **ptuplelimits**
 
-Um ponteiro para uma [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) se o valor JET_bitIndexTupleLimits valor for especificado no parâmetro *grbit.*
+Um ponteiro para uma [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) se o valor JET_bitIndexTupleLimits valor for especificado no *parâmetro grbit.*
 
 **ptuplelimits** foi introduzido no Windows Server 2003.
 
@@ -165,7 +165,7 @@ Contém o código de retorno para criar esse índice.
 
 Especifica o tamanho máximo permitida, em bytes, para chaves no índice. Esse parâmetro será ignorado se JET_bitIndexKeyMost não for especificado no *parâmetro grbit.* Se esse parâmetro for definido como zero e JET_bitIndexKeyMost for especificado no membro *grbit,* a função de chamada falhará com JET_err_InvalidDef.
 
-O tamanho máximo mínimo de chave com suporte é JET_cbKeyMostMin (255), que é o tamanho máximo da chave herdado.
+O tamanho máximo mínimo da chave com suporte é JET_cbKeyMostMin (255), que é o tamanho máximo da chave herdado.
 
 O tamanho máximo da chave depende do tamanho da página do banco de dados (JET_paramDatabasePageSize) da seguinte forma:
 
@@ -213,16 +213,11 @@ Em versões do Windows do Windows Vista, todas as colunas com vários valores po
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_ INDEXCREATE2_W</strong> (Unicode) <strong>e JET_ INDEXCREATE2_A</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_ INDEXCREATE2_W</strong> (Unicode) <strong>e JET_ INDEXCREATE2_A</strong> (ANSI).</p> | 
 
 
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 
 [JET_COLTYP](./jet-coltyp.md)  
 [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-structure.md)  

@@ -1,7 +1,7 @@
 ---
-description: Identifica as matrizes de transformação subsequentes que podem ser usadas para misturar vértices usando a matriz correspondente e um valor de peso de mesclagem (beta) especificado no formato de vértice.
+description: Identifica matrizes de transformação subsequentes que podem ser usadas para mesclar vértices usando a matriz correspondente e um valor de peso de mesclagem (beta) especificado no formato de vértice.
 ms.assetid: cab444c2-b245-4d1a-a90c-745c92a2ea89
-title: D3DTS_WORLDn (D3d9types. h)
+title: D3DTS_WORLDn (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120119396"
 ---
-# <a name="d3dts_worldn"></a>D3DTS \_ worldn
+# <a name="d3dts_worldn"></a>D3DTS \_ WORLDn
 
-Identifica as matrizes de transformação subsequentes que podem ser usadas para misturar vértices usando a matriz correspondente e um valor de peso de mesclagem (beta) especificado no formato de vértice.
+Identifica matrizes de transformação subsequentes que podem ser usadas para mesclar vértices usando a matriz correspondente e um valor de peso de mesclagem (beta) especificado no formato de vértice.
 
 ``` syntax
 #define D3DTS_WORLDn 
@@ -33,7 +33,7 @@ Identifica as matrizes de transformação subsequentes que podem ser usadas para
 
 ## <a name="remarks"></a>Comentários
 
-Essas macros são fornecidas para facilitar a portabilidade de aplicativos existentes para o Direct3D 9.
+Essas macros são fornecidas para facilitar a portação de aplicativos existentes para o Direct3D 9.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Essas macros são fornecidas para facilitar a portabilidade de aplicativos exist
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Essas macros são fornecidas para facilitar a portabilidade de aplicativos exist
 [Macros](dx9-graphics-reference-d3d-macros.md)
 </dt> <dt>
 
-[**SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
+[**Settransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
 </dt> <dt>
 
 [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md)

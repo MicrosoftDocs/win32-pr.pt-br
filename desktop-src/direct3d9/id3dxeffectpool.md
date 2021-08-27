@@ -1,7 +1,7 @@
 ---
-description: Os aplicativos usam a interface ID3DXEffectPool para identificar os parâmetros que serão compartilhados entre os efeitos. Consulte compartilhamento de parâmetro em clonagem e compartilhamento (Direct3D 9). Esta interface não tem métodos.
+description: Os aplicativos usam a interface ID3DXEffectPool para identificar parâmetros que serão compartilhados entre efeitos. Consulte compartilhamento de parâmetros em Clonagem e Compartilhamento (Direct3D 9). Essa interface não tem métodos.
 ms.assetid: dd5e55eb-9436-422d-9743-38be44d05962
-title: Interface ID3DXEffectPool (D3DX9Effect. h)
+title: Interface ID3DXEffectPool (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 893116d7e99bd720f098a8b536f1ad4fd02563ab
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 42b7669d974fffde76c8c8f1e7beb4f8d78bf58fda3810130b255d4bc5a693df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118676"
 ---
 # <a name="id3dxeffectpool-interface"></a>Interface ID3DXEffectPool
 
-Os aplicativos usam a interface **ID3DXEffectPool** para identificar os parâmetros que serão compartilhados entre os efeitos. Consulte compartilhamento de parâmetro em [clonagem e compartilhamento (Direct3D 9)](cloning-and-sharing.md). Esta interface não tem métodos.
+Os aplicativos usam a interface **ID3DXEffectPool** para identificar parâmetros que serão compartilhados entre efeitos. Consulte compartilhamento de [parâmetros em Clonagem e Compartilhamento (Direct3D 9)](cloning-and-sharing.md). Essa interface não tem métodos.
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DXEffectPool** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A interface **ID3DXEffectPool** herda da interface [**IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="remarks"></a>Comentários
 
@@ -49,8 +49,8 @@ typedef interface ID3DXEffectPool *LPD3DXEFFECTPOOL;
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

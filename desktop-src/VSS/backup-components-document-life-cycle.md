@@ -4,12 +4,12 @@ ms.assetid: 287b7b9a-ac04-4a74-83c1-2cdd4a571ac1
 title: Ciclo de vida do documento de componentes de backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4bcb0263f46466d7be2bc19f3c8809167b2da08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4804625f979e0d5621d96a2230c1419354d0dbeb4c368312dbd3943e0ac0c4bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124526"
 ---
 # <a name="backup-components-document-life-cycle"></a>Ciclo de vida do documento de componentes de backup
 

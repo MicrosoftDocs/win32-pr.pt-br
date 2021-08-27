@@ -1,11 +1,11 @@
 ---
 title: Propriedade IWMPSettings2 mediaAccessRights
-description: A propriedade mediaAccessRights obtém um valor que indica as permissões atualmente concedidas para acesso à biblioteca.
+description: A propriedade mediaAccessRights Obtém um valor que indica as permissões concedidas atualmente para acesso à biblioteca.
 ms.assetid: c4289a2c-e343-405d-9bf5-0e97f6617916
 keywords:
-- propriedade mediaAccessRights Windows Media Player
-- propriedade mediaAccessRights Windows Media Player interface , IWMPSettings2
-- Interface IWMPSettings2 Windows Media Player , propriedade mediaAccessRights
+- Windows Media Player da propriedade mediaAccessRights
+- propriedade mediaAccessRights Windows Media Player, interface IWMPSettings2
+- Windows Media Player de interface IWMPSettings2, propriedade mediaAccessRights
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120122486"
 ---
-# <a name="iwmpsettings2mediaaccessrights-property"></a>Propriedade IWMPSettings2::mediaAccessRights
+# <a name="iwmpsettings2mediaaccessrights-property"></a>Propriedade IWMPSettings2:: mediaAccessRights
 
-A **propriedade mediaAccessRights** obtém um valor que indica as permissões atualmente concedidas para acesso à biblioteca.
+A propriedade **mediaAccessRights** Obtém um valor que indica as permissões concedidas atualmente para acesso à biblioteca.
 
 Esta propriedade é somente para leitura.
 
@@ -49,13 +49,13 @@ Public ReadOnly Property mediaAccessRights As System.String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System.String** que é um dos valores a seguir.
+Um **System. String** que é um dos valores a seguir.
 
 
 
 | Valor | Descrição                      |
 |-------|----------------------------------|
-| nenhum  | Somente direitos de acesso de item atual. |
+| nenhum  | Somente direitos de acesso do item atual. |
 | ler  | Somente direitos de acesso de leitura.         |
 | completa  | Direitos de acesso de leitura/gravação.        |
 
@@ -65,9 +65,9 @@ Um **System.String** que é um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Uma página da Web deve primeiro solicitar permissão do usuário para ler informações ou gravar dados na biblioteca. Isso significa que determinados métodos, propriedades e eventos estarão inacessíveis do código se os direitos de acesso apropriados não foram concedidos. Para obter direitos de acesso, o aplicativo chama **IWMPSettings2.get \_ requestMediaAccessRights**, passando um parâmetro que especifica o nível de direitos de acesso desejado.
+Uma página da Web deve primeiro solicitar permissão do usuário para ler informações ou gravar dados na biblioteca. Isso significa que determinados métodos, propriedades e eventos ficarão inacessíveis a partir do código se os direitos de acesso apropriados não tiverem sido concedidos. Para obter direitos de acesso, o aplicativo chama **IWMPSettings2. get \_ requestMediaAccessRights**, passando um parâmetro que especifica o nível de direitos de acesso desejado.
 
-Os aplicativos em execução no computador do usuário sempre têm direitos de acesso completo.
+Os aplicativos em execução no computador do usuário sempre têm direitos de acesso total.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Os aplicativos em execução no computador do usuário sempre têm direitos de a
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -88,7 +88,7 @@ Os aplicativos em execução no computador do usuário sempre têm direitos de a
 [**Interface IWMPSettings2 (VB e C#)**](iwmpsettings2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

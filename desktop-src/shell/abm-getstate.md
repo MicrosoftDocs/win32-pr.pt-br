@@ -1,6 +1,6 @@
 ---
-description: Recupera os estados autohide e always on-top da barra de Windows tarefas.
-title: ABM_GETSTATE mensagem (Shellapi.h)
+description: recupera os estados de autoocultar e sempre visível da barra de tarefas Windows.
+title: Mensagem de ABM_GETSTATE (shellapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 18e16752-16be-492b-a4fa-c951e18dc86c
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b1a3618be793f4728dc6184b50b7a4e0e57c3ffd2c4d2cd8acde17372aa031f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ced01e3f8186a82e99f408f91546ebcbb117ed9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118225225"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466383"
 ---
-# <a name="abm_getstate-message"></a>Mensagem \_ GETSTATE do ABM
+# <a name="abm_getstate-message"></a>\_Mensagem GETstate do ABM
 
-Recupera os estados autohide e always on-top da barra de Windows tarefas.
+recupera os estados de autoocultar e sempre visível da barra de tarefas Windows.
 
 
 ```C++
@@ -38,43 +38,22 @@ uState = (UINT) SHAppBarMessage(ABM_GETSTATE, pabd);
 *pabd* 
 </dt> <dd>
 
-Ponteiro para uma [**estrutura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Você deve especificar o **membro cbSize** ao enviar essa mensagem; todos os outros membros são ignorados.
+Ponteiro para uma estrutura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) . Você deve especificar o membro **cbSize** ao enviar esta mensagem; todos os outros membros são ignorados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará zero se a barra de tarefas não estiver no estado autohide nem always on-top. Caso contrário, o valor de retorno será um ou ambos os seguintes:
+Retornará zero se a barra de tarefas não estiver no estado de ocultar automaticamente ou sempre visível. Caso contrário, o valor de retorno será um ou ambos os seguintes:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código de retorno</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>ABS_ALWAYSONTOP</strong></dt> </dl></td>
-<td>A barra de tarefas está no estado always on-top. <br/>
-<blockquote>
-[!Note]<br />
-A partir Windows 7, ABS_ALWAYSONTOP é retornado porque a barra de tarefas está sempre nesse estado. O código mais antigo deve ser atualizado para ignorar a ausência desse valor, não pressupondo que o valor de retorno significa que a barra de tarefas não está no estado always on-top.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>ABS_AUTOHIDE</strong></dt> </dl></td>
-<td>A barra de tarefas está no estado de autohide.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código de retorno | Descrição | 
+|-------------|-------------|
+| <dl><dt><strong>ABS_ALWAYSONTOP</strong></dt></dl> | A barra de tarefas está no estado sempre visível. <br /><blockquote>[!Note]<br />a partir do Windows 7, ABS_ALWAYSONTOP não é mais retornado porque a barra de tarefas sempre está nesse estado. O código mais antigo deve ser atualizado para ignorar a ausência desse valor em não pressupor que o valor de retorno signifique que a barra de tarefas não está no estado sempre visível.</blockquote><br /> | 
+| <dl><dt><strong>ABS_AUTOHIDE</strong></dt></dl> | A barra de tarefas está no estado de AutoOcultar.<br /> | 
+
 
 
 
@@ -86,9 +65,9 @@ A partir Windows 7, ABS_ALWAYSONTOP é retornado porque a barra de tarefas está
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 
 
 

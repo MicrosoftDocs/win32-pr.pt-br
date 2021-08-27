@@ -1,19 +1,19 @@
 ---
-description: Contém as informações que descrevem o componente vertical das linhas no papel de carta usado pela anotação do diário. Usado, por exemplo, quando a observação tem linhas de grade.
+description: Contém as informações que descrevem o componente vertical das linhas na papelaria usada pela observação Do diário. Usado, por exemplo, quando a nota tem linhas de grade.
 ms.assetid: af6f485e-13df-41bb-b57a-10d8393b83e7
-title: Elemento vertical
+title: Elemento Vertical
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42565e6f2828c4ef27d1b28830502303a03e6f13
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: f6f05ab8a2160dbf6b987177957e8285385fe4db
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432118"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479502"
 ---
-# <a name="vertical-element"></a>Elemento vertical
+# <a name="vertical-element"></a>Elemento Vertical
 
-Contém as informações que descrevem o componente vertical das linhas no papel de carta usado pela anotação do diário. Usado, por exemplo, quando a observação tem linhas de grade.
+Contém as informações que descrevem o componente vertical das linhas na papelaria usada pela observação Do diário. Usado, por exemplo, quando a nota tem linhas de grade.
 
 ## <a name="definition"></a>Definição
 
@@ -33,62 +33,14 @@ Nenhum.
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Type</th>
-<th>Obrigatório</th>
-<th>Descrição</th>
-<th>Valores possíveis</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
-<td>Obrigatório</td>
-<td>Especifica o tipo de linha a ser desenhada.</td>
-<td><ul>
-<li>Nenhum</li>
-<li>Sólido</li>
-<li>Traço</li>
-<li>Ponto</li>
-<li>DashDot</li>
-<li>DashDotDot</li>
-<li>Double</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Cor</strong></td>
-<td>SimpleType de <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
-<td>Opcional</td>
-<td>Cor do elemento.</td>
-<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: # [0-9A-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>SpacingBefore</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Opcional</td>
-<td>Espaçamento antes do elemento.</td>
-<td>Qualquer inteiro não negativo.</td>
-</tr>
-<tr class="even">
-<td><strong>SpacingBetween</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Opcional</td>
-<td>Espaçamento entre este elemento e elementos circundantes.</td>
-<td>Qualquer inteiro não negativo.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Type | Obrigatório | Descrição | Valores possíveis | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Estilo</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a> | Obrigatório | Especifica o tipo de linha a ser desenhada. | <ul><li>Nenhum</li><li>Sólido</li><li>Traço</li><li>Ponto</li><li>DashDot</li><li>DashDotDot</li><li>Double</li></ul> | 
+| <strong>Cor</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcional | Cor do elemento. | Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: #[0-9a-zA-Z] {6} . Por exemplo, #4a79B5.<br /> | 
+| <strong>SpacingBefore</strong> | <strong>xs:nonNegativeInteger</strong> | Opcional | Espaçamento antes do elemento . | Qualquer inteiro não negativo. | 
+| <strong>SpacingBetween</strong> | <strong>xs:nonNegativeInteger</strong> | Opcional | Espaçamento entre esse elemento e elementos ao redor. | Qualquer inteiro não negativo. | 
+
 
 
 
@@ -100,9 +52,9 @@ Nenhum.
 
 |  Elemento     | Valor                                                         |
 |--------------|---------------------------------------------------------------|
-| Tipo de elemento | ComplexType de [**verticaltype**](verticaltype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                    |
-| Nome do esquema  | Leitor de diário                                                |
+| Tipo de elemento | [**ComplexType VerticalType**](verticaltype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                    |
+| Nome do esquema  | Leitor de Diário                                                |
 
 
 

@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 751c6c0802c30e113f4a2b7ddc646cdf5646b7dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4da816b45709f6140efb7e6e0460e27d9f9ed00f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771552"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627712"
 ---
 # <a name="wmi-tasks-connecting-to-the-wmi-service"></a>Tarefas do WMI: conectando-se ao serviço WMI
 
 Para obter dados do WMI, seja no computador local ou em um computador remoto, você deve se conectar ao serviço WMI conectando-se a um [*namespace*](gloss-n.md)específico. Na maioria dos casos, use a conexão de [moniker](creating-a-wmi-script.md) abreviada ou a conexão do [**localizador**](swbemlocator-connectserver.md) . Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-As conexões remotas exigem configurações apropriadas para o Firewall do Windows e o DCOM. Para obter mais informações, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md) e [conectando por meio do firewall do Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). A partir do Windows Vista, o UAC (controle de conta de usuário) pode afetar o acesso WMI. Para obter mais informações, consulte [controle de conta de usuário e WMI](user-account-control-and-wmi.md).
+as conexões remotas exigem configurações apropriadas para o Firewall Windows e o DCOM. para obter mais informações, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md) e [conectando por meio do Firewall Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). a partir do Windows Vista, o UAC (controle de conta de usuário) pode afetar o acesso WMI. Para obter mais informações, consulte [controle de conta de usuário e WMI](user-account-control-and-wmi.md).
 
 Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
 
@@ -30,7 +30,7 @@ O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão. txt ao arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
 2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
 4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
@@ -46,8 +46,8 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -63,12 +63,12 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 <li>Um nome de computador NetBIOS, como &quot; ATL-DC-01&quot;</li>
 <li>Um nome de domínio totalmente qualificado, como &quot; ATL-DC-01.fabrikam.com&quot;</li>
 <li>Um endereço IPv4, como &quot; 192.168.1.1&quot;</li>
-<li>A partir do Windows Vista, você pode especificar um endereço IPv6 se o computador de destino e o computador do qual você está fazendo a conexão executarem o IPv6.<br/></li>
+<li>a partir do Windows Vista, você pode especificar um endereço ipv6 se o computador de destino e o computador do qual você está fazendo a conexão executarem o IPv6.<br/></li>
 </ul>
 Para obter mais informações, consulte <a href="connecting-to-wmi-on-a-remote-computer.md">conectando-se ao WMI em um computador remoto</a> e <a href="ipv6-and-ipv4-support-in-wmi.md">suporte a IPv6 e IPv4 no WMI</a>.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,7 +89,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -112,7 +112,7 @@ Get-WmiObject -Class Win32_Process -ComputerName $strComputer -Namespace &quot;r
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -134,7 +134,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

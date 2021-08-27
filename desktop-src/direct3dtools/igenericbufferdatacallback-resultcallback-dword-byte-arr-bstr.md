@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IGenericBufferDataCallback\_ResultCallback\_DWORD\_BYTE\_ar
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método IGenericBufferDataCallback:: ResultCallback'
+title: Método IGenericBufferDataCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 5627A93E-8BE8-4413-BFB4-724AF2DDFEB6
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: be2d6aa7cd5e844cd5d1297c16de2ebb21c939a9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0035b0546b863c87c54fbd09bbc62897ab581bfe
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646062"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622322"
 ---
-# <a name="span-idvspixengineigenericbufferdatacallback_resultcallback_dword_byte_arr_bstrspanigenericbufferdatacallbackresultcallback-method"></a><span id="vspixengine.igenericbufferdatacallback_resultcallback_dword_byte_arr_bstr"></span>Método IGenericBufferDataCallback:: ResultCallback
+# <a name="span-idvspixengineigenericbufferdatacallback_resultcallback_dword_byte_arr_bstrspanigenericbufferdatacallbackresultcallback-method"></a><span id="vspixengine.igenericbufferdatacallback_resultcallback_dword_byte_arr_bstr"></span>Método IGenericBufferDataCallback::ResultCallback
 
 Um retorno de chamada que notifica o host de informações de buffer genéricas retornadas pela solicitação assocaited.
 
@@ -41,24 +41,24 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parâmetros
 
-*tamanho*   
+*Tamanho*   
 O tamanho do conteúdo do buffer em bytes.
 
-*\_buffer count0*   
-O conteúdo do buffer. Na maioria dos casos, esses são dados XML.
+*count0 \_ buffer*   
+O conteúdo do buffer. Na maioria dos casos, são dados XML.
 
-*Escreva*   
+*Tipo*   
 Uma cadeia de caracteres COM que indica o tipo de conteúdo retornado no buffer.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IGenericBufferDataCallback**](/windows/desktop/direct3dtools/igenericbufferdatacallback)
 

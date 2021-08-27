@@ -1,9 +1,9 @@
 ---
-title: Atributo WM/Attribute
-description: O atributo WM/Attribute é a responsabilidade do conteúdo.
+title: Atributo do WM/letras de música
+description: O atributo WM/letras de música é a letra do conteúdo.
 ms.assetid: 125a2a51-81f2-478a-a9e9-234662a17bc0
 keywords:
-- Atributo WM/Attribute Windows Media Player
+- Windows Media Player de atributo do WM/letras de música
 topic_type:
 - apiref
 api_name:
@@ -19,25 +19,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120122636"
 ---
-# <a name="wmlyrics-attribute"></a>Atributo WM/Attribute
+# <a name="wmlyrics-attribute"></a>Atributo do WM/letras de música
 
-O **atributo WM/Attribute** é a responsabilidade do conteúdo.
+O atributo **WM/letras de música** é a letra do conteúdo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
 -   [Faixas de CD](cd-track-attributes.md)
--   [Atributos de arquivo Windows mídia comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [atributos de arquivo de mídia Windows usados com frequência](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado na biblioteca (ou cache) e no arquivo de mídia digital.
+Esse atributo é armazenado tanto na biblioteca (ou no cache) quanto no arquivo de mídia digital.
 
-**É** um alias para esse atributo.
+**Letras de música** é um alias para este atributo.
 
-A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMLyrics.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMLyrics.
 
-Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
+Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar se você pode alterar o valor desse atributo, use o [método Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
 
 
 

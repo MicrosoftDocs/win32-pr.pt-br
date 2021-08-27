@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ad5e1de9eb2edbdb63eb6f476391ae8387c8d01e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1729407f1022c2781fc97f8638ea8748323c151e9bd67c5ad31b30ae05fdff0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131266"
 ---
 # <a name="cenummediatypes-class"></a>Classe CEnumMediaTypes
 
@@ -43,9 +43,9 @@ Sempre que um PIN altera sua lista de tipos de mídia preferenciais, o PIN incre
 | [**CEnumMediaTypes**](cenummediatypes-cenummediatypes.md)   | Método de construtor.                                             |
 | [**~ CEnumMediaTypes**](cenummediatypes--cenummediatypes.md) | Método destruidor. VirtuaisLUNs.                                     |
 | Métodos IEnumMediaTypes                                      | Descrição                                                     |
-| [**8i**](cenummediatypes-clone.md)                       | Faz uma cópia do enumerador com o mesmo estado de enumeração. |
+| [**Clone**](cenummediatypes-clone.md)                       | Faz uma cópia do enumerador com o mesmo estado de enumeração. |
 | [**Avançar**](cenummediatypes-next.md)                         | Recupera um número especificado de tipos de mídia.                    |
-| [**Redefinir**](cenummediatypes-reset.md)                       | Redefine a sequência de enumeração para o início.               |
+| [**Definido**](cenummediatypes-reset.md)                       | Redefine a sequência de enumeração para o início.               |
 | [**Ignorar**](cenummediatypes-skip.md)                         | Ignora um número especificado de tipos de mídia.                   |
 
 
@@ -58,7 +58,7 @@ Sempre que um PIN altera sua lista de tipos de mídia preferenciais, o PIN incre
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

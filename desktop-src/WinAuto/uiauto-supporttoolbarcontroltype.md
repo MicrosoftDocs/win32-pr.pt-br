@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, barra de ferramentas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4327c187a86ace6f02b93082675c345eae4d4edf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1194c9aabaa684370b99d23d91c979ff3410305b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364379"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471152"
 ---
 # <a name="toolbar-control-type"></a>Tipo de controle ToolBar
 
@@ -48,38 +48,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ToolBar
-<ul>
-<li>Vários controles (0 ou mais)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>ToolBar
-<ul>
-<li>Vários controles (0 ou mais)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>ToolBar<ul><li>Vários controles (0 ou mais)</li></ul></li></ul> | <ul><li>ToolBar<ul><li>Vários controles (0 ou mais)</li></ul></li></ul> | 
 
 
 
- 
+
+ 
 
 Um controle ToolBar pode conter qualquer tipo de controle dentro de sua subárvore. Geralmente, eles contêm botões, caixas de combinação e botões de divisão.
 
@@ -104,7 +81,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -120,7 +97,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -139,7 +116,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -154,9 +131,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

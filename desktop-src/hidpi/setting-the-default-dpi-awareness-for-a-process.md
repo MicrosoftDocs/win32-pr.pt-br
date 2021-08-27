@@ -8,16 +8,16 @@ ms:contentKeyID: 74520139
 ms.date: 03/30/2018
 ms.topic: article
 mtps_version: v=VS.85
-ms.openlocfilehash: 216952ac05811226c403739d389f8de9f636c3b8
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 52ef4f10ed2f4253c796ae10a57a71d8a7bc4f0d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880530"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465673"
 ---
 # <a name="setting-the-default-dpi-awareness-for-a-process"></a>Definindo o reconhecimento de DPI padrão para um processo
 
-Aplicativos da área de Windows podem ser executados em diferentes modos de reconhecimento de DPI. Esses modos permitem um comportamento de dimensionamento de DPI diferente e podem usar espaços de coordenadas diferentes. Para obter mais informações sobre reconhecimento de DPI, consulte Desenvolvimento de aplicativos de área de [trabalho de DPI alto Windows.](https://msdn.microsoft.com/library/mt843498\(v=vs.85\)) É importante definir explicitamente o modo de reconhecimento de DPI padrão do processo para evitar um comportamento inesperado.
+Aplicativos da área Windows podem ser executados em diferentes modos de reconhecimento de DPI. Esses modos permitem um comportamento de dimensionamento de DPI diferente e podem usar espaços de coordenadas diferentes. Para obter mais informações sobre reconhecimento de DPI, consulte Desenvolvimento de aplicativos de área de [trabalho de DPI alto Windows.](https://msdn.microsoft.com/library/mt843498\(v=vs.85\)) É importante definir explicitamente o modo de reconhecimento de DPI padrão do processo para evitar um comportamento inesperado.
 
 Há dois métodos principais para especificar o reconhecimento de DPI padrão de um processo:
 
@@ -29,17 +29,17 @@ Recomendamos que você especifique o reconhecimento de DPI do processo padrão p
 
 ## <a name="setting-default-awareness-with-the-application-manifest"></a>Definindo o reconhecimento padrão com o manifesto do aplicativo
 
-Há duas configurações de manifesto que permitem que você especifique o modo de reconhecimento de DPI padrão do processo: \<dpiAwareness\> e \<dpiAware\> . \<dpiAware\>foi introduzido no Windows Vista e permite que o padrão do processo seja definido como reconhecimento do sistema. \<dpiAwareness\>foi introduzido no Windows 10, versão 1607 e permite que você especifique uma lista ordenada de modos de reconhecimento de DPI padrão do processo. Isso permite definir modos de reconhecimento de DPI de backup, que serão usados se o aplicativo for usado em uma versão do Windows não puder dar suporte ao primeiro modo de reconhecimento especificado. Em versões mais antigas Windows, a marca \<dpiAwareness\> mais nova será ignorada. Isso significa que você pode usar essas duas configurações de manifesto para habilitar um cenário em que o padrão do processo pode ser o reconhecimento do sistema sobre a versão mais antiga do Windows enquanto está sendo Per-Monitor em versões maiores que Windows 10, versão 1607. No Windows 10, versão 1607 e on, a configuração será \<dpiAware\> ignorada se o \<dpiAwareness\> elemento estiver presente.
+Há duas configurações de manifesto que permitem que você especifique o modo de reconhecimento de DPI padrão do processo: \<dpiAwareness\> e \<dpiAware\> . \<dpiAware\>foi introduzido no Windows Vista e permite que o padrão do processo seja definido como reconhecimento do sistema. \<dpiAwareness\>foi introduzido no Windows 10, versão 1607 e permite que você especifique uma lista ordenada de modos de reconhecimento de DPI padrão do processo. Isso permite definir modos de reconhecimento de DPI de backup, que serão usados se o aplicativo for usado em uma versão do Windows não puder dar suporte ao primeiro modo de reconhecimento especificado. Em versões mais antigas Windows, a marca \<dpiAwareness\> mais nova será ignorada. Isso significa que você pode usar essas duas configurações de manifesto para habilitar um cenário em que o padrão do processo pode ser o reconhecimento do sistema sobre a versão mais antiga do Windows enquanto estiver Per-Monitor em versões maiores que Windows 10, versão 1607. No Windows 10, versão 1607 e on, a configuração será \<dpiAware\> ignorada se o \<dpiAwareness\> elemento estiver presente.
 
 A tabela a seguir mostra como especificar diferentes modos de reconhecimento de DPI padrão do processo usando as duas configurações de manifesto:
 
 
-| Processar o modo de reconhecimento de DPI padrão | &lt;Configuração de &gt; dpiAware | &lt;Configuração de dpiAwareness &gt; (Windows 10, versão 1607 e posterior) | 
+| Processar o modo de reconhecimento de DPI padrão | Configuração de <dpiAware> | <dpiAwareness>setting (Windows 10, versão 1607 e posterior) | 
 |------------------------------------|--------------------|--------------------------------------------------------------|
-| Inconscientes | <p>N/A (nenhuma configuração de dpiAware no manifesto)</p><p>ou</p><p>&lt;dpiAware &gt; false &lt; /dpiAware&gt;</p> | &lt;dpiAwareness &gt; não &lt; ciente /dpiAwareness&gt; | 
-| Ciente do sistema | &lt;dpiAware &gt; true &lt; /dpiAware&gt; | &lt;dpiAwareness &gt; system &lt; /dpiAwareness&gt; | 
-| Por Monitor | &lt;dpiAware &gt; true/pm &lt; dpiAware&gt; | &lt;dpiAwareness &gt; PerMonitor &lt; /dpiAwareness&gt; | 
-| Por Monitor V2 | Sem suporte | &lt;dpiAwareness &gt; PerMonitorV2 &lt; /dpiAwareness&gt; | 
+| Inconscientes | <p>N/A (nenhuma configuração de dpiAware no manifesto)</p><p>ou</p><p>&lt;dpiAware &gt; false &lt; /dpiAware&gt;</p> | <dpiAwareness>Inconscientes</dpiAwareness> | 
+| Ciente do sistema | <dpiAware>true</dpiAware> | <dpiAwareness>sistema</dpiAwareness> | 
+| Por Monitor | <dpiAware>true/pm<dpiAware> | <dpiAwareness>PerMonitor</dpiAwareness> | 
+| Por Monitor V2 | Sem suporte | <dpiAwareness>PerMonitorV2</dpiAwareness> | 
 
 
  

@@ -7,12 +7,12 @@ MSHAttr:
 title: DisplayProviderName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa88313744962d18c72ea206d87f0cac8fa0d3c6
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: b0b342353ba06cf911a3da97d48eea83ecc2faf7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988039"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479932"
 ---
 # <a name="span-idwwan_profile_v2element_displayprovidernamespandisplayprovidername"></a><span id="WWAN_profile_v2.element_DisplayProviderName"></span>DisplayProviderName
 
@@ -20,9 +20,9 @@ O [**elemento DisplayProviderName**](element-displayprovidername.md) é um [**pr
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-**&lt;DisplayProviderName&gt;**
+**<DisplayProviderName>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <DisplayProviderName>
@@ -49,9 +49,7 @@ Esse elemento mais externo (documento) pode não estar contido por outros elemen
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
 
 
  

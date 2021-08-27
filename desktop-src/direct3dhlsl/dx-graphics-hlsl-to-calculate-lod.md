@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9e307527f93c153f0f78ce58b4d70ead4f7c1bc4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 44d71469cf5fd3246a0bb038cf369227cb3a3017
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120551"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625822"
 ---
 # <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (objeto de textura directX HLSL)
 
@@ -32,8 +32,8 @@ ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

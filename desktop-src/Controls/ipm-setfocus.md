@@ -3,7 +3,7 @@ title: Mensagem de IPM_SETFOCUS (commctrl. h)
 description: Define o foco do teclado para o campo especificado no controle de endereço IP. Todo o texto nesse campo será selecionado.
 ms.assetid: 4b975eb2-85e1-4e33-a803-99b48d2ff5e8
 keywords:
-- Controles de IPM_SETFOCUS de mensagens do Windows
+- controles de Windows de mensagem de IPM_SETFOCUS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d713e0a8b7eb838a2db5c4738c801d4fb76b782
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a74d98aa4d4259d11d7fef6e0bfdad2bfe741447ddffab27fa41545e7eda515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085566"
 ---
 # <a name="ipm_setfocus-message"></a>\_Mensagem IPM SETFOCUS
 
@@ -39,7 +39,7 @@ Um índice de campo baseado em zero ao qual o foco deve ser definido. Se esse va
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -49,9 +49,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

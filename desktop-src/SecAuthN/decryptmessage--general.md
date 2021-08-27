@@ -4,12 +4,12 @@ ms.assetid: ea271d0c-9167-41c5-8919-09611206fc71
 title: Função DecryptMessage (geral) (SSPI. h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: a05906c721d9046920c465fdfdf6b1c790b06640
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dfbde6c0b4a8c46920428af3d7f700268f11690
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164699"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476912"
 ---
 # <a name="decryptmessage-general-function"></a>Função DecryptMessage (geral)
 
@@ -98,8 +98,12 @@ Esse parâmetro pode ser um dos sinalizadores a seguir.
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>A mensagem não foi criptografada, mas um cabeçalho ou trailer foi produzido.<br/><blockquote>[!Note]<br />
-KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br/></td></tr><tr class="even"><td><span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl> <dt><strong>SIGN_ONLY</strong></dt> </dl></td><td>Ao usar o SSP de resumo, use esse sinalizador quando o [*contexto de segurança*](../secgloss/s-gly.md) for definido para verificar apenas a [*assinatura*](../secgloss/s-gly.md) . Para obter mais informações, consulte [qualidade de proteção](quality-of-protection.md).<br/></td></tr></tbody></table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | A mensagem não foi criptografada, mas um cabeçalho ou trailer foi produzido.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br /> | 
+| <span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl><dt><strong>SIGN_ONLY</strong></dt></dl> | Ao usar o SSP de resumo, use esse sinalizador quando o [*contexto de segurança*](../secgloss/s-gly.md) for definido para verificar apenas a [*assinatura*](../secgloss/s-gly.md) . Para obter mais informações, consulte [qualidade de proteção](quality-of-protection.md).<br /> | 
+
 
 
 
@@ -107,7 +111,7 @@ KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br/><
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função verificar que a mensagem foi recebida na sequência correta, a função retornará s \_ E \_ OK.
 
@@ -146,9 +150,9 @@ Para obter informações sobre a interoperação com o GSSAPI, consulte [interop
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 

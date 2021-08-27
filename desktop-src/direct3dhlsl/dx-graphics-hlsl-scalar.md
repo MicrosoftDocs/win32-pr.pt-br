@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/29/2020
-ms.openlocfilehash: 39097dd358fcf9da1685be517742291ef96332f2307f255274445da70e4fc050
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ddfbc679d95ca0a2c6fce0710b5de37f677fe0f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725930"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626722"
 ---
 # <a name="scalar-types"></a>Tipos de escalares
 
@@ -47,7 +47,7 @@ Para obter mais informações sobre literais escalares, consulte [Gramática](dx
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -59,7 +59,7 @@ Para obter mais informações sobre literais escalares, consulte [Gramática](dx
 Por exemplo, aqui está uma declaração float-variable com sinal de 4 componentes.<br/> <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

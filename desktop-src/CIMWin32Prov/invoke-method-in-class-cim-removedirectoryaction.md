@@ -1,8 +1,8 @@
 ---
-description: O método Invoke da classe CIM \_ RemoveDirectoryAction executa uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Esse método é herdado da \_ ação CIM.
+description: O método Invoke da classe \_ REMOVEDirectoryAction cim toma uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Esse método é herdado da Ação \_ CIM.
 ms.assetid: c6a7edcd-aac1-4364-8de5-a16fe2bab107
 ms.tgt_platform: multiple
-title: Método Invoke da classe CIM_RemoveDirectoryAction
+title: Invocar o método da classe CIM_RemoveDirectoryAction dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c0917d81d7d0e5100230ec3b6f099ac9fad1650e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fab386bc41458ae4f4dd4593141af7671240a7f386c3fd9dfbb6c0d511071094
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064866"
 ---
-# <a name="invoke-method-of-the-cim_removedirectoryaction-class"></a>Método Invoke da classe CIM \_ RemoveDirectoryAction
+# <a name="invoke-method-of-the-cim_removedirectoryaction-class"></a>Invocar o método da classe \_ REMOVEDirectoryAction cim
 
-O método **Invoke** da classe [**CIM \_ RemoveDirectoryAction**](cim-removedirectoryaction.md) executa uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Esse método é herdado [**da \_ ação CIM**](cim-action.md).
+O **método Invoke** da classe [**\_ REMOVEDirectoryAction cim**](cim-removedirectoryaction.md) toma uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Esse método é herdado da [**Ação CIM. \_**](cim-action.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,15 +45,15 @@ uint32 Invoke();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -73,10 +73,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[\_REMOVEDIRECTORYACTION CIM](invoke-method-in-class-cim-removedirectoryaction.md)
+[CIM \_ RemoveDirectoryAction](invoke-method-in-class-cim-removedirectoryaction.md)
 </dt> <dt>
 
-[**\_REMOVEDIRECTORYACTION CIM**](cim-removedirectoryaction.md)
+[**CIM \_ RemoveDirectoryAction**](cim-removedirectoryaction.md)
 </dt> </dl>
 
  

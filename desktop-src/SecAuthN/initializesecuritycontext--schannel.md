@@ -1,21 +1,21 @@
 ---
-description: Inicia o lado do cliente, [*contexto de segurança*](../secgloss/s-gly.md) de saída de um identificador de credencial usando a [*delegação restrita*](../secgloss/s-gly.md)de Schannel.
+description: Inicia o contexto de [](../secgloss/s-gly.md) segurança de saída do lado do cliente de um handle de credencial usando a delegação restrita do [*Schannel.*](../secgloss/s-gly.md)
 ms.assetid: c451089a-d10d-469c-99dd-43d75a6b0b2a
-title: Função InitializeSecurityContext (Schannel) (SSPI. h)
+title: Função InitializeSecurityContext (Schannel) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: ac552370727659e43b762d55019132ac1c4ea1e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29bbaeac3ef307e3ef846f526d96a98a22395742
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808380"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472902"
 ---
 # <a name="initializesecuritycontext-schannel-function"></a>Função InitializeSecurityContext (Schannel)
 
-A função **InitializeSecurityContext (Schannel)** inicia o lado do cliente, [*contexto de segurança*](../secgloss/s-gly.md) de saída de um identificador de credencial. A função é usada para criar um [*contexto de segurança*](../secgloss/s-gly.md) entre o aplicativo cliente e um par remoto. **InitializeSecurityContext (Schannel)** retorna um token que o cliente deve passar para o par remoto, que o par, por sua vez, envia para a implementação de segurança local por meio da chamada de [**AcceptSecurityContext (Schannel)**](acceptsecuritycontext--schannel.md) . O token gerado deve ser considerado opaco por todos os chamadores.
+A **função InitializeSecurityContext (Schannel)** inicia o contexto de segurança de saída do lado do cliente [*de*](../secgloss/s-gly.md) um handle de credencial. A função é usada para criar um contexto [*de segurança*](../secgloss/s-gly.md) entre o aplicativo cliente e um par remoto. **InitializeSecurityContext (Schannel)** retorna um token que o cliente deve passar para o par remoto, que o par, por sua vez, envia para a implementação de segurança local por meio da chamada [**AcceptSecurityContext (Schannel).**](acceptsecuritycontext--schannel.md) O token gerado deve ser considerado opaco por todos os chamadores.
 
-Normalmente, a função **InitializeSecurityContext (Schannel)** é chamada em um loop até que um [*contexto de segurança*](../secgloss/s-gly.md) suficiente seja estabelecido.
+Normalmente, a **função InitializeSecurityContext (Schannel)** é chamada em um loop até que um contexto de [*segurança suficiente*](../secgloss/s-gly.md) seja estabelecido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,114 +43,127 @@ SECURITY_STATUS SEC_Entry InitializeSecurityContext(
 
 <dl> <dt>
 
-*phCredential* \[ em, opcional\]
+*phCredential* \[ in, opcional\]
 </dt> <dd>
 
-Um identificador para as credenciais retornadas por [**falha AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md). Esse identificador é usado para criar o [*contexto de segurança*](../secgloss/s-gly.md). A função **InitializeSecurityContext (Schannel)** requer pelo menos credenciais de saída.
+Um identificador para as credenciais retornadas [**por AcquireCredentialsHandle (Schannel).**](acquirecredentialshandle--schannel.md) Esse handle é usado para criar o contexto [*de segurança*](../secgloss/s-gly.md). A **função InitializeSecurityContext (Schannel)** requer pelo menos credenciais de SAÍDA.
 
 </dd> <dt>
 
-*phContext* \[ em, opcional\]
+*phContext* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **InitializeSecurityContext (Schannel)**, esse ponteiro é **nulo**. Na segunda chamada, esse parâmetro é um ponteiro para o identificador para o contexto formado parcialmente retornado no parâmetro *phNewContext* pela primeira chamada.
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **InitializeSecurityContext (Schannel),** esse ponteiro é **NULL.** Na segunda chamada, esse parâmetro é um ponteiro para o ponteiro para o contexto parcialmente formado retornado no parâmetro *phNewContext* pela primeira chamada.
 
-Na primeira chamada para **InitializeSecurityContext (Schannel)**, especifique **NULL**. Em chamadas futuras, especifique o token recebido no parâmetro *phNewContext* após a primeira chamada para essa função.
+Na primeira chamada para **InitializeSecurityContext (Schannel),** **especifique NULL.** Em chamadas futuras, especifique o token recebido no *parâmetro phNewContext* após a primeira chamada para essa função.
 
 </dd> <dt>
 
-*pszTargetName* \[ em, opcional\]
+*pszTargetName* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que identifica exclusivamente o servidor de destino. O Schannel usa esse valor para verificar o certificado do servidor. O Schannel também usa esse valor para localizar a sessão no cache da sessão ao restabelecer uma conexão. A sessão armazenada em cache será usada somente se todas as condições a seguir forem atendidas:
+Um ponteiro para uma cadeia de caracteres terminada em nulo que identifica exclusivamente o servidor de destino. O Schannel usa esse valor para verificar o certificado do servidor. O Schannel também usa esse valor para localizar a sessão no cache de sessão ao restabelecer uma conexão. A sessão armazenada em cache será usada somente se todas as seguintes condições são atendidas:
 
 -   O nome de destino é o mesmo.
--   A entrada do cache não expirou.
--   O processo do aplicativo que chama a função é o mesmo.
+-   A entrada de cache não expirou.
+-   O processo de aplicativo que chama a função é o mesmo.
 -   A sessão de logon é a mesma.
--   O identificador de credencial é o mesmo.
+-   O handle de credencial é o mesmo.
 
 </dd> <dt>
 
-*fContextReq* \[ no\]
+*fContextReq* \[ Em\]
 </dt> <dd>
 
-Sinalizadores de bits que indicam solicitações para o contexto. Nem todos os pacotes podem dar suporte a todos os requisitos. Os sinalizadores usados para esse parâmetro são prefixados com o \_ req \_ do ISC, por exemplo, delegado de req do ISC \_ \_ . Esse parâmetro pode ser um ou mais dos seguintes sinalizadores de atributos.
+Sinalizadores de bits que indicam solicitações para o contexto. Nem todos os pacotes podem dar suporte a todos os requisitos. Sinalizadores usados para esse parâmetro são prefixados com ISC \_ REQ \_ , por exemplo, ISC \_ REQ \_ DELEGATE. Esse parâmetro pode ser um ou mais dos sinalizadores de atributos a seguir.
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl> <dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt> </dl></td><td>O [*pacote de segurança*](../secgloss/s-gly.md) aloca buffers de saída para você. Quando você terminar de usar os buffers de saída, libere-os chamando a função [<strong>FreeContextBuffer</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-FreeContextBuffer).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl> <dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt> </dl></td><td>Criptografe mensagens usando a função [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl> <dt><strong>ISC_REQ_CONNECTION</strong></dt> </dl></td><td>O [*contexto de segurança*](../secgloss/s-gly.md) não tratará mensagens de formatação.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl> <dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt> </dl></td><td>Quando ocorrerem erros, a parte remota será notificada.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl> <dt><strong>ISC_REQ_INTEGRITY</strong></dt> </dl></td><td>Assine mensagens e verifique as assinaturas usando as funções [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD) e [<strong>MakeSignature</strong>] (MakeSignature.MD).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_MANUAL_CRED_VALIDATION"></span><span id="isc_req_manual_cred_validation"></span><dl> <dt><strong>ISC_REQ_MANUAL_CRED_VALIDATION</strong></dt> </dl></td><td>O Schannel não deve autenticar o servidor automaticamente.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl> <dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt> </dl></td><td>A política de autenticação mútua do serviço será satisfeita.<br/><blockquote>[!Caution]<br />
-Isso não significa necessariamente que a autenticação mútua seja executada, apenas que a política de autenticação do serviço seja satisfeita. Para garantir que a autenticação mútua seja executada, chame a função [<strong>QueryContextAttributes (Schannel)</strong>] (QueryContextAttributes--Schannel.MD).</blockquote><br/></td></tr><tr class="even"><td><span id="ISC_REQ_REPLAY_DETECT"></span><span id="isc_req_replay_detect"></span><dl> <dt><strong>ISC_REQ_REPLAY_DETECT</strong></dt> </dl></td><td>Detectar as mensagens reproduzidas que foram codificadas usando as funções [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD) ou [<strong>MakeSignature</strong>] (MakeSignature.MD).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_SEQUENCE_DETECT"></span><span id="isc_req_sequence_detect"></span><dl> <dt><strong>ISC_REQ_SEQUENCE_DETECT</strong></dt> </dl></td><td>Detecte mensagens recebidas fora de sequência.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_STREAM"></span><span id="isc_req_stream"></span><dl> <dt><strong>ISC_REQ_STREAM</strong></dt> </dl></td><td>Suporte a uma conexão orientada a fluxo.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_USE_SUPPLIED_CREDS"></span><span id="isc_req_use_supplied_creds"></span><dl> <dt><strong>ISC_REQ_USE_SUPPLIED_CREDS</strong></dt> </dl></td><td>O Schannel não deve tentar fornecer credenciais para o cliente automaticamente.<br/></td></tr></tbody></table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl><dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt></dl> | O [*pacote de segurança*](../secgloss/s-gly.md) aloca buffers de saída para você. Quando terminar de usar os buffers de saída, livre-os chamando a [<strong>função FreeContextBuffer.</strong>](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br /> | 
+| <span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl><dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt></dl> | Criptografe mensagens usando a [<strong>função EncryptMessage.</strong>](encryptmessage--general.md)<br /> | 
+| <span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl><dt><strong>ISC_REQ_CONNECTION</strong></dt></dl> | O [*contexto de segurança*](../secgloss/s-gly.md) não manipulará mensagens de formatação.<br /> | 
+| <span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl><dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt></dl> | Quando ocorrerem erros, a parte remota será notificada.<br /> | 
+| <span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl><dt><strong>ISC_REQ_INTEGRITY</strong></dt></dl> | Assine mensagens e verifique as assinaturas usando as [<strong>funções EncryptMessage</strong>](encryptmessage--general.md) [<strong>e MakeSignature.</strong>](makesignature.md)<br /> | 
+| <span id="ISC_REQ_MANUAL_CRED_VALIDATION"></span><span id="isc_req_manual_cred_validation"></span><dl><dt><strong>ISC_REQ_MANUAL_CRED_VALIDATION</strong></dt></dl> | O Schannel não deve autenticar o servidor automaticamente.<br /> | 
+| <span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl><dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt></dl> | A política de autenticação mútua do serviço será atendida.<br /><blockquote>[!Caution]<br />Isso não significa necessariamente que a autenticação mútua seja executada, apenas que a política de autenticação do serviço é atendida. Para garantir que a autenticação mútua seja executada, chame a [<strong>função QueryContextAttributes (Schannel).</strong>](querycontextattributes--schannel.md)</blockquote><br /> | 
+| <span id="ISC_REQ_REPLAY_DETECT"></span><span id="isc_req_replay_detect"></span><dl><dt><strong>ISC_REQ_REPLAY_DETECT</strong></dt></dl> | Detecte mensagens reprodução que foram codificadas usando as funções [<strong>EncryptMessage</strong>](encryptmessage--general.md) ou [<strong>MakeSignature.</strong>](makesignature.md)<br /> | 
+| <span id="ISC_REQ_SEQUENCE_DETECT"></span><span id="isc_req_sequence_detect"></span><dl><dt><strong>ISC_REQ_SEQUENCE_DETECT</strong></dt></dl> | Detectar mensagens recebidas fora de sequência.<br /> | 
+| <span id="ISC_REQ_STREAM"></span><span id="isc_req_stream"></span><dl><dt><strong>ISC_REQ_STREAM</strong></dt></dl> | Dar suporte a uma conexão orientada a fluxo.<br /> | 
+| <span id="ISC_REQ_USE_SUPPLIED_CREDS"></span><span id="isc_req_use_supplied_creds"></span><dl><dt><strong>ISC_REQ_USE_SUPPLIED_CREDS</strong></dt></dl> | O Schannel não deve tentar fornecer credenciais para o cliente automaticamente.<br /> | 
+
 
 
 
  
 
-Os atributos solicitados podem não ter suporte do cliente. Para obter mais informações, consulte o parâmetro *pfContextAttr* .
+Os atributos solicitados podem não ser suportados pelo cliente. Para obter mais informações, consulte o *parâmetro pfContextAttr.*
 
-Para obter descrições adicionais dos vários atributos, consulte [requisitos de contexto](context-requirements.md).
+Para saber mais sobre os vários atributos, confira [Requisitos de contexto.](context-requirements.md)
 
 </dd> <dt>
 
-*Reserved1* \[ no\]
+*Reservado1* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> <dt>
 
-*TargetDataRep* \[ no\]
+*TargetDataRep* \[ Em\]
 </dt> <dd>
 
-Esse parâmetro não é usado com Schannel. Defina-o como zero.
+Esse parâmetro não é usado com o Schannel. De defini-lo como zero.
 
 </dd> <dt>
 
-*pInput* \[ em, opcional\]
+*pInput* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para os buffers fornecidos como entrada para o pacote. A menos que o contexto do cliente tenha sido iniciado pelo servidor, o valor desse parâmetro deve ser **nulo** na primeira chamada para a função. Nas chamadas subsequentes para a função ou quando o contexto do cliente foi iniciado pelo servidor, o valor desse parâmetro é um ponteiro para um buffer alocado com memória suficiente para conter o token retornado pelo computador remoto.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para os buffers fornecidos como entrada para o pacote. A menos que o contexto do cliente tenha sido iniciado pelo servidor, o valor desse parâmetro deve ser **NULL** na primeira chamada para a função. Em chamadas subsequentes para a função ou quando o contexto do cliente foi iniciado pelo servidor, o valor desse parâmetro é um ponteiro para um buffer alocado com memória suficiente para manter o token retornado pelo computador remoto.
 
-Em chamadas para essa função após a chamada inicial, deve haver dois buffers. O primeiro tem o tipo de **\_ token SECBUFFER** e contém o token recebido do servidor. O segundo buffer tem o tipo **SECBUFFER \_ vazio**; defina os membros **pvBuffer** e **cbBuffer** como zero.
+Em chamadas para essa função após a chamada inicial, deve haver dois buffers. O primeiro tem o **tipo SECBUFFER \_ TOKEN** e contém o token recebido do servidor. O segundo buffer tem o **tipo SECBUFFER \_ EMPTY**; de definido os membros **pvBuffer** e **cbBuffer** como zero.
 
 </dd> <dt>
 
-*Reserved2* \[ no\]
+*Reservado2* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> <dt>
 
-*phNewContext* \[ entrada, saída, opcional\]
+*phNewContext* \[ in, out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **InitializeSecurityContext (Schannel)**, esse ponteiro recebe o novo identificador de contexto. Na segunda chamada, *phNewContext* pode ser o mesmo que o identificador especificado no parâmetro *phContext* .
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **InitializeSecurityContext (Schannel),** esse ponteiro recebe o novo indicador de contexto. Na segunda chamada, *phNewContext* pode ser o mesmo que o handle especificado no *parâmetro phContext.*
 
-Em chamadas após a primeira chamada, passe o identificador retornado aqui como o parâmetro *phContext* e especifique **NULL** para *phNewContext*.
+Em chamadas após a primeira chamada, passe o handle retornado aqui como o *parâmetro phContext* e especifique **NULL** para *phNewContext*.
 
 </dd> <dt>
 
-*pOutput* \[ entrada, saída, opcional\]
+*pOutput* \[ in, out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para a estrutura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recebe os dados de saída. Se um buffer tiver sido digitado como s \_ ReadWrite na entrada, ele estará lá na saída. O sistema alocará um buffer para o token de segurança, se solicitado (por meio da ISC, \_ \_ aloque a \_ memória) e preencherá o endereço no descritor de buffer para o token de segurança.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para a estrutura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recebe os dados de saída. Se um buffer tiver sido digitado como SEC \_ READWRITE na entrada, ele estará lá na saída. O sistema alocará um buffer para o token de segurança se solicitado (por meio de ISC \_ REQ ALLOCATE MEMORY) e preencherá o endereço no descritor de buffer para o \_ \_ token de segurança.
 
-Se o \_ sinalizador de \_ alocar memória de req. do ISC \_ for especificado, o SSP do Schannel alocará memória para o buffer e colocará as informações apropriadas no [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc). Além disso, o chamador deve passar um buffer do tipo **\_ alerta de SECBUFFER**. Na saída, se um alerta for gerado, esse buffer conterá informações sobre esse alerta e a função falhará.
+Se o sinalizador ISC REQ ALLOCATE MEMORY for especificado, o SSP Schannel alocará memória para o buffer e colocará as informações apropriadas \_ \_ no \_ [**SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) Além disso, o chamador deve passar um buffer do tipo **SECBUFFER \_ ALERT**. Na saída, se um alerta for gerado, esse buffer conterá informações sobre esse alerta e a função falhará.
 
 </dd> <dt>
 
-*pfContextAttr* \[ fora\]
+*pfContextAttr* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável para receber um conjunto de sinalizadores de bits que indicam os [*atributos*](../secgloss/a-gly.md#_security_attribute_gly) do contexto estabelecido. Para obter uma descrição dos vários atributos, consulte [requisitos de contexto](context-requirements.md).
+Um ponteiro para uma variável para receber um conjunto de sinalizadores de bits que indicam os [*atributos*](../secgloss/a-gly.md#_security_attribute_gly) do contexto estabelecido. Para ver uma descrição dos vários atributos, confira [Requisitos de contexto.](context-requirements.md)
 
-Os sinalizadores usados para esse parâmetro são prefixados com ISC \_ RET, como o delegado da ISC \_ RET \_ . Para obter uma lista de valores válidos, consulte o parâmetro *fContextReq* .
+Sinalizadores usados para esse parâmetro são prefixados com ISC \_ RET, como ISC \_ RET \_ DELEGATE. Para ver uma lista de valores válidos, consulte o *parâmetro fContextReq.*
 
-Não verifique os atributos relacionados à segurança até que a chamada de função final seja retornada com êxito. Os sinalizadores de atributo que não estão relacionados à segurança, como o \_ \_ sinalizador de memória alocada de ASC RET \_ , podem ser verificados antes do retorno final.
+Não verifique se há atributos relacionados à segurança até que a chamada de função final retorne com êxito. Sinalizadores de atributo que não estão relacionados à segurança, como o sinalizador ASC \_ RET ALLOCATED MEMORY, podem ser verificados \_ antes do retorno \_ final.
 
 > [!Note]  
-> Determinados atributos de contexto podem ser alterados durante a negociação com um par remoto.
+> Atributos de contexto específicos podem mudar durante a negociação com um par remoto.
 
  
 
@@ -163,7 +176,7 @@ Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará um dos códigos de êxito a seguir.
 
@@ -251,7 +264,7 @@ Os chamadores de modo kernel têm as seguintes diferenças: o nome de destino é
 
 Se a função retornar \_ \_ as credenciais s incompletas \_ , verifique se você especificou um certificado válido e confiável em suas credenciais. O certificado é especificado ao chamar a função [**falha AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md) . O certificado deve ser um certificado de autenticação de cliente emitido por uma autoridade de certificação (CA) confiável pelo servidor. Para obter uma lista das CAs confiáveis pelo servidor, chame a função [**QueryContextAttributes (Schannel)**](querycontextattributes--schannel.md) e especifique o \_ \_ \_ atributo ex. da lista de emissores SECPKG attr \_ .
 
-Depois que um aplicativo cliente recebe um certificado de autenticação de uma AC que é confiável pelo servidor, o aplicativo cria uma nova credencial chamando a função [**falha AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md) e, em seguida, chamando **InitializeSecurityContext (Schannel)** novamente, especificando a nova credencial no parâmetro *phCredential* .
+Depois que um aplicativo cliente recebe um certificado de autenticação de uma AC confiável pelo servidor, o aplicativo cria uma nova credencial chamando a função [**AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md) e, em seguida, chamando **InitializeSecurityContext (Schannel)** novamente, especificando a nova credencial no parâmetro *phCredential.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -259,10 +272,10 @@ Depois que um aplicativo cliente recebe um certificado de autenticação de uma 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>Sspi.h (inclua Security.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 
 
@@ -277,22 +290,22 @@ Depois que um aplicativo cliente recebe um certificado de autenticação de uma 
 [**AcceptSecurityContext (Schannel)**](acceptsecuritycontext--schannel.md)
 </dt> <dt>
 
-[**Falha AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md)
+[**AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md)
 </dt> <dt>
 
-[**CompleteAuthToken**](/windows/win32/api/sspi/nf-sspi-completeauthtoken)
+[**Completeauthtoken**](/windows/win32/api/sspi/nf-sspi-completeauthtoken)
 </dt> <dt>
 
 [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext)
 </dt> <dt>
 
-[**FreeContextBuffer**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)
+[**Freecontextbuffer**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)
 </dt> <dt>
 
-[**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer)
+[**Secbuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer)
 </dt> <dt>
 
-[**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc)
+[**Secbufferdesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc)
 </dt> </dl>
 
  

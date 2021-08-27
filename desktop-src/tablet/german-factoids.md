@@ -4,12 +4,12 @@ ms.assetid: 0cf5ae1b-4633-4be8-9d67-f69128d021bb
 title: Factos de alemão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 356451754fe35d4045cab0acffec034c77a22d06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f79e4d95f950c937220fda03c853d5bdcdf1709
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164564"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626742"
 ---
 # <a name="german-factoids"></a>Factos de alemão
 
@@ -19,9 +19,9 @@ A tabela a seguir lista os formatos disponíveis para cada factor usado em alem�
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -33,7 +33,7 @@ A tabela a seguir lista os formatos disponíveis para cada factor usado em alem�
 <tbody>
 <tr class="odd">
 <td><strong>Moeda</strong></td>
-<td>Moeda em euros, dólares, libras e iene, conforme escrito em alemão.<br/></td>
+<td>Conversor de Moedas em euros, dólares, libras e iene, conforme escrito em alemão.<br/></td>
 <td>.234  <br/> 1,234, 50  <br/> 236, 50  <br/> 123  <br/> 0, 25  <br/> 1,234,-  <br/>   1,234<br/>   1,234, 50<br/>   236, 50<br/>   123<br/>   0, 25<br/>   1,234,-<br/> EUR 1,234<br/> EUR 1,234, 50<br/> $1.234<br/> US $1,234, 50<br/> $1.234,-<br/> US $236, 50<br/> US $0, 25<br/> 2 CT.<br/> 10, 5 CT.<br/> 1, 25 CT.<br/>
 <blockquote>
 [!Note]<br />

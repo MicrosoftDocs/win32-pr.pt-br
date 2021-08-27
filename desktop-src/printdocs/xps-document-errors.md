@@ -1,341 +1,101 @@
 ---
-description: A tabela a seguir lista todos os valores HRESULT que podem ser retornados pelos métodos da API de Documento XPS.
+description: A tabela a seguir lista todos os valores HRESULT que podem ser retornados pelos métodos da API de documento XPS.
 ms.assetid: 9e6db1e3-7151-4538-8607-b7185ebc0110
-title: Erros de documento XPS (Xpsobjectmodel.h)
+title: Erros de documento XPS (Xpsobjectmodel. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d142105d9d958d435f8777212a4473cbaa4f4bb6712e387e3dfeffdcb85c58c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37f15f1cc5a1908010d7a46dca9c63b12218e53b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971135"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471602"
 ---
 # <a name="xps-document-errors"></a>Erros de documento XPS
 
-A tabela a seguir lista todos os **valores HRESULT** que podem ser retornados pelos métodos da API de Documento XPS. Observe que nem todos os métodos retornam todos os valores de retorno listados nesta tabela.
+A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pelos métodos da API de documento XPS. Observe que nem todos os métodos retornam todos os valores retornados listados nesta tabela.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor/código de retorno</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="XPS_E_ALREADY_OWNED"></span><span id="xps_e_already_owned"></span><dl> <dt><strong>XPS_E_ALREADY_OWNED</strong></dt> <dt>0x80520503</dt> </dl></td>
-<td>A interface já tem um proprietário.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC"></span><span id="xps_e_bleed_box_page_dimensions_not_in_sync"></span><dl> <dt><strong>XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC</strong></dt> <dt>0x80520509</dt> </dl></td>
-<td>As dimensões da caixa de correio não são compatíveis com as dimensões da página.<br/> O valor de largura da caixa de corte deve ser maior ou igual à largura da página mais o valor absoluto da coordenada X da origem da caixa de ressarção. O valor de altura da caixa de correio deve ser maior ou igual à altura da página mais o valor absoluto da coordenada y da origem da caixa de correio. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT"></span><span id="xps_e_both_pathfigure_and_abbr_syntax_present"></span><dl> <dt><strong>XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT</strong></dt> <dt>0x80520507</dt> </dl></td>
-<td>Um <strong>elemento PathGeometry</strong> contém um conjunto de figuras de caminho que são especificadas com o atributo <strong>Figures</strong> ou com um <strong>elemento PathFigure</strong> filho. As figuras de caminho de uma geometria não podem ter o atributo <strong>Figures</strong> e um <strong>elemento PathFigure</strong> filho. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT"></span><span id="xps_e_both_resource_and_sourceattr_present"></span><dl> <dt><strong>XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT</strong></dt> <dt>0x80520508</dt> </dl></td>
-<td>Um <strong>elemento ResourceDictionary</strong> que especifica um dicionário de recursos remotos em seu atributo <strong>Source</strong> NÃO DEVE conter nenhum filho de definição de recurso.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_CARET_OUT_OF_ORDER"></span><span id="xps_e_caret_out_of_order"></span><dl> <dt><strong>XPS_E_CARET_OUT_OF_ORDER</strong></dt> <dt>0x80520306</dt> </dl></td>
-<td>Um valor de local de adoção está fora de ordem. Os valores de localização devem ser classificação em ordem crescente. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_CARET_OUTSIDE_STRING"></span><span id="xps_e_caret_outside_string"></span><dl> <dt><strong>XPS_E_CARET_OUTSIDE_STRING</strong></dt> <dt>0x80520305</dt> </dl></td>
-<td>Foram especificadas paradas de adoção para uma cadeia de caracteres vazia; ou, o índice de salto com a distância excedeu o comprimento da cadeia de caracteres Unicode. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_COLOR_COMPONENT_OUT_OF_RANGE"></span><span id="xps_e_color_component_out_of_range"></span><dl> <dt><strong>XPS_E_COLOR_COMPONENT_OUT_OF_RANGE</strong></dt> <dt>0x80520506</dt> </dl></td>
-<td>Um valor de cor está fora do intervalo.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_SCRGB</strong></a> de cores, o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a +1,0.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a> de cores, <strong>o channelValues[0]</strong> que representa o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a +1,0. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_DICTIONARY_ITEM_NAMED"></span><span id="xps_e_dictionary_item_named"></span><dl> <dt><strong>XPS_E_DICTIONARY_ITEM_NAMED</strong></dt> <dt>0x80520401</dt> </dl></td>
-<td>Um visual em um dicionário de recursos tem o <strong>atributo Name,</strong> que pode não ser especificado em nenhum filho de <strong>um elemento ResourceDictionary.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_DUPLICATE_NAMES"></span><span id="xps_e_duplicate_names"></span><dl> <dt><strong>XPS_E_DUPLICATE_NAMES</strong></dt> <dt>0x80520209</dt> </dl></td>
-<td>Um objeto com esse nome já existe no dicionário.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_DUPLICATE_RESOURCE_KEYS"></span><span id="xps_e_duplicate_resource_keys"></span><dl> <dt><strong>XPS_E_DUPLICATE_RESOURCE_KEYS</strong></dt> <dt>0x80520200</dt> </dl></td>
-<td>Um objeto com esse nome de chave já existe no dicionário.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INDEX_OUT_OF_RANGE"></span><span id="xps_e_index_out_of_range"></span><dl> <dt><strong>XPS_E_INDEX_OUT_OF_RANGE</strong></dt> <dt>0x80520500</dt> </dl></td>
-<td>Reservado.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_BLEED_BOX"></span><span id="xps_e_invalid_bleed_box"></span><dl> <dt><strong>XPS_E_INVALID_BLEED_BOX</strong></dt> <dt>0x80520004</dt> </dl></td>
-<td>O retângulo da caixa de correio contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para os valores válidos. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_CONTENT_BOX"></span><span id="xps_e_invalid_content_box"></span><dl> <dt><strong>XPS_E_INVALID_CONTENT_BOX</strong></dt> <dt>0x8052000b</dt> </dl></td>
-<td>O retângulo da caixa de conteúdo contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para os valores válidos. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_CONTENT_TYPE"></span><span id="xps_e_invalid_content_type"></span><dl> <dt><strong>XPS_E_INVALID_CONTENT_TYPE</strong></dt> <dt>0x8052000e</dt> </dl></td>
-<td>A cadeia de caracteres de tipo de conteúdo não é válida.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_FLOAT"></span><span id="xps_e_invalid_float"></span><dl> <dt><strong>XPS_E_INVALID_FLOAT</strong></dt> <dt>0x80520007</dt> </dl></td>
-<td>Um <strong>valor FLOAT</strong> não é válido. É um NAN (número infinito ou não).<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_FONT_URI"></span><span id="xps_e_invalid_font_uri"></span><dl> <dt><strong>XPS_E_INVALID_FONT_URI</strong></dt> <dt>0x8052000a</dt> </dl></td>
-<td>O URI da fonte não é válido, possivelmente porque contém um fragmento vazio ou caracteres que não são válidos.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_LANGUAGE"></span><span id="xps_e_invalid_language"></span><dl> <dt><strong>XPS_E_INVALID_LANGUAGE</strong></dt> <dt>0x80520000</dt> </dl></td>
-<td>O idioma especificado não é válido ou não está formatado corretamente.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_LOOKUP_TYPE"></span><span id="xps_e_invalid_lookup_type"></span><dl> <dt><strong>XPS_E_INVALID_LOOKUP_TYPE</strong></dt> <dt>0x80520006</dt> </dl></td>
-<td>O nome da chave de consulta faz referência a um objeto que não é o tipo correto para a chamada; por exemplo, se o método retornar um pincel, mas o nome da chave de busca se referir a um objeto geometry.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_MARKUP"></span><span id="xps_e_invalid_markup"></span><dl> <dt><strong>XPS_E_INVALID_MARKUP</strong></dt> <dt>0x8052000c</dt> </dl></td>
-<td>A marcação que está sendo lida contém um elemento ou um atributo que não está em conformidade com o <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">XML Paper Specification</a>.<br/>
-<blockquote>
-[!Note]<br />
-Para representar valores de ponto flutuante, o OM XPS usa o <strong>tipo de</strong> dados FLOAT em vez de <strong>DOUBLE.</strong> Se um documento XPS tiver um elemento com dados de ponto flutuante que não se ajustam a um valor <strong>FLOAT,</strong> esse erro será retornado quando esse valor for encontrado durante a desserialização.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_NAME"></span><span id="xps_e_invalid_name"></span><dl> <dt><strong>XPS_E_INVALID_NAME</strong></dt> <dt>0x80520001</dt> </dl></td>
-<td>A cadeia de caracteres que foi passada não é um nome válido, de acordo com o XML Paper Specification. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_OBFUSCATED_FONT_URI"></span><span id="xps_e_invalid_obfuscated_font_uri"></span><dl> <dt><strong>XPS_E_INVALID_OBFUSCATED_FONT_URI</strong></dt> <dt>0x8052000f</dt> </dl></td>
-<td>Reservado.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_PAGE_SIZE"></span><span id="xps_e_invalid_page_size"></span><dl> <dt><strong>XPS_E_INVALID_PAGE_SIZE</strong></dt> <dt>0x80520003</dt> </dl></td>
-<td>As dimensões da página contêm um valor de tamanho de página que não é válido. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_RESOURCE_KEY"></span><span id="xps_e_invalid_resource_key"></span><dl> <dt><strong>XPS_E_INVALID_RESOURCE_KEY</strong></dt> <dt>0x80520002</dt> </dl></td>
-<td>De acordo com o <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">XML Paper Specification</a>, a cadeia de caracteres de chave de lookup não é válida.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE"></span><span id="xps_e_invalid_thumbnail_image_type"></span><dl> <dt><strong>XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE</strong></dt> <dt>0x80520005</dt> </dl></td>
-<td>Não há suporte para o tipo de imagem em miniatura.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_INVALID_XML_ENCODING"></span><span id="xps_e_invalid_xml_encoding"></span><dl> <dt><strong>XPS_E_INVALID_XML_ENCODING</strong></dt> <dt>0x8052000d</dt> </dl></td>
-<td>Encontrada marcação XML incorreta ou formatada incorretamente.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MAPPING_OUT_OF_ORDER"></span><span id="xps_e_mapping_out_of_order"></span><dl> <dt><strong>XPS_E_MAPPING_OUT_OF_ORDER</strong></dt> <dt>0x80520302</dt> </dl></td>
-<td>Em uma ou mais <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_glyph_mapping"><strong>XPS_GLYPH_MAPPING</strong></a> estruturas, um elemento está fora de sequência. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MAPPING_OUTSIDE_INDICES"></span><span id="xps_e_mapping_outside_indices"></span><dl> <dt><strong>XPS_E_MAPPING_OUTSIDE_INDICES</strong></dt> <dt>0x80520304</dt> </dl></td>
-<td>Os mapeamentos de glifo excedem o número de índices de glifo.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MAPPING_OUTSIDE_STRING"></span><span id="xps_e_mapping_outside_string"></span><dl> <dt><strong>XPS_E_MAPPING_OUTSIDE_STRING</strong></dt> <dt>0x80520303</dt> </dl></td>
-<td>Erro nos mapeamentos de glifo.<br/> Se a cadeia de caracteres Unicode estiver vazia, esse erro significa que um mapeamento de glifo também foi definido. Mapeamentos de glifo não devem ser definidos se a cadeia de caracteres Unicode estiver vazia.<br/> Se a cadeia de caracteres Unicode não estiver vazia, esse erro significa que um mapeamento de glifo foi definido para glifos fora da cadeia de caracteres Unicode. Mapeamentos de glifo não podem ser definidos para glifos que estão fora do comprimento da cadeia de caracteres Unicode.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_COLORPROFILE"></span><span id="xps_e_missing_colorprofile"></span><dl> <dt><strong>XPS_E_MISSING_COLORPROFILE</strong></dt> <dt>0x80520104</dt> </dl></td>
-<td>O parâmetro de perfil de cor <strong>é NULL,</strong>mas um perfil de cor é esperado. Um perfil de cor é necessário quando o tipo de cor é XPS_COLOR_TYPE_CONTEXT. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_DISCARDCONTROL"></span><span id="xps_e_missing_discardcontrol"></span><dl> <dt><strong>XPS_E_MISSING_DISCARDCONTROL</strong></dt> <dt>0x80520112</dt> </dl></td>
-<td>Uma página refere-se a recursos que podem ser descartados, mas não especifica um nome de parte DiscardControl.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_DOCUMENT"></span><span id="xps_e_missing_document"></span><dl> <dt><strong>XPS_E_MISSING_DOCUMENT</strong></dt> <dt>0x80520109</dt> </dl></td>
-<td><a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage"><strong>IXpsOMPackageWriter::AddPage</strong></a> foi chamado antes <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>de IXpsOMPackageWriter::StartNewDocument</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP"></span><span id="xps_e_missing_documentsequence_relationship"></span><dl> <dt><strong>XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP</strong></dt> <dt>0x80520108</dt> </dl></td>
-<td>O pacote não contém um FixedDocumentSequence.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_FONTURI"></span><span id="xps_e_missing_fonturi"></span><dl> <dt><strong>XPS_E_MISSING_FONTURI</strong></dt> <dt>0x80520107</dt> </dl></td>
-<td>A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> requer um URI de fonte, mas um não é especificado.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_GLYPHS"></span><span id="xps_e_missing_glyphs"></span><dl> <dt><strong>XPS_E_MISSING_GLYPHS</strong></dt> <dt>0x80520102</dt> </dl></td>
-<td>A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> sem uma cadeia de caracteres Unicode não especifica nenhum índice de glifo. Uma interface <strong>IXpsOMGlyphs</strong> deve especificar uma cadeia de caracteres Unicode ou uma matriz de índices de glifo.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_IMAGE_IN_IMAGEBRUSH"></span><span id="xps_e_missing_image_in_imagebrush"></span><dl> <dt><strong>XPS_E_MISSING_IMAGE_IN_IMAGEBRUSH</strong></dt> <dt>0x8052010e</dt> </dl></td>
-<td>Não foi possível localizar um recurso de imagem para o pincel de imagem.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_LOOKUP"></span><span id="xps_e_missing_lookup"></span><dl> <dt><strong>XPS_E_MISSING_LOOKUP</strong></dt> <dt>0x80520101</dt> </dl></td>
-<td>O recurso remoto tem um objeto inesperado.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_NAME"></span><span id="xps_e_missing_name"></span><dl> <dt><strong>XPS_E_MISSING_NAME</strong></dt> <dt>0x80520100</dt> </dl></td>
-<td>A página não foi nomeada; o status de destino do hiperlink só poderá ser definido se a página tiver um nome.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_PAGE_IN_DOCUMENT"></span><span id="xps_e_missing_page_in_document"></span><dl> <dt><strong>XPS_E_MISSING_PAGE_IN_DOCUMENT</strong></dt> <dt>0x8052010c</dt> </dl></td>
-<td>O FixedDocument não contém nenhuma parte de FixedPage. Um documento XPS deve conter pelo menos uma parte FixedPage.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_PAGE_IN_PAGEREFERENCE"></span><span id="xps_e_missing_page_in_pagereference"></span><dl> <dt><strong>XPS_E_MISSING_PAGE_IN_PAGEREFERENCE</strong></dt> <dt>0x8052010d</dt> </dl></td>
-<td>A referência de página não tem uma página correspondente.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_PART_REFERENCE"></span><span id="xps_e_missing_part_reference"></span><dl> <dt><strong>XPS_E_MISSING_PART_REFERENCE</strong></dt> <dt>0x80520110</dt> </dl></td>
-<td>Uma parte de destino necessária não foi referenciada.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_PART_STREAM"></span><span id="xps_e_missing_part_stream"></span><dl> <dt><strong>XPS_E_MISSING_PART_STREAM</strong></dt> <dt>0x80520113</dt> </dl></td>
-<td>Um fluxo não foi especificado para o recurso.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_REFERRED_DOCUMENT"></span><span id="xps_e_missing_referred_document"></span><dl> <dt><strong>XPS_E_MISSING_REFERRED_DOCUMENT</strong></dt> <dt>0x8052010a</dt> </dl></td>
-<td>A parte de FixedDocument referenciada pelo FixedDocumentSequence não pôde ser encontrada. Um documento XPS deve conter pelo menos um FixedDocument.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_REFERRED_PAGE"></span><span id="xps_e_missing_referred_page"></span><dl> <dt><strong>XPS_E_MISSING_REFERRED_PAGE</strong></dt> <dt>0x8052010b</dt> </dl></td>
-<td>A parte FixedPage que é referenciada pelo FixedDocument não foi encontrada. Um documento XPS deve conter pelo menos uma parte FixedPage.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_RELATIONSHIP_TARGET"></span><span id="xps_e_missing_relationship_target"></span><dl> <dt><strong>XPS_E_MISSING_RELATIONSHIP_TARGET</strong></dt> <dt>0x80520105</dt> </dl></td>
-<td>A parte de destino da relação não está presente na relação do pacote.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_RESOURCE_KEY"></span><span id="xps_e_missing_resource_key"></span><dl> <dt><strong>XPS_E_MISSING_RESOURCE_KEY</strong></dt> <dt>0x8052010f</dt> </dl></td>
-<td>Nenhum atributo <strong>x:Key</strong> foi especificado para o recurso.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_RESOURCE_RELATIONSHIP"></span><span id="xps_e_missing_resource_relationship"></span><dl> <dt><strong>XPS_E_MISSING_RESOURCE_RELATIONSHIP</strong></dt> <dt>0x80520106</dt> </dl></td>
-<td>O recurso referido pelo conteúdo da página ou do dicionário remoto não existe como uma relação de página.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MISSING_RESTRICTED_FONT_RELATIONSHIP"></span><span id="xps_e_missing_restricted_font_relationship"></span><dl> <dt><strong>XPS_E_MISSING_RESTRICTED_FONT_RELATIONSHIP</strong></dt> <dt>0x80520111</dt> </dl></td>
-<td>A fonte restrita referenciada não foi especificada na chamada para <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>IXpsOMPackageWriter:: StartNewDocument</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MISSING_SEGMENT_DATA"></span><span id="xps_e_missing_segment_data"></span><dl> <dt><strong>XPS_E_MISSING_SEGMENT_DATA</strong></dt> <dt>0x80520103</dt> </dl></td>
-<td>A matriz de dados de segmento tem menos entradas do que a matriz de tipos de segmento. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MULTIPLE_DOCUMENTSEQUENCE_RELATIONSHIPS"></span><span id="xps_e_multiple_documentsequence_relationships"></span><dl> <dt><strong>XPS_E_MULTIPLE_DOCUMENTSEQUENCE_RELATIONSHIPS</strong></dt> <dt>0x80520202</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar um FixedDocumentSequence a um pacote que já tem um. Um documento XPS deve conter apenas uma parte de FixedDocumentSequence.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENT"></span><span id="xps_e_multiple_printtickets_on_document"></span><dl> <dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENT</strong></dt> <dt>0x80520206</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar um tíquete de impressão em nível de documento a um FixedDocument que já tem um. Um FixedDocument em um documento XPS pode conter apenas um tíquete de impressão em nível de documento.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENTSEQUENCE"></span><span id="xps_e_multiple_printtickets_on_documentsequence"></span><dl> <dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENTSEQUENCE</strong></dt> <dt>0x80520207</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar um tíquete de impressão no nível do trabalho a um FixedDocumentSequence que já tem um. O FixedDocumentSequence em um documento XPS pode conter apenas um tíquete de impressão no nível do trabalho.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_PAGE"></span><span id="xps_e_multiple_printtickets_on_page"></span><dl> <dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_PAGE</strong></dt> <dt>0x80520205</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar um tíquete de impressão em nível de página a um FixedPage que já tem um. Um FixedPage em um documento XPS pode conter apenas um tíquete de impressão em nível de página.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MULTIPLE_REFERENCES_TO_PART"></span><span id="xps_e_multiple_references_to_part"></span><dl> <dt><strong>XPS_E_MULTIPLE_REFERENCES_TO_PART</strong></dt> <dt>0x80520208</dt> </dl></td>
-<td>A coleção de fontes restritas continha uma entrada de fonte restrita que foi repetida. Cada entrada de fonte pode ocorrer na coleção apenas uma vez.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MULTIPLE_RESOURCES"></span><span id="xps_e_multiple_resources"></span><dl> <dt><strong>XPS_E_MULTIPLE_RESOURCES</strong></dt> <dt>0x80520201</dt> </dl></td>
-<td>Já existe um recurso com esse nome de parte.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_MULTIPLE_THUMBNAILS_ON_PACKAGE"></span><span id="xps_e_multiple_thumbnails_on_package"></span><dl> <dt><strong>XPS_E_MULTIPLE_THUMBNAILS_ON_PACKAGE</strong></dt> <dt>0x80520204</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar uma imagem em miniatura a um pacote que já tem uma. Um documento XPS pode conter apenas uma imagem em miniatura de nível de pacote.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_MULTIPLE_THUMBNAILS_ON_PAGE"></span><span id="xps_e_multiple_thumbnails_on_page"></span><dl> <dt><strong>XPS_E_MULTIPLE_THUMBNAILS_ON_PAGE</strong></dt> <dt>0x80520203</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar uma imagem em miniatura de nível de página a um FixedPage que já tem uma. Um FixedPage em um documento XPS pode conter apenas uma imagem em miniatura de nível de página.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_NEGATIVE_FLOAT"></span><span id="xps_e_negative_float"></span><dl> <dt><strong>XPS_E_NEGATIVE_FLOAT</strong></dt> <dt>0x8052030a</dt> </dl></td>
-<td>Uma entrada contém um valor negativo, mas deve conter um valor não negativo. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_NESTED_REMOTE_DICTIONARY"></span><span id="xps_e_nested_remote_dictionary"></span><dl> <dt><strong>XPS_E_NESTED_REMOTE_DICTIONARY</strong></dt> <dt>0x80520402</dt> </dl></td>
-<td>Foi feita uma tentativa de adicionar uma referência de dicionário remoto a um dicionário remoto. Um dicionário remoto não pode fazer referência A outro dicionário remoto.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_NO_CUSTOM_OBJECTS"></span><span id="xps_e_no_custom_objects"></span><dl> <dt><strong>XPS_E_NO_CUSTOM_OBJECTS</strong></dt> <dt>0x80520502</dt> </dl></td>
-<td>Um ponteiro de interface não aponta para uma implementação de interface reconhecida. Não há suporte para implementação personalizada de interfaces de API de documento XPS.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_NOT_ENOUGH_GRADIENT_STOPS"></span><span id="xps_e_not_enough_gradient_stops"></span><dl> <dt><strong>XPS_E_NOT_ENOUGH_GRADIENT_STOPS</strong></dt> <dt>0x8052050b</dt> </dl></td>
-<td>A coleção de parada de gradiente tem menos de duas interrupções. Uma coleção de parada de gradiente deve ter pelo menos duas interrupções de gradiente.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_ODD_BIDILEVEL"></span><span id="xps_e_odd_bidilevel"></span><dl> <dt><strong>XPS_E_ODD_BIDILEVEL</strong></dt> <dt>0x80520307</dt> </dl></td>
-<td>A cadeia de texto foi especificada como sendo orientada lateral e da direita para a esquerda. Se o texto for orientado para os lados, ele não poderá ter um nível bidi que seja um valor ímpar (da direita para a esquerda). Da mesma forma, se o nível bidi for um valor ímpar, o texto não poderá ser orientado lateralmente.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_ONE_TO_ONE_MAPPING_EXPECTED"></span><span id="xps_e_one_to_one_mapping_expected"></span><dl> <dt><strong>XPS_E_ONE_TO_ONE_MAPPING_EXPECTED</strong></dt> <dt>0x80520308</dt> </dl></td>
-<td>Os mapeamentos de glifo não correspondem ao conteúdo da cadeia de caracteres Unicode.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_PACKAGE_WRITER_NOT_CLOSED"></span><span id="xps_e_package_writer_not_closed"></span><dl> <dt><strong>XPS_E_PACKAGE_WRITER_NOT_CLOSED</strong></dt> <dt>0x8052050c</dt> </dl></td>
-<td>O gravador de pacote não foi fechado antes de ser liberado.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_RELATIONSHIP_EXTERNAL"></span><span id="xps_e_relationship_external"></span><dl> <dt><strong>XPS_E_RELATIONSHIP_EXTERNAL</strong></dt> <dt>0x8052050a</dt> </dl></td>
-<td>Uma relação refere-se a uma parte que está fora do documento XPS. Todo o conteúdo a ser renderizado em um documento XPS deve estar contido no documento XPS.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_RESOURCE_NOT_OWNED"></span><span id="xps_e_resource_not_owned"></span><dl> <dt><strong>XPS_E_RESOURCE_NOT_OWNED</strong></dt> <dt>0x80520504</dt> </dl></td>
-<td>Reservado.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_RESTRICTED_FONT_NOT_OBFUSCATED"></span><span id="xps_e_restricted_font_not_obfuscated"></span><dl> <dt><strong>XPS_E_RESTRICTED_FONT_NOT_OBFUSCATED</strong></dt> <dt>0x80520309</dt> </dl></td>
-<td><em>Reservado</em>.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_STRING_TOO_LONG"></span><span id="xps_e_string_too_long"></span><dl> <dt><strong>XPS_E_STRING_TOO_LONG</strong></dt> <dt>0x80520300</dt> </dl></td>
-<td>Ocorreu um estouro de <strong>size_t</strong> durante uma tentativa de copiar uma cadeia de caracteres em um novo buffer.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_TOO_MANY_INDICES"></span><span id="xps_e_too_many_indices"></span><dl> <dt><strong>XPS_E_TOO_MANY_INDICES</strong></dt> <dt>0x80520301</dt> </dl></td>
-<td>Havia mais índices de glifos do que pontos de código Unicode. Se não houver mapeamentos de glifo, o número de índices de glifos deverá ser menor ou igual ao número de pontos de código Unicode.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_UNAVAILABLE_PACKAGE"></span><span id="xps_e_unavailable_package"></span><dl> <dt><strong>XPS_E_UNAVAILABLE_PACKAGE</strong></dt> <dt>0x80520114</dt> </dl></td>
-<td>Ocorreu um erro grave e o conteúdo do OM XPS pode ser irrecuperável. Alguns componentes do OM XPS ainda podem ser utilizáveis, mas eles precisarão ser verificados antes de serem usados ainda mais. Como o estado do OM XPS não pode ser previsto após esse erro ser retornado, todos os componentes do OM XPS devem ser liberados e descartados.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_UNEXPECTED_COLORPROFILE"></span><span id="xps_e_unexpected_colorprofile"></span><dl> <dt><strong>XPS_E_UNEXPECTED_COLORPROFILE</strong></dt> <dt>0x80520505</dt> </dl></td>
-<td>Um perfil de cor estava presente quando um não era esperado. Um perfil de cor só é permitido quando o tipo de cor é <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a>. <br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_UNEXPECTED_CONTENT_TYPE"></span><span id="xps_e_unexpected_content_type"></span><dl> <dt><strong>XPS_E_UNEXPECTED_CONTENT_TYPE</strong></dt> <dt>0x80520008</dt> </dl></td>
-<td>O destino de uma relação não é o tipo esperado pelo contexto da relação. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_UNEXPECTED_RELATIONSHIP_TYPE"></span><span id="xps_e_unexpected_relationship_type"></span><dl> <dt><strong>XPS_E_UNEXPECTED_RELATIONSHIP_TYPE</strong></dt> <dt>0x80520010</dt> </dl></td>
-<td>O tipo de relação não foi reconhecido.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_UNEXPECTED_RESTRICTED_FONT_RELATIONSHIP"></span><span id="xps_e_unexpected_restricted_font_relationship"></span><dl> <dt><strong>XPS_E_UNEXPECTED_RESTRICTED_FONT_RELATIONSHIP</strong></dt> <dt>0x80520011</dt> </dl></td>
-<td>A coleção de fontes restritas contém uma fonte irrestrita.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="XPS_E_VISUAL_CIRCULAR_REF"></span><span id="xps_e_visual_circular_ref"></span><dl> <dt><strong>XPS_E_VISUAL_CIRCULAR_REF</strong></dt> <dt>0x80520501</dt> </dl></td>
-<td>Reservado.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="XPS_E_XKEY_ATTR_PRESENT_OUTSIDE_RES_DICT"></span><span id="xps_e_xkey_attr_present_outside_res_dict"></span><dl> <dt><strong>XPS_E_XKEY_ATTR_PRESENT_OUTSIDE_RES_DICT</strong></dt> <dt>0x80520400</dt> </dl></td>
-<td>Uma geometria de caminho que não está em um dicionário de recursos tem um atributo <strong>x:Key</strong> especificado. As geometrias de caminho que não estão em um dicionário de recursos não podem ter um atributo <strong>x:Key</strong> .<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código/valor de retorno | Descrição | 
+|-------------------|-------------|
+| <span id="XPS_E_ALREADY_OWNED"></span><span id="xps_e_already_owned"></span><dl><dt><strong>XPS_E_ALREADY_OWNED</strong></dt><dt>0x80520503</dt></dl> | A interface já tem um proprietário.<br /> | 
+| <span id="XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC"></span><span id="xps_e_bleed_box_page_dimensions_not_in_sync"></span><dl><dt><strong>XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC</strong></dt><dt>0x80520509</dt></dl> | As dimensões da caixa de sangria não são compatíveis com as dimensões da página.<br /> O valor da largura da caixa de sangria deve ser maior ou igual à largura da página, além do valor absoluto da coordenada x da origem da caixa de sangria. O valor da altura da caixa de sangria deve ser maior ou igual à altura da página mais o valor absoluto da coordenada y da origem da caixa de sangria. <br /> | 
+| <span id="XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT"></span><span id="xps_e_both_pathfigure_and_abbr_syntax_present"></span><dl><dt><strong>XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT</strong></dt><dt>0x80520507</dt></dl> | Um elemento <strong>PathGeometry</strong> contém um conjunto de figuras Path que são especificadas com o atributo <strong>figuras</strong> ou com um elemento <strong>PathFigure</strong> filho. As figuras de caminho de uma geometria não podem ter o atributo <strong>figures</strong> e um elemento <strong>PathFigure</strong> filho. <br /> | 
+| <span id="XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT"></span><span id="xps_e_both_resource_and_sourceattr_present"></span><dl><dt><strong>XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT</strong></dt><dt>0x80520508</dt></dl> | Um elemento <strong>ResourceDictionary</strong> que especifica um dicionário de recursos remotos em seu atributo de <strong>origem</strong> não deve conter nenhum filho de definição de recurso.<br /> | 
+| <span id="XPS_E_CARET_OUT_OF_ORDER"></span><span id="xps_e_caret_out_of_order"></span><dl><dt><strong>XPS_E_CARET_OUT_OF_ORDER</strong></dt><dt>0x80520306</dt></dl> | Um valor de local de cursor está fora de ordem. Os valores de local devem ser classificados em ordem crescente. <br /> | 
+| <span id="XPS_E_CARET_OUTSIDE_STRING"></span><span id="xps_e_caret_outside_string"></span><dl><dt><strong>XPS_E_CARET_OUTSIDE_STRING</strong></dt><dt>0x80520305</dt></dl> | A interrupção do cursor foi especificada para uma cadeia de caracteres vazia; ou, o índice de salto do cursor excedeu o comprimento da cadeia de caracteres Unicode. <br /> | 
+| <span id="XPS_E_COLOR_COMPONENT_OUT_OF_RANGE"></span><span id="xps_e_color_component_out_of_range"></span><dl><dt><strong>XPS_E_COLOR_COMPONENT_OUT_OF_RANGE</strong></dt><dt>0x80520506</dt></dl> | Um valor de cor está fora do intervalo.<br /> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_SCRGB</strong></a> tipos de cor, o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a + 1,0.<br /> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a> tipos de cor, o <strong>channelValues [0]</strong> que representa o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a + 1,0. <br /> | 
+| <span id="XPS_E_DICTIONARY_ITEM_NAMED"></span><span id="xps_e_dictionary_item_named"></span><dl><dt><strong>XPS_E_DICTIONARY_ITEM_NAMED</strong></dt><dt>0x80520401</dt></dl> | Um Visual em um dicionário de recursos tem o atributo <strong>Name</strong> , que pode não ser especificado em qualquer filho de um elemento <strong>ResourceDictionary</strong> .<br /> | 
+| <span id="XPS_E_DUPLICATE_NAMES"></span><span id="xps_e_duplicate_names"></span><dl><dt><strong>XPS_E_DUPLICATE_NAMES</strong></dt><dt>0x80520209</dt></dl> | Já existe um objeto com este nome no dicionário.<br /> | 
+| <span id="XPS_E_DUPLICATE_RESOURCE_KEYS"></span><span id="xps_e_duplicate_resource_keys"></span><dl><dt><strong>XPS_E_DUPLICATE_RESOURCE_KEYS</strong></dt><dt>0x80520200</dt></dl> | Já existe um objeto com esse nome de chave no dicionário.<br /> | 
+| <span id="XPS_E_INDEX_OUT_OF_RANGE"></span><span id="xps_e_index_out_of_range"></span><dl><dt><strong>XPS_E_INDEX_OUT_OF_RANGE</strong></dt><dt>0x80520500</dt></dl> | Reservado.<br /> | 
+| <span id="XPS_E_INVALID_BLEED_BOX"></span><span id="xps_e_invalid_bleed_box"></span><dl><dt><strong>XPS_E_INVALID_BLEED_BOX</strong></dt><dt>0x80520004</dt></dl> | O retângulo da caixa de sangria contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para obter os valores válidos. <br /> | 
+| <span id="XPS_E_INVALID_CONTENT_BOX"></span><span id="xps_e_invalid_content_box"></span><dl><dt><strong>XPS_E_INVALID_CONTENT_BOX</strong></dt><dt>0x8052000b</dt></dl> | O retângulo da caixa de conteúdo contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para obter os valores válidos. <br /> | 
+| <span id="XPS_E_INVALID_CONTENT_TYPE"></span><span id="xps_e_invalid_content_type"></span><dl><dt><strong>XPS_E_INVALID_CONTENT_TYPE</strong></dt><dt>0x8052000e</dt></dl> | A cadeia de caracteres de tipo de conteúdo não é válida.<br /> | 
+| <span id="XPS_E_INVALID_FLOAT"></span><span id="xps_e_invalid_float"></span><dl><dt><strong>XPS_E_INVALID_FLOAT</strong></dt><dt>0x80520007</dt></dl> | Um valor <strong>float</strong> não é válido. Ele é infinito ou não um número (NAN).<br /> | 
+| <span id="XPS_E_INVALID_FONT_URI"></span><span id="xps_e_invalid_font_uri"></span><dl><dt><strong>XPS_E_INVALID_FONT_URI</strong></dt><dt>0x8052000a</dt></dl> | O URI da fonte não é válido, possivelmente porque contém um fragmento vazio ou caracteres que não são válidos.<br /> | 
+| <span id="XPS_E_INVALID_LANGUAGE"></span><span id="xps_e_invalid_language"></span><dl><dt><strong>XPS_E_INVALID_LANGUAGE</strong></dt><dt>0x80520000</dt></dl> | O idioma especificado não é válido ou não está formatado corretamente.<br /> | 
+| <span id="XPS_E_INVALID_LOOKUP_TYPE"></span><span id="xps_e_invalid_lookup_type"></span><dl><dt><strong>XPS_E_INVALID_LOOKUP_TYPE</strong></dt><dt>0x80520006</dt></dl> | O nome da chave de pesquisa faz referência a um objeto que não é o tipo correto para a chamada; por exemplo, se o método retornar um pincel, mas o nome da chave de pesquisa se referir a um objeto Geometry.<br /> | 
+| <span id="XPS_E_INVALID_MARKUP"></span><span id="xps_e_invalid_markup"></span><dl><dt><strong>XPS_E_INVALID_MARKUP</strong></dt><dt>0x8052000c</dt></dl> | A marcação que está sendo lida contém um elemento ou um atributo que não está de acordo com a <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">especificação de papel XML</a>.<br /><blockquote>[!Note]<br />Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <strong>float</strong> em vez de <strong>Double</strong>. Se um documento XPS tiver um elemento com dados de ponto flutuante que não caiba em um valor <strong>float</strong> , esse erro será retornado quando esse valor for encontrado durante a desserialização.</blockquote><br /><br /> | 
+| <span id="XPS_E_INVALID_NAME"></span><span id="xps_e_invalid_name"></span><dl><dt><strong>XPS_E_INVALID_NAME</strong></dt><dt>0x80520001</dt></dl> | A cadeia de caracteres passada não é um nome válido, de acordo com a especificação de papel XML. <br /> | 
+| <span id="XPS_E_INVALID_OBFUSCATED_FONT_URI"></span><span id="xps_e_invalid_obfuscated_font_uri"></span><dl><dt><strong>XPS_E_INVALID_OBFUSCATED_FONT_URI</strong></dt><dt>0x8052000f</dt></dl> | Reservado.<br /> | 
+| <span id="XPS_E_INVALID_PAGE_SIZE"></span><span id="xps_e_invalid_page_size"></span><dl><dt><strong>XPS_E_INVALID_PAGE_SIZE</strong></dt><dt>0x80520003</dt></dl> | As dimensões da página contêm um valor de tamanho de página que não é válido. <br /> | 
+| <span id="XPS_E_INVALID_RESOURCE_KEY"></span><span id="xps_e_invalid_resource_key"></span><dl><dt><strong>XPS_E_INVALID_RESOURCE_KEY</strong></dt><dt>0x80520002</dt></dl> | De acordo com a <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">especificação de papel XML</a>, a cadeia de caracteres da chave de pesquisa não é válida.<br /> | 
+| <span id="XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE"></span><span id="xps_e_invalid_thumbnail_image_type"></span><dl><dt><strong>XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE</strong></dt><dt>0x80520005</dt></dl> | Não há suporte para o tipo de imagem em miniatura.<br /> | 
+| <span id="XPS_E_INVALID_XML_ENCODING"></span><span id="xps_e_invalid_xml_encoding"></span><dl><dt><strong>XPS_E_INVALID_XML_ENCODING</strong></dt><dt>0x8052000d</dt></dl> | Marcação XML incorreta ou formatada incorretamente.<br /> | 
+| <span id="XPS_E_MAPPING_OUT_OF_ORDER"></span><span id="xps_e_mapping_out_of_order"></span><dl><dt><strong>XPS_E_MAPPING_OUT_OF_ORDER</strong></dt><dt>0x80520302</dt></dl> | Em uma ou mais estruturas de <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_glyph_mapping"><strong>XPS_GLYPH_MAPPING</strong></a> , um elemento está fora de sequência. <br /> | 
+| <span id="XPS_E_MAPPING_OUTSIDE_INDICES"></span><span id="xps_e_mapping_outside_indices"></span><dl><dt><strong>XPS_E_MAPPING_OUTSIDE_INDICES</strong></dt><dt>0x80520304</dt></dl> | Os mapeamentos de glifo excedem o número de índices de glifo.<br /> | 
+| <span id="XPS_E_MAPPING_OUTSIDE_STRING"></span><span id="xps_e_mapping_outside_string"></span><dl><dt><strong>XPS_E_MAPPING_OUTSIDE_STRING</strong></dt><dt>0x80520303</dt></dl> | Erro nos mapeamentos de glifos.<br /> Se a cadeia de caracteres Unicode estiver vazia, esse erro significa que um mapeamento de glifo também foi definido. Os mapeamentos de glifo não devem ser definidos se a cadeia de caracteres Unicode estiver vazia.<br /> Se a cadeia de caracteres Unicode não estiver vazia, esse erro significa que um mapeamento de glifo foi definido para glifos fora da cadeia de caracteres Unicode. Os mapeamentos de glifo não podem ser definidos para glifos que se enquadram fora do comprimento da cadeia de caracteres Unicode.<br /> | 
+| <span id="XPS_E_MISSING_COLORPROFILE"></span><span id="xps_e_missing_colorprofile"></span><dl><dt><strong>XPS_E_MISSING_COLORPROFILE</strong></dt><dt>0x80520104</dt></dl> | O parâmetro de perfil de cor é <strong>nulo</strong>, mas um perfil de cor é esperado. Um perfil de cor é necessário quando o tipo de cor é XPS_COLOR_TYPE_CONTEXT. <br /> | 
+| <span id="XPS_E_MISSING_DISCARDCONTROL"></span><span id="xps_e_missing_discardcontrol"></span><dl><dt><strong>XPS_E_MISSING_DISCARDCONTROL</strong></dt><dt>0x80520112</dt></dl> | Uma página refere-se a recursos descartados, mas não especifica um nome de parte DiscardControl.<br /> | 
+| <span id="XPS_E_MISSING_DOCUMENT"></span><span id="xps_e_missing_document"></span><dl><dt><strong>XPS_E_MISSING_DOCUMENT</strong></dt><dt>0x80520109</dt></dl> | <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage"><strong>IXpsOMPackageWriter:: AddPage</strong></a> foi chamado antes de <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>IXpsOMPackageWriter:: StartNewDocument</strong></a>.<br /> | 
+| <span id="XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP"></span><span id="xps_e_missing_documentsequence_relationship"></span><dl><dt><strong>XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP</strong></dt><dt>0x80520108</dt></dl> | O pacote não contém um FixedDocumentSequence.<br /> | 
+| <span id="XPS_E_MISSING_FONTURI"></span><span id="xps_e_missing_fonturi"></span><dl><dt><strong>XPS_E_MISSING_FONTURI</strong></dt><dt>0x80520107</dt></dl> | A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> requer um URI de fonte, mas uma não está especificada.<br /> | 
+| <span id="XPS_E_MISSING_GLYPHS"></span><span id="xps_e_missing_glyphs"></span><dl><dt><strong>XPS_E_MISSING_GLYPHS</strong></dt><dt>0x80520102</dt></dl> | A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> sem uma cadeia de caracteres Unicode não especifica nenhum índice de glifo. Uma interface <strong>IXpsOMGlyphs</strong> deve especificar uma cadeia de caracteres Unicode ou uma matriz de índices de glifo.<br /> | 
+| <span id="XPS_E_MISSING_IMAGE_IN_IMAGEBRUSH"></span><span id="xps_e_missing_image_in_imagebrush"></span><dl><dt><strong>XPS_E_MISSING_IMAGE_IN_IMAGEBRUSH</strong></dt><dt>0x8052010e</dt></dl> | Não foi possível localizar um recurso de imagem para o pincel de imagem.<br /> | 
+| <span id="XPS_E_MISSING_LOOKUP"></span><span id="xps_e_missing_lookup"></span><dl><dt><strong>XPS_E_MISSING_LOOKUP</strong></dt><dt>0x80520101</dt></dl> | O recurso remoto tem um objeto inesperado.<br /> | 
+| <span id="XPS_E_MISSING_NAME"></span><span id="xps_e_missing_name"></span><dl><dt><strong>XPS_E_MISSING_NAME</strong></dt><dt>0x80520100</dt></dl> | A página não foi nomeada; o status de destino do hiperlink só poderá ser definido se a página tiver um nome.<br /> | 
+| <span id="XPS_E_MISSING_PAGE_IN_DOCUMENT"></span><span id="xps_e_missing_page_in_document"></span><dl><dt><strong>XPS_E_MISSING_PAGE_IN_DOCUMENT</strong></dt><dt>0x8052010c</dt></dl> | O FixedDocument não contém nenhuma parte FixedPage. Um documento XPS deve conter pelo menos uma parte FixedPage.<br /> | 
+| <span id="XPS_E_MISSING_PAGE_IN_PAGEREFERENCE"></span><span id="xps_e_missing_page_in_pagereference"></span><dl><dt><strong>XPS_E_MISSING_PAGE_IN_PAGEREFERENCE</strong></dt><dt>0x8052010d</dt></dl> | A referência de página não tem uma página correspondente.<br /> | 
+| <span id="XPS_E_MISSING_PART_REFERENCE"></span><span id="xps_e_missing_part_reference"></span><dl><dt><strong>XPS_E_MISSING_PART_REFERENCE</strong></dt><dt>0x80520110</dt></dl> | Uma parte de destino necessária não foi referenciada.<br /> | 
+| <span id="XPS_E_MISSING_PART_STREAM"></span><span id="xps_e_missing_part_stream"></span><dl><dt><strong>XPS_E_MISSING_PART_STREAM</strong></dt><dt>0x80520113</dt></dl> | Um fluxo não foi especificado para o recurso.<br /> | 
+| <span id="XPS_E_MISSING_REFERRED_DOCUMENT"></span><span id="xps_e_missing_referred_document"></span><dl><dt><strong>XPS_E_MISSING_REFERRED_DOCUMENT</strong></dt><dt>0x8052010a</dt></dl> | A parte de FixedDocument referenciada pelo FixedDocumentSequence não pôde ser encontrada. Um documento XPS deve conter pelo menos um FixedDocument.<br /> | 
+| <span id="XPS_E_MISSING_REFERRED_PAGE"></span><span id="xps_e_missing_referred_page"></span><dl><dt><strong>XPS_E_MISSING_REFERRED_PAGE</strong></dt><dt>0x8052010b</dt></dl> | A parte FixedPage que é referenciada pelo FixedDocument não foi encontrada. Um documento XPS deve conter pelo menos uma parte FixedPage.<br /> | 
+| <span id="XPS_E_MISSING_RELATIONSHIP_TARGET"></span><span id="xps_e_missing_relationship_target"></span><dl><dt><strong>XPS_E_MISSING_RELATIONSHIP_TARGET</strong></dt><dt>0x80520105</dt></dl> | A parte de destino da relação não está presente na relação do pacote.<br /> | 
+| <span id="XPS_E_MISSING_RESOURCE_KEY"></span><span id="xps_e_missing_resource_key"></span><dl><dt><strong>XPS_E_MISSING_RESOURCE_KEY</strong></dt><dt>0x8052010f</dt></dl> | Nenhum atributo <strong>x:Key</strong> foi especificado para o recurso.<br /> | 
+| <span id="XPS_E_MISSING_RESOURCE_RELATIONSHIP"></span><span id="xps_e_missing_resource_relationship"></span><dl><dt><strong>XPS_E_MISSING_RESOURCE_RELATIONSHIP</strong></dt><dt>0x80520106</dt></dl> | O recurso referido pelo conteúdo da página ou do dicionário remoto não existe como uma relação de página.<br /> | 
+| <span id="XPS_E_MISSING_RESTRICTED_FONT_RELATIONSHIP"></span><span id="xps_e_missing_restricted_font_relationship"></span><dl><dt><strong>XPS_E_MISSING_RESTRICTED_FONT_RELATIONSHIP</strong></dt><dt>0x80520111</dt></dl> | A fonte restrita referenciada não foi especificada na chamada para <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>IXpsOMPackageWriter:: StartNewDocument</strong></a>.<br /> | 
+| <span id="XPS_E_MISSING_SEGMENT_DATA"></span><span id="xps_e_missing_segment_data"></span><dl><dt><strong>XPS_E_MISSING_SEGMENT_DATA</strong></dt><dt>0x80520103</dt></dl> | A matriz de dados de segmento tem menos entradas do que a matriz de tipos de segmento. <br /> | 
+| <span id="XPS_E_MULTIPLE_DOCUMENTSEQUENCE_RELATIONSHIPS"></span><span id="xps_e_multiple_documentsequence_relationships"></span><dl><dt><strong>XPS_E_MULTIPLE_DOCUMENTSEQUENCE_RELATIONSHIPS</strong></dt><dt>0x80520202</dt></dl> | Foi feita uma tentativa de adicionar um FixedDocumentSequence a um pacote que já tem um. Um documento XPS deve conter apenas uma parte de FixedDocumentSequence.<br /> | 
+| <span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENT"></span><span id="xps_e_multiple_printtickets_on_document"></span><dl><dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENT</strong></dt><dt>0x80520206</dt></dl> | Foi feita uma tentativa de adicionar um tíquete de impressão em nível de documento a um FixedDocument que já tem um. Um FixedDocument em um documento XPS pode conter apenas um tíquete de impressão em nível de documento.<br /> | 
+| <span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENTSEQUENCE"></span><span id="xps_e_multiple_printtickets_on_documentsequence"></span><dl><dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_DOCUMENTSEQUENCE</strong></dt><dt>0x80520207</dt></dl> | Foi feita uma tentativa de adicionar um tíquete de impressão no nível do trabalho a um FixedDocumentSequence que já tem um. O FixedDocumentSequence em um documento XPS pode conter apenas um tíquete de impressão no nível do trabalho.<br /> | 
+| <span id="XPS_E_MULTIPLE_PRINTTICKETS_ON_PAGE"></span><span id="xps_e_multiple_printtickets_on_page"></span><dl><dt><strong>XPS_E_MULTIPLE_PRINTTICKETS_ON_PAGE</strong></dt><dt>0x80520205</dt></dl> | Foi feita uma tentativa de adicionar um tíquete de impressão em nível de página a um FixedPage que já tem um. Um FixedPage em um documento XPS pode conter apenas um tíquete de impressão em nível de página.<br /> | 
+| <span id="XPS_E_MULTIPLE_REFERENCES_TO_PART"></span><span id="xps_e_multiple_references_to_part"></span><dl><dt><strong>XPS_E_MULTIPLE_REFERENCES_TO_PART</strong></dt><dt>0x80520208</dt></dl> | A coleção de fontes restritas continha uma entrada de fonte restrita que foi repetida. Cada entrada de fonte pode ocorrer na coleção apenas uma vez.<br /> | 
+| <span id="XPS_E_MULTIPLE_RESOURCES"></span><span id="xps_e_multiple_resources"></span><dl><dt><strong>XPS_E_MULTIPLE_RESOURCES</strong></dt><dt>0x80520201</dt></dl> | Já existe um recurso com esse nome de parte.<br /> | 
+| <span id="XPS_E_MULTIPLE_THUMBNAILS_ON_PACKAGE"></span><span id="xps_e_multiple_thumbnails_on_package"></span><dl><dt><strong>XPS_E_MULTIPLE_THUMBNAILS_ON_PACKAGE</strong></dt><dt>0x80520204</dt></dl> | Foi feita uma tentativa de adicionar uma imagem em miniatura a um pacote que já tem uma. Um documento XPS pode conter apenas uma imagem em miniatura de nível de pacote.<br /> | 
+| <span id="XPS_E_MULTIPLE_THUMBNAILS_ON_PAGE"></span><span id="xps_e_multiple_thumbnails_on_page"></span><dl><dt><strong>XPS_E_MULTIPLE_THUMBNAILS_ON_PAGE</strong></dt><dt>0x80520203</dt></dl> | Foi feita uma tentativa de adicionar uma imagem em miniatura de nível de página a um FixedPage que já tem uma. Um FixedPage em um documento XPS pode conter apenas uma imagem em miniatura de nível de página.<br /> | 
+| <span id="XPS_E_NEGATIVE_FLOAT"></span><span id="xps_e_negative_float"></span><dl><dt><strong>XPS_E_NEGATIVE_FLOAT</strong></dt><dt>0x8052030a</dt></dl> | Uma entrada contém um valor negativo, mas deve conter um valor não negativo. <br /> | 
+| <span id="XPS_E_NESTED_REMOTE_DICTIONARY"></span><span id="xps_e_nested_remote_dictionary"></span><dl><dt><strong>XPS_E_NESTED_REMOTE_DICTIONARY</strong></dt><dt>0x80520402</dt></dl> | Foi feita uma tentativa de adicionar uma referência de dicionário remoto a um dicionário remoto. Um dicionário remoto não pode fazer referência A outro dicionário remoto.<br /> | 
+| <span id="XPS_E_NO_CUSTOM_OBJECTS"></span><span id="xps_e_no_custom_objects"></span><dl><dt><strong>XPS_E_NO_CUSTOM_OBJECTS</strong></dt><dt>0x80520502</dt></dl> | Um ponteiro de interface não aponta para uma implementação de interface reconhecida. Não há suporte para implementação personalizada de interfaces de API de documento XPS.<br /> | 
+| <span id="XPS_E_NOT_ENOUGH_GRADIENT_STOPS"></span><span id="xps_e_not_enough_gradient_stops"></span><dl><dt><strong>XPS_E_NOT_ENOUGH_GRADIENT_STOPS</strong></dt><dt>0x8052050b</dt></dl> | A coleção de parada de gradiente tem menos de duas interrupções. Uma coleção de parada de gradiente deve ter pelo menos duas interrupções de gradiente.<br /> | 
+| <span id="XPS_E_ODD_BIDILEVEL"></span><span id="xps_e_odd_bidilevel"></span><dl><dt><strong>XPS_E_ODD_BIDILEVEL</strong></dt><dt>0x80520307</dt></dl> | A cadeia de texto foi especificada como sendo orientada lateral e da direita para a esquerda. Se o texto for orientado para os lados, ele não poderá ter um nível bidi que seja um valor ímpar (da direita para a esquerda). Da mesma forma, se o nível bidi for um valor ímpar, o texto não poderá ser orientado lateralmente.<br /> | 
+| <span id="XPS_E_ONE_TO_ONE_MAPPING_EXPECTED"></span><span id="xps_e_one_to_one_mapping_expected"></span><dl><dt><strong>XPS_E_ONE_TO_ONE_MAPPING_EXPECTED</strong></dt><dt>0x80520308</dt></dl> | Os mapeamentos de glifo não correspondem ao conteúdo da cadeia de caracteres Unicode.<br /> | 
+| <span id="XPS_E_PACKAGE_WRITER_NOT_CLOSED"></span><span id="xps_e_package_writer_not_closed"></span><dl><dt><strong>XPS_E_PACKAGE_WRITER_NOT_CLOSED</strong></dt><dt>0x8052050c</dt></dl> | O gravador de pacote não foi fechado antes de ser liberado.<br /> | 
+| <span id="XPS_E_RELATIONSHIP_EXTERNAL"></span><span id="xps_e_relationship_external"></span><dl><dt><strong>XPS_E_RELATIONSHIP_EXTERNAL</strong></dt><dt>0x8052050a</dt></dl> | Uma relação refere-se a uma parte que está fora do documento XPS. Todo o conteúdo a ser renderizado em um documento XPS deve estar contido no documento XPS.<br /> | 
+| <span id="XPS_E_RESOURCE_NOT_OWNED"></span><span id="xps_e_resource_not_owned"></span><dl><dt><strong>XPS_E_RESOURCE_NOT_OWNED</strong></dt><dt>0x80520504</dt></dl> | Reservado.<br /> | 
+| <span id="XPS_E_RESTRICTED_FONT_NOT_OBFUSCATED"></span><span id="xps_e_restricted_font_not_obfuscated"></span><dl><dt><strong>XPS_E_RESTRICTED_FONT_NOT_OBFUSCATED</strong></dt><dt>0x80520309</dt></dl> | <em>Reservado</em>.<br /> | 
+| <span id="XPS_E_STRING_TOO_LONG"></span><span id="xps_e_string_too_long"></span><dl><dt><strong>XPS_E_STRING_TOO_LONG</strong></dt><dt>0x80520300</dt></dl> | Ocorreu um estouro de <strong>size_t</strong> durante uma tentativa de copiar uma cadeia de caracteres em um novo buffer.<br /> | 
+| <span id="XPS_E_TOO_MANY_INDICES"></span><span id="xps_e_too_many_indices"></span><dl><dt><strong>XPS_E_TOO_MANY_INDICES</strong></dt><dt>0x80520301</dt></dl> | Havia mais índices de glifos do que pontos de código Unicode. Se não houver mapeamentos de glifo, o número de índices de glifos deverá ser menor ou igual ao número de pontos de código Unicode.<br /> | 
+| <span id="XPS_E_UNAVAILABLE_PACKAGE"></span><span id="xps_e_unavailable_package"></span><dl><dt><strong>XPS_E_UNAVAILABLE_PACKAGE</strong></dt><dt>0x80520114</dt></dl> | Ocorreu um erro grave e o conteúdo do OM XPS pode ser irrecuperável. Alguns componentes do OM XPS ainda podem ser utilizáveis, mas eles precisarão ser verificados antes de serem usados ainda mais. Como o estado do OM XPS não pode ser previsto após esse erro ser retornado, todos os componentes do OM XPS devem ser liberados e descartados.<br /> | 
+| <span id="XPS_E_UNEXPECTED_COLORPROFILE"></span><span id="xps_e_unexpected_colorprofile"></span><dl><dt><strong>XPS_E_UNEXPECTED_COLORPROFILE</strong></dt><dt>0x80520505</dt></dl> | Um perfil de cor estava presente quando um não era esperado. Um perfil de cor só é permitido quando o tipo de cor é <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a>. <br /> | 
+| <span id="XPS_E_UNEXPECTED_CONTENT_TYPE"></span><span id="xps_e_unexpected_content_type"></span><dl><dt><strong>XPS_E_UNEXPECTED_CONTENT_TYPE</strong></dt><dt>0x80520008</dt></dl> | O destino de uma relação não é o tipo esperado pelo contexto da relação. <br /> | 
+| <span id="XPS_E_UNEXPECTED_RELATIONSHIP_TYPE"></span><span id="xps_e_unexpected_relationship_type"></span><dl><dt><strong>XPS_E_UNEXPECTED_RELATIONSHIP_TYPE</strong></dt><dt>0x80520010</dt></dl> | O tipo de relação não foi reconhecido.<br /> | 
+| <span id="XPS_E_UNEXPECTED_RESTRICTED_FONT_RELATIONSHIP"></span><span id="xps_e_unexpected_restricted_font_relationship"></span><dl><dt><strong>XPS_E_UNEXPECTED_RESTRICTED_FONT_RELATIONSHIP</strong></dt><dt>0x80520011</dt></dl> | A coleção de fontes restritas contém uma fonte irrestrita.<br /> | 
+| <span id="XPS_E_VISUAL_CIRCULAR_REF"></span><span id="xps_e_visual_circular_ref"></span><dl><dt><strong>XPS_E_VISUAL_CIRCULAR_REF</strong></dt><dt>0x80520501</dt></dl> | Reservado.<br /> | 
+| <span id="XPS_E_XKEY_ATTR_PRESENT_OUTSIDE_RES_DICT"></span><span id="xps_e_xkey_attr_present_outside_res_dict"></span><dl><dt><strong>XPS_E_XKEY_ATTR_PRESENT_OUTSIDE_RES_DICT</strong></dt><dt>0x80520400</dt></dl> | Uma geometria de caminho que não está em um dicionário de recursos tem um atributo <strong>x:Key</strong> especificado. As geometrias de caminho que não estão em um dicionário de recursos não podem ter um atributo <strong>x:Key</strong> .<br /> | 
+
 
 
 
@@ -351,10 +111,10 @@ Alguns métodos de API de documento XPS fazem chamadas para a API de [empacotame
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos da área de trabalho do Vista \[\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma somente para aplicativos da área de trabalho do Windows Server 2008 \[\]<br/> |
-| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                       |
-| Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                     |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma somente para \[ aplicativos da área de trabalho do Windows Vista\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de área de trabalho do Windows Server 2008 \[ somente\]<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                       |
+| INSERI<br/>                      | <dl> <dt>XpsObjectModel. idl</dt> </dl>                                     |
 
 
 

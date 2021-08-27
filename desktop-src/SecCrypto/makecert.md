@@ -4,12 +4,12 @@ ms.assetid: a28e77dd-72c9-42a3-a72d-1b3eaf59d9cf
 title: MakeCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd9f15f942fb6dd7c4c831cb33552b6f59ec2cd6cf9cac9654386d6adc27649
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2ff9fb79b5db5a6a71eee981166742b4e1680184
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119425736"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471922"
 ---
 # <a name="makecert"></a>MakeCert
 
@@ -40,122 +40,34 @@ As opções fornecidas nas tabelas a seguir podem ser usadas somente com o Inter
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Opção básica</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>-a</strong> <strong></strong> <em>Algoritmo</em> do</td>
-<td>Algoritmo de <a href="/windows/desktop/SecGloss/h-gly"><em>hash</em></a> . Deve ser definido como <strong>SHA-1</strong> ou <strong>MD5</strong> (padrão). Para obter informações sobre MD5, consulte <a href="/windows/desktop/SecGloss/m-gly"><em>MD5</em></a>.</td>
-</tr>
-<tr class="even">
-<td><strong>-b</strong> <strong></strong> <em>DateStart</em></td>
-<td>Data em que o certificado se torna válido pela primeira vez. O padrão é quando o certificado é criado. O formato de <em>DateStart</em> é mm/dd/aaaa.</td>
-</tr>
-<tr class="odd">
-<td><strong>-CY</strong> <strong></strong> <em>CertificateTypes</em></td>
-<td>Tipo de certificado. <em>CertificateTypes</em> pode ser <strong>end</strong> para a entidade end ou <strong>autoridade</strong> para <a href="/windows/desktop/SecGloss/c-gly"><em>autoridade de certificação</em></a>.</td>
-</tr>
-<tr class="even">
-<td><strong>-e</strong> <strong></strong> <em>DateEnd</em></td>
-<td>Data em que o período de validade termina. O padrão é o ano 2039.</td>
-</tr>
-<tr class="odd">
-<td><strong>-EKU</strong> <strong></strong> <em>OID1</em><strong>,</strong> <em>OID2</em> ...</td>
-<td>Insere uma lista de um ou mais OIDs ( <a href="/windows/desktop/SecGloss/o-gly"><em>identificadores de objeto</em></a> ) de <a href="/windows/desktop/SecGloss/e-gly"><em>uso avançado de chave</em></a> separados por vírgula no certificado. Por exemplo, <strong>-EKU 1.3.6.1.5.5.7.3.2</strong> insere o OID de autenticação de cliente. Para obter definições de OIDs permitidos, consulte o arquivo Wincrypt. h em CryptoAPI 2.0.</td>
-</tr>
-<tr class="even">
-<td><strong>-h</strong> <strong></strong> <em>NumChildren</em></td>
-<td>Altura máxima da árvore abaixo deste certificado.</td>
-</tr>
-<tr class="odd">
-<td><strong>-l</strong> <strong></strong> <em>PolicyLink</em></td>
-<td>Link para informações de política do SPC Agency (por exemplo, uma URL).</td>
-</tr>
-<tr class="even">
-<td><strong>-m</strong> <strong></strong> <em>nMonths</em></td>
-<td>Duração do período de validade.</td>
-</tr>
-<tr class="odd">
-<td><strong>-n</strong> <strong>&quot;</strong> <em>Nome</em> do<strong>&quot;</strong></td>
-<td>Nome do certificado do editor. Esse nome deve estar em conformidade com o padrão <a href="/windows/desktop/SecGloss/x-gly"><em>X. 500</em></a> . O método mais simples é usar o &quot; formato CN =<em>myname</em> &quot; . Por exemplo: <strong>-n &quot; CN = test &quot; </strong>.</td>
-</tr>
-<tr class="even">
-<td><strong>-nscp</strong></td>
-<td>A extensão de autenticação de cliente do Netscape deve ser incluída.</td>
-</tr>
-<tr class="odd">
-<td><strong>-PE</strong></td>
-<td>Marca a chave privada como exportável.</td>
-</tr>
-<tr class="even">
-<td><strong>-r</strong></td>
-<td>Cria um certificado autoassinado.</td>
-</tr>
-<tr class="odd">
-<td><strong>-SC</strong> <strong></strong> <em>SubjectCertFile</em></td>
-<td>Nome do arquivo de certificado com a chave pública de entidade existente a ser usada.</td>
-</tr>
-<tr class="even">
-<td><strong>-SK</strong> <strong></strong> <em>SubjectKey</em></td>
-<td>Local do contêiner de chave da entidade que contém a <a href="/windows/desktop/SecGloss/p-gly"><em>chave privada</em></a>. Se um contêiner de chave não existir, um será criado. Se nem a opção <strong>-SK</strong> ou <strong>-SV</strong> for usada, um contêiner de chave padrão será criado e usado por padrão.</td>
-</tr>
-<tr class="odd">
-<td><strong>-céu</strong> <strong></strong> <em>SubjectKeySpec</em></td>
-<td>Especificação da chave da entidade. <em>SubjectKeySpec</em> deve ser um dos três valores possíveis:<br/>
-<ul>
-<li><strong>Assinatura</strong> (AT_SIGNATURE especificação de chave)</li>
-<li><strong>Exchange</strong> (AT_KEYEXCHANGE especificação de chave)</li>
-<li>Um inteiro, como <strong>3</strong></li>
-</ul>
-Para obter mais informações, consulte a observação que segue esta tabela.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>-SP</strong> <strong></strong> <em>SubjectProviderName</em></td>
-<td>Provedor de CryptoAPI para o assunto. O padrão é o provedor do usuário. Para obter informações sobre provedores de CryptoAPI, consulte a documentação do CryptoAPI 2.0.</td>
-</tr>
-<tr class="odd">
-<td><strong>-Sr</strong> <strong></strong> <em>SubjectCertStoreLocation</em></td>
-<td>Local do registro do repositório de certificados da entidade. <em>SubjectCertStoreLocation</em> deve ser <strong>LocalMachine</strong> (chave do registro HKEY_LOCAL_MACHINE) ou <strong>CurrentUser</strong> (chave do registro HKEY_CURRENT_USER). <strong>CurrentUser</strong> é o padrão.</td>
-</tr>
-<tr class="even">
-<td><strong>-SS</strong> <strong></strong> <em>SubjectCertStoreName</em></td>
-<td>Nome do repositório de certificados da entidade em que o certificado gerado será armazenado.</td>
-</tr>
-<tr class="odd">
-<td><strong>-VA</strong> <strong></strong> <em>SubjectKeyFile</em></td>
-<td>Nome do arquivo. pvk da entidade. Se nem a opção <strong>-SK</strong> ou <strong>-SV</strong> for usada, um contêiner de chave padrão será criado e usado por padrão.</td>
-</tr>
-<tr class="even">
-<td><strong>-Sy</strong> <strong></strong> <em>nSubjectProviderType</em></td>
-<td>Tipo de provedor de CryptoAPI para o assunto. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor de CryptoAPI, consulte a documentação do CryptoAPI 2.0.</td>
-</tr>
-<tr class="odd">
-<td><strong>-#</strong><strong></strong> <em>SerialNumber</em></td>
-<td>Número de série do certificado. O valor máximo é 2 ^ 31. O padrão é um valor gerado pela ferramenta que tem a garantia de ser exclusivo.</td>
-</tr>
-<tr class="even">
-<td><strong>-$</strong><strong></strong> <em>CertificateAuthority</em></td>
-<td>Tipo de <a href="/windows/desktop/SecGloss/c-gly"><em>autoridade de certificação</em></a>. O <em>CertificateAuthority</em> deve ser definido como <strong>comercial</strong> (para certificados a serem usados por editores de software comercial) ou <strong>individual</strong> (para certificados a serem usados por editores de software individuais).</td>
-</tr>
-<tr class="odd">
-<td><strong>-?</strong></td>
-<td>Exibe as opções básicas.</td>
-</tr>
-<tr class="even">
-<td><strong>-!</strong></td>
-<td>Exibe as opções estendidas.</td>
-</tr>
-</tbody>
-</table>
+
+| Opção básica | Descrição | 
+|--------------|-------------|
+| <strong>-a</strong> <strong></strong> <em>Algoritmo</em> do | Algoritmo de <a href="/windows/desktop/SecGloss/h-gly"><em>hash</em></a> . Deve ser definido como <strong>SHA-1</strong> ou <strong>MD5</strong> (padrão). Para obter informações sobre MD5, consulte <a href="/windows/desktop/SecGloss/m-gly"><em>MD5</em></a>. | 
+| <strong>-b</strong> <strong></strong> <em>DateStart</em> | Data em que o certificado se torna válido pela primeira vez. O padrão é quando o certificado é criado. O formato de <em>DateStart</em> é mm/dd/aaaa. | 
+| <strong>-CY</strong> <strong></strong> <em>CertificateTypes</em> | Tipo de certificado. <em>CertificateTypes</em> pode ser <strong>end</strong> para a entidade end ou <strong>autoridade</strong> para <a href="/windows/desktop/SecGloss/c-gly"><em>autoridade de certificação</em></a>. | 
+| <strong>-e</strong> <strong></strong> <em>DateEnd</em> | Data em que o período de validade termina. O padrão é o ano 2039. | 
+| <strong>-EKU</strong> <strong></strong> <em>OID1</em><strong>,</strong><em>OID2</em> ... | Insere uma lista de um ou mais OIDs (<a href="/windows/desktop/SecGloss/o-gly"><em>identificadores de objeto</em></a> ) de <a href="/windows/desktop/SecGloss/e-gly"><em>uso avançado de chave</em></a>separados por vírgula no certificado. Por exemplo, <strong>-EKU 1.3.6.1.5.5.7.3.2</strong> insere o OID de autenticação de cliente. Para obter definições de OIDs permitidos, consulte o arquivo Wincrypt. h em CryptoAPI 2.0. | 
+| <strong>-h</strong> <strong></strong> <em>NumChildren</em> | Altura máxima da árvore abaixo deste certificado. | 
+| <strong>-l</strong> <strong></strong> <em>PolicyLink</em> | Link para informações de política do SPC Agency (por exemplo, uma URL). | 
+| <strong>-m</strong> <strong></strong> <em>nMonths</em> | Duração do período de validade. | 
+| <strong>-n</strong><strong>"</strong><em>nome</em><strong>"</strong> | Nome do certificado do editor. Esse nome deve estar em conformidade com o padrão <a href="/windows/desktop/SecGloss/x-gly"><em>X. 500</em></a> . O método mais simples é usar o formato "CN =<em>myname</em>". Por exemplo: <strong>-n "CN = test"</strong>. | 
+| <strong>-nscp</strong> | A extensão de autenticação de cliente do Netscape deve ser incluída. | 
+| <strong>-PE</strong> | Marca a chave privada como exportável. | 
+| <strong>-r</strong> | Cria um certificado autoassinado. | 
+| <strong>-SC</strong> <strong></strong> <em>SubjectCertFile</em> | Nome do arquivo de certificado com a chave pública de entidade existente a ser usada. | 
+| <strong>-SK</strong> <strong></strong> <em>SubjectKey</em> | Local do contêiner de chave da entidade que contém a <a href="/windows/desktop/SecGloss/p-gly"><em>chave privada</em></a>. Se um contêiner de chave não existir, um será criado. Se nem a opção <strong>-SK</strong> ou <strong>-SV</strong> for usada, um contêiner de chave padrão será criado e usado por padrão. | 
+| <strong>-céu</strong> <strong></strong> <em>SubjectKeySpec</em> | Especificação da chave da entidade. <em>SubjectKeySpec</em> deve ser um dos três valores possíveis:<br /><ul><li><strong>Assinatura</strong> (AT_SIGNATURE especificação de chave)</li><li><strong>Exchange</strong> (AT_KEYEXCHANGE especificação de chave)</li><li>Um inteiro, como <strong>3</strong></li></ul>Para obter mais informações, consulte a observação que segue esta tabela.<br /> | 
+| <strong>-SP</strong> <strong></strong> <em>SubjectProviderName</em> | Provedor de CryptoAPI para o assunto. O padrão é o provedor do usuário. Para obter informações sobre provedores de CryptoAPI, consulte a documentação do CryptoAPI 2.0. | 
+| <strong>-Sr</strong> <strong></strong> <em>SubjectCertStoreLocation</em> | Local do registro do repositório de certificados da entidade. <em>SubjectCertStoreLocation</em> deve ser <strong>LocalMachine</strong> (chave do registro HKEY_LOCAL_MACHINE) ou <strong>CurrentUser</strong> (chave do registro HKEY_CURRENT_USER). <strong>CurrentUser</strong> é o padrão. | 
+| <strong>-SS</strong> <strong></strong> <em>SubjectCertStoreName</em> | Nome do repositório de certificados da entidade em que o certificado gerado será armazenado. | 
+| <strong>-VA</strong> <strong></strong> <em>SubjectKeyFile</em> | Nome do arquivo. pvk da entidade. Se nem a opção <strong>-SK</strong> ou <strong>-SV</strong> for usada, um contêiner de chave padrão será criado e usado por padrão. | 
+| <strong>-Sy</strong> <strong></strong> <em>nSubjectProviderType</em> | Tipo de provedor de CryptoAPI para o assunto. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor de CryptoAPI, consulte a documentação do CryptoAPI 2.0. | 
+| <strong>-#</strong><strong></strong><em>SerialNumber</em> | Número de série do certificado. O valor máximo é 2 ^ 31. O padrão é um valor gerado pela ferramenta que tem a garantia de ser exclusivo. | 
+| <strong>-$</strong><strong></strong><em>CertificateAuthority</em> | Tipo de <a href="/windows/desktop/SecGloss/c-gly"><em>autoridade de certificação</em></a>. O <em>CertificateAuthority</em> deve ser definido como <strong>comercial</strong> (para certificados a serem usados por editores de software comercial) ou <strong>individual</strong> (para certificados a serem usados por editores de software individuais). | 
+| <strong>-?</strong> | Exibe as opções básicas. | 
+| <strong>-!</strong> | Exibe as opções estendidas. | 
+
 
 
 
@@ -170,50 +82,16 @@ As opções a seguir são apenas para arquivos SPC (Certificado Publisher [*soft
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Opção SPC e chave privada</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>-ic</strong> <strong></strong> <em>IssuerCertFile</em></td>
-<td>Local do certificado do emissor.</td>
-</tr>
-<tr class="even">
-<td><strong>-ik</strong> <strong></strong> <em>IssuerKey</em></td>
-<td>Local do contêiner de chave do emissor. O padrão é a chave raiz de teste.</td>
-</tr>
-<tr class="odd">
-<td><strong>-iky</strong> <strong></strong> <em>IssuerKeySpec</em></td>
-<td>Especificação de chave do emissor, que deve ser um dos três valores possíveis:<br/>
-<ul>
-<li><strong>Assinatura</strong> (AT_SIGNATURE de chave)</li>
-<li><strong>Exchange</strong> (AT_KEYEXCHANGE de chave)</li>
-<li>Um inteiro, como <strong>3</strong></li>
-</ul>
-Para obter mais informações, consulte a Observação que segue esta tabela.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>-ip</strong> <strong></strong> <em>IssuerProviderName</em></td>
-<td>Provedor CryptoAPI para emissor. O padrão é o provedor do usuário. Para obter informações sobre provedores de CryptoAPI, consulte a documentação CryptoAPI 2.0 dados.</td>
-</tr>
-<tr class="odd">
-<td><strong>-iv</strong> <strong></strong> <em>IssuerKeyFile</em></td>
-<td>O arquivo de chave privada do emissor. O padrão é a raiz do teste.</td>
-</tr>
-<tr class="even">
-<td><strong>-iy</strong> <strong></strong> <em>nIssuerProviderType</em></td>
-<td>Tipo de provedor CryptoAPI para o emissor. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor CryptoAPI, consulte a documentação CryptoAPI 2.0 criptografia.</td>
-</tr>
-</tbody>
-</table>
+
+| Opção SPC e chave privada | Descrição | 
+|----------------------------|-------------|
+| <strong>-ic</strong> <strong></strong> <em>IssuerCertFile</em> | Local do certificado do emissor. | 
+| <strong>-ik</strong> <strong></strong> <em>IssuerKey</em> | Local do contêiner de chave do emissor. O padrão é a chave raiz de teste. | 
+| <strong>-iky</strong> <strong></strong> <em>IssuerKeySpec</em> | Especificação de chave do emissor, que deve ser um dos três valores possíveis:<br /><ul><li><strong>Assinatura</strong> (especificação AT_SIGNATURE chave)</li><li><strong>Exchange</strong> (AT_KEYEXCHANGE de chave)</li><li>Um inteiro, como <strong>3</strong></li></ul>Para obter mais informações, consulte a Observação que segue esta tabela.<br /> | 
+| <strong>-ip</strong> <strong></strong> <em>IssuerProviderName</em> | Provedor CryptoAPI para emissor. O padrão é o provedor do usuário. Para obter informações sobre provedores cryptoAPI, consulte a documentação CryptoAPI 2.0 criptografia. | 
+| <strong>-iv</strong> <strong></strong> <em>IssuerKeyFile</em> | O arquivo de chave privada do emissor. O padrão é a raiz do teste. | 
+| <strong>-iy</strong> <strong></strong> <em>nIssuerProviderType</em> | Tipo de provedor CryptoAPI para o emissor. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor CryptoAPI, consulte a documentação CryptoAPI 2.0 dados. | 
+
 
 
 
