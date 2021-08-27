@@ -1,31 +1,31 @@
 ---
 title: Tipo de controle AppBar
-description: Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle AppBar.
+description: Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o tipo de controle AppBar.
 ms.assetid: B56F4E7A-934F-8516-9B1B-B23B80D54273
 keywords:
-- Automação da interface do usuário, suporte para tipo de controle AppBar
-- Automação da interface do usuário, tipo de controle AppBar
-- Automação da interface do usuário, padrões de controle para o tipo de controle AppBar
+- Automação da Interface do Usuário, suporte para o tipo de controle AppBar
+- Automação da Interface do Usuário, tipo de controle AppBar
+- Automação da Interface do Usuário, padrões de controle para o tipo de controle AppBar
 - padrões de controle, tipo de controle AppBar
-- suporte para tipo de controle AppBar
+- suporte para o tipo de controle AppBar
 - Tipo de controle AppBar
 - tipos de controle, AppBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7067e73d9f38ba62893d6ba2746f8f84c846daf1a90f63b6e72bd09337f47a1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3fc8cf562b125267e9b35239e8490f11ed6ae830
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118826441"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472882"
 ---
 # <a name="appbar-control-type"></a>Tipo de controle AppBar
 
-Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle **AppBar** .
+Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o tipo de controle **AppBar.**
 
-Uma barra de aplicativo é um elemento de interface do usuário que apresenta navegação, comandos e ferramentas para ele. para aplicativos da Windows Store, as barras de aplicativos para aplicativos podem ser exibidas pressionando Windows tecla + Z.
+Uma barra de aplicativos é um elemento de interface do usuário que apresenta navegação, comandos e ferramentas para o usuário. Para Windows Store, as barras de aplicativos para aplicativos podem ser exibidas pressionando Windows Chave + Z.
 
-As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle **AppBar** .
+As seções a seguir definem a estrutura de árvore Automação da Interface do Usuário, as propriedades, os padrões de controle e os eventos necessários para o tipo de controle **AppBar.**
 
 Este tópico inclui as seções a seguir.
 
@@ -37,40 +37,15 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="typical-tree-structure"></a>Estrutura de árvore típica
 
-A tabela a seguir descreve um controle típico e a exibição de conteúdo da árvore de automação da interface do usuário que pertence a controles **AppBar** e descreve o que pode ser contido em cada exibição. O **botão** é o elemento mais comum dentro de um **AppBar** , mas outros controles que chamam ações para um aplicativo também são possíveis. Um **AppBar** também pode ter 0 ou mais separadores (tipo de controle **Separator** ), que aparecem no modo de exibição de controle como colocado entre os outros controles. Para obter mais informações sobre a árvore de automação da interface do usuário, consulte [visão geral da árvore de automação da IU](uiauto-treeoverview.md).
+A tabela a seguir ilustra uma exibição típica de controle e conteúdo da árvore Automação da Interface do Usuário que pertence aos controles **AppBar** e descreve o que pode estar contido em cada exibição. **Button** é o elemento mais comum dentro de um **AppBar,** mas outros controles que invocam ações para um aplicativo também são possíveis. Um **AppBar** também pode ter 0 ou mais separadores ( tipo de controle **Separador),** que aparecem na exibição de controle como colocados entre os outros controles. Para obter mais informações sobre a árvore Automação da Interface do Usuário, consulte [Visão geral Automação da Interface do Usuário árvore.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>AppBar
-<ul>
-<li>Botão (0 ou muitos)</li>
-<li>Outros controles (0 ou muitos)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Não se aplica
-<ul>
-<li>Botão (0 ou muitos)</li>
-<li>Outros controles (0 ou muitos)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>AppBar<ul><li>Botão (0 ou muitos)</li><li>Outros controles (0 ou muitos)</li></ul></li></ul> | <ul><li>Não aplicável<ul><li>Botão (0 ou muitos)</li><li>Outros controles (0 ou muitos)</li></ul></li></ul> | 
+
 
 
 
@@ -78,22 +53,22 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
-A tabela a seguir lista as propriedades de automação da interface do usuário cujo valor ou definição é especialmente relevante para os controles que implementam o tipo de controle **AppBar** . Para obter mais informações sobre propriedades de automação da interface do usuário, consulte [Recuperando propriedades de elementos de automação da interface do usuário](uiauto-propertiesforclients.md).
+A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou definição é especialmente relevante para os controles que implementam o tipo de controle **AppBar.** Para obter mais informações sobre Automação da Interface do Usuário propriedades, consulte [Recuperando propriedades de Automação da Interface do Usuário Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propriedade de automação da interface do usuário                                                                                              | Valor      | Observações                                                                                                                                                                                                                       |
+| Automação da Interface do Usuário propriedade                                                                                              | Valor      | Observações                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Consulte observações. | O valor dessa propriedade deve ser exclusivo entre todos os elementos de mesmo nível na exibição bruta da árvore de automação da interface do usuário.                                                                                                                |
-| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Consulte observações. | O valor exposto por essa propriedade deve incluir todos os controles contidos nela.                                                                                                                                    |
+| [**\_AutomationIdPropertyId da UIA**](uiauto-automation-element-propids.md)                 | Consulte observações. | O valor dessa propriedade deve ser exclusivo entre todos os elementos pares na exibição bruta da árvore Automação da Interface do Usuário dados.                                                                                                                |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Consulte observações. | O valor exposto por essa propriedade deve incluir todos os controles contidos nele.                                                                                                                                    |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **AppBar** |                                                                                                                                                                                                                             |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE      | Um controle da barra de aplicativos não está incluído na exibição de conteúdo da árvore de automação da interface do usuário.                                                                                                                                           |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE       | Um controle da barra de aplicativo sempre é incluído no modo de exibição de controle da árvore de automação da interface do usuário.                                                                                                                                        |
-| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte as observações  | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade. Controles na barra de aplicativos normalmente podem assumir o foco do teclado.                                                                                    |
-| [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Consulte observações. | O valor dessa propriedade depende de se o controle é visível na tela.                                                                                                                                        |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE      | Um controle de barra de aplicativos não está incluído na exibição de conteúdo da árvore Automação da Interface do Usuário aplicativo.                                                                                                                                           |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE       | Um controle de barra de aplicativos sempre é incluído na exibição de controle da árvore Automação da Interface do Usuário aplicativo.                                                                                                                                        |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte as observações  | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade. Os controles na barra de aplicativos normalmente podem usar o foco do teclado.                                                                                    |
+| [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Consulte observações. | O valor dessa propriedade depende se o controle pode ser exibido na tela.                                                                                                                                        |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Nulo       | Os controles da barra de aplicativos geralmente não têm um rótulo.                                                                                                                                                                               |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações. | Cadeia de caracteres localizada correspondente ao tipo de controle **AppBar** . O valor padrão é "barra de aplicativos" para en-US ou inglês (Estados Unidos).                                                                                         |
-| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Consulte observações. | O controle da barra de aplicativos não precisa de um nome, a menos que um aplicativo tenha mais de uma barra de aplicativos. Se houver mais de uma barra de aplicativos em um aplicativo, use essa propriedade para expor nomes de distinção, como "Top" ou "Bottom". |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações. | Cadeia de caracteres localizada correspondente ao tipo **de controle AppBar.** O valor padrão é "barra de aplicativos" para en-US ou inglês (Estados Unidos).                                                                                         |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Consulte observações. | O controle de barra de aplicativos não precisa de um nome, a menos que um aplicativo tenha mais de uma barra de aplicativos. Se houver mais de uma barra de aplicativos em um aplicativo, use essa propriedade para expor nomes diferenciados, como "Top" ou "Bottom". |
 
 
 
@@ -101,16 +76,16 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário aos quais os controles da barra de aplicativos precisam dar suporte. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que os controles da barra de aplicativos são necessários para dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                   | Observações                                                                                                                      |
+| Automação da Interface do Usuário evento                                                                                                                   | Observações                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                 | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade. |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                 | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.             | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
 
 
@@ -119,15 +94,15 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 ## <a name="relevant-events"></a>Eventos relevantes
 
-A tabela a seguir lista os eventos de automação da interface do usuário que são especialmente relevantes para os controles que implementam o tipo de controle **AppBar** , mas não são estritamente necessários.
+A tabela a seguir lista Automação da Interface do Usuário eventos que são especialmente relevantes para os controles que implementam o tipo de controle **AppBar,** mas não estritamente necessários.
 
 
 
-| Evento de automação da interface do usuário                                                                                 | Observações                                                                              |
+| Automação da Interface do Usuário evento                                                                                 | Observações                                                                              |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**UIA \_ MenuClosedEventId**](uiauto-event-ids.md)                            | Implementações de plataforma podem acionar esse evento quando o controle da barra de aplicativo é fechado. |
-| [**UIA \_ MenuOpenedEventId**](uiauto-event-ids.md)                            | Implementações de plataforma podem acionar esse evento quando o controle da barra de aplicativo é aberto. |
-| [**IUIAutomationPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertychangedeventhandler) | Manipulador de eventos de alteração de propriedade.                                                    |
+| [**Menu \_ UIAClosedEventId**](uiauto-event-ids.md)                            | As implementações de plataforma podem disparar esse evento quando o controle de barra de aplicativos é fechado. |
+| [**Menu \_ UIAOpenedEventId**](uiauto-event-ids.md)                            | As implementações de plataforma podem disparar esse evento quando o controle de barra de aplicativos é aberto. |
+| [**IUIAutomationPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertychangedeventhandler) | Manipulador de eventos alterado por propriedade.                                                    |
 
 
 
@@ -137,7 +112,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -149,10 +124,10 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 **Referência**
 </dt> <dt>
 
-[**Controle XAML AppBar**](/uwp/api/Windows.UI.Xaml.Controls.AppBar)
+[**Controle AppBar XAML**](/uwp/api/Windows.UI.Xaml.Controls.AppBar)
 </dt> <dt>
 
-[**Objeto WinJS. UI. AppBar**](/previous-versions/windows/apps/br229670(v=win.10))
+[**Objeto WinJS.UI.AppBar**](/previous-versions/windows/apps/br229670(v=win.10))
 </dt> </dl>
 
  

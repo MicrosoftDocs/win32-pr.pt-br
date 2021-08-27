@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: estrutura JET_OBJECTLIST dados'
+description: 'Saiba mais sobre: estrutura de JET_OBJECTLIST'
 title: Estrutura JET_OBJECTLIST
 TOCTitle: JET_OBJECTLIST Structure
 ms:assetid: 95f12f2a-13da-48d4-a254-fc0cb718b17d
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21a3ea030421406a5bc571bb5cc1887f77b4710d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: a2f035a15c0f0f2861c7c6698878e0782feb35ce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983119"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476532"
 ---
 # <a name="jet_objectlist-structure"></a>Estrutura JET_OBJECTLIST
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_objectlist-structure"></a>Estrutura JET_OBJECTLIST
 
-A **JET_OBJECTLIST** de dados percorre uma tabela temporária que foi criada com [JetGetObjectInfo](./jetgetobjectinfo-function.md). Cada linha na tabela temporária descreve um objeto no banco de dados.
+A estrutura de **JET_OBJECTLIST** atravessa uma tabela temporária que foi criada com [JetGetObjectInfo](./jetgetobjectinfo-function.md). Cada linha na tabela temporária descreve um objeto no banco de dados.
 
 ```cpp
     typedef struct {
@@ -50,23 +50,23 @@ A **JET_OBJECTLIST** de dados percorre uma tabela temporária que foi criada com
 
 ### <a name="members"></a>Membros
 
-**Cbstruct**
+**cbStruct**
 
-O tamanho da estrutura, em bytes. A chamada à API atualizará esse campo, portanto, o chamador deve garantir que esse valor corresponde a sizeof( JET_INDEXLIST ).
+O tamanho da estrutura, em bytes. A chamada à API atualizará esse campo, de modo que o chamador deve garantir que esse valor corresponda a sizeof (JET_INDEXLIST).
 
-**Tableid**
+**TableID**
 
-O identificador de tabela da tabela temporária que foi criada. O chamador deve conter código que fechará a tabela.
+O identificador de tabela da tabela temporária que foi criada. O chamador deve conter o código que fechará a tabela.
 
 **cRecord**
 
-O número de registros na tabela temporária que foi criada.
+O número de registros na tabela temporária que foi criado.
 
 **columnidcontainername**
 
 O identificador de coluna do nome do tipo de contêiner.
 
-Os únicos contêineres com suporte no momento são tabelas. Esta coluna é uma [JET_coltypText](./jet-coltyp.md).
+Os únicos contêineres com suporte atualmente são tabelas. Esta coluna é uma [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjectname**
 
@@ -76,7 +76,7 @@ Esta coluna é uma [JET_coltypText](./jet-coltyp.md).
 
 **columnidobjtyp**
 
-O identificador de coluna do tipo do objeto . Os únicos contêineres com suporte no momento são tabelas, portanto, esse campo será JET_objtypTable.
+O identificador de coluna do tipo do objeto. Os únicos contêineres com suporte atualmente são tabelas, portanto, esse campo será JET_objtypTable.
 
 Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
@@ -90,13 +90,13 @@ Obsoleto. Não use.
 
 **columnidgrbit**
 
-O identificador de coluna dos **grbits** aplicáveis ao objeto . Para ver uma lista de **grbits aplicáveis,** [consulte JET_TABLECREATE](./jet-tablecreate-structure.md).
+O identificador de coluna do **grbits** que é aplicável ao objeto. Para obter uma lista de **grbits** aplicáveis, consulte [JET_TABLECREATE](./jet-tablecreate-structure.md).
 
 Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
 **columnidflags**
 
-O identificador de coluna dos sinalizadores aplicáveis ao objeto . Para ver uma lista de sinalizadores aplicáveis, [consulte JET_OBJECTINFO](./jet-objectinfo-structure.md).
+O identificador de coluna dos sinalizadores que são aplicáveis ao objeto. Para obter uma lista de sinalizadores aplicáveis, consulte [JET_OBJECTINFO](./jet-objectinfo-structure.md).
 
 Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
@@ -108,7 +108,7 @@ Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcPage**
 
-O identificador de coluna do número de páginas que o objeto usa.
+O identificador de coluna do número de páginas usado pelo objeto.
 
 Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
@@ -116,18 +116,14 @@ Esta coluna é uma [JET_coltypLong](./jet-coltyp.md).
 
 Cada linha na tabela temporária corresponde a um objeto no banco de dados.
 
-Quando a tabela temporária é criada com o parâmetro *InfoLevel* na função [JetGetObjectInfo](./jetgetobjectinfo-function.md) definida como JET_ObjInfoListNoStats, as colunas identificadas por **columnidcRecord** e **columnidcPage** não conterão informações significativas.
+Quando a tabela temporária é criada com o parâmetro *InfoLevel* na função [JetGetObjectInfo](./jetgetobjectinfo-function.md) definida como JET_ObjInfoListNoStats, as colunas identificadas por **columnidcRecord** e **columnidcPage** não conterá informações significativas.
 
 Atualmente, somente as informações sobre tabelas estarão na tabela temporária.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 

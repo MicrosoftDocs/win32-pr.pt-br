@@ -4,12 +4,12 @@ ms.assetid: d687ecd3-9ad6-46d5-b927-d9b99af2002f
 title: Exibindo informações de topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78fd1d7d28de3d7fa5420241abf793295323532dca29d3d68d1271545aa460dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bf29f28ac419da7df14d90efb50919634d7409b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237368"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468003"
 ---
 # <a name="viewing-topology-information"></a>Exibindo informações de topologia
 
@@ -19,41 +19,13 @@ A tabela a seguir mostra o item de topologia e os atributos que o painel exibe.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item de topologia</th>
-<th>Atributos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nós de topologia</td>
-<td><ul>
-<li><a href="topology-node-attributes.md">Atributos de nó de topologia</a> para todos os nós.<br/></li>
-<li><a href="presentation-descriptor-attributes.md">Atributos de descritor de apresentação</a> somente para nós de origem.<br/></li>
-<li>Informações de autoridade de confiança de entrada e saída para nós de transformação e saída.<br/></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Entrada de nó</td>
-<td><ul>
-<li><a href="media-type-attributes.md">Atributos de tipo de mídia</a> para todos os nós.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Saída de nó</td>
-<td><ul>
-<li><a href="stream-descriptor-attributes.md">Atributos de descritor de fluxo</a> somente para nós de origem.<br/></li>
-<li><a href="media-type-attributes.md">Atributos de tipo de mídia</a> para todos os nós.<br/></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Item de topologia | Atributos | 
+|---------------|------------|
+| Nós de topologia | <ul><li><a href="topology-node-attributes.md">Atributos de nó de topologia</a> para todos os nós.<br /></li><li><a href="presentation-descriptor-attributes.md">Atributos de descritor de apresentação</a> somente para nós de origem.<br /></li><li>Informações de autoridade de confiança de entrada e saída para nós de transformação e saída.<br /></li></ul> | 
+| Entrada de nó | <ul><li><a href="media-type-attributes.md">Atributos de tipo de mídia</a> para todos os nós.</li></ul> | 
+| Saída de nó | <ul><li><a href="stream-descriptor-attributes.md">Atributos de descritor de fluxo</a> somente para nós de origem.<br /></li><li><a href="media-type-attributes.md">Atributos de tipo de mídia</a> para todos os nós.<br /></li></ul> | 
+
 
 
 

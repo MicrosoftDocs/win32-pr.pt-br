@@ -4,12 +4,12 @@ ms.assetid: 28bd13d9-ff5c-456e-ab98-d2ff3a499f1c
 title: Conceitos do pool de aplicativos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87a72f5681896e8ac0e6a50b3bddfc16cf4303f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e9aab46350e3c6084c0d5e8ca61d2f3c90d27e06795f7d08568ee4a7c1e0fc26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096906"
 ---
 # <a name="com-application-pooling-concepts"></a>Conceitos do pool de aplicativos COM+
 

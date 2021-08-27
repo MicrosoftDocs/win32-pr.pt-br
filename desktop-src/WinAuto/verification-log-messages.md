@@ -4,12 +4,12 @@ description: Esta seção descreve as mensagens de log de verificação para o A
 ms.assetid: 27BA13D8-162B-4604-A048-2C8D49060FA9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c4d0d9afd30307c77ebebb1039ba2f2e0817884
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 44bef7e2372fe3374971bf9cf26c8cc420ad94ad679e8dcc4489f559ac337e25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105765741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097946"
 ---
 # <a name="verification-log-messages"></a>Mensagens de log de verificação
 
@@ -96,9 +96,9 @@ Esta seção descreve as mensagens de log de verificação para o AccChecker (ve
 [UI Accessibility Checker](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

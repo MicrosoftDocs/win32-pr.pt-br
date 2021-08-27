@@ -4,27 +4,27 @@ ms.assetid: 355abd0e-928e-442e-a724-855d9dd946fc
 title: Práticas recomendadas para eficiência energética
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d9a348b9df49531358de2db50acc0936622c36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9cf56459dbd2762bd58af0e71ce8ca509d684f1f6a8643861b2696a7d25115ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122436"
 ---
 # <a name="best-practices-for-energy-efficiency"></a>Práticas recomendadas para eficiência energética
 
 ## <a name="platform"></a>Plataforma
 
- **Clientes** – Windows XP Windows \| Vista Windows \| 7  
+ **clientes** – Windows XP \| Windows Vista \| Windows 7  
 
 ## <a name="description"></a>Descrição
 
-Os laptops baseados no Windows devem atender aos requisitos regulatórios de eficiência de energia, como os do programa de Estados Unidos agência de proteção ambiental (EPA) Energy Star. Além disso, as pesquisas mostraram que mais tempo a vida útil da bateria continua sendo o que os consumidores mais desejam e precisam em laptops. Para atender às demandas do consumidor, os laptops do Windows devem avançar continuamente nas seguintes áreas:
+os laptops baseados em Windows devem atender aos requisitos regulatórios de eficiência de energia, como os do programa Estados Unidos energy Star da agência de proteção ambiental (EPA). Além disso, as pesquisas mostraram que mais tempo a vida útil da bateria continua sendo o que os consumidores mais desejam e precisam em laptops. para atender às demandas do consumidor, Windows laptops devem avançar continuamente nas seguintes áreas:
 
 -   Eficiência energética em todos os cenários de uso, incluindo cargas de trabalho ociosas, de produtividade, reprodução de DVD e mídia e benchmarks do setor
 -   Vida útil da bateria do PC móvel – para plataformas de hardware e para Windows
 
-A plataforma Windows é altamente confiável e permite um rápido desempenho on-and-off. No entanto, as extensões fornecidas com sistemas de PC móvel, como serviços, applets da bandeja do sistema, drivers e outros softwares, podem afetar significativamente o desempenho, a confiabilidade e a eficiência energética.
+a plataforma Windows é altamente confiável e permite um rápido desempenho on-and-off. No entanto, as extensões fornecidas com sistemas de PC móvel, como serviços, applets da bandeja do sistema, drivers e outros softwares, podem afetar significativamente o desempenho, a confiabilidade e a eficiência energética.
 
 A eficiência energética é um problema complexo, com fatores afetados por e afetando todos os elementos do ecossistema do PC. Pequenos aprimoramentos em vários cenários podem melhorar a eficiência de energia, mas um único recurso de aplicativo, dispositivo ou sistema com baixo desempenho pode aumentar significativamente o consumo de energia.
 
@@ -46,23 +46,23 @@ Os problemas e componentes principais que afetam a vida útil da bateria em um P
 
 **Sistema operacional – gerenciamento de energia direcionado**
 
--   Eficiência do código do Windows enquanto está sob uma carga versus ociosa
--   Nível de cooperação de todos os componentes com o gerenciamento de energia direcionado ao Windows
+-   eficiência do código de Windows enquanto está sob uma carga versus ociosa
+-   nível de cooperação de todos os componentes com gerenciamento de energia direcionado Windows
 -   Configuração adequada do sistema operacional para otimizar o gerenciamento de energia por meio de configurações de política de energia
 
 **Software e serviços de aplicativos**
 
 -   Eficiência de aplicativos, drivers e serviços em uma carga em comparação com o tempo ocioso
--   Nível de cooperação de aplicativos com o gerenciamento de energia direcionado do Windows
+-   nível de cooperação de aplicativos com o Windows – gerenciamento de energia direcionado
 -   A concessão de software do sistema ou dos dispositivos para entrar em Estados ociosos de baixa energia
 
-Um único componente de aplicativo ou de serviço pode impedir um sistema de concretizar a vida útil ideal da bateria. Embora o Windows forneça muitas opções de configuração de energia, as configurações de software pré-instalado ou de política de energia em muitos sistemas não são otimizadas para a plataforma de hardware do host.
+Um único componente de aplicativo ou de serviço pode impedir um sistema de concretizar a vida útil ideal da bateria. embora Windows forneça muitas opções de configuração de energia, as configurações de software pré-instalado ou de política de energia em muitos sistemas não são otimizadas para a plataforma de hardware do host.
 
-Um método comum para avaliar o impacto da vida útil da bateria do software pré-instalado é comparar o consumo de energia do sistema com uma instalação limpa do Windows em comparação com uma instalação do Windows que inclui software e serviços de valor agregado. Embora uma instalação limpa não represente a plataforma típica que os OEMs enviam aos clientes, a comparação de consumo de energia pode fornecer informações sobre a eficiência de energia do software pré-instalado.
+um método comum para avaliar o impacto da vida útil da bateria do software pré-instalado é comparar o consumo de energia do sistema com uma instalação limpa do Windows versus uma instalação Windows que inclui software e serviços de valor agregado. Embora uma instalação limpa não represente a plataforma típica que os OEMs enviam aos clientes, a comparação de consumo de energia pode fornecer informações sobre a eficiência de energia do software pré-instalado.
 
 ## <a name="best-practices"></a>Práticas Recomendadas
 
-Para garantir que seu aplicativo seja otimizado em plataformas Windows, siga estas práticas recomendadas ao criar aplicativos ou serviços:
+para garantir que seu aplicativo seja otimizado em plataformas Windows, siga estas práticas recomendadas ao criar aplicativos ou serviços:
 
 -   **Evitar o uso de temporizadores periódicos de alta resolução**
 
@@ -76,7 +76,7 @@ Para garantir que seu aplicativo seja otimizado em plataformas Windows, siga est
 
 -   **Ajustar à política de energia do usuário**
 
-<dl> O Windows Vista e versões posteriores facilitam para o usuário escolher o comportamento geral de economia de energia ou de desempenho do sistema. Seu aplicativo deve responder às alterações na política de energia e reduzir o uso de recursos ou aumentar o desempenho de acordo. Por exemplo, um aplicativo deve desabilitar a atividade em segundo plano, como indexação ou verificação do sistema, quando o usuário tiver selecionado um plano de energia de economia de energia.  
+<dl> Windows O Vista e versões posteriores facilitam para o usuário escolher o comportamento geral de economia de energia ou desempenho do sistema. Seu aplicativo deve responder às alterações na política de energia e reduzir o uso de recursos ou aumentar o desempenho de acordo. Por exemplo, um aplicativo deve desabilitar a atividade em segundo plano, como indexação ou verificação do sistema, quando o usuário tiver selecionado um plano de energia de economia de energia.  
 </dl>
 
 -   **Reduzir o uso de recursos quando o sistema estiver com energia da bateria**
@@ -104,7 +104,7 @@ Para garantir que seu aplicativo seja otimizado em plataformas Windows, siga est
 <dl> Seu aplicativo deve se registrar e responder a eventos comuns de gerenciamento de energia, como alterações de fonte de energia do sistema e notificações de energia e desligamento para a exibição.  
 </dl>
 
--   **Não habilite o log de depuração por padrão; Use o rastreamento de eventos para Windows em vez disso**
+-   **Não habilite o log de depuração por padrão; use o rastreamento de eventos para Windows em vez disso**
 
 <dl> O log de depuração periódico pode impedir a rotação do disco.  
 </dl>

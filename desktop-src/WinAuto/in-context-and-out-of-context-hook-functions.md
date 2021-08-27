@@ -4,12 +4,12 @@ description: Ao registrar uma função de gancho com SetWinEventHook, os cliente
 ms.assetid: 6876d74a-9c15-4f89-92ad-d072d9b528f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4d96bff36f47b5e7fb0ad2e98d5a5347e2bc747
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7594e14f0da218f61cc123dfbc19335e4318a2b19dad5faa84eac7a2fafe3a65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098476"
 ---
 # <a name="in-context-and-out-of-context-hook-functions"></a>In-Context e funções de gancho fora de contexto
 
@@ -21,9 +21,9 @@ Ao registrar uma função de gancho com [**SetWinEventHook**](/windows/desktop/a
 -   [Precauções da função de gancho no contexto](in-context-hook-function-precautions.md)
 -   [Funções de gancho fora do contexto](out-of-context-hook-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Encontrando o que você precisa no provedor WMI de DNS
-description: A documentação do provedor de Instrumentação de Gerenciamento do Windows (DNS) do sistema de nomes de domínio (WMI) é apresentada nas quatro seções a seguir.
+description: a documentação do provedor de Instrumentação de Gerenciamento do Windows (DNS) do sistema de nomes de domínio (WMI) é apresentada nas quatro seções a seguir.
 ms.assetid: d46fae17-d084-4ccb-b2d5-21be802af2d3
 keywords:
 - Sistema de nomes de domínio, provedor WMI, roteiro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8acabb853b84f6f42b7451ea57db10ca5ae3106f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c99dd7742622eafbde5fbb1ae7499c40fb86746dd6992ba6f3619644f302b5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105748246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131816"
 ---
 # <a name="finding-what-you-need-in-the-dns-wmi-provider"></a>Encontrando o que você precisa no provedor WMI de DNS
 
-A documentação do provedor de Instrumentação de Gerenciamento do Windows (DNS) do sistema de nomes de domínio (WMI) é apresentada nas quatro seções a seguir.
+a documentação do provedor de Instrumentação de Gerenciamento do Windows (DNS) do sistema de nomes de domínio (WMI) é apresentada nas quatro seções a seguir.
 
 
 
@@ -28,11 +28,11 @@ A documentação do provedor de Instrumentação de Gerenciamento do Windows (DN
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

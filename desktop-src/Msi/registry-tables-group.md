@@ -1,15 +1,15 @@
 ---
-description: O grupo do registro de tabelas Windows Installer contém informações sobre entradas do registro.
+description: o grupo do registro de tabelas Windows Installer contém informações sobre entradas do registro.
 ms.assetid: 31a75c20-79e4-4bcf-bcc1-34a7d191fa90
 title: Grupo de tabelas do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8ba14bdc2bc5668ce2de3ec66172c75c176ab41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f7ab4d3447ec727271d53fabe44fee11bf96663170c89a2210d80bb02bd8c7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128967"
 ---
 # <a name="registry-tables-group"></a>Grupo de tabelas do registro
 
@@ -31,7 +31,7 @@ O grupo de entradas do registro contém as seguintes tabelas de entradas de regi
 -   A [tabela de classes](class-table.md) é usada para registrar IDs de classe e outras informações para objetos com. Esta tabela contém informações relacionadas ao servidor COM que devem ser geradas como parte do anúncio do produto.
 -   A [tabela ProgID](progid-table.md) associa IDs de programa com IDs de classe.
 -   A [tabela AppID](appid-table.md) é usada para registrar configurações comuns de segurança e configuração para objetos DCOM.
--   A [tabela de ambiente](environment-table.md) é usada para definir os valores de variáveis de ambiente e, no Windows 2000, a tabela de ambiente também grava no registro.
+-   a [tabela de ambiente](environment-table.md) é usada para definir os valores de variáveis de ambiente e, no Windows 2000, a tabela de ambiente também grava no registro.
 -   A [tabela de registro](registry-table.md) contém outras informações que o aplicativo precisa colocar no registro do sistema. Isso inclui configurações padrão, informações do usuário ou dados ou registro COM sem suporte nas tabelas acima.
 -   A [tabela RemoveRegistry](removeregistry-table.md) contém as informações de registro que o aplicativo precisa excluir do registro do sistema no momento da instalação.
 

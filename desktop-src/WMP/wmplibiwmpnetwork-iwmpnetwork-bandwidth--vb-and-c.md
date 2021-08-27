@@ -3,9 +3,9 @@ title: Propriedade de largura de banda IWMPNetwork
 description: A propriedade bandWidth Obtém a largura de banda atual do item de mídia.
 ms.assetid: 4355aa14-bca7-4b46-aad5-3e3796a54735
 keywords:
-- Propriedade de largura de banda Windows Media Player
-- Propriedade de largura de banda Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade bandWidth
+- Windows Media Player de propriedade de largura de banda
+- propriedade de largura de banda Windows Media Player, interface IWMPNetwork
+- Windows Media Player de interface IWMPNetwork, propriedade bandWidth
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df9a55f9d5c6724c428b75a4171c2e8b7ca13d18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd3cccc47d16f272a28fb732641a9fca743003f716e79a340df8de5d55e9ce6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105790523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098726"
 ---
 # <a name="iwmpnetworkbandwidth-property"></a>Propriedade IWMPNetwork:: bandWidth
 

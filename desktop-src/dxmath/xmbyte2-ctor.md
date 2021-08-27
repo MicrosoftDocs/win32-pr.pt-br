@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 26f8d02fcb65f685baf245928ff0969a99076491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50e6059d36f7081aef1fd0250f726ce7dc7ea69
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796081"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477672"
 ---
 # <a name="xmbyte2-constructors"></a>Construtores XMBYTE2
 
@@ -33,65 +33,15 @@ Constrói instâncias da estrutura [**XMBYTE2**](/windows/desktop/api/DirectXPac
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMBYTE2</code> .<br/> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a>.<br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível com C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(float_float)"><strong>XMBYTE2 (float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMBYTE2</code> dois <code>float</code> argumentos.<br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de dois <code>float</code> argumentos.<br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível com C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMBYTE2</code> de um argumento de matriz de dois elementos <code>float</code> .<br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de um argumento de matriz de dois elementos <code>float</code> .<br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível com C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(int8_t_int8_t)"><strong>XMBYTE2 (int8_t, int8_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do <code>XMBYTE2</code> de <code>int8_t</code> argumentos XMBYTE2.<br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de <code>int8_t</code> argumentos XMBYTE2.<br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível com C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const int8_t *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMBYTE2</code> de um argumento de matriz de dois elementos <code>int8_t</code> .<br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de um argumento de matriz de dois elementos <code>int8_t</code> .<br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível com C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 ()</strong></a> | Construtor padrão para <code>XMBYTE2</code> .<br /> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a>.<br /><blockquote>[!Note]<br />Esse construtor só está disponível com C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(float_float)"><strong>XMBYTE2 (float, float)</strong></a> | Inicializa uma nova instância do de <code>XMBYTE2</code> dois <code>float</code> argumentos.<br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de dois <code>float</code> argumentos.<br /><blockquote>[!Note]<br />Esse construtor só está disponível com C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const float *)</strong></a> | Inicializa uma nova instância de <code>XMBYTE2</code> de um argumento de matriz de dois elementos <code>float</code> .<br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de um argumento de matriz de dois elementos <code>float</code> .<br /><blockquote>[!Note]<br />Esse construtor só está disponível com C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(int8_t_int8_t)"><strong>XMBYTE2 (int8_t, int8_t)</strong></a> | Inicializa uma nova instância do <code>XMBYTE2</code> de <code>int8_t</code> argumentos XMBYTE2.<br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de <code>int8_t</code> argumentos XMBYTE2.<br /><blockquote>[!Note]<br />Esse construtor só está disponível com C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmbyte2-xmbyte2(constfloat)"><strong>XMBYTE2 (const int8_t *)</strong></a> | Inicializa uma nova instância de <code>XMBYTE2</code> de um argumento de matriz de dois elementos <code>int8_t</code> .<br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyte2"><strong>XMBYTE2</strong></a> de um argumento de matriz de dois elementos <code>int8_t</code> .<br /><blockquote>[!Note]<br />Esse construtor só está disponível com C++.</blockquote><br /> | 
+
 
 
 

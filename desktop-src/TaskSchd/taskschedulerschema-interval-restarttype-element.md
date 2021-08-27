@@ -1,5 +1,5 @@
 ---
-title: Elemento Interval (restartype)
+title: Elemento Interval (restartType)
 description: Especifica por quanto tempo o Agendador de Tarefas tentará reiniciar a tarefa.
 ms.assetid: 00b8fcbb-5be8-4bf1-92a0-2afd2a50f8e1
 keywords:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e731582364df23bdef800ab5d2cf15dd5c882ae
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: 2362a5d6ec1a6a9d0d876ef0673f4775e2db3ade0a83696ad2b993e31e02a9ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099986"
 ---
-# <a name="interval-restarttype-element"></a>Elemento Interval (restartype)
+# <a name="interval-restarttype-element"></a>Elemento Interval (restartType)
 
-Especifica por quanto tempo o Agendador de Tarefas tentará reiniciar a tarefa. O formato dessa cadeia de caracteres é `P<days>DT<hours>H<minutes>M<seconds>S` (por exemplo, "PT5M" é de 5 minutos, "PT1H" é de 1 hora e "PT20M" é de 20 minutos). O tempo máximo permitido é de 31 dias e o tempo mínimo permitido é de 1 minuto.
+Especifica por quanto tempo o Agendador de Tarefas tentará reiniciar a tarefa. O formato dessa cadeia de caracteres é `P<days>DT<hours>H<minutes>M<seconds>S` (por exemplo, "PT5M" é 5 minutos, "PT1H" é 1 hora e "PT20M" é 20 minutos). O tempo máximo permitido é de 31 dias e o tempo mínimo permitido é de 1 minuto.
 
 ``` syntax
 <xs:element name="Interval">
@@ -41,7 +41,7 @@ Especifica por quanto tempo o Agendador de Tarefas tentará reiniciar a tarefa. 
 </xs:element>
 ```
 
-O elemento é definido pelo tipo complexo [**Restart**](taskschedulerschema-restarttype-complextype.md) .
+O elemento é definido pelo tipo [**complexo restartType.**](taskschedulerschema-restarttype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -49,17 +49,17 @@ O elemento é definido pelo tipo complexo [**Restart**](taskschedulerschema-rest
 
 | Elemento                                                                               | Derivado de                                                       | Descrição                                                                                                     |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**RestartOnFailure**](taskschedulerschema-restartonfailure-settingstype-element.md) | [**Restart**](taskschedulerschema-restarttype-complextype.md) | Especifica que o Agendador de Tarefas tentará reiniciar a tarefa se a tarefa falhar por algum motivo.<br/> |
+| [**RestartOnFailure**](taskschedulerschema-restartonfailure-settingstype-element.md) | [**restartType**](taskschedulerschema-restarttype-complextype.md) | Especifica que o Agendador de Tarefas tentará reiniciar a tarefa se a tarefa falhar por algum motivo.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Se esse elemento for especificado, o elemento [**Count**](taskschedulerschema-count-restarttype-element.md) também deverá ser especificado para informar ao agendador de tarefas quantas vezes ele deve tentar reiniciar a tarefa.
+Se esse elemento for especificado, o elemento [**Count**](taskschedulerschema-count-restarttype-element.md) também deverá ser especificado para dizer ao Agendador de Tarefas quantas vezes ele deve tentar reiniciar a tarefa.
 
-Para desenvolvimento em C++, consulte a [**Propriedade RestartInterval de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_restartinterval).
+Para desenvolvimento em C++, consulte [**Propriedade RestartInterval de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_restartinterval).
 
-Para desenvolvimento de script, consulte [**TaskSettings. RestartInterval**](tasksettings-restartinterval.md).
+Para desenvolvimento de scripts, [**consulte TaskSettings.RestartInterval.**](tasksettings-restartinterval.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,16 +67,16 @@ Para desenvolvimento de script, consulte [**TaskSettings. RestartInterval**](tas
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

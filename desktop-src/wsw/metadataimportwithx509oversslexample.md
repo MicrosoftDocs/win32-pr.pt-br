@@ -3,17 +3,17 @@ title: MetadataImportWithX509OverSslExample
 description: Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token X509 usando a \_ Associação de segurança de mensagem de token XML WS \_ \_ \_ \_ com \_ Associação de segurança de transporte WS SSL \_ \_ \_ .
 ms.assetid: 9dbeea65-1752-4fe1-b425-f622e24acef0
 keywords:
-- API de serviços Web do Windows MetadataImportWithX509OverSslExample
+- API de serviços Web do MetadataImportWithX509OverSslExample Windows
 - WWSAPI
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ff6ca4c24b05a3c5757d1d82788e7acc8175e9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7b342b3de02a4cbe098276fc20776bb7ed15baa2cb5c1684a1a6c7e8d30cfb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109866"
 ---
 # <a name="metadataimportwithx509oversslexample"></a>MetadataImportWithX509OverSslExample
 
@@ -593,9 +593,9 @@ Exit:
 [**\_Associação de \_ segurança de transporte WS SSL \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

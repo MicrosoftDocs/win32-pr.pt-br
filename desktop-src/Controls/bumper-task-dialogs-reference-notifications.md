@@ -4,12 +4,12 @@ description: Notificações da caixa de diálogo de tarefa
 ms.assetid: 1cd6adf4-f844-4195-9e92-38bf1b05cda1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4168a02a293a5a8aef83443b93e5de0fe9793d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2ba40f051ab8344e0e0ed603afb9155b30ca774cc5affea5ffe8696c37db73d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063686"
 ---
 # <a name="task-dialog-notifications"></a>Notificações da caixa de diálogo de tarefa
 

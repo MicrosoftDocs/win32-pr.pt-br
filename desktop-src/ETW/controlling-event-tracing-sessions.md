@@ -4,12 +4,12 @@ ms.assetid: 43841d2f-5a4c-493d-9531-21941311ffbc
 title: Controlando sessões de rastreamento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b03f1917354679e7a68f9dbd001fc3aa10f09db0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5970eb160812991677aac775af60d08458c269152edca4aa2e30cdf30c111d96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130656"
 ---
 # <a name="controlling-event-tracing-sessions"></a>Controlando sessões de rastreamento de eventos
 
@@ -28,7 +28,7 @@ Para obter informações sobre como liberar e consultar sessões, consulte [**Co
 
 Somente os usuários que executam com privilégios administrativos elevados, os usuários no grupo de usuários de log de desempenho e os aplicativos executados como LocalSystem, LocalService ou NetworkService podem controlar sessões de rastreamento de eventos. Para conceder a um usuário restrito a capacidade de controlar as sessões de rastreamento, adicione-as ao grupo de usuários de log de desempenho.
 
-**Windows XP e windows 2000:** Qualquer pessoa pode controlar uma sessão de rastreamento.
+**Windows XP e Windows 2000:** Qualquer pessoa pode controlar uma sessão de rastreamento.
 
  
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aea061990a6d3bd52a98dc9101102059767ecf9a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fd0b6bd67c4814b8729eaa2b44e0f521923133d33b101b3d1c99aa74aaa4744e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064504"
 ---
 # <a name="rename-method-of-the-cim_datafile-class"></a>Método Rename da classe de \_ datafilefiles CIM
 
@@ -56,7 +56,7 @@ Exemplo: "c: \\ temp \\newfile.txt"
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor 0 em caso de êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -72,7 +72,7 @@ Retorna um valor 0 em caso de êxito e qualquer outro número para indicar um er
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

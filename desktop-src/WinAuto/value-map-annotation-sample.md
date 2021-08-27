@@ -1,19 +1,19 @@
 ---
-title: Exemplo de anotação de mapa de valor
-description: Exemplo de anotação de mapa de valor
+title: Exemplo de anotação do mapa de valor
+description: Exemplo de anotação do mapa de valor
 ms.assetid: f95233ee-c825-482e-880b-63212014b505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ad1008e2e3ce039ead09c43b37d9ef0500da3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12165224d7ae85a8e7fca6c000a9debe3c9c68624de7bf0630eda8fc3d916118
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105791534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098046"
 ---
-# <a name="value-map-annotation-sample"></a>Exemplo de anotação de mapa de valor
+# <a name="value-map-annotation-sample"></a>Exemplo de anotação do mapa de valor
 
-Recorte, Cole e modifique o exemplo de código a seguir para seu próprio uso. Siga as instruções em comentários marcados com/ \* todo \* /.
+Recortar, colar e modificar o exemplo de código a seguir para seu próprio uso. Siga as instruções em comentários marcados com \* /TODO \* /.
 
 
 ```C++
@@ -96,9 +96,9 @@ OBJID_CLIENT, 0, PROPID_ACC_STATEMAP, g_ListOrTreeStateMap ) );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

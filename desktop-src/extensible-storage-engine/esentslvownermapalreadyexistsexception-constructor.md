@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5563fe10c2f6a29682e1497e93145649c3701a9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 480031884edcca3accf47057b98a55c04afd75e1f29a7174a97f33ea62cf40a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116736"
 ---
 # <a name="esentslvownermapalreadyexistsexception-constructor"></a>Construtor EsentSLVOwnerMapAlreadyExistsException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVOwnerMapAlreadyExistsException()
 
 [Classe EsentSLVOwnerMapAlreadyExistsException](./esentslvownermapalreadyexistsexception-class.md)
 
-[Membros do EsentSLVOwnerMapAlreadyExistsException](./esentslvownermapalreadyexistsexception-members.md)
+[Membros EsentSLVOwnerMapAlreadyExistsException](./esentslvownermapalreadyexistsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

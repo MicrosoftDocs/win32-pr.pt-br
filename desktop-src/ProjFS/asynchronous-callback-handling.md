@@ -1,33 +1,33 @@
 ---
-title: Conclusão de retorno de chamada assíncrono
-description: Descreve como o provedor pode atender a retornos de chamada de serviço de forma assíncrona.
+title: Conclusão de retorno de chamada assíncrona
+description: Descreve como o provedor pode fazer o serviço de retornos de chamada de forma assíncrona.
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 8ec23f5ea6e8ec55be2eaa2811d9dee8b1870edc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f2262e803d1ee3d071538dc6e520517c6fd7b800c4d7fdc4a7404748b9f9f0dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105754304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127946"
 ---
-# <a name="asynchronous-callback-handling"></a>Manipulação de retorno de chamada assíncrono
+# <a name="asynchronous-callback-handling"></a>Tratamento de retorno de chamada assíncrono
 
-Quando um cliente interage com os arquivos e diretórios abaixo da raiz de virtualização do provedor, essas interações normalmente resultam na invocação de retornos de chamada do provedor.  O ProjFS invoca os retornos de chamada do provedor enviando uma mensagem do modo kernel para a biblioteca de modo de usuário ProjFS, em que um thread de trabalho recebe a mensagem e chama o retorno de chamada apropriado.  Depois que o retorno de chamada for retornado, o thread de trabalho aguardará que outra mensagem chegue do modo kernel.  Se todos os threads de trabalho estiverem ocupados executando o código de retorno de chamada do provedor, qualquer e/s adicional do cliente que dispara um retorno de chamada até que um thread de trabalho fique disponível para receber a mensagem e invocar o retorno de chamada relevante.  Quando um provedor é iniciado, ele pode especificar o número de threads de trabalho que ele quer que ProjFS crie para os retornos de chamada de serviço por meio do parâmetro _Options_ de **[PrjStartVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)**.  Um provedor pode melhorar a eficiência dos threads de trabalho de recebimento de mensagens ao atender a seus retornos de chamada de forma assíncrona.
+Quando um cliente interage com os arquivos e diretórios abaixo da raiz de virtualização do provedor, essas interações normalmente resultam na invocação dos retornos de chamada do provedor.  O ProjFS invoca retornos de chamada do provedor enviando uma mensagem do modo kernel para a biblioteca de modo de usuário do ProjFS, em que um thread de trabalho recebe a mensagem e chama o retorno de chamada apropriado.  Depois que o retorno de chamada for retornado, o thread de trabalho aguardará que outra mensagem chegue do modo kernel.  Se todos os threads de trabalho estão ocupados executando o código de retorno de chamada do provedor, qualquer E/S de cliente que dispara um retorno de chamada bloqueia até que um thread de trabalho fique disponível para receber a mensagem e invocar o retorno de chamada relevante.  Quando um provedor é iniciado, ele pode especificar o número de threads de trabalho  que deseja que o ProjFS crie para retornos de chamada de serviço por meio do parâmetro options de **[PrjStartVirtualizing](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjstartvirtualizing)**.  Um provedor pode melhorar a eficiência dos threads de trabalho que recebem mensagens atendendo seus retornos de chamada de forma assíncrona.
 
-> Se o provedor não especificar o parâmetro _Options_ para **PrjStartVirtualizing**, ou se ele especificar 0 para o membro ConcurrentThreadCount do parâmetro _Options_ , ProjFS usará o número de processadores lógicos no sistema para o valor de ConcurrentThreadCount.
+> Se o provedor não  especificar o parâmetro options para **PrjStartVirtualizing** ou se ele especificar 0 para o membro ConcurrentThreadCount do parâmetro _options,_ o ProjFS usará o número de processadores lógicos no sistema para o valor de ConcurrentThreadCount.
 >
-> Se o provedor não especificar o parâmetro _Options_ para **PrjStartVirtualizing**, ou se ele especificar 0 para o membro PoolThreadCount do parâmetro _Options_ , ProjFS usará o dobro do valor de ConcurrentThreadCount para o valor de PoolThreadCount.
+> Se o provedor não  especificar o parâmetro options para **PrjStartVirtualizing** ou se ele especificar 0 para o membro PoolThreadCount do parâmetro _options,_ o ProjFS usará duas vezes o valor de ConcurrentThreadCount para o valor de PoolThreadCount.
 
-Um provedor fornece retornos de chamada de forma assíncrona, retornando HRESULT_FROM_WIN32 (ERROR_IO_PENDING) de seus retornos de chamada e depois concluindo-os usando **[PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Um provedor que processa retornos de chamada assincronamente também deve dar suporte ao cancelamento de retorno de chamada implementando o **[PRJ_CANCEL_COMMAND_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)** retorno de chamada.
+Um provedor de serviços retorna retornos de chamada de forma assíncrona retornando HRESULT_FROM_WIN32(ERROR_IO_PENDING) de seus retornos de chamada e, posteriormente, concluindo-os usando **[PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Um provedor que processa retornos de chamada de forma assíncrona também deve dar suporte ao cancelamento de retorno de chamada implementando o PRJ_CANCEL_COMMAND_CB retorno **[de](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)** chamada.
 
-Quando o ProjFS chama o retorno de chamada de um provedor, ele identifica a invocação específica do retorno de chamada usando o membro CommandId do parâmetro _callbackdata_ do retorno de chamada.  Se o provedor decidir processar esse retorno de chamada de forma assíncrona, ele deverá armazenar o valor do membro CommandId e retornar HRESULT_FROM_WIN32 (ERROR_IO_PENDING) do retorno de chamada.  Depois que o provedor terminar de processar o retorno de chamada, ele chamará **PrjCompleteCommand**, passando o identificador armazenado no parâmetro _commandId_ .  Isso informa ao ProjFS qual invocação de retorno de chamada foi concluída.
+Quando o ProjFS chama o retorno de chamada de um provedor, ele identifica a invocação específica do retorno de chamada usando o membro CommandId do parâmetro _callbackData_ do retorno de chamada.  Se o provedor decidir processar esse retorno de chamada de forma assíncrona, ele deverá armazenar o valor do membro CommandId e retornar HRESULT_FROM_WIN32(ERROR_IO_PENDING) do retorno de chamada.  Depois que o provedor terminar de processar o retorno de chamada, ele **chamará PrjCompleteCommand,** passando o identificador armazenado no _parâmetro commandId._  Isso informa ao ProjFS qual invocação de retorno de chamada foi concluída.
 
-Um provedor que implementa o retorno de chamada **PRJ_CANCEL_COMMAND_CB** deve controlar quais retornos de chamada ainda não foram concluídos.  Se o provedor receber esse retorno de chamada, ele indica que a e/s que causou a chamada de um desses retornos de chamada foi cancelada explicitamente ou porque o thread em que ele foi emitido foi encerrado. O provedor deve cancelar o processamento da invocação de retorno de chamada identificada pela CommandId assim que possível.
+Um provedor que implementa o **PRJ_CANCEL_COMMAND_CB** retorno de chamada deve manter o controle de quais retornos de chamada ele ainda não concluiu.  Se o provedor receber esse retorno de chamada, ele indicará que a E/S que causou a invocação de um desses retornos de chamada foi cancelada, explicitamente ou porque o thread em que ele foi emitido foi encerrado. O provedor deve cancelar o processamento da invocação de retorno de chamada identificada por CommandId assim que possível.
 
-> Embora ProjFS invocará **PRJ_CANCEL_COMMAND_CB** para um determinado CommandID somente depois que o retorno de chamada a ser cancelado for invocado, o cancelamento e a invocação original poderão ser executados simultaneamente em um provedor multi-threaded.  O provedor deve ser capaz de lidar normalmente com essa situação.
+> Embora o ProjFS invoque **PRJ_CANCEL_COMMAND_CB** uma determinada CommandId somente depois que o retorno de chamada a ser cancelado for invocado, o cancelamento e a invocação original poderão ser executados simultaneamente em um provedor multithread.  O provedor deve ser capaz de lidar normalmente com essa situação.
 
-O exemplo a seguir é uma versão do exemplo fornecido para o tópico [enumerando arquivos e diretórios](enumerating-files-and-directories.md) , modificado para ilustrar o tratamento de retorno de chamada assíncrono.
+O exemplo a seguir é uma versão do exemplo dado para o tópico [Enumerando arquivos](enumerating-files-and-directories.md) e diretórios, modificado para ilustrar a manipulação de retorno de chamada assíncrona.
 
 ```C++
 typedef struct MY_ENUM_ENTRY MY_ENUM_ENTRY;

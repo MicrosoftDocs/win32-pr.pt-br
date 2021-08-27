@@ -1,9 +1,9 @@
 ---
 title: user_marshal atributo
-description: O atributo de ACF do Marshal do usuário \_ associa um tipo de local nomeado no idioma de destino (tipo de usuário) a um tipo de transferência (tipo de fio) que é transferido entre o cliente e o servidor.
+description: O atributo ACF de marshal do usuário associa um tipo local nomeado no idioma de destino (tipo userm) a um tipo de transferência (tipo de transmissão) que é transferido entre o cliente e o \_ servidor.
 ms.assetid: a2407aa3-574d-4690-8cdf-cb1c01ca8c49
 keywords:
-- user_marshal do atributo MIDL
+- user_marshal atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5326c9390362193a1be9dc06ee3a57f174474cc2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3f17b4ef9d4376309307403ee12e2c5aae507556beaf091f9d742998d18671a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105566"
 ---
-# <a name="user_marshal-attribute"></a>\_atributo de marshaling do usuário
+# <a name="user_marshal-attribute"></a>atributo \_ de marshal de usuário
 
-O atributo de ACF do **\_ Marshal do usuário** associa um tipo de local nomeado no idioma de destino (*tipo de usuário*) a um tipo de transferência (*tipo de fio*) que é transferido entre o cliente e o servidor.
+O atributo ACF de marshal do usuário associa um tipo local nomeado na linguagem de destino (*tipo userm*) a um tipo de transferência *(* tipo de transmissão ) que é transferido entre o cliente e o servidor. **\_**
 
 ``` syntax
 typedef [user_marshal(userm_type)] wire-type; 
@@ -46,55 +46,55 @@ void __RPC_USER  < userm_type >_UserFree(
 
 <dl> <dt>
 
-*tipo de usuário* 
+*userm-type* 
 </dt> <dd>
 
-Especifica o identificador do tipo de dados do usuário a ser empacotado. O *tipo User-Type* não precisa ser transmititable e não precisa ser um tipo conhecido pelo compilador MIDL.
+Especifica o identificador do tipo de dados do usuário a ser empacotado. O *tipo userm* não precisa ser transmitível e não precisa ser um tipo conhecido para o compilador MIDL.
 
 </dd> <dt>
 
-*tipo de fio* 
+*tipo de transmissão* 
 </dt> <dd>
 
-Especifica o tipo de dados de transferência nomeado que é realmente transferido entre o cliente e o servidor. O tipo de conexão deve ser um tipo base de MIDL, um tipo predefinido ou um identificador de tipo de um tipo que pode ser transmitido pela rede.
+Especifica o tipo de dados de transferência nomeado que é realmente transferido entre o cliente e o servidor. O tipo de transmissão deve ser um tipo base MIDL, um tipo predefinido ou um identificador de tipo de um tipo que pode ser transmitido pela rede.
 
 </dd> <dt>
 
 *pFlags* 
 </dt> <dd>
 
-Especifica um ponteiro para um campo de sinalizador ( [**longo**](long.md) [**sem sinal**](unsigned.md) ). A palavra de ordem superior especifica sinalizadores de representação de dados de NDR, conforme definido pela DCE para ponto flutuante, Big ou little-endian e representação de caracteres. A palavra de ordem inferior Especifica um sinalizador de contexto de marshaling. O layout exato dos sinalizadores é descrito na [ \_ função tipo usersize](/windows/desktop/Rpc/the-type-usersize-function).
+Especifica um ponteiro para um campo de sinalizador ( [**long sem sinal).**](unsigned.md) [](long.md) A palavra de ordem alta especifica sinalizadores de representação de dados NDR conforme definido pela DCE para representação de caracteres, big ou little endian. A palavra de ordem baixa especifica um sinalizador de contexto de marshaling. O layout exato dos sinalizadores é descrito em [O tipo \_ Função UserSize](/windows/desktop/Rpc/the-type-usersize-function).
 
 </dd> <dt>
 
 *StartingSize* 
 </dt> <dd>
 
-Especifica o tamanho atual do buffer (deslocamento) antes de dimensionar o objeto.
+Especifica o tamanho atual do buffer (deslocamento) antes de tamanho do objeto.
 
 </dd> <dt>
 
-*tipo de pUser \_* 
+*pUser \_ typeObject* 
 </dt> <dd>
 
-Especifica um ponteiro para um objeto de *\_ tipo de usuário*.
+Especifica um ponteiro para um objeto do *tipo userm \_*.
 
 </dd> <dt>
 
 *Buffer* 
 </dt> <dd>
 
-Especifica o ponteiro do buffer atual.
+Especifica o ponteiro de buffer atual.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Cada tipo de local nomeado, *User-Type*, tem uma correspondência um-para-um com um *tipo de conexão* que define a representação de transmissão do tipo. Você deve fornecer rotinas para dimensionar os dados para marshaling, para realizar marshaling e desempacotamento dos dados e para liberar memória. Para obter mais informações sobre essas rotinas, consulte [o \_ atributo Marshal do usuário](/windows/desktop/Rpc/the-user-marshal-attribute). Observe que, se houver tipos inseridos em seus dados que também são definidos com marshaling do **usuário \_** ou \[ [**\[ \_ \] marshaling de conexão**](wire-marshal.md), você precisará gerenciar a manutenção desses tipos inseridos também.
+Cada tipo local nomeado, *userm-type*, tem uma correspondência um-para-um com um tipo de transmissão que define a representação de transmissão do tipo.  Você deve fornecer rotinas para tamanho dos dados para marshaling, marshaling e unmarshal dos dados e para liberar memória. Para obter mais informações sobre essas rotinas, consulte [O atributo de marshal do \_ usuário](/windows/desktop/Rpc/the-user-marshal-attribute). Observe que, se **\_** \[ [**\[ \_ \]**](wire-marshal.md)houver tipos inseridos em seus dados que também são definidos com marshal de usuário ou marshal de transmissão, você também precisará gerenciar a manutenção desses tipos inseridos.
 
-O *tipo de conexão* não pode ser um ponteiro de interface nem um ponteiro completo. O *tipo de conexão* deve ter um tamanho de memória bem definido. Consulte marshaling [Rules for User Marshal \_ and wire \_ Marshal](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) para obter detalhes sobre como realizar marshaling de um determinado *tipo de cabo*.
+O *tipo de transmissão* não pode ser um ponteiro de interface ou um ponteiro completo. O *tipo de transmissão* deve ter um tamanho de memória bem definido. Consulte [Marshaling Rules for user marshal and wire \_ \_ marshal (Regras](/windows/desktop/Rpc/marshaling-rules-for-user-marshal-and-wire-marshal) de marshaling de marshaling de usuário e marshaling de transmissão) para obter detalhes sobre como fazer marshaling de um determinado *tipo de transmissão.*
 
-O *tipo de usuário* não deve ser um ponteiro de interface, pois eles podem ser empacotados diretamente. Se o tipo de usuário for um ponteiro completo, você mesmo precisará gerenciar o alias.
+O *tipo userm* não deve ser um ponteiro de interface, pois eles podem ser empacotados diretamente. Se o tipo de usuário for um ponteiro completo, você deverá gerenciar o alias por conta própria.
 
 ## <a name="examples"></a>Exemplos
 
@@ -147,27 +147,27 @@ void __RPC_USER FOUR_BYTE_DATA_UserFree(
 [Arquivo de configuração de aplicativo (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base MIDL](midl-base-types.md)
 </dt> <dt>
 
-[**Longas**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**representar \_ como**](represent-as.md)
 </dt> <dt>
 
-[**não assinados**](unsigned.md)
+[**Unsigned**](unsigned.md)
 </dt> <dt>
 
-[O \_ atributo de marshaling do usuário](/windows/desktop/Rpc/the-user-marshal-attribute)
+[O atributo \_ de marshal do usuário](/windows/desktop/Rpc/the-user-marshal-attribute)
 </dt> <dt>
 
-[**\_marshaling de transmissão**](wire-marshal.md)
+[**wire \_ marshal**](wire-marshal.md)
 </dt> <dt>
 
 [**NdrGetUserMarshalInfo**](/windows/desktop/api/rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

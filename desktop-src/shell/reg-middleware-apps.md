@@ -1,5 +1,5 @@
 ---
-description: 'Este tópico explica como registrar um programa no registro do Windows como um dos seguintes tipos de cliente: navegador, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para Java.'
+description: 'este tópico explica como registrar um programa no registro de Windows como um dos seguintes tipos de cliente: navegador, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para Java.'
 title: Registrando programas com tipos de cliente
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 71dd4e3192dc75821fd0a3e8c0d4742e1a8d571a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: c9c2d9a4589b684580250c487a6f83c3c9e79dbc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103837693"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470414"
 ---
 # <a name="registering-programs-with-client-types"></a>Registrando programas com tipos de cliente
 
-Este tópico explica como registrar um programa no registro do Windows como um dos seguintes tipos de cliente: navegador, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para Java.
+este tópico explica como registrar um programa no registro de Windows como um dos seguintes tipos de cliente: navegador, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para Java.
 
 > [!Note]  
 > Essas informações se aplicam aos seguintes sistemas operacionais:
@@ -103,7 +103,7 @@ Para clientes de navegador, o nome canônico deve ser o nome — incluindo a ext
 Aqui estão alguns exemplos de nomes canônicos.
 
 -   Iexplore.exe (navegador)
--   Windows Mail (email)
+-   Windows Email (email)
 -   Windows Media Player (mídia)
 -   Windows Messenger (mensagens instantâneas)
 
@@ -122,7 +122,7 @@ HKEY_LOCAL_MACHINE
 A próxima etapa no registro é especificar o nome de exibição do programa. Ele é fornecido como um valor sob a chave de nome canônica, como mostrado aqui. Observe novamente que *canônicaname* e *ClientTypeName* não são os nomes reais das chaves, mas somente espaços reservados para os nomes verdadeiros, como a *exibição acesa*.
 
 > [!Note]  
-> A partir do Windows 8, o nome usado para se registrar para [Definir acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md) e para [programas padrão](default-programs.md) deve corresponder para que as alterações SPAD disparem os registros de programas padrão.
+> a partir de Windows 8, o nome usado para se registrar para [definir o acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md) e para [programas padrão](default-programs.md) deve corresponder para que as alterações de SPAD disparem os registros de programas padrão.
 
  
 
@@ -135,7 +135,7 @@ HKEY_LOCAL_MACHINE
                LocalizedString = @FilePath,-StringID
 ```
 
-O valor de **localizadastring** é uma \_ cadeia de caracteres reg sz e consiste em um sinal "arroba" (@), o caminho completo de um arquivo. dll ou. exe, uma vírgula, um sinal de menos e um inteiro decimal. O inteiro decimal é a ID de um recurso de cadeia de caracteres — contida no arquivo. dll ou. exe — cujo valor deve ser exibido para o usuário como o nome desse cliente. Observe que o caminho do arquivo não requer aspas, mesmo que contenha espaços.
+O valor de **localizadastring** é uma \_ cadeia de caracteres reg sz e consiste em um sinal "arroba" (@), o caminho completo para um arquivo de .dll ou .exe, uma vírgula, um sinal de subtração e um inteiro decimal. O inteiro decimal é a ID de um recurso de cadeia de caracteres — contida no arquivo de .dll ou .exe — cujo valor deve ser exibido para o usuário como o nome desse cliente. Observe que o caminho do arquivo não requer aspas, mesmo que contenha espaços.
 
 Registrar a cadeia de caracteres do nome de exibição dessa maneira permite que o mesmo registro seja usado para vários idiomas. Cada instalação de idioma fornece um arquivo de recurso diferente com o nome de exibição armazenado na mesma ID de recurso.
 
@@ -156,13 +156,13 @@ Observe o uso da entrada (padrão) como uma declaração secundária do nome de 
 ### <a name="registering-a-programs-icon"></a>Registrando o ícone de um programa
 
 > [!Note]  
-> Esta seção não se aplica ao Windows 2000.
+> esta seção não se aplica a Windows 2000.
 
  
 
-Por padrão, a seção superior do menu **Iniciar** do Windows XP e do Windows Vista contém ícones de **Internet** e **email** . Esses ícones não estão presentes no Windows 7 e versões posteriores. Para clientes de navegador e email, quando um programa é atribuído como o padrão para seu tipo de cliente, o ícone registrado desse programa é exibido para essas entradas do menu **Iniciar** .
+por padrão, a seção superior do menu **iniciar** do Windows XP e do Windows Vista contém ícones de **Internet** e **email** . esses ícones não estão presentes no Windows 7 e versões posteriores. Para clientes de navegador e email, quando um programa é atribuído como o padrão para seu tipo de cliente, o ícone registrado desse programa é exibido para essas entradas do menu **Iniciar** .
 
-O registro do ícone de um programa é obrigatório para clientes de navegador e email. O registro de um ícone para a reprodução de mídia, mensagens instantâneas ou máquina virtual para tipos de cliente Java é opcional, e os ícones registrados para esses tipos de cliente não são usados no momento pelo Windows e não são exibidos na seção superior dos menus **Iniciar** do Windows XP ou do Windows Vista.
+O registro do ícone de um programa é obrigatório para clientes de navegador e email. o registro de um ícone para a reprodução de mídia, mensagens instantâneas ou máquina virtual para tipos de cliente Java é opcional, e os ícones registrados para esses tipos de cliente não são usados atualmente pelo Windows e não são exibidos na seção superior dos menus **iniciar** do Windows XP ou Windows Vista.
 
 Para registrar um ícone para um programa cliente, adicione uma subchave **DefaultIcon** com um valor padrão, conforme mostrado aqui.
 
@@ -198,11 +198,11 @@ HKEY_LOCAL_MACHINE
 ### <a name="registering-an-open-verb"></a>Registrando um verbo aberto
 
 > [!Note]  
-> Esta seção não se aplica ao Windows 2000. A etapa a seguir é necessária apenas para clientes de navegador e de email.
+> esta seção não se aplica a Windows 2000. A etapa a seguir é necessária apenas para clientes de navegador e de email.
 
  
 
-Suponha que um usuário tenha selecionado seu programa como a Internet ou o programa de email padrão. Esse usuário clica no ícone **Internet** ou **email** no menu **Iniciar** do Windows XP ou do Windows Vista para abrir o programa. Nesse ponto, a linha de comando registrada conforme mostrado aqui é executada.
+Suponha que um usuário tenha selecionado seu programa como a Internet ou o programa de email padrão. esse usuário clica no ícone **Internet** ou **email** no menu **iniciar** do Windows XP ou Windows Vista para abrir o programa. Nesse ponto, a linha de comando registrada conforme mostrado aqui é executada.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -237,7 +237,7 @@ Observe que, nesse valor, as aspas são colocadas em volta do caminho porque con
 ### <a name="registering-installation-information"></a>Registrando informações de instalação
 
 > [!Note]  
-> Esta seção não se aplica ao Windows Server 2003.
+> esta seção não se aplica ao Windows Server 2003.
 
  
 
@@ -247,66 +247,27 @@ Observe que, nesse valor, as aspas são colocadas em volta do caminho porque con
 -   [Configuração do programa de grupo](#group-program-configuration)
 -   [Exemplo de registro do navegador](#browser-registration-example)
 
-O recurso pelo qual o usuário seleciona programas padrão por máquina é nomeado e acessado conforme mostrado na tabela a seguir. (O Windows Vista introduziu um novo recurso, **definiu os programas padrão**, pelos quais um usuário pode definir padrões por usuário.)
+O recurso pelo qual o usuário seleciona programas padrão por máquina é nomeado e acessado conforme mostrado na tabela a seguir. (o Windows Vista introduziu um novo recurso, **definiu os programas padrão**, pelos quais um usuário pode definir padrões por usuário.)
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sistema Operacional</th>
-<th>Título</th>
-<th>Local de acesso</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows 7</td>
-<td>Definir o acesso do programa e padrões do computador</td>
-<td><ul>
-<li>Opção de <strong>programas padrão</strong> do menu <strong>Iniciar</strong></li>
-<li><strong>Programas padrão</strong> Item do painel de controle</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Windows Vista</td>
-<td>Definir o acesso do programa e padrões do computador</td>
-<td><ul>
-<li>Opção de <strong>programas padrão</strong> do menu <strong>Iniciar</strong></li>
-<li><strong>Programas padrão</strong> Item do painel de controle</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Windows XP SP2</td>
-<td>Definir acesso e padrões do programa</td>
-<td><ul>
-<li>Menu <strong>Iniciar</strong></li>
-<li><strong>Adicionar ou remover programas</strong> Item do painel de controle</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Windows XP SP1</td>
-<td>Configurar programas</td>
-<td><ul>
-<li><strong>Adicionar ou remover programas</strong> Item do painel de controle</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Sistema operacional | Título | Local de acesso | 
+|------------------|-------|-----------------|
+| Windows 7 | Definir o acesso do programa e padrões do computador | <ul><li>Opção de <strong>programas padrão</strong> do menu <strong>Iniciar</strong></li><li><strong>Programas padrão</strong> Item do painel de controle</li></ul> | 
+| Windows Vista | Definir o acesso do programa e padrões do computador | <ul><li>Opção de <strong>programas padrão</strong> do menu <strong>Iniciar</strong></li><li><strong>Programas padrão</strong> Item do painel de controle</li></ul> | 
+| Windows XP SP2 | Definir acesso e padrões do programa | <ul><li>Menu <strong>Iniciar</strong></li><li><strong>Adicionar ou remover programas</strong> Item do painel de controle</li></ul> | 
+| Windows XP SP1 | Configurar programas | <ul><li><strong>Adicionar ou remover programas</strong> Item do painel de controle</li></ul> | 
+
 
 
 
  
 
-Para simplificar, este tópico usa o título do Windows 7 do recurso. Todas as versões do recurso são conhecidas como SPAD.
+para simplificar, este tópico usa o título Windows 7 do recurso. Todas as versões do recurso são conhecidas como SPAD.
 
 > [!Note]  
-> Se você estiver executando o Windows 2000 ou o Windows XP, deverá ter pelo menos o Windows 2000 SP3 ou o Windows XP SP1 instalado para ver a página **Definir acesso e padrões do programa** . No Windows Vista e posterior, o acesso à página **definir padrões de acesso a programas e computadores** requer privilégios de administrador. Por esse motivo, os desenvolvedores são incentivados a se registrarem no item definir o painel de controle de [programas padrão](default-programs.md) para que qualquer usuário possa gerenciar os padrões do aplicativo.
+> se você estiver executando o Windows 2000 ou Windows xp, deverá ter pelo menos Windows 2000 SP3 ou Windows xp SP1 instalado para ver a página **definir acesso e padrões do programa** . no Windows Vista e posterior, o acesso à página **definir padrões de acesso e computador do programa** requer privilégios de administrador. Por esse motivo, os desenvolvedores são incentivados a se registrarem no item definir o painel de controle de [programas padrão](default-programs.md) para que qualquer usuário possa gerenciar os padrões do aplicativo.
 
  
 
@@ -329,7 +290,7 @@ A linha de comando deve especificar um caminho absoluto totalmente qualificado p
 
 ### <a name="the-reinstall-command"></a>O comando reinstalar
 
-A linha de comando REINSTALL declarada no valor ReinstallCommand é executada quando o usuário usa a página **Definir acesso do programa e padrões do computador** para selecionar seu programa como o padrão para seu tipo de cliente. No Windows Vista e posterior, o acesso a esta página requer um nível de privilégio de administrador. No Windows 8, se você registrou seu aplicativo usando o mesmo nome para **definir o acesso do programa e os padrões do computador** e os **programas padrão**, os padrões especificados em **programas padrão** para esse aplicativo serão aplicados ao usuário atual, bem como à execução do comando reinstalar.
+A linha de comando REINSTALL declarada no valor ReinstallCommand é executada quando o usuário usa a página **Definir acesso do programa e padrões do computador** para selecionar seu programa como o padrão para seu tipo de cliente. no Windows Vista e posterior, o acesso a essa página requer um nível de privilégio de administrador. em Windows 8, se você registrou seu aplicativo usando o mesmo nome para **definir o acesso do programa e os padrões do computador** e os **programas padrão**, os padrões especificados em **programas padrão** para esse aplicativo serão aplicados para o usuário atual, bem como a execução do comando reinstalar.
 
 O programa iniciado pela linha de comando de reinstalação deve associar o aplicativo ao conjunto completo de tipos de [arquivo](fa-intro.md) e [protocolo](/previous-versions//aa767743(v=vs.85)) que o aplicativo pode manipular. Todos os aplicativos devem estabelecer a capacidade do manipulador no comando reinstalar. Os aplicativos podem usar o comando reinstalar para registrar o recurso, bem como, opcionalmente, estabelecer o status padrão. Quando um aplicativo opta por implementar o status do manipulador de capacidade e padrão no comando reinstalar, ele também deve restabelecer os links ou atalhos visíveis desejados. Os pontos de entrada visíveis a maioria dos aplicativos escolhem são listados no [comando Ocultar ícones](#the-hide-icons-command).
 
@@ -341,7 +302,7 @@ O programa iniciado pela linha de comando de reinstalação deve associar o apli
 Depois que o processo de reinstalação for concluído, o programa iniciado pela linha de comando de reinstalação deverá sair. Ele não deve iniciar o programa correspondente; Ele deve meramente registrar os padrões. Por exemplo, o comando reinstalar de um navegador não deve abrir o home page do usuário.
 
 > [!Note]  
-> Para clientes de navegador e de email no Windows XP e no Windows Vista, os aplicativos que optam por estabelecer o recurso de manipulação e o status padrão no comando reinstalar devem se registrar no ícone correspondente na parte superior do menu iniciar. Consulte o [registro do menu iniciar](#start-menu-registration) para obter informações adicionais.
+> para clientes de navegador e email no Windows XP e Windows Vista, os aplicativos que optam por estabelecer o recurso de manipulação e o status padrão no comando reinstalar devem se registrar no ícone correspondente na parte superior do menu Iniciar. Consulte o [registro do menu iniciar](#start-menu-registration) para obter informações adicionais.
 
  
 
@@ -350,7 +311,7 @@ Depois que o processo de reinstalação for concluído, o programa iniciado pela
 A linha de comando declarada no valor HideIconsCommand é executada quando o usuário limpa a caixa **habilitar acesso a este programa** na página **Definir acesso do programa e padrões do computador** . Essa linha de comando deve ocultar todos os pontos de acesso do programa visíveis na interface do usuário. As diretrizes específicas são remover atalhos e ícones dos seguintes locais:
 
 -   Ícones da área de trabalho
--   Links do menu Iniciar, incluindo o grupo de **inicialização**
+-   links de menu Iniciar, incluindo o grupo de **inicialização**
 -   Links da barra de início rápido
 -   Área de notificação
 -   Menus de atalho
@@ -390,13 +351,13 @@ A experiência do usuário recomendada é a seguinte:
     ![caixa de diálogo sobre como ocultar o acesso ao programa](images/hideaccessvista.png)
 
 -   Quando o usuário seleciona **OK**, o item do painel de controle **programas e recursos** é iniciado para permitir que o usuário desinstale o aplicativo.
--   Os usuários do Windows XP devem ser apresentados com essa caixa de diálogo.
+-   Windows Os usuários do XP devem ser apresentados com essa caixa de diálogo.
 
-    ![caixa de diálogo equivalente do Windows XP](images/hideaccessxp.png)
+    ![caixa de diálogo equivalente do Windows Xp](images/hideaccessxp.png)
 
--   Quando o usuário do Windows XP seleciona **OK**, o item **Adicionar ou remover programas** do painel de controle é iniciado para permitir que o usuário desinstale o aplicativo.
+-   Quando o Windows XP seleciona **OK,**  o item Adicionar ou Remover Programas Painel de Controle é lançado para permitir que o usuário desinstale o aplicativo.
 
-O código a seguir fornece uma implementação reutilizável para o recurso ocultar acesso, conforme descrito acima. Ele pode ser usado no Windows XP, no Windows Vista e no Windows 7.
+O código a seguir fornece uma implementação reutilizável para o recurso Ocultar Acesso, conforme descrito acima. Ele pode ser usado no Windows XP, Windows Vista e Windows 7.
 
 
 ```
@@ -469,11 +430,11 @@ int _tmain(int argc, WCHAR* argv[])
 
 
 
-### <a name="the-show-icons-command"></a>O comando mostrar ícones
+### <a name="the-show-icons-command"></a>O comando Mostrar Ícones
 
-A linha de comando declarada na entrada ShowIconsCommand é executada quando o usuário marca a caixa **habilitar acesso a este programa** na página **Definir acesso do programa e padrões do computador** . Essa linha de comando pode restaurar os pontos de acesso do programa, incluindo aqueles no menu **Iniciar** , na área de trabalho e no grupo de **inicialização** , bem como invocações automáticas normais, como as especificadas na chave do registro de **execução** . Os pontos de acesso visíveis de interesse para a maioria dos aplicativos são listados no [comando Ocultar ícones](#the-hide-icons-command). O aplicativo não deve alterar os padrões por usuário; Essa alteração deve ser feita pelo usuário por meio de **programas padrão**.
+A linha de comando declarada na entrada ShowIconsCommand  é executada quando o usuário verifica a caixa Habilitar acesso a esse programa na página Definir Acesso ao Programa e Padrões **do** Computador. Essa linha de comando pode restaurar os pontos de acesso do programa, incluindo  aqueles no **menu** Iniciar, na área de trabalho  e no grupo Inicialização, bem como invocações automáticas normais, como aquelas especificadas na chave Executar registro. Os pontos de acesso visíveis de interesse para a maioria dos aplicativos estão [listados no Comando Ocultar Ícones](#the-hide-icons-command). O aplicativo não deve alterar os padrões por usuário; que a alteração deve ser feita pelo usuário por meio de **Programas Padrão**.
 
-Depois de mostrar os ícones com êxito, você deve atualizar o valor do registro IconsVisible para 1, conforme mostrado:
+Depois de mostrar com êxito seus ícones, você deve atualizar o valor do Registro IconsVisible para 1, conforme mostrado:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -485,16 +446,16 @@ HKEY_LOCAL_MACHINE
                   IconsVisible = 1
 ```
 
-Observe que, se você tiver usado a entrada HideIconsCommand para solicitar uma desinstalação do aplicativo, a entrada ShowIconsCommand não será usada. Ele deve ser removido do registro com o restante das informações do aplicativo durante o processo de desinstalação.
+Observe que, se você tiver usado a entrada HideIconsCommand para solicitar uma desinstalação do aplicativo, a entrada ShowIconsCommand não será usada. Ele deve ser removido do Registro com o restante das informações do aplicativo durante o processo de desinstalação.
 
-### <a name="group-program-configuration"></a>Configuração do programa de grupo
+### <a name="group-program-configuration"></a>Configuração do Programa de Grupo
 
 > [!Note]  
 > Esta seção não se aplica ao Windows 2000.
 
  
 
-Como parte da preparação do sistema, um OEM pode estabelecer uma configuração que oculta os pontos de acesso do navegador da Microsoft, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para programas cliente Java e especifica seus próprios programas padrão. Os OEMs podem permitir que os usuários redefinam seus computadores a qualquer momento nessa configuração padrão definindo os seguintes valores de registro.
+Como parte da preparação do sistema, um OEM pode estabelecer uma configuração que oculta pontos de acesso para o navegador da Microsoft, email, reprodução de mídia, mensagens instantâneas ou máquina virtual para programas cliente Java e especifica seus próprios programas padrão. Os OEMs podem permitir que os usuários redefinam seus computadores a qualquer momento para essa configuração padrão definindo os seguintes valores do Registro.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -507,23 +468,23 @@ HKEY_LOCAL_MACHINE
                   OEMDefault = 1
 ```
 
-Se essas chaves estiverem definidas, os usuários poderão restaurar a configuração do OEM selecionando a opção **fabricante do computador** na página **definir padrões de acesso e computador do programa** . Se essas chaves não estiverem definidas, a opção **fabricante do computador** não será mostrada.
+Se essas chaves estão definidas, os usuários  podem restaurar a configuração do OEM selecionando a opção Fabricante do Computador na página Definir Acesso ao Programa e Padrões **do** Computador. Se essas chaves não estão definidas, a **opção Fabricante** do Computador não é mostrada.
 
-A entrada **OEMShowIcons** , se presente, define o estado de exibição do ícone para o cliente especificado que será aplicado se o usuário selecionar **fabricante do computador**. Um valor de 1 faz com que os ícones sejam mostrados e um valor de 0 faz com que os ícones não sejam mostrados. Se **OEMShowIcons** estiver ausente, selecionar **fabricante do computador** não terá nenhum efeito na configuração mostrar ícone. **OEMShowIcons** é do tipo **reg \_ DWORD**.
+A **entrada OEMShowIcons,** se presente, define o ícone mostrar estado para o cliente especificado que será aplicado se o usuário selecionar **Fabricante do Computador**. Um valor de 1 faz com que ícones sejam mostrados e um valor de 0 faz com que os ícones não sejam mostrados. Se **OEMShowIcons** estiver ausente, **selecionar** Fabricante do Computador não terá nenhum efeito na configuração de exibição de ícone. **OEMShowIcons** é do tipo **REG \_ DWORD.**
 
-A entrada **OEMDefault** , se presente e definida como 1, estabelece a preferência de OEM para o cliente padrão do tipo indicado. Somente um cliente de um tipo específico pode ser marcado como o padrão OEM. Se mais de um registro de cliente contiver a entrada **OEMDefault** , todos serão ignorados e o cliente atual continuará sendo usado como cliente padrão. Se a entrada **OEMDefault** não estiver presente ou estiver presente e definida como 0, esse cliente específico não será usado como o cliente padrão se o usuário selecionar o **fabricante do computador**. **OEMDefault** é do tipo **reg \_ DWORD**.
+A **entrada OEMDefault,** se presente e definida como 1, estabelece a preferência OEM para o cliente padrão do tipo indicado. Somente um cliente de um tipo específico pode ser marcado como o padrão OEM. Se mais do que o registro de um cliente contiver a entrada **OEMDefault,** todos serão ignorados e o cliente atual continuará sendo usado como cliente padrão. Se a **entrada OEMDefault** não estiver presente ou estiver presente e definida como 0, esse cliente específico não será usado como o cliente padrão se o usuário selecionar **Fabricante do Computador**. **OEMDefault é** do tipo **REG \_ DWORD.**
 
 Além da opção de redefinir seus computadores para a configuração padrão estabelecida pelo OEM, os usuários têm três outras opções de configuração:
 
--   Defina seu computador para uma configuração do Microsoft Windows. Nesse caso, a página **definir padrões de acesso do programa e do computador** permite o acesso a todos os softwares da Microsoft e não Microsoft no computador registrado nas categorias de produto relevantes. Os programas do Microsoft Windows são selecionados como a opção padrão para cada categoria.
--   Defina seu computador para uma configuração que não seja da Microsoft. Essa configuração oculta os pontos de acesso (como o menu **Iniciar** ) para o Windows Internet Explorer, Windows Media Player, Windows Messenger e Microsoft Outlook Express. Ele permite o acesso ao software que não é da Microsoft no computador nessas categorias. Além disso, se um programa que não é da Microsoft estiver disponível em uma categoria, ele será definido como o padrão para essa categoria. Se mais de um programa que não seja da Microsoft estiver disponível em uma categoria, será solicitado que o usuário escolha qual programa que não seja da Microsoft deve ser usado como padrão.
--   Estabeleça uma configuração personalizada. Os usuários fazem suas próprias seleções para habilitar ou remover o acesso, combinando programas da Microsoft e que não são da Microsoft como se comportam. Os usuários estabelecem opções padrão em uma base categoria a categoria.
+-   De definir o computador como uma configuração Windows Microsoft. Nesse caso, a página Definir Acesso ao Programa e Padrões do Computador permite o acesso a todos os softwares da Microsoft e não Microsoft no computador registrado nas **categorias** de produto relevantes. Os Windows microsoft são selecionados como a opção padrão para cada categoria.
+-   De definir o computador como uma configuração que não seja da Microsoft. Essa configuração oculta os pontos de acesso (como o **menu** Iniciar) para Windows Internet Explorer, Windows Media Player, Windows Messenger e Microsoft Outlook Express. Ele permite o acesso ao software não Microsoft no computador nessas categorias. Além disso, se um programa não Microsoft estiver disponível em uma categoria, ele será definido como o padrão para essa categoria. Se mais de um programa não Microsoft estiver disponível em uma categoria, o usuário será solicitado a escolher qual programa não Microsoft deve ser usado como o padrão.
+-   Estabeleça uma configuração personalizada. Os usuários fazem suas próprias seleções para habilenciar ou remover o acesso, combinando programas da Microsoft e que não são da Microsoft conforme a sua escolha. Os usuários estabelecem opções padrão de categoria por categoria.
 
-Os usuários são livres para alterar qualquer uma dessas opções a qualquer momento.
+Os usuários podem alterar qualquer uma dessas opções a qualquer momento.
 
 ### <a name="browser-registration-example"></a>Exemplo de registro do navegador
 
-O exemplo a seguir mostra o registro de **InstallInfo** completo de um navegador de exibição iluminada fictícia. Nesse caso, as opções de linha de comando permitem que o arquivo de Litview.exe execute quaisquer ações necessárias para cada valor.
+O exemplo a seguir mostra o registro **Completo de InstallInfo** para um navegador de Exibição Lit fictício. Nesse caso, as opções de linha de comando permitem que o arquivo Litview.exe execute as ações necessárias para cada valor.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -538,29 +499,29 @@ HKEY_LOCAL_MACHINE
                   IconsVisible = 1
 ```
 
-Observe que as aspas são colocadas em volta dos caminhos porque contêm espaços inseridos.
+Observe que aspas são colocadas em torno dos caminhos porque contêm espaços inseridos.
 
 ## <a name="registration-elements-for-specific-client-types"></a>Elementos de registro para tipos de cliente específicos
 
-As informações a seguir também podem ser encontradas nos recursos listados na seção Tópicos relacionados no final deste tópico.
+As informações a seguir também podem ser encontradas nos recursos listados na seção Tópicos Relacionados no final deste tópico.
 
--   [Registro do menu iniciar](#start-menu-registration)
+-   [Iniciar registro de menu](#start-menu-registration)
 -   [Registro de cliente de email](#mail-client-registration)
 
-### <a name="start-menu-registration"></a>Registro do menu iniciar
+### <a name="start-menu-registration"></a>Iniciar registro de menu
 
-No Windows XP, os aplicativos normalmente são registrados como padrões em todo o computador (**HKEY \_ local \_ Machine**) em vez de um usuário (**HKEY \_ Current \_ User**) Scope. Com a introdução do Windows Vista do UAC (controle de conta de usuário), os aplicativos que solicitam os slots de **Internet** e de **email** no menu **Iniciar** devem implementar o comando reinstalar dentro do contexto de execução correto.
+No Windows XP, os aplicativos normalmente registram padrões em um escopo **de computador (HKEY \_ LOCAL \_ MACHINE)** em vez de um usuário (**HKEY CURRENT \_ \_ USER).** Com a introdução do Windows Vista do UAC (Controle de Conta de Usuário), os aplicativos que reivindicam os **slots** de **Internet** e email no **menu** Iniciar devem implementar o comando de reinstalação dentro do contexto de execução correto.
 
 > [!Note]  
-> O link de **email** do menu iniciar foi removido do Windows 7. No entanto, o registro discutido nesta seção ainda deve ser executado porque atribui o cliente MAPI padrão.
+> O menu Iniciar **de email foi** removido a partir Windows 7. No entanto, o registro discutido nesta seção ainda deve ser executado porque atribui o cliente MAPI padrão.
 
  
 
-Um usuário limitado no Windows XP, no Windows Vista ou no Windows 7 não pode acessar o SPAD. Por esse motivo, os desenvolvedores são incentivados a se registrarem no item definir o painel de controle de **programas padrão** para que qualquer usuário possa gerenciar padrões de aplicativos por usuário.
+Um usuário limitado no Windows XP, Windows Vista ou Windows 7 não pode acessar o SPAD. Por esse motivo, os desenvolvedores são incentivados a se registrar no item Definir seus programas **padrão** Painel de Controle para que qualquer usuário possa gerenciar padrões de aplicativo por usuário.
 
-As seleções feitas em SPAD só devem afetar as configurações por máquina.
+As seleções feitas no SPAD só devem afetar as configurações por computador.
 
-Defina o valor do registro da seguinte maneira.
+De definir o valor do Registro da seguinte forma.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -572,9 +533,9 @@ HKEY_LOCAL_MACHINE
 
 > [!Note]
 > 
-> **As informações a seguir aplicam-se apenas ao Windows XP.**
+> **As informações a seguir se Windows xp somente.**
 > 
-> Se o registro do padrão no nível do computador em HKEY \_ local \_ Machine como mostrado acima for bem-sucedido, o aplicativo deverá excluir o valor atribuído à entrada padrão na seguinte subchave:
+> Se o registro do padrão no nível do computador em HKEY LOCAL MACHINE conforme mostrado acima for bem-sucedido, o aplicativo deverá excluir o valor atribuído à entrada Padrão na \_ \_ seguinte sub-chave:
 > 
 > ```
 > HKEY_CURRENT_USER
@@ -583,7 +544,7 @@ HKEY_LOCAL_MACHINE
 >          ClientTypeName
 > ```
 > 
-> Se o registro do padrão no nível do computador em HKEY \_ local \_ Machine, conforme mostrado acima falhar, geralmente porque o usuário não tem permissão de gravação para a subchave, o aplicativo deve definir o seguinte valor:
+> Se o registro do padrão no nível do computador em HKEY LOCAL MACHINE conforme mostrado acima falhar, geralmente porque o usuário não tem permissão de gravação para a \_ sub-chave, o aplicativo deve definir o \_ seguinte valor:
 > 
 > ```
 > HKEY_CURRENT_USER
@@ -597,11 +558,11 @@ HKEY_LOCAL_MACHINE
 
  
 
-Depois de atualizar as chaves do registro, o programa deve difundir a mensagem do [**WM \_ SETTINGCHANGE**](../winmsg/wm-settingchange.md) com **wParam** = 0 e **lParam** apontando para a cadeia de caracteres terminada em nulo "clientes de software \\ \\ **ClientTypeName**" para notificar o sistema operacional que o cliente padrão alterou.
+Depois de atualizar as chaves do Registro, o programa deve transmitir a mensagem [**WM \_ SETTINGCHANGE**](../winmsg/wm-settingchange.md) com **wParam** = 0 e **lParam** apontando para a cadeia de caracteres terminada em nulo "Clientes de Software \\ \\ **ClientTypeName"** para notificar o sistema operacional de que o cliente padrão foi alterado.
 
 ### <a name="mail-client-registration"></a>Registro de cliente de email
 
-Para um cliente de email, o programa precisa ter configurações registradas na chave **HKEY \_ classes \_ raiz** \\ **mailto** para atender a URLs que usam o `mailto` protocolo. Defina valores e chaves que espelham essas configurações na chave a seguir.
+Para um cliente de email, o programa precisa ter configurações registradas na chave **HKEY \_ CLASSES \_ ROOT** mailto para atender a \\  URLs que usam o `mailto` protocolo. Definir valores e chaves que espelham essas configurações na chave a seguir.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -613,9 +574,9 @@ HKEY_LOCAL_MACHINE
                   mailto
 ```
 
-Essa hierarquia de Registro substitui a `mailto` hierarquia de registro existente encontrada em **HKEY \_ classes \_ root** \\ **mailto**. A hierarquia permanece a mesma, apenas o local foi alterado. O formato dessa hierarquia está documentado no MSDN em [visões gerais e tutoriais do protocolo conectável conectáveis](/previous-versions//aa767913(v=vs.85)). Normalmente, o `mailto` protocolo é registrado em um programa em vez de um protocolo assíncrono; nesse caso, a documentação sobre o [registro de um aplicativo em um esquema de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)) se aplica.
+Essa hierarquia do Registro substitui a hierarquia de registro `mailto` existente encontrada em **HKEY CLASSES \_ \_ ROOT** \\ **mailto**. A hierarquia permanece a mesma, somente o local foi alterado. O formato dessa hierarquia está documentado no MSDN em Visão geral e tutoriais do protocolo [assíncrono plug-able.](/previous-versions//aa767913(v=vs.85)) Normalmente, o protocolo é registrado em um programa em vez de um protocolo assíncrono, caso em que a documentação sobre Como registrar um aplicativo em um esquema `mailto` [de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)) se aplica.
 
-O exemplo a seguir mostra a `mailto` seção do registro de um `mailto` manipulador registrado para um programa.
+O exemplo a seguir mostra `mailto` a seção do registro de um manipulador registrado em um `mailto` programa.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -636,16 +597,16 @@ HKEY_LOCAL_MACHINE
                               (Default) = command line
 ```
 
-O valor do registro EditFlags é documentado em [tipos de arquivo](fa-file-types.md) na seção intitulada "definindo atributos de tipo de arquivo".
+O valor do Registro EditFlags está documentado em [Tipos](fa-file-types.md) de Arquivo na seção intitulada "Definindo atributos de tipo de arquivo".
 
-## <a name="complete-sample-registrations"></a>Concluir os registros de exemplo
+## <a name="complete-sample-registrations"></a>Concluir registros de exemplo
 
 Os exemplos a seguir são fornecidos para mostrar os requisitos de registro completos para os vários tipos de cliente.
 
 -   [Um navegador de exemplo](#a-sample-browser)
 -   [Um navegador de email de exemplo](#a-sample-mail-browser)
 -   [Um player de mídia de exemplo](#a-sample-media-player)
--   [Um programa de Instant Messenger de exemplo](#a-sample-instant-messenger-program)
+-   [Um programa de exemplo do Instant Messenger](#a-sample-instant-messenger-program)
 -   [Uma máquina virtual de exemplo para Java](#a-sample-virtual-machine-for-java)
 
 ### <a name="a-sample-browser"></a>Um navegador de exemplo
@@ -725,7 +686,7 @@ HKEY_LOCAL_MACHINE
                   IconsVisible = 1
 ```
 
-### <a name="a-sample-instant-messenger-program"></a>Um programa de Instant Messenger de exemplo
+### <a name="a-sample-instant-messenger-program"></a>Um programa de exemplo do Instant Messenger
 
 ```
 HKEY_LOCAL_MACHINE
@@ -763,7 +724,7 @@ HKEY_LOCAL_MACHINE
                   IconsVisible = 1
 ```
 
-*As empresas de exemplo, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os lugares e os eventos aqui descritos são fictícios. Nenhuma associação com qualquer empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, lugar ou evento real é intencional ou deve ser inferida.*
+*As empresas de exemplo, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, locais e eventos descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, local ou evento real é pretendida ou deve ser inferida.*
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -772,13 +733,13 @@ HKEY_LOCAL_MACHINE
 [Programas padrão](default-programs.md)
 </dt> <dt>
 
-[Como registrar um navegador da Internet ou cliente de email com o menu Iniciar do Windows](start-menu-reg.md)
+[Como registrar um navegador da Internet ou um cliente de email com o menu Windows iniciar](start-menu-reg.md)
 </dt> <dt>
 
-[Layout do registro do cliente do Internet Explorer (consulte a seção "definições da chave do registro do cliente")](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753633(v=vs.85))
+[Internet Explorer Layout do Registro do Cliente (consulte a seção "Definições de Chave do Registro do Cliente" )](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753633(v=vs.85))
 </dt> <dt>
 
-[Visões gerais e tutoriais de protocolos conectáveis assíncronos](/previous-versions//aa767913(v=vs.85))
+[Tutoriais e visão geral do protocolo plug-able assíncrono](/previous-versions//aa767913(v=vs.85))
 </dt> <dt>
 
 [Registrando um aplicativo em um esquema de URI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))

@@ -4,101 +4,60 @@ ms.assetid: 21faf809-1335-4d93-be06-628c5a05a4c8
 title: Revogação de certificado OPM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47ebf38a3fa6bd2b61a756d6103453fd0356f693
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 36b4caeace94f852394081620555c0b5b04918bf
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092724"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478902"
 ---
 # <a name="opm-certificate-revocation"></a>Revogação de certificado OPM
 
-Um certificado do Gerenciador de proteção de saída (OPM) pode ser revogado pela Microsoft. A lista de certificados revogados é armazenada em uma lista de revogação global (GRL). O GRL tem o seguinte formato:
+Um certificado OPM (gerenciador de proteção de saída) pode ser revogado pela Microsoft. A lista de certificados revogados é armazenada em uma GRL (lista de revogação global). A GRL tem o seguinte formato:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Seção</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cabeçalho</td>
-<td>Uma estrutura de <a href="grl-header.md"><strong>GRL_HEADER</strong></a> .</td>
-</tr>
-<tr class="even">
-<td>Core</td>
-<td>Contém as seguintes listas de revogação:
-<ul>
-<li>Revogações binárias de kernel</li>
-<li>Revogações binárias de modo de usuário</li>
-<li>Revogações de certificado</li>
-<li>Raízes confiáveis (reservadas)</li>
-</ul>
-A lista de raízes confiáveis não é usada no momento e é reservada para uso futuro.</td>
-</tr>
-<tr class="odd">
-<td>Entradas extensível</td>
-<td>Contém informações usadas por outros componentes. Esta seção não é relevante para OPM.</td>
-</tr>
-<tr class="even">
-<td>Renovações</td>
-<td>Contém GUIDs que definem Windows Update identificadores. Esta seção contém identificadores para as seguintes listas:
-<ul>
-<li>Revogações binárias de kernel</li>
-<li>Revogações binárias de modo de usuário</li>
-<li>Revogações de certificado</li>
-</ul>
-Um aplicativo pode usar esses identificadores para solicitar uma versão renovada de um binário revogado, se houver um disponível.</td>
-</tr>
-<tr class="odd">
-<td>Assinatura: seção principal</td>
-<td>Assina as seções de cabeçalho e núcleo.</td>
-</tr>
-<tr class="even">
-<td>Assinatura: seção extensível</td>
-<td>Assina o cabeçalho e as seções extensíveis.</td>
-</tr>
-</tbody>
-</table>
+
+| Seção | Descrição | 
+|---------|-------------|
+| Cabeçalho | Uma <a href="grl-header.md"><strong>GRL_HEADER</strong></a> de dados. | 
+| Núcleo | Contém as seguintes listas de revogação:<ul><li>Revogações binárias do kernel</li><li>Revogações binárias do modo de usuário</li><li>Revogações de certificado</li><li>Raízes confiáveis (reservadas)</li></ul>Atualmente, a lista de raízes confiáveis não é usada e é reservada para uso futuro. | 
+| Entradas extensíveis | Contém informações usadas por outros componentes. Esta seção não é relevante para o OPM. | 
+| Renovações: | Contém GUIDs que definem Windows identificadores de atualização. Esta seção contém identificadores para as seguintes listas:<ul><li>Revogações binárias do kernel</li><li>Revogações binárias do modo de usuário</li><li>Revogações de certificado</li></ul>Um aplicativo pode usar esses identificadores para solicitar uma versão renovada de um binário revogado, se um estiver disponível. | 
+| Assinatura: seção principal | Assina o header e as seções principais. | 
+| Assinatura: seção extensível | Assina o header e as seções extensíveis. | 
+
 
 
 
  
 
-O cabeçalho GRL é uma estrutura de [**\_ cabeçalho grl**](grl-header.md) . O membro **dwSequenceNumber** da estrutura contém o número de versão grl. Esse número é incrementado sempre que o GRL é atualizado e uma nova versão colocada no computador do usuário.
+O header GRL é uma [**estrutura DE \_ HEADER GRL.**](grl-header.md) O **membro dwSequenceNumber** da estrutura contém o número de versão grl. Esse número é incrementado sempre que a GRL é atualizada e uma nova versão é colocada no computador do usuário.
 
-Os certificados OPMs revogados são listados na lista de revogações de certificados da seção principal. Cada entrada principal no GRL é uma matriz de 20 bytes que contém o hash SHA-1 da chave pública do certificado revogado.
+Os certificados OPM revogados são listados na lista de revogações de certificado da seção Core. Cada entrada Core na GRL é uma matriz de 20 byte que contém o hash SHA-1 da chave pública do certificado revogado.
 
-As seções de assinatura contêm assinaturas que podem ser usadas para verificar se o GRL não foi violado. Cada seção de assinatura contém a estrutura de [**\_ assinatura am MF**](mf-signature.md) . A primeira assinatura assina o cabeçalho mais a seção principal. A segunda assinatura assina o cabeçalho mais a seção extensível; Essa assinatura não é relevante para OPM.
+As seções Assinatura contêm assinaturas que podem ser usadas para verificar se a GRL não foi adulterada. Cada seção Assinatura contém a estrutura [**MF \_ SIGNATURE.**](mf-signature.md) A primeira assinatura assina o título mais a seção Core. A segunda assinatura assina o header mais a seção Extensível; essa assinatura não é relevante para o OPM.
 
-Para garantir que o próprio GRL não tenha sido adulterado, verifique a assinatura da seguinte maneira:
+Para garantir que a PRÓPRIA GRL não tenha sido adulterada, verifique a assinatura da seguinte maneira:
 
-1.  Localize o início da estrutura [**de \_ assinatura MF**](mf-signature.md) . O local da estrutura **de \_ assinatura MF** é fornecido no membro **cbSignatureCoreOffset** da estrutura do [**\_ cabeçalho grl**](grl-header.md) . O local é especificado como um deslocamento em bytes do início do GRL.
-2.  Analise a estrutura de [**\_ assinatura MF**](mf-signature.md) como uma \# assinatura PKCS 7 com uma cadeia de certificados.
-3.  Verifique a cadeia de certificados para uma raiz confiável.
-4.  Verifique se o certificado de folha tem o seguinte identificador de objeto no EKU: "1.3.6.1.4.1.311.10.5.4".
-5.  Computar um hash dos bytes que incluem o cabeçalho e as seções principais do GRL.
-6.  Verifique se o hash corresponde à assinatura no certificado de folha.
+1.  Local do início da estrutura [**MF \_ SIGNATURE.**](mf-signature.md) O local da **estrutura MF \_ SIGNATURE** é dado no **membro cbSignatureCoreOffset** da estrutura [**GRL \_ HEADER.**](grl-header.md) O local é especificado como um deslocamento em bytes do início da GRL.
+2.  Analisar a estrutura [**MF \_ SIGNATURE**](mf-signature.md) como uma assinatura PKCS \# 7 com uma cadeia de certificados.
+3.  Verifique a cadeia de certificados até uma raiz confiável.
+4.  Verifique se o certificado folha tem o seguinte identificador de objeto na EKU: "1.3.6.1.4.1.311.10.5.4".
+5.  Compute um hash dos bytes que incluem o header e as seções principais da GRL.
+6.  Verifique se o hash corresponde à assinatura no certificado folha.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gerenciador de proteção de saída](output-protection-manager.md)
+[Gerenciador de Proteção de Saída](output-protection-manager.md)
 </dt> <dt>
 
-[**\_cabeçalho grl**](grl-header.md)
+[**GRL \_ HEADER**](grl-header.md)
 </dt> <dt>
 
-[**\_assinatura MF**](mf-signature.md)
+[**ASSINATURA \_ MF**](mf-signature.md)
 </dt> </dl>
 
  

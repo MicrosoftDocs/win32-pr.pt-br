@@ -4,12 +4,12 @@ ms.assetid: e36d20ec-cd7b-494f-b517-c07b40d2a338
 title: Tabela ControlCondition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 671dcdee6e2ed1067c51a04084693c276b8db2d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 637d9470af21ad1f8a15c2697ba34a6c9866c822c21c6f3a85241bac1309f76b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105246"
 ---
 # <a name="controlcondition-table"></a>Tabela ControlCondition
 
@@ -21,10 +21,10 @@ A tabela ControlCondition tem as colunas a seguir.
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| caixa de diálogo\_  | [Identificador](identifier.md) | S   | N        |
-| controle\_ | [Identificador](identifier.md) | S   | N        |
-| Ação    | [Text](text.md)             | S   | N        |
-| Condição | [Condição](condition.md)   | S   | N        |
+| caixa de diálogo\_  | [Identificador](identifier.md) | Y   | N        |
+| controle\_ | [Identificador](identifier.md) | Y   | N        |
+| Ação    | [Text](text.md)             | Y   | N        |
+| Condição | [Condição](condition.md)   | Y   | N        |
 
 
 

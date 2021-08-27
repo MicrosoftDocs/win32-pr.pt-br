@@ -1,12 +1,12 @@
 ---
-title: Método ConvertLicenses da classe Win32_TSLicenseKeyPack
+title: Método ConvertLicenses da classe Win32_TSLicenseKeyPack classe
 description: Converte as licenças no pacote de chaves atual.
 ms.assetid: 38600144-8fa2-4f9a-b7a4-7fafc304e7cb
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método ConvertLicenses
-- Método ConvertLicenses Serviços de Área de Trabalho Remota, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Serviços de Área de Trabalho Remota, método ConvertLicenses
+- Método ConvertLicenses Serviços de Área de Trabalho Remota
+- Método ConvertLicenses Serviços de Área de Trabalho Remota , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Serviços de Área de Trabalho Remota método , ConvertLicenses
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f37b1d9804c5f14f89a7ff6b48f5f8fcbdc60b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: edfb65ea7429af14e633c8dee655b4977427e3a685e1404856fd9b5f2daf2ce4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099566"
 ---
-# <a name="convertlicenses-method-of-the-win32_tslicensekeypack-class"></a>Método ConvertLicenses da classe Win32 \_ TSLicenseKeyPack
+# <a name="convertlicenses-method-of-the-win32_tslicensekeypack-class"></a>Método ConvertLicenses da classe \_ Win32 TSLicenseKeyPack
 
 Converte as licenças no pacote de chaves atual. Se a licença for uma licença por usuário, ela será convertida em uma licença por dispositivo. Se a licença for uma licença por dispositivo, ela será convertida em uma licença por usuário.
 
@@ -44,23 +44,23 @@ uint32 ConvertLicenses(
 
 <dl> <dt>
 
-*Contagem* \[ de no\]
+*Contagem* \[ Em\]
 </dt> <dd>
 
 O número de licenças a serem convertidas.
 
 </dd> <dt>
 
-*Pacote de chaves* \[ fora\]
+*KeypackID* \[ out\]
 </dt> <dd>
 
 O identificador do pacote de chaves resultante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

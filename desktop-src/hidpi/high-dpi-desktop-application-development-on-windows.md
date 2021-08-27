@@ -1,6 +1,6 @@
 ---
-title: Desenvolvimento de aplicativos de desktop de alto DPI no Windows
-description: Esse conteúdo é destinado a desenvolvedores que procuram atualizar aplicativos de área de trabalho para lidar com o fator de escala de exibição dinâmica (também conhecido como
+title: Desenvolvimento de aplicativos de área de trabalho de DPI alto Windows
+description: Esse conteúdo é destinado a desenvolvedores que estão procurando atualizar aplicativos da área de trabalho para lidar com o fator de escala de exibição dinâmico (também conhecido como
 ms.assetid: 6C419EEF-D898-4B50-8D16-E65A594487AA
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,211 +9,102 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c6389553ce2265752e3552fdaaf848e3ac70eede8df3b4fd9e560861bf15f33d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01958791dccd7c836babedbe726233797eddb646
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036244"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471322"
 ---
-# <a name="high-dpi-desktop-application-development-on-windows"></a>Desenvolvimento de aplicativos de desktop de alto DPI no Windows
+# <a name="high-dpi-desktop-application-development-on-windows"></a>Desenvolvimento de aplicativos de área de trabalho de DPI alto Windows
 
-Esse conteúdo é destinado a desenvolvedores que procuram atualizar aplicativos de área de trabalho para lidar dinamicamente com as alterações de fator de escala de exibição (pontos por polegada ou DPI), permitindo que seus aplicativos sejam nítidos em qualquer exibição na qual são renderizados.
+Esse conteúdo é destinado a desenvolvedores que estão procurando atualizar aplicativos da área de trabalho para lidar com alterações de fator de escala de exibição (pontos por polegada ou DPI) dinamicamente, permitindo que seus aplicativos sejam nítidos em qualquer exibição em que eles são renderizados.
 
-para começar, se você estiver criando um novo aplicativo de Windows do zero, é altamente recomendável que você crie um aplicativo de [Plataforma Universal do Windows (UWP)](/windows/uwp/get-started/whats-a-uwp) . Os aplicativos UWP &mdash; &mdash; são dimensionados de forma automática e dinâmica para cada exibição em que estão sendo executados.
+Para começar, se você estiver criando um novo aplicativo Windows do zero, é altamente recomendável criar um aplicativo [UWP (Plataforma universal](/windows/uwp/get-started/whats-a-uwp) Windows). Os aplicativos UWP são &mdash; dimensionados automaticamente e dinamicamente &mdash; para cada exibição em que estão sendo executados.
 
-os aplicativos de área de trabalho que usam tecnologias de programação de Windows mais antigas (programação pura do Win32, Windows Forms, Windows Presentation Framework (WPF) etc.) não conseguem lidar automaticamente com o dimensionamento de DPI sem o trabalho adicional do desenvolvedor. Sem tal trabalho, os aplicativos aparecerão borrados ou incorretamente dimensionados em muitos cenários de uso comuns. Este documento fornece contexto e informações sobre o que está envolvido na atualização de um aplicativo de área de trabalho para renderização correta.
+Aplicativos de área de trabalho que usam tecnologias de programação Windows mais antigas (programação win32 bruta, formulários Windows, WPF (estrutura de apresentação do Windows), etc.) não podem lidar automaticamente com o dimensionamento de DPI sem trabalho adicional do desenvolvedor. Sem esse trabalho, os aplicativos aparecerão desfocados ou dimensionado incorretamente em muitos cenários de uso comuns. Este documento fornece contexto e informações sobre o que está envolvido na atualização de um aplicativo da área de trabalho para renderizar corretamente.
 
-## <a name="display-scale-factor--dpi"></a>Exibir fator de escala & DPI
+## <a name="display-scale-factor--dpi"></a>Exibir DPI do fator de & escala
 
-À medida que a tecnologia de vídeo progrediu, os fabricantes de painel de exibição lançaram um número cada vez maior de pixels em cada unidade de espaço físico em seus painéis. Isso resultou em pontos por polegada (DPI) dos painéis de exibição modernos sendo muito maiores do que historicamente. No passado, a maioria dos monitores tinha 96 pixels por polegada linear de espaço físico (96 DPI); no 2017, os monitores com quase 300 DPI ou mais estão prontamente disponíveis.
+À medida que a tecnologia de exibição avança, os fabricantes de painéis de exibição empacotam um número cada vez maior de pixels em cada unidade de espaço físico em seus painéis. Isso resultou na DPI (pontos por polegada) dos painéis de exibição modernos sendo muito maiores do que eram historicamente. No passado, a maioria das exibições tinha 96 pixels por polegada linear de espaço físico (96 DPI); em 2017, as exibições com quase 300 DPI ou superior estão prontamente disponíveis.
 
-A maioria das estruturas de interface do usuário da área de trabalho herdada tem suposições internas de que o DPI de vídeo não será alterado durante o tempo de vida do processo.  Essa suposição não é mais verdadeira, com o DPIs de exibição geralmente mudando várias vezes durante o tempo de vida de um processo do aplicativo. Alguns cenários comuns em que as alterações de fator de escala de exibição/DPI são:
+A maioria das estruturas de interface do usuário da área de trabalho herdam suposições de que o DPI de exibição não mudará durante o tempo de vida do processo.  Essa suposição não se mantém mais verdadeira, com DPIs de exibição que normalmente mudam várias vezes ao longo do tempo de vida de um processo de aplicativo. Alguns cenários comuns em que as alterações de DPI/fator de escala de exibição são:
 
--   Configurações de monitores múltiplos em que cada exibição tem um fator de escala diferente e o aplicativo é movido de uma exibição para outra (como uma exibição de 4K e 1080p)
--   Encaixe e desencaixe de um laptop de DPI alto com uma exibição externa de DPI baixo (ou vice-versa)
--   Conectar-se via Área de Trabalho Remota de um laptop/Tablet de DPI alto a um dispositivo de baixo DPI (ou vice-versa)
--   Alterando as configurações do fator de escala de exibição enquanto os aplicativos estão em execução
+-   Configurações de vários monitores em que cada exibição tem um fator de escala diferente e o aplicativo é movido de uma exibição para outra (como uma exibição de 4K e 1080p)
+-   Encaixe e desencaixamento de um laptop DPI alto com uma exibição externa de DPI baixa (ou vice-versa)
+-   Conectar-se Área de Trabalho Remota de um laptop/tablet DPI alto para um dispositivo de DPI baixo (ou vice-versa)
+-   Fazer uma alteração nas configurações de fator de escala de exibição enquanto os aplicativos estão em execução
 
-Nesses cenários, os aplicativos UWP redesenham-se para o novo DPI automaticamente. Por padrão, e sem trabalho adicional para desenvolvedores, os aplicativos de área de trabalho não. Os aplicativos de área de trabalho que não fazem esse trabalho extra para responder às alterações de DPI podem aparecer borrados ou ter um tamanho incorreto para o usuário.
+Nesses cenários, os aplicativos UWP redesenham-se automaticamente para o novo DPI. Por padrão, e sem trabalho adicional do desenvolvedor, os aplicativos da área de trabalho não. Os aplicativos da área de trabalho que não fazem esse trabalho extra para responder às alterações de DPI podem parecer desfocados ou dimensionado incorretamente para o usuário.
 
 ## <a name="dpi-awareness-mode"></a>Modo de reconhecimento de DPI
 
-os aplicativos da área de trabalho devem informar Windows se oferecerem suporte ao dimensionamento de DPI. Por padrão, o sistema considera o DPI dos aplicativos de desktop sem reconhecimento e bitmap – amplia suas janelas. ao definir um dos seguintes modos de reconhecimento de dpi disponíveis, os aplicativos podem dizer explicitamente Windows como desejam lidar com o dimensionamento de dpi:
+Os aplicativos da área de trabalho Windows se eles são suportados com o dimensionamento de DPI. Por padrão, o sistema considera que o DPI de aplicativos da área de trabalho não reconhece e o bitmap alonga suas janelas. Ao definir um dos seguintes modos de reconhecimento de DPI disponíveis, os aplicativos podem Windows como desejam lidar com o dimensionamento de DPI:
 
-### <a name="dpi-unaware"></a>Sem reconhecimento de DPI
+### <a name="dpi-unaware"></a>DPI sem conhecimento
 
-Aplicativos sem reconhecimento de DPI renderizam em um valor de DPI fixo de 96 (100%). sempre que esses aplicativos são executados em uma tela com uma escala de exibição maior que 96 DPI, Windows irá alongar o bitmap do aplicativo para o tamanho físico esperado. Isso resulta na exibição desfoque do aplicativo.
+Os aplicativos sem conhecimento de DPI são renderizar com um valor de DPI fixo de 96 (100%). Sempre que esses aplicativos são executados em uma tela com uma escala de exibição maior que 96 DPI, Windows ampliará o bitmap do aplicativo para o tamanho físico esperado. Isso resulta em o aplicativo parecer desfocado.
 
 ### <a name="system-dpi-awareness"></a>Reconhecimento de DPI do sistema
 
-Os aplicativos de desktop com reconhecimento de DPI do sistema normalmente recebem o DPI do monitor conectado primário a partir do momento da entrada do usuário. Durante a inicialização, eles formam sua interface do usuário adequadamente (controles de dimensionamento, escolhendo tamanhos de fonte, carregando ativos, etc.) usando esse valor de DPI do sistema. assim, os aplicativos com reconhecimento de dpi do sistema não são escalares de dpi (bitmap alongado) por Windows no exibe a renderização naquele único DPI. quando o aplicativo é movido para uma exibição com um fator de escala diferente, ou se o fator de escala de exibição for alterado, Windows bitmap dimensionará as janelas do aplicativo, tornando-as aparentemente borradas. Efetivamente, os aplicativos de área de trabalho com reconhecimento de DPI do sistema são processados de forma nítida em um único fator de escala de exibição, ficando desfocado sempre que o DPI é alterado.
+Os aplicativos da área de trabalho com conhecimento de DPI do sistema normalmente recebem o DPI do monitor conectado primário a partir do momento da conexão do usuário. Durante a inicialização, eles estabelecem a interface do usuário adequadamente (controles de tamanho, escolha de tamanhos de fonte, carregamento de ativos etc.) usando esse valor de DPI do sistema. Dessa forma, os aplicativos com base em DPI do sistema não são dimensionados por DPI (bitmap estendido) por Windows em exibe a renderização nesse único DPI. Quando o aplicativo for movido para uma exibição com um fator de escala diferente ou se o fator de escala de exibição mudar, Windows bitmap dimensionará as janelas do aplicativo, fazendo com que elas pareçam desfocados. Efetivamente, os aplicativos de área de trabalho com suporte a DPI do sistema renderizarão apenas de maneira nítido em um único fator de escala de exibição, tornando-se desfocado sempre que o DPI for mudar.
 
-### <a name="per-monitor-and-per-monitor-v2-dpi-awareness"></a>Reconhecimento de DPI de Per-Monitor e Per-Monitor (v2)
+### <a name="per-monitor-and-per-monitor-v2-dpi-awareness"></a>Per-Monitor e Per-Monitor (V2) Reconhecimento de DPI
 
-É recomendável que os aplicativos da área de trabalho sejam atualizados para usar o modo de reconhecimento de DPI por monitor, permitindo que eles sejam renderizados imediatamente sempre que o DPI for alterado. quando um aplicativo relata para Windows que ele deseja executar nesse modo, Windows não bitmap amplia o aplicativo quando o DPI é alterado, em vez disso, envia o [WM \_ DPICHANGED](wm-dpichanged.md) para a janela do aplicativo. Em seguida, é responsabilidade total do aplicativo lidar com o redimensionamento para o novo DPI. a maioria das estruturas de interface do usuário usadas por aplicativos da área de trabalho (Windows os controles comuns (comctl32), Windows Forms, Windows Presentation Framework etc.) não dão suporte ao dimensionamento automático de DPI, exigindo que os desenvolvedores redimensionem e reposicionem o conteúdo de suas próprias janelas.
+É recomendável que os aplicativos da área de trabalho sejam atualizados para usar o modo de reconhecimento de DPI por monitor, permitindo que eles sejam renderizar imediatamente corretamente sempre que o DPI mudar. Quando um aplicativo informa Windows que deseja executar nesse modo, o Windows não ampliará o bitmap do aplicativo quando o DPI mudar, enviando [WM \_ DPICHANGED](wm-dpichanged.md) para a janela do aplicativo. Em seguida, é responsabilidade total do aplicativo lidar com o reizing a si mesmo para o novo DPI. A maioria das estruturas de interface do usuário usadas por aplicativos da área de trabalho (Windows controles comuns (comctl32), Windows Forms, Windows Presentation Framework etc.) não suportam o dimensionamento automático de DPI, exigindo que os desenvolvedores reescalem e reposicionarem o conteúdo das próprias janelas.
 
-Há duas versões do Per-Monitor reconhecimento de que um aplicativo pode se registrar como: versão 1 e versão 2 (PMv2). O registro de um processo como executado no modo de reconhecimento de PMv2 resulta em:
+Há duas versões do Per-Monitor que um aplicativo pode se registrar como: versão 1 e versão 2 (PMv2). Registrar um processo como em execução no modo de reconhecimento PMv2 resulta em:
 
-1.  O aplicativo que está sendo notificado quando o DPI é alterado (ambos os HWNDs de nível superior e filho)
-2.  O aplicativo que vê os pixels brutos de cada exibição
-3.  O aplicativo nunca está sendo escalado em bitmap pelo Windows
-4.  Área não cliente automática (legenda da janela, barras de rolagem, etc.) Escala de DPI por Windows
-5.  As caixas de diálogo do Win32 (de [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialogw)) automaticamente são escaladas por Windows
-6.  Os ativos de bitmap desenhado por tema em controles comuns (caixas de seleção, planos de fundo de botão, etc.) são automaticamente renderizados no fator de escala de DPI apropriado
+1.  O aplicativo que está sendo notificado quando o DPI muda (os HWNDs de nível superior e filho)
+2.  O aplicativo vendo os pixels brutos de cada exibição
+3.  O aplicativo nunca está sendo dimensionado por bitmap Windows
+4.  Área não cliente automática (legenda da janela, barras de rolagem etc.) Dimensionamento de DPI por Windows
+5.  Caixas de diálogo Win32 (de [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialogw)) automaticamente dimensionadas por Windows
+6.  Ativos de bitmap desenhados por tema em controles comuns (caixas de seleção, planos de fundo de botão etc.) sendo renderizados automaticamente no fator de escala de DPI apropriado
 
-Ao executar no modo de reconhecimento de Per-Monitor v2, os aplicativos são notificados quando seu DPI é alterado. Se um aplicativo não se redimensionar para o novo DPI, a interface do usuário do aplicativo aparecerá muito pequena ou muito grande (dependendo da diferença nos valores de DPI anterior e novo).
+Ao executar no modo Per-Monitor reconhecimento v2, os aplicativos são notificados quando seu DPI foi alterado. Se um aplicativo não se reorganizar para o novo DPI, a interface do usuário do aplicativo será muito pequena ou muito grande (dependendo da diferença nos valores de DPI anteriores e novos).
 
 > [!Note]  
-> A conscientização do Per-Monitor V1 (PMv1) é muito limitada. É recomendável que os aplicativos usem o PMv2.
+> Per-Monitor reconhecimento V1 (PMv1) é muito limitado. É recomendável que os aplicativos usem PMv2.
 
-A tabela a seguir mostra como os aplicativos serão renderizados em diferentes cenários:
+A tabela a seguir mostra como os aplicativos serão renderados em diferentes cenários:
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Modo de reconhecimento de DPI</th>
-<th>Windows Versão introduzida</th>
-<th>Modo de exibição do aplicativo de DPI</th>
-<th>Comportamento na alteração de DPI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Conhecida</td>
-<td>N/D</td>
-<td>Todas as telas são 96 DPI</td>
-<td>Alongamento de bitmap (borrado)</td>
-</tr>
-<tr class="even">
-<td>Sistema</td>
-<td>Vista</td>
-<td>Todos os monitores têm o mesmo DPI (o DPI da exibição primária no momento em que a sessão do usuário atual foi iniciada)</td>
-<td>Alongamento de bitmap (borrado)</td>
-</tr>
-<tr class="odd">
-<td>Per-Monitor</td>
-<td>8.1</td>
-<td>O DPI da exibição na qual a janela do aplicativo está localizada principalmente</td>
-<td><ul>
-<li>O HWND de nível superior é notificado de alteração de DPI</li>
-<li>Sem ajuste de DPI de nenhum elemento de interface do usuário.</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td>Per-Monitor V2</td>
-<td>Atualização do Windows 10 para Criadores (1703)</td>
-<td>O DPI da exibição na qual a janela do aplicativo está localizada principalmente</td>
-<td><ul>
-<li>Os HWNDs de nível superior <span class="underline">e</span> filho são notificados da alteração de DPI</li>
-</ul>
-<br/> <span class="underline">Ajuste automático de DPI de:</span>
-<ul>
-<li>Área não cliente</li>
-<li>Bitmaps desenhados por tema em controles comuns (comctl32 V6)</li>
-<li>Caixas de diálogo (<a href="/windows/desktop/api/winuser/nf-winuser-createdialogw">CreateDialog</a>)</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
 
-### <a name="per-monitor-v1-dpi-awareness"></a>Reconhecimento de DPI por monitor (v1)
+| Modo de reconhecimento de DPI | Windows Versão introduzida | Exibição do DPI do aplicativo | Comportamento na alteração de DPI | 
+|--------------------|----------------------------|---------------------------|------------------------|
+| Inconscientes | N/D | Todas as exibições são de 96 DPI | Alongamento de bitmap (desfocado) | 
+| Sistema | Vista | Todas as exibições têm o mesmo DPI (o DPI da exibição primária no momento em que a sessão de usuário atual foi iniciada) | Alongamento de bitmap (desfocado) | 
+| Per-Monitor | 8.1 | O DPI da exibição em que a janela do aplicativo está localizada principalmente | <ul><li>O HWND de nível superior é notificado sobre a alteração de DPI</li><li>Nenhum dimensionamento de DPI de nenhum elemento de interface do usuário.</li></ul><br /> | 
+| Per-Monitor V2 | Atualização do Windows 10 para Criadores (1703) | O DPI da exibição em que a janela do aplicativo está localizada principalmente | <ul><li>HWNDs de nível <span class="underline">superior</span> e filho são notificados sobre a alteração de DPI</li></ul><br /><span class="underline">Dimensionamento automático de DPI de:</span><ul><li>Área não cliente</li><li>Bitmaps desenhados por tema em controles comuns (comctl32 V6)</li><li>Caixas de diálogo (<a href="/windows/desktop/api/winuser/nf-winuser-createdialogw">CreateDialog</a>)</li></ul><br /> | 
 
-O modo de reconhecimento de Per-Monitor v1 DPI (PMv1) foi introduzido com Windows 8.1. Esse modo de reconhecimento de DPI é muito limitado e oferece apenas a funcionalidade listada abaixo. é recomendável que os aplicativos de desktop usem o modo de reconhecimento v2 Per-Monitor, com suporte no Windows 10 1703 ou superior.
 
-O suporte inicial para reconhecimento por monitor oferecia apenas os aplicativos a seguir:
+### <a name="per-monitor-v1-dpi-awareness"></a>Reconhecimento de DPI por monitor (V1)
 
-1.  Os HWNDs de nível superior são notificados de uma alteração de DPI e fornecem um novo tamanho sugerido
-2.  Windows não ampliará o bitmap da interface do usuário do aplicativo
-3.  O aplicativo vê todas as telas em pixels físicos (consulte virtualização)
+Per-Monitor modo de reconhecimento de DPI V1 (PMv1) foi introduzido com Windows 8.1. Esse modo de reconhecimento de DPI é muito limitado e oferece apenas a funcionalidade listada abaixo. É recomendável que os aplicativos da área de trabalho Per-Monitor modo de reconhecimento v2, com suporte Windows 10 1703 ou superior.
 
-no Windows 10 1607 ou superior, os aplicativos PMv1 também podem chamar [EnableNonClientDpiScaling](/windows/desktop/api/winuser/nf-winuser-enablenonclientdpiscaling) durante \_ o WM NCCREATE para solicitar que Windows dimensionar corretamente a área não cliente da janela.
+O suporte inicial para reconhecimento por monitor só oferece aplicativos do seguinte:
 
-## <a name="per-monitor-dpi-scaling-support-by-ui-framework--technology"></a>Suporte ao dimensionamento de DPI por monitor pela estrutura/tecnologia da interface do usuário
+1.  HWNDs de nível superior são notificados sobre uma alteração de DPI e fornecidos um novo tamanho sugerido
+2.  Windows bitmap ampliará a interface do usuário do aplicativo
+3.  O aplicativo vê todas as exibições em pixels físicos (consulte virtualização)
 
-a tabela a seguir mostra o nível de suporte de reconhecimento de DPI por monitor oferecido por vários Windows estruturas de interface do usuário a partir de Windows 10 1703:
+No Windows 10 1607 ou superior, os aplicativos PMv1 também podem chamar [EnableNonClientDpiScaling](/windows/desktop/api/winuser/nf-winuser-enablenonclientdpiscaling) durante o WM NCCREATE para solicitar que Windows dimensione corretamente a área não cliente da \_ janela.
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estrutura/tecnologia</th>
-<th>Suporte</th>
-<th>Versão do SO</th>
-<th>Escala de DPI manipulada por</th>
-<th>Leitura adicional</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Plataforma Universal do Windows (UWP)</td>
-<td>Completo</td>
-<td>1607</td>
-<td>Estrutura de interface do usuário</td>
-<td><a href="/windows/uwp/get-started/whats-a-uwp">UWP (Plataforma Universal do Windows)</a></td>
-</tr>
-<tr class="even">
-<td>Controles Win32/comuns V6 brutos (comctl32.dll)</td>
-<td><ul>
-<li>Mensagens de notificação de alteração de DPI enviadas a todos os HWNDs</li>
-<li>Os ativos de tema desenhado são renderizados corretamente em controles comuns</li>
-<li>Dimensionamento automático de DPI para caixas de diálogo</li>
-</ul></td>
-<td>1703</td>
-<td>Aplicativo</td>
-<td><a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DPIAwarenessPerWindow">GitHub Nova</a></td>
-</tr>
-<tr class="odd">
-<td>Windows Forms</td>
-<td>Dimensionamento automático limitado por monitor de DPI para alguns controles</td>
-<td>1703</td>
-<td>Estrutura de interface do usuário</td>
-<td><a href="/dotnet/framework/winforms/high-dpi-support-in-windows-forms">suporte a alto DPI no Windows Forms</a></td>
-</tr>
-<tr class="even">
-<td>Windows Estrutura de apresentação (WPF)</td>
-<td>Os aplicativos nativos do WPF terão a escala de DPI do WPF hospedado em outras estruturas e outras estruturas hospedadas no WPF não são dimensionadas automaticamente</td>
-<td>1607</td>
-<td>Estrutura de interface do usuário</td>
-<td><a href="https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI">GitHub Nova</a></td>
-</tr>
-<tr class="odd">
-<td>GDI</td>
-<td>Nenhum</td>
-<td>N/D</td>
-<td>Aplicativo</td>
-<td>Consulte <a href="https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/">dimensionamento de dpi alta do GDI</a></td>
-</tr>
-<tr class="even">
-<td>GDI+</td>
-<td>Nenhum</td>
-<td>N/D</td>
-<td>Aplicativo</td>
-<td>Consulte <a href="https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/">dimensionamento de dpi alta do GDI</a></td>
-</tr>
-<tr class="odd">
-<td>MFC</td>
-<td>Nenhum</td>
-<td>N/D</td>
-<td>Aplicativo</td>
-<td>N/D</td>
-</tr>
-</tbody>
-</table>
+## <a name="per-monitor-dpi-scaling-support-by-ui-framework--technology"></a>Suporte para dimensionamento de DPI por monitor por estrutura/tecnologia da interface do usuário
+
+A tabela a seguir mostra o nível de suporte de reconhecimento de DPI por monitor oferecido por várias estruturas Windows interface do usuário do Windows 10 1703:
+
+
+| Estrutura/tecnologia | Suporte | Versão do SO | Dimensionamento de DPI manipulado por | Leitura Adicional | 
+|------------------------|---------|------------|------------------------|-----------------|
+| Plataforma Universal do Windows (UWP) | Completo | 1607 | Estrutura da interface do usuário | <a href="/windows/uwp/get-started/whats-a-uwp">UWP (Plataforma Universal do Windows)</a> | 
+| Controles Win32/comuns V6 brutos (comctl32.dll) | <ul><li>Mensagens de notificação de alteração de DPI enviadas a todos os HWNDs</li><li>Os ativos de tema desenhado são renderizados corretamente em controles comuns</li><li>Dimensionamento automático de DPI para caixas de diálogo</li></ul> | 1703 | Aplicativo | <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DPIAwarenessPerWindow">GitHub Nova</a> | 
+| Windows Forms | Dimensionamento automático limitado por monitor de DPI para alguns controles | 1703 | Estrutura de interface do usuário | <a href="/dotnet/framework/winforms/high-dpi-support-in-windows-forms">suporte a alto DPI no Windows Forms</a> | 
+| Windows Estrutura de apresentação (WPF) | Os aplicativos nativos do WPF terão a escala de DPI do WPF hospedado em outras estruturas e outras estruturas hospedadas no WPF não são dimensionadas automaticamente | 1607 | Estrutura de interface do usuário | <a href="https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI">GitHub Nova</a> | 
+| GDI | Nenhum | N/D | Aplicativo | Consulte <a href="https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/">dimensionamento de dpi alta do GDI</a> | 
+| GDI+ | Nenhum | N/D | Aplicativo | Consulte <a href="https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/">dimensionamento de dpi alta do GDI</a> | 
+| MFC | Nenhum | N/D | Aplicativo | N/D | 
+
 
 
 
@@ -358,7 +249,7 @@ Depois de atualizar seu aplicativo para se tornar um reconhecimento de DPI por m
 
 **Não está usando o retângulo sugerido que é fornecido no WM \_ DPICHANGED**
 
-Quando Windows o aplicativo envia uma mensagem [**WM \_ DPICHANGED**](wm-dpichanged.md) à janela do aplicativo, essa mensagem inclui um retângulo sugerido que você deve usar para reorganizar a janela. É essencial que seu aplicativo use esse retângulo para reessular a si mesmo, pois isso vai:
+Quando Windows a janela do aplicativo uma mensagem [**WM \_ DPICHANGED,**](wm-dpichanged.md) essa mensagem inclui um retângulo sugerido que você deve usar para reessular a janela. É essencial que seu aplicativo use esse retângulo para reessular a si mesmo, pois isso vai:
 
 1.  Certifique-se de que o cursor do mouse permaneça na mesma posição relativa na Janela ao arrastar entre as exibições
 2.  Impedir que a janela do aplicativo entre em um ciclo recursivo dpi-change em que uma alteração de DPI dispara uma alteração de DPI subsequente, o que dispara outra alteração de DPI.
@@ -367,7 +258,7 @@ Se você tiver requisitos específicos do aplicativo que o impeçam de usar o re
 
 **Falta de documentação sobre virtualização**
 
-Quando um HWND ou processo é executado como DPI sem conhecimento ou com conhecimento de DPI do sistema, ele pode ser estendido por bitmap por Windows. Quando isso acontece, Windows dimensiona e converte informações confidenciais de DPI de algumas APIs para o espaço de coordenadas do thread de chamada. Por exemplo, se um thread sem conhecimento de DPI consultar o tamanho da tela durante a execução em uma exibição de DPI alto, o Windows virtualizará a resposta dada ao aplicativo como se a tela estivesse em 96 unidades de DPI. Como alternativa, quando um thread com conhecimento de DPI do sistema estiver interagindo com uma exibição em um DPI diferente do que estava em uso quando a sessão do usuário atual foi iniciada, o Windows dimensionará algumas chamadas à API para o espaço de coordenadas que o HWND usaria se estivesse em execução em seu fator de escala de DPI original.
+Quando um HWND ou um processo é executado como DPI sem conhecimento ou com conhecimento de DPI do sistema, ele pode ser estendido por bitmap por Windows. Quando isso acontece, Windows dimensiona e converte informações confidenciais de DPI de algumas APIs para o espaço de coordenadas do thread de chamada. Por exemplo, se um thread sem conhecimento de DPI consultar o tamanho da tela durante a execução em uma exibição de DPI alto, o Windows virtualizará a resposta dada ao aplicativo como se a tela estivesse em 96 unidades de DPI. Como alternativa, quando um thread com conhecimento de DPI do sistema estiver interagindo com uma exibição em um DPI diferente do que estava em uso quando a sessão do usuário atual foi iniciada, o Windows dimensionará algumas chamadas à API para o espaço de coordenadas que o HWND usaria se estivesse em execução em seu fator de escala de DPI original.
 
 Quando você atualiza seu aplicativo da área de trabalho para dimensionamento de DPI corretamente, pode ser difícil saber quais chamadas à API podem retornar valores virtualizados com base no contexto do thread; Atualmente, essas informações não estão documentadas o suficiente pela Microsoft. Esteja ciente de que, se você chamar qualquer API do sistema de um contexto de thread com conhecimento de DPI ou com conhecimento de DPI do sistema, o valor de retorno poderá ser virtualizado. Dessa forma, certifique-se de que o thread está em execução no contexto de DPI esperado ao interagir com a tela ou janelas individuais. Ao alterar temporariamente o contexto de DPI de um thread usando [SetThreadDpiAwarenessContext](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext), restaure o contexto antigo quando terminar para evitar causar comportamento incorreto em outro lugar no aplicativo.
 

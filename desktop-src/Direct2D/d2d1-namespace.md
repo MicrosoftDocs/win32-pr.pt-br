@@ -1,21 +1,21 @@
 ---
-title: Namespace D2D1
-description: O namespace D2D1 fornece classes, funções e estruturas auxiliares que simplificam tarefas comuns, como a criação de uma matriz de identidade ou a criação de uma cor.
+title: D2D1 Namespace
+description: O namespace D2D1 fornece classes auxiliares, funções e estruturas que simplificam tarefas comuns, como criar uma matriz de identidade ou criar uma cor.
 ms.assetid: 8c3e2848-5923-4019-926a-c76eef7e2491
 keywords:
 - Namespace D2D1, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fac0ad51a80ef25f62f5ed61e865ac66f430c2a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8636c10b49f744d10b3f1a89982c63bc6aac001df7b259006c9e1b12a4b354df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108896"
 ---
-# <a name="d2d1-namespace"></a>Namespace D2D1
+# <a name="d2d1-namespace"></a>D2D1 Namespace
 
-O namespace D2D1 fornece classes, funções e estruturas auxiliares que simplificam tarefas comuns, como a criação de uma matriz de identidade ou a criação de uma cor.
+O namespace D2D1 fornece classes auxiliares, funções e estruturas que simplificam tarefas comuns, como criar uma matriz de identidade ou criar uma cor.
 
 ## <a name="in-this-section"></a>Nesta seção
 
