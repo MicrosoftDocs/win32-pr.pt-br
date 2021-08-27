@@ -1,19 +1,19 @@
 ---
-description: Não é possível acessar uma sessão de instalador de uma ação personalizada que não seja a sessão de instalação atual.
+description: Você não pode acessar uma sessão do instalador de uma ação personalizada que não seja a sessão de instalação atual.
 ms.assetid: 8aa0ac17-1341-4399-987e-d26175150874
 title: Acessando um banco de dados ou sessão de dentro de uma ação personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 839c34fbfcd6cc69c026db455b0c2e3a59a28e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c653d14bc2fdb361469389c4ee053e5d98b65f8c8265516c4e2c3bd4fc4c96d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046056"
 ---
 # <a name="accessing-a-database-or-session-from-inside-a-custom-action"></a>Acessando um banco de dados ou sessão de dentro de uma ação personalizada
 
-Não é possível acessar uma sessão de instalador de uma ação personalizada que não seja a sessão de instalação atual. As ações personalizadas são limitadas a trabalhar apenas com o banco de dados ativo da sessão e nenhum outro. As funções de [banco de dados](database-functions.md) a seguir Windows Installer não devem ser chamadas de uma ação personalizada, porque exigem um identificador para um banco de dados que não seja o banco de dados da sessão de instalação atual:
+Você não pode acessar uma sessão do instalador de uma ação personalizada que não seja a sessão de instalação atual. As ações personalizadas são limitadas a trabalhar apenas com o banco de dados ativo da sessão e nenhum outro banco de dados. As seguintes Windows Funções [](database-functions.md) de Banco de Dados do Instalador não devem ser chamadas de uma ação personalizada, pois exigem um handle para um banco de dados que não é o banco de dados da sessão de instalação atual:
 
 [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea)
 

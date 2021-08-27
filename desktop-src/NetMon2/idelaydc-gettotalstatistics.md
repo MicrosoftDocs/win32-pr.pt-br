@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b3a0ce4f230236e276fede528a5e778ecafd51fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e6b4d76b3035e156da1f1d4decf7a5c59b28bf0ca13bc2bdaa33e319422509af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037546"
 ---
 # <a name="idelaydcgettotalstatistics-method"></a>Método IDelaydC:: GetTotalStatistics
 
@@ -65,8 +65,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                          | Descrição                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. Chame [IDelaydC:: Connect](idelaydc-connect.md) para conectar-se à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | O NPP está conectado à rede, mas não com o método [IDelaydC:: Connect](idelaydc-connect.md) .<br/>             |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. chame [IDelaydC:: Conexão](idelaydc-connect.md) para se conectar à rede.<br/> |
+| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | o NPP está conectado à rede, mas não com o método [IDelaydC:: Conexão](idelaydc-connect.md) .<br/>             |
 | <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl> | O NPP não está capturando dados. Chame [IDelaydC:: Start](idelaydc-start.md) para iniciar a captura de dados.<br/>                 |
 
 
@@ -92,14 +92,14 @@ Monitor de Rede também armazena [*Estatísticas de conversa*](c.md), que podem 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: conectar](idelaydc-connect.md)
+[IDelaydC:: Conexão](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::GetConversationStatistics](idelaydc-getconversationstatistics.md)

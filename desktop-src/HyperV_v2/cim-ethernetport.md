@@ -1,7 +1,7 @@
 ---
-description: Representa uma porta Ethernet.
+description: Representa uma porta ethernet.
 ms.assetid: c9a148c2-cf02-466f-b8ca-b1bf616d75dc
-title: Classe CIM_EthernetPort
+title: CIM_EthernetPort classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a44e93f84178fa2714d3c823735b3d90922e04be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9ca0f3c0ff8919c8f9614efee5d60e450f458f533e637ab3c364e31a52d05b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046932"
 ---
-# <a name="cim_ethernetport-class"></a>\_Classe CIM EthernetPort
+# <a name="cim_ethernetport-class"></a>Classe \_ EthernetPort CIM
 
-Representa uma porta Ethernet.
+Representa uma porta ethernet.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,32 +49,32 @@ class CIM_EthernetPort : CIM_NetworkPort
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ EthernetPort** tem estes tipos de membros:
+A **classe \_ ETHERNETPort CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ EthernetPort** tem essas propriedades.
+A **classe \_ EthernetPort CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **Funcionalidades**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM EthernetPort**.**CapabilityDescriptions**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EthernetPort**.**CapabilityDescriptions**")
 </dt> </dl>
 
-Os recursos da porta Ethernet.
+Os recursos da porta ethernet.
 
 > [!Note]  
-> Se os recursos de failover ou balanceamento de carga estiverem habilitados, um objeto de [**\_ reserva**](/windows/desktop/CIMWin32Prov/cim-sparegroup) (failover) CIM ou [**CIM \_ ExtraCapacityGroup**](/windows/desktop/CIMWin32Prov/cim-extracapacitygroup) (balanceamento de carga) também deverá ser definido para descrever completamente o recurso.
+> Se os recursos de failover ou balanceamento de carga estão habilitados, um objeto [**\_ SpareGroup CIM**](/windows/desktop/CIMWin32Prov/cim-sparegroup) (failover) ou [**CIM \_ ExtraCapacityGroup**](/windows/desktop/CIMWin32Prov/cim-extracapacitygroup) (balanceamento de carga) também deve ser definido para descrever completamente a funcionalidade.
 
  
 
@@ -89,7 +89,7 @@ Os recursos da porta Ethernet.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -110,14 +110,14 @@ Os recursos da porta Ethernet.
 
 <span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>
 
-**Failover** (4)
+**FailOver** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>
 
-**Balanceamento de carga** (5)
+**LoadBalancing** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -127,32 +127,32 @@ Os recursos da porta Ethernet.
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM EthernetPort**.**Recursos**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EthernetPort**.**Funcionalidades**")
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres de forma livre que fornece explicações mais detalhadas para qualquer um dos recursos indicados na matriz Capabilities. Os itens nessa matriz correspondem aos itens na matriz de recursos.
+Uma matriz de cadeias de caracteres de forma livre que fornece explicações mais detalhadas para qualquer um dos recursos indicados na matriz Recursos. Os itens nessa matriz correspondem aos itens na matriz Recursos.
 
 </dd> <dt>
 
 **EnabledCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM EthernetPort**.**Recursos**","**CIM \_ EthernetPort**.**OtherEnabledCapabilities**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EthernetPort**.**Funcionalidades**", "**CIM \_ EthernetPort**.**OtherEnabledCapabilities**")
 </dt> </dl>
 
-Indica quais funcionalidades estão habilitadas na matriz Capabilities. Os itens nessa matriz correspondem aos itens na matriz de recursos.
+Indica quais funcionalidades estão habilitadas na matriz Funcionalidades. Os itens nessa matriz correspondem aos itens na matriz Recursos.
 
 <dt>
 
@@ -165,7 +165,7 @@ Indica quais funcionalidades estão habilitadas na matriz Capabilities. Os itens
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -186,14 +186,14 @@ Indica quais funcionalidades estão habilitadas na matriz Capabilities. Os itens
 
 <span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>
 
-**Failover** (4)
+**FailOver** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>
 
-**Balanceamento de carga** (5)
+**LoadBalancing** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -203,64 +203,64 @@ Indica quais funcionalidades estão habilitadas na matriz Capabilities. Os itens
 **MaxDataSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dTpPortMaxInfo ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dTpPortMaxInfo")
 </dt> </dl>
 
-O tamanho máximo do campo de informações (não MAC) que será recebido ou transmitido.
+O tamanho máximo do campo INFO (não MAC) que será recebido ou transmitido.
 
 </dd> <dt>
 
 **NetworkAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NetworkAddresses")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("NetworkAddresses")
 </dt> </dl>
 
-Os endereços de rede atribuídos à porta. O endereço é um MAC 802,3 que é formatado como doze dígitos hexadecimais (por exemplo, "010203040506"), onde cada par de dígitos representa um dos seis octetos do endereço MAC na ordem de bits canônica.
+Os endereços de rede atribuídos à porta. O endereço é um MAC 802.3 formatado como doze dígitos hexadecimais (por exemplo, "010203040506"), em que cada par de dígitos representa um dos seis octetos do endereço MAC em ordem de bits canônica.
 
 </dd> <dt>
 
 **OtherEnabledCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM EthernetPort**.**EnabledCapabilities**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EthernetPort**.**EnabledCapabilities**")
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres de forma livre que fornece explicações mais detalhadas para qualquer um dos itens de matriz **EnabledCapabilities** que são definidos como 1 (outro). Os itens nessa matriz correspondem aos itens na matriz **EnabledCapabilities** .
+Uma matriz de cadeias de caracteres de forma livre que fornecem explicações mais detalhadas para qualquer um dos itens de matriz **EnabledCapabilities** definidos como 1 (Outros). Os itens nessa matriz correspondem aos itens na **matriz EnabledCapabilities.**
 
 </dd> <dt>
 
-**PortType**
+**Porttype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PortType")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PortType")
 </dt> </dl>
 
-O modo que está habilitado na porta. Quando definido como 1 (outro), a propriedade **OtherPortType** descreve o modo.
+O modo que está habilitado na porta. Quando definido como 1 (Outro), a **propriedade OtherPortType** descreve o modo.
 
 <dt>
 
@@ -273,7 +273,7 @@ O modo que está habilitado na porta. Quando definido como 1 (outro), a propried
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -301,7 +301,7 @@ O modo que está habilitado na porta. Quando definido como 1 (outro), a propried
 
 <span id="1000BaseT"></span><span id="1000baset"></span><span id="1000BASET"></span>
 
-**1000baseT** (53)
+**1000BaseT** (53)
 
 
 </dt> <dd></dd> <dt>
@@ -322,98 +322,98 @@ O modo que está habilitado na porta. Quando definido como 1 (outro), a propried
 
 <span id="10GBase-CX4"></span><span id="10gbase-cx4"></span><span id="10GBASE-CX4"></span>
 
-**10GBASE-CX4** (56)
+**10GBase-CX4** (56)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="100Base-FX"></span><span id="100base-fx"></span><span id="100BASE-FX"></span>
 
-**100BASE-FX** (100)
+**100Base-FX** (100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="100Base-SX"></span><span id="100base-sx"></span><span id="100BASE-SX"></span>
 
-**100BASE-SX** (101)
+**100Base-SX** (101)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="1000Base-SX"></span><span id="1000base-sx"></span><span id="1000BASE-SX"></span>
 
-**1000BASE-SX** (102)
+**1000Base-SX** (102)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="1000Base-LX"></span><span id="1000base-lx"></span><span id="1000BASE-LX"></span>
 
-**1000BASE-LX** (103)
+**1000Base-LX** (103)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="1000Base-CX"></span><span id="1000base-cx"></span><span id="1000BASE-CX"></span>
 
-**1000BASE-CX** (104)
+**1000Base-CX** (104)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-SR"></span><span id="10gbase-sr"></span><span id="10GBASE-SR"></span>
 
-**10GBASE-Sr** (105)
+**10GBase-SR** (105)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-SW"></span><span id="10gbase-sw"></span><span id="10GBASE-SW"></span>
 
-**10GBASE-SW** (106)
+**10GBase-SW** (106)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-LX4"></span><span id="10gbase-lx4"></span><span id="10GBASE-LX4"></span>
 
-**10GBASE-LX4** (107)
+**10GBase-LX4** (107)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-LR"></span><span id="10gbase-lr"></span><span id="10GBASE-LR"></span>
 
-**10GBASE-LR** (108)
+**10GBase-LR** (108)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-LW"></span><span id="10gbase-lw"></span><span id="10GBASE-LW"></span>
 
-**10GBASE-LW** (109)
+**10GBase-LW** (109)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-ER"></span><span id="10gbase-er"></span><span id="10GBASE-ER"></span>
 
-**10GBASE-ER** (110)
+**10GBase-ER** (110)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="10GBase-EW"></span><span id="10gbase-ew"></span><span id="10GBASE-EW"></span>
 
-**10GBASE-ovo** (111)
+**10GBase-EW** (111)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (16000.. 65535)
+**Fornecedor Reservado** (16000..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -428,8 +428,8 @@ O modo que está habilitado na porta. Quando definido como 1 (outro), a propried
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -438,7 +438,7 @@ O modo que está habilitado na porta. Quando definido como 1 (outro), a propried
 
 <dl> <dt>
 
-[**\_NETWORKPORT CIM**](cim-networkport.md)
+[**CIM \_ NetworkPort**](cim-networkport.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETWORDBREAKPROC (WinUser. h)
 description: Substitui uma função WordWrap padrão do controle de edição por uma função WordWrap definida pelo aplicativo. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: e5029b75-5f35-43a5-876d-24e81605bb49
 keywords:
-- Controles de EM_SETWORDBREAKPROC de mensagens do Windows
+- controles de Windows de mensagem de EM_SETWORDBREAKPROC
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e85335562c9e9881093d89293e7e2ace9cf43b0a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90617545fab7c8c5cf75babd98e9d6ef85c5713778c52a6a00966a131d0a0581
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048015"
 ---
 # <a name="em_setwordbreakproc-message"></a>\_Mensagem em SETWORDBREAKPROC
 
@@ -43,7 +43,7 @@ O endereço da função WordWrap definida pelo aplicativo. Para obter mais infor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -61,9 +61,9 @@ Uma função WordWrap define o ponto no qual o sistema deve quebrar uma linha de
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

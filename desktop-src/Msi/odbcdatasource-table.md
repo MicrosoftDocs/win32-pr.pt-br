@@ -4,12 +4,12 @@ ms.assetid: dea28324-e48d-49e8-a4d2-309f7e7cb4b0
 title: Tabela ODBCDataSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 819eecc671c75fa11db6e4a2706a511c2758ad00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43426ba7f2dd1214dc205213aa632558bbc44d81db5e6e32f7f7d66f82d30641
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082716"
 ---
 # <a name="odbcdatasource-table"></a>Tabela ODBCDataSource
 
@@ -21,7 +21,7 @@ A tabela ODBCDataSource tem as colunas a seguir.
 
 | Coluna            | Tipo                         | Chave | Nullable |
 |-------------------|------------------------------|-----|----------|
-| DataSource        | [Identificador](identifier.md) | S   | N        |
+| DataSource        | [Identificador](identifier.md) | Y   | N        |
 | Componente\_       | [Identificador](identifier.md) | N   | N        |
 | Descrição       | [Text](text.md)             | N   | N        |
 | DriverDescription | [Text](text.md)             | N   | N        |
@@ -52,7 +52,7 @@ Chave externa na [tabela de componentes](component-table.md).
 <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Ndescrição
 </dt> <dd>
 
-A descrição registrada para esta fonte de dados. Este valor não pode ser localizado. As descrições da fonte de dados ODBC não podem exceder o \_ comprimento máximo do DSN do SQL \_ \_ .
+A descrição registrada para esta fonte de dados. Este valor não pode ser localizado. as descrições da fonte de dados ODBC não podem exceder SQL \_ comprimento máximo do \_ DSN \_ .
 
 </dd> <dt>
 

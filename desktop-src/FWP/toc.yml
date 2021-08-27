@@ -1,21 +1,21 @@
 - name: Plataforma de filtragem do Windows
   href: windows-filtering-platform-start-page.md
   items:
-    - name: O que há de novo na plataforma de filtragem do Windows
+    - name: Novidades na plataforma Windows filtragem
       href: what-s-new-in-windows-filtering-platform.md
-    - name: Sobre a plataforma de filtragem do Windows
+    - name: Sobre Windows de filtragem
       href: about-windows-filtering-platform.md
       items:
-        - name: Arquitetura WFP
+        - name: Arquitetura do WFP
           href: windows-filtering-platform-architecture-overview.md
-        - name: API WFP
+        - name: WFP API
           href: api-sets.md
           items:
             - name: Modelo de Objeto
               href: object-model.md
             - name: Gerenciamento de objetos
               href: object-management.md
-            - name: Nomes de Version-Independent WFP e direcionamento de versões específicas do Windows
+            - name: Nomes de Version-Independent WFP e versões específicas de destino do Windows
               href: wfp-version-independent-names-and-targeting-specific-versions-of-windows.md
         - name: Operação WFP
           href: basic-operation.md
@@ -24,29 +24,29 @@
               href: tcp-packet-flows.md
             - name: Fluxos de pacotes UDP
               href: udp-packet-flows.md
-            - name: Arbitragem de filtro
+            - name: Filtragem de filtragem
               href: filter-arbitration.md
-        - name: Configuração de WFP
+        - name: Configuração do WFP
           href: wfp-configuration.md
           items:
             - name: Controle de acesso
               href: access-control.md
             - name: Atribuição de peso de filtro
               href: filter-weight-assignment.md
-        - name: Aplicação da camada de aplicativo (EPA)
+        - name: Imposição de camada de aplicativo (ALE)
           href: application-layer-enforcement--ale-.md
           items:
             - name: Camadas ALE
               href: ale-layers.md
-            - name: Filtragem de estado de ALE
+            - name: Filtragem com estado ALE
               href: ale-stateful-filtering.md
-            - name: Tráfego de difusão/multicast ALE
+            - name: Tráfego multicast/difusão ALE
               href: ale-multicast-broadcast-traffic.md
             - name: Reautorização de ALE
               href: ale-re-authorization.md
-            - name: Personalização de fluxo ALE
+            - name: Personalização de Flow ALE
               href: ale-flow-customization.md
-        - name: Configuração de IPsec
+        - name: Configuração do IPsec
           href: ipsec-configuration.md
           items:
             - name: Modo de transporte
@@ -55,17 +55,17 @@
               href: negotiation-discovery-transport-mode.md
             - name: Modo de transporte de descoberta de negociação no modo de limite
               href: negotiation-discovery-transport-mode-in-boundary-mode.md
-            - name: Modo de túnel
+            - name: Tunnel Modo
               href: tunnel-mode.md
-            - name: Criptografia garantida
+            - name: Criptografia Garantida
               href: guaranteed-encryption.md
-            - name: Autorização de identidade remota
+            - name: Autorização de Identidade Remota
               href: remote-identity-authorization.md
-            - name: SA manual
+            - name: Manual SA
               href: manual-ipsec-sas.md
             - name: Isenções de IKE/AuthIP
               href: ike-exemptions.md
-        - name: Monitoramento de WFP
+        - name: Monitoramento do WFP
           href: wfp-monitoring.md
           items:
             - name: Auditoria
@@ -74,7 +74,7 @@
               href: logging.md
             - name: Notificações de alteração
               href: change-notifications.md
-    - name: Usando a plataforma de filtragem do Windows
+    - name: Usando Windows de filtragem de dados
       href: using-windows-filtering-platform.md
       items:
         - name: Introdução
@@ -98,51 +98,51 @@
         - name: Observando o sistema
           href: observing-the-system.md
           items:
-            - name: Populando condições de filtro
+            - name: Preenchendo condições de filtro
               href: populating-filter-conditions.md
             - name: Exibindo o estado atual
               href: viewing-current-state.md
-            - name: Monitorando alterações de filtro
+            - name: Monitoramento de alterações de filtro
               href: monitoring-filter-changes.md
             - name: Exibindo eventos de rede
               href: displaying-net-events.md
         - name: Gerenciando a segurança
           href: managing-security.md
           items:
-            - name: Impedindo a exclusão do filtro
+            - name: Impedindo a exclusão de filtro
               href: hindering-filter-deletion.md
-            - name: Forçando a exclusão do filtro
+            - name: Forçando a exclusão de filtro
               href: forcing-filter-deletion.md
         - name: Configurando o IPSec
           href: configuring-ipsec.md
           items:
             - name: Usando o modo de transporte
               href: using-transport-mode.md
-            - name: Usando o modo de túnel
+            - name: Usando Tunnel modo
               href: using-tunnel-mode.md
-            - name: Chaveamento da SA manual
+            - name: Chave SA manual
               href: manual-sa-keying.md
         - name: Práticas Recomendadas
           href: best-practices.md
-    - name: Referência da API da plataforma de filtragem do Windows
+    - name: Windows Referência da API da plataforma de filtragem
       href: fwp-reference.md
       items:
-        - name: Constantes de WFP
+        - name: Constantes WFP
           href: windows-filtering-platform-api-constants.md
           items:
-            - name: Identificadores de direito de acesso
+            - name: Identificadores à direita de acesso
               href: access-right-identifiers.md
-            - name: Identificadores de texto explicativo internos
+            - name: Identificadores de callout integrados
               href: built-in-callout-identifiers.md
-            - name: Identificadores de módulo de chave interna
+            - name: Identificadores de módulo de chave integrados
               href: built-in-keying-module-identifiers.md
-            - name: Identificadores de contexto do provedor interno
+            - name: Identificadores de contexto do provedor integrados
               href: built-in-provider-context-identifiers.md
-            - name: Identificadores de provedor internos
+            - name: Identificadores de provedor integrados
               href: built-in-provider-identifiers.md
-            - name: Identificadores de contexto de filtro
+            - name: Filtrar identificadores de contexto
               href: filter-context-identifiers.md
-            - name: Identificadores de peso de filtro
+            - name: Filtrar identificadores de peso
               href: filter-weight-identifiers.md
             - name: Condições de filtragem
               href: filtering-conditions.md
@@ -155,9 +155,9 @@
                   href: filtering-conditions-available-at-each-filtering-layer.md
             - name: Filtrando identificadores de camada
               href: management-filtering-layer-identifiers-.md
-            - name: Filtrando identificadores de subcamadas
+            - name: Filtrando identificadores de subcamada
               href: management-filtering-sublayer-identifiers.md
-            - name: Códigos de erro WFP
+            - name: Códigos de erro do WFP
               href: wfp-error-codes.md
         - name: Tipos enumerados de WFP
           href: fwp-enums.md
@@ -189,7 +189,7 @@
                   href: /windows/win32/api/Iketypes/ne-iketypes-ikeext_qm_sa_state
                 - name: IKEEXT_SA_ROLE
                   href: /windows/win32/api/Iketypes/ne-iketypes-ikeext_sa_role
-            - name: Tipos de IPsec
+            - name: Tipos IPsec
               href: ipsec-types.md
               items:
                 - name: IPSEC_AUTH_TYPE

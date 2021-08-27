@@ -1,43 +1,43 @@
 ---
-description: A partir do Windows Server 2008 e do Windows Vista, a API do WinHTTP foi aprimorada para incluir os recursos a seguir.
+description: A partir do Windows Server 2008 e Windows Vista, a API WinHTTP foi aprimorada para incluir os recursos a seguir.
 ms.assetid: b47a2e38-67bd-4d43-936c-8781641cb7f6
-title: O que há de novo no Windows Server 2008 e no Windows Vista
+title: Novidades no Windows Server 2008 e Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fac0f274b45e1db79fb79340b7f490de96f57e8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e474bbfa32d8f82737df4be6f537ca0a6f1bc870e2028d7dcdb1f418adb7120
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071696"
 ---
-# <a name="whats-new-in-windows-server-2008-and-windows-vista"></a>O que há de novo no Windows Server 2008 e no Windows Vista
+# <a name="whats-new-in-windows-server-2008-and-windows-vista"></a>Novidades no Windows Server 2008 e Windows Vista
 
-A partir do Windows Server 2008 e do Windows Vista, a API do WinHTTP foi aprimorada para incluir os recursos a seguir.
+A partir do Windows Server 2008 e Windows Vista, a API WinHTTP foi aprimorada para incluir os recursos a seguir.
 
-## <a name="greater-than-4-gb-upload"></a>Mais de 4 GB de upload.
+## <a name="greater-than-4-gb-upload"></a>Maior que 4 GB Upload.
 
-[**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) pode enviar apenas 4 GB de dados devido a limitações no tamanho do parâmetro de comprimento total DWORD. Para permitir que os aplicativos enviem mais de 4 GB de dados, o cabeçalho Content-Length é adicionado à solicitação especificando dados tão grandes quanto um \_ inteiro grande (2 ^ 64 bytes). Para obter mais informações, consulte **WinHttpSendRequest**. Não há suporte para esse recurso no objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) .
+[**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) pode enviar apenas 4 GB de dados devido a limitações no tamanho do parâmetro de comprimento total DWORD. Para permitir que os aplicativos enviem mais de 4 GB de dados, o header Content-Length é adicionado à solicitação especificando dados tão grandes quanto um INTEIRO GRANDE \_ (2^64 bytes). Para obter mais informações, **consulte WinHttpSendRequest**. Não há suporte para esse recurso no [**objeto COM IWinHttpRequest.**](iwinhttprequest-interface.md)
 
-## <a name="transfer-encoding-header"></a>Cabeçalho de Transfer-Encoding
+## <a name="transfer-encoding-header"></a>Transfer-Encoding de Transfer-Encoding
 
-O cabeçalho Transfer-Encoding permite que os aplicativos enviem dados em partes para o servidor. Quando o cabeçalho de Transfer-Encoding está presente na solicitação, o aplicativo envia a solicitação com um corpo de entidade de comprimento zero na chamada para [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest). O corpo da entidade é enviado em chamadas subsequentes para [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata). Não há suporte para esse recurso no objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) .
+O Transfer-Encoding de dados permite que os aplicativos enviem dados em partes para o servidor. Quando o Transfer-Encoding está presente na solicitação, o aplicativo envia a solicitação com um corpo de entidade de comprimento zero na chamada para [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest). O corpo da entidade é enviado em chamadas subsequentes para [**WinHttpWriteData.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata) Não há suporte para esse recurso no [**objeto COM IWinHttpRequest.**](iwinhttprequest-interface.md)
 
-## <a name="ssl-client-certificate-issuer-list-retrieval"></a>Recuperação da lista de emissores do certificado do cliente SSL
+## <a name="ssl-client-certificate-issuer-list-retrieval"></a>Recuperação da lista de emissores de certificados do cliente SSL
 
-O aplicativo pode recuperar a lista de emissores de certificado de cliente SSL quando o [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) falhar com um **erro de certificado de autenticação de \_ \_ cliente WinHTTP \_ \_ \_ necessário**. Uma nova opção, **a \_ \_ lista de \_ \_ emissor \_ de certificado de cliente de opção WinHTTP**, permite que os aplicativos recuperem a lista de emissores de certificado e filtrem a lista para o certificado ideal. Para obter mais informações, consulte os tópicos [**sinalizadores de opção**](option-flags.md) e [recuperação da lista de emissor para autenticação de cliente SSL](ssl-in-winhttp.md) . Não há suporte para esse recurso no objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) .
+O aplicativo pode recuperar a lista de emissores do certificado do cliente SSL quando [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) falhar com um **ERRO \_ WINHTTP \_ CLIENT \_ AUTH \_ CERT \_ NEEDED**. Uma nova opção, **WINHTTP \_ OPTION CLIENT CERT \_ \_ \_ ISSUER \_ LIST,** permite que os aplicativos recuperem a Lista de Emissores do certificado e filtrem a lista para o certificado ideal. Para obter mais informações, consulte os [**tópicos Sinalizadores**](option-flags.md) de Opção e Recuperação de Lista de Emissores [para Autenticação de Cliente SSL.](ssl-in-winhttp.md) Não há suporte para esse recurso no [**objeto COM IWinHttpRequest.**](iwinhttprequest-interface.md)
 
 ## <a name="optional-client-certificates"></a>Certificados de cliente opcionais
 
-Quando o [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) falha com um erro de certificado de **autenticação de \_ cliente WinHTTP \_ \_ \_ \_ necessário**, o servidor pode não exigir o certificado de cliente SSL. O servidor pode ser capaz de reverter para outra forma de autenticação ou permitir que o cliente prossiga com o acesso anônimo. O aplicativo define a opção de **contexto de certificado de \_ cliente da opção \_ \_ \_ WinHTTP** e especifica uma macro que o WinHTTP usa para determinar se o certificado do cliente é necessário. Para obter mais informações, consulte [**sinalizadores de opção**](option-flags.md). Não há suporte para esse recurso no objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) .
+Quando [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) falha com um **ERRO \_ WINHTTP \_ CLIENT \_ AUTH \_ CERT \_ NEEDED**, o servidor pode não exigir o certificado do cliente SSL. O servidor pode ser capaz de reverter para outra forma de autenticação ou permitir que o cliente continue com acesso anônimo. O aplicativo define a **opção WINHTTP \_ OPTION CLIENT CERT \_ \_ \_ CONTEXT** e especifica uma macro que o WinHttp usa para determinar se o certificado do cliente é necessário. Para obter mais informações, consulte [**Sinalizadores de opção**](option-flags.md). Não há suporte para esse recurso no [**objeto COM IWinHttpRequest.**](iwinhttprequest-interface.md)
 
-## <a name="source-and-destination-ip-addresses"></a>Endereços IP de origem e de destino
+## <a name="source-and-destination-ip-addresses"></a>Endereços IP de origem e destino
 
-Quando o [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) é concluído, o aplicativo pode recuperar o endereço IP de origem e de destino e a porta da solicitação que gerou a resposta. Uma nova estrutura é fornecida para receber os endereços de origem e de destino quando a opção de **\_ informações de \_ conexão \_ da opção WinHTTP** está definida. Para obter mais informações, consulte [**sinalizadores de opção**](option-flags.md). Não há suporte para esse recurso no objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) .
+Quando [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) for concluído, o aplicativo poderá recuperar o endereço IP de origem e de destino e a porta da solicitação que gerou a resposta. Uma nova estrutura é fornecida para receber os endereços de origem e de destino quando a **opção WINHTTP \_ OPTION CONNECTION \_ \_ INFO** é definida. Para obter mais informações, consulte [**Sinalizadores de opção**](option-flags.md). Não há suporte para esse recurso no [**objeto COM IWinHttpRequest.**](iwinhttprequest-interface.md)
 
-## <a name="additional-ssl-client-authentication-errors"></a>Erros de autenticação de cliente SSL adicionais
+## <a name="additional-ssl-client-authentication-errors"></a>Erros adicionais de autenticação de cliente SSL
 
-Erros adicionais de autenticação de cliente SSL fornecem mais informações sobre o certificado de cliente SSL. **Erro \_ do O certificado do \_ cliente WinHTTP \_ não é \_ uma \_ \_ chave privada** e o **erro \_ WinHTTP \_ CERT \_ no \_ Access \_ \_ chave privada não acesso** erros de certificado de cliente são novos para o Windows Server 2008 e o Windows Vista. O objeto com [**IWinHttpRequest**](iwinhttprequest-interface.md) retorna esses erros em um HRESULT.
+Erros adicionais de autenticação de cliente SSL fornecem mais informações sobre o certificado do cliente SSL. **ERRO \_ WINHTTP \_ CLIENT CERT NO PRIVATE \_ \_ \_ \_ KEY** and **ERROR \_ WINHTTP \_ CERT NO ACCESS PRIVATE KEY \_ \_ \_ \_ certificate** certificate errors are new for Windows Server 2008 and Windows Vista. O [**objeto COM IWinHttpRequest**](iwinhttprequest-interface.md) retorna esses erros em um HRESULT.
 
  
 

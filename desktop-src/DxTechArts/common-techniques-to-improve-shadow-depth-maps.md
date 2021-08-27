@@ -4,12 +4,12 @@ description: Este artigo técnico fornece uma visão geral de alguns algoritmos 
 ms.assetid: bf994838-a261-0379-9301-eb9b250d216c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b25507d7f6b8608d4dacf5fab620bc8a3294c7
-ms.sourcegitcommit: 218b1ff779402c3ebe1786679e1aa80a5c0d6c95
+ms.openlocfilehash: aafff1b537830ae0ee681ed32932cca2b6274a4d9da3e0471ef498e0bef2d483
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "103641952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102428"
 ---
 # <a name="common-techniques-to-improve-shadow-depth-maps"></a>Técnicas comuns para aprimorar os mapas de profundidade de sombra
 
@@ -23,7 +23,7 @@ Selecionar as técnicas corretas para mitigar artefatos específicos não é tri
 
 ![sombras com artefatos graves (à esquerda) e sombras após a implementação das técnicas descritas neste artigo (à direita)](images/shadows-before-and-after.jpg)
 
-## <a name="shadow-depth-maps-review"></a>Análise de mapas de profundidade de sombra
+## <a name="shadow-depth-maps-review"></a>profundidade da sombra Mapas revisão
 
 O algoritmo de mapa de profundidade de sombra é um algoritmo de duas passagens. A primeira passagem gera um mapa de profundidade em espaço leve. Na segunda passagem, esse mapa é usado para comparar a profundidade de cada pixel em espaço leve em relação à sua profundidade correspondente no mapa de profundidade de espaço claro.
 
@@ -51,7 +51,7 @@ O sombreador de pixel recebe a posição interpolada e as coordenadas de textura
 
 ![segunda passagem de mapeamento de sombra básica](images/second-pass-of-basic-shadow-mapping.png)
 
-## <a name="shadow-map-artifacts"></a>Artefatos de mapa de sombra
+## <a name="shadow-map-artifacts"></a>Artifacts de mapa de sombra
 
 O algoritmo de mapa de profundidade de sombra é o algoritmo de sombreamento em tempo real mais amplamente usado, mas ainda produz vários artefatos que exigem mitigação. Os tipos de artefatos que podem ocorrer são resumidos a seguir.
 
@@ -113,7 +113,7 @@ Na imagem à esquerda, a sombra é desanexada do objeto, criando um efeito flutu
 
 Uma técnica para remover a superfície acne é adicionar algum valor à posição de pixel em espaço leve; Isso é chamado de adição de um deslocamento de profundidade. Peter panorâmica resultados quando o deslocamento de profundidade usado é muito grande. Nesse caso, o deslocamento de profundidade faz com que o teste de profundidade passe erroneamente. Como o Shadow acne, Peter panorâmica é agravadas quando não há precisão suficiente no buffer de profundidade. Calcular os planos próximos e os planos distantes também ajuda a evitar Peter panorâmica.
 
-## <a name="techniques-to-improve-shadow-maps"></a>Técnicas para melhorar os mapas de sombra
+## <a name="techniques-to-improve-shadow-maps"></a>Técnicas para melhorar o Mapas de sombra
 
 Adicionar sombras a um título é um processo. A primeira etapa é obter mapas de sombra básicos funcionando. A segunda é garantir que todos os cálculos básicos sejam concluídos de maneira ideal: Frusta se ajustam o mais rigidamente possível, os planos próximos/distantes se encaixam rigidamente, a tendência de escala de inclinação é usada e assim por diante. Depois que as sombras básicas estiverem habilitadas e a melhor aparência possível, o desenvolvedor terá uma ideia mais adequada de quais algoritmos são necessários para obter as sombras a uma fidelidade suficiente. Dicas básicas que podem ser necessárias para obter mapas de sombra básicos que examinam seus melhores são fornecidos nesta seção.
 
@@ -155,7 +155,7 @@ O buffer de profundidade pode ser de 16 bits, de 24 bits ou de 32 bits, com valo
 
 Uma maneira fácil e simples de calcular o plano próximo e o avião é transformar o volume delimitador da cena em espaço leve. O menor valor de coordenada Z é o plano próximo e o maior valor de coordenada Z é o plano distante. Para muitas configurações da cena e da luz, essa abordagem é suficiente. No entanto, o pior cenário pode resultar em uma perda significativa de precisão no buffer de profundidade; A Figura 13 mostra esse cenário. Aqui, a faixa do plano próximo ao plano distante é quatro vezes maior do que o necessário.
 
-A exibição frustum na Figura 13 foi intencionalmente escolhida para ser pequena. Uma pequena exibição frustum é mostrada em uma cena muito grande que consiste em pilares que se estendem da câmera de exibição. Usar o AABB de cena para os planos próximos e distantes não é o ideal. O algoritmo CSM descrito no artigo técnico [mapas de sombra em cascata](/windows/desktop/DxTechArts/cascaded-shadow-maps) deve calcular planos próximos e distantes para frustums muito pequenos.
+A exibição frustum na Figura 13 foi intencionalmente escolhida para ser pequena. Uma pequena exibição frustum é mostrada em uma cena muito grande que consiste em pilares que se estendem da câmera de exibição. Usar o AABB de cena para os planos próximos e distantes não é o ideal. o algoritmo CSM descrito na [sombra em cascata Mapas](/windows/desktop/DxTechArts/cascaded-shadow-maps) artigo técnico deve calcular planos próximos e distantes para frustums muito pequenos.
 
 **Figura 13. Planos próximos e distantes com base em AABB de cena**
 
@@ -266,16 +266,16 @@ Também é importante certificar-se de que a direção que a geometria está enf
 
 ## <a name="summary"></a>Resumo
 
-As técnicas descritas neste artigo podem ser usadas para aumentar a qualidade dos mapas de sombra padrão. A próxima etapa é examinar as técnicas que podem funcionar bem com mapas de sombra padrão. CSMs são recomendadas como uma técnica superior para combater o alias de perspectiva. A filtragem mais próxima ou os mapas de sombra de variação podem ser usados para suavizar as bordas de sombra. Consulte o artigo técnico [mapas de sombra em cascata](/windows/desktop/DxTechArts/cascaded-shadow-maps) para obter mais informações.
+As técnicas descritas neste artigo podem ser usadas para aumentar a qualidade dos mapas de sombra padrão. A próxima etapa é examinar as técnicas que podem funcionar bem com mapas de sombra padrão. CSMs são recomendadas como uma técnica superior para combater o alias de perspectiva. A filtragem mais próxima ou os mapas de sombra de variação podem ser usados para suavizar as bordas de sombra. consulte o artigo técnico [Mapas de sombra em cascata](/windows/desktop/DxTechArts/cascaded-shadow-maps) para obter mais informações.
 
-Donnelly, W. e Lauritzen, A. [mapas de sombra de variância](https://portal.acm.org/citation.cfm?doid=1111411.1111440). Symposium em gráficos 3D interativos, procedimentos de Symposium de 2006 em jogos e gráficos 3D interativos. 2006, pp. 161 – 165.
+Donnelly, W. e Lauritzen, A [mapas sombra de variação](https://portal.acm.org/citation.cfm?doid=1111411.1111440). Symposium em gráficos 3D interativos, procedimentos de Symposium de 2006 em jogos e gráficos 3D interativos. 2006, pp. 161 – 165.
 
-Engel, Woflgang F. section 4. Mapas de sombra em cascata. ShaderX5, *técnicas de renderização avançadas*, Wolfgang F. Engel, Ed. Charles River Media, Boston, Massachusetts. 2006. PP. 197 – 206.
+Engel, Woflgang F. section 4. Mapas de sombra em cascata. ShaderX5, *técnicas de renderização avançadas*, Wolfgang F. Engel, Ed. Charles River Media, Boston, Massachusetts. 2066h PP. 197 – 206.
 
 Stamminger, Marc e Drettakis, George. [Mapas de sombra em perspectiva](https://portal.acm.org/citation.cfm?id=566616). Conferência Internacional em gráficos de computador e técnicas interativas, *procedimentos da conferência anual de 29 em gráficos de computador e técnicas interativas*. 2002, PP 557 – 562.
 
-Wimmer, M., Scherzer, D., e Purgathofer, W. [Light Space perspectiva sombra mapas](https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows_egsr2004_revised.pdf). Eurographics Symposium na renderização. 2004. Revisado em 10 de junho de 2005. [Technische Universität Wien](https://www.cg.tuwien.ac.at/research/vr/lispsm/).
+Wimmer, M., Scherzer, D. e Purgathofer, W. [mapas sombra da perspectiva do espaço](https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows_egsr2004_revised.pdf). Eurographics Symposium na renderização. 2064h Revisado em 10 de junho de 2005. [Technische Universität Wien](https://www.cg.tuwien.ac.at/research/vr/lispsm/).
 
- 
+ 
 
- 
+ 

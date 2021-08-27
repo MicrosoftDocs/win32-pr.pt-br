@@ -1,5 +1,5 @@
 ---
-description: Representa a classe de tipo de evento para criação de identificador ou eventos de fechamento.
+description: Representa a classe de tipo de evento para eventos de criação ou fechamento de identificador.
 ms.assetid: 39d27cdf-fa51-4fb1-8998-7150ca627eff
 title: Classe ObHandleEvent
 ms.topic: reference
@@ -16,16 +16,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ae293684bd09322c7193035d374e5e2bad21447f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eec4e0eb00f7c821e3977f448d9c1af7e286d72a21a0a1b9473a6d3cd8fa3451
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083216"
 ---
 # <a name="obhandleevent-class"></a>Classe ObHandleEvent
 
-Representa a classe de tipo de evento para criação de identificador ou eventos de fechamento.
+Representa a classe de tipo de evento para eventos de criação ou fechamento de identificador.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -44,26 +44,26 @@ class ObHandleEvent : ObTrace
 
 ## <a name="members"></a>Membros
 
-A classe **ObHandleEvent** tem estes tipos de membros:
+A **classe ObHandleEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **ObHandleEvent** tem essas propriedades.
+A **classe ObHandleEvent** tem essas propriedades.
 
 <dl> <dt>
 
 **Handle**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Format**](event-tracing-mof-qualifiers.md) ("x"), [**WmiDataId**](event-tracing-mof-qualifiers.md) (2)
+Qualificadores: [**formato**](event-tracing-mof-qualifiers.md) ("x"), [**WmiDataId**](event-tracing-mof-qualifiers.md) (2)
 </dt> </dl>
 
 O identificador de objeto.
@@ -73,13 +73,13 @@ O identificador de objeto.
 **Objeto**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Format**](event-tracing-mof-qualifiers.md) ("x"), [**pointer**](event-tracing-mof-qualifiers.md), [**WmiDataId**](event-tracing-mof-qualifiers.md) (1)
+Qualificadores: [**Formato**](event-tracing-mof-qualifiers.md) ("x"), [**Ponteiro**](event-tracing-mof-qualifiers.md), [**WmiDataId**](event-tracing-mof-qualifiers.md) (1)
 </dt> </dl>
 
 O objeto.
@@ -95,7 +95,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Format**](event-tracing-mof-qualifiers.md) ("w"), [**StringTermination**](event-tracing-mof-qualifiers.md) ("NullTerminated"), [**WmiDataId**](event-tracing-mof-qualifiers.md) (4)
+Qualificadores: [**formato**](event-tracing-mof-qualifiers.md) ("w"), [**StringTermination**](event-tracing-mof-qualifiers.md) ("NullTerminated"), [**WmiDataId**](event-tracing-mof-qualifiers.md) (4)
 </dt> </dl>
 
 O nome do objeto.
@@ -105,7 +105,7 @@ O nome do objeto.
 **ObjectType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -124,9 +124,9 @@ O tipo de objeto.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

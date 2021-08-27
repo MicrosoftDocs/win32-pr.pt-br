@@ -1,33 +1,33 @@
 ---
 description: Windows Server 2008.
 ms.assetid: 2f7b62f8-ba1e-42d2-8872-38d4475e4a2a
-title: O que há de novo no VSS no Windows Server 2008 e no Windows Vista SP1
+title: Novidades no VSS no Windows Server 2008 e Windows Vista SP1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f053e327a7a54a9597bc06836b37c00effc62f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83ee109eec31c084dc43fb9e0cc6341f443a16e6aa06ac989a7f328d9bb3011f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006116"
 ---
-# <a name="whats-new-in-vss-in-windows-server-2008-and-windows-vista-sp1"></a>O que há de novo no VSS no Windows Server 2008 e no Windows Vista SP1
+# <a name="whats-new-in-vss-in-windows-server-2008-and-windows-vista-sp1"></a>Novidades no VSS no Windows Server 2008 e Windows Vista SP1
 
-O Windows Server 2008 e o Windows Vista com Service Pack 1 (SP1) apresentam as seguintes alterações na Serviço de Cópias de Sombra de Volume.
+Windows O Server 2008 e Windows Vista com Service Pack 1 (SP1) introduzem as seguintes alterações ao Serviço de Cópias de Sombra de Volume.
 
 > [!Note]  
-> Todas as alterações do Windows Vista se aplicam ao Windows Server 2008 e ao Windows Vista com SP1. Para obter detalhes sobre essas alterações, consulte [o que há de novo no VSS no Windows Vista](what-s-new-in-vss-in-windows-vista.md).
+> Todas as alterações do Windows Vista se aplicam ao Windows Server 2008 e Windows Vista com SP1. Para obter detalhes sobre essas alterações, consulte [Novidades no VSS no Windows Vista](what-s-new-in-vss-in-windows-vista.md).
 
  
 
--   [Novas interfaces VSS](#new-vss-interfaces)
--   [Novas enumerações VSS](#new-vss-enumerations)
--   [Novas estruturas VSS](#new-vss-structures)
+-   [Novas interfaces vss](#new-vss-interfaces)
+-   [Novas enumerações vss](#new-vss-enumerations)
+-   [Novas estruturas vss](#new-vss-structures)
 -   [Modificações de enumeração do VSS existentes](#existing-vss-enumeration-modifications)
--   [Modificações de interface VSS existentes](#existing-vss-interface-modifications)
--   [Novos gravadores VSS](#new-vss-writers)
+-   [Modificações de interface do VSS existentes](#existing-vss-interface-modifications)
+-   [Novos vss writers](#new-vss-writers)
 
-## <a name="new-vss-interfaces"></a>Novas interfaces VSS
+## <a name="new-vss-interfaces"></a>Novas interfaces vss
 
 <dl>
 
@@ -35,27 +35,27 @@ O Windows Server 2008 e o Windows Vista com Service Pack 1 (SP1) apresentam as s
 [**IVssHardwareSnapshotProviderEx**](/windows/desktop/api/VsProv/nn-vsprov-ivsshardwaresnapshotproviderex)  
 </dl>
 
-## <a name="new-vss-enumerations"></a>Novas enumerações VSS
+## <a name="new-vss-enumerations"></a>Novas enumerações vss
 
 <dl>
 
-[**\_\_Opções de hardware do VSS \_**](/windows/desktop/api/Vss/ne-vss-vss_hardware_options)  
-[**\_falha na proteção VSS \_**](/windows/desktop/api/VsMgmt/ne-vsmgmt-vss_protection_fault)  
-[**\_nível de proteção VSS \_**](/windows/desktop/api/VsMgmt/ne-vsmgmt-vss_protection_level)  
+[**\_OPÇÕES DE \_ HARDWARE \_ DO VSS**](/windows/desktop/api/Vss/ne-vss-vss_hardware_options)  
+[**FALHA DE PROTEÇÃO DO VSS \_ \_**](/windows/desktop/api/VsMgmt/ne-vsmgmt-vss_protection_fault)  
+[**NÍVEL DE PROTEÇÃO DO VSS \_ \_**](/windows/desktop/api/VsMgmt/ne-vsmgmt-vss_protection_level)  
 </dl>
 
-## <a name="new-vss-structures"></a>Novas estruturas VSS
+## <a name="new-vss-structures"></a>Novas estruturas vss
 
 <dl>
 
-[**\_informações de \_ proteção de volume do VSS \_**](/windows/desktop/api/VsMgmt/ns-vsmgmt-vss_volume_protection_info)  
+[**INFORMAÇÕES DE \_ PROTEÇÃO DE VOLUME \_ DO VSS \_**](/windows/desktop/api/VsMgmt/ns-vsmgmt-vss_volume_protection_info)  
 </dl>
 
 ## <a name="existing-vss-enumeration-modifications"></a>Modificações de enumeração do VSS existentes
 
 <dl> <dt>
 
-<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VSS \_ Enumeração de \_ esquema de backup**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)
+<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VSS \_ Enumeração \_ DE ESQUEMA**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema) DE BACKUP
 </dt> <dd>
 
 <dl> <dt>
@@ -63,13 +63,13 @@ O Windows Server 2008 e o Windows Vista com Service Pack 1 (SP1) apresentam as s
 <span id="Added_value_"></span><span id="added_value_"></span><span id="ADDED_VALUE_"></span>Valor adicionado:
 </dt> <dd>
 
-o \_ gravador do VSS BS \_ \_ dá suporte a \_ \_ restaurações paralelas
+O VSS \_ BS \_ WRITER DÁ SUPORTE \_ A \_ \_ RESTAURAÇÕES PARALELAS
 
 </dd> </dl> </dd> </dl>
 
 <dl> <dt>
 
-<span id="_VSS_VOLUME_SNAPSHOT_ATTRIBUTES_enumeration"></span><span id="_vss_volume_snapshot_attributes_enumeration"></span><span id="_VSS_VOLUME_SNAPSHOT_ATTRIBUTES_ENUMERATION"></span>Enumeração de [**\_ \_ atributos de \_ instantâneo \_ de volume do VSS**](/windows/desktop/api/Vss/ne-vss-vss_volume_snapshot_attributes)
+<span id="_VSS_VOLUME_SNAPSHOT_ATTRIBUTES_enumeration"></span><span id="_vss_volume_snapshot_attributes_enumeration"></span><span id="_VSS_VOLUME_SNAPSHOT_ATTRIBUTES_ENUMERATION"></span>Enumeração [**\_ ATRIBUTOS DE INSTANTÂNEO DE \_ VOLUME \_ \_ DO VSS**](/windows/desktop/api/Vss/ne-vss-vss_volume_snapshot_attributes)
 </dt> <dd>
 
 <dl> <dt>
@@ -77,13 +77,13 @@ o \_ gravador do VSS BS \_ \_ dá suporte a \_ \_ restaurações paralelas
 <span id="Added_values_"></span><span id="added_values_"></span><span id="ADDED_VALUES_"></span>Valores adicionados:
 </dt> <dd>
 
-metainstantâneo do VSS \_ VOLSNAP \_ attr \_ atrasado \_
+VSS \_ VOLSNAP \_ ATTR \_ \_ POSTNAPSHOT ATRASADO
 
-\_recuperação de \_ TxF de attr \_ \_ do VSS VOLSNAP
+VSS \_ VOLSNAP \_ ATTR \_ TXF \_ RECOVERY
 
 </dd> </dl> </dd> </dl>
 
-## <a name="existing-vss-interface-modifications"></a>Modificações de interface VSS existentes
+## <a name="existing-vss-interface-modifications"></a>Modificações de interface do VSS existentes
 
 <dl> <dt>
 
@@ -99,17 +99,17 @@ metainstantâneo do VSS \_ VOLSNAP \_ attr \_ atrasado \_
 
 </dd> </dl> </dd> </dl>
 
-## <a name="new-vss-writers"></a>Novos gravadores VSS
+## <a name="new-vss-writers"></a>Novos vss writers
 
-O Windows Server 2008 e o Windows Vista com SP1 apresentam os seguintes gravadores VSS:
+Windows O Server 2008 e Windows Vista com SP1 apresentam os seguintes autores VSS:
 
--   Gravador de configuração do IIS
--   Gravador de metabase do IIS
--   Gravador VSS do NPS
--   Gravador VSS do gateway de Serviços de Área de Trabalho Remota (serviços de terminal)
--   Gravador VSS de licenciamento do Serviços de Área de Trabalho Remota (serviços de terminal)
+-   IIS Configuration Writer
+-   IIS Metabase Writer
+-   NPS VSS Writer
+-   Serviços de Área de Trabalho Remota vss do gateway (Serviços de Terminal)
+-   Serviços de Área de Trabalho Remota vss writer de licenciamento (Serviços de Terminal)
 
-Esses gravadores são documentados em [gravadores VSS](in-box-vss-writers.md)integrados.
+Esses autores estão documentados em [In-Box VSS Writers](in-box-vss-writers.md).
 
  
 

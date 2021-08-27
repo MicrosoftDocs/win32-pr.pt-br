@@ -4,23 +4,23 @@ description: Atributo VML MSO-Wrap-Distance-Bottom
 ms.assetid: b096fc67-dd99-4833-bb82-73de7b06f43c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7c3ec66ae23994184227d857e269318606d9ea4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33e28ea0f2d84b9bf9f5981f9ebb22f15af75a2071f07dd9f3e006ac70b34256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007676"
 ---
 # <a name="vml-mso-wrap-distance-bottom-attribute"></a>Atributo VML MSO-Wrap-Distance-Bottom
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a distância do lado inferior da forma com o texto que é quebrado em seu lugar. Leitura/gravação. **Cadeia de caracteres**.
+Define a distância do lado inferior da forma para o texto que a envolve. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,13 +28,13 @@ Define a distância do lado inferior da forma com o texto que é quebrado em seu
 
 **Sintaxe de marca**
 
-<v: *elemento* Style = "Die-Wrap-Distance-bottom: *expression* " >
+<v: *element* style="mso-wrap-distance-bottom: *expression* ">
 
 **Comentários**
 
-Observe que esse atributo é diferente do atributo de **margem** CSS. **Margin** altera a origem da forma para incluir as áreas de margem, mas a distância de encapsulamento em Microsoft Office não altera a origem da forma.
+Observe que esse atributo é diferente do atributo **Margem** CSS. **A** margem altera a origem da forma para incluir as áreas de margem, mas a distância de quebra Microsoft Office não altera a origem da forma.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
@@ -52,6 +52,6 @@ A forma tem uma distância de quebra inferior de 10 pontos.
 
 
 
- 
+ 
 
- 
+ 

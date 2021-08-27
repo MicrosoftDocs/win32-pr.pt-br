@@ -3,13 +3,13 @@ title: Uso de perfis de dispositivo com o WCS
 description: Os perfis de dispositivo são uma ferramenta básica para o gerenciamento de cores.
 ms.assetid: 9ea420ad-dcf1-4ba9-b739-308be7a56a6c
 keywords:
-- WCS (sistema de cores do Windows), perfis de dispositivo
-- WCS (sistema de cores do Windows), perfis de dispositivo
+- Windows Sistema de cores (WCS), perfis de dispositivo
+- WCS (Windows sistema de cores), perfis de dispositivo
 - gerenciamento de cores de imagem, perfis de dispositivo
 - gerenciamento de cores, perfis de dispositivo
 - cores, perfis de dispositivo
-- WCS (sistema de cores do Windows), perfis
-- WCS (sistema de cores do Windows), perfis
+- Windows Sistema de cores (WCS), perfis
+- WCS (Windows sistema de cores), perfis
 - gerenciamento de cores de imagem, perfis
 - gerenciamento de cores, perfis
 - cores, perfis
@@ -19,12 +19,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf58b46cbee67d437e7d6fe343c7f3a0fab451b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1c8211ff883f8e30e7b67b0168e6da980744b252cbb1b89412fc834ac6370cca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105773944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090066"
 ---
 # <a name="using-device-profiles-with-wcs"></a>Uso de perfis de dispositivo com o WCS
 

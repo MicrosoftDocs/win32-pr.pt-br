@@ -3,7 +3,7 @@ title: Função ExtTextOutWrap
 description: Desenha o texto usando a fonte, a cor do plano de fundo e a cor do texto selecionados no momento. Opcionalmente, você pode fornecer dimensões a serem usadas para recorte, opacidade ou ambos. Essa função encapsula uma chamada para ExtTextOut.
 ms.assetid: 0804c231-53f9-4de6-b703-0077cdcebcb5
 keywords:
-- Controles do Windows da função ExtTextOutWrap
+- controles de Windows de função ExtTextOutWrap
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a173fedb7d8534dbd926a8a147e833435a7710b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 934a8d203cf232a339db46e97783e87c075e5bb949ec5d23e20a7b1874ea6ef2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047266"
 ---
 # <a name="exttextoutwrap-function"></a>Função ExtTextOutWrap
 
-\[O **ExtTextOutWrap** está disponível por meio do Windows XP com Service Pack 2 (SP2). Ele pode ser alterado ou indisponível nas versões subsequentes. Em vez disso, é recomendável usar o [**ExtTextOut**](/windows/desktop/api/wingdi/nf-wingdi-exttextouta) diretamente.\]
+\[o **ExtTextOutWrap** está disponível por meio do Windows XP com Service Pack 2 (SP2). Ele pode ser alterado ou indisponível nas versões subsequentes. Em vez disso, é recomendável usar o [**ExtTextOut**](/windows/desktop/api/wingdi/nf-wingdi-exttextouta) diretamente.\]
 
 Desenha o texto usando a fonte, a cor do plano de fundo e a cor do texto selecionados no momento. Opcionalmente, você pode fornecer dimensões a serem usadas para recorte, opacidade ou ambos. Essa função encapsula uma chamada para [**ExtTextOut**](/windows/desktop/api/wingdi/nf-wingdi-exttextouta).
 
@@ -88,9 +88,9 @@ Valores que especificam como usar o retângulo definido pelo aplicativo. Consult
 *lprc* \[ no\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \** _
+Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
 
-Um ponteiro para uma estrutura opcional [_ *Rect* *](/previous-versions//dd162897(v=vs.85)) que especifica as dimensões, em coordenadas lógicas, de um retângulo usado para recorte, opacidade ou ambos.
+Um ponteiro para uma estrutura de [**Rect**](/previous-versions//dd162897(v=vs.85)) opcional que especifica as dimensões, em coordenadas lógicas, de um retângulo usado para recorte, opacidade ou ambos.
 
 </dd> <dt>
 
@@ -115,13 +115,13 @@ O comprimento da cadeia de caracteres, em bytes, apontado por *LPSTR*.
 *lpDx* \[ no\]
 </dt> <dd>
 
-Tipo: **const [**int**](/windows/desktop/WinProg/windows-data-types) \** _
+Tipo: **const [**int**](/windows/desktop/WinProg/windows-data-types) \***
 
-Um ponteiro para uma matriz opcional de valores que indicam a distância entre as origens das células de caracteres adjacentes. Por exemplo, _lpDx \[ unidades lógicas * x separam \] as origens da célula de caractere x e da célula de caractere (x + 1).
+Um ponteiro para uma matriz opcional de valores que indicam a distância entre as origens das células de caracteres adjacentes. Por exemplo,  \[ as unidades lógicas lpDx x separam \] as origens da célula de caractere x e da célula de caractere (x + 1).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
 
@@ -143,8 +143,8 @@ Para comentários adicionais, consulte [**ExtTextOut**](/windows/desktop/api/win
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                                 |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                           |
 | DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 6,0 ou posterior)</dt> </dl> |
 
 

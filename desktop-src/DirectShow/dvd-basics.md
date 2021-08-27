@@ -4,12 +4,12 @@ ms.assetid: 08357ff5-4606-4bfc-8dd6-907aca4b5f07
 title: Noções básicas de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94d0b2af8bc16fa0890c0103a063e750364cece0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2a61299c4c0d3e83235a741c262efae685aa74ffa525aa08f9cf9a2e58b957e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105758474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102936"
 ---
 # <a name="dvd-basics"></a>Noções básicas de DVD
 
@@ -31,7 +31,7 @@ Observe que as legendas em um fluxo de subimagem não são as mesmas que as lege
 
 **Títulos e capítulos**
 
-O conteúdo de vídeo em um DVD é dividido em *títulos* e *menus*. Os títulos são divididos em unidades que a especificação de DVD chama *de partes de títulos* (PTTS). Com mais frequência, eles são chamados de *cenas* ou *capítulos*. (A documentação do DirectShow usa o termo capítulo.) O Visualizador pode navegar para títulos ou capítulos específicos em títulos.
+O conteúdo de vídeo em um DVD é dividido em *títulos* e *menus*. Os títulos são divididos em unidades que a especificação de DVD chama *de partes de títulos* (PTTS). Com mais frequência, eles são chamados de *cenas* ou *capítulos*. (a documentação do DirectShow usa o termo capítulo.) O Visualizador pode navegar para títulos ou capítulos específicos em títulos.
 
 O autor de um DVD decide como dividir o conteúdo em títulos e capítulos. Quando um DVD contém um filme de tamanho de recurso, o filme inteiro geralmente é colocado em um título, dividido em capítulos para os bastidores individuais. Recursos adicionais no DVD, como trailers ou cenas excluídos, são colocados em títulos separados. No entanto, essas divisões são arbitrárias e muitos DVDs são organizados de forma diferente.
 
@@ -64,19 +64,19 @@ Um título ou capítulo também pode conter PMLs temporários, cujo conteúdo é
 
 **Domínios**
 
-O termo *domínio* refere-se ao estado interno de um DVD Player; Não é algo criado no disco. Os domínios são importantes porque alguns comandos de DVD são válidos apenas em determinados domínios. O DirectShow fornece uma maneira de consultar o domínio atual e ser notificado quando o domínio for alterado. Os seguintes domínios são definidos:
+O termo *domínio* refere-se ao estado interno de um DVD Player; Não é algo criado no disco. Os domínios são importantes porque alguns comandos de DVD são válidos apenas em determinados domínios. DirectShow fornece uma maneira de consultar o domínio atual e ser notificado quando o domínio for alterado. Os seguintes domínios são definidos:
 
 -   **Primeira reprodução.** Nesse domínio, o DVD Player acabou de começar a reproduzir o DVD. Depois de entrar no primeiro domínio de reprodução, o player alterna para outro domínio — um domínio de menu ou o domínio de título, dependendo do disco.
 -   **Menu Gerenciador de vídeo.** O player está mostrando o menu Gerenciador de vídeos, também chamado de menu de título.
 -   **Menu VTS.** O player está mostrando um menu associado a um conjunto de título de vídeo, o menu raiz ou um submenu (áudio, subimagem, ângulo ou capítulo).
 -   **Título.** O player está reproduzindo vídeo em um título.
--   **Deixar.** O Player não está exibindo nada. (Estritamente falando, a especificação de DVD não chama esse estado de um domínio, mas pode ser tratada como uma.)
+-   **Deixar.** O player não está exibindo nada. (Estritamente falando, a especificação de DVD não chama esse estado de domínio, mas pode ser tratada como um.)
 
-O domínio pode ser considerado como uma variável de estado que um DVD Player monitora, a fim de controlar o tipo de conteúdo que o player está lendo atualmente do disco. os players de DVD usam domínios para evitar a emissão de comandos sem sentido na unidade de DVD.
+O domínio pode ser pensado como uma variável de estado que um player de DVD monitora, para manter o controle do tipo de conteúdo que o player está lendo no momento do disco. Os players de DVD usam domínios para evitar a emissão de comandos sem sentido para a unidade de DVD.
 
 **Controles de operação do usuário**
 
-Os UOPs (controles de operação do usuário) são marcadores em um disco que os autores de DVD podem inserir em qualquer lugar para restringir as opções de navegação do usuário. A maioria dos discos segue as restrições de UOP padrão. Por exemplo, a maioria dos discos não permite que o visualizador avance rapidamente ou mostre um menu enquanto estiver no primeiro domínio de reprodução. Em princípio, cada disco pode inserir qualquer comando UOP em qualquer ponto no disco, mesmo que o comando seja válido no domínio atual. Por exemplo, um disco pode ser criado para não permitir o encaminhamento rápido em um determinado título ou para impedir que um menu específico seja mostrado depois que o usuário inserir o domínio do título. O navegador de DVD está em conformidade com todos esses comandos do disco e não permitirá que um aplicativo substitua os controles UOP do disco.
+Os UOPs (Controles de Operação do Usuário) são marcadores em um disco que os autores de DVD podem inserir em qualquer lugar para restringir as opções de navegação do usuário. A maioria dos discos segue restrições de UOP padrão. Por exemplo, a maioria dos discos não permite que o visualizador avance ou mostre um menu enquanto estiver no domínio First Play. Em princípio, cada disco pode inserir qualquer comando UOP em qualquer ponto do disco, mesmo que o comando seja válido dentro do domínio atual. Por exemplo, um disco pode ser autor para não permitir o encaminhamento rápido em um determinado título ou impedir que um menu específico seja mostrado depois que o usuário entrar no domínio de título. O Navegador de DVD está em conformidade com todos esses comandos do disco e não permitirá que um aplicativo substitua os controles UOP do disco.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

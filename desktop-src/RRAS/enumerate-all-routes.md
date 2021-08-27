@@ -4,12 +4,12 @@ description: O procedimento a seguir descreve as etapas usadas para enumerar qua
 ms.assetid: 78a50e4a-f3c7-4a0d-a528-18d35b66369d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c927665cab8d4db492d3a2c5f8e9363fc1fe7be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c5f8707c7cf78f274fedaca3fb4882ae36dbd569ab5fa1260ec3b6cb663aced3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101846"
 ---
 # <a name="enumerate-all-routes"></a>Enumerar todas as rotas
 
@@ -25,7 +25,7 @@ O procedimento a seguir descreve as etapas usadas para enumerar qualquer uma das
 > [!Note]  
 > As rotas que estão no estado suspenso são enumeradas somente quando um cliente solicita dados de todas as exibições usando a \_ máscara de exibição RTM \_ \_ .
 
- 
+ 
 
 O código de exemplo a seguir mostra como enumerar todas as rotas na tabela de roteamento.
 
@@ -88,9 +88,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

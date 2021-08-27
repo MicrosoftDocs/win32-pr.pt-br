@@ -1,45 +1,45 @@
 ---
 title: Alterando interfaces de maneira compatível com versões anteriores
-description: Os métodos explicados na teoria do controle de versão para RPC e COM podem ser inaceitáveis por vários motivos.
+description: Os métodos explicados em The Versioning Theory para RPC e COM podem ser inaceitáveis por muitos motivos.
 ms.assetid: 7dec4b67-3d50-453f-b0ef-290d091186fd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 314daecc6b55aaf4a348411010eb578149f86921
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8fbe06be3106b4c599baed2d625eefa1f9c7d035c70ef89ac325406bb8c2037d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022956"
 ---
 # <a name="changing-interfaces-in-a-backward-compatible-manner"></a>Alterando interfaces de maneira compatível com versões anteriores
 
-Os métodos explicados na [teoria do controle de versão para RPC e com](the-versioning-theory-for-rpc-and-com.md) podem ser inaceitáveis por vários motivos. A alteração de uma versão de interface de acordo com as regras requer basicamente que novos clientes não se comuniquem com servidores antigos. Isso geralmente é impossível com software comercial implantado no campo. Às vezes, o Windows introduziu alterações de interface ausentes de GUIDs ou versões alteradas. Isso foi resultado de novos clientes que precisam se comunicar com servidores herdados e porque a solução que um novo cliente ofereceria às interfaces antiga e nova foi considerada indesejável.
+Os métodos explicados em [The Versioning Theory para RPC e COM](the-versioning-theory-for-rpc-and-com.md) podem ser inaceitáveis por muitos motivos. Alterar uma versão de interface de acordo com as regras exige essencialmente que novos clientes não se comuniquem com servidores antigos. Isso geralmente é impossível com o software comercial implantado no campo. Às vezes, Windows introduziu alterações de interface ausentes de GUIDs ou versões alteradas. Isso foi resultado da necessidade de novos clientes se comunicarem com servidores herdados e porque a solução que um novo cliente poderia dar suporte às interfaces antiga e nova era considerada indesejável.
 
 ## <a name="best-practice"></a>Melhor prática
 
-Esses são os métodos razoáveis de trabalhar em relação ao problema de incompatibilidade de conexão quando o GUID e a versão da interface não podem ser alterados.
+Esses são os métodos razoáveis de trabalhar em torno do problema de incompatibilidade de transmissão quando o GUID e a versão da interface não podem ser alterados.
 
-1.  Faça com que o aplicativo esteja ciente dos recursos do outro lado.
+1.  Que o aplicativo esteja ciente das funcionalidades do outro lado.
 
-    O cliente e o servidor têm um protocolo que permite que cada um (ou pelo menos o novo cliente) estabeleça a identidade do parceiro. Normalmente, é suficiente que o novo cliente esteja ciente dos recursos com suporte dos servidores novos e antigos. Isso pode ser feito facilmente quando um aplicativo mantém em um contexto de conexão e tem suporte por meio de um tipo *XxxGetInfo* de chamada de função executado pelo cliente antes de executar qualquer operação RPC. Quando um aplicativo gerencia os recursos em uma base de versão por servidor, uma chamada com uma incompatibilidade para o servidor/cliente antigo nunca pode ocorrer, já que o aplicativo controla quais chamadas são emitidas para qual servidor. O resultado final é que o aplicativo é proativo para impedir que uma incompatibilidade ocorra. Isso pode ser realizado em conjunto com a segunda prática.
+    O cliente e o servidor têm um protocolo que permite que cada (ou pelo menos o novo cliente) estabeleça a identidade do parceiro. Normalmente, é suficiente que o novo cliente esteja ciente dos recursos com suporte em servidores novos e antigos. Isso pode ser feito facilmente quando um aplicativo mantém um contexto de conexão e tem suporte por meio de um tipo *XxxGetInfo* de chamada de função executada pelo cliente antes de executar qualquer operação RPC. Quando um aplicativo gerencia os recursos por servidor, uma chamada com uma incompatibilidade com o servidor/cliente antigo nunca pode ocorrer, pois o aplicativo controla quais chamadas são emitidas para qual servidor. A parte inferior é que o aplicativo é proativo para impedir que ocorra uma incompatibilidade. Isso pode ser executado em conjunto com a segunda prática.
 
-2.  Introduza uma nova API remota.
+2.  Introduzir uma nova API remota.
 
-    Um novo método remoto não colidirá com os métodos existentes se ele for adicionado no final da interface. Clientes antigos podem chamar novos servidores como sempre têm. O novo cliente pode chamar o novo método sem saber a identidade do servidor, desde que ele Observe os erros provenientes do servidor que está sendo chamado. O tempo de execução RPC sempre verifica o número do método para cada interface antes de uma expedição para garantir que o método esteja dentro de uma tabela v apropriada. Para um método que é desconhecido para um servidor, o tempo de execução de RPC gera a exceção RPC \_ S \_ PROCNUM \_ fora \_ do \_ intervalo. Essa exceção é gerada somente nesta situação específica. Portanto, um novo cliente pode observar a exceção como um sinal de que a chamada foi enviada para um servidor antigo e pode modificar seu comportamento normalmente.
+    Um novo método remoto não colide com métodos existentes se ele for adicionado no final da interface. Clientes antigos podem chamar novos servidores como sempre. O novo cliente pode chamar o novo método sem saber a identidade do servidor, desde que ele veja os erros provenientes do servidor que está sendo chamado. O tempo de executar RPC sempre verifica o número do método para cada interface antes de uma expedição para garantir que o método está dentro de uma tabela v apropriada. Para um método desconhecido para um servidor, o tempo de executar RPC gera a exceção RPC \_ S \_ PROCNUM \_ OUT OF \_ \_ RANGE. Essa exceção é criada somente nessa situação específica. Portanto, um novo cliente pode observar a exceção como um sinal de que a chamada foi para um servidor antigo e pode modificar seu comportamento normalmente.
 
-3.  Introduza novos parâmetros ou novos tipos de dados apenas nos novos métodos.
+3.  Introduza novos parâmetros ou novos tipos de dados somente nos novos métodos.
 
-    Um motivo para introduzir um novo método é evitar a incompatibilidade de dados. Se um novo tipo de dados for introduzido ou simplesmente modificado, em princípio, ele deve ser usado somente em um novo método (ou métodos). Veja [exemplos de alterações incompatíveis](examples-of-incompatible-changes.md) para obter exemplos de alterações de tipo de dados incompatíveis. A única exceção notável a essa regra é descrita no item quatro.
+    Um motivo para introduzir um novo método é evitar a incompatibilidade de dados. Se um novo tipo de dados for introduzido ou simplesmente modificado, em princípio, ele deverá ser usado somente em um novo método (ou métodos). Consulte [Exemplos de alterações incompatíveis para](examples-of-incompatible-changes.md) ver exemplos de alterações de tipo de dados incompatíveis. A única exceção notável para essa regra é descrita no item quatro.
 
 4.  Mapeie novos parâmetros ou novos tipos de dados por meio de um wrapper.
 
-    Essa solução se aplica quando um novo parâmetro ou tipo de dados deve ser exposto a um usuário, mas, na verdade, não precisa ser remoto separadamente ou pode ser mapeado para os tipos de dados ou parâmetros antigos. Por exemplo, muitas APIs de sistema desenvolvem e executam uma chamada remota. Eles podem ou não estar fazendo algum tipo de mapeamento dos tipos de dados conhecidos do usuário para os tipos de dados realmente usados na chamada RPC subjacente. Portanto, vale a pena examinar se a alteração na interface do usuário precisa ser propagada como uma alteração para uma interface remota.
+    Essa solução se aplica quando um novo parâmetro ou tipo de dados deve ser exposto a um usuário, mas, na verdade, não precisa ser remoto separadamente ou pode ser mapeado para os tipos de dados ou parâmetros antigos. Por exemplo, muitas APIs do sistema são voltas e executam uma chamada remota. Eles podem ou não estar fazendo algum tipo de mapeamento dos tipos de dados conhecidos pelo usuário para os tipos de dados realmente usados na chamada RPC subjacente. Portanto, sempre vale a pena examinar se a alteração na interface do usuário precisa ser propagada como uma alteração em uma interface remota.
 
-    Uma situação semelhante pode ocorrer quando o usuário chama uma API remota diretamente, mas um wrapper pode ser introduzido para fazer um novo mapeamento de tipo ou outras ações adicionais que se tornaram necessárias. A IDL (Interface Definition Language) tem várias maneiras de facilitar esse remapeamento, como \[ [**chamar \_ como**](/windows/desktop/Midl/call-as) \] , \[ [**transmitir \_ como**](/windows/desktop/Midl/transmit-as) \] e \[ [**\_ realizar marshaling**](/windows/desktop/Midl/wire-marshal) \] . O \[ atributo **Call \_ as** \] introduz um wrapper de função no cliente e no servidor. Ambos são colocados entre o código do usuário e o marshaler. Os outros atributos lidam com o mapeamento de tipo direto. Para problemas de extensão, \[ **chame \_ como** \] é o usado com mais frequência e é mais fácil de entender e manipular sem armadilhas.
+    Uma situação semelhante pode ocorrer quando o usuário chama uma API remota diretamente, mas um wrapper pode ser introduzido para fazer um novo mapeamento de tipo ou algumas outras ações adicionais que se tornaram necessárias. A IDL (Linguagem de Definição de Interface) tem várias maneiras de facilitar o remapeamento, ou seja, chamar como , transmitir \[ [**\_**](/windows/desktop/Midl/call-as) \] \[ [**\_ como**](/windows/desktop/Midl/transmit-as) \] e efetuar \[ [**\_ marshaling de transmissão.**](/windows/desktop/Midl/wire-marshal) \] A \[ **chamada \_ como** \] atributo introduz um wrapper de função no cliente e no servidor. Ambos são colocados entre o código do usuário e o marshaler. Os outros atributos lidam com o mapeamento de tipo direto. Para problemas de extensão, chame como é usado com mais frequência e é mais fácil de entender e manipular sem \[ **\_** \] armadilhas.
 
-5.  Modifique os tipos de dados por meio de uma União defaultless.
+5.  Modificar tipos de dados por meio de uma união sem padrão.
 
-    A alteração de um atributo ou tipo de dados geralmente leva a uma incompatibilidade. Consulte [exemplos de alterações incompatíveis](examples-of-incompatible-changes.md) para obter exemplos. No entanto, no caso de uma União sem uma cláusula padrão, a incompatibilidade pode ser gerenciada de forma semelhante ao caso de um procedimento fora do intervalo, conforme descrito anteriormente. Esse esquema é prontamente aplicável aos tipos populares de *XxxINFO* que usam uniões.
+    A alteração de um atributo ou tipo de dados normalmente leva à incompatibilidade de transmissão. Consulte [Exemplos de alterações incompatíveis](examples-of-incompatible-changes.md) para ver exemplos. No entanto, no caso de uma união sem uma cláusula padrão, a incompatibilidade pode ser gerenciada de maneira semelhante ao caso de um procedimento fora do intervalo, conforme descrito anteriormente. Esse esquema é prontamente aplicável aos populares *tipos XxxINFO* que usam uniões.
 
     Por exemplo, uma chamada como esta
 
@@ -49,11 +49,11 @@ Esses são os métodos razoáveis de trabalhar em relação ao problema de incom
 
     
 
-    pode retornar informações no nível 1, 2 ou 3, com *XxxINFO* sendo uma União com três ramificações: 1, 2 e 3.
+    poderia retornar informações no nível 1, 2 ou 3, com *XxxINFO* sendo uma união com três branches: 1, 2 e 3.
 
-6.  Use o \[ atributo [**Range**](/windows/desktop/Midl/range) \] para especificar o intervalo.
+6.  Use o \[ [**atributo range**](/windows/desktop/Midl/range) \] para especificar o intervalo.
 
-    Você pode especificar o \[ atributo de [**intervalo**](/windows/desktop/Midl/range) \] em um tipo de escala simples sem interromper a compatibilidade com versões anteriores. Esse atributo não afeta o formato de conexão, mas durante o desempacotamento RPC verifica o valor em fio para confirmar que ele está dentro do intervalo especificado no arquivo. idl. Caso contrário, uma exceção de associação de RPC \_ X \_ inválida \_ será lançada. Isso é especialmente útil se o servidor souber o tamanho máximo de uma matriz dimensionada.
+    Você pode especificar o atributo \[ [**de intervalo**](/windows/desktop/Midl/range) \] em um tipo de escala simples sem quebrar a compatibilidade com compatibilidade com compatibilidade com compatibilidade com rót. Esse atributo não afeta o formato de transmissão, mas durante a unmarshalling RPC verifica o valor na transmissão para confirmar que ele está dentro do intervalo especificado no arquivo .idl. Caso não seja, uma exceção RPC \_ X INVALID BOUND será \_ \_ lançada. Isso será especialmente útil se o servidor souber o tamanho máximo de uma matriz dimensionada.
 
     Por exemplo:
 
@@ -63,14 +63,14 @@ Esses são os métodos razoáveis de trabalhar em relação ao problema de incom
 
     
 
-O comportamento de RPC quando o nível indicado é 4 e o ARM está ausente, depende da definição da União. Para uma União com a cláusula default definida, o RPC transmite um tipo indicado na cláusula default para qualquer coisa diferente dos rótulos de ARM conhecidos (nesse caso, algo diferente de 1, 2 ou 3). Para uma União defaultmenos, o desempacotador gera uma exceção porque, por definição, não há nenhum padrão para fazer fallback. A exceção é uma \_ marca de RPC S \_ inválida \_ .
+O comportamento de RPC quando o nível indicado é 4 e o arm está ausente, depende da definição da união. Para uma união com a cláusula padrão definida, o RPC transmite um tipo indicado na cláusula padrão para qualquer coisa diferente dos rótulos de arm conhecidos (nesse caso, qualquer coisa diferente de 1, 2 ou 3). Para uma união sem padrão, o unmarshaler gera uma exceção porque, por definição, não há padrão para o fall back. A exceção é RPC \_ S \_ INVALID \_ TAG.
 
-Novamente, um novo cliente pode ajustar seu comportamento na descoberta de que ele chamou um servidor antigo.
+Novamente, um novo cliente pode ajustar seu comportamento ao descobrir que ele chamou um servidor antigo.
 
-O que vem a seguir dessas práticas recomendadas é que, se um tipo de dados remoto tiver de ser criado, isso poderá ser estendido no futuro, use uma União defaultless no arquivo IDL. Dada uma escolha, uma União encapsulada é um pouco mais limpa.
+O que segue estas práticas recomendadas é que, se um tipo de dados remotamente remota deve ser projetado que pode ser estendido no futuro, use uma união sem padrão no arquivo IDL. Dada uma escolha, uma união encapsulada é um pouco mais limpa.
 
-Devido a peculiaridades da representação interna do protocolo de fio NDR64, a recomendação para adicionar braços fornecidos anteriormente nesta seção precisa ser qualificada da seguinte maneira: o novo ARM que está sendo adicionado não pode alterar o alinhamento da União e, em particular, o maior alinhamento dos braços não deve ser alterado. Isso normalmente não é um problema, uma vez que um ponteiro em um ARM força o alinhamento a 8. Um design em que cada ARM é um ponteiro para um tipo de ARM é uma maneira limpa de satisfazer o requisito.
+Devido a problemas de representação interna do protocolo de transmissão NDR64, a recomendação para adicionar os braços fornecidos anteriormente nesta seção precisa ser qualificada da seguinte maneira: o novo braço que está sendo adicionado não pode alterar o alinhamento da união e, em particular, o maior alinhamento dos braços não deve mudar. Normalmente, isso não é um problema, pois um ponteiro em um arm força o alinhamento a 8. Um design em que cada arm é um ponteiro para um tipo de arm é uma maneira limpa de atender ao requisito.
 
- 
+ 
 
- 
+ 

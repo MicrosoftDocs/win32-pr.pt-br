@@ -1,17 +1,17 @@
 ---
 description: Exemplo de um intercâmbio de pacotes do protocolo SMB da Microsoft entre um cliente e um servidor.
 ms.assetid: f831d0de-0e38-4141-811c-892a1b5c4037
-title: Cenário de intercâmbio de pacotes do protocolo SMB da Microsoft
+title: cenário de Exchange de pacote do protocolo SMB da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8a03e2f75b00aa93e629b3e698631c5efde4694
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47415c6d49f6c1f7b924719d4d012277c03956c1af0d948b3ef66049c1203641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048046"
 ---
-# <a name="microsoft-smb-protocol-packet-exchange-scenario"></a>Cenário de intercâmbio de pacotes do protocolo SMB da Microsoft
+# <a name="microsoft-smb-protocol-packet-exchange-scenario"></a>cenário de Exchange de pacote do protocolo SMB da Microsoft
 
 Este tópico fornece um exemplo de um intercâmbio de pacotes do protocolo SMB da Microsoft entre um cliente e um servidor. As etapas a seguir são uma visão geral do processo:
 
@@ -43,7 +43,7 @@ Primeiro, uma conexão TCP Full duplex é estabelecida pelo cliente com o servid
  
 
 > [!Note]  
-> Se você implementar um CIFS que não ofereça suporte a notificações de alteração, o Windows não poderá manter um identificador pendente para o sistema de arquivos e a conexão SMB poderá desaparecer sem aviso prévio.
+> se você implementar um CIFS que não dá suporte a notificações de alteração, Windows não poderá manter um identificador pendente para o sistema de arquivos e a conexão SMB poderá desaparecer sem aviso prévio.
 
  
 

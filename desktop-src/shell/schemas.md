@@ -1,5 +1,5 @@
 ---
-description: Esta seção descreve os esquemas usados pelo shell do Windows.
+description: esta seção descreve os esquemas usados pelo Windows Shell.
 title: Esquemas de Shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: cffedfcb9678d42e322ce9c4cd34c26f9b82f016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d1cc078129694f855c4eab6189220498e181e584e9edaf18b6464ab8bc36860
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090166"
 ---
 # <a name="shell-schemas"></a>Esquemas de Shell
 
-Esta seção descreve os esquemas usados pelo shell do Windows.
+esta seção descreve os esquemas usados pelo Windows Shell.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -26,7 +26,7 @@ Esta seção descreve os esquemas usados pelo shell do Windows.
 
 | Tópico                                                             | Descrição                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Esquema de descrição da biblioteca](library-schema-entry.md)<br/> | Os arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas. As bibliotecas agregam itens de locais de armazenamento local e remoto em uma única exibição no Windows Explorer. Os arquivos de descrição da biblioteca seguem o esquema de descrição da biblioteca e são salvos como \* arquivos. Library-MS.<br/> |
+| [Esquema de descrição da biblioteca](library-schema-entry.md)<br/> | Os arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas. as bibliotecas agregam itens de locais de armazenamento local e remoto em uma única exibição no Windows Explorer. Os arquivos de descrição da biblioteca seguem o esquema de descrição da biblioteca e são salvos como \* arquivos. Library-MS.<br/> |
 | [Transferir esquema de manifesto](manifest-schema.md)<br/>        | Esses elementos compõem o esquema XML usado na publicação da Web e no manifesto de transferência dos assistentes de ordenação de impressão online.<br/>                                                                                                                                                         |
 
 

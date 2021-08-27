@@ -1,21 +1,21 @@
 ---
-title: Executando o arquivo AVI
-description: Executando o arquivo AVI
+title: Como tocar o arquivo AVI
+description: Como tocar o arquivo AVI
 ms.assetid: 6b3845c4-40ec-4824-88c8-6e4ac458f720
 keywords:
-- função mciSendCommand
+- Função mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31754bd5f66b455abc76d363c5ff3e5e286e8040
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b9e0c490a61bbd53dd62a8223a3ded1aa047ce071d1d2544a2b26d1a9152450b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038007"
 ---
-# <a name="playing-the-avi-file"></a>Executando o arquivo AVI
+# <a name="playing-the-avi-file"></a>Como tocar o arquivo AVI
 
-Antes de usar a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para enviar o comando [**MCI \_ Play**](mci-play.md) , seu aplicativo aloca a memória para a estrutura, inicializa os membros que ele usará e define os sinalizadores correspondentes aos membros usados na estrutura. (Se seu aplicativo não definir um sinalizador para um membro de estrutura, os drivers MCI ignorarão o membro.) Por exemplo, o exemplo a seguir reproduz um filme a partir da posição inicial especificada por **dwFrom** para a posição final especificada por **dwTo**. (Se uma das posições for zero, o exemplo será escrito de forma que a posição não seja usada.)
+Antes de usar a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para enviar o comando [**MCI \_ PLAY,**](mci-play.md) seu aplicativo aloca a memória para a estrutura, inicializa os membros que ela usará e define os sinalizadores correspondentes aos membros usados na estrutura. (Se o aplicativo não definir um sinalizador para um membro da estrutura, os drivers MCI ignorarão o membro.) Por exemplo, o exemplo a seguir reproduz um filme da posição inicial especificada por **dwFrom** para a posição final especificada por **dwTo**. (Se qualquer posição for zero, o exemplo será escrito para que a posição não seja usada.)
 
 
 ```C++
@@ -44,6 +44,6 @@ DWORD PlayMovie(WORD wDevID, DWORD dwFrom, DWORD dwTo)
 
 
 
- 
+ 
 
- 
+ 

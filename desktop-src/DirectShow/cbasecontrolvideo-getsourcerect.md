@@ -1,7 +1,7 @@
 ---
 description: O método GetSourceRect recupera o retângulo de origem. Esse é um método interno.
 ms.assetid: 51028b79-6aab-4abc-8ee8-2965bda9d191
-title: Método CBaseControlVideo. GetSourceRect (Ctlutil. h)
+title: Método CBaseControlVideo.GetSourceRect (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e57a5beda7b147e952ecbb26c96df5f7e372e6d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a637e0f5ab5c97494dc072458a29920110363a3e4f07ba8bb7313947996bdad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057046"
 ---
-# <a name="cbasecontrolvideogetsourcerect-method"></a>Método CBaseControlVideo. GetSourceRect
+# <a name="cbasecontrolvideogetsourcerect-method"></a>Método CBaseControlVideo.GetSourceRect
 
 O `GetSourceRect` método recupera o retângulo de origem. Esse é um método interno.
 
@@ -49,23 +49,23 @@ Ponteiro para o retângulo de origem recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro deve ser substituída na classe derivada para retornar o retângulo de origem mantido pelo processador de vídeo. Ele é chamado das seguintes funções de membro [**CBaseControlVideo**](cbasecontrolvideo.md) .
+Essa função membro deve ser substituído na classe derivada para retornar o retângulo de origem mantido pelo renderador de vídeo. Ele é chamado das seguintes funções de membro [**CBaseControlVideo.**](cbasecontrolvideo.md)
 
 -   [**CBaseControlVideo::GetSourcePosition**](cbasecontrolvideo-getsourceposition.md)
--   [**CBaseControlVideo::p UT \_ SourceLeft**](cbasecontrolvideo-put-sourceleft.md)
--   [**CBaseControlVideo:: obter \_ SourceLeft**](cbasecontrolvideo-get-sourceleft.md)
--   [**CBaseControlVideo::p UT \_ SourceWidth**](cbasecontrolvideo-put-sourcewidth.md)
--   [**CBaseControlVideo:: obter \_ SourceWidth**](cbasecontrolvideo-get-sourcewidth.md)
--   [**CBaseControlVideo::p UT \_ SourceTop**](cbasecontrolvideo-put-sourcetop.md)
--   [**CBaseControlVideo:: obter \_ SourceTop**](cbasecontrolvideo-get-sourcetop.md)
--   [**CBaseControlVideo::p UT \_ SourceHeight**](cbasecontrolvideo-put-sourceheight.md)
--   [**CBaseControlVideo:: obter \_ SourceHeight**](cbasecontrolvideo-get-sourceheight.md)
+-   [**CBaseControlVideo::put \_ SourceLeft**](cbasecontrolvideo-put-sourceleft.md)
+-   [**CBaseControlVideo::get \_ SourceLeft**](cbasecontrolvideo-get-sourceleft.md)
+-   [**CBaseControlVideo::put \_ SourceWidth**](cbasecontrolvideo-put-sourcewidth.md)
+-   [**CBaseControlVideo::get \_ SourceWidth**](cbasecontrolvideo-get-sourcewidth.md)
+-   [**CBaseControlVideo::put \_ SourceTop**](cbasecontrolvideo-put-sourcetop.md)
+-   [**CBaseControlVideo::get \_ SourceTop**](cbasecontrolvideo-get-sourcetop.md)
+-   [**CBaseControlVideo::put \_ SourceHeight**](cbasecontrolvideo-put-sourceheight.md)
+-   [**CBaseControlVideo::get \_ SourceHeight**](cbasecontrolvideo-get-sourceheight.md)
 
 O exemplo a seguir demonstra uma implementação dessa função em uma classe derivada.
 
@@ -82,7 +82,7 @@ HRESULT CVideoText::GetSourceRect(RECT *pSourceRect)
 
 
 
-Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbasecontrolvideo.md), m \_ pRenderer mantém um objeto de uma classe derivada de [**CBaseVideoRenderer**](cbasevideorenderer.md), e o membro de \_ dados da DrawImage m, definido na classe derivada, mantém um objeto [**CDrawImage**](cdrawimage.md) .
+Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbasecontrolvideo.md), m pRenderer contém um objeto de uma classe derivada de \_ [**CBaseVideoRenderer**](cbasevideorenderer.md)e o membro de dados m DrawImage, definido na classe derivada, contém um objeto \_ [**CDrawImage.**](cdrawimage.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,8 +90,8 @@ Neste exemplo, CVideoText é uma classe derivada de [**CBaseControlVideo**](cbas
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -5,12 +5,12 @@ ms.assetid: ab193a9f-7424-42bf-8cea-28628096edc6
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81e099787ae3d0acd9028405b244f7fbc2e2117e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 46ba87ea7569b8ef9daeccb54890bb8882d423621b414fdd8df28c0c4e67b750
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009186"
 ---
 # <a name="resources-on-a-remote-desktop-session-host-server"></a>Recursos em um servidor Host da Sessão da Área de Trabalho Remota
 
@@ -21,9 +21,9 @@ Em um ambiente de Serviços de Área de Trabalho Remota, vários usuários podem
 -   RAM (memória de acesso aleatório). Cada aplicativo executado por cada usuário está contendendo os recursos de RAM disponíveis no servidor Host da Sessão RD. Se um usuário executar um aplicativo com uso intensivo de memória, outros usuários poderão sofrer perda de desempenho.
 -   Acesso à rede. O acesso à rede é essencial em um ambiente de Serviços de Área de Trabalho Remota, pois toda a atividade da área de trabalho — saída gráfica e entrada de mouse/teclado — flui pelos links de rede entre a área de trabalho do cliente e o servidor. Além disso, os aplicativos dos usuários em execução no Host da Sessão RD Server suputam o acesso a outros recursos de rede.
 -   Hardware de servidor. Componentes de hardware, como CD-ROMs, unidades de disquete, portas seriais e portas paralelas, geralmente são baseados em servidor, não baseados em cliente. Compartilhar esses componentes tradicionalmente não compartilhados cria novas considerações para os usuários e para aplicativos que acessam esses componentes de hardware. Para obter mais informações, consulte [diretrizes de hardware periférico](peripheral-hardware-guidelines.md).
--   Acesso a objetos e recursos globais. Em um ambiente Serviços de Área de Trabalho Remota, os usuários não executam cópias individuais do Windows — alguns dos módulos principais são clonados, mas os módulos restantes são compartilhados entre os usuários. Assim, os usuários estão competindo pelo acesso ao registro, ao arquivo de paginação, aos serviços do sistema e a outros objetos e recursos globais.
+-   Acesso a objetos e recursos globais. em um ambiente Serviços de Área de Trabalho Remota, os usuários não executam cópias individuais de Windows — alguns dos módulos principais são clonados, mas os módulos restantes são compartilhados entre os usuários. Assim, os usuários estão competindo pelo acesso ao registro, ao arquivo de paginação, aos serviços do sistema e a outros objetos e recursos globais.
 
-Muitos dos pontos de contenção anteriores podem ser mitigados com o dimensionamento do servidor de Host da Sessão RD com CPU, memória e recursos de disco suficientes para lidar com a demanda do cliente. Por exemplo, uma configuração de vários processadores pode maximizar a disponibilidade da CPU. A disponibilidade da memória pode ser maximizada com a instalação de memória física extra (os limites de memória aumentados para as edições Enterprise, Datacenter ou 64-bit do Windows Server podem ajudar). Por fim, o desempenho de acesso ao disco pode ser maximizado com a configuração de vários canais e a distribuição do seu sistema operacional e cargas de aplicativo em diferentes unidades físicas. Configurar corretamente um servidor de Host da Sessão RD é um elemento crítico do desempenho do aplicativo percebido.
+Muitos dos pontos de contenção anteriores podem ser mitigados com o dimensionamento do servidor de Host da Sessão RD com CPU, memória e recursos de disco suficientes para lidar com a demanda do cliente. Por exemplo, uma configuração de vários processadores pode maximizar a disponibilidade da CPU. a disponibilidade da memória pode ser maximizada com a instalação de memória física extra (os limites de memória aumentados para as edições Enterprise, datacenter ou 64 bits do Windows Server podem ajudar). Por fim, o desempenho de acesso ao disco pode ser maximizado com a configuração de vários canais e a distribuição do seu sistema operacional e cargas de aplicativo em diferentes unidades físicas. Configurar corretamente um servidor de Host da Sessão RD é um elemento crítico do desempenho do aplicativo percebido.
 
 Embora o dimensionamento de hardware seja uma parte importante da criação de um ambiente de Serviços de Área de Trabalho Remota escalonável, as considerações de software são igualmente importantes. Na verdade, o ajuste fino de um aplicativo muitas vezes pode fazer muito para reduzir a competição de recursos e melhorar o desempenho percebido do aplicativo.
 
@@ -34,9 +34,9 @@ Para obter mais informações sobre o ambiente de Serviços de Área de Trabalho
 -   [Detectando se a função de Serviços de Área de Trabalho Remota está instalada](detecting-whether-terminal-services-is-installed.md)
 -   [Sessões de Serviços de Área de Trabalho Remota](terminal-services-sessions.md)
 
- 
+ 
 
- 
+ 
 
 
 

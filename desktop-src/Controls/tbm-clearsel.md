@@ -3,7 +3,7 @@ title: Mensagem de TBM_CLEARSEL (commctrl. h)
 description: Limpa o intervalo de seleção atual em um TrackBar.
 ms.assetid: ccf69fb7-d616-4a7a-8c7c-7a82827758b1
 keywords:
-- Controles de TBM_CLEARSEL de mensagens do Windows
+- controles de Windows de mensagem de TBM_CLEARSEL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9d2474f3978dc80b2611bd6b454c45e515ee159
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 627f2c872b47bf76312856fd81d42bfe8f2739e53efb3c37492b203b150b8e8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046756"
 ---
 # <a name="tbm_clearsel-message"></a>\_Mensagem tbm CLEARSEL
 
@@ -39,7 +39,7 @@ Sinalizador de redesenho. Se esse parâmetro for **true**, o TrackBar será rede
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -53,9 +53,9 @@ Um TrackBar pode ter um intervalo de seleção somente se você especificou o es
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

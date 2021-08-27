@@ -4,28 +4,28 @@ ms.assetid: fe8a4d2a-1960-40af-a0e4-4d65accdd388
 title: AnyPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ab6265874616bb0bb1a2f61098cdbabfa8ea24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ab5d8e7aaf4e92c2b33379b92b00263df07366ff340346aa19518478f8f2394
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045776"
 ---
 # <a name="anypath"></a>AnyPath
 
-O tipo de dados AnyPath é uma cadeia de caracteres de texto que contém um caminho completo ou um caminho relativo. Ao especificar um caminho relativo, você pode incluir um nome de arquivo longo com o nome curto do arquivo separando os nomes curtos e longos com uma barra vertical ( \| ). Observe que você não pode especificar vários níveis de um diretório ou caminhos totalmente qualificados dessa maneira. O caminho pode conter Propriedades delimitadas entre colchetes ( \[ \] ).
+O tipo de dados AnyPath é uma cadeia de caracteres de texto que contém um caminho completo ou um caminho relativo. Ao especificar um caminho relativo, você pode incluir um nome de arquivo longo com o nome de arquivo curto separando os nomes curtos e longos com uma barra vertical ( \| ). Observe que você não pode especificar vários níveis de um diretório ou caminhos totalmente qualificados dessa maneira. O caminho pode conter propriedades entre colchetes ( \[ \] ).
 
-Exemplos de dados de AnyPath válidos:
+Exemplos de dados AnyPath válidos:
 
--   \\\\\\Temp do compartilhamento do servidor \\
--   c: \\ Temp
+-   \\\\temp \\ de \\ compartilhamento de servidor
+-   c: \\ temp
 -   \\Temp
--   proje ~ 1 \| status do projeto
+-   projec~1 \| Project Status
 
-Exemplos de dados de AnyPath inválidos:
+Exemplos de dados AnyPath inválidos:
 
--   c: \\ temp \\ proje ~ 1 \| c: \\ Temp um \\ status do projeto
--   \\temp \\ proje ~ 1 \| \\ Temp um \\ status do projeto
+-   c: \\ temp \\ projec~1 \| c: temp one Project \\ \\ Status
+-   \\temp \\ projec~1 \| \\ temp one Project \\ Status
 
  
 

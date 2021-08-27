@@ -1,11 +1,11 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable7 Clipboard
-description: Obtém o controlador da área de transferência usado para sincronizar as áreas de transferência local e remota se a sincronização da área de transferência manual estiver habilitada.
+description: Obtém o controlador de área de transferência usado para sincronizar as áreas de transferência locais e remotas se a sincronização manual da área de transferência estiver habilitada.
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de propriedade da área de transferência
-- Propriedade da área de transferência Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable7, Propriedade Clipboard
+- Propriedades da área de transferência Serviços de Área de Trabalho Remota
+- A propriedade clipboard Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable7
+- Interface IMsRdpClientNonScriptable7 Serviços de Área de Trabalho Remota , propriedade Clipboard
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 770930eb780b3ce8684608ffcdc0c13c1630cab0
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 236666cbef369c4f2353ff524ceb7544e62f50d4a7e4a7ac59f3882057a92f48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "103919670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009636"
 ---
-# <a name="imsrdpclientnonscriptable7clipboard-property"></a>Propriedade IMsRdpClientNonScriptable7:: Clipboard
+# <a name="imsrdpclientnonscriptable7clipboard-property"></a>Propriedade IMsRdpClientNonScriptable7::Clipboard
 
-Obtém o controlador da área de transferência usado para sincronizar as áreas de transferência local e remota se a sincronização da área de transferência manual estiver habilitada.
+Obtém o controlador de área de transferência usado para sincronizar as áreas de transferência locais e remotas se a sincronização manual da área de transferência estiver habilitada.
 
 Esta propriedade é somente para leitura.
 
@@ -40,7 +40,7 @@ HRESULT get_Clipboard(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um [IMsRdpClipboard](imsrdpclipboard.md) que representa o controlador da área de transferência usado para sincronizar as áreas de transferência local e remota se a sincronização da área de transferência manual estiver habilitada (ou seja, o valor da propriedade [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) for definido como **true**).
+Uma [IMsRdpClipboard](imsrdpclipboard.md) que representa o controlador de área de transferência usado para sincronizar as áreas de transferência locais e remotas se a sincronização manual da área de transferência estiver habilitada (ou seja, o valor da propriedade [ManualClipboardSyncEnabled](imsrdpextendedsettings-property.md) está definido como **True).**
 
 ## <a name="requirements"></a>Requisitos
 

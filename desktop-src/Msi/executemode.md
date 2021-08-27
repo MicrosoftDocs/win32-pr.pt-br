@@ -1,41 +1,41 @@
 ---
-description: A propriedade EXECUTEmode especifica como o instalador executa as atualizações do sistema.
+description: A propriedade EXECUTEMODE especifica como o instalador executa atualizações do sistema.
 ms.assetid: 7b90d2e6-d661-412b-b054-2c218c95c02a
-title: Propriedade EXECUTEmode
+title: Propriedade EXECUTEMODE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ebf1de2fb7538ece838e674b62847f0c526842e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 750b6c3a20ab05388fcd6926463dde8259440bd6087306b1bf0cc1a6c387cd2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082866"
 ---
-# <a name="executemode-property"></a>Propriedade EXECUTEmode
+# <a name="executemode-property"></a>Propriedade EXECUTEMODE
 
-A propriedade **executemode** especifica como o instalador executa as atualizações do sistema. Essa propriedade pode ser útil quando for necessário executar uma instalação sem realmente alterar o sistema. A propriedade pode ser definida como None para desabilitar as operações de atualização, como a instalação de arquivos e valores de registro.
+A **propriedade EXECUTEMODE** especifica como o instalador executa atualizações do sistema. Essa propriedade pode ser útil quando é necessário executar uma instalação sem realmente alterar o sistema. A propriedade pode ser definida como Nenhum para desabilitar operações de atualização, como a instalação de arquivos e valores do Registro.
 
-Essa propriedade pode ter um dos dois valores a seguir. O instalador apenas examina a primeira letra do valor e não diferencia maiúsculas de minúsculas.
+Essa propriedade pode ter um dos dois valores a seguir. O instalador examina apenas a primeira letra do valor e não reconhece maiúsculas de minúsculas.
 
 <dl> <dt>
 
-<span id="None"></span><span id="none"></span><span id="NONE"></span>None
+<span id="None"></span><span id="none"></span><span id="NONE"></span>Nenhum
 </dt> <dd>
 
-Nenhuma alteração é feita no sistema. O instalador executa a interface do usuário e, em seguida, consulta o banco de dados.
+Nenhuma alteração é feita no sistema. O instalador executa a interface do usuário e consulta o banco de dados.
 
 </dd> <dt>
 
-<span id="Script"></span><span id="script"></span><span id="SCRIPT"></span>Prescritiva
+<span id="Script"></span><span id="script"></span><span id="SCRIPT"></span>Script
 </dt> <dd>
 
-Todas as alterações no sistema são feitas por meio de execução de script. Esse é o modo padrão.
+Todas as alterações no sistema são feitas por meio da execução do script. Esse é o modo padrão.
 
 </dd> </dl>
 
 ## <a name="default-value"></a>Valor padrão
 
-Se essa propriedade não for definida, o modo de execução usa como padrão o script.
+Se essa propriedade não estiver definida, o modo de execução assume Script como padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Se essa propriedade não for definida, o modo de execução usa como padrão o s
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

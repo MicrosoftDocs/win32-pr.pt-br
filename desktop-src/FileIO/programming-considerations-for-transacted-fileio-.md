@@ -4,12 +4,12 @@ ms.assetid: a1ef1ce1-42f6-4627-ab64-e7f41fa23e94
 title: Considerações de programação para NTFS Transacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e79dc7eba4de1258c294d3e41f8042f3cb01dc87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd3150746b1cb34495178cc8318805587f3d08f17e04cb8227e95a9c52ddce3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047936"
 ---
 # <a name="programming-considerations-for-transactional-ntfs"></a>Considerações de programação para NTFS Transacional
 
@@ -51,7 +51,7 @@ Um arquivo ou diretório criado em uma transação não é visível para nada fo
 Um arquivo ou diretório que é excluído chamando a função [**DeleteFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-deletefiletransacteda) permanece visível para todos os leitores externos.
 
 > [!Note]  
-> Todos os identificadores transacionados para o arquivo devem ser fechados antes do fim da transação. Se os identificadores não forem fechados corretamente, a exclusão não ocorrerá. Todos os identificadores abertos para o arquivo devem ser fechados antes de executar a confirmação para que a operação de exclusão seja considerada parte da transação. Isso ocorre porque o sistema não exclui realmente um arquivo até que o último identificador para ele seja fechado, mesmo quando a operação não é transacionada, como parte do subsistema de e/s de arquivo do Windows.
+> Todos os identificadores transacionados para o arquivo devem ser fechados antes do fim da transação. Se os identificadores não forem fechados corretamente, a exclusão não ocorrerá. Todos os identificadores abertos para o arquivo devem ser fechados antes de executar a confirmação para que a operação de exclusão seja considerada parte da transação. isso ocorre porque o sistema não exclui realmente um arquivo até que o último identificador para ele seja fechado, mesmo quando a operação não é transacionada, como parte do subsistema de e/s de arquivo de Windows.
 
  
 
@@ -96,7 +96,7 @@ As alterações nos pontos de nova análise são transacionadas, o que significa
 
 ## <a name="error-codes"></a>Códigos de erro
 
-O KTM (kernel Transaction Manager) usa os códigos de erro do sistema no intervalo de 6700 a 6799. O NTFS Transacional (TxF) usa códigos de erro do Windows no intervalo de 6800 a 6899. Para obter mais informações, consulte WinError. h e códigos de erro do sistema (6000-8199).
+O KTM (kernel Transaction Manager) usa os códigos de erro do sistema no intervalo de 6700 a 6799. o NTFS transacional (TxF) usa Windows códigos de erro no intervalo de 6800 a 6899. Para obter mais informações, consulte WinError. h e códigos de erro do sistema (6000-8199).
 
 ## <a name="encrypted-file-system"></a>Sistema de arquivos criptografados
 

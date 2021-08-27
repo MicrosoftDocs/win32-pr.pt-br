@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth de rede de serviço de dispositivo.
+description: Bluetooth classe de rede do serviço de dispositivo.
 ms.assetid: 5c440c40-a0af-49d5-a4f8-25bfc62dc869
-title: System. Devices. AEP. Bluetooth. Cod. Services. Networking
+title: System. Devices. AEP. Bluetooth. Cod. Services. networking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ba7cdbba58a8b2e36ca1d6a912ca2476b7feaa2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2cd11926e1108a4f61c5efb15601d2fb4b828632be9e5128772d96c2e192576
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010886"
 ---
-# <a name="systemdevicesaepbluetoothcodservicesnetworking"></a>System. Devices. AEP. Bluetooth. Cod. Services. Networking
+# <a name="systemdevicesaepbluetoothcodservicesnetworking"></a>System. Devices. AEP. Bluetooth. Cod. Services. networking
 
-Classe Bluetooth de rede de serviço de dispositivo.
+Bluetooth classe de rede do serviço de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 

@@ -4,12 +4,12 @@ ms.assetid: 40694b7f-474b-41aa-be3f-48e4ca517a6f
 title: Desligamento TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 661273a3d72559d965fa1ea6066f1090f8e6b6e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88303d2475a2ce0a21478575483c0fd93e44e96b71efa83790b7973343d6d9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080435"
 ---
 # <a name="tapi-shutdown"></a>Desligamento TAPI
 

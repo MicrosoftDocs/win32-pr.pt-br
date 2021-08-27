@@ -1,9 +1,9 @@
 ---
-title: Mensagem de HDM_GETOVERFLOWRECT (commctrl. h)
-description: Obtém o retângulo delimitador do botão de estouro quando o \_ estilo de estouro da HDS é definido no controle de cabeçalho e o botão de estouro está visível. Envie essa mensagem explicitamente ou usando a \_ macro GetOverflowRect do cabeçalho.
+title: HDM_GETOVERFLOWRECT mensagem (Commctrl.h)
+description: Obtém o retângulo delimitador do botão de estouro quando o estilo HDS OVERFLOW é definido no controle de header e \_ o botão de estouro fica visível. Envie essa mensagem explicitamente ou usando a macro \_ GetOverflowRect do header.
 ms.assetid: 52fb3dc3-ce22-40da-8222-20fd75c005ae
 keywords:
-- Controles de HDM_GETOVERFLOWRECT de mensagens do Windows
+- HDM_GETOVERFLOWRECT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58f521bb6b188a10bb7af52ead46423e7ae0cf58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f48088ad6c4a1d8cc5b843eeafb167f790bdd8eac06c56e6cb74e8afc18d082
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047046"
 ---
-# <a name="hdm_getoverflowrect-message"></a>\_Mensagem HDM GETOVERFLOWRECT
+# <a name="hdm_getoverflowrect-message"></a>Mensagem \_ GETOVERFLOWRECT do HDM
 
-Obtém o retângulo delimitador do botão de estouro quando o estilo de [**\_ estouro da HDS**](header-control-styles.md) é definido no controle de cabeçalho e o botão de estouro está visível. Envie essa mensagem explicitamente ou usando a macro [**\_ GetOverflowRect do cabeçalho**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect) .
+Obtém o retângulo delimitador do botão de estouro quando o estilo [**\_ HDS OVERFLOW**](header-control-styles.md) é definido no controle de header e o botão de estouro fica visível. Envie essa mensagem explicitamente ou usando a [**macro \_ GetOverflowRect do header.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getoverflowrect)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -36,20 +36,20 @@ Não usado. Deve ser zero.
 
 </dd> <dt>
 
-*lParam* \[ no\]
+*lParam* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) para receber as informações do retângulo delimitador. O remetente da mensagem é responsável por alocar essa estrutura. As coordenadas retornadas na estrutura **Rect** são expressas como coordenadas da tela.
+Um ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) para receber as informações de retângulo delimitadores. O remetente da mensagem é responsável por alocar essa estrutura. As coordenadas retornadas na **estrutura RECT** são expressas como coordenadas de tela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **TRUE** se for bem-sucedido; caso contrário, **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-O controle de cabeçalho deve ter o estilo **HDF \_ SPLITBUTTON**.
+O controle de header deve ter o estilo **HDF \_ SPLITBUTTON**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ O controle de cabeçalho deve ter o estilo **HDF \_ SPLITBUTTON**.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ O controle de cabeçalho deve ter o estilo **HDF \_ SPLITBUTTON**.
 
 <dl> <dt>
 
-[Sobre controles de cabeçalho](header-controls.md)
+[Sobre controles de header](header-controls.md)
 </dt> </dl>
 
  

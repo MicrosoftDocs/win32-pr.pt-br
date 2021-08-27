@@ -4,12 +4,12 @@ ms.assetid: 6ef5e1b9-08a0-4f3e-a26f-cf5bdf4ea464
 title: Atribuições de canal da Dinamarca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33597d1f6a3d0e32365630362dcd3d7dd83272a8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dd54c7161be11375fb899b985ecbf1f00f5d23de31e808fcfd23616b984932f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079266"
 ---
 # <a name="denmark-channel-assignments"></a>Atribuições de canal da Dinamarca
 
@@ -17,7 +17,7 @@ Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica
 
 Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+as seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 

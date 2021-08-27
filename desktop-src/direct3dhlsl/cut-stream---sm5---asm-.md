@@ -4,12 +4,12 @@ description: A instrução Geometry Shader que conclui a topologia primitiva atu
 ms.assetid: CEFDD13B-34FD-4E9C-94A0-CB8879A7DBDE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4650628d7f6b66130568f885e008a5163a9ee44f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: c019785d121bfb504b447456ad2376deb9c9c63357621513f42dcdf09351f465
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025016"
 ---
 # <a name="cut_stream-sm5---asm"></a>Recortar \_ fluxo (SM5-ASM)
 
@@ -53,7 +53,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        | X        |       |         |
 

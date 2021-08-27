@@ -1,23 +1,23 @@
 ---
 title: Recuperando erros de rede
-description: As funções WNet retornam códigos de erro para compatibilidade com o Windows para Workgroups. Cada função WNet também define o valor do código de erro retornado por GetLastError.
+description: As funções WNet retornam códigos de erro para compatibilidade com Windows para Grupos de Trabalho. Cada função WNet também define o valor de código de erro retornado por GetLastError.
 ms.assetid: 8188304a-8ab3-4c43-a6d6-2806043cc195
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 436d63b51d0f57698403d206774710450eee1c8e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e92f02a05ab93d50b9c448ae280e5de7ddbed1260cf1df8b8b3e56aa33aaeff4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105771596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072016"
 ---
 # <a name="retrieving-network-errors"></a>Recuperando erros de rede
 
-As funções WNet retornam códigos de erro para compatibilidade com o Windows para Workgroups. Cada função WNet também define o valor do código de erro retornado por [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+As funções WNet retornam códigos de erro para compatibilidade com Windows para Grupos de Trabalho. Cada função WNet também define o valor do código de erro retornado por [**GetLastError.**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 
-Quando uma das funções WNet retorna \_ erro estendido de erro \_ , um aplicativo pode chamar a função [**WNetGetLastError**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetlasterrora) para recuperar informações adicionais sobre o erro. Essas informações geralmente são específicas para o provedor de rede.
+Quando uma das funções WNet retorna ERROR EXTENDED ERROR, um aplicativo pode chamar \_ \_ a função [**WNetGetLastError**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetlasterrora) para recuperar informações adicionais sobre o erro. Essas informações geralmente são específicas para o provedor de rede.
 
-O exemplo a seguir ilustra uma função de manipulação de erros definida pelo aplicativo (NetErrorHandler). A função usa três argumentos: um identificador de janela, o código de erro retornado por uma das funções WNet e o nome da função que produziu o erro. Se o código de erro for erro \_ estendido \_ , NetErrorHandler chamará **WNetGetLastError** para obter informações de erro estendidas e imprimirá as informações. O exemplo chama a função [**MessageBox**](/windows/win32/api/winuser/nf-winuser-messagebox) para processar mensagens.
+O exemplo a seguir ilustra uma função de tratamento de erro definida pelo aplicativo (NetErrorHandler). A função aceita três argumentos: um handle de janela, o código de erro retornado por uma das funções WNet e o nome da função que produziu o erro. Se o código de erro for ERROR \_ EXTENDED \_ ERROR, NetErrorHandler chamará **WNetGetLastError** para obter informações de erro estendidas e imprimirá as informações. O exemplo chama a [**função MessageBox**](/windows/win32/api/winuser/nf-winuser-messagebox) para processar mensagens.
 
 
 ```C++
@@ -85,6 +85,6 @@ BOOL WINAPI NetErrorHandler(HWND hwnd,
 
 
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Um indicador do status do flash quando a foto foi tirada, como lida com as informações do arquivo de imagem intercambiável (EXIF).
+description: Um indicador do status de flash quando a foto foi tirada, conforme lido nas informações do Arquivo de Imagem Permutável (EXIF).
 ms.assetid: e21de610-9916-4b3f-8e50-f0141b476346
-title: System. Photo. flash
+title: System.Photo.Flash
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7af98011f8b5e5907387fe53c7495d5e6cd30fec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f872ad976de499914b6a44a9baf68dad74d512d74acbb5d6f707d74e78661df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058496"
 ---
-# <a name="systemphotoflash"></a>System. Photo. flash
+# <a name="systemphotoflash"></a>System.Photo.Flash
 
-Um indicador do status do flash quando a foto foi tirada, como lida com as informações do arquivo de imagem intercambiável (EXIF).
+Um indicador do status de flash quando a foto foi tirada, conforme lido nas informações do Arquivo de Imagem Permutável (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -249,16 +249,16 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Formato de arquivo de imagem intercambiável para câmeras digitais ainda: Exif versão 2,2](https://www.exif.org/Exif2-2.PDF)
+[Formato de arquivo de imagem que pode ser trocado para câmeras ainda digitais: exif versão 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -267,19 +267,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -294,7 +294,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

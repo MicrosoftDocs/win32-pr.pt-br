@@ -4,12 +4,12 @@ description: Depois que o Gerenciador de grupo de multicast recebe uma notifica�
 ms.assetid: dacccca2-e6a5-417a-a217-06ff846d55f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7832a25f8b44821f4b46a69943b4bba3519207c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8ff1c2dc66b2307b60fb649fd8a0adb6992a63532bf9aa45350d261ab04b6c5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035915"
 ---
 # <a name="rpf-alert-callbacks"></a>Retornos de chamada de alerta do RPF
 
@@ -17,9 +17,9 @@ Depois que o Gerenciador de grupo de multicast recebe uma notificação de um pa
 
 Depois que esse retorno de chamada for invocado, o protocolo de roteamento poderá alterar a interface de entrada se o protocolo de roteamento precisar receber os dados para o grupo em uma interface diferente.
 
- 
+ 
 
- 
+ 
 
 
 

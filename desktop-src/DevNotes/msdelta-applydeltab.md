@@ -1,5 +1,5 @@
 ---
-description: Usa o Delta e a origem (fornecidos como buffers) para criar uma nova cópia dos dados de destino. Os dados de saída são retornados em um buffer MSDelta alocado.
+description: Usa o delta e a origem (fornecidos como buffers) para criar uma nova cópia dos dados de destino. Os dados de saída são retornados em um buffer alocado por MSDelta.
 title: Função ApplyDeltaB
 ms.topic: reference
 ms.date: 12/03/2020
@@ -15,22 +15,22 @@ api_type:
 - DllExport
 api_location:
 - msdelta.dll
-ms.openlocfilehash: 368788ba894064aa8ac3f8c9711f987a32f306af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a6034ca101a192be66db1b16a4ac7b27e7288d9453dfaaab5782e55e11d4c67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079756"
 ---
 # <a name="applydeltab-function"></a>Função ApplyDeltaB
 
-Usa o Delta e a origem (fornecidos como buffers) para criar uma nova cópia dos dados de destino. Os dados de saída são retornados em um buffer MSDelta alocado.
+Usa o delta e a origem (fornecidos como buffers) para criar uma nova cópia dos dados de destino. Os dados de saída são retornados em um buffer alocado por MSDelta.
 
 > [!NOTE]
-> Você deve chamar [DeltaFree](msdelta-deltafree.md) para liberar o buffer de saída após a conclusão dessa função.
+> Você deve chamar [DeltaFree para](msdelta-deltafree.md) liberar o buffer de saída depois que essa função tiver sido concluída.
 
 > [!NOTE]
-> Se o Delta especificado tiver sido criado usando [PatchAPI](patchapi.md)e o sinalizador [DELTA_APPLY_FLAG_ALLOW_PA19](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags) for definido, MSDelta chamará PatchAPI para aplicar o Delta.
+> Se o delta especificado tiver sido criado usando [PatchAPI](patchapi.md)e o [sinalizador DELTA_APPLY_FLAG_ALLOW_PA19](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags) estiver definido, msDelta chamará PatchAPI para aplicar o delta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,31 +47,31 @@ BOOL  WINAPI  ApplyDeltaB(
 
 *ApplyFlags*
 
-no [DELTA_FLAG_NONE](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags) ou [DELTA_APPLY_FLAG_ALLOW_PA19](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags).
+[in] Ou [DELTA_FLAG_NONE](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags) ou [DELTA_APPLY_FLAG_ALLOW_PA19](/previous-versions/bb417345(v=msdn.10)#delta_flag_type-flags).
 
 *Origem*
 
-no Uma estrutura de [DELTA_INPUT](/previous-versions/bb417345(v=msdn.10)#delta-input-structure) que contém um ponteiro para o buffer que contém os dados de origem.
+[in] Uma [DELTA_INPUT](/previous-versions/bb417345(v=msdn.10)#delta-input-structure) que contém um ponteiro para o buffer que contém os dados de origem.
 
 *Delta*
 
-no Uma estrutura de [DELTA_INPUT](/previous-versions/bb417345(v=msdn.10)#delta-input-structure) que contém um ponteiro para o buffer que contém os dados Delta.
+[in] Uma [DELTA_INPUT](/previous-versions/bb417345(v=msdn.10)#delta-input-structure) que contém um ponteiro para o buffer que contém os dados delta.
 
 *lpTarget*
 
-fora Ponteiro para a estrutura de [DELTA_OUTPUT](/previous-versions/bb417345(v=msdn.10)#delta-output-structure) onde o destino deve ser gravado.
+[out] Ponteiro para a [DELTA_OUTPUT](/previous-versions/bb417345(v=msdn.10)#delta-output-structure) local em que o destino deve ser gravado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**. Quando a função retorna **false**, você pode chamar [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o código de erro do sistema Win32 correspondente.
+Essa função **retornará TRUE** se for bem-sucedida; caso contrário, retornará **FALSE.** Quando a função retorna **FALSE**, você pode chamar [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o código de erro do sistema Win32 correspondente.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |----------------|---------------------------------------------------------------------------------------|
-| parâmetro | msdelta. h |
+| parâmetro | msdelta.h |
 | DLL | msdelta.dll |
-| Unicode | Não aplicável |
+| Unicode | Não se aplica |
 
 ## <a name="see-also"></a>Confira também
 

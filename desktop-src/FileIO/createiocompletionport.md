@@ -18,12 +18,12 @@ api_location:
 - MinKernelBase.dll
 - API-MS-Win-Core-io-l1-1-1.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: b85ec931e740de192655ada091a990cd97180b6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6612c3087841aa0c13f131581f8a05c29403e4fccf81bd6f0dc338b1dd9e42a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083156"
 ---
 # <a name="createiocompletionport-function"></a>Função CreateIoCompletionPort
 
@@ -95,7 +95,7 @@ Se esse parâmetro for zero, o sistema permitirá o máximo de threads em execu�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será o identificador para uma porta de conclusão de e/s:
 
@@ -135,17 +135,17 @@ Depois que uma instância de um identificador aberto está associada a uma porta
 
 O identificador de porta de conclusão de e/s e todos os identificadores de arquivo associados a essa porta de conclusão de e/s específica são conhecidos como *referências à porta de conclusão de e/s*. A porta de conclusão de e/s é liberada quando não há mais referências a ela. Portanto, todos esses identificadores devem ser fechados corretamente para liberar a porta de conclusão de e/s e seus recursos de sistema associados. Depois que essas condições forem satisfeitas, feche o identificador da porta de conclusão de e/s chamando a função [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) .
 
-No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguintes tecnologias.
+em Windows 8 e Windows Server 2012, essa função é suportada pelas seguintes tecnologias.
 
 
 
 | Tecnologia                                           | Com suporte      |
 |------------------------------------------------------|----------------|
-| Protocolo SMB (Server Message Block) 3,0<br/>   | Yes<br/> |
-| Failover transparente SMB 3,0 (TFO)<br/>        | Yes<br/> |
-| SMB 3,0 com compartilhamentos de arquivos de escalabilidade horizontal (SO)<br/>   | Yes<br/> |
-| Sistema de arquivos Volume Compartilhado Clusterizado (CsvFS)<br/> | Yes<br/> |
-| ReFS (Sistema de Arquivos Resiliente)<br/>              | Yes<br/> |
+| Protocolo SMB (Server Message Block) 3,0<br/>   | Sim<br/> |
+| Failover transparente SMB 3,0 (TFO)<br/>        | Sim<br/> |
+| SMB 3,0 com compartilhamentos de arquivos de escalabilidade horizontal (SO)<br/>   | Sim<br/> |
+| Sistema de arquivos Volume Compartilhado Clusterizado (CsvFS)<br/> | Sim<br/> |
+| ReFS (Sistema de Arquivos Resiliente)<br/>              | Sim<br/> |
 
 
 
@@ -157,9 +157,9 @@ No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguinte
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows XP desktop\]<br/>                                                                                                                                                                                                                                                       |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2003 \[ Desktop aplicativos \| UWP\]<br/>                                                                                                                                                                                                                                              |
-| parâmetro<br/>                   | <dl> <dt>IoAPI. h (incluir Windows. h); </dt> <dt>Winbase. h no Windows server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Aplicativos de aplicativos de desktop do XP \[ \| UWP\]<br/>                                                                                                                                                                                                                                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2003 \| aplicativo UWP\]<br/>                                                                                                                                                                                                                                              |
+| Cabeçalho<br/>                   | <dl> <dt>IoAPI. h (incluir Windows. h);</dt> <dt>WinBase. h no Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP (inclua o Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                                                  |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                                                  |
 
@@ -178,10 +178,10 @@ No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguinte
 [Portas de conclusão de e/s](i-o-completion-ports.md)
 </dt> <dt>
 
-[Usando os cabeçalhos do Windows](/windows/desktop/WinProg/using-the-windows-headers)
+[usando os cabeçalhos de Windows](/windows/desktop/WinProg/using-the-windows-headers)
 </dt> <dt>
 
-[Windows Sockets 2](/windows/desktop/WinSock/windows-sockets-start-page-2)
+[Windows Soquetes 2](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
 **Funções**
@@ -193,7 +193,7 @@ No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguinte
 [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea)
 </dt> <dt>
 
-[**DuplicateHandle**](/windows/desktop/api/handleapi/nf-handleapi-duplicatehandle)
+[**Duplicatehandle**](/windows/desktop/api/handleapi/nf-handleapi-duplicatehandle)
 </dt> <dt>
 
 [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)

@@ -4,17 +4,17 @@ ms.assetid: ffe71c3f-f8c2-45cc-84bf-e937cfbbe7b9
 title: Propriedade PlayState
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d8c699ce3f232f9afc14472f0308fa65adc6abb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4b66ae0ddfb1a8ceb296ec647a0149a42de68f635ffd198d6ba6609ff11e4888
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102345"
 ---
 # <a name="playstate-property"></a>Propriedade PlayState
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
@@ -46,7 +46,7 @@ Retorna um valor inteiro que representa o estado atual do navegador de DVD.
 
 Esta propriedade é somente leitura sem valor padrão.
 
-O objeto **MSWebDVD** controla o filtro de navegador de DVD do DirectShow, que faz o trabalho real de navegação em DVD. Na verdade, é o estado do navegador de DVD ao qual essa propriedade se refere. O navegador de DVD pode estar em um dos vários Estados, conforme descrito acima. A `PlayState` propriedade pode ser útil como uma ferramenta de diagnóstico, mas, em geral, não deve haver motivo para um aplicativo de script monitorar o estado do navegador de DVD.
+o objeto **MSWebDVD** controla o DirectShow filtro de dvd Navigator, que faz o trabalho real de navegação em dvd. Na verdade, é o estado do navegador de DVD ao qual essa propriedade se refere. O navegador de DVD pode estar em um dos vários Estados, conforme descrito acima. A `PlayState` propriedade pode ser útil como uma ferramenta de diagnóstico, mas, em geral, não deve haver motivo para um aplicativo de script monitorar o estado do navegador de DVD.
 
  
 

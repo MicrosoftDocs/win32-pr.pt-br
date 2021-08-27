@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
-description: A \_ classe EnterpriseDataProtection01 RetrieveByTimeRange02 de relatórios do MDM \_ \_ é usada para recuperar os logs que existem dentro de StartTime e StopTime.
+title: MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe
+description: A classe MDM \_ Reporting \_ EnterpriseDataProtection01 RetrieveByTimeRange02 é usada para recuperar os logs existentes em \_ StartTime e StopTime.
 ms.assetid: 6abec00e-901f-4f79-840d-a4ef3a4d392d
 keywords:
-- Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
-- Classe MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02, descrita
+- MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe
+- MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,24 +17,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec266e68bbaaafb1f1e3a78fba7ea6b91805096a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60952e10f437b75edb4edf5a9465d4926b7e0615cc736f19f31520e02997d5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045606"
 ---
-# <a name="mdm_reporting_enterprisedataprotection01_retrievebytimerange02-class"></a>\_Classe RetrieveByTimeRange02 de relatórios MDM \_ EnterpriseDataProtection01 \_
+# <a name="mdm_reporting_enterprisedataprotection01_retrievebytimerange02-class"></a>Classe MDM \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02 de relatórios do MDM** é usada para recuperar os logs que existem dentro de StartTime e StopTime. StartTime e StopTime são expressos no formato ISO 8601. Se StartTime e StopTime não forem especificados, os valores serão interpretados como a primeira hora existente ou a última.
+A **classe MDM \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** é usada para recuperar os logs existentes em StartTime e StopTime. StartTime e StopTime são expressos no formato ISO 8601. Se StartTime e StopTime não são especificados, os valores são interpretados como o primeiro tempo existente ou o último existente.
 
-Estes são os outros cenários possíveis:
+Aqui estão os outros cenários possíveis:
 
--   Se StartTime e StopTime não forem especificados, ele retornará todos os logs existentes.
--   Se o StopTime for especificado, mas o StartTime não for especificado, todos os logs existentes antes de StopTime serão retornados.
--   Se StartTime for especificado, mas o StopTime não for especificado, todos os logs que existirem de StartTime serão retornados.
+-   Se StartTime e StopTime não são especificados, ele retorna todos os logs existentes.
+-   Se StopTime for especificado, mas StartTime não for especificado, todos os logs existentes antes do StopTime serão retornados.
+-   Se StartTime for especificado, mas StopTime não for especificado, todos os logs existentes do StartTime serão retornados.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -55,13 +55,13 @@ class MDM_Reporting_EnterpriseDataProtection01_RetrieveByTimeRange02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ RetrieveByTimeRange02 de relatórios do MDM \_ EnterpriseDataProtection01 \_** tem estes tipos de membros:
+A **classe MDM \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ RetrieveByTimeRange02 de relatório do MDM \_ EnterpriseDataProtection01 \_** tem essas propriedades.
+A **classe MDM \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByTimeRange02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -87,12 +87,12 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Retri
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -114,7 +114,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -125,7 +125,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -136,7 +136,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -147,11 +147,11 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOFs</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

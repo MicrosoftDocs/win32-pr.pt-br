@@ -3,7 +3,7 @@ title: Elemento Channel (SystemPropertiesType)
 description: O canal no qual o evento foi registrado.
 ms.assetid: 8df935f9-1372-4b77-a809-282ceea6ed44
 keywords:
-- Log de elementos do canal
+- Elemento Channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce198208e453ecb6697cd08266e53c2045ab5849
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c1ec744efde09ea49350a5f7a9d429dc7114d8025df64b1ad125f5962cec543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005596"
 ---
 # <a name="channel-systempropertiestype-element"></a>Elemento Channel (SystemPropertiesType)
 
@@ -31,7 +31,7 @@ O canal no qual o evento foi registrado.
  />
 ```
 
-O elemento **Channel** é definido pelo tipo complexo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+O **elemento Channel** é definido pelo tipo complexo [**SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O elemento **Channel** é definido pelo tipo complexo [**SystemPropertiesType**]
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -51,7 +51,7 @@ O elemento **Channel** é definido pelo tipo complexo [**SystemPropertiesType**]
 **Elemento pai**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

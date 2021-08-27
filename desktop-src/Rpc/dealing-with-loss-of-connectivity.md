@@ -4,12 +4,12 @@ description: Lidando com a perda de conectividade
 ms.assetid: a90fcb5a-773e-4c21-bf6c-c3519ec13a09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de8e7a8088cfe09a4c4026c16cc3dc5ea36b3430
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4eac02c4440cb2e31a29e810d78dfd51764be3ba0ed5a6dc32f8c3e10824bd70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101676"
 ---
 # <a name="dealing-with-loss-of-connectivity"></a>Lidando com a perda de conectividade
 
@@ -51,8 +51,8 @@ Em muitos desses casos, se um cliente RPC puder determinar se uma chamada é ide
 > [!Note]  
 > Se o servidor for um cluster e os diferentes nós do cluster executarem versões diferentes do software do servidor, uma nova tentativa de RPC poderá chamar a chamada em um nó diferente do cluster no caso de failover e, potencialmente, em uma versão diferente do servidor. Nesses cenários de implantação, verifique se o cliente não depende de uma versão específica do software de servidor para executar uma determinada chamada. Se tiver, o cliente deverá criar um mecanismo sobre o RPC que detecta e manipula essas condições.
 
- 
+ 
 
- 
+ 
 
- 
+ 

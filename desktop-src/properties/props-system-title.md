@@ -4,12 +4,12 @@ ms.assetid: 8fb948d6-2677-4e5d-b283-8757c3df574d
 title: System.Title
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eee57037a35c08fd3a6be4f4a0ce7a8475f82cf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b575c3dac43ec742f3b15068731afc6ddb15c7bf660a048c416abd7bc5976ab6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058276"
 ---
 # <a name="systemtitle"></a>System.Title
 
@@ -32,15 +32,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-Essa propriedade é mapeada para o *título* da Propriedade do documento OLE. [System. title]() é uma propriedade comumente usada, especialmente em listas heterogêneas de itens em que os itens podem ser de muitos tipos diferentes. Portanto, é recomendável que os manipuladores de propriedade populem essa propriedade mesmo se ela for redundante; por exemplo, um email, que preencheria System. Title e [System. Subject](./props-system-subject.md) com o mesmo valor.
+Essa propriedade é mapeado para a propriedade de documento OLE *Title*. [System.Title]() é uma propriedade comumente usada, especialmente em listas heterogêneas de itens em que os itens podem ser de muitos tipos diferentes. Portanto, é recomendável que os manipuladores de propriedades preencham essa propriedade mesmo que ela seja redundante; por exemplo, um email, que preencheria System.Title e [System.Subject](./props-system-subject.md) com o mesmo valor.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -49,19 +49,19 @@ Essa propriedade é mapeada para o *título* da Propriedade do documento OLE. [S
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -76,7 +76,7 @@ Essa propriedade é mapeada para o *título* da Propriedade do documento OLE. [S
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

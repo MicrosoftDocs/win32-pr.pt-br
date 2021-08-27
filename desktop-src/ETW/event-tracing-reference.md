@@ -4,12 +4,12 @@ ms.assetid: 8cb5907e-9006-45d1-9d48-13a43a631664
 title: Referência de rastreamento de eventos
 ms.topic: article
 ms.date: 01/30/2020
-ms.openlocfilehash: 7e0ee4576b9b9d64a5766c6ab096ea34abc2b176
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20aaf59de3419b4015f03b38db69839b6f258ccd561b1e918694396e875ae5a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083276"
 ---
 # <a name="event-tracing-reference"></a>Referência de rastreamento de eventos
 
@@ -31,6 +31,6 @@ Esta seção também contém informações sobre:
 
 ## <a name="process-etw-traces-in-net-code"></a>Processar rastreamentos ETW no código .NET
 
-Você também pode usar a [API do .net TraceProcessing](https://www.nuget.org/packages/Microsoft.Windows.EventTracing.Processing.All) para analisar rastreamentos ETW para seus aplicativos e outros componentes de software. Essa API é usada internamente na Microsoft para analisar dados de ETW produzidos pelo sistema de engenharia do Windows e também é usada para alimentar várias tabelas no [analisador de desempenho do Windows](/windows-hardware/test/wpt/windows-performance-analyzer). Essa API está disponível como um pacote NuGet.
+Você também pode usar a [API do .net TraceProcessing](https://www.nuget.org/packages/Microsoft.Windows.EventTracing.Processing.All) para analisar rastreamentos ETW para seus aplicativos e outros componentes de software. essa API é usada internamente na Microsoft para analisar dados de ETW produzidos pelo sistema de engenharia de Windows e também é usada para alimentar várias tabelas no [analisador de desempenho Windows](/windows-hardware/test/wpt/windows-performance-analyzer). essa API está disponível como um pacote NuGet.
 
 Para obter mais informações, consulte [este artigo](/windows/apps/trace-processing/overview).

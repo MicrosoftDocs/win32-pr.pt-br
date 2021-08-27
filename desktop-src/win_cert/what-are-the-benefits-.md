@@ -1,7 +1,7 @@
 ---
-title: Benefícios da certificação do Windows
+title: Benefícios da Windows certificação
 ms.assetid: F6476A58-F74D-4914-A234-635484D7DAAB
-description: 'Saiba mais sobre: benefícios da certificação do Windows'
+description: 'Saiba mais sobre: Benefícios da Windows certificação'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,38 +9,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4f386ae6f44ada93d710c49fc9a30c58c38c23f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a567121e94c9203c65c9aa4233cf10cc38caae5640bffd8ad789547da410ca7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090016"
 ---
-# <a name="benefits-of-windows-certification"></a>Benefícios da certificação do Windows
+# <a name="benefits-of-windows-certification"></a>Benefícios da Windows certificação
 
-Ao certificar seu Windows 8.1 ou aplicativos de área de trabalho do Windows 8, você está qualificado para:
+Ao certificar seus aplicativos Windows 8.1 ou Windows 8 desktop, você estará qualificado para:
 
--   Participe do mercado de software Windows de vários bilhões de dólares e da maior versão do Windows
--   Ser apresentado como compatível no relatório de compatibilidade da instalação do Windows
--   Estar listado na Windows Store, com milhões de clientes potenciais em todo o mundo (somente Windows 8.1)
+-   Participar do mercado de software multibilionária Windows e maior lançamento de Windows
+-   Ser destaque como compatível no relatório de compatibilidade Windows instalação do Windows
+-   Estar listado na Windows Store, com milhões de clientes potenciais em todo o mundo (Windows 8.1 apenas)
 -   Ter acesso a ativos de marketing e treinamento do Microsoft Partner Network
--   Ganhe logotipos de certificação para identificar facilmente seu aplicativo como de alta qualidade e compatível com o Windows
--   Dê confiança aos seus clientes na qualidade do seu produto
+-   Ganhar logotipos de certificação para identificar facilmente seu aplicativo como de alta qualidade e Windows compatível
+-   Dê aos clientes confiança na qualidade do seu produto
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Verifique se seus aplicativos são compatíveis com o Windows.](/windows/desktop/w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal)
+[Verifique se seus aplicativos são compatíveis com Windows.](/windows/desktop/w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal)
 </dt> <dt>
 
-[Obtenha o SDK do Windows (inclui o kit de certificação de aplicativos para Windows) e outros downloads.](https://www.microsoft.com/?ref=go)
+[Obter o Windows SDK (inclui o kit de certificação Windows aplicativo) e outros downloads.](https://www.microsoft.com/?ref=go)
 </dt> <dt>
 
-[Obtenha detalhes para usar o logotipo do Windows com seu aplicativo de área de trabalho.](/previous-versions/windows/hardware/hck/dn641154(v=vs.85))
+[Obter detalhes para usar o logotipo Windows com seu aplicativo da área de trabalho.](/previous-versions/windows/hardware/hck/dn641154(v=vs.85))
 </dt> <dt>
 
-[Obtenha ajuda com o desenvolvimento de aplicativos da área de trabalho.](https://www.microsoft.com/?ref=go)
+[Obter ajuda com o desenvolvimento de aplicativos da área de trabalho.](https://www.microsoft.com/?ref=go)
 </dt> </dl>
 
  

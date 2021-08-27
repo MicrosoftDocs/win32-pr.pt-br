@@ -1,22 +1,22 @@
 ---
-description: Desbloqueando o SDK do Windows Media Format
+description: Desbloqueando o SDK Windows Formato de Mídia
 ms.assetid: 7ede8bda-3b26-452d-8ce9-cd2410ffd9f4
-title: Desbloqueando o SDK do Windows Media Format
+title: Desbloqueando o SDK Windows Formato de Mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e9807794dc7e42c563f2f7d45dcb0b1b684aad1
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6e1f332711e9fd12c9b0ff1f789438d051487b81711f157ae1024a8e47973386
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105758824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078656"
 ---
-# <a name="unlocking-the-windows-media-format-sdk"></a>Desbloqueando o SDK do Windows Media Format
+# <a name="unlocking-the-windows-media-format-sdk"></a>Desbloqueando o SDK Windows Formato de Mídia
 
-Para acessar a versão 7 ou 7,1 do SDK do Windows Media Format, um aplicativo deve fornecer um certificado de software, também chamado de chave, em tempo de execução. Essa chave está contida em uma biblioteca estática chamada wmstub. lib para a qual o aplicativo é vinculado no momento da compilação. Uma chave individualizada só é necessária para criar ou ler arquivos protegidos por DRM. Arquivos não DRM podem ser criados usando a biblioteca estática fornecida com o Windows Media Format SDK. Para obter detalhes sobre como obter a chave DRM, consulte o SDK do Windows Media Format. Um aplicativo do DirectShow fornece seu certificado para o gravador ASF do WM quando ele é adicionado ao grafo de filtro. O aplicativo deve ser registrado como um provedor de chaves usando as interfaces **IServiceProvider** e **IObjectWithSite** do com. Usando essa técnica, o aplicativo implementa uma classe de provedor de chave derivada de **IServiceProvider**. Essa classe implementa os três métodos COM padrão —**AddRef**, **QueryInterface** e **Release**— juntamente com um método adicional, **QueryService**, que é chamado pelo Gerenciador do grafo de filtro. **QueryService** chama o método [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85)) do Windows Media Format SDK e retorna ao Gerenciador do grafo de filtro um ponteiro para o certificado que foi criado. Se o certificado for válido, o Gerenciador de gráfico de filtro permitirá que o processo de criação de grafo prossiga.
+Para acessar a versão 7 ou 7.1 do SDK de Formato de Mídia Windows, um aplicativo deve fornecer um certificado de software, também chamado de chave, em tempo de executar. Essa chave está contida em uma biblioteca estática chamada wmstub.lib à qual o aplicativo se vincula em tempo de build. Uma chave individualizada só é necessária para criar ou ler arquivos protegidos por DRM. Arquivos não DRM podem ser criados usando a biblioteca estática fornecida com o SDK Windows Formato de Mídia. Para obter detalhes sobre como obter a chave DRM, consulte o SDK Windows Formato de Mídia. Um DirectShow aplicativo fornece seu certificado para o Wm ASF Writer quando ele é adicionado ao grafo de filtro. O aplicativo deve se registrar como um provedor de chaves usando as interfaces COM **IServiceProvider** **e IObjectWithSite.** Usando essa técnica, o aplicativo implementa uma classe de provedor de chaves derivada de **IServiceProvider**. Essa classe implementa os três métodos COM padrão:**AddRef**, **QueryInterface** e **Release**, juntamente com um método adicional, **QueryService,** que é chamado pelo gerenciador de grafo de filtro. **QueryService** chama o método Windows SDK de Formato de Mídia [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85)) e retorna ao gerenciador de grafo de filtro um ponteiro para o certificado que foi criado. Se o certificado for válido, o gerenciador de grafo de filtro permitirá que o processo de criação de grafo prossiga.
 
 > [!Note]  
-> Para criar um aplicativo, inclua Wmsdkidl. h para o protótipo para [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85))e vincule à biblioteca Wmstub. lib.
+> Para criar um aplicativo, inclua Wmsdkidl.h para o protótipo [**para WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85))e link para a biblioteca Wmstub.lib.
 
  
 

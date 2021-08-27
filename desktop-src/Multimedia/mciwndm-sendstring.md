@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_SENDSTRING (VFW. h)
 description: A \_ mensagem SendString MCIWNDM envia um comando MCI no formato de cadeia de caracteres para o dispositivo associado à janela MCIWnd. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndSendString.
 ms.assetid: 0e999a0e-588d-4f06-a1bc-fd3f245d8980
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_SENDSTRING
+- mensagem de MCIWNDM_SENDSTRING Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d36a034a3459803b1652bafed4eb389866add211
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b98ee008346821c2d489b19d01bb372c37cd3d541380fd8dae3b72bf613051f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037926"
 ---
 # <a name="mciwndm_sendstring-message"></a>\_Mensagem MCIWNDM SendString
 

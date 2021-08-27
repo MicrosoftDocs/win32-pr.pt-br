@@ -1,33 +1,33 @@
 ---
-title: Gestos do Windows Touch no exemplo C (MTGesturesCS)
-description: Esta seção descreve o exemplo de gestos do Windows Touch em C \.
+title: Windows Gestos de toque no exemplo C (MTGesturesCS)
+description: esta seção descreve o exemplo de gestos de toque Windows em C \.
 ms.assetid: 4b2d70bb-47e4-4448-97e2-6f6e29d1dfdf
 keywords:
-- Windows Touch, exemplos de código
-- Windows Touch, código de exemplo
-- Toque do Windows, gestos
-- Toque do Windows, exemplos de gesto
+- Windows Toque, exemplos de código
+- Windows Toque, código de exemplo
+- Windows Toque, gestos
+- Windows Toque, exemplos de gestos
 - Amostras de gesto
 - gestos, código de exemplo
 - gestos, exemplos de código
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: e6ffc0e8caf63807d4df80a1b96229f2fa7b5ff9
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: ac3a7c0772ad7329d14d9909b55f8a60ef6e7d7473a06fcba921297117a00b6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089896"
 ---
-# <a name="windows-touch-gestures-in-c-sample-mtgesturescs"></a>Gestos do Windows Touch na amostra do C# (MTGesturesCS)
+# <a name="windows-touch-gestures-in-c-sample-mtgesturescs"></a>Windows Gestos de toque no exemplo de C# (MTGesturesCS)
 
-Esta seção descreve o exemplo de gestos do Windows Touch em C#.
+esta seção descreve o exemplo de gestos de toque Windows em C#.
 
-Este exemplo de gestos do Windows Touch demonstra como usar mensagens de gesto para converter, girar e dimensionar uma caixa renderizada pelo Graphics Device Interface (GDI) manipulando a mensagem de [**WM_GESTURE**](wm-gesture.md) . A captura de tela a seguir mostra como a amostra parece quando está em execução.
+este exemplo Windows gestos de toque demonstra como usar mensagens de gesto para converter, girar e dimensionar uma caixa renderizada pelo Graphics Device Interface (GDI) manipulando a mensagem [**WM_GESTURE**](wm-gesture.md) . A captura de tela a seguir mostra como a amostra parece quando está em execução.
 
 ![captura de tela mostrando os gestos de toque do Windows no exemplo c nítido quando ele está em execução, com um retângulo branco com contorno preto centralizado na tela](images/mtgesturescs.png)
 
-Para este exemplo, as mensagens de gesto são passadas para um mecanismo de gesto que, em seguida, chama métodos em objetos de desenho para converter, girar e dimensionar um objeto que tem métodos para lidar com esses comandos. Para tornar isso possível em C#, um formulário especial, TouchableForm, é criado para lidar com mensagens de gestos. Em seguida, esse formulário usa as mensagens para fazer alterações em um objeto de desenho, Drawingobject, para alterar a forma como o objeto é renderizado no método Paint.
+Para este exemplo, as mensagens de gesto são passadas para um mecanismo de gesto que, em seguida, chama métodos em objetos de desenho para converter, girar e dimensionar um objeto que tem métodos para lidar com esses comandos. Para tornar isso possível em C#, um formulário especial, TouchableForm, é criado para lidar com mensagens de gestos. em seguida, esse formulário usa as mensagens para fazer alterações em um objeto de desenho, drawingobject, para alterar a forma como o objeto é renderizado no método Paint.
 
 Para ajudar a mostrar como o exemplo funciona, considere as etapas para usar o comando Pan para converter a caixa renderizada. Um usuário executa o gesto de panorâmica que gera uma mensagem de [**WM_GESTURE**](wm-gesture.md) com o identificador de gesto GID_PAN. O TouchableForm lida com essas mensagens e atualiza a posição do objeto de desenho, e o objeto será convertido em si.
 
@@ -106,4 +106,4 @@ Gestos de panorâmica farão com que a caixa de desenho seja renderizada como tr
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Aplicativo de gestos multitoque (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [aplicativo de gestos multitoque (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), exemplos de [toque do Windows](windows-touch-samples.md)
+[aplicativo de gestos multitoque (C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/CS), [aplicativo de gestos multitoque (C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTGestures/cpp), [Windows toque em exemplos](windows-touch-samples.md)
