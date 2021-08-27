@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7c7b068246da9b26a4b3547e27abd1a9b60c8fd70de10e4edd2438463a156633
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b6be1fae596e70f15dbfcd27e4bf15e35e04a93
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202503"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625972"
 ---
 # <a name="fontcontrol-element"></a>Elemento FontControl
 
@@ -46,10 +46,10 @@ Representa um [Controle de Fonte](windowsribbon-controls-fontcontrol.md), que é
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -98,7 +98,7 @@ Os botões <strong></strong> <strong>de</strong> alternância Tachado e Sublinha
 <li><p><strong>Selador de cor de realçada</strong> de texto.</p>
 <blockquote>
 [!Note]<br />
-Esse controle é oculto por padrão, mas pode ser exibido definindo o atributo <em>IsHighlightButtonVisible</em> como <code>true</code> .
+Esse controle está oculto por padrão, mas pode ser exibido definindo o atributo <em>IsHighlightButtonVisible</em> como <code>true</code> .
 </blockquote>
 <p><br/></p></li>
 </ul>
@@ -180,23 +180,23 @@ O realçamento de cores só está disponível em <strong>um FontControl</strong>
 <td><strong>ShowTrueTypeOnly</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Exibe somente fontes TrueType e OpenType. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Padrão. Nenhuma restrição é colocada no tipo de fontes exibidas.<br/> </dd> </dl></td>
+<td>Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Exibe somente as fontes TrueType e OpenType. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Padrão. Nenhuma restrição é colocada no tipo de fontes exibidas.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>ShowVerticalFonts</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/>
+<td>Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/>
 <blockquote>
 [!Note]<br />
-As fontes verticais são precedidas por um símbolo @ na <strong>lista Família de</strong> fontes.
+As fontes verticais são precedidas por um símbolo @ na lista <strong>família de fontes</strong> .
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. Exibe as fontes verticais definidas como <strong>Mostrar</strong> no <strong>painel de controle</strong> Fontes. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Permite que um aplicativo que não dá suporte a texto vertical oculta fontes verticais definidas como <strong>Mostrar</strong> no <strong>painel de controle</strong> Fontes.<br/>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. Exibe as fontes verticais que estão definidas para <strong>Mostrar</strong> no painel de controle <strong>fontes</strong> . <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Permite que um aplicativo que não dá suporte a texto vertical oculte quaisquer fontes verticais definidas para <strong>Mostrar</strong> no painel de controle <strong>fontes</strong> .<br/>
 <blockquote>
 [!Note]<br />
-No Windows Vista, o <strong>painel de controle Fontes</strong> não oferece a funcionalidade <strong>Mostrar</strong> <strong>ou</strong> Ocultar. Nesse caso, o <em>atributo ShowVerticalFonts</em> deve ser definido como <code>False</code> .
+no Windows Vista, o painel de controle de <strong>fontes</strong> não oferece a funcionalidade de <strong>mostrar</strong> ou <strong>ocultar</strong> . Nesse caso, o atributo <em>ShowVerticalFonts</em> deve ser definido como <code>False</code> .
 </blockquote>
 <br/> </dd> </dl></td>
 </tr>
@@ -215,9 +215,9 @@ Não há elementos filho.
 
 | Elemento                                                               |
 |-----------------------------------------------------------------------|
-| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/> |
+| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/> |
 | [**Grupo**](windowsribbon-element-group.md)<br/>               |
-| [**Menugroup**](windowsribbon-element-menugroup.md)<br/>       |
+| [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>       |
 
 
 
@@ -225,17 +225,17 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group**](windowsribbon-element-group.md)ou [**MenuGroup.**](windowsribbon-element-menugroup.md)
+Pode ocorrer no máximo uma vez para [](windowsribbon-element-controlgroup.md)cada elemento Control [**Group, grupo**](windowsribbon-element-group.md)ou [**menu**](windowsribbon-element-menugroup.md) .
 
-Todos os atributos de Comando **FontControl** declarados na marcação, como [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) ou [**Command.TooltipTitle,**](windowsribbon-element-command-tooltiptitle.md)são substituídos pelos atributos dos controles individuais que compõem **o FontControl.**
+Quaisquer atributos de comando **FontControl** declarados na marcação, como [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) ou [**Command. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md), são substituídos pelos atributos dos controles individuais que compõem o **FontControl**.
 
-Qualquer tentativa de selecionar um swatch de [](windowsribbon-controls-fontcontrol.md) cor do seletor de cores de um Controle de Fonte poderá resultar em uma violação de acesso se nenhum manipulador de comandos estiver associado ao controle.
+Qualquer tentativa de selecionar uma amostra de cor do seletor de cores de um [controle de fonte](windowsribbon-controls-fontcontrol.md) pode resultar em uma violação de acesso se nenhum manipulador de comando estiver associado ao controle.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para os três tipos de [Controle de Fonte](windowsribbon-controls-fontcontrol.md).
+O exemplo a seguir demonstra a marcação básica para os três tipos de [controle de fonte](windowsribbon-controls-fontcontrol.md).
 
-Esta seção de código mostra as declarações **de Comando FontControl,** cada uma com uma declaração [**de contêiner**](windowsribbon-element-group.md) de grupo.
+Esta seção de código mostra as declarações de comando **FontControl** , cada uma com uma declaração de contêiner de [**grupo**](windowsribbon-element-group.md) .
 
 
 ```XML
@@ -279,7 +279,7 @@ Esta seção de código mostra as declarações **de Comando FontControl,** cada
 
 
 
-Esta seção de código mostra as **declarações de controle FontControl** em que cada **FontControl** e [**Grupo**](windowsribbon-element-group.md) é declarado em uma única guia.
+Esta seção de código mostra as declarações de controle **FontControl** em que cada **FontControl** e [**grupo**](windowsribbon-element-group.md) é declarado em uma única guia.
 
 
 ```XML
@@ -317,8 +317,8 @@ Esta seção de código mostra as **declarações de controle FontControl** em q
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Sim
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 
@@ -326,10 +326,10 @@ Esta seção de código mostra as **declarações de controle FontControl** em q
 
 <dl> <dt>
 
-[Controle de fonte](windowsribbon-controls-fontcontrol.md)
+[Controle de controle de fonte](windowsribbon-controls-fontcontrol.md)
 </dt> <dt>
 
-[Propriedades do controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
+[Propriedades de controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
 [Exemplo de FontControl](windowsribbon-fontcontrolsample.md)

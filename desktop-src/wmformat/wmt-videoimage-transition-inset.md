@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f815e0bb1fc7e8e1cba277f68b7950af2b20395092b69b2c07ebb7ac51367da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a47d53de99d3c6f6144755934989ca3958d28a23
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843785"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476773"
 ---
 # <a name="wmt_videoimage_transition_inset"></a>INSET DE TRANSIÇÃO DO WMT \_ VIDEOIMAGE \_ \_
 
@@ -31,52 +31,14 @@ A tabela a seguir descreve os parâmetros usados por essa transição e lista os
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Membro da estrutura</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Largura</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Largura do inset em pixels.</td>
-</tr>
-<tr class="even">
-<td>Altura</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Altura do inset em pixels.</td>
-</tr>
-<tr class="odd">
-<td>Direção</td>
-<td><strong>fEffectPara2</strong></td>
-<td>Canto do qual o inset se origina. De acordo com um dos seguintes valores:<br/>
-<ul>
-<li>0 – Inferior esquerdo</li>
-<li>1 - Inferior direito</li>
-<li>2 – Superior esquerdo</li>
-<li>3 – Canto superior direito</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Composição</td>
-<td><strong>fEffectPara3</strong></td>
-<td>De acordo com um dos seguintes valores:
-<ul>
-<li>0 – Especifica a composição normal, na qual a imagem anterior é a plano de fundo e a imagem atual é o primeiro plano.</li>
-<li>1 - Especifica a composição invertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Membro da estrutura | Descrição | 
+|-----------|------------------|-------------|
+| Largura | <strong>fEffectPara0</strong> | Largura do inset em pixels. | 
+| Altura | <strong>fEffectPara1</strong> | Altura do inset em pixels. | 
+| Direção | <strong>fEffectPara2</strong> | Canto do qual o inset se origina. De acordo com um dos seguintes valores:<br /><ul><li>0 – Inferior esquerdo</li><li>1 - Inferior direito</li><li>2 – Superior esquerdo</li><li>3 – Canto superior direito</li></ul> | 
+| Composição | <strong>fEffectPara3</strong> | De acordo com um dos seguintes valores:<ul><li>0 – Especifica a composição normal, na qual a imagem anterior é a plano de fundo e a imagem atual é o primeiro plano.</li><li>1 - Especifica a composição invertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li></ul> | 
+
 
 
 

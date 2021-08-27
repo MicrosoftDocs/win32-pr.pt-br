@@ -4,12 +4,12 @@ ms.assetid: 0522ccbf-e754-470a-8199-004fcbaa927d
 title: Visão geral do DXGI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 324a5be26aade17385a6ab0b7d347015497a2a3f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 604787a1b3f747b9d33cc04e249128aede7b7a3e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456466"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626132"
 ---
 # <a name="dxgi-overview"></a>Visão geral do DXGI
 
@@ -26,7 +26,7 @@ Um aplicativo pode acessar o DXGI diretamente ou chamar as APIs do Direct3D em D
 Este tópico inclui as seções a seguir.
 
 -   [Enumerando adaptadores](#enumerating-adapters)
-    -   [Novas informações sobre como enumerar adaptadores para o Windows 8](#new-info-about-enumerating-adapters-for-windows-8)
+    -   [Novas informações sobre como enumerar adaptadores para Windows 8](#new-info-about-enumerating-adapters-for-windows-8)
 -   [Apresentação](#presentation)
     -   [Criar uma cadeia de permuta](#create-a-swap-chain)
     -   [Cuidado e alimentação da cadeia de permuta](#care-and-feeding-of-the-swap-chain)
@@ -65,9 +65,9 @@ DXGI 1,1 adicionou a interface [**IDXGIFactory1**](/windows/win32/api/DXGI/nn-dx
 
 Se você quiser selecionar recursos específicos de hardware de vídeo ao usar APIs do Direct3D, recomendamos que você chame iterativamente a função [**D3D11CreateDevice**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdevice) ou [**D3D11CreateDeviceAndSwapChain**](/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain) com cada identificador de adaptador e um [nível de recurso](../direct3d11/overviews-direct3d-11-devices-downlevel-intro.md)de hardware possível. Essa função terá sucesso se o nível de recurso tiver suporte do adaptador especificado.
 
-### <a name="new-info-about-enumerating-adapters-for-windows-8"></a>Novas informações sobre como enumerar adaptadores para o Windows 8
+### <a name="new-info-about-enumerating-adapters-for-windows-8"></a>Novas informações sobre como enumerar adaptadores para Windows 8
 
-A partir do Windows 8, um adaptador chamado "Microsoft Basic render Driver" está sempre presente. Esse adaptador tem um VendorID de **0x1414** e um DeviceID de **0x8c**. Esse adaptador também tem o valor de [**\_ \_ \_ software Flag do adaptador dxgi**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) definido no membro **flags** de sua estrutura [**\_ \_ DESC2 do adaptador dxgi**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_adapter_desc2) . Esse adaptador é um dispositivo somente de renderização que não tem saídas de exibição. DXGI nunca retorna [**o \_ dispositivo de erro dxgi \_ \_ removido**](dxgi-error.md) para esse adaptador.
+a partir do Windows 8, um adaptador chamado "Driver de renderização básico da Microsoft" está sempre presente. Esse adaptador tem um VendorID de **0x1414** e um DeviceID de **0x8c**. Esse adaptador também tem o valor de [**\_ \_ \_ software Flag do adaptador dxgi**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) definido no membro **flags** de sua estrutura [**\_ \_ DESC2 do adaptador dxgi**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_adapter_desc2) . Esse adaptador é um dispositivo somente de renderização que não tem saídas de exibição. DXGI nunca retorna [**o \_ dispositivo de erro dxgi \_ \_ removido**](dxgi-error.md) para esse adaptador.
 
 Se o driver de vídeo de um computador não estiver funcionando ou estiver desabilitado, o adaptador primário (**nulo**) do computador também poderá ser chamado de "driver de renderização básico da Microsoft". Mas esse adaptador tem saídas e não tem o valor de [**\_ software do \_ sinalizador \_ do adaptador dxgi**](/windows/win32/api/dxgi/ne-dxgi-dxgi_adapter_flag) definido. O sistema operacional e os aplicativos usam esse adaptador por padrão. Se um driver de vídeo estiver instalado ou habilitado, os aplicativos poderão receber o [**\_ dispositivo de erro dxgi \_ \_ removido**](dxgi-error.md) desse adaptador e deverão enumerar novamente os adaptadores novamente.
 
@@ -104,7 +104,7 @@ Uma cadeia de permuta é configurada para desenhar no modo de tela inteira ou ja
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -112,12 +112,12 @@ Uma cadeia de permuta é configurada para desenhar no modo de tela inteira ou ja
 <ul>
 <li>Em DXGI, uma cadeia de permuta é vinculada a uma janela quando a cadeia de permuta é criada. Essa alteração melhora o desempenho e economiza memória. As versões anteriores do Direct3D permitiam que a cadeia de permuta alterasse a janela à qual a cadeia de permuta está vinculada.</li>
 <li>Em DXGI, uma cadeia de permuta está vinculada a um dispositivo de renderização na criação. O objeto de dispositivo que as funções de dispositivo de criação de Direct3D retornam implementa a interface <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown"><strong>IUnknown</strong></a> . Você pode chamar <a href="/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)"><strong>QueryInterface</strong></a> para consultar a interface <a href="/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgidevice2"><strong>IDXGIDevice2</strong></a> correspondente do dispositivo. Uma alteração no dispositivo de renderização requer que a cadeia de permuta seja recriada.</li>
-<li><p>No DXGI, os efeitos de permuta disponíveis são DXGI_SWAP_EFFECT_DISCARD e DXGI_SWAP_EFFECT_SEQUENTIAL. A partir do Windows 8, o efeito de permuta DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL também está disponível. A tabela a seguir mostra um mapeamento do Direct3D 9 para o efeito de permuta de DXGI definido. </p>
+<li><p>No DXGI, os efeitos de permuta disponíveis são DXGI_SWAP_EFFECT_DISCARD e DXGI_SWAP_EFFECT_SEQUENTIAL. Começando com Windows 8 o DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL de troca de dados também está disponível. A tabela a seguir mostra um mapeamento do efeito de troca direct3D 9 para DXGI definido. </p>
 <table>
 <thead>
 <tr class="header">
-<th>Efeito de permuta D3D9</th>
-<th>Efeito de permuta de DXGI</th>
+<th>Efeito de troca D3D9</th>
+<th>Efeito de troca DXGI</th>
 </tr>
 </thead>
 <tbody>
@@ -131,11 +131,11 @@ Uma cadeia de permuta é configurada para desenhar no modo de tela inteira ou ja
 </tr>
 <tr class="odd">
 <td>D3DSWAPEFFECT_FLIP</td>
-<td>DXGI_SWAP_EFFECT_SEQUENTIAL com dois ou mais buffers</td>
+<td>DXGI_SWAP_EFFECT_SEQUENTIAL com 2 ou mais buffers</td>
 </tr>
 <tr class="even">
 <td>D3DSWAPEFFECT_FLIPEX</td>
-<td>DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL com dois ou mais buffers</td>
+<td>DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL com 2 ou mais buffers</td>
 </tr>
 </tbody>
 </table>
@@ -150,9 +150,9 @@ Uma cadeia de permuta é configurada para desenhar no modo de tela inteira ou ja
 
  
 
-Os buffers de uma cadeia de permuta são criados em um determinado tamanho e em um formato específico. O aplicativo especifica esses valores (ou você pode herdar o tamanho da janela de destino) na inicialização e, opcionalmente, modificá-los à medida que o tamanho da janela é alterado em resposta a eventos de programa ou entrada do usuário.
+Os buffers de uma cadeia de permuta são criados em um tamanho específico e em um formato específico. O aplicativo especifica esses valores (ou você pode herdar o tamanho da janela de destino) na inicialização e, opcionalmente, pode modificá-los à medida que o tamanho da janela muda em resposta à entrada do usuário ou eventos do programa.
 
-Depois de criar a cadeia de permuta, você normalmente desejará renderizar imagens nela. Aqui está um fragmento de código que configura um contexto do Direct3D para renderizar em uma cadeia de troca. Esse código extrai um buffer da cadeia de permuta, cria um modo de exibição de destino de renderização desse buffer e, em seguida, define-o no dispositivo:
+Depois de criar a cadeia de permuta, normalmente você deseja renderizar imagens nele. Aqui está um fragmento de código que configura um contexto direct3D para renderizar em uma cadeia de permuta. Esse código extrai um buffer da cadeia de permuta, cria uma exibição de destino de renderização desse buffer e, em seguida, define-o no dispositivo:
 
 
 ```
@@ -168,30 +168,30 @@ pD3D11DeviceContext->OMSetRenderTargets(1, &pView, 0);
 
 
 
-Depois que o aplicativo renderiza um quadro em um buffer da cadeia de permuta, chame [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). Em seguida, o aplicativo pode renderizar a próxima imagem.
+Depois que o aplicativo renderizar um quadro em um buffer de cadeia de permuta, chame [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). Em seguida, o aplicativo pode renderizar a próxima imagem.
 
 ### <a name="care-and-feeding-of-the-swap-chain"></a>Cuidado e alimentação da cadeia de permuta
 
-Depois de renderizar sua imagem, chame [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) e go renderizar a próxima imagem. Essa é a extensão de sua responsabilidade.
+Depois de renderizar sua imagem, chame [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) e vá renderizar a próxima imagem. Essa é a extensão de sua responsabilidade.
 
-Se você anteriormente chamou [**IDXGIFactory:: MakeWindowAssociation**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-makewindowassociation), o usuário poderá pressionar a combinação de teclas Alt-Enter e dxgi fará a transição do seu aplicativo entre o modo de tela inteira e janelas. **IDXGIFactory:: MakeWindowAssociation** é recomendado, pois um mecanismo de controle padrão para o usuário é altamente desejado.
+Se você tiver chamado [**IDXGIFactory::MakeWindowAssociation**](/windows/win32/api/DXGI/nf-dxgi-idxgifactory-makewindowassociation)anteriormente, o usuário poderá pressionar a combinação de teclas Alt-Enter e o DXGI fará a transição do aplicativo entre o modo de janela e de tela inteira. **É recomendável IDXGIFactory::MakeWindowAssociation,** pois um mecanismo de controle padrão para o usuário é altamente desejado.
 
-Embora você não precise escrever mais código do que o que foi descrito, algumas etapas simples podem tornar seu aplicativo mais responsivo. A consideração mais importante é o redimensionamento dos buffers da cadeia de permuta em resposta ao redimensionamento da janela de saída. Naturalmente, a melhor rota do aplicativo é responder ao tamanho do WM \_ e chamar [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers), passando o tamanho contido nos parâmetros da mensagem. Esse comportamento obviamente faz com que seu aplicativo responda bem ao usuário quando ele arrasta as bordas da janela, mas também é exatamente o que permite uma transição de tela inteira suave. Sua janela receberá uma mensagem de tamanho do WM \_ sempre que essa transição ocorrer e chamar **IDXGISwapChain:: ResizeBuffers** é a chance da cadeia de troca de realocar o armazenamento de buffers para uma apresentação ideal. É por isso que o aplicativo precisa liberar quaisquer referências que tenha nos buffers existentes antes de chamar **IDXGISwapChain:: ResizeBuffers**.
+Embora você não tenha que escrever mais código do que foi descrito, algumas etapas simples podem tornar seu aplicativo mais responsivo. A consideração mais importante é o re tamanho dos buffers da cadeia de permuta em resposta ao re tamanho da janela de saída. Naturalmente, a melhor rota do aplicativo é responder ao WM SIZE e chamar \_ [**IDXGISwapChain::ResizeBuffers,**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers)passando o tamanho contido nos parâmetros da mensagem. Obviamente, esse comportamento faz com que seu aplicativo responda bem ao usuário quando ele arrasta as bordas da janela, mas também é exatamente o que permite uma transição suave de tela inteira. Sua janela receberá uma mensagem WM SIZE sempre que essa transição ocorrer e chamar \_ **IDXGISwapChain::ResizeBuffers** é a chance da cadeia de permuta de alocar o armazenamento dos buffers para uma apresentação ideal. É por isso que o aplicativo é necessário para liberar quaisquer referências que ele tenha nos buffers existentes antes de chamar **IDXGISwapChain::ResizeBuffers**.
 
-Falha ao chamar [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) em resposta à alternância para o modo de tela inteira (mais naturalmente, em resposta ao \_ tamanho do WM), pode impedir a otimização da inversão, em que dxgi pode simplesmente trocar o buffer que está sendo exibido, em vez de copiar um inteiro de dados em tela inteira.
+A falha ao chamar [**IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) em resposta à alternação para o modo de tela inteira (mais naturalmente, em resposta ao WM SIZE), pode impedir a otimização de invertida, em que o DXGI pode simplesmente trocar qual buffer está sendo exibido, em vez de copiar o valor de dados de uma tela \_ inteira.
 
-[**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) informará se a janela de saída é totalmente obstruído por meio do **status de dxgi \_ \_ obstruído**. Quando isso ocorre, recomendamos que o aplicativo vá para o modo de espera (chamando **IDXGISwapChain1::P resent1** com o **teste do dxgi \_ presente \_**), já que os recursos usados para renderizar o quadro são desperdiçados. O uso do **\_ \_ teste presente em dxgi** impedirá que todos os dados sejam apresentados enquanto ainda executam a verificação de oclusão. Depois de **IDXGISwapChain1::P resent1** retornar S \_ OK, você deverá sair do modo de espera; não use o código de retorno para alternar para o modo de espera, pois isso pode deixar a cadeia de permuta incapaz de abandonar o modo de tela inteira.
+[**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) informará se a janela de saída está totalmente oclusa por meio de **STATUS DO DXGI \_ \_ OCCLUDED**. Quando isso ocorre, recomendamos que seu aplicativo entre no modo de espera (chamando **IDXGISwapChain1::P resent1** com **DXGI \_ PRESENT \_ TEST**), pois os recursos usados para renderizar o quadro são perdidos. Usar **DXGI \_ PRESENT \_ TEST** impedirá que qualquer dado seja apresentado enquanto ainda executa a verificação de oclusão. Depois **que IDXGISwapChain1::P resent1** retornar S OK, você deverá sair do modo de espera; não use o código de retorno para alternar para o modo de espera, pois isso pode deixar a cadeia de permuta não conseguir abrir mão do modo de tela \_ inteira.
 
-O tempo de execução do Direct3D 11,1, que está disponível a partir do Windows 8, fornece uma cadeia de permuta de flip-Model (ou seja, uma cadeia de permuta que tem o [**efeito de permuta de dxgi \_ \_ \_ inverter valor \_ sequencial**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) definido no membro **SwapEffect** da cadeia de permuta de [**dxgi \_ \_ \_ desc**](/windows/win32/api/DXGI/ns-dxgi-dxgi_swap_chain_desc) ou [**dxgi \_ \_ \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Quando você apresenta quadros a uma saída com uma cadeia de permuta de flip-Model, o DXGI desassocia o buffer de fundo de todos os locais de estado do pipeline, como um destino de renderização de fusão de saída, que grava no buffer de fundo 0. Portanto, recomendamos que você chame [**ID3D11DeviceContext:: OMSetRenderTargets**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-omsetrendertargets) imediatamente antes de renderizar para o buffer de fundo. Por exemplo, não chame **OMSetRenderTargets** e, em seguida, execute o trabalho do sombreador de cálculo que não termina o processamento para o recurso. Para obter mais informações sobre cadeias de troca de modelo invertido e seus benefícios, consulte [modelo de flip-dxgi](dxgi-flip-model.md).
+O runtime do Direct3D 11.1, que está disponível a partir do Windows 8, fornece uma cadeia de permuta de inverter modelo (ou seja, uma cadeia de permuta que tem o valor [**\_ \_ \_ \_ SEQUENTIAL FLIP DE EFEITO SWAP DXGI**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) definido no membro **SwapEffect** da [**\_ DXGI SWAP CHAIN \_ \_ DESC**](/windows/win32/api/DXGI/ns-dxgi-dxgi_swap_chain_desc) ou [**DXGI \_ SWAP CHAIN \_ \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Quando você apresenta quadros a uma saída com uma cadeia de permuta de modelo in flip, o DXGI desvincula o buffer de fundo de todos os locais de estado do pipeline, como um destino de renderização de fusão de saída, que gravará no buffer de fundo 0. Portanto, recomendamos que você chame [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-omsetrendertargets) imediatamente antes de renderizar para o buffer de fundo. Por exemplo, não chame **OMSetRenderTargets** e execute o trabalho de sombreador de computação que não termine de renderizar para o recurso. Para obter mais informações sobre cadeias de permuta de flip-model e seus benefícios, consulte Modelo de in flip [do DXGI.](dxgi-flip-model.md)
 
 > [!NOTE]  
-> No Direct3D 10 e no Direct3D 11, você não precisa chamar [**IDXGISwapChain:: GetBuffer**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-getbuffer) para recuperar o buffer de fundo 0 depois de chamar [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) porque, para sua conveniência, as identidades dos buffers de fundo são alteradas. Isso não acontece no Direct3D 12 e seu aplicativo deve rastrear manualmente os índices de buffer.
+> No Direct3D 10 e direct3D 11, você não precisa chamar [**IDXGISwapChain::GetBuffer**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-getbuffer) para recuperar o buffer 0 depois de chamar [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) porque, para sua conveniência, as identidades dos buffers de fundo mudam. Isso não acontece no Direct3D 12 e seu aplicativo deve controlar manualmente os índices de buffer.
 
-### <a name="handling-window-resizing"></a>Manipulando o redimensionamento da janela
+### <a name="handling-window-resizing"></a>Tratando o resizing da janela
 
-Você pode usar o método [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) para manipular o redimensionamento de janela. Antes de chamar **ResizeBuffers**, você deve liberar todas as referências pendentes para os buffers da cadeia de permuta. O objeto que normalmente contém uma referência ao buffer de uma cadeia de permuta é um modo de exibição de destino de renderização.
+Você pode usar o [**método IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) para lidar com o reizing de janela. Antes de chamar **ResizeBuffers**, você deve liberar todas as referências pendentes para os buffers da cadeia de permuta. O objeto que normalmente contém uma referência ao buffer de uma cadeia de permuta é uma exibição de destino de renderização.
 
-O código de exemplo a seguir mostra como chamar [**ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) de dentro do manipulador de WindowProc para mensagens de tamanho do WM \_ :
+O código de exemplo a seguir mostra como chamar [**ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) de dentro do manipulador WindowProc para mensagens WM \_ SIZE:
 
 
 ```
@@ -238,51 +238,51 @@ O código de exemplo a seguir mostra como chamar [**ResizeBuffers**](/windows/wi
 
 
 
-### <a name="choosing-the-dxgi-output-and-size"></a>Escolhendo a saída e o tamanho de DXGI
+### <a name="choosing-the-dxgi-output-and-size"></a>Escolhendo a saída e o tamanho do DXGI
 
-Por padrão, DXGI escolhe a saída que contém a maior parte da área do cliente da janela. Essa é a única opção disponível para DXGI quando ela é exibida em uma tela inteira em resposta a Alt-Enter. Se o aplicativo optar por ir para o modo de tela inteira por si só, ele poderá chamar [**IDXGISwapChain:: Setfullscreenstate**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate) e passar um [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) explícito (ou **NULL**, se o aplicativo estiver satisfeito em permitir que dxgi decida).
+Por padrão, o DXGI escolhe a saída que contém a maior parte da área do cliente da janela. Essa é a única opção disponível para o DXGI quando ele entra em tela inteira em resposta a alt-enter. Se o aplicativo optar por ir para o modo de tela inteira sozinho, ele poderá chamar [**IDXGISwapChain::SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate) e passar um [**IDXGIOutput1**](/windows/win32/api/DXGI1_2/nn-dxgi1_2-idxgioutput1) explícito (ou **NULL,** se o aplicativo estiver satisfeito em permitir que o DXGI decida).
 
-Para redimensionar a saída enquanto estiver em tela inteira ou em janela, é recomendável chamar [**IDXGISwapChain:: ResizeTarget**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizetarget), já que esse método redimensiona a janela de destino também. Como a janela de destino é redimensionada, o sistema operacional envia o **\_ tamanho do WM**, e seu código naturalmente chamará [**IDXGISwapChain:: ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) em resposta. Portanto, é um desperdício de esforço para redimensionar os buffers e, em seguida, redimensionar o destino.
+Para reorganizar a saída durante a tela inteira ou em janelas, é recomendável chamar [**IDXGISwapChain::ResizeTarget,**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizetarget)pois esse método também resize a janela de destino. Como a janela de destino é ressalvada, o sistema operacional envia **WM \_ SIZE** e seu código naturalmente chamará [**IDXGISwapChain::ResizeBuffers**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) em resposta. Portanto, é um desperdício de esforço ressarcimento dos buffers e, em seguida, reorganizar o destino posteriormente.
 
 ### <a name="debugging-in-full-screen-mode"></a>Depuração no modo de tela inteira
 
-Uma cadeia de permuta DXGI abandona o modo de tela inteira somente quando absolutamente necessário. Isso significa que você pode depurar um aplicativo de tela inteira usando vários monitores, desde que a janela de depuração não se sobreponha à janela de destino da cadeia de permuta. Como alternativa, você pode impedir que o modo seja totalmente alternado, não definindo o sinalizador de **\_ \_ \_ \_ \_ \_ comutador de modo de permuta de dxgi** .
+Uma cadeia de permuta DXGI relincha o modo de tela inteira somente quando absolutamente necessário. Isso significa que você pode depurar um aplicativo de tela inteira usando vários monitores, desde que a janela de depuração não se sobreponha à janela de destino da cadeia de permuta. Como alternativa, você pode impedir completamente a alternação de modo não definindo o sinalizador SWITCH DO MODO DE OPÇÃO DE MODO DE TROCA **DXGI \_ \_ \_ \_ \_ \_** SWAP.
 
-Se a alternância de modo for permitida, uma cadeia de permuta deixará o modo de tela inteira sempre que sua janela de saída for obstruído por outra janela. A verificação de oclusão é realizada durante o [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1), ou por um thread separado cuja finalidade é observar para ver se o aplicativo não responde (e não chama mais **IDXGISwapChain1::P resent1**). Para desabilitar a capacidade do thread separado de causar um comutador, defina a seguinte chave do registro para qualquer valor diferente de zero.
+Se a alternação de modo for permitida, uma cadeia de permuta abrirá mão do modo de tela inteira sempre que sua janela de saída for oclusiva por outra janela. A verificação de oclusão é executada durante [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)ou por um thread separado cuja finalidade é observar para ver se o aplicativo ficou sem resposta (e não chama mais **IDXGISwapChain1::P resent1**). Para desabilitar a capacidade do thread separado de causar uma opção, de definir a seguinte chave do Registro como qualquer valor que não seja zero.
 
-**HKCU \\ software \\ Microsoft \\ dxgi \\ DisableFullscreenWatchdog**
+**HKCU \\ Software \\ Microsoft \\ DXGI \\ DisableFullscreenWatchdog**
 
-### <a name="destroying-a-swap-chain"></a>Destruindo uma cadeia de permuta
+### <a name="destroying-a-swap-chain"></a>Destruir uma cadeia de permuta
 
-Você não pode liberar uma cadeia de permuta no modo de tela inteira porque isso pode criar contenção de thread (o que fará com que DXGI gere uma exceção não continuável). Antes de liberar uma cadeia de permuta, alterne primeiro para o modo em janela (usando [**IDXGISwapChain:: Setfullscreenstate**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate)( **false**, **NULL** )) e, em seguida, chame [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
+Você não pode liberar uma cadeia de permuta no modo de tela inteira porque isso pode criar contenção de thread (o que fará com que o DXGI aloque uma exceção não continuavel). Antes de liberar uma cadeia de permuta, primeiro mude para o modo em janela (usando [**IDXGISwapChain::SetFullscreenState**](/windows/win32/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate)( **FALSE**, **NULL** )) e, em seguida, chame [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
 
 ### <a name="using-a-rotated-monitor"></a>Usando um monitor girado
 
-Um aplicativo não precisa se preocupar com a orientação do monitor. DXGI irá girar um buffer de cadeia de permuta durante a apresentação, se necessário. É claro que essa rotação adicional pode afetar o desempenho. Para obter o melhor desempenho, tome cuidado com a rotação em seu aplicativo fazendo o seguinte:
+Um aplicativo não precisa se preocupar com a orientação do monitor, o DXGI girará um buffer de cadeia de permuta durante a apresentação, se necessário. É claro que essa rotação adicional pode afetar o desempenho. Para melhor desempenho, tome conta da rotação em seu aplicativo fazendo o seguinte:
 
--   Use o **\_ sinalizador de cadeia de permuta dxgi \_ \_ \_ NONPREROTATED**. Isso notifica o DXGI de que o aplicativo produzirá uma imagem girada (por exemplo, alterando sua matriz de projeção). Uma coisa a observar, esse sinalizador só é válido enquanto estiver no modo de tela inteira.
--   Aloque cada buffer de cadeia de permuta em seu tamanho girado. Use [**IDXGIOutput:: GetDesc**](/windows/win32/api/DXGI/nf-dxgi-idxgioutput-getdesc) para obter esses valores, se necessário.
+-   Use o SINALIZADOR DE CADEIA DE **\_ \_ PERMUTA \_ DXGI \_ NÃOPREROTADO.** Isso notifica o DXGI de que o aplicativo produzirá uma imagem girada (por exemplo, alterando sua matriz de projeção). Uma coisa a ser anotada é que esse sinalizador só é válido enquanto estiver no modo de tela inteira.
+-   Alocar cada buffer de cadeia de permuta em seu tamanho girado. Use [**IDXGIOutput::GetDesc**](/windows/win32/api/DXGI/nf-dxgi-idxgioutput-getdesc) para obter esses valores, se necessário.
 
-Ao executar a rotação em seu aplicativo, DXGI simplesmente fará uma cópia em vez de uma cópia e uma rotação.
+Ao executar a rotação em seu aplicativo, o DXGI simplesmente fará uma cópia em vez de uma cópia e uma rotação.
 
-O tempo de execução do Direct3D 11,1, que está disponível a partir do Windows 8, fornece uma cadeia de permuta de flip-Model (ou seja, uma cadeia de permuta que tem o [**efeito de permuta de dxgi \_ \_ \_ inverter valor \_ sequencial**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) definido no membro **SwapEffect** da [**\_ \_ \_ DESC1 de troca de dxgi**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)de appmodel). Para maximizar as otimizações de apresentação disponíveis com uma cadeia de permuta de flip-Model, recomendamos que você faça com que seus aplicativos orientem o conteúdo para corresponder à saída específica na qual o conteúdo reside quando o conteúdo ocupa totalmente a saída. Para obter mais informações sobre cadeias de troca de modelo invertido e seus benefícios, consulte [modelo de flip-dxgi](dxgi-flip-model.md).
+O runtime do Direct3D 11.1, que está disponível a partir do Windows 8, fornece uma cadeia de permuta de flip-model (ou seja, uma cadeia de permuta que tem o valor [**\_ \_ \_ \_ SEQUENTIAL**](/windows/win32/api/DXGI/ne-dxgi-dxgi_swap_effect) FLIP DE EFEITO SWAP DXGI definido no membro **SwapEffect** de [**DXGI \_ SWAP CHAIN \_ \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Para maximizar as otimizações de apresentação disponíveis com uma cadeia de troca de modelo in flip, recomendamos que você faça com que seus aplicativos orientem o conteúdo para corresponder à saída específica na qual o conteúdo reside quando esse conteúdo ocupa totalmente a saída. Para obter mais informações sobre cadeias de permuta de flip-model e seus benefícios, consulte Modelo de in flip [do DXGI.](dxgi-flip-model.md)
 
 ### <a name="switching-modes"></a>Alternando modos
 
-A cadeia de permuta DXGI pode alterar o modo de exibição de uma saída ao fazer uma transição de tela inteira. Para habilitar a alteração do modo de exibição automático, você deve especificar a **\_ \_ \_ \_ \_ \_ opção modo de permissão do sinalizador de cadeia de permuta dxgi** na descrição da cadeia de permuta. Se o modo de exibição for alterado automaticamente, DXGI escolherá o modo mais modesto (o tamanho e a resolução não serão alterados, mas a intensidade da cor poderá). O redimensionamento de buffers da cadeia de permuta não causará uma opção de modo. A cadeia de permuta faz uma promessa implícita que, se você escolher um buffer de fundo que corresponda exatamente a um modo de exibição suportado pela saída de destino, ele alternará para esse modo de exibição ao entrar no modo de tela inteira nessa saída. Consequentemente, você escolhe um modo de exibição escolhendo o tamanho e o formato do buffer de fundo.
+A cadeia de permuta DXGI pode alterar o modo de exibição de uma saída ao fazer uma transição de tela inteira. Para habilitar a alteração automática do modo de exibição, você deve especificar **DXGI \_ SWAP CHAIN FLAG ALLOW MODE \_ \_ \_ \_ \_ SWITCH** na descrição da cadeia de permuta. Se o modo de exibição mudar automaticamente, o DXGI escolherá o modo mais silencioso (tamanho e resolução não serão alterados, mas a profundidade da cor poderá). O reizing de buffers de cadeia de permuta não causará uma opção de modo. A cadeia de permuta faz uma promessa implícita de que, se você escolher um buffer de fundo que corresponde exatamente a um modo de exibição com suporte pela saída de destino, ele alternará para esse modo de exibição ao entrar no modo de tela inteira nessa saída. Consequentemente, você escolhe um modo de exibição escolhendo o formato e o tamanho do buffer de fundo.
 
 ### <a name="full-screen-performance-tip"></a>Dica de desempenho de tela inteira
 
-Quando você chama [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) em um aplicativo de tela inteira, a cadeia de permuta inverte (em oposição ao blits) o conteúdo do buffer de fundo para o buffer frontal. Isso requer que a cadeia de permuta tenha sido criada usando um modo de exibição enumerado (especificado em [**\_ DESC1 de \_ cadeia \_ de permuta dxgi**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Se você não enumerar modos de exibição ou especificar incorretamente o modo de exibição na descrição, a cadeia de permuta poderá executar uma transferência de bloco de bits (BitBlt) em vez disso. O BitBlt causa uma cópia extra de alargamento, bem como alguns aumentos de uso de memória de vídeo e é difícil de detectar. Para evitar esse problema, enumere os modos de exibição e inicialize a descrição da cadeia de permuta corretamente antes de criar a cadeia de permuta. Isso garantirá o desempenho máximo ao inverter no modo de tela inteira e evitará a sobrecarga de memória extra.
+Quando você chama [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) em um aplicativo de tela inteira, a cadeia de permuta inverte (em vez de blits) o conteúdo do buffer de fundo para o buffer frontal. Isso requer que a cadeia de permuta foi criada usando um modo de exibição enumerado (especificado em [**DXGI \_ SWAP \_ CHAIN \_ DESC1**](/windows/win32/api/DXGI1_2/ns-dxgi1_2-dxgi_swap_chain_desc1)). Se você não enumerar modos de exibição ou especificar incorretamente o modo de exibição na descrição, a cadeia de permuta poderá executar uma transferência de bloco de bits (bitblt). O bitblt causa uma cópia de alongamento extra, bem como um maior uso de memória de vídeo, e é difícil de detectar. Para evitar esse problema, enumere os modos de exibição e inicialize a descrição da cadeia de permuta corretamente antes de criar a cadeia de permuta. Isso garantirá o desempenho máximo ao inverter no modo de tela inteira e evitar a sobrecarga de memória extra.
 
-### <a name="multithread-considerations"></a>Considerações sobre o multithread
+### <a name="multithread-considerations"></a>Considerações sobre multithread
 
-Ao usar DXGI em um aplicativo com vários threads, você precisa ter cuidado para evitar a criação de um deadlock, em que dois threads diferentes estão esperando uns aos outros para serem concluídos. Há duas situações em que isso pode ocorrer.
+Ao usar o DXGI em um aplicativo com vários threads, você precisa ter cuidado para evitar a criação de um deadlock, em que dois threads diferentes estão aguardando a conclusão uns dos outros. Há duas situações em que isso pode ocorrer.
 
--   O thread de renderização não é o thread de bombeamento de mensagens.
+-   O thread de renderização não é o thread de bomba de mensagem.
 -   O thread que executa uma API DXGI não é o mesmo thread que criou a janela.
 
-Tenha cuidado para que você nunca tenha o thread de bombeamento de mensagem aguardar no thread de renderização ao usar cadeias de troca de tela inteira. Por exemplo, chamar [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) (do thread de renderização) pode fazer com que o thread de renderização Espere no thread de bombeamento de mensagem. Quando ocorrer uma alteração no modo, esse cenário será possível se **Present1** chamar:: SetWindowPos () ou:: setwindowstyle () e qualquer um desses métodos chamar:: SendMessage (). Nesse cenário, se o thread de bombeamento de mensagem tiver uma seção crítica para protegê-lo ou se o thread de renderização estiver bloqueado, os dois threads serão deadlocks.
+Tenha cuidado para nunca fazer com que o thread de bomba de mensagem aguarde no thread de renderização ao usar cadeias de permuta de tela inteira. Por exemplo, chamar [**IDXGISwapChain1::P resent1**](/windows/win32/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) (do thread de renderização) pode fazer com que o thread de renderização Espere no thread de bombeamento de mensagem. Quando ocorrer uma alteração no modo, esse cenário será possível se **Present1** chamar:: SetWindowPos () ou:: setwindowstyle () e qualquer um desses métodos chamar:: SendMessage (). Nesse cenário, se o thread de bombeamento de mensagem tiver uma seção crítica para protegê-lo ou se o thread de renderização estiver bloqueado, os dois threads serão deadlocks.
 
 Para obter mais informações sobre como usar DXGI com vários threads, consulte [multithreading e dxgi](../direct3d11/overviews-direct3d-11-render-multi-thread-intro.md).
 

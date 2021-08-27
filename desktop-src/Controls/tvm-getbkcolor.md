@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_GETBKCOLOR (commctrl. h)
-description: Recupera a cor do plano de fundo atual do controle. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ GetBkColor.
+title: TVM_GETBKCOLOR mensagem (Commctrl.h)
+description: Recupera a cor da tela de fundo atual do controle. Você pode enviar essa mensagem explicitamente ou usando a \_ macro TreeView GetBkColor.
 ms.assetid: 1b9eea90-54cd-47b9-befa-ec0128a0230f
 keywords:
-- Controles de TVM_GETBKCOLOR de mensagens do Windows
+- TVM_GETBKCOLOR controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8077bc9655c088aceefe239ed019cc45874d38ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a5a6530b1aada1fab06c0b353d7ead666e61f0f796b890d1f5c56fe0be094b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105748251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088446"
 ---
-# <a name="tvm_getbkcolor-message"></a>\_Mensagem TVM GETBKCOLOR
+# <a name="tvm_getbkcolor-message"></a>Mensagem TVM \_ GETBKCOLOR
 
-Recupera a cor do plano de fundo atual do controle. Você pode enviar essa mensagem explicitamente ou usando a macro [**TreeView \_ GetBkColor**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getbkcolor) .
+Recupera a cor da tela de fundo atual do controle. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ TreeView GetBkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getbkcolor)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a cor do plano de fundo atual do controle. Você pode enviar essa mensa
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a cor de plano de fundo atual. Se esse valor for-1, o controle estará usando a cor do sistema para a cor do plano de fundo.
+Retorna um [**valor COLORREF**](/windows/desktop/gdi/colorref) que representa a cor da tela de fundo atual. Se esse valor for -1, o controle está usando a cor do sistema para a cor da tela de fundo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor [**COLORREF**](/windows/desktop/gdi/colorref) que representa a 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

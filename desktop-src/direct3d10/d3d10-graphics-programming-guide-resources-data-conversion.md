@@ -4,21 +4,21 @@ ms.assetid: 454d3fd0-fc0f-46a9-925e-13f8e3c39f02
 title: Regras de conversão de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61abdc58811af9155c67d7b32bcd47e9d4b71ea5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 52b5ba37305fb7cadc229a614b883519cf6c5f45
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646341"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626292"
 ---
 # <a name="data-conversion-rules"></a>Regras de conversão de dados
 
 As seções a seguir descrevem como o Direct3D manipula as conversões entre os tipos de dados.
 
--   [Terminologia de tipo de dados](#data-type-terminology)
+-   [Terminologia do tipo de dados](#data-type-terminology)
 -   [Conversão de ponto flutuante](#floating-point-conversion)
-    -   [Conververting de uma representação de intervalo superior a uma representação de intervalo inferior](#conververting-from-a-higher-range-representation-to-a-lower-range-representation)
-    -   [Convertendo de uma representação de intervalo inferior em uma representação de intervalo superior](#converting-from-a-lower-range-representation-to-a-higher-range-representation)
+    -   [Reverter de uma representação de intervalo mais alto para uma representação de intervalo inferior](#conververting-from-a-higher-range-representation-to-a-lower-range-representation)
+    -   [Convertendo de uma representação de intervalo inferior em uma representação de intervalo mais alto](#converting-from-a-lower-range-representation-to-a-higher-range-representation)
 -   [Conversão de inteiro](#integer-conversion)
 -   [Conversão de inteiro de ponto fixo](#fixed-point-integer-conversion)
 -   [Tópicos relacionados](#related-topics)
@@ -57,7 +57,7 @@ Sempre que ocorre uma conversão de ponto flutuante entre diferentes representa�
 ### <a name="converting-from-a-lower-range-representation-to-a-higher-range-representation"></a>Conversão de uma representação de intervalo inferior para uma representação de intervalo superior
 
 -   NaN em um formato de intervalo inferior será convertido em representação NaN no formato de intervalo superior se a representação NaN existir no formato de intervalo superior. Se o formato de intervalo superior não tiver uma representação NaN, ela será convertida como 0.
--   INF em um formato de intervalo inferior será convertido em representação INF no formato de intervalo superior se disponível no formato de intervalo superior. Se o formato mais alto não tiver uma representação INF, ele será convertido para o valor máximo representável ( \_ float máximo nesse formato). A assinatura será preservada se estiver disponível no formato de destino.
+-   INF em um formato de intervalo inferior será convertido em representação INF no formato de intervalo superior se disponível no formato de intervalo superior. Se o formato superior não tiver uma representação INF, ele será convertido no valor máximo representável (MAX \_ FLOAT nesse formato). A assinatura será preservada se estiver disponível no formato de destino.
 -   A desnormalização em um formato de intervalo inferior será convertida em uma representação normalizada no formato de intervalo superior se possível, ou então para uma representação desnormalizada no formato de intervalo superior se existir a representação desnormalizada. Se isso falhar, se o formato de intervalo superior não tiver uma representação desnormalizada, ela será convertida como 0. A assinatura será preservada se estiver disponível no formato de destino. Observe que os números flutuantes de 32 bits contam como um formato sem uma representação desnormalizada (porque as desnormalizações em operações em números flutuantes de 32 bits fluem para assinar 0 preservados).
 
 ## <a name="integer-conversion"></a>Conversão de inteiro
@@ -68,9 +68,9 @@ A tabela a seguir descreve as conversões das várias representações descritas
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -96,12 +96,12 @@ A tabela a seguir descreve as conversões das várias representações descritas
 <ul>
 <li>Digamos que c represente o valor inicial.</li>
 <li>Se c for NaN, o resultado será 0.</li>
-<li>Se c > 1.0 f, incluindo INF, é clamped a 1,0 f.</li>
-<li>Se c <-1,0 f, incluindo-INF, será clamped para-1,0 f.</li>
+<li>Se c > 1,0f, incluindo INF, ele será fixado em 1,0f.</li>
+<li>Se c < -1.0f, incluindo -INF, ele será fixado a -1,0f.</li>
 <li>Converter de escala de número flutuante em escala de números inteiros: c = c * (2ⁿ⁻¹-1).</li>
 <li>Converter em um número inteiro como se segue.
 <ul>
-<li>Se c >= 0, c = c + 0,5 f, caso contrário, c = c-0,5 f.</li>
+<li>Se c >= 0, c = c + 0,5f; caso contrário, c = c - 0,5f.</li>
 <li>Descarte a fração decimal e o valor de ponto flutuante restante (integral) será convertido diretamente em um número inteiro.</li>
 </ul></li>
 </ul>
@@ -118,8 +118,8 @@ Essa conversão permite uma tolerância do D3D<em>xx</em>_FLOAT32_TO_INTEGER_TOL
 <td>Digamos que c represente o valor inicial.<br/>
 <ul>
 <li>Se c for NaN, o resultado será 0.</li>
-<li>Se c > 1.0 f, incluindo INF, é clamped a 1,0 f.</li>
-<li>Se c < 0,0 f, incluindo-INF, será clamped a 0,0 f.</li>
+<li>Se c > 1,0f, incluindo INF, ele será fixado em 1,0f.</li>
+<li>Se c < 0,0f, incluindo -INF, ele será fixado em 0,0f.</li>
 <li>Converter de escala de número flutuante em escala de números inteiros: c = c * (2ⁿ-1).</li>
 <li>Converter em números inteiros.
 <ul>
@@ -136,20 +136,20 @@ Essa conversão tem uma tolerância permitida do D3D<em>xx</em>_FLOAT32_TO_INTEG
 <ul>
 <li>Tome o valor inicial de n-bits, converta-o a um número flutuante (0,0f, 1,0f, 2,0f, etc.); chame isso de c.</li>
 <li>c = c * (1.0f / (2ⁿ-1))</li>
-<li>Se (c < = D3D<em>xx</em>_SRGB_TO_FLOAT_THRESHOLD), então: Result = c/d3d<em>XX</em>_SRGB_TO_FLOAT_DENOMINATOR_1, senão: Result = ((c + D3D<em>xx</em>_SRGB_TO_FLOAT_OFFSET)/D3D<em>XX</em>_SRGB_TO_FLOAT_DENOMINATOR_2) D3D<em>XX</em>_SRGB_TO_FLOAT_EXPONENT</li>
+<li>Se (c < = D3D<em>xx</em>_SRGB_TO_FLOAT_THRESHOLD) então: resultado = c /D3D<em>xx</em>_SRGB_TO_FLOAT_DENOMINATOR_1, caso mais: resultado = ((c + D3D<em>xx</em>_SRGB_TO_FLOAT_OFFSET)/D3D<em>xx</em>_SRGB_TO_FLOAT_DENOMINATOR_2)D3D<em>xx</em>_SRGB_TO_FLOAT_EXPONENT</li>
 </ul>
 Essa conversão tem uma tolerância permitida do D3D<em>xx</em>_SRGB_TO_INTEGER_TOLERANCE_IN_ULP Unidade no último lugar (no lado SRGB). <br/></td>
 </tr>
 <tr class="even">
 <td>FLOAT</td>
 <td>SRGB</td>
-<td>A seguir está a conversão ideal de FLOAT-> SRGB.<br/> Supondo que o componente de cor SRGB do destino tenha n-bits:<br/>
+<td>A seguir está a conversão FLOAT-> SRGB ideal.<br/> Supondo que o componente de cor SRGB do destino tenha n-bits:<br/>
 <ul>
 <li>Suponha que o valor inicial é c.</li>
 <li>Se c for NaN, o resultado será 0.</li>
-<li>Se o c > 1.0 f, incluindo INF, for clamped a 1,0 f.</li>
-<li>Se c < 0,0 f, incluindo-INF, será clamped a 0,0 f.</li>
-<li>Se (c <= D3D<em>xx</em>_FLOAT_TO_SRGB_THRESHOLD), então: c = d3d<em>XX</em>_FLOAT_TO_SRGB_SCALE_1 * c, Else: c = D3D<em>XX</em>_FLOAT_TO_SRGB_SCALE_2 * c (D3D<em>XX</em>_FLOAT_TO_SRGB_EXPONENT_NUMERATOR/D3D<em>XX</em>_FLOAT_TO_SRGB_EXPONENT_DENOMINATOR)-D3D<em>XX</em>_FLOAT_TO_SRGB_OFFSET</li>
+<li>Se c > 1,0f, incluindo INF, será fixado em 1,0f.</li>
+<li>Se c < 0,0f, incluindo -INF, ele será fixado em 0,0f.</li>
+<li>Se (c <= D3D<em>xx</em>_FLOAT_TO_SRGB_THRESHOLD) então: c = D3D<em>xx</em>_FLOAT_TO_SRGB_SCALE_1 * c, caso outro: c = D3D<em>xx</em>_FLOAT_TO_SRGB_SCALE_2 * c(D3D<em>xx</em>_FLOAT_TO_SRGB_EXPONENT_NUMERATOR/D3D<em>xx</em>_FLOAT_TO_SRGB_EXPONENT_DENOMINATOR) - D3D<em>xx</em>_FLOAT_TO_SRGB_OFFSET</li>
 <li>Converter de escala de número flutuante em escala de números inteiros: c = c * (2ⁿ-1).</li>
 <li>Converter em números inteiros:
 <ul>
@@ -210,9 +210,9 @@ Representações de inteiro de ponto fixo são usadas de duas maneiras no Direct
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -228,9 +228,9 @@ Representações de inteiro de ponto fixo são usadas de duas maneiras no Direct
 <td>A seguir está o procedimento geral para converter um número de ponto flutuante n para um inteiro de ponto fixo inteiro i,f, onde i é o número de bits de números inteiros (assinados) e f é o número de bits fracionários.<br/>
 <ul>
 <li>Calcular FixedMin = -2⁽ⁱ⁻¹⁾</li>
-<li>Compute FixedMax = 2 ⁽ ⁱ ⁻ ¹ ⁾-2<sup>(-f)</sup></li>
-<li>Se n for um NaN, Result = 0; Se n for + INF, Result = FixedMax * 2<sup>f</sup>; Se n for-INF, Result = FixedMin * 2<sup>f</sup></li>
-<li>Se n >= FixedMax, Result = Fixedmax * 2<sup>f</sup>; Se n <= FixedMin, Result = FixedMin * 2 <sup> f</sup></li>
+<li>Compute FixedMax = 2⁽⁻ Meio⁾ - 2<sup>(-f)</sup></li>
+<li>Se n for um NaN, result = 0; se n for +Inf, result = FixedMax*2<sup>f</sup>; se n for -Inf, result = FixedMin*2<sup>f</sup></li>
+<li>Se n >= FixedMax, result = Fixedmax*2<sup>f</sup>; se n <= FixedMin, result = FixedMin*2 <sup> f</sup></li>
 <li>Ou calcule n*2<sup>f</sup> e converta em números inteiros.</li>
 </ul>
 As implementações são permitidas em D3D<em>xx</em>_FLOAT32_TO_INTEGER_TOLERANCE_IN_ULP Unidade no último lugar tolerância no resultado inteiro, em vez do valor infinitamente preciso n*2<sup>f</sup> depois do último passo acima.<br/></td>
@@ -238,7 +238,7 @@ As implementações são permitidas em D3D<em>xx</em>_FLOAT32_TO_INTEGER_TOLERAN
 <tr class="even">
 <td>Inteiro de ponto fixo</td>
 <td>FLOAT</td>
-<td>Suponha que a representação de ponto fixo específico sendo convertida em flutuante não contenha mais do que um total de 24 bits de informações, não mais de 23 bits dos quais está no componente fracionário. Suponha que um dado número de ponto fixo, fxp, esteja na forma de i,f (i bits de números inteiros, f bits fracionários). A conversão para flutuante é semelhante ao pseudocódigo a seguir.<br/> float Result = (float) (FXP >> f) +//extrair inteiro<br/> <dl> ((float) (FXP & (2<sup>f</sup> - 1))/(2<sup>f</sup>));//fração de extração<br />
+<td>Suponha que a representação de ponto fixo específico sendo convertida em flutuante não contenha mais do que um total de 24 bits de informações, não mais de 23 bits dos quais está no componente fracionário. Suponha que um dado número de ponto fixo, fxp, esteja na forma de i,f (i bits de números inteiros, f bits fracionários). A conversão para flutuante é semelhante ao pseudocódigo a seguir.<br/> float result = (float)(fxp >> f) + // extract integer<br/> <dl> ((float)(fxp & (2<sup>f</sup> - 1)) / (2<sup>f</sup>)); // extrair fração<br />
 </dl></td>
 </tr>
 </tbody>

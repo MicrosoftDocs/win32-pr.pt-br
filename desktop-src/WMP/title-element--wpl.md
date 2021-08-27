@@ -1,9 +1,9 @@
 ---
-title: Elemento Title (WPL)
-description: O elemento Title especifica um título para a lista de reprodução.
+title: Elemento title (WPL)
+description: O elemento title especifica um título para a playlist.
 ms.assetid: 8a214b96-d507-4dbf-b5f2-8fdfc4409fb0
 keywords:
-- Elemento Title (WPL) Windows Media Player
+- Elemento title (WPL) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5649553ab51a43bd1fb0aeb78d505d7e922bf80b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1de2679d5f78b48ceef569491ef21998fc13faf7126e61f76ad31959bdc2ac6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122776"
 ---
-# <a name="title-element-wpl"></a>Elemento Title (WPL)
+# <a name="title-element-wpl"></a>Elemento title (WPL)
 
-O elemento **title** especifica um título para a lista de reprodução.
+O **elemento title** especifica um título para a playlist.
 
 ``` syntax
 <head>
@@ -40,7 +40,7 @@ Esse elemento não tem atributos.
 
 | Hierarquia | Elementos                 |
 |-----------|--------------------------|
-| Pai    | [principal](head-element.md) |
+| Pai    | [Cabeça](head-element.md) |
 | Filho     | Nenhum                     |
 
 
@@ -49,7 +49,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Ao escolher um título para uma lista de reprodução de mídia do Windows (WPL), considere que o conteúdo da lista de reprodução pode ser dinâmico. Uma boa abordagem é basear o título na lógica nos elementos de **argumento** porque isso é o que define o conteúdo da lista de reprodução. Exemplos disso são "minhas músicas de rock favoritas de 1966" ou "dança canções que não reproduzi recentemente".
+Ao escolher um título para uma playlist Windows mídia (WPL), considere que o conteúdo da playlist pode ser dinâmico. Uma boa abordagem é basear o  título na lógica nos elementos de argumento porque é isso que define o conteúdo da playlist. Exemplos disso são "Minhas músicas de rock favoritas de 1966" ou "Músicas de música de música que não toquei recentemente".
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,7 +68,7 @@ Ao escolher um título para uma lista de reprodução de mídia do Windows (WPL)
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/> |
 
 
 
@@ -76,13 +76,13 @@ Ao escolher um título para uma lista de reprodução de mídia do Windows (WPL)
 
 <dl> <dt>
 
-[**Elemento Argument**](argument-element.md)
+[**Elemento argument**](argument-element.md)
 </dt> <dt>
 
 [**Elemento head**](head-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

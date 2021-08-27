@@ -1,9 +1,9 @@
 ---
-title: Instrução switch (Urlmon. h)
-description: Transfere o controle para um bloco de instruções diferente dentro do corpo do comutador, dependendo do valor de um seletor.
+title: Instrução switch (Urlmon.h)
+description: Transfira o controle para um bloco de instrução diferente dentro do corpo da opção, dependendo do valor de um seletor.
 ms.assetid: d1932ee1-d789-4536-b77d-162aacdbb115
 keywords:
-- Instrução switch HLSL
+- Switch Statement HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30048e31916e15d54526908dd3e61a28cbfb5ad0f7aafcb08a850e959cd1ea95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8527853bf88b073f3505f4b4170ff6165f7f9aa7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846056"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477482"
 ---
 # <a name="switch-statement"></a>Instrução Switch
 
-Transfere o controle para um bloco de instruções diferente dentro do corpo do comutador, dependendo do valor de um seletor.
+Transfira o controle para um bloco de instrução diferente dentro do corpo da opção, dependendo do valor de um seletor.
 
 
-\[*Atributo* \] switch ( *seletor* ) {caso 0: { *StatementBlock*;}   interrupção   caso 1: { *StatementBlock*;}   interrupção   caso n: { *StatementBlock*;}   interrupção   padrão: { *StatementBlock*;}   interrupção
+\[*Atributo* \] switch( *Selector* ) { case 0 : { *StatementBlock*; }   break;   case 1: { *StatementBlock*; }   break;   case n : { *StatementBlock*; }   break;   default : { *StatementBlock*; }   break;
 
 
 
@@ -36,58 +36,21 @@ Transfere o controle para um bloco de instruções diferente dentro do corpo do 
 
 <dl> <dt>
 
-<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Attribute*
+<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Atributo*
 </dt> <dd>
 
-Um parâmetro opcional que controla como a instrução é compilada. Quando nenhum atributo é especificado, o compilador pode usar um comutador de hardware ou emitir uma série de instruções **If** .
+Um parâmetro opcional que controla como a instrução é compilada. Quando nenhum atributo é especificado, o compilador pode usar uma opção de hardware ou emitir uma série de instruções **if.**
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>mesclar</td>
-<td>Compile a instrução como uma série de instruções <strong>If</strong> , cada uma com o atributo de <strong>achatamento</strong> .</td>
-</tr>
-<tr class="even">
-<td>branch</td>
-<td>Compile a instrução como uma série de instruções <strong>If</strong> com o atributo <strong>Branch</strong> .
-<blockquote>
-[!Note]<br />
-Quando você usa o modelo de <a href="dx-graphics-hlsl-sm2.md">sombreador 2. x</a> ou o <a href="dx-graphics-hlsl-sm3.md">modelo de sombreador 3,0</a>, cada vez que usa a ramificação dinâmica, você consome recursos. Portanto, se você usar a ramificação dinâmica de forma excessiva ao direcionar esses perfis, poderá receber erros de compilação.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>forcecase</td>
-<td>Force uma instrução switch no hardware.
-<blockquote>
-[!Note]<br />
-Requer hardware de <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">nível de recurso</a> 10_0 ou posterior.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>chamada</td>
-<td>Os corpos dos casos individuais no comutador serão movidos para as sub-rotinas de hardware e o comutador será uma série de chamadas de sub-rotina.
-<blockquote>
-[!Note]<br />
-Requer hardware de <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">nível de recurso</a> 10_0 ou posterior.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descrição | 
+|-----------|-------------|
+| mesclar | Compile a instrução como uma série de <strong>instruções if,</strong> cada uma com o <strong>atributo flatten.</strong> | 
+| branch | Compile a instrução como uma série de <strong>instruções if</strong> cada uma com o <strong>atributo branch.</strong><blockquote>[!Note]<br />Quando você usa o Modelo de Sombreador <a href="dx-graphics-hlsl-sm2.md">2.x</a> ou o Modelo de Sombreador <a href="dx-graphics-hlsl-sm3.md">3.0</a>, sempre que usa a ramificação dinâmica, você consome recursos. Portanto, se você usar a ramificação dinâmica excessivamente ao direcionar esses perfis, poderá receber erros de compilação.</blockquote><br /> | 
+| forcecase | Force uma instrução switch no hardware.<blockquote>[!Note]<br />Requer <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de nível</a> de recurso 10_0 ou posterior.</blockquote><br /> | 
+| chamada | Os corpos dos casos individuais na opção serão movidos para sub-rotinas de hardware e a opção será uma série de chamadas de sub-rotina.<blockquote>[!Note]<br />Requer <a href="/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">hardware de nível</a> de recurso 10_0 ou posterior.</blockquote><br /> | 
+
 
 
 
@@ -98,7 +61,7 @@ Requer hardware de <a href="/windows/desktop/direct3d11/overviews-direct3d-11-de
 <span id="Selector"></span><span id="selector"></span><span id="SELECTOR"></span>*Seletor*
 </dt> <dd>
 
-Uma variável. As instruções Case dentro das chaves irão verificar essa variável para ver se o SwitchValue corresponde a seu Case específico.
+Uma variável. As instruções case dentro dos colchetes verificarão cada variável para ver se SwitchValue corresponde a seu CaseValue específico.
 
 </dd> <dt>
 
@@ -144,7 +107,7 @@ else
 
 
 
-Aqui estão exemplos de usos de forcecase e atributos de controle de fluxo de chamada:
+Aqui estão exemplos de usos de atributos de controle de fluxo de chamada e em letras force:
 
 
 ```
@@ -181,7 +144,7 @@ Aqui estão exemplos de usos de forcecase e atributos de controle de fluxo de ch
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Urlmon. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Urlmon.h</dt> </dl> |
 
 
 
@@ -189,7 +152,7 @@ Aqui estão exemplos de usos de forcecase e atributos de controle de fluxo de ch
 
 <dl> <dt>
 
-[Flow Controlo](dx-graphics-hlsl-flow-control.md)
+[Flow Controle](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

@@ -1,18 +1,18 @@
 ---
 title: Tipos de Dados do Windows (BaseTsd.h)
-description: Os tipos de dados com suporte pelo Windows são usados para definir valores de retorno de função, parâmetros de função e de mensagem e membros de estrutura.
+description: Os tipos de dados com suporte pelo Windows são usados para definir valores de retorno de função, parâmetros de função e mensagem e membros da estrutura.
 ms.assetid: 4553cafc-450e-4493-a4d4-cb6e2f274d46
 keywords:
 - tipos de dados
 - tipos de dados, Windows
 - API do Windows
-- API do Windows, tipos de dados
+- Windows API, tipos de dados
 - APIENTRY
 - ATOM
 - BOOL
 - BOOLEAN
 - BYTE
-- RETORNO
+- CALLBACK
 - CCHAR
 - CHAR
 - COLORREF
@@ -25,7 +25,7 @@ keywords:
 - FLOAT
 - HACCEL
 - HALF_PTR
-- PROCESSAMENTO
+- LIDAR COM
 - HBITMAP
 - HBRUSH
 - HCOLORSPACE
@@ -37,7 +37,7 @@ keywords:
 - HDESK
 - HDROP
 - HDWP
-- HENHMETAFILE
+- HEN LTDAFILE
 - HFILE
 - HFONT
 - HGDIOBJ
@@ -109,12 +109,12 @@ keywords:
 - PHALF_PTR
 - PHANDLE
 - PHKEY
-- APONTE
+- CERVEJA
 - PINT_PTR
-- PINT8
-- PINT16
-- PINT32
-- PINT64
+- ML8
+- ML16
+- ML32
+- ML64
 - PLCID
 - PLONG
 - PLONGLONG
@@ -140,11 +140,11 @@ keywords:
 - PUINT16
 - PUINT32
 - PUINT64
-- PULONG
-- PULONGLONG
+- ESTÁNG
+- SEMPRENGLONG
 - PULONG_PTR
-- PULONG32
-- PULONG64
+- ESTÁNG32
+- ESTÁNG64
 - PUSHORT
 - PVOID
 - PWCHAR
@@ -154,7 +154,7 @@ keywords:
 - SC_HANDLE
 - SC_LOCK
 - SERVICE_STATUS_HANDLE
-- BAIXO
+- CURTO
 - SIZE_T
 - SSIZE_T
 - TBYTE
@@ -173,36 +173,36 @@ keywords:
 - ULONG32
 - ULONG64
 - UNICODE_STRING
-- NUM
-- SEQÜÊNCIA
-- LIVRE
+- USHORT
+- USN
+- VOID
 - WCHAR
 - WINAPI
 - WORD
 - WPARAM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf3a23e816a78f0dcae9c2fbd6e6979b936451c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3002912cafbdf2dd4fe62c19fe3faef302da8c9b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369549"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626332"
 ---
 # <a name="windows-data-types"></a>Tipos de dados do Windows
 
-Os tipos de dados com suporte pelo Windows são usados para definir valores de retorno de função, parâmetros de função e de mensagem e membros de estrutura. Eles definem o tamanho e o significado desses elementos. Para obter mais informações sobre os tipos de dados do C/C++ subjacentes, consulte [intervalos de tipos de dados](/cpp/cpp/data-type-ranges?view=vs-2019).
+Os tipos de dados com suporte pelo Windows são usados para definir valores de retorno de função, parâmetros de função e mensagem e membros da estrutura. Eles definem o tamanho e o significado desses elementos. Para obter mais informações sobre os tipos de dados C/C++ subjacentes, consulte [Intervalos de tipos de dados](/cpp/cpp/data-type-ranges?view=vs-2019).
 
-A tabela a seguir contém os seguintes tipos: caractere, inteiro, booliano, ponteiro e identificador. Os tipos de caractere, inteiro e booliano são comuns à maioria dos compiladores de C. A maioria dos nomes de tipo de ponteiro começa com um prefixo de P ou LP. Os identificadores se referem a um recurso que foi carregado na memória.
+A tabela a seguir contém os seguintes tipos: caractere, inteiro, booliana, ponteiro e alça. Os tipos de caractere, inteiro e booliana são comuns à maioria dos compiladores C. A maioria dos nomes de tipo de ponteiro começa com um prefixo de P ou LP. Os alças referem-se a um recurso que foi carregado na memória.
 
-Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte [inteiros grandes](large-integers.md).
+Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte [Inteiros grandes.](large-integers.md)
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -213,15 +213,15 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tbody>
 <tr class="odd">
 <td><span id="APIENTRY"></span><span id="apientry"></span><strong>APIENTRY</strong></td>
-<td>A Convenção de chamada para funções do sistema.<br/> Esse tipo é declarado em WinDef. h da seguinte maneira:<br/> <code>#define APIENTRY WINAPI</code><br/></td>
+<td>A convenção de chamada para funções do sistema.<br/> Esse tipo é declarado em WinDef.h da seguinte forma:<br/> <code>#define APIENTRY WINAPI</code><br/></td>
 </tr>
 <tr class="even">
-<td><span id="ATOM"></span><span id="atom"></span><strong>ATOM</strong></td>
-<td>Um Atom. Para obter mais informações, consulte <a href="/windows/desktop/dataxchg/about-atom-tables">sobre tabelas Atom</a>.<br/> Esse tipo é declarado em WinDef. h da seguinte maneira:<br/> <code>typedef WORD ATOM;</code><br/></td>
+<td><span id="ATOM"></span><span id="atom"></span><strong>ÁTOMO</strong></td>
+<td>Um atom. Para obter mais informações, consulte <a href="/windows/desktop/dataxchg/about-atom-tables">Sobre tabelas Atom</a>.<br/> Esse tipo é declarado em WinDef.h da seguinte forma:<br/> <code>typedef WORD ATOM;</code><br/></td>
 </tr>
 <tr class="odd">
 <td><span id="BOOL"></span><span id="bool"></span><strong>BOOL</strong></td>
-<td>Uma variável booliana (deve ser <strong>true</strong> ou <strong>false</strong>).<br/> Esse tipo é declarado em WinDef. h da seguinte maneira:<br/> <code>typedef int BOOL;</code><br/></td>
+<td>Uma variável booliana (deve ser <strong>TRUE</strong> ou <strong>FALSE</strong>).<br/> Esse tipo é declarado em WinDef.h da seguinte forma:<br/> <code>typedef int BOOL;</code><br/></td>
 </tr>
 <tr class="even">
 <td><span id="BOOLEAN"></span><span id="boolean"></span><strong>BOOLEAN</strong></td>
@@ -233,15 +233,15 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="even">
 <td><span id="CALLBACK"></span><span id="callback"></span><strong>RETORNO</strong></td>
-<td>A Convenção de chamada para funções de retorno de chamada.<br/> Esse tipo é declarado em WinDef. h da seguinte maneira:<br/> <code>#define CALLBACK __stdcall</code><br/> <strong>Retorno de chamada</strong>, <strong>Winapi tenha</strong>e <strong>APIENTRY</strong> são usados para definir funções com a Convenção de chamada __stdcall. A maioria das funções na API do Windows é declarada usando <strong>Winapi tenha</strong>. Talvez você queira usar o <strong>retorno de chamada</strong> para as funções de retorno de chamada implementadas para ajudar a identificar a função como uma função de retorno de chamada.<br/></td>
+<td>A Convenção de chamada para funções de retorno de chamada.<br/> Esse tipo é declarado em WinDef. h da seguinte maneira:<br/> <code>#define CALLBACK __stdcall</code><br/> <strong>Retorno de chamada</strong>, <strong>Winapi tenha</strong>e <strong>APIENTRY</strong> são usados para definir funções com a Convenção de chamada __stdcall. a maioria das funções na API Windows são declaradas usando <strong>winapi tenha</strong>. Talvez você queira usar o <strong>retorno de chamada</strong> para as funções de retorno de chamada implementadas para ajudar a identificar a função como uma função de retorno de chamada.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="CCHAR"></span><span id="cchar"></span><strong>CCHAR</strong></td>
-<td>Um caractere de 8 bits do Windows (ANSI).<br/> Esse tipo é declarado em WinNT. h da seguinte maneira:<br/> <code>typedef char CCHAR;</code><br/></td>
+<td>um caractere de Windows de 8 bits (ANSI).<br/> Esse tipo é declarado em WinNT. h da seguinte maneira:<br/> <code>typedef char CCHAR;</code><br/></td>
 </tr>
 <tr class="even">
 <td><span id="CHAR"></span><span id="char"></span><strong>º</strong></td>
-<td>Um caractere de 8 bits do Windows (ANSI). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.<br/> Esse tipo é declarado em WinNT. h da seguinte maneira:<br/> <code>typedef char CHAR;</code><br/></td>
+<td>um caractere de Windows de 8 bits (ANSI). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.<br/> Esse tipo é declarado em WinNT. h da seguinte maneira:<br/> <code>typedef char CHAR;</code><br/></td>
 </tr>
 <tr class="odd">
 <td><span id="COLORREF"></span><span id="colorref"></span><strong>COLORREF</strong></td>
@@ -261,7 +261,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="odd">
 <td><span id="DWORD_PTR"></span><span id="dword_ptr"></span><strong>DWORD_PTR</strong></td>
-<td>Um tipo longo sem sinal para a precisão do ponteiro. Use ao converter um ponteiro para um tipo longo para executar aritmética de ponteiro. (Também usado normalmente para parâmetros gerais de 32 bits que foram estendidos para 64 bits em janelas de 64 bits.)<br/> Esse tipo é declarado em BaseTsd. h da seguinte maneira:<br/> <code>typedef ULONG_PTR DWORD_PTR;</code><br/></td>
+<td>Um tipo longo sem sinal para a precisão do ponteiro. Use ao converter um ponteiro para um tipo longo para executar aritmética de ponteiro. (Também usado normalmente para parâmetros gerais de 32 bits que foram estendidos para 64 bits em 64 bits Windows.)<br/> Esse tipo é declarado em BaseTsd. h da seguinte maneira:<br/> <code>typedef ULONG_PTR DWORD_PTR;</code><br/></td>
 </tr>
 <tr class="even">
 <td><span id="DWORD32"></span><span id="dword32"></span><strong>DWORD32</strong></td>
@@ -284,7 +284,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <td>Metade do tamanho de um ponteiro. Use em uma estrutura que contém um ponteiro e dois campos pequenos.<br/> Esse tipo é declarado em BaseTsd. h da seguinte maneira:<br/> <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -420,7 +420,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tr class="even">
 <td><span id="HINSTANCE"></span><span id="hinstance"></span><strong>HINSTANCE</strong></td>
 <td><p>Um identificador para uma instância. Esse é o endereço base do módulo na memória.</p>
-<p><strong>HMODULE</strong> e <strong>HINSTANCE</strong> são os mesmos hoje, mas representaram coisas diferentes no Windows de 16 bits.</p>
+<p><strong>HMODULE</strong> e <strong>HINSTANCE</strong> são os mesmos hoje, mas representaram coisas diferentes em Windows de 16 bits.</p>
 <p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
 <p><code>typedef HANDLE HINSTANCE;</code></p></td>
 </tr>
@@ -457,7 +457,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tr class="even">
 <td><span id="HMODULE"></span><span id="hmodule"></span><strong>HMODULE</strong></td>
 <td><p>Um identificador para um módulo. O é o endereço base do módulo na memória.</p>
-<p><strong>HMODULE</strong> e <strong>HINSTANCE</strong> são os mesmos nas versões atuais do Windows, mas representaram coisas diferentes no Windows de 16 bits.</p>
+<p><strong>HMODULE</strong> e <strong>HINSTANCE</strong> são os mesmos nas versões atuais do Windows, mas representaram coisas diferentes em Windows de 16 bits.</p>
 <p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
 <p><code>typedef HINSTANCE HMODULE;</code></p></td>
 </tr>
@@ -529,7 +529,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -587,31 +587,31 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="even">
 <td><span id="LCTYPE"></span><span id="lctype"></span><strong>LCTYPE</strong></td>
-<td><p>Um tipo de informação de localidade. Para obter uma lista, consulte <a href="/windows/desktop/Intl/locale-information-constants">constantes de informações de localidade</a>.</p>
-<p>Esse tipo é declarado em WinNls. h da seguinte maneira:</p>
+<td><p>Um tipo de informação de localidade. Para obter uma lista, consulte <a href="/windows/desktop/Intl/locale-information-constants">Constantes de informações de localidade.</a></p>
+<p>Esse tipo é declarado em WinNls.h da seguinte forma:</p>
 <p><code>typedef DWORD LCTYPE;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LGRPID"></span><span id="lgrpid"></span><strong>LGRPID</strong></td>
-<td><p>Um identificador de grupo de idiomas. Para obter uma lista, consulte <a href="/windows/desktop/api/winnls/nf-winnls-enumlanguagegrouplocalesa"><strong>EnumLanguageGroupLocales</strong></a>.</p>
-<p>Esse tipo é declarado em WinNls. h da seguinte maneira:</p>
+<td><p>Um identificador de grupo de idiomas. Para ver uma lista, <a href="/windows/desktop/api/winnls/nf-winnls-enumlanguagegrouplocalesa"><strong>consulte EnumLanguageGroupLocales.</strong></a></p>
+<p>Esse tipo é declarado em WinNls.h da seguinte forma:</p>
 <p><code>typedef DWORD LGRPID;</code></p></td>
 </tr>
 <tr class="even">
-<td><span id="LONG"></span><span id="long"></span><strong>Longas</strong></td>
-<td><p>Um inteiro com sinal de 32 bits. O intervalo é de-2147483648 a 2147483647 decimal.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><span id="LONG"></span><span id="long"></span><strong>LONGAS</strong></td>
+<td><p>Um inteiro com sinal de 32 bits. O intervalo é -2147483648 até 2147483647 decimal.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef long LONG;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LONGLONG"></span><span id="longlong"></span><strong>LONGLONG</strong></td>
-<td><p>Um inteiro com sinal de 64 bits. O intervalo é-9.223.372.036.854.775.808 até 9223372036854775807 decimal.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um inteiro com sinal de 64 bits. O intervalo é -9223372036854775808 até 9223372036854775807 decimal.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -633,13 +633,13 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="even">
 <td><span id="LONG_PTR"></span><span id="long_ptr"></span><strong>LONG_PTR</strong></td>
-<td><p>Um tipo longo assinado para a precisão do ponteiro. Use ao converter um ponteiro para um longo para executar a aritmética do ponteiro.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um tipo longo assinado para precisão do ponteiro. Use ao lançar um ponteiro para um long para executar aritmética de ponteiro.</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -661,55 +661,55 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="odd">
 <td><span id="LONG32"></span><span id="long32"></span><strong>LONG32</strong></td>
-<td><p>Um inteiro com sinal de 32 bits. O intervalo é de-2147483648 a 2147483647 decimal.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um inteiro com sinal de 32 bits. O intervalo é -2147483648 até 2147483647 decimal.</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef signed int LONG32;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LONG64"></span><span id="long64"></span><strong>LONG64</strong></td>
-<td><p>Um inteiro com sinal de 64 bits. O intervalo é-9.223.372.036.854.775.808 até 9223372036854775807 decimal.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um inteiro com sinal de 64 bits. O intervalo é -9223372036854775808 até 9223372036854775807 decimal.</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef __int64 LONG64;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPARAM"></span><span id="lparam"></span><strong>LPARAM</strong></td>
 <td><p>Um parâmetro de mensagem.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef LONG_PTR LPARAM;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPBOOL"></span><span id="lpbool"></span><strong>LPBOOL</strong></td>
-<td><p>Um ponteiro para um <a href="#bool"><strong>bool</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#bool"><strong>BOOL.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef BOOL far *LPBOOL;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPBYTE"></span><span id="lpbyte"></span><strong>LPBYTE</strong></td>
-<td><p>Um ponteiro para um <a href="#byte"><strong>byte</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#byte"><strong>BYTE.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef BYTE far *LPBYTE;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPCOLORREF"></span><span id="lpcolorref"></span><strong>LPCOLORREF</strong></td>
-<td><p>Um ponteiro para um valor de <a href="/windows/desktop/gdi/colorref"><strong>COLORREF</strong></a> .</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="/windows/desktop/gdi/colorref"><strong>valor COLORREF.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef DWORD *LPCOLORREF;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPCSTR"></span><span id="lpcstr"></span><strong>LPCSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres constante terminada em nulo de caracteres ANSI (Windows de 8 bits). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres terminada em nulo constante de caracteres ANSI (Windows de 8 bits). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef __nullterminated CONST CHAR *LPCSTR;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPCTSTR"></span><span id="lpctstr"></span><strong>LPCTSTR</strong></td>
-<td><p>Um <a href="#lpcwstr"><strong>LPCWSTR</strong></a> se <strong>Unicode</strong> estiver definido; caso contrário, <a href="#lpcstr"><strong>LPCSTR</strong></a> . Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">tipos de dados do Windows para cadeias de caracteres</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um <a href="#lpcwstr"><strong>LPCWSTR</strong></a> se <strong>UNICODE for definido;</strong> caso <a href="#lpcstr"><strong>contrário, um LPCSTR.</strong></a> Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">Windows tipos de dados para cadeias de caracteres</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -732,54 +732,54 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tr class="odd">
 <td><span id="LPCVOID"></span><span id="lpcvoid"></span><strong>LPCVOID</strong></td>
 <td><p>Um ponteiro para uma constante de qualquer tipo.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef CONST void *LPCVOID;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPCWSTR"></span><span id="lpcwstr"></span><strong>LPCWSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres constante terminada em nulo de caracteres Unicode de 16 bits. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres de terminação nula constante de caracteres Unicode de 16 bits. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef CONST WCHAR *LPCWSTR;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPDWORD"></span><span id="lpdword"></span><strong>LPDWORD</strong></td>
-<td><p>Um ponteiro para um <a href="#dword"><strong>DWORD</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#dword"><strong>DWORD.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef DWORD *LPDWORD;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPHANDLE"></span><span id="lphandle"></span><strong>LPHANDLE</strong></td>
-<td><p>Um ponteiro para um <a href="#handle"><strong>identificador</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#handle"><strong>HANDLE.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef HANDLE *LPHANDLE;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPINT"></span><span id="lpint"></span><strong>LPINT</strong></td>
-<td><p>Um ponteiro para um <a href="#int"><strong>int</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#int"><strong>INT.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef int *LPINT;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPLONG"></span><span id="lplong"></span><strong>LPLONG</strong></td>
-<td><p>Um ponteiro para um <a href="#long"><strong>longo</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#long"><strong>LONG.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef long *LPLONG;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPSTR"></span><span id="lpstr"></span><strong>LPSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres do Windows de 8 bits terminada por nulo. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres terminada em nulo de caracteres ANSI (Windows de 8 bits). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef CHAR *LPSTR;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPTSTR"></span><span id="lptstr"></span><strong>LPTSTR</strong></td>
-<td><p>Um <a href="#lpwstr"><strong>LPWSTR</strong></a> se o <strong>Unicode</strong> for definido, um <a href="#lpstr"><strong>LPSTR</strong></a> , caso contrário. Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">tipos de dados do Windows para cadeias de caracteres</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um <a href="#lpwstr"><strong>LPWSTR</strong></a> se <strong>UNICODE for definido;</strong> caso contrário, <a href="#lpstr"><strong>um LPSTR.</strong></a> Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">Windows tipos de dados para cadeias de caracteres</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -802,66 +802,66 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tr class="odd">
 <td><span id="LPVOID"></span><span id="lpvoid"></span><strong>LPVOID</strong></td>
 <td><p>Um ponteiro para qualquer tipo.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef void *LPVOID;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LPWORD"></span><span id="lpword"></span><strong>LPWORD</strong></td>
-<td><p>Um ponteiro para uma <a href="#word"><strong>palavra</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#word"><strong>WORD.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef WORD *LPWORD;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="LPWSTR"></span><span id="lpwstr"></span><strong>LPWSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres Unicode de 16 bits terminada em nulo. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres terminada em nulo de caracteres Unicode de 16 bits. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef WCHAR *LPWSTR;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="LRESULT"></span><span id="lresult"></span><strong>LRESULT</strong></td>
 <td><p>Resultado assinado do processamento de mensagens.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef LONG_PTR LRESULT;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PBOOL"></span><span id="pbool"></span><strong>PBOOL</strong></td>
-<td><p>Um ponteiro para um <a href="#bool"><strong>bool</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#bool"><strong>BOOL.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef BOOL *PBOOL;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PBOOLEAN"></span><span id="pboolean"></span><strong>PBOOLEAN</strong></td>
-<td><p>Um ponteiro para um <a href="#boolean"><strong>booliano</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#boolean"><strong>BOOLEAN.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef BOOLEAN *PBOOLEAN;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PBYTE"></span><span id="pbyte"></span><strong>PBYTE</strong></td>
-<td><p>Um ponteiro para um <a href="#byte"><strong>byte</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#byte"><strong>BYTE.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef BYTE *PBYTE;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PCHAR"></span><span id="pchar"></span><strong>PCHAR</strong></td>
-<td><p>Um ponteiro para um <a href="#char"><strong>Char</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#char"><strong>CHAR.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef CHAR *PCHAR;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PCSTR"></span><span id="pcstr"></span><strong>PCSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres constante terminada em nulo de caracteres ANSI (Windows de 8 bits). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres terminada em nulo constante de caracteres ANSI (Windows de 8 bits). Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef CONST CHAR *PCSTR;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PCTSTR"></span><span id="pctstr"></span><strong>PCTSTR</strong></td>
-<td><p>Um <a href="#pcwstr"><strong>PCWSTR</strong></a> se o <strong>Unicode</strong> estiver definido; caso contrário, <a href="#pcstr"><strong>PCSTR</strong></a> . Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">tipos de dados do Windows para cadeias de caracteres</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um <a href="#pcwstr"><strong>PCWSTR se</strong></a> <strong>UNICODE estiver</strong> definido; caso <a href="#pcstr"><strong>contrário, um PCSTR.</strong></a> Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">Windows tipos de dados para cadeias de caracteres</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -883,55 +883,55 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="odd">
 <td><span id="PCWSTR"></span><span id="pcwstr"></span><strong>PCWSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres constante terminada em nulo de caracteres Unicode de 16 bits. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para uma cadeia de caracteres de terminação nula constante de caracteres Unicode de 16 bits. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">Conjuntos de caracteres usados por fontes</a>.</p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef CONST WCHAR *PCWSTR;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PDWORD"></span><span id="pdword"></span><strong>PDWORD</strong></td>
-<td><p>Um ponteiro para um <a href="#dword"><strong>DWORD</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#dword"><strong>DWORD.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef DWORD *PDWORD;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PDWORDLONG"></span><span id="pdwordlong"></span><strong>PDWORDLONG</strong></td>
-<td><p>Um ponteiro para um <a href="#dwordlong"><strong>DWORDLONG</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#dwordlong"><strong>DWORDLONG.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef DWORDLONG *PDWORDLONG;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PDWORD_PTR"></span><span id="pdword_ptr"></span><strong>PDWORD_PTR</strong></td>
 <td><p>Um ponteiro para um <a href="#dword_ptr"><strong>DWORD_PTR</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef DWORD_PTR *PDWORD_PTR;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PDWORD32"></span><span id="pdword32"></span><strong>PDWORD32</strong></td>
-<td><p>Um ponteiro para um <a href="#dword32"><strong>DWORD32</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#dword32"><strong>DWORD32.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef DWORD32 *PDWORD32;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PDWORD64"></span><span id="pdword64"></span><strong>PDWORD64</strong></td>
-<td><p>Um ponteiro para um <a href="#dword64"><strong>DWORD64</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#dword64"><strong>DWORD64.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef DWORD64 *PDWORD64;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PFLOAT"></span><span id="pfloat"></span><strong>PFLOAT</strong></td>
-<td><p>Um ponteiro para um <a href="#float"><strong>float</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#float"><strong>FLOAT.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef FLOAT *PFLOAT;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PHALF_PTR"></span><span id="phalf_ptr"></span><strong>PHALF_PTR</strong></td>
 <td><p>Um ponteiro para um <a href="#half_ptr"><strong>HALF_PTR</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -953,97 +953,97 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="odd">
 <td><span id="PHANDLE"></span><span id="phandle"></span><strong>PHANDLE</strong></td>
-<td><p>Um ponteiro para um <a href="#handle"><strong>identificador</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#handle"><strong>HANDLE.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef HANDLE *PHANDLE;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PHKEY"></span><span id="phkey"></span><strong>PHKEY</strong></td>
-<td><p>Um ponteiro para um <a href="#hkey"><strong>HKEY</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#hkey"><strong>HKEY.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef HKEY *PHKEY;</code></p></td>
 </tr>
 <tr class="odd">
-<td><span id="PINT"></span><span id="pint"></span><strong>APONTE</strong></td>
-<td><p>Um ponteiro para um <a href="#int"><strong>int</strong></a>.</p>
-<p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
+<td><span id="PINT"></span><span id="pint"></span><strong>CERVEJA</strong></td>
+<td><p>Um ponteiro para um <a href="#int"><strong>INT.</strong></a></p>
+<p>Esse tipo é declarado em WinDef.h da seguinte forma:</p>
 <p><code>typedef int *PINT;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PINT_PTR"></span><span id="pint_ptr"></span><strong>PINT_PTR</strong></td>
 <td><p>Um ponteiro para um <a href="#int_ptr"><strong>INT_PTR</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef INT_PTR *PINT_PTR;</code></p></td>
 </tr>
 <tr class="odd">
-<td><span id="PINT8"></span><span id="pint8"></span><strong>PINT8</strong></td>
-<td><p>Um ponteiro para um <a href="#int8"><strong>INT8</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><span id="PINT8"></span><span id="pint8"></span><strong>ML8</strong></td>
+<td><p>Um ponteiro para um <a href="#int8"><strong>INT8.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef INT8 *PINT8;</code></p></td>
 </tr>
 <tr class="even">
-<td><span id="PINT16"></span><span id="pint16"></span><strong>PINT16</strong></td>
-<td><p>Um ponteiro para um <a href="#int16"><strong>Int16</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><span id="PINT16"></span><span id="pint16"></span><strong>ML16</strong></td>
+<td><p>Um ponteiro para um <a href="#int16"><strong>INT16.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef INT16 *PINT16;</code></p></td>
 </tr>
 <tr class="odd">
-<td><span id="PINT32"></span><span id="pint32"></span><strong>PINT32</strong></td>
-<td><p>Um ponteiro para um <a href="#int32"><strong>INT32</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><span id="PINT32"></span><span id="pint32"></span><strong>ML32</strong></td>
+<td><p>Um ponteiro para um <a href="#int32"><strong>INT32.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef INT32 *PINT32;</code></p></td>
 </tr>
 <tr class="even">
-<td><span id="PINT64"></span><span id="pint64"></span><strong>PINT64</strong></td>
-<td><p>Um ponteiro para um <a href="#int64"><strong>Int64</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><span id="PINT64"></span><span id="pint64"></span><strong>ML64</strong></td>
+<td><p>Um ponteiro para um <a href="#int64"><strong>INT64.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef INT64 *PINT64;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PLCID"></span><span id="plcid"></span><strong>PLCID</strong></td>
-<td><p>Um ponteiro para um <a href="#lcid"><strong>LCID</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#lcid"><strong>LCID.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef PDWORD PLCID;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PLONG"></span><span id="plong"></span><strong>PLONG</strong></td>
-<td><p>Um ponteiro para um <a href="#long"><strong>longo</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#long"><strong>LONG.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef LONG *PLONG;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PLONGLONG"></span><span id="plonglong"></span><strong>PLONGLONG</strong></td>
-<td><p>Um ponteiro para um <a href="#longlong"><strong>LONGLONG</strong></a>.</p>
-<p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#longlong"><strong>LONGLONG.</strong></a></p>
+<p>Esse tipo é declarado em WinNT.h da seguinte forma:</p>
 <p><code>typedef LONGLONG *PLONGLONG;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PLONG_PTR"></span><span id="plong_ptr"></span><strong>PLONG_PTR</strong></td>
 <td><p>Um ponteiro para um <a href="#long_ptr"><strong>LONG_PTR</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef LONG_PTR *PLONG_PTR;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PLONG32"></span><span id="plong32"></span><strong>PLONG32</strong></td>
-<td><p>Um ponteiro para um <a href="#long32"><strong>LONG32</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#long32"><strong>LONG32.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef LONG32 *PLONG32;</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="PLONG64"></span><span id="plong64"></span><strong>PLONG64</strong></td>
-<td><p>Um ponteiro para um <a href="#long64"><strong>LONG64</strong></a>.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um ponteiro para um <a href="#long64"><strong>LONG64.</strong></a></p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>typedef LONG64 *PLONG64;</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="POINTER_32"></span><span id="pointer_32"></span><strong>POINTER_32</strong></td>
-<td><p>Um ponteiro de 32 bits. Em um sistema de 32 bits, esse é um ponteiro nativo. Em um sistema de 64 bits, esse é um ponteiro de bit de 64 truncado.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<td><p>Um ponteiro de 32 bits. Em um sistema de 32 bits, esse é um ponteiro nativo. Em um sistema de 64 bits, esse é um ponteiro truncado de 64 bits.</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1065,14 +1065,14 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="even">
 <td><span id="POINTER_64"></span><span id="pointer_64"></span><strong>POINTER_64</strong></td>
-<td><p>Um ponteiro de 64 bits. Em um sistema de 64 bits, esse é um ponteiro nativo. Em um sistema de 32 bits, esse é um ponteiro de bit de 32 de sinal estendido.</p>
+<td><p>Um ponteiro de 64 bits. Em um sistema de 64 bits, esse é um ponteiro nativo. Em um sistema de 32 bits, esse é um ponteiro de 32 bits estendido por sinal.</p>
 <p>Observe que não é seguro assumir o estado do bit de ponteiro alto.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1095,18 +1095,18 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <tr class="odd">
 <td><span id="POINTER_SIGNED"></span><span id="pointer_signed"></span><strong>POINTER_SIGNED</strong></td>
 <td><p>Um ponteiro assinado.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>#define POINTER_SIGNED __sptr</code></p></td>
 </tr>
 <tr class="even">
 <td><span id="POINTER_UNSIGNED"></span><span id="pointer_unsigned"></span><strong>POINTER_UNSIGNED</strong></td>
 <td><p>Um ponteiro não assinado.</p>
-<p>Esse tipo é declarado em BaseTsd. h da seguinte maneira:</p>
+<p>Esse tipo é declarado em BaseTsd.h da seguinte forma:</p>
 <p><code>#define POINTER_UNSIGNED __uptr</code></p></td>
 </tr>
 <tr class="odd">
 <td><span id="PSHORT"></span><span id="pshort"></span><strong>PSHORT</strong></td>
-<td><p>Um ponteiro para um <a href="#short"><strong>curto</strong></a>.</p>
+<td><p>Um ponteiro para um <a href="#short"><strong>SHORT.</strong></a></p>
 <p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
 <p><code>typedef SHORT *PSHORT;</code></p></td>
 </tr>
@@ -1124,7 +1124,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="even">
 <td><span id="PSTR"></span><span id="pstr"></span><strong>PSTR</strong></td>
-<td><p>Um ponteiro para uma cadeia de caracteres do Windows de 8 bits terminada por nulo. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
+<td><p>um ponteiro para uma cadeia de caracteres de 8 bits Windows (ANSI) terminada em nulo. Para obter mais informações, consulte <a href="/windows/desktop/gdi/character-sets-used-by-fonts">conjuntos de caracteres usados por fontes</a>.</p>
 <p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
 <p><code>typedef CHAR *PSTR;</code></p></td>
 </tr>
@@ -1142,13 +1142,13 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 </tr>
 <tr class="odd">
 <td><span id="PTSTR"></span><span id="ptstr"></span><strong>PTSTR</strong></td>
-<td><p>Um <a href="#pwstr"><strong>PWSTR</strong></a> se o <strong>Unicode</strong> estiver definido; caso contrário, <a href="#pstr"><strong>PSTR</strong></a> . Para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">tipos de dados do Windows para cadeias de caracteres</a>.</p>
+<td><p>Um <a href="#pwstr"><strong>PWSTR</strong></a> se o <strong>Unicode</strong> estiver definido; caso contrário, <a href="#pstr"><strong>PSTR</strong></a> . para obter mais informações, consulte <a href="/windows/desktop/Intl/windows-data-types-for-strings">Windows tipos de dados para cadeias de caracteres</a>.</p>
 <p>Esse tipo é declarado em WinNT. h da seguinte maneira:</p>
 <div class="code">
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1181,7 +1181,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1347,7 +1347,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1375,7 +1375,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1409,7 +1409,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1443,7 +1443,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1501,7 +1501,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1529,7 +1529,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1569,7 +1569,7 @@ Para obter mais informações sobre como lidar com inteiros de 64 bits, consulte
 <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1620,7 +1620,7 @@ typedef const UNICODE_STRING *PCUNICODE_STRING;</code></pre></td>
 <td><p>A Convenção de chamada para funções do sistema.</p>
 <p>Esse tipo é declarado em WinDef. h da seguinte maneira:</p>
 <p><code>#define WINAPI __stdcall</code></p>
-<p><strong>Retorno de chamada</strong>, <strong>Winapi tenha</strong>e <strong>APIENTRY</strong> são usados para definir funções com a Convenção de chamada __stdcall. A maioria das funções na API do Windows é declarada usando <strong>Winapi tenha</strong>. Talvez você queira usar o <strong>retorno de chamada</strong> para as funções de retorno de chamada implementadas para ajudar a identificar a função como uma função de retorno de chamada.</p></td>
+<p><strong>Retorno de chamada</strong>, <strong>Winapi tenha</strong>e <strong>APIENTRY</strong> são usados para definir funções com a Convenção de chamada __stdcall. a maioria das funções na API Windows são declaradas usando <strong>winapi tenha</strong>. Talvez você queira usar o <strong>retorno de chamada</strong> para as funções de retorno de chamada implementadas para ajudar a identificar a função como uma função de retorno de chamada.</p></td>
 </tr>
 <tr class="even">
 <td><span id="WORD"></span><span id="word"></span><strong>TEXTOS</strong></td>
@@ -1645,6 +1645,6 @@ typedef const UNICODE_STRING *PCUNICODE_STRING;</code></pre></td>
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                                                                                                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>BaseTsd. h; </dt> <dt>WinDef. h; </dt> <dt>Winnt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                                                                                                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>BaseTsd.h; </dt> <dt>WinDef.h; </dt> <dt>WinNT.h</dt> </dl> |

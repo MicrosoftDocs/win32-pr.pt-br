@@ -6,12 +6,12 @@ keywords:
 - AriaDataTableWarningId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dcd77983092983649d8bcd41357afb4756120e6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16fb9e8e97336199b5b133dc59ef7c5f0900f7bdeb0c7a8d8098a51707b107f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122386"
 ---
 # <a name="aria-data-table-warning"></a>Aviso da tabela de dados do ARIA
 
@@ -32,7 +32,7 @@ Esse aviso indica que a tabela é identificada como uma tabela de dados, mas nã
 > [!Note]  
 > Nem todas as tabelas de dados precisam ter uma descrição acessível. Você deve definir uma descrição acessível se os usuários precisarem de mais informações para entender a estrutura e o conteúdo da tabela de dados.
 
- 
+ 
 
 Para resolver esse aviso, defina uma descrição acessível de tabela usando o atributo Summary ou o atributo **Aria-DescribedBy** .
 
@@ -54,9 +54,9 @@ Para resolver esse aviso, defina uma descrição acessível de tabela usando o a
 
 
 
- 
+ 
 
- 
+ 
 
 
 

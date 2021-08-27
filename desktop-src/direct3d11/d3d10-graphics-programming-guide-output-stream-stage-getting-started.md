@@ -4,12 +4,12 @@ description: Esta seção descreve como usar um sombreador de geometria com o es
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae2e72d25177926c948f43996b6c57d42a7c557b
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 5f00b469b28601322358f348de98354f15263483
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587873"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621872"
 ---
 # <a name="getting-started-with-the-stream-output-stage"></a>Introdução com o estágio de Stream-Output
 
@@ -99,8 +99,8 @@ Tendo esse código em mente, considere que um sombreador de geometria é muito p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -114,7 +114,7 @@ Tendo esse código em mente, considere que um sombreador de geometria é muito p
 <td>O tipo de retorno da função faz uma coisa, declara o número máximo de vértices que podem ser gerados pelo sombreador. Nesse caso, <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -132,7 +132,7 @@ define a saída como um máximo de 12 vértices.</td>
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

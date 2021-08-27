@@ -4,12 +4,12 @@ ms.assetid: 074ac40e-a17e-7366-1954-6699407b82f7
 title: Valores e sinalizadores de limite XAudio2 (Xaudio2.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 198fae838e8c990f3d1aaebf58bb79fb6e75e79623b6b44ff6b05231d10676c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 11293b55a44b0aefdeacf95b9e36e90a626de2c1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119545456"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470702"
 ---
 # <a name="xaudio2-boundary-values-and-flags"></a>Valores e sinalizadores de limite XAudio2
 
@@ -58,70 +58,20 @@ Constantes XAudio2 que especificam parâmetros padrão, valores máximos e sinal
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="XAUDIO2_DEBUG_ENGINE"></span><span id="xaudio2_debug_engine"></span><dl> <dt><strong>XAUDIO2_DEBUG_ENGINE</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que a versão de depuração/verificada do mecanismo de áudio deve ser usada em vez da versão de lançamento. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br/>
-<blockquote>
-[!Note]<br />
-Não há suporte para esse sinalizador Windows 8 ou Windows 10.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="XAUDIO2_VOICE_NOPITCH"></span><span id="xaudio2_voice_nopitch"></span><dl> <dt><strong>XAUDIO2_VOICE_NOPITCH</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que uma voz de origem não usará a mudança de tom, consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="XAUDIO2_VOICE_NOSRC"></span><span id="xaudio2_voice_nosrc"></span><dl> <dt><strong>XAUDIO2_VOICE_NOSRC</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que nenhuma conversão de taxa de exemplo está disponível em uma voz de origem, as saídas da voz devem ter a mesma taxa de exemplo. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="XAUDIO2_VOICE_USEFILTER"></span><span id="xaudio2_voice_usefilter"></span><dl> <dt><strong>XAUDIO2_VOICE_USEFILTER</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que o efeito de filtro deve estar disponível em uma voz. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a> <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice"><strong>e IXAudio2::CreateSubmixVoice</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="XAUDIO2_PLAY_TAILS"></span><span id="xaudio2_play_tails"></span><dl> <dt><strong>XAUDIO2_PLAY_TAILS</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que uma voz deve continuar emitindo a saída de efeito depois que ela for interrompida. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-stop"><strong>IXAudio2SourceVoice::Stop</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="XAUDIO2_END_OF_STREAM"></span><span id="xaudio2_end_of_stream"></span><dl> <dt><strong>XAUDIO2_END_OF_STREAM</strong></dt> </dl></td>
-<td style="text-align: left;">Indica o último buffer em um fluxo. Consulte <a href="/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer"><strong>XAUDIO2_BUFFER</strong></a>. <strong>Sinalizadores</strong>.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="XAUDIO2_STOP_ENGINE_WHEN_IDLE"></span><span id="xaudio2_stop_engine_when_idle"></span><dl> <dt><strong>XAUDIO2_STOP_ENGINE_WHEN_IDLE</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que o mecanismo de áudio deve parar quando nenhuma voz de origem for iniciada e iniciar quando uma voz for iniciada. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="XAUDIO2_SEND_USEFILTER"></span><span id="xaudio2_send_usefilter"></span><dl> <dt><strong>XAUDIO2_SEND_USEFILTER</strong></dt> </dl></td>
-<td style="text-align: left;">Indica que um filtro deve ser usado em um envio de voz. Consulte <a href="/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_send_descriptor"><strong>XAUDIO2_SEND_DESCRIPTOR</strong></a>. <strong>Sinalizadores</strong>.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="XAUDIO2_1024_QUANTUM"></span><span id="xaudio2_1024_quantum"></span><dl> <dt><strong>XAUDIO2_1024_QUANTUM</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica um quantum de processamento não padrão de 21,33 ms (1024 amostras a 48KHz). Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="XAUDIO2_NO_VIRTUAL_AUDIO_CLIENT"></span><span id="xaudio2_no_virtual_audio_client"></span><dl> <dt><strong>XAUDIO2_NO_VIRTUAL_AUDIO_CLIENT</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica que um cliente de áudio virtual não deve ser usado. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice"><strong>IXAudio2::CreateMasteringVoice</strong></a>.<br/>
-<blockquote>
-[!Note]<br />
-Em dispositivos na família de dispositivos móveis, um cliente de áudio virtual é sempre usado, independentemente de esse sinalizador ser usado.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante | Descrição | 
+|----------|-------------|
+| <span id="XAUDIO2_DEBUG_ENGINE"></span><span id="xaudio2_debug_engine"></span><dl><dt><strong>XAUDIO2_DEBUG_ENGINE</strong></dt></dl> | Especifica que a versão de depuração/verificada do mecanismo de áudio deve ser usada em vez da versão de lançamento. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br /><blockquote>[!Note]<br />Não há suporte para esse sinalizador Windows 8 ou Windows 10.</blockquote><br /> | 
+| <span id="XAUDIO2_VOICE_NOPITCH"></span><span id="xaudio2_voice_nopitch"></span><dl><dt><strong>XAUDIO2_VOICE_NOPITCH</strong></dt></dl> | Especifica que uma voz de origem não usará a mudança de tom, consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a>.<br /> | 
+| <span id="XAUDIO2_VOICE_NOSRC"></span><span id="xaudio2_voice_nosrc"></span><dl><dt><strong>XAUDIO2_VOICE_NOSRC</strong></dt></dl> | Especifica que nenhuma conversão de taxa de exemplo está disponível em uma voz de origem, as saídas da voz devem ter a mesma taxa de exemplo. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a>.<br /> | 
+| <span id="XAUDIO2_VOICE_USEFILTER"></span><span id="xaudio2_voice_usefilter"></span><dl><dt><strong>XAUDIO2_VOICE_USEFILTER</strong></dt></dl> | Especifica que o efeito de filtro deve estar disponível em uma voz. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice"><strong>IXAudio2::CreateSourceVoice</strong></a> <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice"><strong>e IXAudio2::CreateSubmixVoice</strong></a>.<br /> | 
+| <span id="XAUDIO2_PLAY_TAILS"></span><span id="xaudio2_play_tails"></span><dl><dt><strong>XAUDIO2_PLAY_TAILS</strong></dt></dl> | Especifica que uma voz deve continuar emitindo a saída de efeito depois que ela for interrompida. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-stop"><strong>IXAudio2SourceVoice::Stop</strong></a>.<br /> | 
+| <span id="XAUDIO2_END_OF_STREAM"></span><span id="xaudio2_end_of_stream"></span><dl><dt><strong>XAUDIO2_END_OF_STREAM</strong></dt></dl> | Indica o último buffer em um fluxo. Consulte <a href="/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer"><strong>XAUDIO2_BUFFER</strong></a>. <strong>Sinalizadores</strong>.<br /> | 
+| <span id="XAUDIO2_STOP_ENGINE_WHEN_IDLE"></span><span id="xaudio2_stop_engine_when_idle"></span><dl><dt><strong>XAUDIO2_STOP_ENGINE_WHEN_IDLE</strong></dt></dl> | Especifica que o mecanismo de áudio deve parar quando nenhuma voz de origem for iniciada e iniciar quando uma voz for iniciada. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br /> | 
+| <span id="XAUDIO2_SEND_USEFILTER"></span><span id="xaudio2_send_usefilter"></span><dl><dt><strong>XAUDIO2_SEND_USEFILTER</strong></dt></dl> | Indica que um filtro deve ser usado em um envio de voz. Consulte <a href="/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_send_descriptor"><strong>XAUDIO2_SEND_DESCRIPTOR</strong></a>. <strong>Sinalizadores</strong>.<br /> | 
+| <span id="XAUDIO2_1024_QUANTUM"></span><span id="xaudio2_1024_quantum"></span><dl><dt><strong>XAUDIO2_1024_QUANTUM</strong></dt></dl> | Especifica um quantum de processamento não padrão de 21,33 ms (1024 amostras a 48KHz). Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create"><strong>XAudio2Criar</strong></a>.<br /> | 
+| <span id="XAUDIO2_NO_VIRTUAL_AUDIO_CLIENT"></span><span id="xaudio2_no_virtual_audio_client"></span><dl><dt><strong>XAUDIO2_NO_VIRTUAL_AUDIO_CLIENT</strong></dt></dl> | Especifica que um cliente de áudio virtual não deve ser usado. Consulte <a href="/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice"><strong>IXAudio2::CreateMasteringVoice</strong></a>.<br /><blockquote>[!Note]<br />Em dispositivos na família de dispositivos móveis, um cliente de áudio virtual é sempre usado, independentemente de esse sinalizador ser usado.</blockquote><br /> | 
+
 
 
 
@@ -149,7 +99,7 @@ Windows 10 (XAudio2.9); Windows 8, Windows Phone 8 (XAudio 2.8); SDK do DirectX 
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Xaudio2.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Xaudio2. h</dt> </dl> |
 
 
 
@@ -157,7 +107,7 @@ Windows 10 (XAudio2.9); Windows 8, Windows Phone 8 (XAudio 2.8); SDK do DirectX 
 
 <dl> <dt>
 
-[XAudio2::Constants](constants.md)
+[XAudio2:: Constants](constants.md)
 </dt> </dl>
 
  

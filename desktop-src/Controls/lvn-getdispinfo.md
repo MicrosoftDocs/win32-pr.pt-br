@@ -3,7 +3,7 @@ title: LVN_GETDISPINFO código de notificação (commctrl. h)
 description: Enviado por um controle de exibição de lista para sua janela pai. É uma solicitação para que a janela pai forneça as informações necessárias para exibir ou classificar um item de exibição de lista. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 04310e39-69bc-45d7-958c-00452279d7a9
 keywords:
-- LVN_GETDISPINFO de código de notificação controles do Windows
+- LVN_GETDISPINFO código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1585524dd447c4a1324dc5c7a235490de776fb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f4f4fc6917b0de699d1ca561f46bc7789aa15eea7c40aa3681fe74991e3a122
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088816"
 ---
 # <a name="lvn_getdispinfo-notification-code"></a>Código de notificação do LVN \_ GETDISPINFO
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -124,9 +124,9 @@ O seguinte é do manipulador de \_ notificação do WM no procedimento da caixa 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **LVN \_ GETDISPINFOW** (Unicode) e **LVN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 

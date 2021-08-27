@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPeerToPeerEngine\_SetPlaybackEndpoint\_BOOL\_BSTR\_BSTR\_R
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método IPeerToPeerEngine:: SetPlaybackEndpoint'
+title: Método IPeerToPeerEngine::SetPlaybackEndpoint
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: D261D2EA-C930-406E-A5E1-CE5E98162399
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 81f3743c9f1cca5a763df23087d7703b79d198a9cd780f9a398017c53afaabfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68a52342f3494b831439764eb74cd16132ec770e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117721793"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622932"
 ---
-# <a name="span-idvspixengineipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversionspanipeertopeerenginesetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversion"></span>Método IPeerToPeerEngine:: SetPlaybackEndpoint
+# <a name="span-idvspixengineipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversionspanipeertopeerenginesetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversion"></span>Método IPeerToPeerEngine::SetPlaybackEndpoint
 
 Define o endereço do ponto de extremidade usado para se conectar a um mecanismo remoto.
 
@@ -45,10 +45,10 @@ HRESULT SetPlaybackEndpoint(
 *bUseAuthentication*   
 true para usar a autenticação; caso contrário, false.
 
-*extremidade*   
+*Extremidade*   
 Uma cadeia de caracteres COM que contém o endereço do ponto de extremidade.
 
-*sessionKey*   
+*Sessionkey*   
 Uma cadeia de caracteres COM que contém a chave de sessão usada para criptografia.
 
 *remoteVersion*   
@@ -56,11 +56,11 @@ Especifica a versão do mecanismo remoto a ser usada.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 

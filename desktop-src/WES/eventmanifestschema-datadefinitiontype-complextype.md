@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fa492acf00740b0df9b761c40797ec05feb5b2e38b84ec0682296dd845cbe613
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a637166d261c4148a81baee3597d4090542b8612
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118589601"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470922"
 ---
 # <a name="datadefinitiontype-complex-type"></a>Tipo complexo DataDefinitionType
 
@@ -69,57 +69,16 @@ Define um item de dados que você deseja incluir com o evento .
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome</th>
-<th>Tipo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>count</td>
-<td><a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a></td>
-<td>O número de elementos na matriz se o item de dados for uma matriz. Você pode especificar a contagem real ou o nome de outro item de dados que contém a contagem. <br/></td>
-</tr>
-<tr class="even">
-<td>inType</td>
-<td><strong>QName</strong></td>
-<td>O tipo de dados para este item de dados. Para ver uma lista de tipos de dados de entrada predefinidos, consulte o <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complexo InputType.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td>comprimento</td>
-<td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a></td>
-<td>O comprimento de um item de dados de comprimento variável, como um blob binário. Para dados binários, especifique o comprimento em bytes e, para dados de cadeia de caracteres, especifique o comprimento em caracteres. Você pode especificar o tamanho real ou o nome de outro item de dados que contém o comprimento.<br/> Se você usar o atributo length para especificar uma cadeia de caracteres de comprimento fixo, deverá padilhar a cadeia de caracteres para seu comprimento fixo, permitindo o caractere de terminador nulo no final (por exemplo, se o comprimento for 5, a cadeia de caracteres abc deverá ser &quot; &quot; padded como &quot; &quot; abc. O comprimento da cadeia de caracteres deve incluir o caractere de terminador nulo.<br/></td>
-</tr>
-<tr class="even">
-<td>map</td>
-<td>string</td>
-<td>O nome do mapa de nome/valor a ser usado para mapear valores inteiros para cadeias de caracteres. O tipo de dados do item de dados deve ser de um dos seguintes tipos:<br/>
-<ul>
-<li>win:UInt8</li>
-<li>win:UInt16</li>
-<li>win:UInt32</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>name</td>
-<td>string</td>
-<td>O nome do item de dados. Você pode usar o nome para referenciar esse item de dados em seu fragmento XML se especificar uma <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>seção UserData</strong></a> em seu modelo. Você também poderá referenciar esse nome em um atributo de comprimento ou contagem de outro item de dados se esse item de dados contiver seu comprimento ou valor de contagem.<br/> <strong>Windows Vista:</strong> Esse atributo é opcional.<br/></td>
-</tr>
-<tr class="even">
-<td>outType</td>
-<td><strong>QName</strong></td>
-<td>O tipo de dados a ser usado ao renderizar esse item de dados. Para ver uma lista de tipos de dados de saída predefinidos, consulte o <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complexo OutputType.</strong></a><br/> <strong>Windows Vista:</strong> O tipo de saída é ignorado e o serviço determina o tipo com base no tipo de entrada.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome | Type | Descrição | 
+|------|------|-------------|
+| count | <a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a> | O número de elementos na matriz se o item de dados for uma matriz. Você pode especificar a contagem real ou o nome de outro item de dados que contém a contagem. <br /> | 
+| inType | <strong>QName</strong> | O tipo de dados para este item de dados. Para ver uma lista de tipos de dados de entrada predefinidos, consulte o <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complexo InputType.</strong></a><br /> | 
+| comprimento | <a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a> | O comprimento de um item de dados de comprimento variável, como um blob binário. Para dados binários, especifique o comprimento em bytes e, para dados de cadeia de caracteres, especifique o comprimento em caracteres. Você pode especificar o tamanho real ou o nome de outro item de dados que contém o comprimento.<br /> Se você usar o atributo length para especificar uma cadeia de caracteres de comprimento fixo, deverá padilhar a cadeia de caracteres para seu comprimento fixo, permitindo o caractere de terminador nulo no final (por exemplo, se o comprimento for 5, a cadeia de caracteres "abc" deverá ser padded como "abc". O comprimento da cadeia de caracteres deve incluir o caractere de terminador nulo.<br /> | 
+| map | string | O nome do mapa de nome/valor a ser usado para mapear valores inteiros para cadeias de caracteres. O tipo de dados do item de dados deve ser de um dos seguintes tipos:<br /><ul><li>win:UInt8</li><li>win:UInt16</li><li>win:UInt32</li></ul> | 
+| name | string | O nome do item de dados. Você pode usar o nome para referenciar esse item de dados em seu fragmento XML se especificar uma <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>seção UserData</strong></a> em seu modelo. Você também poderá referenciar esse nome em um atributo de comprimento ou contagem de outro item de dados se esse item de dados contiver seu comprimento ou valor de contagem.<br /><strong>Windows Vista:</strong> Esse atributo é opcional.<br /> | 
+| outType | <strong>QName</strong> | O tipo de dados a ser usado ao renderizar esse item de dados. Para ver uma lista de tipos de dados de saída predefinidos, consulte o <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complexo OutputType.</strong></a><br /><strong>Windows Vista:</strong> O tipo de saída é ignorado e o serviço determina o tipo com base no tipo de entrada.<br /> | 
+
 
 
 

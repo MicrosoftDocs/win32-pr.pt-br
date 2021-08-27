@@ -4,9 +4,9 @@ description: Define e Obtém o nome de usuário de uma conta local ou de domíni
 ms.assetid: e8f70143-f002-4b39-97a3-006b9713262d
 ms.tgt_platform: multiple
 keywords:
-- Propriedade de nome de usuário Gerenciamento Remoto do Windows
-- Propriedade UserName Gerenciamento Remoto do Windows, objeto ConnectionOptions
-- Objeto ConnectionOptions Gerenciamento Remoto do Windows, Propriedade UserName
+- propriedade de nome de usuário Gerenciamento Remoto do Windows
+- propriedade UserName Gerenciamento Remoto do Windows, objeto connectionoptions
+- objeto connectionoptions Gerenciamento Remoto do Windows, propriedade UserName
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4d6c751dbe579372b863566412e740c2a646a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40fa4cd5e1d4fd733431adab80241744c0b197960506cfe2908bc99315ecfdea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121776"
 ---
 # <a name="connectionoptionsusername-property"></a>Propriedade ConnectionOptions. UserName
 
@@ -95,7 +95,7 @@ Set NewSession = Wsman.CreateSession("127.0.51.1", _
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

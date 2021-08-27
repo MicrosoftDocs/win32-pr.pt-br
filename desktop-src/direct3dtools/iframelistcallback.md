@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bba86b4773ac35a6895ae3c7812b9bf74d931370
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 8c09a1d5752fb9c179cc827aedec562b7858cbdf
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625742"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786152"
 ---
 # <a name="span-idvspixengineiframelistcallbackspaniframelistcallback-interface"></a><span id="vspixengine.iframelistcallback"></span>Interface IFrameListCallback
 
@@ -30,7 +30,7 @@ Retorno de chamada para retornar a lista de quadros com a ID do evento e o núme
 
 ## <a name="members"></a>Membros
 
-A interface **IFrameListCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameListCallback** também tem estes tipos de membros:
+A interface **IFrameListCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IFrameListCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IFrameListCallback** herda da interface [**IUnknown.**](/windows/d
 
 A interface **IFrameListCallback** tem esses métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframelistcallback-resultcallback-dword-dword-arr-dword-arr"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host de quais quadros foram capturados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframelistcallback-resultcallback-dword-dword-arr-dword-arr"><strong>ResultCallback</strong></a></td><td ><p>Uma função de retorno de chamada usada para notificar o host sobre quais quadros foram capturados.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 
