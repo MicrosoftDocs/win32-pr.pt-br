@@ -1,25 +1,25 @@
 ---
 title: RequestReplyNamedPipesServerWithWindowsTransportSecurityExample
-description: Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens com segurança fornecida pela segurança de transporte SSPI do Windows.
+description: Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens com segurança fornecida pela Windows de transporte SSPI.
 ms.assetid: EF43DC45-378A-4269-998B-17EFEBF8740E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f94011728fe1d499c796fca54008dc8998ddba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5617a869811a363ffb48fe50083bd9839f1bd32e70ce4a4dbac886d4945ed93b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089446"
 ---
 # <a name="requestreplynamedpipesserverwithwindowstransportsecurityexample"></a>RequestReplyNamedPipesServerWithWindowsTransportSecurityExample
 
-Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens com segurança fornecida pela segurança de transporte SSPI do Windows.
+Este exemplo mostra um servidor de pipes nomeados que aceita um canal e recebe e responde a mensagens com segurança fornecida pela Windows de transporte SSPI.
 
--   [RequestReplyNamedPipesServerWithWindowsTransportSecurity. cpp](#requestreplynamedpipesserverwithwindowstransportsecuritycpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [RequestReplyNamedPipesServerWithWindowsTransportSecurity.cpp](#requestreplynamedpipesserverwithwindowstransportsecuritycpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="requestreplynamedpipesserverwithwindowstransportsecuritycpp"></a>RequestReplyNamedPipesServerWithWindowsTransportSecurity. cpp
+## <a name="requestreplynamedpipesserverwithwindowstransportsecuritycpp"></a>RequestReplyNamedPipesServerWithWindowsTransportSecurity.cpp
 
 
 ```C++
@@ -473,7 +473,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -617,9 +617,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

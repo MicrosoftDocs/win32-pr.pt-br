@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: afd736317ecdf802cb418e81063b622db43f0651
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 808e2e74492b9a3e828e09389e04f0e1e4b09fef9a63fdd7a22d81521b3df30d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045566"
 ---
 # <a name="ntgdiddreenabledirectdrawobject-function"></a>Função NtGdiDdReenableDirectDrawObject
 
@@ -59,7 +59,7 @@ Ponteiro para um BOOL que será preenchido com um valor que representa se o modo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido (o dispositivo pode ser habilitado novamente), essa função retornará **true**. Caso contrário (por exemplo, o driver de vídeo foi alterado), ele retornará **false**.
 

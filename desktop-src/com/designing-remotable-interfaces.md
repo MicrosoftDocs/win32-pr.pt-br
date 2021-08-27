@@ -4,12 +4,12 @@ description: Com o advento do modelo de objeto de componente distribuído, é im
 ms.assetid: 2ee4d950-dfd5-4965-bd77-a600e878be59
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3502604d62e6a5129ca3e3538761722909c0198f
-ms.sourcegitcommit: 85688bbfbe5b121bc05ddf112d54c23a469dfbc0
+ms.openlocfilehash: 52df6deb3f83f253fc46436ba992dc3fc10f74d84e43c6027fd4426b3171a838
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "103823537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070996"
 ---
 # <a name="designing-remotable-interfaces"></a>Projetando interfaces remotas
 
@@ -21,9 +21,9 @@ Mesmo que sua interface nunca seja usada fora do processo, ela pode ser usada en
 
 Por fim, como um designer de interface, você precisa considerar como os aplicativos cliente usarão sua interface. Duas coisas, juntas, determinam se uma interface será eficiente entre os limites do processo e da máquina: a frequência das chamadas de método entre o limite da interface e a quantidade de dados a serem transferidos em uma determinada chamada de método. Embora o COM faça chamadas entre processos e entre redes transparentes para programas, ele não pode fazer chamadas de alta frequência e alta largura de banda eficientes em espaços de endereço. Em alguns casos, é mais apropriado criar interfaces que normalmente serão implementadas apenas como servidores em processo, enquanto outras interfaces são mais apropriadas para uso remoto.
 
- 
+ 
 
- 
+ 
 
 
 

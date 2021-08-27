@@ -1,28 +1,28 @@
 ---
-title: Como usar controles de List-View virtual
+title: Como usar controles de List-View virtuais
 description: Este tópico demonstra como trabalhar com controles de exibição de lista virtual.
 ms.assetid: DA32D7B3-5FDB-4D73-9A72-0D4EEB2A0C4F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3baf5e37d0d4f6da0cdf596dd8ba3c71e852a99
-ms.sourcegitcommit: e584514ced7396dde55e58501c8c8a872229acc4
+ms.openlocfilehash: f6ed847d7cb8a41e4cb1c255290ff660eb278bcd99126605a2874c52b279e694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "105762743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059695"
 ---
-# <a name="how-to-use-virtual-list-view-controls"></a>Como usar controles de List-View virtual
+# <a name="how-to-use-virtual-list-view-controls"></a>Como usar controles de List-View virtuais
 
-Este tópico demonstra como trabalhar com controles de exibição de lista virtual. Os exemplos de código do C++ que o acompanham mostram como processar mensagens de notificação de controle de exibição de lista virtual, como otimizar o cache e como recuperar um item do cache.
+Este tópico demonstra como trabalhar com controles de exibição de lista virtual. Os exemplos de código C++ que acompanham mostram como processar mensagens de notificação de controle de exibição de lista virtual, como otimizar o cache e como recuperar um item do cache.
 
 -   [O que você precisa saber](#what-you-need-to-know)
--   [Processar códigos de notificação de controle de List-View virtual](#process-virtual-list-view-control-notification-codes)
+-   [Processar códigos de notificação List-View controle virtual](#process-virtual-list-view-control-notification-codes)
 -   [Otimizar o cache](#optimize-the-cache)
 -   [Recuperar um item do cache](#retrieve-an-item-from-the-cache)
 -   [Tópicos relacionados](#related-topics)
 
 > [!Note]  
-> O código de exemplo nesta seção pressupõe que o cache é uma matriz alocada dinamicamente de estruturas definidas pelo aplicativo. A estrutura é definida no exemplo de código C++ a seguir.
+> O código de exemplo nesta seção presume que o cache é uma matriz alocada dinamicamente de estruturas definidas pelo aplicativo. A estrutura é definida no exemplo de código C++ a seguir.
 
  
 
@@ -45,20 +45,20 @@ struct RndItem
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="process-virtual-list-view-control-notification-codes"></a>Processar códigos de notificação de controle de List-View virtual
+### <a name="process-virtual-list-view-control-notification-codes"></a>Processar códigos de notificação List-View controle virtual
 
-Além dos códigos de notificação enviados por outros controles de exibição de lista, os controles de exibição de lista virtual também podem enviar os códigos de notificação [LVN \_ ODCACHEHINT](lvn-odcachehint.md) e [**LVN \_ ODFINDITEM**](lvn-odfinditem.md) .
+Além dos códigos de notificação enviados por outros controles de exibição de lista, os controles de exibição de lista virtual também podem enviar os códigos de notificação [ \_ ODCACHEHINT](lvn-odcachehint.md) e [**\_ LVN ODFINDITEM.**](lvn-odfinditem.md)
 
-Essa função definida pelo aplicativo manipula mensagens de notificação que normalmente são enviadas de um controle de exibição de lista virtual.
+Essa função definida pelo aplicativo lida com mensagens de notificação que normalmente são enviadas de um controle de exibição de lista virtual.
 
 
 ```C++
@@ -185,9 +185,9 @@ LRESULT OnNotify(HWND hwnd, NMHDR* pnmhdr)
 
 ### <a name="optimize-the-cache"></a>Otimizar o cache
 
-Um controle de exibição de lista virtual envia uma mensagem de notificação [LVN \_ ODCACHEHINT](lvn-odcachehint.md) quando o conteúdo de sua área de exibição é alterado. A mensagem contém informações sobre o intervalo de itens a serem armazenados em cache. Ao receber a mensagem de notificação, seu aplicativo deve estar preparado para carregar o cache com informações de item para o intervalo solicitado para que as informações estejam prontamente disponíveis quando uma mensagem de notificação [LVN \_ GETDISPINFO](lvn-getdispinfo.md) for enviada.
+Um controle de exibição de lista virtual envia uma mensagem de notificação [ \_ ODCACHEHINT LVN](lvn-odcachehint.md) quando o conteúdo de sua área de exibição é alterado. A mensagem contém informações sobre o intervalo de itens a serem armazenados em cache. Ao receber a mensagem de notificação, seu aplicativo deve estar preparado para carregar o cache com informações de item para o intervalo solicitado para que as informações sejam prontamente disponíveis quando uma mensagem de notificação [ \_ GETDISPINFO LVN](lvn-getdispinfo.md) for enviada.
 
-No exemplo de código C++ a seguir, a função definida pelo aplicativo aceita o intervalo de itens para o cache Enviado por um controle de exibição de lista virtual. Ele executa uma verificação para determinar que o intervalo solicitado de itens ainda não está em cache e, em seguida, aloca a memória global necessária e preenche o cache, se necessário.
+No exemplo de código C++ a seguir, a função definida pelo aplicativo aceita o intervalo de itens para o cache enviado por um controle de exibição de lista virtual. Ele executa uma verificação para determinar se o intervalo solicitado de itens ainda não está armazenado em cache e, em seguida, aloca a memória global necessária e preenche o cache, se necessário.
 
 
 ```C++
@@ -294,7 +294,7 @@ void PrepCache(int iFrom, int iTo)
 
 ### <a name="retrieve-an-item-from-the-cache"></a>Recuperar um item do cache
 
-Essa função de exemplo aceita dois parâmetros, o endereço da estrutura definida pelo aplicativo e um valor inteiro que representa o índice do item na lista. Ele verifica o valor de índice para descobrir se o item desejado está armazenado em cache. Se for, o ponteiro passado para a função será definido como um local no cache. Se o item não estiver no cache principal ou final, as informações do item deverão ser localizadas manualmente.
+Esta função de exemplo aceita dois parâmetros, o endereço da estrutura definida pelo aplicativo e um valor inteiro que representa o índice do item na lista. Ele verifica o valor do índice para descobrir se o item desejado está armazenado em cache. Se for, o ponteiro que foi passado para a função será definido como um local no cache. Se o item não estiver no cache principal ou final, as informações do item deverão ser localizadas manualmente.
 
 
 ```C++
@@ -332,7 +332,7 @@ void RetrieveItem( RndItem * prndItem, int index )
 
 ## <a name="remarks"></a>Comentários
 
-Para obter uma lista das mensagens de janela processadas por um controle de exibição de lista, consulte [padrão List-View processamento de mensagens](listview-message-processing.md).
+Para ver uma lista das mensagens de janela processadas por um controle de exibição de lista, consulte [Padrão List-View processamento de mensagens.](listview-message-processing.md)
 
 ## <a name="complete-example"></a>Exemplo completo
 
@@ -343,10 +343,10 @@ Para obter uma lista das mensagens de janela processadas por um controle de exib
 [Referência de controle de exibição de lista](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Sobre controles de List-View](list-view-controls-overview.md)
+[Sobre List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usando controles de List-View](using-list-view-controls.md)
+[Usando List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

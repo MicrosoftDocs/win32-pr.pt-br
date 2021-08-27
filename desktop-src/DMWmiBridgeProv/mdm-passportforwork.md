@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_PassportForWork
-description: O PassportForWork de MDM \_ é usado para provisionar o Windows Hello para empresas.
+title: MDM_PassportForWork classe
+description: O MDM \_ PassportForWork é usado para provisionar Windows Hello para Empresas.
 ms.assetid: 49bba780-e26f-463d-97ae-e095ea16be87
 keywords:
-- Classe MDM_PassportForWork
-- Classe MDM_PassportForWork, descrita
+- MDM_PassportForWork classe
+- MDM_PassportForWork classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df7f061c0ab8f0405e8f0e6a6d43d8d896c62f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61fe697b02dccd8e3c07f2f675206f28f621ce879b5c169d0908c7323aed0aa4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045726"
 ---
-# <a name="mdm_passportforwork-class"></a>\_Classe PassportForWork do MDM
+# <a name="mdm_passportforwork-class"></a>Classe MDM \_ PassportForWork
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-O **\_ PassportForWork de MDM** é usado para provisionar o Windows Hello para empresas.
+O **MDM \_ PassportForWork** é usado para provisionar Windows Hello para Empresas.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_PassportForWork
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ PassportForWork** tem estes tipos de membros:
+A **classe MDM \_ PassportForWork** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ PassportForWork** tem essas propriedades.
+A **classe MDM \_ PassportForWork** tem essas propriedades.
 
 <dl> <dt>
 
@@ -68,11 +68,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Especifica a ID do locatário no formato de um GUID (identificador global exclusivo) sem chaves ({,}), que será usado como parte do gerenciamento e provisionamento do Windows Hello para empresas.
+Especifica a ID do Locatário no formato de um GUID (Identificador Global Exclusivo) sem chaves ( { , } ), que será usada como parte do gerenciamento e provisionamento do Windows Hello for Business.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -91,10 +91,10 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 [UseBiometrics](/windows/client-management/mdm/passportforwork-csp#usebiometrics)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETRECT (WinUser. h)
 description: EM_SETRECT mensagem – define o retângulo de formatação de um controle de edição de várias linhas.
 ms.assetid: 4f576e94-3bd3-4416-a960-b7f22da963ea
 keywords:
-- Controles de EM_SETRECT de mensagens do Windows
+- controles de Windows de mensagem de EM_SETRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 042428a236b8e9a23f03cdcceaf5d76eb977efd8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ea68ba0fd599b39f0344a423e86a87d097dc2df389fd8370e30a573a05d3013
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048196"
 ---
 # <a name="em_setrect-message"></a>\_Mensagem em SETrect
 
@@ -71,13 +71,13 @@ Se o controle de edição contiver uma borda, o retângulo de formatação será
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

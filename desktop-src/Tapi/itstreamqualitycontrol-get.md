@@ -4,16 +4,16 @@ ms.assetid: a8b5b8c7-47c9-4561-be96-af8416d854dc
 title: 'Método ITStreamQualityControl:: Get (Ipmsp. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6758678dfacc8e0fe169189beaa8e890e801c907
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1a82a448320115664ab0664c2f7d8cde9f8049c7ee2cb86ccf7e46f856ceafe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080496"
 ---
 # <a name="itstreamqualitycontrolget-method"></a>Método ITStreamQualityControl:: Get
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Get** recupera o valor de uma determinada [**propriedade de qualidade de fluxo**](streamqualityproperty.md).
 
@@ -55,7 +55,7 @@ Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -77,7 +77,7 @@ Esse método pode retornar um desses valores.
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 

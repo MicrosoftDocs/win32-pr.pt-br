@@ -3,7 +3,7 @@ title: Mensagem de EM_GETSTORYTYPE (RichEdit. h)
 description: Obtém o tipo de história.
 ms.assetid: 06D87AA1-5AA3-4235-AC1D-045CE9975384
 keywords:
-- Controles de EM_GETSTORYTYPE de mensagens do Windows
+- controles de Windows de mensagem de EM_GETSTORYTYPE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fed85183f292bd1c69e3bbebdadb4b38f9f3bdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4e6d501fffca857e1e283f2678c1b42e5d3d12e587e51a3a58585041489f8b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048776"
 ---
 # <a name="em_getstorytype-message"></a>\_Mensagem em GEThistóriatype
 
@@ -50,7 +50,7 @@ Reservado deve ser 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o tipo de história, que pode ser um valor personalizado definido pelo cliente ou um dos seguintes valores:
 
@@ -107,9 +107,9 @@ Retorna o tipo de história, que pode ser um valor personalizado definido pelo c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

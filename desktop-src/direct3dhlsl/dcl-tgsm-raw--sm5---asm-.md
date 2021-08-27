@@ -4,12 +4,12 @@ description: Declare uma referência a uma região de espaço de memória compar
 ms.assetid: 8EA6931C-5B13-431F-A886-04F8C73CD22D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd20d8a0d8d2309b9b895a5cb5439877bb10d31a
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0945cde7719129ca43368e50258c02727103209b8d467932e79acd1e1150c89f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024686"
 ---
 # <a name="dcl_tgsm_raw-sm5---asm"></a>DCL \_ tgsm \_ bruto (SM5-ASM)
 
@@ -52,7 +52,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | X       |
 

@@ -1,29 +1,29 @@
 ---
-description: Este tópico é a etapa 2 do tutorial de reprodução de áudio/vídeo no DirectShow.
+description: Este tópico é a etapa 2 do tutorial Reprodução de áudio/vídeo DirectShow.
 ms.assetid: 61106781-d10c-41a8-993e-121e0a1e4c4d
-title: 'Etapa 2: declarar CVideoRenderer e classes derivadas'
+title: 'Etapa 2: Declarar CVideoRenderer e classes derivadas'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11474c57e70d8632a53ac0b858d61d2bddf1e86b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fae4c9c391a13acd0ede06b9a74c3b09bd264a6b74c42d7f6c7ca5e9dbb17051
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050356"
 ---
-# <a name="step-2-declare-cvideorenderer-and-derived-classes"></a>Etapa 2: declarar CVideoRenderer e classes derivadas
+# <a name="step-2-declare-cvideorenderer-and-derived-classes"></a>Etapa 2: Declarar CVideoRenderer e classes derivadas
 
-Este tópico é a etapa 2 do tutorial de [reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md). O código completo é mostrado no exemplo do tópico [reprodução do DirectShow](directshow-playback-example.md).
+Este tópico é a etapa 2 do tutorial [Reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md). O código completo é mostrado no tópico DirectShow [Exemplo de Reprodução](directshow-playback-example.md).
 
-O DirectShow fornece vários filtros diferentes que renderizam vídeo:
+DirectShow fornece vários filtros diferentes que renderizam vídeo:
 
--   [**Filtro de processador de vídeo avançado**](enhanced-video-renderer-filter.md) (EVR)
--   [Filtro de processador de mixagem de vídeo 9](video-mixing-renderer-filter-9.md) (VMR-9)
--   [Filtro de processador de mixagem de vídeo 7](video-mixing-renderer-filter-7.md) (VMR-7)
+-   [**Filtro de Renderização de Vídeo Aprimorado**](enhanced-video-renderer-filter.md) (EVR)
+-   [Filtro de renderização de combinação de vídeo 9](video-mixing-renderer-filter-9.md) (VMR-9)
+-   [Filtro 7 do renderdor de](video-mixing-renderer-filter-7.md) combinação de vídeo (VMR-7)
 
-Para obter mais informações sobre as diferenças entre esses filtros, consulte [escolhendo o processador de vídeo correto](choosing-the-right-renderer.md).
+Para obter mais informações sobre as diferenças entre esses filtros, consulte [Escolhendo o renderador de vídeo correto.](choosing-the-right-renderer.md)
 
-Neste tutorial, a seguinte classe abstrata é usada para encapsular o filtro de processador de vídeo.
+Neste tutorial, a classe abstrata a seguir é usada para envolver o filtro do renderador de vídeo.
 
 
 ```C++
@@ -47,16 +47,16 @@ public:
 
 Observações:
 
--   O `HasVideo` método retornará **true** se o processador de vídeo tiver sido criado.
--   O `AddToGraph` método adiciona o renderizador de vídeo ao gráfico de filtro.
+-   O `HasVideo` método **retornará TRUE** se o renderador de vídeo tiver sido criado.
+-   O `AddToGraph` método adiciona o renderador de vídeo ao grafo de filtro.
 -   O `FinalizeGraph` método conclui a etapa de criação de grafo.
 -   O `UpdateVideoWindow` método atualiza o retângulo de destino do vídeo.
 -   O `Repaint` método redesenha o quadro de vídeo atual.
--   O `DisplayModeChanged` método manipula as alterações no modo de exibição.
+-   O `DisplayModeChanged` método lida com alterações no modo de exibição.
 
 Cada um desses métodos é descrito em detalhes posteriormente neste tutorial.
 
-Em seguida, declare uma classe derivada para encapsular cada um dos três renderizadores de vídeo: o EVR, o VMR-9 e o VMR-7.
+Em seguida, declare uma classe derivada para envolver cada um dos três renderadores de vídeo: O EVR, a VMR-9 e a VMR-7.
 
 ### <a name="cevr-class"></a>Classe CEVR
 
@@ -85,9 +85,9 @@ public:
 
 
 
-### <a name="cvmr9-class"></a>Classe CVMR9
+### <a name="cvmr9-class"></a>Classe PGR9
 
-A `CVMR9` classe gerencia o VMR-9. Ele contém um ponteiro para a interface [**IVMRWindowlessControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) .
+A `CVMR9` classe gerencia a VMR-9. Ele contém um ponteiro para a [**interface IVMRWindowlessControl9.**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9)
 
 
 ```C++
@@ -111,9 +111,9 @@ public:
 
 
 
-### <a name="cvmr7-class"></a>Classe CVMR7
+### <a name="cvmr7-class"></a>Classe LTDR7
 
-A `CVMR7` classe gerencia o VMR-7. Ele contém um ponteiro para a interface [**IVMRWindowlessControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrwindowlesscontrol) .
+A `CVMR7` classe gerencia a VMR-7. Ele contém um ponteiro para a [**interface IVMRWindowlessControl.**](/windows/desktop/api/Strmif/nn-strmif-ivmrwindowlesscontrol)
 
 
 ```C++
@@ -137,16 +137,16 @@ public:
 
 
 
-Em seguida: [etapa 3: criar o grafo de filtro](step-3--build-the-filter-graph.md).
+Próximo: [Etapa 3: Criar o filtro Graph](step-3--build-the-filter-graph.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md)
+[Reprodução de áudio/vídeo DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Usando o processador de mixagem de vídeo](using-the-video-mixing-renderer.md)
+[Usando o renderador de combinação de vídeo](using-the-video-mixing-renderer.md)
 </dt> <dt>
 
 [Renderização de vídeo](video-rendering.md)

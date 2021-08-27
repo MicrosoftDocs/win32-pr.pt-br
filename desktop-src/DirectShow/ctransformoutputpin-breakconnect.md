@@ -1,7 +1,7 @@
 ---
-description: Método CTransformOutputPin. BreakConnect – o método BreakConnect libera o PIN de uma conexão.
+description: Método CTransformOutputPin.BreakConnect – o método BreakConnect libera o pino de uma conexão.
 ms.assetid: bf68aca3-93e5-4f9d-9980-1a5eed1513f5
-title: Método CTransformOutputPin. BreakConnect (Transfrm. h)
+title: Método CTransformOutputPin.BreakConnect (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 92854041e1d553945d0a1ab1755ef3557bd4a8b2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cf468e9f7d9cb439cfe369e3034f76b044001b31be3fd9c7a72ca475aa77d1a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103006"
 ---
-# <a name="ctransformoutputpinbreakconnect-method"></a>Método CTransformOutputPin. BreakConnect
+# <a name="ctransformoutputpinbreakconnect-method"></a>Método CTransformOutputPin.BreakConnect
 
-O `BreakConnect` método libera o PIN de uma conexão.
+O `BreakConnect` método libera o pino de uma conexão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK ou outro valor **HRESULT** .
+Retorna S \_ OK ou outro valor **HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBaseOutputPin:: BreakConnect**](cbaseoutputpin-breakconnect.md) . Ele chama o método [**CTransformFilter:: BreakConnect**](ctransformfilter-breakconnect.md) do filtro, que retorna s \_ OK na classe base. A classe derivada pode substituir o método **CTransformFilter:: BreakConnect** .
+Esse método substitui o [**método CBaseOutputPin::BreakConnect.**](cbaseoutputpin-breakconnect.md) Ele chama o método [**CTransformFilter::BreakConnect**](ctransformfilter-breakconnect.md) do filtro, que retorna S \_ OK na classe base. A classe derivada pode substituir o **método CTransformFilter::BreakConnect.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esse método substitui o método [**CBaseOutputPin:: BreakConnect**](cbaseoutput
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

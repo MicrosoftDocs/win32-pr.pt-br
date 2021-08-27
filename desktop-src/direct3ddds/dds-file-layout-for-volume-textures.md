@@ -4,12 +4,12 @@ description: Para uma textura de volume, use o \_ volume complexo DDSCAPS, DDSCA
 ms.assetid: c1675a6d-129a-4e95-993f-e1be905781cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03d82faa8041f2b5c99ef57ee2386ff5de84d787
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 79501ea3ffa6f4a660f4ab3b248fedbdc7df17bf8af94520cad5808c3c611fd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105812306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025736"
 ---
 # <a name="dds-volume-texture-example"></a>Exemplo de textura de volume DDS
 
@@ -38,7 +38,7 @@ Por exemplo, um mapa de volume 64-por-64-by-4 usando um formato de pixel de R8G8
 
 
 
- 
+ 
 
 Observe que o menor nível de mipmap é de apenas 3 bytes porque o BitCount é 24 e não há nenhuma compactação adicional nesse nível.
 
@@ -51,9 +51,9 @@ O suporte para texturas de volume foi adicionado no DirectX 8.
 [Guia de programação para DDS](dx-graphics-dds-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

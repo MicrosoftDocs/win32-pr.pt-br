@@ -1,9 +1,9 @@
 ---
-title: Função MpScanControl (MpClient. h)
-description: Permite o controle de uma verificação que foi iniciada de forma assíncrona via MpScanStart.
+title: Função MpScanControl (MpClient.h)
+description: Permite o controle de uma verificação iniciada de forma assíncrona por meio de MpScanStart.
 ms.assetid: 00855686-8C46-4B58-829C-AEAB53888704
 keywords:
-- Recursos do ambiente Windows herdado da função MpScanControl
+- Recursos de ambiente herdados Windows função MpScanControl
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce74736c4ca8c589e2ffa5570f2b6666838d820f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 893fe1d01f9004c9dc2933a5bbb23c4b13fb8933a6121c41810c6e447e5eebac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114546"
 ---
 # <a name="mpscancontrol-function"></a>Função MpScanControl
 
-Permite o controle de uma verificação que foi iniciada de forma assíncrona via [**MpScanStart**](mpscanstart.md).
+Permite o controle de uma verificação iniciada de forma assíncrona por meio [**de MpScanStart.**](mpscanstart.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT WINAPI MpScanControl(
 
 <dl> <dt>
 
-*hScanHandle* \[ no\]
+*hScanHandle* \[ Em\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Identificador para uma operação de verificação assíncrona. Esse identificador é retornado pela função [**MpScanStart**](mpscanstart.md) . Esse parâmetro também pode ser definido como o identificador de interface do Malware Protection Manager retornado pela função [**MpManagerOpen**](mpmanageropen.md) para controlar uma verificação iniciada pelo sistema; nesse caso, o chamador deve ter privilégio administrativo.
+Lidar com uma operação de verificação assíncrona. Esse handle é retornado pela [**função MpScanStart.**](mpscanstart.md) Esse parâmetro também pode ser definido como o identificador de interface do gerenciador de proteção contra malware retornado pela função [**MpManagerOpen**](mpmanageropen.md) para controlar uma verificação iniciada pelo sistema, caso em que o chamador deve ter privilégio administrativo.
 
 </dd> <dt>
 
-*ScanControl* \[ no\]
+*ScanControl* \[ Em\]
 </dt> <dd>
 
 Tipo: **MPCONTROL**
@@ -61,9 +61,9 @@ Especifica uma opção de controle de verificação. Esse parâmetro deve ser um
 
 | Valor                                                                                                                                                                  | Significado                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <span id="MPCONTROL_ABORT"></span><span id="mpcontrol_abort"></span><dl> <dt>**\_anular MPCONTROL**</dt> </dl>    | Anule a operação de verificação.<br/>         |
-| <span id="MPCONTROL_PAUSE"></span><span id="mpcontrol_pause"></span><dl> <dt>**Pausar MPCONTROL \_**</dt> </dl>    | Pause a operação de verificação.<br/>         |
-| <span id="MPCONTROL_RESUME"></span><span id="mpcontrol_resume"></span><dl> <dt>**retomar MPCONTROL \_**</dt> </dl> | Retome a operação de verificação em pausa.<br/> |
+| <span id="MPCONTROL_ABORT"></span><span id="mpcontrol_abort"></span><dl> <dt>**MPCONTROL \_ ABORT**</dt> </dl>    | Anular a operação de verificação.<br/>         |
+| <span id="MPCONTROL_PAUSE"></span><span id="mpcontrol_pause"></span><dl> <dt>**MPCONTROL \_ PAUSE**</dt> </dl>    | Pause a operação de verificação.<br/>         |
+| <span id="MPCONTROL_RESUME"></span><span id="mpcontrol_resume"></span><dl> <dt>**MPCONTROL \_ RESUME**</dt> </dl> | Retome a operação de verificação em pausa.<br/> |
 
 
 
@@ -71,13 +71,13 @@ Especifica uma opção de controle de verificação. Esse parâmetro deve ser um
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se a função for bem sucedido, o valor de retorno será **S \_ OK**.
+Se a função for bem-sucedida, o valor de retorno **será S \_ OK.**
 
-Se a função falhar, o valor de retorno será um código **HRESULT** com falha. O chamador pode usar a função [**MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
+Se a função falhar, o valor de retorno será um código **HRESULT com** falha. O chamador pode usar a [**função MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

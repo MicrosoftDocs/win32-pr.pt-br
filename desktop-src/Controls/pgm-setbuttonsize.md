@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PGM_SETBUTTONSIZE (commctrl. h)
-description: Define o tamanho do botão atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetButtons do pager.
+title: PGM_SETBUTTONSIZE mensagem (Commctrl.h)
+description: Define o tamanho atual do botão para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Pager SetButtonSize.
 ms.assetid: b31960f8-87c2-4209-8213-df75ac883e11
 keywords:
-- Controles de PGM_SETBUTTONSIZE de mensagens do Windows
+- PGM_SETBUTTONSIZE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf8c164ed960675c1a68be36acfe0eff40f972f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b120ed4bd6b7090621e09dd24b9e6a23b037fb5aed83e7ac6fc43254393330e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046786"
 ---
-# <a name="pgm_setbuttonsize-message"></a>\_Mensagem de SETbuttons do PGM
+# <a name="pgm_setbuttonsize-message"></a>Mensagem PGM \_ SETBUTTONSIZE
 
-Define o tamanho do botão atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ SetButtons do pager**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbuttonsize) .
+Define o tamanho atual do botão para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ Pager SetButtonSize.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setbuttonsize)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,15 +39,15 @@ Valor do tipo **int** que contém o novo tamanho do botão, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **int** que contém o tamanho do botão anterior, em pixels.
+Retorna um **valor int** que contém o tamanho do botão anterior, em pixels.
 
 ## <a name="remarks"></a>Comentários
 
-Se o controle de pager tiver o estilo [**PGS \_ na horizontal**](pager-control-styles.md) , o tamanho do botão determinará a largura dos botões da paginação. Se o controle de pager tiver o estilo [**\_ vertical PGS**](pager-control-styles.md) , o tamanho do botão determinará a altura dos botões da paginação. Por padrão, o controle de pager define seu tamanho de botão como três quartos da largura da barra de rolagem.
+Se o controle pager tiver o estilo [**\_ PGS HORZ,**](pager-control-styles.md) o tamanho do botão determinará a largura dos botões do pager. Se o controle pager tiver o [**estilo \_ PGS VERT,**](pager-control-styles.md) o tamanho do botão determinará a altura dos botões do pager. Por padrão, o controle de pager define o tamanho do botão como três quartos da largura da barra de rolagem.
 
-Há um tamanho mínimo para o botão de pager, no momento, 12 pixels. No entanto, isso pode ser alterado, portanto, você não deve depender desse valor.
+Há um tamanho mínimo para o botão de pager, atualmente 12 pixels. No entanto, isso pode mudar para que você não dependa desse valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Há um tamanho mínimo para o botão de pager, no momento, 12 pixels. No entanto
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Há um tamanho mínimo para o botão de pager, no momento, 12 pixels. No entanto
 
 <dl> <dt>
 
-[**getbuttons do PGM \_**](pgm-getbuttonsize.md)
+[**PGM \_ GETBUTTONSIZE**](pgm-getbuttonsize.md)
 </dt> </dl>
 
  

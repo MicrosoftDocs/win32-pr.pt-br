@@ -1,19 +1,19 @@
 ---
-description: Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Diário.
+description: Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do diário.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
-title: Grupo ContentGroup
+title: Grupo de grupos de conteúdo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: c0085cc52a8fc29d3a51f4d1e1c8f42128b63db9e166a7a1c436dc15bff70a36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009006"
 ---
-# <a name="contentgroup-group"></a>Grupo ContentGroup
+# <a name="contentgroup-group"></a>Grupo de grupos de conteúdo
 
-Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Diário.
+Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do diário.
 
 ## <a name="definition"></a>Definição
 
@@ -42,11 +42,11 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Di�
 
 [**Desenho**](drawing-element.md)
 
-[**Text**](text-element.md)
+[**Texto**](text-element.md)
 
 [**Imagem**](docimage-element.md)
 
-[**Bandeira**](flag-element.md)
+[**Sinalizador**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -54,10 +54,10 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Di�
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                                        | PossibleValues                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitante do elemento.<br/> | Qualquer inteiro.<br/>              |
-| **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais alto na caixa delimitada do elemento.<br/>  | Qualquer inteiro.<br/>              |
-| **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitada para o elemento.<br/>                                          | Qualquer inteiro não negativo.<br/> |
-| **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitada para o elemento.<br/>                                         | Qualquer inteiro não negativo.<br/> |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento.<br/> | Qualquer inteiro.<br/>              |
+| **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.<br/>  | Qualquer inteiro.<br/>              |
+| **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.<br/>                                          | Qualquer inteiro não negativo.<br/> |
+| **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.<br/>                                         | Qualquer inteiro não negativo.<br/> |
 
 
 
@@ -69,8 +69,8 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Di�
 
 |  Elemento     | Valor                                                     |
 |-------------|--------------------------------------------|
-| Namespace   | urn:schemas-microsoft-com:tabletpc:richink |
-| Nome do esquema | Leitor de Diário                             |
+| Namespace   | urn: esquemas-Microsoft-com: Tablet: RichInk |
+| Nome do esquema | Leitor de diário                             |
 
 
 

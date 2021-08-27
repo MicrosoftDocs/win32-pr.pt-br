@@ -1,6 +1,6 @@
 ---
 title: Estrutura POPUPMENUITEM
-description: Contém informações sobre os itens de menu em um recurso de menu que abre um menu ou um submenu. A definição de estrutura fornecida aqui é apenas para fins de explicação; Ele não está presente em nenhum arquivo de cabeçalho padrão.
+description: Contém informações sobre os itens de menu em um recurso de menu que abre um menu ou um submenu. A definição de estrutura fornecida aqui é apenas para explicação; ele não está presente em nenhum arquivo de header padrão.
 ms.assetid: cb8faeb2-bca9-4ff5-8f80-d273c3fca504
 keywords:
 - Menus de estrutura POPUPMENUITEM e outros recursos
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: faa755c2ec7a2b9eeb2f123d7fd3e169b2df1be1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62d769e9756f0d15e7377a79f9aa94802a469746807e3a32b5ba329f76484b82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011696"
 ---
 # <a name="popupmenuitem-structure"></a>Estrutura POPUPMENUITEM
 
-Contém informações sobre os itens de menu em um recurso de menu que abre um menu ou um submenu. A definição de estrutura fornecida aqui é apenas para fins de explicação; Ele não está presente em nenhum arquivo de cabeçalho padrão.
+Contém informações sobre os itens de menu em um recurso de menu que abre um menu ou um submenu. A definição de estrutura fornecida aqui é apenas para explicação; ele não está presente em nenhum arquivo de header padrão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,9 +50,9 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Descreve o item de menu. Alguns dos valores que esse membro pode ter incluem os mostrados na lista abaixo.
+Descreve o item de menu. Alguns dos valores que esse membro pode ter incluem aqueles mostrados na lista abaixo.
 
-Além dos valores mostrados, esse membro também pode ser uma combinação dos valores de tipo listados com o membro **ftype** da estrutura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) . Os valores de tipo são aqueles que começam com MFT \_ . Para usar esses valores de tipo de MFT predefinidos \_ \* , inclua a seguinte instrução no arquivo. rc:
+Além dos valores mostrados, esse membro também pode ser uma combinação dos valores de tipo listados com o **membro fType** da [**estrutura MENUITEMINFO.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Os valores de tipo são aqueles que começam com \_ MFT. Para usar esses valores de tipo MFT \_ \* predefinidos, inclua a seguinte instrução no arquivo .rc:
 
 `#include "winuser.h"`
 
@@ -60,8 +60,8 @@ Além dos valores mostrados, esse membro também pode ser uma combinação dos v
 
 | Valor                                                                                                                                                                                                    | Significado                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span id="MF_END"></span><span id="mf_end"></span><dl> <dt>**MF \_ ENCERRAR**</dt> <dt>0x80</dt> </dl>       | O item de menu é o último no menu; o sinalizador é usado internamente pelo sistema. <br/>   |
-| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ POPUP**</dt> <dt>0x01</dt> </dl> | O item de menu abre um menu ou um submenu; o sinalizador é usado internamente pelo sistema. <br/> |
+| <span id="MF_END"></span><span id="mf_end"></span><dl> <dt>**MF \_ END**</dt> <dt>0x80</dt> </dl>       | O item de menu é o último no menu; o sinalizador é usado internamente pelo sistema. <br/>   |
+| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ Pop-UP**</dt> <dt>0x01</dt> </dl> | O item de menu abre um menu ou um submenu; o sinalizador é usado internamente pelo sistema. <br/> |
 
 
 
@@ -76,7 +76,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Descreve o item de menu. Esse membro pode ser uma combinação dos valores de estado listados com o membro **dwState** da estrutura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) . Os valores de estado são aqueles que começam com MFS \_ . Para usar esses valores de estado de MFS predefinidos \_ \* , inclua a seguinte instrução no arquivo. rc:
+Descreve o item de menu. Esse membro pode ser uma combinação dos valores de estado listados com **o membro dwState** da [**estrutura MENUITEMINFO.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Os valores de estado são aqueles que começam com o \_ MFS. Para usar esses valores de estado \_ \* predefinidos do MFS, inclua a seguinte instrução no arquivo .rc:
 
 `#include "winuser.h"`
 
@@ -89,14 +89,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Uma expressão numérica que identifica o item de menu que é passado na mensagem de [**\_ comando do WM**](wm-command.md) .
+Uma expressão numérica que identifica o item de menu que é passado na mensagem [**WM \_ COMMAND.**](wm-command.md)
 
 </dd> <dt>
 
-**resInfo**
+**Resinfo**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -106,8 +106,8 @@ Um conjunto de sinalizadores de bits que especificam o tipo de item de menu. Ess
 
 | Valor                                                                                                                                                                                                       | Significado                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="MFR_END"></span><span id="mfr_end"></span><dl> <dt>**Mfr \_ ENCERRAR**</dt> <dt>0x80</dt> </dl>       | O item de menu é o último neste submenu ou recurso de menu; Esse sinalizador é usado internamente pelo sistema.<br/> |
-| <span id="MFR_POPUP"></span><span id="mfr_popup"></span><dl> <dt>**Mfr \_ POPUP**</dt> <dt>0x01</dt> </dl> | O item de menu abre um menu ou um submenu; o sinalizador é usado internamente pelo sistema.<br/>                     |
+| <span id="MFR_END"></span><span id="mfr_end"></span><dl> <dt>**MFR \_ END**</dt> <dt>0x80</dt> </dl>       | O item de menu é o último neste submenu ou recurso de menu; esse sinalizador é usado internamente pelo sistema.<br/> |
+| <span id="MFR_POPUP"></span><span id="mfr_popup"></span><dl> <dt>**MFR \_ Pop-up**</dt> <dt>0x01</dt> </dl> | O item de menu abre um menu ou um submenu; o sinalizador é usado internamente pelo sistema.<br/>                     |
 
 
 
@@ -115,24 +115,24 @@ Um conjunto de sinalizadores de bits que especificam o tipo de item de menu. Ess
 
 </dd> <dt>
 
-**menuText**
+**Menutext**
 </dt> <dd>
 
 Tipo: **szOrOrd**
 
 </dd> <dd>
 
-Uma cadeia de caracteres Unicode terminada em nulo que contém o texto para este item de menu. Não há nenhum limite fixo para o tamanho dessa cadeia de caracteres.
+Uma cadeia de caracteres Unicode terminada em nulo que contém o texto deste item de menu. Não há nenhum limite fixo no tamanho dessa cadeia de caracteres.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Há uma estrutura **POPUPMENUITEM** para cada item de menu que abre um menu ou um submenu. Identifique esse tipo de item de menu definindo o membro de **tipo** como **\_ Popup MF** e definindo o bit de **\_ Popup mfr** no membro **resInfo** como 0x0001. Nesse caso, os dados finais gravados no recurso [**de \_ menu RT**](/windows/desktop/menurc/resource-types) para o menu ou submenu é a estrutura [**MENUHELPID**](menuhelpid.md) . **MENUHELPID** contém uma expressão numérica que identifica o menu durante o processamento da [**\_ ajuda do WM**](../shell/wm-help.md) .
+Há uma estrutura **POPUPMENUITEM para** cada item de menu que abre um menu ou um submenu. Identifique esse tipo de item  de menu definindo o membro de tipo como **\_ POPUP MF** e definindo o bit **\_ POPUP MFR** no membro **resInfo** como 0x0001. Nesse caso, os dados finais gravados no recurso [**\_ menu RT**](/windows/desktop/menurc/resource-types) para o menu ou submenu são a [**estrutura MENUHELPID.**](menuhelpid.md) **MENUHELPID** contém uma expressão numérica que identifica o menu durante o processamento [**\_ da AJUDA do WM.**](../shell/wm-help.md)
 
-Além disso, toda estrutura **POPUPMENUITEM** que tem o bit de **\_ Popup mfr** definido no membro **ResInfo** será seguida por uma estrutura [**MENUHELPID**](menuhelpid.md) mais um número adicional de estruturas **POPUPMENUITEM** , uma para cada item de menu nesse submenu. A última estrutura **POPUPMENUITEM** no submenu terá o bit de **\_ término mfr** definido no membro **resInfo** . Para localizar o fim do recurso, procure uma **\_ extremidade mfr** correspondente para cada **\_ pop-up mfr** , além de **uma \_ extremidade** adicional de Mfr que corresponda ao conjunto mais externo de itens de menu.
+Além disso, cada estrutura **POPUPMENUITEM** que tem o bit **\_ POPUP MFR** definido no membro **resInfo** será seguida por uma estrutura [**MENUHELPID**](menuhelpid.md) mais um número adicional de estruturas **POPUPMENUITEM,** uma para cada item de menu nesse submenu. A última **estrutura POPUPMENUITEM** no submenu terá o bit **MFR \_ END** definido no **membro resInfo.** Para encontrar o final do recurso, procure um **MFR \_ END** correspondente para cada **\_ POPUP MFR** mais um **MFR \_ END** adicional que corresponde ao conjunto mais externo de itens de menu.
 
-Indique o último item de menu definindo o membro de **tipo** para o **\_ fim de MF**. Como você pode aninhar submenus, pode haver vários níveis de **\_ fim de MF**. Nesses casos, os itens de menu são sequenciais.
+Indique o último item de menu definindo o **membro de tipo** como **MF \_ END.** Como você pode aninhar submenus, pode haver vários níveis de **MF \_ END.** Nessas instâncias, os itens de menu são sequenciais.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -158,13 +158,13 @@ Indique o último item de menu definindo o membro de **tipo** para o **\_ fim de
 [**MENUHELPID**](menuhelpid.md)
 </dt> <dt>
 
-[**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa)
+[**Menuiteminfo**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa)
 </dt> <dt>
 
 [**NORMALMENUITEM**](normalmenuitem.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Recursos](resources.md)

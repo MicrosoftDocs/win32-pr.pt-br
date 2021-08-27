@@ -3,7 +3,7 @@ title: TVN_ASYNCDRAW código de notificação (commctrl. h)
 description: Enviado por um controle de exibição de árvore para seu pai quando o desenho de um ícone ou sobreposição falhou. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 209bfffb-e57d-435d-98a1-8b117c4969b1
 keywords:
-- TVN_ASYNCDRAW de código de notificação controles do Windows
+- TVN_ASYNCDRAW código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a8b04db2e4efbd78d6176214ecd9088f1bc30c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e4d929977e1a14a5ada96232fa054c2689d27f1eaa026b64c974d51f5a2c38c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105748249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060096"
 ---
 # <a name="tvn_asyncdraw-notification-code"></a>Código de notificação do TVN \_ ASYNCDRAW
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMTVASYNCDRAW**](/windows/win32/api/commctrl/ns-c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -87,9 +87,9 @@ case TVN_ASYNCDRAW:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

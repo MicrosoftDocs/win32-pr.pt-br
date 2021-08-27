@@ -1,19 +1,19 @@
 ---
-description: Esta seção descreve as fontes de mídia e os coletores com suporte no Microsoft Media Foundation.
+description: Esta seção descreve as fontes de mídia e os sinks com suporte no Microsoft Media Foundation.
 ms.assetid: 560A3EA8-AB78-4326-893B-A28DCBC0A7E0
-title: Fontes de mídia e coletores
+title: Fontes de mídia e sinks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 668e2c609987f50911b2074035def9aad22e6432
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 363ab0e3ba0f76b74589cc4f1db7eba435af81adb0d60ac65f078afc020ab025
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105810704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061036"
 ---
-# <a name="media-sources-and-sinks"></a>Fontes de mídia e coletores
+# <a name="media-sources-and-sinks"></a>Fontes de mídia e sinks
 
-Esta seção descreve as fontes de mídia e os coletores com suporte no Microsoft Media Foundation.
+Esta seção descreve as fontes de mídia e os sinks com suporte no Microsoft Media Foundation.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,10 +21,10 @@ Esta seção descreve as fontes de mídia e os coletores com suporte no Microsof
 
 | Tópico                                                   | Descrição                                                                                                   |
 |---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [**Origem de arquivo MP3**](mp3-file-source.md)<br/>   | A fonte de arquivo MP3 analisa os arquivos MP3.<br/>                                                              |
-| [**Coletor de arquivos MPEG-4**](mpeg-4-file-sink.md)<br/> | O coletor de arquivos MPEG-4 cria arquivos MP4.<br/>                                                            |
-| [Fonte de arquivo MPEG-4](mpeg-4-file-source.md)<br/> | A fonte de arquivo MPEG-4 analisa arquivos MP4 e 3GPP.<br/>                                                  |
-| [Fonte de mídia SAMI](sami-media-source.md)<br/>   | O SAMI (Synchronized Media Interchange) é um formato para adicionar legendas à mídia digital.<br/> |
+| [**Origem do arquivo MP3**](mp3-file-source.md)<br/>   | A origem do arquivo MP3 analisado arquivos MP3.<br/>                                                              |
+| [**MPEG-4 File Sink**](mpeg-4-file-sink.md)<br/> | O sink de arquivo MPEG-4 cria arquivos MP4.<br/>                                                            |
+| [Origem do arquivo MPEG-4](mpeg-4-file-source.md)<br/> | A fonte de arquivo MPEG-4 analisará arquivos MP4 e 3GPP.<br/>                                                  |
+| [Fonte de mídia SAMI](sami-media-source.md)<br/>   | SAMI (Intercâmbio de Mídia Acessível Sincronizado) é um formato para adicionar legendas à mídia digital.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Esta seção descreve as fontes de mídia e os coletores com suporte no Microsof
 [Referência de programação do Media Foundation](media-foundation-programming-reference.md)
 </dt> <dt>
 
-[Coletores de mídia](media-sinks.md)
+[Sinks de mídia](media-sinks.md)
 </dt> <dt>
 
 [Fontes de mídia](media-sources.md)

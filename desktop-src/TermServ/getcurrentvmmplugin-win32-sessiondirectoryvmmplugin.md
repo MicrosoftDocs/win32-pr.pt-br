@@ -1,12 +1,12 @@
 ---
 title: Método GetCurrentVMMPlugin da classe Win32_SessionDirectoryVMMPlugin
-description: Obtém o plug-in de prioridade mais alta que está habilitado.
+description: Obtém o plug-in de prioridade mais alta habilitado.
 ms.assetid: 7712573f-2252-4a3c-820c-b679be5dfd46
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método GetCurrentVMMPlugin
-- Método GetCurrentVMMPlugin Serviços de Área de Trabalho Remota, classe Win32_SessionDirectoryVMMPlugin
-- Classe Win32_SessionDirectoryVMMPlugin Serviços de Área de Trabalho Remota, método GetCurrentVMMPlugin
+- Método GetCurrentVMMPlugin Serviços de Área de Trabalho Remota
+- Método GetCurrentVMMPlugin Serviços de Área de Trabalho Remota , Win32_SessionDirectoryVMMPlugin classe
+- Win32_SessionDirectoryVMMPlugin classe Serviços de Área de Trabalho Remota , método GetCurrentVMMPlugin
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7162322f4e5e3939309d64e27c93cf8d20da540c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4cc683275581aeb00c654a30e8c5aba7fd920f58248b480fc39caa96c885bb7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080106"
 ---
-# <a name="getcurrentvmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método GetCurrentVMMPlugin da classe Win32 \_ SessionDirectoryVMMPlugin
+# <a name="getcurrentvmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método GetCurrentVMMPlugin da classe \_ SessionDirectoryVMMPlugin do Win32
 
-Obtém o plug-in de prioridade mais alta que está habilitado.
+Obtém o plug-in de prioridade mais alta habilitado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,51 +48,51 @@ uint32 GetCurrentVMMPlugin(
 
 <dl> <dt>
 
-*sname* \[ fora\]
+*sName* \[ out\]
 </dt> <dd>
 
 O nome do plug-in.
 
 </dd> <dt>
 
-*sProvider* \[ fora\]
+*sProvider* \[ out\]
 </dt> <dd>
 
 O nome do provedor de plug-in.
 
 </dd> <dt>
 
-*sServiceLocation* \[ fora\]
+*sServiceLocation* \[ out\]
 </dt> <dd>
 
-O local do serviço que o plug-in deve contatar.
+O local de serviço que o plug-in deve contatar.
 
 </dd> <dt>
 
-*sClassID* \[ fora\]
+*sClassID* \[ out\]
 </dt> <dd>
 
 O identificador de classe do plug-in.
 
 </dd> <dt>
 
-*Prioridade* \[ do fora\]
+*Prioridade* \[ out\]
 </dt> <dd>
 
 A prioridade do plug-in. Quanto maior o valor, maior a prioridade do plug-in.
 
 </dd> <dt>
 
-*Habilitado* \[ fora\]
+*Habilitado* \[ out\]
 </dt> <dd>
 
 Indica se o plug-in está habilitado ou desabilitado. **True** se o plug-in estiver habilitado ou **false** caso contrário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -112,7 +112,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
+[**\_SessionDirectoryVMMPlugin do Win32**](win32-sessiondirectoryvmmplugin.md)
 </dt> </dl>
 
  

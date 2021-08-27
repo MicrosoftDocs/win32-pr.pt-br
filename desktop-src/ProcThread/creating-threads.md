@@ -1,23 +1,23 @@
 ---
-description: Examine como usar a função CreateThread para criar um novo thread para um processo. Examine um exemplo de código que mostra seu uso.
+description: Revise como usar a função CreateThread para criar um novo thread para um processo. Examine um exemplo de código que mostra seu uso.
 ms.assetid: eb0cc3c0-14f2-4913-a592-4ba3eaf67002
 title: Criando threads
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: befd6c00cadb6758d076ad6c4d0fe940cf855f89
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5dee74cb81c886fe05d07a0970f7d8946d123d92810e6f22dd094e1d8d00466a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081426"
 ---
 # <a name="creating-threads"></a>Criando threads
 
-A função [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) cria um novo thread para um processo. O thread de criação deve especificar o endereço inicial do código que o novo thread será executado. Normalmente, o endereço inicial é o nome de uma função definida no código do programa (para obter mais informações, consulte [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Essa função usa um único parâmetro e retorna um valor **DWORD** . Um processo pode ter vários threads executando simultaneamente a mesma função.
+A [**função CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) cria um novo thread para um processo. O thread de criação deve especificar o endereço inicial do código que o novo thread deve executar. Normalmente, o endereço inicial é o nome de uma função definida no código do programa (para obter mais informações, consulte [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85))). Essa função recebe um único parâmetro e retorna um **valor DWORD.** Um processo pode ter vários threads executando simultaneamente a mesma função.
 
 Veja a seguir um exemplo simples que demonstra como criar um novo thread que executa a função definida localmente, `MyThreadFunction` .
 
-O thread de chamada usa a função [**WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para persistir até que todos os threads de trabalho sejam encerrados. O thread de chamada é bloqueado enquanto está aguardando; para continuar o processamento, um thread de chamada usará [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) e aguardaria que cada thread de trabalho sinalize seu objeto de espera. Observe que se você fechar o identificador para um thread de trabalho antes de ele ser encerrado, isso não encerrará o thread de trabalho. No entanto, o identificador não estará disponível para uso em chamadas de função subsequentes.
+O thread de chamada usa a [**função WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) para persistir até que todos os threads de trabalho tenham terminado. O thread de chamada é bloco enquanto ele está aguardando; para continuar o processamento, um thread de chamada usaria [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) e aguardaria cada thread de trabalho sinalizar seu objeto de espera. Observe que, se você fechar o handle para um thread de trabalho antes de ser encerrado, isso não encerrará o thread de trabalho. No entanto, o handle não estará disponível para uso em chamadas de função subsequentes.
 
 
 ```C++
@@ -180,23 +180,23 @@ void ErrorHandler(LPTSTR lpszFunction)
 
 
 
-A `MyThreadFunction` função evita o uso da CRT (biblioteca de tempo de execução) do C, pois muitas de suas funções não são thread-safe, especialmente se você não estiver usando o CRT multithread. Se você quiser usar o CRT em uma `ThreadProc` função, use a função **\_ beginthreadex** em vez disso.
+A função evita o uso da CRT (biblioteca em tempo de executar C), pois muitas de suas funções não são thread-safe, especialmente se você não estiver usando o `MyThreadFunction` CRT multithread. Se você quiser usar o CRT em uma função, use a `ThreadProc` **\_ função beginthreadex.**
 
-É arriscado passar o endereço de uma variável local se o thread de criação sair antes do novo thread, porque o ponteiro se torna inválido. Em vez disso, passe um ponteiro para a memória alocada dinamicamente ou faça a espera da criação do thread para que o novo thread seja encerrado. Os dados também podem ser passados do thread de criação para o novo thread usando variáveis globais. Com variáveis globais, geralmente é necessário sincronizar o acesso por vários threads. Para obter mais informações sobre sincronização, consulte [sincronizando a execução de vários threads](synchronizing-execution-of-multiple-threads.md).
+É arriscado passar o endereço de uma variável local se o thread de criação sair antes do novo thread, porque o ponteiro se torna inválido. Em vez disso, passe um ponteiro para a memória alocada dinamicamente ou faça com que o thread de criação aguarde até que o novo thread seja encerrado. Os dados também podem ser passados do thread de criação para o novo thread usando variáveis globais. Com variáveis globais, geralmente é necessário sincronizar o acesso por vários threads. Para obter mais informações sobre sincronização, consulte [Synchronizing Execution of Multiple Threads](synchronizing-execution-of-multiple-threads.md).
 
 O thread de criação pode usar os argumentos para [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para especificar o seguinte:
 
--   Os atributos de segurança para o identificador para o novo thread. Esses atributos de segurança incluem um sinalizador de herança que determina se o identificador pode ser herdado por processos filho. Os atributos de segurança também incluem um descritor de segurança, que o sistema usa para executar verificações de acesso em todos os usos subsequentes do identificador do thread antes de o acesso ser concedido.
--   O tamanho inicial da pilha do novo thread. A pilha do thread é alocada automaticamente no espaço de memória do processo; o sistema aumenta a pilha conforme necessário e a libera quando o thread é encerrado. Para obter mais informações, consulte [tamanho da pilha de threads](thread-stack-size.md).
--   Um sinalizador de criação que permite que você crie o thread em um estado suspenso. Quando suspenso, o thread não é executado até que a função [**ResumeThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) seja chamada.
+-   Os atributos de segurança do alça para o novo thread. Esses atributos de segurança incluem um sinalizador de herança que determina se o handle pode ser herdado por processos filho. Os atributos de segurança também incluem um descritor de segurança, que o sistema usa para executar verificações de acesso em todos os usos subsequentes do handle do thread antes que o acesso seja concedido.
+-   O tamanho da pilha inicial do novo thread. A pilha do thread é alocada automaticamente no espaço de memória do processo; o sistema aumenta a pilha conforme necessário e a libera quando o thread é encerrado. Para obter mais informações, consulte [Tamanho da pilha de threads](thread-stack-size.md).
+-   Um sinalizador de criação que permite que você crie o thread em um estado suspenso. Quando suspenso, o thread não é executado até que [**a função ResumeThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) seja chamada.
 
-Você também pode criar um thread chamando a função [**CreateRemoteThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread) . Essa função é usada pelos processos do depurador para criar um thread que é executado no espaço de endereço do processo que está sendo depurado.
+Você também pode criar um thread chamando a [**função CreateRemoteThread.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread) Essa função é usada pelos processos do depurador para criar um thread que é executado no espaço de endereço do processo que está sendo depurado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Finalizando um thread](terminating-a-thread.md)
+[Encerrando um thread](terminating-a-thread.md)
 </dt> </dl>
 
  

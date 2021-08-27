@@ -4,12 +4,12 @@ description: O COM foi projetado para permitir que os clientes se comuniquem de 
 ms.assetid: dd4adafb-a7e4-44ba-ae4a-80585875ecb6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9356ba2bcb9dd3a6a56ac16c354f3abcb752d717
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d49d3d584ba6aa25a721276559a65ca2f9f9deded76616b93ff9953affce3553
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104084916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070826"
 ---
 # <a name="inter-object-communication"></a>Inter-Object comunicação
 
@@ -39,7 +39,7 @@ O objeto proxy empacota os parâmetros de função em alguns pacotes de dados e 
 
 Portanto, o cliente e o servidor sempre falam uns com os outros como se tudo estivesse em processo. Todas as chamadas do cliente e todas as chamadas para o servidor são, em algum momento, em processo. Mas como a estrutura VTBL permite que algum agente, como COM, intercepte todas as chamadas de função e todos os retornos de funções, esse agente pode redirecionar essas chamadas para uma chamada RPC, conforme necessário. Embora as chamadas em processo sejam mais rápidas do que as chamadas fora do processo, as diferenças do processo são completamente transparentes para o cliente e o servidor.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Detalhes de marshaling](marshaling-details.md)
 -   [Proxy](proxy.md)
@@ -57,6 +57,6 @@ Para mais informações, consulte os seguintes tópicos:
 [Empacotamento de interface](interface-marshaling.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

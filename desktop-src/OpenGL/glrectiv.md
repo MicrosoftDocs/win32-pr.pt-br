@@ -1,9 +1,9 @@
 ---
-title: função glRectiv (GL. h)
+title: Função glRectiv (Gl.h)
 description: A função glRectiv desenha um retângulo.
 ms.assetid: 24db6fc0-9b53-4e72-9b12-18ea65409f12
 keywords:
-- função glRectiv OpenGL
+- Função glRectiv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 668e1f253a44833ee7b1e0210327e93536bb850f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d6f011748ec66a65511f6cbdcd2342cdf3212d04d3b2ba0507e810eb64293f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036586"
 ---
-# <a name="glrectiv-function"></a>função glRectiv
+# <a name="glrectiv-function"></a>Função glRectiv
 
-A função **glRectiv** desenha um retângulo.
+A **função glRectiv** desenha um retângulo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,35 +61,35 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glRecti** dá suporte à especificação eficiente de retângulos como dois pontos de canto. Cada comando de retângulo usa quatro argumentos, organizados como dois pares consecutivos de coordenadas (*x*, *y*) ou como dois ponteiros para matrizes, cada um contendo um par (*x*, *y*). O retângulo resultante é definido no plano *z* = 0.
+A **função glRecti** dá suporte à especificação eficiente de retângulos como dois pontos de canto. Cada comando de retângulo aceita quatro argumentos, organizados como dois pares consecutivos de coordenadas (*x*, *y*) ou como dois ponteiros para matrizes, cada um contendo um par (*x*, *y*). O retângulo resultante é definido no *plano z* = 0.
 
-A função **glRecti**(*X1,* *Y1,* *X2,* *Y2*) é exatamente equivalente à seguinte sequência:
+A **função glRecti**(*x1,* *y1,* *x2,* *y2*) é exatamente equivalente à seguinte sequência:
 
-**glBegin**( \_ polígono GL);
+**glBegin**(GL \_ POLYGON);
 
-**glVertex2**( *X1,* *Y1* );
+**glVertex2**( *x1,* *y1* );
 
-**glVertex2**( *X2,* *Y1* );
+**glVertex2**( *x2,* *y1* );
 
-**glVertex2**( *X2,* *Y2* );
+**glVertex2**( *x2,* *y2* );
 
-**glVertex2**( *X1,* *Y2* );
+**glVertex2**( *x1,* *y2* );
 
-**glEnd**();
+**glEnd**( );
 
-Observe que, se o segundo vértice estiver acima e à direita do primeiro vértice, o retângulo será construído com um retrocesso anti-horário.
+Observe que, se o segundo vértice estiver acima e à direita do primeiro vértice, o retângulo será construído com um winding no sentido anti-horário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ Observe que, se o segundo vértice estiver acima e à direita do primeiro vérti
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

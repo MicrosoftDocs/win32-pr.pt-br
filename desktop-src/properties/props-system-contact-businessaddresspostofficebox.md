@@ -4,12 +4,12 @@ ms.assetid: 9cefec59-78e2-4765-bb08-d159953d85a3
 title: System. Contact. BusinessAddressPostOfficeBox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d57644b7d0f3bac4d18cb4bad903a29fd916957
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 073844d6f98ca8c5aa1213e42f69f2251c69a18db0f7fb3eb054ec437dbd0d36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011396"
 ---
 # <a name="systemcontactbusinessaddresspostofficebox"></a>System. Contact. BusinessAddressPostOfficeBox
 
