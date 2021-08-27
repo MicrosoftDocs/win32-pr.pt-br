@@ -1,7 +1,7 @@
 ---
-description: O método Receive recebe o exemplo de próxima mídia no fluxo.
+description: O método Receive recebe o próximo exemplo de mídia no fluxo.
 ms.assetid: b340f76c-2305-444f-bc00-1ef5acdea329
-title: Método CBaseRenderer. Receive (Renbase. h)
+title: Método CBaseRenderer.Receive (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 96abb2ee3d44604c23e9943e086a52312a011e92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe440b7ac0c7b05c2d3cf9d7ca2019a788e272b7aca6acd6a747738a255ca39b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131436"
 ---
-# <a name="cbaserendererreceive-method"></a>Método CBaseRenderer. Receive
+# <a name="cbaserendererreceive-method"></a>Método CBaseRenderer.Receive
 
 O `Receive` método recebe o próximo exemplo de mídia no fluxo.
 
@@ -45,35 +45,35 @@ virtual Receive(
 *pMediaSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se bem-sucedido ou um valor **HRESULT** que indica a causa do erro.
+Retorna S \_ OK se bem-sucedido ou **um valor HRESULT** que indica a causa do erro.
 
 ## <a name="remarks"></a>Comentários
 
-O pino de entrada chama esse método quando ele recebe uma amostra do filtro upstream.
+O pino de entrada chama esse método quando recebe uma amostra do filtro upstream.
 
 Se o filtro estiver em execução, esse método executará as seguintes etapas:
 
-1.  Agenda o exemplo de renderização ([**CBaseRenderer::P reparereceive**](cbaserenderer-preparereceive.md)).
-2.  Aguarda o horário agendado ([**CBaseRenderer:: WaitForRenderTime**](cbaserenderer-waitforrendertime.md)).
-3.  Renderiza o exemplo ([**CBaseRenderer:: render**](cbaserenderer-render.md)).
-4.  Libera o exemplo ([**CBaseRenderer:: ClearPendingSample**](cbaserenderer-clearpendingsample.md)).
+1.  Agenda o exemplo de renderização ([**CBaseRenderer::P repareReceive**](cbaserenderer-preparereceive.md)).
+2.  Aguarda a hora agendada ([**CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md)).
+3.  Renderiza o exemplo ([**CBaseRenderer::Render**](cbaserenderer-render.md)).
+4.  Libera o exemplo ([**CBaseRenderer::ClearPendingSample**](cbaserenderer-clearpendingsample.md)).
 
-Se o filtro for pausado, o método executará as seguintes etapas:
+Se o filtro estiver em pausa, o método executará as seguintes etapas:
 
-1.  Notifica a classe derivada de que um exemplo está disponível ([**CBaseRenderer:: OnReceiveFirstSample**](cbaserenderer-onreceivefirstsample.md)).
-2.  Aguarda o horário agendado.
+1.  Notifica a classe derivada de que um exemplo está disponível ([**CBaseRenderer::OnReceiveFirstSample**](cbaserenderer-onreceivefirstsample.md)).
+2.  Aguarda a hora agendada.
 3.  Renderiza o exemplo.
 4.  Libera o exemplo.
 
-Enquanto estiver em pausa, o método aguardará na etapa 2 até que o filtro alterne para um estado de execução. Nesse ponto, o filtro agenda o exemplo.
+Enquanto pausado, o método aguarda na etapa 2 até que o filtro alterna para um estado de execução. Nesse ponto, o filtro agenda o exemplo.
 
-Na classe base, o método **OnReceiveFirstSample** não faz nada. A classe derivada pode substituí-la. Por exemplo, quando um processador de vídeo é pausado, ele exibe a primeira amostra como uma imagem ainda.
+Na classe base, o **método OnReceiveFirstSample** não faz nada. A classe derivada pode substituí-la. Por exemplo, quando um renderador de vídeo é pausado, ele exibe o primeiro exemplo como uma imagem ainda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Na classe base, o método **OnReceiveFirstSample** não faz nada. A classe deriv
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

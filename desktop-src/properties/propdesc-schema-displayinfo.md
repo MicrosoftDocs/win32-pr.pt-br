@@ -4,12 +4,12 @@ ms.assetid: 27c03ced-a5fa-4ab4-b88e-5b78701da878
 title: displayInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fff0bb441b4535c0b6c6f3183671fbe8ade09183
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b0bbc3cf0f17d24672e30a110d95341c1cb902d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752547"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622082"
 ---
 # <a name="displayinfo"></a>displayInfo
 
@@ -17,7 +17,7 @@ Especifica as informações de exibição de uma propriedade. Deve haver apenas 
 
 Se houver vários elementos, o último será usado. Se nenhum elemento [DisplayInfo]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -274,7 +274,7 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [DisplayI
 |                                                                  | [drawControl](./propdesc-schema-drawcontrol.md)                                                               |
 |                                                                  | [editControl](./propdesc-schema-editcontrol.md)                                                               |
 |                                                                  | [filterControl](./propdesc-schema-filtercontrol.md)                                                           |
-|                                                                  | [queryControl](./propdesc-schema-querycontrol.md) (somente Windows Vista. Sem suporte no Windows 7 e posterior.) |
+|                                                                  | [queryControl](./propdesc-schema-querycontrol.md) (somente Windows Vista. sem suporte no Windows 7 e posterior.) |
 
 
 
@@ -286,8 +286,8 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [DisplayI
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -400,7 +400,7 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [DisplayI
 <td>Usa o &quot; &quot;  /  &quot; mesmo &quot;  /  &quot; mais curto&quot;</td>
 </tr>
 <tr class="odd">
-<td>Duration</td>
+<td>Duração</td>
 <td>Usa o &quot; &quot;  /  &quot; mesmo &quot;  /  &quot; mais curto&quot;</td>
 </tr>
 <tr class="even">

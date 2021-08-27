@@ -8,12 +8,12 @@ req.target-min-winverclnt: Windows Vista [desktop apps only]
 req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 api_location:
 - mstcpip.h
-ms.openlocfilehash: 57f96d0396d661eba12f9e64238c492f38e97b2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d949e325292210ec7126da5ddf65c6ff30c5aa151cfaf85331fb7ebf3e5b346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097486"
 ---
 # <a name="sio_release_port_reservation-control-code"></a>SIO_RELEASE_PORT_RESERVATION código de controle
 
@@ -129,7 +129,7 @@ Um ponteiro para o código de erro.
 
 **Observação**  Esse parâmetro se aplica somente à função **WSPIoctl** .
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, a função [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) ou **WSPIoctl** retornará zero.
 
@@ -150,7 +150,7 @@ Para obter informações de erro estendidas, chame [**WSAGetLastError**](/window
 
 ## <a name="remarks"></a>Comentários
 
-O IOCTL de **\_ reserva de \_ porta \_ de liberação sio** tem suporte no Windows Vista e versões posteriores do sistema operacional.
+o IOCTL de **\_ reserva de \_ porta \_ de liberação SIO** tem suporte no Windows Vista e versões posteriores do sistema operacional.
 
 Os aplicativos e serviços que precisam reservar portas se enquadram em duas categorias.
 A primeira categoria inclui componentes que precisam de uma porta específica como parte de sua operação.
@@ -170,19 +170,19 @@ Se os parâmetros *lpOverlapped* e *lpCompletionRoutine* forem **nulos**, o soqu
 Para um soquete não sobreposto, os parâmetros *lpOverlapped* e *lpCompletionRoutine* são ignorados, exceto que a função pode bloquear se o soquete *s* estiver no modo de bloqueio.
 Se o soquete *s* estiver no modo sem bloqueio, essa função ainda será bloqueada, pois esse IOCTL específico não oferece suporte ao modo sem bloqueio.
 
-Para os soquetes sobrepostos, as operações que não podem ser concluídas imediatamente serão iniciadas e a conclusão será indicada mais tarde.
+Para soquetes sobrecarrados, as operações que não podem ser concluídas imediatamente serão iniciadas e a conclusão será indicada posteriormente.
 
-Qualquer IOCTL pode bloquear indefinidamente, dependendo da implementação do provedor de serviço.
-Se o aplicativo não puder tolerar o bloqueio em uma chamada de função [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) ou **WSPIoctl** , a e/s sobreposta seria ACONSELHAda para os IOCTLs que são especialmente prováveis de bloquear.
+Qualquer IOCTL pode ser bloqueado indefinidamente, dependendo da implementação do provedor de serviços.
+Se o aplicativo não puder tolerar o bloqueio em uma chamada de função [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) ou **WSPIoctl,** a E/S sobresalo será aconselhada para IOCTLs que são especialmente prováveis de bloquear.
 
-O **IOCTL \_ \_ \_ reserva de porta de liberação sio** pode falhar com a operação **WSAEINTR** ou **WSA \_ \_ anulada** nos seguintes casos:
+O IOCTL DE RESERVA DA PORTA DE LANÇAMENTO do SIO pode falhar com **A OPERAÇÃO WSAEINTR** ou **WSA \_ \_ ANULADA** nos seguintes casos: **\_ \_ \_**
 
-* A solicitação é cancelada pelo Gerenciador de e/s.
+* A solicitação é cancelada pelo Gerenciador de E/S.
 * O soquete está fechado.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir adquire uma reserva de porta de tempo de execução e libera a reserva de porta de tempo de execução.
+O exemplo a seguir adquire uma reserva de porta de runtime e, em seguida, libera a reserva de porta de runtime.
 
 ```cpp
 #ifndef UNICODE
@@ -346,15 +346,15 @@ int wmain(int argc, WCHAR ** argv)
 
 [**SIO_ASSOCIATE_PORT_RESERVATION**](sio-associate-port-reservation.md)
 
-[SSA](/windows/desktop/api/winsock2/nf-winsock2-socket)
+[Soquete](/windows/desktop/api/winsock2/nf-winsock2-socket)
 
-[**WSAGetLastError**](/windows/desktop/api/winsock2/nf-winsock2-wsagetlasterror)
+[**Wsagetlasterror**](/windows/desktop/api/winsock2/nf-winsock2-wsagetlasterror)
 
-[**WSAGetOverlappedResult**](/windows/desktop/api/winsock2/nf-winsock2-wsagetoverlappedresult)
+[**Wsagetoverlappedresult**](/windows/desktop/api/winsock2/nf-winsock2-wsagetoverlappedresult)
 
-[**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl)
+[**Wsaioctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl)
 
-[**WSAOVERLAPPED**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped)
+[**Wsaoverlapped**](/windows/desktop/api/winsock2/ns-winsock2-wsaoverlapped)
 
 [**WSASocketA**](/windows/desktop/api/winsock2/nf-winsock2-wsasocketa)
 

@@ -1,7 +1,7 @@
 ---
-description: Descreve uma chave de vetor para uso na animação de quadro chave. Ele especifica um vetor em um determinado momento. Isso é usado para chaves de escala e de tradução.
+description: Descreve uma chave de vetor para uso na animação de quadro-chave. Especifica um vetor em um determinado momento. Isso é usado para chaves de escala e tradução.
 ms.assetid: 7a7ba2ce-c9f3-4a04-b865-39de9070868b
-title: Estrutura de D3DXKEY_VECTOR3 (D3dx9anim. h)
+title: D3DXKEY_VECTOR3 estrutura (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 41aec16da30a6e8742290b747b844b7fb22f6650
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0214582b3fb1267caeb30a6cca905cbf7243ecf5dd1af40365841b315359317f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119176"
 ---
-# <a name="d3dxkey_vector3-structure"></a>\_Estrutura D3DXKEY VECTOR3
+# <a name="d3dxkey_vector3-structure"></a>Estrutura D3DXKEY \_ VECTOR3
 
-Descreve uma chave de vetor para uso na animação de quadro chave. Ele especifica um vetor em um determinado momento. Isso é usado para chaves de escala e de tradução.
+Descreve uma chave de vetor para uso na animação de quadro-chave. Especifica um vetor em um determinado momento. Isso é usado para chaves de escala e tradução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,11 +43,11 @@ typedef struct D3DXKEY_VECTOR3 {
 **Hora**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Carimbo de data/hora do quadro principal.
+Carimbo de data/hora do quadro-chave.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)**
 
 </dd> <dd>
 
-Vetor 3D [**D3DXVECTOR3**](d3dxvector3.md) que fornece valores de escala e/ou translação.
+[**Vetor 3DXVECTOR3**](d3dxvector3.md) 3D que fornece valores de escala e/ou tradução.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Vetor 3D [**D3DXVECTOR3**](d3dxvector3.md) que fornece valores de escala e/ou tr
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

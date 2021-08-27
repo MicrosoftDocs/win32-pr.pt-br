@@ -4,12 +4,12 @@ description: O parâmetro leitor de tela indica se um aplicativo deve fornecer i
 ms.assetid: ac79c389-511c-4403-a8d5-75b2eba2b39f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0c237f3d945b9782884ffc655cf87a203159a16
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 818ad36cfe833c1c9a3f39047cd88e6b4e8be55972d521ce524bb1e0618a48ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098416"
 ---
 # <a name="screen-reader-parameter"></a>Parâmetro do leitor de tela
 
@@ -18,10 +18,10 @@ O parâmetro leitor de tela indica se um aplicativo deve fornecer informações 
 Esse parâmetro é normalmente definido por auxílios de acessibilidade, como leitores de tela. Os aplicativos usam os sinalizadores **SPI \_ GETSCREENREADER** e **SPI \_ SETSCREENREADER** com a função [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) para obter e definir o parâmetro de leitor de tela.
 
 > [!Note]  
-> O narrador, o leitor de tela que está incluído no Windows, não define os sinalizadores **SPI \_ SETSCREENREADER** ou **SPI \_ GETSCREENREADER** .
+> o narrador, o leitor de tela que está incluído com o Windows, não define os sinalizadores **spi \_ SETSCREENREADER** ou **spi \_ GETSCREENREADER** .
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -4,16 +4,16 @@ ms.assetid: ca933d8c-bfb4-4a92-b412-112e228ccca2
 title: Enumeração de PARTICIPANT_TYPED_INFO (Confpriv. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ab94a487f0ea098ee9b92144874057dc463036
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2de57331cd0774409118b7253fd5705879e3b3504b04b20a16aa2df269504512
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100566"
 ---
 # <a name="participant_typed_info-enumeration"></a>Enumeração de informações de \_ tipo de participante \_
 
-\[**Participante \_ do As \_ informações digitadas** não estão disponíveis para uso no Windows Vista, no windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[**Participante \_ do as \_ informações digitadas** não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 Os membros da enumeração **\_ \_ informações digitadas do participante** identificam o tipo de informações do participante que estão sendo recuperadas pelo método [**ITParticipant:: get \_ ParticipantTypedInfo**](itparticipant-get-participanttypedinfo.md) . Essa enumeração é usada por aplicativos que acessam o [IPConf MSP](ipconf-msp.md).
 
@@ -93,7 +93,7 @@ Define uma extensão experimental ou de SDES (descrição de origem específica 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 
 
 

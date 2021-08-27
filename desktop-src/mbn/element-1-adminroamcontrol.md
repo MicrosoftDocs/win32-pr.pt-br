@@ -7,12 +7,12 @@ MSHAttr:
 title: AdminRoamControl (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09f949f2ad3eca5dfd559ee11cf4252662221d1f
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 2f6633681a7b298613062abadb0ed7f01a946b38
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988849"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481142"
 ---
 # <a name="span-idwwan_profile_v4element_1_adminroamcontrolspanmodemdmconfigprofileadminroamcontrol-v4"></a><span id="WWAN_profile_v4.element_1_AdminRoamControl"></span>ModemDMConfigProfile \/ AdminRoamControl (v4)
 
@@ -26,7 +26,7 @@ Especifica se o perfil Ã© controlado por roam-in administrativo. Esse elemento Ã
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<AdminRoamControl\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <AdminRoamControl>
@@ -60,9 +60,7 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

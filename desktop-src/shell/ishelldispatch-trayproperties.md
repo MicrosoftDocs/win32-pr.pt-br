@@ -1,7 +1,7 @@
 ---
-description: Método IShellDispatch. Trayproperties – exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
+description: Método IShellDispatch.TrayProperties – exibe a caixa de diálogo Propriedades da Barra de Tarefas e Iniciar Menu. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
 ms.assetid: 8E0AC08E-1132-4312-9B75-E7686B91AB02
-title: Método IShellDispatch. Trayproperties (shldisp. h)
+title: Método IShellDispatch.TrayProperties (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 424d25d7555090e4244d5cd22084171ca2a4fea9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1c7ec210b7b3eb178f328e880041e45dd1e9a9279b3644e5b83fc9d5d78ef77c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111516"
 ---
-# <a name="ishelldispatchtrayproperties-method"></a>Método IShellDispatch. Trayproperties
+# <a name="ishelldispatchtrayproperties-method"></a>Método IShellDispatch.TrayProperties
 
-Exibe a **barra de tarefas e a caixa de diálogo Propriedades do menu iniciar** . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **Propriedades**.
+Exibe a caixa **de diálogo Propriedades da Barra de Tarefas e Iniciar Menu.** Esse método tem o mesmo efeito de clicar com o botão direito do mouse na barra de tarefas e selecionar **Propriedades**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,13 +57,13 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [**shell. trayproperties**](shell-trayproperties.md) .
+Esse método é implementado e acessado por meio [**do método Shell.TrayProperties.**](shell-trayproperties.md)
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **trayproperties** em JScript, VBScript e Visual Basic.
+Os exemplos a seguir mostram o uso **de TrayProperties** em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

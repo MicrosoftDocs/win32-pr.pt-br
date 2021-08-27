@@ -4,12 +4,12 @@ ms.assetid: 10767bbf-3b47-4df1-be73-18678397c0ab
 title: 'Etapa 1: declarar a classe CPlayer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1593842ecece68fcd3c4cca35a7e2e28eac503c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c61f03a9054e96769414320811d32a549027defb80ff929aba2c27ad4aa5b5f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112906"
 ---
 # <a name="step-1-declare-the-cplayer-class"></a>Etapa 1: declarar a classe CPlayer
 

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f2aa3fdd1ae95fa377f65b5422a2a236868fc62
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: a94af3f142fb7449a95ddf67ad9a0d16f2e37c43
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469763"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982399"
 ---
 # <a name="jetopentemptable-function"></a>Função JetOpenTempTable
 
@@ -82,7 +82,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 | <p>JET_bitTTForceMaterialization</p> | <p>Força o gerenciador de tabela temporário a abandonar a pesquisa da melhor estratégia para usar o gerenciamento da tabela temporária que resultará em desempenho aprimorado.</p> | 
 | <p>JET_bitTTForwardOnly</p> | <p>A tabela temporária só será criada se o gerenciador de tabela temporário puder usar a implementação otimizada para resultados intermediários da consulta. Se qualquer característica da tabela temporária impedir o uso dessa otimização, a operação falhará com JET_errCannotMaterializeForwardOnlySort.</p><p>Um efeito colateral dessa opção é permitir que a tabela temporária contenha registros com chaves de índice duplicadas. Consulte JET_bitTTUnique para obter mais informações.</p><p>Essa opção só está disponível no Windows Server 2003 e versões posteriores.</p> | 
 | <p>JET_bitTTIndexed</p> | <p>Essa opção solicita que a tabela temporária seja flexível o suficiente para permitir o uso de <a href="gg294103(v=exchg.10).md">JetSeek</a> para procurar registros por chave de índice.</p><p>Se essa funcionalidade não for necessária, é melhor não solicitá-la. Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
-| <p>JET_bitTTUnique</p> | <p>Solicitações que registros com chaves de índice duplicadas sejam removidos do conjunto final de registros na tabela temporária.</p><p>Antes do Windows Server 2003, o mecanismo de banco de dados sempre presumiu que essa opção estava em vigor devido ao fato de que todos os índices clusterados também devem ser uma chave primária e, portanto, devem ser exclusivos. A partir Windows Server 2003, agora é possível criar uma tabela temporária que não remove duplicatas quando a opção JET_bitTTForwardOnly também é especificada.</p><p>Não é possível saber qual duplicata terá êxito e quais duplicatas serão descartadas, em geral. No entanto, quando a JET_bitTTErrorOnDuplicateInsertion for solicitada, o primeiro registro com uma determinada chave de índice a ser inserido na tabela temporária sempre terá êxito.</p> | 
+| <p>JET_bitTTUnique</p> | <p>Solicitações que registros com chaves de índice duplicadas sejam removidos do conjunto final de registros na tabela temporária.</p><p>Antes do Windows Server 2003, o mecanismo de banco de dados sempre presumia que essa opção estava em vigor devido ao fato de que todos os índices clusterados também devem ser uma chave primária e, portanto, devem ser exclusivos. A partir Windows Server 2003, agora é possível criar uma tabela temporária que não remove duplicatas quando a opção JET_bitTTForwardOnly também é especificada.</p><p>Não é possível saber qual duplicata terá êxito e quais duplicatas serão descartadas, em geral. No entanto, quando a JET_bitTTErrorOnDuplicateInsertion for solicitada, o primeiro registro com uma determinada chave de índice a ser inserido na tabela temporária sempre terá êxito.</p> | 
 | <p>JET_bitTTUpdatable</p> | <p>Solicita que a tabela temporária seja flexível o suficiente para permitir que os registros inseridos anteriormente sejam alterados posteriormente. Se essa funcionalidade não for necessária, é melhor não solicitá-la.</p><p>Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
 | <p>JET_bitTTScrollable</p> | <p>Solicita que a tabela temporária seja flexível o suficiente para permitir que os registros sejam verificados em ordem arbitrária e direção usando <a href="gg294117(v=exchg.10).md">JetMove.</a></p><p>Se essa funcionalidade não for necessária, é melhor não solicitá-la. Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
 | <p>JET_bitTTSortNullsHigh</p> | <p>Solicita que os valores de coluna de chave NULL são classificar mais próximos ao final do índice do que valores de coluna de chave não NULL.</p><p></p> | 
@@ -108,7 +108,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 | <p>Código de retorno</p> | <p>Descrição</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
-| <p>JET_errCannotMaterializeForwardOnlySort</p> | <p><strong>JetOpenTempTable</strong> falhou porque JET_bitTTForwardOnly foi especificada e a tabela temporária, conforme especificado, não pôde ser criada usando a otimização somente de encaminhamento. Esse erro só será retornado pelo Windows Server 2003 e versões posteriores.</p> | 
+| <p>JET_errCannotMaterializeForwardOnlySort</p> | <p><strong>JetOpenTempTable</strong> falhou porque JET_bitTTForwardOnly foi especificado e a tabela temporária, conforme especificado, não pôde ser criada usando a otimização somente de encaminhamento. Esse erro só será retornado pelo Windows Server 2003 e versões posteriores.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errIndexInvalidDef</p> | <p>Não foi possível criar o índice porque uma definição de índice inválida foi especificada.</p><p><strong>JetOpenTempTable</strong> retornará esse erro quando:</p><ul><li><p>A localidade Neutra da Linguagem é especificada.</p></li><li><p>Um conjunto inválido de sinalizadores de normalização é especificado.</p></li></ul><p>Esse erro só será retornado por Windows 2000.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
@@ -204,7 +204,7 @@ Quando a tabela temporária é materializada, o cursor tem os seguintes recursos
 
   - [JetUpdate](./jetupdate-function.md)
 
-Quando a tabela temporária não está materializada e está na fase de inserção, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções solicitadas:
+Quando a tabela temporária não é materializada e está na fase de inserção, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções solicitadas:
 
   - [JetCloseTable](./jetclosetable-function.md)
 
@@ -214,7 +214,7 @@ Quando a tabela temporária não está materializada e está na fase de inserç�
 
   - [JetMove](./jetmove-function.md)
     
-    **Observação**  Faz a transição para a fase de extração.
+    **Observação**  Causa a transição para a fase de extração.
 
   - [JetPrepareUpdate](./jetprepareupdate-function.md)
 
@@ -222,7 +222,7 @@ Quando a tabela temporária não está materializada e está na fase de inserç�
 
   - [JetSeek](./jetseek-function.md)
     
-    **Observação**  Faz a transição para a fase de extração.
+    **Observação**  Causa a transição para a fase de extração.
 
   - [JetSetColumn](./jetsetcolumn-function.md)
 
@@ -230,13 +230,13 @@ Quando a tabela temporária não está materializada e está na fase de inserç�
 
   - [JetUpdate](./jetupdate-function.md)
 
-Quando a tabela temporária não está materializada e está na fase de extração, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções solicitadas:
+Quando a tabela temporária não é materializada e está na fase de extração, o cursor tem os seguintes recursos, mas pode ser ainda mais limitado pelas opções solicitadas:
 
   - [JetCloseTable](./jetclosetable-function.md)
 
   - [JetDupCursor](./jetdupcursor-function.md)
     
-    **Observação**  Se for feita uma tentativa de duplicar uma tabela temporária que está no modo somente de encaminhamento, o cursor resultante não será criado corretamente e não terá funcionamento adequado. Ainda é seguro duplicar um cursor em uma tabela temporária materializada.
+    **Observação**  Se for feita uma tentativa de duplicar uma tabela temporária que está no modo somente avanço, o cursor resultante não será criado corretamente e não funcionará. Ainda é seguro duplicar um cursor em uma tabela temporária materializada.
 
   - [JetEnumerateColumns](./jetenumeratecolumns-function.md)
 
@@ -269,7 +269,13 @@ Quando a tabela temporária não está materializada e está na fase de extraç�
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

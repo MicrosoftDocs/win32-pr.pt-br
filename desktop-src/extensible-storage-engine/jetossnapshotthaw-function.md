@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetOSSnapshotThaw'
+description: 'Saiba mais sobre: Função JetOSSnapshotThaw'
 title: Função JetOSSnapshotThaw
 TOCTitle: JetOSSnapshotThaw Function
 ms:assetid: 3b001113-6299-4082-ab15-461f2e33e996
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da7d5037cfc6b9a5f001dede57581127e4de60b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9be4bcff435fe30186b3b7585c79e3066987cc5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837350"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479052"
 ---
 # <a name="jetossnapshotthaw-function"></a>Função JetOSSnapshotThaw
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetossnapshotthaw-function"></a>Função JetOSSnapshotThaw
 
-A função **JetOSSnapshotThaw** notifica o mecanismo de que ele pode retomar as operações de e/s normais após um período de congelamento e um instantâneo bem-sucedido.
+A **função JetOSSnapshotThaw** notifica o mecanismo de que ele pode retomar operações normais de E/S após um período de congelamento e um instantâneo bem-sucedido.
 
-**Windows XP:** o **JetOSSnapshotThaw** é introduzido no Windows XP.  
+**Windows XP:****JetOSSnapshotThaw** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotThaw(
@@ -45,7 +45,7 @@ A função **JetOSSnapshotThaw** notifica o mecanismo de que ele pode retomar as
 
 ### <a name="parameters"></a>Parâmetros
 
-*snapid*
+*snapId*
 
 O identificador da sessão de instantâneo.
 
@@ -55,43 +55,21 @@ Esse parâmetro é reservado para uso futuro e o único valor válido com suport
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>A sessão de instantâneo é inválida ou o parâmetro <em>grbit</em> é inválido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotTimeOut</p></td>
-<td><p>A sessão de instantâneo tinha um tempo limite interno antes que essa chamada tivesse ocorrido. Consequentemente, as operações de e/s retornadas para normal antes que essa chamada fosse feita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>O identificador da sessão de instantâneo não é válido.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se essa função for bem sucedido, uma sessão de instantâneo terminará e o comportamento normal do mecanismo será retomado. Uma nova sessão de instantâneo pode ser iniciada mais tarde.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>A sessão de instantâneo é inválida ou o <em>parâmetro grbit</em> é inválido.</p> | 
+| <p>JET_errOSSnapshotTimeOut</p> | <p>A sessão de instantâneo tinha um tempo decorrida internamente antes da chamada. Consequentemente, as operações de E/S retornaram ao normal antes que essa chamada fosse feita.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>O identificador da sessão de instantâneo não é válido.</p> | 
 
-Se essa função falhar, a sessão de instantâneo atual terminará, mas o congelamento do IOs durante o período de instantâneo não foi respeitado internamente.
+
+
+Se essa função for bem-sucedida, uma sessão de instantâneo será finalizada e o comportamento normal do mecanismo será retomado. Uma nova sessão de instantâneo pode ser iniciada posteriormente.
+
+Se essa função falhar, a sessão de instantâneo atual terminará, mas o congelamento de E/S durante o período de instantâneo não foi respeitado internamente.
 
 #### <a name="remarks"></a>Comentários
 
@@ -99,34 +77,9 @@ As entradas do log de eventos serão geradas para as diferentes etapas do instan
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

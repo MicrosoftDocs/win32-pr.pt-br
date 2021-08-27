@@ -1,21 +1,21 @@
 ---
 description: Construtores expostos por XMINT4.
 ms.assetid: 8b4084b1-513f-4de7-94ac-1bbafb5ba042
-title: Construtores XMINT4 (Directxmath. h)
+title: Construtores XMINT4 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: b9c77e44ffced552af4592667813435200989cb52d322549031fd63620b24b28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee368f1f26f1fbe2f0c41d759d0618efb2101b8b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118500033"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467733"
 ---
 # <a name="xmint4-constructors"></a>Construtores XMINT4
 
 Construtores expostos por `XMINT4` .
 
-Constrói instâncias da estrutura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) .
+Constrói instâncias da [**estrutura XMINT4.**](/windows/win32/api/directxmath/ns-directxmath-xmint4)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -26,47 +26,13 @@ Constrói instâncias da estrutura [**XMINT4**](/windows/win32/api/directxmath/n
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMINT4 (const int32_t *)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint4-xmint4 (constint32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMINT4</code> de um argumento de matriz de quatro elementos <code>int32_t</code> . <br/> Esse construtor inicializa uma nova instância de [<strong>XMINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint4) de um de um argumento de matriz de quatro elementos <code>int32_t</code> . <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">[<strong>XMINT4 (int32_t, int32_t, int32_t, int32_t)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint4-xmint4 (int32_t_int32_t_int32_t_int32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMINT4</code> quatro <code>int32_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint4) de quatro <code>int32_t</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMINT4 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmint4-xmint4 (constxmint4_))</td>
-<td style="text-align: left;">Construtor padrão para <code>XMINT4</code> . <br/> Construtor padrão para [<strong>XMINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmint4). <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| [<strong>XMINT4 (const int32_t*)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint4-xmint4(constint32_t)) | Inicializa uma nova instância de de um <code>XMINT4</code> argumento de matriz de quatro <code>int32_t</code> elementos. <br /> Esse construtor inicializa uma nova instância de [<strong>XMINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint4) de um de um argumento de matriz de <code>int32_t</code> quatro elementos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| [<strong>XMINT4 (int32_t, int32_t, int32_t,int32_t)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint4-xmint4(int32_t_int32_t_int32_t_int32_t)) | Inicializa uma nova instância de de <code>XMINT4</code> quatro <code>int32_t</code> argumentos. <br /> Esse construtor inicializa uma nova instância de [<strong>XMINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint4) de quatro <code>int32_t</code> argumentos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| [<strong>XMINT4 ()</strong>](/windows/win32/api/directxmath/nf-directxmath-xmint4-xmint4(constxmint4_)) | Construtor padrão para <code>XMINT4</code> . <br /> Construtor padrão para [<strong>XMINT4.</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint4) <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+
 
 
 
@@ -76,7 +42,7 @@ Esse construtor só está disponível em C++.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

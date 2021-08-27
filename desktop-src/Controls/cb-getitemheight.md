@@ -3,7 +3,7 @@ title: Mensagem de CB_GETITEMHEIGHT (WinUser. h)
 description: Determina a altura dos itens de lista ou o campo de seleção em uma caixa de combinação.
 ms.assetid: 72fba6ca-0a51-4801-bd45-5f5a7d5ebee2
 keywords:
-- Controles de CB_GETITEMHEIGHT de mensagens do Windows
+- controles de Windows de mensagem de CB_GETITEMHEIGHT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4aac9d8f9a430c056f8b91a9306d77c182f4c96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6e3ad9636c32e40bfa95f1f3b2c209eab42023205e0a967cc91804ec314a103
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089186"
 ---
 # <a name="cb_getitemheight-message"></a>\_Mensagem de GETITEMHEIGHT CB
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é a altura, em pixels, dos itens da lista em uma caixa de combinação. Se a caixa de combinação tiver o estilo [**CBS \_ OwnerDrawVariable**](combo-box-styles.md) , será a altura do item especificado pelo parâmetro *wParam* . Se *wParam* for-1, o valor de retorno será a altura da parte do controle de edição (ou texto estático) da caixa de combinação. Se ocorrer um erro, o valor de retorno será CB \_ Err.
 
@@ -53,9 +53,9 @@ O valor de retorno é a altura, em pixels, dos itens da lista em uma caixa de co
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

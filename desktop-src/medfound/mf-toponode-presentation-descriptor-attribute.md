@@ -4,12 +4,12 @@ ms.assetid: 4f2c1ad8-fda9-482f-b82a-9838d15d2785
 title: Atributo MF_TOPONODE_PRESENTATION_DESCRIPTOR (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d95fae4f2c4d4a482c2a62d57e0835ea4f1c36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bfa43a57bcead1312ba8138ab085771d29a008fe2558ea7c6bfb29121d631bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113700"
 ---
 # <a name="mf_toponode_presentation_descriptor-attribute"></a>\_Atributo de \_ descritor de apresentação TOPONODE MF \_
 
@@ -17,11 +17,11 @@ Contém um ponteiro para o descritor de apresentação para a origem da mídia.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a nós de origem (_ * SOURCESTREAM de topologia do MF \_ \_ \_ nó * *).
+Esse atributo se aplica a nós de origem (**\_ nó de \_ SOURCESTREAM \_ de topologia MF**).
 
 O valor do atributo é um ponteiro para a interface [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor) do descritor de apresentação. Esse atributo é necessário.
 
@@ -33,9 +33,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

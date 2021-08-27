@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 226477d5727ac7beb51bc422e04c5dda83b4a351
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: f42baae5c6bdaa1ca9aecfced98a04a431ba7416
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623072"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786912"
 ---
 # <a name="span-idvspixengineisourcefileinfocallbackspanisourcefileinfocallback-interface"></a><span id="vspixengine.isourcefileinfocallback"></span>Interface ISourceFileInfoCallback
 
@@ -38,7 +38,7 @@ A interface **ISourceFileInfoCallback** herda da interface [**IUnknown.**](/wind
 
 A interface **ISourceFileInfoCallback** tem esses métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host de informações sobre arquivos de origem associados à callstack.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>Resultcallback</strong></a></td><td ><p>Uma função de retorno de chamada usada para notificar o host de informações sobre arquivos de origem associados à callstack.</p></td></tr></tbody></table>
 
  
 

@@ -3,7 +3,7 @@ title: Mensagem de PSM_REBOOTSYSTEM (Prsht. h)
 description: Indica que o sistema precisa ser reiniciado para que as alterações entrem em vigor. Você pode enviar a mensagem de PSM \_ REBOOTSYSTEM explicitamente ou usando a \_ macro PropSheet REBOOTSYSTEM.
 ms.assetid: 461fce3c-183a-4b9b-8eab-ed2838d9f866
 keywords:
-- Controles de PSM_REBOOTSYSTEM de mensagens do Windows
+- controles de Windows de mensagem de PSM_REBOOTSYSTEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14f5018dc3845d699561740ccd9cbb0a9c793f15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfcfebc931d1dbf01ab053fa2723bdcf361c4be5ef1443b9131115e2300770cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088626"
 ---
 # <a name="psm_rebootsystem-message"></a>Mensagem de PSM \_ REBOOTSYSTEM
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -66,9 +66,9 @@ Essa mensagem substitui todas as mensagens de [**PSM \_ RESTARTWINDOWS**](psm-re
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

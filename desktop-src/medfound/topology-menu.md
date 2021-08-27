@@ -1,90 +1,37 @@
 ---
-description: Menu de topologia
+description: Menu topologia
 ms.assetid: 95c78b37-0b9d-444e-ad69-3f1ff2a8dcf7
-title: Menu de topologia
+title: Menu topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7b2a0edffd819f0827961774fcbac80a10c9b91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a01d1eddf533045f198885fa646b979bea49ccb0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165291"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472402"
 ---
-# <a name="topology-menu"></a>Menu de topologia
+# <a name="topology-menu"></a>Menu topologia
 
-O menu **topologia** fornece os seguintes comandos:
+O menu **Topologia** fornece os seguintes comandos:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Comando</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Adicionar origem...</strong></td>
-<td>Adiciona um nó de origem para o arquivo de mídia especificado. Consulte <a href="adding-source-nodes-with-topoedit.md">adicionando nós de origem com TopoEdit</a>.</td>
-</tr>
-<tr class="even">
-<td><strong>Adicionar SAR</strong></td>
-<td>Adiciona um nó de saída para o processador de áudio de streaming (SAR). Consulte <a href="adding-output-nodes-with-topoedit.md">adicionando nós de saída com TopoEdit</a>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Adicionar EVR</strong></td>
-<td>Adiciona um nó de saída para o processador de vídeo avançado (EVR). Consulte <a href="adding-output-nodes-with-topoedit.md">adicionando nós de saída com TopoEdit</a>.</td>
-</tr>
-<tr class="even">
-<td><strong>Adicionar transformação...</strong></td>
-<td>Adiciona o nó de transformação especificado. Consulte <a href="adding-transform-nodes-with-topoedit.md">adicionando nós de transformação com TopoEdit</a>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Adicionar o t</strong></td>
-<td>Adiciona um nó de "t" para enviar a saída para vários nós de saída.</td>
-</tr>
-<tr class="even">
-<td><strong>Adicionar MFT personalizado...</strong></td>
-<td>Adiciona uma Media Foundation de transformação personalizada (MFT). Consulte <a href="adding-transform-nodes-with-topoedit.md">adicionando nós de transformação com TopoEdit</a>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Adicionar coletor personalizado...</strong></td>
-<td>Adiciona um nó de saída para um coletor de fluxo personalizado. Consulte <a href="adding-output-nodes-with-topoedit.md">adicionando nós de saída com TopoEdit</a>.</td>
-</tr>
-<tr class="even">
-<td><strong>Adicionar fonte de captura de vídeo...</strong></td>
-<td>Adiciona um nó de origem para um dispositivo de captura de vídeo.<br/>
-<blockquote>
-[!Note]<br />
-Esse recurso requer o Windows 7.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Adicionar fonte de captura de áudio...</strong></td>
-<td>Adiciona um nó de origem para um dispositivo de captura de áudio.<br/>
-<blockquote>
-[!Note]<br />
-Esse recurso requer o Windows 7.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Resolver topologia</strong></td>
-<td>Cria uma topologia completa para reprodução. Consulte <a href="resolving-a-topology-with-topoedit.md">resolvendo uma topologia com TopoEdit</a>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Excluir</strong></td>
-<td>Remove um item, nós de topologia ou conexões de nó do <strong>painel topologia</strong>.</td>
-</tr>
-</tbody>
-</table>
+
+| Comando | Descrição | 
+|---------|-------------|
+| <strong>Adicionar Fonte...</strong> | Adiciona um nó de origem para o arquivo de mídia especificado. Consulte <a href="adding-source-nodes-with-topoedit.md">Adicionando nós de origem com TopEdit</a>. | 
+| <strong>Adicionar SAR</strong> | Adiciona um nó de saída para o SAR (Renderador de Áudio de Streaming). Consulte <a href="adding-output-nodes-with-topoedit.md">Adicionando nós de saída com TopEdit</a>. | 
+| <strong>Adicionar EVR</strong> | Adiciona um nó de saída para o renderador de vídeo aprimorado (EVR). Consulte <a href="adding-output-nodes-with-topoedit.md">Adicionando nós de saída com TopEdit</a>. | 
+| <strong>Adicionar Transformação...</strong> | Adiciona o nó de transformação especificado. Consulte <a href="adding-transform-nodes-with-topoedit.md">Adicionando nós de transformação com TopEdit</a>. | 
+| <strong>Adicionar Tee</strong> | Adiciona um nó tee para enviar a saída para vários nós de saída. | 
+| <strong>Adicionar MFT personalizado...</strong> | Adiciona uma transformação Media Foundation personalizada (MFT). Consulte <a href="adding-transform-nodes-with-topoedit.md">Adicionando nós de transformação com TopEdit</a>. | 
+| <strong>Adicionar o sink personalizado...</strong> | Adiciona um nó de saída para um sink de fluxo personalizado. Consulte <a href="adding-output-nodes-with-topoedit.md">Adicionando nós de saída com TopEdit</a>. | 
+| <strong>Adicionar origem da Captura de Vídeo...</strong> | Adiciona um nó de origem para um dispositivo de captura de vídeo.<br /><blockquote>[!Note]<br />Esse recurso requer Windows 7.</blockquote><br /> | 
+| <strong>Adicionar fonte de captura de áudio...</strong> | Adiciona um nó de origem para um dispositivo de captura de áudio.<br /><blockquote>[!Note]<br />Esse recurso requer Windows 7.</blockquote><br /> | 
+| <strong>Resolver topologia</strong> | Cria uma topologia completa para reprodução. Consulte <a href="resolving-a-topology-with-topoedit.md">Resolvendo uma topologia com TopEdit</a>. | 
+| <strong>Delete (excluir)</strong> | Remove um item, nós de topologia ou conexões de nó do <strong>Painel de Topologia</strong>. | 
+
 
 
 
@@ -94,10 +41,10 @@ Esse recurso requer o Windows 7.
 
 <dl> <dt>
 
-[TopoEdit menus](topoedit-menus.md)
+[Menus TopEdit](topoedit-menus.md)
 </dt> <dt>
 
-[TopoEdit](topoedit.md)
+[TopEdit](topoedit.md)
 </dt> </dl>
 
  

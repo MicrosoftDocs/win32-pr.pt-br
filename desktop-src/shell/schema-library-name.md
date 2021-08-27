@@ -1,19 +1,19 @@
 ---
-description: O <name> elemento Especifica o nome dessa biblioteca. Esse elemento é necessário e não tem atributos ou elementos filho.
+description: O &lt; elemento name especifica o nome dessa &gt; biblioteca. Esse elemento é necessário e não tem atributos ou elementos filho.
 ms.assetid: 1F433405-5943-4579-BDAD-423C4E1A6E76
-title: Elemento Name (esquema de biblioteca)
+title: Elemento name (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 179d8b4a1f4358ccb441cc38c6c0765a6dc4d9ade8b3c32a1504be2151cfedaa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6d32b6d929a58f19cc2b87a79af846d22fc0ebda
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883936"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880852"
 ---
-# <a name="name-element-library-schema"></a>Elemento Name (esquema de biblioteca)
+# <a name="name-element-library-schema"></a>Elemento name (esquema de biblioteca)
 
-O <name> elemento Especifica o nome dessa biblioteca. Esse elemento é necessário e não tem atributos ou elementos filho.
+O &lt; elemento name especifica o nome dessa &gt; biblioteca. Esse elemento é necessário e não tem atributos ou elementos filho.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ O <name> elemento Especifica o nome dessa biblioteca. Esse elemento é necessár
 
 ## <a name="remarks"></a>Comentários
 
-o nome é o nome da biblioteca amigável exibido no Windows Explorer. O nome pode ser especificado em um <dllname> <index> formato, como no exemplo a seguir.
+O nome é o nome amigável da biblioteca que é exibido no Windows Explorer. O nome pode ser especificado em um &lt; dllname &gt; , formato de &lt; &gt; índice, como no exemplo a seguir.
 
 
 ```

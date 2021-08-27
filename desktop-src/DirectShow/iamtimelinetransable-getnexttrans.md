@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cc8f7c88dab2b8c0dfece6f2799b6648c0b9da2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 892f8e0f4af39250d62da9ed662c22867f98ebfc32baeaa0f341ead2eef665a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131076"
 ---
 # <a name="iamtimelinetransablegetnexttrans-method"></a>Método IAMTimelineTransable:: GetNextTrans
 
@@ -60,7 +60,7 @@ Ponteiro para uma variável que especifica a hora em unidades de 100 a nanossegu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se o método recuperar uma transição ou S \_ false se não encontrar uma transição. Caso contrário, retorna um valor **HRESULT** que indica a causa da falha.
 
@@ -76,7 +76,7 @@ Se o método retornar S \_ OK, a interface [**IAMTimelineObj**](iamtimelineobj.m
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

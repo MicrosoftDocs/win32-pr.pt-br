@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetGetDatabaseInfo'
+description: 'Saiba mais sobre: Função JetGetDatabaseInfo'
 title: Função JetGetDatabaseInfo
 TOCTitle: JetGetDatabaseInfo Function
 ms:assetid: bd3f92d0-7e98-4aa6-87c5-1c2760cbd1b5
@@ -17,21 +17,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81c414a1dd38f621ba86bf7b1c9ce87710801446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c92ed1d5d42511971c53e6116574cd8d9a882124
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169784"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982560"
 ---
 # <a name="jetgetdatabaseinfo-function"></a>Função JetGetDatabaseInfo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetdatabaseinfo-function"></a>Função JetGetDatabaseInfo
 
-A função **JetGetDatabaseInfo** recupera vários tipos de informações sobre o banco de dados. Essa API pode ser chamada enquanto um banco de dados estiver anexado ou online (com **JetGetDatabaseInfo**) ou enquanto o banco de dados ou o mecanismo de banco de dados estiver offline (com [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md)).
+A **função JetGetDatabaseInfo** recupera vários tipos de informações sobre o banco de dados. Essa API pode ser chamada enquanto um banco de dados é anexado ou online (com **JetGetDatabaseInfo**) ou enquanto o mecanismo de banco de dados ou banco de dados está offline (com [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md)).
 
 ```cpp
     JET_ERR JET_API JetGetDatabaseInfo(
@@ -47,185 +47,82 @@ A função **JetGetDatabaseInfo** recupera vários tipos de informações sobre 
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
-*DBID*
+*Dbid*
 
-O [JET_DBID](./jet-dbid.md) do banco de dados do qual recuperar as informações.
+O [JET_DBID](./jet-dbid.md) para o banco de dados recuperar as informações.
 
 *pvResult*
 
-Ponteiro para um buffer que receberá as informações especificadas. O tamanho do buffer, em bytes, é passado em *cbMax*.
+Ponteiro para um buffer que receberá as informações especificadas. O tamanho do buffer, em bytes, é passado em *cbMax.*
 
-Em caso de falha, o conteúdo de *pvResult* é indefinido.
+Em caso de falha, o *conteúdo de pvResult* é indefinido.
 
-As informações armazenadas no *pvResult* dependem do *InfoLevel*.
+As informações armazenadas *em pvResult* dependem *do InfoLevel.*
 
 *cbMax*
 
-O tamanho, em bytes, do buffer que foi passado em *pvResult*.
+O tamanho, em bytes, do buffer passado em *pvResult.*
 
 *InfoLevel*
 
-*InfoLevel* especifica que tipo de informações devem ser recuperadas sobre o banco de dados especificado. Ele afeta como o *pvResult* é interpretado. Alguns *InfoLevel* estão disponíveis somente na versão offline ([JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md)) ou online (**JetGetDatabaseInfo**) da API.
+*InfoLevel* especifica quais tipos de informações devem ser recuperadas sobre o banco de dados especificado. Ela afeta como *pvResult* é interpretado. Alguns *InfoLevel* estão disponíveis apenas na versão offline ([JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md)) ou online (**JetGetDatabaseInfo**) da API.
 
-Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou JET_errBufferTooSmall serão retornados, dependendo do *InfoLevel*.
+Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou JET_errBufferTooSmall será retornado dependendo do *InfoLevel*.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_DbInfoCollate</p></td>
-<td><p>Ainda não tem suporte e retorna valores padrão. Não use.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoConnect</p></td>
-<td><p>Esses <em>InfoLevels</em> foram preteridos e não têm suporte no momento. Não use.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoCountry</p></td>
-<td><p>Ainda não tem suporte e retorna valores padrão. Não use.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoCp</p></td>
-<td><p>Ainda não tem suporte e retorna valores padrão. Não use.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoFilename</p></td>
-<td><p><em>pvResult</em> será interpretado como um buffer de cadeia de caracteres (Char *). Um buffer de MAX_PATH é sugerido, porém não obrigatório. Se o buffer não for longo o suficiente, JET_errBufferTooSmall será retornado. A cadeia de caracteres será populada com o caminho do banco de dados para esta DBID.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoFilesize</p></td>
-<td><p><em>pvResult</em> será interpretado como um DWORD (4 bytes). Retorna o tamanho do banco de dados em páginas.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoIsam</p></td>
-<td><p>Esses <em>InfoLevels</em> foram preteridos e não têm suporte no momento. Não use.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoLCID</p></td>
-<td><p>(Windows XP e posterior) Este <em>InfoLevel</em> foi originalmente especificado como: JET_DbInfoLangid (Windows 2000)</p>
-<p><em>pvResult</em> será interpretado como um longo. Isso retorna o LCID (identificador de localidade) associado a este banco de dados.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoMisc</p></td>
-<td><p><em>pvResult</em> será interpretado como um <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a>. A estrutura de <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a> será preenchida com informações relacionadas ao banco de dados especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoOptions</p></td>
-<td><p><em>pvResult</em> será interpretado como um <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> (DWORD). Isso retorna se o banco de dados está aberto em modo exclusivo. Se o banco de dados estiver em modo exclusivo JET_bitDbExclusive será definido no <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> fornecido, caso contrário, zero será definido. Observe que outras opções de <em>grbit</em> de banco de dados para <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> e <a href="gg269299(v=exchg.10).md">JetOpenDatabase</a> não são retornadas.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoPageSize</p></td>
-<td><p>Disponível apenas no Windows XP e posterior. <em>pvResult</em> será interpretado como um longo não assinado. Isso retornará o tamanho da página do banco de dados em bytes.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoSpaceAvailable</p></td>
-<td><p><em>pvResult</em> será interpretado como um DWORD. Isso retorna o espaço disponível para o banco de dados em páginas.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoSpaceOwned</p></td>
-<td><p><em>pvResult</em> será interpretado como um DWORD. Isso retorna o espaço de Propriedade do banco de dados em páginas.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_DbInfoTransactions</p></td>
-<td><p><em>pvResult</em> será interpretado como um longo. Isso retornará um maior que o nível máximo para o qual as transações podem ser aninhadas. Se <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a> for chamado (em um modo de aninhamento, ou seja, na mesma sessão, sem uma confirmação ou reversão) quantas vezes esse valor, na última chamada JET_errTransTooDeep será retornado de <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a>. Observe que o valor no Windows 2000, no Windows XP e no Windows Server 2003 é 7.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_DbInfoVersion</p></td>
-<td><p><em>pvResult</em> será interpretado como um longo. Isso retorna a versão principal nativa do mecanismo de banco de dados. Esse valor é 0x620 para Windows 2000, Windows XP e Windows Server 2003.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_DbInfoCollate</p> | <p>Ainda não há suporte para e retornam valores padrão. Não use.</p> | 
+| <p>JET_DbInfoConnect</p> | <p>Esses <em>InfoLevels</em> foram preterido e não têm suporte no momento. Não use.</p> | 
+| <p>JET_DbInfoCountry</p> | <p>Ainda não há suporte para e retornam valores padrão. Não use.</p> | 
+| <p>JET_DbInfoCp</p> | <p>Ainda não há suporte para e retornam valores padrão. Não use.</p> | 
+| <p>JET_DbInfoFilename</p> | <p><em>pvResult será</em> interpretado como um buffer de cadeia de caracteres (char *). Um MAX_PATH buffer é sugerido, no entanto, não é necessário. Se o buffer não for longo o suficiente, JET_errBufferTooSmall será retornado. A cadeia de caracteres será preenchida com o caminho do banco de dados para esse DBID.</p> | 
+| <p>JET_DbInfoFilesize</p> | <p><em>pvResult</em> será interpretado como um DWORD (4 bytes). Retorna o tamanho do banco de dados em páginas.</p> | 
+| <p>JET_DbInfoIsam</p> | <p>Esses <em>InfoLevels</em> foram preterido e não têm suporte no momento. Não use.</p> | 
+| <p>JET_DbInfoLCID</p> | <p>(Windows XP e posterior) Esse <em>InfoLevel</em> foi originalmente especificado como: JET_DbInfoLangid (Windows 2000)</p><p><em>pvResult</em> será interpretado como um long. Isso retorna o LCID (identificador de localidade) associado a este banco de dados.</p> | 
+| <p>JET_DbInfoMisc</p> | <p><em>pvResult</em> será interpretado como um <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a>. A <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a> de dados será preenchida com informações referentes ao banco de dados especificado.</p> | 
+| <p>JET_DbInfoOptions</p> | <p><em>pvResult</em> será interpretado como um <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> (DWORD). Isso retorna se o banco de dados é aberto no modo exclusivo. Se o banco de dados estiver no modo exclusivo JET_bitDbExclusive será definido no JET_GRBIT <a href="gg294066(v=exchg.10).md">fornecido,</a> caso contrário, zero será definido. Observe que outras opções <em>de grbit de banco</em> de dados para <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> e <a href="gg269299(v=exchg.10).md">JetOpenDatabase</a> não são retornadas.</p> | 
+| <p>JET_DbInfoPageSize</p> | <p>Disponível somente no Windows XP e posterior. <em>pvResult</em> será interpretado como um long sem assinatura. Isso retornará o tamanho da página do banco de dados em bytes.</p> | 
+| <p>JET_DbInfoSpaceAvailable</p> | <p><em>pvResult</em> será interpretado como um DWORD. Isso retorna o espaço disponível para o banco de dados em páginas.</p> | 
+| <p>JET_DbInfoSpaceOwned</p> | <p><em>pvResult</em> será interpretado como um DWORD. Isso retorna o espaço de propriedade do banco de dados em páginas.</p> | 
+| <p>JET_DbInfoTransactions</p> | <p><em>pvResult</em> será interpretado como um long. Isso retornará um maior que o nível máximo ao qual as transações podem ser aninhadas. Se <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a> for chamado (de forma aninhada, ou seja, na mesma sessão, sem uma confirmação ou reação) tantas vezes quanto esse valor, na última chamada JET_errTransTooDeep será retornado de <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a>. Observe que o valor Windows 2000, Windows XP e Windows Server 2003 é 7.</p> | 
+| <p>JET_DbInfoVersion</p> | <p><em>pvResult</em> será interpretado como um long. Isso retorna a versão principal nativa do mecanismo de banco de dados. Esse valor é 0x620 para Windows 2000, Windows XP e Windows Server 2003.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBufferTooSmall</p></td>
-<td><p>O tamanho do buffer fornecido em <em>cbMax</em> era muito pequeno (ou não está correto) para manter as informações desejadas.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFeatureNotAvailable</p></td>
-<td><p>O <em>InfoLevel</em> solicitado foi JET_DbInfoIsam. Isso não tem suporte.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidBufferSize</p></td>
-<td><p>O tamanho do buffer fornecido em <em>cbMax</em> era muito pequeno (ou não está correto) para manter as informações desejadas.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Esse erro será retornado por <strong>JetGetDatabaseInfo</strong> quando o <a href="gg269248(v=exchg.10).md">JET_DBID</a> fornecido não for um banco de dados (anexado) válido. Esse erro será retornado por <a href="gg269239(v=exchg.10).md">JetGetDatabaseFileInfo</a> e <strong>JetGetDatabaseInfo</strong> quando um <em>InfoLevel</em> solicitado não for suportado por essa versão da função.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Em caso de sucesso, os dados solicitados serão retornados no buffer de saída.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBufferTooSmall</p> | <p>O tamanho do buffer determinado em <em>cbMax</em> era muito pequeno (ou não correto) para manter as informações desejadas.</p> | 
+| <p>JET_errFeatureNotAvailable</p> | <p>O <em>InfoLevel</em> solicitado foi JET_DbInfoIsam. Isso não tem suporte.</p> | 
+| <p>JET_errInvalidBufferSize</p> | <p>O tamanho do buffer determinado em <em>cbMax</em> era muito pequeno (ou não correto) para manter as informações desejadas.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Esse erro será retornado por <strong>JetGetDatabaseInfo</strong> quando o <a href="gg269248(v=exchg.10).md">JET_DBID</a> fornecido não for um banco de dados válido (anexado). Esse erro será retornado por <a href="gg269239(v=exchg.10).md">JetGetDatabaseFileInfo</a> e <strong>JetGetDatabaseInfo</strong> quando um <em>InfoLevel</em> solicitado não for suportado por essa versão da função.</p> | 
+
+
+
+Em caso de êxito, os dados solicitados serão retornados no buffer de saída.
 
 Em caso de falha, o buffer de saída estará em um estado indefinido.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetGetDatabaseInfoW</strong> (Unicode) e <strong>JetGetDatabaseInfoA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetGetDatabaseInfoW</strong> (Unicode) e <strong>JetGetDatabaseInfoA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

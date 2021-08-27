@@ -1,51 +1,30 @@
 ---
-description: Configurando uma fonte de mídia
+description: Configurando uma origem de mídia
 ms.assetid: 1378bbe6-be94-4be1-b428-5ec58dabd1fa
-title: Configurando uma fonte de mídia
+title: Configurando uma origem de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69e6737d643db2ee473214586cd7ded4f9596133dac5f4fb177df4d7b6b19757
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 809d215cf282dba1e65c21316fafda47684a2151
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117880587"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481702"
 ---
-# <a name="configuring-a-media-source"></a>Configurando uma fonte de mídia
+# <a name="configuring-a-media-source"></a>Configurando uma origem de mídia
 
-Ao usar o Resolvedor [de Origem](source-resolver.md) para criar uma fonte de mídia, você pode especificar um armazenamento de propriedades que contém propriedades de configuração. Essas propriedades serão usadas para inicializar a fonte de mídia. O conjunto de propriedades com suporte depende da implementação da fonte de mídia. Nem todas as fontes de mídia definem propriedades de configuração.
+Ao usar o [resolvedor de origem](source-resolver.md) para criar uma fonte de mídia, você pode especificar um repositório de propriedades que contém propriedades de configuração. Essas propriedades serão usadas para inicializar a origem da mídia. O conjunto de propriedades com suporte depende da implementação da origem da mídia. Nem toda fonte de mídia define as propriedades de configuração.
 
-A tabela a seguir lista as propriedades de configuração para as fontes de mídia fornecidas no Media Foundation. Fontes de mídia de terceiros podem definir suas próprias propriedades personalizadas.
+A tabela a seguir lista as propriedades de configuração para as fontes de mídia fornecidas no Media Foundation. As fontes de mídia de terceiros podem definir suas próprias propriedades personalizadas.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fonte de mídia</th>
-<th>Propriedades</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Origem da rede</td>
-<td>Consulte <a href="network-source-features.md">Recursos de origem de rede</a>.</td>
-</tr>
-<tr class="even">
-<td>Fonte de mídia do ASF</td>
-<td><ul>
-<li><a href="mfpkey-asfmediasource-approxseek-property.md"><strong>MFPKEY_ASFMediaSource_ApproxSeek</strong></a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseekifnoindex.md">MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex</a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseek-max-count.md">MFPKEY_ASFMediaSource_IterativeSeek_Max_Count</a></li>
-<li><a href="mfpkey-asfmediasource-iterativeseek-tolerance-in-millisecond.md">MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Origem da mídia | Propriedades | 
+|--------------|------------|
+| Origem da rede | Consulte <a href="network-source-features.md">recursos de origem da rede</a>. | 
+| Fonte de mídia ASF | <ul><li><a href="mfpkey-asfmediasource-approxseek-property.md"><strong>MFPKEY_ASFMediaSource_ApproxSeek</strong></a></li><li><a href="mfpkey-asfmediasource-iterativeseekifnoindex.md">MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex</a></li><li><a href="mfpkey-asfmediasource-iterativeseek-max-count.md">MFPKEY_ASFMediaSource_IterativeSeek_Max_Count</a></li><li><a href="mfpkey-asfmediasource-iterativeseek-tolerance-in-millisecond.md">MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond</a></li></ul> | 
+
 
 
 
@@ -53,9 +32,9 @@ A tabela a seguir lista as propriedades de configuração para as fontes de míd
 
 Para configurar uma origem, execute as etapas a seguir.
 
-1.  Chame **PSCreateMemoryPropertyStore** para criar um novo repositório de propriedades. Essa função retorna um **ponteiro IPropertyStore.**
-2.  Chame **IPropertyStore::SetValue** para definir uma ou mais propriedades de configuração.
-3.  Chame uma das funções de criação do resolvedor de origem, como [**IMFSourceResolver::CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl)e passe o ponteiro **IPropertyStore** no parâmetro *pProps.*
+1.  Chame **PSCreateMemoryPropertyStore** para criar um novo repositório de propriedades. Essa função retorna um ponteiro **IPropertyStore** .
+2.  Chame **IPropertyStore:: SetValue** para definir uma ou mais propriedades de configuração.
+3.  Chame uma das funções de criação do resolvedor de origem, como [**IMFSourceResolver:: CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl), e passe o ponteiro **IPropertyStore** no parâmetro *pProps* .
 
 
 ```C++
@@ -105,15 +84,15 @@ HRESULT CreateMediaSource(
 
 
 
-O resolvedor de origem passa **o ponteiro IPropertyStore** diretamente para o manipulador de esquema ou manipulador de fluxo de byte que cria a origem. O resolvedor de origem não tenta validar as propriedades.
+O resolvedor de origem passa o ponteiro **IPropertyStore** diretamente para o manipulador de esquema ou o manipulador de fluxo de bytes que cria a origem. O resolvedor de origem não faz nenhuma tentativa de validar as propriedades.
 
-Em geral, essas propriedades são usadas para configurações avançadas. Se você não fornecer um armazenamento de propriedades, a fonte de mídia ainda deverá funcionar corretamente com as configurações padrão.
+Em geral, essas propriedades são usadas para configurações avançadas. Se você não fornecer um repositório de propriedades, a origem da mídia ainda deverá funcionar corretamente com as configurações padrão.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Resolvedor de Origem](source-resolver.md)
+[Resolvedor de origem](source-resolver.md)
 </dt> </dl>
 
  

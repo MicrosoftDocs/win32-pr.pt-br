@@ -1,10 +1,10 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ Nome de usuário (v4)
+description: ModemDMConfigProfile... \/ \/ UserName (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_UserName
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Nome de usuário (v4)
+title: UserName (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 1b43a275-cdbd-44e6-adc6-121aa935447e
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 98e5c425ee7982bdfddfeb31ec1e950a0dc27d61
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: c6721b95d3375cb9f48744b2f7d28afd92a5024e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388818"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472132"
 ---
-# <a name="span-idwwan_profile_v4element_1_usernamespanmodemdmconfigprofileusername-v4"></a><span id="WWAN_profile_v4.element_1_UserName"></span>ModemDMConfigProfile \/ ... \/ Nome de usuário (v4)
+# <a name="span-idwwan_profile_v4element_1_usernamespanmodemdmconfigprofileusername-v4"></a><span id="WWAN_profile_v4.element_1_UserName"></span>ModemDMConfigProfile... \/ \/ UserName (v4)
 
 O nome de usuário a ser usado para logon.
 
-Para obter mais detalhes, consulte a documentação do elemento de [**nome de usuário**](./schema-username-userlogoncred-element.md) v1.
+Para obter mais detalhes, consulte a documentação do elemento [**UserName**](./schema-username-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -63,41 +63,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenciais de logon para uma conexão.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-1-userlogoncred.md">UserLogonCred</a> | <p>Credenciais de logon para uma conexão.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

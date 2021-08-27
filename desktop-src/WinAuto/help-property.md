@@ -4,12 +4,12 @@ description: A propriedade Help fornece informações que dizem ao usuário sobr
 ms.assetid: 3df0cc01-cc99-42a1-9d56-591e6e00e53d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b240475d4583826e08fd6ee43b5839bdfb451d4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5e6f8b226c483e3a3d68f878fccb940fc1a9f69f18b6fde62eed4b5a7a8ea9b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122186"
 ---
 # <a name="help-property"></a>Propriedade da ajuda
 
@@ -25,9 +25,9 @@ O texto da propriedade da **ajuda** não precisa ser exclusivo na interface do u
 
 Os servidores não oferecerão suporte à propriedade de **ajuda** se outras propriedades fornecerem informações suficientes sobre a finalidade do objeto e as ações que o objeto executa. Os objetos acessíveis que expõem os controles fornecidos pelo sistema não oferecem suporte à propriedade da **ajuda** .
 
- 
+ 
 
- 
+ 
 
 
 

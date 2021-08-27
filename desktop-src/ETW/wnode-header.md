@@ -1,7 +1,7 @@
 ---
 description: A estrutura DE \_ HEADER WNODE é um membro da estrutura EVENT \_ TRACE \_ PROPERTIES.
 ms.assetid: 862a8f46-a326-48c6-92b7-8bb667837bb7
-title: WNODE_HEADER (Wmistr.h)
+title: WNODE_HEADER estrutura (Wmistr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wmistr.h
-ms.openlocfilehash: e8ad8bd5e1fd4917fa031e7553ed0e7e460244b8ab7c7da347a62d7430036cc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93cecb900b0c62084a3b5ea4e4a7789575c20c27
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015234"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480682"
 ---
 # <a name="wnode_header-structure"></a>Estrutura de \_ HEADER WNODE
 
@@ -137,37 +137,13 @@ Você pode especificar um dos valores a seguir.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt>1</dt> </dl></td>
-<td>QPC (contador de desempenho de consulta). O contador QPC fornece um carimbo de data/hora de alta resolução que não é afetado por ajustes no relógio do sistema. O carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API QueryPerformanceCounter. Para obter mais informações sobre as características desse carimbo de data/hora, consulte <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">Adquirindo carimbos de data/hora de alta resolução.</a><br/> Você deverá usar essa resolução se tiver altas taxas de eventos ou se o consumidor mesclar eventos de buffers diferentes. Nesses casos, a precisão e a estabilidade do carimbo de data/hora QPC permitem uma melhor precisão na ordenação dos eventos de buffers diferentes. No entanto, o carimbo de data/hora QPC não refletirá as atualizações no relógio do sistema, por exemplo, se o relógio do sistema for ajustado para frente devido à sincronização com um servidor NTP enquanto o rastreamento estiver em andamento, os carimbos de data/hora QPC no rastreamento continuarão a refletir o tempo como se nenhuma atualização tivesse ocorrido.<br/> Para determinar a resolução, use <strong>o membro PerfFreq</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br/> Para converter o carimbo de data/hora de um evento em unidades de 100 ns, use a seguinte fórmula de conversão: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 10000000.0 / logfileHeader.PerfFreq.QuadPart<br/> Observe que, em computadores mais antigos, o carimbo de data/hora pode não ser preciso porque o contador às vezes ignora o encaminhamento devido a erros de hardware.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt>2</dt> </dl></td>
-<td>Hora do sistema. A hora do sistema fornece um carimbo de data/hora que acompanha as alterações no relógio do sistema, por exemplo, se o relógio do sistema for ajustado para frente devido à sincronização com um servidor NTP enquanto o rastreamento estiver em andamento, os carimbos de data/hora do sistema no rastreamento também avançarão para corresponder à nova configuração do relógio do sistema. <br/>
-<ul>
-<li>Em sistemas anteriores Windows 10, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimeAsFileTime.</li>
-<li>No Windows 10 ou posterior, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimePreciseAsFileTime.</li>
-</ul>
-Antes Windows 10, a resolução desse carimbo de data/hora era a resolução de um tique do relógio do sistema, conforme indicado pelo membro TimerResolution do TRACE_LOGFILE_HEADER. Começando com Windows 10, a resolução desse carimbo de data/hora é a resolução do contador de desempenho, conforme indicado pelo membro PerfFreq do TRACE_LOGFILE_HEADER.<br/> Para converter o carimbo de data/hora de um evento em unidades de 100 ns, use a seguinte fórmula de conversão: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart<br/> Observe que quando os eventos são capturados em um sistema que executa um sistema operacional antes do Windows 10, se o volume de eventos for alto, a resolução do tempo do sistema poderá não ser suficiente para determinar a sequência de eventos. Nesse caso, um conjunto de eventos terá o mesmo carimbo de data/hora, mas a ordem na qual o ETW entrega os eventos pode não estar correta. Começando com Windows 10, o carimbo de data/hora é capturado com precisão adicional, embora algumas instabilidades ainda possam ocorrer em casos em que o relógio do sistema foi ajustado enquanto o rastreamento estava sendo capturado.<br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt>3</dt> </dl></td>
-<td>Contador de ciclo de CPU. O contador de CPU fornece o carimbo de data/hora de resolução mais alta e é o menos intensivo de recursos a ser recuperado. No entanto, o contador de CPU não é confiável e não deve ser usado em produção. Por exemplo, em alguns computadores, os temporizadores alterarão a frequência devido a alterações térmicas e de energia, além de parar em alguns estados.<br/> Para determinar a resolução, use o <strong>membro CpuSpeedInMHz</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br/> Se o hardware não dá suporte a esse tipo de relógio, o ETW usa a hora do sistema.<br/> <strong>Windows Server 2003, Windows XP com SP1 e Windows XP:</strong> Não há suporte para esse valor, ele foi introduzido no Windows Server 2003 com SP1 e Windows XP com SP2.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| <dl><dt>1</dt></dl> | QPC (contador de desempenho de consulta). O contador QPC fornece um carimbo de data/hora de alta resolução que não é afetado por ajustes no relógio do sistema. O carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API QueryPerformanceCounter. Para obter mais informações sobre as características desse carimbo de data/hora, consulte <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">Adquirindo carimbos de data/hora de alta resolução.</a><br /> Você deverá usar essa resolução se tiver altas taxas de eventos ou se o consumidor mesclar eventos de buffers diferentes. Nesses casos, a precisão e a estabilidade do carimbo de data/hora QPC permitem uma melhor precisão na ordenação dos eventos de buffers diferentes. No entanto, o carimbo de data/hora QPC não refletirá as atualizações no relógio do sistema, por exemplo, se o relógio do sistema for ajustado para frente devido à sincronização com um servidor NTP enquanto o rastreamento estiver em andamento, os carimbos de data/hora QPC no rastreamento continuarão a refletir o tempo como se nenhuma atualização tivesse ocorrido.<br /> Para determinar a resolução, use <strong>o membro PerfFreq</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br /> Para converter o carimbo de data/hora de um evento em unidades de 100 ns, use a seguinte fórmula de conversão: <br /> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 10000000.0 / logfileHeader.PerfFreq.QuadPart<br /> Observe que, em computadores mais antigos, o carimbo de data/hora pode não ser preciso porque o contador às vezes ignora o encaminhamento devido a erros de hardware.<br /> | 
+| <dl><dt>2</dt></dl> | Hora do sistema. A hora do sistema fornece um carimbo de data/hora que acompanha as alterações no relógio do sistema, por exemplo, se o relógio do sistema for ajustado para frente devido à sincronização com um servidor NTP enquanto o rastreamento estiver em andamento, os carimbos de data/hora do sistema no rastreamento também avançarão para corresponder à nova configuração do relógio do sistema. <br /><ul><li>Em sistemas anteriores Windows 10, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimeAsFileTime.</li><li>No Windows 10 ou posterior, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimePreciseAsFileTime.</li></ul>Antes Windows 10, a resolução desse carimbo de data/hora era a resolução de um tique do relógio do sistema, conforme indicado pelo membro TimerResolution do TRACE_LOGFILE_HEADER. Começando com Windows 10, a resolução desse carimbo de data/hora é a resolução do contador de desempenho, conforme indicado pelo membro PerfFreq do TRACE_LOGFILE_HEADER.<br /> Para converter o carimbo de data/hora de um evento em unidades de 100 ns, use a seguinte fórmula de conversão: <br /> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart<br /> Observe que quando os eventos são capturados em um sistema que executa um sistema operacional antes do Windows 10, se o volume de eventos for alto, a resolução do tempo do sistema poderá não ser suficiente para determinar a sequência de eventos. Nesse caso, um conjunto de eventos terá o mesmo carimbo de data/hora, mas a ordem na qual o ETW entrega os eventos pode não estar correta. Começando com Windows 10, o carimbo de data/hora é capturado com precisão adicional, embora algumas instabilidades ainda possam ocorrer em casos em que o relógio do sistema foi ajustado enquanto o rastreamento estava sendo capturado.<br /> | 
+| <dl><dt>3</dt></dl> | Contador de ciclo de CPU. O contador de CPU fornece o carimbo de data/hora de resolução mais alta e é o menos intensivo de recursos a ser recuperado. No entanto, o contador de CPU não é confiável e não deve ser usado em produção. Por exemplo, em alguns computadores, os temporizadores alterarão a frequência devido a alterações térmicas e de energia, além de parar em alguns estados.<br /> Para determinar a resolução, use o <strong>membro CpuSpeedInMHz</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br /> Se o hardware não dá suporte a esse tipo de relógio, o ETW usa a hora do sistema.<br /><strong>Windows Server 2003, Windows XP com SP1 e Windows XP:</strong> Esse valor não tem suporte, ele foi introduzido no Windows Server 2003 com SP1 e Windows XP com SP2.<br /> | 
+
 
 
 
@@ -205,9 +181,9 @@ c. Se ReservedFlags == 3 (contador de ciclo de CPU): double timeStampScale = 10.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                   |
-| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                         |
-| Cabeçalho<br/>                   | <dl> <dt>Wmistr. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                         |
+| Cabeçalho<br/>                   | <dl> <dt>Wmistr.h</dt> </dl> |
 
 
 
@@ -218,13 +194,13 @@ c. Se ReservedFlags == 3 (contador de ciclo de CPU): double timeStampScale = 10.
 [*ControlCallback*](/windows/win32/api/evntrace/nc-evntrace-wmidprequest)
 </dt> <dt>
 
-[**\_Propriedades de rastreamento de eventos \_**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)
+[**PROPRIEDADES \_ DE RASTREAMENTO DE \_ EVENTO**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)
 </dt> <dt>
 
 [**GetTraceLoggerHandle**](/windows/win32/api/evntrace/nf-evntrace-gettraceloggerhandle)
 </dt> <dt>
 
-[**\_inteiro grande**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)
+[**INTEIRO \_ GRANDE**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)
 </dt> </dl>
 
  

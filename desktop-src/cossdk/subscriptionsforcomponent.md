@@ -1,5 +1,5 @@
 ---
-description: Contém um objeto para cada assinatura para a coleção de componentes pai.
+description: Contém um objeto para cada assinatura da coleção pai Components.
 ms.assetid: ec93d500-32bf-4e67-9eda-c1fe0349faa2
 title: Coleção SubscriptionsForComponent
 ms.topic: reference
@@ -12,32 +12,32 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: be18f77c4946a5d8a79adc09e97bc9ab35782fdb837f15b82794cbf5f624d59d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c07162fc20788545b38b8fae4be245b9a1ebbff
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546158"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886195"
 ---
 # <a name="subscriptionsforcomponent-collection"></a>Coleção SubscriptionsForComponent
 
-Contém um objeto para cada assinatura para a coleção de [**componentes**](components.md) pai.
+Contém um objeto para cada assinatura da coleção pai [**Components.**](components.md)
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **SubscriptionsForComponent** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção SubscriptionsForComponent** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
--   [**Editorproperties**](publisherproperties.md)
+-   [**Propertyinfo**](propertyinfo.md)
+-   [**PublisherProperties**](publisherproperties.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
--   [**Assinantes**](subscriberproperties.md)
+-   [**SubscriberProperties**](subscriberproperties.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
@@ -45,26 +45,26 @@ Você pode navegar até essa coleção das seguintes coleções:
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Descrição](#description)
 -   [Habilitada](#enabled)
 -   [EventClassPartitionID](#eventclasspartitionid)
 -   [EventCLSID](#eventclsid)
--   [FilterCriteria](#filtercriteria)
+-   [Filtercriteria](#filtercriteria)
 -   [ID](#subscriptionsforcomponent-collection)
--   [InterfaceID](#interfaceid)
+-   [Interfaceid](#interfaceid)
 -   [MachineName](#machinename)
 -   [MethodName](#methodname)
 -   [Nome](#machinename)
--   [Peruser](#peruser)
+-   [PerUser](#peruser)
 -   [PublisherID](#publisherid)
 -   [Em fila](#queued)
 -   [SubscriberMoniker](#subscribermoniker)
 -   [SubscriberPartitionID](#subscriberpartitionid)
 -   [UserName](#username)
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 
 
@@ -88,8 +88,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|----------------------------------------------------------|
 | Descrição    | Indica se a assinatura está habilitada no momento. |
 | Access         | ReadWrite                                                |
-| Tipo           | Bool                                                     |
-| Padrão        | Verdadeiro                                                     |
+| Type           | Bool                                                     |
+| Padrão        | True                                                     |
 | Sistema mínimo | Windows 2000                                             |
 
 
@@ -102,7 +102,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Ao assinar uma classe de evento, usada para representar o GUID da ID de partição que contém a classe de evento. Ao assinar as classes de evento, o Assinante tem a opção de assinar uma classe de evento na mesma partição ou em outra. |
+| Descrição    | Ao assinar uma classe de evento, usado para representar o GUID da ID de partição que contém a classe de evento. Ao assinar classes de evento, o assinante tem a opção de assinar uma classe de evento na mesma partição ou em uma partição diferente. |
 | Access         | ReadWrite                                                                                                                                                                                                                                          |
 | Type           | String                                                                                                                                                                                                                                             |
 | Padrão        | NULO                                                                                                                                                                                                                                               |
@@ -128,13 +128,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="filtercriteria"></a>FilterCriteria
+### <a name="filtercriteria"></a>Filtercriteria
 
 
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Uma cadeia de caracteres que indica os critérios de filtro. Pode ser um CLSID para uma classe [**PublisherFilter**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) . |
+| Descrição    | Uma cadeia de caracteres que indica os critérios de filtro. Pode ser um CLSID para uma [**classe PublisherFilter.**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) |
 | Access         | ReadWrite                                                                                                        |
 | Type           | String                                                                                                           |
 | Padrão        | N/D                                                                                                              |
@@ -153,7 +153,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Descrição    | Identificador da assinatura. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
 | Access         | WriteOnce                                                                                                                                                        |
 | Type           | String                                                                                                                                                           |
-| Padrão        | <Generated>                                                                                                                                                |
+| Padrão        | &lt;Gerado&gt;                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                     |
 
 
@@ -208,7 +208,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="name"></a>Name
+### <a name="name"></a>Nome
 
 
 
@@ -232,7 +232,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|-----------------------------------------------------------------------------|
 | Descrição    | Indica se a assinatura se aplica somente a um determinado usuário, UserName. |
 | Access         | ReadWrite                                                                   |
-| Tipo           | Bool                                                                        |
+| Type           | Bool                                                                        |
 | Padrão        | Falso                                                                       |
 | Sistema mínimo | Windows 2000                                                                |
 
@@ -264,7 +264,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|-----------------------------------------------|
 | Descrição    | Indica se a assinatura está na fila. |
 | Access         | ReadWrite                                     |
-| Tipo           | Bool                                          |
+| Type           | Bool                                          |
 | Padrão        | Falso                                         |
 | Sistema mínimo | Windows 2000                                  |
 
@@ -278,7 +278,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------|
-| Descrição    | Um moniker para um assinante marcado como enfileirado. Um valor padrão é gerado quando a fila é definida inicialmente como true. |
+| Descrição    | Um moniker para um assinante marcado como Na fila. Um valor padrão é gerado quando Na fila é inicialmente definido como True. |
 | Access         | ReadWrite                                                                                                       |
 | Type           | String                                                                                                          |
 | Padrão        | N/D                                                                                                             |
@@ -294,10 +294,10 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Ao assinar uma classe de evento na mesma partição, usada para representar o GUID da ID de partição do Assinante. Ao assinar as classes de evento, o Assinante tem a opção de assinar uma classe de evento na mesma partição ou em outra. |
+| Descrição    | Ao assinar uma classe de evento na mesma partição, usado para representar o GUID da ID de partição do assinante. Ao assinar classes de evento, o assinante tem a opção de assinar uma classe de evento na mesma partição ou em uma partição diferente. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                       |
 | Type           | String                                                                                                                                                                                                                                                          |
-| Padrão        | <Generated>                                                                                                                                                                                                                                               |
+| Padrão        | &lt;Gerado&gt;                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                                                                                                             |
 
 
@@ -310,7 +310,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------|
-| Descrição    | O nome do usuário ao qual a assinatura se aplica, quando o Peruser é verdadeiro. |
+| Descrição    | O nome do usuário ao que a assinatura se aplica, quando PerUser é True. |
 | Access         | ReadWrite                                                                |
 | Type           | String                                                                   |
 | Padrão        | N/D                                                                      |

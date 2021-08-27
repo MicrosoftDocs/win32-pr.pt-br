@@ -1,7 +1,7 @@
 ---
 description: Indica se as mensagens de contexto devem ser enviadas para o procedimento de janela da janela de propriedade.
 ms.assetid: 57ecf10a-8a02-4353-b916-9080ebc0b270
-title: Enumeração de CONTEXT_ENABLE_TYPE
+title: CONTEXT_ENABLE_TYPE enumeração
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cd741eeff1cc3e2ce055a84dd646c3aa2563f217
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94bffba211f75416ccae5e9a55342441b7b11b41b1a9f1f4b085ec190f991645
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110966"
 ---
-# <a name="context_enable_type-enumeration"></a>\_Enumeração de tipo de habilitação de contexto \_
+# <a name="context_enable_type-enumeration"></a>\_ENUMERAÇÃO CONTEXT ENABLE \_ TYPE
 
 Indica se as mensagens de contexto devem ser enviadas para o procedimento de janela da janela de propriedade.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -39,17 +39,17 @@ typedef enum _CONTEXT_ENABLE_TYPE {
 
 <dl> <dt>
 
-<span id="CONTEXT_ENABLE"></span><span id="context_enable"></span>**\_habilitação de contexto**
+<span id="CONTEXT_ENABLE"></span><span id="context_enable"></span>**CONTEXT \_ ENABLE**
 </dt> <dd>
 
-O contexto do Tablet deve ser habilitado, o que resulta em mensagens de contexto sendo enviadas para o procedimento de janela da janela de propriedade.
+O contexto do tablet deve ser habilitado, resultando em mensagens de contexto enviadas para o procedimento de janela da janela de propriedade.
 
 </dd> <dt>
 
-<span id="CONTEXT_DISABLE"></span><span id="context_disable"></span>**\_desabilitar contexto**
+<span id="CONTEXT_DISABLE"></span><span id="context_disable"></span>**CONTEXT \_ DISABLE**
 </dt> <dd>
 
-O contexto do Tablet deve ser desabilitado, impedindo que outras mensagens de contexto sejam enviadas para o procedimento de janela da janela de propriedade ou coletor de eventos.
+O contexto do tablet deve ser desabilitado, impedindo que outras mensagens de contexto sejam enviadas para o procedimento de janela ou o sink de eventos da janela de propriedade.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ O contexto do Tablet deve ser desabilitado, impedindo que outras mensagens de co
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 
@@ -68,7 +68,7 @@ O contexto do Tablet deve ser desabilitado, impedindo que outras mensagens de co
 
 <dl> <dt>
 
-[**Método ITablet:: CreateContext**](itablet-createcontext.md)
+[**Método ITablet::CreateContext**](itablet-createcontext.md)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 739d281f11e5ef241a9e6e0fd46699d80f5f3f3bb3de6199f014f5450f3a27da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9953bc1119d7e203936ca7e78048a4083a996ec2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117916514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881049"
 ---
 # <a name="errorinfo-collection"></a>Coleção ErrorInfo
 
@@ -89,7 +89,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Uma especificação precisa do item que tem um erro, como um nome de propriedade. Se ocorrerem vários erros ou em contextos nos quais isso não se aplica, MinorRef será <Invalid> . |
+| Descrição    | Uma especificação precisa do item que tem um erro, como um nome de propriedade. Se ocorrerem vários erros ou em contextos nos quais isso não se aplica, MinorRef será &lt; &gt; Inválido. |
 | Access         | ReadOnly                                                                                                                                                                          |
 | Type           | String                                                                                                                                                                            |
 | Padrão        | Nenhum                                                                                                                                                                              |
@@ -105,7 +105,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome do objeto ou arquivo que tem um erro. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
+| Descrição    | O nome do objeto ou arquivo que tem um erro. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                 |
 | Type           | String                                                                                                                                                                                                                   |
 | Padrão        | Nenhum                                                                                                                                                                                                                     |

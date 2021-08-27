@@ -4,12 +4,12 @@ ms.assetid: a0ede1d9-2e13-4d5e-8ccd-9e0c0217cac7
 title: Mensagem de investigação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abaf4b397abec699dd0a116fe5cddd97578543f917a7994287f5000e17079def
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58f186de4f68faceca096ddaa231b57d1112bc1e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130628"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879850"
 ---
 # <a name="probe-message"></a>Mensagem de investigação
 
@@ -62,35 +62,35 @@ Uma mensagem De investigação tem os seguintes pontos de foco.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Ponto de foco</th>
 <th>XML</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Investigação</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Probe
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>A ação SOAP de investigação identifica a mensagem como uma mensagem de investigação.</td>
 </tr>
 <tr class="even">
 <td>MessageID</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:MessageID>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:MessageID&gt;
     urn:uuid:29cf10da-5c41-4d55-b184-5ee15e38ce23
-</wsa:MessageID></code></pre></td>
+&lt;/wsa:MessageID&gt;</code></pre></td>
 <td>Contém o identificador de mensagem, que é referenciado pelo elemento RelatesTo em uma <a href="probematches-message.md">mensagem ProbeMatches.</a></td>
 </tr>
 <tr class="odd">
 <td>Tipos</td>
-<td><pre class="syntax" data-space="preserve"><code><wsd:Types>wsdp:Device</wsd:Types></code></pre></td>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsd:Types&gt;wsdp:Device</wsd:Types></code></pre></td>
 <td>Contém os WS-Discovery para os quais o cliente está pesquisando. Esse elemento não deve estar vazio.</td>
 </tr>
 </tbody>

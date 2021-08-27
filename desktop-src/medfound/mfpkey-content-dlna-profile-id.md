@@ -4,12 +4,12 @@ ms.assetid: 940ed0df-0912-4c13-a490-0c6be82c9743
 title: Propriedade MFPKEY_Content_DLNA_Profile_ID (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d07cf3403f8c7694fe8153fb81d440c0a7a6ee3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cca2dfad14303a6dd493f467ebee84518e907261d8fa3f4c05060200b6b5ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113366"
 ---
 # <a name="mfpkey_content_dlna_profile_id-property"></a>\_ \_ \_ Propriedade ID do perfil \_ DLNA do conteúdo do MFPKEY
 
@@ -23,11 +23,11 @@ Tipo PROPVARIANT (VT)
 
 Membro PROPVARIANT
 
-**WCHAR \_ t \** _
+**WCHAR \_ t\***
 
 LPWStr do VT \_
 
-_ *pwszVal**
+**pwszVal**
 
 
 
@@ -43,9 +43,9 @@ Os identificadores de perfil são descritos nas [diretrizes de interoperabilidad
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                     |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

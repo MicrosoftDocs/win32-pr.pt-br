@@ -1,18 +1,18 @@
 ---
-title: Configurando e populando heaps de descritor
+title: Como configurar e preencher heaps de descritores
 description: Os tipos de heap de descritores que podem ser definidos em uma lista de comandos são aqueles que contêm descritores para os quais as tabelas de descrição podem ser usadas (no máximo uma de cada vez).
 ms.assetid: F0FF3D7C-1DAC-48C3-B47D-0378BE369F37
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e3a1b6c4863827e1d8e1bdfb33a0a64420211d
-ms.sourcegitcommit: 584b35959515bc5e4a104e8cf5270513f146f590
+ms.openlocfilehash: b3e2fcb7143b097709cb7a3c98669a7d20331bfa9553f4eac5f2cf45a1a90797
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "104548237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119446"
 ---
-# <a name="setting-and-populating-descriptor-heaps"></a>Configurando e populando heaps de descritor
+# <a name="setting-and-populating-descriptor-heaps"></a>Como configurar e preencher heaps de descritores
 
 Os tipos de heap de descritores que podem ser definidos em uma lista de comandos são aqueles que contêm descritores para os quais as tabelas de descrição podem ser usadas (no máximo uma de cada vez).
 
@@ -54,9 +54,9 @@ Se o aplicativo configurar um heap de descritor para ser visível da CPU, a CPU 
 [Heaps de descritores](descriptor-heaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

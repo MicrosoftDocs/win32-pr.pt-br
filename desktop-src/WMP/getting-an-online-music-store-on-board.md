@@ -1,51 +1,30 @@
 ---
-title: Como obter uma loja de música online no quadro
-description: Como obter uma loja de música online no quadro
+title: Como obter uma loja de música online no painel
+description: Como obter uma loja de música online no painel
 ms.assetid: f7eff687-9832-41bc-8f3d-a2ab11917eb0
 keywords:
-- Windows Media Player Lojas Online
+- Windows Media Player Lojas online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08e618f1eddca3389801d2b6c2d5de1e7a6ee67f7aef593478f4999f69bbd148
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fcff5aeed04ff2e60b03e7b546de23f1d0d747b9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119390876"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477202"
 ---
-# <a name="getting-an-online-music-store-on-board"></a>Como obter uma loja de música online no quadro
+# <a name="getting-an-online-music-store-on-board"></a>Como obter uma loja de música online no painel
 
-Este tópico descreve o processo de colocar um armazenamento de mídia digital online no quadro para Windows Media Player. O tempo necessário para o processo de entrada do início ao fim é de aproximadamente 45 a 60 DIAS ÚTEIS. Os dois estágios do processo de entrada são descritos na tabela a seguir.
+Este tópico descreve o processo de colocar uma loja de mídia digital online no quadro para Windows Media Player. O tempo necessário para o processo de integração do início ao fim é de aproximadamente 45-60 dias úteis. Os dois estágios do processo de integração são descritos na tabela a seguir.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Estágio</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pendente</td>
-<td><ul>
-<li>Você envia à Microsoft as informações de contato necessárias, as informações de inicialização e as contas de validação.</li>
-<li>A Microsoft envia uma chave de teste e uma chave de produção.</li>
-<li>Você testa sua loja online com Windows Media Player.</li>
-<li>Você envia contratos e contratos assinados para a Microsoft.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Validação</td>
-<td>A Microsoft valida sua loja online.</td>
-</tr>
-</tbody>
-</table>
+
+| Estágio | Descrição | 
+|-------|-------------|
+| Pendente | <ul><li>Você envia à Microsoft as informações de contato necessárias, as informações de inicialização e as contas de validação.</li><li>A Microsoft envia uma chave de teste e uma chave de produção.</li><li>Você testa sua loja online com Windows Media Player.</li><li>Você envia contratos assinados e contratos à Microsoft.</li></ul> | 
+| Validação | A Microsoft valida sua loja online. | 
+
 
 
 
@@ -55,46 +34,46 @@ Depois de concluir os estágios pendentes e de validação, a Microsoft publicar
 
 ## <a name="pending-stage"></a>Estágio pendente
 
-O estágio pendente oferece a oportunidade de testar sua loja online Windows Media Player. Também é um bom momento para garantir que todos os contratos e contratos necessários sejam assinados. Para começar, envie à Microsoft as seguintes informações, conforme definido posteriormente neste tópico:
+O estágio pendente oferece a oportunidade de testar sua loja online no Windows Media Player. Também é um bom momento para garantir que todos os contratos e acordos necessários sejam assinados. Para começar, envie a Microsoft as seguintes informações, conforme definido mais adiante neste tópico:
 
 -   Informações de contato
 -   Informações de inicialização
 -   Contas de validação
 
-Após o recebimento de suas informações de contato e inicialização, a Microsoft enviará uma chave de teste e uma chave de produção. Depois de adicionar sua chave de teste ao Registro e reiniciar o Player, sua loja online aparecerá no Player e você poderá testá-la. Para obter informações sobre onde colocar sua chave de teste no Registro, consulte Chaves e entradas do Registro para um Tipo [1 Online Store](registry-keys-and-entries-for-a-type-1-online-store.md) ou Chaves e Entradas do Registro para um Tipo [2 Online Store.](registry-keys-and-entries-for-a-type-2-online-store.md)
+Após o recebimento de suas informações de contato e de inicialização, a Microsoft enviará uma chave de teste e uma chave de produção. Depois de ter adicionado a chave de teste ao registro e reiniciado o Player, sua loja online aparecerá no Player e você poderá testá-lo. Para obter informações sobre onde colocar sua chave de teste no registro, consulte [chaves e entradas do registro para uma loja online do tipo 1](registry-keys-and-entries-for-a-type-1-online-store.md) ou [chaves do registro e entradas para uma loja online do tipo 2](registry-keys-and-entries-for-a-type-2-online-store.md).
 
-Você deve testar todos os aspectos da sua loja online, incluindo sua interface do usuário e seu plug-in. Como parte do processo de teste, você deve executar os testes descritos em Testes de validação para lojas de música [online do tipo 2.](validation-tests-for-type-2-online-music-stores.md)
+Você deve testar todos os aspectos da sua loja online, incluindo sua interface do usuário e seu plug-in. Como parte do processo de teste, você deve executar os testes descritos em [testes de validação para lojas de música online do tipo 2](validation-tests-for-type-2-online-music-stores.md).
 
 > [!Note]  
-> Os armazenamentos do tipo 1 devem passar em todos os testes de validação para lojas do tipo 2, além de alguns testes adicionais específicos para a experiência de tipo 1. Para obter informações sobre testes de validação do tipo 1, entre em contato com a equipe virtual Windows Media Player Services em mpsvctm@microsoft.com .
+> Os repositórios do tipo 1 devem passar todos os testes de validação para os repositórios do tipo 2, além de alguns testes adicionais que são específicos para a experiência do tipo 1. para obter informações sobre testes de validação do tipo 1, entre em contato com a equipe Virtual dos serviços de Windows Media Player em mpsvctm@microsoft.com .
 
  
 
 ## <a name="contact-information"></a>Informações de contato
 
-A tabela a seguir mostra as informações de contato que a Microsoft requer para sua loja online. Preencha o [formulário Informações de Contato](contact-information-form-for-an-online-music-store.md) e envie-o para a equipe virtual Windows Media Player Services em mpsvctm@microsoft.com .
+A tabela a seguir mostra as informações de contato que a Microsoft exige para sua loja online. preencha o [formulário de informações de contato](contact-information-form-for-an-online-music-store.md) e envie-o para a equipe Virtual dos serviços de Windows Media Player em mpsvctm@microsoft.com .
 
 
 
 | Item                     | Descrição                                                                               |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| Nome da Loja               | O nome da marca da sua loja                                                            |
-| Nome do Provedor            | O nome da empresa de rótulo branco/provedor (se diferente)                               |
-| Localidade da Loja             | As Windows locais de usuário em que seu armazenamento deve ser exibido                                |
-| Categoria da Loja           | Música, Rádio, Filme, TV, Esportes, Notícias, Audio- Entretenimento e/ou Outros (descreva) |
-| Modelo de Compra           | Comprar, Aluguel, Assinatura e/ou Outros (descreva)                            |
-| Idioma da Loja           |                                                                                           |
-| Nome(s) de contato do armazenamento    |                                                                                           |
-| Email(s) de contato do armazenamento  |                                                                                           |
-| Conta(s) do MSFT Passport | Isso é para possíveis indicações futuras em programas beta e de desenvolvimento de parceiros.         |
-| Endereço de envio         | Sem P.O. Caixas                                                                             |
+| Nome da Loja               | O nome da marca do seu repositório                                                            |
+| Nome do Provedor            | O nome da empresa de rótulo de provedor/branco (se for diferente)                               |
+| Localidade da loja             | as Windows localidade do usuário em que sua loja deve ser exibida                                |
+| Categoria do repositório           | Música, rádio, filme, TV, esportes, notícias, entretenimento de áudio e/ou outro (descreva) |
+| Modelo de Compra           | Compra, aluguel, assinatura e/ou outro (por favor, descreva)                            |
+| Idioma da loja           |                                                                                           |
+| Armazenar nome (s) de contato    |                                                                                           |
+| Armazenar email (s) de contato  |                                                                                           |
+| Conta (s) do Passport MSFT | Isso é para possíveis indicações futuras em programas Beta e de desenvolvimento de parceiros.         |
+| Endereço de envio         | Sem pedido Nas                                                                             |
 | City                     |                                                                                           |
 | Estado                    |                                                                                           |
 | Código postal              |                                                                                           |
 | País/Região           |                                                                                           |
 | Telephone                |                                                                                           |
 | Fax                      |                                                                                           |
-| Contato da pesquisa           | Tudo bem se entrarmos em contato com você sobre sua experiência com o programa no futuro?        |
+| Contato da pesquisa           | Está tudo bem se entrarmos em contato com você sobre sua experiência com o programa no futuro?        |
 
 
 
@@ -102,38 +81,38 @@ A tabela a seguir mostra as informações de contato que a Microsoft requer para
 
 ## <a name="startup-information"></a>Informações de inicialização
 
-Para cada região geográfica que sua loja atenderá, envie à Microsoft um conjunto de informações de inicialização para seu armazenamento de teste, um conjunto de informações de inicialização para seu armazenamento de produção e um conjunto de contas de validação.
+Para cada região geográfica que seu armazenamento atenderá, envie à Microsoft um conjunto de informações de inicialização para seu repositório de teste, um conjunto de informações de inicialização para sua loja de produção e um conjunto de contas de validação.
 
-O tópico [Formulário de Informações de Inicialização](startup-information-form-for-an-online-music-store.md) para uma Loja de Música Online contém duas cópias do formulário Informações de Inicialização e uma cópia do formulário Contas de Validação. Preencha os formulários e envie-os para a equipe virtual Windows Media Player Services em mpsvctm@microsoft.com .
+O [formulário informações de inicialização do tópico para uma loja de música online](startup-information-form-for-an-online-music-store.md) contém duas cópias do formulário informações de inicialização e uma cópia do formulário contas de validação. preencha os formulários e envie-os para a equipe Virtual dos serviços de Windows Media Player em mpsvctm@microsoft.com .
 
-A tabela a seguir descreve as informações de inicialização que a Microsoft requer para sua loja online.
+A tabela a seguir descreve as informações de inicialização que a Microsoft exige para sua loja online.
 
 
 
 | Item                                                                                                     | Descrição                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| URL XML de informações de serviço (limite de 2048 caracteres)                                                              | A URL em que Windows Media Player obtém o [documento XML ServiceInfo](serviceinfo-document.md).                                                                                                                                         |
+| URL XML de informações de serviço (limite de 2048 caracteres)                                                              | a URL em que Windows Media Player obtém o [documento XML do serviceinfo](serviceinfo-document.md).                                                                                                                                         |
 | Chave de serviço (ID exclusiva)                                                                                  | Uma cadeia de caracteres que identifica exclusivamente sua loja online. Você deve criar um para produção e outro para teste (por exemplo, "MyStore" e "MyStoreTest"). Observe que uma chave de serviço não é a mesma coisa que uma chave de teste.                        |
-| Nome amigável (limite de 30 caracteres)                                                                       | O nome da loja que é exibido no seletor Windows Media Player serviço.                                                                                                                                                        |
-| URL da imagem de menu (limite de 2048 caracteres)                                                                    | A URL em Windows Media Player recupera o logotipo de 15 x 15 pixels que ele exibe no seletor de serviço.                                                                                                                                 |
-| Comprar URL de Música (limite de 2048 caracteres)<br/> (Somente lojas de música integradas)<br/>                | A URL usada pelos links "Comprar CD" e "Comprar música online" do player.                                                                                                                                                              |
-| URL de compra de interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente lojas de música integradas – opcional)<br/> | A URL usada pelos links "Comprar CD" e "Comprar música online" do Player no Windows XP Media Center Edition e no Windows Media Center no Windows Vista.                                                                              |
-| Logotipo da Loja (130w x 30h)<br/> (Anexar o arquivo PNG separadamente.)<br/>                              | O logotipo da loja que é exibido na dica de ferramenta que aparece quando o mouse está sobre a imagem browse-all. Esse logotipo deve ser um arquivo formatado em PNG e, preferencialmente, com combinação alfa, para que possa se ajustar às alterações de cor no Windows Media Player. |
-| Imagem Browse-all (108w x 108h)<br/> (Anexar o arquivo PNG separadamente.)<br/>                       | A breve descrição na dica de ferramenta que aparece quando o mouse está sobre sua imagem browse-all.                                                                                                                                               |
-| Armazenar texto de descrição (limite de 110 caracteres)                                                             | O texto que aparece na dica de ferramenta abaixo do texto de descrição do armazenamento.                                                                                                                                                                        |
-| Texto para hiperlink (limite de 45 caracteres)                                                                  | O logotipo da loja exibido na página Procurar todas as Lojas Online. Ele deve ser um arquivo formatado em PNG e, preferencialmente, com combinação alfa para que possa se ajustar às alterações de cor no Windows Media Player.                                           |
+| Nome amigável (limite de 30 caracteres)                                                                       | o nome do seu repositório exibido no seletor de serviço Windows Media Player.                                                                                                                                                        |
+| URL da imagem do menu (limite de 2048 caracteres)                                                                    | a URL em que Windows Media Player recupera o logotipo de 15 x 15 pixels que ele exibe no seletor de serviço.                                                                                                                                 |
+| Comprar a URL de música (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados)<br/>                | A URL usada pelos links "comprar CD" do Player e "comprar música online".                                                                                                                                                              |
+| URL de compra da interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados--opcional)<br/> | a URL usada pelos links "comprar CD" do Player e "comprar música Online" no Windows XP media center Edition e no Windows Media center no Windows Vista.                                                                              |
+| Logotipo da loja (130W x 30h)<br/> (Anexe o arquivo PNG separadamente.)<br/>                              | O logotipo da loja exibido na dica de ferramenta que aparece quando o mouse está sobre a imagem procurar tudo. Esse logotipo deve ser um arquivo formatado em PNG e, preferencialmente, misturado para que ele possa se ajustar às alterações de cores no Windows Media Player. |
+| Procurar todas as imagens (108w x 108h)<br/> (Anexe o arquivo PNG separadamente.)<br/>                       | A breve descrição na dica de ferramenta que aparece quando o mouse está sobre sua imagem de procurar tudo.                                                                                                                                               |
+| Armazenar texto de descrição (limite de 110 caracteres)                                                             | O texto que aparece na dica de ferramenta abaixo do texto de descrição da loja.                                                                                                                                                                        |
+| Texto para hiperlink (limite de 45 caracteres)                                                                  | O logotipo da loja exibido na página procurar todas as lojas online. Ele deve ser um arquivo formatado em PNG e preferencialmente misturado para que ele possa se ajustar às alterações de cores no Windows Media Player.                                           |
 
 
 
  
 
 > [!Note]  
-> A imagem browse-all de 108 x 108 pixels é um requisito para Windows Media Player 11 e posteriores.
+> a imagem 108 x 108 pixel procurar tudo é um requisito para o Windows Media Player 11 e posterior.
 
  
 
 > [!Note]  
-> No Windows Media Player 11 e posterior, os elementos ServiceTask2 e ServiceTask3 do documento XML ServiceInfo são ignorados. Para obter informações detalhadas sobre o documento XML ServiceInfo, consulte [Documento ServiceInfo](serviceinfo-document.md).
+> no Windows Media Player 11 e posteriores, os elementos ServiceTask2 e ServiceTask3 do documento XML do serviceinfo são ignorados. Para obter informações detalhadas sobre o documento XML do serviceInfo, consulte [documento do serviceInfo](serviceinfo-document.md).
 
  
 
@@ -161,7 +140,7 @@ A chave de teste é totalmente para seu próprio uso. Quando sua chave de teste 
 
 Quando sua chave de produção estiver no Registro, Windows Media Player a URL serviceInfo enviada para o armazenamento de produção. A Microsoft usa sua chave de produção durante o estágio de validação. A Microsoft nunca usa sua chave de teste para validação.
 
-Quando sua loja estiver em tempo real, Windows Media Player a URL serviceInfo enviada para seu armazenamento de produção.
+Quando sua loja estiver em tempo real, Windows Media Player a URL serviceInfo enviada para sua loja de produção.
 
 Como regra geral, seu armazenamento de teste deve ser o local em que você desenvolve seu serviço e faz alterações diárias. Seu armazenamento de produção deve ser o local em que você mantém uma versão estável do serviço.
 

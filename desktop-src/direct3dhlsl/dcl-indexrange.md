@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a652d200a211eb5528f6e7ecdedf2cc20579817d1f0148d59855d1e864de55de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fe587c3a5cfeae21b5da09a2dd79b67b82bc0c2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117727186"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472062"
 ---
 # <a name="dcl_indexrange-sm4---asm"></a>dcl \_ indexRange (sm4 – asm)
 
@@ -31,32 +31,12 @@ Declara um intervalo de registros que serão acessados por índice (um inteiro c
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="minRegisterM"></span><span id="minregisterm"></span><span id="MINREGISTERM"></span><em>minRegisterM</em><br/></td>
-<td>[in] O primeiro registro para acessar por índice. <br/>
-<ul>
-<li><em>minRegister</em> é v para <strong>um registro</strong> de entrada de sombreador de vértice ou pixel ou <strong>o</strong> para um registro de saída do sombreador de vértice.</li>
-<li><em>M</em> é um inteiro que indica o número do registro.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span id="maxRegisterN"></span><span id="maxregistern"></span><span id="MAXREGISTERN"></span><em>maxRegisterN</em><br/></td>
-<td>[in] O último registro para acessar por índice. O mesmo formato que <em>minRegister,</em> exceto <em>N,</em> é o número do registro.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Item | Descrição | 
+|------|-------------|
+| <span id="minRegisterM"></span><span id="minregisterm"></span><span id="MINREGISTERM"></span><em>minRegisterM</em><br /> | [in] O primeiro registro para acessar por índice. <br /><ul><li><em>minRegister</em> é v para <strong>um registro</strong> de entrada de sombreador de vértice ou pixel ou <strong>o</strong> para um registro de saída do sombreador de vértice.</li><li><em>M</em> é um inteiro que indica o número do registro.</li></ul> | 
+| <span id="maxRegisterN"></span><span id="maxregistern"></span><span id="MAXREGISTERN"></span><em>maxRegisterN</em><br /> | [in] O último registro para acessar por índice. O mesmo formato que <em>minRegister,</em> exceto <em>N,</em> é o número do registro.<br /> | 
+
 
 
 

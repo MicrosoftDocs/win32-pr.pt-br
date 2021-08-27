@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 62c626c30f641fb4f73761454d9e56fcde0d4737
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 211b6c35ef0333dfd6c4ad1f8ef04f1997db4ef1
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456511"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787092"
 ---
 # <a name="span-idvspixengineipipelinestagescallback3spanipipelinestagescallback3-interface"></a><span id="vspixengine.ipipelinestagescallback3"></span>Interface IPipeLineStagesCallback3
 
@@ -30,7 +30,7 @@ Retorno de chamada para dados de estágios de pipeline.
 
 ## <a name="members"></a>Membros
 
-A interface **IPipeLineStagesCallback3** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IPipeLineStagesCallback3** também tem estes tipos de membros:
+A interface **IPipeLineStagesCallback3** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesCallback3** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IPipeLineStagesCallback3** herda da interface [**IUnknown**](/wind
 
 A interface **IPipeLineStagesCallback3** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback3-meshfilereadycallback-bstr"><strong>MeshFileReadyCallback</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host de informações de malha gravados pela solicitação associada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagescallback3-meshfilereadycallback-bstr"><strong>MeshFileReadyCallback</strong></a></td><td ><p>Um retorno de chamada que notifica o host de informações de Malha escritas pela solicitação associada.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

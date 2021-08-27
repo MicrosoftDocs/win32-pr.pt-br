@@ -4,12 +4,12 @@ ms.assetid: 5a6553c2-f322-47e2-bbc8-44f6541f1288
 title: Recurso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d35686674d08ea0ea4030648b06803919e5d07
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: fd7819fd4fab1bdfe2d9a72d1764ed977826d5894c1eccbe202d6e20821bdc46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112506"
 ---
 # <a name="feature"></a>Recurso
 
@@ -19,7 +19,7 @@ Um elemento Feature contém uma lista completa dos elementos Option e Property q
 
 ## <a name="element-tag"></a>Marca de elemento
 
-&lt;Recurso&gt;
+<Feature>
 
 ## <a name="xml-attributes"></a>Atributos XML
 
@@ -43,13 +43,43 @@ A tabela a seguir lista os elementos que podem ser pais desse elemento, os eleme
 
 
 
-
-| Categoria | Detalhes | 
-|----------|---------|
-| Elementos pai<br /> | PrintCapabilities <br /> PrintTicket <br /> Recurso<br /> | 
-| Elementos filho<br /> | Um dos seguintes grupos:<br /><ul><li><em>Recurso</em> (zero ou mais)<br /></li><li><em>Opção</em> (um ou mais)<br /></li><li><em>Propriedade</em> (zero ou mais)<br /></li></ul>ou <br /><ul><li><em>Recurso</em> (um ou mais)<br /></li><li><em>Opção</em> (zero ou mais)<br /></li><li><em>Propriedade</em> (zero ou mais)<br /></li></ul> | 
-| Esse elemento<br /> | Nenhum dado de caractere é permitido.<br /> Elementos de opção filho duplicados que são irmãos são permitidos. Atalhos de atributo de nome duplicados permitidos. <br /> | 
-
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Categoria</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Elementos pai<br/></td>
+<td>PrintCapabilities <br/> PrintTicket <br/> Recurso<br/></td>
+</tr>
+<tr class="even">
+<td>Elementos filho<br/></td>
+<td>Um dos seguintes grupos:<br/>
+<ul>
+<li><em>Recurso</em> (zero ou mais)<br/></li>
+<li><em>Opção</em> (um ou mais)<br/></li>
+<li><em>Propriedade</em> (zero ou mais)<br/></li>
+</ul>
+ou <br/>
+<ul>
+<li><em>Recurso</em> (um ou mais)<br/></li>
+<li><em>Opção</em> (zero ou mais)<br/></li>
+<li><em>Propriedade</em> (zero ou mais)<br/></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Esse elemento<br/></td>
+<td>Nenhum dado de caractere é permitido.<br/> Elementos de opção filho duplicados que são irmãos são permitidos. Atalhos de atributo de nome duplicados permitidos. <br/></td>
+</tr>
+</tbody>
+</table>
 
 
 
