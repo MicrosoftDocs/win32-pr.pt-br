@@ -1,17 +1,17 @@
 ---
 description: As janelas status, composição e candidatos formam a interface do usuário para o IME.
 ms.assetid: a0e52743-f9be-4934-9469-71d3cb5a768a
-title: Janelas de status, composição e candidatos
+title: Status, composição e candidatos Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b800def67299a464fd232a08a2bbff0a2a60a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83f5c385c14cd265630de77352e12e4c63bce806837462f3c9ab3c204940e66c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130106"
 ---
-# <a name="status-composition-and-candidates-windows"></a>Janelas de status, composição e candidatos
+# <a name="status-composition-and-candidates-windows"></a>Status, composição e candidatos Windows
 
 As janelas status, composição e candidatos formam a interface do usuário para o IME. A janela de status indica que o IME está aberto e fornece ao usuário os meios para definir os modos de conversão. A janela composição é exibida quando o usuário digita o texto e, dependendo do modo de conversão, exibe o texto como inserido ou exibe o texto convertido. A janela candidatos aparece em conjunto com a janela composição. Ele contém uma lista de "candidatos" (caracteres alternativos) para o caractere ou caracteres selecionados na janela de composição. O usuário pode rolar a lista de candidatos e selecionar os caracteres desejados e retornar à janela de composição. O usuário pode compor o texto desejado dessa maneira até que a cadeia de caracteres de composição seja finalizada e a janela seja fechada.
 

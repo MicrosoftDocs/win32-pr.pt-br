@@ -1,23 +1,23 @@
 ---
-description: Especifica qual controle usar no menu de filtro de header.
+description: Especifica o controle a ser usado no menu de filtro de cabeçalho.
 ms.assetid: a3117e16-20d0-4637-b726-9fa49516ad5c
-title: Filtercontrol
+title: filterControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74f002543b220347ba9aaba3659aa9a66f8aea7760b9d8a9177ef2980a823434
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ac7424cf281c08f1d8de87686e95a38be3f4f3a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885956"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627542"
 ---
-# <a name="filtercontrol"></a>Filtercontrol
+# <a name="filtercontrol"></a>filterControl
 
-Especifica qual controle usar no menu de filtro de header. Deve haver apenas um [elemento filterControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
+Especifica o controle a ser usado no menu de filtro de cabeçalho. Deve haver apenas um elemento [filterControl]() para cada elemento [DisplayInfo](./propdesc-schema-displayinfo.md) .
 
-Se houver vários elementos, o último será usado. Se nenhum [elemento filterControl]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
+Se houver vários elementos, o último será usado. Se nenhum elemento [filterControl]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -57,8 +57,8 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento filterCo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -69,7 +69,7 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento filterCo
 <tbody>
 <tr class="odd">
 <td>controle</td>
-<td>Público. Opcional. O padrão é &quot; &quot; Padrão. Os seguintes valores são válidos: 
+<td>Público. Opcional. O padrão é &quot; Default &quot; . Os seguintes valores são válidos: 
 <table>
 <thead>
 <tr class="header">
@@ -80,11 +80,11 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento filterCo
 <tbody>
 <tr class="odd">
 <td>Padrão</td>
-<td>Padrão. Usa o controle padrão, com base no <typeInfo type=&quot;&quot;> atributo . O tipo padrão é &quot; DateTime &quot; e o controle padrão é Calendar &quot; &quot; . Qualquer outro tipo resulta em nenhum controle de filtro especial.</td>
+<td>Padrão. Usa o controle padrão, com base no <typeInfo type=&quot;&quot;> atributo. O tipo padrão é &quot; DateTime &quot; e o controle padrão é &quot; Calendar &quot; . Qualquer outro tipo resulta em nenhum controle de filtro especial.</td>
 </tr>
 <tr class="even">
 <td>Calendário</td>
-<td>Usa o controle de calendário.</td>
+<td>Usa o controle Calendar.</td>
 </tr>
 <tr class="odd">
 <td>Classificação</td>

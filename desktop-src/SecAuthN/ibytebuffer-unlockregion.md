@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 92e49ba000177326ad14d3b83002613a15e96e18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 798569621c1a46e73ea6fd8e2f4f3333c3a0cbcef32618797fcba39d35b55bf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127386"
 ---
 # <a name="ibytebufferunlockregion-method"></a>Método IByteBuffer:: UnlockRegion
 
-\[O método **UnlockRegion** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A interface [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornece funcionalidade semelhante.\]
+\[O método **UnlockRegion** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A interface [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornece funcionalidade semelhante.\]
 
 O método **UnlockRegion** remove a restrição de acesso em um intervalo de bytes anteriormente restringido usando [**IByteBuffer:: LockRegion**](ibytebuffer-lockregion.md).
 
@@ -64,7 +64,7 @@ Restrições de acesso previamente colocadas no intervalo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um **HRESULT**. Um valor de S \_ OK indica que a chamada foi bem-sucedida.
 
@@ -94,11 +94,11 @@ if (FAILED(hr))
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardssp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IByteBuffer é definido como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |

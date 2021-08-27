@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: cf0d4725d8d2172900a96e58b4c8786ca2a9c851
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e9ec24a7bf33ef62c658a80afd278a52c0291cb0
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812342"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626503"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dwordspanipipelinestagesrequest2requestcomputeshaderdataasync-method"></a><span id="vspixengine.ipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dword"></span>Método IPipeLineStagesRequest2:: RequestComputeShaderDataAsync
 
@@ -54,15 +54,15 @@ Um cookie que identifica exclusivamente a solicitação e pode ser usado para si
 *progressIntervalMsecs*   
 Não usado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IPipeLineStagesRequest2**](/windows/desktop/direct3dtools/ipipelinestagesrequest2)
 

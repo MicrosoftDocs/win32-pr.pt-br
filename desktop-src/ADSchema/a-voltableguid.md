@@ -1,11 +1,11 @@
 ---
 title: Atributo Vol-Table-GUID
-description: O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
+description: O identificador exclusivo para uma entrada de tabela Link-Track-Volume.
 ms.assetid: 3a63406a-e751-4234-a601-8f5a57f0a3b7
 ms.tgt_platform: multiple
 keywords:
-- Atributo Vol-Table-GUID do AD Schema
-- Esquema de AD do atributo volTableGUID
+- Esquema do AD do atributo Vol-Table-GUID
+- Esquema do AD do atributo volTableGUID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2a23bcd088304b4a683ce3ff0f203d3c82fecf8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 46d692efd1f16c8e66816d49ec13f947b88da0fa0f8200787a5d5f9cda1bdf0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065566"
 ---
 # <a name="vol-table-guid-attribute"></a>Atributo Vol-Table-GUID
 
-O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
+O identificador exclusivo para uma entrada de tabela Link-Track-Volume.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Vol-Table-GUID                                        |
-| LDAP-Display-Name | volTableGUID                                          |
+| Ldap-Display-Name | volTableGUID                                          |
 | Tamanho              | 16 bytes                                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
-| Frequência de atualização  | Sempre que um novo link para um arquivo for criado.             |
+| Frequência de atualização  | Sempre que um novo link para um arquivo é criado.             |
 | Attribute-Id      | 1.2.840.113556.1.4.336                                |
-| System-ID-GUID    | 1f0075fd-7e40-11d0-afd6-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1f0075fd-7e40-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -121,7 +121,7 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -142,7 +142,7 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -163,7 +163,7 @@ O identificador exclusivo para uma entrada de tabela de faixa de link-volume.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

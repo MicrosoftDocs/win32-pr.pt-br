@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7782052ef467725a099929e8940262d1f08329431f68525b8c401f36a276ebcf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc034b12a6a3375c9881a1fd3709d78be2e79a15
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118745099"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478232"
 ---
 # <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compactação (v4)
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento de [**compa
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <Compression>
@@ -61,41 +61,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 601e1e79-a328-4e63-958a-ca26129e03f8
 title: Transferência de bloco de padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54424348c28b83d1d0d1075072e80b18049546ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ecb51cbe12da80ca643e2d520e8ebe25c4c9fe03d56a8a16e0c55caf5f1ce10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092926"
 ---
 # <a name="pattern-block-transfer"></a>Transferência de bloco de padrão
 
@@ -17,7 +17,7 @@ O nome da função [**PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patblt) (u
 
 
 
-| ROP       | Description                                                                         |
+| ROP       | Descrição                                                                         |
 |-----------|-------------------------------------------------------------------------------------|
 | PATCOPY   | Copia o padrão para o bitmap de destino.                                       |
 | PATINVERT | Combina o bitmap de destino com o padrão usando o operador XOR booliano. |

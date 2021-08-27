@@ -1,7 +1,7 @@
 ---
-description: O \_ operador tempo de referência () converte o objeto em um tipo de dados de tempo de referência \_ .
+description: O operador REFERENCE \_ TIME() lança o objeto em um tipo de dados \_ REFERENCE TIME.
 ms.assetid: 36f51e03-a458-46e6-9657-977b263c127f
-title: Método CReftime. Operator REFERENCE_TIME (REFTIME. h)
+title: Método CRefTime.operator REFERENCE_TIME (Reftime.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3ceeeb00ba1de4f305f87ef3fe15e70a8d91457
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a084d4e142f57b724343ac5a353461b41aac0be216b8e3851bc8b7e40000a1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108026"
 ---
-# <a name="creftimeoperator-reference_time-method"></a>Método de tempo de referência CReftime. Operator \_
+# <a name="creftimeoperator-reference_time-method"></a>Método CRefTime.operator REFERENCE \_ TIME
 
-O `REFERENCE_TIME()` operador converte o objeto em um tipo de dados de [**\_ tempo de referência**](reference-time.md) .
+O `REFERENCE_TIME()` operador lança o objeto em um tipo de dados REFERENCE [**\_ TIME.**](reference-time.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ REFERENCE_TIME operator REFERENCE_TIME() const;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor de [**CRefTime:: m \_ time**](creftime-m-time.md).
+Retorna o valor de [**CRefTime::m \_ time**](creftime-m-time.md).
 
 ## <a name="remarks"></a>Comentários
 
-O exemplo a seguir mostra como usar esse operador cast:
+O exemplo a seguir mostra como usar esse operador de cast:
 
 
 ```C++
@@ -62,8 +62,8 @@ REFERENCE_TIME rt = (REFERENCE_TIME)cRT;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>REFTIME. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Reftime.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

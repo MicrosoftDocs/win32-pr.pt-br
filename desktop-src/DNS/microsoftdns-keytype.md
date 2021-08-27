@@ -21,12 +21,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1e814af1d22820f1722e5812dd314dd1c7f6e0d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 279044856e695c7e287809a3cbe89a6fffbbc1c0352c0cb68ae45350aa17fc16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109126"
 ---
 # <a name="microsoftdns_keytype-class"></a>\_Classe KeyType MicrosoftDNS
 
@@ -92,7 +92,7 @@ Algoritmo usado com a chave especificada no registro de recurso. Os valores atri
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | RSA/MD5 (RFC 2537)<br/>          |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Diffie-Hellman (RFC 2539)<br/>   |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | DSA (RFC 2536)<br/>              |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Criptografia de curva elíptica<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Criptografia de curva elíptica<br/> |
 
 
 
@@ -131,7 +131,7 @@ Protocolo para o qual a chave especificada no registro de recurso pode ser usada
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>     | TLS<br/>           |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl>     | Email<br/>        |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl>     | DNSSEC<br/>        |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl>     | IPsec<br/>         |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl>     | IPsec<br/>         |
 | <span id="255"></span><dl> <dt>**255**</dt> </dl> | Todos os protocolos<br/> |
 
 

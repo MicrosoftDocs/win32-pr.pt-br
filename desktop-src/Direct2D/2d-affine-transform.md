@@ -1,21 +1,21 @@
 ---
 title: Efeito de transformação afim 2D
-description: O efeito de transformação afim 2D aplica uma transformação espacial a uma imagem com base em uma matriz 3X2 usando a transformação matriz Direct2D e qualquer um dos seis modos de interpolação.
+description: o efeito de transformação afim 2d aplica uma transformação espacial a uma imagem com base em uma matriz 3X2 usando a transformação matriz Direct2D e qualquer um dos seis modos de interpolação.
 ms.assetid: E8973EBE-764C-4220-BB1E-3BFD4853582D
 keywords:
 - Efeito de transformação afim 2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3017992d34cd98095f01192ea948684a6b52e53
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 337168db7a422a8a22785316d2af1960e3a78b2f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086517"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478092"
 ---
 # <a name="2d-affine-transform-effect"></a>Efeito de transformação afim 2D
 
-O efeito de transformação afim 2D aplica uma transformação espacial a uma imagem com base em uma matriz 3X2 usando a [transformação](direct2d-transforms-overview.md) matriz Direct2D e qualquer um dos seis modos de interpolação. Você pode usar esse efeito para girar, dimensionar, inclinar ou traduzir uma imagem. Ou você pode combinar essas operações. As transferências afim preservam as linhas paralelas e a proporção de distâncias entre os três pontos de uma imagem.
+o efeito de transformação afim 2d aplica uma transformação espacial a uma imagem com base em uma matriz 3X2 usando a [transformação](direct2d-transforms-overview.md) matriz Direct2D e qualquer um dos seis modos de interpolação. Você pode usar esse efeito para girar, dimensionar, inclinar ou traduzir uma imagem. Ou você pode combinar essas operações. As transferências afim preservam as linhas paralelas e a proporção de distâncias entre os três pontos de uma imagem.
 
 O CLSID para esse efeito é CLSID \_ D2D12DAffineTransform.
 
@@ -24,7 +24,7 @@ O CLSID para esse efeito é CLSID \_ D2D12DAffineTransform.
 -   [Modos de borda](#border-modes)
 -   [Modos de interpolação](#interpolation-modes)
 -   [Bitmap de saída](#output-bitmap)
--   [Requirements](#requirements)
+-   [Requisitos](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagem de exemplo
@@ -34,7 +34,7 @@ O CLSID para esse efeito é CLSID \_ D2D12DAffineTransform.
 | Antes                                                             |
 |--------------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)         |
-| After (após)                                                              |
+| Depois                                                              |
 | ![a imagem após a transformação.](images/21-2daffinetransform.png) |
 
 
@@ -69,41 +69,14 @@ Embora a matriz de entrada seja definida como uma matriz 3x2, a última coluna �
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome de exibição e enumeração de índice</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Interpolação<br/> D2D1_2DAFFINETRANSFORM_PROP_INTERPOLATION_MODE<br/></td>
-<td>O modo de interpolação usado para dimensionar a imagem. Há 6 modos de escala que variam de qualidade e velocidade.<br/> O tipo é D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE.<br/> O valor padrão é D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE_LINEAR.<br/></td>
-</tr>
-<tr class="even">
-<td>Bordermode<br/> D2D1_2DAFFINETRANSFORM_PROP_BORDER_MODE<br/></td>
-<td>O modo usado para calcular a borda da imagem, suave ou difícil. Consulte <a href="https://www.bing.com/search?q=Border+modes">modos de borda</a> para obter mais informações. <br/> O tipo é D2D1_BORDER_MODE.<br/> O valor padrão é D2D1_BORDER_MODE_SOFT.<br/></td>
-</tr>
-<tr class="odd">
-<td>TransformMatrix<br/> D2D1_2DAFFINETRANSFORM_PROP_TRANSFORM_MATRIX<br/></td>
-<td>A matriz 3x2 para transformar a imagem usando a <a href="direct2d-transforms-overview.md">transformação</a>de matriz Direct2D. <br/> O tipo é D2D1_MATRIX_3X2_F.<br/> O valor padrão é Matrix3x2F:: Identity ().<br/></td>
-</tr>
-<tr class="even">
-<td>Nitidez<br/> D2D1_2DAFFINETRANSFORM_PROP_SHARPNESS<br/></td>
-<td>No modo de interpolação cubica de alta qualidade, o nível de nitidez do filtro de dimensionamento como um float entre 0 e 1. Os valores não são de unidade. Você pode usar a nitidez para ajustar a qualidade de uma imagem ao dimensionar a imagem.<br/> O fator de nitidez afeta a forma do kernel. Quanto maior o fator de nitidez, menor o kernel. <br/>
-<blockquote>
-[!Note]<br />
-Essa propriedade afeta apenas o modo de interpolação cúbica de alta qualidade.
-</blockquote>
-<br/> O tipo é FLOAT.<br/> O valor padrão é 1,0 f.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome de exibição e enumeração de índice | Descrição | 
+|------------------------------------|-------------|
+| Interpolação<br /> D2D1_2DAFFINETRANSFORM_PROP_INTERPOLATION_MODE<br /> | O modo de interpolação usado para dimensionar a imagem. Há 6 modos de escala que variam de qualidade e velocidade.<br /> O tipo é D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE.<br /> O valor padrão é D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE_LINEAR.<br /> | 
+| Bordermode<br /> D2D1_2DAFFINETRANSFORM_PROP_BORDER_MODE<br /> | O modo usado para calcular a borda da imagem, suave ou difícil. Consulte <a href="https://www.bing.com/search?q=Border+modes">modos de borda</a> para obter mais informações. <br /> O tipo é D2D1_BORDER_MODE.<br /> O valor padrão é D2D1_BORDER_MODE_SOFT.<br /> | 
+| TransformMatrix<br /> D2D1_2DAFFINETRANSFORM_PROP_TRANSFORM_MATRIX<br /> | a matriz 3x2 para transformar a imagem usando a <a href="direct2d-transforms-overview.md">transformação</a>de matriz de Direct2D. <br /> O tipo é D2D1_MATRIX_3X2_F.<br /> O valor padrão é Matrix3x2F:: Identity ().<br /> | 
+| Nitidez<br /> D2D1_2DAFFINETRANSFORM_PROP_SHARPNESS<br /> | No modo de interpolação cubica de alta qualidade, o nível de nitidez do filtro de dimensionamento como um float entre 0 e 1. Os valores não são de unidade. Você pode usar a nitidez para ajustar a qualidade de uma imagem ao dimensionar a imagem.<br /> O fator de nitidez afeta a forma do kernel. Quanto maior o fator de nitidez, menor o kernel. <br /><blockquote>[!Note]<br />Essa propriedade afeta apenas o modo de interpolação cúbica de alta qualidade.</blockquote><br /> O tipo é FLOAT.<br /> O valor padrão é 1,0 f.<br /> | 
+
 
 
 
@@ -161,9 +134,9 @@ O efeito executa a operação de transformação e, em seguida, aplica uma caixa
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

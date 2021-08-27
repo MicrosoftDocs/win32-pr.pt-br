@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 090f35cc576caf6f99a8d5822a0304f15383e8db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1771e1f0bde83f0fc7d070787b7a19f87007e26bd1ad42dcaa88e230e61a60af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111806"
 ---
 # <a name="fileiconinit-function"></a>Função FileIconInit
 
@@ -39,29 +39,29 @@ BOOL FileIconInit(
 
 <dl> <dt>
 
-*fRestoreCache* \[ no\]
+*fRestoreCache* \[ Em\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-**True** para restaurar o cache de imagem do sistema do disco; Caso contrário, **false** .
+**TRUE** para restaurar o cache de imagem do sistema do disco; **FALSE caso** contrário, .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-**True** se o cache tiver sido atualizado com êxito, **false** se a inicialização falhou.
+**TRUE** se o cache foi atualizado com êxito, **FALSE** se a inicialização falhou.
 
 ## <a name="remarks"></a>Comentários
 
-Se você estiver usando listas de imagens do sistema em seu próprio processo, deverá chamar **FileIconInit** nos seguintes horários:
+Se você estiver usando listas de imagens do sistema em seu próprio processo, deverá chamar **FileIconInit** nos seguintes momentos:
 
--   Na inicialização.
--   Em resposta a uma mensagem do [**WM \_ SETTINGCHANGE**](../winmsg/wm-settingchange.md) quando o sinalizador [**SPI \_ SETNONCLIENTMETRICS**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) é definido.
+-   Na iniciação.
+-   Em resposta a uma [**mensagem WM \_ SETTINGCHANGE**](../winmsg/wm-settingchange.md) quando o [**sinalizador SPI \_ SETNONCLIENTMETRICS**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) é definido.
 
-**FileIconInit** não está incluído em um arquivo de cabeçalho. Você deve chamá-lo diretamente do Shell32.dll, usando o ordinal 660.
+**FileIconInit** não está incluído em um arquivo de título. Você deve chamá-lo diretamente do Shell32.dll, usando o ordinal 660.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Se você estiver usando listas de imagens do sistema em seu próprio processo, d
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 

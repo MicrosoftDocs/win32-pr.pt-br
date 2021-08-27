@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a371ad1f7b1da874b6a049b04d5f50ec694cf181
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b3d602207cefa1adbae416f59f10bd0d7a52e50495a559e36ead184888a4d0ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064816"
 ---
 # <a name="invoke-method-of-the-cim_removefileaction-class"></a>Método Invoke da classe CIM \_ Removeaction
 
@@ -45,7 +45,7 @@ uint32 Invoke();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 

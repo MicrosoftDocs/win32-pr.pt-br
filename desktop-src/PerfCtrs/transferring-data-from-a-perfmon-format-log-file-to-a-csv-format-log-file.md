@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir transfere dados de um arquivo de log de contador criado pela ferramenta de desempenho para um formato separado por vírgula (. csv).
+description: O exemplo a seguir transfere dados de um arquivo de log de contador criado pela ferramenta Desempenho para um formato separado por vírgula (.csv).
 ms.assetid: 5adeda14-0312-45ce-af91-6888f3aa1c95
-title: Convertendo dados de um arquivo de log de formato binário em um arquivo de log em formato CSV
+title: Convertendo dados de um arquivo de log de formato binário em um arquivo de log no formato CSV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fea03ab810ff0ed357f72e3283323ee776bdc70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2748ef834b82de09ce0fa9f5ca8a36c85781eaa6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880906"
 ---
-# <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Convertendo dados de um arquivo de log de formato binário em um arquivo de log em formato CSV
+# <a name="converting-data-from-a-binary-format-log-file-to-a-csv-format-log-file"></a>Convertendo dados de um arquivo de log de formato binário em um arquivo de log no formato CSV
 
-O exemplo a seguir transfere dados de um arquivo de log de contador criado pela ferramenta de desempenho para um formato separado por vírgula (. csv). O exemplo transfere os dados do contador de tempo do processador coletados do computador local. Para especificar outro tipo de dados do contador, altere a variável szCounterPath. Se os dados do contador coletados forem de um computador específico, adicione o nome do computador ao caminho (por exemplo, " \\ \\ \\ \\ <computername> \\ \\ processador (0) \\ \\ % tempo do processador").
+O exemplo a seguir transfere dados de um arquivo de log de contador criado pela ferramenta Desempenho para um formato separado por vírgula (.csv). O exemplo transfere os dados do contador Tempo do Processador coletados do computador local. Para especificar outro tipo de dados de contador, altere a variável szCounterPath. Se os dados do contador coletados são de um computador específico, adicione o nome do computador ao caminho (por exemplo, " processador de nome \\ \\ \\ \\ &lt; &gt; \\ \\ de computador(0) \\ % \\ de tempo do processador").
 
 
 ```C++

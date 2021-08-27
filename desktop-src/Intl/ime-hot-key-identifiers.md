@@ -1,35 +1,35 @@
 ---
 description: Esses identificadores são usados com a função ImmSimulateHotKey.
 ms.assetid: a262ef4e-d8ab-4eb6-88c6-023b90850cc6
-title: Identificadores de teclas de acesso do IME
+title: Identificadores de chave quente do IME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 407bffa76558626e88d8fbb88343d82df5557a78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb02349fe416a02772332c07b6f9bfb38a44348815488ed3338b32fb353c7709
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107196"
 ---
-# <a name="ime-hot-key-identifiers"></a>Identificadores de teclas de acesso do IME
+# <a name="ime-hot-key-identifiers"></a>Identificadores de chave quente do IME
 
-Esses identificadores são usados com a função [**ImmSimulateHotKey**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey) .
+Esses identificadores são usados com a [**função ImmSimulateHotKey.**](/windows/desktop/api/Imm/nf-imm-immsimulatehotkey)
 
 
 
 | Identificadores                       | Significado                                                                                                                                                                                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IME \_ CHOTKEY \_ IME \_ NONIME \_ alternância | (Chinês simplificado) Alternar entre a operação IME e não IME quando o idioma for chinês simplificado.                                                                                                  |
-| \_alternância de \_ forma de CHOTKEY IME \_       | (Chinês simplificado) Alternar o modo de conversão de forma do IME.                                                                                                                                           |
-| \_alternância de \_ símbolo \_ CHOTKEY IME      | (Chinês simplificado) Alternar o modo de conversão de símbolo do IME. O modo de símbolo indica que o usuário pode inserir símbolos e Pontuação do chinês mapeando para a pontuação e os símbolos no teclado. |
-| IME \_ ITHOTKEY \_ reconverterstring    | **Windows me/98, windows 2000, Windows XP:** (chinês tradicional) disparar a reconversão.                                                                                                                |
-| IME \_ JHOTKEY \_ fechar \_ aberto         | Em Como alternativa, abra e feche o IME.                                                                                                                                                          |
-| IME \_ KHOTKEY \_ Inglês             | Idioma Mude para o inglês.                                                                                                                                                                             |
-| \_alternância de \_ forma de KHOTKEY IME \_       | Idioma Alternar o modo de conversão de forma do IME.                                                                                                                                                       |
-| \_KHOTKEY IME \_ HANJACONVERT        | Idioma Alternar para conversão em Hanja.                                                                                                                                                                    |
-| IME \_ THOTKEY \_ IME \_ NONIME \_ alternância | (Chinês tradicional) Alternar entre a operação IME e não IME quando o idioma for chinês tradicional.                                                                                                |
-| \_alternância de \_ forma de THOTKEY IME \_       | (Chinês tradicional) Alternar o modo de conversão de forma do IME.                                                                                                                                          |
-| \_alternância de \_ símbolo \_ THOTKEY IME      | (Chinês tradicional) Alternar o modo de conversão de símbolo do IME.                                                                                                                                         |
+| ALTERNÂNCIA \_ NONIME IME COLETKEY \_ \_ IME \_ | (Chinês simplificado) Alterne entre a operação IME e não IME quando o idioma é chinês simplificado.                                                                                                  |
+| ALTERNÂNCIA \_ DE FORMA \_ IME \_ COLETKEY       | (Chinês simplificado) Alterne o modo de conversão de forma do IME.                                                                                                                                           |
+| ALTERNÂNCIA DE SÍMBOLO DE IME \_ \_ \_ COLETKEY      | (Chinês simplificado) Alterne o modo de conversão de símbolo do IME. O modo de símbolo indica que o usuário pode inserir pontuação e símbolos chineses mapeando para a pontuação e os símbolos no teclado. |
+| IME \_ ITHOTKEY \_ RECONVERTSTRING    | **Windows Me/98, Windows 2000, Windows XP:** (Chinês Tradicional) Disparar reconversão.                                                                                                                |
+| IME \_ JHOTKEY \_ CLOSE \_ OPEN         | (Japonês) Como alternativa, abra e feche o IME.                                                                                                                                                          |
+| IME \_ KHOTKEY \_ ENGLISH             | (Coreano) Alternar para inglês.                                                                                                                                                                             |
+| ALTERNÂNCIA DE FORMA IME \_ \_ \_ KHOTKEY       | (Coreano) Alterne o modo de conversão de forma do IME.                                                                                                                                                       |
+| IME \_ KHOTKEY \_ HANJACONVERT        | (Coreano) Alternar para conversão do Hanja.                                                                                                                                                                    |
+| \_ALTERNÂNCIA IME THOTKEY \_ IME \_ NONIME \_ | (Chinês tradicional) Alterne entre a operação IME e não IME quando o idioma for chinês tradicional.                                                                                                |
+| \_ALTERNÂNCIA DE FORMA IME THOTKEY \_ \_       | (Chinês tradicional) Alterne o modo de conversão de forma do IME.                                                                                                                                          |
+| \_ALTERNÂNCIA DE SÍMBOLO IME THOTKEY \_ \_      | (Chinês tradicional) Alterne o modo de conversão de símbolo do IME.                                                                                                                                         |
 
 
 

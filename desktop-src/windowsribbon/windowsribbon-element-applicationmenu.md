@@ -1,9 +1,9 @@
 ---
 title: Elemento ApplicationMenu
-description: Representa o menu do aplicativo. | Elemento ApplicationMenu
+description: Representa o Menu do Aplicativo. | Elemento ApplicationMenu
 ms.assetid: 815e0462-ea45-44b1-81bf-f5797b22e920
 keywords:
-- Faixa de ApplicationMenu do elemento do Windows
+- Elemento ApplicationMenu Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e535fbcc09a404ad7dd5a4019438f4513f5c77c6
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 7fcf64d3fa3b618a4e66777b8fd4c0d831a33126
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443047"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626122"
 ---
 # <a name="applicationmenu-element"></a>Elemento ApplicationMenu
 
-Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
+Representa o [Menu do Aplicativo](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Uso
 
@@ -40,10 +40,10 @@ Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,10 +56,10 @@ Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 | Elemento                                                                                             | Descrição                                        |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**ApplicationMenu.RecentItems**](windowsribbon-element-applicationmenu-recentitems.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
-| [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
 
 
 
@@ -83,7 +83,7 @@ Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 
 | Elemento                                                                                   |
 |-------------------------------------------------------------------------------------------|
-| [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/> |
+| [**Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/> |
 
 
 
@@ -91,18 +91,18 @@ Representa o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 
 Obrigatórios.
 
-Deve ocorrer exatamente uma vez para cada [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md).
+Deve ocorrer exatamente uma vez para cada [**Ribbon.ApplicationMenu.**](windowsribbon-element-ribbon-applicationmenu.md)
 
-Os elementos filho do elemento **ApplicationMenu** devem ocorrer na ordem especificada:
+Os elementos filho do **elemento ApplicationMenu** devem ocorrer na ordem especificada:
 
 1.  [**ApplicationMenu.RecentItems**](windowsribbon-element-applicationmenu-recentitems.md)
-2.  [**Grupo Backstage**](windowsribbon-element-menugroup.md)
+2.  [**Menugroup**](windowsribbon-element-menugroup.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
+O exemplo a seguir demonstra a marcação básica para o [Menu do Aplicativo](windowsribbon-controls-applicationmenu.md).
 
-Esta seção de código mostra as declarações de comando **ApplicationMenu** .
+Esta seção de código mostra as declarações **do Comando ApplicationMenu.**
 
 
 ```XML
@@ -155,7 +155,7 @@ Esta seção de código mostra as declarações de comando **ApplicationMenu** .
 
 
 
-Esta seção de código mostra as declarações de controle **ApplicationMenu** .
+Esta seção de código mostra as declarações **de controle ApplicationMenu.**
 
 
 ```XML
@@ -184,8 +184,8 @@ Esta seção de código mostra as declarações de controle **ApplicationMenu** 
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte**: Windows 7
-* **Pode estar vazio**: não
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -193,7 +193,7 @@ Esta seção de código mostra as declarações de controle **ApplicationMenu** 
 
 <dl> <dt>
 
-[Controle de menu do aplicativo](windowsribbon-controls-applicationmenu.md)
+[Controle de Menu do Aplicativo](windowsribbon-controls-applicationmenu.md)
 </dt> </dl>
 
  

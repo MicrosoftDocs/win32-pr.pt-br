@@ -1,21 +1,21 @@
 ---
 title: Adicionando uma imagem de inicialização
-description: Este exemplo se baseia no exemplo de gravação de imagem de disco adicionando código para incluir uma imagem inicializável na seção de inicialização do disco.
+description: Este exemplo se baseia no exemplo Gravar uma imagem de disco adicionando código para incluir uma imagem inicializável na seção de inicialização do disco.
 ms.assetid: b23cdbb9-ae0d-4261-965b-56abe865f323
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce48537f32f1dc574eef174b26daaa5e2ebe255
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b884c69dc53c14c01cb6e9486af30a148233192e41d433f4af6791b658185cca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092476"
 ---
 # <a name="adding-a-boot-image"></a>Adicionando uma imagem de inicialização
 
-Este exemplo se baseia no exemplo de [gravação de imagem de disco](burning-a-disc.md) adicionando código para incluir uma imagem inicializável na seção de inicialização do disco. A imagem inicializável se conecta ao objeto do sistema de arquivos que é gravado no disco. Uma vez anexado, o restante do processo de gravação é idêntico ao procedimento básico de gravação. A imagem de inicialização fornece a inicialização do sistema usando a unidade de disco de CD ou DVD.
+Este exemplo se baseia no exemplo [Gravar uma](burning-a-disc.md) imagem de disco adicionando código para incluir uma imagem inicializável na seção de inicialização do disco. A imagem inicializável se conecta ao objeto do sistema de arquivos gravado no disco. Uma vez anexado, o restante do processo de gravação é idêntico ao procedimento básico de gravação. A imagem de inicialização fornece inicialização do sistema usando a unidade de disco de CD ou DVD.
 
-O exemplo codifica o caminho para a imagem inicializável. Certifique-se de alterar o caminho junto com outros valores codificados conforme apropriado.
+O exemplo codifica o caminho para a imagem inicializável. Altere o caminho junto com outros valores em código conforme apropriado.
 
 
 ```VB
@@ -107,7 +107,7 @@ End Function
 
 <dl> <dt>
 
-[Usando o IMAPi](using-imapi.md)
+[Usando IMAPI](using-imapi.md)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -119,9 +119,9 @@ End Function
 [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

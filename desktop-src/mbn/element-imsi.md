@@ -7,12 +7,12 @@ MSHAttr:
 title: IMSI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d873cbc5634f78b8bcb802daea9c6dd0a667b32e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c5e8c0fa64a19f7c2966672d3bc4ab5b2162861
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501653"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477122"
 ---
 # <a name="span-idwwan_profile_v4element_imsispanimsi"></a><span id="WWAN_profile_v4.element_IMSI"></span>IMSI
 
@@ -24,7 +24,7 @@ Especifica que esse perfil está ativo somente quando o IMSI atual que está sen
 [<ProfileConditionedOn>](element-profileconditionedon.md)  
 **<IMSI>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <IMSI>
@@ -46,42 +46,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-profileconditionedon.md">ProfileConditionedOn</a></td>
-<td><p>Especifica as condições que devem ser satisfeitas para que um perfil seja aplicável.</p>
-<p>Este elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em diferentes condições e para que o perfil apropriado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica as condições que devem ser satisfeitas para que um perfil seja aplicável.</p><p>Este elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em diferentes condições e para que o perfil apropriado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

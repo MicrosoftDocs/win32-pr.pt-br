@@ -4,12 +4,12 @@ ms.assetid: 23d60fc7-547b-4ef5-b334-5f1b38e58e92
 title: Adicionando nós de saída com TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a84dc30631332e8138b35e4bbc0ccde75ec9b0cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e975e332a464218f8629363f34a2d3fbef0e5a49
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813665"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481972"
 ---
 # <a name="adding-output-nodes-with-topoedit"></a>Adicionando nós de saída com TopoEdit
 
@@ -19,46 +19,13 @@ A tabela a seguir mostra o comando de menu/barra de ferramentas para adicionar u
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo de mídia de origem</th>
-<th>Comando de menu/barra de ferramentas</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Fluxo de áudio</td>
-<td>No menu <strong>topologia</strong> , clique em <strong>Adicionar SAR</strong>.</td>
-<td>Cria um nó de saída para o processador de áudio de streaming (SAR) que reproduz um fluxo de áudio por meio de um dispositivo de áudio, como uma placa de som.</td>
-</tr>
-<tr class="even">
-<td>Fluxo de vídeo</td>
-<td>No menu <strong>topologia</strong> , clique em <strong>Adicionar EVR</strong>.</td>
-<td>Cria um nó de saída para o processador de vídeo avançado (EVR) que exibe quadros para um fluxo de vídeo.</td>
-</tr>
-<tr class="odd">
-<td>Coletor de mídia personalizado</td>
-<td><ol>
-<li>No menu <strong>topologia</strong> , clique em <strong>Adicionar coletor personalizado</strong>.<br/> A caixa de diálogo <strong>GUID personalizado de entrada</strong> é aberta.<br/></li>
-<li><p>No campo <strong>GUID:</strong> , insira o GUID do seu coletor personalizado que você deseja adicionar à topologia.<br/></p>
-<blockquote>
-[!Note]<br />
-TopoEdit espera o GUID no formato &quot; {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} &quot; . Caso contrário, ele não adicionará o nó e exibirá uma &quot; mensagem de erro GUID inválida &quot; .
-</blockquote>
-<p><br/></p></li>
-<li>Clique em <strong>OK</strong>.<br/></li>
-</ol></td>
-<td>Cria um nó de saída para o coletor de fluxo para uma fonte de mídia personalizada.<br/> O coletor personalizado deve dar suporte a <strong>CoCreateInstance</strong> para que o coletor possa ser especificado com um CLSID.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Tipo de mídia de origem | Comando de menu/barra de ferramentas | Descrição | 
+|-------------------|----------------------|-------------|
+| Fluxo de áudio | No menu <strong>topologia</strong> , clique em <strong>Adicionar SAR</strong>. | Cria um nó de saída para o processador de áudio de streaming (SAR) que reproduz um fluxo de áudio por meio de um dispositivo de áudio, como uma placa de som. | 
+| Fluxo de vídeo | No menu <strong>topologia</strong> , clique em <strong>Adicionar EVR</strong>. | Cria um nó de saída para o processador de vídeo avançado (EVR) que exibe quadros para um fluxo de vídeo. | 
+| Coletor de mídia personalizado | <ol><li>No menu <strong>topologia</strong> , clique em <strong>Adicionar coletor personalizado</strong>.<br /> A caixa de diálogo <strong>GUID personalizado de entrada</strong> é aberta.<br /></li><li><p>No campo <strong>GUID:</strong> , insira o GUID do seu coletor personalizado que você deseja adicionar à topologia.<br /></p><blockquote>[!Note]<br />TopoEdit espera o GUID no formato "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". Caso contrário, ele não adicionará o nó e exibirá uma mensagem de erro "GUID inválido".</blockquote><p><br /></p></li><li>Clique em <strong>OK</strong>.<br /></li></ol> | Cria um nó de saída para o coletor de fluxo para uma fonte de mídia personalizada.<br /> O coletor personalizado deve dar suporte a <strong>CoCreateInstance</strong> para que o coletor possa ser especificado com um CLSID.<br /> | 
+
 
 
 

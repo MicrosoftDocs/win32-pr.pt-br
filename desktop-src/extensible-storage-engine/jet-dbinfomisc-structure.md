@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6c7684fe69cff252d75ea2cceb0872044e8a011b39e88375d6eb576cb1b5360e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d7861e558bbf6a1938d252a52e7bb781068a331
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118486329"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476862"
 ---
 # <a name="jet_dbinfomisc-structure"></a>Estrutura JET_DBINFOMISC
 
@@ -67,72 +67,23 @@ A versão nativa do mecanismo de banco de dados que criou o banco de dados. Cons
 
 Rastreia atualizações de formato de banco de dados incremental que são compatíveis com versões anteriores.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>ulVersion, ulUpdate =</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0x620, 0</p></td>
-<td><p>Formato beta do sistema operacional original (4/22/97).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 1</p></td>
-<td><p>Adicione colunas no catálogo para indexação condicional e antigo (5/29/97).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Adicione o sinalizador fLocalizedText no IDB (6/5/97).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 3</p></td>
-<td><p>Adicione SPLIT_BUFFER às páginas raiz da árvore de espaço (10/30/97).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Reverta a revisão para que ESE97 permaneça compatível com o encaminhamento (1/28/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 3</p></td>
-<td><p>Adicione novas colunas marcadas ao catálogo ( &quot; CallbackData &quot; e &quot; CallbackDependencies &quot; ).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 4</p></td>
-<td><p>Suporte a SLV: signSLV, fSLVExists no cabeçalho do BD (5/5/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 5</p></td>
-<td><p>Nova árvore de espaço do SLV (5/29/98).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 6</p></td>
-<td><p>Mapa de espaço do SLV (10/12/98).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 7</p></td>
-<td><p>IDXSEG de 4 bytes (12/10/98).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x620, 8</p></td>
-<td><p>Novo formato de coluna de modelo (1/25/99).</p></td>
-</tr>
-<tr class="even">
-<td><p>0x620, 9</p></td>
-<td><p>Colunas de modelo classificadas (6/24/99).</p></td>
-</tr>
-<tr class="odd">
-<td><p>0x623, 0</p></td>
-<td><p>Novo Gerenciador de espaço (5/15/99).</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>ulVersion, ulUpdate =</p> | <p>Significado</p> | 
+|------------------------------|----------------|
+| <p>0x620, 0</p> | <p>Formato beta do sistema operacional original (4/22/97).</p> | 
+| <p>0x620, 1</p> | <p>Adicione colunas no catálogo para indexação condicional e antigo (5/29/97).</p> | 
+| <p>0x620, 2</p> | <p>Adicione o sinalizador fLocalizedText no IDB (6/5/97).</p> | 
+| <p>0x620, 3</p> | <p>Adicione SPLIT_BUFFER às páginas raiz da árvore de espaço (10/30/97).</p> | 
+| <p>0x620, 2</p> | <p>Reverta a revisão para que ESE97 permaneça compatível com o encaminhamento (1/28/98).</p> | 
+| <p>0x620, 3</p> | <p>Adicione novas colunas marcadas ao catálogo ("CallbackData" e "CallbackDependencies").</p> | 
+| <p>0x620, 4</p> | <p>Suporte a SLV: signSLV, fSLVExists no cabeçalho do BD (5/5/98).</p> | 
+| <p>0x620, 5</p> | <p>Nova árvore de espaço do SLV (5/29/98).</p> | 
+| <p>0x620, 6</p> | <p>Mapa de espaço do SLV (10/12/98).</p> | 
+| <p>0x620, 7</p> | <p>IDXSEG de 4 bytes (12/10/98).</p> | 
+| <p>0x620, 8</p> | <p>Novo formato de coluna de modelo (1/25/99).</p> | 
+| <p>0x620, 9</p> | <p>Colunas de modelo classificadas (6/24/99).</p> | 
+| <p>0x623, 0</p> | <p>Novo Gerenciador de espaço (5/15/99).</p> | 
+
 
 
 **signDb**
@@ -145,45 +96,15 @@ Esse é o estado do banco de dados.
 
 As opções a seguir estão disponíveis para este membro.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_dbstateJustCreated<br />
-1</p></td>
-<td><p>O banco de dados acabou de ser criado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_dbstateDirtyShutdown<br />
-2</p></td>
-<td><p>O banco de dados requer a execução de recuperação rígida ou flexível para tornar-se utilizável ou móvel. Um não deve tentar mover bancos de dados nesse estado.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_dbstateCleanShutdown<br />
-3</p></td>
-<td><p>O banco de dados está em um estado limpo. O banco de dados pode ser anexado sem nenhum arquivo de log.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_dbstateBeingConverted<br />
-4</p></td>
-<td><p>O banco de dados está sendo atualizado.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_dbstateForceDetach<br />
-5</p></td>
-<td><p>Interno.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_dbstateJustCreated<br />1</p> | <p>O banco de dados acabou de ser criado.</p> | 
+| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>O banco de dados requer a execução de recuperação rígida ou flexível para tornar-se utilizável ou móvel. Um não deve tentar mover bancos de dados nesse estado.</p> | 
+| <p>JET_dbstateCleanShutdown<br />3</p> | <p>O banco de dados está em um estado limpo. O banco de dados pode ser anexado sem nenhum arquivo de log.</p> | 
+| <p>JET_dbstateBeingConverted<br />4</p> | <p>O banco de dados está sendo atualizado.</p> | 
+| <p>JET_dbstateForceDetach<br />5</p> | <p>Interno.</p> | 
+
 
 
 **lgposConsistent**
@@ -248,36 +169,19 @@ representa os números de versão de Windows NT quando os índices de bancos de 
 
 **lSPNumber**
 
-Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
+representa os números de versão de Windows NT quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **cbPageSize**
 
 Tamanho da página do banco de dados. 0 significa que o tamanho da página é de 4 KB.
 
-Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md)
+Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

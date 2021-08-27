@@ -4,12 +4,12 @@ ms.assetid: 1537e98b-d7ed-49e6-aa25-8f2f124c88eb
 title: Propriedade MFPKEY_COMPLEXITY (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 042e3158b43efb5a4a82542f000d137fa0c195e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03bb611c95451f590df2e9ff4c1df02b17eda2d1dc00e256381931cbacde435f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113436"
 ---
 # <a name="mfpkey_complexity-property"></a>\_Propriedade de complexidade MFPKEY
 
@@ -33,8 +33,8 @@ O valor padrão depende da versão do codificador de vídeo, conforme mostrado n
 
 | Versão do codificador                 | Valor padrão |
 |---------------------------------|---------------|
-| Codificador do Windows Media Video 9   | 3             |
-| Codificador de vídeo 7/8 do Windows Media | 1             |
+| Windows Codificador de vídeo de mídia 9   | 3             |
+| Windows Codificador de vídeo de mídia 7/8 | 1             |
 
 
 
@@ -50,13 +50,13 @@ Esse valor inteiro varia de 0 a 3. Valores mais baixos fazem com que o codec use
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

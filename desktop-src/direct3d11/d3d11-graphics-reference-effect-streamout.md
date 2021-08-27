@@ -4,12 +4,12 @@ description: Um sombreador Geometry com fluxo horizontal é declarado com uma si
 ms.assetid: 58cf6503-0dde-4c88-837d-ae0e0eda17d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 535ea78d1b2109e343f01800b3a3d5e1bf6efaba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43980d79d9c338a965d7ab2f2ceb008411d9713dec935d953dd5a1854c40465b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104988511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096386"
 ---
 # <a name="stream-out-syntax"></a>Sintaxe de fluxo horizontal
 
@@ -26,7 +26,7 @@ Um sombreador Geometry com fluxo horizontal é declarado com uma sintaxe especí
 
 
 
-| Name                   | Descrição                                                                                                                                                                                                                |
+| Nome                   | Descrição                                                                                                                                                                                                                |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **StreamingShaderVar** | Opcional. Uma cadeia de caracteres ASCI que identifica exclusivamente o nome de uma variável de sombreador de geometria com fluxo de saída. Isso é opcional porque ConstructGSWithSO pode ser colocado diretamente em uma chamada SetGeometryShader ou BindInterfaces. |
 | **ShaderVar**          | Uma variável de sombreador de geometria ou de sombreador de vértice.                                                                                                                                                                               |
@@ -34,7 +34,7 @@ Um sombreador Geometry com fluxo horizontal é declarado com uma sintaxe especí
 
 
 
- 
+ 
 
 Esta é a sintaxe definida em arquivos FX \_ 4 \_ 0. Observe que nos \_ \_ sombreadores GS 4 0 e vs \_ x, há apenas um fluxo de dados. O sombreador resultante produzirá um fluxo para a unidade de streaming e a unidade do rasterizador.
 
@@ -48,7 +48,7 @@ Esta é a sintaxe definida em arquivos FX \_ 4 \_ 0. Observe que nos \_ \_ sombr
 
 
 
-| Name                   | Descrição                                                                                                                                                                                                                |
+| Nome                   | Descrição                                                                                                                                                                                                                |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **StreamingShaderVar** | Opcional. Uma cadeia de caracteres ASCI que identifica exclusivamente o nome de uma variável de sombreador de geometria com fluxo de saída. Isso é opcional porque ConstructGSWithSO pode ser colocado diretamente em uma chamada SetGeometryShader ou BindInterfaces. |
 | **ShaderVar**          | Uma variável de sombreador de geometria ou de sombreador de vértice.                                                                                                                                                                               |
@@ -60,7 +60,7 @@ Esta é a sintaxe definida em arquivos FX \_ 4 \_ 0. Observe que nos \_ \_ sombr
 
 
 
- 
+ 
 
 Observe que \_ \_ os sombreadores GS 5 0 podem definir até quatro fluxos de dados. O sombreador resultante produzirá uma transmissão para a unidade de saída de fluxo para cada declaração de saída não **nula** e uma transmitirá a unidade rasterizadora.
 
@@ -75,16 +75,16 @@ Observe que \_ \_ os sombreadores GS 5 0 podem definir até quatro fluxos de dad
 
 
 
-| Name              | Descrição                                                                                           |
+| Nome              | Descrição                                                                                           |
 |-------------------|-------------------------------------------------------------------------------------------------------|
 | **Buffer**        | Opcional. Um número inteiro, 0 <= buffer < 4, especificando o fluxo de buffer de saída ao qual o valor será acessado. |
 | **Semântico**      | Uma cadeia de caracteres, junto com SemanticIndex, especificando qual valor deve ser impresso.                                 |
 | **SemanticIndex** | Opcional. O índice associado à semântica.                                                         |
-| **Mask**          | Opcional. Uma máscara de componente, que indica os componentes do valor a serem gerados.                       |
+| **Mascara**          | Opcional. Uma máscara de componente, que indica os componentes do valor a serem gerados.                       |
 
 
 
- 
+ 
 
 Há uma semântica especial, rotulada "$SKIP", que indica uma semântica vazia, deixando a memória correspondente no buffer de saída de fluxo inalterado. A semântica de $SKIP não pode ter um SemanticIndex, mas pode ter uma máscara.
 
@@ -145,9 +145,9 @@ technique11 SOPoints
 [Efeitos (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

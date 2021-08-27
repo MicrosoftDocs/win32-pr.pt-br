@@ -3,7 +3,7 @@ title: Elemento ControlSizeDefinition
 description: Representa o estilo de layout de um grupo de controles em um modelo personalizado.
 ms.assetid: f9b875f4-e0cf-4823-81b5-ed19c201dcbb
 keywords:
-- Faixa de Opções do Windows do elemento ControlSizeDefinition
+- elemento ControlSizeDefinition da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ff5217c08b4ea6da1931b0c65501f912f2cc5dc
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 81c174a92ff502a3ebde5ae06e5703401de2c290
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443407"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622672"
 ---
 # <a name="controlsizedefinition-element"></a>Elemento ControlSizeDefinition
 
@@ -41,10 +41,10 @@ Representa o estilo de layout de um grupo de controles em um modelo personalizad
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,38 +56,38 @@ Representa o estilo de layout de um grupo de controles em um modelo personalizad
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Controlname</strong><br/></td>
-<td>xs:positiveInteger ou xs:string<br/></td>
+<td><strong>Controle de origem</strong><br/></td>
+<td>xs: positiveInteger ou xs: String<br/></td>
 <td>Não<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Imagesize</strong><br/></td>
+<td><strong>ImageSize</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Pequeno)<br/> </dt> <dd> Padrão. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> Vários<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Menores<br/> </dt> <dd> Padrão. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsImageVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
+<td>Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsLabelVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
+<td>Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>IsPopup</strong><br/></td>
+<td><strong>Ispopup</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
+<td>Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -104,9 +104,9 @@ Não há elementos filho.
 
 | Elemento                                                                             |
 |-------------------------------------------------------------------------------------|
-| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               |
+| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>               |
 | [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> |
-| [**Linha**](windowsribbon-element-row.md)<br/>                                 |
+| [**Fila**](windowsribbon-element-row.md)<br/>                                 |
 
 
 
@@ -114,11 +114,11 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Row**](windowsribbon-element-row.md)ou [**SizeDefinition.**](windowsribbon-element-sizedefinition.md)
+Pode ocorrer uma ou mais vezes para cada elemento de [**controle**](windowsribbon-element-controlgroup.md), [**linha**](windowsribbon-element-row.md)ou [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir demonstra a marcação básica para um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado de quatro botões com vários **elementos ControlSizeDefinition.**
+O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com vários elementos **ControlSizeDefinition** .
 
 
 ```XML
@@ -210,8 +210,8 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo de l
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Sim
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 
@@ -219,7 +219,7 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo de l
 
 <dl> <dt>
 
-[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

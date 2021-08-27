@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 167b097426e27785ad47b8295fb728d1537dbd47
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8f5619211a5fc76bb080b81b22c08c9e369abf93
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983159"
 ---
 # <a name="jet_loginfo-structure"></a>Estrutura de JET_LOGINFO
 
@@ -71,7 +71,12 @@ O uso dessas informações estruturadas não é recomendado porque faz com que o
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_LOGINFO_W</strong> (Unicode) e <strong>JET_LOGINFO_A</strong> (ANSI).</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_LOGINFO_W</strong> (Unicode) e <strong>JET_LOGINFO_A</strong> (ANSI).</p> | 
 
 
 

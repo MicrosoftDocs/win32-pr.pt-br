@@ -1,35 +1,35 @@
 ---
-title: O atributo user_marshal
-description: O atributo \ user \_ Marshal \ é um atributo de tipo ACF semelhante em sintaxe para \ representa \_ como \.
+title: O user_marshal atributo
+description: O atributo \ \_ user marshal\ é um atributo do tipo ACF semelhante na sintaxe a \ represent \_ as\ .
 ms.assetid: 5a381b44-e271-4713-954f-a55840a92bb7
 keywords:
-- RPC, atributos user_marshal de chamada de procedimento remoto
+- RPC de Chamada de Procedimento Remoto , atributos, user_marshal
 - user_marshal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d0501cfd3199d41a49da7f54919c86f9332ce976f33963f23c63a7938338da0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b769e6a7e176d5aeba68afd322cdd6f24d76c6b5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923526"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883743"
 ---
-# <a name="the-user_marshal-attribute"></a>O \_ atributo de marshaling do usuário
+# <a name="the-user_marshal-attribute"></a>O atributo \_ de marshal do usuário
 
-O \[ [atributo \_ Marshal do usuário](/windows/desktop/Midl/user-marshal) \] é um atributo de tipo ACF semelhante na sintaxe para \[ [representar \_ como](/windows/desktop/Midl/represent-as) \] . Assim como acontece com o atributo IDL, o \[ [ \_ marshaling](/windows/desktop/Midl/wire-marshal) \] é uma maneira mais eficiente de empacotar dados em uma rede. Como um atributo ACF, o **\[ \_ marshaling \] do usuário** permite que você realize marshaling de tipos de dados personalizados que são desconhecidos para MIDL. Cada tipo específico de aplicativo tem um tipo de transmissão correspondente que define a representação de transmissão.
+O \[ [atributo de \_ marshal](/windows/desktop/Midl/user-marshal) \] do usuário é um atributo do tipo ACF semelhante à sintaxe a \[ [ser \_ representada como](/windows/desktop/Midl/represent-as) \] . Assim como no atributo IDL, o marshal de transmissão oferece uma maneira mais eficiente de efetuar marshal de dados em uma \[ [ \_ ](/windows/desktop/Midl/wire-marshal) \] rede. Como um atributo ACF, **\[ o marshal \_ de \]** usuário permite que você faça marshal de tipos de dados personalizados desconhecidos para MIDL. Cada tipo específico do aplicativo tem um tipo transmitível correspondente que define a representação de transmissão.
 
-O tipo específico do aplicativo pode ser um tipo simples, composto ou de ponteiro. A principal restrição é que a instância do tipo deve ter um tamanho de memória fixo e bem definido. Se o tamanho da instância do tipo precisar ser alterado, use um campo de ponteiro em vez de uma matriz compatível. Como alternativa, você pode definir um ponteiro para o tipo de alteração.
+O tipo específico do aplicativo pode ser simples, composto ou tipo de ponteiro. A principal restrição é que a instância de tipo deve ter um tamanho de memória fixo e bem definido. Se o tamanho da instância de tipo precisar ser alterado, use um campo de ponteiro em vez de uma matriz compatível. Como alternativa, você pode definir um ponteiro para o tipo aceitável.
 
-Assim como acontece com o atributo de **\[ \_ marshaling \] de fio** , você fornece rotinas para o dimensionamento, o marshaling, o desempacotamento e a liberação de passagens. A tabela a seguir descreve os quatro nomes de rotina fornecidos pelo usuário. O <type> é o *tipo* de usuário especificado na definição de tipo de **\[ \_ marshaling \] do usuário** .
+Assim como no **\[ atributo wire \_ marshal, \]** você fornece rotinas para as passagens de empacotamento, marshaling, desmarque e liberação. A tabela a seguir descreve os quatro nomes de rotina fornecidos pelo usuário. O &lt; tipo é o tipo &gt; userm *especificado* na definição de tipo **\[ de \_ \] marshal** do usuário.
 
 
 
-| Rotina                                                            | Descrição                                                               |
+| Rotina                                                            | Description                                                               |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [<type>\_Usersize](the-type-usersize-function.md)           | Dimensiona o buffer de dados RPC antes do marshaling no lado do cliente ou do servidor. |
-| [<type>\_Usermarshal](the-type-usermarshal-function.md)     | Realiza marshaling dos dados no lado do cliente ou do servidor.                           |
-| [<type>\_UserUnmarshal](the-type-userunmarshal-function.md) | Desempacota os dados no lado do cliente ou do servidor.                         |
-| [<type>\_Isfree](the-type-userfree-function.md)           | Libera os dados no lado do servidor.                                        |
+| [&lt;tipo &gt; \_ UserSize](the-type-usersize-function.md)           | Tamanhos do buffer de dados RPC antes do marshaling no lado do cliente ou do servidor. |
+| [&lt;tipo &gt; \_ UserMarshal](the-type-usermarshal-function.md)     | Marshals dos dados no lado do cliente ou do servidor.                           |
+| [&lt;type &gt; \_ UserUnmarshal](the-type-userunmarshal-function.md) | Desmarcala os dados no lado do cliente ou do servidor.                         |
+| [&lt;tipo &gt; \_ UserFree](the-type-userfree-function.md)           | Libera os dados no lado do servidor.                                        |
 
 
 
@@ -37,24 +37,24 @@ Assim como acontece com o atributo de **\[ \_ marshaling \] de fio** , você for
 
 Essas rotinas fornecidas pelo usuário são fornecidas pelo cliente ou pelo aplicativo de servidor, com base nos atributos direcionais.
 
-Se o parâmetro for \[ [](/windows/desktop/Midl/in) \] somente, o cliente transmitirá para o servidor. O cliente precisa das funções **<type> \_ usersize** e **<type> \_ usermarshal** . O servidor precisa das funções **<type> \_ UserUnmarshal** e **<type> \_ userfree** .
+Se o parâmetro estiver \[ [em](/windows/desktop/Midl/in) \] somente, o cliente transmitirá para o servidor. O cliente precisa do **&lt; tipo &gt; \_ UserSize** e **&lt; digitar funções &gt; \_ UserMarshal.** O servidor precisa do **&lt; tipo &gt; \_ UserUnmarshal** e **&lt; do tipo funções &gt; \_ UserFree.**
 
-Para um \[ [](/windows/desktop/Midl/out-idl) \] parâmetro somente out, o servidor transmite para o cliente. O servidor precisa das funções **<type> \_ usersize** e **<type> \_ usermarshal** , enquanto o cliente precisa da função **<type> \_ usermarshal** .
+Para um \[ [parâmetro](/windows/desktop/Midl/out-idl) \] out-only, o servidor transmite para o cliente. O servidor precisa do **&lt; tipo &gt; \_ UserSize** e digitar **&lt; funções &gt; \_ UserMarshal,** enquanto o cliente precisa do **&lt; tipo função &gt; \_ UserMarshal.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[O \_ atributo de marshaling de fio](the-wire-marshal-attribute.md)
+[O atributo wire \_ marshal](the-wire-marshal-attribute.md)
 </dt> <dt>
 
-[Regras de marshaling para marshaling de usuário e \_ marshaling de conexão](marshaling-rules-for-user-marshal-and-wire-marshal.md)
+[Regras de marshaling para marshal de usuário e marshaling \_ de transmissão](marshaling-rules-for-user-marshal-and-wire-marshal.md)
 </dt> <dt>
 
-[Marshal do usuário \_](/windows/desktop/Midl/user-marshal)
+[marshal \_ de usuário](/windows/desktop/Midl/user-marshal)
 </dt> <dt>
 
-[\_marshaling de transmissão](/windows/desktop/Midl/wire-marshal)
+[wire \_ marshal](/windows/desktop/Midl/wire-marshal)
 </dt> <dt>
 
 [**NdrGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)

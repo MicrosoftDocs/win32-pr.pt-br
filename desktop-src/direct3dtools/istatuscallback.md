@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dbac6a356a71d24f1808cba404d513333b9fa071
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: d57ed4925fe0f47a5d55dfc581dee5e31c31aca2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786792"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628192"
 ---
 # <a name="span-idvspixengineistatuscallbackspanistatuscallback-interface"></a><span id="vspixengine.istatuscallback"></span>Interface IStatusCallback
 
@@ -38,7 +38,7 @@ A interface **IStatusCallback** herda da interface [**IUnknown.**](/windows/desk
 
 A interface **IStatusCallback** tem esses métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Status</strong></a></td><td ><p>Uma função de retorno de chamada usada para notificar o host do progresso do mecanismo. Isso também serve como uma maneira para o host determinar que o mecanismo ainda está em execução.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Status</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host do progresso do mecanismo. Isso também serve como uma maneira para o host determinar que o mecanismo ainda está em execução.</p></td></tr></tbody></table>
 
  
 

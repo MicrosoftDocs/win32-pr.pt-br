@@ -1,78 +1,78 @@
 ---
-title: Associação ao catálogo global
-description: O catálogo global é um namespace que contém dados de diretório para todos os domínios em uma floresta.
+title: Associação ao Catálogo Global
+description: O Catálogo Global é um namespace que contém dados de diretório para todos os domínios em uma floresta.
 ms.assetid: c3c131c7-d9dd-4dbd-a909-abd0ffd9f375
 ms.tgt_platform: multiple
 keywords:
-- Associação ao AD do catálogo global
-- AD de catálogo global, associando a
+- Associação ao AD do Catálogo Global
+- global catalog AD , associação a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08fe40b944130f66617b0c111b361ca51cbef126
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b4d094a0c07a40fa063b726d0ba1c5a15977873d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007359"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881647"
 ---
-# <a name="binding-to-the-global-catalog"></a>Associação ao catálogo global
+# <a name="binding-to-the-global-catalog"></a>Associação ao Catálogo Global
 
-O catálogo global é um namespace que contém dados de diretório para todos os domínios em uma floresta. O catálogo global contém uma réplica parcial de cada diretório de domínio. Ele contém uma entrada para cada objeto na floresta da empresa, mas não contém todas as propriedades de cada objeto. Em vez disso, ele contém apenas as propriedades especificadas para inclusão no catálogo global.
+O Catálogo Global é um namespace que contém dados de diretório para todos os domínios em uma floresta. O Catálogo Global contém uma réplica parcial de cada diretório de domínio. Ele contém uma entrada para cada objeto na floresta corporativa, mas não contém todas as propriedades de cada objeto. Em vez disso, ele contém apenas as propriedades especificadas para inclusão no Catálogo Global.
 
-O catálogo global é armazenado em servidores específicos em toda a empresa. Somente os controladores de domínio podem servir como servidores de catálogo global. Os administradores indicam se um determinado controlador de domínio contém um catálogo global usando o Active Directory sites e o Gerenciador de serviços.
+O Catálogo Global é armazenado em servidores específicos em toda a empresa. Somente controladores de domínio podem servir como servidores de Catálogo Global. Os administradores indicam se um determinado controlador de domínio contém um Catálogo Global usando o Gerenciador de Serviços e Sites do Active Directory.
 
-Para associar ao catálogo global com a ADSI, use o moniker "GC:".
+Para se vincular ao Catálogo Global com ADSI, use o moniker "GC:".
 
-Há duas maneiras de se associar ao catálogo global para executar uma pesquisa em uma floresta:
+Há duas maneiras de se vincular ao Catálogo Global para executar uma pesquisa em uma floresta:
 
--   Associe-se ao objeto raiz da empresa para pesquisar em todos os domínios na floresta.
--   Associar a um objeto específico para pesquisar o objeto e seus filhos. Por exemplo, se você associar a um domínio que tem dois domínios abaixo dele em uma árvore de domínio na floresta, poderá pesquisar entre esses três domínios. Lembre-se de que o nome distinto para o objeto a ser associado é exatamente o mesmo que o nome distinto usado para ligar ao namespace "LDAP:". Lembre-se de que "LDAP:" é uma réplica completa de um único domínio e que "GC:" é uma réplica parcial de todos os domínios na floresta.
+-   A bind ao objeto raiz empresarial para pesquisar em todos os domínios na floresta.
+-   A bind a um objeto específico para pesquisar esse objeto e seus filhos. Por exemplo, se você se vincular a um domínio que tem dois domínios abaixo dele em uma árvore de domínio na floresta, poderá pesquisar entre esses três domínios. Esteja ciente de que o nome diferenciado para o objeto ao qual se vincular é exatamente o mesmo que o nome diferenciado usado para se vincular ao namespace "LDAP:". Lembre-se de que "LDAP:" é uma réplica completa de um único domínio e que "GC:" é uma réplica parcial de todos os domínios na floresta.
 
-Assim como no moniker "LDAP:", você pode usar a associação sem servidor ou associar a um servidor de catálogo global específico. Se estiver pesquisando na floresta atual, use a associação sem servidor. No entanto, se pesquisar em outra floresta, especifique um nome de domínio ou um servidor de catálogo global para associar, como mostrado nos exemplos a seguir.
+Assim como no moniker "LDAP:", você pode usar a associação sem servidor ou a associação a um servidor de Catálogo Global específico. Se estiver pesquisando na floresta atual, use a associação sem servidor. No entanto, se estiver pesquisando em outra floresta, especifique um nome de domínio ou um servidor de Catálogo Global ao qual se vincular, como mostrado nos exemplos a seguir.
 
-Associar usando o nome de domínio:
+A bind usando o nome de domínio:
 
 ``` syntax
 GC://fabrikam.com
 ```
 
-Associar usando o nome do servidor:
+A bind usando o nome do servidor:
 
 ``` syntax
 GC://servername
 ```
 
-Você também pode associar a um objeto específico dentro do catálogo global. Para associar ao objeto Sales no domínio fabrikam, use o formato a seguir.
+Você também pode se vincular a um objeto específico dentro do Catálogo Global. Para se vincular ao objeto de vendas no domínio fabrikam, use o formato a seguir.
 
 ``` syntax
 GC://fabrikam.com/DC=sales,DC=fabrikam,DC=com
 ```
 
-Ou, para associar ao objeto Sales no servidor, use o formato a seguir.
+Ou, para se vincular ao objeto de vendas no servidor, use o formato a seguir.
 
 ``` syntax
 GC://servername.fabrikam.com/DC=sales,DC=fabrikam,DC=com
 ```
 
-**Para Pesquisar toda a floresta**
+**Para pesquisar toda a floresta**
 
-1.  Associe-se à raiz do namespace do catálogo global.
-2.  Enumere o contêiner do catálogo global. O contêiner de catálogo global contém um único objeto que você pode usar para Pesquisar toda a floresta.
-3.  Use o objeto no contêiner para executar a pesquisa. Em C/C++, chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) no objeto para que você possa usar a interface **IDirectorySearch** para executar a pesquisa. Em Visual Basic, use o objeto retornado da enumeração em sua consulta ADO.
+1.  A bind à raiz do namespace catálogo global.
+2.  Enumerar o contêiner do Catálogo Global. O contêiner catálogo global contém um único objeto que você pode usar para pesquisar toda a floresta.
+3.  Use o objeto no contêiner para executar a pesquisa. No C/C++, chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) no objeto para que você possa usar a interface **IDirectorySearch** para executar a pesquisa. Em Visual Basic, use o objeto retornado da enumeração em sua consulta ADO.
 
-Para enumerar os servidores de catálogo global em um site, execute uma pesquisa de subárvore LDAP de "CN = <yoursite> , CN = sites <DN of the configurationNamingContext> ", usando a cadeia de caracteres de filtro a seguir.
+Para enumerar os servidores do Catálogo Global em um site, execute uma pesquisa de subárvore LDAP de "cn= &lt; yoursite &gt; ,cn=sites, ", usando a cadeia de caracteres de filtro a <DN of the configurationNamingContext> seguir.
 
 ``` syntax
 (&(objectCategory=nTDSDSA)(options:1.2.840.113556.1.4.803:=1))
 ```
 
-Esse filtro usa o **\_ bit de regra de correspondência LDAP \_ \_ \_ e** o operador de regra de correspondência (1.2.840.113556.1.4.803) para localizar objetos **nTDSDSA** que têm o bit de ordem inferior definido no bitmask do atributo **Options** . O bit de ordem inferior, que corresponde ao **NTDSDSA \_ opt \_ é \_** constante de GC definido em NTDSAPI. h, identifica o objeto **NTDSDSA** de um servidor de catálogo global. Para obter mais informações sobre regras de correspondência, consulte [sintaxe do filtro de pesquisa](/windows/desktop/ADSI/search-filter-syntax).
+Esse filtro usa o operador de regra de correspondência **BIT \_ \_ \_ \_ AND** DA REGRA DE CORRESPONDÊNCIA LDAP (1.2.840.113556.1.4.803) para encontrar objetos **nTDSDSA** que têm o bit de ordem baixa definido no bitmask do atributo **options.** O bit de ordem baixa, que corresponde à constante **NTDSDSA \_ OPT \_ IS \_ GC** definida em Ntdsapi.h, identifica o objeto **nTDSDSA** de um servidor de Catálogo Global. Para obter mais informações sobre regras de correspondência, consulte [Sintaxe de filtro de pesquisa](/windows/desktop/ADSI/search-filter-syntax).
 
-O pai do objeto **nTDSDSA** é o objeto Server, e a propriedade **dNSHostName** do objeto Server é o nome DNS do servidor de catálogo global.
+O pai do objeto **nTDSDSA** é o objeto de servidor e a propriedade **dNSHostName** do objeto de servidor é o nome DNS do servidor de Catálogo Global.
 
-Você não pode usar \# definir constantes como **NTDSDSA \_ opt \_ é \_** o bit de regra de correspondência de GC e **LDAP \_ \_ \_ \_ e** diretamente em uma cadeia de caracteres de filtro de pesquisa. No entanto, você pode usar essas constantes como argumentos para uma função, como [**swprintf \_ s**](/windows/win32/api/winuser/nf-winuser-wsprintfa) , para inserir os valores constantes em uma cadeia de caracteres de filtro.
+Você não pode usar definir constantes como \# **NTDSDSA \_ OPT IS \_ \_ GC** e **LDAP \_ MATCHING RULE BIT \_ \_ \_ AND** diretamente em uma cadeia de caracteres de filtro de pesquisa. No entanto, você pode usar essas constantes como argumentos para uma função como [**swprintf \_ s**](/windows/win32/api/winuser/nf-winuser-wsprintfa) para inserir os valores constantes em uma cadeia de caracteres de filtro.
 
-O catálogo global não representa toda a estrutura de árvore da floresta. Por exemplo, você pode esperar que o exemplo de código a seguir Enumere todos os domínios na floresta e todos os objetos filho de cada domínio. Na realidade, o que ele realmente faz é enumerar todos os domínios na floresta, mas nenhum dos objetos de domínio enumerados contém quaisquer filhos. Essa é uma limitação do catálogo global.
+O catálogo global não representa toda a estrutura de árvore de floresta. Por exemplo, você pode esperar que o exemplo de código a seguir enumerasse todos os domínios na floresta e todos os objetos filho de cada domínio. Na realidade, o que ele realmente faz é enumerar todos os domínios na floresta, mas nenhum dos objetos de domínio enumerados contém nenhum filho. Essa é uma limitação do catálogo global.
 
 
 ```VB
@@ -94,7 +94,7 @@ Next
 
 
 
-Para corrigir isso, é necessário associar a cada objeto de domínio e, em seguida, enumerar os objetos filho de cada domínio. A técnica apropriada é mostrada no exemplo de código a seguir.
+Para corrigir isso, é necessário se vincular a cada objeto de domínio e enumerar os objetos filho de cada domínio. A técnica adequada é mostrada no exemplo de código a seguir.
 
 
 ```VB
@@ -120,8 +120,8 @@ Next
 
 
 
-Para obter mais informações e exemplos de código que mostram como pesquisar uma floresta inteira, consulte [exemplo de código para pesquisar uma floresta](example-code-for-searching-a-forest.md).
+Para obter mais informações e exemplos de código que mostram como pesquisar uma floresta inteira, consulte [Código de exemplo para pesquisar uma floresta.](example-code-for-searching-a-forest.md)
 
- 
+ 
 
- 
+ 

@@ -32,12 +32,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34913c950f0bba981a96256e74d9a8c3c3ff5f04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91acce3b3829c947bfb6e705ad7e1f07b938a986bc6f6845a4c10a54b4f1992c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094406"
 ---
 # <a name="eap-method-flags"></a>Sinalizadores de método EAP
 
@@ -79,7 +79,7 @@ Não exibir uma interface do usuário.
 
 
 
-Os dados do usuário foram obtidos do logon do Windows.
+os dados do usuário foram obtidos do logon Windows.
 
 
 </dt> </dl> </dd> <dt>
@@ -329,9 +329,9 @@ Não use. Reservado para uso futuro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
 
 
 

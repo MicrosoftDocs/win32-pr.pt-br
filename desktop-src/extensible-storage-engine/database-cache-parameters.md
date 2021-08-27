@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ac7e8859eabfa35d37464340958b52e85315a9237655107d6736af3555915757
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: defc33e3d020b9a6b59c580446afc51ee12631a4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786343"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476661"
 ---
 # <a name="database-cache-parameters"></a>Parâmetros de cache do banco de dados
 
@@ -38,58 +38,9 @@ Esse parâmetro controla o tamanho de uma parte auxiliar do cache de página do 
 
 **Windows XP e posterior:**  Esse parâmetro é obsoleto e não afeta a operação do mecanismo de banco de dados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>256</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0, 2 – 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>256</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>0, 2 – 2147483647</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Não</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramCacheSize*  
@@ -101,59 +52,9 @@ Esse parâmetro pode ser usado para controlar o tamanho do cache de página do b
 
 Quando esse parâmetro é lido, o tamanho real do cache nas páginas do banco de dados é retornado. Esse tamanho pode ser usado pelo aplicativo como uma entrada para impulsionar seu ajuste manual do tamanho do cache.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 1 – 1048575</p>
-<p><strong>Windows XP:</strong> 1 – 4294967295</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>Especial</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 1 – 1048575</p><p><strong>Windows XP:</strong> 1 – 4294967295</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramCacheSizeMin*  
@@ -167,62 +68,9 @@ Por padrão, o cache do banco de dados ajustará automaticamente seu tamanho ent
 
 **Windows XP e posterior:**  O gerenciador de cache definirá automaticamente seu próprio tamanho mínimo de cache para evitar deadlocks.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p><strong>Windows 2000:</strong> 64</p>
-<p><strong>Windows XP:</strong> 1</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 1 – 1048575</p>
-<p><strong>Windows XP:</strong> 1 – 4294967295</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p><strong>Windows 2000:</strong>  Não</p>
-<p><strong>Windows XP:</strong>  Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p><strong>Windows 2000:</strong>  Não</p>
-<p><strong>Windows XP:</strong>  Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p><strong>Windows 2000:</strong> 64</p><p><strong>Windows XP:</strong> 1</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 1 – 1048575</p><p><strong>Windows XP:</strong> 1 – 4294967295</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p><strong>Windows 2000:</strong>  Não</p><p><strong>Windows XP:</strong>  Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p><strong>Windows 2000:</strong>  Não</p><p><strong>Windows XP:</strong>  Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramCacheSizeMax*  
@@ -236,62 +84,9 @@ Por padrão, o cache do banco de dados ajustará automaticamente seu tamanho ent
 
 **Windows Vista:**  A partir Windows Vista, o valor padrão desse parâmetro foi alterado para esclarecer esse comportamento.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 512</p>
-<p><strong>Windows Vista:</strong> 200000000</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 1 – 1048575</p>
-<p><strong>Windows XP:</strong> 1 – 4294967295</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p><strong>Windows 2000:</strong>  Não</p>
-<p><strong>Windows XP:</strong>  Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p><strong>Windows XP e Windows 2000:</strong>  Não</p>
-<p><strong>Windows Vista e Windows Server 2003:</strong>  Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 512</p><p><strong>Windows Vista:</strong> 200000000</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 1 – 1048575</p><p><strong>Windows XP:</strong> 1 – 4294967295</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p><strong>Windows 2000:</strong>  Não</p><p><strong>Windows XP:</strong>  Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p><strong>Windows XP e Windows 2000:</strong>  Não</p><p><strong>Windows Vista e Windows Server 2003:</strong>  Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramCheckpointDepthMax*  
@@ -303,60 +98,9 @@ Se o log circular estiver habilitado usando [JET_paramCircularLog,](./transactio
 
 É importante que esse parâmetro não seja definido como muito baixo. À medida que o valor desse parâmetro se aproximar de zero, o cache se tornará cada vez mais agressivo ao liberar páginas de banco de dados para o disco. Isso não só resulta em um número maior de gravações nos arquivos de banco de dados, mas também causa indiretamente um número maior de leituras para esses arquivos também. Isso pode causar problemas de desempenho muito significativos em alguns casos. Infelizmente, definir o menor valor ideal para esse parâmetro só pode ser feito usando experimentação com o aplicativo de destino.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>20971520</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 0 – 2147483647</p>
-<p><strong>Windows Vista:</strong>  Todos os valores</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> Esse parâmetro é global.</p>
-<p><strong>Windows Vista:</strong>  Esse parâmetro é por instância.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>20971520</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 0 – 2147483647</p><p><strong>Windows Vista:</strong>  Todos os valores</p> | | <p>Escopo:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> Esse parâmetro é global.</p><p><strong>Windows Vista:</strong>  Esse parâmetro é por instância.</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Sim</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramCheckpointIOMax*  
@@ -364,58 +108,9 @@ Se o log circular estiver habilitado usando [JET_paramCircularLog,](./transactio
 
 Esse parâmetro controla o número máximo de gravações simultâneas que o mecanismo de banco de dados usará para liberar páginas de banco de dados modificadas com a finalidade de avançar o ponto de verificação. O valor desse parâmetro pode ser usado para equilibrar a velocidade com a qual o ponto de verificação pode ser avançado versus o impacto negativo que esse processo terá no tempo de resposta para outras operações de E/S para os discos que contém o banco de dados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>96</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>8 – 1024</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Windows Vista e posterior</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>96</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>8 – 1024</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Windows Vista e posterior</p> | 
+
 
 
 *JET_paramEnableViewCache*  
@@ -425,60 +120,11 @@ Quando esse parâmetro for **True**, o mecanismo de banco de dados usará dados 
 
 A intenção desse modo é reduzir ainda mais a quantidade de memória privada usada pelo mecanismo de banco de dados para armazenar em cache os dados do banco de dados.
 
-O cache de exibição só poderá ser usado se o uso do cache Windows de arquivos estiver habilitado definindo JET_paramEnableFileCache como **True.**
+O cache de exibição só poderá ser usado se o uso do cache Windows arquivo estiver habilitado definindo JET_paramEnableFileCache como **True.**
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>Falso</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>False, True</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Windows Vista e posterior</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>Falso</p> | | <p>Tipo:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>False, True</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Não</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Windows Vista e posterior</p> | 
+
 
 
 *JET_paramLRUKCorrInterval*  
@@ -486,59 +132,9 @@ O cache de exibição só poderá ser usado se o uso do cache Windows de arquivo
 
 Esse parâmetro define o intervalo de tempo em microssegundos nos quais dois acessos de página de banco de dados são considerados correlacionados. Esse intervalo de correlação controla a sensibilidade do LRU-K (algoritmo de substituição de página) do cache para acessos sucessivos de página. Isso, por sua vez, afetará quais páginas ele escolhe manter armazenadas em cache.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>128000</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 0 – 2147483647</p>
-<p><strong>Windows Vista:</strong>  Todos os valores</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>128000</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 0 – 2147483647</p><p><strong>Windows Vista:</strong>  Todos os valores</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Não</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramLRUKHistoryMax*  
@@ -548,60 +144,9 @@ Esse parâmetro define o número máximo de páginas de banco de dados não arma
 
 **Windows XP e Windows Server 2003:**  Esse parâmetro é ignorado no Windows XP e Windows Server 2003 e não afeta a operação do mecanismo de banco de dados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p><strong>Windows 2000:</strong> 1024</p>
-<p><strong>Windows Vista:</strong> 100000</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 0 – 4194303</p>
-<p><strong>Windows Vista:</strong>  Todos os valores</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p><strong>Windows 2000:</strong> 1024</p><p><strong>Windows Vista:</strong> 100000</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 0 – 4194303</p><p><strong>Windows Vista:</strong>  Todos os valores</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Não</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramLRUKPolicy*  
@@ -609,58 +154,9 @@ Esse parâmetro define o número máximo de páginas de banco de dados não arma
 
 Esse parâmetro configura o número de acessos de página de banco de dados que são considerados para determinar a utilidade da página. Esse parâmetro é essencialmente o K em LRU-K, o algoritmo de substituição de página do cache de página do banco de dados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>1-2</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>2</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>1-2</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Não</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramLRUKTimeout*  
@@ -668,59 +164,9 @@ Esse parâmetro configura o número de acessos de página de banco de dados que 
 
 Esse parâmetro indica o período de tempo em segundos após o qual uma página no cache de página do banco de dados é considerada perdida um acesso à página com a finalidade de considerar a utilidade da página.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>100</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 1 – 2147483647</p>
-<p><strong>Windows Vista:</strong> 1 a 4294967295</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p>100</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 1 – 2147483647</p><p><strong>Windows Vista:</strong> 1 a 4294967295</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Não</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramLRUKTrxCorrInterval*  
@@ -735,61 +181,9 @@ Esse parâmetro controla quando o cache de página do banco de dados começa a r
 
 A altura da distância do limite inicial determinará o tempo de resposta que o cache da página do banco de dados deve ter para produzir os buffers disponíveis antes que o aplicativo precise deles. Um limite de início alto dará ao processo em segundo plano mais tempo para reagir. no entanto, um limite de início alto implica um limite de parada maior e reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 5 (1%)</p>
-<p><strong>Windows Vista:</strong> 20 milhões (1%)</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 1 a 1048575</p>
-<p><strong>Windows XP:</strong> 1 a 4294967295</p>
-<p><strong>Windows Vista:</strong>  Todos os valores</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 5 (1%)</p><p><strong>Windows Vista:</strong> 20 milhões (1%)</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 1 a 1048575</p><p><strong>Windows XP:</strong> 1 a 4294967295</p><p><strong>Windows Vista:</strong>  Todos os valores</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramStopFlushThreshold*  
@@ -799,85 +193,16 @@ Esse parâmetro controla quando o cache da página do banco de dados encerra a r
 
 A distância entre o limite inicial e o limite de interrupção afeta a eficiência com a qual as páginas de banco de dados são liberadas pelo processo em segundo plano. Um intervalo maior fará com que seja mais provável que as gravações nas páginas vizinhas possam ser combinadas. no entanto, um limite de parada alta reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 10 (2%)</p>
-<p><strong>Windows Vista:</strong> 40 milhões (2%)</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong> 1 a 1048575</p>
-<p><strong>Windows XP:</strong> 1 a 4294967295</p>
-<p><strong>Windows Vista:</strong>  Todos os valores</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Não</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Sim</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor padrão:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong> 10 (2%)</p><p><strong>Windows Vista:</strong> 40 milhões (2%)</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000:</strong> 1 a 1048575</p><p><strong>Windows XP:</strong> 1 a 4294967295</p><p><strong>Windows Vista:</strong>  Todos os valores</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

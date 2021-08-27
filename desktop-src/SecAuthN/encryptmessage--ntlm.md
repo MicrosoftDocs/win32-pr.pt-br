@@ -4,12 +4,12 @@ ms.assetid: 852a4624-792d-4f7d-bd3e-5a28692e2ef3
 title: Função EncryptMessage (NTLM)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 4940cbc85fba6485ab78f087ce5b9bf9e4695138
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c36ce31793a7dc889b6dec40acac7606cc38bf3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105773919"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480802"
 ---
 # <a name="encryptmessage-ntlm-function"></a>Função EncryptMessage (NTLM)
 
@@ -41,8 +41,11 @@ Sinalizadores específicos do pacote que indicam a qualidade da proteção. Um [
 
 Esse parâmetro pode ser o sinalizador a seguir.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>Produz um cabeçalho ou um trailer, mas não criptografa a mensagem.<br/><blockquote>[!Note]<br />
-KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br/></td></tr></tbody></table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | Produz um cabeçalho ou um trailer, mas não criptografa a mensagem.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br /> | 
+
 
 *PMessage* \[ entrada, saída\]
 
@@ -58,7 +61,7 @@ Os aplicativos que não usam SSL devem fornecer um [**SecBuffer**](/windows/win3
 
 O número de sequência que o aplicativo de transporte atribuiu à mensagem. Se o aplicativo de transporte não mantiver números de sequência, esse parâmetro deverá ser zero.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará s \_ E \_ OK.
 
@@ -98,9 +101,9 @@ Para um desempenho ideal, as estruturas *PMessage* devem ser alocadas da memóri
 
 | Requisito | Valor |
 | -------------------------|-------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\]          |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\] |
-| parâmetro                   | SSPI. h (incluir Security. h)               |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\]          |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\] |
+| Cabeçalho                   | SSPI. h (incluir Security. h)               |
 | Biblioteca                  | Secur32. lib                               |
 | DLL                      | Secur32.dll                               |
 

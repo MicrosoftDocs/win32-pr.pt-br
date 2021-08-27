@@ -1,7 +1,7 @@
 ---
-description: 'O método SetSink define um Gerenciador de qualidade externo. Esse método implementa o método IQualityControl:: SetSink.'
+description: O método SetSink define um gerenciador de qualidade externo. Esse método implementa o método IQualityControl::SetSink.
 ms.assetid: 714e6839-954e-4231-824d-72a45f270f59
-title: Método CBasePin. SetSink (Amfilter. h)
+title: Método CBasePin.SetSink (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4237e342f8f49059cab017b17a1f116ca6e2da67
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e94dc561e378ab526eee04f82e0f54a90889ee4396996d96d01f6c8da8c34d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108626"
 ---
-# <a name="cbasepinsetsink-method"></a>Método CBasePin. SetSink
+# <a name="cbasepinsetsink-method"></a>Método CBasePin.SetSink
 
-O `SetSink` método define um Gerenciador de qualidade externo. Esse método implementa o método [**IQualityControl:: SetSink**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-setsink) .
+O `SetSink` método define um gerenciador de qualidade externo. Esse método implementa o [**método IQualityControl::SetSink.**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-setsink)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ HRESULT SetSink(
 *piqc* 
 </dt> <dd>
 
-Ponteiro para a interface [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) do Gerenciador de qualidade.
+Ponteiro para a interface [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) do gerenciador de qualidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Chame esse método para redirecionar mensagens de controle de qualidade para um Gerenciador de qualidade externo. Para obter mais informações, consulte [Gerenciamento de controle de qualidade](quality-control-management.md).
+Chame esse método para redirecionar mensagens de controle de qualidade para um gerenciador de qualidade externo. Para obter mais informações, consulte [Gerenciamento de controle de qualidade.](quality-control-management.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Chame esse método para redirecionar mensagens de controle de qualidade para um 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

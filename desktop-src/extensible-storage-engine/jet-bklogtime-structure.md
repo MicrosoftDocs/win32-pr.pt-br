@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_BKLOGTIME'
-title: Estrutura de JET_BKLOGTIME
+description: 'Saiba mais sobre: estrutura JET_BKLOGTIME dados'
+title: estrutura JET_BKLOGTIME de dados
 TOCTitle: JET_BKLOGTIME Structure
 ms:assetid: 31460079-7c5b-4145-837d-b112ba0117d6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269219(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b34740d582e341cce3b2fd0b28203b7346a4de1d94a8586289be8ab252247943
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d6f8e3f77d905eb601441ad8ab3ca88bb08f59d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487718"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478522"
 ---
-# <a name="jet_bklogtime-structure"></a>Estrutura de JET_BKLOGTIME
+# <a name="jet_bklogtime-structure"></a>estrutura JET_BKLOGTIME de dados
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_bklogtime-structure"></a>Estrutura de JET_BKLOGTIME
+## <a name="jet_bklogtime-structure"></a>estrutura JET_BKLOGTIME de dados
 
-A estrutura de **JET_BKLOGTIME** contém os elementos de data e hora de um evento. É uma extensão de [JET_LOGTIME](./jet-logtime-structure.md).
+A **JET_BKLOGTIME** estrutura contém os elementos de data e hora de um evento. É uma extensão de [JET_LOGTIME](./jet-logtime-structure.md).
 
-**Windows vista: JET_BKLOGTIME** é introduzido no Windows Vista.
+**Windows Vista: JET_BKLOGTIME** é introduzido no Windows Vista.
 
 ```cpp
     typedef struct {
@@ -62,27 +62,27 @@ A estrutura de **JET_BKLOGTIME** contém os elementos de data e hora de um event
 
 **bSeconds**
 
-A hora do evento em segundos. Isso pode ser 0 (zero) a 60. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+A hora do evento em segundos. Isso pode ser de 0 (zero) a 60. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
 **bMinutes**
 
-A hora do evento em minutos. Isso pode ser 0 (zero) a 60. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+A hora do evento em minutos. Isso pode ser de 0 (zero) a 60. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
 **bHours**
 
-A hora do evento em horas. Isso pode ser 0 (zero) a 24. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+A hora do evento em horas. Isso pode ser de 0 (zero) a 24. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
-**bDay**
+**Bday**
 
-O dia do mês do evento. Isso pode ser 0 (zero) a 31. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+O dia do mês do evento. Isso pode ser de 0 (zero) a 31. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
 **bMonth**
 
-O mês do ano do evento. Isso pode ser 0 (zero) a 12. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+O mês do ano do evento. Isso pode ser de 0 (zero) a 12. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
 **bYear**
 
-O ano (deslocamento de 1900) do evento. Para obter o ano real, adicione 1900 a esse valor. 0 (zero) é usado quando a estrutura de **JET_BKLOGTIME** é "NULL".
+O ano (deslocamento de 1900) do evento. Para atingir o ano real, adicione 1900 a esse valor. 0 (zero) é usado quando a **estrutura JET_BKLOGTIME** é "nula".
 
 **bFiller1**
 
@@ -104,28 +104,12 @@ Esse campo deve ser ignorado.
 
 Se esse evento for um backup, esse sinalizador conterá um dos seguintes valores possíveis:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Nome</p></th>
-<th><p>Valor</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>backup de streaming</p></td>
-<td><p>0 (zero)</p></td>
-</tr>
-<tr class="even">
-<td><p>backup de instantâneo</p></td>
-<td><p>1</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Nome</p> | <p>Valor</p> | 
+|-------------|--------------|
+| <p>backup de streaming</p> | <p>0 (zero)</p> | 
+| <p>backup de instantâneo</p> | <p>1</p> | 
+
 
 
 **fReserved**
@@ -138,26 +122,9 @@ Essa estrutura é usada durante a depuração.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

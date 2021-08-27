@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ Accessstring (v4)
+description: MBNProfileExt... \/ \/ AccessString (v4)
 MS-HAID: WWAN\_profile\_v4.element\_AccessString
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dec0b54f4e6539fb12ab2f2150f13a8c2046f58a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8066b722bb45e7296e48e65bb9bfd129ec9c7d4d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090312"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469393"
 ---
-# <a name="span-idwwan_profile_v4element_accessstringspanmbnprofileextaccessstring-v4"></a><span id="WWAN_profile_v4.element_AccessString"></span>MBNProfileExt \/ ... \/ Accessstring (v4)
+# <a name="span-idwwan_profile_v4element_accessstringspanmbnprofileextaccessstring-v4"></a><span id="WWAN_profile_v4.element_AccessString"></span>MBNProfileExt... \/ \/ AccessString (v4)
 
-Identifica a cadeia de caracteres de APN ou de discagem a ser usada para estabelecer uma conexão de dados.
+Identifica o APN ou a cadeia de caracteres discar a ser usada para estabelecer uma conexão de dados.
 
-Para obter mais informações, consulte a documentação do elemento v1 [**accessstring**](./schema-accessstring-contexttype-element.md) .
+Para obter mais informações, consulte a documentação do [**elemento AccessString**](./schema-accessstring-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento v1 [**acces
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AccessString\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <AccessString>
@@ -61,41 +61,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

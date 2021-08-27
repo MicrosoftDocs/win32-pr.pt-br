@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 8040944d5890aa521681827bef786201a35da039
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17ec31b1f2992b4311e42e149d39b68b3d724a3d943d67df7c4c5fce88122606
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112486"
 ---
 # <a name="findcloseprinterchangenotification-function"></a>Função FindClosePrinterChangeNotification
 
@@ -46,7 +46,7 @@ Um identificador para o objeto de notificação de alteração a ser fechado. Tr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 

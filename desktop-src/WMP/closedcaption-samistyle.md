@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4a12671877cf0d4d8abdb77d169b0f13000bc564e6c1dc37e65bf6eccdf005
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bd45977e3d433239e74aee21def913b640fad12
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118580761"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882179"
 ---
 # <a name="closedcaptionsamistyle"></a>ClosedCaption.SAMIStyle
 
@@ -35,7 +35,7 @@ Essa propriedade é uma Cadeia de Caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre <STYLE> as marcas e </STYLE> no arquivo SAMI. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
+Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre &lt; o STYLE e as marcas no arquivo &gt; </STYLE> SAMI. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
 
 
 ```

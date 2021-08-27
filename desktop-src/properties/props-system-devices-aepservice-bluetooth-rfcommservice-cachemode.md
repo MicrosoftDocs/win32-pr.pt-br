@@ -1,19 +1,19 @@
 ---
-description: Define o modo de cache RFCOMM Bluetooth para a consulta.
+description: Define o Bluetooth modo de cache RFCOMM para a consulta.
 ms.assetid: 04ba721b-614b-4621-a230-abc8ba2a568b
-title: System. Devices. AepService. Bluetooth. RfcommService. CacheMode
+title: System.Devices.AepService. Bluetooth. RfcommService.CacheMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0afee8b888ece8fec0197c55c332ff1d1195168c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afa9aee643f5fa2b3dd5f984f8aef359f92165f1d1f1a3a5cb02618abba0b032
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091406"
 ---
-# <a name="systemdevicesaepservicebluetoothrfcommservicecachemode"></a>System. Devices. AepService. Bluetooth. RfcommService. CacheMode
+# <a name="systemdevicesaepservicebluetoothrfcommservicecachemode"></a>System.Devices.AepService. Bluetooth. RfcommService.CacheMode
 
-Define o modo de cache RFCOMM Bluetooth para a consulta.
+Define o Bluetooth modo de cache RFCOMM para a consulta.
 
 ## <a name="windows-10-version-1511"></a>Windows 10, versão 1511
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

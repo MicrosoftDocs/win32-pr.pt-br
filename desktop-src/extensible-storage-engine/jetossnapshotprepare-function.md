@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f647a3bac0f69920eb7d0d59825739ae17e9f00748879bd9f54eeef4bcffb899
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 010cafd19ffde09b3083dd3cb6e6a69fa2268f11
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119728136"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470323"
 ---
 # <a name="jetossnapshotprepare-function"></a>Função JetOSSnapshotPrepare
 
@@ -53,73 +53,28 @@ O identificador da sessão de instantâneo a ser iniciada.
 
 As opções para essa chamada. Esse parâmetro pode ter uma combinação dos valores a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Instantâneo normal.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitIncrementalSnapshot</p></td>
-<td><p>Somente arquivos de log serão tirados.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitCopySnapshot</p></td>
-<td><p>Um instantâneo de cópia (normal ou incremental) sem truncamento de log.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitContinueAfterThaw</p></td>
-<td><p>A sessão de instantâneo ocorre após <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e exigirá uma chamada de função <a href="gg294136(v=exchg.10).md">JetOSSnapshotEnd.</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitExplicitPrepare</p></td>
-<td><p>Nenhuma instância será preparada por padrão.</p>
-<p><strong>Windows 7:</strong>  JET_bitExplicitPrepare é introduzido no Windows 7.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>0</p> | <p>Instantâneo normal.</p> | 
+| <p>JET_bitIncrementalSnapshot</p> | <p>Somente arquivos de log serão tirados.</p> | 
+| <p>JET_bitCopySnapshot</p> | <p>Um instantâneo de cópia (normal ou incremental) sem truncamento de log.</p> | 
+| <p>JET_bitContinueAfterThaw</p> | <p>A sessão de instantâneo ocorre após <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e exigirá uma chamada de função <a href="gg294136(v=exchg.10).md">JetOSSnapshotEnd.</a></p> | 
+| <p>JET_bitExplicitPrepare</p> | <p>Nenhuma instância será preparada por padrão.</p><p><strong>Windows 7:</strong>  JET_bitExplicitPrepare é introduzido no Windows 7.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>O ponteiro de ID do instantâneo é NULL ou o <em>parâmetro grbit</em> é inválido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>Uma sessão de instantâneo já está em andamento e a operação não tem permissão para ter mais de uma sessão de instantâneo em um determinado momento.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>O ponteiro de ID do instantâneo é NULL ou o <em>parâmetro grbit</em> é inválido.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>Uma sessão de instantâneo já está em andamento e a operação não tem permissão para ter mais de uma sessão de instantâneo em um determinado momento.</p> | 
+
 
 
 Se essa função for bem-sucedida, uma sessão de instantâneo poderá iniciar a qualquer momento com a fase de congelamento de E/S. O identificador da sessão será retornado e deve ser usado nas chamadas subsequentes para a sessão de instantâneo.
@@ -140,34 +95,9 @@ As entradas do log de eventos serão geradas para as diferentes etapas do instan
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista ou Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

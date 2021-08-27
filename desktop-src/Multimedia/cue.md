@@ -3,7 +3,7 @@ title: comando de indicação
 description: O comando de indicação se prepara para reproduzir ou gravar. Digital-Video, VCR e Wave-Audio Devices reconhecem este comando.
 ms.assetid: 94fa0d0c-d5c9-4ef1-bb7d-22dfb09a7689
 keywords:
-- comando de indicação multimídia do Windows
+- comando de indicação Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd71f06a71c8aff4752fc31d750a3612564eb8a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6398d4773b6c92332e8a95996e4d81941a073fe
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824827"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467853"
 ---
 # <a name="cue-command"></a>comando de indicação
 
@@ -53,51 +53,13 @@ Sinalizador que prepara um dispositivo para reprodução ou gravação. A tabela
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Marcar</th>
-<th>Marcar</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>digitalvideo</td>
-<td><ul>
-<li>input</li>
-<li>noshow</li>
-</ul></td>
-<td><ul>
-<li>output</li>
-<li>para a <em>posição</em></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>videocassete</td>
-<td><ul>
-<li>da <em>posição</em></li>
-<li>input</li>
-<li>output</li>
-</ul></td>
-<td><ul>
-<li>prelance</li>
-<li>reverse</li>
-<li>para a <em>posição</em></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>waveaudio</td>
-<td>input</td>
-<td>output</td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Indicação | Indicação | 
+|-------|-----|-----|
+| digitalvideo | <ul><li>input</li><li>noshow</li></ul> | <ul><li>output</li><li>para a <em>posição</em></li></ul> | 
+| videocassete | <ul><li>da <em>posição</em></li><li>input</li><li>output</li></ul> | <ul><li>prelance</li><li>reverse</li><li>para a <em>posição</em></li></ul> | 
+| waveaudio | input | output | 
+
 
 
 
