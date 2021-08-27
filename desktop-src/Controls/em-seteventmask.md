@@ -3,7 +3,7 @@ title: Mensagem de EM_SETEVENTMASK (RichEdit. h)
 description: Define a máscara de evento para um controle de edição rico. A máscara de evento especifica quais códigos de notificação o controle envia para sua janela pai.
 ms.assetid: 139f6e44-fc54-40f2-a3f6-2b7efc819cae
 keywords:
-- Controles de EM_SETEVENTMASK de mensagens do Windows
+- controles de Windows de mensagem de EM_SETEVENTMASK
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd4d79d23f7b56a29bc4f5142ed03b23e8081687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 244274d969473531bae7c1d124af24a88d6b98d9db8bdbe073d054a3a9e36ac1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048496"
 ---
 # <a name="em_seteventmask-message"></a>\_Mensagem em SETEVENTMASK
 
@@ -43,7 +43,7 @@ Nova máscara de evento para o controle de edição rico. Para obter uma lista d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem retorna a máscara de evento anterior.
 
@@ -57,9 +57,9 @@ A máscara de evento padrão (antes de qualquer é definida) é ENM \_ None.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

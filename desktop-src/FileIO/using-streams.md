@@ -1,17 +1,17 @@
 ---
 description: Código de exemplo que mostra como usar fluxos básicos do sistema de arquivos NTFS.
 ms.assetid: 9cd5f418-404c-40f5-aa51-ef4d2a5f238e
-title: Usando fluxos
+title: usando Fluxos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04edc73a3524d45eeead4cd6c0d508925e6caa5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ebb6e2297c82e8643eb79ce66991b32fdf27e46fc723113a2866c79b2f8377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078386"
 ---
-# <a name="using-streams"></a>Usando fluxos
+# <a name="using-streams"></a>usando Fluxos
 
 O exemplo neste tópico demonstra como usar fluxos básicos do sistema de arquivos NTFS.
 
@@ -100,7 +100,7 @@ This is TestFile:Stream
 
 <dl> <dt>
 
-[Fluxos de arquivos](file-streams.md)
+[Fluxos de arquivo](file-streams.md)
 </dt> </dl>
 
  

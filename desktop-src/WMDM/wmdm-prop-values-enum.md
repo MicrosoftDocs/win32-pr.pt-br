@@ -1,9 +1,9 @@
 ---
-title: Estrutura de WMDM_PROP_VALUES_ENUM
-description: A \_ estrutura de enumeração de valores prop do WMDM \_ \_ contém um conjunto enumerado de valores válidos para uma propriedade específica em uma configuração de propriedade específica.
+title: WMDM_PROP_VALUES_ENUM estrutura
+description: A estrutura ENUM WMDM PROP VALUES contém um conjunto enumerado de valores válidos para uma propriedade \_ \_ específica em uma \_ configuração de propriedade específica.
 ms.assetid: 8094f3c0-a7ed-4e63-8503-aaac3fd9c012
 keywords:
-- Estrutura de WMDM_PROP_VALUES_ENUM Windows Media Gerenciador de Dispositivos
+- WMDM_PROP_VALUES_ENUM estrutura windows Media Gerenciador de Dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1c70088d57189dd36d360bc8910a15717d964ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35766ed71b864c5eb7f0bbbebf5eda384a25e174501aa2a56e790840a4c636c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004786"
 ---
-# <a name="wmdm_prop_values_enum-structure"></a>\_Estrutura de \_ enumeração de valores de prop WMDM \_
+# <a name="wmdm_prop_values_enum-structure"></a>Estrutura \_ ENUM DE VALORES DE PROP \_ DO WMDM \_
 
-A estrutura de **\_ \_ \_ enumeração de valores prop do WMDM** contém um conjunto enumerado de valores válidos para uma propriedade específica em uma configuração de propriedade específica.
+A **estrutura \_ \_ \_ ENUM WMDM PROP VALUES** contém um conjunto enumerado de valores válidos para uma propriedade específica em uma configuração de propriedade específica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,18 +48,18 @@ Contagem de valores enumerados.
 
 </dd> <dt>
 
-**Valores principais**
+**pValues**
 </dt> <dd>
 
-Ponteiro para uma matriz de valores. O tamanho da matriz é igual ao valor de **cEnumValues**.
+Ponteiro para uma matriz de valores. O tamanho da matriz é igual ao valor **de cEnumValues**.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada na estrutura **\_ \_ desc prop do WMDM** para descrever um conjunto enumerado de valores válidos. Um conjunto enumerado de valores válidos é aplicável quando \_ SqlEnum \_ prop \_ \_ valores válidos \_ enum é selecionado na enumeração **de \_ \_ \_ \_ \_ formato de valores válidos de prop enum do WMDM** .
+Essa estrutura é usada na estrutura **\_ \_ DESC PROP do WMDM** para descrever um conjunto enumerado de valores válidos. Um conjunto enumerado de valores válidos é aplicável quando WMDM ENUM PROP VALID VALUES ENUM é selecionado na \_ \_ \_ \_ \_ enumeração **WMDM \_ ENUM \_ PROP VALID VALUES \_ \_ \_ FORM** FORM.
 
-O chamador é necessário para liberar a memória usada por **valores principais**. Para obter um exemplo de como fazer isso, consulte [**a \_ \_ funcionalidade de formato WMDM**](wmdm-format-capability.md).
+O chamador é necessário para liberar a memória usada por **pValues.** Para ver um exemplo de como fazer isso, consulte [**WMDM \_ FORMAT \_ CAPABILITY**](wmdm-format-capability.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ O chamador é necessário para liberar a memória usada por **valores principais
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -78,19 +78,19 @@ O chamador é necessário para liberar a memória usada por **valores principais
 [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability)
 </dt> <dt>
 
-[**\_formulário de \_ \_ valores válidos \_ de prop Enumeração WMDM \_**](wmdm-enum-prop-valid-values-form.md)
+[**FORMULÁRIO DE VALORES VÁLIDOS DO WMDM \_ ENUM \_ PROP \_ \_ \_**](wmdm-enum-prop-valid-values-form.md)
 </dt> <dt>
 
-[**\_funcionalidade de formato WMDM \_**](wmdm-format-capability.md)
+[**FUNCIONALIDADE DE FORMATO \_ \_ WMDM**](wmdm-format-capability.md)
 </dt> <dt>
 
-[**\_configuração de prop do WMDM \_**](wmdm-prop-config.md)
+[**CONFIGURAÇÃO \_ DE PROP DO WMDM \_**](wmdm-prop-config.md)
 </dt> <dt>
 
-[**WMDM \_ prop \_ desc**](wmdm-prop-desc.md)
+[**DESC DO WMDM \_ PROP \_**](wmdm-prop-desc.md)
 </dt> <dt>
 
-[**\_intervalo de \_ valores de prop do WMDM \_**](wmdm-prop-values-range.md)
+[**INTERVALO DE VALORES DO WMDM \_ PROP \_ \_**](wmdm-prop-values-range.md)
 </dt> <dt>
 
 [**Estruturas**](structures.md)

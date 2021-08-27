@@ -4,12 +4,12 @@ ms.assetid: 8ee50fd7-507e-484f-9a16-de5449470562
 title: Tabela ODBCSourceAttribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d52dd9636ac19eae0fb3a9e41d1a1c8389753e5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c6d84ca19dfd059df4ff8f79d9409ef23288800f09e84d45e1b55d81bc8641e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082706"
 ---
 # <a name="odbcsourceattribute-table"></a>Tabela ODBCSourceAttribute
 
@@ -21,9 +21,9 @@ A tabela ODBCSourceAttribute tem as colunas a seguir.
 
 | Coluna       | Tipo                         | Chave | Nullable |
 |--------------|------------------------------|-----|----------|
-| DataSource\_ | [Identificador](identifier.md) | S   | N        |
-| Atributo    | [Text](text.md)             | S   | N        |
-| Valor        | [Binário](formatted.md)   | N   | S        |
+| Fonte\_ | [Identificador](identifier.md) | Y   | N        |
+| Atributo    | [Text](text.md)             | Y   | N        |
+| Valor        | [Binário](formatted.md)   | N   | Y        |
 
 
 

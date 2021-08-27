@@ -1,11 +1,11 @@
 ---
-title: Propriedade execaction. Arguments
-description: Para scripts, Obtém ou define os argumentos associados à operação de linha de comando.
+title: Propriedade ExecAction.Arguments
+description: Para scripts, obtém ou define os argumentos associados à operação de linha de comando.
 ms.assetid: 911e720f-ea7b-474d-ac75-4cd4f9adee55
 keywords:
-- Propriedade Arguments Agendador de Tarefas
-- Propriedade Arguments Agendador de Tarefas, objeto Execaction
-- Agendador de Tarefas de objeto execaction, Propriedade Arguments
+- Propriedades de argumentos Agendador de Tarefas
+- Propriedade Arguments Agendador de Tarefas objeto , ExecAction
+- Objeto ExecAction Agendador de Tarefas propriedade , Arguments
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4207a9fbfb60d9e45c15e174a33e7d6ab66e5fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 899e4ceaaf3a0d04dc678592add18184401d54569fea71f0570a0acbf2a33027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011486"
 ---
-# <a name="execactionarguments-property"></a>Propriedade execaction. Arguments
+# <a name="execactionarguments-property"></a>Propriedade ExecAction.Arguments
 
-Para scripts, Obtém ou define os argumentos associados à operação de linha de comando.
+Para scripts, obtém ou define os argumentos associados à operação de linha de comando.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,11 +38,11 @@ ExecAction.Arguments As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Os argumentos que são necessários para a operação de linha de comando.
+Os argumentos necessários para a operação de linha de comando.
 
 ## <a name="remarks"></a>Comentários
 
-Ao ler ou gravar XML, os argumentos da operação de linha de comando são especificados no elemento [**arguments**](taskschedulerschema-arguments-exectype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever XML, os argumentos de operação de linha de comando são especificados no [**elemento Arguments**](taskschedulerschema-arguments-exectype-element.md) do Agendador de Tarefas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Ao ler ou gravar XML, os argumentos da operação de linha de comando são espec
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -61,7 +61,7 @@ Ao ler ou gravar XML, os argumentos da operação de linha de comando são espec
 
 <dl> <dt>
 
-[**Execaction**](execaction.md)
+[**ExecAction**](execaction.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

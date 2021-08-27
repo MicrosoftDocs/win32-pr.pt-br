@@ -4,12 +4,12 @@ ms.assetid: decae1d2-d3f8-495a-9fb9-70e48a9ca2cc
 title: System. GPS. SpeedNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f917c73a762da419dd1acae701ea9d0b16335678
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1095ef3eac71f1b969a8078c30988a84f94b4fda062734906e96a7e8eb24b632
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091116"
 ---
 # <a name="systemgpsspeednumerator"></a>System. GPS. SpeedNumerator
 

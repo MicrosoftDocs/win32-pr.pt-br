@@ -4,12 +4,12 @@ ms.assetid: 33a2ef50-519b-424e-b510-55c21c5706a3
 title: Tabela AdminExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0c62ae43f8436ab210765e5402751c5722b78b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7eed182f5a27b357ecd546003cbfd7c68728d41c4018442b23bbf834ac8a796a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045996"
 ---
 # <a name="adminexecutesequence-table"></a>Tabela AdminExecuteSequence
 
@@ -27,9 +27,9 @@ As colunas são idênticas às da [tabela InstallExecuteSequence](installexecute
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Ação    | [Identificador](identifier.md) | S   | N        |
-| Condição | [Condição](condition.md)   | N   | S        |
-| Sequência  | [Inteiro](integer.md)       | N   | S        |
+| Ação    | [Identificador](identifier.md) | Y   | N        |
+| Condição | [Condição](condition.md)   | N   | Y        |
+| Sequência  | [Inteiro](integer.md)       | N   | Y        |
 
 
 

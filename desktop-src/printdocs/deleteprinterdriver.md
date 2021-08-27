@@ -1,7 +1,7 @@
 ---
-description: A função DeletePrinterDriver remove o nome de driver de impressora especificado da lista de nomes de drivers com suporte em um servidor.
+description: A função DeletePrinterDriver remove o nome do driver de impressora especificado da lista de nomes de drivers com suporte em um servidor.
 ms.assetid: b159bd8b-3416-44a5-91bf-c0447ed6b465
-title: Função DeletePrinterDriver (winspool. h)
+title: Função DeletePrinterDriver (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 9e84730be0d20100c2da42aa357f35c08cfb0727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d878bb848eebed7eaccd904d4cdfd035d5056ee32eaa67eac5064dd5cf4e1e51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060026"
 ---
 # <a name="deleteprinterdriver-function"></a>Função DeletePrinterDriver
 
-A função **DeletePrinterDriver** remove o nome de driver de impressora especificado da lista de nomes de drivers com suporte em um servidor.
+A **função DeletePrinterDriver** remove o nome do driver de impressora especificado da lista de nomes de drivers com suporte em um servidor.
 
-Para excluir os arquivos associados ao driver, além de remover o nome de driver de impressora especificado da lista de nomes de drivers com suporte para um servidor, use a função [**DeletePrinterDriverEx**](deleteprinterdriverex.md) .
+Para excluir os arquivos associados ao driver, além de remover o nome do driver de impressora especificado da lista de nomes de drivers com suporte para um servidor, use a função [**DeletePrinterDriverEx.**](deleteprinterdriverex.md)
 
 **DeletePrinterDriver** excluirá um driver somente se nenhuma versão do driver estiver em uso para o ambiente especificado. [**DeletePrinterDriverEx**](deleteprinterdriverex.md) pode excluir versões específicas do driver.
 
@@ -47,45 +47,45 @@ BOOL DeletePrinterDriver(
 
 <dl> <dt>
 
-*pname* \[ no\]
+*pName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do servidor do qual o driver deve ser excluído. Se esse parâmetro for **nulo**, o nome do driver de impressora será removido localmente.
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do servidor do qual o driver deve ser excluído. Se esse parâmetro for **NULL,** o nome do driver de impressora será removido localmente.
 
 </dd> <dt>
 
-*pEnvironment* \[ no\]
+*pEnvironment* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente do qual o driver deve ser excluído (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **nulo**, o nome do driver será excluído do ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão).
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente do qual o driver deve ser excluído (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **NULL,** o nome do driver será excluído do ambiente atual do aplicativo de chamada e do computador cliente (não do aplicativo de destino e do servidor de impressão).
 
 </dd> <dt>
 
-*pDriverName* \[ no\]
+*pDriverName* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do driver que deve ser excluído.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
+Se a função for bem-sucedida, o valor de retorno será um valor não zero.
 
 Se a função falhar, o valor retornado será zero.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
-O chamador deve ter o [SeLoadDriverPrivilege](/windows/desktop/SecAuthZ/authorization-constants).
+O chamador deve ter [o SeLoadDriverPrivilege.](/windows/desktop/SecAuthZ/authorization-constants)
 
-A função **DeletePrinterDriver** não exclui os arquivos associados, ele simplesmente remove o nome do driver da lista retornada pela função [**EnumPrinterDrivers**](enumprinterdrivers.md) .
+A **função DeletePrinterDriver** não exclui os arquivos associados, simplesmente remove o nome do driver da lista retornada pela [**função EnumPrinterDrivers.**](enumprinterdrivers.md)
 
-Antes de chamar **DeletePrinterDriver**, você deve excluir todos os objetos de impressora que usam o driver de impressora.
+Antes de **chamar DeletePrinterDriver**, você deve excluir todos os objetos de impressora que usam o driver de impressora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,9 +95,9 @@ Antes de chamar **DeletePrinterDriver**, você deve excluir todos os objetos de 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **DeletePrinterDriverW** (Unicode) e **DeletePrinterDriverA** (ANSI)<br/>                         |
 
 

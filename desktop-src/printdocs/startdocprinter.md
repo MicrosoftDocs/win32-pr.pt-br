@@ -17,12 +17,12 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: f8bdb0ae08c88e553dad3a91f0f1a578bed4ad39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 047784a7debd0c12fa7a5ad144dbc1e81c4715d990be794c180e86555c8e9f37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060006"
 ---
 # <a name="startdocprinter-function"></a>Função StartDocPrinter
 
@@ -66,7 +66,7 @@ Um ponteiro para uma [**estrutura \_ info \_**](doc-info-1.md) do documento 1 qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno identificará o trabalho de impressão.
 

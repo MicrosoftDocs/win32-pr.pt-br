@@ -4,12 +4,12 @@ description: Tradução de coordenadas de eventos
 ms.assetid: e7de8af1-a409-4140-9e85-e035bd583912
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c40a742ead8fc8d7e431c1caa5210f0978168cb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 843c2e5a3f978f405a3c126ef6a246024b55ccd2f73fbf86a8eed285b6181169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993136"
 ---
 # <a name="event-coordinate-translation"></a>Tradução de coordenadas de eventos
 
@@ -20,9 +20,9 @@ A especificação 96 para controles requer que as coordenadas passadas para even
 
 Como resultado, o usuário de um contêiner 96 que hospeda controles anteriores à 96 precisará estar ciente de que a tradução adicional das coordenadas pode ser necessária quando os eventos são acionados.
 
- 
+ 
 
- 
+ 
 
 
 

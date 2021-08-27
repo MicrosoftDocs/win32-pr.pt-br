@@ -4,12 +4,12 @@ description: A API do servidor HTTP fornece a funcionalidade para que os usuári
 ms.assetid: 0f9a768e-723c-4c7b-a746-6b817441409c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3979fb03c4f8898644329fd27eafb7007adbcc9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6659ead1139bd1b35a466a56c44357dd1f7f30cbac5fad8669445208be0e5136
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047246"
 ---
 # <a name="fragment-cache"></a>Cache de fragmento
 
@@ -22,7 +22,7 @@ Um fragmento pode ser excluído ou substituído pelo proprietário da fila de so
 > [!Note]  
 > A adição de um fragmento ao cache não garante que ele esteja disponível para chamadas futuras para enviar uma resposta. As entradas de cache de fragmento podem ficar indisponíveis a qualquer momento. Uma chamada que usa um fragmento que não está disponível falha. Os aplicativos que usam o cache de fragmento devem estar preparados para lidar com essa falha.
 
- 
+ 
 
 ## <a name="sending-a-response-with-a-fragment"></a>Enviando uma resposta com um fragmento
 
@@ -36,9 +36,9 @@ Uma resposta que contém um fragmento armazenado em cache falha com um \_ caminh
 
 As entradas de cache de fragmento também podem ser especificadas na função [**HttpSendResponseEntityBody**](/windows/desktop/api/Http/nf-http-httpsendresponseentitybody) . O fragmento é adicionado ao corpo da entidade na estrutura [**da \_ \_ parte de dados http**](/windows/desktop/api/Http/ns-http-http_data_chunk) , conforme descrito acima. Novamente, o envio poderá falhar se qualquer uma das entradas de cache de fragmento especificadas não estiver disponível.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de UDM_GETPOS32 (commctrl. h)
 description: Retorna a posição de 32 bits de um controle acima-abaixo.
 ms.assetid: 90feffbd-a472-446f-8a67-5da408cde002
 keywords:
-- Controles de UDM_GETPOS32 de mensagens do Windows
+- controles de Windows de mensagem de UDM_GETPOS32
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15f316b6833c67cd01d4e01910399a8730691f35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a11d043ca4f6b69a554b43d5abeaf35e4c2a2a6d72797e829900529df70b6c47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059786"
 ---
 # <a name="udm_getpos32-message"></a>\_Mensagem de GETPOS32 UDM
 
@@ -45,7 +45,7 @@ Se o **UDM \_ GETPOS32** for usado em uma situação de processo cruzado, esse p
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a posição de um controle acima para baixo com precisão de 32 bits. Os aplicativos devem verificar o valor de *lParam* para determinar se o valor de retorno é válido.
 
@@ -59,9 +59,9 @@ Quando ele processa essa mensagem, o controle de cima para baixo atualiza sua po
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_PLAYTO (VFW. h)
-description: A \_ mensagem MCIWNDM playto reproduz o conteúdo de um dispositivo MCI da posição atual para o local final especificado ou até que outro comando pare a reprodução.
+title: MCIWNDM_PLAYTO mensagem (Vfw.h)
+description: A mensagem PLAYTO MCIWNDM reproduz o conteúdo de um dispositivo MCI da posição atual para o local final especificado ou até que outro comando pare \_ a reprodução.
 ms.assetid: ed940ee7-7b96-47da-99d3-6697f8a2e3d5
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_PLAYTO
+- MCIWNDM_PLAYTO mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cf0104204dc0306615ead91be036459cdf3c11d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61004706c8dfacb05ad47c6ddf261ac813d58f5076dfdd4e134896b3f8c646e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037936"
 ---
-# <a name="mciwndm_playto-message"></a>\_Mensagem de playto do MCIWNDM
+# <a name="mciwndm_playto-message"></a>Mensagem MCIWNDM \_ PLAYTO
 
-A mensagem **MCIWNDM \_ playto** reproduz o conteúdo de um dispositivo MCI da posição atual para o local final especificado ou até que outro comando pare a reprodução. Se o local final especificado estiver além do fim do conteúdo, a reprodução será interrompida no final do conteúdo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndPlayTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto) .
+A **mensagem \_ PLAYTO MCIWNDM** reproduz o conteúdo de um dispositivo MCI da posição atual para o local final especificado ou até que outro comando pare a reprodução. Se o local final especificado estiver além do final do conteúdo, a reprodução será interrompida no final do conteúdo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndPlayTo.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto)
 
 
 ```C++
@@ -47,13 +47,13 @@ Local final. As unidades para o local final dependem do formato de hora atual.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Essa macro é definida usando as macros [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek) e [**MCIWndPlayTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto) , que, por sua vez, usam o comando [MCI \_ Seek](mci-seek.md) e a mensagem **MCIWNDM \_ playto** .
+Essa macro é definida usando as macros [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek) e [**MCIWndPlayTo,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto) que, por sua vez, usam o comando [MCI \_ SEEK](mci-seek.md) e a mensagem **\_ PLAYTO MCIWNDM.**
 
-Você também pode especificar um local de início e de término para reprodução usando a macro [**MCIWndPlayFromTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto) .
+Você também pode especificar um local inicial e final para reprodução usando a macro [**MCIWndPlayFromTo.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Você também pode especificar um local de início e de término para reproduç�
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Você também pode especificar um local de início e de término para reproduç�
 
 <dl> <dt>
 
-[busca de MCI \_](mci-seek.md)
+[MCI \_ SEEK](mci-seek.md)
 </dt> <dt>
 
 [**MCIWndPlayFromTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto)

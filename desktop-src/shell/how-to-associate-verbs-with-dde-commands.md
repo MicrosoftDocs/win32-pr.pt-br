@@ -4,16 +4,16 @@ ms.assetid: 65DDD992-5E96-447E-9151-2CCA740822A1
 title: Como associar verbos a comandos DDE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7174a22c993d93c347c8a0368fa7d1798362070f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 216cfca1548ed16dfea2f018fc3a1607d5c29d080f0f54541ace0491813a73d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090576"
 ---
 # <a name="how-to-associate-verbs-with-dde-commands"></a>Como associar verbos a comandos DDE
 
-Invocar um verbo normalmente inicia o aplicativo que é especificado pela subchave de comando do verbo. No entanto, se seu aplicativo der suporte a troca dinâmica de dados (DDE), você poderá fazer com que o Shell inicie uma conversa DDE.
+Invocar um verbo normalmente inicia o aplicativo que é especificado pela subchave de comando do verbo. no entanto, se seu aplicativo der suporte a troca dinâmica de dados (DDE), você poderá fazer com que o Shell inicie uma conversa DDE.
 
 Para especificar que a invocação de um verbo deve iniciar uma conversa DDE, siga estas etapas.
 

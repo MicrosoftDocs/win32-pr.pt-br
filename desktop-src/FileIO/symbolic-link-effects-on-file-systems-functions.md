@@ -4,12 +4,12 @@ ms.assetid: afda53eb-d0db-4844-9dd0-8a7d93ca341f
 title: Efeitos de link simbólico em funções de sistemas de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4a2fe1696bf5260a0c55ba8b6e4f107270d6da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e1c5d140dc70de8ebc255b779b226b6da156aa2b8961c49d86f466ac01b26ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078446"
 ---
 # <a name="symbolic-link-effects-on-file-systems-functions"></a>Efeitos de link simbólico em funções de sistemas de arquivos
 
@@ -186,19 +186,19 @@ Se o caminho apontar para um link simbólico, a função retornará atributos pa
 [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa)
 </dt> <dt>
 
-[**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea)
+[**Findfirstfile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea)
 </dt> <dt>
 
-[**FindFirstFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa)
+[**Findfirstfileex**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa)
 </dt> <dt>
 
 [**FindFirstFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-findfirstfiletransacteda)
 </dt> <dt>
 
-[**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)
+[**Findnextfile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)
 </dt> <dt>
 
-[**Getbinarytype**](/windows/desktop/api/WinBase/nf-winbase-getbinarytypea)
+[**GetBinaryType**](/windows/desktop/api/WinBase/nf-winbase-getbinarytypea)
 </dt> <dt>
 
 [**GetCompressedFileSize**](/windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea)
@@ -210,10 +210,10 @@ Se o caminho apontar para um link simbólico, a função retornará atributos pa
 [**GetDiskFreeSpace**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespacea)
 </dt> <dt>
 
-[**GetDiskFreeSpaceEx**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespaceexa)
+[**Getdiskfreespaceex**](/windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespaceexa)
 </dt> <dt>
 
-[**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa)
+[**Getfileattributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa)
 </dt> <dt>
 
 [**GetFileAttributesEx**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa)
@@ -228,7 +228,7 @@ Se o caminho apontar para um link simbólico, a função retornará atributos pa
 [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa)
 </dt> <dt>
 
-[**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
+[**Setfileattributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
 </dt> <dt>
 
 [**SetFileSecurity**](/windows/desktop/api/winbase/nf-winbase-setfilesecuritya)

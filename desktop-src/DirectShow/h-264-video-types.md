@@ -4,12 +4,12 @@ ms.assetid: aa3166b2-6b04-44fa-bc9d-c8ff46f99201
 title: Tipos de vídeo H. 264
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 692a751e197e2e7bbb088b30dd2a3f5f199d56de
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 973df2825b0824256e2eb7a1a7f580c5f13bf5cdbb390602175e1319305756b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102756"
 ---
 # <a name="h264-video-types"></a>Tipos de vídeo H. 264
 
@@ -41,7 +41,7 @@ Quando os códigos de início estão presentes no fragmentado, o seguinte tipo d
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------|---------------------------------------------------------------------------------------------------|
 | Tipo principal  | **Vídeo de MEDIATYPE \_**                                                                              |
 | Subtipos    | **MEDIASUBTYPE \_ H264**, **MEDIASUBTYPE \_ H264**, **MEDIASUBTYPE \_ x264** ou **MEDIASUBTYPE \_ x264** |
@@ -65,7 +65,7 @@ Quando os códigos de início não estão presentes no fragmentado, o tipo de m�
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------|------------------------|
 | Tipo principal  | **Vídeo de MEDIATYPE \_**   |
 | Subtype     | **MEDIASUBTYPE \_ AVC1** |

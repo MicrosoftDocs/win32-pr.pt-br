@@ -1,19 +1,19 @@
 ---
-description: Identifica o local de salvamento padrão para uma biblioteca para o proprietário da biblioteca.
+description: Identifica o local de salvar padrão para uma biblioteca para o proprietário da biblioteca.
 ms.assetid: b6b8961c-169a-4ad6-b7a4-ec9870a4fa83
-title: System. IsDefaultSaveLocation
+title: System.IsDefaultSaveLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51b86b1069645f052a98f0023cf9cb2ebec1efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1823ee496556df9e9dc799e642565e53ad5a3497821c986bcae2d9657709674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058856"
 ---
-# <a name="systemisdefaultsavelocation"></a>System. IsDefaultSaveLocation
+# <a name="systemisdefaultsavelocation"></a>System.IsDefaultSaveLocation
 
-Identifica o local de salvamento padrão para uma biblioteca para o proprietário da biblioteca.
+Identifica o local de salvar padrão para uma biblioteca para o proprietário da biblioteca.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -44,13 +44,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -59,19 +59,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -86,7 +86,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

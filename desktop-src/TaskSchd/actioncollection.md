@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89dee7182cc79684dec1fd052f7ad67409ba513f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f5356757d232570a31f5c8d05e01b695f130a33e34c1c0e98689b1c74feba40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011716"
 ---
 # <a name="actioncollection-object"></a>Objeto ActionCollection
 
@@ -42,7 +42,7 @@ O objeto **ActionCollection** tem esses métodos.
 
 | Método                                    | Descrição                                                 |
 |:------------------------------------------|:------------------------------------------------------------|
-| [**Formatação**](actioncollection-clear.md)   | Limpa todas as ações da coleção.<br/>      |
+| [**Limpar**](actioncollection-clear.md)   | Limpa todas as ações da coleção.<br/>      |
 | [**Criar**](actioncollection-create.md) | Cria e adiciona uma nova ação à coleção.<br/> |
 | [**Remover**](actioncollection-remove.md) | Remove uma ação especificada da coleção.<br/>  |
 
@@ -59,7 +59,7 @@ O objeto **ActionCollection** tem essas propriedades.
 | Propriedade                                               | Tipo de acesso           | Descrição                                                           |
 |:-------------------------------------------------------|:----------------------|:----------------------------------------------------------------------|
 | [**Contexto**](actioncollection-context.md)<br/> | Leitura/gravação<br/> | Obtém ou define o identificador da entidade de segurança da tarefa.<br/> |
-| [**Contar**](actioncollection-count.md)<br/>     | Somente leitura<br/>  | Obtém o número de ações na coleção.<br/>              |
+| [**Contagem**](actioncollection-count.md)<br/>     | Somente leitura<br/>  | Obtém o número de ações na coleção.<br/>              |
 | [**Item**](actioncollection-item.md)<br/>       | Somente leitura<br/>  | Obtém uma ação especificada da coleção.<br/>               |
 | [**XmlText**](actioncollection-xmltext.md)<br/> | Leitura/gravação<br/> | Obtém ou define uma versão formatada em XML da coleção.<br/>   |
 
@@ -81,8 +81,8 @@ Para obter mais informações e código de exemplo para esse objeto de script, c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

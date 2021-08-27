@@ -4,25 +4,25 @@ description: Especifica o índice do ícone dentro do arquivo de ícone atual.
 ms.assetid: c29ae1a7-9c54-4e56-bb69-4e929e8a4e5c
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsTscAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsTscAdvancedSettings, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade IconIndex
-- Propriedade IconIndex Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade IconIndex
+- Propriedade IconIndex Serviços de Área de Trabalho Remota
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsTscAdvancedSettings
+- Interface IMsTscAdvancedSettings Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade IconIndex
+- A propriedade IconIndex Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade IconIndex
 topic_type:
 - apiref
 api_name:
@@ -50,19 +50,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be56eab5dbe7f03155c6082e4e70fc4bd439253
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7c1c53a073f218666ab44eb926b9a92f835078c50a88bc488cc1da4b70b056f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125456"
 ---
-# <a name="imstscadvancedsettingsiconindex-property"></a>Propriedade IMsTscAdvancedSettings:: IconIndex
+# <a name="imstscadvancedsettingsiconindex-property"></a>Propriedade IMsTscAdvancedSettings::IconIndex
 
 Especifica o índice do ícone dentro do arquivo de ícone atual.
 
 > [!Note]  
-> Não há suporte para essa propriedade no controle ActiveX (MsRdp. ocx). Há suporte na biblioteca MsTscAx.dll incluída no cliente Standard (MsTsc.exe).
+> Não há suporte para essa propriedade no controle ActiveX (MsRdp.ocx). Ele tem suporte na biblioteca MsTscAx.dll incluída no cliente padrão (MsTsc.exe).
 
  
 
@@ -85,11 +85,11 @@ O índice do ícone.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **S \_ false**.
+Retorna **S \_ FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> <dt>
 
 [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
@@ -133,7 +133,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+[**Imstscadvancedsettings**](imstscadvancedsettings-interface.md)
 </dt> </dl>
 
  

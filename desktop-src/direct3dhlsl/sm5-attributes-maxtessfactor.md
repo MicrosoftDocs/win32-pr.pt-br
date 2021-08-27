@@ -1,6 +1,6 @@
 ---
 title: maxtessfactor
-description: Indica o valor máximo que o sombreador envoltória retornaria para qualquer fator de mosaico.
+description: Indica o valor máximo que o sombreador de chassi retornaria para qualquer fator de mosaico.
 ms.assetid: 2c12ed56-cd64-4143-8dda-6998aa212356
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 261ab17bd40c24c19b4b929f2e8307ccc6bb9b56
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b2cb3e946e152d6f79329be01961f6865ccc26f12e3485e05d952b8e39e41a8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023476"
 ---
 # <a name="maxtessfactor"></a>maxtessfactor
 
-Indica o valor máximo que o sombreador envoltória retornaria para qualquer fator de mosaico.
+Indica o valor máximo que o sombreador de chassi retornaria para qualquer fator de mosaico.
 
 
 ```
@@ -35,27 +35,27 @@ Esse atributo tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Atributos do Shader Model 5](d3d11-graphics-reference-sm5-attributes.md)
+[Atributos do modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

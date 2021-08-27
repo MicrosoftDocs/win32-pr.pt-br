@@ -1,7 +1,7 @@
 ---
-description: 'IEnumUserIdentity:: Clone não tem suporte e pode ser alterado ou indisponível no futuro. Em vez disso, use contas de usuário com troca rápida de usuário e Área de Trabalho Remota.'
+description: Não há suporte para IEnumUserIdentity::Clone e podem ser alterados ou não disponíveis no futuro. Em vez disso, use Contas de Usuário com Troca rápida de usuário e Área de Trabalho Remota.
 ms.assetid: dde9afca-db8d-41ba-afa0-94eadecb695b
-title: 'Método IEnumUserIdentity:: clone (Msident. h)'
+title: Método IEnumUserIdentity::Clone (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: ebdec426fe7ab591c801c00b637211e903cf5356
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e6b0903029fa44e26651ad1df99ceb0c6bd83253bcd1d139bb6513d65e3ca3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009406"
 ---
-# <a name="ienumuseridentityclone-method"></a>Método IEnumUserIdentity:: clone
+# <a name="ienumuseridentityclone-method"></a>Método IEnumUserIdentity::Clone
 
-\[**IEnumUserIdentity:: clone** não tem suporte e pode ser alterado ou indisponível no futuro. Em vez disso, use [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md).\]
+\[**Não há suporte para IEnumUserIdentity::Clone** e podem ser alterados ou não disponíveis no futuro. Em vez disso, [use Contas de Usuário com a Opção de Usuário Rápida e Área de Trabalho Remota](fastuserswitching.md).\]
 
 Obtém uma cópia da enumeração atual.
 
@@ -41,7 +41,7 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppEnum* \[ fora\]
+*ppenum* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IEnumUserIdentity**](ienumuseridentity.md)\*\***
@@ -50,15 +50,15 @@ O endereço de um ponteiro que recebe uma cópia dessa enumeração.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-[**IEnumUserIdentity**](ienumuseridentity.md) mantém uma contagem interna que especifica qual interface está próxima de ser recuperada. O valor dessa contagem será aplicado à interface recebida por *ppEnum*. Para redefinir a contagem, chame [**IEnumUserIdentity:: Reset**](ienumuseridentity-reset.md).
+[**IEnumUserIdentity**](ienumuseridentity.md) mantém uma contagem interna que especifica qual interface é a próxima a ser recuperada. O valor dessa contagem será aplicado à interface recebida pelo *ppenum*. Para redefinir a contagem, chame [**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,12 +66,12 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                  |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                  |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Reset**](ienumuseridentity-reset.md)
+[**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md)
 </dt> </dl>
 
  

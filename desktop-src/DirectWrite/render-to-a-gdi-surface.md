@@ -4,16 +4,16 @@ description: Renderizar para uma superfície GDI
 ms.assetid: a6096ff5-1e6e-4edb-b455-ea5d205072ff
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff292feb2250a4dd81abeb62d8ee48ebfb4488b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 20df241e379e9a133cb662ea141fa27c86a4bb486c8ffba311423cb9afd83fbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048486"
 ---
 # <a name="render-to-a-gdi-surface"></a>Renderizar para uma superfície GDI
 
-Em alguns casos, talvez você queira exibir texto [DirectWrite](direct-write-portal.md) em uma superfície GDI. A interface [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) encapsula um bitmap e um contexto de dispositivo no qual renderizar o texto. Você cria um **IDWriteBitmapRenderTarget** usando o método [**IDWriteGdiInterop:: CreateBitmapRenderTarget**](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) , conforme mostrado no código a seguir.
+em alguns casos, talvez você queira exibir [DirectWrite](direct-write-portal.md) texto em uma superfície GDI. A interface [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) encapsula um bitmap e um contexto de dispositivo no qual renderizar o texto. Você cria um **IDWriteBitmapRenderTarget** usando o método [**IDWriteGdiInterop:: CreateBitmapRenderTarget**](/windows/win32/api/dwrite/nf-dwrite-idwritegdiinterop-createbitmaprendertarget) , conforme mostrado no código a seguir.
 
 
 ```C++
@@ -69,7 +69,7 @@ STDMETHODIMP GdiTextRenderer::DrawGlyphRun(
 
 A interface [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) é processada para um DC (contexto de dispositivo) na memória. Você Obtém um identificador para esse controlador de domínio usando o método [**IDWriteBitmapRenderTarget:: GetMemoryDC**](/windows/win32/api/dwrite/nf-dwrite-idwritebitmaprendertarget-getmemorydc) . Assim que o desenho for executado, o controlador de domínio de memória do objeto **IDWriteBitmapRenderTarget** deverá ser copiado para a superfície GDI de destino.
 
-Você pode recuperar o retângulo delimitador usando a função [**GetBoundsRect**](/windows/win32/api/wingdi/nf-wingdi-getboundsrect) e, em seguida, usar o retângulo delimitador com a função [**BitBlt**](/windows/win32/api/wingdi/nf-wingdi-bitblt) para copiar o texto [DirectWrite](direct-write-portal.md) processado do controlador de domínio da memória para a superfície GDI, conforme mostrado no código a seguir.
+você pode recuperar o retângulo delimitador usando a função [**GetBoundsRect**](/windows/win32/api/wingdi/nf-wingdi-getboundsrect) e, em seguida, usar o retângulo delimitador com a função [**BitBlt**](/windows/win32/api/wingdi/nf-wingdi-bitblt) para copiar o texto [DirectWrite](direct-write-portal.md) renderizado do controlador de domínio da memória para a superfície GDI, conforme mostrado no código a seguir.
 
 
 ```C++
@@ -86,6 +86,6 @@ BitBlt(
 
 
 
- 
+ 
 
- 
+ 

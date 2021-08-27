@@ -4,12 +4,12 @@ ms.assetid: b8d00945-b792-4c43-a983-cea6c063d866
 title: '\#ASN codificado para renovação PKCS 7.1'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91120fd4e5d991ed4673b215ddb3cf11806c4bcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 396f3ef09c7e6787773166d5b588e1792111a912e7d43d69d0c7b4a43591a655
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101186"
 ---
 # <a name="pkcs-7-renewal-encoded-asn1"></a>\#ASN codificado para renovação PKCS 7.1
 

@@ -1,9 +1,9 @@
 ---
-title: função glVertex3sv (GL. h)
-description: Especifica um vértice. | função glVertex3sv (GL. h)
+title: Função glVertex3sv (Gl.h)
+description: Especifica um vértice. | Função glVertex3sv (Gl.h)
 ms.assetid: 8b819a95-f834-4c6e-b88a-a96ae9b36c71
 keywords:
-- função glVertex3sv OpenGL
+- Função glVertex3sv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa808f76beefa440c3fa4a93a2301cf8b40dfcb2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: abbf8117577067328bc71d519bd5d2a8b30bd264caae7ffe7a81683116e3d95a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105758029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035806"
 ---
-# <a name="glvertex3sv-function"></a>função glVertex3sv
+# <a name="glvertex3sv-function"></a>Função glVertex3sv
 
 Especifica um vértice.
 
@@ -40,7 +40,7 @@ void WINAPI glVertex3sv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de três elementos. Os elementos são as coordenadas x, y e z de um vértice.
@@ -59,8 +59,8 @@ Essa função não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -4,16 +4,16 @@ ms.assetid: d2a43d3b-2782-4777-8c65-05e2c52930d0
 title: O que é rede de mesmo nível?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c456fac9b7695a2846765ee0ccd38c1e5df646e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f6ce2175aa32e37c80c4cde5c231540a48c448360974ecbd022c21eb552ccdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034096"
 ---
 # <a name="what-is-peer-networking"></a>O que é rede de mesmo nível?
 
-A rede ponto a ponto é uma tecnologia de rede sem servidor que permite que vários dispositivos de rede compartilhem recursos e se comuniquem diretamente entre si. Essa tecnologia está disponível para o Windows XP com Service Pack 1 (SP1) e clientes posteriores que executam o pacote de rede avançado para a infraestrutura ponto a ponto.
+A rede ponto a ponto é uma tecnologia de rede sem servidor que permite que vários dispositivos de rede compartilhem recursos e se comuniquem diretamente entre si. essa tecnologia está disponível para o Windows XP com Service Pack 1 (SP1) e clientes posteriores que executam o pacote de rede avançado para a infraestrutura ponto a ponto.
 
 A infraestrutura ponto a ponto é um conjunto de APIs de rede para ajudá-lo a desenvolver aplicativos de rede descentralizados que usam a potência coletiva dos computadores em uma rede. Por exemplo, aplicativos ponto a ponto podem ser comunicações colaborativas, tecnologias de distribuição de conteúdo e assim por diante.
 
@@ -39,8 +39,8 @@ A infraestrutura ponto a ponto inclui a API de [gráfico](graphing-api.md) que f
 
 O gerenciamento de dados distribuídos armazena automaticamente todos os registros enviados a um grafo ponto a ponto até o tempo de expiração especificado para cada registro. A rede ponto a ponto garante que cada nó em um grafo ponto a ponto tenha uma exibição semelhante do banco de dados de registro. Se um grafo ponto a ponto tiver um modelo de segurança associado a ele, o grafo conterá as seguintes informações:
 
--   Quem pode e não pode se conectar a um grafo
--   Quem pode proteger e validar registros com base em critérios definidos externamente
+-   Who pode e não pode se conectar a um grafo
+-   Who pode proteger e validar registros com base em critérios definidos externamente
 
 ## <a name="secure-peer-identities"></a>Identidades de pares seguros
 
@@ -50,7 +50,7 @@ A infraestrutura ponto a ponto fornece uma [API do Gerenciador de identidade](id
 
 A [API de agrupamento](grouping-api.md) ponto a ponto combina o grafo ponto a ponto, o Identity Manager e as APIs do PNRP para formar uma solução coesa e conveniente para o desenvolvimento de aplicativos de rede ponto a ponto. A API de agrupamento ponto a ponto usa a API do Gerenciador de identidade ponto a ponto e um esquema de certificado autoassinado para garantir a segurança na infraestrutura de gráfico. Cada grupo pode ser resolvido e registrado por meio de PNRP, o que permite a resolução de nomes de pares aleatórios em um grupo de ponto a ponto registrado. Um grupo pode ser um ponto de extremidade em PNRP, assim como um par.
 
-Para obter uma visão geral da infraestrutura ponto a ponto, consulte o artigo "[introdução à rede ponto a ponto do Windows XP](https://www.microsoft.com/windowsxp/pro/techinfo/administration/p2p/introduction.asp)".
+para obter uma visão geral da infraestrutura ponto a ponto, consulte o artigo "[introdução ao Windows XP ponto a ponto de rede](https://www.microsoft.com/windowsxp/pro/techinfo/administration/p2p/introduction.asp)".
 
 Para obter uma visão geral das APIs na infraestrutura ponto a ponto, consulte o tópico [o que é a infraestrutura de mesmo nível?](what-is-the-peer-infrastructure-.md).
 

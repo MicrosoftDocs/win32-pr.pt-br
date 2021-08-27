@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9240018ee4427444c477fadb1a2792931f991cf4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f53321bc7c8420d5a63228f37441ad333a2f3cb009f53f64c8f01691245bd04c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021566"
 ---
 # <a name="esentaccessdeniedexception-constructor"></a>Construtor EsentAccessDeniedException
 
 Inicializa uma nova instância da classe EsentAccessDeniedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentAccessDeniedException()
 
 [Classe EsentAccessDeniedException](./esentaccessdeniedexception-class.md)
 
-[Membros do EsentAccessDeniedException](./esentaccessdeniedexception-members.md)
+[Membros EsentAccessDeniedException](./esentaccessdeniedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

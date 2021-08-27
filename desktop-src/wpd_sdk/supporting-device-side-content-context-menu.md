@@ -1,19 +1,19 @@
 ---
 title: Suporte ao conteúdo do lado do dispositivo WPD (ContextMenu)
-description: Saiba como usar a API do Shell do Windows ou a API wpd para obter dados para objetos de dispositivo WPD, que não podem ser acessados por meio do sistema de arquivos no Windows Vista.
+description: Saiba como usar a API Windows Shell do Windows ou a API WPD para obter dados para objetos de dispositivo WPD, que não podem ser acessados por meio do sistema de arquivos no Windows Vista.
 ms.assetid: 47fb7f49-9026-43c1-be46-8a520c048862
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 626c92633b1aa215c0e826a4b720de0375aa6048
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8672793f75df7e1364827e42da4d427013a2dd89bcbb9653d1e74287a63367dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006176"
 ---
 # <a name="supporting-wpd-device-side-content"></a>Suporte ao conteúdo do lado do dispositivo WPD
 
-Como o conteúdo do lado do dispositivo não está acessível por meio do sistema de arquivos no Windows Vista, você precisará usar a API do Shell do Windows ou a API wpd para recuperar dados para objetos de dispositivo. Essa é a principal diferença entre um manipulador de menu de contexto normal e um manipulador de menu de contexto WPD. O código de exemplo a seguir demonstra a recuperação de conteúdo do lado do dispositivo usando a API do Windows Shell.
+Como o conteúdo do lado do dispositivo não está acessível por meio do sistema de arquivos no Windows Vista, você precisará usar a API do Shell do Windows ou a API wpd para recuperar dados para objetos de dispositivo. Essa é a principal diferença entre um manipulador de menu de contexto normal e um manipulador de menu de contexto WPD. O código de exemplo a seguir demonstra a recuperação de conteúdo do lado do dispositivo usando a API Windows Shell.
 
 A primeira etapa é a inicialização da lista de identificadores de item ou PIDL. (Esta lista contém o identificador exclusivo para o objeto de dispositivo determinado.)
 

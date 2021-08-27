@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de runLevelType
-description: Define os valores possíveis para o elemento RunLevel (PrincipalType).
+title: Tipo simples runLevelType
+description: Define os valores possíveis para o elemento RunLevel (principalType).
 ms.assetid: d6b73dc5-97ac-4f94-99c1-c241a25cc252
 keywords:
-- Agendador de Tarefas tipo simples de runLevelType
+- Tipo simples runLevelType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d037dceeb3e6e4957cc96a17a2ac511a03a94b94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ce534008ce0138293a773e4f5fa4a5270a2d4b27aad54dd062eafe286ab8ba6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991066"
 ---
-# <a name="runleveltype-simple-type"></a>Tipo simples de runLevelType
+# <a name="runleveltype-simple-type"></a>Tipo simples runLevelType
 
-Define os valores possíveis para o elemento [**runlevel (PrincipalType)**](taskschedulerschema-runlevel-principaltype-element.md) .
+Define os valores possíveis para o [**elemento RunLevel (principalType).**](taskschedulerschema-runlevel-principaltype-element.md)
 
 ``` syntax
 <xs:simpleType name="runLevelType">
@@ -41,7 +41,7 @@ Define os valores possíveis para o elemento [**runlevel (PrincipalType)**](task
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **runLevelType** define os valores a seguir.
+O **tipo simples runLevelType** define os valores a seguir.
 
 
 
@@ -58,8 +58,8 @@ O tipo simples **runLevelType** define os valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

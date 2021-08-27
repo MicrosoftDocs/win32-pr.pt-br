@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Solicitando dados WMI em uma plataforma de 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd392d482f083a3c1b1dff3b90d70f1857aeebb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 320aaec9f11600e3b963a01fe9dcddbd6c4f1f3fd98df8ff2311417ddcd6fef7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995776"
 ---
 # <a name="requesting-wmi-data-on-a-64-bit-platform"></a>Solicitando dados WMI em uma plataforma de 64 bits
 
@@ -34,7 +34,7 @@ Valor inteiro, 32 ou 64, que especifica a versão de 32 bits ou de 64 bits.
 <span id="__RequiredArchitecture"></span><span id="__requiredarchitecture"></span><span id="__REQUIREDARCHITECTURE"></span>**\_\_RequiredArchitecture**
 </dt> <dd>
 
-Valor booliano usado em adição ao **\_ \_ ProviderArchitecture** para forçar a carga da versão do provedor especificada. Se a versão não estiver disponível, o WMI retornará o erro 0x80041013, **wbemErrProviderLoadFailure** para Visual Basic e **\_ falha de \_ \_ carregamento do \_ provedor WBEM** para C++. O valor padrão para esse sinalizador quando não é especificado é **false**.
+Valor booliano usado em adição ao **\_ \_ ProviderArchitecture** para forçar a carga da versão do provedor especificada. se a versão não estiver disponível, o WMI retornará o erro 0x80041013, **wbemErrProviderLoadFailure** para Visual Basic e **\_ falha de \_ \_ carregamento do \_ provedor WBEM** para C++. O valor padrão para esse sinalizador quando não é especificado é **false**.
 
 </dd> </dl>
 
@@ -44,7 +44,7 @@ Em um sistema de 64 bits que tem versões lado a lado de um provedor, um script 
 
 Os aplicativos C++ podem usar a interface [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) com [**IWbemServices:: ExecMethod**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethod) para comunicar o uso de um provedor não padrão ao WMI.
 
-Em script e Visual Basic, você deve criar um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) contendo os sinalizadores para o parâmetro *ObjWbemNamedValueSet* de [**SWbemServices.ExecMethod**](swbemservices-execmethod.md). Para obter mais informações sobre como configurar os objetos de parâmetros para essa chamada, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+em script e Visual Basic, você deve criar um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) contendo os sinalizadores para o parâmetro *objWbemNamedValueSet* de [**SWbemServices.ExecMethod**](swbemservices-execmethod.md). Para obter mais informações sobre como configurar os objetos de parâmetros para essa chamada, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
 Você pode executar scripts e aplicativos com segurança usando os sinalizadores de contexto em sistemas operacionais mais antigos, pois o WMI os ignora em sistemas nos quais eles não são implementados. Embora existam versões de 32 bits e 64 bits do provedor de registro do sistema, observe que existe apenas uma versão do repositório WMI.
 
@@ -54,7 +54,7 @@ A série de exemplos a seguir usa o [provedor de registro](/previous-versions/wi
 
 Os scripts mostram como chamar os métodos da classe [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) do registro por meio de [**SWbemServices.ExecMethod**](swbemservices-execmethod.md) para obter dados do hive do registro de 32 bits.
 
-O script a seguir obtém dados de volta do provedor que corresponde à largura de bits do chamador, neste caso, 64 bits, porque é um script em execução no WSH (Windows Script Host) de 64 bits. O script Obtém o valor do nó do registro 64-bit **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ WBEM \\ cimom \\ Logging** em vez do nó 32-bit **HKEY \_ local \_ Machine \\ software \\ Wow6432Node \\ Microsoft \\ WBEM \\ CIMOM**.
+o script a seguir obtém dados de volta do provedor que corresponde à largura de bits do chamador, neste caso, 64 bits, porque é um script em execução no WSH (Host de script Windows) de 64 bits. O script Obtém o valor do nó do registro 64-bit **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ WBEM \\ cimom \\ Logging** em vez do nó 32-bit **HKEY \_ local \_ Machine \\ software \\ Wow6432Node \\ Microsoft \\ WBEM \\ CIMOM**.
 
 
 ```VB

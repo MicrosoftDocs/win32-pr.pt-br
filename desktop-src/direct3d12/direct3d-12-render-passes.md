@@ -4,16 +4,16 @@ description: O recurso render passes ajuda seu renderizador a melhorar a eficiê
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/15/2018
-ms.openlocfilehash: f776729f17ac0017d713c6f37bc71de7302a7c08
-ms.sourcegitcommit: 780d4b1601c45658ef0b799b80d13f45a53d808d
+ms.openlocfilehash: 96ed14cecd518a3e03672f2667306ee0a4b8d64999aab01aa72aae04975f0a83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "104548203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069686"
 ---
 # <a name="direct3d-12-render-passes"></a>Passagens de renderização do Direct3D 12
 
-O recurso render passes é novo para o Windows 10, versão 1809 (10,0; Build 17763) e apresenta o conceito de uma passagem de renderização do Direct3D 12. Uma passagem de renderização consiste em um subconjunto dos comandos que você registra em uma lista de comandos.
+o recurso render passes é novo para o Windows 10, versão 1809 (10,0; Build 17763) e apresenta o conceito de uma passagem de renderização do Direct3D 12. Uma passagem de renderização consiste em um subconjunto dos comandos que você registra em uma lista de comandos.
 
 Para declarar onde cada passagem de renderização começa e termina, você Aninha os comandos que pertencem a essa passagem dentro de chamadas para [**ID3D12GraphicsCommandList4:: BeginRenderPass**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-beginrenderpass) e [**EndRenderPass**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-endrenderpass). Consequentemente, qualquer lista de comandos contém zero, um ou mais passagens de renderização.
 
@@ -43,7 +43,7 @@ Mesmo com o recurso render passes, nem o tempo de execução do Direct3D 12 nem 
 - Identifique corretamente as dependências de dados/ordenação para suas operações.
 - Solicite seus envios de uma maneira que minimize as liberações (portanto, minimize o uso de sinalizadores de **_PRESERVE** ).
 - Faça uso correto das barreiras de recurso e acompanhe o estado do recurso.
-- Evite cópias/limpezas desnecessárias. Para ajudar a identificá-los, você pode usar os avisos de desempenho automatizados da [ferramenta PIX no Windows](https://devblogs.microsoft.com/pix/).
+- Evite cópias/limpezas desnecessárias. para ajudar a identificá-los, você pode usar os avisos de desempenho automatizados do [PIX na ferramenta Windows](https://devblogs.microsoft.com/pix/).
 
 ## <a name="using-the-render-pass-feature"></a>Usando o recurso render Pass
 
@@ -134,7 +134,7 @@ E esses são exemplos de barreiras não conformadas.
 - **D3D12_RESOURCE_STATE_RENDER_TARGET** a qualquer estado de leitura no RTVs/DSVs associado no momento.
 - **D3D12_RESOURCE_STATE_DEPTH_WRITE** a qualquer estado de leitura no RTVs/DSVs associado no momento.
 - Qualquer barreira de alias.
-- Barreiras de UAV (exibição de acesso não ordenado). 
+- Barreiras de UAV (exibição de acesso não ordenado). 
 
 ### <a name="resource-access-declaration"></a>Declaração de acesso a recursos
 
@@ -142,9 +142,9 @@ No momento do **BeginRenderPass** , além de declarar todos os recursos que est�
 
 Para obter mais detalhes, consulte as estruturas [**D3D12_RENDER_PASS_BEGINNING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_beginning_access) e [**D3D12_RENDER_PASS_ENDING_ACCESS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_render_pass_ending_access) e as enumerações [**D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_beginning_access_type) e [**D3D12_RENDER_PASS_ENDING_ACCESS_TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_ending_access_type) .
 
-### <a name="render-pass-flags"></a>Sinalizadores de passagem de renderização
+### <a name="render-pass-flags"></a>Renderizar sinalizadores de passagem
 
-O último parâmetro passado para **BeginRenderPass** é um sinalizador de passagem de renderização (um valor da enumeração [**D3D12_RENDER_PASS_FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_flags) ).
+O último parâmetro passado para **BeginRenderPass** é um sinalizador de passagem de renderização (um valor da [**enumeração D3D12_RENDER_PASS_FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_render_pass_flags) renderização).
 
 ```cppwinrt
 enum D3D12_RENDER_PASS_FLAGS
@@ -156,25 +156,25 @@ enum D3D12_RENDER_PASS_FLAGS
 };
 ```
 
-#### <a name="uav-writes-within-a-render-pass"></a>UAV gravações em uma passagem de renderização
+#### <a name="uav-writes-within-a-render-pass"></a>Gravações UAV em uma passagem de renderização
 
-As gravações de UAV (exibição de acesso não ordenado) são permitidas dentro de uma passagem de renderização, mas você deve indicar especificamente que estará emitindo gravações de UAV dentro da passagem de renderização, especificando **D3D12_RENDER_PASS_FLAG_ALLOW_UAV_WRITES**, para que o driver de vídeo possa recusar o agrupamento, se necessário.
+As gravações UAV (exibição de acesso não organizado) são permitidas em uma passagem de renderização, mas você deve indicar especificamente que você emifique gravações UAV dentro da passagem de renderização especificando **D3D12_RENDER_PASS_FLAG_ALLOW_UAV_WRITES**, para que o driver de exibição possa optar por não lado a lado, se necessário.
 
-Os acessos UAV devem seguir a restrição Write-Read descrita acima (as gravações em uma passagem de renderização não são válidas para leitura até uma passagem de renderização subsequente). As barreiras de UAV não são permitidas dentro de uma passagem de renderização.
+Os acessos UAV devem seguir a restrição de leitura de gravação descrita acima (as gravações em uma passagem de renderização não são válidas para leitura até uma passagem de renderização subsequente). As barreiras de UAV não são permitidas em uma passagem de renderização.
 
-As associações UAV (por meio de tabelas raiz ou descritores de raiz) são herdadas em passagens de renderização e são propagadas de passagens de renderização.
+As vinculações UAV (por meio de tabelas raiz ou descritores raiz) são herdadas em passagens de renderização e são propagadas para fora de passagens de renderização.
 
-#### <a name="suspending-passes-and-resuming-passes"></a>Suspensão-passagens e retomada-passagens
+#### <a name="suspending-passes-and-resuming-passes"></a>Suspending-passes e resumindo-passes
 
-Você pode indicar que uma passagem de renderização inteira é uma passagem de suspensão e/ou uma passagem de retomada. Um par de suspensão-seguido de uma retomada deve ter exibições/sinalizadores de acesso idênticos entre as passagens, e pode não ter nenhuma operação de GPU intermediária (por exemplo, desenha, despacha, descarta, limpa, copia, atualiza-se, mapeamentos de bloco de atualização, gravações de buffer-imediatos, consultas, resoluções de consulta) entre a passagem de renderização de suspensão e a passagem de renderização de retomada.
+Você pode indicar uma passagem de renderização inteira como sendo um suspending-pass e/ou uma passagem de retomada. Um par suspending-followed-by-a-resumindo deve ter sinalizadores de exibição/acesso idênticos entre as passagens e pode não ter nenhuma operação de GPU intermediária (por exemplo, desenho, expedições, descartes, limpas, cópias, update-tile-mappings, write-buffer-immediates, consultas, resolveções de consulta) entre a passagem de renderização suspensa e a passagem de renderização de retomada.
 
-O caso de uso pretendido é a renderização multi-threaded, em que digamos quatro listas de comandos (cada uma com suas próprias passagens de renderização) podem ter como destino os mesmos destinos de renderização. Quando as passagens de renderização são suspensas/retomadas nas listas de comandos, as listas de comandos devem ser executadas na mesma chamada para [**ID3D12CommandQueue:: ExecuteCommandLists**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists).
+O caso de uso pretendido é a renderização multi-threaded, em que, digamos, quatro listas de comandos (cada uma com suas próprias passagens de renderização) pode ter como destino os mesmos destinos de renderização. Quando as passagens de renderização são suspensas/retomadas em listas de comandos, as listas de comandos devem ser executadas na mesma chamada para [**ID3D12CommandQueue::ExecuteCommandLists**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists).
 
-Uma passagem de renderização pode ser retomada e suspensa. No exemplo multi-threaded de vários threads, as listas de comandos 2 e 3 seriam retomadas de 1 e 2, respectivamente. E, ao mesmo tempo, 2 e 3 seriam suspensos para 3 e 4, respectivamente.
+Uma passagem de renderização pode ser retomada e suspensa. No exemplo de vários threads que acabou de ser determinado, as listas de comandos 2 e 3 seriam retomadas de 1 e 2, respectivamente. E, ao mesmo tempo, 2 e 3 seriam suspensos para 3 e 4, respectivamente.
 
-## <a name="query-for-render-passes-feature-support"></a>Consulta de suporte a recursos de renderização
+## <a name="query-for-render-passes-feature-support"></a>Consulta de suporte a recursos de aprovações de renderização
 
-Você pode chamar [**ID3D12Device:: CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) para consultar a extensão à qual um driver de dispositivo e/ou o hardware dá suporte eficiente a passagens de renderização.
+Você pode chamar [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) para consultar a extensão até a qual um driver de dispositivo e/ou o hardware dá suporte eficiente a passagens de renderização.
 
 ```cppwinrt
 D3D12_RENDER_PASS_TIER get_render_passes_tier(::ID3D12Device * pIDevice)
@@ -189,6 +189,6 @@ D3D12_RENDER_PASS_TIER get_render_passes_tier(::ID3D12Device * pIDevice)
     D3D12_RENDER_PASS_TIER renderPassesTier{ get_render_passes_tier(pIDevice) };
 ```
 
-Devido à lógica de mapeamento do tempo de execução, as passagens de renderização sempre funcionam. Mas, dependendo do suporte a recursos, eles nem sempre fornecerão um benefício. Você pode usar um código semelhante ao exemplo de código acima para determinar se vale a pena emitir comandos como passagens de renderização, e quando definitivamente não é um benefício (ou seja, quando o tempo de execução está apenas mapeando para a superfície de API existente). Executar essa verificação é particularmente importante se você estiver usando o [D3D11On12](/windows/desktop/direct3d12/direct3d-11-on-12)).
+Devido à lógica de mapeamento do runtime, renderizar passa sempre função. Mas, dependendo do suporte ao recurso, eles nem sempre fornecerão um benefício. Você pode usar código semelhante ao exemplo de código acima para determinar se/quando vale a pena emitir comandos conforme a renderização passa e quando ele definitivamente não é um benefício (ou seja, quando o runtime está apenas mapeando para a superfície de API existente). Executar essa verificação é particularmente importante se você estiver usando [D3D11On12](/windows/desktop/direct3d12/direct3d-11-on-12)).
 
-Para obter uma descrição das três camadas de suporte, consulte a enumeração [**D3D12_RENDER_PASS_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_render_pass_tier) .
+Para uma descrição das três camadas de suporte, consulte a [**enumeração D3D12_RENDER_PASS_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_render_pass_tier) dados.

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14faf4af15d04a02c80f10a86b310a47b799640
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e18d834c6e0623ade2f19e8494c5cb90dbe01d05b76701c5c4addcb6635b9390
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066736"
 ---
 # <a name="esentafterinitializationexception-constructor"></a>Construtor EsentAfterInitializationException
 
 Inicializa uma nova instância da classe EsentAfterInitializationException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentAfterInitializationException()
 
 [Classe EsentAfterInitializationException](./esentafterinitializationexception-class.md)
 
-[Membros do EsentAfterInitializationException](./esentafterinitializationexception-members.md)
+[Membros EsentAfterInitializationException](./esentafterinitializationexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

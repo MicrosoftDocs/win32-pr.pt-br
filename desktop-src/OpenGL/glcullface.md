@@ -1,9 +1,9 @@
 ---
-title: função glCullFace (GL. h)
-description: A função glCullFace especifica se as facetas de front-face ou voltagem para frente podem ser refeitas.
+title: Função glCullFace (Gl.h)
+description: A função glCullFace especifica se facetas voltadas para frente ou para trás podem ser reenviadas.
 ms.assetid: 53bf05b5-a68b-4d96-b4e7-2878a0a86a13
 keywords:
-- função glCullFace OpenGL
+- Função glCullFace OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c20370e0fa8bcf746d1b835ee45725f76158fb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70fd983e9a5921d96ba487f7eb8d6f631b000019e8ff566eb1ecc79e05ce4fb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081666"
 ---
-# <a name="glcullface-function"></a>função glCullFace
+# <a name="glcullface-function"></a>Função glCullFace
 
-A função **glCullFace** especifica se as facetas de front-face ou voltagem para frente podem ser refeitas.
+A **função glCullFace** especifica se facetas voltadas para frente ou para trás podem ser reenviadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void WINAPI glCullFace(
 *mode* 
 </dt> <dd>
 
-Especifica se as facetas voltadas para a frente ou para trás são candidatas para a remoção. As constantes simbólicas GL \_ front, GL \_ back e GL \_ front \_ e \_ back são aceitas. O valor padrão é GL de \_ volta.
+Especifica se facetas voltadas para frente ou para trás são candidatas para ressarção. As constantes simbólicas GL \_ FRONT, GL \_ BACK e GL FRONT AND BACK são \_ \_ \_ aceitas. O valor padrão é GL \_ BACK.
 
 </dd> </dl>
 
@@ -53,30 +53,30 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *modo* não era um valor aceito.<br/>                                                                                          |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *mode* não era um valor aceito.<br/>                                                                                          |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glCullFace** especifica se as facetas de front-face ou voltagem para frente são examinadas (conforme especificado pelo *modo*) quando a remoção da faceta está habilitada. Você habilita e desabilita a remoção de faceta usando [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) com a face de seleção do Argument GL \_ \_ . As facetas incluem triângulos, quadrilaterals, polígonos e retângulos.
+A **função glCullFace** especifica se facetas voltadas para a frente ou para trás são reenviadas (conforme especificado pelo modo *)* quando a redução de faceta está habilitada. Você habilita e desabilita a redução de faceta usando [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) com o argumento GL \_ CULL \_ FACE. As facetas incluem triângulos, retângulos, polígonos e retângulos.
 
-A função [**glFrontFace**](glfrontface.md) especifica qual das facetas no sentido horário e anti-horário são voltadas para frente e para trás.
+A [**função glFrontFace**](glfrontface.md) especifica qual das facetas no sentido horário e anti-horário são voltadas para frente e para trás.
 
-Se o *modo* for GL \_ frontal \_ e \_ posterior, nenhuma faceta será desenhada, mas outros primitivos, como pontos e linhas, serão desenhados.
+Se *o modo* for GL FRONT AND BACK, nenhuma faceta será desenhada, mas outros primitivos, como pontos e \_ \_ \_ linhas, serão desenhados.
 
-As funções a seguir recuperam informações relacionadas ao **glCullFace**:
+As seguintes funções recuperam informações relacionadas **a glCullFace:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o Argument GL selecionar \_ \_ \_ modo facial
+[**glGet com**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) o argumento GL \_ CULL FACE \_ \_ MODE
 
-[**glIsEnabled**](glisenabled.md) com a face do argumento GL de \_ seleção \_
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ CULL \_ FACE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,8 +86,8 @@ As funções a seguir recuperam informações relacionadas ao **glCullFace**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

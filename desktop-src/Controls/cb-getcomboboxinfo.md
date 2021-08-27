@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_GETCOMBOBOXINFO (WinUser. h)
+title: CB_GETCOMBOBOXINFO mensagem (Winuser.h)
 description: Obtém informações sobre a caixa de combinação especificada.
 ms.assetid: 3239dfa8-7301-48e3-ba8e-29c5d5f43b39
 keywords:
-- Controles de CB_GETCOMBOBOXINFO de mensagens do Windows
+- CB_GETCOMBOBOXINFO controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd7052ef4feca8a8704258c7c34d6516c7cd6cd4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ce6227df0031c01b15892daa14eea9cc8d25bd2c7eede68af275063d7201505
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089286"
 ---
-# <a name="cb_getcomboboxinfo-message"></a>\_Mensagem de GETCOMBOBOXINFO CB
+# <a name="cb_getcomboboxinfo-message"></a>Mensagem \_ CB GETCOMBOBOXINFO
 
 Obtém informações sobre a caixa de combinação especificada.
 
@@ -36,10 +36,10 @@ Este parâmetro não é usado.
 
 </dd> <dt>
 
-*lParam* \[ fora\]
+*lParam* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**COMBOBOXINFO**](/windows/win32/api/winuser/ns-winuser-comboboxinfo) que recebe as informações.
+Um ponteiro para uma [**estrutura COMBOBOXINFO**](/windows/win32/api/winuser/ns-winuser-comboboxinfo) que recebe as informações.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Se a função falhar, o valor retornado será zero. Para obter informações de 
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem é equivalente a [**GetComboBoxInfo**](/windows/desktop/api/Winuser/nf-winuser-getcomboboxinfo).
+Essa mensagem é equivalente a [**GetComboBoxInfo.**](/windows/desktop/api/Winuser/nf-winuser-getcomboboxinfo)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Essa mensagem é equivalente a [**GetComboBoxInfo**](/windows/desktop/api/Winuse
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

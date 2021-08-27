@@ -3,7 +3,7 @@ title: TVN_BEGINLABELEDIT código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de exibição de árvore sobre o início da edição de rótulo para um item. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 67ed1f1f-7ccc-4e84-9540-4a46f6cd3a44
 keywords:
-- TVN_BEGINLABELEDIT de código de notificação controles do Windows
+- TVN_BEGINLABELEDIT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34eccdeda553d0792a2862e3ca81a0889539d5ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8fdd2b75ee9f3dcc46e5449c275eeea141162f3d31f524b64e114a623bd915e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105750933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060086"
 ---
 # <a name="tvn_beginlabeledit-notification-code"></a>Código de notificação do TVN \_ BEGINLABELEDIT
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**NMTVDISPINFO**](/windows/win32/api/commctrl/ns-co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** para cancelar a edição do rótulo.
 
@@ -65,9 +65,9 @@ Quando o usuário cancela ou conclui a edição, a janela pai recebe um código 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVN \_ BEGINLABELEDITW** (Unicode) e **TVN \_ BEGINLABELEDITA** (ANSI)<br/>     |
 
 

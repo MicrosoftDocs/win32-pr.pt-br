@@ -1,38 +1,38 @@
 ---
 title: Exemplo de gatilho de registro (C++)
-description: Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas quando uma tarefa é registrada.
+description: Este exemplo do C++ mostra como criar uma tarefa agendada para execução Bloco de notas quando uma tarefa é registrada.
 ms.assetid: 5e2e8fa6-66c7-4356-8fd6-22f7974791b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 090a690601e24e1245040d0e7b394123afa94b07
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb9b87f21f2d301bcd500b4f28e41d1e2fada63ddaa8e7c9a4c833c6359f0b15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105761810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011326"
 ---
 # <a name="registration-trigger-example-c"></a>Exemplo de gatilho de registro (C++)
 
-Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas quando uma tarefa é registrada. A tarefa contém um gatilho de registro que especifica um limite inicial e um limite final para a tarefa e também um atraso para a tarefa. O limite inicial especifica quando o gatilho é ativado e o atraso define a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada. A tarefa também contém uma ação que especifica a tarefa para executar o bloco de notas.
+Este exemplo do C++ mostra como criar uma tarefa agendada para execução Bloco de notas quando uma tarefa é registrada. A tarefa contém um gatilho de registro que especifica um limite inicial e um limite final para a tarefa e também um atraso para a tarefa. O limite inicial especifica quando o gatilho é ativado e o atraso define a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada. A tarefa também contém uma ação que especifica a tarefa a ser executada Bloco de notas.
 
 > [!Note]  
-> Quando uma tarefa com um gatilho de registro é atualizada, a tarefa será executada Depois que a atualização ocorrer.
+> Quando uma tarefa com um gatilho de registro for atualizada, a tarefa será executada depois que a atualização ocorrer.
 
- 
+ 
 
 O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável quando a tarefa é registrada.
 
-**Para agendar o bloco de notas para iniciar quando uma tarefa for registrada**
+**Para agendar Bloco de notas iniciar quando uma tarefa é registrada**
 
-1.  Inicialize COM e defina a segurança COM geral.
-2.  Crie o objeto [**o ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) . Esse objeto permite que você crie tarefas em uma pasta especificada.
-3.  Obtenha uma pasta de tarefas na qual criar uma tarefa. Use o método [**o ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**O ITaskService:: NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
-4.  Defina informações sobre a tarefa usando o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como as informações de registro para a tarefa. Use a [**Propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface **ITaskDefinition** para definir as informações da tarefa.
-5.  Crie um gatilho de registro usando a [**Propriedade Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar o [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para a tarefa. Use o método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho de registro.
-6.  Crie uma ação para a tarefa Executar usando a [**Propriedade Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a interface [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) para a tarefa. Use o método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa uma ação que executa uma operação de linha de comando.
-7.  Registre a tarefa usando o método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+1.  Inicializar COM e definir a segurança COM geral.
+2.  Crie o [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) Esse objeto permite que você crie tarefas em uma pasta especificada.
+3.  Obter uma pasta de tarefas na onde criar uma tarefa. Use o [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
+4.  Defina informações sobre a tarefa usando [**o objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como as informações de registro da tarefa. Use a [**propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface **ITaskDefinition** para definir as informações da tarefa.
+5.  Crie um gatilho de registro usando a propriedade [**Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar [**o ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para a tarefa. Use o [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho de registro.
+6.  Crie uma ação para a tarefa a ser executada usando a propriedade Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a interface [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) da tarefa. Use o [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um [**objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa uma ação que executa uma operação de linha de comando.
+7.  Registre a tarefa usando [**o método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-O exemplo de C++ a seguir mostra como agendar uma tarefa para executar o bloco de notas 30 segundos depois que a tarefa é registrada.
+O exemplo C++ a seguir mostra como agendar uma tarefa para executar Bloco de notas 30 segundos após o registro da tarefa.
 
 
 ```C++
@@ -389,9 +389,9 @@ int __cdecl wmain()
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

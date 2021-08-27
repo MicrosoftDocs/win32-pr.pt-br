@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bb1339347c4e15cd29ebf4d4e98e5a8b61a24e97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f28b01cb3b4506e0b47332cc3336af95dd641e78c7716f33b8e62b162081bdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071516"
 ---
 # <a name="creating-a-managed-wmi-client"></a>Criando um cliente WMI gerenciado
 
 A versão atual do WMI contém o namespace System. Management, que expõe uma série de APIs que interagem com o WMI. No entanto, não é recomendável que você use esse namespace.
 
-Se você quiser criar um cliente WMI gerenciado, é recomendável usar o MI (infraestrutura de gerenciamento do Windows). MI é a versão de última geração do WMI e contém suporte completo para código gerenciado. Para obter mais informações, consulte [como implementar um cliente mi gerenciado](/previous-versions/windows/desktop/wmi_v2/how-to-implement-a-managed-mi-client).
+se você quiser criar um cliente WMI gerenciado, é recomendável usar a infraestrutura de gerenciamento de Windows (MI). MI é a versão de última geração do WMI e contém suporte completo para código gerenciado. Para obter mais informações, consulte [como implementar um cliente mi gerenciado](/previous-versions/windows/desktop/wmi_v2/how-to-implement-a-managed-mi-client).
 
  
 

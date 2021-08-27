@@ -1,7 +1,7 @@
 ---
-description: 'CBaseInputPin:: m_pAllocator ponteiro de membro para o alocador de memória.'
+description: Membro CBaseInputPin::m_pAllocator – ponteiro para o alocador de memória.
 ms.assetid: c6ba89ee-a645-4337-b4f3-c170a33e89e9
-title: 'Membro CBaseInputPin:: m_pAllocator (Amfilter. h)'
+title: Membro CBaseInputPin::m_pAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 906b45c7a4249de8dbd761b96d499d2f17e3af17
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ebfb5bf4aa7a93ee493cafdd1feea8095293f84561cfd33e12af7fc69d6eb7a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079436"
 ---
-# <a name="cbaseinputpinm_pallocator-member"></a>Membro de CBaseInputPin:: m \_ pAllocator
+# <a name="cbaseinputpinm_pallocator-member"></a>Membro CBaseInputPin::m \_ pAllocator
 
 Ponteiro para o alocador de memória.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ IMemAllocator *m_pAllocator;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

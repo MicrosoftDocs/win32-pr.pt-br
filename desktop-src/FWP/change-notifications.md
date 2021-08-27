@@ -4,12 +4,12 @@ description: As notificações de alteração do mecanismo de filtragem base (BF
 ms.assetid: 443f1767-5694-4584-ba0f-229275900774
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c7a3a2069525cc44823ed975fade3b5f100efd8
-ms.sourcegitcommit: 60ad94096619da5476f9bbcd4cc231b40b6f5358
+ms.openlocfilehash: a0038dc851cb15414dbc0180f205104725bf069b599632a93ae6e257fe7a1f84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103917011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078496"
 ---
 # <a name="change-notifications"></a>Notificações de alteração
 
@@ -30,9 +30,9 @@ As notificações de alteração oferecidas pelo BFE são:
 
 Os assinantes não recebem notificações para alterações feitas com o identificador de sessão que eles usaram para assinar. Geralmente, os assinantes precisam ser informados apenas sobre as alterações feitas por outros; Eles já sabem quais alterações foram feitas por conta própria.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Elemento Task (RenderingInfoType)
 description: A cadeia de caracteres de mensagem renderizada da tarefa especificada no evento.
 ms.assetid: c485eeee-e809-4f84-b3fd-cc7e3349433b
 keywords:
-- Elemento de tarefa EventLog
+- Elemento Task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 139c50605c869c81d1b9afeacdc9129cf4df2974
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4f07ce270a6f1936a1d30f2151afe2c70576e3f8539779d64e1816796708d8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005316"
 ---
 # <a name="task-renderinginfotype-element"></a>Elemento Task (RenderingInfoType)
 
@@ -30,7 +30,7 @@ A cadeia de caracteres de mensagem renderizada da tarefa especificada no evento.
  />
 ```
 
-O elemento **Task** é definido pelo tipo complexo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+O **elemento Task** é definido pelo tipo complexo [**RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Task** é definido pelo tipo complexo [**RenderingInfoType**](event
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
