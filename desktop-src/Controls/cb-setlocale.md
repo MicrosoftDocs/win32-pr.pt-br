@@ -3,7 +3,7 @@ title: Mensagem de CB_SETLOCALE (WinUser. h)
 description: Um aplicativo envia uma \_ mensagem de SETlocalização de CB para definir a localidade atual da caixa de combinação. Se a caixa de combinação tiver o \_ estilo de classificação CBS e as cadeias de caracteres forem adicionadas usando CB \_ AddString, a localidade de uma caixa de combinação afetará a forma como os itens de lista são classificados.
 ms.assetid: 06f9c69d-1220-490f-bc67-6e125f696e87
 keywords:
-- Controles de CB_SETLOCALE de mensagens do Windows
+- controles de Windows de mensagem de CB_SETLOCALE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 025f33dc8ba236965a98ca984446b04846ecd2ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef1647d8ff4c7a4625151a9ec099800549d831f6b55a7ef6cc6b5ead365e80e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063296"
 ---
 # <a name="cb_setlocale-message"></a>\_Mensagem SETlocal do CB
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o identificador de localidade anterior. Se *wParam* especificar uma localidade não instalada no sistema, o valor de retorno será CB \_ Err e a localidade da caixa de combinação atual não será alterada.
 
@@ -57,9 +57,9 @@ Use a macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) para co
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -6,12 +6,12 @@ keywords:
 - Chamada de procedimento remoto RPC, tarefas, instalando SPX/IPX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd5058eb30878b7306d320d69a0f554e255dc38
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02beef87830499b83789f3c7b28b61cefe7bd360168059ffd54f6d74e897c886
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127756"
 ---
 # <a name="spxipx-installation"></a>Instalação de SPX/IPX
 
@@ -20,9 +20,9 @@ Os aplicativos podem utilizar o Microsoft RPC em redes que usam os \_ transporte
 -   [Configurando o RPC para SPX/IPX](configuring-rpc-for-spx-ipx.md)
 -   [Configurando SAP e RPC](configuring-sap-and-rpc.md)
 
- 
+ 
 
- 
+ 
 
 
 

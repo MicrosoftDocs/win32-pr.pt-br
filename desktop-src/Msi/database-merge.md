@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 0a1d93ba6a9a4dc0304daba11c5868b77ece43b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fad74e1647413b66ebc6910e739750699f4e641c961eff59ecaacbf1e7a41f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074986"
 ---
 # <a name="databasemerge-method"></a>Método Database. Merge
 
@@ -54,13 +54,13 @@ Um nome opcional de uma tabela para conter os nomes das tabelas que contêm conf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea) e o método **Merge** do objeto [**Database**](database-object.md) não podem ser usados para mesclar um módulo incluído em um pacote de instalação. Eles não devem ser usados para mesclar [módulos de mesclagem](merge-modules.md) em um pacote Windows Installer. Para incluir um módulo de mesclagem em um pacote de instalação, os autores de pacotes de instalação devem seguir as diretrizes descritas no tópico [aplicando módulos de mesclagem](applying-merge-modules.md) .
+A função [**MsiDatabaseMerge**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea) e o método **Merge** do objeto [**Database**](database-object.md) não podem ser usados para mesclar um módulo incluído em um pacote de instalação. eles não devem ser usados para mesclar [módulos de mesclagem](merge-modules.md) em um pacote Windows Installer. Para incluir um módulo de mesclagem em um pacote de instalação, os autores de pacotes de instalação devem seguir as diretrizes descritas no tópico [aplicando módulos de mesclagem](applying-merge-modules.md) .
 
 O método **Merge** não copia [arquivos de gabinete](cabinet-files.md) inseridos ou [transformações incorporadas](embedded-transforms.md) do banco de dados de referência para o banco de dados de destino. Os fluxos de dados inseridos que estão listados na tabela [binária](binary-table.md) ou na [tabela de ícones](icon-table.md) são copiados do banco de dado de referência para o banco de dados de destino. Os armazenamentos inseridos no banco de dados de referência não são copiados para o banco de dados de destino.
 
@@ -78,7 +78,7 @@ Se o método falhar, você poderá obter informações de erro estendidas usando
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IDatabase é definido como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 

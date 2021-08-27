@@ -4,18 +4,18 @@ ms.assetid: 2f841eb6-9a6c-4c9b-b057-a3da6cd6b0b0
 title: Aplicativos isolados e assemblies lado a lado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59abfbd5392040856c66ef9eb786b66d2a84500f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9af477178aa3fd68563ee53017d80c00e103b4cb97a6fd16062d307375b29574
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127486"
 ---
 # <a name="isolated-applications-and-side-by-side-assemblies"></a>Aplicativos isolados e assemblies lado a lado
 
 ## <a name="purpose"></a>Finalidade
 
-Os aplicativos isolados e os assemblies lado a lado são uma solução do Microsoft Windows que reduz conflitos de controle de versão em aplicativos cliente do Windows. Com o Windows, os desenvolvedores de aplicativos podem criar aplicativos isolados totalmente autodescritivos e não afetados por alterações no registro, em outros aplicativos ou em outras versões de assemblies em execução no sistema. Os autores e administradores de aplicativos podem usar manifestos para gerenciar o compartilhamento de assemblies lado a lado após a implantação em uma base global ou por aplicativo. Os clientes se beneficiam de aplicativos isolados que são mais estáveis e mais confiáveis.
+os aplicativos isolados e os Assemblies lado a lado são uma solução de Windows da Microsoft que reduz conflitos de controle de versão em aplicativos cliente Windows. com o Windows, os desenvolvedores de aplicativos podem criar aplicativos isolados totalmente autodescritivos e não afetados por alterações no registro, em outros aplicativos ou em outras versões de assemblies em execução no sistema. Os autores e administradores de aplicativos podem usar manifestos para gerenciar o compartilhamento de assemblies lado a lado após a implantação em uma base global ou por aplicativo. Os clientes se beneficiam de aplicativos isolados que são mais estáveis e mais confiáveis.
 
 ## <a name="where-applicable"></a>Quando aplicável
 
@@ -37,7 +37,7 @@ Como referência principal para compartilhamento de assembly lado a lado e aplic
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O Windows Server 2003 e posterior ou o Windows XP e posterior é necessário para usar assemblies e manifestos lado a lado para isolar aplicativos e usar a API de contexto de ativação.
+Windows o servidor 2003 e posterior ou Windows XP e posterior é necessário para usar assemblies e manifestos lado a lado para isolar aplicativos e usar a API de contexto de ativação.
 
 ## <a name="in-this-section"></a>Nesta seção
 

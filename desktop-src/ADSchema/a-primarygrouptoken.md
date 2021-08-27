@@ -1,11 +1,11 @@
 ---
-title: Atributo Primary-Group-token
-description: Um atributo calculado que é usado na recuperação da lista de membros de um grupo, como usuários de domínio. A associação completa desses grupos não é armazenada explicitamente por motivos de dimensionamento.
+title: Atributo Primary-Group-Token
+description: Um atributo computado que é usado para recuperar a lista de associação de um grupo, como Usuários de Domínio. A associação completa desses grupos não é armazenada explicitamente por motivos de dimensionamento.
 ms.assetid: b23d3b7f-074b-4f1b-bc06-b22738a8a79e
 ms.tgt_platform: multiple
 keywords:
-- Grupo de identificadores primários de atributos de token
-- Esquema de AD do atributo primaryGroupToken
+- Esquema do AD do atributo Primary-Group-Token
+- Esquema do AD do atributo primaryGroupToken
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b237ab5998ca3f38f2d07128b36d9337c96935d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fd83e89a25a81f6d62207e48053fff5cafd279e29b482a9b80cb02de580ad3fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065916"
 ---
-# <a name="primary-group-token-attribute"></a>Atributo Primary-Group-token
+# <a name="primary-group-token-attribute"></a>Atributo Primary-Group-Token
 
-Um atributo calculado que é usado na recuperação da lista de membros de um grupo, como usuários de domínio. A associação completa desses grupos não é armazenada explicitamente por motivos de dimensionamento.
+Um atributo computado que é usado para recuperar a lista de associação de um grupo, como Usuários de Domínio. A associação completa desses grupos não é armazenada explicitamente por motivos de dimensionamento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------------|
-| CN                | Token de grupo primário                        |
-| LDAP-Display-Name | primaryGroupToken                          |
+| CN                | Primary-Group-Token                        |
+| Ldap-Display-Name | primaryGroupToken                          |
 | Tamanho              | 4 bytes                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.           |
-| Frequência de atualização  | Sempre que um grupo primário de objetos é alterado. |
+| Frequência de atualização  | Sempre que um grupo primário de objetos é mudar. |
 | Attribute-Id      | 1.2.840.113556.1.4.1412                    |
-| System-ID-GUID    | c0ed8738-7efd-4481-84d9-66d2db8be369       |
+| System-Id-Guid    | c0ed8738-7efd-4481-84d9-66d2db8be369       |
 | Syntax            | [**Enumeração**](s-enumeration.md)       |
 
 
@@ -44,7 +44,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -79,11 +79,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -92,7 +92,7 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -121,11 +121,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -142,11 +142,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -163,11 +163,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -184,11 +184,11 @@ Um atributo calculado que é usado na recuperação da lista de membros de um gr
 |------------------------|-------------------------------------|
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | True                                |
-| É de valor único       | True                                |
+| System-Only            | Verdadeiro                                |
+| Tem valor único       | Verdadeiro                                |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

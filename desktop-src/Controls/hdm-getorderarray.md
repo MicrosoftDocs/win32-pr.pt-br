@@ -3,7 +3,7 @@ title: Mensagem de HDM_GETORDERARRAY (commctrl. h)
 description: Obtém a ordem da esquerda para a direita atual de itens em um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetOrderArray do cabeçalho.
 ms.assetid: b287d3c1-ae61-41a4-a884-dc008eb24ad8
 keywords:
-- Controles de HDM_GETORDERARRAY de mensagens do Windows
+- controles de Windows de mensagem de HDM_GETORDERARRAY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e334b0023ad3441c20048273e9bc58c1b25622b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f374424fe3f1d84c4919c26948486a9bae1660072975556aecaac4b08b85b33b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062826"
 ---
 # <a name="hdm_getorderarray-message"></a>\_Mensagem HDM GETORDERARRAY
 
@@ -43,7 +43,7 @@ Um ponteiro para uma matriz de inteiros que recebe os valores de índice para it
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido e o buffer em *lParam* receberá o número do item para cada item no controle de cabeçalho na ordem em que eles aparecem da esquerda para a direita. Caso contrário, a mensagem retornará zero.
 
@@ -76,9 +76,9 @@ MessageBox(hwnd, "Out of memory.","Error", MB_OK);
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

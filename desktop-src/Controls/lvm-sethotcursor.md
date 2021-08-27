@@ -3,7 +3,7 @@ title: Mensagem de LVM_SETHOTCURSOR (commctrl. h)
 description: Define o valor de HCURSOR que o controle de exibição de lista usa quando o ponteiro está sobre um item enquanto o controle ativo está habilitado.
 ms.assetid: e3ff8608-9389-4167-839b-ecc2be01bb64
 keywords:
-- Controles de LVM_SETHOTCURSOR de mensagens do Windows
+- controles de Windows de mensagem de LVM_SETHOTCURSOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e743f74eda3b59f04f6f4793b47d76da3bab881
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3407c5d8b53483d3a639fc40959768b3fa8eea0e7b439ab8871d36346b7079d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077246"
 ---
 # <a name="lvm_sethotcursor-message"></a>\_Mensagem SETHOTCURSOR LVM
 
@@ -39,7 +39,7 @@ Identificador para o cursor a ser definido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor HCURSOR que é o cursor quente anterior.
 
@@ -53,9 +53,9 @@ Um controle de exibição de lista usa rastreamento dinâmico e seleção de foc
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -9,12 +9,12 @@ keywords:
 - EAP, consulte protocolo de autenticação extensível
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c79b9585363d74eb50190d0fd6355830a7087aa4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5cd54a380323fdf5a04add7f28fe18378be8ed375e936c70d2045f2e139ff852
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094426"
 ---
 # <a name="extensible-authentication-protocol"></a>Protocolo EAP (Extensible Authentication Protocol)
 
@@ -34,7 +34,7 @@ A API do EAP foi projetada para ser usada por programadores C/C++. Os programado
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O EAP tem suporte em computadores cliente e servidor em execução no Windows 2000 e posterior. O EAP também tem suporte em computadores que executam o Windows 2000 Server e posterior se estiverem executando o IAS (serviço de autenticação da Internet). Para obter mais informações sobre sistemas operacionais com suporte, consulte a seção requisitos na documentação do.
+o EAP tem suporte em computadores cliente e servidor em execução no Windows 2000 e posterior. o EAP também tem suporte em computadores que executam o Windows Server 2000 e posterior se estiverem executando o IAS (serviço de autenticação da Internet). Para obter mais informações sobre sistemas operacionais com suporte, consulte a seção requisitos na documentação do.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -64,6 +64,6 @@ O EAP tem suporte em computadores cliente e servidor em execução no Windows 20
 [Referência de protocolo de autenticação extensível](extensible-authentication-protocol-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

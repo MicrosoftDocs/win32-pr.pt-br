@@ -1,7 +1,7 @@
 ---
-description: Método CBaseMediaFilter. streamtime – o método streamtime recupera a hora atual do fluxo.
+description: Método CBaseMediaFilter.StreamTime – o método StreamTime recupera a hora do fluxo atual.
 ms.assetid: 2e1ff6f1-9815-4ee6-97e8-a5ab5f472b27
-title: Método CBaseMediaFilter. streamtime (Amfilter. h)
+title: Método CBaseMediaFilter.StreamTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a90bb7d97825c14f11c75dd42d696fa302f8e3d4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 99205cb7065b7bd57d0f49a7f4942df8c1548ba5d4b4f8b26c8a13387ddc7d1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076586"
 ---
-# <a name="cbasemediafilterstreamtime-method"></a>Método CBaseMediaFilter. streamtime
+# <a name="cbasemediafilterstreamtime-method"></a>Método CBaseMediaFilter.StreamTime
 
-O `StreamTime` método recupera a hora atual do fluxo.
+O `StreamTime` método recupera a hora do fluxo atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,23 +42,23 @@ virtual HRESULT StreamTime(
 
 <dl> <dt>
 
-*rtStream* \[ referência\]
+*rtStream* \[ Ref\]
 </dt> <dd>
 
-Referência a um objeto [**CRefTime**](creftime.md) que recebe a hora atual do fluxo.
+Referência a um [**objeto CRefTime**](creftime.md) que recebe a hora do fluxo atual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles listados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                      | Descrição                                 |
 |--------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>             | Sucesso.<br/>                         |
-| <dl> <dt>**VFW \_ E \_ sem \_ relógio**</dt> </dl> | Nenhum relógio de referência está disponível.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>             | Êxito.<br/>                         |
+| <dl> <dt>**VFW \_ E \_ SEM \_ RELÓGIO**</dt> </dl> | Nenhum relógio de referência está disponível.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 ## <a name="remarks"></a>Comentários
 
-O tempo de transmissão é definido como o tempo de referência atual (conforme fornecido pelo relógio de referência) menos a hora de início (especificada por [**CBaseMediaFilter:: m \_ tStart**](cbasemediafilter-m-tstart.md)). Um carimbo de data/hora de um exemplo de mídia especifica o tempo de transmissão quando ele deve ser renderizado. Se um exemplo com um carimbo de data/hora menor que o tempo atual do fluxo ainda não tiver sido renderizado, ele será atrasado.
+A hora do fluxo é definida como a hora de referência atual (conforme determinado pelo relógio de referência) menos a hora de início (especificada por [**CBaseMediaFilter::m \_ tStart**](cbasemediafilter-m-tstart.md)). O carimbo de data/hora de um exemplo de mídia especifica a hora do fluxo quando ele deve ser renderizado. Se um exemplo com um carimbo de data/hora menor que a hora do fluxo atual ainda não tiver sido renderizado, será tarde.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,12 +74,12 @@ O tempo de transmissão é definido como o tempo de referência atual (conforme 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

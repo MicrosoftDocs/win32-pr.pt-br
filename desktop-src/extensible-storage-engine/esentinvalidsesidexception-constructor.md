@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4d7e6b3f4113ff642b597259fb6abb18f68bb1a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ad0ac79a67420d827f3df4f95225c6ca45df49e206648251e67bea2bee22065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064376"
 ---
 # <a name="esentinvalidsesidexception-constructor"></a>Construtor EsentInvalidSesidException
 
 Inicializa uma nova instância da classe EsentInvalidSesidException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidSesidException()
 
 [Classe EsentInvalidSesidException](./esentinvalidsesidexception-class.md)
 
-[Membros do EsentInvalidSesidException](./esentinvalidsesidexception-members.md)
+[Membros EsentInvalidSesidException](./esentinvalidsesidexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

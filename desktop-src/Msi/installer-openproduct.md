@@ -1,7 +1,7 @@
 ---
-description: O método OpenProduct do objeto do instalador abre um pacote do instalador para um produto instalado usando o código do produto e retorna um objeto de sessão.
+description: O método OpenProduct do objeto Installer abre um pacote do instalador para um produto instalado usando o código do produto e retorna um objeto Session.
 ms.assetid: f09c4795-19e1-4474-b7ca-68ef650b69d5
-title: Método Installer. OpenProduct
+title: Método Installer.OpenProduct
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 9fd25a1f204a6d42cd4cb6e330d7d69da2cddb07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3aa6176b297261968a63b2f723a65ea14b45b8d3628b200be92df556adc5c2b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129376"
 ---
-# <a name="installeropenproduct-method"></a>Método Installer. OpenProduct
+# <a name="installeropenproduct-method"></a>Método Installer.OpenProduct
 
-O método **OpenProduct** do objeto do [**instalador**](installer-object.md) abre um pacote do instalador para um produto instalado usando o código do produto e retorna um objeto de [**sessão**](session-object.md) .
+O **método OpenProduct** do objeto [**Installer**](installer-object.md) abre um pacote do instalador para um produto instalado usando o código do produto e retorna um [**objeto Session.**](session-object.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ Installer.OpenProduct(
 
 <dl> <dt>
 
-*productCode* 
+*Productcode* 
 </dt> <dd>
 
-Cadeia de caracteres necessária que contém o código de produto exclusivo (um [GUID](guid.md)) ou um descritor de ativação escrito pelo instalador.
+Cadeia de caracteres necessária que contém o código do produto exclusivo (um [GUID)](guid.md)ou um descritor de ativação escrito pelo instalador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Observe que apenas um objeto de [**sessão**](session-object.md) pode ser aberto por um único processo. **OpenProduct** não pode ser usado em uma ação personalizada porque a instalação ativa é a única sessão permitida.
+Observe que apenas um [**objeto Session**](session-object.md) pode ser aberto por um único processo. **OpenProduct não** pode ser usado em uma ação personalizada porque a instalação ativa é a única sessão permitida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Observe que apenas um objeto de [**sessão**](session-object.md) pode ser aberto
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

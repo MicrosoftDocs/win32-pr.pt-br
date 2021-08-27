@@ -4,12 +4,12 @@ ms.assetid: a26951d6-67fb-43fb-849f-331416e9d7c2
 title: Propriedade AVEncCodecType (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8643c0624b7d82381e2008f2adbd6804e9af9881
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3727ff8cc2a59208d63874de173e3e44e89e3e6f2ebc37201218f9656aa09cd4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104296048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084606"
 ---
 # <a name="avenccodectype-property"></a>Propriedade AVEncCodecType
 
@@ -35,7 +35,7 @@ O valor dessa propriedade é um **BSTR** que contém a representação de cadeia
 |-------------------------------------------|----------------------------------------------------|
 | CODECAPI \_ GUID \_ AVEncDolbyDigitalConsumer | Áudio Dolby Digital Consumer                       |
 | CODECAPI \_ GUID \_ AVEncDolbyDigitalPlus     | Áudio Dolby Digital Plus                           |
-| CODECAPI \_ GUID \_ AVEncDolbyDigitalPro      | Áudio Dolby Digital pro                            |
+| CODECAPI \_ GUID \_ AVEncDolbyDigitalPro      | áudio Dolby Digital Pro                            |
 | CODECAPI \_ GUID \_ AVEncDTS                  | Áudio DTS                                          |
 | CODECAPI \_ GUID \_ AVEncDTSHD                | DTS-áudio de HD                                       |
 | CODECAPI \_ GUID \_ AVEncDV                   | Vídeo DV                                           |
@@ -47,10 +47,10 @@ O valor dessa propriedade é um **BSTR** que contém a representação de cadeia
 | CODECAPI \_ GUID \_ AVEncMPEG2Video           | Vídeo MPEG-2                                       |
 | CODECAPI \_ GUID \_ AVEncPCM                  | Áudio PCM                                          |
 | CODECAPI \_ GUID \_ AVEncSDDS                 | Áudio de som digital dinâmico (SDDS) da Sony            |
-| CODECAPI \_ GUID \_ AVEncWMALossless          | Áudio do Windows Media 9 sem perdas               |
-| CODECAPI \_ GUID \_ AVEncWMAPro               | Áudio do Windows Media Audio 9 Professional (WMA pro) |
-| CODECAPI \_ GUID \_ AVEncWMAVoice             | Áudio do Windows Media áudio 9 Voice                  |
-| CODECAPI \_ GUID \_ AVEncWMV                  | Vídeo do Windows Media                                |
+| CODECAPI \_ GUID \_ AVEncWMALossless          | Windows Áudio de mídia 9 sem perdas de áudio               |
+| CODECAPI \_ GUID \_ AVEncWMAPro               | Windows áudio do Media audio 9 Professional (WMA Pro) |
+| CODECAPI \_ GUID \_ AVEncWMAVoice             | Windows Áudio de voz 9 de áudio de mídia                  |
+| CODECAPI \_ GUID \_ AVEncWMV                  | Windows Vídeo de mídia                                |
 | CODECAPI \_ GUID \_ AVEndMPEG4Video           | Vídeo MPEG-4                                       |
 
 
@@ -67,9 +67,9 @@ Os aplicativos podem definir essa propriedade para especificar qual esquema de c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

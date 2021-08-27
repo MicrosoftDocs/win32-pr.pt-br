@@ -40,12 +40,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 844f897456ee21dfa93dfaa5b16b4f218ba5efb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c88c31d77b666e377cbd1911cde8b5df63d8f5c2fc750cd03a701b03af5b60ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094396"
 ---
 # <a name="eap-method-properties"></a>Propriedades do método EAP
 
@@ -65,7 +65,7 @@ As propriedades com suporte dos métodos EAP são listadas. As propriedades são
 
 
 
-O método permite que o conjunto de codificação seja negociado para fins de criptografia de dados. O Windows Server 2008 dá suporte aos seguintes [conjuntos de codificação](/windows/desktop/SecAuthN/tls-cipher-suites)3DES:
+O método permite que o conjunto de codificação seja negociado para fins de criptografia de dados. Windows O servidor 2008 dá suporte aos seguintes [conjuntos de codificação](/windows/desktop/SecAuthN/tls-cipher-suites)3DES:
 
 -   TLS \_ RSA \_ com \_ 3DES \_ ede \_ CBC \_ Sha (TLS & SSL 3)
 -   TLS \_ DHE \_ DSS \_ com \_ 3DES \_ EDE \_ CBC \_ Sha (TLS & SSL 3)
@@ -409,7 +409,7 @@ Windows 7 ou posterior: o método dá suporte ao envio da identidade do usuário
 
 
 
-Windows 7 ou posterior: o método é um método tunnelled e dá suporte ao encadeamento de métodos EAP no túnel.
+Windows 7 ou posterior: o método é um método com túnel e dá suporte ao encadeamento de método EAP dentro do túnel.
 
 
 </dt> </dl> </dd> <dt>
@@ -422,7 +422,7 @@ Windows 7 ou posterior: o método é um método tunnelled e dá suporte ao encad
 
 
 
-Windows 7 ou posterior: o método dá suporte à equivalência de estado compartilhado, conforme definido no [RFC 4017](https://go.microsoft.com/fwlink/p/?linkid=90455).
+Windows 7 ou posterior: o método dá suporte à equivalência de estado compartilhado conforme definido [no RFC 4017](https://go.microsoft.com/fwlink/p/?linkid=90455).
 
 
 </dt> </dl> </dd> <dt>
@@ -446,9 +446,9 @@ Reservado. Não usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 
@@ -456,9 +456,9 @@ Reservado. Não usado.
 
 <dl> <dt>
 
-[Chaves do registro para métodos EAP](registry-keys-for-eap-methods.md)
+[Chaves do Registro para métodos EAP](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
-[Constantes do EAPHost comuns](common-eap-host-error-constants.md)
+[Constantes comuns de EAPHost](common-eap-host-error-constants.md)
 </dt> </dl>
 

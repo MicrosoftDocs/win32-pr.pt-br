@@ -4,16 +4,16 @@ description: Este documento discute os recursos da caixa de combinação.
 ms.assetid: 7102beff-7f67-4e4e-a32b-9ccae1522ebd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 735daf708785c8d7c18027ae13a9a9cdcf843dd6
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: ef25e15b254c3eae048a0c938d23eed33884043aa2414f03a5ca9916cea35997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063266"
 ---
 # <a name="combo-box-features"></a>Recursos da caixa de combinação
 
-Este documento discute os recursos da caixa de combinação. Para mais informações, consulte os seguintes tópicos:
+Este documento discute os recursos da caixa de combinação. Para obter mais informações, consulte estes tópicos:
 
 -   [Recursos especiais](#special-features)
     -   [Listas de diretórios](#directory-lists)
@@ -84,7 +84,7 @@ As mensagens das caixas de combinação são enviadas como códigos de notifica�
 
 
 
- 
+ 
 
 ## <a name="default-combo-box-behavior"></a>Comportamento padrão da caixa de combinação
 
@@ -166,10 +166,10 @@ A tabela a seguir descreve as mensagens tratadas especificamente pelo procedimen
 
 
 
- 
+ 
 
 Todas as outras mensagens são passadas para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processamento padrão.
 
- 
+ 
 
- 
+ 

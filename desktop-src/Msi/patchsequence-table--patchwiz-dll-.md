@@ -1,19 +1,19 @@
 ---
-description: A tabela PatchSequence é usada para gerar a tabela MsiPatchSequence em um patch. A tabela requer a versão do PATCHWIZ.DLL que está disponível com Windows Installer&\# 160; 3.0.
+description: A tabela PatchSequence é usada para gerar a tabela MsiPatchSequence em um patch. a tabela requer a versão do PATCHWIZ.DLL que está disponível com Windows Installer&\# 160; 3.0.
 ms.assetid: bdeccb3b-57c0-4424-9602-348b8048fd46
 title: Tabela PatchSequence (PATCHWIZ.DLL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 382e940d3c0cb6c7be2c8360ab98f2afaf13c799
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0281f9882a674b268466259c534eefaa468bacf0fa891dc3a385e4d580a1e8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129176"
 ---
 # <a name="patchsequence-table-patchwizdll"></a>Tabela PatchSequence (PATCHWIZ.DLL)
 
-A tabela PatchSequence é usada para gerar a [tabela MsiPatchSequence](msipatchsequence-table.md) em um patch. A tabela requer a versão do [PATCHWIZ.DLL](patchwiz-dll.md) que está disponível com o Windows Installer 3,0.
+A tabela PatchSequence é usada para gerar a [tabela MsiPatchSequence](msipatchsequence-table.md) em um patch. a tabela requer a versão do [PATCHWIZ.DLL](patchwiz-dll.md) que está disponível com o Windows Installer 3,0.
 
 A tabela a seguir identifica as colunas da tabela PatchSequence.
 
@@ -21,10 +21,10 @@ A tabela a seguir identifica as colunas da tabela PatchSequence.
 
 | Coluna      | Tipo       | Chave | Nullable |
 |-------------|------------|-----|----------|
-| PatchFamily | Identificador | S   | N        |
-| Destino      | Texto       | S   | S        |
-| Sequência    | Versão    |     | S        |
-| Substituir   | Integer    |     | S        |
+| PatchFamily | Identificador | Y   | N        |
+| Destino      | Texto       | Y   | Y        |
+| Sequência    | Versão    |     | Y        |
+| Substituir   | Integer    |     | Y        |
 
 
 
@@ -72,7 +72,7 @@ O valor nessa coluna é usado para definir a coluna atributos da linha do novo p
 
 ### <a name="remarks"></a>Comentários
 
-Disponível a partir do Windows Installer 3,0.
+disponível a partir do Windows Installer 3,0.
 
  
 

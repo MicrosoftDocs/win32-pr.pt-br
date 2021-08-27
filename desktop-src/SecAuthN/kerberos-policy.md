@@ -4,19 +4,19 @@ ms.assetid: 4774218b-7cbd-4e8d-a064-44ebdc37e534
 title: Política do Kerberos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4559353e65a25a380c0c2aa4bb7e5d56f7681af1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 743d1dd394c42028c70f560fcb7f83b42bab506fbd222f877857be362a450041
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127306"
 ---
 # <a name="kerberos-policy"></a>Política do Kerberos
 
 A política de tíquete Kerberos é definida no nível de domínio e implementada pelo [*centro de distribuição de chaves*](../secgloss/k-gly.md) do domínio (KDC). A política Kerberos é armazenada no Active Directory como um subconjunto dos atributos da política de segurança de domínio. Por padrão, as opções de política podem ser definidas somente por membros do grupo Administradores de domínio. A diretiva de domínio inclui opções que:
 
 -   Dar suporte a tíquetes pós-datados
--   Suporte à delegação restrita (somente Windows Server 2003)
+-   suporte à delegação restrita (somente Windows Server 2003)
 -   Tíquetes de suporte que podem ser encaminhados
 -   Dar suporte a tíquetes renováveis
 -   Definir idade máxima do tíquete

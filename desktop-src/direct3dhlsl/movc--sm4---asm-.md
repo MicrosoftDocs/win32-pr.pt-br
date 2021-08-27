@@ -4,12 +4,12 @@ description: Movimentação condicional de componente. | movc (sm4-ASM)
 ms.assetid: B7F19DF5-282F-41D4-AE2D-6ACF61A42088
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91aa3116b7bc13102386c57c9b8c63d3534147a8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 81da36b39f60929bdfbac3b4a37c379189cf358ed4844e1a4cc899f867970065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095356"
 ---
 # <a name="movc-sm4---asm"></a>movc (sm4-ASM)
 

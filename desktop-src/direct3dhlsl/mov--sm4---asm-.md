@@ -4,12 +4,12 @@ description: Movimentação por componentes. | MOV (sm4-ASM)
 ms.assetid: A8865237-59D3-4332-9F09-157E10C4FFC6
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f029cd8a31a9348e729681878773c225b87b9fbb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 247e3838841d63c3cadf2e075fd088b534bf56ea19b8869b7cffe91e9f75e6c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095366"
 ---
 # <a name="mov-sm4---asm"></a>MOV (sm4-ASM)
 

@@ -1,6 +1,6 @@
 ---
 title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_WINSType
-description: O método CreateInstanceFromPropertyData instancia um registro de recurso WINS (serviço de cadastramento na Internet do Windows).
+description: o método CreateInstanceFromPropertyData instancia um registro de recurso Windows WINS (serviço de cadastramento na Internet).
 ms.assetid: 0b41a6a5-0bb1-467b-9089-2c721d521887
 keywords:
 - DNS do método CreateInstanceFromPropertyData
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf584bd34f59391a49fd5f7ec13cb49e18ef68fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92f39b360c29ca859c0d0fd0188f0b065dec58293207c27e0a0267572472aabe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077046"
 ---
 # <a name="createinstancefrompropertydata-method-of-the-microsoftdns_winstype-class"></a>Método CreateInstanceFromPropertyData da \_ classe winstype MicrosoftDNS
 
-O método **CreateInstanceFromPropertyData** instancia um registro de recurso WINS (serviço de cadastramento na Internet do Windows).
+o método **CreateInstanceFromPropertyData** instancia um registro de recurso Windows WINS (serviço de cadastramento na Internet).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -84,7 +84,7 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -145,7 +145,7 @@ Referência ao novo objeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

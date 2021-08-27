@@ -1,7 +1,7 @@
 ---
 description: Associa uma porta serial a um controlador serial.
 ms.assetid: A07DE787-2600-4C40-9CE2-7D96D6A58E53
-title: Classe Msvm_SerialPortOnSerialController
+title: Msvm_SerialPortOnSerialController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 357192bfb3dc4e901dd40a0cb6d7884152c3afc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ddc5a5c006b92945178f89cf5f4df585f96ed3eaef692b04326878cb0d16520
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107436"
 ---
-# <a name="msvm_serialportonserialcontroller-class"></a>\_Classe Msvm SerialPortOnSerialController
+# <a name="msvm_serialportonserialcontroller-class"></a>Classe Msvm \_ SerialPortOnSerialController
 
 Associa uma porta serial a um controlador serial.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,45 +41,45 @@ class Msvm_SerialPortOnSerialController : CIM_PortOnDevice
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ SerialPortOnSerialController** tem estes tipos de membros:
+A **classe Msvm \_ SerialPortOnSerialController** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ SerialPortOnSerialController** tem essas propriedades.
+A **classe Msvm \_ SerialPortOnSerialController** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
+Tipo de dados: **[ **Cim \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O controlador serial ao qual a porta está conectada. Essa propriedade é herdada do [**CIM \_ PortOnDevice**](/previous-versions/windows/desktop/clushyperv/cim-portondevice).
+O controlador serial ao qual a porta está conectada. Essa propriedade é herdada [**de Cim \_ PortOnDevice.**](/previous-versions/windows/desktop/clushyperv/cim-portondevice)
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85))**
+Tipo de dados: **[ **Cim \_ LogicalPort**](/previous-versions//cc136869(v=vs.85))**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A porta do controlador serial. Essa propriedade é herdada do [**CIM \_ PortOnDevice**](/previous-versions/windows/desktop/clushyperv/cim-portondevice).
+A porta do controlador serial. Essa propriedade é herdada [**de Cim \_ PortOnDevice.**](/previous-versions/windows/desktop/clushyperv/cim-portondevice)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ SerialPortOnSerialController** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe \_ SerialPortOnSerialController do Msvm** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,10 +87,10 @@ O acesso à classe **Msvm \_ SerialPortOnSerialController** pode ser restringido
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,10 +99,10 @@ O acesso à classe **Msvm \_ SerialPortOnSerialController** pode ser restringido
 
 <dl> <dt>
 
-[**\_PORTONDEVICE CIM**](cim-portondevice.md)
+[**CIM \_ PortOnDevice**](cim-portondevice.md)
 </dt> <dt>
 
-[**\_PORTONDEVICE CIM**](/previous-versions/windows/desktop/clushyperv/cim-portondevice)
+[**CIM \_ PortOnDevice**](/previous-versions/windows/desktop/clushyperv/cim-portondevice)
 </dt> <dt>
 
 [Classes de dispositivos seriais](serial-devices-classes.md)
