@@ -1,7 +1,7 @@
 ---
 description: Contém várias configurações de conectividade.
 ms.assetid: 2938f607-47a1-49eb-bf3f-247cab8637ec
-title: Elemento Connectivity (MSM)
+title: Elemento connectivity (MSM)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 938e5b19ffab490066fbbe299bd250191d9226a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8745671004799f96aecfe68b531c122c76122b5865678258fd241e9d8a07260a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799906"
 ---
-# <a name="connectivity-msm-element"></a>Elemento Connectivity (MSM)
+# <a name="connectivity-msm-element"></a>Elemento connectivity (MSM)
 
-O elemento Connectivity (MSM) contém várias configurações de conectividade.
+O elemento de conectividade (MSM) contém várias configurações de conectividade.
 
 ``` syntax
 <xs:element name="connectivity"
@@ -63,7 +63,7 @@ O elemento Connectivity (MSM) contém várias configurações de conectividade.
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**msm**](wlan-profileschema-msm-wlanprofile-element.md) .
+O elemento é definido pelo [**elemento MSM.**](wlan-profileschema-msm-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -77,7 +77,7 @@ O elemento é definido pelo elemento [**msm**](wlan-profileschema-msm-wlanprofil
 
 ## <a name="examples"></a>Exemplos
 
-Para exibir perfis de exemplo que usam o elemento de **conectividade** , consulte [exemplos de perfil sem fio](wireless-profile-samples.md).
+Para exibir perfis de exemplo que usam **o elemento de conectividade,** consulte [Exemplos de perfil sem fio.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Para exibir perfis de exemplo que usam o elemento de **conectividade** , consult
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, Windows XP somente com aplicativos da área de trabalho SP3 \[\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 
@@ -98,7 +98,7 @@ Para exibir perfis de exemplo que usam o elemento de **conectividade** , consult
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**MSM**](wlan-profileschema-msm-wlanprofile-element.md)
+[**Msm**](wlan-profileschema-msm-wlanprofile-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**

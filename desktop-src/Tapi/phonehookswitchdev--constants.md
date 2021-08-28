@@ -4,12 +4,12 @@ ms.assetid: b3272a75-87b0-4afc-b2e2-2d65e4b49300
 title: Constantes de PHONEHOOKSWITCHDEV_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a6727bf8103c35402bebc048de4ed9286650be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a77e6b776b89adf6224d6feaef8deeef1f9f71b9888929f3aea08b5342adc1dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796746"
 ---
 # <a name="phonehookswitchdev_-constants"></a>\_Constantes PHONEHOOKSWITCHDEV
 
@@ -60,7 +60,7 @@ Essas constantes são usadas na estrutura de dados [**PHONECAPS**](/windows/desk
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

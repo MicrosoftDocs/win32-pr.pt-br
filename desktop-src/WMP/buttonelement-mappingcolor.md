@@ -3,7 +3,7 @@ title: BUTTONelement. mappingColor
 description: O atributo mappingColor especifica ou recupera a chave de cor que identifica esse BUTTONelement no botão.
 ms.assetid: e7b1663c-3263-41d5-9a69-4cf1dcf0fc1f
 keywords:
-- BUTTONelement. mappingColor Windows Media Player
+- Windows Media Playercollection. mappingColor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7318f01246578fe8ff34118427c95afb7b3bb098
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29badef71eda70782203effb7098c7ee5bc7a62b67d28ccbc9428c74e9473012
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764336"
 ---
 # <a name="buttonelementmappingcolor"></a>BUTTONelement. mappingColor
 

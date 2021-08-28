@@ -4,12 +4,12 @@ ms.assetid: 9f765328-4bce-470e-a591-52376b572543
 title: BoundingOrientedBox. Orientation (DirectXCollision. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 336e3025883963eb343fb4dee3f127f1e51e88b1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac7a54fd31630fecca1e7718a144cbab0da23e8f9832fd81ed4a0974b1d5bfd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841726"
 ---
 # <a name="boundingorientedboxorientation"></a>BoundingOrientedBox. Orientation
 
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. com suporte para aplicativos de área de trabalho do Win32, aplicativos da Windows store e aplicativos Windows Phone 8.
 
 ## <a name="requirements"></a>Requisitos
 

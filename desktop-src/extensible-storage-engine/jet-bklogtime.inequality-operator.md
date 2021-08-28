@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 42f13a1068543caaa590015151b523c1a441c806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91a209d0bb3251b536a2facbedc0bb95517eabc689646eb07c512e8ab6560587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781126"
 ---
 # <a name="jet_bklogtimeinequality-operator"></a>JET_BKLOGTIME. Operador de desigualdade
 
@@ -76,7 +76,7 @@ public static bool operator !=(
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se as duas instâncias não forem iguais.  

@@ -1,7 +1,7 @@
 ---
 description: Fornece inicialização em um thread.
 ms.assetid: a9c330bb-0a2b-45bf-9b24-d03dd61d7dbf
-title: Método CMsgThread. OnThreadInit (Msgthrd. h)
+title: Método CMsgThread.OnThreadInit (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 80e15d6430da77c0f22f5566375394b8fe6994ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9105bf8399b036421c5360c62a63d8c3fac44471adc13b9e8c224fb0eb84e8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831836"
 ---
-# <a name="cmsgthreadonthreadinit-method"></a>Método CMsgThread. OnThreadInit
+# <a name="cmsgthreadonthreadinit-method"></a>Método CMsgThread.OnThreadInit
 
 Fornece inicialização em um thread.
 
@@ -40,7 +40,7 @@ virtual void OnThreadInit();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -54,8 +54,8 @@ Substitua essa função se você quiser fazer sua própria inicialização espec
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Msgthrd. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Msgthrd.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

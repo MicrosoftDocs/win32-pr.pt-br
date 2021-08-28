@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f30184fe46cd8e8b9a595545ccba9a7d738af18e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a622084daaab6a845a2ffce83222dd605eebc888f730736149bbc0bbcbc81c60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760166"
 ---
 # <a name="invoke-method-of-the-cim_directoryaction-class"></a>Método Invoke da \_ classe directoryaction do CIM
 
@@ -45,7 +45,7 @@ uint32 Invoke();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em êxito, 1 (um) se o método não tiver suporte e qualquer outro número para indicar um erro.
 

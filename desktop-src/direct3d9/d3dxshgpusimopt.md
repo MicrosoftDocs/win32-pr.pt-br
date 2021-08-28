@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: a94845faf4c34657f486cfa371c5d41a12dc4336
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a73323dc9d6596f848fa50fe6dc21e236a5b9f2d4362b3c2a27cf773d3939fac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849746"
 ---
 # <a name="d3dxshgpusimopt-enumeration"></a>Enumeração D3DXSHGPUSIMOPT
 
 Descreve a resolução da sombra z-buffer que será usada na simulação de iluminação direta do PRT (transferência de radiante de computação) na GPU. Um buffer z de qualidade superior também pode ser especificado para reduzir o ruído nos resultados da simulação de iluminação direta, embora a simulação seja mais lenta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

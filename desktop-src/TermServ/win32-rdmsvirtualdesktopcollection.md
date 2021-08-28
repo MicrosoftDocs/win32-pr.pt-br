@@ -29,12 +29,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a6da0c13b6ab223afc7afe6e92039a5388c6204
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 580b5ae194a28726a06143dce0007eeedfbb8564b49a4cbc2e7c2d0d8507dfe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105780567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868066"
 ---
 # <a name="win32_rdmsvirtualdesktopcollection-class"></a>\_Classe Win32 RDMSVirtualDesktopCollection
 
@@ -302,13 +302,13 @@ Máquinas virtuais geradas automaticamente.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtém ou define a configuração de VHD de dados de usuário para a coleção.
+Obtém ou define a configuração de VHD de dados do usuário para a coleção.
 
 </dd> <dt>
 
@@ -318,13 +318,13 @@ Obtém ou define a configuração de VHD de dados de usuário para a coleção.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtém ou define as configurações da área de trabalho das máquinas virtuais na coleção.
+Obtém ou define as configurações da área de trabalho para as máquinas virtuais na coleção.
 
 </dd> </dl>
 
@@ -336,8 +336,8 @@ Obtém ou define as configurações da área de trabalho das máquinas virtuais 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs cimv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -346,7 +346,7 @@ Obtém ou define as configurações da área de trabalho das máquinas virtuais 
 
 <dl> <dt>
 
-[Provedor de serviços de gerenciamento de Área de Trabalho Remota](rdms-api-reference.md)
+[provedor Área de Trabalho Remota de Serviços de Gerenciamento do Área de Trabalho Remota](rdms-api-reference.md)
 </dt> </dl>
 
  

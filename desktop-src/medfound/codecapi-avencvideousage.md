@@ -1,17 +1,17 @@
 ---
 description: Define o uso de vídeo para um codificador de vídeo.
 ms.assetid: 2A6941A3-CCA0-467C-AC8A-DADC2CD1D405
-title: Propriedade CODECAPI_AVEncVideoUsage (Codecapi. h)
+title: CODECAPI_AVEncVideoUsage propriedade (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27568412613702846e99d0ca556cc59cdc4fc77e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b6d3ee174fbc22ca7b1ab4e309d87112463740a075b497cc35033f8c96bbe8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777706"
 ---
-# <a name="codecapi_avencvideousage-property"></a>\_Propriedade CODECAPI AVEncVideoUsage
+# <a name="codecapi_avencvideousage-property"></a>Propriedade CODECAPI \_ AVEncVideoUsage
 
 Define o uso de vídeo para um codificador de vídeo.
 
@@ -25,9 +25,9 @@ Define o uso de vídeo para um codificador de vídeo.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade também é usada com [codificadores de câmera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Essa propriedade também é usada com codificadores de câmera [UVC 1.5 H.264](camera-encoder-h264-uvc-1-5.md).
 
-[CODECAPI \_ AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md), CODECAPI \_ AVEncVideoUsage e [CODECAPI \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) são propriedades de codificador estáticos. Uma vez definido, eles só terão efeito depois que um tipo de mídia definido for chamado no pino de saída da câmera.
+[CODECAPI \_ AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md), \_ CODECAPI AVEncVideoUsage e [CODECAPI \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) são propriedades do codificador estático. Depois de definidas, elas só terão efeito depois que um tipo de mídia definido for chamado no pino de saída da câmera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Essa propriedade também é usada com [codificadores de câmera H. 264 UVC 1,5](
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Essa propriedade também é usada com [codificadores de câmera H. 264 UVC 1,5](
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMEncryptScatter EncryptScatter (wmdrmsdk. h)
-description: O método EncryptScatter desembaralha e criptografa os dados.
+title: Método EncryptScatter IWMDRMEncryptScatter (Wmdrmsdk.h)
+description: O método EncryptScatter desembrave e criptografa dados.
 ms.assetid: e7f87aac-387b-4483-956e-bfbca0cec0f2
 keywords:
-- Formato de mídia do Windows do método EncryptScatter
-- Método EncryptScatter Windows Media Format, interface IWMDRMEncryptScatter
-- Formato de mídia do Windows de interface IWMDRMEncryptScatter, método EncryptScatter
+- Formato de mídia do windows do método EncryptScatter
+- Formato de mídia do windows do método EncryptScatter, interface IWMDRMEncryptScatter
+- Formato de mídia da interface IWMDRMEncryptScatter , método EncryptScatter
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b2d1d6182aed55b60aa1cedfbce5dd870691bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fae3f8a40bc5468898424dcf33bf947235a632db44f4dada7f2c96b2a3a064b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839706"
 ---
-# <a name="iwmdrmencryptscatterencryptscatter-method"></a>Método IWMDRMEncryptScatter:: EncryptScatter
+# <a name="iwmdrmencryptscatterencryptscatter-method"></a>Método IWMDRMEncryptScatter::EncryptScatter
 
-O método **EncryptScatter** desembaralha e criptografa os dados.
+O **método EncryptScatter** desembrave e criptografa dados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,44 +46,44 @@ HRESULT EncryptScatter(
 
 <dl> <dt>
 
-*cBlocks* \[ no\]
+*cBlocks* \[ Em\]
 </dt> <dd>
 
-Número de elementos na matriz *rgBlocks* .
+Número de elementos na matriz *rgBlocks.*
 
 </dd> <dt>
 
-*rgBlocks* \[ no\]
+*rgBlocks* \[ Em\]
 </dt> <dd>
 
-Matriz de uma ou mais estruturas de [**\_ \_ \_ bloco de dispersão criptografadas WMDRM**](wmdrm-encrypt-scatter-block.md) . Cada elemento descreve um bloco de dados para serem codificados e criptografados.
+Matriz de uma ou mais [**estruturas WMDRM \_ ENCRYPT SCATTER \_ \_ BLOCK.**](wmdrm-encrypt-scatter-block.md) Cada elemento descreve um bloco de dados a serem não criptografados e criptografados.
 
 </dd> <dt>
 
-*pWMCryptoData* \[ no\]
+*pWMCryptoData* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura [**WMDRMCryptoData**](wmdrmcryptodata.md) que contém parâmetros de criptografia. Defina como **nulo** para usar os parâmetros padrão.
+Ponteiro para uma [**estrutura WMDRMCryptoData**](wmdrmcryptodata.md) que contém parâmetros de criptografia. De definido **como NULL** para usar os parâmetros padrão.
 
 </dd> <dt>
 
-*cbOutput* \[ no\]
+*cbOutput* \[ Em\]
 </dt> <dd>
 
-Tamanho do buffer de dados de saída passado como *pbOutput*.
+Tamanho do buffer de dados de saída passado como *pbOutput.*
 
 </dd> <dt>
 
-*pbOutput* \[ fora\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
 Buffer de saída.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -105,7 +105,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Nenhum.
 [**InitEncryptScatter**](iwmdrmencryptscatter-initencryptscatter.md)
 </dt> <dt>
 
-[**Interface IWMDRMEncryptScatter**](iwmdrmencryptscatter.md)
+[**IWMDRMEncryptScatter Interface**](iwmdrmencryptscatter.md)
 </dt> </dl>
 
  

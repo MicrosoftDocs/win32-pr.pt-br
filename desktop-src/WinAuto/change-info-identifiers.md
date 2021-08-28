@@ -1,6 +1,6 @@
 ---
-title: Alterar identificadores de informações (UIAutomationClient. h)
-description: Este tópico descreve as constantes nomeadas usadas para identificar informações de alteração de automação da interface do usuário da Microsoft.
+title: Identificadores de informações de alteração (UIAutomationClient.h)
+description: Este tópico descreve as constantes nomeadas usadas para identificar o Microsoft Automação da Interface do Usuário informações de alteração.
 ms.assetid: 583A1FA3-68E5-419E-8E38-2B239928FF75
 topic_type:
 - apiref
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f3e27951f3b9b348583821ddc62bd3dddd5de58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf9cf397f4f1bc2ea10291b46d21c32b0b32a61609e9f3a33272170f4debdde3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105784667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759656"
 ---
 # <a name="change-info-identifiers"></a>Alterar identificadores de informações
 
-Este tópico descreve as constantes nomeadas usadas para identificar informações de alteração de automação da interface do usuário da Microsoft.
+Este tópico descreve as constantes nomeadas usadas para identificar o Microsoft Automação da Interface do Usuário informações de alteração.
 
 <dl> <dt>
 
@@ -44,9 +44,9 @@ Uma cadeia de caracteres que descreve o significado da alteração de um ponto d
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                            |
-| parâmetro<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                            |
+| Cabeçalho<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

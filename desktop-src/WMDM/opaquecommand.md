@@ -1,10 +1,10 @@
 ---
 title: Estrutura OPAQUECOMMAND
-description: A estrutura OPAQUECOMMAND contém dados para comandos que são passados pelo Windows Media Gerenciador de Dispositivos para um dispositivo, mas que não devem ser afetados pelo Windows Media Gerenciador de Dispositivos.
+description: A estrutura OPAQUECOMMAND contém dados para comandos que são passados por meio do Gerenciador de Dispositivos de mídia do Windows para um dispositivo, mas não devem ser agidos pelo Windows Media Gerenciador de Dispositivos.
 ms.assetid: 5b39cf07-2816-4615-a754-e3f0c57bf4ce
 keywords:
-- Estrutura OPAQUECOMMAND Windows Media Gerenciador de Dispositivos
-- estruturar Gerenciador de Dispositivos de mídia do Windows
+- Estrutura OPAQUECOMMAND windows Media Gerenciador de Dispositivos
+- estrutura windows Media Gerenciador de Dispositivos
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 672147cb99336f95a1ced88a3cc6b8df977aec74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76d3f0b94146262c480e7e510497111bf82f0c020001717cb0000ee4a88df440
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904006"
 ---
 # <a name="opaquecommand-structure"></a>Estrutura OPAQUECOMMAND
 
-A estrutura **OPAQUECOMMAND** contém dados para comandos que são passados pelo windows media Gerenciador de dispositivos para um dispositivo, mas que não devem ser afetados pelo windows media Gerenciador de dispositivos.
+A **estrutura OPAQUECOMMAND** contém dados para comandos que são passados por meio do Gerenciador de Dispositivos de mídia do Windows para um dispositivo, mas não devem ser agidos pelo Windows Media Gerenciador de Dispositivos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,11 +54,11 @@ typedef struct OPAQUECOMMAND {
 **dwDataLen**
 </dt> <dd>
 
-Comprimento dos dados aos quais *pData* pontos, em bytes.
+Comprimento dos dados para os quais *pData* aponta, em bytes.
 
 </dd> <dt>
 
-**pData**
+**Pdata**
 </dt> <dd>
 
 Dados necessários para executar o comando e/ou dados retornados pelo comando.
@@ -68,7 +68,7 @@ Dados necessários para executar o comando e/ou dados retornados pelo comando.
 **abMAC \[ 20\]**
 </dt> <dd>
 
-Esse código de autenticação de mensagem (MAC) deve incluir o membro **guidCommand** , os dados aos quais *pdwDataLen* aponta e os dados aos quais *pData* aponta, se houver. Se *pData* for **nulo**, ele não deverá ser incluído no Mac. \_ \_ O comprimento de Mac do WMDM é definido como 20.
+Esse MAC (código de autenticação de mensagem) deve incluir o membro **guidCommand,** os dados aos quais *pdwDataLen* aponta e os dados para os quais *pData* aponta, se for o caso. Se *pData* for **NULL,** ele não deverá ser incluído no MAC. WMDM \_ MAC LENGTH é definido como \_ 20.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Esse código de autenticação de mensagem (MAC) deve incluir o membro **guidCom
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

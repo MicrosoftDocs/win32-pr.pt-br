@@ -1,57 +1,57 @@
-- name: Bibliotecas de Dynamic-Link
+- name: Dynamic-Link bibliotecas
   href: dynamic-link-libraries.md
   items:
-    - name: Sobre bibliotecas de Dynamic-Link
+    - name: Sobre Dynamic-Link bibliotecas
       href: about-dynamic-link-libraries.md
       items:
         - name: Vantagens da vinculação dinâmica
           href: advantages-of-dynamic-linking.md
-        - name: Criação de biblioteca de Dynamic-Link
+        - name: Dynamic-Link biblioteca de dados
           href: dynamic-link-library-creation.md
-        - name: Dynamic-Link Entry-Point função de biblioteca
+        - name: Dynamic-Link biblioteca Entry-Point função
           href: dynamic-link-library-entry-point-function.md
         - name: Load-Time vinculação dinâmica
           href: load-time-dynamic-linking.md
         - name: Run-Time vinculação dinâmica
           href: run-time-dynamic-linking.md
-        - name: Ordem de pesquisa da biblioteca de Dynamic-Link
+        - name: Dynamic-Link de Pesquisa da Biblioteca de Dynamic-Link
           href: dynamic-link-library-search-order.md
         - name: Dynamic-Link dados da biblioteca
           href: dynamic-link-library-data.md
-        - name: Redirecionamento de biblioteca de Dynamic-Link
+        - name: redirecionamento Dynamic-Link biblioteca do Dynamic-Link
           href: dynamic-link-library-redirection.md
-        - name: Dynamic-Link atualizações da biblioteca
+        - name: atualizações Dynamic-Link biblioteca do Dynamic-Link
           href: dynamic-link-library-updates.md
-        - name: Segurança da biblioteca de Dynamic-Link
+        - name: Dynamic-Link de biblioteca
           href: dynamic-link-library-security.md
-        - name: DLLs de inicialização segura e AppInit
+        - name: DLLs de Inicialização Segura e AppInit
           href: secure-boot-and-appinit-dlls.md
-        - name: Práticas recomendadas da biblioteca de Dynamic-Link
+        - name: Práticas recomendadas Dynamic-Link biblioteca de Dynamic-Link
           href: dynamic-link-library-best-practices.md
-    - name: Usando bibliotecas de Dynamic-Link
+    - name: Usando Dynamic-Link bibliotecas
       href: using-dynamic-link-libraries.md
       items:
-        - name: Criando uma biblioteca simples de Dynamic-Link
+        - name: Criando uma biblioteca de Dynamic-Link simples
           href: creating-a-simple-dynamic-link-library.md
         - name: Usando Load-Time vinculação dinâmica
           href: using-load-time-dynamic-linking.md
         - name: Usando Run-Time vinculação dinâmica
           href: using-run-time-dynamic-linking.md
-        - name: Usando memória compartilhada em uma biblioteca de Dynamic-Link
+        - name: Usando memória compartilhada em uma biblioteca Dynamic-Link dados
           href: using-shared-memory-in-a-dynamic-link-library.md
-        - name: Usando o armazenamento local de threads em uma biblioteca de Dynamic-Link
+        - name: Usando o thread local Armazenamento em uma biblioteca Dynamic-Link thread
           href: using-thread-local-storage-in-a-dynamic-link-library.md
-    - name: Referência da biblioteca de Dynamic-Link
+    - name: Referência Dynamic-Link biblioteca do Dynamic-Link
       href: dynamic-link-library-reference.md
       items:
-        - name: Dynamic-Link funções de biblioteca
+        - name: funções Dynamic-Link biblioteca do Dynamic-Link
           href: dynamic-link-library-functions.md
           items:
             - name: AddDllDirectory
               href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-adddlldirectory
-            - name: DisableThreadLibraryCalls
+            - name: Disablethreadlibrarycalls
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-disablethreadlibrarycalls
-            - name: DllMain
+            - name: Dllmain
               href: dllmain.md
             - name: FreeLibrary
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary
@@ -59,9 +59,9 @@
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freelibraryandexitthread
             - name: GetDllDirectory
               href: /windows/desktop/api/WinBase/nf-winbase-getdlldirectorya
-            - name: GetModuleFileName
+            - name: Getmodulefilename
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea
-            - name: GetModuleHandle
+            - name: Getmodulehandle
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea
             - name: GetModuleHandleEx
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandleexa
@@ -69,9 +69,9 @@
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress
             - name: LoadLibrary
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya
-            - name: LoadLibraryEx
+            - name: Loadlibraryex
               href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa
-            - name: LoadModule
+            - name: Loadmodule
               href: /windows/desktop/api/Winbase/nf-winbase-loadmodule
             - name: LoadPackagedLibrary
               href: /windows/desktop/api/Winbase/nf-winbase-loadpackagedlibrary

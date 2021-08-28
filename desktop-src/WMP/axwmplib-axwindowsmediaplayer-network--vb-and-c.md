@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. Network
 description: A propriedade Network Obtém uma interface IWMPNetwork que fornece acesso a informações de rede e configurações.
 ms.assetid: 0a6c4a8c-8759-47d4-be03-9909a8460e71
 keywords:
-- Propriedade de rede Windows Media Player
-- Propriedade de rede Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, propriedade de rede
+- Windows Media Player de propriedade de rede
+- propriedade de rede Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade de rede
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 287efa3df7887aa7e448d5e732444cf5e79e0e37
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d68d05b8d3c360d3008ec9ba699bdf71655dc6a953091c21605d354a4610d66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764816"
 ---
 # <a name="axwindowsmediaplayernetwork-property"></a>Propriedade AxWindowsMediaPlayer. Network
 

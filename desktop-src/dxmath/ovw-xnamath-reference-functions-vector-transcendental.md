@@ -4,12 +4,12 @@ ms.assetid: aae12d4a-7758-83df-5376-99d5d94a28c4
 title: Funções de vetor transcendental
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5927f8a477b4d55e8ed03ca6d61f329e76f11be2
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 712e911f65687285381b28889a28934553ac510544b935a4285b8c1b4b891516
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841146"
 ---
 # <a name="transcendental-vector-functions"></a>Funções de vetor transcendental
 
@@ -55,9 +55,9 @@ Lista as funções de vetor transcendental.
 
 ## <a name="remarks"></a>Comentários
 
-[**XMVectorExp**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexp) é um alias de compatibilidade para [**XMVectorExp2**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexp2) para o código existente do Windows 8. **XMVectorExp** foi preterido para Windows 8.1. Não use-o e, em vez disso, use **XMVectorExp2** ou [**XMVectorExpE**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexpe).
+[**XMVectorExp**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexp) é um alias de compatibilidade para [**XMVectorExp2**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexp2) para o código de Windows 8 existente. **XMVectorExp** foi preterido para Windows 8.1. Não use-o e, em vez disso, use **XMVectorExp2** ou [**XMVectorExpE**](/windows/win32/api/directxmath/nf-directxmath-xmvectorexpe).
 
-[**XMVectorLog**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlog) é um alias de compatibilidade para [**XMVectorLog2**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlog2) para o código existente do Windows 8. **XMVectorLog** foi preterido para Windows 8.1. Não use-o e, em vez disso, use **XMVectorLog2** ou [**XMVectorLogE**](/windows/win32/api/directxmath/nf-directxmath-xmvectorloge).
+[**XMVectorLog**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlog) é um alias de compatibilidade para [**XMVectorLog2**](/windows/win32/api/directxmath/nf-directxmath-xmvectorlog2) para o código de Windows 8 existente. **XMVectorLog** foi preterido para Windows 8.1. Não use-o e, em vez disso, use **XMVectorLog2** ou [**XMVectorLogE**](/windows/win32/api/directxmath/nf-directxmath-xmvectorloge).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,8 +1,8 @@
 ---
-description: Os SetGateways &\# 32; O método de classe WMI especifica uma lista de gateways para rotear pacotes para uma sub-rede que é diferente da sub-rede à qual o adaptador de rede está conectado.
+description: O SetGateways &\# 32; O método de classe WMI especifica uma lista de gateways para roteamento de pacotes para uma sub-rede diferente da sub-rede à que o adaptador de rede está conectado.
 ms.assetid: 240f7aff-7a07-4e0d-af30-7bcabb68c736
 ms.tgt_platform: multiple
-title: Método SetGateways da classe Win32_NetworkAdapterConfiguration
+title: Método SetGateways da classe Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 215bfa736a0f9d67ae587ac1f0e1b4aa394b85d9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 190076822a181d7b0731cb1e7b42eb0cd9d35e37c64aa0736245d1e58994763b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759716"
 ---
-# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways da classe \_ NetworkAdapterConfiguration do Win32
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetGateways** especifica uma lista de gateways para rotear pacotes para uma sub-rede que é diferente da sub-rede à qual o adaptador de rede está conectado.
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetGateways** especifica uma lista de gateways para roteamento de pacotes para uma sub-rede diferente da sub-rede à que o adaptador de rede está conectado.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ uint32 SetGateways(
 
 <dl> <dt>
 
-*DefaultIPGateway* \[ no\]
+*DefaultIPGateway* \[ Em\]
 </dt> <dd>
 
 Lista de endereços IP para gateways em que os pacotes de rede são roteados.
 
 </dd> <dt>
 
-*GatewayCostMetric* \[ em, opcional\]
+*GatewayCostMetric* \[ in, opcional\]
 </dt> <dd>
 
-Atribui um valor que varia de 1 a 9999, que é usado para calcular as rotas mais rápidas e confiáveis. Os valores desse parâmetro correspondem aos valores no parâmetro *DefaultIPGateway* . O valor padrão para um gateway é 1.
+Atribui um valor que varia de 1 a 9999, que é usado para calcular as rotas mais rápidas e confiáveis. Os valores desse parâmetro correspondem aos valores no *parâmetro DefaultIPGateway.* O valor padrão para um gateway é 1.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro valor se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro valor se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -100,7 +100,7 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -128,14 +128,14 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
@@ -170,7 +170,7 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
@@ -205,14 +205,14 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
@@ -317,7 +317,7 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -340,9 +340,9 @@ Não há suporte para o método quando a NIC está no modo DHCP.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método só funciona quando a placa de interface de rede (NIC) está no modo de IP estático.
+Esse método só funciona quando a NIC (Placa de Interface de Rede) está no modo IP estático.
 
-Para limpar o gateway, defina seu gateway para o mesmo IP usado em [**EnableStatic**](enablestatic-method-in-class-win32-networkadapterconfiguration.md).
+Para limpar o gateway, depure o gateway para o mesmo IP que você usa em [**EnableStatic.**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)
 
 ## <a name="examples"></a>Exemplos
 

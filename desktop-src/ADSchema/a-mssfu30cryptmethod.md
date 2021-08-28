@@ -1,6 +1,6 @@
 ---
 title: atributo msSFU-30-cript-Method
-description: Contém o método usado para criptografar senhas UNIX.
+description: contém o método usado para criptografar UNIX senhas.
 ms.assetid: e4732996-c8a5-41e7-9dc7-3de2ab3e61f0
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddd4509a1d74e6f964ba19ec4ad88846a43a6033
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9cb988e37405aa3c9fc1a23cb90d6a23fb4321813717e7e4af1c259e441ea916
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761346"
 ---
 # <a name="mssfu-30-crypt-method-attribute"></a>atributo msSFU-30-cript-Method
 
-Contém o método usado para criptografar senhas UNIX.
+contém o método usado para criptografar UNIX senhas.
 
 
 
@@ -56,7 +56,7 @@ Contém o método usado para criptografar senhas UNIX.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -77,7 +77,7 @@ Contém o método usado para criptografar senhas UNIX.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -98,7 +98,7 @@ Contém o método usado para criptografar senhas UNIX.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -119,7 +119,7 @@ Contém o método usado para criptografar senhas UNIX.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

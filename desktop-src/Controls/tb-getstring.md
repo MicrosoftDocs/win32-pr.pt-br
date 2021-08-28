@@ -3,7 +3,7 @@ title: Mensagem de TB_GETSTRING (commctrl. h)
 description: Recupera uma cadeia de caracteres do pool de cadeias de caracteres de uma barra de ferramentas.
 ms.assetid: a5f80c16-bc6d-466d-8ec6-77451432148e
 keywords:
-- Controles de TB_GETSTRING de mensagens do Windows
+- controles de Windows de mensagem de TB_GETSTRING
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 465ad2546397fa31c33d6a52b4989902c979d91d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d25cbf20fd084c2ce60b29d131b7f488ca2b8cee178a2218fcfac191b3c1af33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918476"
 ---
 # <a name="tb_getstring-message"></a>\_Cadeia de caracteres GETstring de TB
 
@@ -45,7 +45,7 @@ Ponteiro para um buffer usado para retornar a cadeia de caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o comprimento da cadeia de caracteres se for bem-sucedido ou-1 caso contrário.
 
@@ -59,9 +59,9 @@ Essa mensagem retorna a cadeia de caracteres especificada do pool de cadeias de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TB \_ GETSTRINGW** (Unicode) e **TB \_ getstringa** (ANSI)<br/>                 |
 
 

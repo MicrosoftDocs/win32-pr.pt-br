@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 485227f6196ae94e2eb11de1bdb40b3a811c8fb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7367c36d7b2b702e6529ce6ae8616743b3a37e5280f06e64df5378c0f8545b1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800286"
 ---
 # <a name="wireless-profile-samples"></a>Exemplos de perfil sem fio
 
@@ -26,11 +26,11 @@ Você pode adicionar um perfil sem fio ao repositório de perfis programaticamen
 -   [Exemplo de perfil FIPS](fips-profile-sample.md)
 -   [Exemplo de perfil sem difusão](non-broadcast-profile-sample.md)
 -   [Exemplo de perfil de Sign-On único](single-sign-on-profile-sample.md)
--   [Exemplo de perfil de WPA-Enterprise com PEAP-MSCHAPv2](wpa-enterprise-with-peap-mschapv2-profile-sample.md)
--   [Exemplo de perfil de WPA-Enterprise com TLS](wpa-enterprise-with-tls-profile-sample.md)
+-   [Enterprise de WPA com PEAP-MSCHAPv2 de exemplo de perfil](wpa-enterprise-with-peap-mschapv2-profile-sample.md)
+-   [exemplo de Enterprise WPA com perfil TLS](wpa-enterprise-with-tls-profile-sample.md)
 -   [Exemplo de perfil de WPA-Pessoal](wpa-personal-profile-sample.md)
--   [Exemplo de perfil WPA2-Enterprise com PEAP-MSCHAPv2](wpa2-enterprise-with-peap-mschapv2-profile-sample.md)
--   [Exemplo de perfil WPA2-Enterprise com TLS](wpa2-enterprise-with-tls-profile-sample.md)
+-   [WPA2-Enterprise com PEAP-MSCHAPv2 exemplo de perfil](wpa2-enterprise-with-peap-mschapv2-profile-sample.md)
+-   [WPA2-Enterprise com exemplo de perfil TLS](wpa2-enterprise-with-tls-profile-sample.md)
 -   [Exemplo de perfil WPA2-Pessoal](wpa2-personal-profile-sample.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados

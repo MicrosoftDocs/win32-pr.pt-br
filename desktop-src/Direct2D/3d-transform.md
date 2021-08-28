@@ -6,12 +6,12 @@ keywords:
 - efeito de transformação 3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fabe0c2c220038802b5218b54187a1ff89268bfa
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: d32a9c8fedca3be0d96a44047ac1b226d83309cf657f2cdc223a342e9d38880b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104570961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758189"
 ---
 # <a name="3d-transform-effect"></a>Efeito de transformação 3D
 
@@ -38,7 +38,7 @@ O CLSID para esse efeito é CLSID \_ D2D13DTransform.
 | Antes                                                        |
 |---------------------------------------------------------------|
 | ![a imagem antes da transformação.](images/default-before.jpg) |
-| After (após)                                                         |
+| Depois                                                         |
 | ![a imagem após a transformação.](images/24-3dtransform.png)  |
 
 
@@ -142,7 +142,7 @@ Coordenadas de plano de projeção X, Y, Z = output<br />
 
 ## <a name="4x4-transform-matrix-class"></a>Classe de matriz de transformação 4x4
 
-O Direct2D fornece uma classe de matriz 4x4 para fornecer funções auxiliares para transformar a imagem em 3 dimensões. Consulte o tópico [**Matrix4x4F**](/windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f) para obter mais informações e uma descrição de todos os membros de classe.
+Direct2D fornece uma classe de matriz 4x4 para fornecer funções auxiliares para transformar a imagem em 3 dimensões. Consulte o tópico [**Matrix4x4F**](/windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f) para obter mais informações e uma descrição de todos os membros de classe.
 
 
 
@@ -168,9 +168,9 @@ O Direct2D fornece uma classe de matriz 4x4 para fornecer funções auxiliares p
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

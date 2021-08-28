@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3b91a9f2fb30dbd243e29043a1655d441215bc75
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 6bec0356f2f1542da421a807598707e4857033c13cda2077d9281ac24e4fc3e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853766"
 ---
 # <a name="ret---vs"></a>RET-vs
 
@@ -29,7 +29,7 @@ Retornar de uma sub-rotina ou de uma função main.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -41,7 +41,7 @@ Retornar de uma sub-rotina ou de uma função main.
 
 
 
- 
+ 
 
 Essa instrução usa o endereço de uma instrução da pilha de endereços de retorno e continua a execução a partir dela. No caso da função main, essa instrução interrompe a execução do sombreador.
 
@@ -58,9 +58,9 @@ Várias instruções de retorno não são permitidas no programa principal ou em
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

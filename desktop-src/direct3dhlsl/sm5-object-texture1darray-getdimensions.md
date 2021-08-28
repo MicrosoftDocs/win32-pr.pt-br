@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture1DArray:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture1DArray:: GetDimensions'
+title: Função Texture1DArray::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture1DArray::GetDimensions
 ms.assetid: a15f1808-296d-43ac-80c0-5cbec0bcb801
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 46cc7e93fc01e14ff34091da4549308730d7cd7c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 14a079443370f2363006ce23fcc5f5119b7ec7c48e3b15afe4969c989e071af3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853316"
 ---
-# <a name="texture1darraygetdimensions-function"></a>Função Texture1DArray:: GetDimensions
+# <a name="texture1darraygetdimensions-function"></a>Função Texture1DArray::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -39,39 +39,39 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ no\]
+*MipLevel* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nível de mipmap (deve ser especificado se *NumberOfLevels* for usado).
+Opcional. Nível de Mipmap (deve ser especificado se *NumberOfLevels* for usado).
 
 </dd> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Elementos* \[ fora\]
+*Elementos* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de elementos na matriz.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ fora\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-O número de níveis de mipmap (também requer *MipLevel* ).
+O número de níveis de mipmap (requer *também MipLevel).*
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

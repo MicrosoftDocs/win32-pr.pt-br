@@ -1,7 +1,7 @@
 ---
-description: O \_ comando de formato de armazenamento de comando WPD \_ \_ formata um objeto funcional de armazenamento no dispositivo.
+description: O comando WPD \_ COMMAND \_ STORAGE FORMAT \_ formatará um objeto funcional de armazenamento no dispositivo.
 ms.assetid: 5dc06ed3-791f-4c6b-9fb3-42452e948e0d
-title: WPD_COMMAND_STORAGE_FORMAT comando (PortableDevice. h)
+title: WPD_COMMAND_STORAGE_FORMAT Comando (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,30 +13,30 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 763323a8c2a66319ab84636a5d7b2d46a6edb37d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 353710bc4167b626b6af001ef535f6d21538a328609aaf05e5e8846415485914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806196"
 ---
-# <a name="wpd_command_storage_format-command"></a>\_Comando de \_ formato de armazenamento de comando WPD \_
+# <a name="wpd_command_storage_format-command"></a>Comando WPD \_ COMMAND \_ STORAGE \_ FORMAT
 
-O comando de **\_ formato de \_ armazenamento \_ de comando WPD** formata um objeto funcional de armazenamento no dispositivo.
+O **comando WPD \_ COMMAND STORAGE \_ \_ FORMAT** formatará um objeto funcional de armazenamento no dispositivo.
 
 ## <a name="command-category"></a>Categoria de comando
 
-**\_armazenamento de categoria WPD \_**
+**ARMAZENAMENTO DE \_ CATEGORIA \_ WPD**
 
 ## <a name="parameters"></a>Parâmetros
 
-O driver espera os seguintes parâmetros.
+O driver espera os parâmetros a seguir.
 
 
 
 | Parâmetro                          | VarType    | Descrição                                              |
 |------------------------------------|------------|----------------------------------------------------------|
-| \_ID do \_ objeto de armazenamento de propriedade WPD \_ \_ | LPWStr do VT \_ | Obrigatórios. A ID de objeto do meio de armazenamento a ser formatado. |
+| ID DO \_ OBJETO DE ARMAZENAMENTO DE PROPRIEDADE \_ \_ \_ WPD | VT \_ LPWSTR | Obrigatórios. A ID do objeto da mídia de armazenamento a ser formatado. |
 
 
 
@@ -44,14 +44,14 @@ O driver espera os seguintes parâmetros.
 
 ## <a name="return-value"></a>Valor Retornado
 
-O driver deve retornar os seguintes resultados.
+O driver deve retornar os resultados a seguir.
 
 
 
 | Resultado                                         | VarType   | Descrição                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_ \_ HRESULT comum de propriedade WPD \_**             | erro de VT \_ | Obrigatórios. Um **HRESULT** que indica êxito ou falha ao executar o comando. Se o chamador estiver fazendo uma solicitação inválida, o driver deverá retornar **HRESULT \_ do \_ Win32 (erro \_ sem \_ suporte)** e não será necessário retornar nenhum outro valor de resultado. Os códigos de erro incluem [códigos de erro de dispositivos portáteis do Windows](error-constants.md) ou quaisquer outros códigos de erro apropriados. |
-| **\_código de \_ \_ erro de driver comum de propriedade \_ WPD \_** | \_UI4 VT   | Opcional. Um código de erro específico do driver. Normalmente, isso é usado apenas para testes de driver, ou se o driver, o dispositivo e o cliente estiverem todos criados juntos.                                                                                                                                                                                                                                |
+| **PROPRIEDADE WPD \_ \_ COMMON \_ HRESULT**             | ERRO \_ DA VT | Obrigatórios. Um **HRESULT** que indica êxito ou falha ao executar o comando. Se o chamador estiver fazendo uma solicitação inválida, o driver deverá retornar **HRESULT \_ FROM \_ WIN32(ERROR \_ NOT \_ SUPPORTED)** e não será necessário retornar nenhum outro valor de resultado. Os códigos de erro incluem Windows de erro [dispositivos portáteis](error-constants.md) ou outros códigos de erro apropriados. |
+| **CÓDIGO DE ERRO DE \_ \_ DRIVER COMUM \_ \_ \_ DA PROPRIEDADE WPD** | VT \_ UI4   | Opcional. Um código de erro específico do driver. Normalmente, isso é usado apenas para teste de driver ou se o driver, o dispositivo e o cliente são projetados juntos.                                                                                                                                                                                                                                |
 
 
 
@@ -59,7 +59,7 @@ O driver deve retornar os seguintes resultados.
 
 ## <a name="calling-methods"></a>Chamando métodos
 
-Só pode ser chamado diretamente usando [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
+Só pode ser chamado diretamente usando [**IPortableDevice::SendCommand.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Só pode ser chamado diretamente usando [**IPortableDevice:: SendCommand**](/win
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

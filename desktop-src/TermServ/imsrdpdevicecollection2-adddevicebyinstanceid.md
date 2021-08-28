@@ -4,9 +4,9 @@ description: Adiciona um dispositivo não listado à coleção de dispositivos.
 ms.assetid: 7ef200c5-b99e-40c9-80e1-0758ddfa0902
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método AddDeviceByInstanceId
-- Método AddDeviceByInstanceId Serviços de Área de Trabalho Remota, interface IMsRdpDeviceCollection2
-- Serviços de Área de Trabalho Remota de interface IMsRdpDeviceCollection2, método AddDeviceByInstanceId
+- Método AddDeviceByInstanceId Serviços de Área de Trabalho Remota
+- Método AddDeviceByInstanceId Serviços de Área de Trabalho Remota interface , IMsRdpDeviceCollection2
+- Interface IMsRdpDeviceCollection2 Serviços de Área de Trabalho Remota , método AddDeviceByInstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f817a5beb4d8762787c4bf2f8a3995d3918e8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df11fa2a58aca505661da1f7643f8d1d6ff2f502e6c10bf835aa67a6e2d0615d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870816"
 ---
-# <a name="imsrdpdevicecollection2adddevicebyinstanceid-method"></a>Método IMsRdpDeviceCollection2:: AddDeviceByInstanceId
+# <a name="imsrdpdevicecollection2adddevicebyinstanceid-method"></a>Método IMsRdpDeviceCollection2::AddDeviceByInstanceId
 
 Adiciona um dispositivo não listado à coleção de dispositivos.
 
@@ -44,29 +44,29 @@ HRESULT AddDeviceByInstanceId(
 
 <dl> <dt>
 
-*Tipo* \[ de no\]
+*Tipo* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **RedirectDeviceType**](redirectdevicetype.md)**
 
-Um valor da enumeração [**RedirectDeviceType**](redirectdevicetype.md) que especifica o tipo de dispositivo que está sendo adicionado.
+Um valor da [**enumeração RedirectDeviceType**](redirectdevicetype.md) que especifica o tipo de dispositivo que está sendo adicionado.
 
 </dd> <dt>
 
-*InstanceId* \[ no\]
+*InstanceId* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-O identificador de instância do dispositivo a ser adicionado.
+O identificador de instância do dispositivo a ser adicionar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,11 +1,11 @@
 ---
-title: Propriedade BasicDevice. DiscoveredOnCurrentNetwork
+title: Propriedade BasicDevice.DiscoveredOnCurrentNetwork
 description: Obtém um valor que indica se o dispositivo está na rede atual.
 ms.assetid: 239A9863-BD18-44AE-96C6-3C85289EF709
 keywords:
-- API de streaming de mídia de propriedade DiscoveredOnCurrentNetwork
-- API de streaming de mídia de propriedade DiscoveredOnCurrentNetwork, interface BasicDevice
-- API de streaming de mídia da interface BasicDevice, Propriedade DiscoveredOnCurrentNetwork
+- API de Streaming de Mídia da propriedade DiscoveredOnCurrentNetwork
+- Propriedade DiscoveredOnCurrentNetwork API de Streaming de Mídia, interface BasicDevice
+- Interface BasicDevice API de Streaming de Mídia , propriedade DiscoveredOnCurrentNetwork
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f6d4662458aa9f2c4a75a55915f9c828ac625330
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 95f1623d6f626eb324f58211a14d38b827d153e5a534ccf437d801a23357d0e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105784497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939786"
 ---
-# <a name="basicdevicediscoveredoncurrentnetwork-property"></a>Propriedade BasicDevice. DiscoveredOnCurrentNetwork
+# <a name="basicdevicediscoveredoncurrentnetwork-property"></a>Propriedade BasicDevice.DiscoveredOnCurrentNetwork
 
 Obtém um valor que indica se o dispositivo está na rede atual.
 
@@ -33,7 +33,7 @@ Esta propriedade é somente para leitura.
 
 ```C++
 HRESULT get_DiscoveredOnCurrentNetwork(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_DiscoveredOnCurrentNetwork(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para um valor booliano que será **true** se o dispositivo estiver na rede atual.
+Um ponteiro para um valor booliana que **será True** se o dispositivo estiver na rede atual.
 
 ## <a name="see-also"></a>Confira também
 
@@ -50,6 +50,6 @@ Um ponteiro para um valor booliano que será **true** se o dispositivo estiver n
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

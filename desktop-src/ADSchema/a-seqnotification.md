@@ -1,11 +1,11 @@
 ---
 title: Seq-Notification atributo
-description: Esse atributo contém um contador que é incrementado diariamente. Esse valor de contador é fornecido ao serviço de rastreamento de link que adiciona o valor a seus volumes e os arquivos de origem do link quando eles são atualizados. O controlador de domínio mantém esse valor.
+description: Esse atributo contém um contador que é incrementado diariamente. Esse valor de contador é dado ao serviço de acompanhamento de link, que adiciona o valor a seus volumes e vincula arquivos de origem quando eles são atualizados. O controlador de domínio mantém esse valor.
 ms.assetid: 63fbded5-a21f-4a0e-aadc-568e199e8b9e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Seq-Notification do atributo AD
-- Esquema de AD do atributo seqNotification
+- Seq-Notification atributo AD Schema
+- Esquema do AD do atributo seqNotification
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31fc3abc61a8102ced02c87897d5e7a4f706dbbb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 85e33b2cb90617796ee48bbe3790d2692dbee9d424944135a0f4c31f5faa7724
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836706"
 ---
 # <a name="seq-notification-attribute"></a>Seq-Notification atributo
 
-Esse atributo contém um contador que é incrementado diariamente. Esse valor de contador é fornecido ao serviço de rastreamento de link que adiciona o valor a seus volumes e os arquivos de origem do link quando eles são atualizados. O controlador de domínio mantém esse valor.
+Esse atributo contém um contador que é incrementado diariamente. Esse valor de contador é dado ao serviço de acompanhamento de link, que adiciona o valor a seus volumes e vincula arquivos de origem quando eles são atualizados. O controlador de domínio mantém esse valor.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Seq-Notification                     |
-| LDAP-Display-Name | seqNotification                      |
+| Ldap-Display-Name | seqNotification                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.504               |
-| System-ID-GUID    | ddac0cf2-af8f-11d0-afeb-00c04fd930c9 |
+| System-Id-Guid    | ddac0cf2-af8f-11d0-afeb-00c04fd930c9 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -121,7 +121,7 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -142,7 +142,7 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -163,7 +163,7 @@ Esse atributo contém um contador que é incrementado diariamente. Esse valor de
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

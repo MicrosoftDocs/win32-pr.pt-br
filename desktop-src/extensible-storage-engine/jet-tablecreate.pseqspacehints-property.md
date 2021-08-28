@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77623c6a5bb5ef9c0a56f464d1cf2a2f77f6672e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc4830efd87ba004f77104b743d2f5dbd103206467e2c0895fbe009b66d7100b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832906"
 ---
 # <a name="jet_tablecreatepseqspacehints-property"></a>Propriedade JET_TABLECREATE. pSeqSpacehints
 
@@ -40,7 +40,7 @@ Obtém ou define as dicas de alocação, manutenção e uso de espaço para o í
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b9437c7d6347da4bafae566386e09e4bc782bd16
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1ad823cd9932e98f919764e57666549189623986eb173ba6b4ef74cdade21f33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855352"
 ---
 # <a name="defb---ps"></a>DEFB-PS
 
@@ -29,7 +29,7 @@ Define um valor constante booliano, que deve ser carregado sempre que um sombrea
 
 
 
- 
+ 
 
 onde
 
@@ -46,7 +46,7 @@ onde
 
 
 
- 
+ 
 
 A instrução DEFB define uma constante de sombreador booliana cujo valor é carregado sempre que um sombreador é definido como um dispositivo. Elas são chamadas de constantes imediatas. Constantes imediatas têm precedência sobre constantes definidas pelo método de API SetPixelShaderConstantB.
 
@@ -69,6 +69,6 @@ Há duas maneiras de definir um booleanconstant em um sombreador.
 [defi-PS](defi---ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

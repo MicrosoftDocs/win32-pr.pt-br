@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSLVFileNotFoundException'
-title: Propriedades de EsentSLVFileNotFoundException
+description: 'Saiba mais sobre: propriedades EsentSLVFileNotFoundException'
+title: Propriedades EsentSLVFileNotFoundException
 TOCTitle: EsentSLVFileNotFoundException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVFileNotFoundException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvfilenotfoundexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102769
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 81b446cca4dd5226ce39692c227b8bf689b80105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c097e4d7401165d9ffd5480a4bac428fd8b8b2c56feaf5946c9ca833d6026ce1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850846"
 ---
-# <a name="esentslvfilenotfoundexception-properties"></a>Propriedades de EsentSLVFileNotFoundException
+# <a name="esentslvfilenotfoundexception-properties"></a>Propriedades EsentSLVFileNotFoundException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVFileNotFoundException](./esentslvfilenotfoundexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVFileNotFoundException](./esentslvfilenotfoundexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSLVFileNotFoundException](./esentslvfilenotfoundexception-class.md)
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSLVFileNotFoundException](./esentslvfilenotfoundexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSLVFileNotFoundException](./esentslvfilenotfoundexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

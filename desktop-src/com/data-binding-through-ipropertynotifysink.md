@@ -4,18 +4,18 @@ description: Vinculação de dados por meio de IPropertyNotifySink
 ms.assetid: 275a84b3-65d8-43de-bfba-72e3e5ee59fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d39c7277d27f0df6c185fc35a926aa98b77b91a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 337233455872928f824d8cbb903aba247b1ef496d02c0af04223361731fe3663
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854646"
 ---
 # <a name="data-binding-through-ipropertynotifysink"></a>Vinculação de dados por meio de IPropertyNotifySink
 
-Os objetos que dão suporte a propriedades, por exemplo, por meio da automação OLE e da interface **IDispatch** , podem querer permitir que os clientes sejam notificados quando determinadas propriedades alteram o valor. Essa propriedade é chamada de propriedade vinculável porque as notificações permitem que um cliente sincronize sua própria exibição dos valores de propriedade atuais do objeto. Além disso, os mesmos objetos talvez queiram permitir que um cliente controle quando determinadas propriedades têm permissão para serem alteradas. Essas propriedades são chamadas de propriedades de edição de solicitação.
+Objetos que suportam propriedades, por exemplo, por meio da Automação OLE e da interface **IDispatch,** podem querer permitir que os clientes sejam notificados quando determinadas propriedades alterarem o valor. Essa propriedade é chamada de propriedade a vincável porque as notificações permitem que um cliente sincronizar sua própria exibição dos valores de propriedade atuais do objeto. Além disso, os mesmos objetos podem querer permitir que um cliente controle quando determinadas propriedades têm permissão para alterar. Essas propriedades são chamadas de propriedades de edição de solicitação.
 
-O [**IPropertyNotifySink**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink) é uma interface de notificação padrão que dá suporte às propriedades bindable e Request-Edit. **IPropertyNotifySink** tem suporte de um objeto com propriedades como uma interface de saída. Ou seja, a própria interface é implementada pelo objeto de coletor de um cliente e o cliente conecta o coletor ao objeto de suporte por meio do mecanismo de ponto de conexão descrito anteriormente. O **IPropertyNotifySink** é definido da seguinte maneira:
+O [**IPropertyNotifySink**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink) é uma interface de notificação padrão que dá suporte a propriedades a bindable e request-edit. **Há suporte para IPropertyNotifySink** em um objeto com propriedades como uma interface de saída. Ou seja, a própria interface é implementada pelo objeto de sink de um cliente e o cliente conecta o sink ao objeto de suporte por meio do mecanismo de ponto de conexão descrito anteriormente. O **IPropertyNotifySink** é definido da seguinte forma:
 
 ``` syntax
 interface IPropertyNotifySink : IUnknown 
@@ -26,19 +26,19 @@ interface IPropertyNotifySink : IUnknown
  
 ```
 
-Quando um objeto deseja notificar seus coletores conectados de que uma propriedade vinculável identificada com um determinado DISPID foi alterado, ele chama [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged). Se um objeto alterar várias propriedades de uma só vez, ele poderá passar DISPID \_ Unknown para **OnChanged** , caso em que um cliente atualiza seu cache de todos os valores de propriedade de interesse.
+Quando um objeto deseja notificar seus sinks conectados de que uma propriedade a vinciável identificada com um determinado DISPID foi alterada, ele chama [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged). Se um objeto altera várias propriedades de uma só vez, ele pode passar DISPID UNKNOWN para \_ **OnChanged,** caso em que um cliente atualiza seu cache de todos os valores de propriedade de interesse.
 
-Quando uma propriedade de edição de solicitação está prestes a ser alterada, um objeto pode perguntar ao cliente se ele permitirá que essa alteração ocorra. O objeto chama [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) passando o DispID da propriedade em questão (ou DISPID \_ desconhecido para identificar todas as propriedades). O coletor do cliente retorna S \_ OK para indicar que a alteração é permitida ou s \_ false (ou um erro) para indicar que a alteração não é permitida. Quando um objeto chama **OnRequestEdit**, é necessário obedecer aos desejos do cliente seguindo a semântica exata dos \_ valores de retorno S OK e s \_ falsos.
+Quando uma propriedade de edição de solicitação está prestes a mudar, um objeto pode perguntar ao cliente se ela permitirá que essa alteração ocorra. O objeto chama [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) passando o DISPID da propriedade em questão (ou DISPID \_ UNKNOWN para identificar todas as propriedades). O sink do cliente retorna S OK para indicar que a alteração é permitida ou S FALSE (ou um erro) para indicar que a alteração \_ \_ não é permitida. Quando um objeto chama **OnRequestEdit**, é necessário obedecer aos desejos do cliente seguindo a semântica exata dos valores de retorno S OK e \_ S \_ FALSE.
 
 Observe que [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) não pode ser usado para validação de dados porque, no momento da chamada, o novo valor da propriedade ainda não está disponível. A notificação só pode ser usada para controlar um estado somente leitura para uma propriedade.
 
-Objetos controlam quais propriedades são vinculáveis e solicitam editar e marcar essas propriedades nas informações de tipo do objeto. Nas informações de tipo, o atributo ligável marca uma propriedade como suporte [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged). O atributo requestedit marca uma propriedade como [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit)de suporte.
+Os objetos controlam quais propriedades são a bindáveis e solicitam a edição e marcam essas propriedades nas informações de tipo do objeto. Nas informações de tipo, o atributo a vinciável marca uma propriedade como dando suporte [**a OnChanged.**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged) O atributo requestedit marca uma propriedade como dando suporte [**a OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit).
 
-Uma propriedade pode dar suporte a ambos os comportamentos, caso em que [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) é chamado primeiro, e somente se a alteração for permitida for [**OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged) chamada.
+Uma propriedade pode dar suporte a ambos os comportamentos, caso em que [**OnRequestEdit**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onrequestedit) é chamado primeiro e somente se a alteração for permitida [**é OnChanged**](/windows/desktop/api/OCIdl/nf-ocidl-ipropertynotifysink-onchanged) chamado.
 
-A única exceção ao comportamento dessas propriedades é que nenhuma notificação é enviada como resultado dos procedimentos de inicialização ou carregamento de um objeto. Nesses momentos, supõe-se que todas as propriedades sejam alteradas e que todas devem ter permissão para serem alteradas. As notificações para essa interface são, portanto, apenas significativas no contexto de um objeto totalmente inicializado/carregado.
+A única exceção ao comportamento dessas propriedades é que nenhuma notificação é enviada como resultado dos procedimentos de inicialização ou carregamento de um objeto. Nesses momentos, supõe-se que todas as propriedades sejam alteradas e que todas devem ter permissão para alterar. As notificações para essa interface são, portanto, significativas apenas no contexto de um objeto totalmente inicializado/carregado.
 
-Dois outros atributos podem ser aplicados às propriedades nas informações de tipo de um objeto. O atributo defaultbind marca uma propriedade vinculável como sendo a que melhor representa o estado do objeto como um todo. O atributo displaybind marca uma propriedade vinculável como adequada para exibição na interface do usuário de um cliente.
+Dois outros atributos podem ser aplicados às propriedades nas informações de tipo de um objeto. O atributo defaultbind marca uma propriedade a vincável como sendo aquela que melhor representa o estado do objeto como um todo. O atributo displaybind marca uma propriedade a vincável como adequada para exibição na própria interface do usuário do cliente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -47,9 +47,9 @@ Dois outros atributos podem ser aplicados às propriedades nas informações de 
 [Páginas de propriedades e folhas de propriedades](property-pages-and-property-sheets.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,20 +3,20 @@ title: Tradução avançada
 description: Tradução avançada
 ms.assetid: 48a1bdd5-8b7b-4460-9b7b-1ab8969a28f8
 keywords:
-- Windows Touch, tradução
-- Windows Touch, tradução avançada
-- Windows Touch, manipulações
+- Windows Toque, tradução
+- Windows Toque, tradução avançada
+- Windows Toque, manipulações
 - manipulações, tradução
 - manipulações, tradução avançada
 - tradução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc383c71e1f1417d30b64db18aa627039602b942
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4712375c12420e076bb93c1240d18dc8e3c1d58006eb24ced7a62a7485e01c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810337"
 ---
 # <a name="advanced-translation"></a>Tradução avançada
 
@@ -60,7 +60,7 @@ O código a seguir mostra uma maneira de fazer isso em uma implementação de [*
 > [!Note]  
 > As transformações de objeto ocorrem antes que os pontos dinâmicos e o raio sejam calculados. Dessa maneira, o objeto será movido corretamente se o usuário executar a expansão no objeto enquanto ele estiver sendo movido.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -69,9 +69,9 @@ O código a seguir mostra uma maneira de fazer isso em uma implementação de [*
 [Manipulações](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

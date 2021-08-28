@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPRESOURCE_STATS (MpClient. h)
+title: MPRESOURCE_STATS estrutura (MpClient.h)
 description: Estatísticas relacionadas a recursos.
 ms.assetid: D1DC4BC9-911D-448C-A421-11D2F51F0A61
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPRESOURCE_STATS
-- Ponteiro de estrutura de PMPRESOURCE_STATS recursos de ambiente herdados do Windows
+- MPRESOURCE_STATS estrutura herdada Windows recursos de ambiente
+- PMPRESOURCE_STATS de estrutura herdado Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afbe1ce6734aabd1093f7acd886af757c51ed83e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b72a21bf0ec020c1fc2cf5ba1394b4cd5ed04dc32721a4aac9f8349034907b49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848466"
 ---
-# <a name="mpresource_stats-structure"></a>\_Estrutura de estatísticas MPRESOURCE
+# <a name="mpresource_stats-structure"></a>Estrutura MPRESOURCE \_ STATS
 
 Estatísticas relacionadas a recursos.
 
@@ -53,7 +53,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Progresso aproximado para verificação em ppm (partes por milhão). Defina como **MPPROGRESS \_ inválido** se as informações de progresso não estiverem disponíveis.
+Progresso aproximado para verificação em ppm (partes por milhão). Definido como **MPPROGRESS \_ INVALID se** as informações de progresso não estão disponíveis.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Tipo: **UINT64**
 
 </dd> <dd>
 
-Número de bytes verificados em busca de arquivos.
+Número de bytes verificados para arquivos.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo: **UINT64**
 
 </dd> <dd>
 
-Número de RegKeys verificados.
+Número de RegKeys digitalizados.
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Campos reservados para uso futuro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

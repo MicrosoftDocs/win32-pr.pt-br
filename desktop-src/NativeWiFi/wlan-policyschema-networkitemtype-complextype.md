@@ -1,7 +1,7 @@
 ---
 description: Especifica o nome e o tipo de uma rede sem fio.
 ms.assetid: 839afae0-b8e1-489f-8811-19a82c173627
-title: Tipo complexo networkitemtype
+title: tipo complexo networkItemType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5db7c5fc4d9b5227d9cd29c5e2dfc69da6fad139
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c5a08eafebc81a1ff9f18c3d4c2cc9df9c096ac0fef9c10ff1caf1142a1ecf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800186"
 ---
-# <a name="networkitemtype-complex-type"></a>Tipo complexo networkitemtype
+# <a name="networkitemtype-complex-type"></a>tipo complexo networkItemType
 
-O tipo complexo networkitemtype especifica o nome e o tipo de uma rede sem fio.
+O tipo complexo networkItemType especifica o nome e o tipo de uma rede sem fio.
 
 ``` syntax
 <xs:complexType name="networkItemType">
@@ -48,8 +48,8 @@ O tipo complexo networkitemtype especifica o nome e o tipo de uma rede sem fio.
 
 | Elemento                                                                      | Type                                                                    | Descrição                                                   |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------|
-| [**networkName**](wlan-policyschema-networkname-networkitemtype-element.md) | [**networkNameType**](wlan-policyschema-networknametype-simpletype.md) | O SSID (identificador de conjunto de serviços) da rede. <br/> |
-| [**NetworkType**](wlan-policyschema-networktype-networkitemtype-element.md) | [**networkTypeType**](wlan-policyschema-networktypetype-simpletype.md) | O tipo de rede. <br/>                                 |
+| [**networkName**](wlan-policyschema-networkname-networkitemtype-element.md) | [**networkNameType**](wlan-policyschema-networknametype-simpletype.md) | O SSID (identificador do conjunto de serviços) da rede. <br/> |
+| [**Networktype**](wlan-policyschema-networktype-networkitemtype-element.md) | [**networkTypeType**](wlan-policyschema-networktypetype-simpletype.md) | O tipo de rede. <br/>                                 |
 
 
 
@@ -59,8 +59,8 @@ O tipo complexo networkitemtype especifica o nome e o tipo de uma rede sem fio.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

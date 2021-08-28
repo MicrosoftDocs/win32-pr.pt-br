@@ -4,12 +4,12 @@ ms.assetid: 4370095A-DFF4-4D87-AEC3-3875E295847D
 title: Métodos IWPCProviderConfig
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379d7a8cc5d59cff2b23a9e144a51b562907c133
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 104a90bf17b60f21275422b7c5f2b8775944e44b05ba8d27a89c41db79d8cfed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846656"
 ---
 # <a name="iwpcproviderconfig-methods"></a>Métodos IWPCProviderConfig
 
@@ -17,7 +17,7 @@ A interface [**IWPCProviderConfig**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcp
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Configurar método**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-configure)
+-   [**Método Configure**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-configure)
 -   [**Método GetUserSummary**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-getusersummary)
 -   [**Método RequestOverride**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-requestoverride)
 

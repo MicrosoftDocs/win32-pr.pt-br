@@ -1,10 +1,10 @@
 ---
-title: Estrutura de BITS_JOB_PROPERTY_VALUE (Deliveryoptimization. h)
-description: A BITS_JOB_PROPERTY_VALUE Union fornece o valor da propriedade da função do trabalho com base no valor da enumeração BITS_JOB_PROPERTY_ID.
+title: BITS_JOB_PROPERTY_VALUE (Deliveryoptimization.h)
+description: A BITS_JOB_PROPERTY_VALUE de dados fornece o valor da propriedade do trabalho DO com base no valor da enumeração BITS_JOB_PROPERTY_ID dados.
 ms.assetid: C24D9EA1-2E72-4403-939A-7B01D7133FE7
 keywords:
-- Estrutura de BITS_JOB_PROPERTY_VALUE
-- Estrutura de BITS_JOB_PROPERTY_VALUE
+- BITS_JOB_PROPERTY_VALUE estrutura
+- BITS_JOB_PROPERTY_VALUE estrutura
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c48c1fe550db51b6b838379d44df21c95fa95e41
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f7366f993f23a16aa6c0d4486c33f45cd501962add9ab524a008aba51cd8ec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755726"
 ---
-# <a name="bits_job_property_value-structure"></a>Estrutura de BITS_JOB_PROPERTY_VALUE
+# <a name="bits_job_property_value-structure"></a>BITS_JOB_PROPERTY_VALUE estrutura
 
-A **BITS_JOB_PROPERTY_VALUE** Union fornece o valor da propriedade da função do trabalho com base no valor da enumeração [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) .
+A **BITS_JOB_PROPERTY_VALUE** de dados fornece o valor da propriedade do trabalho DO com base no valor da [**enumeração BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) dados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,38 +46,38 @@ typedef struct {
 
 <dl> <dt>
 
-**DWORD**
+**Dword**
 </dt> <dd>
 
-Esse valor é retornado ao usar a ID de propriedade de enumeração **BITS_JOB_PROPERTY_ID_COST_FLAGS** e é aplicado como a [política de transferência](https://www.bing.com/search?q=transfer+policy) no trabalho.
+Esse valor é retornado ao usar a ID da propriedade enum **BITS_JOB_PROPERTY_ID_COST_FLAGS** e é aplicado como a política de [transferência](https://www.bing.com/search?q=transfer+policy) no trabalho do DO.
 
 </dd> <dt>
 
-**ClsID**
+**Clsid**
 </dt> <dd>
 
-Esse valor é retornado ao usar a ID de propriedade de enumeração **BITS_JOB_PROPERTY_NOTIFICATION_CLSID** e representa o CLSID do objeto de retorno de chamada a ser registrado no trabalho do.
+Esse valor é retornado ao usar a ID da propriedade enum **BITS_JOB_PROPERTY_NOTIFICATION_CLSID** e representa o CLSID do objeto de retorno de chamada a ser registrado com o trabalho DO.
 
 </dd> <dt>
 
 **Habilitar**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
-**UInt64**
+**Uint64**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 **Target (destino)**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> </dl>
 
@@ -87,9 +87,9 @@ Não há suporte.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

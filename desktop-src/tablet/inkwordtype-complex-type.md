@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém os dados de tinta, alternativas e confiança para o conteúdo de tinta que é um elemento InkWord (em oposição a um elemento de desenho).
+description: Define o tipo que contém os dados de tinta, as alternativas e a confiança para o conteúdo de tinta que é um elemento InkWord (em vez de um elemento Drawing).
 ms.assetid: 361bc4a2-04e1-4cba-9925-a42cd0587760
 title: Tipo complexo InkWordType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 3fb1de16eadae66fcb688e63d80d19778ce68953
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1d839bd332d5f629cf5ecd0e6ae29094d1b88894ef9376007875d868530fc15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938636"
 ---
 # <a name="inkwordtype-complex-type"></a>Tipo complexo InkWordType
 
-Define o tipo que contém os dados de tinta, alternativas e confiança para o conteúdo de tinta que é um [elemento InkWord](inkword-element.md) (em oposição a um [elemento de desenho](drawing-element.md)).
+Define o tipo que contém os dados de tinta, as alternativas e a confiança para o conteúdo de tinta que é um [elemento InkWord](inkword-element.md) (em vez de um [elemento Drawing](drawing-element.md)).
 
 ``` syntax
 <xs:complexType name="InkWordType" />
@@ -33,7 +33,7 @@ Define o tipo que contém os dados de tinta, alternativas e confiança para o co
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

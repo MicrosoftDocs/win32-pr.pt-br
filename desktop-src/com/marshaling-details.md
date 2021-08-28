@@ -4,12 +4,12 @@ description: Se você usar o marshaling padrão, o COM tratará todos os detalhe
 ms.assetid: bf3fe212-648e-4d00-ad1d-43d2e5e6a7ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4d0fd46ee29c712c6f2b5b286df76a30f1047e6
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: f821d06ce452b9492a6b2c5953c5c0d20cd55e653ab471380987dc91566636da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "105771417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859336"
 ---
 # <a name="marshaling-details"></a>Detalhes de marshaling
 

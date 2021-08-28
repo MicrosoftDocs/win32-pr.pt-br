@@ -3,7 +3,7 @@ title: Network. bufferingProgress
 description: A propriedade bufferingProgress recupera a porcentagem de buffer concluído.
 ms.assetid: d604159b-7c42-47f8-8085-53f859f24703
 keywords:
-- Network. bufferingProgress Windows Media Player
+- Windows Media Player Network. bufferingProgress
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e3a4f37f8f6b8ffe8ff93ca72b0c9551d7e314
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65de3f7b1b58dfb90f76436f324dcc3d4fc3fe9a24b7c60ca3db888771f9192d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901746"
 ---
 # <a name="networkbufferingprogress"></a>Network. bufferingProgress
 
@@ -43,7 +43,7 @@ Use o evento *Player*. * * * * buffer * * * * para determinar quando o buffer in
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **bufferingProgress** para exibir a porcentagem de buffer concluído. As informações são exibidas em um DIV HTML criado com ID = "BP". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. **bufferingProgress** para exibir a porcentagem de buffer concluído. As informações são exibidas em um DIV HTML criado com ID = "BP". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

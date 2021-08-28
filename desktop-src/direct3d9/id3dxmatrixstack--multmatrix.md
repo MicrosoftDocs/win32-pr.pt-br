@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7361223e8fbcbae0f81641718b216c5903ff6319
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d9d0808f1b23475b823ea43f55d93f8dacb01e4e491957fa34100110946fa72e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856456"
 ---
 # <a name="id3dxmatrixstackmultmatrix-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: MultMatrix (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Esse método não adiciona um item à pilha, ele substitui a matriz atual pelo p
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

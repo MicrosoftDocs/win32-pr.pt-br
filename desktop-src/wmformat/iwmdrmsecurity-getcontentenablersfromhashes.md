@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f44b4187699cb4a55d0c6215e3f31b430a87d299
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d5b2b5e126555a0d09ea88017e2a290c180434b18fb8a61f668afd8e12fa02a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808546"
 ---
 # <a name="iwmdrmsecuritygetcontentenablersfromhashes-method"></a>Método IWMDRMSecurity:: GetContentEnablersFromHashes
 
@@ -82,7 +82,7 @@ Número de elementos na matriz *prgContentEnablers* . Se *prgContentEnablers* fo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

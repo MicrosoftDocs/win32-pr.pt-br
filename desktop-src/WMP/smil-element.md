@@ -1,9 +1,9 @@
 ---
 title: Elemento SMIL
-description: O elemento SMIL é sempre o elemento de nível superior em um arquivo de lista de reprodução de mídia do Windows (WPL). Ele especifica que o arquivo usa sintaxe e gramática de SMIL (linguagem de integração multimídia sincronizada).
+description: o elemento smil é sempre o elemento de nível superior em um arquivo de lista de reprodução de mídia Windows (WPL). Ele especifica que o arquivo usa sintaxe e gramática de SMIL (linguagem de integração multimídia sincronizada).
 ms.assetid: bb14f1b8-53d0-47ff-9fd3-4620a1467985
 keywords:
-- Elemento SMIL Windows Media Player
+- Windows Media Player do elemento SMIL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78ec8900139cfbd5982228c59010674bbc14765e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15ed9c3d70b0af65019cd384bc68ab9c26f8d01673481b9ced3595730379bf1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763456"
 ---
 # <a name="smil-element"></a>Elemento SMIL
 
-O elemento **SMIL** é sempre o elemento de nível superior em um arquivo de lista de reprodução de mídia do Windows (WPL). Ele especifica que o arquivo usa sintaxe e gramática de SMIL (linguagem de integração multimídia sincronizada).
+o elemento **smil** é sempre o elemento de nível superior em um arquivo de lista de reprodução de mídia Windows (WPL). Ele especifica que o arquivo usa sintaxe e gramática de SMIL (linguagem de integração multimídia sincronizada).
 
 ``` syntax
 <smil>
@@ -48,7 +48,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Cada playlist do Windows Media deve ter o elemento **SMIL** em sua raiz.
+cada lista de reprodução de mídia Windows deve ter o elemento **smil** em sua raiz.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,7 +88,7 @@ Cada playlist do Windows Media deve ter o elemento **SMIL** em sua raiz.
 [**Elemento head**](head-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: IWiaUIExtension::D método eviceDialog – fornece uma interface do usuário personalizada que substitui a interface do usuário do sistema padrão.
+description: Método IWiaUIExtension::D eviceDialog – fornece uma interface do usuário personalizada que substitui a interface do usuário do sistema padrão.
 ms.assetid: 5dbcacde-5bbe-459d-804f-5ce7eb1cd8d8
-title: 'IWiaUIExtension: método eviceDialog de:D (Wiadevd. h)'
+title: Método IWiaUIExtension::D eviceDialog (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: d467769308707032b8e92b4ac7877488991356dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a06ac5428743c31bae22c6d106ee927791739295754b15ac9764045c3aeeffab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813866"
 ---
-# <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension: método eviceDialog de:D
+# <a name="iwiauiextensiondevicedialog-method"></a>Método IWiaUIExtension::D eviceDialog
 
 Fornece uma interface do usuário personalizada que substitui a interface do usuário do sistema padrão.
 
@@ -39,12 +39,12 @@ HRESULT DeviceDialog(
 
 <dl> <dt>
 
-*pDeviceDialogData* \[ no\]
+*pDeviceDialogData* \[ Em\]
 </dt> <dd>
 
 Tipo: **PDEVICEDIALOGDATA \***
 
-Aponta para uma estrutura [**DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que contém todos os dados necessários para implementar a caixa de diálogo do dispositivo.
+Aponta para uma [**estrutura DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que contém todos os dados necessários para implementar a caixa de diálogo do dispositivo.
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Aponta para uma estrutura [**DEVICEDIALOGDATA**](-wia-devicedialogdata.md) que c
 
 Tipo: **HRESULT**
 
-Se o método for bem sucedido, ele retornará S \_ OK. Se o usuário cancelar a caixa de diálogo, o método retornará S \_ false. Se o método não for implementado, ele retornará E \_ NOTIMPL. Se o método falhar, ele retornará um código de erro COM padrão.
+Se o método for bem-sucedido, ele retornará S \_ OK. Se o usuário cancelar a caixa de diálogo, o método retornará S \_ FALSE. Se o método não for implementado, ele retornará E \_ NOTIMPL. Se o método falhar, ele retornará um código de erro COM padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Se você implementar a interface [**IWiaUIExtension**](-wia-iwiauiextension.md) e não quiser substituir a interface do usuário do sistema, esse método ainda deverá ser implementado, mas não deverá fazer nada mais do que Return E \_ NOTIMPL.
+Se você implementar a interface [**IWiaUIExtension**](-wia-iwiauiextension.md) e não quiser substituir a interface do usuário do sistema, esse método ainda deverá ser implementado, mas não deverá fazer nada além de retornar E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Se você implementar a interface [**IWiaUIExtension**](-wia-iwiauiextension.md) 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

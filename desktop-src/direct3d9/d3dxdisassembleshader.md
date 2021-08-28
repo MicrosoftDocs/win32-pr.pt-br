@@ -1,7 +1,7 @@
 ---
-description: Desmontar um sombreador.
+description: Desmonte um sombreador.
 ms.assetid: 30159223-8f88-4929-8ef1-7a6acc13f485
-title: Função D3DXDisassembleShader (D3DX9Shader. h)
+title: Função D3DXDisassembleShader (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6192b77c190ed73dc6e5038c9119152836eca375
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b185945098d4439753b5582a81d4d112c7984f53155e2901af8560afb404bf62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105781621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857066"
 ---
 # <a name="d3dxdisassembleshader-function"></a>Função D3DXDisassembleShader
 
-Desmontar um sombreador.
+Desmonte um sombreador.
 
 > [!Note]  
-> Em vez de usar essa função herdada, recomendamos que você use a API [**D3DDisassemble**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble) .
+> Em vez de usar essa função herdada, recomendamos que você use a API [**D3DDisassemble.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble)
 
  
 
@@ -48,7 +48,7 @@ HRESULT D3DXDisassembleShader(
 
 <dl> <dt>
 
-*pShader* \[ no\]
+*pShader* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -57,38 +57,38 @@ Ponteiro para um buffer de memória que contém os dados do sombreador.
 
 </dd> <dt>
 
-*EnableColorCode* \[ no\]
+*EnableColorCode* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Habilite o código de cor para facilitar a leitura da desmontagem.
+Habilita o código de cor para facilitar a leitura da desmontagem.
 
 </dd> <dt>
 
-*pComments* \[ no\]
+*pComments* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Uma cadeia de caracteres de comentário opcional com terminação nula. Esse valor pode ser **nulo**.
+Uma cadeia de caracteres de comentário terminada em NULL opcional. Esse valor pode ser **NULL.**
 
 </dd> <dt>
 
-*ppDisassembly* \[ fora\]
+*ppDisassembly* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Retorna um buffer que contém o sombreador desmontado. Consulte [**ID3DXBuffer**](id3dxbuffer.md).
+Retorna um buffer que contém o sombreador desmontado. Consulte [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

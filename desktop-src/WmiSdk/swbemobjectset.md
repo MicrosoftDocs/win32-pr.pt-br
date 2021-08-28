@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: a6992658214d7ea5acbadbea396992edf0e3e9d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33cefd39dc0e860906bc99b1f591a87dae845d6a9317410ce4850fb1a54ea708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857096"
 ---
 # <a name="swbemobjectset-object"></a>Objeto SWbemObjectSet
 
@@ -77,7 +77,7 @@ O objeto **SWbemObjectSet** tem essas propriedades.
 
 | Propriedade                                                  | Tipo de acesso          | Descrição                                              |
 |:----------------------------------------------------------|:---------------------|:---------------------------------------------------------|
-| [**Contar**](swbemobjectset-count.md)<br/>          | Somente leitura<br/> | Número de itens na coleção.<br/>        |
+| [**Contagem**](swbemobjectset-count.md)<br/>          | Somente leitura<br/> | Número de itens na coleção.<br/>        |
 | [**Segurança\_**](swbemobjectset-security-.md)<br/> | Somente leitura<br/> | Usado para ler ou alterar as configurações de segurança.<br/> |
 
 
@@ -173,7 +173,7 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMOBJECTSET CLSID<br/>                                                        |

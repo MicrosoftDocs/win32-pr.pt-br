@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d175a6ed59114eaa591f8e45a9c1291652d9e037
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3227e71cd83706792670f032d268ea587514f785a814e30b8d0591192f73a640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762506"
 ---
 # <a name="msmq-long-lived-attribute"></a>MSMQ-atributo de vida útil longa
 
@@ -58,7 +58,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -66,7 +66,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -87,7 +87,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -108,7 +108,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -129,7 +129,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -150,7 +150,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ A vida útil padrão de mensagens MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -171,7 +171,7 @@ A vida útil padrão de mensagens MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
