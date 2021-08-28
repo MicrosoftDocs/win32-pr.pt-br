@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 860d4a9190ec12d958db12019a51fd5183caedba
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 6f3600f751d0bf93de503494f31d2ae66985828f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880495"
 ---
 # <a name="span-idwwan_profile_v4element_homeprovidernamespanhomeprovidername"></a><span id="WWAN_profile_v4.element_HomeProviderName"></span>HomeProviderName
 
@@ -29,10 +29,10 @@ O nome do provedor de início para o cartão SIM/dispositivo especificado. Para 
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<HomeProviderName>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;HomeProviderName&gt;**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <HomeProviderName>
@@ -55,7 +55,7 @@ Nenhum.
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
 
-| Elemento pai | Descrição | 
+| Elemento pai | Description | 
 |----------------|-------------|
 | <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>O elemento <strong>MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de banda larga móvel com um conjunto mais rico de opções do que o elemento MBNProfile.</p><p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um determinado conjunto de condições operacionais. Use o elemento filho <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar quais condições operacionais tornam um perfil específico o perfil ativo.</p> | 
 

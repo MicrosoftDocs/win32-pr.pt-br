@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 9d3ad70a0728ca6e73c4dbefb248df58e858a996
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c01377740c77ef4cb2be15e785b9ea3e93449944c11f2014ed660d8c3e3245b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112326"
 ---
 # <a name="monitor_info_2-structure"></a>Estrutura de informações de MONITOR \_ \_ 2
 
@@ -53,7 +53,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que é o nome do mon
 **pEnvironment**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o monitor foi gravado (por exemplo, Windows NT x86, Windows IA64, Windows x64).
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o monitor foi gravado (por exemplo, Windows NT x86, Windows IA64, Windows x64).
 
 </dd> <dt>
 

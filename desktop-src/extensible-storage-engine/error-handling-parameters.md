@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a0556d97a0dda0182ee4fe229599030f523accd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 698854aa81ddd7a44fcf58dd250444e657d44a0c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474822"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982009"
 ---
 # <a name="error-handling-parameters"></a>Parâmetros de tratamento de erros
 
@@ -38,7 +38,19 @@ Esse parâmetro pode ser usado para converter um [JET_ERR](./jet-err.md) em uma 
 **Observação**  Esse parâmetro é somente leitura.
 
 
-| | | <p>Valor padrão:</p> | <p>Especial</p> | | <p>Tipo:</p> | <p>Especial</p> | | <p>Intervalo válido:</p> | <p>Especial</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Não</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Não</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>Especial</p> | 
+| <p>Tipo:</p> | <p>Especial</p> | 
+| <p>Intervalo válido:</p> | <p>Especial</p> | 
+| <p>Escopo:</p> | <p>Global</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Não</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
+| <p>Afeta o layout físico:</p> | <p>Não</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
+| <p>Afeta o desempenho:</p> | <p>Não</p> | 
+| <p>Afeta os recursos:</p> | <p>Não</p> | 
+| <p>Disponibilidade:</p> | <p>Tudo</p> | 
 
 
 *JET_paramExceptionAction*  
@@ -47,13 +59,29 @@ Esse parâmetro pode ser usado para converter um [JET_ERR](./jet-err.md) em uma 
 Esse parâmetro controla o que acontece quando uma exceção é lançada pelo mecanismo de banco de dados ou pelo código que é chamado pelo mecanismo de banco de dados. quando definido como JET_ExceptionMsgBox, qualquer exceção será lançada para o Windows filtro de exceção sem tratamento. Isso fará com que a exceção seja tratada como uma falha do aplicativo. A intenção é impedir que o código do aplicativo tente detectar erroneamente e ignorar uma exceção gerada pelo mecanismo de banco de dados. Isso não pode ser permitido porque a corrupção do banco de dados pode ocorrer. Se o aplicativo quiser lidar corretamente com essas exceções, a proteção poderá ser desabilitada definindo esse parâmetro como JET_ExceptionNone.
 
 
-| | | <p>Valor padrão:</p> | <p>JET_ExceptionMsgBox</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>JET_ExceptionMsgBox, JET_ExceptionNone</p> | | <p>Escopo:</p> | <p>Global</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong>  Não</p><p><strong>Windows Vista:</strong>  Ok</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong>  Não</p><p><strong>Windows Vista:</strong>  Ok</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Sim</p> | | <p>Afeta o desempenho:</p> | <p>Não</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>JET_ExceptionMsgBox</p> | 
+| <p>Tipo:</p> | <p>Integer</p> | 
+| <p>Intervalo válido:</p> | <p>JET_ExceptionMsgBox, JET_ExceptionNone</p> | 
+| <p>Escopo:</p> | <p>Global</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong>  Não</p><p><strong>Windows Vista:</strong>  Ok</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p><strong>Windows 2000, Windows XP e Windows Server 2003:</strong>  Não</p><p><strong>Windows Vista:</strong>  Ok</p> | 
+| <p>Afeta o layout físico:</p> | <p>Não</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Sim</p> | 
+| <p>Afeta o desempenho:</p> | <p>Não</p> | 
+| <p>Afeta os recursos:</p> | <p>Não</p> | 
+| <p>Disponibilidade:</p> | <p>Tudo</p> | 
 
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 ### <a name="see-also"></a>Consulte Também

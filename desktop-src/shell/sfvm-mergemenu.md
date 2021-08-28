@@ -1,5 +1,5 @@
 ---
-description: 'Permite que o objeto de retorno de chamada mescle itens de menu nos menus do Windows Explorer. Usado por IShellFolderViewCB:: MessageSFVCB.'
+description: 'permite que o objeto de retorno de chamada mescle itens de menu nos menus do Windows Explorer. Usado por IShellFolderViewCB:: MessageSFVCB.'
 title: Mensagem de SFVM_MERGEMENU (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5cf95a7576c15ab1c3e64ebe55e244feffa6d86d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f6838b3c2ee845794bfa506beada2b7092f1bb918438f820f0e77d6b6543dc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111166"
 ---
 # <a name="sfvm_mergemenu-message"></a>\_Mensagem SFVM MERGEMENU
 
-Permite que o objeto de retorno de chamada mescle itens de menu nos menus do Windows Explorer. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+permite que o objeto de retorno de chamada mescle itens de menu nos menus do Windows Explorer. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -48,7 +48,7 @@ Uma estrutura [**QCMINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-qcmi
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem serve essencialmente a mesma finalidade que [**IShellBrowser:: InsertMenusSB**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellbrowser-insertmenussb) e [**IShellBrowser:: SetMenuSB**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellbrowser-setmenusb) em uma exibição de pasta personalizada. Consulte a seção *usando o IShellBrowser para se comunicar com o Windows Explorer* de [implementando uma exibição de pasta](../lwef/nse-folderview.md) para uma discussão adicional.
+Essa mensagem serve essencialmente a mesma finalidade que [**IShellBrowser:: InsertMenusSB**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellbrowser-insertmenussb) e [**IShellBrowser:: SetMenuSB**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellbrowser-setmenusb) em uma exibição de pasta personalizada. consulte a seção *usando o IShellBrowser para se comunicar com o Windows Explorer* de [implementando uma exibição de pasta](../lwef/nse-folderview.md) para uma discussão adicional.
 
 ## <a name="requirements"></a>Requisitos
 

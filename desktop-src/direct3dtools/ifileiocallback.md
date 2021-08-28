@@ -1,5 +1,5 @@
 ---
-description: Retorno de chamada para salvar ou encerrar o experimento. Indica que o arquivo de salvar foi feito.
+description: Retorno de chamada para salvar ou encerrar o experimento. Indica que o salvamento de arquivo está concluído.
 MS-HAID: vspixengine.IFileIOCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ce9a24f6feebf3c93ecb5d141f558e46dd83bd36bb7ccc3308851fb64099b9ac
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7169df5f5c9d6ea3744356114fae2cbc0af4356a
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119406136"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787112"
 ---
 # <a name="span-idvspixengineifileiocallbackspanifileiocallback-interface"></a><span id="vspixengine.ifileiocallback"></span>Interface IFileIOCallback
 
-Retorno de chamada para salvar ou encerrar o experimento. Indica que o arquivo de salvar foi feito.
+Retorno de chamada para salvar ou encerrar o experimento. Indica que o salvamento de arquivo está concluído.
 
 ## <a name="members"></a>Membros
 
-A interface **IFileIOCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFileIOCallback** também tem estes tipos de membros:
+A interface **IFileIOCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IFileIOCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IFileIOCallback** herda da interface [**IUnknown.**](/windows/desk
 
 A interface **IFileIOCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ifileiocallback-resultcallback-dword"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host de erros durante a captura ou reprodução.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ifileiocallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td ><p>Uma função de retorno de chamada usada para notificar o host de erros durante a captura ou reprodução.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

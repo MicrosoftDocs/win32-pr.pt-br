@@ -1,9 +1,9 @@
 ---
 title: Elemento HelpButton
-description: Representa o controle Botão de Ajuda.
+description: Representa o controle do botão de ajuda.
 ms.assetid: 24c709da-539e-4ea0-bd3e-d3fbd72dfb97
 keywords:
-- Faixa de Opções do Windows do elemento HelpButton
+- elemento HelpButton da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9f34f04133b7628cce01ac0ce2808923b4f6bbdb
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: f138b615b0ae4a4e7a163364938808d945b60eb5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442837"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623492"
 ---
 # <a name="helpbutton-element"></a>Elemento HelpButton
 
-Representa o [controle Botão de](windowsribbon-controls-helpbutton.md) Ajuda.
+Representa o controle do [botão de ajuda](windowsribbon-controls-helpbutton.md) .
 
 ## <a name="usage"></a>Uso
 
@@ -37,10 +37,10 @@ Representa o [controle Botão de](windowsribbon-controls-helpbutton.md) Ajuda.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -53,10 +53,10 @@ Representa o [controle Botão de](windowsribbon-controls-helpbutton.md) Ajuda.
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>xs:positiveInteger ou xs:string<br/></td>
+<td>xs: positiveInteger ou xs: String<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +73,7 @@ Não há elementos filho.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
+| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/> |
 
 
 
@@ -81,15 +81,15 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**Ribbon.HelpButton.**](windowsribbon-element-ribbon-helpbutton.md)
+Pode ocorrer no máximo uma vez para cada [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md).
 
 Inicia uma caixa de diálogo de ajuda do aplicativo quando clicado.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica necessária para implementar um controle Botão de Ajuda da Faixa [de](windowsribbon-controls-helpbutton.md) Opções.
+O exemplo a seguir demonstra a marcação básica necessária para implementar um controle do [botão de ajuda](windowsribbon-controls-helpbutton.md) da faixa de opções.
 
-Esta seção de código mostra a declaração **De comando HelpButton.**
+Esta seção de código mostra a declaração de comando **HelpButton** .
 
 
 ```XML
@@ -100,7 +100,7 @@ Esta seção de código mostra a declaração **De comando HelpButton.**
 
 
 
-Esta seção de código mostra a declaração **de controle HelpButton.**
+Esta seção de código mostra a declaração de controle **HelpButton** .
 
 
 ```XML
@@ -113,8 +113,8 @@ Esta seção de código mostra a declaração **de controle HelpButton.**
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Sim
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 
@@ -122,7 +122,7 @@ Esta seção de código mostra a declaração **de controle HelpButton.**
 
 <dl> <dt>
 
-[Controle botão ajuda](windowsribbon-controls-helpbutton.md)
+[Controle do botão ajuda](windowsribbon-controls-helpbutton.md)
 </dt> </dl>
 
  

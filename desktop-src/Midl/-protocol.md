@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9770fa94d010e21dcbd2a5574a0cffe29273a23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 555482677afff83d9f52e06c7b8e445504d222c8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887380"
 ---
 # <a name="protocol-switch"></a>comutador/Protocol
 
@@ -71,7 +71,7 @@ O stub gerado dá suporte a todos os protocolos disponíveis para um determinado
 
 ## <a name="remarks"></a>Comentários
 
-O RPC realiza marshaling e desempacota os dados de acordo com um protocolo de fio estrito, também chamado de sintaxe de transferência, que define a representação de transmissão de dados, como a ordem na qual os membros de dados são empacotados, o alinhamento dos dados na transmissão, informações adicionais incluídas nos dados, entre outros. O Microsoft RPC é compatível com o protocolo NDR do uso DCE (representação de dados de rede). Na versão de 64 bits do Windows XP, a Microsoft apresenta um NDR64 de protocolo experimental que é otimizado para transferir dados de 64 bits. NDR64 não é compatível com versões anteriores com o protocolo DCE.
+O RPC realiza marshaling e desempacota os dados de acordo com um protocolo de fio estrito, também chamado de sintaxe de transferência, que define a representação de transmissão de dados, como a ordem na qual os membros de dados são empacotados, o alinhamento dos dados na transmissão, informações adicionais incluídas nos dados, entre outros. O Microsoft RPC é compatível com o protocolo NDR do uso DCE (representação de dados de rede). na versão de 64 bits do Windows XP, a Microsoft apresenta um NDR64 de protocolo experimental que é otimizado para transferir dados de 64 bits. NDR64 não é compatível com versões anteriores com o protocolo DCE.
 
 O protocolo **DCE** é compatível com a sintaxe de transferência NDR do uso DCE. Esse protocolo é otimizado para transferir dados de 32 bits.
 
@@ -87,12 +87,12 @@ A opção **All** cria um stub que pode usar qualquer protocolo disponível. Par
 
 <dl> <dt>
 
-[**/<system>**](-system-.md)
+[**/&lt;sistema&gt;**](-system-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

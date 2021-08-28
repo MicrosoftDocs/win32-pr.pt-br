@@ -34,12 +34,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d25137c9e976d05bd065837fed7753e26e3afdae020499b3388948e11733fd77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d405e33b7d84d3a5a58dc9a13d5c070c47a6536
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252520"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467213"
 ---
 # <a name="jet_snt-enumeration"></a>JET_SNT enumeração
 
@@ -63,48 +63,15 @@ public enum JET_SNT
 
 ## <a name="members"></a>Membros
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nome do membro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Começar</td>
-<td>Retorno de chamada para o início de uma operação.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Progresso</td>
-<td>Retorno de chamada para o progresso da operação.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Concluir</td>
-<td>Retorno de chamada para a conclusão de uma operação.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Falha</td>
-<td>Retorno de chamada para falha durante a operação.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>RecoveryStep</td>
-<td>Retorno de chamada para controle de recuperação.
-<p>Usado para processamento interno em versões do sistema operacional Windows anterior ao Windows 8. Esse valor não é aplicável a versões do Windows começando com Windows 8.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nome do membro | Descrição | 
+|--|-------------|-------------|
+|  | Começar | Retorno de chamada para o início de uma operação. | 
+|  | Progresso | Retorno de chamada para o progresso da operação. | 
+|  | Concluir | Retorno de chamada para a conclusão de uma operação. | 
+|  | Falha | Retorno de chamada para falha durante a operação. | 
+|  | RecoveryStep | Retorno de chamada para controle de recuperação.<p>Usado para processamento interno em versões do sistema operacional Windows anterior ao Windows 8. Esse valor não é aplicável a versões do Windows a partir do Windows 8.</p> | 
+
 
 
 ## <a name="see-also"></a>Confira também

@@ -1,5 +1,5 @@
 ---
-description: Solicitação para atualizar o conteúdo de um objeto .
+description: Solicitação de atualização do conteúdo de um objeto.
 MS-HAID: vspixengine.IUpdateObject
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 88b25f482e0c7ade78d30dcd1a35c72317ed8c44ed1a4b233dd3fc7e2a46c51d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6cc365c77fcd7af8fd1c2a94cab6478aca9d11c4
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119670986"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786333"
 ---
 # <a name="span-idvspixengineiupdateobjectspaniupdateobject-interface"></a><span id="vspixengine.iupdateobject"></span>Interface IUpdateObject
 
-Solicitação para atualizar o conteúdo de um objeto .
+Solicitação de atualização do conteúdo de um objeto.
 
 ## <a name="members"></a>Membros
 
-A interface **IUpdateObject** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IUpdateObject** também tem estes tipos de membros:
+A interface **IUpdateObject** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IUpdateObject** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IUpdateObject** herda da interface [**IUnknown.**](/windows/deskto
 
 A interface **IUpdateObject** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iupdateobject-updateobject-uint-dword-byte-arr-iupdateobjectcallback-ptr"><strong>UpdateObject</strong></a></td><td style="text-align: left;"><p>Uma solicitação para atualizar o estado inicial de um objeto; por exemplo, uma textura ou sombreador.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iupdateobject-updateobject-uint-dword-byte-arr-iupdateobjectcallback-ptr"><strong>UpdateObject</strong></a></td><td ><p>Uma solicitação para atualizar o estado inicial de um objeto; por exemplo, uma textura ou sombreador.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

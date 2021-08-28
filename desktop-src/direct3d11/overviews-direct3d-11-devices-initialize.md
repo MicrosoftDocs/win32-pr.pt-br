@@ -4,22 +4,22 @@ description: Este tópico mostra como inicializar um dispositivo.
 ms.assetid: 02a20ada-b3aa-435e-8d66-117a19222f9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 530f2b9cbc77f5404b4e9e8973d326a8708d6436
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 546bee6631816beb699f282a3b4f46bbbc142afc
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007578"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786762"
 ---
-# <a name="how-to-create-a-device-and-immediate-context"></a>Como: criar um dispositivo e um contexto imediato
+# <a name="how-to-create-a-device-and-immediate-context"></a>Como criar um dispositivo e um contexto imediato
 
-Este tópico mostra como inicializar um [dispositivo](overviews-direct3d-11-devices-intro.md). Inicializar um [dispositivo](overviews-direct3d-11-devices-intro.md) é uma das primeiras tarefas que seu aplicativo deve concluir antes de você poder renderizar sua cena.
+Este tópico mostra como inicializar um [dispositivo](overviews-direct3d-11-devices-intro.md). Inicializar um [dispositivo](overviews-direct3d-11-devices-intro.md) é uma das primeiras tarefas que seu aplicativo deve concluir antes de renderizar sua cena.
 
 **Para criar um dispositivo e um contexto imediato**
 
-Preencha a estrutura [**\_ desc da \_ cadeia \_ de permuta dxgi**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) com informações sobre formatos e dimensões de buffer. Para obter mais informações, consulte criando uma cadeia de permuta.
+Preencha a estrutura [**DXGI \_ SWAP \_ CHAIN \_ DESC**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) com informações sobre formatos de buffer e dimensões. Para obter mais informações, consulte Criando uma cadeia de permuta.
 
-O exemplo de código a seguir demonstra como preencher a [**estrutura \_ \_ \_ desc da cadeia de permuta dxgi**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) .
+O exemplo de código a seguir demonstra como preencher a estrutura [**DXGI \_ SWAP \_ CHAIN \_ DESC.**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)
 
 
 ```
@@ -40,7 +40,7 @@ sd.Windowed = TRUE;
 
 
 
-Usando a [**estrutura \_ \_ \_ desc da cadeia de permuta dxgi**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) da etapa 1, chame [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) para inicializar o dispositivo e a cadeia de troca ao mesmo tempo.
+Usando a estrutura [**\_ DXGI SWAP CHAIN \_ \_ DESC**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) da etapa um, chame [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) para inicializar o dispositivo e trocar a cadeia ao mesmo tempo.
 
 
 ```
@@ -68,13 +68,13 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 
 
 > [!Note]  
-> Se você solicitar um dispositivo de [**nível de recurso do D3D de \_ \_ \_ 11 \_ 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) em um computador com apenas o tempo de execução do Direct3D 11,0, o [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) será imediatamente fechado com **E \_ INVALIDARG**. Para solicitar com segurança todos os níveis de recursos possíveis em um computador com o tempo de execução do DirectX 11,0 ou DirectX 11,1, use este código:
+> Se você solicitar um dispositivo [**D3D \_ FEATURE \_ LEVEL \_ \_ 11 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) em um computador com apenas o runtime direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) sairá imediatamente com **E \_ INVALIDARG.** Para solicitar com segurança todos os níveis de recursos possíveis em um computador com o runtime directX 11.0 ou DirectX 11.1, use este código:
 >
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <tbody>
 > <tr class="odd">
@@ -98,17 +98,16 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 >     return hr;</code></pre></td>
 > </tr>
 > </tbody>
-> </table> 
+> </table>
+>  
 >
->  
+> Crie uma exibição de destino de renderização chamando [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e a bind o back-buffer como um destino de renderização chamando [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
 >
-> Crie uma exibição de destino de renderização chamando [**ID3D11Device:: CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e associe o buffer de fundo como um destino de renderização chamando [**ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
->
-> <span codelanguage=""></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <tbody>
 > <tr class="odd">
@@ -128,13 +127,13 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 > </tbody>
 > </table> 
 >
-> Crie um visor para definir quais partes do destino de renderização ficarão visíveis. Defina o visor usando a estrutura do [**\_ visor D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e defina o visor usando o método [**ID3D11DeviceContext:: RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) .
+> Crie um viewport para definir quais partes do destino de renderização estarão visíveis. Defina o viewport usando a estrutura [**D3D11 \_ VIEWPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e defina o viewport usando o [**método ID3D11DeviceContext::RSSetViewports.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports)
 >
-> <span codelanguage="ManagedCPlusPlus"></span>
+> 
 >
 > <table>
 > <colgroup>
-> <col style="width: 100%" />
+> <col  />
 > </colgroup>
 > <thead>
 > <tr class="header">
@@ -166,7 +165,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 [Como usar o Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 >
->  
+>  
 >
->  
+>  
 >

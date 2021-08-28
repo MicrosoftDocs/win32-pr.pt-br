@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.wowLevel
-description: O atributo wowLevel especifica ou recupera o nível de efeito de WOW do SRS.
+description: O atributo wowLevel especifica ou recupera o nível de Efeito WOW do SRS.
 ms.assetid: 8f99d7e1-39b9-42be-ab6d-8435ba7022fa
 keywords:
-- EQUALIZERSETTINGS. wowLevel Windows Media Player
+- EQUALIZERSETTINGS.wowLevel Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41d3994e8242ef6194ee0dbf3e395aa055727b81
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4ceef9ed737018951478baac1c62571e6cf9b2ff8eb6cf8d1bedc78f068aef60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123636"
 ---
 # <a name="equalizersettingswowlevel"></a>EQUALIZERSETTINGS.wowLevel
 
-O atributo **wowLevel** especifica ou recupera o nível de efeito de wow do SRS.
+O **atributo wowLevel** especifica ou recupera o nível de Efeito WOW do SRS.
 
 ``` syntax
         elementID.wowLevel
@@ -29,11 +29,11 @@ O atributo **wowLevel** especifica ou recupera o nível de efeito de wow do SRS.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**) que varia de 0 a 100 com um valor padrão de 50.
+Esse atributo é um número de leitura/gravação **(** **longo**) que varia de 0 a 100 com um valor padrão de 50.
 
 ## <a name="remarks"></a>Comentários
 
-O efeito do SRS WOW é um efeito de melhoria de áudio. Esse atributo será ignorado se **enhancedAudio** estiver definido como false.
+O efeito WOW do SRS é um efeito de melhoria de áudio. Esse atributo será ignorado se **enhancedAudio** for definido como false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ O efeito do SRS WOW é um efeito de melhoria de áudio. Esse atributo será igno
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

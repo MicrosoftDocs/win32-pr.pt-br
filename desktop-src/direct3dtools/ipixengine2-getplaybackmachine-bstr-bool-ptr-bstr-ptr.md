@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c572d1a87fb537fd53a7f3e8f8048d1046980b20
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 749ba6a4123c6854ff0816de2fe93638b42510af
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812223"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628182"
 ---
 # <a name="span-idvspixengineipixengine2_getplaybackmachine_bstr_bool_ptr_bstr_ptrspanipixengine2getplaybackmachine-method"></a><span id="vspixengine.ipixengine2_getplaybackmachine_bstr_bool_ptr_bstr_ptr"></span>Método IPixEngine2:: GetPlaybackMachine
 
@@ -50,15 +50,15 @@ Em retorno, true se a conexão usar autenticação; caso contrário, false.
 *pMachine*   
 No retorno, uma cadeia de caracteres COM que contém o nome da máquina de reprodução.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IPixEngine2**](/windows/desktop/direct3dtools/ipixengine2)
 

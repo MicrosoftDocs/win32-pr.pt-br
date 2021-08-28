@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 214842c732b60cf539a532c43755d4bd298fccc4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 68d9d83d15ad8f05a7c842a881efd87e127e9509
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103920057"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622892"
 ---
 # <a name="span-idvspixengineitexturerequestspanitexturerequest-interface"></a><span id="vspixengine.itexturerequest"></span>Interface ITextureRequest
 
@@ -38,13 +38,13 @@ A interface **ITextureRequest** herda da interface [**IUnknown**](/windows/deskt
 
 A interface **ITextureRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itexturerequest-requestasync-eventid-dword-bstr-itexturecallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitações para obter o conteúdo de uma textura como um. Arquivo DDS (superfície do DirectDraw).</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itexturerequest-requestasync-eventid-dword-bstr-itexturecallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitações para obter o conteúdo de uma textura como um. Arquivo DDS (superfície do DirectDraw).</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo channelType
+title: Tipo complexo ChannelType
 description: Define um canal para o qual os provedores podem registrar eventos.
 ms.assetid: 882506e5-222b-45c8-af4b-59db8baa1dae
 keywords:
-- EventLog tipo complexo de channelType
+- Tipo complexo ChannelType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81158306285631748830d8aaaaf9cf329d7c0af1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b780d68d419fa29d5ee13995f1b66a412fc89323
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455622"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627962"
 ---
-# <a name="channeltype-complex-type"></a>Tipo complexo channelType
+# <a name="channeltype-complex-type"></a>Tipo complexo ChannelType
 
 Define um canal para o qual os provedores podem registrar eventos.
 
@@ -84,8 +84,8 @@ Define um canal para o qual os provedores podem registrar eventos.
 
 | Elemento                                                                  | Type                                                                                   | Descrição                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**logout**](eventmanifestschema-logging-channeltype-element.md)       | [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md)       | Define as propriedades do arquivo de log que faz o backup do canal, como sua capacidade e se o arquivo de log é sequencial ou circular.<br/>                                                         |
-| [**editor**](eventmanifestschema-publishing-channeltype-element.md) | [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) | Define as propriedades de log para a sessão que o canal usa. Somente canais de depuração e de análise e canais que usam o isolamento personalizado podem especificar propriedades de log para sua sessão.<br/> |
+| [**Log**](eventmanifestschema-logging-channeltype-element.md)       | [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md)       | Define as propriedades do arquivo de log que faz o retorno do canal, como sua capacidade e se o arquivo de log é sequencial ou circular.<br/>                                                         |
+| [**Publicação**](eventmanifestschema-publishing-channeltype-element.md) | [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) | Define as propriedades de log para a sessão que o canal usa. Somente canais e canais de depuração e análise que usam o isolamento personalizado podem especificar propriedades de registro em log para sua sessão.<br/> |
 
 
 
@@ -95,14 +95,14 @@ Define um canal para o qual os provedores podem registrar eventos.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Tipo</th>
+<th>Type</th>
 <th>Descrição</th>
 </tr>
 </thead>
@@ -110,17 +110,17 @@ Define um canal para o qual os provedores podem registrar eventos.
 <tr class="odd">
 <td>access</td>
 <td>string</td>
-<td>Um descritor de acesso SDDL ( <a href="/windows/desktop/SecAuthZ/security-descriptor-definition-language">linguagem de definição de descritor de segurança</a> ) que controla o acesso ao arquivo de log que faz o backup do canal. Se o atributo de <strong>isolamento</strong> estiver definido como aplicativo ou sistema, o descritor de acesso controlará o acesso de leitura ao arquivo (as permissões de gravação serão ignoradas). Se o atributo de <strong>isolamento</strong> for definido como personalizado, o descritor de acesso controlará o acesso de gravação ao canal e o acesso de leitura ao arquivo.<br/></td>
+<td>Um <a href="/windows/desktop/SecAuthZ/security-descriptor-definition-language">descritor de</a> acesso SDDL (Linguagem de Definição do Descritor de Segurança) que controla o acesso ao arquivo de log que faz o back-back do canal. Se o <strong>atributo de</strong> isolamento for definido como Aplicativo ou Sistema, o descritor de acesso controlará o acesso de leitura ao arquivo (as permissões de gravação serão ignoradas). Se o <strong>atributo de</strong> isolamento for definido como Personalizado, o descritor de acesso controlará o acesso de gravação ao canal e o acesso de leitura ao arquivo.<br/></td>
 </tr>
 <tr class="even">
 <td>chid</td>
 <td>token</td>
-<td>Um identificador que identifica exclusivamente o canal na lista de canais que o provedor define ou importa. Use esse valor ao referenciar o canal em um evento. Se você não especificar um identificador de canal, use o nome do canal para fazer referência a esse canal em uma definição de evento.<br/></td>
+<td>Um identificador que identifica exclusivamente o canal na lista de canais que o provedor define ou importa. Use esse valor ao referenciar o canal em um evento. Se você não especificar um identificador de canal, use o nome do canal para referenciar esse canal em uma definição de evento.<br/></td>
 </tr>
 <tr class="odd">
 <td>Habilitado</td>
 <td>booleano</td>
-<td>Determina se o canal está habilitado. Defina como <strong>true</strong> para permitir o registro em log do canal; caso contrário, <strong>false</strong>. O padrão é <strong>false</strong> (o registro em log está desabilitado).<br/> Como os tipos de canal de depuração e de análise são canais de alto volume, você deve habilitar o canal somente ao investigar um problema com um componente que grava nesse canal; caso contrário, o canal deve permanecer desabilitado.<br/> Cada vez que você habilita um canal de depuração e analítica, o serviço limpa os eventos do canal.<br/></td>
+<td>Determina se o canal está habilitado. Definido como <strong>true para</strong> permitir o registro em log no canal; caso contrário, <strong>false.</strong> O padrão é <strong>false</strong> (o log está desabilitado).<br/> Como os tipos de canal de Depuração e Análise são canais de alto volume, você deve habilitar o canal somente ao investigar um problema com um componente que grava nesse canal; caso contrário, o canal deverá permanecer desabilitado.<br/> Cada vez que você habilita um canal de Depuração e Análise, o serviço limpa os eventos do canal.<br/></td>
 </tr>
 <tr class="even">
 <td>isolamento</td>
@@ -131,10 +131,10 @@ Define um canal para o qual os provedores podem registrar eventos.
 <li><strong>System</strong></li>
 <li><strong>Personalizado</strong></li>
 </ul>
-O isolamento padrão é <strong>aplicativo</strong>. As permissões padrão para o <strong>aplicativo</strong> são (mostradas usando SDDL): <br/> <span data-codelanguage="Text"></span>
+O isolamento padrão é <strong>Application</strong>. As permissões padrão para Application <strong>são</strong> (mostradas usando SDDL): <br/> <span data-codelanguage="Text"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -156,12 +156,12 @@ O isolamento padrão é <strong>aplicativo</strong>. As permissões padrão para
 </tbody>
 </table>
 
-<p>As permissões padrão para <strong>System</strong> são (mostradas usando SDDL):</p>
+<p>As permissões padrão para <strong>System são</strong> (mostradas usando SDDL):</p>
 <div class="code">
 <span data-codelanguage="Text"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -185,27 +185,27 @@ O isolamento padrão é <strong>aplicativo</strong>. As permissões padrão para
 </table>
 
 </div>
-<p>As permissões padrão para isolamento <strong>personalizado</strong> são as mesmas do aplicativo.</p>
-<p>Os canais que especificam o isolamento de <strong>aplicativo</strong> usam a mesma sessão de ETW. O mesmo é verdadeiro para o isolamento do <strong>sistema</strong> . No entanto, se você especificar o isolamento <strong>personalizado</strong> , o serviço criará uma sessão ETW separada para o canal. Usar o isolamento <strong>personalizado</strong> permite controlar as permissões de acesso para o canal e o arquivo de backup. Como há apenas 64 sessões de ETW disponíveis, você deve limitar o uso de isolamento <strong>personalizado</strong> .</p></td>
+<p>As permissões padrão para <strong>Isolamento</strong> personalizado são as mesmas que Application.</p>
+<p>Os canais que <strong>especificam o isolamento</strong> do aplicativo usam a mesma sessão ETW. O mesmo é verdadeiro para o <strong>isolamento do</strong> sistema. No entanto, se você especificar <strong>Isolamento</strong> personalizado, o serviço criará uma sessão ETW separada para o canal. Usar <strong>o</strong> isolamento personalizado permite controlar as permissões de acesso para o canal e o arquivo de backing. Como há apenas 64 sessões ETW disponíveis, você deve limitar o uso do <strong>Isolamento</strong> personalizado.</p></td>
 </tr>
 <tr class="odd">
 <td>message</td>
 <td>string</td>
-<td><p>O nome de exibição localizado para o canal. A cadeia de caracteres de mensagem faz referência a uma cadeia de caracteres localizada na seção <a href="eventmanifestschema-stringtable-resources-element.md"><strong>STRINGTABLE</strong></a> do manifesto.</p></td>
+<td><p>O nome de exibição localizado para o canal. A cadeia de caracteres de mensagem faz referência a uma cadeia de caracteres localizada na seção <a href="eventmanifestschema-stringtable-resources-element.md"><strong>stringTable</strong></a> do manifesto.</p></td>
 </tr>
 <tr class="even">
 <td>name</td>
 <td>anyURI</td>
-<td><p>O nome do canal. O nome deve ser exclusivo na lista de canais que o provedor usa. A Convenção de nomenclatura de canais é acrescentar o tipo de canal ao nome do provedor. Por exemplo. Se o nome do provedor for empresa-produto-componente e você estiver definindo um canal operacional, o nome será empresa-produto-componente/operacional.</p>
-<p>Os nomes de canal devem ter menos de 255 caracteres e não podem conter os seguintes caracteres: ' > ', '<', '&', '&quot;', '|', '\', ':', '`', '?', '*', or characters with codes less than 31.</p></td>
+<td><p>O nome do canal. O nome deve ser exclusivo na lista de canais que o provedor usa. A convenção para nomear canais é anexar o tipo de canal ao nome do provedor. Por exemplo. se o nome do provedor for Company-Product-Component e você estiver definindo um canal operacional, o nome será Company-Product-Component/Operational.</p>
+<p>Os nomes de canal devem ter menos de 255 caracteres e não podem conter os seguintes caracteres: '>', '<', '&', '&quot;', '|', '\', ':', '`', '?', '*', or characters with codes less than 31.</p></td>
 </tr>
 <tr class="odd">
 <td>símbolo</td>
 <td><a href="eventmanifestschema-csymboltype-simpletype.md"><strong>CSymbolType</strong></a></td>
-<td><p>O símbolo a ser usado para referenciar o canal em seu aplicativo. O <a href="message-compiler--mc-exe-.md"><strong>compilador de mensagem (MC.exe)</strong></a> usa o símbolo para criar uma constante para o canal no arquivo de cabeçalho que o compilador gera. Se você não especificar um símbolo, o compilador gerará o nome para você.</p></td>
+<td><p>O símbolo a ser usado para referenciar o canal em seu aplicativo. O <a href="message-compiler--mc-exe-.md"><strong>compilador de mensagem (MC.exe)</strong></a> usa o símbolo para criar uma constante para o canal no arquivo de header que o compilador gera. Se você não especificar um símbolo, o compilador gerará o nome para você.</p></td>
 </tr>
 <tr class="even">
-<td>tipo</td>
+<td>type</td>
 <td>string</td>
 <td><p>Identifica o tipo do canal. Você pode especificar um dos seguintes tipos:</p>
 <ul>
@@ -214,17 +214,17 @@ O isolamento padrão é <strong>aplicativo</strong>. As permissões padrão para
 <li><strong>Analítico</strong></li>
 <li><strong>Depurar</strong></li>
 </ul>
-<p>Os canais de tipo de administrador dão suporte a eventos que visam usuários finais, administradores e equipe de suporte. Os eventos gravados nos canais de administração devem ter uma solução bem definida na qual o administrador possa agir. Um exemplo de um evento de administrador é um evento que ocorre quando um aplicativo não consegue se conectar a uma impressora. Esses eventos são bem documentados ou têm uma mensagem associada a eles que fornecem instruções de leitura direta sobre o que deve ser feito para retificar o problema.</p>
-<p>Os canais de tipo operacional dão suporte a eventos que são usados para analisar e diagnosticar um problema ou ocorrência. Eles podem ser usados para disparar ferramentas ou tarefas com base no problema ou na ocorrência. Um exemplo de evento operacional é um evento que ocorre quando uma impressora é adicionada ou removida de um sistema.</p>
-<p>Os canais de tipo analítico dão suporte a eventos que são publicados em alto volume. Eles descrevem a operação do programa e indicam os problemas que não podem ser tratados por intervenção do usuário.</p>
-<p>Os canais de tipo de depuração dão suporte a eventos que são usados exclusivamente por desenvolvedores para diagnosticar um problema de depuração.</p>
-<p>Os canais analíticos e de depuração são desabilitados por padrão e só devem ser habilitados para determinar a causa de um problema. Por exemplo, você deve habilitar o canal, executar o cenário que está causando o problema, desabilitar o canal e, em seguida, consultar os eventos. Observe que a habilitação do canal limpa o canal de eventos existentes. Se o canal analítico e de depuração usar um arquivo de backup circular, você deverá desabilitar o canal para consultar seus eventos.</p>
-<p>Todos os canais de administração usam a mesma sessão de ETW; o mesmo é verdadeiro para canais operacionais. No entanto, cada canal analítico e de depuração usa uma sessão ETW separada, que é outro motivo para habilitar esses tipos de canal apenas quando necessário (há um número limitado de sessões de ETW disponíveis).</p></td>
+<p>Os canais de tipo de administrador suportam eventos destinados a usuários finais, administradores e pessoal de suporte. Os eventos gravados nos canais de administrador devem ter uma solução bem definida na qual o administrador pode agir. Um exemplo de evento de administrador é um evento que ocorre quando um aplicativo falha ao se conectar a uma impressora. Esses eventos são bem documentados ou têm uma mensagem associada a eles que fornece ao leitor instruções diretas sobre o que deve ser feito para corrigir o problema.</p>
+<p>Os canais de tipo operacional suportam eventos que são usados para analisar e diagnosticar um problema ou ocorrência. Eles podem ser usados para disparar ferramentas ou tarefas com base no problema ou na ocorrência. Um exemplo de evento operacional é um evento que ocorre quando uma impressora é adicionada ou removida de um sistema.</p>
+<p>Os canais de tipo de análise suportam eventos publicados em alto volume. Eles descrevem a operação do programa e indicam os problemas que não podem ser tratados por intervenção do usuário.</p>
+<p>Os canais de tipo de depuração suportam eventos que são usados exclusivamente pelos desenvolvedores para diagnosticar um problema para depuração.</p>
+<p>Os canais de análise e depuração são desabilitados por padrão e só devem ser habilitados para determinar a causa de um problema. Por exemplo, você habilitaria o canal, executaria o cenário que está causando o problema, desabilitaria o canal e, em seguida, consultaria os eventos. Observe que a habilitação do canal limpa o canal de eventos existentes. Se o canal de análise e depuração usar um arquivo de backing circular, você deverá desabilitar o canal para consultar seus eventos.</p>
+<p>Todos os canais de administrador usam a mesma sessão ETW; o mesmo é verdadeiro para canais operacionais. No entanto, cada canal de análise e depuração usa uma sessão ETW separada, que é outro motivo para habilitar apenas esses tipos de canal quando necessário (há um número limitado de sessões ETW disponíveis).</p></td>
 </tr>
 <tr class="odd">
 <td>value</td>
 <td><a href="eventmanifestschema-hexint8type-simpletype.md"><strong>UInt8Type</strong></a></td>
-<td><p>Um identificador numérico que identifica exclusivamente o canal dentro da lista de canais que o provedor define. O compilador de mensagem atribui o valor, se não for especificado.</p></td>
+<td><p>Um identificador numérico que identifica exclusivamente o canal dentro da lista de canais que o provedor define. O compilador de mensagem atribuirá o valor se não for especificado.</p></td>
 </tr>
 </tbody>
 </table>
@@ -233,7 +233,7 @@ O isolamento padrão é <strong>aplicativo</strong>. As permissões padrão para
 
 ## <a name="remarks"></a>Comentários
 
-Se o nome do canal seguir a Convenção de nomenclatura de canal, o Visualizador de Eventos do Windows listará o canal usando a cadeia de caracteres que segue a barra invertida. Por exemplo, se o nome do canal for empresa-produto-componente/operacional, a Visualizador de Eventos listará o canal como operacional no provedor da empresa-produto-componente. Caso contrário, o nome inteiro do canal será mostrado no provedor. O nome de exibição localizado é usado, se fornecido.
+se o nome do canal seguir a convenção de nomenclatura de canal, o Windows Visualizador de Eventos listará o canal usando a cadeia de caracteres que segue a barra invertida. Por exemplo, se o nome do canal for empresa-produto-componente/operacional, a Visualizador de Eventos listará o canal como operacional no provedor da empresa-produto-componente. Caso contrário, o nome inteiro do canal será mostrado no provedor. O nome de exibição localizado é usado, se fornecido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -241,8 +241,8 @@ Se o nome do canal seguir a Convenção de nomenclatura de canal, o Visualizador
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

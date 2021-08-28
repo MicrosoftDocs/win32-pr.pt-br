@@ -4,21 +4,21 @@ description: Atributo FocusSize de VML
 ms.assetid: 6ca5af2c-3064-423f-a7bb-202f23bf95da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8149973932e9601be2caa0306eefcec08951b238
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 322bea9f9d78ff76cd631cc36149939bb5b3db5f87dc9c80e9f2a5100f031c1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099256"
 ---
 # <a name="vml-focussize-attribute"></a>Atributo FocusSize de VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define o tamanho do foco para preenchimentos radiais. Leitura/gravação. **VgVector2D**.
 
@@ -60,6 +60,6 @@ O preenchimento radial criará uma mistura começando no centro como azul e fica
 
 
 
- 
+ 
 
- 
+ 

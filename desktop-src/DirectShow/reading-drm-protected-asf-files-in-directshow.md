@@ -4,12 +4,12 @@ ms.assetid: a014942a-01e5-49d4-8a25-4604cd40f374
 title: Lendo DRM-Protected arquivos ASF no DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46eaafe96b00019e7c4e69741c251bc0079c459d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 178dc0dbaa9a8b8e2e849164106816afc6990c89
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466573"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786962"
 ---
 # <a name="reading-drm-protected-asf-files-in-directshow"></a>Lendo DRM-Protected arquivos ASF no DirectShow
 
@@ -52,7 +52,7 @@ Para fornecer a chave de software, execute as seguintes etapas:
 2.  Implemente a interface **IServiceProvider.**
 3.  Consulte a interface Filter Graph Manager para a interface [**IObjectWithSite.**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite)
 4.  Chame [**IObjectWithSite::SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) com um ponteiro para sua implementação **de IServiceProvider.**
-5.  O Gerenciador Graph Filtro chamará **IServiceProvider::QueryService**, especificando **\_ IID IWMReader** para o identificador de serviço.
+5.  O Gerenciador Graph Filtro chamará **IServiceProvider::QueryService**, especificando **IID \_ IWMReader** para o identificador de serviço.
 6.  Em sua implementação de **QueryService,** chame [**WMCreateCertificate**](/previous-versions/windows/desktop/legacy/dd757745(v=vs.85)) para criar a chave de software.
 
 O código a seguir mostra como implementar o **método QueryService:**
@@ -85,7 +85,7 @@ STDMETHODIMP Player::QueryService(REFIID siid, REFIID riid, void **ppv)
 
 
 
-O código a seguir mostra como chamar [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) no Gerenciador de Graph Filter:
+O código a seguir mostra como chamar [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) no Gerenciador de Graph Filtro:
 
 
 ```C++
@@ -195,7 +195,7 @@ HRESULT Player::LoadMediaFile(PCWSTR pwszFile)
             hr = m_pFileSource->Load(pwszFile, NULL);
 ```
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 
 | C++ | 

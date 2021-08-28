@@ -1,9 +1,9 @@
 ---
-title: Mensagem de DTM_SETSYSTEMTIME (commctrl. h)
-description: Define a hora em um controle DTP (data and time Picker). Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetSystemTime DateTime.
+title: DTM_SETSYSTEMTIME mensagem (Commctrl.h)
+description: Define a hora em um controle DTP (selador de data e hora). Você pode enviar essa mensagem explicitamente ou usar a macro DateTime \_ SetSystemtime.
 ms.assetid: aab023ac-22ef-485b-be2f-2aa76dfcf57f
 keywords:
-- Controles de DTM_SETSYSTEMTIME de mensagens do Windows
+- DTM_SETSYSTEMTIME controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b2a3c625ad4ff02bed138a8086ca0da984de35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5acd0c6a09e3fc7bd9d068e27049329f3289a8ba1968ffae4592c7e07db9f2eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088966"
 ---
-# <a name="dtm_setsystemtime-message"></a>DTM de \_ mensagens
+# <a name="dtm_setsystemtime-message"></a>Mensagem DTM \_ SETSYSTEMTIME
 
-Define a hora em um controle DTP (data and time Picker). Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ SetSystemTime DateTime**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setsystemtime) .
+Define a hora em um controle DTP (selador de data e hora). Você pode enviar essa mensagem explicitamente ou usar a [**macro DateTime \_ SetSystemtime.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setsystemtime)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -38,8 +38,8 @@ Um valor que especifica a ação que deve ser executada. Esse valor deve ser def
 
 | Valor                                                                                                                                             | Significado                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GDT_VALID"></span><span id="gdt_valid"></span><dl> <dt>**GDT \_ válida**</dt> </dl> | Defina o controle DTP de acordo com os dados dentro da estrutura que os *lParam* apontam. <br/>                                                                                                                                                                 |
-| <span id="GDT_NONE"></span><span id="gdt_none"></span><dl> <dt>**GDT \_ None**</dt> </dl>    | Defina o controle DTP como "sem data" e desmarque sua caixa de seleção. Quando esse sinalizador é especificado, *lParam* é ignorado. Esse sinalizador se aplica somente a controles DTP que são definidos para o estilo [**DTS \_ All None**](date-and-time-picker-control-styles.md) . <br/> |
+| <span id="GDT_VALID"></span><span id="gdt_valid"></span><dl> <dt>**GDT \_ VALID**</dt> </dl> | Definir o controle DTP de acordo com os dados dentro da estrutura para a que *lParam* aponta. <br/>                                                                                                                                                                 |
+| <span id="GDT_NONE"></span><span id="gdt_none"></span><dl> <dt>**GDT \_ NONE**</dt> </dl>    | Des marque o controle DTP como "sem data" e des marque a caixa de seleção. Quando esse sinalizador é especificado, *lParam* é ignorado. Esse sinalizador se aplica somente a controles DTP definidos com o [**estilo DTS \_ SHOWNONE.**](date-and-time-picker-control-styles.md) <br/> |
 
 
 
@@ -50,13 +50,13 @@ Um valor que especifica a ação que deve ser executada. Esse valor deve ser def
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contém a hora do sistema usada para definir o controle DTP.
+Um ponteiro para uma [**estrutura SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contém o tempo do sistema usado para definir o controle DTP.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

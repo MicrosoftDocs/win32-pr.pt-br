@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 396b82b9bfc767fc73615a59a4d1e8577c5afb14a7a95f25298e33465174306d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee77cc9c21185bc296fe370f3c353e1540c66db1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722204"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621952"
 ---
 # <a name="span-idvspixengineigenericbufferdatacallbackspanigenericbufferdatacallback-interface"></a><span id="vspixengine.igenericbufferdatacallback"></span>Interface IGenericBufferDataCallback
 
@@ -34,17 +34,17 @@ A interface **IGenericBufferDataCallback** herda da interface [**IUnknown**](/wi
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IGenericBufferDataCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/igenericbufferdatacallback-resultcallback-dword-byte-arr-bstr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host de informações de buffer genéricas retornadas pela solicitação assocaited.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/igenericbufferdatacallback-resultcallback-dword-byte-arr-bstr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host de informações de buffer genéricas retornadas pela solicitação assocaited.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

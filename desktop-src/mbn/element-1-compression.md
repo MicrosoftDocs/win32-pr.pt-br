@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ Compactação (v4)
+description: ModemDMConfigProfile... \/ \/ Compactação (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_Compression
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c3be80fd71504f068da3ab8d40974b6ee397074e1b476e21c1f5f6901235671a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d25f2b1946e55e8a5768c0f599330d26ad5cc6c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035924"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480002"
 ---
-# <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile \/ ... \/ Compactação (v4)
+# <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile... \/ \/ Compactação (v4)
 
-Especifica se a compactação será usada no link de dados para a transferência de dados e de cabeçalho.
+Especifica se a compactação será usada no link de dados para transferência de dados e de título.
 
-Para obter mais informações, consulte a documentação do elemento de [**compactação**](./schema-compression-contexttype-element.md) v1.
+Para obter mais informações, consulte a documentação do elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento de [**compa
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <Compression>
@@ -61,41 +61,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-context.md">Contexto</a></td>
-<td><p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-1-context.md">Contexto</a> | <p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

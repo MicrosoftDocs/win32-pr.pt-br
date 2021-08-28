@@ -1,5 +1,5 @@
 ---
-description: Use os qualificadores definidos nesta seção ao criar sua classe MOF de provedor, classe MOF de evento, classe de tipo de evento MOF e as propriedades da classe MOF de tipo de evento.
+description: Use os qualificadores definidos nesta seção ao criar a classe MOF do provedor, a classe MOF de evento, a classe MOF do tipo de evento e as propriedades da classe MOF do tipo de evento.
 ms.assetid: 3bc82074-05a7-411f-884f-5da1fd08112b
 title: Qualificadores MOF de rastreamento de eventos
 ms.topic: article
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f7b4250b73e84d46a19dab307d0c263ab1cc7782
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 578699b04c5ba2d0f39afb2e8ff5141151bd208b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837211"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628435"
 ---
 # <a name="event-tracing-mof-qualifiers"></a>Qualificadores MOF de rastreamento de eventos
 
-Use os qualificadores definidos nesta seção ao criar sua [classe MOF de provedor](#provider-mof-class-qualifiers), classe [MOF de evento](#event-mof-class-qualifiers), classe de [tipo de evento MOF](#event-type-mof-class-qualifiers)e [as propriedades da classe MOF de tipo de evento](#property-qualifiers). Para obter um exemplo que inclui alguns desses qualificadores, consulte [publicando seu esquema de evento](publishing-your-event-schema.md).
+Use os qualificadores definidos nesta seção ao criar a classe [MOF do](#provider-mof-class-qualifiers)provedor, a classe [MOF de](#event-mof-class-qualifiers)evento , a classe [MOF](#event-type-mof-class-qualifiers)do tipo de evento e as propriedades da classe [MOF do](#property-qualifiers)tipo de evento . Para ver um exemplo que inclui alguns desses qualificadores, consulte [Publicando seu esquema de evento](publishing-your-event-schema.md).
 
 ## <a name="provider-mof-class-qualifiers"></a>Qualificadores de classe MOF do provedor
 
-A tabela a seguir lista os qualificadores que você pode especificar em uma classe MOF de provedor.
+A tabela a seguir lista os qualificadores que você pode especificar em uma classe MOF do provedor.
 
 
 
 | Qualificador | Tipo de dados  | Descrição                                                                                                                                                                                                                                                  |
 |-----------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Volume**  | **Cadeia de caracteres** | Obrigatórios. GUID de cadeia de caracteres que identifica exclusivamente um provedor. Por exemplo, GUID ("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Esse é o mesmo GUID que você usa ao chamar a função [**RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) para registrar seu provedor. |
+| **Guid**  | **Cadeia de caracteres** | Obrigatórios. Guid de cadeia de caracteres que identifica exclusivamente um provedor. Por exemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Esse é o mesmo GUID que você usa ao chamar a [**função RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) para registrar seu provedor. |
 
 
 
@@ -36,27 +36,27 @@ A tabela a seguir lista os qualificadores que você pode especificar em uma clas
 
 ## <a name="event-mof-class-qualifiers"></a>Qualificadores de classe MOF de evento
 
-A tabela a seguir lista os qualificadores que você pode especificar em uma classe de evento (a classe pai que agrupa as classes de tipo de evento relacionadas).
+A tabela a seguir lista os qualificadores que você pode especificar em uma classe de evento (a classe pai que grupos classes de tipo de evento relacionadas).
 
 | Qualificador        | Tipo de dados   | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Volume**         | **Cadeia de caracteres**  | Obrigatórios. GUID de cadeia de caracteres que identifica uma classe de eventos. Por exemplo, GUID ("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Provedores de eventos usam o GUID para definir [**o \_ cabeçalho de rastreamento de eventos \_ . Membro GUID**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) , para que os consumidores possam determinar a classe de eventos que eles estão recebendo.                                                                                                                                                                                                                                                                                  |
-| **EventVersion** | **Inteiro** | Esse qualificador é opcional para a versão mais recente de uma classe de rastreamento de eventos e é necessário para todas as versões mais antigas da classe. A versão mais recente da classe não especifica o qualificador **EventVersion** ou tem o número de versão mais alto. Os números de versão começam com 0, por exemplo, EventVersion (0). Normalmente, quando você cria uma nova versão da classe, também renomeia a versão anterior para <classname> \_ VN, em que n é um número incremental que começa em 0. Para obter um exemplo, consulte [**FileIO**](fileio.md) e [**FileIO \_ V0**](fileio-v0.md).<br/> |
+| **Guid**         | **Cadeia de caracteres**  | Obrigatórios. Guid de cadeia de caracteres que identifica uma classe de eventos. Por exemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Os provedores de eventos usam o Guid para definir [**o \_ HEADER DE RASTREAMENTO \_ DE EVENTOS. Membro**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) guid, para que os consumidores possam determinar a classe de eventos que estão recebendo.                                                                                                                                                                                                                                                                                  |
+| **EventVersion** | **Inteiro** | Esse qualificador é opcional para a versão mais recente de uma classe de rastreamento de evento e é necessário para todas as versões mais antigas da classe. A versão mais recente da classe não especifica o qualificador **EventVersion** ou tem o número de versão mais alto. Os números de versão começam com 0, por exemplo, EventVersion(0). Normalmente, quando você cria uma nova versão da classe, também renomeia a versão anterior para Vn, em que n é um número incremental começando <classname> \_ em 0. Para ver um exemplo, consulte [**FileIo**](fileio.md) e [**FileIo \_ V0**](fileio-v0.md).<br/> |
 
 
 
  
 
-## <a name="event-type-mof-class-qualifiers"></a>Qualificadores de classe do tipo de evento MOF
+## <a name="event-type-mof-class-qualifiers"></a>Qualificadores de classe MOF do tipo de evento
 
-A tabela a seguir lista os qualificadores que você pode especificar em uma classe de tipo de evento (a classe que define os dados de propriedade de evento).
+A tabela a seguir lista os qualificadores que você pode especificar em uma classe de tipo de evento (a classe que define os dados de propriedade do evento).
 
 
 
 | Qualificador         | Valor       | Descrição                                                                                                                                                                                                                                                                                                                                                                       |
 |-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EventType**     | **Inteiro** | Obrigatórios. Identifica a classe de tipo de evento. Por exemplo, EventType (1). O provedor de eventos usa o mesmo valor de tipo de evento para definir o [**cabeçalho de rastreamento de eventos \_ \_ . Classe. tipo**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header). Se a mesma classe MOF for usada para vários tipos de evento (porque eles usam os mesmos dados de evento), especifique o valor do tipo de evento como uma matriz de inteiros, por exemplo, EventType {12,15} . |
-| **EventTypename** | **Cadeia de caracteres**  | Opcional. Descreve o tipo de evento. Por exemplo, EventTypename ("início"). Se a mesma classe MOF for usada para vários tipos de evento (porque eles usam os mesmos dados de evento), especifique o valor do nome do tipo de evento como uma matriz de cadeias de caracteres, por exemplo, EventTypename {"Start", "End"}. Os elementos da matriz EventTypename correspondem diretamente à matriz EventType.                 |
+| **EventType**     | **Inteiro** | Obrigatórios. Identifica a classe de tipo de evento. Por exemplo, EventType(1). O provedor de eventos usa o mesmo valor de tipo de evento para definir [**EVENT \_ TRACE \_ HEADER. Class.Type**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header). Se a mesma classe MOF for usada para vários tipos de evento (porque eles usam os mesmos dados de evento), especifique o valor do tipo de evento como uma matriz de inteiros, por exemplo, EventType {12,15} . |
+| **EventTypeName** | **Cadeia de caracteres**  | Opcional. Descreve o tipo de evento. Por exemplo, EventTypeName("Start"). Se a mesma classe MOF for usada para vários tipos de evento (porque eles usam os mesmos dados de evento), especifique o valor do nome do tipo de evento como uma matriz de cadeias de caracteres, por exemplo, EventTypeName{"Start", "End"}. Os elementos da matriz EventTypeName correspondem diretamente à matriz EventType.                 |
 
 
 
@@ -64,14 +64,14 @@ A tabela a seguir lista os qualificadores que você pode especificar em uma clas
 
 ## <a name="property-qualifiers"></a>Qualificadores de propriedade
 
-A tabela a seguir lista os qualificadores que você pode especificar em uma propriedade.
+A tabela a seguir lista os qualificadores que você pode especificar em uma propriedade .
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,16 +81,16 @@ A tabela a seguir lista os qualificadores que você pode especificar em uma prop
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>BitMap</strong></td>
-<td>Especifica as posições de bits que são mapeadas para valores de cadeia de caracteres. Se você especificar esse qualificador, também deverá especificar o qualificador <strong>Bitvalues</strong> .</td>
+<td><strong>Bitmap</strong></td>
+<td>Especifica as posições de bit que são mapeados para valores de cadeia de caracteres. Se você especificar esse qualificador, também deverá especificar o <strong>qualificador BitValues.</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Bitvalues</strong></td>
-<td>Valores de cadeia de caracteres. Se o qualificador de <strong>bitmap</strong> também for especificado, as cadeias de caracteres corresponderão diretamente aos valores no qualificador de <strong>bitmap</strong> . Caso contrário, suponha que o valor da propriedade seja um índice baseado em um para as cadeias de caracteres de valor (o bit um corresponde à primeira cadeia de caracteres na lista).</td>
+<td><strong>BitValues</strong></td>
+<td>Valores de cadeia de caracteres. Se o <strong>qualificador BitMap</strong> também for especificado, as cadeias de caracteres corresponderão diretamente aos valores no <strong>qualificador bitMap.</strong> Caso contrário, suponha que o valor da propriedade seja um índice baseado em um nas cadeias de caracteres de valor (bit um corresponde à primeira cadeia de caracteres na lista).</td>
 </tr>
 <tr class="odd">
 <td><strong>Extensão</strong></td>
-<td>Fornece informações adicionais sobre como consumir (interpretar) os dados. O valor da extensão não diferencia maiúsculas de minúsculas. Inclua o valor entre aspas, por exemplo, extensão ( &quot; GUID &quot; ). Os valores de extensão possíveis são: <dl> <dt><span id="Guid"></span><span id="guid"></span><span id="GUID"></span>Volume</dt> <dd> Indica que os dados da propriedade são um GUID. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja uma estrutura de <strong>GUID</strong> .<br/> </dd> <dt><span id="IPAddr_and_IPAddrV4"></span><span id="ipaddr_and_ipaddrv4"></span><span id="IPADDR_AND_IPADDRV4"></span>IPAddr e IPAddrV4</dt> <dd> Os dados são um endereço IP V4. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja um longo não assinado. Cada byte de longo sem sinal representa uma das quatro partes do endereço IP (P1. P2. P3. P4). O byte de ordem inferior contém o valor de P1, o próximo byte contém o valor de P2 e assim por diante.<br/> <strong>Antes do Windows Vista:</strong> Não há suporte para a extensão IPAddrV4.<br/> </dd> <dt><span id="IPAddrV6"></span><span id="ipaddrv6"></span><span id="IPADDRV6"></span>IPAddrV6</dt> <dd> Os dados são um endereço IP v6. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja uma estrutura de <strong>IN6_ADDR</strong> . <br/> <strong>Antes do Windows Vista:</strong> Não há suporte para a extensão IPAddrV6.<br/> </dd> <dt><span id="NoPrint"></span><span id="noprint"></span><span id="NOPRINT"></span>Noprint</dt> <dd> Indica que o consumidor não deve imprimir esses dados.<br/> </dd> <dt><span id="Port"></span><span id="port"></span><span id="PORT"></span>Porto</dt> <dd> Os dados identificam um número de porta. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja uma curta não assinada.<br/> </dd> <dt><span id="RString"></span><span id="rstring"></span><span id="RSTRING"></span>RString</dt> <dd> Os caracteres de nova linha foram substituídos por espaços. Espera-se que a carga seja uma cadeia de caracteres ANSI terminada em nulo.<br/> </dd> <dt><span id="RWString"></span><span id="rwstring"></span><span id="RWSTRING"></span>RWString</dt> <dd> Os caracteres de nova linha foram substituídos por espaços. Espera-se que a carga seja uma cadeia de caracteres largo, terminada em nulo.<br/> </dd> <dt><span id="Sid"></span><span id="sid"></span><span id="SID"></span>SIDs</dt> <dd> Os dados representam um SID de blob binário. O tipo de dados MOF deve ser <strong>Object</strong>. <br/> O SID é de um comprimento variável. O valor contido nos primeiros 4 bytes (<strong>ULONG</strong>) indica se o BLOB contém um Sid. Se os primeiros 4 bytes (<strong>ULONG</strong>) do blob forem diferentes de zero, o blob conterá um Sid. A primeira parte do BLOB contém a TOKEN_USER (a estrutura é alinhada em um limite de 8 bytes) e a segunda parte contém o SID. Para tratar da parte SID do blob:<br/>
+<td>Fornece informações adicionais sobre como consumir (interpretar) os dados. O valor da extensão não faz maiúsculas de minúsculas. Inclua o valor entre aspas, por exemplo, Extensão( &quot; Guid &quot; ). Os valores de extensão possíveis são: <dl> <dt><span id="Guid"></span><span id="guid"></span><span id="GUID"></span>Guid</dt> <dd> Indica que os dados da propriedade são um Guid. O tipo de dados MOF deve ser <strong>o objeto</strong>. Espera-se que o payload seja uma <strong>estrutura GUID.</strong><br/> </dd> <dt><span id="IPAddr_and_IPAddrV4"></span><span id="ipaddr_and_ipaddrv4"></span><span id="IPADDR_AND_IPADDRV4"></span>IPAddr e IPAddrV4</dt> <dd> Os dados são um endereço IP V4. O tipo de dados MOF deve ser <strong>o objeto</strong>. Espera-se que o payload seja um longo sem assinatura. Cada byte do long sem assinatura representa uma das quatro partes do endereço IP (p1.p2.p3.p4). O byte de ordem baixa contém o valor de p1, o próximo byte contém o valor para p2 e assim por diante.<br/> <strong>Antes do Windows Vista:</strong> Não há suporte para a extensão IPAddrV4.<br/> </dd> <dt><span id="IPAddrV6"></span><span id="ipaddrv6"></span><span id="IPADDRV6"></span>IPAddrV6</dt> <dd> Os dados são um endereço IP V6. O tipo de dados MOF deve ser <strong>o objeto</strong>. Espera-se que o payload seja uma <strong>estrutura IN6_ADDR</strong> dados. <br/> <strong>Antes do Windows Vista:</strong> Não há suporte para a extensão IPAddrV6.<br/> </dd> <dt><span id="NoPrint"></span><span id="noprint"></span><span id="NOPRINT"></span>NoPrint</dt> <dd> Indica que o consumidor não deve imprimir esses dados.<br/> </dd> <dt><span id="Port"></span><span id="port"></span><span id="PORT"></span>Porta</dt> <dd> Os dados identificam um número da porta. O tipo de dados MOF deve ser <strong>o objeto</strong>. Espera-se que o payload seja um curto sem assinatura.<br/> </dd> <dt><span id="RString"></span><span id="rstring"></span><span id="RSTRING"></span>RString</dt> <dd> Caracteres de nova linha foram substituídos por espaços. Espera-se que o payload seja uma cadeia de caracteres ANSI terminada em nulo.<br/> </dd> <dt><span id="RWString"></span><span id="rwstring"></span><span id="RWSTRING"></span>RWString</dt> <dd> Caracteres de nova linha foram substituídos por espaços. Espera-se que o payload seja uma cadeia de caracteres largos terminada em nulo.<br/> </dd> <dt><span id="Sid"></span><span id="sid"></span><span id="SID"></span>Sid</dt> <dd> Os dados representam um SID de blob binário. O tipo de dados MOF deve ser <strong>o objeto</strong>. <br/> O SID tem um comprimento variável. O valor contido nos primeiros 4 bytes (<strong>ULONG</strong>) indica se o BLOB contém um Sid. Se os primeiros 4 bytes (<strong>ULONG</strong>) do blob forem diferentes de zero, o blob conterá um Sid. A primeira parte do BLOB contém a TOKEN_USER (a estrutura é alinhada em um limite de 8 bytes) e a segunda parte contém o SID. Para tratar da parte SID do blob:<br/>
 <ul>
 <li>Definir um ponteiro de byte para o início do blob</li>
 <li>Multiplique o tamanho do ponteiro do log de eventos por 2 e adicione o produto ao ponteiro de byte ( <strong>o membro</strong> pointerize de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> contém o valor do tamanho do ponteiro)</li>
@@ -103,7 +103,7 @@ A tabela a seguir lista os qualificadores que você pode especificar em uma prop
 <li>O membro de <strong>ponteiros</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a></li>
 <li>O membro <strong>flags</strong> de <a href="/windows/desktop/api/evntcons/ns-evntcons-event_header"><strong>EVENT_HEADER</strong></a></li>
 </ul>
-<br/> <strong>Antes do Windows Vista:</strong> O valor de <strong>ponteiros</strong> pode não ser preciso. Por exemplo, em um computador de 64 bits, um aplicativo de 32 bits registrará ponteiros de 4 bytes; no entanto, a sessão definirá <strong>ponteiros</strong> para 8.<br/> </dd> <dt><span id="Variant"></span><span id="variant"></span><span id="VARIANT"></span>Variante</dt> <dd> Os dados representam um blob. Os primeiros quatro bytes (UInt32) indicam o tamanho do blob. O tipo de dados MOF deve ser <strong>Object</strong>. <br/> </dd> <dt><span id="WmiTime"></span><span id="wmitime"></span><span id="WMITIME"></span>WmiTime</dt> <dd> Traduz o carimbo de data/hora para a hora do sistema. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja um inteiro de 64 bits sem sinal.<br/> <strong>Antes do Windows Vista:</strong> Não disponível.<br/> </dd> </dl></td>
+<br/> <strong>antes do Windows Vista:</strong> O valor de <strong>ponteiros</strong> pode não ser preciso. Por exemplo, em um computador de 64 bits, um aplicativo de 32 bits registrará ponteiros de 4 bytes; no entanto, a sessão definirá <strong>ponteiros</strong> para 8.<br/> </dd> <dt><span id="Variant"></span><span id="variant"></span><span id="VARIANT"></span>Variante</dt> <dd> Os dados representam um blob. Os primeiros quatro bytes (UInt32) indicam o tamanho do blob. O tipo de dados MOF deve ser <strong>Object</strong>. <br/> </dd> <dt><span id="WmiTime"></span><span id="wmitime"></span><span id="WMITIME"></span>WmiTime</dt> <dd> Traduz o carimbo de data/hora para a hora do sistema. O tipo de dados MOF deve ser <strong>Object</strong>. Espera-se que a carga seja um inteiro de 64 bits sem sinal.<br/> <strong>antes do Windows Vista:</strong> Não disponível.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Formato</strong></td>
@@ -145,7 +145,7 @@ A tabela a seguir lista os qualificadores que você pode especificar em uma prop
 <li>O membro de <strong>ponteiros</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a></li>
 <li>O membro <strong>flags</strong> de <a href="/windows/desktop/api/evntcons/ns-evntcons-event_header"><strong>EVENT_HEADER</strong></a></li>
 </ul>
-<p><strong>Antes do Windows Vista:</strong> O valor de <strong>ponteiros</strong> pode não ser preciso. Por exemplo, em um computador de 64 bits, um aplicativo de 32 bits registrará ponteiros de 4 bytes; no entanto, a sessão definirá <strong>ponteiros</strong> para 8.</p>
+<p><strong>antes do Windows Vista:</strong> O valor de <strong>ponteiros</strong> pode não ser preciso. Por exemplo, em um computador de 64 bits, um aplicativo de 32 bits registrará ponteiros de 4 bytes; no entanto, a sessão definirá <strong>ponteiros</strong> para 8.</p>
 <p>Observe que alguns eventos usam <strong>ponteirotype</strong> em vez de <strong>ponteiro</strong>; Não use <strong>ponteirotype</strong>.</p></td>
 </tr>
 <tr class="even">
@@ -198,9 +198,9 @@ Values {&quot;ValueMapFlag1&quot;, &quot;ValueMapFlag2&quot;, &quot;ValueMapFlag
 
 ## <a name="specifying-level-and-enable-flags-values-for-a-provider"></a>Especificando o nível e habilitam valores de sinalizadores para um provedor
 
-Para documentar o nível e habilitar os sinalizadores que um controlador usaria para habilitar seu provedor, inclua as propriedades "Level" e "Flags" na classe MOF do provedor. Os nomes de propriedade de nível e sinalizadores diferenciam maiúsculas de minúsculas. As propriedades devem incluir os **valores** e qualificadores **ValueMap** , que especificam o nível possível e habilitam os valores de sinalizador. O **ValueMap** para os valores de sinalizador de habilitação deve ser valores bit (Flag). O qualificador **ValueDescriptions** é opcional, mas você deve usá-lo para fornecer descrições para cada valor possível. As descrições são usadas quando alguém chama as funções [**TdhEnumerateProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation) e [**TdhQueryProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation) para obter os valores de nível e habilitar sinalizadores (palavras-chave) possíveis para o provedor.
+Para documentar o nível e habilitar os sinalizadores que um controlador usaria para habilitar seu provedor, inclua as propriedades "Level" e "Flags" na classe MOF do provedor. Os nomes de propriedade de nível e sinalizadores diferenciam maiúsculas de minúsculas. As propriedades devem incluir os **valores** e qualificadores **ValueMap** , que especificam o nível possível e habilitam os valores de sinalizador. O **ValueMap para** os valores do sinalizador de habilitar deve ser valores de bit (sinalizador). O **qualificador ValueDescriptions** é opcional, mas você deve usá-lo para fornecer descrições para cada valor possível. As descrições são usadas quando alguém chama as funções [**TdhEnumerateProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation) e [**TdhQueryProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation) para obter o nível possível e habilitar os valores de sinalizadores (palavras-chave) para o provedor.
 
-O seguinte mostra uma classe de provedor que especifica os valores de nível possível e habilitar sinalizadores.
+O exemplo a seguir mostra uma classe de provedor que especifica o nível possível e habilita valores de sinalizadores.
 
 ``` syntax
 [Dynamic,

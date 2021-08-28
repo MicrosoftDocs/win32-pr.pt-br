@@ -4,12 +4,12 @@ ms.assetid: 78ff4433-f0b5-4bbb-b2c0-bd389fbc31ce
 title: D3DENUM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 829d03bf596c24bfb6b3443ace859629f723a664
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 50cb3ed10a4a12602e8586bbd0e941641287346a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343250"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627992"
 ---
 # <a name="d3denum"></a>D3DENUM
 
@@ -19,9 +19,9 @@ Sinalizador de funcionalidade do driver.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -32,7 +32,7 @@ Sinalizador de funcionalidade do driver.
 <tr class="even">
 <td>D3DENUM_WHQL_LEVEL</td>
 <td>0x00000002L</td>
-<td>Teste de driver do Microsoft Windows Hardware Quality Labs (WHQL). Esse é um teste demorado que exige uma penalidade de tempo de um segundo ou dois segundos. Essa constante é usada pelo membro WHQLLevel do <a href="d3dadapter-identifier9.md"><strong>D3DADAPTER_IDENTIFIER9</strong></a>.<br/> 
+<td>Teste de driver do WHQL (Hardware Quality Labs) do Microsoft Windows. Esse é um teste demorado que exige uma penalidade de tempo de um segundo ou dois segundos. Essa constante é usada pelo membro WHQLLevel do <a href="d3dadapter-identifier9.md"><strong>D3DADAPTER_IDENTIFIER9</strong></a>.<br/> 
 <table>
 <tbody>
 <tr class="odd">

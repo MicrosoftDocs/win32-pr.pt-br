@@ -24,23 +24,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bc90b16e9507595f35330cce7b697cd357ccfe3c451deae802ebe00ef5ed2f59
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 660b467c48e3f762d3e8ea716ed00cda35e8574d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920356"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887209"
 ---
 # <a name="cim_removefileaction-class"></a>Classe CIM \_ RemoveFileAction
 
 A **classe CIM \_ RemoveFileAction** desinstala arquivos.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -828,8 +828,8 @@ Versão da operação.
 
 A versão da operação deve estar em um dos seguintes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;principal &gt; . &lt; secundária &gt; . &lt; revisão&gt;
+-   &lt;principal &gt; . &lt; &gt; &lt; revisão de letra &gt; &lt; secundária&gt;
 
 Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 

@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_DIAMOND (Wmsdkidl. h)
+title: WMT_VIDEOIMAGE_TRANSITION_DIAMOND (Wmsdkidl.h)
 description: A transição de losango revela a nova imagem em um losango.
 ms.assetid: ff36a64d-62f7-424d-acc9-a7902926a90c
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_DIAMOND o formato Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_DIAMOND formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af271c220fc48924905a067336a438baec1ef0ac4b2dca1b266d3ea77d665f71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38731c93ae9ada520f286ae1662d45ec95d399d4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117653277"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473492"
 ---
-# <a name="wmt_videoimage_transition_diamond"></a>\_diamante de \_ transição WMT VIDEOIMAGE \_
+# <a name="wmt_videoimage_transition_diamond"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ DIAMOND
 
 A transição de losango revela a nova imagem em um losango.
 
@@ -31,51 +31,15 @@ A tabela a seguir descreve os parâmetros usados por essa transição e lista os
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Membro da estrutura</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>X central</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Coordenada X, relativa ao quadro de vídeo, do centro do losango.</td>
-</tr>
-<tr class="even">
-<td>Y central</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Coordenada Y, relativa ao quadro de vídeo, do centro do losango.</td>
-</tr>
-<tr class="odd">
-<td>Largura</td>
-<td><strong>fEffectPara2</strong></td>
-<td>Largura do losango em pixels.</td>
-</tr>
-<tr class="even">
-<td>Altura</td>
-<td><strong>fEffectPara3</strong></td>
-<td>Altura do losango em pixels.</td>
-</tr>
-<tr class="odd">
-<td>Composição</td>
-<td><strong>fEffectPara4</strong></td>
-<td>Defina como um dos seguintes valores:
-<ul>
-<li>0-especifica a composição normal, na qual a imagem anterior é o plano de fundo e a imagem atual é o primeiro plano.</li>
-<li>1-especifica a composição revertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Membro da estrutura | Descrição | 
+|-----------|------------------|-------------|
+| X central | <strong>fEffectPara0</strong> | Coordenada X, relativa ao quadro de vídeo, do centro do losango. | 
+| Y central | <strong>fEffectPara1</strong> | Coordenada Y, em relação ao quadro de vídeo, do centro do losango. | 
+| Largura | <strong>fEffectPara2</strong> | Largura do losango em pixels. | 
+| Altura | <strong>fEffectPara3</strong> | Altura do losango em pixels. | 
+| Composição | <strong>fEffectPara4</strong> | De acordo com um dos seguintes valores:<ul><li>0 – Especifica a composição normal, na qual a imagem anterior é a plano de fundo e a imagem atual é o primeiro plano.</li><li>1 - Especifica a composição invertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li></ul> | 
+
 
 
 
@@ -87,7 +51,7 @@ A tabela a seguir descreve os parâmetros usados por essa transição e lista os
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 

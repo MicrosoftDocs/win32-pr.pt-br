@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bce81fd2857e6e5eadd6c09e36016da4f394748003588b35de7e5e6ba0d15df4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6e64407e17a05adb2569a93c4e82fa024e7e908
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118500270"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473562"
 ---
 # <a name="xmfloat4x3-constructors"></a>Construtores XMFLOAT4X3
 
 Construtores expostos por `XMFLOAT4X3` .
 
-Constrói instâncias da estrutura [**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) .
+Constrói instâncias da [**estrutura XMFLOAT4X3.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -33,47 +33,13 @@ Constrói instâncias da estrutura [**XMFLOAT4X3**](/windows/win32/api/directxma
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3"><strong>XMFLOAT4X3 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMFLOAT4X3</code><br/> Construtor padrão para <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"> <strong>XMFLOAT4X3</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Isso só está disponível para desenvolvimento baseado em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3(constfloat)"><strong>XMFLOAT4X3 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância da <code>XMFLOAT4X3</code> estrutura de uma matriz de doze elementos <code>float</code> . <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> de uma matriz de doze elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3(float_float_float_float_float_float_float_float_float_float_float_float)"><strong>XMFLOAT4X3 (float, float, float, float, float, float, float, flutuar, float</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância da <code>XMFLOAT4X3</code> estrutura a partir de doze <code>float</code> valores escalares. <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> a partir de doze <code>float</code> valores escalares. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3"><strong>XMFLOAT4X3 ()</strong></a> | Construtor padrão para <code>XMFLOAT4X3</code><br /> Construtor padrão para <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"> <strong>XMFLOAT4X3</strong></a><br /><blockquote>[!Note]<br />Isso só está disponível para desenvolvimento baseado em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3(constfloat)"><strong>XMFLOAT4X3 (const float*)</strong></a> | Inicializa uma nova instância da estrutura de <code>XMFLOAT4X3</code> uma matriz de doze <code>float</code> elementos. <br /> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> de uma matriz de doze <code>float</code> elementos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-xmfloat4x3(float_float_float_float_float_float_float_float_float_float_float_float)"><strong>XMFLOAT4X3 (float, float, float, float, float, float, float, float, float, float, float, float)</strong></a> | Inicializa uma nova instância da estrutura de doze valores <code>XMFLOAT4X3</code> <code>float</code> escalares. <br /> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> de doze valores <code>float</code> escalares. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+
 
 
 

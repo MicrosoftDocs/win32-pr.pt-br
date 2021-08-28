@@ -4,12 +4,12 @@ ms.assetid: 1704a70a-a52b-4e7d-8a32-d0c4e97f8cc2
 title: Atributo MF_SD_ASF_EXTSTRMPROP_MAX_BUFFERSIZE (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce31dfacd1d53cadcc38b37e1cb755c330a7882f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 399f6af425020a72caf6185da18f7747c037a71245b8e8d841d886d7b7eabd18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113726"
 ---
 # <a name="mf_sd_asf_extstrmprop_max_buffersize-attribute"></a>\_ \_ \_ \_ Atributo BUFFERSIZE de EXTSTRMPROP do MF SD ASF \_
 
@@ -31,9 +31,9 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

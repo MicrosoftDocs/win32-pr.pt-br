@@ -1,35 +1,35 @@
 ---
-description: Especifica se o codificador é restrito por um requisito de latência máxima.
+description: Especifica se o codificador é restrito por um requisito máximo de latência.
 ms.assetid: 8148ae1e-239e-40fa-a88d-810a1d93d8e9
-title: Propriedade MFPKEY_CONSTRAINENCLATENCY (Wmcodecdsp. h)
+title: MFPKEY_CONSTRAINENCLATENCY propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f880006bf2aba04196547a79e74f94a7210edd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8172b92b0b4d39602f0535b8bf1ef4456a896972e56c6da10f6585e5221fa7e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113416"
 ---
-# <a name="mfpkey_constrainenclatency-property"></a>\_Propriedade MFPKEY CONSTRAINENCLATENCY
+# <a name="mfpkey_constrainenclatency-property"></a>Propriedade MFPKEY \_ CONSTRAINENCLATENCY
 
-Especifica se o codificador é restrito por um requisito de latência máxima.
+Especifica se o codificador é restrito por um requisito máximo de latência.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**BOOL do VT \_**
+**BOOL da VT \_**
 
 ## <a name="default-value"></a>Valor padrão
 
-**VARIANTE \_ falso**
+**VARIANT \_ FALSE**
 
 ## <a name="remarks"></a>Comentários
 
-Se você deixar essa propriedade com o valor padrão de **Variant \_ false**, o codificador enumerará um conjunto padrão de modos que têm cerca de 2000 milissegundos de latência do codificador. Se você definir essa propriedade como **Variant \_ true**, também deverá especificar uma latência máxima do codificador definindo a propriedade [**MFPKEY \_ MAXENCLATENCYMS**](mfpkey-maxenclatencymsproperty.md) . Nesse caso, o codificador cria modos que atendem ao requisito de latência e enumera apenas esses modos. O codificador garante um exemplo de saída assim que o codificador recebeu entrada para um período de tempo igual a **MFPKEY \_ MAXENCLATENCYMS**.
+Se você deixar essa propriedade com seu valor padrão **de VARIANT \_ FALSE**, o codificador enumera um conjunto padrão de modos que têm cerca de 2.000 milissegundos de latência do codificador. Se você definir essa propriedade como **VARIANT \_ TRUE,** também deverá especificar uma latência máxima do codificador definindo a propriedade [**MFPKEY \_ MAXENCLATENCYMS.**](mfpkey-maxenclatencymsproperty.md) Nesse caso, o codificador cria modos que atendem ao requisito de latência e enumera apenas esses modos. O codificador garante um exemplo de saída assim que o codificador tiver recebido entrada por um período igual a **MFPKEY \_ MAXENCLATENCYMS**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Se você deixar essa propriedade com o valor padrão de **Variant \_ false**, o 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Se você deixar essa propriedade com o valor padrão de **Variant \_ false**, o 
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

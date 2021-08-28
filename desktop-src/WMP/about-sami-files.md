@@ -3,45 +3,45 @@ title: Sobre arquivos SAMI
 description: Sobre arquivos SAMI
 ms.assetid: 39b1e8a8-bbeb-4376-89d9-03a147f4c4fd
 keywords:
-- Windows Media Player, SAMI (intercâmbio de mídia acessível) sincronizado
-- modelo de objeto Windows Media Player, SAMI (intercâmbio de mídia acessível) sincronizado
-- modelo de objeto, SAMI (intercâmbio de mídia acessível) sincronizado
-- Windows Media Player SAMI (intercâmbio de mídia acessível) móvel, sincronizado
-- Windows Media Player controle de ActiveX, SAMI (intercâmbio de mídia acessível) sincronizado
-- Windows Media Player controle de ActiveX móvel, SAMI (sincronização de mídia acessível)
-- ActiveX controle, SAMI (intercâmbio de mídia acessível) sincronizado
-- Arquivos SAMI (intercâmbio de mídia acessível) sincronizados
-- SAMI (sincronizado com o intercâmbio de mídia acessível), arquivos
+- Windows Media Player,SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player de objeto, SAMI (Synchronized Accessible Media Interchange)
+- modelo de objeto, SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player Mobile,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player ActiveX controle,SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player Controle ActiveX dispositivo móvel, SAMI (Synchronized Accessible Media Interchange)
+- ActiveX controle,SAMI (Synchronized Accessible Media Interchange)
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), arquivos
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68bcb4823ee02a501254218a9b7c4d9aaf347894d895bc193c8ce763658db174
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1f03d3e4079a117831ed8afb53648abf6a128ee
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470456"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880539"
 ---
 # <a name="about-sami-files"></a>Sobre arquivos SAMI
 
-Os arquivos SAMI são arquivos de texto que têm uma extensão de nome de arquivo. SMI ou. Sami. Elas contêm as cadeias de caracteres de texto usadas para legendas codificadas sincronizadas, legendas e descrições de áudio. eles também especificam os parâmetros de tempo usados pelo controle de Windows Media Player para sincronizar texto de legenda oculta com conteúdo de áudio ou vídeo. Quando um arquivo de mídia digital atinge um horário designado no arquivo SAMI, o texto é alterado de acordo na área de exibição da legenda oculta da página da Web.
+Arquivos SAMI são arquivos de texto que têm uma extensão de nome de arquivo .smi ou .sami. Eles contêm as cadeias de caracteres de texto usadas para legendas fechadas sincronizadas, subtítulos e descrições de áudio. Eles também especificam os parâmetros de tempo usados pelo controle Windows Media Player para sincronizar o texto de legenda fechada com conteúdo de áudio ou vídeo. Quando um arquivo de mídia digital atinge um tempo designado no arquivo SAMI, o texto muda de acordo na área de exibição de legenda fechada da página da Web.
 
-além de um editor de texto simples (como o Microsoft Bloco de notas), o software especial não é necessário para criar um arquivo SAMI. SAMI e HTML compartilham elementos comuns, como o <HEAD> e <BODY> sinalizadores. Como no HTML, as marcas usadas em arquivos SAMI sempre devem ser usadas em pares. Por exemplo, um elemento BODY começa com um <BODY> marca e deve sempre terminar com um </BODY> tag.
+Além de um editor de texto simples (como o Microsoft Bloco de notas), o software especial não é necessário para criar um arquivo SAMI. Os elementos comuns de compartilhamento SAMI e HTML, como o <HEAD> e &lt; marcas &gt; BODY. Como em HTML, as marcas usadas em arquivos SAMI sempre devem ser usadas em pares. Por exemplo, um elemento BODY começa com uma marca &lt; BODY e sempre deve terminar com uma marca &gt; &lt; &gt; /BODY.
 
-Um arquivo SAMI básico requer três marcas fundamentais: <SAMI> , <HEAD>e <BODY>.
+Um arquivo SAMI básico requer três marcas fundamentais: &lt; SAMI &gt; , <HEAD>, e &lt; &gt; BODY.
 
-A <SAMI> marca identifica o documento como um documento Sami para que outros aplicativos possam reconhecer seu formato de arquivo.
+A marca SAMI identifica o documento como um documento SAMI para que outros &lt; &gt; aplicativos possam reconhecer seu formato de arquivo.
 
-Entre os <HEAD> e </HEAD> marcas, você define as diretrizes básicas e outras informações de formato para o documento SAMI, como o título do documento, informações gerais e propriedades de estilo para legendas codificadas. Como HTML, o conteúdo declarado dentro do elemento HEAD não é exibido como saída.
+Entre o <HEAD> e </HEAD> marcas, você define diretrizes básicas e outras informações de formato para o documento SAMI, como o título do documento, informações gerais e propriedades de estilo para legendas fechadas. Como HTML, o conteúdo declarado dentro do elemento HEAD não é exibido como saída.
 
-Elementos e atributos definidos entre o <BODY> e </BODY> as marcas exibem o conteúdo visto pelo usuário. No SAMI, o elemento BODY contém os parâmetros para sincronização e as cadeias de caracteres de texto usadas para legendas codificadas.
+Elementos e atributos definidos entre as &lt; marcas BODY &gt; e &lt; /BODY &gt; exibem o conteúdo visto pelo usuário. No SAMI, o elemento BODY contém os parâmetros para sincronização e as cadeias de caracteres de texto usadas para legendas fechadas.
 
-Definido dentro do elemento HEAD, o elemento STYLE fornece a funcionalidade adicional no SAMI. Entre as marcas <STYLE> e </STYLE> , você pode definir vários seletores de folha de estilo em cascata (CSS) para estilo e layout. Propriedades de estilo, como fontes, tamanhos e alinhamentos, podem ser personalizadas para fornecer uma experiência de usuário avançada e também promover a acessibilidade. Por exemplo, a definição de uma classe de estilo de fonte de texto grande pode melhorar a legibilidade para os usuários que têm dificuldade de ler texto pequeno. Além disso, ao definir várias classes de linguagem diferentes, você pode ajudar os usuários internacionais a entender melhor o conteúdo de mídia digital.
+Definido dentro do elemento HEAD, o elemento STYLE fornece funcionalidade adicional no SAMI. Entre as marcas STYLE e , você pode definir vários seletores CSS (Folha de Estilos em &lt; &gt; </STYLE> Cascata) para estilo e layout. Propriedades de estilo, como fontes, tamanhos e alinhamentos, podem ser personalizadas para fornecer uma experiência de usuário rica, além de promover a acessibilidade. Por exemplo, definir uma classe de estilo de fonte de texto grande pode melhorar a capacidade de leitura para usuários que têm dificuldade para ler texto pequeno. Além disso, definindo várias classes de linguagem diferentes, você pode ajudar usuários internacionais a entender melhor o conteúdo de mídia digital.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
  

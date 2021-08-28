@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, dica de ferramenta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3c9f227faf5dd9844f809dac43cf160371490d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a627114afcdeeb9b6e156572476462fa7ecde75a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635837"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472852"
 ---
 # <a name="tooltip-control-type"></a>Tipo de controle ToolTip
 
@@ -48,36 +48,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ToolTip
-<ul>
-<li>Texto (0 ou mais)</li>
-<li>Imagem (0 ou mais)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>ToolTip</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>ToolTip<ul><li>Texto (0 ou mais)</li><li>Imagem (0 ou mais)</li></ul></li></ul> | <ul><li>ToolTip</li></ul> | 
 
 
 
- 
+
+ 
 
 Os controles de dica de ferramenta aparecem apenas na exibição de conteúdo da árvore de automação da interface do usuário se eles puderem receber o foco do teclado. Caso contrário, todas as informações da dica de ferramenta estarão disponíveis na propriedade [**IUIAutomationElement:: CurrentHelpText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currenthelptext) (ou [**CachedHelpText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedhelptext)) no elemento ao qual a dica de ferramenta está se referindo.
 
@@ -96,7 +75,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.  | O ponto clicável deve ser parte da dica de ferramenta que ignora o controle. Algumas dicas de ferramenta não têm essa capacidade e não terão um ponto clicável.                                                                                                                                                                                                  |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **ToolTip** |                                                                                                                                                                                                                                                                                                                                                                |
 | [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | Depende     | Se o controle ToolTip puder receber o foco do teclado, ele deverá aparecer na exibição de conteúdo da árvore. Se ele for somente texto, ele estará disponível como a propriedade [**IUIAutomationElement:: CurrentHelpText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currenthelptext) (ou [**CachedHelpText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedhelptext)) do controle que o gerou. |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | True        | O controle ToolTip sempre é incluído na exibição de controle da árvore de automação da interface do usuário.                                                                                                                                                                                                                                                                          |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | Verdadeiro        | O controle ToolTip sempre é incluído na exibição de controle da árvore de automação da interface do usuário.                                                                                                                                                                                                                                                                          |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte observações.  | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade.                                                                                                                                                                                                                                                                                      |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULO        | Os controles ToolTip são sempre rotulados automaticamente por seu conteúdo.                                                                                                                                                                                                                                                                                                    |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações.  | Cadeia de caracteres localizada correspondente ao tipo de controle ToolTip. O valor padrão é "ToolTip" para en-US ou inglês (Estados Unidos).                                                                                                                                                                                                                               |
@@ -104,7 +83,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -119,7 +98,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -132,27 +111,27 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 | Evento de automação da interface do usuário                                                                                                                            | Observações                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                               |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId.          |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                          | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.                      | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade NamePropertyId.                                    |                                                                                                                            |
-| [**\_TextChangedEventId de texto UIA \_**](uiauto-event-ids.md)                                                          | Se o controle der suporte ao padrão de controle de [texto](uiauto-implementingtextandtextrange.md) , ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade.          |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                          | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.                      | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento de alteração de propriedade NamePropertyId.**](uiauto-automation-element-propids.md)                                    |                                                                                                                            |
+| [**Texto \_ \_ UIAChangedEventId**](uiauto-event-ids.md)                                                          | Se o controle for compatível com [o padrão de](uiauto-implementingtextandtextrange.md) controle Texto, ele deverá dar suporte a esse evento.   |
 | [**UIA \_ ToolTipClosedEventId**](uiauto-event-ids.md)                                                                 |                                                                                                                            |
 | [**UIA \_ ToolTipOpenedEventId**](uiauto-event-ids.md)                                                                 |                                                                                                                            |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                           |                                                                                                                            |
-| [**\_Janela UIA \_ WindowClosedEventId**](uiauto-event-ids.md)                                                    | Se o controle der suporte ao padrão de controle [Window](uiauto-implementingwindow.md) , ele deverá dar suporte a esse evento.           |
-| [**\_Janela UIA \_ WindowOpenedEventId**](uiauto-event-ids.md)                                                    | Se o controle der suporte ao padrão de controle [Window](uiauto-implementingwindow.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade WindowWindowVisualStatePropertyId. | Se o controle der suporte ao padrão de controle [Window](uiauto-implementingwindow.md) , ele deverá dar suporte a esse evento.           |
+| [**Janela \_ \_ UIAClosedEventId**](uiauto-event-ids.md)                                                    | Se o controle for compatível com o padrão de controle [Janela,](uiauto-implementingwindow.md) ele deverá dar suporte a esse evento.           |
+| [**Janela \_ \_ UIAOpenedEventId**](uiauto-event-ids.md)                                                    | Se o controle for compatível com o padrão de controle [Janela,](uiauto-implementingwindow.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de alteração de propriedade WindowWindowVisualStatePropertyId.**](uiauto-control-pattern-propids.md) | Se o controle for compatível com o padrão de controle [Janela,](uiauto-implementingwindow.md) ele deverá dar suporte a esse evento.           |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -161,9 +140,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

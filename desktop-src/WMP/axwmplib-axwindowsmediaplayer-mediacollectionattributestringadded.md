@@ -3,7 +3,7 @@ title: Evento MediaCollectionAttributeStringAdded do objeto AxWindowsMediaPlayer
 description: O evento MediaCollectionAttributeStringAdded ocorre quando um valor de atributo é adicionado à biblioteca. | Evento MediaCollectionAttributeStringAdded do objeto AxWindowsMediaPlayer
 ms.assetid: b14db0ce-bd78-4e28-a42c-1a231c29da2b
 keywords:
-- Evento MediaCollectionAttributeStringAdded do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MediaCollectionAttributeStringAdded do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6712b6caa8f014ec75bf2b031e2d3f6db429dbd2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95d0612e18256f81529a8ad703ecf887ba5976ea9913e46598bc5a0fd44a903e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123936"
 ---
 # <a name="mediacollectionattributestringadded-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionAttributeStringAdded do objeto AxWindowsMediaPlayer
 
@@ -47,8 +47,8 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propriedade           | Descrição                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **bstrAttribName** | System. StringSpecifies o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md).<br/> |
-| bstrAttribVal      | System. StringSpecifies o valor do atributo.<br/>                                                                                                                                |
+| **bstrAttribName** | System.StringSpecifica o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [Referência de atributo](attribute-reference.md).<br/> |
+| bstrAttribVal      | System.StringSpecifica o valor do atributo.<br/>                                                                                                                                |
 
 
 
@@ -56,7 +56,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Quando um item de mídia é adicionado à biblioteca, seus metadados são adicionados à coleção de mídia e esse evento é acionado para cada atributo adicionado.
+Quando um item de mídia é adicionado à biblioteca, seus metadados são adicionados à coleção de mídias e esse evento é acionado para cada atributo adicionado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Quando um item de mídia é adicionado à biblioteca, seus metadados são adicio
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -77,7 +77,7 @@ Quando um item de mídia é adicionado à biblioteca, seus metadados são adicio
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. mediacollection (VB e C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
+[**AxWindowsMediaPlayer.mediaCollection (VB e C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPMediaCollection (VB e C#)**](iwmpmediacollection--vb-and-c.md)

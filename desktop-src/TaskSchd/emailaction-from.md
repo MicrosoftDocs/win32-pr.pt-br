@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d91b132e8d56caba1a21768e4aacfdda855fad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3331b658f21907467ed32f3369357530f30df3facbe630238a704674f23909c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100306"
 ---
 # <a name="emailactionfrom-property"></a>Propriedade emailaction. from
 
@@ -50,8 +50,8 @@ O endereço de email do qual você deseja enviar o email.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                    |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |

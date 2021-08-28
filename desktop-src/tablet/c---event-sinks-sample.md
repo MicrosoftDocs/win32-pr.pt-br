@@ -4,12 +4,12 @@ ms.assetid: 91450559-ae47-457a-a709-b4e4e78bde22
 title: Exemplo de coletores de eventos do C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e950254293b676088d8b281624c089b098e5dca8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b24cb718eb0d16830c285691ac5cfedf66d572f447870dc0219beb14c04548a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111126"
 ---
 # <a name="c-event-sinks-sample"></a>Exemplo de coletores de eventos do C++
 
@@ -20,7 +20,7 @@ Este programa demonstra como você pode criar um aplicativo que captura eventos 
 A `InkCollectorEvents` classe lida com a passagem de eventos do coletor de tinta do coletor de tinta para o usuário desta classe. O `AdviseInkCollector` método configura a conexão entre o objeto [**InkCollector**](inkcollector-class.md) e essa classe. O `Invoke` método converte a notificação de evento [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) em uma chamada para uma função virtual que o usuário dessa classe pode substituir para processar um evento específico.
 
 > [!Note]  
-> Você deve fazer mais do que substituir a função virtual para um manipulador de eventos para obter esse evento. Para todos os eventos, exceto os padrão, você precisa chamar o método [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest) do coletor de tinta para garantir a obtenção de um evento. Em segundo lugar, esse objeto é empacotado em thread livre, de modo que todos os manipuladores de eventos implementados também precisam ser segmentados gratuitamente. De importância específica é usar APIs do Windows, o que pode fazer com que um comutador para outro thread como o manipulador de eventos não tenha garantia de estar em execução no mesmo thread que a janela conectada ao coletor de tinta.
+> Você deve fazer mais do que substituir a função virtual para um manipulador de eventos para obter esse evento. Para todos os eventos, exceto os padrão, você precisa chamar o método [**SetEventInterest**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest) do coletor de tinta para garantir a obtenção de um evento. Em segundo lugar, esse objeto é empacotado em thread livre, de modo que todos os manipuladores de eventos implementados também precisam ser segmentados gratuitamente. a importância específica é usar APIs Windows, o que pode fazer com que um comutador para outro thread como o manipulador de eventos não tenha a garantia de estar em execução no mesmo thread que a janela conectada com o coletor de tinta.
 
  
 
@@ -210,7 +210,7 @@ HWND hWnd)
 
 ## <a name="accessing-the-tablet-pc-interfaces-and-the-wrapper-classes"></a>Acessando as interfaces do Tablet PC e as classes de wrapper
 
-Primeiro, inclua os cabeçalhos para interfaces de automação do Tablet PC. Eles são instalados com o Microsoft <entity type="reg"/> Windows <entity type="reg"/> XP Tablet PC Edition Development Kit 1,7.
+Primeiro, inclua os cabeçalhos para interfaces de automação do Tablet PC. eles são instalados com o Microsoft <entity type="reg"/> Windows <entity type="reg"/> XP Tablet PC Edition Development Kit 1,7.
 
 
 ```C++

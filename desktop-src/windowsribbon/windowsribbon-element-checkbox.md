@@ -3,7 +3,7 @@ title: Elemento CheckBox
 description: Representa um controle Check Box.
 ms.assetid: ebb44d6d-91fb-4a59-9b62-4a694fea8a4d
 keywords:
-- Faixa de Opções do Windows do elemento CheckBox
+- Elemento CheckBox Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d9357337e569f43b14c34798c9c6e8da4b7b10b
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4754269600c779210e7eee786e3a60262dec06d1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443037"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623972"
 ---
 # <a name="checkbox-element"></a>Elemento CheckBox
 
@@ -38,10 +38,10 @@ Representa um [controle Check Box.](windowsribbon-controls-checkbox.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -101,7 +101,7 @@ Não há elementos filho.
 
 Opcional ou obrigatório, dependendo do elemento pai.
 
-Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md)ou [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md)ou [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Exemplos
 

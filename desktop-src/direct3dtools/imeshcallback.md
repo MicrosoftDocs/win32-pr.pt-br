@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2eb80d06fd0a5c4723f3607c3e28ebd9790527a41c4c0ae8b7e36c96ac3aeb2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 586d9457595b6bb4df9b89a87bdfb64a2b888c40
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119484906"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786562"
 ---
 # <a name="span-idvspixengineimeshcallbackspanimeshcallback-interface"></a><span id="vspixengine.imeshcallback"></span>Interface IMeshCallback
 
@@ -30,7 +30,7 @@ Retorno de chamada para retornar um buffer que contém a malha de um estágio de
 
 ## <a name="members"></a>Membros
 
-A interface **IMeshCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMeshCallback** também tem estes tipos de membros:
+A interface **IMeshCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMeshCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IMeshCallback** herda da interface [**IUnknown**](/windows/desktop
 
 A interface **IMeshCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/imeshcallback-resultcallback-dword-byte-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Não usado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/imeshcallback-resultcallback-dword-byte-arr"><strong>Resultcallback</strong></a></td><td ><p>Não usado.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

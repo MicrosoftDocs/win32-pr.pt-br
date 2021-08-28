@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b83f48f024ba79eaa55ad4ae333e8f093cd307e5508e0bb8338ce9bbc4a1bef7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffe4527390e21e86ed46820125eb2a422367d8ec
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119615056"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480372"
 ---
 # <a name="jetopenfile-function"></a>Função JetOpenFile
 
@@ -65,86 +65,27 @@ O buffer de saída que recebe os 32 bits mais significativos do tamanho do arqui
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupAbortByServer</p></td>
-<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Esse erro só será retornado por Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>Jet_errfileaccessdenied</p></td>
-<td><p>A operação falhou porque não pôde abrir o arquivo solicitado devido a uma violação de compartilhamento ou privilégios insuficientes.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFileNotFound</p></td>
-<td><p>A operação falhou porque não foi possível abrir o arquivo solicitado porque ele não pôde ser encontrado no caminho especificado. Esse erro só será retornado por Windows 2000.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado por Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidBackupSequence</p></td>
-<td><p>A operação de backup falhou porque foi chamada fora de sequência.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para <strong>JetOpenFile</strong> quando:</p>
-<ul>
-<li><p>O handle de instância especificado é inválido (Windows XP e versões posteriores).</p></li>
-<li><p>O parâmetro filename especificado é NULL ou uma cadeia de caracteres de comprimento zero (Windows XP e versões posteriores).</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>A operação falhou porque não foi possível encontrar o caminho especificado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errMissingFileToBackup</p></td>
-<td><p>Não foi possível abrir o arquivo solicitado para backup porque ele não pôde ser encontrado. Esse erro só será retornado por Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoBackup</p></td>
-<td><p>A operação falhou porque nenhum backup externo está em andamento.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>A operação falhou porque não foi possível alocar memória suficiente para a conclusão. <strong>JetOpenFile</strong> retornará JET_errOutOfMemory se for feita uma tentativa de abrir outro arquivo antes que o arquivo anterior aberto usando <strong>JetOpenFile</strong> tenha sido fechado por <a href="gg294127(v=exchg.10).md">JetCloseFile</a>. No momento, há suporte para apenas um alça de arquivo pendente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade Windows 2000), em que apenas uma instância tem suporte quando, na verdade, várias instâncias já existem.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligado. JET_errRestoreInProgress não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>Jet_errfileaccessdenied</p> | <p>A operação falhou porque não pôde abrir o arquivo solicitado devido a uma violação de compartilhamento ou privilégios insuficientes.</p> | 
+| <p>JET_errFileNotFound</p> | <p>A operação falhou porque não foi possível abrir o arquivo solicitado porque ele não pôde ser encontrado no caminho especificado. Esse erro só será retornado por Windows 2000.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidBackupSequence</p> | <p>A operação de backup falhou porque foi chamada fora de sequência.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para <strong>JetOpenFile</strong> quando:</p><ul><li><p>O handle de instância especificado é inválido (Windows XP e versões posteriores).</p></li><li><p>O parâmetro filename especificado é NULL ou uma cadeia de caracteres de comprimento zero (Windows XP e versões posteriores).</p></li></ul> | 
+| <p>JET_errInvalidPath</p> | <p>A operação falhou porque não foi possível encontrar o caminho especificado.</p> | 
+| <p>JET_errMissingFileToBackup</p> | <p>Não foi possível abrir o arquivo solicitado para backup porque ele não pôde ser encontrado. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
+| <p>JET_errNoBackup</p> | <p>A operação falhou porque nenhum backup externo está em andamento.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>A operação falhou porque não foi possível alocar memória suficiente para a conclusão. <strong>JetOpenFile</strong> retornará JET_errOutOfMemory se for feita uma tentativa de abrir outro arquivo antes que o arquivo anterior aberto usando <strong>JetOpenFile</strong> tenha sido fechado por <a href="gg294127(v=exchg.10).md">JetCloseFile</a>. No momento, há suporte para apenas um alça de arquivo pendente.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade Windows 2000), em que apenas uma instância tem suporte quando, na verdade, várias instâncias já existem.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligado. JET_errRestoreInProgress não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+
 
 
 Em caso de êxito, um handle para o arquivo solicitado será retornado. Se o handle for para um arquivo de banco de dados, esse arquivo de banco de dados será preparado para o backup de streaming, o que pode resultar na criação de um arquivo de patch de banco de dados no mesmo local que o arquivo de banco de dados. O arquivo de patch do banco de dados tem exatamente o mesmo caminho e nome de arquivo que o arquivo de banco de dados, mas tem um . Extensão PAT. O tamanho do arquivo também será retornado.
@@ -165,38 +106,9 @@ O tamanho do arquivo a ser lido conforme relatado por essa função pode não co
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetOpenFileW</strong> (Unicode) e <strong>JetOpenFileA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetOpenFileW</strong> (Unicode) e <strong>JetOpenFileA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

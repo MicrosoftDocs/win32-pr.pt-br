@@ -1,26 +1,26 @@
 ---
-title: Bitmaps (SDK do Windows Media Player)
+title: bitmaps (Windows Media Player SDK)
 description: Bitmaps
 ms.assetid: cd10bc7d-1167-485e-8acf-13c021bc608b
 keywords:
-- Capas do Windows Media Player Mobile, bitmaps
+- Windows Media Player Capas móveis, bitmaps
 - capas, bitmaps
 - referência para capas, bitmaps
 - bitmaps em capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15ad690b691c22154bad4db0981e2b5ab760400b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 33ff4689c052162d8addfb9a66aeb6b227916f0e22e21de3e3572ea265380664
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104454495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123856"
 ---
-# <a name="bitmaps-windows-media-player-sdk"></a>Bitmaps (SDK do Windows Media Player)
+# <a name="bitmaps-windows-media-player-sdk"></a>bitmaps (Windows Media Player SDK)
 
 Você deve usar uma ou mais imagens em sua capa e cada imagem deve ser definida no arquivo de definição de capa. Se você não definir uma imagem nesta seção, sua capa não será capaz de usá-la.
 
-O termo "bitmap" é usado em toda a referência em um sentido genérico e refere-se a imagens de bitmap com uma extensão. bmp, imagens GIF com uma extensão. gif, imagens JPEG com uma extensão. jpg e imagens PNG com uma extensão. png.
+O termo "bitmap" é usado em toda a referência em um sentido genérico e refere-se a imagens de bitmap com uma extensão .bmp, imagens GIF com uma extensão .gif, imagens JPEG com uma extensão .jpg e imagens PNG com uma extensão .png.
 
 A seção bitmaps do arquivo de definição de capa começa com esta linha:
 
