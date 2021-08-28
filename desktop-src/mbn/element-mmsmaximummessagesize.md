@@ -7,12 +7,12 @@ MSHAttr:
 title: MmsMaximumMessageSize
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e20af3d38a594158586247a9798be98c0d97a65b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: c8a8deb9d416b17d2ef83c5d0cec58f6f64127cd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988669"
+ms.locfileid: "122885413"
 ---
 # <a name="span-idwwan_profile_v4element_mmsmaximummessagesizespanmmsmaximummessagesize"></a><span id="WWAN_profile_v4.element_MmsMaximumMessageSize"></span>MmsMaximumMessageSize
 
@@ -47,7 +47,7 @@ Nenhum.
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
 
-| Elemento pai | Descrição | 
+| Elemento pai | Description | 
 |----------------|-------------|
 | <a href="element-mmsconfiguration.md">MmsConfiguration</a> | <p>Informações de configuração do MMS (Serviço de Mensagens Multimídia).</p><p>Além de definir os elementos de configuração dentro desse elemento, um perfil MMS deve ter as seguintes configurações.</p><ul><li>Seu <a href="element-name.md"><strong>elemento Name</strong></a> deve conter um nome exclusivo em todo o sistema.</li><li>Seu <a href="../mbn/schema-profilecreationtype-mbnprofile-element.md"><strong>ProfileCreationType</strong></a> deve ser definido como <strong>UserProvisioned.</strong></li><li>Seu <a href="/windows/desktop/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid"><strong>SimIccID</strong></a> deve conter o ICCID do SIM para o que esse perfil se destina.</li><li>Seu <a href="../mbn/schema-connectionmode-mbnprofile-element.md"><strong>ConnectionMode</strong></a> deve ser definido como <strong>Manual.</strong></li><li>Seu <a href="element-purposegroupguid.md"><strong>PurposeGroupGuid</strong></a> deve conter o GUID para o grupo de finalidade MMS.</li><li>Seu <a href="/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)"><strong>IsAdditionalPdpContextProfile</strong></a> deve ser definido como <strong>true.</strong></li></ul> | 
 
@@ -57,9 +57,7 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

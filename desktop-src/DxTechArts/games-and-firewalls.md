@@ -1,65 +1,65 @@
 ---
 title: Firewall do Windows para Desenvolvedores de Jogos
-description: Este artigo descreve o Firewall do Windows – por que ele existe, o que ele realiza e como ele faz isso. O mais importante é que ele descreve como configurar seu jogo para funcionar bem com o firewall.
+description: Este artigo descreve o Windows firewall - por que ele existe, o que ele realiza e como ele faz isso. O mais importante é que ele descreve como configurar seu jogo para funcionar bem com o firewall.
 ms.assetid: 2ee9f769-03dc-3661-5d5b-6a4ecd151fd5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c7ff3c9b651b6264703732f0eec57054784034
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 49e7fc00631ef69f878c54de90c2577221e5bc9a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882674"
 ---
 # <a name="windows-firewall-for-game-developers"></a>Firewall do Windows para Desenvolvedores de Jogos
 
-Este artigo descreve o Firewall do Windows – por que ele existe, o que ele realiza e como ele faz isso. O mais importante é que ele descreve como configurar seu jogo para funcionar bem com o firewall.
+Este artigo descreve o Windows firewall - por que ele existe, o que ele realiza e como ele faz isso. O mais importante é que ele descreve como configurar seu jogo para funcionar bem com o firewall.
 
 Conteúdo:
 
 -   [O que é um Firewall?](#what-is-a-firewall)
 -   [Como saber se meu jogo foi afetado?](#how-can-i-tell-if-my-game-is-affected)
--   [O firewall antes do Windows XP SP2](#the-firewall-before-windows-xp-sp2)
--   [O firewall do Windows XP SP2 é melhor](#windows-xp-sp2-firewall-is-better)
--   [Trabalhando com o Firewall do Windows](#working-with-the-windows-firewall)
+-   [O firewall antes Windows XP SP2](#the-firewall-before-windows-xp-sp2)
+-   [Windows O firewall XP SP2 é melhor](#windows-xp-sp2-firewall-is-better)
+-   [Trabalhando com o firewall Windows segurança](#working-with-the-windows-firewall)
 -   [Integração usando InstallShield InstallScript](#integrating-using-installshield-installscript)
--   [Integração ao Wise para Windows Installer](#integrating-into-wise-for-windows-installer)
--   [Integração ao Windows Installer](#integrating-into-windows-installer)
+-   [Integração ao Wise for Windows Installer](#integrating-into-wise-for-windows-installer)
+-   [Integração ao Windows Instalador](#integrating-into-windows-installer)
 -   [Recomendações](#recommendations)
 
 ## <a name="what-is-a-firewall"></a>O que é um firewall?
 
 O firewall fornece uma barreira contra invasões baseadas em rede. Ele bloqueia o tráfego de entrada não solicitado e torna o sistema praticamente invisível na Internet rejeitando solicitações icmp (protocolo ICMP). Isso significa que ping e tracert não funcionarão. O firewall também procura e rejeita pacotes inválidos.
 
-Essa barreira impede ataques oportunistas. Os ataques se propagam encontrando muitos sistemas com a mesma vulnerabilidade. O firewall pode impedir muitos ataques, colocando um sinal "não desatrapalhe" para esses recursos que não estão em uso no momento; o ataque é ignorado e não atinge a casa. O benefício essencial do Firewall do Windows é que os recursos e aplicativos que não estão em uso não podem ser caminhos para ataque.
+Essa barreira impede ataques oportunistas. Os ataques se propagam encontrando muitos sistemas com a mesma vulnerabilidade. O firewall pode impedir muitos ataques, colocando um sinal de "não desarmado" para esses recursos que não estão em uso no momento; o ataque é ignorado e não atinge a casa. O benefício essencial do firewall Windows é que os recursos e aplicativos que não estão em uso não podem ser caminhos para ataque.
 
 O usuário configura o sistema para identificar quais aplicativos e recursos são necessários e devem estar abertos à rede. Isso acontece quando um aplicativo é instalado ou quando ele tenta se abrir para a rede.
 
 ## <a name="how-can-i-tell-if-my-game-is-affected"></a>Como saber se meu jogo foi afetado?
 
-Com a chegada do Windows XP SP2, o Firewall do Windows foi amplamente implantado. Todos os jogos do Windows multijogador são afetados até certo ponto. Embora os clientes geralmente estão em boa forma, servidores, hosts e pares ponto a ponto precisam do firewall configurado para continuar funcionando. Especificamente, o tráfego não solicitado de entrada é descartado. O firewall intercepta pacotes de filtro de tráfego de rede com base no conteúdo do pacote e na atividade de rede recente. O firewall usa o conteúdo e a atividade para decidir encaminhar ou soltar um pacote. Depois que o firewall estiver configurado corretamente, um jogo poderá aceitar o tráfego não solicitado de entrada como antes.
+Com a chegada do Windows XP SP2, o firewall Windows tem sido amplamente implantado. Todos os jogos Windows multijogador são afetados até certo ponto. Embora os clientes geralmente estão em boa forma, servidores, hosts e pares ponto a ponto precisam do firewall configurado para continuar funcionando. Especificamente, o tráfego não solicitado de entrada é descartado. O firewall intercepta pacotes de filtro de tráfego de rede com base no conteúdo do pacote e na atividade de rede recente. O firewall usa o conteúdo e a atividade para decidir encaminhar ou soltar um pacote. Depois que o firewall estiver configurado corretamente, um jogo poderá aceitar o tráfego não solicitado de entrada como antes.
 
-Quem tem tráfego não solicitado de entrada?
+Who tem tráfego não solicitado de entrada?
 
 -   Cliente/Servidor: todos os participantes se conectam a um servidor central. O servidor central é aquele com tráfego não solicitado de entrada. Os clientes que se conectam ao servidor estão solicitando tráfego de retorno, que é esperado e tem permissão para passar pelo firewall se as regras para clientes são seguidas. O servidor central deve ser configurado para aceitar o tráfego não solicitado para permitir que o tráfego do cliente passe pelo firewall.
 -   MMP (Multijogador Maciço): todos os participantes estão conectados a um data center. Isso equivale a uma relação de cliente/servidor complexa, pois o data center tem o tráfego não solicitado de entrada. Os participantes são clientes e, em geral, não precisam aceitar tráfego não solicitado.
 -   Ponto a ponto, em que todos os participantes estão conectados uns aos outros diretamente: todos os participantes devem estar prontos para aceitar o tráfego não solicitado de qualquer novo jogador que ingressar no grupo. Em certo sentido, cada um dos participantes deve funcionar como um host, portanto, todos eles devem ser configurados como se fossem hosts.
 
-Os clientes geralmente estão em boa forma. Suas conexões TCP/IP (Protocolo TCP/IP) de saída funcionarão bem, assim como as mensagens UDP (Protocolo UDP) de saída juntamente com respostas oportuárias a essas mensagens – o firewall mantém a porta aberta por 90 segundos após cada mensagem de saída em antecipação de uma resposta.
+Os clientes geralmente estão em boa forma. Suas conexões TCP/IP (protocolo TCP/IP) de saída funcionarão bem, assim como as mensagens UDP (Protocolo UDP) de saída juntamente com respostas oportuárias a essas mensagens – o firewall mantém a porta aberta por 90 segundos após cada mensagem de saída em antecipação de uma resposta.
 
-## <a name="the-firewall-before-windows-xp-sp2"></a>O firewall antes do Windows XP SP2
+## <a name="the-firewall-before-windows-xp-sp2"></a>O firewall antes Windows XP SP2
 
-O Firewall de Conexão com a Internet (ICF) no Windows XP e no Windows Server 2003 é um filtro de pacote com estado e lida com o protocolo IPv6, versão 4 (IPv4) e Protocolo de Internet, versão 6 (IPv6). No entanto, ele não está em por padrão e não dá suporte a pilhas de rede de terceiros, das quais há um número significativo no mundo, como grandes provedores de Internet, incluindo empresas de telefone nacionais.
+O Firewall de Conexão com a Internet (ICF) no Windows XP e no Windows Server 2003 é um filtro de pacote com estado e lida com o Protocolo de Internet, versão 4 (IPv4) e o Protocolo de Internet, versão 6 (IPv6). No entanto, ele não está no por padrão e não dá suporte a pilhas de rede de terceiros, das quais há um número significativo no mundo, como grandes provedores de Internet, incluindo empresas de telefone nacionais.
 
-Para aqueles que não estão no Windows XP SP2, é altamente recomendável ligar o ICF. Consulte as instruções "Usar um Firewall da Internet" https://www.microsoft.com/security/protect como a primeira etapa para proteger seu computador. O Firewall de Conexão com a Internet (ICF) fornece mapeamento de porta para substituir o filtro de pacote. Essencialmente, você especifica a porta a ser aberta e ela permanece aberta até que você a feche. Se o usuário for reinicializado antes de ser fechado, ele permanecerá aberto até ser especificamente fechado. O controle do firewall e o gerenciamento dos mapeamentos de porta são feitos por meio de [**INetSharingManager**](/previous-versions/windows/desktop/api/netcon/nn-netcon-inetsharingmanager) (IPv4) e [**INetFwV6Mgr**](/previous-versions/windows/desktop/ics/inetfwv6mgr) (IPv6).
+Para aqueles que não estão Windows XP SP2, é altamente recomendável ligar o ICF. Consulte as instruções "Usar um Firewall da Internet" https://www.microsoft.com/security/protect como a primeira etapa para proteger seu computador. O Firewall de Conexão com a Internet (ICF) fornece mapeamento de porta para substituir o filtro de pacote. Essencialmente, você especifica a porta a ser aberta e ela permanece aberta até que você a feche. Se o usuário reinicializar antes de ser fechado, ele permanecerá aberto até ser especificamente fechado. O controle do firewall e o gerenciamento dos mapeamentos de porta é feito por meio de [**INetSharingManager**](/previous-versions/windows/desktop/api/netcon/nn-netcon-inetsharingmanager) (IPv4) e [**INetFwV6Mgr**](/previous-versions/windows/desktop/ics/inetfwv6mgr) (IPv6).
 
 O Firewall do Windows para Windows XP SP2 é uma solução mais abrangente que dá suporte a pilhas de rede de terceiros e lida com portas de forma mais inteligente: as portas são mantidas abertas apenas enquanto o aplicativo que precisa delas ainda está ativo.
 
-## <a name="windows-xp-sp2-firewall-is-better"></a>O firewall do Windows XP SP2 é melhor
+## <a name="windows-xp-sp2-firewall-is-better"></a>Windows O firewall XP SP2 é melhor
 
-O Windows XP SP2 coloca as opções de segurança e as configurações na frente. A meta é proteger por padrão e permitir que o usuário faça escolhas informadas sobre quais aplicativos têm permissão para executar em seu computador.
+Windows O XP SP2 coloca as opções de segurança e as configurações na frente. A meta é proteger por padrão e permitir que o usuário faça escolhas informadas sobre quais aplicativos têm permissão para executar em seu computador.
 
-O novo Firewall do Windows está disponível no Windows XP SP2 e no Windows Server 2003 Service Pack 1 (SP1). Assim como o ICF, é um firewall de software que dá suporte a IPv4 e IPv6, mas ao contrário do Firewall do Windows do ICF:
+O novo Windows Firewall está disponível no Windows XP SP2 e Windows Server 2003 Service Pack 1 (SP1). Assim como o ICF, é um firewall de software que dá suporte a IPv4 e IPv6, mas ao contrário do firewall Windows ICF:
 
 -   Tem proteção de tempo de inicialização do sistema, eliminando uma pequena janela de vulnerabilidade durante a inicialização.
 -   Dá suporte a pilhas de rede de terceiros.
@@ -91,18 +91,18 @@ Os usuários também podem adicionar seus aplicativos por meio da interface do u
 
 ![adicionando um programa à lista de exceções de firewall](images/firewalls3.jpg)
 
-O melhor cenário é fazer adições e remoções da lista de exceções automatizadas. O melhor momento para executar essas adições e remoções é durante o processo de instalação e desinstalação. Adicionar ou remover da lista de exceções do firewall requer privilégios de administrador, portanto, não deixe de levar isso em conta.
+O melhor cenário é fazer adições e remoções da lista de exceções automatizadas. O melhor momento para executar essas adições e remoções é durante o processo de instalação e desinstalação. Adicionar ou remover da lista de exceções de firewall requer privilégios de administrador, portanto, não se esqueça de levar isso em conta.
 
-## <a name="working-with-the-windows-firewall"></a>Trabalhando com o Firewall do Windows
+## <a name="working-with-the-windows-firewall"></a>Trabalhando com o firewall Windows segurança
 
-Novamente, a maioria dos jogos só precisará ser adicionada à lista de exceções de firewall se puderem funcionar como um servidor ou se implementarem um protocolo de comunicação ponto a ponto. O FirewallInstallHelper.dll é uma DLL de exemplo que pode ser chamada de um instalador. A origem será fornecida se você quiser integrar a fonte diretamente em seu próprio aplicativo. O exemplo pode ser encontrado aqui:
+Novamente, a maioria dos jogos só precisará ser adicionada à lista de exceções de firewall se eles puderem funcionar como um servidor ou se implementarem um protocolo de comunicação ponto a ponto. O FirewallInstallHelper.dll é uma DLL de exemplo que pode ser chamada de um instalador. A origem será fornecida se você quiser integrar a fonte diretamente em seu próprio aplicativo. O exemplo pode ser encontrado aqui:
 
 
 
 |             | Arquivo                                                                             |
 |-------------|------------------------------------------------------------------------------|
 | **Origem:**     | (Raiz do SDK) \\ Exemplos de \\ FirewallInstallHelper de C++ \\ misc \\                        |
-| **Executá** | (Raiz do SDK) \\ Amostras \\ de \\ \\ \\ <arch> \\FirewallInstallHelper.dll misc bin do C++ |
+| **Executá** | (Raiz do SDK) \\ Exemplos \\ de \\ arcos do C++ Misc \\ bin \\ &lt; &gt; \\FirewallInstallHelper.dll |
 
 
 
@@ -157,25 +157,25 @@ Versão ANSI do **CanLaunchMultiplayerGameW**
 <span id="SetMSIFirewallProperties"></span><span id="setmsifirewallproperties"></span><span id="SETMSIFIREWALLPROPERTIES"></span>**SetMSIFirewallProperties**
 </dt> <dd>
 
-Chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
+chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
 
 </dd> <dt>
 
 <span id="AddToExceptionListUsingMSI"></span><span id="addtoexceptionlistusingmsi"></span><span id="ADDTOEXCEPTIONLISTUSINGMSI"></span>**AddToExceptionListUsingMSI**
 </dt> <dd>
 
-Chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
+chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
 
 </dd> <dt>
 
 <span id="RemoveFromExceptionListUsingMSI"></span><span id="removefromexceptionlistusingmsi"></span><span id="REMOVEFROMEXCEPTIONLISTUSINGMSI"></span>**RemoveFromExceptionListUsingMSI**
 </dt> <dd>
 
-Chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
+chame isso somente se você estiver usando ações personalizadas no Windows Installer. Consulte abaixo para obter mais detalhes.
 
 </dd> </dl>
 
-As seções a seguir descrevem métodos específicos de chamar as funções de DLL exportadas desse FirewallInstallHelper de dentro de um pacote InstallShield, Wise ou Windows Installer. Todos os métodos renderizam os mesmos resultados e cabe ao desenvolvedor determinar qual método implementar.
+as seções a seguir descrevem métodos específicos de chamar as funções de DLL exportadas desse FirewallInstallHelper de dentro de um pacote InstallShield, Wise ou Windows Installer. Todos os métodos renderizam os mesmos resultados e cabe ao desenvolvedor determinar qual método implementar.
 
 ## <a name="integrating-using-installshield-installscript"></a>Integração usando o InstallShield InstallScript
 
@@ -184,7 +184,7 @@ Um método alternativo de usar as APIs de firewall é adicionar as chamadas de f
 1.  Abra um projeto do InstallScript no editor do InstallShield.
 2.  Adicione o FirewallInstallHelper.dll ao projeto como um arquivo de suporte.
 
-    1.  Na guia Assistente de projeto, abra a guia arquivos de aplicativo.
+    1.  na guia assistente de Project, abra a guia arquivos de aplicativo.
     2.  Clique no botão Adicionar arquivos para adicionar arquivos à pasta de destino do aplicativo.
     3.  Navegue até o FirewallInstallHelper.dll que você criou ou usou aquele fornecido no SDK do DirectX e adicione-o ao projeto.
 
@@ -228,11 +228,11 @@ Um método alternativo de usar as APIs de firewall é adicionar as chamadas de f
 
     4.  Altere os comentários de tarefas pendentes com o nome do aplicativo que será mostrado na lista de exceção do firewall e o caminho para o executável do jogo em relação ao diretório de instalação.
 
-## <a name="integrating-into-wise-for-windows-installer"></a>Integrando-se ao Wise para Windows Installer
+## <a name="integrating-into-wise-for-windows-installer"></a>integrando-se ao Wise para Windows Installer
 
-Para integrar com o Wise for Windows Installer, estas etapas devem ser feitas:
+para integrar com o Wise for Windows Installer, estas etapas devem ser feitas:
 
-1.  Abra seu Wise para Windows Installer projeto.
+1.  abra seu Wise para Windows Installer projeto.
 2.  Selecione a guia "especialista em instalação" na parte inferior.
 3.  Clique em arquivos e adicione o FirewallInstallHelper.dll do DXSDK ao diretório de instalação do jogo.
 4.  Selecione a guia "script MSI" na parte inferior.
@@ -256,9 +256,9 @@ Para integrar com o Wise for Windows Installer, estas etapas devem ser feitas:
     3.  Adicione um parâmetro com o tipo "ponteiro de cadeia de caracteres", fonte de valor "Propriedade" e nome da propriedade "FULLPATH".
     4.  Feche o segundo bloco If adicionando uma "instrução End".
 
-## <a name="integrating-into-windows-installer"></a>Integrando-se ao Windows Installer
+## <a name="integrating-into-windows-installer"></a>integrando-se ao Windows Installer
 
-Para integrar com Windows Installer no alto nível, essas etapas devem ser feitas. Eles serão explicados em detalhes abaixo:
+para integrar com Windows Installer no alto nível, essas etapas devem ser feitas. Eles serão explicados em detalhes abaixo:
 
 -   Adicione 2 Propriedades "FriendlyNameForFirewall" e "RelativePathToExeForFirewall" conforme descrito abaixo.
 -   Após a ação CostFinalize, chame "SetMSIFirewallProperties" em uma ação personalizada imediata para definir as propriedades apropriadas do MSI para as outras ações personalizadas.
@@ -326,11 +326,11 @@ Veja a seguir as etapas necessárias para fazer isso usando um editor MSI, como 
 
      
 
-Para obter mais informações sobre Windows Installer, consulte [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
+para obter mais informações sobre Windows Installer, consulte [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
 
 ## <a name="recommendations"></a>Recomendações
 
-O firewall está aqui para permanecer. Essas recomendações darão aos seus clientes uma boa experiência de firewall com seu jogo do Windows:
+O firewall está aqui para permanecer. essas recomendações darão aos seus clientes uma boa experiência de firewall com o jogo Windows:
 
 -   Não diga aos usuários para desabilitar o firewall para reproduzir o jogo. Isso torna todo o computador vulnerável mesmo quando eles não estão jogando no jogo.
 -   Tornar a configuração do firewall direta para seus usuários. Adicione seu aplicativo à lista de exceções durante a instalação e remova seu aplicativo da lista de exceções durante a instalação.

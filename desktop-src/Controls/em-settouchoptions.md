@@ -3,7 +3,7 @@ title: Mensagem de EM_SETTOUCHOPTIONS (RichEdit. h)
 description: Define as opções de toque associadas a um controle de edição rico.
 ms.assetid: C15036D6-B74F-414D-B731-F1587B616644
 keywords:
-- Controles de EM_SETTOUCHOPTIONS de mensagens do Windows
+- controles de Windows de mensagem de EM_SETTOUCHOPTIONS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7613679a574955ef726da9fa10e8d919c8fe53b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ea2f372d1e59a76ea13667e994534df1088fe1c78c51c30ac54db1b4dfeed2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048006"
 ---
 # <a name="em_settouchoptions-message"></a>\_Mensagem em SETtouchoptions
 
@@ -54,7 +54,7 @@ Defina como **true** para mostrar/habilitar as alças de seleção de toque ou *
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem retorna zero.
 
@@ -64,9 +64,9 @@ Essa mensagem retorna zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

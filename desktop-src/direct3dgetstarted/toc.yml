@@ -1,4 +1,4 @@
-- name: Crie seu primeiro aplicativo do Windows usando DirectX
+- name: criar seu primeiro aplicativo Windows usando o DirectX
   href: building-your-first-directx-app.md
   items:
     - name: Pré-requisitos para o desenvolvimento com DirectX

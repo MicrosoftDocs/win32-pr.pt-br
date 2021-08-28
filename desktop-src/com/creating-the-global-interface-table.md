@@ -4,12 +4,12 @@ description: Criando a tabela de interface global
 ms.assetid: e8e46642-ef41-4322-97d0-8dd5b7c72992
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f792f9664da554f6522086796f94a00ccdf0dc07
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 836cc5507ac9b8e7cccd6e9dc8fd8c2d71e1a23419945ecc01d35b3978940124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793766"
 ---
 # <a name="creating-the-global-interface-table"></a>Criando a tabela de interface global
 
@@ -30,7 +30,7 @@ if (hr != S_OK) {
 > [!Note]  
 > Ao criar o objeto de tabela de interface global usando a chamada anterior, é necessário vincular à biblioteca UUID. lib. Isso resolverá os símbolos externos CLSID \_ StdGlobalInterfaceTable e IID \_ IGlobalInterfaceTable.
 
- 
+ 
 
 Há uma única instância da tabela de interface global por processo, portanto, todas as chamadas para essa função em um processo retornam a mesma instância.
 
@@ -51,6 +51,6 @@ COM fornece uma implementação padrão da interface [**IGlobalInterfaceTable**]
 [Quando usar a tabela de interface global](when-to-use-the-global-interface-table.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bacf37ebab07ab60e347efa1645c3cf320700fb3
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 86ed2974895b9688ba635dcc174b46ff32589f39
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884698"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630177"
 ---
 # <a name="wmi-tasks-accounts-and-domains"></a>Tarefas WMI: contas e domínios
 
@@ -28,7 +28,7 @@ O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
 2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
 4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
@@ -56,7 +56,7 @@ A tabela a seguir lista exemplos de script que podem ser usados para obter vári
 <tbody>
 <tr class="odd">
 <td>... determinar o domínio ao qual um computador pertence?</td>
-<td>Use a <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> classe e verifique o valor da <strong>propriedade</strong> Domain. Você também pode usar a <strong>propriedade DNSDomain</strong> <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>no Win32_NetworkAdapterConfiguration</strong></a>.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use a <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> classe e verifique o valor da <strong>propriedade Domain.</strong> Você também pode usar a <strong>propriedade DNSDomain</strong> <a href="/windows/desktop/CIMWin32Prov/win32-networkadapterconfiguration"><strong>no Win32_NetworkAdapterConfiguration</strong></a>.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col  />
@@ -112,7 +112,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -250,7 +250,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -264,7 +264,7 @@ foreach (CimInstance cimObj in queryInstance)
 </tr>
 <tr class="even">
 <td>... encontrar o nome da pessoa atualmente conectado a um computador?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e a <strong>propriedade UserName.</strong></p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> classe e a <strong>propriedade UserName.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -324,7 +324,7 @@ foreach($computer in $computers) {
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -399,7 +399,7 @@ if ($return.ReturnValue -eq 0) {
 </tr>
 <tr class="even">
 <td>... recuperar somente grupos locais usando o WMI?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-group"><strong>Win32_Group</strong></a> e inclua a seguinte <strong>cláusula WHERE</strong> em sua <a href="querying-with-wql.md">consulta WQL.</a></p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-group"><strong>Win32_Group</strong></a> classe e inclua a seguinte <strong>cláusula WHERE</strong> em sua <a href="querying-with-wql.md">consulta WQL.</a></p>
 <p><code>Where LocalAccount = True</code></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>

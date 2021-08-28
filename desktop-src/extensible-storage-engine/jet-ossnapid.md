@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d6185f17c16cbdb2a45e172a14af346c3519aa12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 82be9a4aa00f1880493d81dbcd53d1d8d76cc46a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983799"
 ---
 # <a name="jet_ossnapid"></a>JET_OSSNAPID
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_ossnapid"></a>JET_OSSNAPID
 
-O tipo de dados **JET_OSSNAPID** contém um identificador para um instantâneo do banco de dado.
+O **JET_OSSNAPID** de dados contém um identificador para um instantâneo do banco de dados.
 
 ```cpp
     typedef JET_API_PTR JET_OSSNAPID;
@@ -39,13 +39,17 @@ O tipo de dados **JET_OSSNAPID** contém um identificador para um instantâneo d
 
 JET_OSSNAPID
 
-Um identificador para um instantâneo do banco de dados. Esse identificador é usado em elementos da API do JET que estão envolvidos no backup de instantâneo.
+Um handle para um instantâneo do banco de dados. Esse handle é usado em elementos da API JET que estão envolvidos com o backup de instantâneo.
 
-**NULL** pode ser usado para indicar um identificador inválido.
+**NULL** pode ser usado para indicar um alça inválido.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 

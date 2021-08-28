@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-Propriedades
-description: O atributo DHCP-Properties não está sendo usado no momento.
+title: atributo dhcp-Properties
+description: O atributo dhcp-Properties não é usado no momento.
 ms.assetid: bc725fc3-6331-4c88-be60-52f34cd29ec6
 ms.tgt_platform: multiple
 keywords:
-- atributo DHCP – Propriedades esquema do AD
-- Esquema de AD do atributo dhcpproperties
+- Esquema do AD do atributo dhcp-Properties
+- Atributo dhcpProperties Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bab19720d628b0297dec183636f611923ce8c25e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dfcff103184a84a156a3bf2479b52d13fdcda264bf4a3f4b757f852310748de9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050036"
 ---
-# <a name="dhcp-properties-attribute"></a>atributo DHCP-Propriedades
+# <a name="dhcp-properties-attribute"></a>atributo dhcp-Properties
 
-O atributo **DHCP-Properties** não está sendo usado no momento.
+O **atributo dhcp-Properties** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | DHCP-Propriedades                                       |
-| LDAP-Display-Name | dhcpproperties                                        |
+| CN                | dhcp-Properties                                       |
+| Ldap-Display-Name | dhcpProperties                                        |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.718                                |
-| System-ID-GUID    | 963d2753-48be-11d1-a9c3-0000f80367c1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2753-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ O atributo **DHCP-Properties** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O atributo **DHCP-Properties** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O atributo **DHCP-Properties** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

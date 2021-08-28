@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5186e55b8b1d3472cb25ea6fa067988d4fb1f2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f097ce0c31c9892e57d0fe01d5acf2e2418547ef8c8a53be4f0f43fdecc8c9ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069596"
 ---
 # <a name="id3dx11effectvariablesetrawvalue-method"></a>Método ID3DX11EffectVariable:: SetRawValue
 
@@ -72,7 +72,7 @@ O número de bytes a serem definidos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -4,12 +4,12 @@ ms.assetid: e597f6e6-6e07-4afb-8905-26e4af961685
 title: Métodos Image. SaveAdd (Gdiplusheaders. h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: a2b65c6fe56507538f092edc7128497de5cb2f00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9a18e1c74bf858db8ee3f8877a714338c1ed8b08a87b9e501dcc980bb6f78e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717586"
 ---
 # <a name="imagesaveadd-methods"></a>Métodos Image. SaveAdd
 
@@ -32,10 +32,10 @@ Este tópico lista os métodos SaveAdd da classe [**Image**](/windows/win32/api/
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de desktop do Windows XP, Windows 2000 Professional \[\]<br/>                                          |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional \[ aplicativos de área de trabalho\]<br/>                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                            |
 | Produto<br/>                  | GDI+ 1,0<br/>                                                                                             |
-| parâmetro<br/>                   | <dl> <dt>Gdiplusheaders. h (incluir Gdiplus. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gdiplusheaders. h (incluir Gdiplus. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Gdiplus. lib</dt> </dl>                          |
 
 

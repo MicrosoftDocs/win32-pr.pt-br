@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa165ddc7655ec195f276b96e0e841d52e01e9de
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 2b1e22b8816f3083fdf3cf623107197bc8a06883
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466633"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985939"
 ---
 # <a name="jetcreatetablecolumnindex3-function"></a>Função JetCreateTableColumnIndex3
 
@@ -79,9 +79,9 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 | <p>JET_errIndexDuplicate</p> | <p>Foi feita uma tentativa de definir dois índices idênticos.</p> | 
 | <p>JET_errIndexHasPrimary</p> | <p>Foi feita uma tentativa de especificar mais de um índice primário para uma tabela. Uma tabela deve ter exatamente um índice primário. Se nenhum índice primário for especificado, o mecanismo de banco de dados criará um de forma transparente.</p> | 
 | <p>JET_errIndexInvalidDef</p> | <p>Uma definição de índice inválida foi especificada. A seguir estão alguns dos possíveis motivos para receber esse erro:</p><ul><li><p>Um índice primário é condicional (ou seja, o <strong>membro grbit</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> tem JET_bitIndexPrimary definido e o membro <strong>cConditionalColumn</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> é maior que zero).</p></li><li><p>Windows Server 2003 e versões posteriores do Windows. Tentar criar um índice de tupla com limites de tupla, mas sem passar o membro <strong>ptuplelimits</strong> na estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> (ou seja, o <strong>membro grbit</strong> da estrutura JET_INDEXCREATE2 tem JET_bitIndexTupleLimits definido, mas o ponteiro <strong>ptuplelimits</strong> é NULL).</p></li><li><p>Passando uma definição de chave inválida no <strong>membro szKey</strong> da <a href="gg294082(v=exchg.10).md">estrutura JET_INDEXCREATE2</a> dados. Consulte <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> para uma discussão sobre definições válidas.</p></li><li><p>Definir o <strong>membro cbVarSegMac</strong> <a href="gg294082(v=exchg.10).md">no JET_INDEXCREATE2</a> ser maior que JET_cbPrimaryKeyMost (para um índice primário) ou maior que JET_cbSecondaryKeyMost (para um índice secundário).</p></li><li><p>Passando uma combinação inválida para um índice Unicode definido pelo usuário (um que tem o bit JET_bitIndexUnicode definido no <strong>membro grbit</strong> do <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a>). Algumas causas comuns incluem o <strong>membro pidxunicode</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> é NULL ou o LCID especificado na estrutura <strong>pidxunicode</strong> é inválido.</p></li><li><p>Especificando uma coluna com vários valores para um índice primário.</p></li><li><p>Tentando indexar muitas colunas condicionais. O <strong>membro cConditionalColumn</strong> da <a href="gg294082(v=exchg.10).md">estrutura JET_INDEXCREATE2</a> não deve ser maior que JET_ccolKeyMost.</p></li></ul> | 
-| <p>JET_errIndexTuplesInvalidLimits</p> | <p>Windows XP e versões posteriores Windows. Uma <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> estrutura de dados foi especificada e seus limites não são suportados. Consulte a seção de comentários da estrutura <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> dados.</p> | 
+| <p>JET_errIndexTuplesInvalidLimits</p> | <p>Windows XP e versões posteriores Windows. Uma <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> estrutura foi especificada e seus limites não são suportados. Consulte a seção de comentários da estrutura <a href="gg269207(v=exchg.10).md">JET_TUPLELIMITS</a> dados.</p> | 
 | <p>JET_errIndexTuplesNonUniqueOnly</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla não pode ser exclusivo (ou seja, o <em>membro grbit</em> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> não deve ter JET_bitIndexPrimary e JET_bitIndexUnique definidos).</p> | 
-| <p>JET_errIndexTuplesOneColumnOnly</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla só poderá ser sobre uma única coluna (ou seja, se o membro <strong>grbit</strong> <a href="gg294082(v=exchg.10).md">da</a> estrutura JET_INDEXCREATE2 tiver JET_bitIndexTuples definido e o membro <strong>szKey</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> especificar mais de uma coluna).</p> | 
+| <p>JET_errIndexTuplesOneColumnOnly</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla só pode estar sobre uma única coluna (ou seja, se o membro <strong>grbit</strong> <a href="gg294082(v=exchg.10).md">da</a> estrutura JET_INDEXCREATE2 tiver JET_bitIndexTuples definido e o membro <strong>szKey</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> especificar mais de uma coluna).</p> | 
 | <p>JET_errIndexTuplesSecondaryIndexOnly</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla não pode ser um índice primário (ou seja, o <strong>membro grbit</strong> da estrutura <a href="gg294082(v=exchg.10).md">JET_INDEXCREATE2</a> não deve ter JET_bitIndexPrimary e JET_bitIndexTuples definidos).</p> | 
 | <p>JET_errIndexTuplesTextColumnsOnly</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla só pode estar em um texto ou coluna Unicode. Uma tentativa de indexar outras colunas (como colunas binárias) resultará em JET_errIndexTuplesTextColumnsOnly.</p> | 
 | <p>JET_errIndexTuplesVarSegMacNotAllowed</p> | <p>Windows XP e versões posteriores Windows. Um índice de tupla não permite que <strong>o membro cbVarSegMac</strong> <a href="gg294082(v=exchg.10).md">da estrutura JET_INDEXCREATE2</a> seja definido.</p> | 
@@ -109,7 +109,14 @@ Assim como o [JetOpenTable](./jetopentable-function.md), quando o aplicativo é 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetCreateTableColumnIndex3W</strong> (Unicode) e <strong>JetCreateTableColumnIndex3A</strong> (ANSI).</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetCreateTableColumnIndex3W</strong> (Unicode) e <strong>JetCreateTableColumnIndex3A</strong> (ANSI).</p> | 
 
 
 

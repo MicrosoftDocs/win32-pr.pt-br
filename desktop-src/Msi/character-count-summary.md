@@ -4,12 +4,12 @@ ms.assetid: d26d24a5-558e-4333-ae39-ffba1bbc5247
 title: Propriedade de resumo contagem de caracteres
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afc99c065721f0f0b94691a12e00204305940efd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 766cc9ab355e533c155bfc81bac7b3f6e82cf9ab8679cf4feb00e9d01705a94b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754336"
 ---
 # <a name="character-count-summary-property"></a>Propriedade de resumo contagem de caracteres
 
@@ -23,7 +23,7 @@ Essa propriedade deve ser nula em um pacote de instalação ou em um pacote de p
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP.<br/> |
 
 
 

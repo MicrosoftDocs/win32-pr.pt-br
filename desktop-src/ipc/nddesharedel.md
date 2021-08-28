@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 2d57307c157c532e124699b6bfb2ed666f374722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0efd5bb41712e8bee2ee7a5e789d1b006a490c932b48386de27f56a8b1150f6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611096"
 ---
 # <a name="nddesharedel-function"></a>Função NDdeShareDel
 
@@ -66,7 +66,7 @@ Reservado. Esse parâmetro deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será NDDE \_ nenhum \_ erro.
 
@@ -95,7 +95,7 @@ Para excluir um compartilhamento DDE do DSDM, você deve ter o privilégio aprop
 
 <dl> <dt>
 
-[Visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
+[visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funções DDE de rede](network-dde-functions.md)

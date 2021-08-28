@@ -1,46 +1,46 @@
 ---
-description: O gravador de teste é um utilitário que você pode usar para testar aplicativos do solicitante do VSS.
+description: O Test Writer é um utilitário que você pode usar para testar aplicativos solicitante do VSS.
 ms.assetid: 02434cb9-390c-4cf0-9941-b833ace55685
-title: Ferramenta de gravador de teste do VSS
+title: Ferramenta de Writer de Teste do VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b93f0b81bd5e27db9fdfb70ca52e6f43bbb1e853af87bc12e1d76f01d7966ef3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35c8ff5461c263754aa5771cc9db230dec795a98
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118344228"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482092"
 ---
-# <a name="vss-test-writer-tool"></a>Ferramenta de gravador de teste do VSS
+# <a name="vss-test-writer-tool"></a>Ferramenta de Writer de Teste do VSS
 
-O gravador de teste é um utilitário que você pode usar para testar aplicativos do solicitante do VSS. Esse gravador pode ser configurado para executar quase todas as ações que um gravador VSS pode executar. Além disso, o gravador de teste executa verificações extensivas para garantir que o solicitante tenha tratado corretamente essas ações de gravador.
+O Test Writer é um utilitário que você pode usar para testar aplicativos solicitante do VSS. Esse autor pode ser configurado para executar quase todas as ações que um vss writer pode executar. Além disso, o Test Writer executa verificações abrangentes para garantir que o solicitante tenha tratado essas ações de autor corretamente.
 
-Cada instância do gravador é inicializada com um arquivo de configuração XML que descreve exatamente quais componentes serão relatados pelo gravador e como o gravador se comporta. O gravador pode ser configurado para relatar vários tipos de cenários, incluindo cenários mais complicados usando as interfaces incrementais e diferenciais. O gravador executará verificações em vários pontos durante o processo para garantir que o solicitante esteja se comportando de maneira adequada. Depois que a restauração for concluída, o gravador verificará se todos os arquivos necessários foram restaurados sem corrupção. O gravador também pode ser configurado para executar outras operações, como eventos específicos com falha.
+Cada instância do autor é inicializada com um arquivo de configuração XML que descreve exatamente em quais componentes o autor relatará e como o autor se comporta. O autor pode ser configurado para relatar vários tipos de cenários, incluindo cenários mais complicados usando interfaces incrementais e diferenciais. O autor executará verificações em vários pontos durante o processo para garantir que o solicitante está se comportando de maneira adequada. Depois que a restauração for concluída, o autor verificará se todos os arquivos necessários foram restaurados sem corrupção. O autor também pode ser configurado para executar outras operações, como eventos específicos com falha.
 
 > [!Note]  
-> essa ferramenta está incluída no SDK (Software Development Kit) do Microsoft Windows para Windows Vista e posterior. você pode baixar o SDK do Windows do [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
+> Essa ferramenta está incluída no Microsoft Windows Software Development Kit (SDK) para Windows Vista e posterior. Você pode baixar o Windows SDK do [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
 
  
 
-na instalação do SDK do Windows, a ferramenta VssSampleProvider pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para a Windows de 64 bits) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
+Na instalação Windows SDK do Windows, a ferramenta VssSampleProvider pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para 64 bits Windows) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
 
-## <a name="running-the-test-writer-tool"></a>Executando a ferramenta de gravador de teste
+## <a name="running-the-test-writer-tool"></a>Executando a Ferramenta de Autor de Teste
 
-Para iniciar o gravador de teste, digite o seguinte no prompt de comando:
+Para iniciar o Test Writer, digite o seguinte no prompt de comando:
 
- *Arquivo config-* vswriter.exe
+**vswriter.exe** *arquivo de configuração*
 
-em que *config-file* é o caminho para um arquivo de configuração que especifica o comportamento desse gravador.
+em *que config-file* é o caminho para um arquivo de configuração que especifica o comportamento desse autor.
 
-Para interromper o gravador de teste, pressione CTRL + C.
+Para interromper o Test Writer, pressione CTRL+C.
 
-Várias instâncias do gravador de teste podem ser executadas ao mesmo tempo. No entanto, cada instância do gravador relatará a mesma ID de classe de gravador (embora uma ID de instância de gravador diferente), portanto, os caminhos lógicos e os nomes de componentes devem ser exclusivos em todas as instâncias em execução simultaneamente do gravador.
+Várias instâncias do Test Writer podem ser executados ao mesmo tempo. No entanto, cada instância do autor relatará a mesma ID de classe de autor (embora uma ID de instância de autor diferente), portanto, os caminhos lógicos e os nomes de componentes devem ser exclusivos em todas as instâncias em execução simultânea do autor.
 
-Para garantir que o gravador possa verificar corretamente se o solicitante cumpriu as especificações de arquivo de exclusão, todos os arquivos dos quais foi feito backup devem ser excluídos do volume original antes de tentar restaurá-los. É recomendável que um modelo de cada cenário de gravador seja armazenado, para que o cenário possa ser facilmente recriado.
+Para garantir que o autor possa verificar corretamente se o solicitante recebeu as especificações do arquivo de exclusão, todos os arquivos que foram armazenados em backup devem ser excluídos do volume original antes de tentar restaurá-los. É recomendável que um modelo de cada cenário de autor seja armazenado, para que o cenário possa ser recriado facilmente.
 
 ## <a name="using-a-configuration-file"></a>Usar um Arquivo de Configuração
 
-O arquivo de configuração de exemplo a seguir, vswriter \_config.xml, pode ser encontrado em `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` plataformas x86 e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` em plataformas x64.
+O arquivo de configuração de exemplo a seguir, vswriterconfig.xml, pode ser encontrado em em \_ `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` plataformas x86 e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` em plataformas x64.
 
 ``` syntax
 <TestWriter usage="USER_DATA">
@@ -63,92 +63,59 @@ O arquivo de configuração de exemplo a seguir, vswriter \_config.xml, pode ser
 </TestWriter>
 ```
 
-O elemento raiz nesse arquivo de configuração é denominado TestWriter. Todos os outros elementos são organizados sob o elemento TestWriter.
+O elemento raiz nesse arquivo de configuração é chamado TestWriter. Todos os outros elementos são organizados sob o elemento TestWriter.
 
-Um dos atributos associados a TestWriter é o atributo Usage. Esse atributo especifica o tipo de uso relatado por meio de [**IVssExamineWriterMetadata:: getidentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity). Um dos valores possíveis para esse atributo são \_ os dados do usuário.
+Um dos atributos associados ao TestWriter é o atributo de uso. Esse atributo especifica o tipo de uso relatado por [**meio de IVssExamineWriterMetadata::GetIdentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity). Um dos valores possíveis para esse atributo é USER \_ DATA.
 
-O primeiro elemento filho do elemento raiz sempre deve ser um elemento RestoreMethod. Esse elemento Especifica o seguinte:
+O primeiro elemento filho do elemento raiz sempre deve ser um elemento RestoreMethod. Esse elemento especifica o seguinte:
 
--   O método Restore (nesse caso, RESTOre \_ If \_ pode \_ ser \_ substituído)
--   Se o gravador requer eventos de restauração (neste caso, sempre)
--   Se uma reinicialização é necessária após a restauração do gravador (neste caso, não)
+-   O método de restauração (nesse caso, RESTORE \_ IF \_ CAN BE \_ \_ REPLACED)
+-   Se o autor requer eventos de restauração (nesse caso, sempre)
+-   Se uma reinicialização é necessária depois que o autor é restaurado (nesse caso, não)
 
-Esse elemento pode, opcionalmente, especificar um mapeamento de local alternativo. (Nesse caso, nenhum local alternativo é especificado.)
+Opcionalmente, esse elemento pode especificar um mapeamento de localização alternativa. (Nesse caso, nenhum local alternativo é especificado.)
 
-O segundo elemento filho é um elemento excludefile. Esse elemento faz com que o gravador exclua um arquivo ou um conjunto de arquivos do backup.
+O segundo elemento filho é um elemento ExcludeFile. Esse elemento faz com que o autor exclua um arquivo ou um conjunto de arquivos do backup.
 
-O terceiro elemento filho é um elemento de componente. Esse elemento faz com que o gravador adicione um componente a seus metadados. Um elemento de componente contém atributos para descrever o componente e os elementos filho para descrever o conteúdo do componente, como o seguinte:
+O terceiro elemento filho é um elemento Component. Esse elemento faz com que o autor adicione um componente aos seus metadados. Um elemento Component contém atributos para descrever o componente e os elementos filho para descrever o conteúdo do componente, como o seguinte:
 
--   ComponentType para indicar se este é um grupo de arquivos ou um banco de dados
+-   componentType para indicar se este é um grupo de arquivos ou um banco de dados
 -   logicalPath para o caminho lógico do componente
--   ComponentName para o nome do componente
--   selecionável para indicar o status de selecionável para backup
+-   componentName para o nome do componente
+-   selecionável para indicar o status selecionável para backup
 
-O elemento Component também tem um elemento filho chamado Componentfile para adicionar uma especificação de arquivo a esse componente. (Um elemento de componente pode ter um número arbitrário de elementos Componentfile que podem ser especificados para cada componente.) Este elemento Componentfile tem os seguintes atributos:
+O elemento Component também tem um elemento filho chamado ComponentFile para adicionar uma especificação de arquivo a esse componente. (Um elemento Component pode ter um número arbitrário de elementos ComponentFile que podem ser especificados para cada componente.) Esse elemento ComponentFile tem os seguintes atributos:
 
--   Path = "c: \\ writerData \\ myFilesHere"
--   filespec = " \* "
--   recursivo = "não"
+-   path="c: \\ writerData \\ myFilesHere"
+-   filespec=" \* "
+-   recursive="no"
 
-Embora o gravador de teste Verifique o comportamento do solicitante, ele não verifica se o arquivo de configuração sempre mantém a semântica documentada para um gravador. Há muitas operações que um gravador bem comportado não deve fazer (como relatar o mesmo arquivo em vários componentes), e cabe ao autor do arquivo de configuração XML manter essas semânticas.
+Embora o Test Writer verifique o comportamento do solicitante, ele não verifica se o arquivo de configuração sempre mantém a semântica documentada para um autor. Há muitas operações que um autor bem-comportado não deve fazer (como relatar o mesmo arquivo em vários componentes) e é responsabilidade do autor do arquivo de configuração XML manter essa semântica.
 
-## <a name="configuring-writer-attributes"></a>Configurando atributos do gravador
+## <a name="configuring-writer-attributes"></a>Configurando atributos de writer
 
-O elemento raiz TestWriter contém atributos que determinam vários comportamentos do gravador. Alguns dos comportamentos que podem ser alterados são os seguintes:
+O elemento raiz TestWriter contém atributos que determinam vários comportamentos do autor. Alguns dos comportamentos que podem ser alterados são os seguintes:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="verbosity"></span><span id="VERBOSITY"></span>detalhamento<br/></td>
-<td>O gravador imprime o status no console do à medida que recebe eventos e os processa. O nível de detalhamento exibido é especificado pelo atributo de detalhes. Há três níveis de detalhamento a serem escolhidos:<br/> <dl> <dt><span id="low"></span><span id="LOW"></span>pequena</dt> <dd> Somente as falhas no gravador ou comportamento incorreto do solicitante serão impressas.<br/> </dd> <dt><span id="medium"></span><span id="MEDIUM"></span>médio</dt> <dd> Tudo no nível de detalhe baixo é impresso, além das informações de status extras, como quando os eventos são recebidos. Este é o nível padrão.<br/> </dd> <dt><span id="high"></span><span id="HIGH"></span>elevada</dt> <dd> Informações detalhadas de status sobre a operação do gravador são relatadas.<br/> </dd> </dl></td>
-</tr>
-<tr class="even">
-<td><span id="deleteFiles"></span><span id="deletefiles"></span><span id="DELETEFILES"></span>deleteFiles<br/></td>
-<td>Para executar a verificação extra, defina esse atributo como &quot; Sim &quot; para fazer com que o gravador exclua todos os seus arquivos imediatamente após a criação da cópia de sombra de volume. O solicitante deve copiar os arquivos da cópia de sombra, pois eles não existem mais no volume original. <br/>
-<blockquote>
-[!Note]<br />
-No caso de gravadores saliva, os arquivos são excluídos do local original após o saliva, mas antes da cópia de sombra ser criada. Depois que a cópia de sombra é criada, os arquivos são excluídos do diretório saliva.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="deletePartialFiles"></span><span id="deletepartialfiles"></span><span id="DELETEPARTIALFILES"></span>deletePartialFiles<br/></td>
-<td>Para excluir arquivos parciais, defina este atributo como &quot; Sim &quot; .<br/></td>
-</tr>
-<tr class="even">
-<td><span id="deleteDifferencedFiles"></span><span id="deletedifferencedfiles"></span><span id="DELETEDIFFERENCEDFILES"></span>deleteDifferencedFiles<br/></td>
-<td>Para excluir arquivos diferenciados, defina este atributo como &quot; Sim &quot; .<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="checkIncludes"></span><span id="checkincludes"></span><span id="CHECKINCLUDES"></span>checkIncludes<br/></td>
-<td>Defina esse atributo como &quot; Sim &quot; para fazer com que o gravador Verifique se todos os arquivos cujo backup foi feito foi restaurado em um local apropriado e se o arquivo não foi corrompido. Arquivos parciais e arquivos diferenciados também são tratados corretamente.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="checkExcludes"></span><span id="checkexcludes"></span><span id="CHECKEXCLUDES"></span>checkExcludes<br/></td>
-<td>Defina esse atributo como &quot; Sim &quot; para fazer com que o gravador Verifique se os arquivos que correspondem a uma especificação de arquivo na lista de exclusões não são restaurados. Para que isso funcione corretamente, os diretórios de restauração devem ser esvaziados antes da restauração.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descrição | 
+|-----------|-------------|
+| <span id="verbosity"></span><span id="VERBOSITY"></span>Verbosidade<br /> | O autor imprime o status no console à medida que recebe eventos e os processa. O nível de detalhabilidade exibido é especificado pelo atributo verbosity. Há três níveis de detalhes para escolher:<br /><dl><dt><span id="low"></span><span id="LOW"></span>Baixo</dt><dd> Somente falhas no autor ou comportamento incorreto do solicitante serão impressas.<br /></dd><dt><span id="medium"></span><span id="MEDIUM"></span>Médio</dt><dd> Tudo no nível de detalhes baixo é impresso, além de informações de status extras, como quando os eventos são recebidos. Este é o nível padrão.<br /></dd><dt><span id="high"></span><span id="HIGH"></span>Alta</dt><dd> Informações detalhadas de status sobre a operação do autor são relatadas.<br /></dd></dl> | 
+| <span id="deleteFiles"></span><span id="deletefiles"></span><span id="DELETEFILES"></span>deleteFiles<br /> | Para executar a verificação extra, de definir esse atributo como "sim" para fazer com que o autor exclua todos os seus arquivos imediatamente após a criação da cópia de sombra do volume. O solicitante deve copiar os arquivos da cópia de sombra, pois eles não existem mais no volume original. <br /><blockquote>[!Note]<br />No caso de autores de sempre, os arquivos são excluídos do local original após o acidente, mas antes que a cópia de sombra seja criada. Depois que a cópia de sombra é criada, os arquivos são excluídos do diretório de diretórios.</blockquote><br /> | 
+| <span id="deletePartialFiles"></span><span id="deletepartialfiles"></span><span id="DELETEPARTIALFILES"></span>deletePartialFiles<br /> | Para excluir arquivos parciais, de definir esse atributo como "sim".<br /> | 
+| <span id="deleteDifferencedFiles"></span><span id="deletedifferencedfiles"></span><span id="DELETEDIFFERENCEDFILES"></span>deleteDifferencedFiles<br /> | Para excluir arquivos de diferença, de definir esse atributo como "sim".<br /> | 
+| <span id="checkIncludes"></span><span id="checkincludes"></span><span id="CHECKINCLUDES"></span>checkIncludes<br /> | De definir esse atributo como "sim" para fazer com que o autor verifique se cada arquivo que foi feito backup foi restaurado em um local apropriado e se o arquivo não foi corrompido. Arquivos parciais e arquivos de diferença também são tratados corretamente.<br /> | 
+| <span id="checkExcludes"></span><span id="checkexcludes"></span><span id="CHECKEXCLUDES"></span>checkExcludes<br /> | De definir esse atributo como "sim" para fazer com que o autor verifique se os arquivos correspondentes a uma especificação de arquivo na lista de exclusão não são restaurados. Para que isso funcione corretamente, os diretórios de restauração devem ser esvaziados antes da restauração.<br /> | 
+
 
 
 
  
 
-## <a name="specifying-alternate-location-mappings"></a>Especificando mapeamentos de local alternativos
+## <a name="specifying-alternate-location-mappings"></a>Especificando mapeamentos de localização alternativos
 
-Um mapeamento de local alternativo especifica um local para restaurar se o método de restauração for o VSS \_ WRE \_ restaurar \_ para um \_ \_ local alternativo ou se a restauração normal de um componente falhar. Um gravador pode relatar seus mapeamentos de local alternativos para o solicitante usando o método [**IVssExamineWriterMetadata:: GetAlternateLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping) . Você pode adicionar mapeamentos de local alternativos ao arquivo de configuração do gravador de teste adicionando subelementos AlternateLocationMapping ao elemento RestoreMethod.
+Um mapeamento de local alternativo especifica um local para o que restaurar se o método de restauração for VSS WRE RESTORE TO ALTERNATE LOCATION ou \_ se a restauração normal de um componente \_ \_ \_ \_ falhar. Um autor pode relatar seus mapeamentos de localização alternativos ao solicitante usando o método [**IVssExamineWriterMetadata::GetAlternateLocationMapping.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getalternatelocationmapping) Você pode adicionar mapeamentos de localização alternativos ao arquivo de configuração do Test Writer adicionando subelementos AlternateLocationMapping ao elemento RestoreMethod.
 
 O elemento RestoreMethod a seguir contém um subelemento AlternateLocationMapping.
 
@@ -163,13 +130,13 @@ O elemento RestoreMethod a seguir contém um subelemento AlternateLocationMappin
 </RestoreMethod>
 ```
 
-Este exemplo especifica que o solicitante deve primeiro tentar restaurar todos os arquivos que correspondem a c: \\ files \\ \*.txt para o diretório c: \\ files. Se um desses arquivos não puder ser substituído, o solicitante deverá restaurar todos os arquivos para o diretório c: \\ altfiles. O solicitante deve salvar esse mapeamento de local alternativo usando o método [**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) . Se o gravador de teste estiver configurado para verificar se os arquivos foram restaurados, ele também verificará se o solicitante chamou **AddAlternativeLocationMapping**.
+Este exemplo especifica que o solicitante deve primeiro tentar restaurar todos os arquivos correspondentes a c: arquivos.txt para o \\ \\ \* diretório de arquivos \\ c:. Se um desses arquivos não puder ser substituído, o solicitante deverá restaurar todos os arquivos para o diretório c: \\ altfiles. O solicitante deve salvar esse mapeamento de local alternativo usando o [**método IVssBackupComponents::AddAlternativeLocationMapping.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) Se o Test Writer estiver configurado para verificar se os arquivos foram restaurados, ele também verificará se o solicitante chamou **AddAlternativeLocationMapping.**
 
-## <a name="specifying-files-to-be-excluded"></a>Especificando os arquivos a serem excluídos
+## <a name="specifying-files-to-be-excluded"></a>Especificando arquivos a serem excluídos
 
-Cada gravador pode especificar uma lista de especificações de arquivo que especificam arquivos para o solicitante excluir do backup. Você pode adicionar essas especificações de arquivo ao arquivo de configuração do gravador de teste adicionando subelementos de excludefile ao elemento raiz TestWriter.
+Cada autor pode especificar uma lista de especificações de arquivo que especificam arquivos para o solicitante excluir do backup. Você pode adicionar essas especificações de arquivo ao arquivo de configuração do Test Writer adicionando subelementos ExcludeFile ao elemento raiz TestWriter.
 
-Aqui está um exemplo de um subelemento excludefile que exclui todos os arquivos no diretório C: \\ files que correspondem a C: \\ temp \* . \*
+Aqui está um exemplo de um subelemento ExcludeFile que exclui todos os arquivos no diretório C: arquivos que \\ corresponderem a C: \\ temp \* \* .
 
 ``` syntax
     <ExcludeFile path="c:\files" 
@@ -177,9 +144,9 @@ Aqui está um exemplo de um subelemento excludefile que exclui todos os arquivos
                  recursive="no"/>
 ```
 
-## <a name="backing-up-spit-writers"></a>Fazendo backup de gravadores saliva
+## <a name="backing-up-spit-writers"></a>Fazer o back-up de autores de filme
 
-Muitos gravadores atuam como "saliva gravadores". Um gravador saliva cria arquivos intermediários, ou "arquivos saliva", com base em um conjunto original de arquivos e coloca os arquivos saliva em um local alternativo no momento do backup. O autor usa o método [**IVssWMFiledesc::GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar o solicitante de que ele deve fazer o back-up desses arquivos do local alternativo. No entanto, esses arquivos ainda devem ser restaurados para o local ativo dos arquivos originais. O Test Writer pode ser configurado para atuar como um autor de técnicas para uma especificação de arquivo específica.
+Muitos autores atuam como "autores de filme". Um autor de sempre cria arquivos intermediários, ou "arquivos de arquivos de arquivos", com base em um conjunto original de arquivos e coloca os arquivos de arquivos em um local alternativo no momento do backup. O autor usa o método [**IVssWMFiledesc::GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar o solicitante de que ele deve fazer o back-up desses arquivos do local alternativo. No entanto, esses arquivos ainda devem ser restaurados para o local ativo dos arquivos originais. O Test Writer pode ser configurado para atuar como um autor de técnicas para uma especificação de arquivo específica.
 
 O seguinte elemento ComponentFile contém um atributo alternatePath:
 
@@ -190,7 +157,7 @@ O seguinte elemento ComponentFile contém um atributo alternatePath:
                    alternatePath="c:\files\spit" />
 ```
 
-Este exemplo configura o Test Writer para copiar todos os arquivos correspondentes a arquivos c: arquivos.txt diretório c: arquivos imediatamente antes da criação da cópia de \\ \\ \* sombra de \\ \\ volume. O solicitante deve fazer o back-up dos arquivos do diretório c: \\ files \\ directory. Se o Test Writer estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes que a cópia de sombra seja criada, para que eles não apareçam no diretório de arquivos c: no volume de cópia \\ de sombra. Nesse caso, os arquivos em c: arquivos são excluídos depois que a cópia de sombra é criada, portanto, eles devem ser copiados em backup do diretório de arquivos c: no volume de cópia \\ \\ de \\ \\ sombra.
+Este exemplo configura o Test Writer para copiar todos os arquivos correspondentes a c: arquivos.txt diretório c: arquivos imediatamente antes da criação da cópia de \\ \\ \* sombra do \\ \\ volume. O solicitante deve fazer o back-up dos arquivos do diretório c: \\ files \\ directory. Se o Test Writer estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes que a cópia de sombra seja criada, para que eles não apareçam no diretório de arquivos c: no volume de cópia \\ de sombra. Nesse caso, os arquivos em c: arquivos são excluídos depois que a cópia de sombra é criada, portanto, eles devem ser copiados em backup do diretório de arquivos c: no volume de cópia \\ \\ de \\ \\ sombra.
 
 ## <a name="reporting-component-dependencies"></a>Dependências do componente de relatório
 
@@ -295,7 +262,7 @@ Aqui está um exemplo de um elemento Component que tem dois subelementos Partial
     </Component>
 ```
 
-Somente arquivos parciais que corresponderem parcialmente a um ComponentFile existente (como no primeiro arquivo parcial no exemplo) ou novos arquivos parciais que estão no mesmo volume que um ComponentFile existente (como no segundo arquivo parcial) devem ser especificados dessa maneira. Para esse componente, o solicitante deve fazer todo o back-up de todos os arquivos correspondentes a c: arquivos \\ \\ \*.txt exceto partial.txt. Em seguida, o solicitante deve fazer o back-up dos intervalos especificados (em que um intervalo é um deslocamento seguido por um comprimento) para os arquivos c: arquivospartial.txt e \\ \\ c: \\ files2 \\partial.txt.
+Somente arquivos parciais que corresponderem parcialmente a um ComponentFile existente (como no primeiro arquivo parcial no exemplo) ou novos arquivos parciais que estão no mesmo volume que um ComponentFile existente (como no segundo arquivo parcial) devem ser especificados dessa maneira. Para esse componente, o solicitante deve fazer todo o back-up de todos os arquivos correspondentes a c: arquivos \\ \\ \*.txt exceto para partial.txt. Em seguida, o solicitante deve fazer o back-up dos intervalos especificados (em que um intervalo é um deslocamento seguido por um comprimento) para os arquivos c: arquivospartial.txt e \\ \\ c: \\ files2 \\partial.txt.
 
 Se o writer estiver configurado para verificar restaurações de arquivo, somente os intervalos de backup do arquivo parcial serão verificados no momento da restauração. As modificações em outras partes do arquivo passarão despercebidas. Se o atributo deletePartialFiles do elemento raiz TestWriter estiver definido, os arquivos parciais serão excluídos do volume original imediatamente após a criação da cópia de sombra.
 
@@ -332,7 +299,7 @@ Aqui está um exemplo de um elemento Component que tem dois subelementos Differe
     </Component>
 ```
 
-Ao contrário dos arquivos parciais, os arquivos diferentes nunca devem corresponder parcialmente a uma especificação ComponentFile. A especificação de arquivo em um elemento DifferencedFile deve corresponder exatamente a um ComponentFile (como no primeiro arquivo diferente no exemplo) ou não deve corresponder a ele, mas estar em um volume referenciado em um ComponentFile (como no segundo arquivo diferente). Os valores de data e hora devem ser relativos ao fuso horário local, mas serão convertidos em GMT antes de serem relatados ao solicitante. No exemplo, somente arquivos correspondentes a c: arquivos.txt ou c: arquivos2.txt que foram modificados desde \\ \\ \* \\ \\ \* 22/1/2003:12:44:17 serão armazenados em backup.
+Ao contrário dos arquivos parciais, os arquivos diferentes nunca devem corresponder parcialmente a uma especificação ComponentFile. A especificação de arquivo em um elemento DifferencedFile deve corresponder exatamente a um ComponentFile (como no primeiro arquivo diferente no exemplo) ou não deve corresponder a ele, mas estar em um volume referenciado em um ComponentFile (como no segundo arquivo diferente). Os valores de data e hora devem ser relativos ao fuso horário local, mas serão convertidos em GMT antes de serem relatados ao solicitante. No exemplo, somente arquivos correspondentes a c: arquivos.txt ou c: arquivos2.txt que foram modificados desde \\ \\ \* \\ \\ \* 22/01/2003:12:44:17 serão armazenados em backup.
 
 Se o Test Writer estiver configurado para verificar restaurações de arquivo, somente os arquivos modificados serão verificados para restauração. Se o atributo deleteDifferencedFiles do elemento raiz TestWriter estiver definido, os arquivos diferentes serão excluídos do volume original imediatamente após a criação da cópia de sombra.
 

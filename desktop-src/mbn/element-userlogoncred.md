@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ UserLogonCred (v4)
+description: MBNProfileExt... \/ \/ UserLogonCred (v4)
 MS-HAID: WWAN\_profile\_v4.element\_UserLogonCred
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,14 +16,14 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d14bd8d01dd152d2d87d6f4fb230c44091d3bb4ece00b359e7a34428a8c5074f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d28c0d275b722dbba6ebc1be3363cfa3e2f6d300
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119959926"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985389"
 ---
-# <a name="span-idwwan_profile_v4element_userlogoncredspanmbnprofileextuserlogoncred-v4"></a><span id="WWAN_profile_v4.element_UserLogonCred"></span>MBNProfileExt \/ ... \/ UserLogonCred (v4)
+# <a name="span-idwwan_profile_v4element_userlogoncredspanmbnprofileextuserlogoncred-v4"></a><span id="WWAN_profile_v4.element_UserLogonCred"></span>MBNProfileExt... \/ \/ UserLogonCred (v4)
 
 Credenciais de logon para uma conexão.
 
@@ -64,76 +64,33 @@ Nenhum.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos filho
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento filho</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-ignorepassword.md">IgnorePassword</a></td>
-<td><p>Especifica como as senhas são tratadas durante a atualização de perfis.</p>
-<p>Se definido como <strong>true</strong> e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será executada e armazenada no novo perfil.</p>
-<p>Para obter mais detalhes, consulte a documentação do elemento v1 <a href="../mbn/schema-ignorepassword-userlogoncred-element.md"><strong>IgnorePassword</strong></a> .</p></td>
-</tr>
-<tr class="even">
-<td><a href="element-password.md">Senha</a></td>
-<td><p>Especifica a senha usada para autenticar um usuário.</p>
-<p>Para obter mais informações, consulte a documentação do elemento de <a href="../mbn/schema-password-userlogoncred-element.md"><strong>senha</strong></a> v1.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="element-username.md">UserName</a></td>
-<td><p>O nome de usuário a ser usado para logon.</p>
-<p>Para obter mais detalhes, consulte a documentação do elemento de <a href="../mbn/schema-username-userlogoncred-element.md"><strong>nome de usuário</strong></a> v1.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento filho | Descrição | 
+|---------------|-------------|
+| <a href="element-ignorepassword.md">IgnorePassword</a> | <p>Especifica como as senhas são tratadas ao atualizar perfis.</p><p>Se definido como <strong>TRUE</strong> e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será usada e armazenada no novo perfil.</p><p>Para obter mais detalhes, consulte a documentação do <a href="../mbn/schema-ignorepassword-userlogoncred-element.md"><strong>elemento IgnorePassword</strong></a> v1.</p> | 
+| <a href="element-password.md">Senha</a> | <p>Especifica a senha usada para autenticar um usuário.</p><p>Para obter mais informações, consulte a documentação do elemento <a href="../mbn/schema-password-userlogoncred-element.md"><strong>Password</strong></a> v1.</p> | 
+| <a href="element-username.md">UserName</a> | <p>O nome de usuário a ser usado para logon.</p><p>Para obter mais detalhes, consulte a documentação do elemento <a href="../mbn/schema-username-userlogoncred-element.md"><strong>UserName</strong></a> v1.</p> | 
+
 
  
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

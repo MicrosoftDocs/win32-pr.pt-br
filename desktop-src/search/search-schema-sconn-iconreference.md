@@ -1,19 +1,19 @@
 ---
-description: O <iconReference> elemento opcional especifica um ícone personalizado para esse local. Este elemento não tem atributos nem elementos filho.
+description: O &lt; elemento opcional iconReference &gt; especifica um ícone personalizado para esse local. Este elemento não tem atributos nem elementos filho.
 ms.assetid: c2fa5e99-a7fd-423e-9952-5233e8c83619
 title: Elemento iconReference (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76391eb7079414abe13c4e45696ee3eacb3b968eb93b342b1b9e67825fac85c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47ff41d6dfd37e5e3fe780171701886b08b195ac
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862576"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882419"
 ---
 # <a name="iconreference-element-search-connector-schema"></a>Elemento iconReference (esquema do conector de pesquisa)
 
-O <iconReference> elemento opcional especifica um ícone personalizado para esse local. Este elemento não tem atributos nem elementos filho.
+O &lt; elemento opcional iconReference &gt; especifica um ícone personalizado para esse local. Este elemento não tem atributos nem elementos filho.
 
 ## <a name="syntax"></a>Syntax
 

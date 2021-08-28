@@ -3,7 +3,7 @@ title: Mensagem de HDM_GETITEM (commctrl. h)
 description: Obtém informações sobre um item em um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetItem do cabeçalho.
 ms.assetid: fb1330d3-fd28-490c-9caa-4b2b5ff86ba0
 keywords:
-- Controles de HDM_GETITEM de mensagens do Windows
+- controles de Windows de mensagem de HDM_GETITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2073602121480930e0f7d9d2e5a904c0dea77ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 566f8b8e3bdf4e92abfb1fdd5874b8514814792e1d7aae169cc2aca4b2e8d101
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436186"
 ---
 # <a name="hdm_getitem-message"></a>\_Mensagem HDM GETITEM
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**HDITEM**](/windows/win32/api/commctrl/ns-commc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -59,8 +59,8 @@ Se o \_ sinalizador de texto HDI for definido no membro **Mask** da estrutura [*
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **HDM \_ GETITEMW** (Unicode) e **HDM \_ getitema** (ANSI)<br/>                   |
 

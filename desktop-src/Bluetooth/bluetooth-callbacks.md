@@ -4,12 +4,12 @@ description: As funções de retorno de chamada do Bluetooth nesta seção são 
 ms.assetid: a66f88e2-46f7-4e23-9b61-7ee35abec207
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1afe99dc3fe1bee8f133cddae0e319e6354077e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aad822a0c7af4b0bbc5d649919bda638776014dfe7e8195ed1f45bb99032c6d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588356"
 ---
 # <a name="bluetooth-callbacks"></a>Retornos de chamada Bluetooth
 
@@ -28,11 +28,11 @@ O Bluetooth também tem suporte usando a interface de programação do Windows S
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

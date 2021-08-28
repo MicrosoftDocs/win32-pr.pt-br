@@ -3,7 +3,7 @@ title: Código de notificação EN_HSCROLL (WinUser. h)
 description: Enviado quando o usuário clica na barra de rolagem horizontal do controle de edição. A janela pai do controle de edição recebe esse código de notificação por meio de uma mensagem de comando do WM \_ . A janela pai é notificada antes da atualização da tela.
 ms.assetid: beaaa80c-4108-4a8e-aed8-04c9a3a08f3e
 keywords:
-- EN_HSCROLL de código de notificação controles do Windows
+- EN_HSCROLL código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f90f6e781409419e39390e64251506b4cc915a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4e5b0f42d08977f7a1be68a5010aa7403b10fc2e5a126aa542bb25a644a7b70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436766"
 ---
 # <a name="en_hscroll-notification-code"></a>\_Código de notificação en HSCROLL
 
@@ -65,9 +65,9 @@ Este código de notificação é enviado para os seguintes eventos de mouse na b
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

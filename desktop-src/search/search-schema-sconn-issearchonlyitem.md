@@ -1,19 +1,19 @@
 ---
-description: O elemento booliano <isSearchOnlyItem> especifica se o provedor de pesquisa dá suporte ao modo de procura, além do modo de pesquisa. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
+description: O &lt; elemento IsSearchOnlyItem booliano &gt; especifica se o provedor de pesquisa dá suporte ao modo de procura, além do modo de pesquisa. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
 ms.assetid: eec1b735-ae78-48ef-8ebf-05b9fd038963
 title: Elemento isSearchOnlyItem (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ded7b62cde5cf813603d5cc87c41fe2c443b42d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 524a69198a650e0cb995d2ff8b4fc942ebfdaddc
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501456"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883419"
 ---
 # <a name="issearchonlyitem-element-search-connector-schema"></a>Elemento isSearchOnlyItem (esquema do conector de pesquisa)
 
-O elemento booliano <isSearchOnlyItem> especifica se o provedor de pesquisa dá suporte ao modo de procura, além do modo de pesquisa. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
+O &lt; elemento IsSearchOnlyItem booliano &gt; especifica se o provedor de pesquisa dá suporte ao modo de procura, além do modo de pesquisa. Esse elemento é opcional e não tem nenhum elemento filho e nenhum atributo.
 
 ## <a name="syntax"></a>Syntax
 

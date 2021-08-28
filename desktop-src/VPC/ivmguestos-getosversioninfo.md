@@ -1,11 +1,11 @@
 ---
-title: Método IVMGuestOS GetOsVersionInfo (VPCCOMInterfaces. h)
+title: Método IvMGuestOS GetOsVersionInfo (VPCCOMInterfaces.h)
 description: Recupera informações de versão para o sistema operacional convidado em execução na máquina virtual.
 ms.assetid: 1f9d749f-6007-466d-9df9-71c6a72e8112
 keywords:
-- GetOsVersionInfo do método virtual PC
-- Método GetOsVersionInfo Virtual PC, interface IVMGuestOS
-- IVMGuestOS interface virtual PC, método GetOsVersionInfo
+- Pc Virtual do método GetOsVersionInfo
+- Computador Virtual do método GetOsVersionInfo, interface IVMGuestOS
+- INTERFACE IVMGuestOS Pc Virtual, método GetOsVersionInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ec0c0c2516a8ef16a3d9d9c6c4178abb31bd52f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef39259b429d096246bbdbe5cb23e6021f498b2d9d47cd14fb12409eca814c45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653466"
 ---
-# <a name="ivmguestosgetosversioninfo-method"></a>Método IVMGuestOS:: GetOsVersionInfo
+# <a name="ivmguestosgetosversioninfo-method"></a>Método IVMGuestOS::GetOsVersionInfo
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera informações de versão para o sistema operacional convidado em execução na VM (máquina virtual).
 
@@ -47,24 +47,24 @@ HRESULT GetOsVersionInfo(
 *guestOsVersionInfo* \[ out, retval\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**GUESTOSVERSIONINFOEX**](guestosversioninfoex.md) .
+Um ponteiro para uma [**estrutura GUESTOSVERSIONINFOEX.**](guestosversioninfoex.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                                       | Descrição                                                               |
+| Valor/código de retorno                                                                                                                                                                       | Descrição                                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                             | A operação foi bem-sucedida.<br/>                                  |
-| <dl> <dt>**E \_**</dt> <dt>0X80004003</dt> de ponteiro </dl>                               | O parâmetro é **NULL**.<br/>                                     |
-| <dl> <dt>**HRESULT \_ DO \_ Win32 (erro \_ OUTOFMEMORY)**</dt> <dt>0x8007000E</dt> </dl> | Não há memória suficiente disponível para concluir esta solicitação.<br/> |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>                       | Ocorreu um erro inesperado.<br/>                              |
-| <dl> <dt>**VM \_ E a \_ VM \_ não \_ está executando**</dt> <dt>0xA0040206</dt> </dl>                  | A VM não está em execução.<br/>                                         |
-| <dl> <dt>**VM \_ \_Recurso de inclusões E \_ \_ não \_ DISP**</dt> . <dt>0xA0040505</dt> </dl>    | Os componentes de integração não estão instalados nesta VM.<br/>           |
+| <dl> <dt>**E \_ PONTEIRO**</dt> <dt>0x80004003</dt> </dl>                               | O parâmetro é **NULL.**<br/>                                     |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ OUTOFMEMORY)**</dt> <dt>0x8007000e</dt> </dl> | Não há memória suficiente disponível para concluir essa solicitação.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                       | Ocorreu um erro inesperado.<br/>                              |
+| <dl> <dt>**VM \_ E \_ VM \_ NÃO \_ EXECUTANDO**</dt> <dt>0XA0040206</dt> </dl>                  | A VM não está em execução.<br/>                                         |
+| <dl> <dt>**VM \_ O \_ RECURSO DE \_ ADIÇÕES E NÃO \_ \_ ESTÁ**</dt> <dt>0XA0040505</dt> </dl>    | Os componentes de integração não estão instalados nessa VM.<br/>           |
 
 
 
@@ -76,12 +76,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS é definido como 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS é definido como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

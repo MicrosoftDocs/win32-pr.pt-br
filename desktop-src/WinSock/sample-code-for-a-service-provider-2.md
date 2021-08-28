@@ -4,16 +4,16 @@ ms.assetid: d6246d47-11c2-4e4b-8a2b-17fd9cb041fc
 title: Código de exemplo para um provedor de serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74f9eab89667e37d2583f5582e86af6620de71c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 402550a1e4eddfef51c5a30a7838e2bad7b8d96898354a206130ab95073381db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794686"
 ---
 # <a name="sample-code-for-a-service-provider"></a>Código de exemplo para um provedor de serviços
 
-Esta seção contém um exemplo de código-fonte que demonstra como implementar as funções **GetXbyY** usando as novas funções RnR independentes de protocolo. Um desenvolvedor deve implementar essas funções como um ponto de partida. Para atender à especificação do Windows Sockets, muitas outras funções são necessárias.
+Esta seção contém um exemplo de código-fonte que demonstra como implementar as funções **GetXbyY** usando as novas funções RnR independentes de protocolo. Um desenvolvedor deve implementar essas funções como um ponto de partida. para obedecer à especificação de soquetes de Windows, muitas outras funções são necessárias.
 
 > [!IMPORTANT]
 > Não há garantia de que o código a seguir seja compilado.

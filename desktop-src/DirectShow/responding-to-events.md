@@ -4,12 +4,12 @@ ms.assetid: 1c09149b-7f34-4296-bd32-dbbae5e1d62b
 title: Respondendo a eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a51481371501c05733e5f637885a71001c1f996
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8fb0325af2e216a3679d3e15a293aa6bfe1c100f2271d089e982b295df791130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050556"
 ---
 # <a name="responding-to-events"></a>Respondendo a eventos
 
@@ -17,9 +17,9 @@ Este artigo descreve como responder a eventos que ocorrem em um grafo de filtro.
 
 ## <a name="how-event-notification-works"></a>Como a notificação de eventos funciona
 
-Enquanto um aplicativo do DirectShow está em execução, os eventos podem ocorrer no gráfico de filtro. Por exemplo, um filtro pode encontrar um erro de streaming. Os filtros alertam o Gerenciador de gráfico de filtro enviando eventos, que consistem em um código de evento e dois parâmetros de evento. O código do evento indica o tipo de evento e os parâmetros de evento fornecem informações adicionais. O significado dos parâmetros depende do código do evento. Para obter uma lista completa de códigos de eventos, consulte [códigos de notificação de eventos](event-notification-codes.md).
+enquanto um aplicativo DirectShow está em execução, os eventos podem ocorrer no gráfico de filtro. Por exemplo, um filtro pode encontrar um erro de streaming. os filtros alertam o gerenciador de Graph de filtro enviando eventos, que consistem em um código de evento e dois parâmetros de evento. O código do evento indica o tipo de evento e os parâmetros de evento fornecem informações adicionais. O significado dos parâmetros depende do código do evento. Para obter uma lista completa de códigos de eventos, consulte [códigos de notificação de eventos](event-notification-codes.md).
 
-Alguns eventos são tratados silenciosamente pelo Gerenciador do grafo de filtro, sem que o aplicativo seja notificado. Outros eventos são colocados em uma fila para o aplicativo. Dependendo do aplicativo, há vários eventos que talvez você precise manipular. Este artigo se concentra em três eventos que são muito comuns:
+alguns eventos são tratados silenciosamente pelo gerenciador de Graph de filtro, sem que o aplicativo seja notificado. Outros eventos são colocados em uma fila para o aplicativo. Dependendo do aplicativo, há vários eventos que talvez você precise manipular. Este artigo se concentra em três eventos que são muito comuns:
 
 -   O evento [**EC \_ Complete**](ec-complete.md) indica que a reprodução foi concluída normalmente.
 -   O evento [**EC \_ userabort**](ec-userabort.md) indica que o usuário interrompeu a reprodução. Os renderizadores de vídeo enviam esse evento se o usuário fechar a janela de vídeo.
@@ -27,7 +27,7 @@ Alguns eventos são tratados silenciosamente pelo Gerenciador do grafo de filtro
 
 ## <a name="using-event-notification"></a>Usando a notificação de eventos
 
-Um aplicativo pode instruir o Gerenciador de gráficos de filtro a enviar uma mensagem do Windows para uma janela designada sempre que um novo evento ocorrer. Isso permite que o aplicativo responda dentro do loop de mensagem da janela. Primeiro, defina a mensagem que será enviada para a janela do aplicativo. Os aplicativos podem usar números de mensagem no intervalo do \_ aplicativo do WM por meio do 0xBFFF como mensagens particulares:
+um aplicativo pode instruir o filtro Graph Manager a enviar uma mensagem de Windows para uma janela designada sempre que um novo evento ocorrer. Isso permite que o aplicativo responda dentro do loop de mensagem da janela. Primeiro, defina a mensagem que será enviada para a janela do aplicativo. Os aplicativos podem usar números de mensagem no intervalo do \_ aplicativo do WM por meio do 0xBFFF como mensagens particulares:
 
 
 ```C++
@@ -36,7 +36,7 @@ Um aplicativo pode instruir o Gerenciador de gráficos de filtro a enviar uma me
 
 
 
-Em seguida, consulte o Gerenciador do grafo de filtro para a interface [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) e chame o método [**IMediaEventEx:: SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) :
+em seguida, consulte o filtro Graph Manager para a interface [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) e chame o método [**IMediaEventEx:: SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) :
 
 
 ```C++
@@ -49,7 +49,7 @@ g_pEvent->SetNotifyWindow((OAHWND)g_hwnd, WM_GRAPHNOTIFY, 0);
 
 Esse método designa a janela especificada (g \_ HWND) como o destinatário da mensagem. Chame o método depois de criar o gráfico de filtro, mas antes de executar o grafo.
 
-\_O WM GRAPHNOTIFY é uma mensagem comum do Windows. Sempre que o Gerenciador de gráfico de filtro coloca um novo evento na fila de eventos, ele posta uma \_ mensagem do WM GRAPHNOTIFY na janela do aplicativo designada. O parâmetro *lParam* da mensagem é igual ao terceiro parâmetro em [**SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow). Esse parâmetro permite que você envie dados de instância com a mensagem. O parâmetro *wParam* da mensagem da janela é sempre zero.
+\_o WM GRAPHNOTIFY é uma mensagem Windows comum. sempre que o filtro Graph Manager coloca um novo evento na fila de eventos, ele posta uma \_ mensagem do WM GRAPHNOTIFY na janela do aplicativo designada. O parâmetro *lParam* da mensagem é igual ao terceiro parâmetro em [**SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow). Esse parâmetro permite que você envie dados de instância com a mensagem. O parâmetro *wParam* da mensagem da janela é sempre zero.
 
 Na função **WindowProc** do seu aplicativo, adicione uma instrução Case para a mensagem do WM \_ GRAPHNOTIFY:
 
@@ -97,7 +97,7 @@ void HandleGraphEvent()
 
 O método [**GetEvent**](/windows/desktop/api/Control/nf-control-imediaevent-getevent) recupera o código do evento e os dois parâmetros de evento. O quarto parâmetro **GetEvent** especifica o período de tempo a aguardar por um evento, em milissegundos. Como o aplicativo chama esse método em resposta a uma \_ mensagem do WM GRAPHNOTIFY, o evento já está na fila. Portanto, definimos o valor de tempo limite como zero.
 
-A notificação de eventos e o loop de mensagem são assíncronas, portanto, a fila pode conter mais de um evento no momento em que seu aplicativo responde à mensagem. Além disso, o Gerenciador de gráfico de filtro pode remover determinados eventos da fila, se eles se tornarem inválidos. Portanto, você deve chamar [**GetEvent**](/windows/desktop/api/Control/nf-control-imediaevent-getevent) até que ele retorne um código de falha, indicando que a fila está vazia.
+A notificação de eventos e o loop de mensagem são assíncronas, portanto, a fila pode conter mais de um evento no momento em que seu aplicativo responde à mensagem. além disso, o filtro Graph Manager pode remover determinados eventos da fila, se eles se tornarem inválidos. Portanto, você deve chamar [**GetEvent**](/windows/desktop/api/Control/nf-control-imediaevent-getevent) até que ele retorne um código de falha, indicando que a fila está vazia.
 
 Neste exemplo, o aplicativo responde ao [**EC \_ concluído**](ec-complete.md), ao [**EC \_ userabort**](ec-userabort.md)e ao [**EC \_ ERRORABORT**](ec-errorabort.md) invocando a função de limpeza definida pelo aplicativo, o que faz com que o aplicativo saia normalmente. O exemplo ignora os dois parâmetros de evento. Depois de recuperar um evento, chame [**IMediaEvent:: FreeEventParams**](/windows/desktop/api/Control/nf-control-imediaevent-freeeventparams) para todos os recursos gratuitos associados aos parâmetros do evento.
 
@@ -130,7 +130,7 @@ Isso impede um possível erro que pode ocorrer se o aplicativo receber a notific
 
 <dl> <dt>
 
-[Tarefas básicas do DirectShow](basic-directshow-tasks.md)
+[tarefas básicas de DirectShow](basic-directshow-tasks.md)
 </dt> <dt>
 
 [Notificação de eventos no DirectShow](event-notification-in-directshow.md)

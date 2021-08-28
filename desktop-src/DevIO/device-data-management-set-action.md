@@ -4,12 +4,12 @@ ms.assetid: ff688c9a-8669-4699-aab9-1e2e3a5c7fca
 title: DEVICE_DATA_MANAGEMENT_SET_ACTION (WinIoCtl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 524d1dbd2ecf09dbcfa66fa766089dde7cf04a0d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 602243e31645e1cc4706e3a3a2b954bb68fc2cbda58a0f0b6c9076ae6b0797f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654916"
 ---
 # <a name="device_data_management_set_action"></a>\_ação do \_ conjunto de gerenciamento de dados do dispositivo \_ \_
 
@@ -66,7 +66,7 @@ Uma ação de notificação é executada. Os parâmetros estão em uma estrutura
 
 Uma ação de leitura de descarregamento é executada. Os parâmetros estão em uma estrutura de [**\_ parâmetros de \_ \_ leitura \_ de descarregamento de DSM de dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_read_parameters) . A saída está em uma estrutura de [**\_ saída de \_ leitura \_ de descarregamento de armazenamento**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_read_output) . O **DeviceDsmActionFlag não \_ destrutivo** (0x80000000) é um sinalizador de bit para indicar à pilha de drivers que essa operação não é destrutiva.
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
@@ -81,7 +81,7 @@ Uma ação de leitura de descarregamento é executada. Os parâmetros estão em 
 
 Uma ação de gravação de descarregamento é executada. Os parâmetros estão em uma estrutura de [**\_ parâmetros de \_ \_ gravação \_ de descarregamento de DSM de dispositivo**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_dsm_offload_write_parameters) . A saída está em uma estrutura de [**\_ saída de \_ gravação \_ de descarregamento de armazenamento**](/windows/desktop/api/WinIoCtl/ns-winioctl-storage_offload_write_output) .
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
@@ -96,7 +96,7 @@ Uma ação de gravação de descarregamento é executada. Os parâmetros estão 
 
 Um bitmap de alocação é retornado para o primeiro intervalo de conjuntos de dados passado. A saída está em uma estrutura de [**estado de provisionamento do conjunto de dados de dispositivo \_ \_ \_ lb \_ \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-device_data_set_lb_provisioning_state) . O **DeviceDsmActionFlag não \_ destrutivo** (0x80000000) é um sinalizador de bit para indicar à pilha de drivers que essa operação não é destrutiva.
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
@@ -111,7 +111,7 @@ Um bitmap de alocação é retornado para o primeiro intervalo de conjuntos de d
 
 Uma ação de reparo é executada. O **DeviceDsmActionFlag não \_ destrutivo** (0x80000000) é um sinalizador de bit para indicar à pilha de drivers que essa operação não é destrutiva.
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
@@ -126,7 +126,7 @@ Uma ação de reparo é executada. O **DeviceDsmActionFlag não \_ destrutivo** 
 
 Uma ação de limpeza é executada. O **DeviceDsmActionFlag não \_ destrutivo** (0x80000000) é um sinalizador de bit para indicar à pilha de drivers que essa operação não é destrutiva.
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> <dt>
@@ -141,7 +141,7 @@ Uma ação de limpeza é executada. O **DeviceDsmActionFlag não \_ destrutivo**
 
 Uma ação de resiliência é executada. O **DeviceDsmActionFlag não \_ destrutivo** (0x80000000) é um sinalizador de bit para indicar à pilha de drivers que essa operação não é destrutiva.
 
-**Windows 7 e Windows Server 2008 R2:** Esse valor não tem suporte antes do Windows 8 e do Windows Server 2012.
+**Windows 7 e Windows Server 2008 R2:** não há suporte para esse valor antes de Windows 8 e Windows Server 2012.
 
 
 </dt> </dl> </dd> </dl>
@@ -154,7 +154,7 @@ Uma ação de resiliência é executada. O **DeviceDsmActionFlag não \_ destrut
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7<br/>                                                                                      |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                                         |
-| parâmetro<br/>                   | <dl> <dt>WinIoCtl. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinIoCtl. h (incluir Windows. h)</dt> </dl> |
 
 
 

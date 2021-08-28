@@ -1,21 +1,21 @@
 ---
-title: Comandos netsh para HTTP
-description: Você pode usar os comandos netsh para o contexto HTTP para consultar e definir configurações de HTTP.sys e parâmetros.
+title: Comandos Netsh para HTTP
+description: Você pode usar os comandos Netsh para contexto HTTP para consultar e definir HTTP.sys configurações e parâmetros.
 ms.assetid: 695c309c-ab43-4c6a-b5f6-5bb9f715bf71
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55f6e0fdd0813284e36d2fb9fb826929c67df63c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 878d6056b57ab4d488128c299cf7631d2557419ff2fe6d3f1bf484a05204850a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047126"
 ---
-# <a name="netsh-commands-for-http"></a>Comandos netsh para HTTP
+# <a name="netsh-commands-for-http"></a>Comandos Netsh para HTTP
 
-Você pode usar os comandos netsh para o contexto HTTP para consultar e definir configurações de HTTP.sys e parâmetros.
+Você pode usar os comandos Netsh para contexto HTTP para consultar e definir HTTP.sys configurações e parâmetros.
 
-Você pode executar esses comandos no prompt de comando no sistema operacional Windows Vista ou no prompt de comando para o contexto **http do netsh** . Para que esses comandos funcionem no prompt de comando do Windows Vista, você deve digitar **netsh http** antes de digitar os comandos e parâmetros conforme eles aparecem na sintaxe abaixo. Para exibir a ajuda de um comando no prompt de comando, digite * CommandName ***/?**, em que *CommandName* é o nome do comando.
+Você pode executar esses comandos no prompt de comando no sistema operacional Windows Vista ou no prompt de comando para o **contexto http netsh.** Para que esses comandos funcionem no prompt de comando no Windows Vista, você deve digitar **netsh http** antes de digitar comandos e parâmetros como eles aparecem na sintaxe abaixo. Para exibir a ajuda de um comando no prompt de comando, digite *CommandName***/?**, em que *CommandName* é o nome do comando.
 
 Para exibir a sintaxe do comando, consulte os comandos:
 
@@ -36,9 +36,9 @@ Para exibir a sintaxe do comando, consulte os comandos:
 -   [**show timeout**](show-timeout.md)
 -   [**show urlacl**](show-urlacl.md)
 
- 
+ 
 
- 
+ 
 
 
 

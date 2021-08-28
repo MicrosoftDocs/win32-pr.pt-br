@@ -1,26 +1,26 @@
 ---
-description: Para criar aplicativos de Tablet PC em C e Visual Basic .NET Microsoft Visual Studio, seu projeto no .NET deve incluir uma referência aos assemblies da biblioteca gerenciada \# do tablet PC. Isso fornece acesso aos controles e ao modelo de objeto gerenciado.
+description: Para criar aplicativos de tablet pc em C e Visual Basic .NET, seu projeto no Microsoft Visual Studio .NET deve incluir uma referência aos assemblies da biblioteca gerenciada \# do tablet PC. Isso fornece acesso aos controles e ao modelo de objeto gerenciado.
 ms.assetid: d9c491c9-d341-4189-9a41-45c4d78322fa
 title: Biblioteca e controles gerenciados (tablet PC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d031a97226d200b99a6d36b42e3e4c43862f5b6ac52203ee4ca08d1e5714f2c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81b4096ba54d3cd882b3ee50469d94792b4a46ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031724"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884273"
 ---
 # <a name="managed-library-and-controls-tablet-pc"></a>Biblioteca e controles gerenciados (tablet PC)
 
-Para criar aplicativos de Tablet PC em C e Visual Basic .NET Microsoft Visual Studio, seu projeto no .NET deve incluir uma referência aos assemblies da biblioteca gerenciada \# do tablet PC. Isso fornece acesso aos controles e ao modelo de objeto gerenciado.
+Para criar aplicativos de tablet pc em C e Visual Basic .NET, seu projeto no Microsoft Visual Studio .NET deve incluir uma referência aos assemblies da biblioteca gerenciada \# do tablet PC. Isso fornece acesso aos controles e ao modelo de objeto gerenciado.
 
 ## <a name="microsoft-visual-c-and-visual-basicnet"></a>Microsoft Visual C \# e Visual Basic.NET
 
 No Windows Vista, os assemblies da biblioteca gerenciada de tablet pc são instalados por padrão em dois diretórios:
 
--   <systemdrive>: \\ Diretório de Arquivos Comuns de Arquivos Comuns da Microsoft Shared \\ \\ \\ Ink
--   <systemdrive>: \\ Arquivos de Programas microsoft \\ SDKs \\ Windows \\ v6.0 \\ Bin
+-   &lt;&gt;systemdrive: diretório arquivos comuns de arquivos de programas microsoft shared \\ \\ \\ \\ ink
+-   &lt;&gt;systemdrive: Arquivos de Programas Microsoft \\ \\ SDKs \\ Windows \\ v6.0 \\ Bin
 
 Para adicionar uma referência às bibliotecas gerenciadas da plataforma tablet pc no Microsoft Visual Studio .NET:
 

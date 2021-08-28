@@ -1,9 +1,9 @@
 ---
-title: HDN_ENDFILTEREDIT código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de cabeçalho que uma edição de filtro terminou. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: HDN_ENDFILTEREDIT de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de header de que uma edição de filtro foi encerrada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: d3832875-4cde-4d8a-b3a4-a8dae0742c56
 keywords:
-- HDN_ENDFILTEREDIT de código de notificação controles do Windows
+- HDN_ENDFILTEREDIT de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5a557278598600f1bd11ebfbe791691de954a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 225ac41a875f6eadb17054c89e34451306cd78db66cc40cc3c26d15035f7c388
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435536"
 ---
-# <a name="hdn_endfilteredit-notification-code"></a>Código de notificação do HDN \_ ENDFILTEREDIT
+# <a name="hdn_endfilteredit-notification-code"></a>Código de notificação DO HDN \_ ENDFILTEREDIT
 
-Notifica uma janela pai do controle de cabeçalho que uma edição de filtro terminou. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de header de que uma edição de filtro foi encerrada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,11 +41,11 @@ HDN_ENDFILTEREDIT
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contém informações adicionais sobre o filtro que está sendo editado.
+Um ponteiro para uma [**estrutura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contém informações adicionais sobre o filtro que está sendo editado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -55,9 +55,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

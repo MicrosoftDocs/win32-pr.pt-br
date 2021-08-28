@@ -4,20 +4,20 @@ ms.assetid: 7d574bf0-bcb3-4e19-9659-fe741ace9f21
 title: Propriedades particulares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab7b0196be016fecb625e139f308219582620d40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d166f876bb953008a6920c3089fab5974ebbb05909c1b41db299212ee069dd8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558407"
 ---
 # <a name="private-properties"></a>Propriedades particulares
 
 As propriedades privadas são usadas internamente pelo instalador e seus valores devem ser inseridos no banco de dados pelo autor do pacote de instalação ou definidos pelo instalador durante a instalação para os valores determinados pelo ambiente operacional. A única maneira de um usuário poder interagir com propriedades privadas é por meio de [eventos de controle](control-events.md) na interface do usuário criada do pacote. Nomes de propriedade privada devem incluir letras minúsculas. Consulte [restrições em nomes de propriedade](restrictions-on-property-names.md).
 
-As propriedades privadas normalmente descrevem o ambiente operacional. Por exemplo, se a instalação for executada em uma plataforma Windows, o instalador definirá a propriedade [**WindowsFolder**](windowsfolder.md) para o valor especificado na tabela de propriedades.
+As propriedades privadas normalmente descrevem o ambiente operacional. por exemplo, se a instalação for executada em uma plataforma Windows, o instalador definirá a propriedade [**WindowsFolder**](windowsfolder.md) para o valor especificado na tabela de propriedades.
 
-Os valores de propriedade privada não podem ser substituídos em uma linha de comando. Para limpar uma propriedade privada de uma instalação, deixe-a fora da [tabela de propriedades](property-table.md). No Windows XP e no Windows 2000, você não pode definir uma propriedade particular na fase de interface do usuário da instalação e, em seguida, passar o valor para a fase de execução.
+Os valores de propriedade privada não podem ser substituídos em uma linha de comando. Para limpar uma propriedade privada de uma instalação, deixe-a fora da [tabela de propriedades](property-table.md). no Windows XP e Windows 2000, você não pode definir uma propriedade particular na fase de interface do usuário da instalação e, em seguida, passar o valor para a fase de execução.
 
 Para obter uma lista de todas as propriedades particulares padrão usadas pelo instalador, consulte [referência de propriedade](property-reference.md). Você pode definir uma propriedade privada personalizada inserindo o nome da propriedade e o valor inicial na tabela de propriedades. Nomes de propriedade privada devem sempre incluir letras minúsculas.
 

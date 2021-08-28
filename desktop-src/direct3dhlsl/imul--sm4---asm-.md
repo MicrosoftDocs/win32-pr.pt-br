@@ -4,12 +4,12 @@ description: Número inteiro com sinal multiplicado.
 ms.assetid: DB95A38F-54E4-4BB6-81DF-CFFEBB4D425B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 997f62fc389ad1e0fb6b23dd6c419ff8b3933b41
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 87eabcc07dc5c6a662494c71a26c5f60e5fa1053265e3740ad3605ed685771a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986486"
 ---
 # <a name="imul-sm4---asm"></a>imul (sm4-ASM)
 

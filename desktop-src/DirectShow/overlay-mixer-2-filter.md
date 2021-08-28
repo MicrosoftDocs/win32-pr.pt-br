@@ -1,64 +1,48 @@
 ---
-description: Filtro do mixer de sobreposição 2
+description: filtro de sobreposição Mixer 2
 ms.assetid: 3d3871ac-518c-45a1-9e64-031f344f4527
-title: Filtro do mixer de sobreposição 2
+title: filtro de sobreposição Mixer 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f22976a58b272cf04c098c102d32d154e361b8b9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9b51dceb2a7f82a91fe30275cacfaad4ad78eded
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105789827"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987349"
 ---
-# <a name="overlay-mixer-2-filter"></a>Filtro do mixer de sobreposição 2
+# <a name="overlay-mixer-2-filter"></a>filtro de sobreposição Mixer 2
 
-O filtro Overlay Mixer 2 é idêntico ao filtro de [mixer de sobreposição](overlay-mixer-filter.md) , exceto:
+o filtro de sobreposição Mixer 2 é idêntico ao filtro de [Mixer de sobreposição](overlay-mixer-filter.md) , exceto:
 
 -   Ele dá suporte apenas a tipos de mídia com formatos [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) .
 -   Ele tem um mérito maior, o que permite que ele seja adicionado automaticamente a um grafo de filtro.
 
-O mixer de sobreposição 2 é fornecido para que o Gerenciador do grafo de filtro o adicione ao grafo quando ele renderiza um vídeo MPEG-2 diferente de DVD. A opção de usar o mixer de sobreposição ou o mixer de sobreposição 2 é tratada pelo componente que cria o grafo, o Gerenciador de gráficos de filtro, o construtor de gráficos de captura ou o construtor de gráficos de DVD. Da perspectiva do aplicativo, eles são o mesmo filtro, com as mesmas interfaces e funcionalidade.
+a sobreposição Mixer 2 é fornecida para que o filtro Graph Manager a adicione ao grafo quando ele renderiza um vídeo não MPEG-2 em DVD. a opção de usar o Mixer de sobreposição ou a sobreposição Mixer 2 é manipulada pelo componente que cria o grafo, o filtro Graph gerenciador, o construtor Graph builder ou o construtor de Graph de DVD. Da perspectiva do aplicativo, eles são o mesmo filtro, com as mesmas interfaces e funcionalidade.
 
-A tabela a seguir contém informações específicas para o mixer de sobreposição 2. Para todos os outros dados de filtro, consulte a documentação do mixer de sobreposição.
+a tabela a seguir contém informações específicas para a sobreposição Mixer 2. Para todos os outros dados de filtro, consulte a documentação do Mixer de sobreposição.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Tipos de mídia de pino de entrada</td>
-<td>Tipo de formato: Format_VIDEOINFO2</td>
-</tr>
-<tr class="even">
-<td>CLSID do filtro</td>
-<td>CLSID_OverlayMixer2</td>
-</tr>
-<tr class="odd">
-<td><a href="merit.md">Núcleo</a></td>
-<td><ul>
-<li>MERIT_UNLIKELY</li>
-<li>Windows Vista ou posterior: MERIT_DO_NOT_USE</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| Tipos de mídia de pino de entrada | Tipo de formato: Format_VIDEOINFO2 | 
+| CLSID do filtro | CLSID_OverlayMixer2 | 
+| <a href="merit.md">Núcleo</a> | <ul><li>MERIT_UNLIKELY</li><li>Windows Vista ou posterior: MERIT_DO_NOT_USE</li></ul> | 
+
 
 
 
  
 
-No Windows Vista ou posterior, o mérito do filtro Overlay Mixer 2 é um mérito \_ \_ não \_ usado, pois os renderizadores de vídeo mais recentes (VMR-7, VMR-9 e EVR) dão suporte a formatos **VIDEOINFOHEADER2** e, portanto, não é necessário usar o mixer de sobreposição.
+no Windows Vista ou posterior, o mérito do filtro de sobreposição Mixer 2 é um mérito \_ \_ não \_ usado, pois os renderizadores de vídeo mais recentes (vmr-7, vmr-9 e EVR) dão suporte a formatos **VIDEOINFOHEADER2** e, portanto, não é necessário usar a Mixer de sobreposição.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  
