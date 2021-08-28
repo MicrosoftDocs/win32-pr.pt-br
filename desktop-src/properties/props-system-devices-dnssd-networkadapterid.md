@@ -1,19 +1,19 @@
 ---
-description: GUID do adaptador de rede no qual procurar um serviço.
+description: GUID do adaptador de rede no qual pesquisar um serviço.
 ms.assetid: b3ab616b-c5fe-4822-9207-f17bf8b19f8e
-title: System. Devices. dnssd. NetworkAdapterId
+title: System.Devices.Dnssd.NetworkAdapterId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd647db251dd0daffe9bc711635c0e3bb46a7dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3e96d80138a0a50061b8f717c3ccb4a9edfe9962758c4eafefe0bd42e221cb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097620"
 ---
-# <a name="systemdevicesdnssdnetworkadapterid"></a>System. Devices. dnssd. NetworkAdapterId
+# <a name="systemdevicesdnssdnetworkadapterid"></a>System.Devices.Dnssd.NetworkAdapterId
 
-GUID do adaptador de rede no qual procurar um serviço.
+GUID do adaptador de rede no qual pesquisar um serviço.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

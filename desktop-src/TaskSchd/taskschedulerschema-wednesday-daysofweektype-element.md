@@ -1,9 +1,9 @@
 ---
-title: Elemento quarta (daysOfWeekType)
-description: Especifica que a tarefa é executada na quarta-feira.
+title: Elemento Wednesday (daysOfWeekType)
+description: Especifica que a tarefa é executado na quarta-feira.
 ms.assetid: 6d4f52e2-4390-4f9d-bab8-813bd0851582
 keywords:
-- Agendador de Tarefas de elemento quarta
+- Elemento Wednesday Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3f9d8c60cb7cea818cc0b096e99e97e8f1490d47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 80f26c921a10df8bd62714021345e7cd2bbbcd065940403f82bae3207445f0b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002224"
 ---
-# <a name="wednesday-daysofweektype-element"></a>Elemento quarta (daysOfWeekType)
+# <a name="wednesday-daysofweektype-element"></a>Elemento Wednesday (daysOfWeekType)
 
-Especifica que a tarefa é executada na quarta-feira.
+Especifica que a tarefa é executado na quarta-feira.
 
 ``` syntax
 <xs:element name="Wednesday">
@@ -30,7 +30,7 @@ Especifica que a tarefa é executada na quarta-feira.
 </xs:element>
 ```
 
-O elemento **quarta-feira** é definido pelo tipo complexo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) .
+O **elemento Wednesday** é definido pelo tipo complexo [**daysOfWeekType.**](taskschedulerschema-daysofweektype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,8 +38,8 @@ O elemento **quarta-feira** é definido pelo tipo complexo [**daysOfWeekType**](
 
 | Elemento                                                                                                                  | Derivado de                                                             | Descrição                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada por uma agenda mensal de dia da semana.<br/> |
-| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada para uma agenda semanal.<br/>              |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda mensal do dia da semana.<br/> |
+| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda semanal.<br/>              |
 
 
 
@@ -62,8 +62,8 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na q
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na q
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

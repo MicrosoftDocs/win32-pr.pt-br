@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: ec26a3cab15014deabca4e9332c1fbef7a788b17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9e56e25e51a3c6e798242b390f5d8b7341d7306455f1b15eb9e450830d3c9b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064696"
 ---
 # <a name="wlanpolicy-element"></a>Elemento WLANPolicy
 
-O elemento **WLANPolicy** contém uma política de LAN sem fio. Esse é o elemento raiz exclusivo para um perfil de política sem fio.
+O **elemento WLANPolicy** contém uma política de LAN sem fio. Esse elemento é o elemento raiz exclusivo para um perfil de política sem fio.
 
-O namespace de destino para o elemento **WLANPolicy** é `https://www.microsoft.com/networking/WLAN/policy/v1` .
+O namespace de destino para o **elemento WLANPolicy** é `https://www.microsoft.com/networking/WLAN/policy/v1` .
 
 ``` syntax
 <xs:element name="WLANPolicy">
@@ -146,25 +146,25 @@ O namespace de destino para o elemento **WLANPolicy** é `https://www.microsoft.
 | Elemento                                                                                                                    | Type                                                                     | Descrição                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | booleano                                                                  | Especifica se qualquer usuário pode criar um perfil de todos os usuários. <br/>                                                               |
-| [**Lista**](wlan-policyschema-allowlist-networkfilter-element.md)                                                     |                                                                          | A lista de redes LAN sem fio às quais qualquer computador deve ter permissão para se conectar. <br/>                                       |
-| [**Bloqueios**](wlan-policyschema-blocklist-networkfilter-element.md)                                                     |                                                                          | A lista de redes LAN sem fio às quais um computador não deve se conectar.<br/>                                                    |
+| [**allowList**](wlan-policyschema-allowlist-networkfilter-element.md)                                                     |                                                                          | A lista de redes LAN sem fio às quais qualquer computador deve ter permissão para se conectar. <br/>                                       |
+| [**Blocklist**](wlan-policyschema-blocklist-networkfilter-element.md)                                                     |                                                                          | A lista de redes LAN sem fio às quais um computador não deve se conectar.<br/>                                                    |
 | [**denyAllESS**](wlan-policyschema-denyalless-networkfilter-element.md)                                                   | booleano                                                                  | Especifica se o acesso a todas as redes de infraestrutura está bloqueado. <br/>                                                           |
 | [**denyAllIBSS**](wlan-policyschema-denyallibss-networkfilter-element.md)                                                 | booleano                                                                  | Especifica se o acesso a todas as redes ad hoc está bloqueado. <br/>                                                                   |
-| [**ndescrição**](wlan-policyschema-description-wlanpolicy-element.md)                                                    | [**nometype**](wlan-policyschema-nametype-simpletype.md)                | A descrição de uma política de LAN sem fio. <br/>                                                                                |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | booleano                                                                  | Especifica se os computadores usam o serviço interno de configuração automática (autoconfiguração) para gerenciar conexões sem fio. <br/> |
-| [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)                                                    |                                                                          | Contém as configurações globais para o módulo de configuração automática (ACM). <br/>                                                    |
-| [**nomes**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nometype**](wlan-policyschema-nametype-simpletype.md)                | O nome de uma política de LAN sem fio. <br/>                                                                                       |
-| [**rede**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkitemtype**](wlan-policyschema-networkitemtype-complextype.md) | Uma rede permitida. <br/>                                                                                                      |
-| [**rede**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkitemtype**](wlan-policyschema-networkitemtype-complextype.md) | Uma rede bloqueada. <br/>                                                                                                       |
+| [**Descrição**](wlan-policyschema-description-wlanpolicy-element.md)                                                    | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | A descrição de uma política de LAN sem fio. <br/>                                                                                |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | booleano                                                                  | Especifica se os máquinas usam o serviço de configuração automática (AutoConfig) para gerenciar conexões sem fio. <br/> |
+| [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)                                                    |                                                                          | Contém as configurações globais para o Módulo de Configuração Automática (ACM). <br/>                                                    |
+| [**Nome**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | O nome de uma política de LAN sem fio. <br/>                                                                                       |
+| [**Rede**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Uma rede permitida. <br/>                                                                                                      |
+| [**Rede**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Uma rede bloqueada. <br/>                                                                                                       |
 | [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md)                                                |                                                                          | A lista de redes permitidas e negadas.<br/>                                                                                  |
-| [**ProfileList**](wlan-policyschema-profilelist-wlanpolicy-element.md)                                                    |                                                                          | Contém uma lista de perfis a serem aplicados no nível de domínio ou computador. <br/>                                                |
-| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | booleano                                                                  | Especifica se as redes negadas aparecem no assistente **conectar-se a uma rede** . <br/>                                         |
+| [**profileList**](wlan-policyschema-profilelist-wlanpolicy-element.md)                                                    |                                                                          | Contém uma lista de perfis a serem aplicados no nível do domínio ou do computador. <br/>                                                |
+| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | booleano                                                                  | Especifica se as redes negadas aparecem no Conexão **para um assistente de** rede. <br/>                                         |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para exibir a lista de elementos filho em uma estrutura do tipo árvore, consulte [ \_ elementos do esquema da política de WLAN](wlan-policyschema-elements.md).
+Para exibir a lista de elementos filho em uma estrutura do tipo árvore, consulte Elementos de esquema da política [WLAN. \_ ](wlan-policyschema-elements.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -172,8 +172,8 @@ Para exibir a lista de elementos filho em uma estrutura do tipo árvore, consult
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

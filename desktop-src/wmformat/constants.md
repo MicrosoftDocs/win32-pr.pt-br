@@ -1,25 +1,25 @@
 ---
-title: Constantes do Windows Media Format SDK
-description: Esses artigos descrevem constantes usadas pelos objetos das APIs estendidas do cliente DRM do Windows Media.
+title: Windows Constantes do Media Format SDK
+description: estes artigos descrevem constantes usadas pelos objetos do Windows de APIs estendidas do cliente DRM de mídia.
 ms.assetid: 4a481813-c876-4603-85e3-7652e3e20c02
 keywords:
-- SDK do Windows Media Format, constantes
+- Windows SDK do formato de mídia, constantes
 - DRM (gerenciamento de direitos digitais), constantes
 - DRM (gerenciamento de direitos digitais), constantes
 - APIs estendidas do cliente DRM, constantes
 - APIs estendidas do cliente, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e246665761d8d85afef03641d1f9f0c20b1f69
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1f18ea308afd33be67fa19d30ee60b629bf12192b6cc53fc26cc6569d52f8dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964145"
 ---
-# <a name="windows-media-format-sdk-constants"></a>Constantes do Windows Media Format SDK
+# <a name="windows-media-format-sdk-constants"></a>Windows Constantes do Media Format SDK
 
-Esta seção descreve as constantes usadas pelos objetos das APIs estendidas do cliente DRM do Windows Media. Ele inclui os tópicos listados na tabela a seguir.
+esta seção descreve as constantes usadas pelos objetos do Windows as APIs estendidas do cliente DRM de mídia. Ele inclui os tópicos listados na tabela a seguir.
 
 
 

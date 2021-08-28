@@ -1,11 +1,11 @@
 ---
-title: Pwd-histórico-tamanho do atributo
-description: O número de senhas antigas a serem salvas.
+title: Atributo Pwd-History-Length
+description: O número de senhas antigas a salvar.
 ms.assetid: 6440620d-9e77-411a-ab96-f8e979262bec
 ms.tgt_platform: multiple
 keywords:
-- Pwd-histórico-tamanho do esquema de atributo do AD
-- Esquema de AD do atributo pwdHistoryLength
+- Esquema do AD do atributo Pwd-History-Length
+- Esquema do AD do atributo pwdHistoryLength
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899c486914db31dcd8a07b18c6cb6b5842e0ab00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c9c2c5011b2c497e8b6ed69015dd7dd16fbd2bf979d199674dd6ccbb2a67b81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960095"
 ---
-# <a name="pwd-history-length-attribute"></a>Pwd-histórico-tamanho do atributo
+# <a name="pwd-history-length-attribute"></a>Atributo Pwd-History-Length
 
-O número de senhas antigas a serem salvas.
+O número de senhas antigas a salvar.
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------|
-| CN                | Pwd-tamanho do histórico                       |
-| LDAP-Display-Name | pwdHistoryLength                         |
+| CN                | Pwd-History-Length                       |
+| Ldap-Display-Name | pwdHistoryLength                         |
 | Tamanho              | 4 bytes                                  |
 | Privilégio de atualização  | Administrador de domínio                     |
-| Frequência de atualização  | Quando a política de conta precisa ser alterada. |
+| Frequência de atualização  | Quando a política de conta precisa ser mudada. |
 | Attribute-Id      | 1.2.840.113556.1.4.95                    |
-| System-ID-GUID    | bf967a09-0de6-11d0-a285-00aa003049e2     |
+| System-Id-Guid    | bf967a09-0de6-11d0-a285-00aa003049e2     |
 | Syntax            | [**Enumeração**](s-enumeration.md)     |
 
 
@@ -58,15 +58,15 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
@@ -121,7 +121,7 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -142,7 +142,7 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -163,7 +163,7 @@ O número de senhas antigas a serem salvas.
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |

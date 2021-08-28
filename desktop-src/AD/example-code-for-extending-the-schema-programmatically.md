@@ -1,23 +1,23 @@
 ---
-title: Exemplo de código para estender o esquema programaticamente
-description: Este tópico inclui um exemplo de código C++ que estende programaticamente o esquema de Active Directory.
+title: Código de exemplo para estender o esquema programaticamente
+description: Este tópico inclui um exemplo de código C++ que estende programaticamente o esquema do Active Directory.
 ms.assetid: e84678c5-ac12-424b-ba6c-c6cba23e4ff6
 ms.tgt_platform: multiple
 keywords:
-- Exemplo de código para estender o esquema programaticamente o AD
-- Estender o esquema programaticamente o AD, exemplo de código para
+- Código de exemplo para estender o esquema programaticamente o AD
+- Estendendo o esquema do AD de forma programática, código de exemplo para
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76264267c4ea97e4cf7998c19442a28483b4758
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1ee2331fa31946691d0906eb9abd4942c037044b2d9f7891182ed8e2f890abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962325"
 ---
-# <a name="example-code-for-extending-the-schema-programmatically"></a>Exemplo de código para estender o esquema programaticamente
+# <a name="example-code-for-extending-the-schema-programmatically"></a>Código de exemplo para estender o esquema programaticamente
 
-Este tópico inclui um exemplo de código C++ que estende programaticamente o esquema de Active Directory.
+Este tópico inclui um exemplo de código C++ que estende programaticamente o esquema do Active Directory.
 
 
 ```C++
@@ -863,9 +863,9 @@ void ReportErrorW(LPCWSTR pwszDefaultMsg, DWORD dwErr)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Serviços de Área de Trabalho Remota (Serviços de Área de Trabalho Remota)
-description: Área de Trabalho Remota da Microsoft Services é um software de acesso de computador remoto que dá suporte ao acesso à área de trabalho remota. Serviços de Área de Trabalho Remota conecta vários clientes a um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+description: Área de Trabalho Remota da Microsoft Serviços é um software de acesso de computador remoto que dá suporte ao acesso à área de trabalho remota. Serviços de Área de Trabalho Remota conecta vários clientes a um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 ms.assetid: 90c40b7a-e324-43fc-a1e6-f29997ed9436
 ms.tgt_platform: multiple
 keywords:
@@ -9,18 +9,18 @@ keywords:
 - Serviços de terminal consulte Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f39e176473c98f1e240d58592463df749a95f939
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 525f62433c10c8c4f750a8ae1abbfa9496f2f096139c182a677c9dbf69ce4a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105789433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999896"
 ---
 # <a name="remote-desktop-services-remote-desktop-services"></a>Serviços de Área de Trabalho Remota (Serviços de Área de Trabalho Remota)
 
 ## <a name="purpose"></a>Finalidade
 
-O Windows Server 2012 R2, o Windows Server 2012, o Windows Server 2008 R2 ou o Windows Server 2008 com Serviços de Área de Trabalho Remota (anteriormente conhecido como serviços de terminal) permitem que um servidor hospede várias sessões de cliente simultâneas. Área de Trabalho Remota usa a tecnologia Serviços de Área de Trabalho Remota para permitir que uma única sessão seja executada remotamente. Um usuário pode se conectar a um servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) (anteriormente conhecido como servidor de terminal) usando o software cliente do Conexão de Área de Trabalho Remota (RDC). A Conexão Web de Área de Trabalho Remota estende Serviços de Área de Trabalho Remota tecnologia à Web.
+Windows Server 2012 r2, Windows Server 2012, Windows server 2008 R2 ou Windows server 2008 com Serviços de Área de Trabalho Remota (anteriormente conhecido como serviços de Terminal) permitem que um servidor hospede várias sessões de cliente simultâneas. Área de Trabalho Remota usa a tecnologia Serviços de Área de Trabalho Remota para permitir que uma única sessão seja executada remotamente. Um usuário pode se conectar a um servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) (anteriormente conhecido como servidor de terminal) usando o software cliente do Conexão de Área de Trabalho Remota (RDC). A Conexão Web de Área de Trabalho Remota estende Serviços de Área de Trabalho Remota tecnologia à Web.
 
 > [!Note]  
 > Este tópico destina-se a desenvolvedores de software. Se você estiver procurando informações do usuário para Área de Trabalho Remota conexões, consulte [conexão de área de trabalho remota: perguntas](https://windows.microsoft.com/windows/remote-desktop-connection-faq#1TC=windows-8)frequentes.
@@ -29,24 +29,24 @@ O Windows Server 2012 R2, o Windows Server 2012, o Windows Server 2008 R2 ou o W
 
 ## <a name="where-applicable"></a>Quando aplicável
 
-Um cliente Conexão de Área de Trabalho Remota (RDC) pode existir em uma variedade de formulários. Dispositivos de hardware de cliente fino que executam um sistema operacional incorporado baseado no Windows podem executar o software cliente do RDC para se conectar a um servidor de Host da Sessão RD. Computadores baseados em Windows, Macintosh ou UNIX podem executar o software cliente do RDC para se conectar a um servidor de Host da Sessão RD para exibir aplicativos baseados no Windows. Essa combinação de clientes RDC fornece acesso a aplicativos baseados no Windows de praticamente qualquer sistema operacional.
+Um cliente Conexão de Área de Trabalho Remota (RDC) pode existir em uma variedade de formulários. dispositivos de hardware de cliente fino que executam um sistema operacional incorporado baseado em Windows podem executar o software cliente do RDC para se conectar a um servidor Host da Sessão RD. computadores com Windows, Macintosh ou UNIX podem executar o software cliente do RDC para se conectar a um servidor Host da Sessão RD para exibir aplicativos baseados em Windows. essa combinação de clientes RDC fornece acesso a aplicativos baseados em Windows de praticamente qualquer sistema operacional.
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-Os desenvolvedores que usam Serviços de Área de Trabalho Remota devem estar familiarizados com as linguagens de programação C e C++ e o ambiente de programação baseado no Windows. É necessário ter familiaridade com a arquitetura de cliente/servidor. O Conexão Web de Área de Trabalho Remota inclui interfaces programáveis para criar e implantar canais virtuais programáveis em Serviços de Área de Trabalho Remota aplicativos Web.
+os desenvolvedores que usam Serviços de Área de Trabalho Remota devem estar familiarizados com as linguagens de programação C e C++ e o ambiente de programação baseado em Windows. É necessário ter familiaridade com a arquitetura de cliente/servidor. O Conexão Web de Área de Trabalho Remota inclui interfaces programáveis para criar e implantar canais virtuais programáveis em Serviços de Área de Trabalho Remota aplicativos Web.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-Os aplicativos que usam Serviços de Área de Trabalho Remota exigem o Windows Server 2012 R2, o Windows 8.1, o Windows Server 2012, o Windows 8, o Windows Server 2008 R2, o Windows 7, o Windows Server 2008 ou o Windows Vista. Para usar Conexão Web de Área de Trabalho Remota funcionalidade, o aplicativo cliente Serviços de Área de Trabalho Remota requer o Internet Explorer e uma conexão com o World Wide Web. Para obter informações sobre os requisitos de tempo de execução para um determinado elemento de programação, consulte a seção requisitos da página de referência para esse elemento.
+os aplicativos que usam Serviços de Área de Trabalho Remota exigem Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows Server 2008 ou Windows Vista. Para usar Conexão Web de Área de Trabalho Remota funcionalidade, o aplicativo cliente Serviços de Área de Trabalho Remota requer o Internet Explorer e uma conexão com o World Wide Web. Para obter informações sobre os requisitos de tempo de execução para um determinado elemento de programação, consulte a seção requisitos da página de referência para esse elemento.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[Área de Trabalho Remota controle ActiveX](remote-desktop-activex-control.md)
+[controle de ActiveX de Área de Trabalho Remota](remote-desktop-activex-control.md)
 </dt> <dd>
 
-Descreve como usar o controle ActiveX Área de Trabalho Remota.
+descreve como usar o controle de ActiveX de Área de Trabalho Remota.
 
 </dd> <dt>
 
@@ -64,10 +64,10 @@ Os *canais virtuais* são extensões de software que podem ser usadas para adici
 
 </dd> <dt>
 
-[API de redirecionamento de mídia do RemoteFX](remotefx-api.md)
+[RemoteFX API de redirecionamento de mídia](remotefx-api.md)
 </dt> <dd>
 
-A API de redirecionamento de mídia do RemoteFX é usada em uma sessão de Área de Trabalho Remota para identificar áreas do servidor que estão exibindo conteúdo de alteração rápida, como vídeo. Esse conteúdo pode então ser codificado em vídeo e enviado ao cliente em formato codificado.
+a API de redirecionamento de mídia RemoteFX é usada em uma sessão de Área de Trabalho Remota para identificar áreas do servidor que estão exibindo conteúdo de alteração rápida, como vídeo. Esse conteúdo pode então ser codificado em vídeo e enviado ao cliente em formato codificado.
 
 </dd> <dt>
 

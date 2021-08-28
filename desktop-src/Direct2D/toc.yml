@@ -1,18 +1,18 @@
 - name: Direct2D
   href: direct2d-portal.md
   items:
-    - name: O que há de novo no Direct2D
+    - name: Novidades no Direct2D
       href: what-s-new-in-direct2d-for-windows-8-consumer-preview.md
-    - name: Sobre o Direct2D
+    - name: Sobre Direct2D
       href: direct2d-overview.md
-    - name: Guia de início rápido do Direct2D para Windows 8
+    - name: Direct2D Início Rápido para Windows 8
       href: direct2d-quickstart-with-device-context.md
-    - name: Introdução com Direct2D
+    - name: Ponto de Partida com Direct2D
       href: getting-started-with-direct2d-nav.md
       items:
-        - name: Início rápido do Direct2D
+        - name: Direct2D Quickstart
           href: getting-started-with-direct2d.md
-        - name: Criando um aplicativo Direct2D simples
+        - name: Criando um aplicativo de Direct2D simples
           href: direct2d-quickstart.md
     - name: Guia de Programação
       href: programming-guide.md
@@ -21,15 +21,15 @@
           href: the-direct2d-api.md
         - name: Direct2D e alto DPI
           href: direct2d-and-high-dpi.md
-        - name: Políticas de tratamento de erros Direct2D
+        - name: Direct2D Políticas de tratamento de erro
           href: direct2d-error-handling-policies.md
-        - name: Dispositivos e contextos de dispositivo
+        - name: Contextos de dispositivos e dispositivos
           href: devices-and-device-contexts.md
-        - name: Melhorando o desempenho de aplicativos Direct2D
+        - name: Melhorando o desempenho de Direct2D aplicativos
           href: improving-direct2d-performance.md
-        - name: Visão geral de camadas
+        - name: Visão geral das camadas
           href: direct2d-layers-overview.md
-        - name: Impressão e listas de comandos
+        - name: Imprimir e lista de comandos
           href: printing-and-command-lists.md
         - name: Aplicativos Direct2D com multithread
           href: multi-threaded-direct2d-apps.md
@@ -44,13 +44,13 @@
               href: effect-shader-linking.md
             - name: Efeitos personalizados
               href: custom-effects.md
-            - name: Como carregar uma imagem em efeitos de Direct2D usando o fileescolhidor
+            - name: Como carregar uma imagem em efeitos Direct2D usando o FilePicker
               href: load-a-id2d1image-using-the-filepicker.md
             - name: Como salvar o conteúdo do Direct2D em um arquivo de imagem
               href: save-direct2d-content-to-an-image-file.md
             - name: Como aplicar efeitos a primitivos
               href: how-to-apply-effects-to-primitives.md
-            - name: Recorte numérico e de precisão nos grafos de efeito
+            - name: Precisão e recorte numérico em grafos de efeito
               href: precision-and-clipping-in-effect-graphs.md
         - name: Pincéis
           href: brushes.md
@@ -64,7 +64,7 @@
                   href: how-to-create-a-solid-color-brush.md
                 - name: Como criar um pincel de gradiente linear
                   href: how-to-create-a-linear-gradient-brush.md
-                - name: Como criar um pincel gradiente radial
+                - name: Como criar um pincel de gradiente radial
                   href: how-to-create-a-radial-gradient-brush.md
                 - name: Como criar um pincel de bitmap
                   href: how-to-create-a-bitmap-brush.md
@@ -86,16 +86,16 @@
                   href: how-to-create-geometry-groups.md
                 - name: Como combinar geometrias
                   href: how-to-combine-geometries.md
-                - name: Como recuperar dados de geometria
+                - name: Como recuperar dados geometry
                   href: how-to-use-id2d1simplified-geometrysink.md
         - name: Interoperabilidade
           href: interoperability.md
           items:
             - name: Visão geral sobre interoperabilidade
               href: interoperability-overview.md
-            - name: Visão geral da interoperabilidade do Direct2D e da GDI
+            - name: Visão geral Direct2D interoperabilidade de GDI e Direct2D GDI
               href: direct2d-and-gdi-interoperation-overview.md
-            - name: Comparando a aceleração de hardware Direct2D e GDI
+            - name: Comparando a aceleração Direct2D hardware GDI e Direct2D GDI
               href: comparing-direct2d-and-gdi.md
             - name: Visão geral de interoperabilidade entre Direct2D e Direct3D
               href: direct2d-and-direct3d-interoperation-overview.md
@@ -104,7 +104,7 @@
           items:
             - name: Visão geral de transformações
               href: direct2d-transforms-overview.md
-            - name: Transforma tópicos de instruções
+            - name: Transforma tópicos de ida e voltar
               href: transforms-how-to-topics.md
               items:
                 - name: Como girar um objeto
@@ -115,14 +115,14 @@
                   href: how-to-skew.md
                 - name: Como converter um objeto
                   href: how-to-translate.md
-                - name: Como aplicar várias transformações a um objeto
+                - name: Como aplicar várias transformaçãos a um objeto
                   href: how-to-apply-multiple-transforms.md
         - name: Tópicos de instruções
           href: how-to-topics.md
           items:
-            - name: Como recortar para uma máscara geométrica
+            - name: Como cortar em uma máscara geométrica
               href: how-to-clip-with-layers.md
-            - name: Como recortar com retângulos alinhados com o eixo
+            - name: Como cortar com rects alinhadas do eixo
               href: how-to-clip-with-axis-aligned-rects.md
             - name: Como desenhar um bitmap
               href: how-to-draw-a-bitmap.md
@@ -148,16 +148,16 @@
           href: resources-and-resource-domains.md
         - name: Formatos de pixel e modos alfa com suporte
           href: supported-pixel-formats-and-alpha-modes.md
-        - name: Usando Direct2D para renderização de Server-Side
+        - name: Usando Direct2D para o Server-Side Rendering
           href: server-side-rendering-overview.md
         - name: Visão geral de destinos de renderização
           href: render-targets-overview.md
-        - name: Visão geral de destinos de renderização A8 compatíveis
+        - name: Visão geral de destinos de renderização compatíveis do A8
           href: compatible-a8-rendertargets.md
-    - name: Referência de Direct2D
+    - name: Direct2D referência
       href: reference.md
       items:
-        - name: Namespace D2D1
+        - name: D2D1 Namespace
           href: d2d1-namespace.md
           items:
             - name: Classes
@@ -177,61 +177,61 @@
                   items:
                     - name: Construtor Matrix3x2F ()
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-matrix3x2f~r2
-                    - name: 'Construtor Matrix3x2F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
+                    - name: 'Construtor Matrix3x2F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT,FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-matrix3x2f(float_float_float_float_float_float)
                     - name: Método determinante
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-determinant
                     - name: Método de identidade
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-identity
-                    - name: Inverter método
+                    - name: Método Invert
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-invert
                     - name: Método IsIdentity
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-isidentity
                     - name: Método IsInvertible
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-isinvertible
-                    - name: método Operator *
+                    - name: Método operator*
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult
-                    - name: Método ReinterpretBaseType (const * D2D1_MATRIX_3X2_F)
+                    - name: Método ReinterpretBaseType (const *D2D1_MATRIX_3X2_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-reinterpretbasetype(constd2d1_matrix_3x2_f)
-                    - name: Método ReinterpretBaseType (* D2D1_MATRIX_3X2_F)
+                    - name: Método ReinterpretBaseType (*D2D1_MATRIX_3X2_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-reinterpretbasetype(d2d1_matrix_3x2_f)
                     - name: Método de rotação
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation
-                    - name: 'Método Scale (D2D1_SIZE_F, D2D1_POINT_2F)'
+                    - name: 'Método Scale (D2D1_SIZE_F,D2D1_POINT_2F)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-scale(d2d1_size_f_d2d1_point_2f)
                     - name: 'Método Scale (FLOAT, FLOAT, D2D1_POINT_2F)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-scale(float_float_d2d1_point_2f)
-                    - name: Método setproduct
+                    - name: Método SetProduct
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-setproduct
                     - name: Método de distorção
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-skew
                     - name: Método TransformPoint
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-transformpoint
-                    - name: Método de conversão (D2D1_SIZE_F)
+                    - name: Método translation (D2D1_SIZE_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-translation(d2d1_size_f)
-                    - name: 'Método de conversão (FLOAT, FLOAT)'
+                    - name: 'Método translation (FLOAT,FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-translation(float_float)
                 - name: Matrix4x3F
                   href: matrix4x3f.md
                   items:
-                    - name: Construtor Matrix4x3F ()
+                    - name: Construtor Matrix4x3F()
                       href: matrix4x3f-matrix4x3f--.md
-                    - name: 'Construtor de Matrix4x3F (FLOAT, FLOAT, float, FLOAT, float, float, float, float, flutuante, float, float, FLOAT)'
+                    - name: 'Construtor Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
                       href: matrix4x3f-matrix4x3f-floats-.md
                 - name: Matrix4x4F
                   href: /windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f
                   items:
-                    - name: método Operator *
+                    - name: Método operator*
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-operator-mult
                     - name: Método ReinterpretBaseType
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-reinterpretbasetype(d2d1_matrix_4x4_f)
-                    - name: Método ReinterpretBaseType (const D2D1_MATRIX_4X4_F * pMatrix)
+                    - name: Método ReinterpretBaseType(const D2D1_MATRIX_4X4_F *pMatrix)
                       href: /previous-versions/windows/desktop/legacy/hh848012(v=vs.85)
-                    - name: Método Scale
+                    - name: Método de escala
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-scale
                     - name: Método RotationX
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationx
-                    - name: Método de rotação
+                    - name: Método RotationY
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationy
                     - name: Método RotationZ
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationz
@@ -239,7 +239,7 @@
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationarbitraryaxis
                     - name: Método SkewX
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-skewx
-                    - name: Método de distorção
+                    - name: Método SkewY
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-skewy
                     - name: Método PerspectiveProjection
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-perspectiveprojection
@@ -247,41 +247,41 @@
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-determinant
                     - name: Método IsIdentity
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-isidentity
-                    - name: Método setproduct
+                    - name: Método SetProduct
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-setproduct
-                    - name: Sobrecarga de Construtor Matrix4x4F
+                    - name: Sobrecarga do construtor Matrix4x4F
                       href: /previous-versions/windows/desktop/legacy/hh848005(v=vs.85)
                     - name: Construtor Matrix4x4F ()
                       href: /previous-versions/windows/desktop/legacy/hh848006(v=vs.85)
                 - name: Matrix5x4F
                   href: matrix5x4f.md
                   items:
-                    - name: Construtor Matrix5x4F ()
+                    - name: Construtor Matrix5x4F()
                       href: matrix5x4f-matrix5x4f--.md
-                    - name: 'Matrix5x4F (FLOAT, float, FLOAT, float, float, float, float, float, float, float, FLOAT, float, FLOAT, float, float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) constructor'
+                    - name: 'Construtor Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
                       href: matrix5x4f-matrix5x4f-floats-.md
             - name: Funções
               href: d2d1functions.md
               items:
                 - name: ArcSegment
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-arcsegment
-                - name: BezierSegment
+                - name: Beziersegment
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-beziersegment
                 - name: BitmapBrushProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-bitmapbrushproperties
                 - name: BitmapBrushProperties1
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-bitmapbrushproperties1
-                - name: Bitmapproperties
+                - name: BitmapProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-bitmapproperties
                 - name: BitmapProperties1
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-bitmapproperties1
-                - name: Pincelproperties
+                - name: BrushProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-brushproperties
                 - name: ComputeFlatteningTolerance
                   href: /previous-versions/windows/desktop/legacy/dn280327(v=vs.85)
                 - name: ConvertColorSpace
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-convertcolorspace
-                - name: Criarproperties
+                - name: CreationProperties
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-creationproperties
                 - name: DrawingStateDescription
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-drawingstatedescription
@@ -297,13 +297,13 @@
                   href: /windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatch
                 - name: GradientMeshPatchFromCoonsPatch
                   href: /windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch
-                - name: GradientStop
+                - name: Gradientstop
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-gradientstop
                 - name: HwndRenderTargetProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-hwndrendertargetproperties
                 - name: IdentityMatrix
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-identitymatrix
-                - name: ImageBrushproperties
+                - name: ImageBrushProperties
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-imagebrushproperties
                 - name: InfiniteRect
                   href: /windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect
@@ -315,17 +315,17 @@
                   href: /windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-inkpoint
                 - name: InkStyleProperties
                   href: /windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-inkstyleproperties
-                - name: Camadaparameters
+                - name: LayerParameters
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters
                 - name: LayerParameters1
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-layerparameters1
-                - name: LinearGradientBrushproperties
+                - name: LinearGradientBrushProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-lineargradientbrushproperties
-                - name: 'Operator * (D2D1_POINT_2F&, D2D1_MATRIX_F&)'
+                - name: 'operator* (D2D1_POINT_2F&,D2D1_MATRIX_F&)'
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-operator-mult
                 - name: PixelFormat
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-pixelformat
-                - name: Point2 (tipo)
+                - name: Point2(Type)
                   href: point2-type-.md
                 - name: Point2F
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-point2f
@@ -333,21 +333,21 @@
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-point2l
                 - name: Point2U
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-point2u
-                - name: Defaultcontrolproperties
+                - name: PrintControlProperties
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-printcontrolproperties
-                - name: QuadraticBezierSegment
+                - name: Quadraticbeziersegment
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-quadraticbeziersegment
                 - name: RadialGradientBrushProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-radialgradientbrushproperties
                 - name: RenderTargetProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rendertargetproperties
-                - name: Rect (tipo)
+                - name: Rect(Type)
                   href: rect-type-.md
                 - name: RectF
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rectf
-                - name: Rect
+                - name: RectL
                   href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-rectl
-                - name: Rectu
+                - name: RectU
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rectu
                 - name: RenderingControls
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-renderingcontrols
@@ -355,11 +355,11 @@
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-roundedrect
                 - name: SetDpiCompensatedEffectInput
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-setdpicompensatedeffectinput
-                - name: Tamanho (tipo)
+                - name: Size(Type)
                   href: size-type-.md
-                - name: SizeF
+                - name: Sizef
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-sizef
-                - name: Tamanho de
+                - name: SizeU
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-sizeu
                 - name: StrokeStyleProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-strokestyleproperties
@@ -374,18 +374,18 @@
             - name: Estruturas
               href: d2d1structures.md
               items:
-                - name: TypeTraits (tipo)
+                - name: TypeTraits(Type)
                   href: /windows/desktop/api/d2d1helper/ns-d2d1helper-typetraits
-        - name: Tipos de Direct2D e constantes
+        - name: Direct2D tipos de dados e constantes
           href: datatypes-and-constants.md
           items:
-            - name: Tipo de dados D2D1_TAG
+            - name: D2D1_TAG Datatype
               href: d2d1-tag.md
-            - name: Constantes Direct2D
+            - name: Direct2D Constantes
               href: direct2d-constants.md
-            - name: Códigos de erro Direct2D
+            - name: Direct2D Códigos de erro
               href: direct2d-error-codes.md
-        - name: Enumerações Direct2D
+        - name: Direct2D enumerações
           href: enumerations.md
           items:
             - name: D2D1_2DAFFINETRANSFORM_INTERPOLATION_MODE
@@ -736,7 +736,7 @@
               href: /windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_interpolation_mode
             - name: D2D1_YCBCR_PROP
               href: /windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_prop
-        - name: Funções Direct2D
+        - name: Direct2D funções
           href: functions.md
           items:
             - name: D2D1ComputeMaximumScaleFactor
@@ -745,9 +745,9 @@
               href: /windows/desktop/api/d2d1_1/nf-d2d1_1-d2d1createdevice
             - name: D2D1CreateDeviceContext
               href: /windows/desktop/api/d2d1_1/nf-d2d1_1-d2d1createdevicecontext
-            - name: 'D2D1CreateFactory (D2D1_FACTORY_TYPE, REFIID, void * *)'
+            - name: 'D2D1CreateFactory(D2D1_FACTORY_TYPE,REFIID,void**)'
               href: /windows/win32/api/d2d1/nf-d2d1-d2d1createfactory-r1
-            - name: 'D2D1CreateFactory (D2D1_FACTORY_TYPE, REFIID, D2D1_FACTORY_OPTIONS *, void * *)'
+            - name: 'D2D1CreateFactory(D2D1_FACTORY_TYPE,REFIID,D2D1_FACTORY_OPTIONS*,void**)'
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1createfactory
             - name: D2D1GetGradientMeshInteriorPointsFromCoonsPatch
               href: /windows/desktop/api/d2d1_3/nf-d2d1_3-d2d1getgradientmeshinteriorpointsfromcoonspatch
@@ -759,15 +759,15 @@
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1makerotatematrix
             - name: D2D1MakeSkewMatrix
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1makeskewmatrix
-            - name: 'Operator * (const D2D1_MATRIX_3X2_F&, const D2D1_MATRIX_3X2_F&)'
+            - name: 'operator* (const D2D1_MATRIX_3X2_F&,const D2D1_MATRIX_3X2_F&)'
               href: /windows/desktop/api/d2d1helper/nf-d2d1helper-operator
             - name: BlobGetter
               href: blobgetter.md
             - name: BlobSetter
               href: blobsetter.md
-            - name: DeducingBlobGetter
+            - name: DeduçãoBlobGetter
               href: deducingblobgetter.md
-            - name: DeducingBlobSetter
+            - name: DeduçãoBlobSetter
               href: deducingblobsetter.md
             - name: DeducingStringGetter
               href: deducingstringgetter.md
@@ -820,7 +820,7 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmap-getdpi
                 - name: Método GetPixelFormat
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmap-getpixelformat
-                - name: Método getpixelize
+                - name: Método GetPixelSize
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmap-getpixelsize
                 - name: Método GetSize
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmap-getsize
@@ -829,26 +829,26 @@
               items:
                 - name: Método GetColorContext
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getcolorcontext
-                - name: Método getoptions
+                - name: Método GetOptions
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getoptions
-                - name: Método getsurface
+                - name: Método GetSurface
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getsurface
-                - name: Método MAP
+                - name: Método Map
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-map
-                - name: Método de desmapeamento
+                - name: Método Unmap
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-unmap
                 - name: Método GetSourceStream
                   href: /previous-versions/windows/desktop/legacy/hh404353(v=vs.85)
             - name: ID2D1BitmapBrush
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1bitmapbrush
               items:
-                - name: Método getbitmap
+                - name: Método GetBitmap
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-getbitmap
                 - name: Método GetExtendModeX
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-getextendmodex
                 - name: Método GetExtendModeY
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-getextendmodey
-                - name: Método getinterpolamode
+                - name: Método GetInterpolationMode
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-getinterpolationmode
                 - name: Método SetBitmap
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-setbitmap
@@ -856,7 +856,7 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-setextendmodex
                 - name: Método SetExtendModeY
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-setextendmodey
-                - name: Método setinterpolamode
+                - name: Método SetInterpolationMode
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmapbrush-setinterpolationmode
             - name: ID2D1BitmapBrush1
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1bitmapbrush1
@@ -868,7 +868,7 @@
             - name: ID2D1BitmapRenderTarget
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1bitmaprendertarget
               items:
-                - name: Método getbitmap
+                - name: Método GetBitmap
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1bitmaprendertarget-getbitmap
             - name: ID2D1BlendTransform
               href: /windows/desktop/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1blendtransform
@@ -898,25 +898,25 @@
             - name: ID2D1Brush
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1brush
               items:
-                - name: Método getopacity
+                - name: Método GetOpacity
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-getopacity
                 - name: Método GetTransform
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-gettransform
                 - name: Método SetOpacity
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-setopacity
-                - name: Método SetTransform sobrecarregado
+                - name: Método sobrecarregado SetTransform
                   href: id2d1brush-settransform.md
                   items:
                     - name: Método SetTransform (D2D1_MATRIX_3X2_F&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)
-                    - name: Método SetTransform (D2D1_MATRIX_3X2_F *)
+                    - name: Método SetTransform (D2D1_MATRIX_3X2_F*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f)
             - name: ID2D1ColorContext
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1colorcontext
               items:
                 - name: Método GetColorSpace
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1colorcontext-getcolorspace
-                - name: Método Profiles
+                - name: Método GetProfileSize
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1colorcontext-getprofilesize
                 - name: Método GetProfile
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1colorcontext-getprofile
@@ -934,7 +934,7 @@
               items:
                 - name: Método Close
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandlist-close
-                - name: Stream
+                - name: STREAM
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandlist-stream
             - name: ID2D1CommandSink
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1commandsink
@@ -945,7 +945,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-enddraw
                 - name: Método SetAntialiasMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-setantialiasmode
-                - name: Método settags
+                - name: Método SetTags
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-settags
                 - name: Método SetTextAntialiasMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-settextantialiasmode
@@ -953,7 +953,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-settextrenderingparams
                 - name: Método SetTransform
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-settransform
-                - name: Método setunitmode
+                - name: Método SetUnitMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-setunitmode
                 - name: Método SetPrimitiveBlend
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-setprimitiveblend
@@ -1039,7 +1039,7 @@
               items:
                 - name: Método SetOutputBuffer
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1concretetransform-setoutputbuffer
-                - name: Método setcacheed
+                - name: Método SetCached
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1concretetransform-setcached
             - name: ID2D1DCRenderTarget
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1dcrendertarget
@@ -1719,85 +1719,85 @@
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__float_bool)
                     - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F *, bool*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F *, float, bool*)'
+                    - name: 'Método FillContainsPoint (D2D1_POINT_2F,D2D1_MATRIX_3X2_F *,FLOAT, BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool)
-                - name: Método GetBounds sobrecarregado
+                - name: Método sobrecarregado GetBounds
                   href: id2d1geometry-getbounds.md
                   items:
                     - name: 'Método GetBounds (D2D1_MATRIX_3X2_F *, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f_d2d1_rect_f)
-                    - name: 'Método GetBounds (D2D1_MATRIX_3X2_F&, D2D1_RECT_F *)'
+                    - name: 'Método GetBounds (D2D1_MATRIX_3X2_F&,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f__d2d1_rect_f)
                 - name: Método sobrecarregado GetWidenedBounds
                   href: id2d1geometry-getwidenedbounds.md
                   items:
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, D2D1_RECT_F*)'
+                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrkeStyle *, D2D1_MATRIX_3X2_F&,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, float, D2D1_RECT_F*)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1StrkeStyle,*D2D1_MATRIX_3X2_F&, FLOAT, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, D2D1_RECT_F *)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1Botão,*D2D1_MATRIX_3X2_F*,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, FLOAT, D2D1_RECT_F *)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1Botão,*D2D1_MATRIX_3X2_F,* FLOAT, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f)
-                - name: Contorno do método sobrecarregado
+                - name: Método sobrecarregado de contorno
                   href: id2d1geometry-outline.md
                   items:
-                    - name: 'Método de estrutura de tópicos (D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método de estrutura de tópicos (D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                    - name: 'Método outline (D2D1_MATRIX_3X2_F *, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método outline (D2D1_MATRIX_3X2_F *, float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
                 - name: Método sobrecarregado StrokeContainsPoint
                   href: id2d1geometry-strokecontainspoint.md
                   items:
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D_MATRIX_3X2_F*, bool *)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrókeStyle *, D2D_MATRIX_3X2_F*,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D_MATRIX_3X2_F*, float, bool *)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrókeStyle *, D2D_MATRIX_3X2_F*,FLOAT, BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, bool*)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT, ID2D1StrkeStyle *, D2D1_MATRIX_3X2_F&,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, float, bool*)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT, ID2D1StrkeStyle *, D2D1_MATRIX_3X2_F&,FLOAT,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_bool)
-                - name: Simplificar método sobrecarregado
+                - name: Simplificar o método sobrecarregado
                   href: id2d1geometry-simplify.md
                   items:
-                    - name: 'Método simplificar (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F *, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F *,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Simplificar método (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F *, float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Simplify *(D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)
-                    - name: 'Método simplificar (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Simplificar método (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                - name: Método sobrecarregado incluí
+                - name: Método sobrecarregado Tessellate
                   href: id2d1geometry-tessellate.md
                   items:
-                    - name: 'Método incluí (D2D1_MATRIX_3X2_F *, ID2D1TessellationSink*)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F *, ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink)
-                    - name: 'Método incluí (D2D1_MATRIX_3X2_F *, float, ID2D1TessellationSink*)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F *,FLOAT, ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)
-                    - name: 'Método incluí (D2D1_MATRIX_3X2_F&, ID2D1TessellationSink *)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F&,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink)
-                    - name: 'Método incluí (D2D1_MATRIX_3X2_F&, FLOAT, ID2D1TessellationSink *)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F&,FLOAT,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink)
-                - name: Ampliar método sobrecarregado
+                - name: Método sobrecarregado de ampliação
                   href: id2d1geometry-widen.md
                   items:
-                    - name: 'Método ampliate (FLOAT, ID2D1StrokeStyle,*D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Widen (FLOAT,ID2D1TrikeStyle,*D2D1_MATRIX_3X2_F*,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método ampliate (FLOAT, ID2D1StrokeStyle,*D2D1_MATRIX_3X2_F*, float, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Widen (FLOAT,ID2D1TrikeStyle,*D2D1_MATRIX_3X2_F*,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)
-                    - name: 'Método de ampliação (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Widen (FLOAT,ID2D1TrikeStyle *, D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método ampliate (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Widen (FLOAT,ID2D1TrikeStyle,*D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
             - name: ID2D1GeometryGroup
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1geometrygroup
               items:
-                - name: Método getfillmode
+                - name: Método GetFillMode
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrygroup-getfillmode
                 - name: Método GetSourceGeometries
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrygroup-getsourcegeometries
@@ -1813,14 +1813,14 @@
                   items:
                     - name: Método AddArc (D2D1_ARC_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)
-                    - name: Método AddArc (D2D1_ARC_SEGMENT *)
+                    - name: Método AddArc (D2D1_ARC_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)
-                - name: Método AddBezier sobrecarregado
+                - name: Método sobrecarregado AddBezier
                   href: id2d1geometrysink-addbezier.md
                   items:
                     - name: Método AddBezier (D2D1_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_)
-                    - name: Método AddBezier (D2D1_BEZIER_SEGMENT *)
+                    - name: Método AddBezier (D2D1_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)
                 - name: Método AddLine
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addline
@@ -1829,7 +1829,7 @@
                   items:
                     - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)
-                    - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT *)
+                    - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)
                 - name: Método AddQuadraticBeziers
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbeziers
@@ -1838,14 +1838,14 @@
               items:
                 - name: Método GetPatchCount
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1gradientmesh-getpatchcount
-                - name: Método getpatches
+                - name: Método GetPatches
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1gradientmesh-getpatches
             - name: ID2D1GradientStopCollection
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1gradientstopcollection
               items:
                 - name: Método GetColorInterpolationGamma
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1gradientstopcollection-getcolorinterpolationgamma
-                - name: Método getextendmode
+                - name: Método GetExtendMode
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1gradientstopcollection-getextendmode
                 - name: Método GetGradientStopCount
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1gradientstopcollection-getgradientstopcount
@@ -1871,12 +1871,12 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-checkwindowstate
                 - name: Método GetHwnd
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-gethwnd
-                - name: Redimensionar método sobrecarregado
+                - name: Resize o método sobrecarregado
                   href: id2d1hwndrendertarget-resize.md
                   items:
-                    - name: Método resize (D2D1_SIZE_U&)
+                    - name: Método Resize (D2D1_SIZE_U&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-resize(constd2d1_size_u_)
-                    - name: Método resize (D2D1_SIZE_U *)
+                    - name: Método Resize (D2D1_SIZE_U*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-resize(constd2d1_size_u)
             - name: ID2D1Image
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1image
@@ -1887,9 +1887,9 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getextendmodex
                 - name: Método GetExtendModeY
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getextendmodey
-                - name: Método getImage
+                - name: Método GetImage
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getimage
-                - name: Método getinterpolamode
+                - name: Método GetInterpolationMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getinterpolationmode
                 - name: Método GetSourceRectangle
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getsourcerectangle
@@ -1899,7 +1899,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-setextendmodey
                 - name: Método SetImage
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-setimage
-                - name: Método setinterpolamode
+                - name: Método SetInterpolationMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-setinterpolationmode
                 - name: Método SetSourceRectangle
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-setsourcerectangle
@@ -1921,7 +1921,7 @@
                 - name: Métodos EnsureCached
                   href: id2d1imagesourcefromwic-ensurecached-overload.md
                   items:
-                    - name: Método EnsureCached (D2D1_RECT_U *)
+                    - name: Método EnsureCached (D2D1_RECT_U*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u)
                     - name: Método EnsureCached (D2D1_RECT_U&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u_)
@@ -1930,20 +1930,20 @@
                 - name: Método TrimCache
                   href: id2d1imagesourcefromwic-trimcache-overload.md
                   items:
-                    - name: Método TrimCache (D2D1_RECT_U *)
+                    - name: Método TrimCache (D2D1_RECT_U*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)
                     - name: Método TrimCache (D2D1_RECT_U&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)
             - name: ID2D1Ink
               href: /windows/desktop/api/d2d1_3/nn-d2d1_3-id2d1ink
               items:
-                - name: Método addsegments
+                - name: Método AddSegments
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-addsegments
                 - name: Método GetBounds
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getbounds
                 - name: Método GetSegmentCount
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getsegmentcount
-                - name: Método getsegments
+                - name: Método GetSegments
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getsegments
                 - name: Método GetStartPoint
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getstartpoint
@@ -1952,29 +1952,29 @@
                 - name: Métodos SetSegmentAtEnd
                   href: id2d1ink-setsegmentatend-overload.md
                   items:
-                    - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT *)
+                    - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setsegmentatend(constd2d1_ink_bezier_segment_)
                     - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setsegmentatend(constd2d1_ink_bezier_segment_)
-                - name: Método setsegments
+                - name: Método SetSegments
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setsegments
                 - name: Métodos SetStartPoint
                   href: id2d1ink-setstartpoint-overload.md
                   items:
-                    - name: Método SetStartPoint (D2D1_INK_POINT *)
+                    - name: Método SetStartPoint (D2D1_INK_POINT*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point)
                     - name: Método SetStartPoint (D2D1_INK_POINT&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point_)
                 - name: Métodos StreamAsGeometry
                   href: id2d1ink-streamasgeometry-overload.md
                   items:
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, float, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle,*D2D1_MATRIX_3X2_F*, FLOAT, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F&, float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle,*D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle,*D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle,*D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
             - name: ID2D1InkStyle
               href: /windows/desktop/api/d2d1_3/nn-d2d1_3-id2d1inkstyle
@@ -1988,7 +1988,7 @@
                 - name: Método SetNibTransform
                   href: id2d1inkstyle-setnibtransform-overload.md
                   items:
-                    - name: Método SetNibTransform (D2D1_MATRIX_3X2_F *)
+                    - name: Método SetNibTransform (D2D1_MATRIX_3X2_F*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f)
                     - name: Método SetNibTransform (D2D1_MATRIX_3X2_F&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f_)
@@ -2017,7 +2017,7 @@
               items:
                 - name: Método GetMultithreadProtected
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-getmultithreadprotected
-                - name: Inserir método
+                - name: Método Enter
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-enter
                 - name: Método Leave
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-leave
@@ -2045,13 +2045,13 @@
                 - name: Métodos ComputePointAndSegmentAtLength
                   href: id2d1pathgeometry1-computepointandsegmentatlength-overload.md
                   items:
-                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, float, D2D1_POINT_DESCRIPTION*)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, FLOAT, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description)
-                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, FLOAT, D2D1_POINT_DESCRIPTION *)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, FLOAT, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__float_d2d1_point_description)
                     - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description)
-                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, D2D1_POINT_DESCRIPTION *)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__d2d1_point_description)
             - name: ID2D1PrintControl
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1printcontrol
@@ -2060,7 +2060,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1printcontrol-addpage
                 - name: Método Close
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1printcontrol-close
-            - name: ID2D1Properties
+            - name: ID2D1Propriedades
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1properties
               items:
                 - name: Método GetPropertyCount
@@ -2070,86 +2070,86 @@
                 - name: Métodos GetPropertyName
                   href: id2d1properties-getpropertyname-overload.md
                   items:
-                    - name: 'Método GetPropertyName (UINT32, PWSTR, UINT32)'
+                    - name: 'Método GetPropertyName(UINT32, PWSTR, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyname(uint32_pwstr_uint32)
-                    - name: 'Método GetPropertyName (U, PWSTR, UINT32)'
+                    - name: 'Método GetPropertyName(U, PWSTR, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyname(u_pwstr_uint32)
                 - name: Métodos GetPropertyNameLength
                   href: id2d1properties-getpropertynamelength-overload.md
                   items:
-                    - name: Método GetPropertyNameLength (UINT32)
+                    - name: Método GetPropertyNameLength(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(uint32)
-                    - name: Método GetPropertyNameLength (U)
+                    - name: Método GetPropertyNameLength(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(u)
                 - name: Métodos GetSubProperties
                   href: id2d1properties-getsubproperties-overload.md
                   items:
-                    - name: 'Método GetSubProperties (UINT32, ID2D1Properties * *)'
+                    - name: 'Método GetSubProperties(UINT32, ID2D1Properties**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getsubproperties(uint32_id2d1properties)
-                    - name: 'Método GetSubProperties (U, ID2D1Properties * *)'
+                    - name: 'Método GetSubProperties(U, ID2D1Properties**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getsubproperties(u_id2d1properties)
                 - name: Métodos GetType
                   href: id2d1properties-gettype-overload.md
                   items:
-                    - name: Método GetType (UINT32)
+                    - name: Método GetType(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-gettype(uint32)
-                    - name: Método GetType (U)
+                    - name: Método GetType(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-gettype(u)
                 - name: Métodos GetValue
                   href: id2d1properties-getvalue-overload.md
                   items:
-                    - name: 'Método GetValue (UINT32, D2D1_PROPERTY_TYPE, BYTE *, UINT32)'
+                    - name: 'Método GetValue(UINT32, D2D1_PROPERTY_TYPE, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_d2d1_property_type_byte_uint32)
-                    - name: 'Método GetValue (UINT32, BYTE *, UINT32)'
+                    - name: 'Método GetValue(UINT32, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32)
-                    - name: 'Método GetValue (U, BYTE *, UINT32)'
+                    - name: 'Método GetValue(U, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_byte_uint32)
-                    - name: 'Método GetValue (U, T *)'
+                    - name: 'Método GetValue(U, T*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_t)
-                    - name: Método GetValue (U)
+                    - name: Método GetValue(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u)
                 - name: Métodos GetValueByName
                   href: id2d1properties-getvaluebyname-overload.md
                   items:
-                    - name: 'Método GetValueByName (PCWSTR, D2D1_PROPERTY_TYPE, BYTE *, UINT32)'
+                    - name: 'Método GetValueByName(PCWSTR, D2D1_PROPERTY_TYPE, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_d2d1_property_type_byte_uint32)
-                    - name: 'Método GetValueByName (PCWSTR, BYTE *, UINT32)'
+                    - name: 'Método GetValueByName(PCWSTR, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_byte_uint32)
-                    - name: 'Método GetValueByName (PCWSTR, T *)'
+                    - name: 'Método GetValueByName(PCWSTR, T*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_t)
-                    - name: Método GetValueByName (PCWSTR)
+                    - name: Método GetValueByName(PCWSTR)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr)
-                - name: Métodos GetValues
+                - name: Métodos GetValueSize
                   href: id2d1properties-getvaluesize-overload.md
                   items:
-                    - name: Método GetValues (UINT32)
+                    - name: Método GetValueSize(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)
-                    - name: Método GetValues (U)
+                    - name: Método GetValueSize(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u)
                 - name: Métodos SetValue
                   href: id2d1properties-setvalue-overload.md
                   items:
-                    - name: 'Método SetValue (UINT32, D2D1_PROPERTY_TYPE, constBYTE *, UINT32)'
+                    - name: 'Método SetValue(UINT32, D2D1_PROPERTY_TYPE, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_d2d1_property_type_constbyte_uint32)
-                    - name: 'Método SetValue (UINT32, constBYTE *, UINT32)'
+                    - name: 'Método SetValue(UINT32, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)
-                    - name: 'Método SetValue (U, conste&)'
+                    - name: 'Método SetValue(U, constT&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(u_constt_)
-                    - name: 'Método SetValue (U, constBYTE *, UINT32)'
+                    - name: 'Método SetValue(U, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(u_constbyte_uint32)
                 - name: Métodos SetValueByName
                   href: id2d1properties-setvaluebyname-overload.md
                   items:
-                    - name: 'Método SetValueByName (PCWSTR, D2D1_PROPERTY_TYPE, constBYTE *, UINT32)'
+                    - name: 'Método SetValueByName (PCWSTR, D2D1_PROPERTY_TYPE, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_d2d1_property_type_constbyte_uint32)
-                    - name: 'Método SetValueByName (PCWSTR, constBYTE *, UINT32)'
+                    - name: 'Método SetValueByName (PCWSTR, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constbyte_uint32)
-                    - name: 'Método SetValueByName (PCWSTR, constt&)'
+                    - name: 'Método SetValueByName(PCWSTR, constT&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constt_)
             - name: ID2D1RadialGradientBrush
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1radialgradientbrush
               items:
-                - name: Método getCenter
+                - name: Método GetCenter
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-getcenter
                 - name: Método GetGradientOriginOffset
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-getgradientoriginoffset
@@ -2157,15 +2157,15 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-getgradientstopcollection
                 - name: Método GetRadiusX
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-getradiusx
-                - name: Método getRadius
+                - name: Método GetRadiusY
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-getradiusy
-                - name: Método setCenter
+                - name: Método SetCenter
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-setcenter
                 - name: Método SetGradientOriginOffset
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-setgradientoriginoffset
                 - name: Método SetRadiusX
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-setradiusx
-                - name: Método setradius
+                - name: Método SetRadiusY
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1radialgradientbrush-setradiusy
             - name: ID2D1RectangleGeometry
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1rectanglegeometry
@@ -2837,7 +2837,7 @@
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1vertexbuffer-map
                 - name: Método de desmapeamento
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1vertexbuffer-unmap
-        - name: Estruturas Direct2D
+        - name: estruturas de Direct2D
           href: structures.md
           items:
             - name: D2D_COLOR_F
@@ -3165,12 +3165,12 @@
     - name: Ferramentas e utilitários
       href: tools-and-utilities.md
       items:
-        - name: Camada de depuração Direct2D
+        - name: Direct2D Camada de depuração
           href: direct2ddebuglayer-portal.md
           items:
-            - name: Instalando a camada de depuração Direct2D
+            - name: instalando a camada de depuração Direct2D
               href: installing-the-direct2d-debug-layer.md
-            - name: Visão geral da camada de depuração Direct2D
+            - name: Direct2D Visão geral da camada de depuração
               href: direct2ddebuglayer-overview.md
             - name: Mensagens de depuração
               href: direct2ddebuglayer-debugmessages.md
@@ -3287,7 +3287,7 @@
                   href: d1158.md
                 - name: 'D1159: topologia de commandlist inválida'
                   href: d1159.md
-                - name: 'D1160: ciclo no grafo'
+                - name: 'D1160: ciclo em Graph'
                   href: d1160.md
                 - name: 'D1161: CopyFromMemory requer bitmap legível da CPU'
                   href: d1161.md
@@ -3429,63 +3429,63 @@
                   href: d1229.md
                 - name: 'D1230: suporte à precisão do buffer desconhecido'
                   href: d1230.md
-                - name: 'D1231: suporte a formato DXGI desconhecido'
+                - name: 'D1231: Suporte ao formato DXGI desconhecido'
                   href: d1231.md
-                - name: 'D1232:32 bpp RGBA causa conversão'
+                - name: 'D1232: 32bpp RGBA causa conversão'
                   href: d1232.md
-                - name: 'D1233: BeginDraw inválido de erro anterior'
+                - name: 'D1233: BeginDraw inválido do erro anterior'
                   href: d1233.md
-                - name: 'D1234: pincel de recurso nulo'
+                - name: 'D1234: Pincel de Recurso Nulo'
                   href: d1234.md
-                - name: 'D1235: destino processado para de vários DCs'
+                - name: 'D1235: destino renderizado para de vários DCs'
                   href: d1235.md
                 - name: 'D1236: EndDraw com push pendente'
                   href: d1236.md
-                - name: 'D1237: o destino não pode ser nulo'
+                - name: 'D1237: O destino não pode ser nulo'
                   href: d1237.md
-                - name: 'D1238: origem de transformação de canal único SRGB'
+                - name: 'D1238: SRGB de Canal Único de Transformação de Origem'
                   href: d1238.md
-                - name: 'D1239: chamada de bitmap de transformação de origem inválida'
+                - name: 'D1239: Chamada inválida de bitmap de transformação de origem'
                   href: d1239.md
-                - name: 'D1240: fonte transformar ainda mapeada'
+                - name: 'D1240: Transform de origem ainda mapeado'
                   href: d1240.md
-                - name: 'D1241: fechar com push pendente'
+                - name: 'D1241: Fechar com Push Pendente'
                   href: d1241.md
                 - name: 'D1242: BeginDraw ausente'
                   href: d1242.md
-                - name: 'D1243: GetDC render'
+                - name: 'D1243: Renderização getDC'
                   href: d1243.md
-                - name: 'D1244: erro de redefinição de pilha disparada'
+                - name: 'D1244: Redefinição de pilha disparada por erro'
                   href: d1244.md
-                - name: 'D1245: erro de invalidação de commandlist disparado'
+                - name: 'D1245: Invalidação da lista de comandos disparada por erro'
                   href: d1245.md
                 - name: 'D1246: DC destruído durante o desenho'
                   href: d1246.md
-                - name: 'D1247: cópia dinâmica da memória'
+                - name: 'D1247: Cópia dinâmica da memória'
                   href: d1247.md
-                - name: 'D1248: modo mais insuficiente de recursos'
+                - name: 'D1248: Melhor modo de funcionalidades insuficientes'
                   href: d1248.md
-                - name: 'D1249: destino inacessível'
+                - name: 'D1249: Destino inacessível'
                   href: d1249.md
-                - name: 'D1250: fonte inacessível'
+                - name: 'D1250: Fonte inacessível'
                   href: d1250.md
-                - name: 'D1251: problema de estado do D3D'
+                - name: 'D1251: Problema de estado D3D'
                   href: d1251.md
-                - name: 'D1252: execução de glifo inválida'
+                - name: 'D1252: Executar glifo inválido'
                   href: d1252.md
-                - name: 'D1253: sair incompatível'
+                - name: 'D1253: Saída incompatibilidade'
                   href: d1253.md
-                - name: 'D1254: operação em domínio de thread único'
+                - name: 'D1254: Operação em um único domínio threaded'
                   href: d1254.md
-                - name: 'D1255: conflito de metadados de opacidade de bloco'
+                - name: 'D1255: Conflito de metadados de opacidade de tile'
                   href: d1255.md
-                - name: 'D1256: uso de efeito de análise inválido'
+                - name: 'D1256: Uso inválido do efeito de análise'
                   href: d1256.md
-                - name: 'D1257: sombreador não carregado'
+                - name: 'D1257: Sombreador não carregado'
                   href: d1257.md
-                - name: 'D1258: sombreador de computação não definido'
+                - name: 'D1258: Sombreador de computação não definido'
                   href: d1258.md
     - name: Exemplos
       href: d2d-samples.md
-    - name: Glossário do Direct2D
+    - name: Direct2D Glossário
       href: direct2d-glossary.md

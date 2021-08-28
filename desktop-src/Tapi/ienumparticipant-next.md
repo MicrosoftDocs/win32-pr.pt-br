@@ -1,21 +1,21 @@
 ---
-description: O próximo método obtém o próximo número especificado de elementos na sequência de enumeração. Esse método é ocultado das linguagens de Visual Basic e script.
+description: O próximo método obtém o próximo número especificado de elementos na sequência de enumeração. esse método é ocultado das linguagens de Visual Basic e script.
 ms.assetid: bd94f592-ac6f-48b7-8190-352a5e18f224
 title: 'Método IEnumParticipant:: Next (Confpriv. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89586370d01aaac54f05242e0eb3c53eb938c47b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d574f7c34bc48679ea679caf8ba07c881bcd1c692fa3215ae48a9ecf54d7cbfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003584"
 ---
 # <a name="ienumparticipantnext-method"></a>Método IEnumParticipant:: Next
 
-\[A **seguir** não está disponível para uso no Windows Vista, no windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[a **seguir** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
-O **próximo** método obtém o próximo número especificado de elementos na sequência de enumeração. Esse método é ocultado das linguagens de Visual Basic e script.
+O **próximo** método obtém o próximo número especificado de elementos na sequência de enumeração. esse método é ocultado das linguagens de Visual Basic e script.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,7 +55,7 @@ Ponteiro para o número de elementos realmente fornecidos. Poderá ser **NULL** 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -83,7 +83,7 @@ A TAPI chama o método [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

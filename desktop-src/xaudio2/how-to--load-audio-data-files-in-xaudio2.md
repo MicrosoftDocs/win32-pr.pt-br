@@ -1,33 +1,33 @@
 ---
-description: Este tópico descreve as etapas para popular as estruturas necessárias para reproduzir dados de áudio no XAudio2.
+description: Este tópico descreve as etapas para preencher as estruturas necessárias para reproduzir dados de áudio no XAudio2.
 ms.assetid: caeb522e-d4f6-91e2-5e85-ea0af0f61300
 title: 'Como: Carregar arquivos de dados de áudio no XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 659b4d8e106b6f0b2eb942505f99562f56fdada7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bacf08e8f16e5cd9c42409776b02846990b9d66d685a0186314445742f23341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962655"
 ---
 # <a name="how-to-load-audio-data-files-in-xaudio2"></a>Como: Carregar arquivos de dados de áudio no XAudio2
 
 > [!Note]  
-> Esse conteúdo se aplica somente a aplicativos da área de trabalho e exigirá revisão para funcionar em um aplicativo da Windows Store. Veja a documentação de [**createfile2**](/windows/win32/api/fileapi/nf-fileapi-createfile2), [**CreateEventEx**](/windows/win32/api/synchapi/nf-synchapi-createeventexa), [**WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex), [**SetFilePointerEx**](/windows/win32/api/fileapi/nf-fileapi-setfilepointerex)e [**GetOverlappedResultEx**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresultex). Consulte SoundFileReader. h/. cpp no exemplo do Windows 8 do BasicSound na [Galeria de exemplos SDK do Windows](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/XAudio2%20audio%20file%20playback%20sample%20(Windows%208)).
+> Esse conteúdo se aplica somente a aplicativos da área de trabalho e exigirá revisão para funcionar em um aplicativo Windows Store. Consulte a documentação para [**CreateFile2,**](/windows/win32/api/fileapi/nf-fileapi-createfile2) [**CreateEventEx,**](/windows/win32/api/synchapi/nf-synchapi-createeventexa) [**WaitForSingleObjectEx,**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) [**SetFilePointerEx**](/windows/win32/api/fileapi/nf-fileapi-setfilepointerex)e [**GetOverlappedResultEx.**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresultex) Consulte SoundFileReader.h/.cpp no exemplo Windows 8 BasicSound da Galeria de Exemplos do [SDK](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/XAudio2%20audio%20file%20playback%20sample%20(Windows%208))do Windows .
 
  
 
-Este tópico descreve as etapas para popular as estruturas necessárias para reproduzir dados de áudio no XAudio2. As etapas a seguir carregam as partes ' fmt ' e ' data ' de um arquivo de áudio e as usam para preencher uma estrutura **WAVEFORMATEXTENSIBLE** e uma estrutura de [**\_ buffer XAudio2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) .
+Este tópico descreve as etapas para preencher as estruturas necessárias para reproduzir dados de áudio no XAudio2. As etapas a seguir carregam as partes 'fmt' e 'data' de um arquivo de áudio e as usam para preencher uma estrutura **WAVEFORMATEXTENSIBLE** e uma estrutura [**\_ BUFFER XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
 
--   [Preparando para analisar o arquivo de áudio.](#preparing-to-parse-the-audio-file)
--   [Populando estruturas XAudio2 com o conteúdo de partes de RIFF.](#populating-xaudio2-structures-with-the-contents-of-riff-chunks)
+-   [Preparando-se para analisar o arquivo de áudio.](#preparing-to-parse-the-audio-file)
+-   [Populando estruturas XAudio2 com o conteúdo de partes DE HASH.](#populating-xaudio2-structures-with-the-contents-of-riff-chunks)
 
-## <a name="preparing-to-parse-the-audio-file"></a>Preparando para analisar o arquivo de áudio
+## <a name="preparing-to-parse-the-audio-file"></a>Preparando-se para analisar o arquivo de áudio
 
-Os arquivos de áudio com suporte pelo XAudio2 usam o formato de arquivo de intercâmbio de recursos (RIFF). O RIFF é descrito na visão geral do [riff (formato de arquivo de intercâmbio de recursos)](resource-interchange-file-format--riff-.md) . Os dados de áudio em um arquivo RIFF são carregados encontrando a parte do RIFF e, em seguida, fazendo um loop pela parte para localizar partes individuais contidas na parte do RIFF. As funções a seguir são exemplos de código para localizar partes e carregar dados contidos nas partes.
+Os arquivos de áudio com suporte do XAudio2 usam o FORMATO DE ARQUIVO DE Intercâmbio de Recursos (FORMAT). O CHANG é descrito na visão geral do FORMATO DE ARQUIVO de Intercâmbio de Recursos [(FORMAT).](resource-interchange-file-format--riff-.md) Os dados de áudio em um arquivo HASH são carregados encontrando a parte DE LOOP e, em seguida, passando pela parte para localizar partes individuais contidas na parte DEM. As funções a seguir são exemplos de código para encontrar partes e carregar dados contidos nas partes.
 
--   Para localizar uma parte em um arquivo RIFF:
+-   Para encontrar uma parte em um arquivo HASH:
 
     ```
     #ifdef _XBOX //Big-Endian
@@ -105,9 +105,9 @@ Os arquivos de áudio com suporte pelo XAudio2 usam o formato de arquivo de inte
 
     
 
--   Para ler dados em uma parte após sua localização.
+-   Para ler dados em uma parte depois que eles foram localizados.
 
-    Depois que uma parte desejada é encontrada, seus dados podem ser lidos ajustando o ponteiro do arquivo para o início da seção de dados da parte. Uma função para ler os dados de uma parte assim que ela for encontrada pode ser parecida com esta.
+    Depois que uma parte desejada é encontrada, seus dados podem ser lidos ajustando o ponteiro do arquivo para o início da seção de dados da parte. Uma função para ler os dados de uma parte depois que eles são encontrados pode ter esta aparência.
 
     ```
     HRESULT ReadChunkData(HANDLE hFile, void * buffer, DWORD buffersize, DWORD bufferoffset)
@@ -124,15 +124,15 @@ Os arquivos de áudio com suporte pelo XAudio2 usam o formato de arquivo de inte
 
     
 
-## <a name="populating-xaudio2-structures-with-the-contents-of-riff-chunks"></a>Populando estruturas XAudio2 com o conteúdo de partes RIFF
+## <a name="populating-xaudio2-structures-with-the-contents-of-riff-chunks"></a>Populando estruturas XAudio2 com o conteúdo de partes DE HASH
 
-Para que o XAudio2 reproduza áudio com uma voz de origem, ele precisa de uma estrutura **WAVEFORMATEX** e uma estrutura de [**\_ buffer XAudio2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) . A estrutura **WAVEFORMATEX** pode ser uma estrutura maior, como **WAVEFORMATEXTENSIBLE** que contém uma estrutura **WAVEFORMATEX** como seu primeiro membro. Consulte a página de referência do **WAVEFORMATEX** para obter mais informações.
+Para que o XAudio2 reproduza áudio com uma voz de origem, ele precisa de uma estrutura **WAVEFORMATEX** e uma estrutura [**\_ BUFFER XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) A **estrutura WAVEFORMATEX** pode ser uma estrutura maior, como **WAVEFORMATEXTENSIBLE,** que contém uma estrutura **WAVEFORMATEX** como seu primeiro membro. Consulte a **página de referência WAVEFORMATEX** para obter mais informações.
 
 Neste exemplo, um **WAVEFORMATEXTENSIBLE** está sendo usado para permitir o carregamento de arquivos de áudio PCM com mais de dois canais.
 
-As etapas a seguir ilustram o uso das funções descritas acima para popular uma estrutura de **WAVEFORMATEXTENSIBLE** e uma estrutura de [**\_ buffer XAudio2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) . Nesse caso, o arquivo de áudio que está sendo carregado contém dados PCM e só conterá um bloco ' RIFF ', ' fmt ' e ' dados '. Outros formatos podem conter tipos de bloco adicionais, conforme descrito em [formato de arquivo de intercâmbio de recursos (riff)](resource-interchange-file-format--riff-.md).
+As etapas a seguir ilustram o uso das funções descritas acima para popular uma estrutura **WAVEFORMATEXTENSIBLE** e uma estrutura [**\_ BUFFER XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) Nesse caso, o arquivo de áudio que está sendo carregado contém dados pcm e conterá apenas uma parte 'HASH', 'fmt ' e 'data'. Outros formatos podem conter tipos de partes adicionais, conforme descrito em Formatação de Arquivo de Intercâmbio [de Recursos (FORMAT)](resource-interchange-file-format--riff-.md).
 
-1.  Declare as estruturas [**de \_ buffer**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) **WAVEFORMATEXTENSIBLE** e XAudio2.
+1.  Declare **estruturas WAVEFORMATEXTENSIBLE** [**e XAUDIO2 \_ BUFFER.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
     ```
     WAVEFORMATEXTENSIBLE wfx = {0};
     XAUDIO2_BUFFER buffer = {0};
@@ -166,7 +166,7 @@ As etapas a seguir ilustram o uso das funções descritas acima para popular uma
 
     
 
-3.  Localize a parte ' RIFF ' no arquivo de áudio e verifique o tipo de arquivo.
+3.  Localize a parte 'HASH' no arquivo de áudio e verifique o tipo de arquivo.
     ```
     DWORD dwChunkSize;
     DWORD dwChunkPosition;
@@ -180,7 +180,7 @@ As etapas a seguir ilustram o uso das funções descritas acima para popular uma
 
     
 
-4.  Localize a parte ' fmt ' e copie seu conteúdo em uma estrutura **WAVEFORMATEXTENSIBLE** .
+4.  Localize a parte 'fmt' e copie seu conteúdo em uma **estrutura WAVEFORMATEXTENSIBLE.**
     ```
     FindChunk(hFile,fourccFMT, dwChunkSize, dwChunkPosition );
     ReadChunkData(hFile, &wfx, dwChunkSize, dwChunkPosition );
@@ -188,7 +188,7 @@ As etapas a seguir ilustram o uso das funções descritas acima para popular uma
 
     
 
-5.  Localize a parte ' dados ' e leia seu conteúdo em um buffer.
+5.  Localize a parte 'dados' e leia seu conteúdo em um buffer.
     ```
     //fill out the audio data buffer with the contents of the fourccDATA chunk
     FindChunk(hFile,fourccDATA,dwChunkSize, dwChunkPosition );
@@ -198,7 +198,7 @@ As etapas a seguir ilustram o uso das funções descritas acima para popular uma
 
     
 
-6.  Popular uma estrutura de [**\_ buffer XAudio2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) .
+6.  Preencha uma estrutura [**\_ BUFFER XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer)
     ```
     buffer.AudioBytes = dwChunkSize;  //size of the audio buffer in bytes
     buffer.pAudioData = pDataBuffer;  //buffer containing audio data

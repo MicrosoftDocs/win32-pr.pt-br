@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseModernAppManagement_StoreLicenses02_01
-description: A \_ classe MDM EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01 é usada para gerenciar licenças para aplicativos da loja.
+title: MDM_EnterpriseModernAppManagement_StoreLicenses02_01 classe
+description: A classe MDM \_ EnterpriseModernAppManagement StoreLicenses02 01 é usada para gerenciar \_ \_ licenças para aplicativos da loja.
 ms.assetid: 9fdcba35-6c21-4a39-99f4-470acf7d35bb
 keywords:
-- Classe MDM_EnterpriseModernAppManagement_StoreLicenses02_01
-- Classe MDM_EnterpriseModernAppManagement_StoreLicenses02_01, descrita
+- MDM_EnterpriseModernAppManagement_StoreLicenses02_01 classe
+- MDM_EnterpriseModernAppManagement_StoreLicenses02_01 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a4549ba473afaf76bea3f23ec65aacf301121a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0342acc9cb74825552a409d686e5bc55f0cebc75642d5981a7144f3bac74bee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018104"
 ---
-# <a name="mdm_enterprisemodernappmanagement_storelicenses02_01-class"></a>\_Classe MDM EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01
+# <a name="mdm_enterprisemodernappmanagement_storelicenses02_01-class"></a>Classe MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** é usada para gerenciar licenças para aplicativos da loja.
+A **classe MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** é usada para gerenciar licenças para aplicativos da loja.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -48,21 +48,21 @@ class MDM_EnterpriseModernAppManagement_StoreLicenses02_01
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem estes tipos de membros:
+A **classe MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem esses métodos.
+A **classe MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem esses métodos.
 
 
 
 | Método                                                                                                              | Descrição                                             |
 |:--------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
 | [**AddLicenseMethod**](mdm-enterprisemodernappmanagement-storelicenses02-01-addlicensemethod.md)                   | Método para adicionar uma licença.<br/>                 |
-| [**GetLicenseFromStoreMethod**](mdm-enterprisemodernappmanagement-storelicenses02-01-getlicensefromstoremethod.md) | Método para obter uma licença da loja.<br/> |
+| [**GetLicenseFromStoreMethod**](mdm-enterprisemodernappmanagement-storelicenses02-01-getlicensefromstoremethod.md) | Método para obter uma licença do armazenamento.<br/> |
 
 
 
@@ -70,7 +70,7 @@ A classe **MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem e
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem essas propriedades.
+A **classe MDM \_ EnterpriseModernAppManagement \_ StoreLicenses02 \_ 01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -86,9 +86,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nó opcional. ID da licença para um aplicativo do repositório instalado. A ID da licença geralmente é a PFN do aplicativo.
+Nó opcional. ID da licença para um aplicativo instalado na loja. A ID da licença geralmente é o PFN do aplicativo.
 
-As operações com suporte são adicionar, obter e excluir.
+As operações com suporte são Adicionar, Obter e Excluir.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ As operações com suporte são adicionar, obter e excluir.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -109,12 +109,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -136,7 +136,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -147,10 +147,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

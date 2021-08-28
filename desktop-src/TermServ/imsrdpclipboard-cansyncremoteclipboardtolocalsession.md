@@ -1,11 +1,11 @@
 ---
 title: Método IMsRdpClipboard CanSyncRemoteClipboardToLocalSession
-description: Indica se a área de transferência remota pode ser sincronizada com a sessão local.
+description: Indica se a Área de Transferência remota pode ser sincronizada com a sessão local.
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método CanSyncRemoteClipboardToLocalSession
+- Método CanSyncRemoteClipboardToLocalSession Serviços de Área de Trabalho Remota
 - Método CanSyncRemoteClipboardToLocalSession Serviços de Área de Trabalho Remota, interface IMsRdpClipboard
-- Serviços de Área de Trabalho Remota de interface IMsRdpClipboard, método CanSyncRemoteClipboardToLocalSession
+- Interface IMsRdpClipboard Serviços de Área de Trabalho Remota, método CanSyncRemoteClipboardToLocalSession
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: ebb20057e3a312dbe0b24856c47ad2a7ef1b7292
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 40a9fc5d6dcdc2e96d9ce916bce0567cccc90adf10fcacc5d797f61ed292c116
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105793774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000836"
 ---
-# <a name="imsrdpclipboardcansyncremoteclipboardtolocalsession-method"></a>Método IMsRdpClipboard:: CanSyncRemoteClipboardToLocalSession
+# <a name="imsrdpclipboardcansyncremoteclipboardtolocalsession-method"></a>Método IMsRdpClipboard::CanSyncRemoteClipboardToLocalSession
 
-Indica se a área de transferência remota pode ser sincronizada com a sessão local.
+Indica se a Área de Transferência remota pode ser sincronizada com a sessão local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ HRESULT CanSyncRemoteClipboardToLocalSession(
 
 ## <a name="parameters"></a>Parâmetros
 
-**True** se a área de transferência remota puder ser sincronizada com a sessão local; caso contrário, **false**.
+**TRUE** se a Área de Transferência remota puder ser sincronizada com a sessão local; caso contrário, **FALSE.**
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="requirements"></a>Requisitos
 

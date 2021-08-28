@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-GPSLongitude
-description: O atributo MS-SQL-GPSLongitude não está sendo usado no momento.
+title: atributo MS-SQL-GPSLongitude
+description: o atributo MS-SQL-GPSLongitude não está sendo usado no momento.
 ms.assetid: 70dfe2f1-f222-47f8-981f-0f2ca1718c72
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-GPSLongitude
-- Esquema de AD do atributo mS-SQL-GPSLongitude
+- esquema de AD do atributo MS-SQL-GPSLongitude
+- esquema de AD do atributo mS-SQL-GPSLongitude
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb9642f7a5c856d6beeffc2cf20dcd1d9bde4d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9e317888b92192f0df9d371f73e211ebcfb07ccbfed81318e2188579f7954d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961125"
 ---
-# <a name="ms-sql-gpslongitude-attribute"></a>Atributo MS-SQL-GPSLongitude
+# <a name="ms-sql-gpslongitude-attribute"></a>atributo MS-SQL-GPSLongitude
 
-O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
+o atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 
 
 
@@ -58,7 +58,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,7 +121,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -142,7 +142,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -163,7 +163,7 @@ O atributo **MS-SQL-GPSLongitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |

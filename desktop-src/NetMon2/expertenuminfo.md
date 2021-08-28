@@ -1,7 +1,7 @@
 ---
 description: A estrutura EXPERTENUMINFO fornece informações sobre o especialista.
 ms.assetid: f745997b-d753-4c4d-88b6-6978f5eaa91c
-title: Estrutura EXPERTENUMINFO (Netmon. h)
+title: Estrutura EXPERTENUMINFO (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 35b8d36f55838492eb71640228d7216e6e594738
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46942f1140cbb5f74685b16e468b68b85221deceeae2509a9d0676261898e238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939033"
 ---
 # <a name="expertenuminfo-structure"></a>Estrutura EXPERTENUMINFO
 
-A estrutura **EXPERTENUMINFO** fornece informações sobre o especialista. Monitor de Rede aloca memória para a estrutura e a transmite para o especialista ao chamar a função de especialista de [**registro**](register-expert.md) . Quando o especialista recebe a estrutura, ele deve preencher todas as informações que Monitor de Rede solicitações.
+A **estrutura EXPERTENUMINFO** fornece informações sobre o especialista. Monitor de Rede aloca memória para a estrutura e a passa para o especialista quando chama a [**função Registrar Especialista.**](register-expert.md) Quando o especialista recebe a estrutura, ele deve preencher todas as informações que Monitor de Rede solicitações.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ typedef struct {
 
 <dl> <dt>
 
-**szName**
+**Szname**
 </dt> <dd>
 
 Nome do especialista.
@@ -66,7 +66,7 @@ Nome do fornecedor que cria o especialista.
 **szDescription**
 </dt> <dd>
 
-Descrição do especialista. O valor do membro **szDescription** pode ser **nulo**. Se o nome for muito longo, ele será truncado na configuração do visualizador padrão.
+Descrição do especialista. O valor do membro **szDescription** pode ser **NULL.** Se o nome for muito longo, ele será truncado na configuração padrão do visualizador.
 
 </dd> <dt>
 
@@ -86,11 +86,11 @@ Os sinalizadores a seguir descrevem o especialista.
 
 | Valor                                                                                                                                                                                                                                                    | Significado                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <span id="EXPERT_ENUM_FLAG_CONFIGURABLE"></span><span id="expert_enum_flag_configurable"></span><dl> <dt>**sinalizador de enumeração de especialista \_ \_ \_ configurável**</dt> </dl>                                          | O especialista dá suporte a chamadas para o método [**Configure**](configure.md) . <br/>        |
-| <span id="EXPERT_ENUM_FLAG_VIEWER_PRIVATE"></span><span id="expert_enum_flag_viewer_private"></span><dl> <dt>**Visualizador de sinalizador de enumeração de especialista \_ \_ \_ \_ privado**</dt> </dl>                                   | O especialista requer um Visualizador de Eventos privado (não compartilhado). <br/>                       |
-| <span id="EXPERT_ENUM_FLAG_NO_VIEWER"></span><span id="expert_enum_flag_no_viewer"></span><dl> <dt>**sinalizador de enumeração de especialistas \_ \_ \_ sem \_ Visualizador**</dt> </dl>                                                  | O especialista não envia notificações de eventos. <br/>                                  |
-| <span id="EXPERT_ENUM_FLAG_ADD_ME_TO_RMC_IN_SUMMARY"></span><span id="expert_enum_flag_add_me_to_rmc_in_summary"></span><dl> <dt>**\_ \_ sinalizador de enumeração \_ de especialistas adicionar \_ -me \_ ao \_ RMC \_ no \_ Resumo**</dt> </dl> | Quando o foco está no painel Resumo, o especialista é exibido no menu de contexto. <br/> |
-| <span id="EXPERT_ENUM_FLAG_ADD_ME_TO_RMC_IN_DETAIL"></span><span id="expert_enum_flag_add_me_to_rmc_in_detail"></span><dl> <dt>**\_sinalizador de enumeração \_ de especialista \_ \_ me adicionar \_ a \_ RMC \_ em \_ detalhes**</dt> </dl>    | Quando o foco está no painel de detalhes, o especialista é exibido no menu de contexto. <br/>  |
+| <span id="EXPERT_ENUM_FLAG_CONFIGURABLE"></span><span id="expert_enum_flag_configurable"></span><dl> <dt>**SINALIZADOR \_ DE ENUM \_ ESPECIALISTA \_ CONFIGURÁVEL**</dt> </dl>                                          | O especialista dá suporte a chamadas para o [**método Configure.**](configure.md) <br/>        |
+| <span id="EXPERT_ENUM_FLAG_VIEWER_PRIVATE"></span><span id="expert_enum_flag_viewer_private"></span><dl> <dt>**VISUALIZADOR \_ DE SINALIZADORES DE ENUM \_ ESPECIALISTA \_ \_ PRIVADO**</dt> </dl>                                   | O especialista requer uma conta privada (não compartilhada) Visualizador de Eventos. <br/>                       |
+| <span id="EXPERT_ENUM_FLAG_NO_VIEWER"></span><span id="expert_enum_flag_no_viewer"></span><dl> <dt>**SINALIZADOR \_ DE ENUM \_ ESPECIALISTA SEM \_ \_ VISUALIZADOR**</dt> </dl>                                                  | O especialista não envia notificações de eventos. <br/>                                  |
+| <span id="EXPERT_ENUM_FLAG_ADD_ME_TO_RMC_IN_SUMMARY"></span><span id="expert_enum_flag_add_me_to_rmc_in_summary"></span><dl> <dt>**SINALIZADOR \_ DE ENUM \_ ESPECIALISTA \_ \_ ADICIONE-ME \_ AO \_ RMC EM \_ \_ RESUMO**</dt> </dl> | Quando o foco está no painel de resumo, o especialista aparece no menu de contexto. <br/> |
+| <span id="EXPERT_ENUM_FLAG_ADD_ME_TO_RMC_IN_DETAIL"></span><span id="expert_enum_flag_add_me_to_rmc_in_detail"></span><dl> <dt>**SINALIZADOR \_ DE ENUM \_ ESPECIALISTA \_ \_ ADICIONE-ME \_ AO \_ RMC EM \_ \_ DETALHES**</dt> </dl>    | Quando o foco está no painel de detalhes, o especialista aparece no menu de contexto. <br/>  |
 
 
 
@@ -101,42 +101,42 @@ Os sinalizadores a seguir descrevem o especialista.
 **hExpert**
 </dt> <dd>
 
-Lide com o especialista. Quando a estrutura **EXPERTENUMINFO** é usada para registrar um especialista, o parâmetro é ignorado.
+Lidar com o especialista. Quando a **estrutura EXPERTENUMINFO** é usada para registrar um especialista, o parâmetro é ignorado.
 
 </dd> <dt>
 
 **szDllName**
 </dt> <dd>
 
-Membro privado; Não use.
+Membro privado; não use.
 
 </dd> <dt>
 
-**hModule**
+**Hmodule**
 </dt> <dd>
 
-Membro privado; Não use.
+Membro privado; não use.
 
 </dd> <dt>
 
 **pRegisterProc**
 </dt> <dd>
 
-Membro privado; Não use.
+Membro privado; não use.
 
 </dd> <dt>
 
 **pConfigProc**
 </dt> <dd>
 
-Membro privado; Não use.
+Membro privado; não use.
 
 </dd> <dt>
 
 **pRunProc**
 </dt> <dd>
 
-Membro privado; Não use.
+Membro privado; não use.
 
 </dd> </dl>
 
@@ -148,7 +148,7 @@ Membro privado; Não use.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

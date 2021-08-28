@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shldisp.h
-ms.openlocfilehash: 1fbaf53db11fda577e9e9c5384af5f7c62fe1944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5bcf40a77c2f464d5277ac4823ed74a3f3c2bdd6a2114d2431684cc8b319f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967744"
 ---
 # <a name="webwizardhost-object"></a>Objeto WebWizardHost
 
@@ -55,7 +55,7 @@ O objeto **WebWizardHost** tem essas propriedades.
 
 
 
-| Propriedade                                               | Tipo de acesso           | Description                                              |
+| Propriedade                                               | Tipo de acesso           | Descrição                                              |
 |:-------------------------------------------------------|:----------------------|:---------------------------------------------------------|
 | [**Legenda**](iwebwizardhost-caption.md)<br/>   | Leitura/gravação<br/> | Não implementado.<br/>                              |
 | [**Propriedade**](iwebwizardhost-property.md)<br/> | Leitura/gravação<br/> | Define ou recupera o valor atual de uma propriedade.<br/> |
@@ -70,9 +70,9 @@ O objeto **WebWizardHost** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
 | IID<br/>                      | \_WEBWIZARDHOST CLSID<br/>                                                        |
 

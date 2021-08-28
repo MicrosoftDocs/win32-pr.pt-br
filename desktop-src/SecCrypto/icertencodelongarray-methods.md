@@ -4,12 +4,12 @@ ms.assetid: EFF77C99-D7FE-433E-81E6-64535D0A9B63
 title: Métodos ICertEncodeLongArray
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47afe868924f79c6ce84fe8f1336ee929d8e8850
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f1e46a92ad55477802bd5c5b436c1c9a00a13a56c10f0d743b51022494b15e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005894"
 ---
 # <a name="icertencodelongarray-methods"></a>Métodos ICertEncodeLongArray
 
@@ -17,8 +17,8 @@ A interface [**ICertEncodeLongArray**](/windows/desktop/api/Certenc/nn-certenc-i
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método decodificar**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-decode)
--   [**Método de codificação**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-encode)
+-   [**Método Decode**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-decode)
+-   [**Método Encode**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-encode)
 -   [**Método GetCount**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-getcount)
 -   [**Método GetValue**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-getvalue)
 -   [**Método Reset**](/windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-reset)

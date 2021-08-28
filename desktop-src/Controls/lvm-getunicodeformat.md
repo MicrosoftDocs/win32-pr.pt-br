@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETUNICODEFORMAT (commctrl. h)
-description: Recupera o sinalizador de formato de caractere UNICODE para o controle. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetUnicodeFormat do ListView.
+title: LVM_GETUNICODEFORMAT mensagem (Commctrl.h)
+description: Recupera o sinalizador de formato de caractere UNICODE para o controle . Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetUnicodeFormat.
 ms.assetid: b0598b60-4d0e-4c68-b63a-e614c6268129
 keywords:
-- Controles de LVM_GETUNICODEFORMAT de mensagens do Windows
+- LVM_GETUNICODEFORMAT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 720a65baab8ec9c1ec3b311e49fe3672c97a0fba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9b3166d7349bf138fa853523c019a4c1db86e3f1a2d81a6da86c4ef25b5ed405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019254"
 ---
-# <a name="lvm_getunicodeformat-message"></a>\_Mensagem GETUNICODEFORMAT LVM
+# <a name="lvm_getunicodeformat-message"></a>Mensagem GETUNICODEFORMAT do LVM \_
 
-Recupera o sinalizador de formato de caractere UNICODE para o controle. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetUnicodeFormat do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getunicodeformat) .
+Recupera o sinalizador de formato de caractere UNICODE para o controle . Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ ListView GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getunicodeformat)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera o sinalizador de formato de caractere UNICODE para o controle. Você po
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o sinalizador de formato Unicode para o controle. Se esse valor for diferente de zero, o controle estará usando caracteres Unicode. Se esse valor for zero, o controle estará usando caracteres ANSI.
+Retorna o sinalizador de formato Unicode para o controle . Se esse valor for diferentes de zero, o controle está usando caracteres Unicode. Se esse valor for zero, o controle está usando caracteres ANSI.
 
 ## <a name="remarks"></a>Comentários
 
-Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre esta mensagem.
+Consulte os comentários de [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT LVM**](lvm-setunicodeformat.md)
+[**LVM \_ SETUNICODEFORMAT**](lvm-setunicodeformat.md)
 </dt> </dl>
 
  

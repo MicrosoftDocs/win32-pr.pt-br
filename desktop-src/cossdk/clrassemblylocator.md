@@ -1,7 +1,7 @@
 ---
-description: Recupera informações sobre um assembly ao usar código gerenciado no Common Language Runtime de .NET Framework.
+description: Recupera informações sobre um assembly ao usar código gerenciado no .NET Framework Common Language Runtime.
 ms.assetid: 45dcdc6a-74df-4763-ba8b-82f604db78d4
-title: Classe ClrAssemblyLocator (ComSvcs. h)
+title: Classe ClrAssemblyLocator (ComSvcs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name:
 - ClrAssemblyLocator
 api_type:
 - COM
-ms.openlocfilehash: ff5c1d21525a950208c1b919d4dee0e2122d2e50
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 78f041e8bdc614b1ac6007e21ffbf46ea4afe789a501bb1acefdd21263031859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129268"
 ---
 # <a name="clrassemblylocator-class"></a>Classe ClrAssemblyLocator
 
-Recupera informações sobre um assembly ao usar código gerenciado no Common Language Runtime de .NET Framework.
+Recupera informações sobre um assembly ao usar código gerenciado no .NET Framework Common Language Runtime.
 
 ## <a name="when-to-implement"></a>Quando implementar
 
@@ -30,8 +30,8 @@ Essa classe é implementada pelo COM+.
 
 | Requisito | Valor |
 |------------|-------------------------------------------------------|
-| CLSID      | \_ASSEMBLYLOCATOR GUID                                 |
-| ProgID     | L "System. EnterpriseServices. Internal. AssemblyLocator" |
+| CLSID      | GUID \_ AssemblyLocator                                 |
+| ProgID     | L"System.EnterpriseServices.Internal.AssemblyLocator" |
 | Interfaces | [**IAssemblyLocator**](/windows/desktop/api/ComSvcs/nn-comsvcs-iassemblylocator)          |
 
 
@@ -46,7 +46,7 @@ Use essa classe para acessar os métodos de [**IAssemblyLocator**](/windows/desk
 
 Para criar esse objeto, chame [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-Para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+. Um objeto ClrAssemblyLocator pode ser declarado usando "COMSVCSLib. ClrAssemblyLocator" como o nome da classe.
+Para usar essa classe do Microsoft Visual Basic, adicione uma referência à Biblioteca de Tipos de Serviços COM+. Um objeto ClrAssemblyLocator pode ser declarado usando "COMSVCSLib.ClrAssemblyLocator" como o nome da classe.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,9 +54,9 @@ Para usar essa classe do Microsoft Visual Basic, adicione uma referência à bib
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>ComSvcs. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP1\]<br/>                                 |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>ComSvcs.h</dt> </dl> |
 
 
 

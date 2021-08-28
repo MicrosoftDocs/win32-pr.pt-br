@@ -3,25 +3,25 @@ title: AsyncAdd3ExplicitExample
 description: Este exemplo ilustra a implementação de uma função assíncrona complexa sem usar WsAsyncExecute.
 ms.assetid: e60a4005-4849-4603-ae25-b88da8628f80
 keywords:
-- AsyncAdd3ExplicitExample Web Services para Windows
+- Serviços Web AsyncAdd3ExplicitExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f4747823eea2aa3c8bff9ce7b6b6cea5b1a9da4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c58dd75c76afd901a961cf7cced35f5aebb1b3036e5c2f82e5068ae159b4613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963415"
 ---
 # <a name="asyncadd3explicitexample"></a>AsyncAdd3ExplicitExample
 
 Este exemplo ilustra a implementação de uma função assíncrona complexa sem usar [**WsAsyncExecute**](/windows/desktop/api/WebServices/nf-webservices-wsasyncexecute).
 
-O exemplo implementa uma função assíncrona "addtrês", que adiciona três inteiros juntos, criando uma função de adição existente que pode adicionar dois inteiros de forma assíncrona.
+O exemplo implementa uma função assíncrona 'AddThree' que adiciona três inteiros ao criar uma função Add existente que pode adicionar dois inteiros de forma assíncrona.
 
-## <a name="asyncadd3explicitcpp"></a>AsyncAdd3Explicit. cpp
+## <a name="asyncadd3explicitcpp"></a>AsyncAdd3Explicit.cpp
 
 
 ```C++
@@ -347,9 +347,9 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

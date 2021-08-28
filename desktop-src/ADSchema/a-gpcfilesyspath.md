@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b56d03d072dfbe1472dc88835d581975f992c0f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24f4835bd4840c6566c9e93dfcadc78ae79b6ff29c961ed057955d5058827118
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961345"
 ---
 # <a name="gpc-file-sys-path-attribute"></a>Arquivo GPC-file-sys-Path
 
@@ -58,7 +58,7 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -79,7 +79,7 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -100,7 +100,7 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -121,15 +121,15 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ms.locfileid: "104500016"
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Esse atributo, quando definido em um fluxo, marca o fluxo como oculto do cliente.
+description: Esse atributo, quando definido em um fluxo, marca o fluxo como sendo ocultado do cliente.
 ms.assetid: E1C3A4B6-7D51-4D29-AF06-0A7FBDDB9A9E
-title: Atributo MF_DEVICESTREAM_FRAMESERVER_HIDDEN (Mfidl. h)
+title: MF_DEVICESTREAM_FRAMESERVER_HIDDEN atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 981df1670bec3cff7bad2e241b1f47d3d340dcdd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab49a9fcf0876e8708460e9e7cf36d68eb630aea4499b358a542f759cc4dfcd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104972"
 ---
-# <a name="mf_devicestream_frameserver_hidden-attribute"></a>\_ \_ Atributo oculto MF DEVICESTREAM FRAMESERVER \_
+# <a name="mf_devicestream_frameserver_hidden-attribute"></a>Atributo OCULTO \_ MF DEVICESTREAM \_ FRAMESERVER \_
 
-Esse atributo, quando definido em um fluxo, marca o fluxo como oculto do cliente.
+Esse atributo, quando definido em um fluxo, marca o fluxo como sendo ocultado do cliente.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -25,9 +25,9 @@ Esse atributo, quando definido em um fluxo, marca o fluxo como oculto do cliente
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

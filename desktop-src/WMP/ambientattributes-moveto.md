@@ -3,7 +3,7 @@ title: Ambienteattributes. moveTo
 description: O método moveTo move o controle para um novo local em uma velocidade linear.
 ms.assetid: 8670aa7b-a5c1-4d93-9f48-452bc53e65e6
 keywords:
-- Windows Media Player de ambiente. moveTo
+- Windows Media Player ambientalattributes. moveTo
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af481526c0923c527bb14aa4700a6c6fe5ea3613
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf05beedad4fe4abb839e957519384b58102253cd0ab6a292d629df23a7bef98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055044"
 ---
 # <a name="ambientattributesmoveto"></a>Ambienteattributes. moveTo
 

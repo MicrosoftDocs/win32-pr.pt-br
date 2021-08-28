@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0d5d9ffcd6cad6eefb7cdff25fd2cf34b76ccc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d73562fb4f96731216c30ada33db8e13d1468b31fb6fcefe7eedef6dd7892348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054844"
 ---
 # <a name="iwmpcontrolsisavailable-vb-and-c"></a>IWMPControls. IsAvailable (VB e C#)
 
@@ -79,7 +79,7 @@ Um **System. Boolean** que indica se um tipo especificado de informações está
 
 ## <a name="remarks"></a>Comentários
 
-**IWMPControls. IsAvailable** é uma propriedade em Visual Basic que usa um parâmetro. Em C#, ele é conhecido como o método **IWMPControls. get \_ IsAvailable** .
+**IWMPControls. isavailable** é uma propriedade em Visual Basic que usa um parâmetro. Em C#, ele é conhecido como o método **IWMPControls. get \_ IsAvailable** .
 
 ## <a name="examples"></a>Exemplos
 

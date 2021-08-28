@@ -1,7 +1,7 @@
 ---
-description: Veja a seguir uma lista de nomes amigáveis e IDs numéricas da propriedade de aquisição de imagem do Windows (WIA). Eles são apresentados como definições de constantes da Microsoft Visual Basic, para inclusão conveniente em aplicativos ou scripts.
+description: Veja a seguir uma lista de nomes amigáveis Windows wia (aquisição de imagem) e IDs numéricas. Eles são apresentados como definições constantes Visual Basic Microsoft, para inclusão conveniente em aplicativos ou scripts.
 ms.assetid: 6cacb7ce-1f41-4d24-adcb-c7aa9049f846
-title: Definições de constante da propriedade WIA
+title: Definições constantes da propriedade WIA
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0fec89e2e10b019b7186482609d3ab4089ede692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6539e14daf6a1fc124c177713f3056b981fd6c00ac9a41392ed03ae8759319cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965445"
 ---
-# <a name="wia-property-constant-definitions"></a>Definições de constante da propriedade WIA
+# <a name="wia-property-constant-definitions"></a>Definições constantes da propriedade WIA
 
-Veja a seguir uma lista de nomes amigáveis e IDs numéricas da propriedade de aquisição de imagem do Windows (WIA). Eles são apresentados como definições de constantes da Microsoft Visual Basic, para inclusão conveniente em aplicativos ou scripts.
+Veja a seguir uma lista de nomes amigáveis Windows wia (aquisição de imagem) e IDs numéricas. Eles são apresentados como definições constantes Visual Basic Microsoft, para inclusão conveniente em aplicativos ou scripts.
 
-Para aplicativos Visual Basic, adicione uma referência a "biblioteca de tipos do Microsoft Windows Image Acquisition 1, 1", em que essas constantes são fornecidas como tipos de enumeração.
+Para Visual Basic aplicativos, adicione uma referência à "Biblioteca de Tipos de Aquisição de Imagem do Microsoft Windows 1.01", em que essas constantes são fornecidas como tipos de enumeração.
 
 
 ```

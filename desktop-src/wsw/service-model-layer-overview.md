@@ -1,26 +1,26 @@
 ---
 title: Visão geral da camada do modelo de serviço
-description: A API do modelo de serviço WWSAPI modela a comunicação entre um cliente e um serviço como chamadas de método, em vez de como mensagens de dados.
+description: A API de Modelo de Serviço WWSAPI modela a comunicação entre um cliente e um serviço como chamadas de método, em vez de como mensagens de dados.
 ms.assetid: a1ed1e3c-94ae-4383-9251-83caf2e3ebf3
 keywords:
-- Serviços Web de visão geral da camada do modelo de serviço para Windows
+- Visão geral dos Serviços Web da Camada de Modelo de Serviço Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c74861f0e2ed13b35e308d1314aec2a33dc28c31
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 0b182678568c7825cbf0b18bbbfd132dd5287d3f05b9ae6a372e6e5c70cd06d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104297872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962938"
 ---
 # <a name="service-model-layer-overview"></a>Visão geral da camada do modelo de serviço
 
-A API do modelo de serviço WWSAPI modela a comunicação entre um cliente e um serviço como chamadas de método, em vez de como mensagens de dados. Ao contrário da [camada de canal](channel-layer-overview.md), que dá suporte a trocas de [mensagens](message.md) mais tradicionais entre o cliente e o serviço, o modelo de serviço gerencia automaticamente a comunicação por meio de um proxy de serviço no cliente e um host de serviço no serviço. Isso significa que o cliente chama as funções geradas e o servidor implementa retornos de chamada.
+A API de Modelo de Serviço WWSAPI modela a comunicação entre um cliente e um serviço como chamadas de método, em vez de como mensagens de dados. Ao contrário da camada de canal [](message.md) [,](channel-layer-overview.md)que dá suporte a trocas de mensagens mais tradicionais entre o cliente e o serviço, o Modelo de Serviço gerencia automaticamente a comunicação por meio de um proxy de serviço no cliente e um host de serviço no serviço. Isso significa que o cliente chama funções geradas e o servidor implementa retornos de chamada.
 
 
-Por exemplo, considere um serviço de calculadora que executa adição e subtração em dois números. Adição e subtração são operações naturalmente representadas como chamadas de método.
+Por exemplo, considere um serviço de calculadora que executa a adição e subtração em dois números. A adição e subtração são operações naturalmente representadas como chamadas de método.
 
 ![Diagrama mostrando como um serviço de calculadora se comunica com um cliente usando chamadas de método para adição e subtração.](images/servicemodelintro.png)
 
@@ -28,11 +28,11 @@ O modelo de serviço representa a comunicação entre o cliente e o serviço com
 
 ## <a name="specifying-a-service"></a>Especificando um serviço
 
-Um serviço deve ser especificado em termos de seus padrões de troca de mensagens, bem como sua representação de dados de rede. Para serviços, essa especificação geralmente é fornecida como documentos WSDL e de esquema XML.
+Um serviço deve ser especificado em termos de seus padrões de troca de mensagens, bem como sua representação de dados de rede. Para serviços, essa especificação geralmente é fornecida como documentos de esquema WSDL e XML.
 
 O documento WSDL é um documento XML que contém a associação de canal e os padrões de troca de mensagens do serviço, enquanto o documento de esquema XML é um documento XML que define a representação de dados das mensagens individuais.
 
-Para o serviço de calculadora e suas operações de adição e subtração, o documento WSDL pode ser semelhante ao exemplo a seguir:
+Para o serviço de calculadora e suas operações de adição e subtração, o documento WSDL pode ser parecido com o exemplo a seguir:
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
@@ -79,27 +79,27 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 </xs:schema> 
 ```
 
-## <a name="converting-metadata-to-code"></a>Convertendo metadados para código
+## <a name="converting-metadata-to-code"></a>Convertendo metadados em código
 
-O modelo de serviço fornece o [WsUtil.exe](web-service-compiler-tool.md) como uma ferramenta para processar esses documentos de metadados, convertendo um arquivo WSDL em um cabeçalho C e em arquivos de origem.
+O modelo de serviço fornece o [WsUtil.exe](web-service-compiler-tool.md) como uma ferramenta para processar esses documentos de metadados, convertendo um arquivo WSDL em um header C e arquivos de origem.
 
-![Diagrama mostrando como WsUtil.exe converte um arquivo WSDL em um cabeçalho C e em arquivos de origem.](images/doctotool.png)
+![Diagrama mostrando como WsUtil.exe converte um arquivo WSDL em um header C e arquivos de origem.](images/doctotool.png)
 
-O [WsUtil.exe](web-service-compiler-tool.md) gera cabeçalho e fontes para implementação de serviço, bem como operações de serviço do lado do cliente para o cliente.
+O [WsUtil.exe](web-service-compiler-tool.md) gera o header e as fontes para implementação de serviço, bem como operações de serviço do lado do cliente para o cliente .
 
-## <a name="calling-the-calculator-service-from-a-client&quot;></a>Chamando o serviço de calculadora de um cliente
+## <a name="calling-the-calculator-service-from-a-client"></a>Chamando o serviço calculadora de um cliente
 
-Assim como acontece com a implementação do serviço, o cliente deve incluir o cabeçalho ou os cabeçalhos gerados.
+Assim como na implementação do serviço, o cliente deve incluir o header ou os headers gerados.
 
 ``` syntax
-#include &quot;CalculatorProxyStub.h&quot;
+#include "CalculatorProxyStub.h"
 ```
 
 Agora, o aplicativo cliente pode criar e abrir um proxy de serviço para iniciar a comunicação com o serviço de calculadora.
 
 ``` syntax
 WS_ENDPOINT_ADDRESS address = {0};
-WS_STRING uri= WS_STRING_VALUE(L&quot;http://localhost/example");
+WS_STRING uri= WS_STRING_VALUE(L"http://localhost/example");
 address.uri = uri;
 
 if (FAILED (hr = WsCreateServiceProxy(WS_CHANNEL_TYPE_REQUEST, WS_HTTP_CHANNEL_BINDING, NULL, NULL, 0, &serviceProxy, error)))
@@ -109,36 +109,36 @@ if (FAILED (hr = WsOpenServiceProxy(serviceProxy, &address, NULL, error)))
     goto Error;
 ```
 
-O aplicativo pode chamar a operação de adição no serviço de calculadora com o seguinte código:
+O aplicativo pode chamar a operação Adicionar no serviço de calculadora com o seguinte código:
 
 ``` syntax
 if (FAILED (hr = DefaultBinding_ICalculator_Add(serviceProxy, heap, 1, 2, &result, NULL, 0, NULL, error)))
     goto Error;
 ```
 
-Consulte o exemplo de código em [HttpCalculatorClientExample](httpcalculatorclientexample.md) para obter a implementação completa do serviço de calculadora.
+Consulte o exemplo de código em [HttpCalculatorClientExample](httpcalculatorclientexample.md) para implementação completa do serviço de calculadora.
 
 ## <a name="service-model-components"></a>Componentes do modelo de serviço
 
-A interação dos componentes individuais do modelo de serviço WWSAPI dentro do exemplo de calculadora é a seguinte:
+A interação dos componentes individuais do Modelo de Serviço WWSAPI no exemplo de Calculadora é a seguinte:
 
 -   O cliente cria um [proxy de serviço](service-proxy.md) e o abre.
--   O cliente chama a função Add do serviço e passa o proxy de serviço.
--   A mensagem é serializada de acordo com os metadados de serialização no cabeçalho e nos arquivos de origem gerados pela ferramenta de metadados ([WsUtil.exe](web-service-compiler-tool.md)).
--   A mensagem é gravada no canal e é transmitida pela rede para o serviço.
--   No lado do servidor, o serviço é hospedado dentro de um host de serviço e tem um ponto de extremidade ouvindo o contrato ICalculator.
--   Usando os metadados do modelo de serviço no stub, o serviço desserializa a mensagem do cliente e a despacha para o stub.
--   O serviço do lado do servidor chama o método Add, passando-o para o contexto da operação. Este contexto de operação contém a referência à mensagem de entrada.
+-   O cliente chama a função Adicionar do serviço e passa o proxy de serviço.
+-   A mensagem é serializada de acordo com os metadados de serialização no header e nos arquivos de origem gerados pela ferramenta de metadados ([WsUtil.exe](web-service-compiler-tool.md)).
+-   A mensagem é escrita no canal e transmitida pela rede para o serviço.
+-   No lado do servidor, o serviço é hospedado dentro de um host de serviço e tem um ponto de extremidade escutando o contrato do ICalculator.
+-   Usando os metadados do Modelo de Serviço no stub, o serviço desseliza a mensagem do cliente e a envia para o stub.
+-   O serviço do lado do servidor chama o método Add, passando-o ao contexto da operação. Esse contexto de operação contém a referência à mensagem de entrada.
 
-![Diagrama mostrando a interação dos componentes individuais do modelo do serviço WWSAPI.](images/servicemodellayout.png)
+![Diagrama mostrando a interação dos componentes individuais do Modelo de Serviço WWSAPI.](images/servicemodellayout.png)
 
 Componentes
 
--   [Host de serviço](service-host.md): hospeda um serviço.
--   [Proxy de serviço](service-proxy.md): define como um cliente se comunica com um serviço.
--   [Contexto](context.md): recipiente de propriedades para disponibilizar informações específicas de estado para uma operação de serviço.
--   [Contrato](contract.md): a definição de interface de um serviço. Por exemplo, ICalculator representa um contrato para o serviço de calculadora em nosso código de exemplo.
--   [WsUtil.exe](web-service-compiler-tool.md): a ferramenta de metadados do modelo de serviço para gerar proxies e stubs.
+-   [Host de serviço:](service-host.md)hospeda um serviço.
+-   [Proxy de](service-proxy.md)serviço: define como um cliente se comunica com um serviço.
+-   [Contexto:](context.md)o pacote de propriedades para disponibilizar informações específicas do estado para uma operação de serviço.
+-   [Contract:](contract.md)a definição de interface de um serviço. Por exemplo, ICalculator representa um contrato para o serviço de calculadora em nosso código de exemplo.
+-   [WsUtil.exe: ](web-service-compiler-tool.md)a ferramenta de metadados do Modelo de Serviço para gerar proxies e stubs.
 
  
 

@@ -4,12 +4,12 @@ description: Assim como outros tipos de parâmetros para chamadas de procediment
 ms.assetid: 377fb65a-e819-4e96-a5b7-9850afd97b73
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3df183d18d7962ad0c63ecaa0d350006a4144f23
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 389885f440faa477ab22f2100685e2955cbf9fb7ddc4ffcb6440dc4b6f68e003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930065"
 ---
 # <a name="essential-pipe-terminology"></a>Terminologia de pipe essencial
 
@@ -17,6 +17,6 @@ Assim como outros tipos de parâmetros para chamadas de procedimento remotos, os
 
 O compilador MIDL gera os procedimentos push e pull para o servidor. Além disso, ele gerencia a alocação de buffers de dados na memória. No entanto, o cliente deve fornecer seus próprios procedimentos de push e pull. Ele também deve fornecer um procedimento para alocar os buffers de memória usados pelo pipe. Eles são chamados automaticamente no momento apropriado pelo stub do cliente. O procedimento de alocação geralmente é chamado de procedimento de alocação ou função de alocação.
 
- 
+ 
 
- 
+ 

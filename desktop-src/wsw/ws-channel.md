@@ -1,21 +1,21 @@
 ---
-title: WS_CHANNEL (WebServices. h)
-description: Um tipo opaco usado para fazer referência a um canal.
+title: WS_CHANNEL (WebServices.h)
+description: Um tipo opaco usado para referenciar um canal.
 ms.assetid: 741636a4-5e0f-495a-bb1d-1a00cfd6f65a
 keywords:
 - WS_CHANNEL
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b877862d6987b9312e1b390cd7b0f4373c40a27
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 243c130d5b07b88f1398d0be805775b937e2c69114c5c0ac32de94b3f451e1b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962785"
 ---
-# <a name="ws_channel"></a>WS \_ Channel
+# <a name="ws_channel"></a>CANAL \_ WS
 
-Um tipo opaco usado para fazer referência a um canal.
+Um tipo opaco usado para referenciar um canal.
 
 
 ```C++
@@ -26,7 +26,7 @@ typedef struct _WS_CHANNEL WS_CHANNEL;
 
 ## <a name="remarks"></a>Comentários
 
-Este objeto é thread-safe. Para obter mais informações, consulte [segurança do thread](thread-safety.md).
+Esse objeto é thread-safe. Para obter mais informações, consulte [thread safety](thread-safety.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,9 +34,9 @@ Este objeto é thread-safe. Para obter mais informações, consulte [segurança 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho \| UWP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 R2 \|\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Este objeto é thread-safe. Para obter mais informações, consulte [segurança 
 
 <dl> <dt>
 
-[segurança de thread](thread-safety.md)
+[thread safety](thread-safety.md)
 </dt> </dl>
 
  

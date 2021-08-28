@@ -4,16 +4,16 @@ description: IAgentCharacterEx ShowPopupMenu
 ms.assetid: f93c4c9e-5ef8-42d1-8f22-d6625af7978f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 535a86496f3553e0927ebe67d2c9823b738fb901
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d67d01edae103bad10eb085c4bfd1f5ce559bf26ab030816d241367ec3c13763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105454"
 ---
 # <a name="iagentcharacterexshowpopupmenu"></a>IAgentCharacterEx::ShowPopupMenu
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT ShowPopupMenu(
@@ -50,9 +50,9 @@ Esse método deve ser chamado somente quando o aplicativo cliente é o cliente a
 
 [**IAgentCharacterEx::SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md)
 
- 
+ 
 
- 
+ 
 
 
 

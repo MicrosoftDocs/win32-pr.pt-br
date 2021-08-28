@@ -1,6 +1,6 @@
 ---
 title: Interface IMsRdpClientAdvancedSettings8
-description: Expõe métodos e propriedades que gerenciam as configurações avançadas do controle ActiveX Área de Trabalho Remota.
+description: expõe métodos e propriedades que gerenciam as configurações avançadas do controle de ActiveX de Área de Trabalho Remota.
 ms.assetid: 9e1de47d-f194-4d9e-8e47-7c13a0677aaa
 ms.tgt_platform: multiple
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8fce32baf792563e64d2f8b8e1ad2bd56a31c5b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fee551748ebe098bdec1950a51988e6a29309e75001e4a25d8277102a3e181a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001294"
 ---
 # <a name="imsrdpclientadvancedsettings8-interface"></a>Interface IMsRdpClientAdvancedSettings8
 
-Expõe métodos e propriedades que gerenciam as configurações avançadas do controle ActiveX Área de Trabalho Remota.
+expõe métodos e propriedades que gerenciam as configurações avançadas do controle de ActiveX de Área de Trabalho Remota.
 
 Para obter uma instância dessa interface, use a propriedade [**IMsRdpClient8:: AdvancedSettings9**](imsrdpclient8-advancedsettings9.md) .
 

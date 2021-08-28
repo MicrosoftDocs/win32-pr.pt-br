@@ -4,12 +4,12 @@ ms.assetid: f5878d27-558b-4ef1-9401-1277e740c61d
 title: LSA_HANDLE (Ntsecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07bd71a14666dde7bb92e439159a55dd71706612
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c674708a1fe29dda1fa01ba56739cfb58f23a037055ae11c5a4e4ab60690de3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894570"
 ---
 # <a name="lsa_handle"></a>identificador de LSA \_
 
@@ -34,9 +34,9 @@ Cada identificador tem um conjunto associado de permissões que determinam as op
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Ntsecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Ntsecapi. h</dt> </dl> |
 
 
 

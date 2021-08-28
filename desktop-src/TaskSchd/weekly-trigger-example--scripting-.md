@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho semanal (script)
-description: Este exemplo de script mostra como criar uma tarefa que executa o bloco de notas às 8 00 na segunda-feira de cada semana.
+description: este exemplo de script mostra como criar uma tarefa que executa Bloco de notas às 8 00 na segunda-feira de cada semana.
 ms.assetid: 68ef73b0-3780-480e-90fe-940b6e8a5340
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4d9cf627591250c341008ba3a5129c4cc10cad6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6500dae3c0444bc41b982acc06b0e331e63aa4fb821385b416dd0d3e079671d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001764"
 ---
 # <a name="weekly-trigger-example-scripting"></a>Exemplo de gatilho semanal (script)
 
-Este exemplo de script mostra como criar uma tarefa que executa o bloco de notas às 8:00 na segunda-feira de cada semana. A tarefa contém um gatilho diário que especifica quando a tarefa é executada e uma ação executável que executa o bloco de notas.
+este exemplo de script mostra como criar uma tarefa que executa Bloco de notas às 8:00 na segunda-feira de cada semana. a tarefa contém um gatilho diário que especifica quando a tarefa é executada e uma ação executável que é executada Bloco de notas.
 
 O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável às 8:00 na segunda-feira de cada semana.
 
-**Para agendar o bloco de notas para começar às 8:00 na segunda-feira de cada semana**
+**para agendar Bloco de notas iniciar às 8:00 na segunda-feira de cada semana**
 
 1.  Crie um objeto [**TaskService**](taskservice.md) . Esse objeto permite que você crie a tarefa em uma pasta especificada.
 2.  Obter uma pasta de tarefas e criar uma tarefa. Use o método [**TaskService. GetFolder**](taskservice-getfolder.md) para obter a pasta onde a tarefa está armazenada e o método [**TaskService. NewTask**](taskservice-newtask.md) para criar o objeto [**TaskDefinition**](taskdefinition.md) que representa a tarefa.
-3.  Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) . Use a propriedade [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
+3.  Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) . Use a propriedade [**TaskDefinition. Configurações**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de Tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
 4.  Crie um gatilho semanal usando a propriedade [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Essa propriedade fornece acesso ao objeto [**TriggerCollection**](triggercollection.md) que é usado para criar o gatilho.
 
     Use o método [**TriggerCollection. Create**](triggercollection-create.md) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho semanal.
@@ -40,9 +40,9 @@ O procedimento a seguir descreve como agendar uma tarefa para iniciar um execut�
     Defina a propriedade [**WeeklyTrigger. WeeksInterval**](weeklytrigger-weeksinterval.md)para especificar o intervalo entre as semanas na agenda. Neste exemplo, a tarefa é executada todas as semanas.
 
 5.  Crie uma ação para a tarefa Executar usando a propriedade [**TaskDefinition. Actions**](taskdefinition-actions.md) . Essa propriedade fornece acesso ao objeto [**ActionCollection**](actioncollection.md) usado para criar a ação. Use o método [**ActionCollection. Create**](actioncollection-create.md) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**execaction**](execaction.md) , que representa uma ação que executa uma operação de linha de comando.
-6.  Registre a tarefa usando o método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . Para este exemplo, a tarefa iniciará o bloco de notas às 8:00 na segunda-feira de cada semana.
+6.  Registre a tarefa usando o método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . para este exemplo, a tarefa será iniciada Bloco de notas às 8:00 na segunda-feira de cada semana.
 
-O exemplo de VBScript a seguir mostra como agendar uma tarefa para executar o bloco de notas todos os dias às 8:00.
+o exemplo de VBScript a seguir mostra como agendar uma tarefa para execução Bloco de notas todos os dias às 8:00.
 
 
 ```VB
@@ -148,9 +148,9 @@ WScript.Echo "Task submitted."
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

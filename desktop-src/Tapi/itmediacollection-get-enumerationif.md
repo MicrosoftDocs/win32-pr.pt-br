@@ -4,16 +4,16 @@ ms.assetid: d5f1e10f-e5ad-45e6-a5ec-024905603012
 title: 'Método ITMediaCollection:: get_EnumerationIf (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a7e7d85c1f7a433a31360fabc8b5dac71e68ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfe14475e216b5143b599aab50d12d1d0c548b5f64dd8e44edd2e6aab249905c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060854"
 ---
 # <a name="itmediacollectionget_enumerationif-method"></a>Método ITMediaCollection:: get \_ EnumerationIf
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Get \_ EnumerationIf** Obtém um ponteiro para uma interface de enumeração de mídia.
 
@@ -39,7 +39,7 @@ Ponteiro para a interface [**IEnumMedia**](ienummedia.md) para o item desejado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -70,7 +70,7 @@ A TAPI chama o método **AddRef** na interface [**IEnumMedia**](ienummedia.md) r
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

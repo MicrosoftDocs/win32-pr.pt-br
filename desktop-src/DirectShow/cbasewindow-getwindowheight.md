@@ -1,7 +1,7 @@
 ---
 description: O método GetWindowHeight recupera a altura atual da janela.
 ms.assetid: f569ad8e-7773-4efb-897b-1c21aa851124
-title: Método CBaseWindow. GetWindowHeight (Winutil. h)
+title: Método CBaseWindow.GetWindowHeight (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 88189fd3d5b881ab6c88063ef9e1d7d0aedbe9ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f88cedc63b2132345c57079ea25f64fd4a1829f2bc394d71746567105a950d0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016624"
 ---
-# <a name="cbasewindowgetwindowheight-method"></a>Método CBaseWindow. GetWindowHeight
+# <a name="cbasewindowgetwindowheight-method"></a>Método CBaseWindow.GetWindowHeight
 
 O `GetWindowHeight` método recupera a altura atual da janela.
 
@@ -40,7 +40,7 @@ LONG GetWindowHeight();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a altura da janela, em pixels.
 
@@ -50,8 +50,8 @@ Retorna a altura da janela, em pixels.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Gira o vetor à direita por um determinado número de elementos de 32 bits.
+description: Gira o vetor para a direita em um determinado número de elementos de 32 bits.
 ms.assetid: 7493c1fe-2c3d-4eb6-bec1-02c066a70b9f
-title: Modelo XMVectorRotateRight (DirectXMath. h)
+title: Modelo XMVectorRotateRight (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2c4e623a75015e8051a5a9ccf32f4715016b73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47017982af6bb61212129665010d403bd9db898c65056110c4d2f40a5f8a9362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984486"
 ---
 # <a name="xmvectorrotateright-template"></a>Modelo XMVectorRotateRight
 
-Gira o vetor à direita por um determinado número de elementos de 32 bits.
+Gira o vetor para a direita em um determinado número de elementos de 32 bits.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -27,31 +27,31 @@ template<uint32_t Elements> XMVECTOR XMVectorRotateRight(
 
 <dl> <dt>
 
-<span id="V"></span><span id="v"></span>*L*
+<span id="V"></span><span id="v"></span>*V*
 </dt> <dd>
 
-\[em \] vetor para girar para a direita.
+\[em \] Vector para girar para a direita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna o [**XMVECTOR**](xmvector-data-type.md)girado.
+Retorna o [**XMVECTOR girado.**](xmvector-data-type.md)
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é uma versão de modelo do [**XMVectorRotateRight**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateright) , em que o argumento *Elements* é um valor de modelo.
+Essa função é uma versão de modelo [**de XMVectorRotateRight**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateright) em que o *argumento Elements* é um valor de modelo.
 
 > [!Note]  
-> O `XMVectorRotateRight` modelo é novo para DirectXMath e não está disponível para o XNAMath 2. x.
+> O `XMVectorRotateRight` modelo é novo para DirectXMath e não está disponível para XNAMath 2.x.
 
  
 
-**Namespace**: usar DirectX
+**Namespace**: usar o DirectX
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho Win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 <dl> <dt>
 
-[Funções de modelo de biblioteca DirectXMath](ovw-xnamath-templates.md)
+[Funções de modelo da biblioteca DirectXMath](ovw-xnamath-templates.md)
 </dt> <dt>
 
 [**XMVectorPermute**](xmvectorpermute-template.md)

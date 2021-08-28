@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb95427aee37053b6979cb1a12ce7b5d1942c2fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0dfc858e16371ec44ef965722c0d37bd388b060ce4d7ce75adbd904074df03b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059134"
 ---
 # <a name="iconnectionbrokerrequest-interface"></a>Interface IConnectionBrokerRequest
 
@@ -57,7 +57,7 @@ A interface **IConnectionBrokerRequest** tem esses métodos.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                        |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>Cbclient. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Cbclient. h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Cbclient. lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Cbclient.dll</dt> </dl>     |
 | IID<br/>                      | IID \_ IConnectionBrokerRequest é definido como 25114427-ED5D-46A6-AF53-C62D33A4108E<br/> |

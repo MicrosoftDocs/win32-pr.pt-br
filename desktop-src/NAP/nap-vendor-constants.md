@@ -1,6 +1,6 @@
 ---
-title: Constantes de fornecedor NAP (NapMicrosoftVendorIds. h)
-description: As seguintes IDs de componentes do Microsoft NAP internos são definidas em NapMicrosoftVendorIds. h.
+title: Constantes de fornecedor NAP (NapMicrosoftVendorIds.h)
+description: As seguintes IDs de componente nap internas da Microsoft são definidas em NapMicrosoftVendorIds.h.
 ms.assetid: 16d87399-3d96-47c7-b865-c56cfacdeff8
 topic_type:
 - apiref
@@ -24,21 +24,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5f748ab45b51ce69393c0719fac9a712201f19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23820190cf476cdc0d27f0e4641752dc135cab0f808d37f60adc95b919429671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105783378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939114"
 ---
 # <a name="nap-vendor-constants"></a>Constantes de fornecedor NAP
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-As seguintes IDs de componentes do Microsoft NAP internos são definidas em NapMicrosoftVendorIds. h. Ao implementar um SHA ou SHV, não use esses valores de ID que já estão atribuídos aos componentes internos da integridade do sistema da Microsoft.
+As seguintes IDs de componente nap internas da Microsoft são definidas em NapMicrosoftVendorIds.h. Ao implementar um SHA ou SHV, não use esses valores de ID já atribuídos aos componentes internos de saúde do sistema da Microsoft.
 
 <dl> <dt>
 
@@ -165,9 +165,9 @@ As seguintes IDs de componentes do Microsoft NAP internos são definidas em NapM
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>NapMicrosoftVendorIds. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapMicrosoftVendorIds.h</dt> </dl> |
 
 
 

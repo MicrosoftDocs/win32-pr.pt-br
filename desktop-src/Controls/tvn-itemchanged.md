@@ -1,9 +1,9 @@
 ---
-title: TVN_ITEMCHANGED código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de exibição de árvore que os atributos de item foram alterados. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: TVN_ITEMCHANGED de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de árvore de que os atributos de item foram alterados. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: b09164bc-54da-457a-9fb7-3beab3dae3e4
 keywords:
-- TVN_ITEMCHANGED de código de notificação controles do Windows
+- TVN_ITEMCHANGED código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d58501d02cc2058ac803c949cc7118d7f146a10
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d140346d66a87bd394bc5aa36555b8accedef56891e722a4b28272e22f804ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018644"
 ---
-# <a name="tvn_itemchanged-notification-code"></a>Código de notificação TVN com \_ alterações
+# <a name="tvn_itemchanged-notification-code"></a>Código de notificação DE TVN \_ ITEMCHANGED
 
-Notifica uma janela pai do controle de exibição de árvore que os atributos de item foram alterados. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de árvore de que os atributos de item foram alterados. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,13 +43,13 @@ TVN_ITEMCHANGED
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMTVITEMCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmtvitemchange) que descreve o item que foi alterado. O membro **uChanged** é definido como TVIF \_ State.
+Ponteiro para uma [**estrutura NMTVITEMCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmtvitemchange) que descreve o item que foi alterado. O **membro uChanged** é definido como TVIF \_ STATE.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **false** para aceitar a alteração ou **true** para evitar a alteração.
+Retorna **FALSE** para aceitar a alteração ou **TRUE** para evitar a alteração.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,10 +57,10 @@ Retorna **false** para aceitar a alteração ou **true** para evitar a alteraç�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **TVN \_ ITEMCHANGEDW** (Unicode) e **TVN \_** (ANSI)<br/>           |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **TVN \_ ITEMCHANGEDW** (Unicode) e **TVN \_ ITEMCHANGEDA** (ANSI)<br/>           |
 
 
 
@@ -68,7 +68,7 @@ Retorna **false** para aceitar a alteração ou **true** para evitar a alteraç�
 
 <dl> <dt>
 
-[TVN de \_ alteração](tvn-itemchanging.md)
+[TVN \_ ITEMCHANGING](tvn-itemchanging.md)
 </dt> </dl>
 
  

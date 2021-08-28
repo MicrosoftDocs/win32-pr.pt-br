@@ -1,19 +1,19 @@
 ---
-description: O serviço de notificação de eventos do sistema (SENS) define a coclasse SENS como parte da biblioteca de tipos do SENS.
+description: O SENS (Serviço de Notificação de Eventos do Sistema) define a coclasse SENS como parte da biblioteca de tipos SENS.
 ms.assetid: b494808c-1116-47ac-8713-0d515b312368
 title: Objeto SENS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e9d0d5cd857063d6ac224de66610d2604db619d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1acdf70b5e2229051d569bd1f607ad8db5d3d567b4c0421464757f02bc6a8e4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003944"
 ---
 # <a name="sens-object"></a>Objeto SENS
 
-O serviço de notificação de eventos do sistema (SENS) define a coclasse SENS como parte da biblioteca de tipos do SENS.
+O SENS (Serviço de Notificação de Eventos do Sistema) define a coclasse SENS como parte da biblioteca de tipos SENS.
 
 ## <a name="implementation"></a>Implementação
 
@@ -25,7 +25,7 @@ A implementação do objeto SENS é fornecida pelo sistema operacional.
 
 | Função                                      | Descrição                                             |
 |-----------------------------------------------|---------------------------------------------------------|
-| [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) | Cria uma instância do objeto SENS usando seu CLSID. |
+| [**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) | Cria uma instância do objeto SENS usando seu CLSID. |
 
 
 
@@ -37,10 +37,10 @@ A implementação do objeto SENS é fornecida pelo sistema operacional.
 
 | Interface                            | Descrição                                                                                         |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**IsensNetwork**](/windows/desktop/api/Sensevts/nn-sensevts-isensnetwork) | Padrão. Interface de saída implementada pelo objeto de coletor no aplicativo de assinante.                   |
-| [**IsensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)     | Interface de saída implementada pelo objeto de coletor no aplicativo de assinante.                            |
-| [**IsensLogon**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon)     | Interface de saída implementada pelo objeto de coletor no aplicativo de assinante.                            |
-| [**IsensLogon2**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon2)   | Interface de saída implementada pelo objeto de coletor no aplicativo de assinante. Disponível com o Windows XP. |
+| [**IsensNetwork**](/windows/desktop/api/Sensevts/nn-sensevts-isensnetwork) | Padrão. Interface de saída implementada pelo objeto sink no aplicativo assinante.                   |
+| [**IsensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)     | Interface de saída implementada pelo objeto sink no aplicativo assinante.                            |
+| [**IsensLogon**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon)     | Interface de saída implementada pelo objeto sink no aplicativo assinante.                            |
+| [**IsensLogon2**](/windows/desktop/api/Sensevts/nn-sensevts-isenslogon2)   | Interface de saída implementada pelo objeto sink no aplicativo assinante. Disponível com o Windows XP. |
 
 
 
@@ -59,7 +59,7 @@ A implementação do objeto SENS é fornecida pelo sistema operacional.
 [**ISensOnNow**](/windows/desktop/api/Sensevts/nn-sensevts-isensonnow)
 </dt> <dt>
 
-[Sobre o serviço de notificação de eventos do sistema](about-system-event-notification-service.md)
+[Sobre o Serviço de Notificação de Eventos do Sistema](about-system-event-notification-service.md)
 </dt> </dl>
 
  

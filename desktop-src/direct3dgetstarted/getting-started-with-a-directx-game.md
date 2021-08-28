@@ -1,19 +1,19 @@
 ---
-title: Introdução ao DirectX para Windows
-description: A criação de um jogo do Microsoft DirectX para Windows é um desafio para um novo desenvolvedor. Aqui, examinamos rapidamente os conceitos envolvidos e as etapas que você deve seguir para começar a desenvolver um jogo usando DirectX e C++.
+title: Começar a trabalhar com o DirectX para Windows
+description: Criar um jogo do Microsoft DirectX para Windows é um desafio para um novo desenvolvedor. Aqui, analisamos rapidamente os conceitos envolvidos e as etapas que você deve seguir para começar a desenvolver um jogo usando DirectX e C++.
 ms.assetid: fd460c52-9854-4ffe-b89e-5219be2e11f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bac8ca2805fed9ec42faf9deda9ddd51da39685
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: a6c93944b29546746f88b3edcacaefeeeacde0784e51f82c74f4cd462bc62025
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986996"
 ---
-# <a name="get-started-with-directx-for-windows"></a>Introdução ao DirectX para Windows
+# <a name="get-started-with-directx-for-windows"></a>Começar a trabalhar com o DirectX para Windows
 
-A criação de um jogo do Microsoft DirectX para Windows é um desafio para um novo desenvolvedor. Aqui, examinamos rapidamente os conceitos envolvidos e as etapas que você deve seguir para começar a desenvolver um jogo usando DirectX e C++.
+Criar um jogo do Microsoft DirectX para Windows é um desafio para um novo desenvolvedor. Aqui, analisamos rapidamente os conceitos envolvidos e as etapas que você deve seguir para começar a desenvolver um jogo usando DirectX e C++.
 
 Vamos começar.
 
@@ -21,17 +21,17 @@ Vamos começar.
 
 Para desenvolver um jogo no DirectX para Windows, você deve ter algumas habilidades básicas. Especificamente, você deve ser capaz de:
 
--   Leia e escreva código C++ moderno (o C++ 11 ajuda mais) e familiarize-se com os princípios e padrões de design básicos de C++, como modelos e o modelo de fábrica. Você também deve estar familiarizado com bibliotecas C++ comuns como a biblioteca de modelos padrão e, especificamente, com os operadores de conversão, tipos de ponteiro e as estruturas de dados da biblioteca de modelos padrão (como std:: vector).
--   Entenda a geometria básica, a trigonometria e a Algebra linear. Grande parte do código que você encontrará nos exemplos pressupõe que você compreenda essas formas de matemática e suas regras comuns.
--   Familiaridade com com, especialmente [**Microsoft:: WRL:: ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) (ponteiro inteligente).
--   Entenda as bases da tecnologia gráfica e gráfica, especialmente os gráficos 3D. Embora o próprio DirectX tenha sua própria terminologia, ele ainda se baseia em uma compreensão bem estabelecida dos princípios gerais de gráficos 3D.
--   Entenda o conceito de um loop de mensagem, pois você estará implementando um loop que escuta o sistema operacional Windows.
+-   Leia e escreva um código C++ moderno (o C++11 ajuda mais) e familiarizar-se com os princípios básicos de design e padrões do C++, como modelos e o modelo de fábrica. Você também deve estar familiarizado com bibliotecas C++ comuns, como a Biblioteca de Modelos Padrão, e especificamente com os operadores de seleção, tipos de ponteiro e as estruturas de dados da biblioteca de modelos padrão (como std::vector).
+-   Entender geometria básica, trigonometria e álgebra linear. Grande parte do código que você encontrará nos exemplos pressu que você entende essas formas de matemática e suas regras comuns.
+-   Tenha familiaridade com COM— [**especialmente Microsoft::WRL::ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) (ponteiro inteligente).
+-   Entenda os fundamentos da tecnologia de elementos gráficos e gráficos, especialmente gráficos 3D. Embora o Próprio DirectX tenha sua própria terminologia, ele ainda se baseia em uma compreensão bem estabelecida dos princípios gerais de elementos gráficos 3D.
+-   Entenda o conceito de um loop de mensagem, pois você implementará um loop que escuta o Windows operacional.
 
 ## <a name="and-were-off"></a>E estamos desligados!
 
-Pronto para começar? Vamos examinar antes de nosso início. Você:
+Pronto para começar? Vamos analisar antes de continuarmos. Você:
 
--   Uma instalação atualizada e funcional do Windows 8.1.
+-   Uma instalação atualizada e em funcionamento do Windows 8.1.
 -   Uma instalação do [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 -   Um cérebro intrípido e um desejo de saber mais sobre o desenvolvimento de jogos do DirectX!
 

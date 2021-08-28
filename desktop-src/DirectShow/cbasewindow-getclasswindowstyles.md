@@ -1,7 +1,7 @@
 ---
-description: O método GetClassWindowStyles recupera estilos de classe e estilos de janela da janela.
+description: O método GetClassWindowStyles recupera estilos de classe e de janela da janela.
 ms.assetid: 6eec7912-c654-4e4f-b6f1-ec94c7284575
-title: Método CBaseWindow. GetClassWindowStyles (Winutil. h)
+title: Método CBaseWindow.GetClassWindowStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a34332f84a91ee88d61ee5f29f0b6a0b0cc44714
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba7042069d4f1190a88b25ea4cc349e8230c149dd61d2d06fc91fa3439a9e55f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074621"
 ---
-# <a name="cbasewindowgetclasswindowstyles-method"></a>Método CBaseWindow. GetClassWindowStyles
+# <a name="cbasewindowgetclasswindowstyles-method"></a>Método CBaseWindow.GetClassWindowStyles
 
-O `GetClassWindowStyles` método recupera estilos de classe e estilos de janela da janela.
+O método recupera estilos de classe e estilos `GetClassWindowStyles` de janela da janela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,19 +61,19 @@ Ponteiro para uma variável que recebe os estilos de janela.
 *pWindowStylesEx* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe os estilos de janela estendida.
+Ponteiro para uma variável que recebe os estilos de janela estendidos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna uma cadeia de texto estática que contém o nome da classe.
+Retorna uma cadeia de caracteres de texto estático que contém o nome da classe.
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) chama esse método para recuperar os estilos de classe da janela e os estilos de janela.
+O [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) chama esse método para recuperar estilos de classe e estilos de janela da janela.
 
-Este método é virtual puro; a classe derivada deve implementá-la. O exemplo a seguir mostra uma possível implementação:
+Esse método é virtual puro; a classe derivada deve implementá-la. O exemplo a seguir mostra uma implementação possível:
 
 
 ```C++
@@ -90,7 +90,7 @@ LPTSTR CMyWindowClass::GetClassWindowStyles(DWORD *pClassStyles,
 
 
 
-O objeto usa o estilo de classe para o membro **lpszClassName** de uma estrutura WNDCLASS, que ele passa para a função **registerClass** . O objeto usa os estilos de janela para os parâmetros *dwExStyle* e *DwStyle* da função **CreateWindowEx** . Para obter mais informações, consulte o SDK da plataforma.
+O objeto usa o estilo de classe para o membro **lpszClassName** de uma estrutura WNDCLASS, que passa para a **função RegisterClass.** O objeto usa os estilos de janela para os parâmetros *dwExStyle* e *dwStyle* da **função CreateWindowEx.** Para obter mais informações, consulte o SDK da plataforma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ O objeto usa o estilo de classe para o membro **lpszClassName** de uma estrutura
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

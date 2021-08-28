@@ -1,19 +1,19 @@
 ---
 title: Disponibilizando informações de erro para o usuário
-description: Quando um chamador recebe um erro e precisa notificar o usuário sobre o erro, a presença de informações de erro estendidas deve ser verificada e, se for encontrada, o chamador deverá disponibilizar as informações resultantes para o usuário.
+description: Quando um chamador recebe um erro e precisa notificar o usuário sobre o erro, a presença de informações de erro estendidas deve ser verificada e, se encontrado, o chamador deve disponibilizar as informações resultantes para o usuário.
 ms.assetid: 18689280-7124-46e4-9341-ad8d0c1705db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18386dbebd443aced4f5680922549c0ecb0eba55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c334b0d5b5044a13b507945cfa9d8ac97b67eb120f496f83c080d2b79b857f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928571"
 ---
 # <a name="making-error-information-available-to-the-user"></a>Disponibilizando informações de erro para o usuário
 
-Quando um chamador recebe um erro e precisa notificar o usuário sobre o erro, a presença de informações de erro estendidas deve ser verificada e, se for encontrada, o chamador deverá disponibilizar as informações resultantes para o usuário. O fragmento de código a seguir é um exemplo de disponibilizar essas informações para o usuário:
+Quando um chamador recebe um erro e precisa notificar o usuário sobre o erro, a presença de informações de erro estendidas deve ser verificada e, se encontrado, o chamador deve disponibilizar as informações resultantes para o usuário. O fragmento de código a seguir é um exemplo de disponibilização dessas informações para o usuário:
 
 
 ```C++
@@ -163,11 +163,11 @@ if (status)
 
 
 
-Neste exemplo, as informações de erro estendidas são despejadas no console, mas seu componente pode disponibilizá-la para o usuário de qualquer outra maneira. Se seu componente optar por salvar as informações no armazenamento persistente e mostrá-las mais tarde, geralmente será mais fácil usar o formato binário disponibilizado pelas chamadas de função [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) e [**RpcErrorLoadErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo) .
+Neste exemplo, as informações de erro estendidas são despejadas no console, mas seu componente pode torná-la disponível para o usuário de qualquer outra maneira. Se o componente optar por salvar as informações no armazenamento persistente e mostrar mais tarde, geralmente será mais fácil usar o formato binário disponibilizado pelas chamadas de função [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) e [**RpcErrorLoadErrorInfo.**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo)
 
- 
+ 
 
- 
+ 
 
 
 

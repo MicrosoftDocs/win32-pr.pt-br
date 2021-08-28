@@ -1,19 +1,19 @@
 ---
-title: IAgentCommandsEx getnomedafonte
-description: IAgentCommandsEx getnomedafonte
+title: IAgentCommandsEx GetFontName
+description: IAgentCommandsEx GetFontName
 ms.assetid: cd0d0d93-839e-471c-9cfa-9f47dcce841b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 215f08cbe1e5e97b218f9279baff5e3affd74956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 757b2d7554f1efcee27a519b9df61b4601a237b557c3aa26b6575864144a2850
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105232"
 ---
-# <a name="iagentcommandsexgetfontname"></a>IAgentCommandsEx:: getnomedafonte
+# <a name="iagentcommandsexgetfontname"></a>IAgentCommandsEx::GetFontName
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetFontName(
@@ -34,18 +34,18 @@ O endereço de um BSTR que recebe o nome da fonte exibido no menu pop-up do cara
 
 </dd> </dl>
 
-O nome da fonte retornado corresponde à fonte usada para exibir o texto no menu pop-up do caractere quando o aplicativo cliente é de entrada-ativo. O valor padrão para a configuração de fonte é baseado na configuração de fonte do menu para a configuração de ID de idioma do caractere ou, se não estiver definido, a configuração de ID de idioma padrão do usuário.
+O nome da fonte retornado corresponde à fonte usada para exibir texto no menu pop-up do caractere quando o aplicativo cliente está ativo de entrada. O valor padrão para a configuração de fonte baseia-se na configuração de fonte de menu para a configuração de ID de idioma do caractere ou, se não estiver definido, a configuração de ID de idioma padrão do usuário.
 
-Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
+Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommandsEx:: setnomedafonte**](iagentcommandsex--setfontname.md), [ **IAgentCommandsEx:: setfontize**](iagentcommandsex--setfontsize.md)
+[**IAgentCommandsEx::SetFontName**](iagentcommandsex--setfontname.md), [ **IAgentCommandsEx::SetFontSize**](iagentcommandsex--setfontsize.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

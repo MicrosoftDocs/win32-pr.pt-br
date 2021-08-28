@@ -1,19 +1,19 @@
 ---
-description: Especifica o perfil de áudio e o nível de um fluxo AAC (codificação de áudio avançado).
+description: Especifica o perfil de áudio e o nível de um fluxo AAC (Codificação de Áudio Avançado).
 ms.assetid: 87fa1127-46ca-4b83-a3b5-99253af22ba0
-title: Atributo MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION (Mfapi. h)
+title: MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 116bfc2b41cff3cbd92fc9a60be150ea598e1cc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89934c55ff07124c28952c621513ddd4fd8db504c6e9df7cc6094f8ba7b875ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104562"
 ---
-# <a name="mf_mt_aac_audio_profile_level_indication-attribute"></a>\_Atributo de \_ \_ indicação de \_ nível de perfil de áudio MF \_ MT AAC \_
+# <a name="mf_mt_aac_audio_profile_level_indication-attribute"></a>Atributo MF \_ MT \_ AAC \_ AUDIO PROFILE \_ LEVEL \_ \_ INDICATION
 
-Especifica o perfil de áudio e o nível de um fluxo AAC (codificação de áudio avançado).
+Especifica o perfil de áudio e o nível de um fluxo AAC (Codificação de Áudio Avançado).
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,9 +21,9 @@ Especifica o perfil de áudio e o nível de um fluxo AAC (codificação de áudi
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,9 +31,9 @@ Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/deskt
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo contém o valor do campo **audioProfileLevelIndication** , conforme definido por ISO/IEC 14496-3.
+Esse atributo contém o valor do **campo audioProfileLevelIndication,** conforme definido por ISO/IEC 14496-3.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Mfapi. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de mídia](media-type-attributes.md)

@@ -7,12 +7,12 @@ keywords:
 - ADSI de objetos, enumerando objetos ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0a2a6aa007ec0621a671591a67ff195f477b23d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 069884607c517467c931f1c4b3b1cd54c666ec54fc31c64a03e05fd789522866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105754446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023624"
 ---
 # <a name="enumerating-adsi-objects"></a>Enumerando objetos ADSI
 
@@ -21,9 +21,9 @@ Esta seção descreve os seguintes tópicos:
 -   [Enumeração](enumeration.md)
 -   [Funções auxiliares de enumeração](enumeration-helper-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

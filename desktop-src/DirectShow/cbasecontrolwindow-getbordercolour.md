@@ -1,7 +1,7 @@
 ---
-description: O método GetBorderColour recupera a cor de borda da janela atual, m \_ BorderColour.
+description: O método GetBorderColorr recupera a cor da borda da janela atual, m \_ BorderColorr.
 ms.assetid: 5cd9b834-5438-475e-9671-ee9917f9a485
-title: Método CBaseControlWindow. GetBorderColour (Ctlutil. h)
+title: Método CBaseControlWindow.GetBorderColorr (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ba6e1be9babf96d03235c49d9cde0f11cae1b83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9b5b94e0fa58c95e74fd140c04710e8aaacef9402397fa475983c0e01e586528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017364"
 ---
-# <a name="cbasecontrolwindowgetbordercolour-method"></a>Método CBaseControlWindow. GetBorderColour
+# <a name="cbasecontrolwindowgetbordercolour-method"></a>Método CBaseControlWindow.GetBorderColorr
 
-O `GetBorderColour` método recupera a cor da borda da janela atual, **m \_ BorderColour**.
+O `GetBorderColour` método recupera a cor da borda da janela atual, m **\_ BorderColorr**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ COLORREF GetBorderColour();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a cor da borda.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo pode definir um retângulo de destino para exibir o vídeo. Esse retângulo deve ser relativo à área do cliente para a janela. Se isso for feito (o padrão é sempre pintar toda a janela), há uma área que circunda o vídeo; ou seja, a borda. A cor da borda pode ser definida por meio da função de membro [**CBaseControlWindow::p UT \_ BorderColor**](cbasecontrolwindow-put-bordercolor.md) . Essa propriedade afeta a cor da borda. Use essa função de membro em vez de [**CBaseControlWindow:: get \_ BorderColor**](cbasecontrolwindow-get-bordercolor.md), a menos que você esteja chamando isso externamente por meio do método [**IVideoWindow:: get \_ BorderColor**](/windows/desktop/api/Control/nf-control-ivideowindow-get_bordercolor) .
+Um aplicativo pode definir um retângulo de destino para exibir o vídeo. Esse retângulo deve ser relativo à área do cliente para a janela. Se isso for feito (o padrão é sempre pintar toda a janela), haverá uma área que envolve o vídeo; ou seja, a borda. A cor da borda pode ser definida por meio da função de membro [**CBaseControlWindow::p ut \_ BorderColor.**](cbasecontrolwindow-put-bordercolor.md) Essa propriedade afeta a cor da borda. Use essa função membro em vez [**de CBaseControlWindow::get \_ BorderColor**](cbasecontrolwindow-get-bordercolor.md), a menos que você esteja chamando isso externamente por meio do [**método IVideoWindow::get \_ BorderColor.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_bordercolor)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Um aplicativo pode definir um retângulo de destino para exibir o vídeo. Esse r
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

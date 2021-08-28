@@ -4,12 +4,12 @@ ms.assetid: c84075b2-ae41-4915-a0f6-3a9c017ae0b8
 title: Criando Light-Aware interfaces de usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a4b6d404e366cb898114fe61729ab1ad722feb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bd97bb304c3a8718ae4b32d8b9100a1e7eb7a18240b9089c112272f588ee209
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118890271"
 ---
 # <a name="creating-light-aware-user-interfaces"></a>Criando Light-Aware interfaces de usuário
 
@@ -17,7 +17,7 @@ Esta seção aborda o uso de dados do sensor de luz ambiente e como os recursos 
 
 Sensores de luz ambiente expõem dados que podem ser usados para determinar vários aspectos das condições de iluminação em que o sensor está localizado. Os sensores de luz ambiente podem expor o brilho geral de um ambiente (illuminance) e outros aspectos da luz ao redor, como a luminosidade ou a temperatura de cor.
 
-Os computadores podem ser mais úteis de várias maneiras quando o sistema está respondendo às condições de iluminação. Isso inclui controlar o brilho da tela do computador (um novo recurso totalmente suportado no Windows 7), ajustando automaticamente o nível de iluminação de teclados acesos e até mesmo o controle de brilho para outras luzes (como iluminação de botão, luzes de atividade e assim por diante).
+Os computadores podem ser mais úteis de várias maneiras quando o sistema está respondendo às condições de iluminação. isso inclui controlar o brilho da tela do computador (um novo recurso com suporte total no Windows 7), ajustar automaticamente o nível de iluminação de teclados acesos e até mesmo o controle de brilho para outras luzes (como iluminação de botão, luzes de atividade e assim por diante).
 
 Os programas do usuário final também podem se beneficiar de sensores leves. Os programas podem aplicar um tema apropriado para uma condição de iluminação específica, como um tema externo específico e um tema interno. Talvez o aspecto mais importante da integração do sensor leve com os programas seja a legibilidade e as otimizações legíveis baseadas em condições de iluminação.
 
