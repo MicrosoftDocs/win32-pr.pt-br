@@ -1,11 +1,11 @@
 ---
 title: Método IWMDRMDevice SetSecureClockResponse
-description: O método SetSecureClockResponse define a resposta de clock seguro.
+description: O método SetSecureClockResponse define a resposta de relógio segura.
 ms.assetid: 3f0a1487-d8c4-478d-bfb0-8d09931fd4b6
 keywords:
-- Método SetSecureClockResponse Windows Media Gerenciador de Dispositivos
-- Método SetSecureClockResponse Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice
-- Interface IWMDRMDevice Windows Media Gerenciador de Dispositivos, método SetSecureClockResponse
+- Método SetSecureClockResponse windows Media Gerenciador de Dispositivos
+- Método SetSecureClockResponse windows Media Gerenciador de Dispositivos , interface IWMDRMDevice
+- Interface IWMDRMDevice windows Media Gerenciador de Dispositivos , método SetSecureClockResponse
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 821aceda734aceb7a80774db05465f31213eec47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1af9dae5e49240ef0095f499cf8abe34d6931caf7c36cf0ec7fc6908c9821a44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031856"
 ---
-# <a name="iwmdrmdevicesetsecureclockresponse-method"></a>Método IWMDRMDevice:: SetSecureClockResponse
+# <a name="iwmdrmdevicesetsecureclockresponse-method"></a>Método IWMDRMDevice::SetSecureClockResponse
 
-O método **SetSecureClockResponse** define a resposta de clock seguro.
+O **método SetSecureClockResponse** define a resposta de relógio segura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,23 +44,23 @@ HRESULT SetSecureClockResponse(
 
 <dl> <dt>
 
-*pbResponse* \[ no\]
+*pbResponse* \[ Em\]
 </dt> <dd>
 
-A resposta do clock seguro a ser definida.
+A resposta de relógio segura a ser definida.
 
 </dd> <dt>
 
-*cbResponse* \[ no\]
+*cbResponse* \[ Em\]
 </dt> <dd>
 
-O tamanho especificado da resposta do clock seguro, em bytes.
+O tamanho especificado da resposta do relógio seguro, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -78,8 +78,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 [**GetSecureClock**](iwmdrmdevice-getsecureclock.md)
 </dt> <dt>
 
-[**Interface IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice Interface**](iwmdrmdevice.md)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7059b68658d070ca71a738a5e20658474139558
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b9948d71739aaee4f5f24f54701f8e335f8b7b79486c8820f7a5fdf48c068e37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105763077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026944"
 ---
 # <a name="wmwmadrcaveragereference"></a>WM/WMADRCAverageReference
 
@@ -33,7 +33,7 @@ g \_ wszWMWMADRCAverageReference
 
 ## <a name="remarks"></a>Comentários
 
-Há quatro atributos usados pelo Windows Media Player para o controle de intervalo dinâmico: **WM/WMADRCAverageReference**, **WM/WMADRCPeakReference**, **WM/WMADRCAverageTarget** e **WM/WMADRCPeakTarget**. Todos esses valores são definidos pelo gravador com base nas informações do codec ao gravar fluxos com o codec do Windows Media Audio 9 ou o Windows Media Audio 9 Professional. Os valores médios são definidos como o nível médio de volume do fluxo e os valores de pico são definidos para o nível máximo do volume no fluxo. Os valores de referência são somente leitura. Os valores de destino são definidos pelo Windows Media Player quando o arquivo está sendo reproduzido para registrar as preferências de controle de intervalo dinâmico do usuário.
+há quatro atributos usados por Windows Media Player para o controle de intervalo dinâmico: **wm/WMADRCAverageReference**, **wm/WMADRCPeakReference**, **wm/WMADRCAverageTarget** e **wm/WMADRCPeakTarget**. todos esses valores são definidos pelo gravador com base nas informações do codec durante a gravação de fluxos com o Windows codec de áudio de mídia 9 ou Windows codec de áudio de mídia 9 Professional. Os valores médios são definidos como o nível médio de volume do fluxo e os valores de pico são definidos para o nível máximo do volume no fluxo. Os valores de referência são somente leitura. os valores de destino são definidos por Windows Media Player quando o arquivo está sendo reproduzido para registrar as preferências de controle de intervalo dinâmico do usuário.
 
 ## <a name="see-also"></a>Confira também
 
@@ -51,9 +51,9 @@ Há quatro atributos usados pelo Windows Media Player para o controle de interva
 [**WM/WMADRCPeakTarget**](wm-wmadrcpeaktarget.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

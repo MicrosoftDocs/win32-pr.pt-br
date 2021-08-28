@@ -1,4 +1,4 @@
-- name: Provedores WMI do CIMWin32
+- name: Provedores WMI CIMWin32
   href: cimwin32-wmi-providers.md
   items:
     - name: Provedor WMI CIM
@@ -7,7 +7,7 @@
         - name: CIM_Action
           href: cim-action.md
           items:
-            - name: Métodos de CIM_Action
+            - name: Métodos CIM_Action de CIM_Action
               href: cim-action-methods.md
               items:
                 - name: Método Invoke
@@ -21,7 +21,7 @@
         - name: CIM_AggregatePExtent
           href: cim-aggregatepextent.md
           items:
-            - name: Métodos de CIM_AggregatePExtent
+            - name: Métodos CIM_AggregatePExtent de CIM_AggregatePExtent
               href: cim-aggregatepextent-methods.md
               items:
                 - name: Método Reset
@@ -31,7 +31,7 @@
         - name: CIM_AggregatePSExtent
           href: cim-aggregatepsextent.md
           items:
-            - name: Métodos de CIM_AggregatePSExtent
+            - name: CIM_AggregatePSExtent métodos de CIM_AggregatePSExtent
               href: cim-aggregatepsextent-methods.md
               items:
                 - name: Método Reset
@@ -43,14 +43,14 @@
         - name: CIM_AlarmDevice
           href: cim-alarmdevice.md
           items:
-            - name: Métodos de CIM_AlarmDevice
+            - name: Métodos CIM_AlarmDevice dados
               href: cim-alarmdevice-methods.md
               items:
                 - name: Método Reset
                   href: reset-method-in-class-cim-alarmdevice.md
                 - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-alarmdevice.md
-                - name: Método seturgência
+                - name: Método Set Vouency
                   href: seturgency-method-in-class-cim-alarmdevice.md
         - name: CIM_AllocatedResource
           href: cim-allocatedresource.md
@@ -79,7 +79,7 @@
         - name: CIM_Battery
           href: cim-battery.md
           items:
-            - name: Métodos de CIM_Battery
+            - name: Métodos CIM_Battery de CIM_Battery
               href: cim-battery-methods.md
               items:
                 - name: Método Reset
@@ -89,7 +89,7 @@
         - name: CIM_BinarySensor
           href: cim-binarysensor.md
           items:
-            - name: Métodos de CIM_BinarySensor
+            - name: CIM_BinarySensor de dados
               href: cim-binarysensor-methods.md
               items:
                 - name: Método Reset
@@ -111,7 +111,7 @@
         - name: CIM_BootService
           href: cim-bootservice.md
           items:
-            - name: Métodos de CIM_BootService
+            - name: Métodos CIM_BootService dados
               href: cim-bootservice-methods.md
               items:
                 - name: Método StartService
@@ -123,7 +123,7 @@
         - name: CIM_CacheMemory
           href: cim-cachememory.md
           items:
-            - name: Métodos de CIM_CacheMemory
+            - name: Métodos CIM_CacheMemory dados
               href: cim-cachememory-methods.md
               items:
                 - name: Método Reset
@@ -133,10 +133,10 @@
         - name: CIM_Card
           href: cim-card.md
           items:
-            - name: Métodos de CIM_Card
+            - name: Métodos CIM_Card de CIM_Card
               href: cim-card-methods.md
               items:
-                - name: Método iscompatível
+                - name: Método IsCompatible
                   href: iscompatible-method-in-class-cim-card.md
         - name: CIM_CardInSlot
           href: cim-cardinslot.md
@@ -145,7 +145,7 @@
         - name: CIM_CDROMDrive
           href: cim-cdromdrive.md
           items:
-            - name: Métodos de CIM_CDROMDrive
+            - name: Métodos CIM_CDROMDrive dados
               href: cim-cdromdrive-methods.md
               items:
                 - name: Método Reset
@@ -155,17 +155,17 @@
         - name: CIM_Chassis
           href: cim-chassis.md
           items:
-            - name: Métodos de CIM_Chassis
+            - name: CIM_Chassis de dados
               href: cim-chassis-methods.md
               items:
-                - name: Método iscompatível
+                - name: Método IsCompatible
                   href: iscompatible-method-in-class-cim-chassis.md
         - name: CIM_ChassisInRack
           href: cim-chassisinrack.md
         - name: CIM_Check
           href: cim-check.md
           items:
-            - name: Métodos de CIM_Check
+            - name: Métodos CIM_Check dados
               href: cim-check-methods.md
               items:
                 - name: Método Invoke
@@ -177,7 +177,7 @@
         - name: CIM_ClusteringService
           href: cim-clusteringservice.md
           items:
-            - name: Métodos de CIM_ClusteringService
+            - name: CIM_ClusteringService métodos
               href: cim-clusteringservice-methods.md
               items:
                 - name: Método AddNode
@@ -1181,7 +1181,7 @@
         - name: CIM_StorageExtent
           href: cim-storageextent.md
           items:
-            - name: Métodos de CIM_StorageExtent
+            - name: CIM_StorageExtent de dados
               href: cim-storageextent-methods.md
               items:
                 - name: Método Reset
@@ -1195,7 +1195,7 @@
         - name: CIM_SwapSpaceCheck
           href: cim-swapspacecheck.md
           items:
-            - name: Métodos de CIM_SwapSpaceCheck
+            - name: CIM_SwapSpaceCheck métodos de CIM_SwapSpaceCheck
               href: cim-swapspacecheck-methods.md
               items:
                 - name: Método Invoke
@@ -1211,7 +1211,7 @@
         - name: CIM_Tachometer
           href: cim-tachometer.md
           items:
-            - name: Métodos de CIM_Tachometer
+            - name: CIM_Tachometer de dados
               href: cim-tachometer-methods.md
               items:
                 - name: Método Reset
@@ -1221,7 +1221,7 @@
         - name: CIM_TapeDrive
           href: cim-tapedrive.md
           items:
-            - name: Métodos de CIM_TapeDrive
+            - name: Métodos CIM_TapeDrive dados
               href: cim-tapedrive-methods.md
               items:
                 - name: Método Reset
@@ -1231,7 +1231,7 @@
         - name: CIM_TemperatureSensor
           href: cim-temperaturesensor.md
           items:
-            - name: Métodos de CIM_TemperatureSensor
+            - name: Métodos CIM_TemperatureSensor dados
               href: cim-temperaturesensor-methods.md
               items:
                 - name: Método Reset
@@ -1247,7 +1247,7 @@
         - name: CIM_UninterruptiblePowerSupply
           href: cim-uninterruptiblepowersupply.md
           items:
-            - name: Métodos de CIM_UninterruptiblePowerSupply
+            - name: Métodos CIM_UninterruptiblePowerSupply de CIM_UninterruptiblePowerSupply
               href: cim-uninterruptiblepowersupply-methods.md
               items:
                 - name: Método Reset
@@ -1257,7 +1257,7 @@
         - name: CIM_UnitaryComputerSystem
           href: cim-unitarycomputersystem.md
           items:
-            - name: Métodos de CIM_UnitaryComputerSystem
+            - name: Métodos CIM_UnitaryComputerSystem dados
               href: cim-unitarycomputersystem-methods.md
               items:
                 - name: Método SetPowerState
@@ -1265,7 +1265,7 @@
         - name: CIM_USBController
           href: cim-usbcontroller.md
           items:
-            - name: Métodos de CIM_USBController
+            - name: CIM_USBController métodos de CIM_USBController
               href: cim-usbcontroller-methods.md
               items:
                 - name: Método Reset
@@ -1277,10 +1277,10 @@
         - name: CIM_USBDevice
           href: cim-usbdevice.md
           items:
-            - name: Métodos de CIM_USBDevice
+            - name: CIM_USBDevice de dados
               href: cim-usbdevice-methods.md
               items:
-                - name: Método getdescriptor
+                - name: Método GetDescriptor
                   href: getdescriptor-method-in-class-cim-usbdevice.md
                 - name: Método Reset
                   href: reset-method-in-class-cim-usbdevice.md
@@ -1289,10 +1289,10 @@
         - name: CIM_USBHub
           href: cim-usbhub.md
           items:
-            - name: Métodos de CIM_USBHub
+            - name: Métodos CIM_USBHub de CIM_USBHub
               href: cim-usbhub-methods.md
               items:
-                - name: Método getdescriptor
+                - name: Método GetDescriptor
                   href: getdescriptor-method-in-class-cim-usbhub.md
                 - name: Método Reset
                   href: reset-method-in-class-cim-usbhub.md
@@ -1301,7 +1301,7 @@
         - name: CIM_UserDevice
           href: cim-userdevice.md
           items:
-            - name: Métodos de CIM_UserDevice
+            - name: Métodos CIM_UserDevice de CIM_UserDevice
               href: cim-userdevice-methods.md
               items:
                 - name: Método Reset
@@ -1311,7 +1311,7 @@
         - name: CIM_VersionCompatibilityCheck
           href: cim-versioncompatibilitycheck.md
           items:
-            - name: Métodos de CIM_VersionCompatibilityCheck
+            - name: Métodos CIM_VersionCompatibilityCheck dados
               href: cim-versioncompatibilitycheck-methods.md
               items:
                 - name: Método Invoke
@@ -1325,7 +1325,7 @@
         - name: CIM_VideoController
           href: cim-videocontroller.md
           items:
-            - name: Métodos de CIM_VideoController
+            - name: Métodos CIM_VideoController de CIM_VideoController
               href: cim-videocontroller-methods.md
               items:
                 - name: Método Reset
@@ -1339,7 +1339,7 @@
         - name: CIM_VolatileStorage
           href: cim-volatilestorage.md
           items:
-            - name: Métodos de CIM_VolatileStorage
+            - name: Métodos CIM_VolatileStorage de CIM_VolatileStorage
               href: cim-volatilestorage-methods.md
               items:
                 - name: Método Reset
@@ -1349,7 +1349,7 @@
         - name: CIM_VoltageSensor
           href: cim-voltagesensor.md
           items:
-            - name: Métodos de CIM_VoltageSensor
+            - name: Métodos CIM_VoltageSensor dados
               href: cim-voltagesensor-methods.md
               items:
                 - name: Método Reset
@@ -1359,7 +1359,7 @@
         - name: CIM_VolumeSet
           href: cim-volumeset.md
           items:
-            - name: Métodos de CIM_VolumeSet
+            - name: Métodos CIM_VolumeSet dados
               href: cim-volumeset-methods.md
               items:
                 - name: Método Reset
@@ -1369,14 +1369,14 @@
         - name: CIM_WORMDrive
           href: cim-wormdrive.md
           items:
-            - name: Métodos de CIM_WORMDrive
+            - name: Métodos CIM_WORMDrive de CIM_WORMDrive
               href: cim-wormdrive-methods.md
               items:
                 - name: Método Reset
                   href: reset-method-in-class-cim-wormdrive.md
                 - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-wormdrive.md
-    - name: Provedor de eventos de gerenciamento de energia
+    - name: Provedor de Eventos de Gerenciamento de Energia
       href: power-management-event-provider.md
       items:
         - name: Win32_PowerManagementEvent
@@ -1465,10 +1465,10 @@
             - name: Win32_LogicalDisk
               href: win32-logicaldisk.md
               items:
-                - name: Métodos de Win32_LogicalDisk
+                - name: Métodos Win32_LogicalDisk de Win32_LogicalDisk
                   href: win32-logicaldisk-methods.md
                   items:
-                    - name: Método chkdsk
+                    - name: Método Chkdsk
                       href: chkdsk-method-in-class-win32-logicaldisk.md
                     - name: Método ExcludeFromAutochk
                       href: excludefromautochk-method-in-class-win32-logicaldisk.md
@@ -1503,7 +1503,7 @@
             - name: Win32_NetworkAdapter
               href: win32-networkadapter.md
               items:
-                - name: Métodos de Win32_NetworkAdapter
+                - name: Win32_NetworkAdapter métodos
                   href: win32-networkadapter-methods.md
                   items:
                     - name: Método Enable
@@ -1513,7 +1513,7 @@
             - name: Win32_NetworkAdapterConfiguration
               href: win32-networkadapterconfiguration.md
               items:
-                - name: Métodos de Win32_NetworkAdapterConfiguration
+                - name: Métodos Win32_NetworkAdapterConfiguration de Win32_NetworkAdapterConfiguration
                   href: win32-networkadapterconfiguration-methods.md
                   items:
                     - name: Método DisableIPSec
@@ -1528,7 +1528,7 @@
                       href: enableipsec-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método EnableStatic
                       href: enablestatic-method-in-class-win32-networkadapterconfiguration.md
-                    - name: Método EnableWINS ativa
+                    - name: Método EnableWINS
                       href: enablewins-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método ReleaseDHCPLease
                       href: releasedhcplease-method-in-class-win32-networkadapterconfiguration.md
@@ -1542,7 +1542,7 @@
                       href: setarpalwayssourceroute-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetArpUseEtherSNAP
                       href: setarpuseethersnap-method-in-class-win32-networkadapterconfiguration.md
-                    - name: Método DatabasePath
+                    - name: Método SetDatabasePath
                       href: setdatabasepath-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetDeadGWDetect
                       href: setdeadgwdetect-method-in-class-win32-networkadapterconfiguration.md
@@ -1574,7 +1574,7 @@
                       href: win32-networkadapterconfiguration-setipxvirtualnetworknumber.md
                     - name: Método SetKeepAliveInterval
                       href: setkeepaliveinterval-method-in-class-win32-networkadapterconfiguration.md
-                    - name: Método setkeepalivetime
+                    - name: Método SetKeepAliveTime
                       href: setkeepalivetime-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetMTU
                       href: setmtu-method-in-class-win32-networkadapterconfiguration.md
@@ -1592,7 +1592,7 @@
                       href: settcpmaxdataretransmissions-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetTcpNumConnections
                       href: settcpnumconnections-method-in-class-win32-networkadapterconfiguration.md
-                    - name: Método SetTcpUseRFC1122UrgentPointer
+                    - name: Método SetTcpUseRFC1122EntPointer
                       href: settcpuserfc1122urgentpointer-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetTcpWindowSize
                       href: settcpwindowsize-method-in-class-win32-networkadapterconfiguration.md

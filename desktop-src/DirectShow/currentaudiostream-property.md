@@ -4,12 +4,12 @@ ms.assetid: 9efaae3f-1fb8-41ab-b7a9-889cc3cc39c3
 title: Propriedade CurrentAudioStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8b67d81eeec21aec164f3ca865ee3f2de4cd3f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fd814d5b560ed55ea312fbebb8678c67b1422b0cf3d47917fbf772f56a0d3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105749820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075966"
 ---
 # <a name="currentaudiostream-property"></a>Propriedade CurrentAudioStream
 
@@ -30,7 +30,7 @@ Retorna um valor inteiro de 0 a 7 indicando o fluxo de áudio atual.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é de leitura/gravação sem valor padrão. Antes de tentar definir um novo fluxo de áudio, chame [**IsAudioStreamEnabled**](isaudiostreamenabled-method.md) para verificar se o fluxo está disponível.
+Essa propriedade é de leitura/gravação sem valor padrão. Antes de tentar definir um novo fluxo de áudio, chame [**IsAudioStreamEnabled**](isaudiostreamenabled-method.md) para verificar se o fluxo está disponível.
 
 ## <a name="see-also"></a>Confira também
 

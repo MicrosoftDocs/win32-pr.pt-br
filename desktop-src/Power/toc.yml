@@ -3,10 +3,10 @@
   items:
     - name: Novidades do gerenciamento de energia
       href: what-s-new-in-power-management.md
-    - name: Sobre o gerenciamento de energia
+    - name: Sobre o Gerenciamento de Energia
       href: about-power-management.md
       items:
-        - name: Gerenciamento de energia do Windows
+        - name: Windows Gerenciamento de energia
           href: windows-power-management.md
         - name: Status de energia do sistema
           href: system-power-status.md
@@ -17,33 +17,33 @@
         - name: WM_POWERBROADCAST mensagens
           href: wm-powerbroadcast-messages.md
           items:
-            - name: Registrando para eventos de energia
+            - name: Registrando-se para eventos de energia
               href: registering-for-power-events.md
-        - name: Critérios de suspensão do sistema
+        - name: Critérios de avaliação do sistema
           href: system-sleep-criteria.md
-        - name: Eventos de ativação do sistema
+        - name: Eventos de a wake-up do sistema
           href: system-wake-up-events.md
         - name: Informações da bateria
           href: battery-information.md
-        - name: Interface de controle de luz Invista
+        - name: Interface de controle de luz de fundo
           href: backlight-control-interface.md
         - name: Esquemas de energia
           href: power-schemes.md
           items:
-            - name: Configurações de política de energia
+            - name: Power Policy Configurações
               href: power-policy-settings.md
             - name: Gerenciamento de esquema de energia
               href: managing-power-schemes.md
-            - name: Substituições do administrador
+            - name: Substituições de administrador
               href: administrator-overrides.md
         - name: Gerenciamento de energia do dispositivo
           href: device-power-management.md
-    - name: Usando o gerenciamento de energia
+    - name: Usando o Gerenciamento de Energia
       href: using-power-management.md
       items:
         - name: Enumerando dispositivos de bateria
           href: enumerating-battery-devices.md
-        - name: Usando a API de energia do dispositivo
+        - name: Usando a API de Energia do Dispositivo
           href: using-the-device-power-api.md
     - name: Referência de gerenciamento de energia
       href: power-management-reference.md
@@ -51,7 +51,7 @@
         - name: Constantes de gerenciamento de energia
           href: power-management-constants.md
           items:
-            - name: Constantes da política de descarga
+            - name: Constantes de política de ressarção
               href: discharge-policy-constants.md
             - name: Constantes de sinalizadores globais
               href: global-flags-constants.md
@@ -291,9 +291,9 @@
               href: /windows/desktop/api/WinBase/nf-winbase-requestwakeuplatency
             - name: SetActivePwrScheme
               href: /windows/desktop/api/PowrProf/nf-powrprof-setactivepwrscheme
-            - name: Setsuspendestate
+            - name: SetSuspendState
               href: /windows/desktop/api/PowrProf/nf-powrprof-setsuspendstate
-            - name: SetSystemPowerState
+            - name: Setsystempowerstate
               href: /windows/desktop/api/WinBase/nf-winbase-setsystempowerstate
             - name: SetThreadExecutionState
               href: /windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate
@@ -312,7 +312,7 @@
           items:
             - name: WM_POWER
               href: wm-power.md
-            - name: WM_POWERBROADCAST
+            - name: Wm_powerbroadcast
               href: wm-powerbroadcast.md
         - name: Estruturas de gerenciamento de energia
           href: power-management-structures.md

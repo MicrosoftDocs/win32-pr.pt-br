@@ -13,18 +13,18 @@ api_type:
 - IDLDef
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: 4b7e288f41c863dc3f0365db3c6aae867605e5c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f873e7a30a4cff6dc4cc89eaea225201a367f7c24ead11ad95da04c2ff1ab32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914156"
 ---
 # <a name="application_state-enumeration"></a>Enumeração de estado do aplicativo \_
 
 Especifica o estado de integridade de um aplicativo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -56,7 +56,7 @@ O estado do aplicativo é crítico.
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse elemento de programação, os componentes de integração do Windows 8 devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
+para usar esse elemento de programação, os componentes de integração do Windows 8 devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Para usar esse elemento de programação, os componentes de integração do Wind
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                      |
-| Versão<br/>                  | Componentes de integração do Windows 8<br/>                                                           |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                      |
+| Versão<br/>                  | Componentes de integração para Windows 8<br/>                                                           |
 | INSERI<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
 
 

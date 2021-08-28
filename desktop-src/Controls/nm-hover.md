@@ -1,9 +1,9 @@
 ---
-title: NM_HOVER código de notificação (commctrl. h)
-description: Enviado por um controle quando o mouse passa sobre um item. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_HOVER de notificação (Commctrl.h)
+description: Enviado por um controle quando o mouse passar o mouse sobre um item. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 0eef3e88-c1f0-4f9c-9ccf-580d8e464157
 keywords:
-- NM_HOVER de código de notificação controles do Windows
+- NM_HOVER código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69344b1aae78ebee99b86c78f4442df20f66187a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1f5d1332c54328fba1b09ecf4efd48011edbe9a81139f05ad375fb6c8b070de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088696"
 ---
-# <a name="nm_hover-notification-code"></a>Código de notificação de foco de NM \_
+# <a name="nm_hover-notification-code"></a>Código de \_ notificação HOVER NM
 
-Enviado por um controle quando o mouse passa sobre um item. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado por um controle quando o mouse passar o mouse sobre um item. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_HOVER
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Um ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A menos que especificado de outra forma, retorna zero para permitir que o controle processe o foco normalmente ou seja diferente de zero para impedir que o foco seja processado.
+A menos que especificado de outra forma, retorne zero para permitir que o controle processe o foco normalmente ou diferente de zero para impedir que o foco seja processado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ A menos que especificado de outra forma, retorna zero para permitir que o contro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

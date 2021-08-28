@@ -1,5 +1,5 @@
 ---
-description: Estima o risco de executar um código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo do código do arquivo.
+description: Estima o risco de execução de código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo de código do arquivo.
 title: Função EstimateFileRiskLevel
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Winshfhc.dll
 ms.assetid: 33a5589a-201b-4d94-afbf-5965a39e2748
-ms.openlocfilehash: 2def6cb5bc2ed59a98e9e513aba1b5b578cd8681
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8cf7514be0d784085acd74536036c159c9f8e9217287e86bea2f75defbb94801
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090606"
 ---
 # <a name="estimatefilerisklevel-function"></a>Função EstimateFileRiskLevel
 
-\[Essa função está disponível no Windows XP com Service Pack 2 (SP2) por meio do Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Em vez disso, os aplicativos cliente devem usar o [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) para apresentar um ambiente de usuário que fornece download seguro e troca de arquivos por email e anexos de mensagens.\]
+\[Essa função está disponível no Windows XP com Service Pack 2 (SP2) por meio Windows Vista. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. Em vez disso, os aplicativos cliente devem usar [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) para apresentar um ambiente de usuário que fornece download seguro e troca de arquivos por email e anexos de mensagens.\]
 
-Estima o risco de executar um código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo do código do arquivo.
+Estima o risco de execução de código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo de código do arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,25 +44,25 @@ HRESULT EstimateFileRiskLevel(
 
 <dl> <dt>
 
-*pszFilePath* \[ no\]
+*pszFilePath* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o caminho do arquivo que está sendo verificado em relação ao manipulador.
+Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o caminho do arquivo que está sendo verificado no manipulador.
 
 </dd> <dt>
 
-*pszExt* \[ no\]
+*pszExt* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que contém a extensão do arquivo que está sendo verificado, seja com ou sem seu ponto principal. Por exemplo, ". txt" ou "txt".
+Um ponteiro para uma cadeia de caracteres terminada em nulo que contém a extensão do arquivo que está sendo verificado, com ou sem seu período à frente. Por exemplo, ".txt" ou "txt".
 
 </dd> <dt>
 
-*pszHandler* \[ no\]
+*pszHandler* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -71,7 +71,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que contém o caminh
 
 </dd> <dt>
 
-*pfrlEstimate* \[ fora\]
+*pfrlEstimate* \[ out\]
 </dt> <dd>
 
 Tipo: **FILE \_ RISK \_ LEVEL \***
@@ -135,11 +135,11 @@ O formato de arquivo é bloqueado especificamente para esse manipulador.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem-sucedida, ela **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -151,9 +151,9 @@ Essa função não é declarada em um header público nem incluída em um arquiv
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP somente com aplicativos da \[ área de trabalho SP2\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                           |
-| DLL<br/>                      | <dl> <dt>Winshfhc.dll (versão 5,1 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                           |
+| DLL<br/>                      | <dl> <dt>Winshfhc.dll (versão 5.1 ou posterior)</dt> </dl> |
 
 
 

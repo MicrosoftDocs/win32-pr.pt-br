@@ -4,7 +4,7 @@
     - name: Introdução
       href: getting-started.md
       items:
-        - name: Visão geral da plataforma de sensor e localização do Windows
+        - name: visão geral do sensor de Windows e da plataforma de localização
           href: introduction-to-the-sensor-and-location-platform-in-windows.md
         - name: Privacidade e segurança na plataforma de sensor e local
           href: privacy-and-security-in-the-sensor-and-location-platform.md
@@ -79,7 +79,7 @@
             - name: ILogicalSensorManager
               href: /previous-versions/windows/desktop/legacy/dd318934(v=vs.85)
               items:
-                - name: Método Connect
+                - name: Conexão Forma
                   href: /previous-versions/windows/desktop/legacy/dd374029(v=vs.85)
                 - name: Método de desconexão
                   href: /previous-versions/windows/desktop/legacy/dd374030(v=vs.85)

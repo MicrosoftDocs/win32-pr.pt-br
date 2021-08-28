@@ -1,39 +1,39 @@
 ---
-title: Como criar um controle de tecla de atalho
-description: Este tópico demonstra como criar um controle de tecla de atalho. Você cria um controle de tecla quente usando a função CreateWindowEx, especificando a classe de janela de classe de tecla de atalho \_ .
+title: Como criar um controle de tecla quente
+description: Este tópico demonstra como criar um controle de tecla de acesso. Você cria um controle de teclas de acesso usando a função CreateWindowEx, especificando a classe de janela HOTKEY \_ CLASS.
 ms.assetid: A6723D4E-B8F6-4365-8FCD-99B73D2C0470
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 498005efcdfbbf001283551bbeea4906ebc854cf
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 081db39f07e8d80fcbb5a437bc8cbe83473b4299282c8b2437d95acda02b2db9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103824077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119577036"
 ---
-# <a name="how-to-create-a-hot-key-control"></a>Como criar um controle de tecla de atalho
+# <a name="how-to-create-a-hot-key-control"></a>Como criar um controle de tecla quente
 
-Este tópico demonstra como criar um controle de tecla de atalho. Você cria um controle de tecla quente usando a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando a classe de janela de classe de tecla de atalho \_ .
+Este tópico demonstra como criar um controle de tecla de acesso. Você cria um controle de teclas de acesso usando a [**função CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) especificando a classe de janela HOTKEY \_ CLASS.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Antes de criar o controle de teclas de acesso, verifique se a DLL de controles comuns está carregada.
+Antes de criar o controle de tecla quente, verifique se a DLL de controles comuns está carregada.
 
-No exemplo de código C++ a seguir, a função definida pelo aplicativo chama a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para carregar a DLL de controle comum. Em seguida, ele chama a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando a classe de janela de **\_ classe de tecla de atalho** para criar um controle de tecla de atalho. Ele usa as mensagens [**hkm \_ SetRules**](hkm-setrules.md) e [**hkm \_**](hkm-sethotkey.md) set para inicializar o controle e retorna um identificador para o controle.
+No exemplo de código C++ a seguir, a função definida pelo aplicativo chama a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para carregar a DLL de controle comum. Em seguida, ele chama a [**função CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) especificando a classe de janela **HOTKEY \_ CLASS,** para criar um controle de tecla quente. Ele usa as [**mensagens HKM \_ SETRULES**](hkm-setrules.md) e [**HKM \_ SETHOTKEY**](hkm-sethotkey.md) para inicializar o controle e retorna um alça para o controle .
 
-Esse controle de teclas de acesso não permite que o usuário escolha uma tecla de atalho que seja uma única chave não modificada, nem permite que o usuário escolha apenas SHIFT e uma chave. Essas regras impedem efetivamente que o usuário escolha uma tecla de atalho que pode ser inserida acidentalmente ao digitar o texto.
+Esse controle de teclas de acesso não permite que o usuário escolha uma tecla de acesso que seja uma única chave não modificada, nem permite que o usuário escolha apenas SHIFT e uma chave. Essas regras impedem efetivamente que o usuário escolha uma tecla quente que pode ser inserida acidentalmente ao digitar texto.
 
 
 
@@ -99,13 +99,13 @@ HWND WINAPI InitializeHotkey(HWND hwndDlg)
 
 <dl> <dt>
 
-[Referência de controle de teclas de acesso](bumper-hot-key-hot-key-control-reference.md)
+[Referência de controle de tecla de acesso](bumper-hot-key-hot-key-control-reference.md)
 </dt> <dt>
 
-[Sobre os controles de tecla de atalho](hot-key-controls.md)
+[Sobre controles de teclas de acesso](hot-key-controls.md)
 </dt> <dt>
 
-[Usando controles de tecla quente](using-hot-key-controls.md)
+[Usando controles de teclas de acesso](using-hot-key-controls.md)
 </dt> </dl>
 
  

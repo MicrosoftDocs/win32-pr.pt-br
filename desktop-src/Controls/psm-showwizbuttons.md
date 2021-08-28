@@ -3,7 +3,7 @@ title: Mensagem de PSM_SHOWWIZBUTTONS (Prsht. h)
 description: Mostra ou oculta botões em um assistente. Você pode enviar essa mensagem explicitamente ou usando a macro PropSheet \_ ShowWizButtons.
 ms.assetid: 669c4e51-cac1-40e1-8f23-afae0e41fc9b
 keywords:
-- Controles de PSM_SHOWWIZBUTTONS de mensagens do Windows
+- controles de Windows de mensagem de PSM_SHOWWIZBUTTONS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22e8d1fc54d556240ef3fa6d6b6185a669978b84
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 86bbad4d6f0ce8a084709c04110d093e4d79b806226bdc1fa651278b4054fa8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088476"
 ---
 # <a name="psm_showwizbuttons-message"></a>Mensagem de PSM \_ SHOWWIZBUTTONS
 
@@ -59,7 +59,7 @@ Um ou mais dos mesmos valores usados em *wParam*, especificando quais botões s�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -79,9 +79,9 @@ Se o seu [**manipulador de notificação**](/windows/desktop/api/winuser/nf-winu
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

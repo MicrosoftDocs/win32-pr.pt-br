@@ -4,12 +4,12 @@ description: As etapas gerais a seguir o ajudarão a criar seu próprio script o
 ms.assetid: d9d64bda-0564-4074-9f0a-a249c7315042
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9188e14e0a0b1f73380434be0d4298b0748da12f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9eaa50e4ed1a237ed5b42abd4375ab301a2106498e929e42993cd634ca9ba18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077026"
 ---
 # <a name="overview-of-using-the-dns-wmi-provider"></a>Visão geral do uso do provedor WMI de DNS
 
@@ -17,7 +17,7 @@ As etapas gerais a seguir o ajudarão a criar seu próprio script ou programa qu
 
 **Para criar um script ou programa usando o provedor WMI de DNS**
 
-1.  Conecte-se ao provedor WMI de DNS.
+1.  Conexão ao provedor WMI de DNS.
     ```VB
     Set objLocator = CreateObject("WbemScripting.SWbemLocator")
 
@@ -31,7 +31,7 @@ As etapas gerais a seguir o ajudarão a criar seu próprio script ou programa qu
     > [!Note]  
     > O espaço de nome para o provedor WMI de DNS será sempre "root \\ MicrosoftDNS".
 
-     
+     
 
 2.  Obtenha uma instância do servidor DNS.
     ```VB
@@ -56,9 +56,9 @@ As etapas gerais a seguir o ajudarão a criar seu próprio script ou programa qu
     -   Exibir uma propriedade
     -   Modificar uma propriedade (deve ter acesso de leitura/gravação)
 
- 
+ 
 
- 
+ 
 
 
 

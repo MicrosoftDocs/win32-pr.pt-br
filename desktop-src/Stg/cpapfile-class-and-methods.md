@@ -1,21 +1,21 @@
 ---
-title: Classe e métodos CPapFile
-description: StoClien encapsula suas operações de arquivo composto em um objeto CPapFile C++.
+title: Métodos e classe CPapFile
+description: StoCl encapsula suas operações de arquivo composto em um objeto CPapFile C++.
 ms.assetid: 21a3e170-0a73-4744-8cfc-3a04e0571792
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa970aecf275afbf7bc5b6d68c69de3367e48aa5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36eaa46b9e675be2da699ed6f2fb0e2a2d8dd6db1e25cf0afba0f216f75a59e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117962372"
 ---
-# <a name="cpapfile-class-and-methods"></a>Classe e métodos CPapFile
+# <a name="cpapfile-class-and-methods"></a>Métodos e classe CPapFile
 
-**StoClien** encapsula suas operações de arquivo composto em um objeto CPapFile C++.
+**StoCl encapsula suas** operações de arquivo composto em um objeto CPapFile C++.
 
-A seguir está a declaração de classe **CPapFile** de Papfile. h.
+A seguir está a **declaração de classe CPapFile** de Papfile.h.
 
 
 ```C++
@@ -38,11 +38,11 @@ class CPapFile
 
 
 
-O objeto CPapFile mantém um nome de arquivo atual no membro **m \_ szCurFileName**. Esse nome de arquivo é usado como padrão nos métodos [**Load**](load-method---cpapfile.md) e [**Save**](save-method---cpapfile.md) quando eles não recebem explicitamente um nome de arquivo.
+O objeto CPapFile mantém um nome de arquivo atual no **membro m \_ szCurFileName**. Esse nome de arquivo é usado [](save-method---cpapfile.md) como padrão nos métodos [**Carregar**](load-method---cpapfile.md) e Salvar quando eles não recebem explicitamente um nome de arquivo.
 
-O membro **m \_ pIPaper** mantém um ponteiro de interface para a interface [**IPaper**](ipaper-methods.md) de copapel. O membro **m \_ pIStorage** mantém um ponteiro para a interface [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) para o arquivo composto atual que o **StoClien** está usando para o armazenamento estruturado.
+O **membro \_ m pIPaper** mantém um ponteiro de interface para a interface [**IPaper COPaper.**](ipaper-methods.md) O **membro \_ m pIStorage** mantém um ponteiro para a interface [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) para o arquivo composto atual que **o StoCl ltda** está usando para armazenamento estruturado.
 
-Veja a seguir um resumo dos métodos do CPapFile.
+A seguir está um resumo dos métodos de CPapFile.
 
 
 ```C++
@@ -59,9 +59,9 @@ HRESULT Init(TCHAR* pszFileName, IPaper* pIPaper);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

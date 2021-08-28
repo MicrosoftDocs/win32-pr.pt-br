@@ -1,7 +1,7 @@
 ---
-description: Define o tipo que contém as informações de plano de fundo da nota do diário.
+description: Define o tipo que contém as informações de segundo plano para a observação do Diário.
 ms.assetid: 7ca32073-3f1b-4635-abe6-9dc8b72e9cee
-title: Tipo de plano de fundo complexo
+title: Tipo complexo BackgroundType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: fde3b828d7079549042adeb4e23c943b583d4b9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56668d90713a1b925a3ce221a34254760cbdfc3492d427ecaaac229535f309e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093140"
 ---
-# <a name="backgroundtype-complex-type"></a>Tipo de plano de fundo complexo
+# <a name="backgroundtype-complex-type"></a>Tipo complexo BackgroundType
 
-Define o tipo que contém as informações de plano de fundo da nota do diário.
+Define o tipo que contém as informações de segundo plano para a observação do Diário.
 
 ``` syntax
 <xs:complexType name="BackgroundType" />
@@ -33,7 +33,7 @@ Define o tipo que contém as informações de plano de fundo da nota do diário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

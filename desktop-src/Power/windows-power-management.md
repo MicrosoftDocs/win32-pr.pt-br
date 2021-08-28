@@ -1,25 +1,25 @@
 ---
-description: O gerenciamento de energia do Windows torna os computadores instantaneamente acessíveis aos usuários no toque de um botão ou chave.
+description: Windows gerenciamento de energia torna os computadores acessíveis instantaneamente para os usuários no toque de um botão ou chave.
 ms.assetid: 388dadb9-b722-43f8-ab2b-a9bbd96600a3
-title: Gerenciamento de energia do Windows
+title: Windows Gerenciamento de energia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8abb3a040f8da8e2deb242a2aa607a9448d31c09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7335b521b22b762468d2b542ea3c4fdbfcacb798860d4997f4a512d8135bcf46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032716"
 ---
-# <a name="windows-power-management"></a>Gerenciamento de energia do Windows
+# <a name="windows-power-management"></a>Windows Gerenciamento de energia
 
-O gerenciamento de energia do Windows torna os computadores instantaneamente acessíveis aos usuários no toque de um botão ou chave. Ele também garante que todos os elementos do sistema — aplicativos, dispositivos e interface do usuário — possam aproveitar os vastos aprimoramentos na tecnologia e nos recursos de gerenciamento de energia.
+Windows gerenciamento de energia torna os computadores acessíveis instantaneamente para os usuários no toque de um botão ou chave. Ele também garante que todos os elementos do sistema — aplicativos, dispositivos e interface do usuário — possam aproveitar os vastos aprimoramentos na tecnologia e nos recursos de gerenciamento de energia.
 
-O sistema operacional Windows usa o hardware de gerenciamento de energia para colocar o computador em um *estado de suspensão* de baixa energia em vez de desligar completamente, para que o sistema possa retomar rapidamente o trabalho. O sistema operacional entrará automaticamente no estado de suspensão quando o computador estiver ocioso ou quando o usuário pressionar um botão para indicar que a sessão de trabalho atual está acima. Para o usuário, o sistema parece estar desativado. Enquanto estiver no estado de suspensão, o processador do computador não está executando o código e nenhum trabalho está sendo realizado para o usuário. No entanto, os eventos no sistema de dispositivos de hardware e o relógio em tempo real podem ser habilitados para fazer com que o sistema saia do estado de suspensão (ou seja, "acordar") e retorne rapidamente ao estado de trabalho.
+o sistema operacional Windows usa hardware de gerenciamento de energia para colocar o computador em um estado de *suspensão* de baixa energia em vez de desligar completamente, para que o sistema possa retomar rapidamente o trabalho. O sistema operacional entrará automaticamente no estado de suspensão quando o computador estiver ocioso ou quando o usuário pressionar um botão para indicar que a sessão de trabalho atual está acima. Para o usuário, o sistema parece estar desativado. Enquanto estiver no estado de suspensão, o processador do computador não está executando o código e nenhum trabalho está sendo realizado para o usuário. No entanto, os eventos no sistema de dispositivos de hardware e o relógio em tempo real podem ser habilitados para fazer com que o sistema saia do estado de suspensão (ou seja, "acordar") e retorne rapidamente ao estado de trabalho.
 
 Quando o computador está no estado de suspensão, o hardware do computador, o sistema e os aplicativos em execução no computador devem ser capazes de responder imediatamente ao comutador de energia, eventos de comunicação e outras ações. Se todos os aplicativos manipulam as transições de estado de energia normalmente, o usuário vai perceber um sistema mais elegante e integrado. Os aplicativos que não tratam essas transições podem falhar quando a energia é desligada e depois, devido à perda de dados ou uma dependência em um dispositivo que pode ter sido removido.
 
-Estes são os benefícios do gerenciamento de energia do Windows:
+veja a seguir os benefícios do gerenciamento de energia do Windows:
 
 -   Elimina atrasos de inicialização e desligamento. O computador não precisa executar uma inicialização completa do sistema ao sair do estado de suspensão ou um desligamento completo do sistema quando o usuário inicia o estado de suspensão.
 -   Permite que tarefas automatizadas sejam executadas enquanto o computador estiver no estado de suspensão. O Agendador de Tarefas permite que o usuário agende aplicativos para execução; os eventos agendados podem ser executados mesmo quando o sistema está no estado de suspensão. O Agendador de Tarefas usa [temporizadores de espera](/windows/desktop/Sync/waitable-timer-objects) para garantir que o sistema esteja pronto quando o aplicativo estiver agendado para execução. Para obter mais informações, consulte o arquivo de ajuda incluído no Agendador de Tarefas.

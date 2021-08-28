@@ -1,19 +1,19 @@
 ---
 title: Renderizar usando um renderizador de texto personalizado
-description: Um layout de texto DirectWrite \ 160; pode ser desenhado por um renderizador de texto personalizado derivado de IDWriteTextRenderer.
+description: um layout de texto DirectWrite \ 160; pode ser desenhado por um renderizador de texto personalizado derivado de IDWriteTextRenderer.
 ms.assetid: a5b09733-24b2-408e-a1f9-cf7ad20c5c63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17cda56fc5cc38a62e48a2f62066edfec2327e9e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c6f8e08bb8af3ce7fa0ae4d423103feb597e17cf46ab53b42903fad143c675db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902866"
 ---
 # <a name="render-using-a-custom-text-renderer"></a>Renderizar usando um renderizador de texto personalizado
 
-Um [](direct-write-portal.md) [**layout de texto**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) DirectWrite pode ser desenhado por um renderizador de texto personalizado derivado de [**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer). Um processador personalizado é necessário para aproveitar alguns recursos avançados do DirectWrite, como renderização em um bitmap ou superfície GDI, objetos embutidos e efeitos de desenho de cliente. Este tutorial descreve os métodos de **IDWriteTextRenderer** e fornece uma implementação de exemplo que usa [Direct2D](../direct2d/direct2d-portal.md) para renderizar texto com um preenchimento de bitmap.
+um [](direct-write-portal.md) [**layout de texto**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) DirectWrite pode ser desenhado por um renderizador de texto personalizado derivado de [**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer). um processador personalizado é necessário para aproveitar alguns recursos avançados do DirectWrite, como renderização em um bitmap ou superfície GDI, objetos embutidos e efeitos de desenho de cliente. este tutorial descreve os métodos de **IDWriteTextRenderer** e fornece uma implementação de exemplo que usa [Direct2D](../direct2d/direct2d-portal.md) para processar texto com um preenchimento de bitmap.
 
 Este tutorial contém as seguintes partes:
 
@@ -30,11 +30,11 @@ Este tutorial contém as seguintes partes:
 
 Seu renderizador de texto personalizado deve implementar os métodos herdados de IUnknown, além dos métodos listados na página de referência do [**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) e abaixo.
 
-Para obter o código-fonte completo do renderizador de texto personalizado, consulte os arquivos CustomTextRenderer. cpp e CustomTextRenderer. h do [exemplo de Olá, mundo de DirectWrite](/samples/browse/?redirectedfrom=MSDN-samples).
+para obter o código-fonte completo do renderizador de texto personalizado, consulte os arquivos CustomTextRenderer. cpp e CustomTextRenderer. h do [exemplo de DirectWrite Olá, Mundo](/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="the-constructor"></a>O Construtor
 
-Seu renderizador de texto personalizado precisará de um construtor. Este exemplo usa pincéis sólidos e de [Direct2D](../direct2d/direct2d-portal.md) de bitmap para renderizar o texto.
+Seu renderizador de texto personalizado precisará de um construtor. este exemplo usa pincéis sólidos e de [Direct2D](../direct2d/direct2d-portal.md) de bitmap para renderizar o texto.
 
 Por isso, o construtor usa os parâmetros encontrados na tabela abaixo com descrições.
 
@@ -42,14 +42,14 @@ Por isso, o construtor usa os parâmetros encontrados na tabela abaixo com descr
 
 | Parâmetro       | Descrição                                                                                                                                                                                                                                 |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *pD2DFactory*   | Um ponteiro para um objeto [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) que será usado para criar qualquer recurso do Direct2D que seja necessário.                                                                                                        |
+| *pD2DFactory*   | um ponteiro para um objeto [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) que será usado para criar quaisquer Direct2D recursos necessários.                                                                                                        |
 | *pRT*           | Um ponteiro para o objeto [**ID2D1HwndRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) para o qual o texto será renderizado. |
 | *pOutlineBrush* | Um ponteiro para o [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) que será usado para desenhar o contorno do texto                                                                                                                     |
 | *pFillBrush*    | Um ponteiro para o [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) que será usado para preencher o texto.                                                                                                                                      |
 
 
 
- 
+ 
 
 Eles serão armazenados pelo construtor, conforme mostrado no código a seguir.
 
@@ -81,7 +81,7 @@ pFillBrush_(pFillBrush)
 
 O método [**DrawGlyphRun**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun) é o principal método de retorno de chamada do processador de texto. É passada uma execução de glifos a serem renderizados, além de informações como a origem da linha de base e o modo de medição. Ele também passa um objeto de efeito de desenho de cliente para ser aplicado à execução de glifo. Para obter mais informações, consulte o tópico [como adicionar efeitos de desenho de cliente a um layout de texto](how-to-add-custom-drawing-efffects-to-a-text-layout.md) .
 
-Essa implementação de processador de texto renderiza as execuções de glifos convertendo-as em geometrias de [Direct2D](rendering-by-using-direct2d.md) e, em seguida, desenhando e preenchendo as geometria Isso consiste nas etapas a seguir.
+essa implementação de processador de texto processa as execuções de glifos convertendo-as para [Direct2D](rendering-by-using-direct2d.md) geometrias e, em seguida, desenhar e preencher as geometrias. Isso consiste nas etapas a seguir.
 
 1.  Crie um objeto [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) e, em seguida, recupere o objeto [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) usando o método [**ID2D1PathGeometry:: Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) .
 
@@ -170,7 +170,7 @@ Essa implementação de processador de texto renderiza as execuções de glifos 
 
     
 
-6.  Por fim, desenhe o contorno da geometria transformada e preencha-a usando os métodos [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e os pincéis de [Direct2D](../direct2d/direct2d-portal.md) armazenados como variáveis de membro.
+6.  por fim, desenhe o contorno da geometria transformada e preencha-a usando os métodos [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e os pincéis de [Direct2D](../direct2d/direct2d-portal.md) armazenados como variáveis de membro.
 
     ```C++
         // Draw the outline of the glyph run
@@ -202,7 +202,7 @@ Essa implementação de processador de texto renderiza as execuções de glifos 
 
 [**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) também tem retornos de chamada para desenhar o sublinhado e tachado. Este exemplo desenha um retângulo simples para um sublinhado ou tachado, mas outras formas podem ser desenhadas.
 
-Desenhar um sublinhado usando [Direct2D](../direct2d/direct2d-portal.md) consiste nas etapas a seguir.
+desenhar um sublinhado usando [Direct2D](../direct2d/direct2d-portal.md) consiste nas etapas a seguir.
 
 1.  Primeiro, crie uma estrutura [**d2d1 \_ Rect \_ F**](../direct2d/d2d1-rect-f.md) do tamanho e da forma do sublinhado. A [**estrutura \_ sublinhada DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_underline) que é passada para o método de retorno de chamada [**DrawUnderline**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawunderline) fornece o deslocamento, a largura e a espessura do sublinhado.
 
@@ -252,7 +252,7 @@ Desenhar um sublinhado usando [Direct2D](../direct2d/direct2d-portal.md) consist
 
     
 
-4.  Por fim, desenhe o contorno da geometria transformada e preencha-a usando os métodos [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e os pincéis de [Direct2D](../direct2d/direct2d-portal.md) armazenados como variáveis de membro.
+4.  por fim, desenhe o contorno da geometria transformada e preencha-a usando os métodos [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) e [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e os pincéis de [Direct2D](../direct2d/direct2d-portal.md) armazenados como variáveis de membro.
 
     ```C++
         // Draw the outline of the glyph run
@@ -296,7 +296,7 @@ Esse método é chamado para determinar se o ajuste de pixel está desabilitado.
 
 ### <a name="getcurrenttransform"></a>GetCurrentTransform()
 
-Este exemplo é renderizado para um destino de renderização Direct2D, portanto, encaminhe a transformação do destino render usando [**ID2D1RenderTarget:: GetTransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-gettransform).
+este exemplo é renderizado para um destino de renderização Direct2D, portanto, encaminhe a transformação do destino de renderização usando [**ID2D1RenderTarget:: gettransform**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-gettransform).
 
 
 ```C++
@@ -361,6 +361,6 @@ hr = pTextLayout_->Draw(
 
 O método [**RAW IDWriteTextLayout::D**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-draw) chama os métodos do retorno de chamada do processador personalizado fornecido por você. Os métodos [**DrawGlyphRun**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun), [**DrawUnderline**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawunderline), [**DrawInlineObject**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawinlineobject)e [**DrawStrikethrough**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawstrikethrough) descritos acima executam as funções de desenho.
 
- 
+ 
 
- 
+ 

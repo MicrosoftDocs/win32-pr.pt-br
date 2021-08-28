@@ -4,12 +4,12 @@ description: Propriedade Connected
 ms.assetid: 61b7f550-d8d6-4719-a0d4-0bf3a8cf096c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6af3a44e97236060733adc55ec6e44eddd0b1d8879250b2a28b54c0bca384cac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d19326f7770bbd4a42f6ff66a4517cd6151f3c54
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726086"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884929"
 ---
 # <a name="connected-property"></a>Propriedade Connected
 
@@ -43,7 +43,7 @@ Retorna ou define se o controle atual está conectado ao servidor do Microsoft A
 
 ## <a name="remarks"></a>Comentários
 
-Em muitas situações, especificar o controle cria automaticamente uma conexão com o servidor do Microsoft Agent. Por exemplo, especificar o CLSID do controle do Microsoft Agent na marca em uma página da Web abre automaticamente uma conexão de servidor e sair da página <OBJECT> fecha a conexão. Da mesma forma, para Visual Basic ou outros idiomas que permitem que você solte um controle em um formulário, a execução do programa abre automaticamente uma conexão e a saída do programa fecha a conexão. Se o servidor não estiver em execução no momento, ele será iniciado automaticamente.
+Em muitas situações, especificar o controle cria automaticamente uma conexão com o servidor do Microsoft Agent. Por exemplo, especificar o CLSID do controle do Microsoft Agent na marca OBJECT em uma página da Web abre automaticamente uma conexão de servidor e sair da página &lt; &gt; fecha a conexão. Da mesma forma, para Visual Basic ou outros idiomas que permitem que você solte um controle em um formulário, a execução do programa abre automaticamente uma conexão e a saída do programa fecha a conexão. Se o servidor não estiver em execução no momento, ele será iniciado automaticamente.
 
 No entanto, se você quiser criar um controle do Agent em tempo de executar, talvez também seja necessário abrir explicitamente uma nova conexão com o servidor usando a **propriedade Connected.** Por exemplo, no Visual Basic você pode criar um objeto ActiveX em tempo de executar usando a instrução Set com a palavra-chave **New** (ou função CreateObject). Embora isso crie o objeto , ele pode não criar a conexão com o servidor. Você pode usar a **propriedade Connected** antes de qualquer código que chama a interface de programação do Microsoft Agent, conforme mostrado no exemplo a seguir:
 
@@ -120,7 +120,7 @@ Você pode fechar sua conexão com o servidor liberando todas as referências cr
 
 
 > [!Note]  
-> Não é possível fechar sua conexão com o servidor liberando referências em que o componente foi adicionado. Por exemplo, você não pode fechar sua conexão com o servidor em páginas da Web em que você usa a marca para declarar o controle ou em um aplicativo Visual Basic em que você solta o controle em <OBJECT> um formulário. Ao liberar todas as referências do Agent reduzirá o conjunto de trabalho do Agent, a conexão permanecerá até que você navegue até a próxima página ou saia do aplicativo.
+> Não é possível fechar sua conexão com o servidor liberando referências em que o componente foi adicionado. Por exemplo, você não pode fechar sua conexão com o servidor em páginas da Web em que você usa a marca OBJECT para declarar o controle ou em um aplicativo Visual Basic em que você solta o controle em &lt; &gt; um formulário. Ao liberar todas as referências do Agent reduzirá o conjunto de trabalho do Agent, a conexão permanecerá até que você navegue até a próxima página ou saia do aplicativo.
 
  
 

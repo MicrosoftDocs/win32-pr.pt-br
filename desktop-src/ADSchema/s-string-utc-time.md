@@ -1,10 +1,10 @@
 ---
-title: Sintaxe da cadeia de caracteres (UTC-time)
-description: Um formato de cadeia de caracteres de tempo definido pelos padrões ASN. 1. | Sintaxe da cadeia de caracteres (UTC-time)
+title: Sintaxe string(UTC-Time)
+description: Um formato de cadeia de caracteres de tempo definido pelos padrões ASN.1. | Sintaxe string(UTC-Time)
 ms.assetid: 0fd52c59-a940-4d61-a16b-cd1853f5c348
 ms.tgt_platform: multiple
 keywords:
-- Cadeia de caracteres (UTC-time) esquema de sintaxe do AD
+- Esquema do AD de sintaxe string(UTC-Time)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b68afe7d967b1967635b0e49bd84878fa02e008
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 39831dd82addf51687ac13f2e3af077c1f1c656da2ae0c202bca79969aaf75ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579946"
 ---
-# <a name="stringutc-time-syntax"></a>Sintaxe da cadeia de caracteres (UTC-time)
+# <a name="stringutc-time-syntax"></a>Sintaxe string(UTC-Time)
 
-Um formato de cadeia de caracteres de tempo definido pelos padrões ASN. 1. Para obter mais informações, consulte ISO 8601 e X680. Use essa sintaxe para armazenar valores de tempo no formato UTC-Time.
+Um formato de cadeia de caracteres de tempo definido pelos padrões ASN.1. Para obter mais informações, consulte ISO 8601 e X680. Use essa sintaxe para armazenar valores de tempo UTC-Time formato.
 
 
 
 | Entrada | Valor |
 |--------------|----------------------------------------------------------------------------|
-| Nome         | Cadeia de caracteres (UTC-time)                                                           |
+| Nome         | String(UTC-Time)                                                           |
 | ID da sintaxe    | 2.5.5.11                                                                   |
-| ID DO OM        | 23                                                                         |
-| Tipo de MAPI    | SYSTIME                                                                    |
-| Tipo de ADS     | ADSTYPE \_ \_ hora UTC                                                         |
-| Tipo de variante | Data de VT \_                                                                   |
-| Tipo SDS     | [System.DateTime](/dotnet/api/system.datetime) |
+| OM ID        | 23                                                                         |
+| Tipo MAPI    | SYSTIME                                                                    |
+| Tipo ADS     | HORA \_ UTC ADSTYPE \_                                                         |
+| Tipo de variante | DATA \_ DA VT                                                                   |
+| Tipo de SDS     | [System.DateTime](/dotnet/api/system.datetime) |
 
 
 

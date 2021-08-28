@@ -1,10 +1,10 @@
 ---
-title: Refresh-Group-cache estendido à direita
-description: Isso não é para o logon do GC. Nenhum logon do GC depende de associações de grupo de cache e esse direito de acesso de controle é usado para conceder direitos de permissão aos administradores e operadores para causar uma atualização imediata do cache, contatando um GC disponível.
+title: Direito estendido Refresh-Group-Cache
+description: Isso é para nenhum logon do GC. Nenhum logon do GC se baseia em associações de grupo de cache, e esse direito de acesso de controle é usado para conceder direitos de permissão a administradores e operadores para causar uma atualização imediata do cache, contatando um GC disponível.
 ms.assetid: 1db49a92-ccf8-4087-ac79-f4c1bcea6aa4
 ms.tgt_platform: multiple
 keywords:
-- Refresh-Group-cache-esquema do AD estendido
+- Refresh-Group-Cache estendido esquema do AD direito
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb576b5ef2310bceedb632a3b1ab8453b4d435e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b3a65ef0b8b9dde4735d8b2eacffb3aa381e55c2330b9b5776a3dc22c3a7570
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531376"
 ---
-# <a name="refresh-group-cache-extended-right"></a>Refresh-Group-cache estendido à direita
+# <a name="refresh-group-cache-extended-right"></a>Direito estendido Refresh-Group-Cache
 
-Isso não é para o logon do GC. Nenhum logon do GC depende de associações de grupo de cache e esse direito de acesso de controle é usado para conceder direitos de permissão aos administradores e operadores para causar uma atualização imediata do cache, contatando um GC disponível.
+Isso é para nenhum logon do GC. Nenhum logon do GC se baseia em associações de grupo de cache, e esse direito de acesso de controle é usado para conceder direitos de permissão a administradores e operadores para causar uma atualização imediata do cache, contatando um GC disponível.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Atualizar-grupo-cache                  |
-| Display-Name | Atualizar cache do grupo para logons       |
-| GUID de direitos  | 9432c620-033c-4db7-8b58-14ef6d0bf477 |
+| CN           | Refresh-Group-Cache                  |
+| Display-Name | Atualizar cache de grupo para logons       |
+| RIGHTS-GUID  | 9432c620-033c-4db7-8b58-14ef6d0bf477 |
 
 
 
@@ -49,7 +49,7 @@ Isso não é para o logon do GC. Nenhum logon do GC depende de associações de 
 | Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localização-exibição-ID | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -60,7 +60,7 @@ Isso não é para o logon do GC. Nenhum logon do GC depende de associações de 
 | Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localização-exibição-ID | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -71,7 +71,7 @@ Isso não é para o logon do GC. Nenhum logon do GC depende de associações de 
 | Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localização-exibição-ID | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -82,7 +82,7 @@ Isso não é para o logon do GC. Nenhum logon do GC depende de associações de 
 | Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localização-exibição-ID | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -93,7 +93,7 @@ Isso não é para o logon do GC. Nenhum logon do GC depende de associações de 
 | Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localização-exibição-ID | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 

@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. fullScreen
 description: A propriedade fullScreen Obtém ou define um valor que indica se o conteúdo do vídeo é reproduzido no modo de tela inteira.
 ms.assetid: 6c48a54a-e0f1-4bf5-8a53-7ccc78fc76ad
 keywords:
-- Propriedade fullScreen Windows Media Player
-- Propriedade fullScreen Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade fullScreen
+- Windows Media Player da propriedade fullScreen
+- propriedade fullScreen Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade fullScreen
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23bfb1a2c67ecfa3ba7cced6f0ccb564bb387b52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e128d8c7e0cf49d3feaae723a7fb5a51740cda47e5016df6290b4852c20ec27b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902616"
 ---
 # <a name="axwindowsmediaplayerfullscreen-property"></a>Propriedade AxWindowsMediaPlayer. fullScreen
 
 A propriedade fullScreen Obtém ou define um valor que indica se o conteúdo do vídeo é reproduzido no modo de tela inteira.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -50,20 +50,20 @@ Um valor System. Boolean que indica se o conteúdo é reproduzido no modo de tel
 
 ## <a name="remarks"></a>Comentários
 
-Para que o modo de tela inteira funcione corretamente ao inserir o controle do Windows Media Player, a área de exibição de vídeo deve ter uma altura e largura de pelo menos um pixel. Se **UIMODE** for definido como "mini" ou "Full", a altura do controle em si deverá ser 65 ou maior para acomodar a área de exibição do vídeo além da interface do usuário.
+para que o modo de tela inteira funcione corretamente ao inserir o controle de Windows Media Player, a área de exibição de vídeo deve ter uma altura e largura de pelo menos um pixel. Se **UIMODE** for definido como "mini" ou "Full", a altura do controle em si deverá ser 65 ou maior para acomodar a área de exibição do vídeo além da interface do usuário.
 
 Se **UIMODE** for definido como "invisível", a configuração dessa propriedade como true gerará um erro e não afetará o comportamento do controle.
 
-Durante a reprodução de tela inteira, o Windows Media Player oculta o cursor do mouse quando [enableContextMenu](axwmplib-axwindowsmediaplayer-enablecontextmenu--vb-and-c.md) é igual a false e **UIMODE** é igual a "None".
+durante a reprodução de tela inteira, Windows Media Player oculta o cursor do mouse quando [enableContextMenu](axwmplib-axwindowsmediaplayer-enablecontextmenu--vb-and-c.md) é igual a false e **uiMode** é igual a "none".
 
-Se **UIMODE** for definido como "Full" ou "mini", o Windows Media Player exibirá controles de transporte no modo de tela inteira quando o cursor do mouse se mover. Após um breve intervalo de sem movimento do mouse, os controles de transporte ficam ocultos. Se **UIMODE** for definido como "None", nenhum controle será exibido no modo de tela inteira.
+se **uiMode** for definido como "full" ou "mini", Windows Media Player exibirá controles de transporte no modo de tela inteira quando o cursor do mouse se mover. Após um breve intervalo de sem movimento do mouse, os controles de transporte ficam ocultos. Se **UIMODE** for definido como "None", nenhum controle será exibido no modo de tela inteira.
 
 > [!Note]  
-> A exibição de controles de transporte no modo de tela inteira requer o sistema operacional Windows XP.
+> a exibição de controles de transporte no modo de tela inteira requer o sistema operacional Windows XP.
 
  
 
-Se os controles de transporte não forem exibidos no modo de tela inteira, o Windows Media Player sairá automaticamente do modo de tela inteira quando a reprodução for interrompida.
+se os controles de transporte não forem exibidos no modo de tela inteira, Windows Media Player sairá automaticamente no modo de tela inteira quando a reprodução for interrompida.
 
 ## <a name="examples"></a>Exemplos
 

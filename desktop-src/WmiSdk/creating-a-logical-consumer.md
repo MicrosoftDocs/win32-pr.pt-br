@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Criando um consumidor lógico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dcbd62f2eee57a9e254d5700344d7b8da414469
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9514ce3f1c7982a96692dcdea62ec9bb92ebf99dd4c47cfe1a64b70257dcfc2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030656"
 ---
 # <a name="creating-a-logical-consumer"></a>Criando um consumidor lógico
 
-Um consumidor lógico é uma instância de uma classe de consumidor de evento permanente. A principal finalidade de um consumidor lógico é fornecer ao consumidor físico os parâmetros para as atividades que o consumidor físico realiza. Para obter mais informações, consulte [criando uma nova classe de consumidor de evento permanente](creating-a-new-permanent-event-consumer-class.md). O consumidor permanente deve ter o mesmo [**CreatorSID**](--eventconsumer.md) nas instâncias de consumidor, filtro e associação. Para obter mais informações, consulte [recebendo eventos com segurança](receiving-events-securely.md). Para obter um exemplo de como usar um consumidor lógico, consulte [executando um script com base em um evento](running-a-script-based-on-an-event.md), que mostra o uso da classe de consumidor padrão [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para configurar um consumidor permanente.
+Um consumidor lógico é uma instância de uma classe de consumidor de evento permanente. A principal finalidade de um consumidor lógico é fornecer ao consumidor físico os parâmetros para as atividades que o consumidor físico executa. Para obter mais informações, consulte [Criando uma nova classe de consumidor de evento permanente](creating-a-new-permanent-event-consumer-class.md). O consumidor permanente deve ter o mesmo [**CreatorSID**](--eventconsumer.md) nas instâncias de consumidor, filtro e associação. Para obter mais informações, consulte [Recebendo eventos com segurança.](receiving-events-securely.md) Para ver um exemplo de como usar um consumidor lógico, consulte Executando um [script](running-a-script-based-on-an-event.md)baseado em um evento , que mostra o uso da classe de consumidor [**padrão ActiveScriptEventConsumer**](activescripteventconsumer.md) para configurar um consumidor permanente.
 
 O procedimento a seguir descreve como criar um consumidor lógico.
 
@@ -45,7 +45,7 @@ instance of ActiveScriptEventConsumer as $CONSUMER
 };
 ```
 
-Depois de criar o consumidor lógico, você deve vincular cada filtro a um filtro de eventos para atribuir a ação a um evento específico. Para obter mais informações, consulte [criando um filtro de eventos](creating-an-event-filter.md).
+Depois de criar o consumidor lógico, você deve vincular cada filtro a um filtro de evento para atribuir a ação a um evento específico. Para obter mais informações, consulte [Criando um filtro de evento](creating-an-event-filter.md).
 
  
 

@@ -1,21 +1,21 @@
 - name: API do servidor HTTP
   href: http-api-start-page.md
   items:
-    - name: Sobre a API do servidor HTTP
+    - name: Sobre a API do Servidor HTTP
       href: about-http-server-api.md
       items:
-        - name: Recursos da API do servidor HTTP
+        - name: Recursos da API do Servidor HTTP
           href: http-server-api-features.md
-        - name: 'Recursos de HTTP versão 2,0'
+        - name: Recursos http versão 2.0
           href: http-version-2-0-features.md
-        - name: O que há de novo no Windows Server 2003 SP1
+        - name: Novidades do Windows Server 2003 SP1
           href: what-s-new-for-windows-server-2003-sp1.md
-        - name: 'O que há de novo para a API do servidor HTTP versão 2,0'
+        - name: Novidades da API do SERVIDOR HTTP versão 2.0
           href: what-s-new-for-http-version-2-0-api.md
-    - name: Usando a API do servidor HTTP
+    - name: Usando a API do Servidor HTTP
       href: using-http-server-api.md
       items:
-        - name: 'Usando a API do servidor HTTP versão 2,0'
+        - name: Usando a API do SERVIDOR HTTP versão 2.0
           href: using-the-http-server-version-2-0-api.md
           items:
             - name: Arquitetura
@@ -25,9 +25,9 @@
               items:
                 - name: Configuração da instalação
                   href: setup-configuration.md
-                - name: Configuração de Run-Time
+                - name: Run-Time configuração
                   href: run-time-configuration.md
-                - name: Criando e ligando a uma fila de solicitações
+                - name: Criando e vinculando a uma fila de solicitação
                   href: creating-and-binding-to-a-request-queue.md
                 - name: Solicitações de processamento
                   href: processing-requests.md
@@ -38,25 +38,25 @@
             - name: Isolamento do processo
               href: process-isolation.md
               items:
-                - name: Fila de solicitações nomeadas
+                - name: Fila de Solicitação Nomeada
                   href: named-request-queue.md
                   items:
                     - name: Configurando a fila de solicitações
                       href: configuring-the-request-queue.md
-                    - name: 'Início da demanda nas filas de solicitações da versão 2,0'
+                    - name: Início da demanda em filas de solicitação da versão 2.0
                       href: demand-start-on-version-2-0-request-queues.md
-            - name: Log de Server-Side
+            - name: Server-Side registro em log
               href: server-side-logging-in-http-version-2-0.md
               items:
-                - name: Configurando e habilitando o registro no lado do servidor
+                - name: Configurando e habilitando o log do lado do servidor
                   href: configuring-and-enabling-server-side-logging.md
-                - name: Log W3C
+                - name: Registro em log do W3C
                   href: w3c-logging.md
-                - name: Log do NCSA
+                - name: Registro em log do NCSA
                   href: ncsa-logging.md
                 - name: Log do IIS
                   href: iis-logging.md
-                - name: Log binário centralizado
+                - name: Registro em log binário centralizado
                   href: centralized-binary-logging.md
             - name: Autenticação
               href: authentication-in-http-version-2-0.md
@@ -118,35 +118,35 @@
               href: types-of-errors-logged-by-the-http-server-api.md
             - name: Log de erros no Windows Server 2003 SP1
               href: error-logging-in-windows-server-2003-sp1.md
-        - name: 'Reservas de namespace, registros e roteamento'
+        - name: 'Reservas, registros e roteamento do namespace'
           href: namespace-reservations-registrations-and-routing.md
           items:
-            - name: Acessando o armazenamento de reserva
+            - name: Acessando o Armazenamento de Reservas
               href: accessing-the-reservation-store.md
             - name: Roteamento de solicitações de entrada
               href: routing-incoming-requests.md
-            - name: Processando registros
+            - name: Processing Registrations
               href: processing-registrations.md
-            - name: Processando reservas
+            - name: Processing Reservations
               href: processing-reservations.md
               items:
                 - name: Adicionando uma reserva
                   href: adding-a-reservation.md
                 - name: Excluindo uma reserva
                   href: deleting-a-reservation.md
-        - name: HTTP.sys capacidade de gerenciamento no Windows Vista e no Windows Server 2008
+        - name: HTTP.sys capacidade de gerenciamento no Windows Vista e Windows Server 2008
           href: http-sys-manageability-in-windows-vista-and-windows-server-2008.md
           items:
-            - name: Cenários de gerenciamento de HTTP.sys
+            - name: HTTP.sys cenários de capacidade de gerenciamento
               href: http-sys-manageability-scenarios.md
               items:
-                - name: 'Cenário 1: exemplo de tempo limite HTTP usando o rastreamento ETW e comandos netsh'
+                - name: 'Cenário 1: Exemplo de tempo de tempo de HTTP usando o rastreamento ETW e comandos Netsh'
                   href: scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md
-                - name: 'Cenário 2: exemplo do analisador usando o rastreamento ETW'
+                - name: 'Cenário 2: Exemplo do analisador usando rastreamento ETW'
                   href: scenario-2--parser-example-using-etw-tracing.md
-                - name: 'Cenário 3: contadores de desempenho'
+                - name: 'Cenário 3: Contadores de desempenho'
                   href: scenario-3--performance-counters.md
-            - name: Comandos netsh para HTTP
+            - name: Comandos Netsh para HTTP
               href: netsh-commands-for-http.md
               items:
                 - name: add iplisten
@@ -183,15 +183,15 @@
                   href: show-urlacl.md
             - name: Legenda de formatação
               href: formatting-legend.md
-    - name: Referência de API do servidor HTTP
+    - name: Referência da API do Servidor HTTP
       href: http-server-api-reference.md
       items:
-        - name: 'Referência da API do servidor HTTP versão 1,0'
+        - name: Referência da API do Servidor HTTP versão 1.0
           href: http-server-api-version-1-0-reference.md
           items:
-            - name: 'Tipos de dados da API do servidor HTTP versão 1,0'
+            - name: Tipos de dados da API do Servidor HTTP versão 1.0
               href: http-server-api-version-1-0-data-types.md
-            - name: 'Funções da API do servidor HTTP versão 1,0'
+            - name: Funções da API do Servidor HTTP versão 1.0
               href: http-server-api-version-1-0-functions.md
               items:
                 - name: HttpAddFragmentToCache
@@ -322,7 +322,7 @@
                   href: /windows/win32/api/http/nf-http-http_not_equal_version
                 - name: HTTP_SET_VERSION
                   href: /windows/win32/api/http/nf-http-http_set_version
-            - name: 'Tipos de enumeração da API do servidor HTTP versão 1,0'
+            - name: Tipos de enumeração da VERSÃO 1.0 da API do Servidor HTTP
               href: http-server-api-version-1-0-enumeration-types.md
               items:
                 - name: HTTP_CACHE_POLICY_TYPE
@@ -337,12 +337,12 @@
                   href: /windows/win32/api/http/ne-http-http_service_config_query_type
                 - name: HTTP_VERB
                   href: /windows/win32/api/http/ne-http-http_verb
-        - name: 'Referência da API do servidor HTTP versão 2,0'
+        - name: Referência da API do Servidor HTTP versão 2.0
           href: http-server-api-version-2-0-reference.md
           items:
-            - name: 'Tipos de dados da API do servidor HTTP versão 2,0'
+            - name: Tipos de dados da API do Servidor HTTP versão 2.0
               href: http-server-api-version-2-0-data-types.md
-            - name: 'Funções da API do servidor HTTP versão 2,0'
+            - name: Funções da API do Servidor HTTP versão 2.0
               href: http-server-api-version-2-0-functions.md
               items:
                 - name: HttpAddUrlToUrlGroup
@@ -511,5 +511,5 @@
                   href: /windows/win32/api/http/ne-http-http_service_config_cache_key
                 - name: HTTP_SERVICE_CONFIG_TIMEOUT_KEY
                   href: /windows/win32/api/http/ne-http-http_service_config_timeout_key
-    - name: Aplicativo de exemplo do servidor HTTP
+    - name: Aplicativo de exemplo de servidor HTTP
       href: http-server-sample-application.md

@@ -4,12 +4,12 @@ ms.assetid: 800aa01b-6064-45df-a40e-6537819df4d7
 title: Política de metadados de foto System. Photo. DateTaken
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc1d3fb50a9a94e4bb13b35a0a5726572d78429f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 691476c704d3fdbc4ff5e01467031f2b41884ccb16be537904484a9d01c8fa18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087072"
 ---
 # <a name="systemphotodatetaken-photo-metadata-policy"></a>Política de metadados de foto System. Photo. DateTaken
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -119,11 +119,11 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 36867}            | ascii       |
-| 2     | /IFD/IPTC/Date criado              | Unicode     |
-| 3     | /IFD/XMP/XMP: CreateDate             | Unicode     |
-| 4     | /IFD/EXIF/{UShort = 36868}            | ascii       |
-| 5     | /IFD/IRB/8bimiptc/IPTC/Date criado | Unicode     |
+| 1     | /ifd/exif/{ushort=36867}            | ascii       |
+| 2     | /ifd/iptc/date criado              | Unicode     |
+| 3     | /ifd/xmp/xmp:CreateDate             | Unicode     |
+| 4     | /ifd/exif/{ushort=36868}            | ascii       |
+| 5     | /ifd/irb/8bimiptc/iptc/date criado | Unicode     |
 | 6     | /ifd/xmp/exif:DateTimeOriginal      | Unicode     |
 
 
@@ -136,30 +136,30 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                |
 |-------|-------------------------------------|
-| 1     | /IFD/EXIF/{UShort = 36867}            |
-| 2     | /IFD/EXIF/{UShort = 37521}            |
-| 3     | /IFD/EXIF/{UShort = 36868}            |
-| 4     | /IFD/EXIF/{UShort = 37522}            |
+| 1     | /ifd/exif/{ushort=36867}            |
+| 2     | /ifd/exif/{ushort=37521}            |
+| 3     | /ifd/exif/{ushort=36868}            |
+| 4     | /ifd/exif/{ushort=37522}            |
 | 5     | /ifd/xmp/exif:DateTimeOriginal      |
-| 6     | /IFD/XMP/XMP: CreateDate             |
-| 7     | /IFD/IPTC/Date criado              |
-| 8     | /IFD/IPTC/time criado              |
-| 9     | /IFD/IRB/8bimiptc/IPTC/Date criado |
-| 10    | /IFD/IRB/8bimiptc/IPTC/time criado |
+| 6     | /ifd/xmp/xmp:CreateDate             |
+| 7     | /ifd/iptc/date criado              |
+| 8     | /ifd/iptc/time criado              |
+| 9     | /ifd/irb/8bimiptc/iptc/date criado |
+| 10    | /ifd/irb/8bimiptc/iptc/time criado |
 
 
 
  
 
-### <a name="png-policy"></a>Política de PNG
+### <a name="png-policy"></a>Política PNG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /\[\*\]Texto/hora de criação | ascii       |
+| 1     | /\[\*\]tEXt/Hora de criação | ascii       |
 
 
 
@@ -171,7 +171,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 2     | /\[\*\]Texto/hora de criação | ascii       |
+| 2     | /\[\*\]tEXt/Hora de criação | ascii       |
 
 
 
@@ -183,7 +183,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 3     | /\[\*\]Texto/hora de criação |
+| 3     | /\[\*\]tEXt/Hora de criação |
 
 
 
@@ -195,7 +195,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. Photo. DateTaken](../properties/props-system-photo-datetaken.md)
+[System.Photo.DateTaken](../properties/props-system-photo-datetaken.md)
 </dt> </dl>
 
  

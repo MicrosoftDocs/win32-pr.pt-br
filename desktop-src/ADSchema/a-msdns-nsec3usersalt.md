@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DNS-NSEC3-User-Salt
-description: Um atributo que define uma cadeia de caracteres de Salt de NSEC3 especificada pelo usuário a ser usada ao assinar a zona DNS. Se estiver vazio, Salt aleatório será usado.
+title: Atributo ms-DNS-NSEC3-User-Salt
+description: Um atributo que define uma cadeia de caracteres de sal NSEC3 especificada pelo usuário a ser usada ao assinar a zona DNS. Se estiver vazio, o sal aleatório será usado.
 ms.assetid: b9829732-8a79-4f07-8644-9fe4ba05ba8f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DNS-NSEC3-User-Salt
-- msDN-NSEC3UserSalt atributo AD Schema
+- Esquema do AD do atributo ms-DNS-NSEC3-User-Salt
+- Esquema do AD do atributo msDNS-NSEC3UserSalt
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d28acb28dec95ef13afc37f9d7f26d713d5cf9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1dbd1725675487ae5a6812dd77c400745b6671de0ef7db360e1c1980dd25b1b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553016"
 ---
-# <a name="ms-dns-nsec3-user-salt-attribute"></a>atributo ms-DNS-NSEC3-User-Salt
+# <a name="ms-dns-nsec3-user-salt-attribute"></a>Atributo ms-DNS-NSEC3-User-Salt
 
-Um atributo que define uma cadeia de caracteres de Salt de NSEC3 especificada pelo usuário a ser usada ao assinar a zona DNS. Se estiver vazio, Salt aleatório será usado.
+Um atributo que define uma cadeia de caracteres de sal NSEC3 especificada pelo usuário a ser usada ao assinar a zona DNS. Se estiver vazio, o sal aleatório será usado.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DNS-NSEC3-User-Salt                      |
-| LDAP-Display-Name | msDNs-NSEC3UserSalt                         |
+| CN                | ms-DNS-NSEC3-User-Salt                      |
+| Ldap-Display-Name | msDNS-NSEC3UserSalt                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2148                     |
-| System-ID-GUID    | aff16770-9622-4fbc-a128-3088777605b9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | aff16770-9622-4fbc-a128-3088777605b9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,10 +53,10 @@ Um atributo que define uma cadeia de caracteres de Salt de NSEC3 especificada pe
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 510                                      |
 | Search-Flags           | 0x00000008                               |

@@ -3,7 +3,7 @@ title: Evento MediaError do objeto AxWindowsMediaPlayer
 description: O evento MediaError ocorre quando um objeto de mídia tem uma condição de erro.
 ms.assetid: a1fb3422-85c4-4856-951a-332517599984
 keywords:
-- Evento MediaError do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MediaError do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874b9297846a8f25f25c68545df234aa1be70594
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83dc6bceb188ff443bfdcab904242e91b30fba80c4bae4f03cfa388cf15642b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902606"
 ---
 # <a name="mediaerror-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaError do objeto AxWindowsMediaPlayer
 

@@ -3,7 +3,7 @@ title: Network. taxa de bits
 description: A propriedade taxa de bits recupera a taxa de bit atual que está sendo recebida.
 ms.assetid: e970a43a-1773-4dc0-ac2f-115f698bc1f4
 keywords:
-- Rede. taxa de bits Windows Media Player
+- Windows Media Player de rede. taxa de bits
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4373d667ea41d55b5b0e12f1a47289f15d7b115b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec142885bdd718903e956f8e86b59c3753cb024ecccc5efb2f8494797ea6a818
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901776"
 ---
 # <a name="networkbitrate"></a>Network. taxa de bits
 
@@ -39,7 +39,7 @@ Esse valor é uma combinação das taxas de bits dos fluxos de áudio e vídeo a
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. taxa **de bits para exibir** a tarifa de bit de mídia atual. As informações são exibidas em uma DIV HTML criada com ID = "BR". O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. taxa **de bits para exibir** a tarifa de bit de mídia atual. As informações são exibidas em uma DIV HTML criada com ID = "BR". O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

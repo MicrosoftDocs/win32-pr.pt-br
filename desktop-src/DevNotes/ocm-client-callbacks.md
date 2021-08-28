@@ -1,7 +1,7 @@
 ---
-description: Especifica as funções de retorno de chamada a serem usadas pelo Gerenciador de componentes opcional.
+description: Especifica as funções de retorno de chamada a serem usadas pelo gerenciador de componentes opcional.
 ms.assetid: 454cc07e-4a00-4c53-9759-47563a8ed62f
-title: Estrutura de OCM_CLIENT_CALLBACKS
+title: OCM_CLIENT_CALLBACKS estrutura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cc2c1d95e2b05de1ad7285e065e9742a24e0e5a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 453eeaa49a7211793503f39f0b050904bcf7de41a83e2b06dce647fb4177e41e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058866"
 ---
-# <a name="ocm_client_callbacks-structure"></a>\_Estrutura de \_ retornos de chamada do cliente OCM
+# <a name="ocm_client_callbacks-structure"></a>Estrutura OCM \_ CLIENT \_ CALLBACKS
 
-Especifica as funções de retorno de chamada a serem usadas pelo Gerenciador de componentes opcional.
+Especifica as funções de retorno de chamada a serem usadas pelo gerenciador de componentes opcional.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,35 +47,35 @@ typedef struct _OCM_CLIENT_CALLBACKS {
 **FillInSetupDataA**
 </dt> <dd>
 
-A função de retorno de chamada para preencher a estrutura de dados de instalação que fornece informações sobre o ambiente no qual o Gerenciador de OC está em execução.
+A função de retorno de chamada para preencher a estrutura de dados de instalação que fornece informações sobre o ambiente no qual o gerenciador de OC está em execução.
 
 </dd> <dt>
 
-**LogError**
+**Logerror**
 </dt> <dd>
 
-A função de retorno de chamada que registra quaisquer erros.
+A função de retorno de chamada que registra todos os erros.
 
 </dd> <dt>
 
-**Reboot**
+**SetReboot**
 </dt> <dd>
 
-A função de retorno de chamada que indica a necessidade de reinicializar.
+A função de retorno de chamada que indica a necessidade de reinicialização.
 
 </dd> <dt>
 
 **ShowHideWizardPage**
 </dt> <dd>
 
-A função de retorno de chamada que indica se o assistente deve ser mostrado ou ocultado. Isso só terá efeito se o mural for mostrado.
+A função de retorno de chamada que indica se é preciso mostrar ou ocultar o assistente. Isso só terá efeito se o quadro for mostrado.
 
 </dd> <dt>
 
-**BillboardProgressCallback**
+**OutdoorProgressCallback**
 </dt> <dd>
 
-A função de retorno de chamada que chama os comentários de progresso para o mural.
+A função de retorno de chamada que chama os comentários de progresso para o mamão.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ A função de retorno de chamada que define os dados de desempenho.
 
 ## <a name="remarks"></a>Comentários
 
-As funções de retorno de chamada são declaradas da seguinte maneira.
+As funções de retorno de chamada são declaradas da seguinte forma.
 
 ``` syntax
 typedef

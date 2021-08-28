@@ -1,37 +1,37 @@
 ---
 title: Como processar notificações do ComboBoxEx
-description: Este tópico demonstra como processar mensagens de notificação ComboBoxEx.
+description: Este tópico demonstra como processar mensagens de notificação do ComboBoxEx.
 ms.assetid: 375634BC-CDD6-4D72-A41E-FCBFCBFE7F03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a9787e22aa01d51478ca55f0dde5d7ac944decb
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: a4ec73c31020283afe5876567a57fc1fbd8a23cee123e9dc417c14c57a86709a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103917825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575486"
 ---
 # <a name="how-to-process-comboboxex-notifications"></a>Como processar notificações do ComboBoxEx
 
-Este tópico demonstra como processar mensagens de notificação ComboBoxEx.
+Este tópico demonstra como processar mensagens de notificação do ComboBoxEx.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Um controle ComboBoxEx notifica sua janela pai de eventos enviando mensagens de [**\_ notificação do WM**](wm-notify.md) . Ele também passa as mensagens de notificação do [**\_ comando do WM**](/windows/desktop/menurc/wm-command) recebidas da caixa de combinação contida nela para a janela pai a ser processada. Portanto, seu aplicativo deve estar preparado para processar mensagens de **\_ notificação do WM** nas mensagens **de \_ comando** ComboBoxEx e WM que são encaminhadas do controle da caixa de combinação filho ComboBoxEx.
+Um controle ComboBoxEx notifica sua janela pai de eventos enviando [**mensagens WM \_ NOTIFY.**](wm-notify.md) Ele também passa as mensagens de notificação [**\_ WM COMMAND**](/windows/desktop/menurc/wm-command) que recebe da caixa de combinação contida dentro dela para a janela pai a ser processada. Portanto, seu aplicativo deve estar preparado para processar mensagens **WM \_ NOTIFY** das mensagens ComboBoxEx e **WM \_ COMMAND** que são encaminhadas do controle de caixa de combinação filho ComboBoxEx.
 
-O exemplo nesta seção manipula as mensagens de [**\_ comando**](/windows/desktop/menurc/wm-command) do WM [**\_ Notify**](wm-notify.md) e do WM de um controle ComboBoxEx chamando uma função definida pelo aplicativo correspondente para processar essas mensagens.
+O exemplo nesta seção trata as mensagens [**WM \_ NOTIFY**](wm-notify.md) e [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) de um controle ComboBoxEx chamando uma função definida pelo aplicativo correspondente para processar essas mensagens.
 
 ## <a name="complete-example"></a>Exemplo completo
 
@@ -82,7 +82,7 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 [Usando controles ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
 </dt> <dt>
 
-[ComboBoxEx](comboboxex-control-reference.md)
+[Comboboxex](comboboxex-control-reference.md)
 </dt> </dl>
 
  

@@ -4,23 +4,23 @@ description: Os exemplos a seguir mostram como chamar a interface COM do BITS a 
 ms.assetid: 1058970C-CE81-47D6-950E-3B6289E956B6
 ms.topic: article
 ms.date: 11/13/2018
-ms.openlocfilehash: c359bafe4f1937d49a6ec21896af32606a2ae894
-ms.sourcegitcommit: 00e0a8e56d28c4c720b97f0cf424c29f547460d7
+ms.openlocfilehash: 00f7d6287d86dd1816d7e4b0a7c6e18c9ae4916c5c85b01d0280758cf9d00b5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "103638929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529146"
 ---
 # <a name="calling-into-bits-from-net-and-c-using-reference-dlls"></a>Chamando em BITS do .NET e do C# usando DLLs de referência
 
-Uma maneira de chamar as classes COM de um programa .NET é criar um arquivo DLL de referência começando com os arquivos de [IDL](/windows/desktop/Midl/midl-start-page) do bits (linguagem de definição de interface) no SDK do Windows, usando as ferramentas [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) e [Tlbimp](/dotnet/framework/tools/tlbimp-exe-type-library-importer) . A DLL de referência é um conjunto de wrappers de classe para as classes COM de BITS; Você pode usar as classes de wrapper diretamente do .NET.
+uma maneira de chamar as classes com de um programa .net é criar um arquivo DLL de referência começando com os arquivos de [IDL](/windows/desktop/Midl/midl-start-page) do bits (linguagem de definição de Interface) no SDK do Windows, usando as ferramentas [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) e [TLBIMP](/dotnet/framework/tools/tlbimp-exe-type-library-importer) . A DLL de referência é um conjunto de wrappers de classe para as classes COM de BITS; Você pode usar as classes de wrapper diretamente do .NET.
 
-Uma alternativa ao uso de DLLs de referência criadas automaticamente é usar um wrapper de BITS .NET de terceiros do [GitHub](https://github.com/) e do [NuGet](https://www.nuget.org/). Esses wrappers geralmente têm um estilo de programação .NET mais natural, mas podem atrasar por trás das alterações e atualizações nas interfaces do BITS.
+uma alternativa ao uso de DLLs de referência criadas automaticamente é usar um wrapper de BITS .net de terceiros de [GitHub](https://github.com/) e [NuGet](https://www.nuget.org/). Esses wrappers geralmente têm um estilo de programação .NET mais natural, mas podem atrasar por trás das alterações e atualizações nas interfaces do BITS.
 
 ## <a name="creating-the-reference-dlls"></a>Criando DLLs de referência
 ### <a name="bits-idl-files"></a>Arquivos IDL de BITS
 
-Você começará com o conjunto de arquivos IDL do BITS. Esses são arquivos que definem totalmente a interface COM do BITS. Os arquivos estão localizados no diretório de **kits do Windows** e são chamados bits *version*. idl (por exemplo, bits10_2. idl), exceto para o arquivo da versão 1,0, que é apenas bits. idl. À medida que novas versões de BITS são criadas, novos arquivos IDL de BITS também são criados.
+Você começará com o conjunto de arquivos IDL do BITS. Esses são arquivos que definem totalmente a interface COM do BITS. os arquivos estão localizados no diretório do **Windows Kits** e são chamados bits *versão*. idl (por exemplo, bits10_2. idl), exceto para o arquivo da versão 1,0, que é apenas bits. idl. À medida que novas versões de BITS são criadas, novos arquivos IDL de BITS também são criados.
 
 Talvez você também queira modificar uma cópia dos arquivos IDL do BITS do SDK para usar os recursos do BITS que não são convertidos automaticamente em equivalentes do .NET. As alterações de arquivo IDL possíveis serão discutidas posteriormente.
 
@@ -31,7 +31,7 @@ Para cada versão do BITS que você deseja direcionar em seu programa, você pre
 
 ### <a name="midl-and-tlbimp-utilities"></a>Utilitários MIDL e TLBIMP
 
-O utilitário [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) (linguagem IDL da Microsoft) converte os arquivos IDL que descrevem a interface com do bits em um arquivo TLB (biblioteca de tipos). A ferramenta MIDL depende do utilitário CL (pré-processador de C) para ler corretamente o arquivo de idioma IDL. O utilitário CL faz parte do Visual Studio e é instalado quando você inclui recursos do C/C++ na instalação do Visual Studio.
+O utilitário [MIDL](/windows/desktop/Midl/using-the-midl-compiler-2) (linguagem IDL da Microsoft) converte os arquivos IDL que descrevem a interface com do bits em um arquivo TLB (biblioteca de tipos). A ferramenta MIDL depende do utilitário CL (pré-processador de C) para ler corretamente o arquivo de idioma IDL. o utilitário CL é parte do Visual Studio e é instalado quando você inclui recursos do C/C++ na instalação do Visual Studio.
 
 Normalmente, o utilitário MIDL criará um conjunto de arquivos C e H (código de linguagem C e cabeçalho de linguagem C). Você pode suprimir esses arquivos extras enviando a saída para o dispositivo NUL:. Por exemplo, definir o/dlldata nomedearquivo NUL: switch irá suprimir a criação de um arquivo dlldata. c. Os comandos de exemplo abaixo mostram quais opções devem ser definidas como NUL:.
 
@@ -40,11 +40,11 @@ O utilitário [Tlbimp](/dotnet/framework/tools/tlbimp-exe-type-library-importer)
 
 ### <a name="example-commands-for-midl-and-tlbimp"></a>Comandos de exemplo para MIDL e TLBIMP
 
-Este é um exemplo do conjunto completo de comandos para gerar um conjunto de arquivos de referência. Talvez seja necessário modificar os comandos com base em seu Visual Studio e SDK do Windows instalação e com base nos recursos do BITS e nas versões do sistema operacional que você está direcionando. 
+Este é um exemplo do conjunto completo de comandos para gerar um conjunto de arquivos de referência. talvez seja necessário modificar os comandos com base em seu Visual Studio e SDK do Windows instalação e com base nos recursos do BITS e nas versões do sistema operacional que você está direcionando. 
 
 O exemplo cria um diretório para posicionar os arquivos DLL de referência e cria uma variável de ambiente BITSTEMP para apontar para esse diretório. 
 
-Os comandos de exemplo executam o arquivo vsdevcmd.bat que é criado pelo instalador do Visual Studio. Esse arquivo BAT irá configurar seus caminhos e algumas variáveis de ambiente para que os comandos MIDL e TLBIMP sejam executados. Ele também configura as variáveis WindowsSdkDir e WindowsSDKLibVersion para apontar para os diretórios de SDK do Windows mais recentes.
+os comandos de exemplo executam o arquivo vsdevcmd.bat que é criado pelo instalador do Visual Studio. Esse arquivo BAT irá configurar seus caminhos e algumas variáveis de ambiente para que os comandos MIDL e TLBIMP sejam executados. ele também configura as variáveis WindowsSdkDir e WindowsSDKLibVersion para apontar para os diretórios de SDK do Windows mais recentes.
 
 ```console
 REM Create a working directory
@@ -89,11 +89,11 @@ Depois que esses comandos forem executados, você terá um conjunto de DLLs de r
 
 ### <a name="adding-the-reference-dlls-to-your-project"></a>Adicionando as DLLs de referência ao seu projeto
 
-Para usar uma DLL de referência em um projeto C#, abra seu projeto C# no Visual Studio. Na Gerenciador de Soluções, clique com o botão direito do mouse nas referências e clique em Adicionar referência. Em seguida, clique no botão procurar e, em seguida, no botão Adicionar. Navegue até o diretório com as DLLs de referência, selecione-as e clique em Adicionar. Na janela Gerenciador de referências, as DLLs de referência serão verificadas. Em seguida, clique em OK.
+Para usar uma DLL de referência em um projeto C#, abra seu projeto em C# no Visual Studio. Na Gerenciador de Soluções, clique com o botão direito do mouse nas referências e clique em Adicionar referência. Em seguida, clique no botão procurar e, em seguida, no botão Adicionar. Navegue até o diretório com as DLLs de referência, selecione-as e clique em Adicionar. Na janela Gerenciador de referências, as DLLs de referência serão verificadas. Em seguida, clique em OK.
 
 As DLLs de referência do BITS agora são adicionadas ao seu projeto.
 
-As informações nos arquivos DLL de referência serão inseridas em seu programa final. Você não precisa enviar os arquivos DLL de referência com seu programa; Você só precisa enviar o. EXE. 
+As informações nos arquivos DLL de referência serão inseridas em seu programa final. Você não precisa enviar os arquivos DLL de referência com seu programa; Você só precisa enviar o .EXE. 
 
 Você pode alterar se as DLLs de referência estão incorporadas ao EXE final. Use a propriedade [inserir tipos de interoperabilidade](/dotnet/framework/interop/how-to-add-references-to-type-libraries) para definir se as DLLs de referência serão inseridas ou não. Isso pode ser feito de acordo com a referência. O padrão é true para inserir as DLLs.
 
@@ -238,15 +238,15 @@ Por exemplo, ao criar um objeto de trabalho, você obterá um método ibackgroun
 
 Use uma conversão .NET para converter de um objeto de tipo mais antigo em um objeto de tipo mais recente. A conversão chamará automaticamente um COM QueryInterface conforme apropriado. 
 
-Neste exemplo, há um objeto método ibackgroundcopyjob do BITS chamado "Job" e queremos convertê-lo em um objeto IBackgroundCopyJob5 chamado "Job5" para que possamos chamar o método GetProperty do BITS 5,0. Acabamos de converter para o tipo IBackgroundCopyJob5 como este:
+Neste exemplo, há um objeto método ibackgroundcopyjob do BITS chamado "Job" e queremos convertê-lo em um objeto IBackgroundCopyJob5 chamado "Job5" para que possamos chamar o método GetProperty do BITS 5,0. Basta fazer a cast para o tipo IBackgroundCopyJob5 desta forma:
 
 ```csharp
 var job5 = (BITS5.IBackgroundCopyJob5)job;
 ```
 
-A variável Job5 será inicializada pelo .NET usando o QueryInterface correto. 
+A variável job5 será inicializada pelo .NET usando o QueryInterface correto. 
 
-Se seu código pode ser executado em um sistema que não dá suporte a uma versão específica do BITS, você pode tentar a conversão e capturar a System. InvalidCastException. 
+Se o código puder ser executado em um sistema que não dá suporte a uma versão específica do BITS, você poderá tentar a cast e capturar System.InvalidCastException. 
 
 ```csharp
 BITS5.IBackgroundCopyJob5 job5 = null;
@@ -260,9 +260,9 @@ catch (System.InvalidCastException)
 }
 ```
 
-Um problema comum é quando você tenta converter no tipo errado de objeto. O sistema .NET não conhece a relação real entre as interfaces do BITS. Se você solicitar o tipo errado de interface, o .NET tentará fazê-lo para você e irá falhar com uma InvalidCastException e HResult 0x80004002 (E_NOINTERFACE).
+Um problema comum é quando você tenta transformar no tipo de objeto errado. O sistema .NET não sabe sobre a relação real entre as interfaces bits. Se você solicitar o tipo errado de interface, o .NET tentará fazer isso para você e falhará com um invalidCastException e hResult 0x80004002 (E_NOINTERFACE).
 
-### <a name="working-with-bits-versions-10_1-and-10_2"></a>Trabalhando com as versões do BITS 10_1 e 10_2
+### <a name="working-with-bits-versions-10_1-and-10_2"></a>Trabalhando com BITS versões 10_1 e 10_2
 
-Em algumas versões do Windows 10, você não pode criar diretamente um objeto BITS IBackgroundCopyManager usando as interfaces 10,1 ou 10,2. Em vez disso, você precisará usar várias versões dos arquivos de referência da DLL do BackgroundCopyManager. Por exemplo, você pode usar a versão 1,5 para criar um objeto IBackgroundCopyManager e, em seguida, converter o trabalho ou os objetos de arquivo resultantes usando as versões 10,1 ou 10,2.
+Em algumas versões Windows 10 você não pode criar diretamente um objeto BITS IBackgroundCopyManager usando as interfaces 10.1 ou 10.2. Em vez disso, você terá que usar várias versões dos arquivos de referência da DLL BackgroundCopyManager. Por exemplo, você pode usar a versão 1.5 para fazer um objeto IBackgroundCopyManager e, em seguida, lançar o trabalho ou objetos de arquivo resultantes usando as versões 10.1 ou 10.2.
 

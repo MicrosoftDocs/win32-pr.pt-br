@@ -1,21 +1,21 @@
 ---
-description: Imprime documentos XPS de aplicativos baseados no Windows.
+description: imprime documentos XPS de aplicativos baseados em Windows.
 ms.assetid: 456d7fd1-8d67-480c-b953-59d0268f9656
 title: Referência da API de impressão do XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8375fa5981e2a8952c06a63a0cac2e08f3f1b740
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11749f6105ac03da100a9e79807fba173368c21a5c1bce2e9dd3b58e988f46d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845836"
 ---
 # <a name="xps-print-api-reference"></a>Referência da API de impressão do XPS
 
 \[As APIs descritas nesta seção foram preteridas. Em vez disso, os aplicativos cliente devem usar a [API de pacote de documentos de impressão](./tailored-app-printing-api.md) .\]
 
-Imprime documentos XPS de aplicativos baseados no Windows.
+imprime documentos XPS de aplicativos baseados em Windows.
 
 ## <a name="contents"></a>Sumário
 

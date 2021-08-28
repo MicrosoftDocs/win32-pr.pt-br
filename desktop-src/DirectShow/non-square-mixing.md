@@ -4,16 +4,16 @@ ms.assetid: 8d27a921-5638-43ac-807d-e3bd7b9b2de8
 title: Mixagem não quadrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79d23f423f0dbe19f1ff0ba35c44f8fd2f8732bc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4674891b7b9d44cb35522b6040723bc71436d677b10a4326d9f00a269ce3aff2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102398"
 ---
 # <a name="non-square-mixing"></a>Mixagem não quadrada
 
-Este tópico aplica-se ao Windows XP Service Pack 2 ou posterior.
+este tópico aplica-se a Windows XP Service Pack 2 ou posterior.
 
 Quando o VMR-9 combina dois ou mais fluxos, há dois pontos em que o dimensionamento pode ocorrer: quando o mixer compõe os fluxos de entrada e quando o alocador de dados renderiza a imagem composta.
 
@@ -21,7 +21,7 @@ Quando o VMR-9 combina dois ou mais fluxos, há dois pontos em que o dimensionam
 
 As versões anteriores do VMR-9 sempre compõevam os fluxos de entrada usando uma taxa de proporção de pixel (PAR) quadrado (1:1), mesmo quando havia apenas um fluxo de vídeo único. Se o fluxo de entrada tiver pixels não quadrados, isso causaria uma operação de dimensionamento desnecessária. O dimensionamento deve ser evitado o máximo possível, é claro, porque ele degrada a qualidade final da imagem.
 
-A partir do Windows XP Service Pack 2, o VMR-9 dá suporte a duas maneiras diferentes de evitar o problema de dimensionamento duplo:
+a partir do Windows XP Service Pack 2, o VMR-9 dá suporte a duas maneiras diferentes de evitar o problema de dimensionamento duplo:
 
 -   Implemente um apresentador de alocador personalizado e dê suporte à interface [**IVMRSurfaceAllocatorEx9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrsurfaceallocatorex9) .
 -   Use o modo de combinação não quadrado.
@@ -30,7 +30,7 @@ Esta seção descreve o modo de mistura não quadrada. Os aplicativos podem comb
 
 **Como funciona a mistura não quadrada**
 
-No modo de mistura não-quadrada, o VMR-9 seleciona um fluxo de entrada para ser o tamanho e o PAR de destino. O mixer do VMR não dimensiona o vídeo do fluxo ou de quaisquer outros fluxos com o mesmo tamanho de imagem e PAR. Fluxos com um tamanho ou taxa de proporção diferente são dimensionados para corresponder ao PAR de destino e letterboxed para se ajustarem ao tamanho final da imagem de saída.
+No modo de mistura não-quadrada, o VMR-9 seleciona um fluxo de entrada para ser o tamanho e o PAR de destino. O mixer do VMR não dimensiona o vídeo do fluxo ou de quaisquer outros fluxos com o mesmo tamanho de imagem e PAR. Fluxos com um tamanho ou taxa de proporção diferente são dimensionados para corresponder ao PAR de destino e letterboxed para se ajustar ao tamanho final da imagem de saída.
 
 A escolha dos fluxos depende do modo de combinação atual:
 

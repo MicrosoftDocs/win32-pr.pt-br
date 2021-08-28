@@ -4,12 +4,12 @@ ms.assetid: 22e8a153-c218-426a-bd81-7bdbb504c96f
 title: Modificando o acesso de contêiner de chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f76c5b7202400064931e8014cf852ed49bf633b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c34e5c34d562d3a72b4343a2f18da65ae9c5a89689e89ef35b459aa4dec80397
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797136"
 ---
 # <a name="modifying-key-container-access"></a>Modificando o acesso de contêiner de chave
 

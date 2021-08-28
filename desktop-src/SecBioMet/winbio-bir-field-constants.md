@@ -27,12 +27,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 104710f1686f13227fbe65782c2baf9c13149650
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a354f3119fcef6da3ff204f833616eeb2ac9570cdad0712a87686904ad528958
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035086"
 ---
 # <a name="winbio_bir_field-constants"></a>\_Constantes do \_ campo WINBIO Bir
 
@@ -42,7 +42,7 @@ As constantes a seguir são usadas para criar um bitmask para o membro **ValidFi
 
 | Constante/valor                                                                                                                                                                                                                                                                                           | Descrição                                                                                                                                   |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_BIR_FIELD_SUBHEAD_COUNT"></span><span id="winbio_bir_field_subhead_count"></span><dl> <dt>**WINBIO \_ 0x0001 \_ de \_ \_ contagem de subtítulos de campo Bir**</dt> <dt></dt> </dl>                          | Fornecido para conformidade com o NISTIR 6529-a, o formato de Patron da estrutura de formatos de intercâmbio biométrico comum (CBEFF), mas não é usado.<br/> |
+| <span id="WINBIO_BIR_FIELD_SUBHEAD_COUNT"></span><span id="winbio_bir_field_subhead_count"></span><dl> <dt>**WINBIO \_ 0x0001 \_ de \_ \_ contagem de subtítulos de campo Bir**</dt> <dt></dt> </dl>                          | fornecido para conformidade com o NISTIR 6529-a, o formato de Patron de CBEFF (biometria comum de formatos de Exchange de biométrica), mas não usado.<br/> |
 | <span id="WINBIO_BIR_FIELD_PRODUCT_ID"></span><span id="winbio_bir_field_product_id"></span><dl> <dt>**WINBIO \_ \_ID de \_ produto \_ do campo Bir**</dt> <dt>0x0002</dt> </dl>                                   | O membro **ProductID** é válido.<br/>                                                                                                 |
 | <span id="WINBIO_BIR_FIELD_PATRON_ID"></span><span id="winbio_bir_field_patron_id"></span><dl> <dt>**WINBIO \_ BIR \_ campo \_ Patron \_ ID**</dt> <dt>0x0004</dt> </dl>                                      | Fornecido para conformidade com NISTIR 6529-A, CBEFF Patron Format A, mas não usado.<br/>                                                   |
 | <span id="WINBIO_BIR_FIELD_INDEX"></span><span id="winbio_bir_field_index"></span><dl> <dt>**WINBIO \_ \_ \_ Índice de campo Bir**</dt> <dt>0x0008</dt> </dl>                                                   | Fornecido para conformidade com NISTIR 6529-A, CBEFF Patron Format A, mas não usado.<br/>                                                   |
@@ -67,9 +67,9 @@ As constantes a seguir são usadas para criar um bitmask para o membro **ValidFi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 
 

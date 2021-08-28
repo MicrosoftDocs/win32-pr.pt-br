@@ -1,7 +1,7 @@
 ---
-description: O método GetResult recupera a lista de argumentos resultantes, se houver.
+description: O método GetResult recupera a lista de argumentos resultante, se houver.
 ms.assetid: a2a8b17c-3dcf-4f59-89c3-f42070d2a8eb
-title: Método CDeferredCommand. GetResult (Ctlutil. h)
+title: Método CDeferredCommand.GetResult (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8c1638dc33be6457dd682f37e2ddd49e73a111a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2176d6787bd520517cccbf484bdf6642921d499aaeb97c2917d64fa148323b66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076416"
 ---
-# <a name="cdeferredcommandgetresult-method"></a>Método CDeferredCommand. GetResult
+# <a name="cdeferredcommandgetresult-method"></a>Método CDeferredCommand.GetResult
 
-O `GetResult` método recupera a lista de argumentos resultantes, se houver.
+O `GetResult` método recupera a lista de argumentos resultante, se houver.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ VARIANT* GetResult();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para uma **variante** que contém a lista de argumentos do método, se existir.
+Retorna um ponteiro para **uma VARIANT** que contém a lista de argumentos do método, se existir.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna um ponteiro para uma **variante** que contém a lista de argumentos do m
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

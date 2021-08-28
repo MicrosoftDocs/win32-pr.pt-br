@@ -3,7 +3,7 @@ title: Mensagem de EM_FILELINEFROMCHAR (CommCtrl. h)
 description: Obtém o índice da linha que contém o índice de caracteres especificado em um controle de edição de várias linhas, independentemente de como as linhas são exibidas na tela.
 ms.assetid: e8e9217b-3f0c-478d-b44d-2a51868dbc5a
 keywords:
-- Controles de EM_FILELINEFROMCHAR de mensagens do Windows
+- controles de Windows de mensagem de EM_FILELINEFROMCHAR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a083d7e12822eacfb1e29a7d4bfd2ea705f2d32
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9d238117a9f2ba18ae838eec32d7dc2fa12ba0833f9cdee54ce2d1a2c998944
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915626"
 ---
 # <a name="em_filelinefromchar-message"></a>\_Mensagem em FILELINEFROMCHAR
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o número de linha com base em zero da linha que contém o índice de caracteres especificado por *wParam*, independentemente de como as linhas são exibidas na tela.
 
@@ -53,9 +53,9 @@ O valor de retorno é o número de linha com base em zero da linha que contém o
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 10, 1809\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, 1809 \[ aplicativos de área de trabalho apenas\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

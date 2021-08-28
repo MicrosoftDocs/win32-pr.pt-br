@@ -4,12 +4,12 @@ ms.assetid: 51987a79-78bf-41b2-8349-8c2725dd89d6
 title: OPM_GET_CODEC_INFO (Opmapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf310ae3dafee7823119b2d5d5bd2c6b61fe822
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 988ffa9a962d9ed04b6a978da1534a6da4fa506e873d89d238bcbb2aa00fd865
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847976"
 ---
 # <a name="opm_get_codec_info"></a>\_informações do \_ codec de obtenção de OPM \_
 
@@ -39,9 +39,9 @@ Em geral, você não deve usar esse comando diretamente. Para obter o valor de m
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                             |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
 
 
 

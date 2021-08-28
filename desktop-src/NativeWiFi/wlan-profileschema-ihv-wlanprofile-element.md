@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: d2d2902522c84ebe2939d42301a491521ac8a70f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cfcd9ee463ef91d04d0bebbeac800d48da32fdd777edc2a08ccf0051410160d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799916"
 ---
 # <a name="ihv-wlanprofile-element"></a>Elemento IHV (WLANProfile)
 
 O elemento IHV (WLANProfile) contém várias configurações para fornecedores de hardware independentes. Se um perfil incluir configurações de segurança de IHV, eles substituirão qualquer segurança definida pela Microsoft.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
+**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.
 
 ``` syntax
 <xs:element name="IHV"
@@ -104,7 +104,7 @@ O elemento IHV (WLANProfile) contém várias configurações para fornecedores d
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+O elemento é definido pelo [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -112,12 +112,12 @@ O elemento é definido pelo elemento [**WLANProfile**](wlan-profileschema-wlanpr
 
 | Elemento                                                             | Type                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**conectividade**](wlan-profileschema-connectivity-ihv-element.md) |                                                                   | Contém configurações de conectividade relacionadas a IHV.<br/>                                                                                                                                                                                                                                                                                                                                            |
-| [**OUI**](wlan-profileschema-oui-ouiheader-element.md)             |                                                                   | Contém um hexBinary de 3 bytes que identifica o IHV.<br/>                                                                                                                                                                                                                                                                                                                                   |
+| [**Conectividade**](wlan-profileschema-connectivity-ihv-element.md) |                                                                   | Contém configurações de conectividade relacionadas ao IHV.<br/>                                                                                                                                                                                                                                                                                                                                            |
+| [**Oui**](wlan-profileschema-oui-ouiheader-element.md)             |                                                                   | Contém um hexBinary de 3 byte que identifica o IHV.<br/>                                                                                                                                                                                                                                                                                                                                   |
 | [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md)       |                                                                   | Identifica o IHV.<br/>                                                                                                                                                                                                                                                                                                                                                                    |
-| [**segurança**](wlan-profileschema-security-ihv-element.md)         |                                                                   | Contém configurações de segurança específicas de IHV. As configurações de segurança da Microsoft e as configurações de segurança de IHV são mutuamente exclusivas. O perfil inteiro será inválido se ambas as configurações de segurança estiverem presentes.<br/>                                                                                                                                                                                            |
-| [**Escreva**](wlan-profileschema-type-ouiheader-element.md)           |                                                                   | Contém um hexBinary de 1 byte que é usado para diferenciar NICs pelo mesmo IHV.<br/>                                                                                                                                                                                                                                                                                                        |
-| [**useMSOneX**](wlan-profileschema-usemsonex-ihv-element.md)       | [booleano](/dotnet/api/system.boolean) | Especifica a origem das configurações de segurança 802.1 X usadas por um componente de segurança do IHV. Quando [**useMSOneX**](wlan-profileschema-usemsonex-ihv-element.md) é verdadeiro, os componentes de segurança de IHV usam configurações 802.1 x definidas pela Microsoft. Quando **useMSOneX** é false, os componentes de segurança de IHV usam configurações 802.1 x fornecidas pelo fornecedor. Por padrão, **useMSOneX** é false. Esse elemento é opcional.<br/> |
+| [**Segurança**](wlan-profileschema-security-ihv-element.md)         |                                                                   | Contém configurações de segurança específicas do IHV. As configurações de segurança da Microsoft e as configurações de segurança de IHV são mutuamente exclusivas. O perfil inteiro será inválido se ambas as configurações de segurança estão presentes.<br/>                                                                                                                                                                                            |
+| [**Tipo**](wlan-profileschema-type-ouiheader-element.md)           |                                                                   | Contém um hexBinary de 1 byte que é usado para diferenciar NICs pelo mesmo IHV.<br/>                                                                                                                                                                                                                                                                                                        |
+| [**useMSOneX**](wlan-profileschema-usemsonex-ihv-element.md)       | [booleano](/dotnet/api/system.boolean) | Especifica a origem das configurações de segurança 802.1X usadas por um componente de segurança IHV. Quando [**useMSOneX**](wlan-profileschema-usemsonex-ihv-element.md) é true, os componentes de segurança IHV usam configurações 802.1X definidas pela Microsoft. Quando **useMSOneX** é false, os componentes de segurança IHV usam configurações 802.1X fornecidas pelo fornecedor. Por padrão, **useMSOneX** é false. Esse elemento é opcional.<br/> |
 
 
 
@@ -127,8 +127,8 @@ O elemento é definido pelo elemento [**WLANProfile**](wlan-profileschema-wlanpr
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

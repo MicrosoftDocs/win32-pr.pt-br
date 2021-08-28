@@ -1,24 +1,24 @@
 ---
-title: Atributo ext (bloquear) (VML)
-description: Atributo ext (bloquear) (VML)
+title: Atributo Ext (Bloqueio)(VML)
+description: Atributo Ext (Bloqueio)(VML)
 ms.assetid: 80e28319-abca-47d7-a092-610e13dafa63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e75b9bfa38e21c3e16cb638bb8799efaad3383f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 72ad5e9acce7b2d74dd78041dbed6f662807a96133a7607fdc773e966e721260
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905516"
 ---
-# <a name="ext-attribute-lockvml"></a>Atributo ext (bloquear) (VML)
+# <a name="ext-attribute-lockvml"></a>Atributo Ext (Bloqueio)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define o comportamento de ações de bloqueio para um editor gráfico. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,14 +28,14 @@ Define o comportamento de ações de bloqueio para um editor gráfico. Leitura/g
 
 **Sintaxe de marca**
 
-<o: *Element* v:ext = " *expressão* " >
+<o: *elemento* v:ext=" *expressão* ">
 
 **Comentários**
 
-Esse atributo é usado para informar aos editores gráficos como processar o elemento **Lock** . O valor padrão é **Editar**. Outros valores podem ser definidos para editores gráficos específicos.
+Esse atributo é usado para dizer aos editores gráficos como processar o **elemento Lock.** O valor padrão é **editar**. Outros valores podem ser definidos para editores gráficos específicos.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

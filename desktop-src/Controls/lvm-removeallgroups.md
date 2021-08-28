@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_REMOVEALLGROUPS (commctrl. h)
+title: LVM_REMOVEALLGROUPS mensagem (Commctrl.h)
 description: Remove todos os grupos de um controle de exibição de lista.
 ms.assetid: b8971f35-dc04-4729-8ac1-8cabbc86caa6
 keywords:
-- Controles de LVM_REMOVEALLGROUPS de mensagens do Windows
+- LVM_REMOVEALLGROUPS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c307233b794aea930c5419a6c1464526d84b4eb5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c4550fcabd46574ba7c8806ddbb8b9ee23d1a684dfd56e8d27138607a1bd52b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915456"
 ---
-# <a name="lvm_removeallgroups-message"></a>\_Mensagem REMOVEALLGROUPS LVM
+# <a name="lvm_removeallgroups-message"></a>Mensagem LVM \_ REMOVEALLGROUPS
 
 Remove todos os grupos de um controle de exibição de lista.
 
@@ -30,19 +30,19 @@ Remove todos os grupos de um controle de exibição de lista.
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Deve ser **NULL**.</dd> <dt>
+</dt> <dd>Deve ser **NULL.**</dd> <dt>
 
 *lParam* 
-</dt> <dd>Deve ser **NULL**.</dd> </dl>
+</dt> <dd>Deve ser **NULL.**</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -52,9 +52,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

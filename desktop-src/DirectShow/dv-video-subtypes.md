@@ -4,12 +4,12 @@ ms.assetid: d8390bd4-0339-4955-992c-92b8c9f6bf88
 title: Subtipos de vídeo DV (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbacb15f5801d959fbc5150546cff04dea687753
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87ee08bad5970d016ada2bf129132bf34261be9ba856071d9f90f1e73de91978
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102946"
 ---
 # <a name="dv-video-subtypes"></a>Subtipos de vídeo DV
 
@@ -31,7 +31,7 @@ Vários subtipos são definidos para vídeo DV. Cada um tem um código FOURCC e 
 
 Consulte IEC-61834 para obter mais informações sobre esses formatos.
 
-## <a name="professional-formats"></a>Formatos profissionais
+## <a name="professional-formats"></a>Professional Forma
 
 
 
@@ -71,15 +71,15 @@ A tabela a seguir mostra as taxas de dados com suporte, em megabits por segundo 
 | Sistema operacional                                                                 | Driver MSDV (IEEE 1394) | Driver UVC    |
 |----------------------------------------------------------------------------------|-------------------------|---------------|
 | Windows XP Service Pack 1 ou anterior                                             | 12,5, 25                | Não disponível |
-| Windows XP Service Pack 2 ou posterior, Windows Server 2003 Service Pack 1 ou posterior. | 12,5, 25, 50, 100       | 12,5, 25      |
+| Windows XP service pack 2 ou posterior, Windows Server 2003 Service pack 1 ou posterior. | 12,5, 25, 50, 100       | 12,5, 25      |
 
 
 
  
 
-Para fluxos de 25 Mbps, o comportamento do driver MSDV foi alterado no Windows Vista antes do Windows Vista, o driver MSDV sempre definiu o tipo de mídia como MEDIASUBTYPE \_ dvsd para fluxos de 25 Mbps, independentemente de a origem ser o SDL-DVCR ou DVCPRO 25. O tipo de mídia ' DV25 ' não foi usado. A partir do Windows Vista, o driver MSDV agora distingue entre esses dois formatos. Para o SDL-DVCR, ele continua a usar o subtipo ' dvsd '. Para o DVCPRO 25, ele agora usa o subtipo ' DV25 '.
+para fluxos de 25 Mbps, o comportamento do driver MSDV foi alterado no Windows Vista antes do Windows vista, o driver MSDV sempre definiu o tipo de mídia como MEDIASUBTYPE \_ dvsd para fluxos de 25 Mbps, independentemente de a origem ser o SDL-DVCR ou DVCPRO 25. O tipo de mídia ' DV25 ' não foi usado. a partir do Windows Vista, o driver MSDV agora distingue entre esses dois formatos. Para o SDL-DVCR, ele continua a usar o subtipo ' dvsd '. Para o DVCPRO 25, ele agora usa o subtipo ' DV25 '.
 
-Os filtros de [revisor](dv-splitter-filter.md) de vídeo do DirectShow e do [codificador DV Video](dv-video-decoder-filter.md) dão suporte apenas aos formatos SDL-DVCR. Os dados podem ser PAL ou NTSC. Filtros ou codecs de terceiros podem estar disponíveis e podem analisar outros formatos de DV, desde que a taxa de dados seja suportada pelo driver MSDV ou UVC.
+os filtros de DirectShow [divisor dv](dv-splitter-filter.md) e de [codificador de vídeo dv](dv-video-decoder-filter.md) dão suporte apenas aos formatos SDL-DVCR. Os dados podem ser PAL ou NTSC. Filtros ou codecs de terceiros podem estar disponíveis e podem analisar outros formatos de DV, desde que a taxa de dados seja suportada pelo driver MSDV ou UVC.
 
 ## <a name="requirements"></a>Requisitos
 

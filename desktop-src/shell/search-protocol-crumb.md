@@ -1,6 +1,6 @@
 ---
-description: Entenda como usar o argumento DECOD NA interface do usuário Windows Shell como um meio de controlar o escopo de uma pesquisa.
-title: Argumento DEM (o shell Windows)
+description: entenda como usar o argumento de trilha na interface do usuário do Windows Shell como um meio de controlar o escopo de uma pesquisa.
+title: argumento de trilha (o Shell de Windows)
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 8f87a2b7-7f5a-4629-b881-44bf418b2df0
@@ -9,29 +9,29 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b93764f8014a5d9446811ef622f7c5afc20acbc6193d938c98642afaae5392fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3309f18cbd5a7e2769b264e516b019d9f3ed3b06
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452872"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885432"
 ---
-# <a name="crumb-argument-the-windows-shell"></a>Argumento DEM (o shell Windows)
+# <a name="crumb-argument-the-windows-shell"></a>argumento de trilha (o Shell de Windows)
 
-O argumento dá suporte a instruções completas de `crumb` AQS (Advanced Query Syntax) e é especialmente útil como um meio de controlar o escopo de uma pesquisa. Além das instruções do AQS, o argumento pode usar um parâmetro especial no Windows Vista e nos `crumb` `location` `kind` parâmetros Windows XP, conforme descrito posteriormente `store` neste tópico.
+O `crumb` argumento oferece suporte a instruções AQS (sintaxe de consulta avançada completa) e é especialmente útil como meio de controlar o escopo de uma pesquisa. além das instruções AQS, o `crumb` argumento pode usar um parâmetro especial `location` no Windows Vista e `kind` `store` parâmetros no Windows XP, conforme descrito posteriormente neste tópico.
 
 Este tópico contém as seguintes seções:
 
--   [Sintaxe de sintaxe de sintaxe de sintaxe](#crumb-syntax)
+-   [Sintaxe de trilha](#crumb-syntax)
     -   [Exemplos gerais](#general-examples)
--   [Usando o mofando com o Vista (localização)](#using-crumb-with-vista-location)
-    -   [Exemplos do Vista](#vista-examples)
+-   [Usando a trilha com o Vista (local)](#using-crumb-with-vista-location)
+    -   [Exemplos do vista](#vista-examples)
     -   [Constantes para pastas comuns](#constants-for-common-folders)
-    -   [Informações de argumento](#argument-information)
+    -   [Informações do argumento](#argument-information)
 
-## <a name="crumb-syntax"></a>Sintaxe de sintaxe de sintaxe de sintaxe
+## <a name="crumb-syntax"></a>Sintaxe de trilha
 
-A sintaxe de sintaxe de sintaxe é a seguinte:
+A sintaxe de trilha é a seguinte:
 
 
 ```
@@ -40,7 +40,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-A <column> parte é qualquer propriedade no sistema de propriedades e o <value> parte é um valor válido para essa propriedade. A <label> parte é um alias opcional para a propriedade que é exibida como uma dica de interface do usuário.
+A &lt; parte da coluna &gt; é qualquer propriedade no sistema de propriedades e a &lt; parte do valor &gt; é um valor válido para essa propriedade. A <label> parte é um alias opcional para a propriedade que é exibido como uma dica de interface do usuário.
 
 ### <a name="general-examples"></a>Exemplos gerais
 
@@ -53,42 +53,42 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 
 
-## <a name="using-crumb-with-vista-location"></a>Usando o mofando com o Vista (localização)
+## <a name="using-crumb-with-vista-location"></a>Usando a trilha com o Vista (local)
 
-No parâmetro de sistema, Windows Vista dá suporte ao AQS completo e também à propriedade , que tem uma implementação especial disponível somente no `location` Windows Vista. Você pode usar uma cadeia de caracteres do AQS ou a propriedade dentro de um único parâmetro `location` de controle, mas não ambos. Se o parâmetro de desatrelação incluir o AQS, todo o resto nesse parâmetro de desatrelação será ignorado.
+no parâmetro de trilha, o Windows Vista dá suporte ao AQS completo e também à `location` propriedade, que tem uma implementação especial disponível apenas no Windows Vista. Você pode usar uma cadeia de caracteres AQS ou a `location` propriedade dentro de um único parâmetro de trilha, mas não ambos. Se o parâmetro de trilha incluir AQS, todo o restante nesse parâmetro de trilha será ignorado.
 
-A `location` propriedade permite que você especifique um caminho a ser pesquisado. Windows O Vista poderá ignorar o Indexador e percorrer o diretório diretamente se o local estiver fora do escopo de rastreamento do Indexador. Consequentemente, essas pesquisas podem ser mais lentas do que as pesquisas que usam o Indexador.
+A `location` propriedade permite que você especifique um caminho para pesquisar. Windows O vista pode ignorar o indexador e atravessar o diretório diretamente se o local estiver fora do escopo de rastreamento do indexador. Consequentemente, essas pesquisas podem ser mais lentas do que as pesquisas que usam o indexador.
 
-Quando você especifica uma `location` propriedade, há suporte para dois parâmetros adicionais e opcionais:
+Quando você especifica uma `location` propriedade, dois parâmetros adicionais têm suporte e são opcionais:
 
 
 
 | Parâmetro | Valores                  | Descrição                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Inclusão | incluir, excluir        | Especifica se a consulta deve incluir ou excluir itens desse caminho. "Incluir" é o padrão. Windows O Vista não dá suporte a exclusões sem inclusões. (Veja o exemplo) |
-| recursão | recursivo, não recursivo | Especifica se a pesquisa deve recursar todas as subpastas começando com o valor definido no local:<value>. "Recursivo" é o padrão.                             |
+| inclusão | incluir, excluir        | Especifica se a consulta deve incluir ou excluir itens desse caminho. "Include" é o padrão. Windows O vista não oferece suporte a exclusões sem inclusões. (Veja o exemplo) |
+| recursão | recursivo, nonrecursive | Especifica se a pesquisa deve recurse todas as subpastas a partir do valor definido no valor Location &lt; : &gt; . "Recursivo" é o padrão.                             |
 
 
 
  
 
-Para escopo de uma pesquisa usando **o protocolo search:,** você tem opções diferentes, dependendo do destino do escopo.
+Para fazer o escopo de uma pesquisa usando o protocolo **Search:** , você tem opções diferentes, dependendo do destino do escopo.
 
 Pasta em um computador local:
 
--   Usar o AQS (folder=folder:<caminho codificado por URL>)
--   Use o argumento location (encode=location:<caminho codificado por URL>)
+-   Use AQS (trilha = pasta: <caminho codificado de URL>)
+-   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
 
-Pasta em um computador/rede remoto:
+Pasta em um computador/rede remota:
 
--   Use o argumento location (encode=location:<caminho codificado por URL>)
+-   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
 
-Pasta acessada por meio de um manipulador de protocolo UNC (Convenção Universal de Nomenização) conhecido:
+Pasta acessada por meio de um manipulador de protocolo UNC (Convenção de nomenclatura universal) conhecido:
 
--   Usar o AQS (agora= store: <UNC protocol handler name> )
--   Use o argumento location (encode=location:<caminho codificado por URL>)
+-   Use AQS (trilha = armazenamento: <UNC protocol handler name> )
+-   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
 
-### <a name="vista-examples"></a>Exemplos do Vista
+### <a name="vista-examples"></a>Exemplos do vista
 
 
 ```
@@ -101,17 +101,17 @@ search:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-O primeiro exemplo executa uma pesquisa de "férias" começando no local (um atalho especial para a pasta Meus Documentos do usuário), incluindo essa pasta e todas as `shell://Personal` subpastas.  Consulte a tabela abaixo.
+O primeiro exemplo executa uma pesquisa por "férias" começando no `shell://Personal` local (um atalho especial para a pasta **meus documentos** do usuário), incluindo essa pasta e todas as subpastas. Consulte a tabela abaixo.
 
-O segundo exemplo executa uma pesquisa em C: \\ Imagens, mas não em C: \\ \\ Duplicatas de Imagens.
+O segundo exemplo executa uma pesquisa em C: \\ Pictures, mas não em c: \\ imagens \\ duplicatas.
 
-O terceiro exemplo executa uma pesquisa em C: Documentos, limitado a arquivos com a \\ `kind` propriedade definida como imagens.
+O terceiro exemplo executa uma pesquisa em C: \\ Documents, limitada a arquivos com a `kind` propriedade definida como pics.
 
 ### <a name="constants-for-common-folders"></a>Constantes para pastas comuns
 
-Windows O Vista permite o uso de valores CSIDL que fornecem uma maneira exclusiva independente do sistema para identificar pastas especiais usadas com frequência por aplicativos, mas que podem não ter o mesmo nome ou local em qualquer sistema específico. Por exemplo, a pasta do sistema pode ser "C: Windows" em um \\ sistema e "C: \\ Winnt" em outro.
+Windows O Vista permite o uso de valores de CSIDl que fornecem uma maneira exclusiva independente do sistema de identificar pastas especiais usadas frequentemente por aplicativos, mas que podem não ter o mesmo nome ou local em um determinado sistema. por exemplo, a pasta do sistema pode ser "c: \\ Windows" em um sistema e "c: \\ Winnt" em outro.
 
-Use estes locais com esta sintaxe:
+Use esses locais com esta sintaxe:
 
 
 ```
@@ -120,33 +120,33 @@ crumb=location:shell%3a<LocationName>&
 
 
 
-A tabela a seguir lista os valores CSIDL. Consulte [**ShellSpecialFolderConstants para**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) obter mais informações.
+A tabela a seguir lista os valores de CSIDl. Consulte [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) para obter mais informações.
 
 
 
-| Nome                        | cadeia de caracteres de pesquisa                   | Descrição                                                                                                                                                                            |
+| Nome                        | Pesquisar Cadeia de caracteres                   | Description                                                                                                                                                                            |
 |-----------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FERRAMENTAS ADMINISTRATIVAS        | ADMINISTRATIVE%20TOOLS          | Diretório do sistema de arquivos que serve como um repositório para ferramentas administrativas.                                                                                                            |
-| APPDATA                     | APPDATA                         | Diretório do sistema de arquivos que serve como um repositório comum para dados específicos do aplicativo. Um caminho típico é C: documentos \\ e Configurações dados do aplicativo de nome de \\ \\ usuário.                      |
-| CACHE                       | CACHE                           | Diretório do sistema de arquivos que serve como um repositório comum para arquivos temporários da Internet. Um caminho típico é C: documentos \\ e Configurações nome de usuário \\ \\ Temporários da Internet.               |
-| CD DE GRAVAÇÃO                  | CD%20IÃO                    | Pasta que contém dados a serem gravados em CD.                                                                                                                                             |
-| FERRAMENTAS ADMINISTRATIVAS COMUNS | COMMON%20ADMINISTRATIVE%20TOOLS | Ferramentas administrativas para todos os usuários.                                                                                                                                                    |
-| COMMON APPDATA              | COMMON%20APPDATA                | Dados do aplicativo para todos os usuários. Um caminho típico é C: \\ Documentos e Configurações dados do aplicativo Todos os \\ \\ Usuários.                                                                             |
-| ÁREA DE TRABALHO COMUM              | ÁREA DE TRABALHO COMUM                  | Microsoft Windows Desktop para todos os usuários. Pasta virtual que é a raiz do namespace.                                                                                        |
-| DOCUMENTOS COMUNS            | COMMON%20DOCUMENTS              | Documentos para todos os usuários. Um caminho típico é C: \\ Documentos e Configurações todos os usuários \\ \\ Meus Documentos.                                                                                        |
-| PROGRAMAS COMUNS             | COMMON%20PROGRAMS               | Grupos de programas comuns a todos os usuários. Um caminho típico é C: \\ Documentos e Configurações Todos os Usuários Iniciar Programas de \\ \\ \\ Menu.                                                                     |
-| MENU INICIAR COMUM           | COMMON%20START%20MENU           | menu Iniciar itens comuns a todos os usuários. Um caminho típico é C: \\ Documentos e Configurações Menu Iniciar Todos os \\ \\ Usuários.                                                                             |
-| INICIALIZAÇÃO COMUM              | COMMON%20STARTUP                | Grupo de programas de inicialização comum a todos os usuários.                                                                                                                                             |
+| FERRAMENTAS ADMINISTRATIVAS        | % 20TOOLS ADMINISTRATIVO          | Diretório do sistema de arquivos que serve como um repositório para ferramentas administrativas.                                                                                                            |
+| APPDATA                     | APPDATA                         | Diretório do sistema de arquivos que serve como um repositório comum para dados específicos do aplicativo. um caminho típico é C: \\ documents e Configurações \\ nome de usuário de dados do \\ aplicativo.                      |
+| CACHE                       | CACHE                           | Diretório do sistema de arquivos que serve como um repositório comum para arquivos temporários da Internet. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ Temporary Internet files.               |
+| GRAVAÇÃO DE CD                  | CD% 20BURNING                    | Pasta que contém os dados a serem gravados no CD.                                                                                                                                             |
+| FERRAMENTAS ADMINISTRATIVAS COMUNS | % 20ADMINISTRATIVE% 20TOOLS COMUM | Ferramentas administrativas para todos os usuários.                                                                                                                                                    |
+| APPDATA COMUNS              | % 20APPDATA COMUM                | Dados de aplicativo para todos os usuários. um caminho típico é C: \\ documents e Configurações \\ dados de aplicativos de todos os usuários \\ .                                                                             |
+| ÁREA DE TRABALHO COMUM              | ÁREA DE TRABALHO COMUM                  | dados do Microsoft Windows Desktop para todos os usuários. A pasta virtual que é a raiz do namespace.                                                                                        |
+| DOCUMENTOS COMUNS            | % 20DOCUMENTS COMUM              | Documentos para todos os usuários. um caminho típico é C: \\ documents e Configurações \\ todos os usuários \\ meus documentos.                                                                                        |
+| PROGRAMAS COMUNS             | % 20PROGRAMS COMUM               | Grupos de programas comuns a todos os usuários. um caminho típico é C: \\ documents e Configurações \\ os \\ programas de Menu iniciar de todos os usuários \\ .                                                                     |
+| MENU INICIAR COMUM           | % 20START% 20MENU COMUM           | menu Iniciar itens comuns a todos os usuários. um caminho típico é C: \\ documents e Configurações \\ Menu iniciar de todos os usuários \\ .                                                                             |
+| INICIALIZAÇÃO COMUM              | % 20STARTUP COMUM                | Grupo de programas de inicialização comum a todos os usuários.                                                                                                                                             |
 | MODELOS COMUNS            | COMMON%20TEMPLATES              | Modelos de documento comuns a todos os usuários.                                                                                                                                                |
 | COMMONMUSIC                 | MY%20MUSIC                      | Modelos de pasta My Music comuns a todos os usuários.                                                                                                                                         |
 | COMMONPICTURES              | MY%20PICTURES                   | Modelos de pasta Minhas Imagens comuns a todos os usuários.                                                                                                                                      |
 | COMMONVIDEO                 | MY%20VIDEO                      | Modelos de pasta Meu Vídeo comuns a todos os usuários.                                                                                                                                         |
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | pasta que contém dados de conexão.                                                                                                                                                     |
 | PASTA PAINEL DE CONTROLE        | CONTROLPANELFOLDER              | Pasta virtual que contém ícones para os Painel de Controle aplicativos.                                                                                                                    |
-| Cookies                     | Cookies                         | Diretório do sistema de arquivos que serve como um repositório comum para cookies da Internet. Um caminho típico é C: documentos e Configurações \\ cookies de nome de \\ \\ usuário.                                        |
+| COOKIES                     | COOKIES                         | Diretório do sistema de arquivos que serve como um repositório comum para cookies da Internet. Um caminho típico é C: documentos e Configurações \\ cookies de nome de \\ \\ usuário.                                        |
 | DESKTOP                     | DESKTOP                         | Microsoft Windows Desktop. Pasta virtual que é a raiz do namespace.                                                                                                           |
 | FAVORITOS                   | FAVORITOS                       | Diretório do sistema de arquivos que serve como um repositório comum para os itens favoritos do usuário. Um caminho típico é C: Documentos \\ e Configurações \\ \\ favoritos de nome de usuário.                             |
-| Fontes                       | Fontes                           | Pasta virtual que contém fontes instaladas. Um caminho típico é C: \\ \\ Fontes do WINDOWS.                                                                                                       |
+| FONTES                       | FONTES                           | Pasta virtual que contém fontes instaladas. Um caminho típico é C: \\ \\ Fontes do WINDOWS.                                                                                                       |
 | HISTÓRICO                     | HISTÓRICO                         | Diretório do sistema de arquivos que serve como um repositório comum para itens de histórico da Internet.                                                                                                   |
 | INTERNETFOLDER              | INTERNETFOLDER                  | Pasta que contém dados da Internet.                                                                                                                                                    |
 | LOCAL APPDATA               | LOCAL%20APPDATA                 | Diretório do sistema de arquivos que serve como um repositório de dados para aplicativos locais (não móveis). Um caminho típico é C: documentos e Configurações nome de \\ usuário Local Configurações Dados do \\ \\ \\ Aplicativo. |
@@ -164,25 +164,25 @@ A tabela a seguir lista os valores CSIDL. Consulte [**ShellSpecialFolderConstant
 | PROGRAMAS                    | PROGRAMAS                        | Diretório do sistema de arquivos que contém os grupos de programas do usuário (que também são diretórios do sistema de arquivos). Um caminho típico é C: Documentos e Configurações nome de \\ usuário Iniciar Programas de \\ \\ \\ Menu.  |
 | PERFIL                     | PERFIL                         | Pasta de perfil do usuário.                                                                                                                                                                 |
 | ARQUIVOS DE PROGRAMAS               | PROGRAM%20FILES                 | Pasta Arquivos de Programas. Um caminho típico é C: \\ Arquivos de Programas.                                                                                                                             |
-| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta arquivos de programas comuns a todos os usuários.                                                                                                                                              |
-| ARQUIVOS de programas comuns x86    | PROGRAMFILESCOMMONX86           | Pasta arquivos de programas comuns a todos os usuários em computadores x86.                                                                                                                              |
-| FILESx86 do programa            | PROGRAMFILESx86                 | Pasta arquivos de programas em computadores x86.                                                                                                                                                  |
-| VERSÕES                      | VERSÕES                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente do usuário. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ recente.                                           |
-| PASTA DA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na lixeira do usuário.                                                                                                                       |
-| RESOURCEDIR                 | RESOURCEDIR                     | O diretório de recursos.                                                                                                                                                                |
-| Enviar                      | Enviar                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ SendTo.                                                                |
-| MENU INICIAR                  | INICIAR% 20MENU                    | diretório do sistema de arquivos que contém itens de menu Iniciar. um caminho típico é C: \\ documents e Configurações \\ Menu iniciar do nome de usuário \\ .                                                                 |
+| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta Arquivos de Programas comum a todos os usuários.                                                                                                                                              |
+| ARQUIVOS DE PROGRAMAS COMUNS x86    | PROGRAMFILESCOMMONX86           | Pasta Arquivos de Programas comum a todos os usuários em máquinas x86.                                                                                                                              |
+| PROGRAM FILESx86            | PROGRAMFILESx86                 | Pasta Arquivos de Programas em máquinas x86.                                                                                                                                                  |
+| RECENTE                      | RECENTE                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente pelo usuário. Um caminho típico é C: Documentos \\ e Configurações nome de usuário \\ \\ Recente.                                           |
+| PASTA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na conta do usuário Lixeira.                                                                                                                       |
+| RESOURCEDIR                 | RESOURCEDIR                     | O Diretório de recursos.                                                                                                                                                                |
+| SENDTO                      | SENDTO                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. Um caminho típico é C: \\ Documentos e Configurações nome de usuário \\ \\ SendTo.                                                                |
+| MENU INICIAR                  | START%20MENU                    | Diretório do sistema de arquivos que contém menu Iniciar itens. Um caminho típico é C: Documentos e Configurações \\ menu Iniciar nome de \\ \\ usuário.                                                                 |
 | INICIALIZAÇÃO                     | INICIALIZAÇÃO                         | Diretório do sistema de arquivos que corresponde ao grupo de programas de inicialização do usuário.                                                                                                            |
-| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em computadores x86.                                                                                                                                                         |
+| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em máquinas x86.                                                                                                                                                         |
 | MODELOS                   | MODELOS                       | Diretório do sistema de arquivos que serve como um repositório comum para modelos de documento.                                                                                                       |
-| SYSTEM                      | SYSTEM                          | Pasta do sistema. um caminho típico é C: \\ Windows \\ System.                                                                                                                                  |
-| WINDOWS                     | WINDOWS                         | Windows directory ou SYSROOT.                                                                                                                                                          |
+| SYSTEM                      | SYSTEM                          | Pasta do sistema. Um caminho típico é C: \\ Windows \\ System.                                                                                                                                  |
+| WINDOWS                     | WINDOWS                         | Windows diretório ou SYSROOT.                                                                                                                                                          |
 
 
 
  
 
-### <a name="argument-information"></a>Informações do argumento
+### <a name="argument-information"></a>Informações de argumento
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 3b73decf-75d4-4bc4-b7ca-5f16aaadff29
 title: Função AcquireCredentialsHandle (CredSSP)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 0dbece18bc7a7de8ec35764c9879380e29292e92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22ab5b4f9696e266e6d07b3085cafe10384e8b6b266c9e20672021fa04e97998
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101476"
 ---
 # <a name="acquirecredentialshandle-credssp-function"></a>Função AcquireCredentialsHandle (CredSSP)
 
@@ -80,7 +80,7 @@ Um ponteiro para a estrutura [CredHandle](sspi-handles.md) que receberá o ident
 
 Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que recebe a hora em que as credenciais retornadas expiram. O valor de estrutura recebido depende do pacote de segurança, que deve especificar o valor na hora local.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido, retornará **s \_ E \_ OK**.
 
@@ -99,7 +99,7 @@ Se a função falhar, ela retornará um dos seguintes códigos de erro.
 
 A função **falha AcquireCredentialsHandle (CredSSP)** retorna um identificador para as credenciais de uma entidade, como um usuário ou cliente, conforme usado por um pacote de segurança específico. A função pode retornar o identificador para credenciais preexistentes ou credenciais recém-criadas e retorná-la. Esse identificador pode ser usado em chamadas subsequentes para as funções [**AcceptSecurityContext (CredSSP)**](acceptsecuritycontext--credssp.md) e [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md) .
 
-Em geral, **falha AcquireCredentialsHandle (CredSSP)** não fornece as credenciais de outros usuários conectados ao mesmo computador. No entanto, um \_ \_ [*privilégio*](../secgloss/p-gly.md#_security_privilege_gly) de nome do chamador com o Name TCB pode obter as credenciais de uma sessão de logon existente especificando o [*identificador de logon*](../secgloss/l-gly.md#_security_logon_identifier_gly) (LUID) dessa sessão. Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
+Em geral, **falha AcquireCredentialsHandle (CredSSP)** não fornece as credenciais de outros usuários conectados ao mesmo computador. no entanto, um chamador \_ com \_ [*privilégio*](../secgloss/p-gly.md#_security_privilege_gly) de nome ES TCB pode obter as credenciais de uma sessão de logon existente especificando o [*identificador de logon*](../secgloss/l-gly.md#_security_logon_identifier_gly) (LUID) dessa sessão. Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
 
 Um pacote pode chamar a função no *pGetKeyFn* fornecido pelo transporte de tempo de execução RPC. Se o transporte não oferecer suporte à noção de retorno de chamada para recuperar credenciais, esse parâmetro deverá ser **nulo**.
 
@@ -114,9 +114,9 @@ Quando você terminar de usar as credenciais retornadas, libere a memória usada
 
 | Requisito | Valor |
 |--------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Vista\]                                              |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2008\]                                        |
-| parâmetro                   | SSPI. h (incluir Security. h)                                                      |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do vista\]                                              |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]                                        |
+| Cabeçalho                   | SSPI. h (incluir Security. h)                                                      |
 | Biblioteca                  | Secur32. lib                                                                      |
 | DLL                      | Secur32.dll                                                                      |
 | Nomes Unicode e ANSI   | **AcquireCredentialsHandleW** (Unicode) e **AcquireCredentialsHandleA** (ANSI) |

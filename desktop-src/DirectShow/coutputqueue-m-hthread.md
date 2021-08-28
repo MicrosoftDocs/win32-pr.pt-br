@@ -1,7 +1,7 @@
 ---
-description: Identificador para o thread de trabalho.
+description: Lidar com o thread de trabalho.
 ms.assetid: 29eeb9b0-2fbc-4f31-a4ef-97b13f374f4f
-title: 'Membro COutputQueue:: m_hThread (Outputq. h)'
+title: Membro COutputQueue::m_hThread (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a041982c2bc83bc650c21252851cf07340e014af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1148c7959d3ebaa35fe621c49d06928c9fc69a815633d7f291a38c32484acb88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087186"
 ---
-# <a name="coutputqueuem_hthread-member"></a>Membro de COutputQueue:: m \_ hThread
+# <a name="coutputqueuem_hthread-member"></a>Membro COutputQueue::m \_ hThread
 
-Identificador para o thread de trabalho.
+Lidar com o thread de trabalho.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ HANDLE m_hThread;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Outputq. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Outputq.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

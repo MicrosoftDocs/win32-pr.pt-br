@@ -1,19 +1,19 @@
 ---
 title: Como adicionar objetos embutidos a um layout de texto
-description: Fornece um breve tutorial sobre como adicionar objetos embutidos a um aplicativo DirectWrite que exibe texto usando a interface IDWriteTextLayout.
+description: fornece um breve tutorial sobre como adicionar objetos embutidos a um aplicativo DirectWrite que exibe texto usando a interface IDWriteTextLayout.
 ms.assetid: 6aa9d17c-ee30-497f-9c73-ec2fa079222b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d9ef34e38ec9b84afd887e565e76efb9618b88
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ca4969ded311bbaa4e87e5b70f1df1379c4ca549d2db06c8d1186ba548c77a0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104555504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902886"
 ---
 # <a name="how-to-add-inline-objects-to-a-text-layout"></a>Como adicionar objetos embutidos a um layout de texto
 
-Fornece um breve tutorial sobre como adicionar objetos embutidos a um aplicativo [DirectWrite](direct-write-portal.md) que exibe texto usando a interface [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
+fornece um breve tutorial sobre como adicionar objetos embutidos a um aplicativo [DirectWrite](direct-write-portal.md) que exibe texto usando a interface [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
 
 O produto final deste tutorial é um aplicativo que exibe o texto com uma imagem embutida inserida nela, conforme mostrado na captura de tela a seguir.
 
@@ -83,7 +83,7 @@ Para adicionar um layout de texto, você deve fazer o seguinte:
 
 ## <a name="step-2-define-a-class-derived-from-the-idwriteinlineobject-interface"></a>Etapa 2: definir uma classe derivada da interface IDWriteInlineObject.
 
-O suporte para objetos embutidos no [DirectWrite](direct-write-portal.md) é fornecido pela interface [**IDWriteInlineObject**](/windows/win32/api/dwrite/nn-dwrite-idwriteinlineobject) . Para usar objetos embutidos, você deve implementar essa interface. Ele manipula o desenho do objeto embutido, bem como fornece métricas e outras informações para o renderizador.
+o suporte para objetos embutidos no [DirectWrite](direct-write-portal.md) é fornecido pela interface [**IDWriteInlineObject**](/windows/win32/api/dwrite/nn-dwrite-idwriteinlineobject) . Para usar objetos embutidos, você deve implementar essa interface. Ele manipula o desenho do objeto embutido, bem como fornece métricas e outras informações para o renderizador.
 
 Crie um novo arquivo de cabeçalho e declare uma interface chamada InlineImage, derivada de [**IDWriteInlineObject**](/windows/win32/api/dwrite/nn-dwrite-idwriteinlineobject).
 
@@ -255,6 +255,6 @@ SafeRelease(&pInlineImage_);
 
 
 
- 
+ 
 
- 
+ 

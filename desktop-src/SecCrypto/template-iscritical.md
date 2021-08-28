@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 66f9dc90828cd474497478872f154adbd3fcd12a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c86d03d0ebefe8c5e5c553b95843fd81343578d152e8abb5a3bf16dc07138b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972097"
 ---
 # <a name="templateiscritical-property"></a>Propriedade modelo. IsCritical
 
@@ -45,7 +45,7 @@ Se **for true**, a extensão do modelo será marcada como crítica.
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

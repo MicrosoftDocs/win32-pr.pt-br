@@ -1,7 +1,7 @@
 ---
-description: Características de material de PRT (transferência de radiante computacional) de harmônica esférica (SH).
+description: Características de material de PRT (transferência de radiance) pré-comutada (SH) esférica.
 ms.assetid: 2be49f96-ac61-46aa-8d56-d8eee8dca9ed
-title: Estrutura D3DXSHMATERIAL (D3dx9mesh. h)
+title: Estrutura D3DXSHMATERIAL (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 0600cc0c1ebe086f0d6679182125350b1ee8ca98
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4bfbf00c7d8654ad851ca8c691c9f028c09648219dbe76bb4ef07fe3b830e4d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105808346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849716"
 ---
 # <a name="d3dxshmaterial-structure"></a>Estrutura D3DXSHMATERIAL
 
-Características de material de PRT (transferência de radiante computacional) de harmônica esférica (SH).
+Características de material de PRT (transferência de radiance) pré-comutada (SH) esférica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,33 +58,33 @@ Albedo difuso da superfície. Esse valor será ignorado se o objeto for um espel
 **bMirror**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Deve ser definido como **false**.
+Deve ser definido como **FALSE.**
 
 </dd> <dt>
 
 **bSubSurf**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Defina como **true** para habilitar a dispersão de subsuperfície; qualquer objeto que faça a dispersão da subsuperfície não pode ser um espelho.
+Definido como **TRUE para** habilitar o dispersão de subsuficiência; qualquer objeto que faça dispersão de sub-superfície não pode ser um espelho.
 
 </dd> <dt>
 
-**RelativeIndexOfRefraction**
+**RelativeIndexOfRedexion**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O índice relativo de refração é a proporção entre dois índices absolutos de refração. Um índice de refração é a proporção do seno do ângulo de incidência para o seno do ângulo de refração.
+O índice relativo de reação é a proporção entre dois índices absolutos de refração. Um índice de reação é a proporção do seno do ângulo de redução para o seno do ângulo de refração.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-O coeficiente de absorção é um parâmetro para a equação de renderização de volume usado para modelar a propagação clara em uma mídia participante.
+O coeficiente de absorção é um parâmetro para a equação de renderização de volume usada para modelar a propagação de luz em uma mídia participante.
 
 </dd> <dt>
 
@@ -106,17 +106,17 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-O coeficiente de dispersão reduzida é um parâmetro para a equação de renderização de volume usado para modelar a propagação clara em uma mídia de participação.
+O coeficiente de dispersão reduzido é um parâmetro para a equação de renderização de volume usada para modelar a propagação de luz em uma mídia participante.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-As cenas não Spectrals usam o canal vermelho dos materiais em vez do valor de luminância.
+Cenas não especificais usam o canal vermelho dos materiais em vez do valor de luminância.
 
-Para obter mais informações sobre o PRT, consulte:
+Para obter mais informações sobre PRT, consulte:
 
--   Jensen, Henrik Wann, et al. SIGGRAPH procedimentos: um modelo prático para transporte de luz de subsuperfície, 2001.
+-   Clara, Wann, et al. Siggraph Proceedings: A Practical Model for Subsurface Light Transport, 2001.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,7 +124,7 @@ Para obter mais informações sobre o PRT, consulte:
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

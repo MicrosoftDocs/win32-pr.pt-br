@@ -4,16 +4,16 @@ description: IAgentCharacter GetSoundEffectsOn
 ms.assetid: 11bc074e-7654-4a78-920e-acd56db52c98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a40f18a4fb8e7778c116c54391a7dc50e5267af
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f7133e41e4c291200feaf8fdb8ab3919cdb622ca927c155fc0941202fd555a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848636"
 ---
 # <a name="iagentcharactergetsoundeffectson"></a>IAgentCharacter::GetSoundEffectsOn
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetSoundEffectsOn(
@@ -30,20 +30,20 @@ Recupera se a configuração de efeitos de som do caractere está habilitada.
 <span id="pbOn"></span><span id="pbon"></span><span id="PBON"></span>*pbOn*
 </dt> <dd>
 
-Endereço de uma variável que recebe **true** se a configuração de efeitos de som do caractere estiver habilitada; **false** se estiver desabilitado.
+Endereço de uma variável que recebe **True se** a configuração de efeitos de som do caractere estiver habilitada, **False** se desabilitada.
 
 </dd> </dl>
 
-A configuração de efeitos de som do caractere determina se os efeitos sonoros compilados como parte do caractere são reproduzidos quando você executa uma animação associada. A configuração está sujeita à configuração de efeitos de som global do usuário em [**IAgentAudioOutputProperties:: GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md).
+A configuração de efeitos de som do caractere determina se os efeitos de som compilados como parte do caractere são interpretados quando você reproduz uma animação associada. A configuração está sujeita à configuração de efeitos de som globais do usuário [**em IAgentAudioOutputProperties::GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md).
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCharacter:: SetSoundEffectsOn**](iagentcharacter--setsoundeffectson.md), [ **IAgentAudioOutputProperties:: GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md)
+[**IAgentCharacter::SetSoundEffectsOn**](iagentcharacter--setsoundeffectson.md), [ **IAgentAudioOutputProperties::GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

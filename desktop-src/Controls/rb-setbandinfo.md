@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_SETBANDINFO (commctrl. h)
-description: Define características de uma banda existente em um controle rebar.
+title: RB_SETBANDINFO mensagem (Commctrl.h)
+description: Define características de uma banda existente em um controle de barra rebar.
 ms.assetid: 00021c35-612d-4278-b10c-6e9f1f45a543
 keywords:
-- Controles de RB_SETBANDINFO de mensagens do Windows
+- RB_SETBANDINFO controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92e81377a40f8b6054f5d8cfae16837621b77b61
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aee89d91bc65556179d14c7e86a69a9e6399223f38bb1bcc44f746d7cd8f8a80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798466"
 ---
-# <a name="rb_setbandinfo-message"></a>\_Mensagem SETBANDINFO RB
+# <a name="rb_setbandinfo-message"></a>Mensagem RB \_ SETBANDINFO
 
-Define características de uma banda existente em um controle rebar.
+Define características de uma banda existente em um controle de barra rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,20 +34,20 @@ Define características de uma banda existente em um controle rebar.
 *wParam* 
 </dt> <dd>
 
-Índice de base zero da banda para receber as novas configurações.
+Índice baseado em zero da banda para receber as novas configurações.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que define a banda a ser modificada e as novas configurações. Antes de enviar essa mensagem, você deve definir o membro **cbSize** dessa estrutura como a estrutura **sizeof**(REBARBANDINFO). Além disso, você deve definir o membro **cch** da estrutura **REBARBANDINFO** para o tamanho do buffer **lpText** quando o \_ texto RBBIM for especificado.
+Ponteiro para uma [**estrutura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que define a banda a ser modificada e as novas configurações. Antes de enviar essa mensagem, você deve definir o membro **cbSize** dessa estrutura como a estrutura **sizeof**(REBARBANDINFO). Além disso, você deve definir o membro **cch** da estrutura **REBARBANDINFO** para o tamanho do buffer **lpText** quando RBBIM \_ TEXT for especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **RB \_ SETBANDINFOW** (Unicode) e **RB \_ SETBANDINFOA** (ANSI)<br/>             |
 
 

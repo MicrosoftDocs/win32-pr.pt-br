@@ -1,7 +1,7 @@
 ---
-description: 'CTransformOutputPin:: m_pTransformFilter ponteiro de membro para o filtro proprietário.'
+description: Membro CTransformOutputPin::m_pTransformFilter – ponteiro para o filtro de propriedade.
 ms.assetid: b70c4c25-ee2a-4667-964e-70db0f46f0ae
-title: 'Membro CTransformOutputPin:: m_pTransformFilter (Transfrm. h)'
+title: Membro CTransformOutputPin::m_pTransformFilter (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1840090030c4bbdfa2020462bd8f5a2b51595996
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71b528245aa7fa29cab332b2c54c5d13d9a304c86076618f467b1471670fc70c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915166"
 ---
-# <a name="ctransformoutputpinm_ptransformfilter-member"></a>Membro de CTransformOutputPin:: m \_ pTransformFilter
+# <a name="ctransformoutputpinm_ptransformfilter-member"></a>Membro CTransformOutputPin::m \_ pTransformFilter
 
-Ponteiro para o filtro proprietário.
+Ponteiro para o filtro de propriedade.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,8 +42,8 @@ CTransformOutputPin *m_pTransformFilter;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

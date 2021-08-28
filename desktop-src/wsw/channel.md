@@ -1,5 +1,5 @@
 ---
-title: Canal (serviços Web do Windows)
+title: canal (Windows serviços Web)
 description: Os canais encapsulam um contexto de comunicação entre duas ou mais partes e são usados para enviar e receber mensagens.
 ms.assetid: 5a04580d-c89f-4505-a4b7-0724ffb788fd
 keywords:
@@ -8,14 +8,14 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b93819057f2de4ecf82b2def9cdc4fe14dd1b0ee
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0ff11601f372416527f1d521f8fb9880c98821f9421b633f9eed059cc5b4f672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026644"
 ---
-# <a name="channel-windows-web-services"></a>Canal (serviços Web do Windows)
+# <a name="channel-windows-web-services"></a>canal (Windows serviços Web)
 
 Os canais encapsulam um contexto de comunicação entre duas ou mais partes e são usados para enviar e receber mensagens.
 
