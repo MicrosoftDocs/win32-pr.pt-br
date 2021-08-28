@@ -1,7 +1,7 @@
 ---
-description: Construtor de CBaseList. CBaseList-método de construtor.
+description: Construtor CBaseList.CBaseList – método do construtor.
 ms.assetid: 2982f53a-c222-4a9d-812a-42897ca4cb5c
-title: Construtor CBaseList. CBaseList (Wxlist. h)
+title: Construtor CBaseList.CBaseList (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66aad24fe2d5176c684d4d78be27833e3be2f909
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b734722371aa80e3c120dde3c6fb629785dfc6cdf9786c7f4ab1cbea87e5559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016974"
 ---
-# <a name="cbaselistcbaselist-constructor"></a>Construtor CBaseList. CBaseList
+# <a name="cbaselistcbaselist-constructor"></a>Construtor CBaseList.CBaseList
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ CBaseList(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Ponteiro para o nome da lista.
@@ -59,12 +59,12 @@ Para eficiência, a `CBaseList` classe mantém um cache de nós de lista. Esta v
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

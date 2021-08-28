@@ -3,7 +3,7 @@ title: WM/WMShadowFileSourceFileType (SDK do Windows Media Player)
 description: O WM/WMShadowFileSourceFileType é o tipo de arquivo do arquivo contido no arquivo de sombra.
 ms.assetid: 4c4b70b6-0e26-49f3-b7c1-f6e1fe791e48
 keywords:
-- WM/WMShadowFileSourceFileType Windows Media Player
+- Windows Media Player do WM/WMShadowFileSourceFileType
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01fc2eb3d91cd05493f98c75d3b7ada3132816ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fecddc4ddaf1d28b464a2d120c5d7fea11779784ed6ec496cdddcb1a09a9ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000776"
 ---
 # <a name="wmwmshadowfilesourcefiletype-windows-media-player-sdk"></a>WM/WMShadowFileSourceFileType (SDK do Windows Media Player)
 

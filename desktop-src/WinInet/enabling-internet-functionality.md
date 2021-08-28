@@ -4,12 +4,12 @@ description: Antes de usar as funções WinINet, o aplicativo deve tentar fazer 
 ms.assetid: 80747c0d-5a09-4ffa-a0ca-b051b82acbf8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adb44fadaf0726b81618dde19105da7517673a00
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 23f4780b508059c088e2948829662171fd6df46f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008031"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885499"
 ---
 # <a name="enabling-internet-functionality"></a>Habilitando a funcionalidade da Internet
 
@@ -37,7 +37,7 @@ O [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) dá 
 -   Use \_ \_ \_ o proxy de tipo aberto da Internet se o sistema no qual o aplicativo está sendo executado usar um ou mais servidores proxy para acessar a Internet. O [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) usa os servidores proxy indicados por *lpszProxyName* e ignora o proxy para quaisquer nomes de host ou endereços IP especificados por *lpszProxyBypass*.
 -   Use INTERNET \_ Open \_ tipo \_ preconfig para instruir seu aplicativo a recuperar a configuração do registro. Normalmente, essa é a melhor opção, pois a maioria dos aplicativos, incluindo navegadores da Web, usa essa opção.
 
-INTERNET \_ Open \_ Type a \_ preconfig examina os valores de registro **ProxyEnable**, **ProxyServer** e **ProxyOverride**. Esses valores estão localizados em "HKEY \_ Current \_ user \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Settings".
+INTERNET \_ Open \_ Type a \_ preconfig examina os valores de registro **ProxyEnable**, **ProxyServer** e **ProxyOverride**. esses valores estão localizados em "HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Configurações".
 
 Se **ProxyEnable** for zero, o aplicativo usará o \_ tipo de abertura direto da Internet \_ \_ . Caso contrário, o aplicativo usará \_ \_ \_ o proxy de tipo aberto da Internet e usará as informações de **ProxyServer** e **ProxyOverride** .
 
@@ -47,13 +47,13 @@ As funções do WinINet fornecerão suporte para proxies de tipo Socks somente s
 
 O WinINet reconhece dois tipos de proxy: proxies de tipo CERN (somente HTTP) e proxies FTP TIS (somente FTP). Se o Internet Explorer estiver instalado, o WinINet também oferecerá suporte a proxies de tipo Socks. O [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) assume, por padrão, que o proxy especificado é um proxy de CERN. Se o tipo de acesso estiver definido como \_ Internet Open \_ Type \_ Direct ou Internet \_ Open \_ Type \_ preconfig, o parâmetro *LpszProxyName* de [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) deverá ser definido como **null**. Caso contrário, o valor passado para *lpszProxyName* deve conter os proxies em uma cadeia de caracteres delimitada por espaço. As listagens de proxy podem conter o número da porta usado para acessar o proxy.
 
-Para listar um proxy para um protocolo específico, a cadeia de caracteres deve seguir o formato "" <protocol> <protocol> ://<nome do proxy \_> "". Os protocolos válidos são HTTP, HTTPS e FTP. Por exemplo, para listar um proxy de FTP, uma cadeia de caracteres válida seria "" FTP = FTP://FTP \_ proxy \_ Name: 21 "", onde \_ \_ o nome do proxy FTP é o nome do proxy FTP e 21 é o número da porta que deve ser usado para acessar o proxy. Se o proxy usar o número da porta padrão para esse protocolo, o número da porta poderá ser omitido. Se um nome de proxy estiver listado por si só, ele será usado como o proxy padrão para qualquer protocolo que não tenha um proxy específico especificado. Por exemplo, "" http = https://http\_proxy other "" usaria o \_ proxy http para qualquer operação http, enquanto todos os outros protocolos usariam outros.
+Para listar um proxy para um protocolo específico, a cadeia de caracteres deve seguir o formato "" protocolo de &lt; protocolo &gt; &lt; &gt; ://<nome do proxy \_> "". Os protocolos válidos são HTTP, HTTPS e FTP. Por exemplo, para listar um proxy de FTP, uma cadeia de caracteres válida seria "" FTP = FTP://FTP \_ proxy \_ Name: 21 "", onde \_ \_ o nome do proxy FTP é o nome do proxy FTP e 21 é o número da porta que deve ser usado para acessar o proxy. Se o proxy usar o número da porta padrão para esse protocolo, o número da porta poderá ser omitido. Se um nome de proxy estiver listado por si só, ele será usado como o proxy padrão para qualquer protocolo que não tenha um proxy específico especificado. Por exemplo, "" http = https://http\_proxy other "" usaria o \_ proxy http para qualquer operação http, enquanto todos os outros protocolos usariam outros.
 
 Por padrão, a função pressupõe que o proxy especificado por *lpszProxyName* seja um proxy de CERN. Um aplicativo pode especificar mais de um proxy, incluindo proxies diferentes para os diferentes protocolos. Por exemplo, se você especificar "" FTP = FTP://FTP-GW HTTP = https://jericho:99 proxy "", as solicitações de FTP serão feitas por meio do proxy de FTP-GW, que escuta na porta 21, e as solicitações HTTP são feitas por meio de um proxy CERN chamado Jericho, que escuta na porta 99. Caso contrário, as solicitações HTTP seriam feitas por meio do proxy CERN chamado proxy, que escuta na porta 80. Observe que, se o aplicativo estiver usando apenas o FTP, por exemplo, ele não precisará especificar "" FTP = FTP://FTP-GW: 21 "". Ele poderia especificar apenas "" FTP-GW "". Um aplicativo só será necessário para especificar os nomes de protocolo se ele estiver usando mais de um protocolo por identificador retornado por [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena).
 
 ### <a name="listing-the-proxy-bypass"></a>Listando o bypass do proxy
 
-Os nomes de host ou endereços IP que não devem ser enviados ao proxy podem ser listados na lista de bypass de proxy. Essa lista pode conter curingas, " \* ", que fazem com que o aplicativo ignore o servidor proxy para endereços que se ajustam ao padrão especificado. Para listar vários endereços e nomes de host, separe-os com ponto e vírgula na cadeia de caracteres de bypass de proxy. Se a <local> macro "" for especificada, a função ignorará o proxy para qualquer nome de host que não contenha um ponto.
+Os nomes de host ou endereços IP que não devem ser enviados ao proxy podem ser listados na lista de bypass de proxy. Essa lista pode conter curingas, " \* ", que fazem com que o aplicativo ignore o servidor proxy para endereços que se ajustam ao padrão especificado. Para listar vários endereços e nomes de host, separe-os com ponto e vírgula na cadeia de caracteres de bypass de proxy. Se a &lt; macro "local &gt; " for especificada, a função ignorará o proxy para qualquer nome de host que não contiver um ponto.
 
 Por padrão, o WinINet irá ignorar o proxy para solicitações que usam os nomes de host "localhost", "Loopback", "127.0.0.1" ou " \[ :: 1 \] ". Esse comportamento existe porque um servidor proxy remoto normalmente não resolverá esses endereços corretamente.
 
@@ -104,45 +104,15 @@ A porta do servidor é o número da porta TCP/IP (protocolo de controle de trans
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>INTERNET_DEFAULT_FTP_PORT</td>
-<td>Use a porta padrão para servidores FTP (porta 21).</td>
-</tr>
-<tr class="even">
-<td>INTERNET_DEFAULT_GOPHER_PORT</td>
-<td>Use a porta padrão para servidores Gopher (porta 70).
-<blockquote>
-[!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>INTERNET_DEFAULT_HTTP_PORT</td>
-<td>Use a porta padrão para servidores http (porta 80).</td>
-</tr>
-<tr class="even">
-<td>INTERNET_DEFAULT_HTTPS_PORT</td>
-<td>Use a porta padrão para servidores HTTPS (porta 443).</td>
-</tr>
-<tr class="odd">
-<td>INTERNET_DEFAULT_SOCKS_PORT</td>
-<td>Use a porta padrão para servidores de firewall Socks (porta 1080).</td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| INTERNET_DEFAULT_FTP_PORT | Use a porta padrão para servidores FTP (porta 21). | 
+| INTERNET_DEFAULT_GOPHER_PORT | Use a porta padrão para servidores Gopher (porta 70).<blockquote>[!Note]<br />Windows XP e Windows Server 2003 R2 e versões anteriores apenas.</blockquote><br /> | 
+| INTERNET_DEFAULT_HTTP_PORT | Use a porta padrão para servidores http (porta 80). | 
+| INTERNET_DEFAULT_HTTPS_PORT | Use a porta padrão para servidores HTTPS (porta 443). | 
+| INTERNET_DEFAULT_SOCKS_PORT | Use a porta padrão para servidores de firewall Socks (porta 1080). | 
+
 
 
 
@@ -182,7 +152,7 @@ Para todas as operações síncronas, o valor de *dwContext* deve ser definido c
 Para sessões de FTP, o [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) tenta estabelecer uma conexão com o servidor na Internet. Para sessões HTTP, o [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) não estabelece uma conexão até que outra função tente obter informações do servidor.
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

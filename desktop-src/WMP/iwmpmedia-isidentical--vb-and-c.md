@@ -1,9 +1,9 @@
 ---
-title: IWMPMedia. isidêntico (VB e C)
-description: A propriedade isidêntica (o \_ método Get Isidênticos em C \) Obtém um valor que indica se o item de mídia especificado é o mesmo que o atual.
+title: IWMPMedia.isIdentical (VB e C )
+description: A propriedade isIdentical (o método get isIdentical em C\ ) obtém um valor que indica se o item de mídia especificado é o mesmo que \_ o atual.
 ms.assetid: 1406a0ff-2dc8-4cde-8b71-4a39b8608fb1
 keywords:
-- IWMPMedia. isidêntico (VB e C) Windows Media Player
+- IWMPMedia.isIdentical (VB e C ) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3a488ad300362c1f8dccfd0fa6f6c7e4dee7676
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24e8de133003bdddcf0438e5a13dc3fa74227ede7bf42350e2b7c3c96f2c197e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003576"
 ---
-# <a name="iwmpmediaisidentical-vb-and-c"></a>IWMPMedia. isidêntico (VB e C#)
+# <a name="iwmpmediaisidentical-vb-and-c"></a>IWMPMedia.isIdentical (VB e C#)
 
-A propriedade **isidêntica** (o método **Get \_ isidênticos** em C#) Obtém um valor que indica se o item de mídia especificado é o mesmo que o atual.
+A **propriedade isIdentical** (o método **get \_ isIdentical** em C#) obtém um valor que indica se o item de mídia especificado é o mesmo que o atual.
 
 
 ```
@@ -49,19 +49,19 @@ System.Boolean get_isIdentical (
 
 *pIWMPMedia*
 
-Uma interface **WMPLib. IWMPMedia** para o item de mídia a ser comparado com o item de mídia atual.
+Uma **interface WMPLib.IWMPMedia** para o item de mídia a ser comparada com o item de mídia atual.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor **System. Boolean** que indica se os dois itens de mídia são idênticos.
+Um **valor System.Boolean** que indica se os dois itens de mídia são idênticos.
 
 ## <a name="remarks"></a>Comentários
 
-**IWMPMedia. isidêntico** é uma propriedade em Visual Basic que usa um parâmetro. Em C#, ele é chamado de método **IWMPMedia. get \_ isidêntico** .
+**IWMPMedia.isIdentical** é uma propriedade no Visual Basic que aceita um parâmetro . Em C#, ele é conhecido como **o método \_ isIdentical IWMPMedia.get.**
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa a propriedade **isidêntica** (o método **Get \_ isidêntico** em C#) para verificar se um item de mídia chamado newMedia é o mesmo que o item de mídia atual. Se eles não forem iguais, o novo item de mídia será reproduzido. Caso contrário, a mídia atual continuará a ser executada sem interrupção. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir usa a propriedade **isIdentical** (o método **\_ get isIdentical** em C#) para verificar se um item de mídia chamado newMedia é o mesmo que o item de mídia atual. Se eles não são os mesmos, o novo item de mídia é interpretado. Caso contrário, a mídia atual continuará a reproduzir ininterruptamente. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -99,7 +99,7 @@ End If
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

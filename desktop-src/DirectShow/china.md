@@ -4,20 +4,20 @@ ms.assetid: eff36db1-3920-4dd6-b786-c8db5c43e5ea
 title: China
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1640c71cff5d91dd34bf13ba05e0bbcb2c3f5d57
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b66fdd425dabd2f7fdbad09091cd2fccc4113cbba91ee15857af8f0d15b98069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105779557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055536"
 ---
 # <a name="china"></a>China
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
 Os índices de frequência nas tabelas da China são adequados para uso como números de canal.
 
-### <a name="china-broadcast-assignments"></a>Atribuições de difusão da China
+### <a name="china-broadcast-assignments"></a>Atribuições de difusão na China
 
 
 ```C++
@@ -221,7 +221,7 @@ Os índices de frequência nas tabelas da China são adequados para uso como nú
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

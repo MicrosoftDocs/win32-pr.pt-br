@@ -4,12 +4,12 @@ ms.assetid: 90a8d690-e9be-4657-aa02-1a78400e3f83
 title: Referência do analisador de Sumário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 554f8af9f39a929dc5acf0db2a8cff266d17a4d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a708f19779cea4fc0549b508081dcf2ebf8fa3d8dffe387c704fdfa46a2efc74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713306"
 ---
 # <a name="table-of-contents-parser-reference"></a>Referência do analisador de Sumário
 

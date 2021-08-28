@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e7e76f55747ab1ff13c0ba1dcb1c2b08bf3bd50c
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 666dd41c823f91be581528691dc55fc937b6fc66362a8bd3744d3a597c50d8a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104006751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712746"
 ---
 # <a name="mediarendererisimagesupported-property"></a>Propriedade MediaRenderer. IsImageSupported
 
@@ -33,7 +33,7 @@ Esta propriedade é somente para leitura.
 
 ```C++
 HRESULT get_IsImageSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -50,9 +50,9 @@ Um valor booliano que será **true** se o DMR for capaz de exibir imagens e **fa
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

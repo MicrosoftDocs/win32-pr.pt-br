@@ -4,12 +4,12 @@ ms.assetid: c90c9247-825f-4602-bb16-809969703a98
 title: Propriedade AVEncStatAudioAverageBPS (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a76bcf1ca7b3ee74ae406ebd71f85988a4d13313
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 47b43bf329d1d55b41c7849fee7855d322f3ab1622bca013ca5e96cfa4f519db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104010044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999856"
 ---
 # <a name="avencstataudioaveragebps-property"></a>Propriedade AVEncStatAudioAverageBPS
 
@@ -37,9 +37,9 @@ Esta propriedade se aplica somente à codificação de taxa de bits variável (V
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

@@ -3,9 +3,9 @@ title: Propriedade IWMPNetwork bufferingTime
 description: A propriedade bufferingTime Obtém ou define a quantidade de tempo, em milissegundos, alocada para armazenar em buffer os dados de entrada antes do início da reprodução.
 ms.assetid: b5936b21-a17b-4801-a5fc-c6d6521e05aa
 keywords:
-- Propriedade bufferingTime Windows Media Player
-- Propriedade bufferingTime Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade bufferingTime
+- Windows Media Player da propriedade bufferingTime
+- propriedade bufferingTime Windows Media Player, interface IWMPNetwork
+- Windows Media Player de interface IWMPNetwork, propriedade bufferingTime
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8594d53797b028dd74a8ef11cb8f2fa64b3654cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d224e35dd9c87dad627e71f2ae07d3d0b9e24ee1b094cfa5dea549e86c69a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999986"
 ---
 # <a name="iwmpnetworkbufferingtime-property"></a>Propriedade IWMPNetwork:: bufferingTime
 

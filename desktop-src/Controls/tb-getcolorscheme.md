@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETCOLORSCHEME (commctrl. h)
-description: Recupera as informações do esquema de cores do controle ToolBar.
+title: TB_GETCOLORSCHEME mensagem (Commctrl.h)
+description: Recupera as informações do esquema de cores do controle da barra de ferramentas.
 ms.assetid: af172631-309e-4181-a690-05946cd6e143
 keywords:
-- Controles de TB_GETCOLORSCHEME de mensagens do Windows
+- TB_GETCOLORSCHEME controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61344439ae8bc2b3a9ecd47472174577d652aa96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22fca3a7a88fd108454c3838d646db311c9be19bf04163b4c8987db67f6c09c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918866"
 ---
-# <a name="tb_getcolorscheme-message"></a>TB de \_ mensagem GETCOLORSCHEME
+# <a name="tb_getcolorscheme-message"></a>Mensagem \_ GETCOLORSCHEME de TB
 
-Recupera as informações do esquema de cores do controle ToolBar.
+Recupera as informações do esquema de cores do controle da barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera as informações do esquema de cores do controle ToolBar.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**ColorScheme**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que receberá as informações do esquema de cores. Você deve definir o membro **cbSize** dessa estrutura como **sizeof**(ColorScheme) antes de enviar esta mensagem.
+Ponteiro para uma [**estrutura COLORSCHEME**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que receberá as informações do esquema de cores. Você deve definir o **membro cbSize** dessa estrutura como **sizeof**(COLORSCHEME) antes de enviar essa mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 <dl> <dt>
 
-[**TB de \_ SETCOLORSCHEME**](tb-setcolorscheme.md)
+[**TB \_ SETCOLORSCHEME**](tb-setcolorscheme.md)
 </dt> </dl>
 
  

@@ -465,7 +465,7 @@
                           href: adding-a-property.md
                         - name: Criando um alias WMI
                           href: creating-an-alias.md
-                    - name: Incorporação de objetos em uma classe
+                    - name: Inserindo objetos em uma classe
                       href: embedded-objects.md
                       items:
                         - name: Criando objetos inseridos
@@ -477,7 +477,7 @@
                       items:
                         - name: Criando e declarando uma instância usando C++
                           href: creating-and-declaring-an-instance-using-c-.md
-                        - name: Criando uma instância usando MOF
+                        - name: Criando uma instância usando o MOF
                           href: creating-an-instance-using-mof.md
                         - name: Criando um objeto usando o VBScript
                           href: creating-an-object-using-vbscript.md
@@ -495,7 +495,7 @@
                       items:
                         - name: Aplicando um qualificador
                           href: applying-a-qualifier.md
-                        - name: Descrevendo um qualificador com um sabor de qualificador
+                        - name: Descrevendo um qualificador com um tipo de qualificador
                           href: describing-a-qualifier-with-a-qualifier-flavor.md
                 - name: Fornecendo dados ao WMI escrevendo um provedor
                   href: supplying-data-to-wmi-by-writing-a-provider.md
@@ -508,7 +508,7 @@
                       href: choosing-correct-registration.md
                 - name: Inicializando um provedor
                   href: initializing-a-provider.md
-                - name: Fazendo chamadas ao WMI
+                - name: Fazendo chamadas para o WMI
                   href: making-calls-to-wmi.md
                 - name: Representando um cliente
                   href: impersonating-a-client.md
@@ -516,9 +516,9 @@
                   href: updating-a-provider.md
                 - name: Descarregando um provedor
                   href: unloading-a-provider.md
-                - name: Escrevendo um provedor de associação para interop
+                - name: Escrevendo um provedor de associação para interoperabilidade
                   href: writing-an-association-provider-for-interop.md
-                - name: Escrevendo um provedor de instância
+                - name: Gravando um provedor de instância
                   href: writing-an-instance-provider.md
                   items:
                     - name: Registrando um provedor de instância
@@ -527,14 +527,14 @@
                       href: implementing-the-primary-interface-for-an-instance-provider.md
                     - name: Melhorando a eficiência de um provedor de instância
                       href: improving-the-efficiency-of-an-instance-provider.md
-                    - name: Suporte Partial-Instance operações
+                    - name: Suporte a operações de Partial-Instance
                       href: supporting-partial-instance-operations.md
-                - name: Escrevendo um provedor de método
+                - name: Escrevendo um provedor de métodos
                   href: writing-a-method-provider.md
                   items:
-                    - name: Registrando um provedor de método
+                    - name: Registrando um provedor de métodos
                       href: registering-a-method-provider.md
-                    - name: Implementando a interface primária para um provedor de método
+                    - name: Implementando a interface primária para um provedor de métodos
                       href: implementing-the-primary-interface-for-a-method-provider.md
                 - name: Escrevendo um provedor de eventos
                   href: writing-an-event-provider.md
@@ -553,37 +553,37 @@
                 - name: Escrevendo um provedor de classe
                   href: writing-a-class-provider.md
                   items:
-                    - name: Determinando o status de push ou pull
+                    - name: Determinando o status de Push ou pull
                       href: determining-push-or-pull-status.md
                     - name: Registrando um provedor de classe
                       href: registering-a-class-provider.md
                     - name: Implementando a interface primária para um provedor de classe
                       href: implementing-the-primary-interface-for-a-class-provider.md
-                - name: Escrevendo um provedor de propriedades
+                - name: Gravando um provedor de propriedades
                   href: writing-a-property-provider.md
                   items:
                     - name: Registrando um provedor de propriedades
                       href: registering-a-property-provider.md
                     - name: Implementando a interface primária para um provedor de propriedades
                       href: implementing-the-primary-interface-for-a-property-provider.md
-                - name: Transformando um provedor de instância em um provedor High-Performance dados
+                - name: Criando um provedor de instância em um provedor de High-Performance
                   href: making-an-instance-provider-into-a-high-performance-provider.md
                   items:
-                    - name: Registrando um provedor High-Performance dados
+                    - name: Registrando um provedor de High-Performance
                       href: registering-a-high-performance-provider.md
-                    - name: Implementando a High-Performance interface
+                    - name: Implementando a interface High-Performance
                       href: implementing-the-high-performance-interface.md
-                    - name: Dando suporte à Win32_PerfRawData classe
+                    - name: Dando suporte à classe Win32_PerfRawData
                       href: supporting-the-win32-perfrawdata-class.md
-                    - name: Dando suporte à Win32_PerfFormattedData classe
+                    - name: Dando suporte à classe Win32_PerfFormattedData
                       href: supporting-the-win32-perfformatteddata-class.md
-        - name: Mantendo a segurança WMI
+        - name: Mantendo a segurança do WMI
           href: maintaining-wmi-security.md
           items:
-            - name: Proteger namespaces WMI
+            - name: Protegendo namespaces WMI
               href: securing-wmi-namespaces.md
               items:
-                - name: Definindo descritores de segurança do namespace
+                - name: Definindo descritores de segurança de namespace
                   href: setting-namespace-security-descriptors.md
                   items:
                     - name: Definindo a segurança do namespace com o controle WMI
@@ -594,31 +594,31 @@
                   href: requiring-an-encrypted-connection-to-a-namespace.md
                 - name: Estabelecendo a herança da segurança do namespace
                   href: establishing-inheritance-of-namespace-security.md
-            - name: Proteger seu provedor
+            - name: Protegendo seu provedor
               href: securing-your-provider.md
               items:
-                - name: Hospedagem e segurança do provedor
+                - name: Hospedagem e segurança de provedor
                   href: provider-hosting-and-security.md
-                - name: Chaves do Registro para controlar a segurança do provedor
+                - name: Chaves do registro para controlar a segurança do provedor
                   href: registry-keys-for-controlling-provider-security-.md
-            - name: Proteger clientes e provedores C++
+            - name: Protegendo clientes e provedores do C++
               href: securing-c---clients-and-providers.md
               items:
-                - name: Definindo a segurança do processo de aplicativo cliente
+                - name: Definindo a segurança do processo do aplicativo cliente
                   href: setting-client-application-process-security.md
                   items:
                     - name: Definindo o nível de segurança do processo padrão usando C++
                       href: setting-the-default-process-security-level-using-c-.md
-                - name: Definindo a autenticação no WMI
+                - name: Configurando a autenticação no WMI
                   href: setting-authentication-in-wmi.md
                   items:
-                    - name: Definindo a autenticação usando C++
+                    - name: Configurando a autenticação usando C++
                       href: setting-authentication-using-c-.md
                     - name: Especificando o nome principal do servidor
                       href: specifying-the-server-principal-name.md
-                    - name: Implementando a desaplicação
+                    - name: Implementando o encobrimento
                       href: implementing-cloaking.md
-                - name: Definindo a segurança em IWbemServices e outros proxies
+                - name: Definindo a segurança em IWbemServices e em outros proxies
                   href: setting-the-security-on-iwbemservices-and-other-proxies.md
                 - name: Executando operações privilegiadas
                   href: executing-privileged-operations.md
@@ -628,11 +628,11 @@
                 - name: Definindo a segurança em uma chamada assíncrona
                   href: setting-security-on-an-asynchronous-call.md
                   items:
-                    - name: Redução da segurança de um sink em um processo separado
+                    - name: Reduzindo a segurança de um coletor em um processo separado
                       href: lowering-the-security-for-a-sink-in-a-separate-process.md
                 - name: Executando verificações de acesso
                   href: performing-access-checks.md
-            - name: Proteger clientes de script
+            - name: Protegendo clientes de script
               href: securing-scripting-clients.md
               items:
                 - name: Definir o nível de segurança do processo padrão com o VBScript
@@ -645,23 +645,23 @@
                   href: executing-privileged-operations-using-vbscript.md
                 - name: Configurando o IIS 5 e posterior para scripts ASP WMI
                   href: configuring-iis-5-for-wmi-asp-scripting.md
-            - name: Proteger eventos WMI
+            - name: Protegendo eventos WMI
               href: securing-wmi-events.md
               items:
                 - name: Fornecendo eventos com segurança
                   href: providing-events-securely.md
                 - name: Recebendo eventos com segurança
                   href: receiving-events-securely.md
-            - name: Alterando a segurança de acesso em objetos securáveis
+            - name: Alterando a segurança de acesso em objetos protegíveis
               href: changing-access-security-on-securable-objects.md
         - name: Obter e fornecer dados em um computador de 64 bits
           href: getting-and-providing-data-on-a-64-bit-computer.md
           items:
             - name: Solicitando dados WMI em uma plataforma de 64 bits
               href: requesting-wmi-data-on-a-64-bit-platform.md
-            - name: Fornecendo dados WMI em uma plataforma de 64 bits
+            - name: Fornecendo dados do WMI em uma plataforma de 64 bits
               href: providing-wmi-data-on-a-64-bit-platform.md
-        - name: Localizando informações de classe WMI
+        - name: Localizando informações da classe WMI
           href: localizing-wmi-class-information.md
           items:
             - name: Criando definições de classe localizadas
@@ -676,9 +676,9 @@
             - name: Recuperando classes corrigidas
               href: retrieving-amended-classes.md
               items:
-                - name: Recuperando classes corrigidas usando a API de Script para WMI
+                - name: Recuperando classes corrigidas usando a API de script para WMI
                   href: retrieving-amended-classes-using-the-scripting-api-for-wmi.md
-                - name: Recuperando classes corrigidas usando a API COM para WMI
+                - name: Recuperando classes corrigidas usando a API COM para o WMI
                   href: retrieving-amended-classes-using-the-com-api-for-wmi.md
             - name: Considerações sobre a classe corrigida
               href: amended-class-considerations.md
@@ -925,6 +925,14 @@
               href: wmiperfclass-provider.md
             - name: Provedor de WmiPerfInst
               href: wmiperfinst-provider.md
+            - name: Classes de inventário de aplicativos
+              href: applicationanddeviceinventory-portal.md
+            - name: Classe Win32_InstalledWin32Program
+              href: win32-installedwin32program.md
+            - name: Classe Win32_InstalledStoreProgram
+              href: win32-installedstoreprogram.md
+            - name: Classe Win32_InstalledProgramFramework
+              href: win32-installedprogramframework.md
         - name: Classes C++ de estrutura do provedor WMI
           href: wmi-c-classes.md
           items:
@@ -1110,9 +1118,9 @@
                         - name: Métodos GetEmptyInstance
                           href: cwbemproviderglue-getemptyinstance.md
                           items:
-                            - name: 'Método GetEmptyInstance (LPCWSTR, CInstance * *, LPCWSTR)'
+                            - name: 'Método GetEmptyInstance(LPCWSTR, CInstance**, LPCWSTR)'
                               href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getemptyinstance(methodcontext_lpcwstr_cinstance_lpcwstr)
-                            - name: 'Método GetEmptyInstance (MethodContext *, LPCWSTR, CInstance * *, LPCWSTR)'
+                            - name: 'Método GetEmptyInstance(MethodContext*, LPCWSTR, CInstance**, LPCWSTR)'
                               href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getemptyinstance(methodcontext_lpcwstr_cinstance_lpcwstr)
                         - name: Método GetInstanceByPath
                           href: /windows/desktop/api/wbemglue/nf-wbemglue-cwbemproviderglue-getinstancebypath(lpcwstr_cinstance_methodcontext)
@@ -1576,11 +1584,11 @@
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-not-equal-to
                         - name: método operator >
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than
-                        - name: operador >= método
+                        - name: operator >= method
                           href: /windows/win32/api/wbemtime/nf-wbemtime-wbemtimespan-operator-greater-than-equal-to
                         - name: método operator <
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than
-                        - name: operador <= método
+                        - name: operator <= method
                           href: /windows/desktop/api/wbemtime/nf-wbemtime-wbemtimespan-operator-less-than-equal-to
         - name: API COM para WMI
           href: com-api-for-wmi.md
@@ -2270,13 +2278,13 @@
                           href: swbemdatetime-day.md
                         - name: Propriedade DaySpecified
                           href: swbemdatetime-dayspecified.md
-                        - name: Propriedade hours
+                        - name: Propriedade Hours
                           href: swbemdatetime-hours.md
                         - name: Propriedade HoursSpecified
                           href: swbemdatetime-hoursspecified.md
-                        - name: Propriedade isinterval
+                        - name: Propriedade IsInterval
                           href: swbemdatetime-isinterval.md
-                        - name: Propriedade de microssegundos
+                        - name: Propriedade Microssegundos
                           href: swbemdatetime-microseconds.md
                         - name: Propriedade MicrosecondsSpecified
                           href: swbemdatetime-microsecondsspecified.md
@@ -2284,7 +2292,7 @@
                           href: swbemdatetime-minutes.md
                         - name: Propriedade MinutesSpecified
                           href: swbemdatetime-minutesspecified.md
-                        - name: Propriedade month
+                        - name: Propriedade Month
                           href: swbemdatetime-month.md
                         - name: Propriedade MonthSpecified
                           href: swbemdatetime-monthspecified.md
@@ -2298,7 +2306,7 @@
                           href: swbemdatetime-utcspecified.md
                         - name: Propriedade Value
                           href: swbemdatetime-value.md
-                        - name: Propriedade year
+                        - name: Propriedade Year
                           href: swbemdatetime-year.md
                         - name: Propriedade YearSpecified
                           href: swbemdatetime-yearspecified.md
@@ -2310,10 +2318,10 @@
                       items:
                         - name: Método NextEvent
                           href: swbemeventsource-nextevent.md
-                    - name: Propriedades de SWbemEventSource
+                    - name: Propriedades SWbemEventSource
                       href: swbemeventsource-properties.md
                       items:
-                        - name: Propriedade Security_
+                        - name: Security_ propriedade
                           href: swbemeventsource-security-.md
                 - name: SWbemLastError
                   href: swbemlasterror.md
@@ -2321,18 +2329,18 @@
                     - name: Métodos SWbemLastError
                       href: swbemlasterror-methods.md
                       items:
-                        - name: Método de Clone_
+                        - name: Clone_ método
                           href: swbemlasterror-clone-.md
-                        - name: Método de CompareTo_
+                        - name: CompareTo_ método
                           href: swbemlasterror-compareto-.md
-                        - name: Método de GetObjectText_
+                        - name: GetObjectText_ método
                           href: swbemlasterror-getobjecttext-.md
-                    - name: Propriedades de SWbemLastError
+                    - name: Propriedades SWbemLastError
                       href: swbemlasterror-properties.md
                       items:
-                        - name: Propriedade Path_
+                        - name: Path_ propriedade
                           href: swbemlasterror-path-.md
-                        - name: Propriedade Properties_
+                        - name: Properties_ propriedade
                           href: swbemlasterror-properties-.md
                 - name: SWbemLocator
                   href: swbemlocator.md
@@ -2345,7 +2353,7 @@
                     - name: Propriedades de SWbemLocator
                       href: swbemlocator-properties.md
                       items:
-                        - name: Propriedade Security_
+                        - name: Security_ propriedade
                           href: swbemlocator-security-.md
                 - name: SWbemMethod
                   href: swbemmethod.md
@@ -2353,15 +2361,15 @@
                     - name: Propriedades de SWbemMethod
                       href: swbemmethod-properties.md
                       items:
-                        - name: Propriedade Parameters
+                        - name: Propriedade InParameters
                           href: swbemmethod-inparameters.md
                         - name: Propriedade Name
                           href: swbemmethod-name.md
                         - name: Propriedade Origin
                           href: swbemmethod-origin.md
-                        - name: Propriedade Parameters
+                        - name: Propriedade OutParameters
                           href: swbemmethod-outparameters.md
-                        - name: Propriedade Qualifiers_
+                        - name: Qualifiers_ propriedade
                           href: swbemmethod-qualifiers-.md
                 - name: SWbemMethodSet
                   href: swbemmethodset.md
@@ -2379,7 +2387,7 @@
                 - name: SWbemNamedValue
                   href: swbemnamedvalue.md
                   items:
-                    - name: Propriedades de SWbemNamedValue
+                    - name: Propriedades SWbemNamedValue
                       href: swbemnamedvalue-properties.md
                       items:
                         - name: Propriedade Name
@@ -2402,52 +2410,52 @@
                           href: swbemnamedvalueset-item.md
                         - name: Método remove
                           href: swbemnamedvalueset-remove.md
-                    - name: Propriedades de SWbemNamedValueSet
+                    - name: Propriedades SWbemNamedValueSet
                       href: swbemnamedvalueset-properties.md
                       items:
                         - name: Propriedade Count
                           href: swbemnamedvalueset-count.md
-                - name: SWbemObject
+                - name: Swbemobject
                   href: swbemobject.md
                   items:
                     - name: Métodos SWbemObject
                       href: swbemobject-methods.md
                       items:
-                        - name: Método de Associators_
+                        - name: Associators_ método
                           href: swbemobject-associators-.md
-                        - name: Método de AssociatorsAsync_
+                        - name: AssociatorsAsync_ método
                           href: swbemobject-associatorsasync-.md
-                        - name: Método de Clone_
+                        - name: Clone_ método
                           href: swbemobject-clone-.md
-                        - name: Método de CompareTo_
+                        - name: CompareTo_ método
                           href: swbemobject-compareto-.md
-                        - name: Método de Delete_
+                        - name: Delete_ método
                           href: swbemobject-delete-.md
-                        - name: Método de DeleteAsync_
+                        - name: DeleteAsync_ método
                           href: swbemobject-deleteasync-.md
-                        - name: Método de ExecMethod_
+                        - name: ExecMethod_ método
                           href: swbemobject-execmethod-.md
-                        - name: Método de ExecMethodAsync_
+                        - name: ExecMethodAsync_ método
                           href: swbemobject-execmethodasync-.md
-                        - name: Método de GetObjectText_
+                        - name: GetObjectText_ método
                           href: swbemobject-getobjecttext-.md
-                        - name: Método de Instances_
+                        - name: Instances_ método
                           href: swbemobject-instances-.md
-                        - name: Método de InstancesAsync_
+                        - name: InstancesAsync_ método
                           href: swbemobject-instancesasync-.md
-                        - name: Método de Put_
+                        - name: Put_ método
                           href: swbemobject-put-.md
-                        - name: Método de PutAsync_
+                        - name: PutAsync_ método
                           href: swbemobject-putasync-.md
-                        - name: Método de References_
+                        - name: References_ método
                           href: swbemobject-references-.md
-                        - name: Método de ReferencesAsync_
+                        - name: ReferencesAsync_ método
                           href: swbemobject-referencesasync-.md
-                        - name: Método de SpawnDerivedClass_
+                        - name: SpawnDerivedClass_ método
                           href: swbemobject-spawnderivedclass-.md
-                        - name: Método de SpawnInstance_
+                        - name: SpawnInstance_ método
                           href: swbemobject-spawninstance-.md
-                        - name: Método de Subclasses_
+                        - name: Subclasses_ método
                           href: swbemobject-subclasses-.md
                         - name: Método de SubclassesAsync_
                           href: swbemobject-subclassesasync-.md
@@ -2458,13 +2466,13 @@
                           href: swbemobject-derivation-.md
                         - name: Propriedade Methods_
                           href: swbemobject-methods-.md
-                        - name: Path_ propriedade
+                        - name: Propriedade Path_
                           href: swbemobject-path-.md
-                        - name: Properties_ propriedade
+                        - name: Propriedade Properties_
                           href: swbemobject-properties-.md
-                        - name: Qualifiers_ propriedade
+                        - name: Propriedade Qualifiers_
                           href: swbemobject-qualifiers-.md
-                        - name: Security_ propriedade
+                        - name: Propriedade Security_
                           href: swbemobject-security-.md
                 - name: SWbemObjectEx
                   href: swbemobjectex.md
@@ -2472,14 +2480,14 @@
                     - name: Métodos SWbemObjectEx
                       href: swbemobjectex-methods.md
                       items:
-                        - name: GetText_ método
+                        - name: Método de GetText_
                           href: swbemobjectex-gettext-.md
-                        - name: Refresh_ método
+                        - name: Método de Refresh_
                           href: swbemobjectex-refresh-.md
                     - name: Propriedades de SWbemObjectEx
                       href: swbemobjectex-properties.md
                       items:
-                        - name: SystemProperties_ propriedade
+                        - name: Propriedade SystemProperties_
                           href: swbemobjectex-systemproperties-.md
                 - name: SWbemObjectPath
                   href: swbemobjectpath.md
@@ -2487,24 +2495,24 @@
                     - name: Métodos SWbemObjectPath
                       href: swbemobjectpath-methods.md
                       items:
-                        - name: Método SetAsSing ltd
+                        - name: Método SetAsSingleton
                           href: swbemobjectpath-setassingleton.md
-                    - name: Propriedades SWbemObjectPath
+                    - name: Propriedades de SWbemObjectPath
                       href: swbemobjectpath-properties.md
                       items:
-                        - name: Propriedade de autoridade
+                        - name: Propriedade Authority
                           href: swbemobjectpath-authority.md
-                        - name: Propriedade Class
+                        - name: Propriedade de classe
                           href: swbemobjectpath-class.md
                         - name: Propriedade DisplayName
                           href: swbemobjectpath-displayname.md
                         - name: Propriedade IsClass
                           href: swbemobjectpath-isclass.md
-                        - name: Propriedade IsSing ltda
+                        - name: Propriedade IsSingleton
                           href: swbemobjectpath-issingleton.md
                         - name: Propriedade Keys
                           href: swbemobjectpath-keys.md
-                        - name: Propriedade Locale
+                        - name: Propriedade locale
                           href: swbemobjectpath-locale.md
                         - name: Propriedade namespace
                           href: swbemobjectpath-namespace.md
@@ -2512,9 +2520,9 @@
                           href: swbemobjectpath-parentnamespace.md
                         - name: Propriedade de caminho
                           href: swbemobjectpath-path.md
-                        - name: Propriedade Relpath
+                        - name: Propriedade RelPath
                           href: swbemobjectpath-relpath.md
-                        - name: Security_ propriedade
+                        - name: Propriedade Security_
                           href: swbemobjectpath-security-.md
                         - name: Propriedade do servidor
                           href: swbemobjectpath-server.md
@@ -2530,17 +2538,17 @@
                           href: swbemobjectset-item.md
                         - name: Método ItemIndex
                           href: swbemobjectset-itemindex.md
-                    - name: Propriedades SWbemObjectSet
+                    - name: Propriedades de SWbemObjectSet
                       href: swbemobjectset-properties.md
                       items:
                         - name: Propriedade Count
                           href: swbemobjectset-count.md
-                        - name: Security_ propriedade
+                        - name: Propriedade Security_
                           href: swbemobjectset-security-.md
                 - name: SWbemPrivilege
                   href: swbemprivilege.md
                   items:
-                    - name: Propriedades SWbemPrivilege
+                    - name: Propriedades de SWbemPrivilege
                       href: swbemprivilege-properties.md
                       items:
                         - name: Propriedade DisplayName
@@ -2567,7 +2575,7 @@
                           href: swbemprivilegeset-item.md
                         - name: Método remove
                           href: swbemprivilegeset-remove.md
-                    - name: Propriedades SWbemPrivilegeSet
+                    - name: Propriedades de SWbemPrivilegeSet
                       href: swbemprivilegeset-properties.md
                       items:
                         - name: Propriedade Count
@@ -2575,7 +2583,7 @@
                 - name: SWbemProperty
                   href: swbemproperty.md
                   items:
-                    - name: Propriedades SWbemProperty
+                    - name: Propriedades de SWbemProperty
                       href: swbemproperty-properties.md
                       items:
                         - name: Propriedade CIMType
@@ -2588,7 +2596,7 @@
                           href: swbemproperty-name.md
                         - name: Propriedade Origin
                           href: swbemproperty-origin.md
-                        - name: Qualifiers_ propriedade
+                        - name: Propriedade Qualifiers_
                           href: swbemproperty-qualifiers-.md
                         - name: Propriedade Value
                           href: swbemproperty-value.md
@@ -2604,7 +2612,7 @@
                           href: swbempropertyset-item.md
                         - name: Método remove
                           href: swbempropertyset-remove.md
-                    - name: Propriedades SWbemPropertySet
+                    - name: Propriedades de SWbemPropertySet
                       href: swbempropertyset-properties.md
                       items:
                         - name: Propriedade Count
@@ -2612,10 +2620,10 @@
                 - name: SWbemQualifier
                   href: swbemqualifier.md
                   items:
-                    - name: Propriedades SWbemQualifier
+                    - name: Propriedades de SWbemQualifier
                       href: swbemqualifier-properties.md
                       items:
-                        - name: Propriedade IsAmended
+                        - name: Propriedade isemendada
                           href: swbemqualifier-isamended.md
                         - name: Propriedade IsLocal
                           href: swbemqualifier-islocal.md
@@ -2654,18 +2662,18 @@
                       items:
                         - name: Método remove
                           href: swbemrefreshableitem-remove.md
-                    - name: Propriedades SWbemRefreshableItem
+                    - name: Propriedades de SWbemRefreshableItem
                       href: swbemrefreshableitem-properties.md
                       items:
                         - name: Propriedade Index
                           href: swbemrefreshableitem-index.md
                         - name: Propriedade IsSet
                           href: swbemrefreshableitem-isset.md
-                        - name: Propriedade object
+                        - name: Propriedade do objeto
                           href: swbemrefreshableitem-object.md
                         - name: Propriedade ObjectSet
                           href: swbemrefreshableitem-objectset.md
-                        - name: Propriedade Refresher
+                        - name: Propriedade do atualizador
                           href: swbemrefreshableitem-refresher.md
                 - name: SWbemRefresher
                   href: swbemrefresher.md
@@ -2685,7 +2693,7 @@
                           href: swbemrefresher-refresh.md
                         - name: Método remove
                           href: swbemrefresher-remove.md
-                    - name: Propriedades SWbemRefresher
+                    - name: Propriedades de SWbemRefresher
                       href: swbemrefresher-properties.md
                       items:
                         - name: Propriedade falha
@@ -2900,18 +2908,18 @@
               href: mofcomp.md
             - name: smi2smir
               href: smi2smir.md
-            - name: winmgmt
+            - name: Winmgmt
               href: winmgmt.md
-            - name: Wmiadap
+            - name: wmiadap
               href: wmiadap.md
             - name: wmic
               href: wmic.md
-        - name: Objetos e valores de infraestrutura do WMI
+        - name: Valores e objetos de infraestrutura WMI
           href: wmi-infrastructure-objects-and-values.md
           items:
             - name: Tipos de dados WMI
               href: wmi-data-types.md
-            - name: Enumerações do WMI
+            - name: Enumerações WMI
               href: wmi-enumerations.md
               items:
                 - name: CIMTYPE_ENUMERATION
@@ -2959,7 +2967,7 @@
             - name: Tipos de dados MOF
               href: mof-data-types.md
               items:
-                - name: Qualificadores BitMap e bitvalue
+                - name: Qualificadores BitMap e BitValue
                   href: bitmap-and-bitvalues.md
                 - name: booleano
                   href: boolean.md
@@ -2975,7 +2983,7 @@
                   href: references.md
                 - name: Cadeias de caracteres
                   href: strings.md
-                - name: Qualificadores de valor e ValueMap
+                - name: Qualificadores valueMap e value
                   href: value-map.md
                 - name: VOID
                   href: void.md
@@ -2987,19 +2995,19 @@
                     - name: '#pragma'
                       href: '-pragma.md'
                       items:
-                        - name: alteração de pragma
+                        - name: pragma amendment
                           href: pragma-amendment.md
-                        - name: pragma AutoRecuperação
+                        - name: recuperação automática de pragma
                           href: pragma-autorecover.md
-                        - name: pragma classflags
+                        - name: classflags pragma
                           href: pragma-classflags.md
-                        - name: pragma DeleteClass
+                        - name: pragma deleteclass
                           href: pragma-deleteclass.md
                         - name: pragma deleteinstance
                           href: pragma-deleteinstance.md
                         - name: pragma instanceflags
                           href: pragma-instanceflags.md
-                        - name: namespace de pragma
+                        - name: namespace pragma
                           href: pragma-namespace.md
             - name: Eventos WMI
               href: wmi-events.md
@@ -3011,17 +3019,17 @@
               items:
                 - name: Tipos de contador base
                   href: base-counter-types.md
-                - name: Tipos de contador de algoritmos básicos
+                - name: Tipos de contador de algoritmo básico
                   href: basic-algorithm-counter-types.md
-                - name: Tipos de contadores de algoritmo de contador
+                - name: Tipos de contador de algoritmo de contador
                   href: counter-algorithm-counter-types.md
-                - name: Tipos de contadores não computacionais
+                - name: Tipos de contador não de computação
                   href: noncomputational-counter-types.md
-                - name: Tipos de contadores de algoritmo de timer de precisão
+                - name: Tipos de contador de algoritmo de temporizador de precisão
                   href: precision-timer-algorithm-counter-types.md
-                - name: Tipos de contadores de algoritmo de comprimento de fila
+                - name: Tipos de contador de algoritmo de comprimento de fila
                   href: queue-length-algorithm-counter-types.md
-                - name: Tipos de contadores estatísticos
+                - name: Tipos de contador estatísticos
                   href: statistical-counter-types.md
                   items:
                     - name: COOKER_AVERAGE
@@ -3034,26 +3042,26 @@
                       href: cooker-range.md
                     - name: COOKER_VARIANCE
                       href: cooker-variance.md
-                - name: Tipos de contadores de algoritmo de temporizador
+                - name: Tipos de contador de algoritmo de temporizador
                   href: timer-algorithm-counter-types.md
             - name: Qualificadores WMI
               href: wmi-qualifiers.md
               items:
-                - name: Metaqualificadores
+                - name: Metadados qualificadores
                   href: meta-qualifiers.md
                 - name: Qualificadores opcionais
                   href: optional-qualifiers.md
-                - name: Tipos de qualificadores
+                - name: Qualificador Flavors
                   href: qualifier-flavors.md
                 - name: Qualificadores padrão
                   href: standard-qualifiers.md
                   items:
                     - name: Qualificador de chave
                       href: key-qualifier.md
-                - name: Qualificadores de WMI-Specific
+                - name: qualificadores WMI-Specific dados
                   href: wmi-specific-qualifiers.md
                   items:
-                    - name: Qualificadores WMI padrão
+                    - name: Qualificadores WMI Padrão
                       href: standard-wmi-qualifiers.md
                       items:
                         - name: Qualificador CIMType
@@ -3071,7 +3079,7 @@
                           href: propertysources-qualifier.md
                         - name: Qualificador ViewSources
                           href: viewsources-qualifier.md
-                        - name: Qualificador ViewSpaces
+                        - name: Qualificador de ViewSpaces
                           href: viewspaces-qualifier.md
                     - name: Qualificadores específicos para o provedor WDM
                       href: qualifiers-specific-to-the-wdm-provider.md
@@ -3080,47 +3088,47 @@
                       items:
                         - name: Qualificadores de classe para classes de contador de desempenho
                           href: class-qualifiers-for-performance-counter-classes.md
-                        - name: Qualificador de tipo
+                        - name: Qualificador CounterType
                           href: countertype-qualifier.md
                         - name: Qualificador PerfDetail
                           href: perfdetail-qualifier.md
                         - name: Qualificadores de propriedade para classes de contador de desempenho
                           href: property-qualifiers-for-performance-counter-classes.md
-            - name: Códigos de retorno do WMI
+            - name: Códigos de retorno WMI
               href: wmi-return-codes.md
               items:
                 - name: Constantes de erro WMI
                   href: wmi-error-constants.md
-                - name: Constantes de não erro do WMI
+                - name: Constantes sem erro WMI
                   href: wmi-non-error-constants.md
-            - name: Segurança do WMI
+            - name: Segurança WMI
               href: wmi-security.md
               items:
-                - name: Constantes de segurança do WMI
+                - name: Constantes de segurança WMI
                   href: wmi-security-constants.md
                   items:
                     - name: Constantes de segurança de evento
                       href: event-security-constants.md
                     - name: Constantes de direitos de acesso de arquivo e diretório
                       href: file-and-directory-access-rights-constants.md
-                    - name: Constantes de direitos de acesso de namespace
+                    - name: Constantes de direitos de acesso do namespace
                       href: namespace-access-rights-constants.md
-                    - name: Constantes do sinalizador ACE do namespace
+                    - name: Constantes de sinalizador ACE do namespace
                       href: namespace-ace-flag-constants.md
-                    - name: Constantes de tipo de ACE de namespace
+                    - name: Constantes de tipo ACE do namespace
                       href: namespace-ace-type-constants.md
                     - name: Constantes de privilégio
                       href: privilege-constants.md
-                - name: Objetos do descritor de segurança do WMI
+                - name: Objetos do descritor de segurança WMI
                   href: wmi-security-descriptor-objects.md
             - name: Propriedades do sistema WMI
               href: wmi-system-properties.md
-        - name: referência gerenciada para Classes de comando do WMI Windows PowerShell
+        - name: Referência gerenciada para classes de Windows PowerShell WMI
           href: managed-reference-for-wmi-powershell-command-classes.md
     - name: Glossário do WMI
       href: wmi-glossary.md
       items:
-        - name: Um
+        - name: A
           href: gloss-a.md
         - name: C
           href: gloss-c.md
@@ -3156,35 +3164,35 @@
           href: gloss-t.md
         - name: W
           href: gloss-w.md
-    - name: API Gerenciada da Infraestrutura de Gerenciamento
+    - name: API gerenciada da infraestrutura de gerenciamento
       items:
-        - name: Método CimInstance.SetCimSessionComputerName
+        - name: Método CimInstance. SetCimSessionComputerName
           href: mi-managed-api\microsoft.management.infrastructure.ciminstance.setcimsessioncomputername.md
         - name: Classe CimMofDeserializer
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.md
-        - name: Método CimMofDeserializer.Create ()
+        - name: Método CimMofDeserializer. Create ()
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.create.md
-        - name: 'Método CimMofDeserializer.Create (String, UInt32)'
+        - name: 'Método CimMofDeserializer. Create (cadeia de caracteres, UInt32)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.create_string_uint.md
-        - name: 'Método CimMofDeserializer.DeserializeClasses (Byte[], Uint32)'
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint.md
-        - name: 'Método CimMofDeserializer.DeserializeClasses (Byte[], Uint32, IEnumerable(CimClass))'
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass))'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass.md
-        - name: 'Método CimMofDeserializer.DeserializeClasses (Byte[], UInt32, IEnumerable(CimClass), OnClassNeeded, GetIncludedFileContent)'
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass), OnClassNeeded, GetIncludedFileContent)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass2.md
-        - name: 'Método CimMofDeserializer.DeserializeClasses (Byte[], UInt32, IEnumerable(CimClass), String, String, OnClassNeeded, GetIncludedFileContent)'
+        - name: 'Método CimMofDeserializer. DeserializeClasses (Byte [], UInt32, IEnumerable (CimClass), String, String, OnClassNeeded, GetIncludedFileContent)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeclasses_byte_uint_ienumerablecimclass3.md
-        - name: 'Método CimMofDeserializer.DeserializeInstances (Byte[], UInt32)'
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint.md
-        - name: 'Método CimMofDeserializer.DeserializeInstances (Byte[], UInt32, OnClassNeeded, GetIncludedFileContent)'
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32, OnClassNeeded, GetIncludedFileContent)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint2.md
-        - name: 'Método CimMofDeserializer.DeserializeInstances (Byte[], UInt32, IEnumerable(CimClass), OnClassNeeded, GetIncludedFileContent)'
+        - name: 'Método CimMofDeserializer. DeserializeInstances (Byte [], UInt32, IEnumerable (CimClass), OnClassNeeded, GetIncludedFileContent)'
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.deserializeinstances_byte_uint3.md
-        - name: Propriedade CimMofDeserializer.SchemaValidationOption
+        - name: Propriedade CimMofDeserializer. SchemaValidationOption
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.schemavalidationoption.md
-        - name: Delegado CimMofDeserializer.GetIncludedFileContent
+        - name: Delegado CimMofDeserializer. GetIncludedFileContent
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.getincludedfilecontent.md
-        - name: Delegado CimMofDeserializer.OnClassNeeded
+        - name: Delegado CimMofDeserializer. OnClassNeeded
           href: mi-managed-api\microsoft.management.infrastructure.serialization.cimmofdeserializer.onclassneeded.md
         - name: Enumeração MofDeserializerSchemaValidationOption
           href: mi-managed-api\microsoft.management.infrastructure.serialization.mofdeserializerschemavalidationoption.md

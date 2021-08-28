@@ -4,18 +4,18 @@ ms.assetid: 5f20109f-727d-44a9-90a1-0adc19b00d28
 title: Criptografia de Arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55c05d8d746e597fe180feffe25f7f553819e822
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61dbbfa82024bea13eab9e672b482ea18bc1051cd6e86b97d2a405351e3b078b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107566"
 ---
 # <a name="file-encryption"></a>Criptografia de Arquivo
 
 O sistema de arquivos criptografados, ou EFS, fornece um nível adicional de segurança para arquivos e diretórios. Ele fornece proteção criptográfica de arquivos individuais em volumes do sistema de arquivos NTFS usando um sistema de chave pública.
 
-Normalmente, o controle de acesso aos objetos de arquivo e diretório fornecidos pelo modelo de segurança do Windows é suficiente para proteger o acesso não autorizado a informações confidenciais. No entanto, se um laptop que contém dados confidenciais for perdido ou roubado, a proteção de segurança desses dados poderá ser comprometida. A criptografia dos arquivos aumenta a segurança.
+normalmente, o controle de acesso aos objetos de arquivo e diretório fornecidos pelo modelo de segurança Windows é suficiente para proteger o acesso não autorizado a informações confidenciais. No entanto, se um laptop que contém dados confidenciais for perdido ou roubado, a proteção de segurança desses dados poderá ser comprometida. A criptografia dos arquivos aumenta a segurança.
 
 Para determinar se um sistema de arquivos dá suporte à criptografia de arquivo para arquivos e diretórios, chame a função [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) e examine o sinalizador de bit de **\_ \_ criptografia de arquivo FS** . Observe que os seguintes itens não podem ser criptografados:
 

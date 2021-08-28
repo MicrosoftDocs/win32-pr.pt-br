@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 67877cfc07a247d6b5e3309270d145bc64fbb814416fa4288c6e85ff2ad2e986
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ba975b9b35cd000844b3956e141c86b1be52531
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118315132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884992"
 ---
 # <a name="standard-qualifiers"></a>Qualificadores padrão
 
@@ -192,18 +192,18 @@ Aplica-se a: métodos
 
 Indica se o método exclui instâncias. Os métodos  que usam o qualificador destruidor excluem as instâncias às quais o destruidor é aplicado e não são restritos a agir em uma única instância ou classe. Por exemplo, um destruidor pode excluir instâncias de associação, bem como instâncias da classe que define o destruidor.
 
-O **qualificador** destruidor destina-se apenas a informações e não se espera que ele seja agido pelo gerenciador de objetos. Não há nenhuma obrigação para o gerenciador de objetos chamar um método que tenha o qualificador **destruidor** quando uma instância é excluída. Além disso, quando um destruidor é chamado, o gerenciador de objetos não precisa invocar nenhum método destruidor definido para qualquer classe pai da classe original. O padrão é **FALSE.**
+O qualificador do **destruidor** destina-se apenas a informações e não é esperado que ele seja acionado pelo Gerenciador de objetos. Não há nenhuma obrigação para o Gerenciador de objetos chamar um método que tenha o qualificador do **destruidor** quando uma instância é excluída. Além disso, quando um destruidor é chamado, o Gerenciador de objetos não precisa invocar nenhum método destruidor definido para qualquer classe pai da classe original. O padrão é **false**.
 
 </dd> <dt>
 
-<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Displayname**
+<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**DisplayName**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: qualquer
 
-Nome exibido na interface do usuário em vez do nome real do elemento. O padrão é **NULL.**
+Nome exibido na interface do usuário em vez do nome real do elemento. O padrão é **NULL**.
 
 </dd> <dt>
 
@@ -214,108 +214,108 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: qualquer
 
-O elemento de tipo de cadeia de caracteres qualificado contém uma instância inserida. O valor do qualificador especifica o nome de uma classe CIM no mesmo namespace que a classe que possui o elemento qualificado. A instância inserida é uma instância da classe especificada, incluindo instâncias de suas subclasses. O padrão é **NULL.**
+O elemento de tipo de cadeia de caracteres qualificado contém uma instância inserida. O valor do qualificador especifica o nome de uma classe CIM no mesmo namespace que a classe que possui o elemento qualificado. A instância inserida é uma instância da classe especificada, incluindo instâncias de suas subclasses. O padrão é **NULL**.
 
 </dd> <dt>
 
-<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**Calibre**
+<span id="Gauge"></span><span id="gauge"></span><span id="GAUGE"></span>**Indicadores**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
 Aplica-se a: qualquer
 
-Indica se a propriedade representa um inteiro não negativo, que pode aumentar ou diminuir, mas nunca exceder um valor máximo. O padrão é **FALSE.**
+Indica se a propriedade representa um inteiro não negativo, que pode aumentar ou diminuir, mas nunca excede um valor máximo. O padrão é **false**.
 
-O valor máximo da propriedade não pode ser maior que 2^*n* - 1. *N* pode ser 8, 16, 32 ou 64, dependendo do tipo de dados da propriedade à qual esse qualificador é aplicado. O valor de um medidor tem seu valor máximo sempre que as informações que estão sendo modeladas são maiores ou iguais a esse valor máximo. Se as informações que estão sendo modeladas subsequentemente diminuirem abaixo do valor máximo, o medidor também diminuirá. Esse qualificador é aplicável somente a propriedades com um tipo de dados inteiro sem sinal.
+O valor máximo da propriedade não pode ser maior que 2 ^*n* -1. *N* pode ser 8, 16, 32 ou 64, dependendo do tipo de dados da propriedade ao qual esse qualificador é aplicado. O valor de um medidor tem seu valor máximo sempre que as informações que estão sendo modeladas são maiores ou iguais ao valor máximo. Se as informações modeladas subsequentemente diminuirem abaixo do valor máximo, o medidor também diminuirá. Esse qualificador é aplicável somente a propriedades com um tipo de dados inteiro sem sinal.
 
 </dd> <dt>
 
-<span id="In"></span><span id="in"></span><span id="IN"></span>**Em**
+<span id="In"></span><span id="in"></span><span id="IN"></span>**No**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
 Aplica-se a: parâmetros
 
-Indica se o parâmetro é usado para passar valores para um método . O padrão é **TRUE.**
+Indica se o parâmetro é usado para passar valores para um método. O padrão é **true**.
 
 </dd> <dt>
 
-<span id="In__Out"></span><span id="in__out"></span><span id="IN__OUT"></span>**In, Out**
+<span id="In__Out"></span><span id="in__out"></span><span id="IN__OUT"></span>**Entrada, saída**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
 Aplica-se a: parâmetros
 
-Indica se o parâmetro é um parâmetro de entrada e saída.
+Indica se o parâmetro é um parâmetro de entrada e de saída.
 
 </dd> <dt>
 
-<span id="Key"></span><span id="key"></span><span id="KEY"></span>[**Chave**](key-qualifier.md)
+<span id="Key"></span><span id="key"></span><span id="KEY"></span>[**Chaves**](key-qualifier.md)
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
-Aplica-se a: propriedades, referências
+Aplica-se a: Propriedades, referências
 
-Indica se a propriedade faz parte do alça de namespace. Se mais de uma propriedade tiver o [**qualificador**](key-qualifier.md) Key, todas essas propriedades formarão coletivamente a chave (uma chave composta). Quando juntas, as propriedades de chave devem fornecer uma referência exclusiva para cada instância de classe. Se esse qualificador for colocado em uma propriedade, somente o valor **TRUE** será permitido.
+Indica se a propriedade faz parte do identificador do namespace. Se mais de uma propriedade tiver o qualificador de [**chave**](key-qualifier.md) , todas essas propriedades formarão coletivamente a chave (uma chave composta). Quando agrupadas, as propriedades de chave devem fornecer uma referência exclusiva para cada instância de classe. Se esse qualificador for colocado em uma propriedade, somente o valor **true** será permitido.
 
 </dd> <dt>
 
-<span id="Lazy"></span><span id="lazy"></span><span id="LAZY"></span>**Preguiçoso**
+<span id="Lazy"></span><span id="lazy"></span><span id="LAZY"></span>**Ocioso**
 </dt> <dd>
 
-Aplica-se a: propriedades
+Aplica-se a: Propriedades
 
-Indica que a propriedade é de uso intensivo de recursos para retornar e requer muito tempo e memória do processador. O WMI melhora o desempenho das consultas ao não tentar retornar as propriedades marcadas com o **qualificador** Lento.
+Indica que a propriedade tem uso intensivo de recursos para retornar e requer muito tempo de processador e memória. O WMI melhora o desempenho de consultas sem tentar retornar as propriedades marcadas com o qualificador **lento** .
 
 </dd> <dt>
 
 <span id="MappingStrings"></span><span id="mappingstrings"></span><span id="MAPPINGSTRINGS"></span>**MappingStrings**
 </dt> <dd>
 
-Tipo de dados: matriz **de cadeia de caracteres**
+Tipo de dados: **matriz de cadeia de caracteres**
 
 Aplica-se a: classes, propriedades, associações, indicações, referências
 
-Conjunto de valores que indicam um caminho para um local em que você pode encontrar mais informações sobre a origem de uma propriedade, classe, associação, indicação ou referência. A cadeia de caracteres de mapeamento pode ser um caminho de diretório, uma URL, uma chave do Registro, um arquivo de inclusão, uma referência a uma classe CIM ou algum outro formato. O padrão é **NULL.**
+Conjunto de valores que indicam um caminho para um local onde você pode encontrar mais informações sobre a origem de uma propriedade, classe, associação, indicação ou referência. A cadeia de caracteres de mapeamento pode ser um caminho de diretório, uma URL, uma chave do registro, um arquivo de inclusão, uma referência a uma classe CIM ou algum outro formato. O padrão é **NULL**.
 
 </dd> <dt>
 
-<span id="Max"></span><span id="max"></span><span id="MAX"></span>**Max**
+<span id="Max"></span><span id="max"></span><span id="MAX"></span>**Maximizar**
 </dt> <dd>
 
 Tipo de dados: **int**
 
 Aplica-se a: referências
 
-Número máximo de valores que uma determinada referência pode ter para cada conjunto de outros valores de referência na associação. O padrão é **NULL.** Por exemplo, se uma associação relaciona instâncias A a instâncias B e deve haver no máximo uma instância A para cada instância B, a referência a A deve ter um máximo de um qualificador.
+Número máximo de valores que uma determinada referência pode ter para cada conjunto de outros valores de referência na associação. O padrão é **NULL**. Por exemplo, se uma associação relacionar instâncias em instâncias B e deve haver no máximo uma instância para cada instância B, a referência a um deve ter um máximo de um qualificador.
 
 </dd> <dt>
 
-<span id="MaxLen"></span><span id="maxlen"></span><span id="MAXLEN"></span>**Maxlen**
+<span id="MaxLen"></span><span id="maxlen"></span><span id="MAXLEN"></span>**MaxLen**
 </dt> <dd>
 
 Tipo de dados: **int**
 
-Aplica-se a: propriedades, métodos, parâmetros
+Aplica-se a: Propriedades, métodos, parâmetros
 
-Comprimento máximo (em caracteres) de **um** item de dados de cadeia de caracteres e indica suporte a matrizes de comprimento fixo.
+Comprimento máximo (em caracteres) de um item de dados de **cadeia de caracteres** e indica suporte a matrizes de comprimento fixo.
 
-Se uma matriz de comprimento fixo for encontrada, o qualificador **MaxLen** conterá o comprimento fixo encontrado durante a análise. Se uma matriz de comprimento variável for encontrada, esse qualificador não será usado. **MaxLen** é usado para sugerir o número máximo de elementos que devem ser armazenados em uma matriz. Ao substituindo o valor padrão, qualquer valor inteiro sem sinal (**uint32**) pode ser especificado. Um valor **null** (padrão) implica um comprimento ilimitado.
+Se uma matriz de comprimento fixo for encontrada, o qualificador **maxlen** conterá o comprimento fixo encontrado durante a análise. Se uma matriz de comprimento variável for encontrada, esse qualificador não será usado. **Maxlen** é usado para sugerir o número máximo de elementos que devem ser armazenados em uma matriz. Ao substituir o valor padrão, qualquer valor inteiro não atribuído (**UInt32**) pode ser especificado. Um valor de **NULL** (padrão) implica comprimento ilimitado.
 
 </dd> <dt>
 
-<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>**Maxvalue**
+<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>**MaxValue**
 </dt> <dd>
 
 Tipo de dados: **int**
 
-Aplica-se a: propriedades, métodos, parâmetros
+Aplica-se a: Propriedades, métodos, parâmetros
 
-Valor máximo do objeto . O padrão é **NULL.**
+Valor máximo do objeto. O padrão é **NULL**.
 
 </dd> <dt>
 
@@ -328,29 +328,29 @@ Aplica-se a: referências
 
 Cardinalidade mínima da referência (o número mínimo de valores que uma determinada referência pode ter para cada conjunto de outros valores de referência na associação). O padrão é 0.
 
-Por exemplo, se uma associação relaciona instâncias A a instâncias B e deve haver pelo menos uma instância A para cada instância B, a referência a A deve ter um mínimo de um qualificador.
+Por exemplo, se uma associação relacionar instâncias a B, e deve haver pelo menos uma instância para cada instância B, a referência a um deve ter, no mínimo, um qualificador.
 
 </dd> <dt>
 
-<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>**Minvalue**
+<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>**MinValue**
 </dt> <dd>
 
 Tipo de dados: **int**
 
-Aplica-se a: propriedades, métodos, parâmetros
+Aplica-se a: Propriedades, métodos, parâmetros
 
-Indica o valor mínimo do objeto . O padrão é **NULL.**
+Indica o valor mínimo do objeto. O padrão é **NULL**.
 
 </dd> <dt>
 
 <span id="ModelCorrespondence"></span><span id="modelcorrespondence"></span><span id="MODELCORRESPONDENCE"></span>**ModelCorrespondence**
 </dt> <dd>
 
-Tipo de dados: matriz **de cadeia de caracteres**
+Tipo de dados: **matriz de cadeia de caracteres**
 
-Aplica-se a: propriedades
+Aplica-se a: Propriedades
 
-Conjunto de valores que indicam correspondência entre a propriedade de um objeto e outras propriedades no esquema CIM. O padrão é **NULL.**
+Conjunto de valores que indicam a correspondência entre a propriedade de um objeto e outras propriedades no esquema CIM. O padrão é **NULL**.
 
 As propriedades do objeto são identificadas usando a sintaxe a seguir.
 
@@ -358,27 +358,27 @@ As propriedades do objeto são identificadas usando a sintaxe a seguir.
 
 </dd> <dt>
 
-<span id="Nonlocal"></span><span id="nonlocal"></span><span id="NONLOCAL"></span>**Não local**
+<span id="Nonlocal"></span><span id="nonlocal"></span><span id="NONLOCAL"></span>**Diagnóstico não locais**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: referências
 
-Local de uma instância, cujo valor é <*namespacetype*>://<*namespacehandle*> O padrão é **NULL.**
+Local de uma instância, o valor de que é <*namespacetype*>://<*namespacehandle*> o padrão é **NULL**.
 
-Uso: esse qualificador não pode ser usado com **o qualificador NonlocalType.**
+Uso: este qualificador não pode ser usado com o qualificador não **LocalType** .
 
 </dd> <dt>
 
-<span id="NonlocalType"></span><span id="nonlocaltype"></span><span id="NONLOCALTYPE"></span>**NonlocalType**
+<span id="NonlocalType"></span><span id="nonlocaltype"></span><span id="NONLOCALTYPE"></span>**Não LocalType**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: referências
 
-Tipo de local de uma instância. Seu valor é <namespacetype> . O padrão é **NULL**.
+Tipo de local de uma instância. Seu valor é &lt; NamespaceType &gt; . O padrão é **NULL**.
 
 Uso: este qualificador não pode ser usado com o qualificador não **local** .
 
@@ -580,39 +580,39 @@ Uso: esse qualificador não pode coexistir com o qualificador **abstrato** . Se 
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: propriedades, métodos, parâmetros
+Aplica-se a: Propriedades, métodos, parâmetros
 
-Tipo de unidade na qual o item de dados associado é expresso. O padrão é **NULL.**
+Tipo de unidade na qual o item de dados associado é expresso. O padrão é **NULL**.
 
-Por exemplo, um item de dados de tamanho pode ter um valor de "bytes" para **Unidades**.
-
-</dd> <dt>
-
-<span id="ValueMap"></span><span id="valuemap"></span><span id="VALUEMAP"></span>**Valuemap**
-</dt> <dd>
-
-Tipo de dados: matriz **de cadeia de caracteres**
-
-Aplica-se a: propriedades, métodos, parâmetros
-
-Conjunto de valores permitidos para uma propriedade, tipo de retorno de método ou parâmetro de método. O padrão é **NULL.**
-
-Uso: esse qualificador pode ser usado sozinho ou em combinação com o qualificador **Valores.** Quando usado em combinação com o qualificador **Valores,** o local do valor na matriz **ValueMap** fornece o local da entrada correspondente na matriz **Valores.** Use o **qualificador ValueMap** somente com valores de cadeia de caracteres e inteiros. A sintaxe para representar um valor inteiro na matriz de mapa de valor é \[ + \| = \] dígito \[ \* \] . O conteúdo, o número máximo de dígitos e o valor representado são restritos pelo tipo da propriedade associada. Por exemplo, uint8 pode não ser assinado, deve ser menor que quatro dígitos e deve representar um valor menor que 256.
+Por exemplo, um item de dados de tamanho pode ter um valor de "bytes" para **unidades**.
 
 </dd> <dt>
 
-<span id="Values"></span><span id="values"></span><span id="VALUES"></span>**Valores**
+<span id="ValueMap"></span><span id="valuemap"></span><span id="VALUEMAP"></span>**ValueMap**
 </dt> <dd>
 
-Tipo de dados: matriz **de cadeia de caracteres**
+Tipo de dados: **matriz de cadeia de caracteres**
 
-Aplica-se a: propriedades, métodos, parâmetros
+Aplica-se a: Propriedades, métodos, parâmetros
 
-Conjunto de valores que traduziam um valor inteiro em uma cadeia de caracteres associada. O padrão é **NULL.**
+Conjunto de valores permitidos para uma propriedade, tipo de retorno de método ou parâmetro de método. O padrão é **NULL**.
 
-Essa propriedade também especifica uma matriz de valores de cadeia de caracteres a serem mapeados para uma propriedade de enumeração. Esse qualificador pode ser aplicado a uma propriedade de inteiro ou a uma propriedade de cadeia de caracteres, e o mapeamento pode ser implícito ou explícito. Se o mapeamento for implícito, os valores de propriedade de inteiro ou de cadeia de caracteres representarão posições ordinais na matriz **Valores.** Se o mapeamento for explícito, a propriedade deverá ser um inteiro e os valores de propriedade válidos serão listados na matriz definida pelo qualificador **ValueMap.** Para obter mais informações, consulte [Mapa de valor](value-map.md).
+Uso: esse qualificador pode ser usado sozinha ou em combinação com o qualificador de **valores** . Quando usado em combinação com o qualificador de **valores** , o local do valor na matriz **ValueMap** fornece o local da entrada correspondente na matriz **Values** . Use o qualificador **ValueMap** somente com valores de cadeia de caracteres e inteiros. A sintaxe para representar um valor inteiro na matriz de mapa de valor é dígito dígito \[ + \| = \] \[ \* \] . O conteúdo, o número máximo de dígitos e o valor representado são restritos pelo tipo da propriedade associada. Por exemplo, uint8 não pode ser assinado, deve ter menos de quatro dígitos e deve representar um valor menor que 256.
 
-Se um **qualificador ValueMap** não estiver presente, a matriz **Values** será indexada (zero relativo) usando o valor na propriedade associada, no tipo de retorno do método ou no parâmetro de método. Se um **qualificador ValueMap** estiver presente, o índice de valores será definido pelo local do valor da propriedade no mapa de valor.
+</dd> <dt>
+
+<span id="Values"></span><span id="values"></span><span id="VALUES"></span>**Os**
+</dt> <dd>
+
+Tipo de dados: **matriz de cadeia de caracteres**
+
+Aplica-se a: Propriedades, métodos, parâmetros
+
+Conjunto de valores que convertem um valor inteiro em uma cadeia de caracteres associada. O padrão é **NULL**.
+
+Essa propriedade também especifica uma matriz de valores de cadeia de caracteres a ser mapeada para uma propriedade de enumeração. Esse qualificador pode ser aplicado a uma propriedade de inteiro ou a uma propriedade de cadeia de caracteres, e o mapeamento pode ser implícito ou explícito. Se o mapeamento for implícito, os valores de propriedade de inteiro ou de cadeia de caracteres representarão posições ordinais na matriz de **valores** . Se o mapeamento for explícito, a propriedade deverá ser um inteiro e os valores de propriedade válidos serão listados na matriz definida pelo qualificador **ValueMap** . Para obter mais informações, consulte [mapa de valor](value-map.md).
+
+Se um qualificador de **ValueMap** não estiver presente, a matriz **Values** será indexada (relativa a zero) usando o valor na propriedade associada, no tipo de retorno do método ou no parâmetro do método. Se um qualificador de **ValueMap** estiver presente, o índice de valores será definido pelo local do valor da propriedade no mapa de valores.
 
 </dd> <dt>
 
@@ -623,61 +623,61 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes, esquemas, associações, indicações
 
-Número de versão principal do objeto de esquema. O padrão é **NULL.** O número de versão é incrementado quando são feitas alterações no esquema que altera a interface.
+Número de versão principal do objeto de esquema. O padrão é **NULL**. O número de versão é incrementado quando são feitas alterações no esquema que alteram a interface.
 
 </dd> <dt>
 
-<span id="Weak"></span><span id="weak"></span><span id="WEAK"></span>**Fraco**
+<span id="Weak"></span><span id="weak"></span><span id="WEAK"></span>**Baixas**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
 Aplica-se a: referências
 
-Indica se as chaves da classe referenciada incluem as chaves dos outros participantes na associação. O padrão é **FALSE.**
+Indica se as chaves da classe referenciada incluem as chaves dos outros participantes na associação. O padrão é **false**.
 
-Esse qualificador é usado quando a identidade da classe referenciada depende da identidade dos outros participantes na associação. Não mais de uma referência a qualquer classe pode ser fraca. As outras classes na associação devem definir uma chave. As chaves das outras classes na associação são repetidas na classe referenciada e marcadas com um **qualificador Propagado.**
+Esse qualificador é usado quando a identidade da classe referenciada depende da identidade dos outros participantes na associação. Não mais de uma referência a uma determinada classe pode ser fraca. As outras classes na associação devem definir uma chave. As chaves das outras classes na associação são repetidas na classe referenciada e são marcadas com um qualificador **propagado** .
 
 </dd> <dt>
 
-<span id="Write"></span><span id="write"></span><span id="WRITE"></span>**Escrever**
+<span id="Write"></span><span id="write"></span><span id="WRITE"></span>**Gravá**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
-Aplica-se a: propriedades
+Aplica-se a: Propriedades
 
-Indica que aplicativos ou scripts podem alterar o valor da propriedade. A conta que executa o aplicativo deve ter acesso ao namespace que contém instâncias da classe . A implementação do provedor também pode limitar o acesso aos dados do provedor. Um valor **true** indica que a propriedade é acessível e escrevêvel por consumidores que têm permissão de acesso pelo WMI e pelo provedor. O padrão é **FALSE.**
+Indica que os aplicativos ou scripts podem alterar o valor da propriedade. A conta que executa o aplicativo deve ter acesso ao namespace que contém instâncias da classe. A implementação do provedor também pode limitar o acesso aos dados do provedor. Um valor **true** indica que a propriedade é legível e gravável por consumidores que têm permissão de acesso pelo WMI e pelo provedor. O padrão é **false**.
 
-Uma propriedade que não tem o **qualificador Write** ainda pode ser writeable. A implementação do provedor pode permitir que todas as propriedades nas classes de provedor sejam alteradas, independentemente **de** o qualificador Write estar presente.
+Uma propriedade que não tem o qualificador de **gravação** ainda pode ser gravável. A implementação do provedor pode permitir que todas as propriedades nas classes do provedor sejam alteradas, se o qualificador de **gravação** estiver presente.
 
 </dd> <dt>
 
 <span id="WriteAtCreate"></span><span id="writeatcreate"></span><span id="WRITEATCREATE"></span>**WriteAtCreate**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
-Aplica-se a: propriedades
+Aplica-se a: Propriedades
 
-Indica se a propriedade pode ser escrita na criação da instância. Esse qualificador pode ser usado em conjunto com o **qualificador WriteAtCreate.** O padrão é **FALSE.**
+Indica se a propriedade é gravável na criação da instância. Esse qualificador pode ser usado em conjunto com o qualificador **WriteAtCreate** . O padrão é **false**.
 
 </dd> <dt>
 
 <span id="WriteAtUpdate"></span><span id="writeatupdate"></span><span id="WRITEATUPDATE"></span>**WriteAtUpdate**
 </dt> <dd>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 
-Aplica-se a: propriedades
+Aplica-se a: Propriedades
 
-Indica se a propriedade pode ser escrita na atualização da instância. Esse qualificador pode ser usado em conjunto com o **qualificador WriteAtCreate.** O padrão é **FALSE.**
+Indica se a propriedade é gravável na atualização da instância. Esse qualificador pode ser usado em conjunto com o qualificador **WriteAtCreate** . O padrão é **false**.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Exemplos
 
-Para obter mais informações sobre como recuperar qualificadores, consulte o exemplo de código Do PowerShell [Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) na Galeria do TechNet.
+Para obter mais informações sobre como recuperar qualificadores, consulte o exemplo de código do PowerShell [Get-WmiClassMethodsAndWritableWmiProperties](https://Gallery.TechNet.Microsoft.Com/10670e14-4cf1-4ce5-99d0-fc4ca80dac2c) na galeria do TechNet.
 
 ## <a name="requirements"></a>Requisitos
 

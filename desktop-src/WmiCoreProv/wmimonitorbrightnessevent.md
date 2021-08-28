@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 7e53f90627c959db0140b01cf3b3d385afcc6e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4affedabdb7fde7cec93d3cf8eb675f343054635eb0b4a504d74d96dc3eb8d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321404"
 ---
 # <a name="wmimonitorbrightnessevent-class"></a>Classe WmiMonitorBrightnessEvent
 
-A classe de evento **WmiMonitorBrightnessEvent** WMI representa uma alteração no brilho de um monitor.
+A **classe de evento WMI WMI WmiMonitorBrightnessEvent** representa uma alteração no brilho de um monitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ class WmiMonitorBrightnessEvent : WMIEvent
 
 ## <a name="members"></a>Membros
 
-A classe **WmiMonitorBrightnessEvent** tem estes tipos de membros:
+A **classe WmiMonitorBrightnessEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **WmiMonitorBrightnessEvent** tem essas propriedades.
+A **classe WmiMonitorBrightnessEvent** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -72,7 +72,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Brilho atual do monitor como uma porcentagem.
+O brilho atual do monitor como um percentual.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
 Nome da instância de monitor específica.
@@ -100,8 +100,8 @@ Nome da instância de monitor específica.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

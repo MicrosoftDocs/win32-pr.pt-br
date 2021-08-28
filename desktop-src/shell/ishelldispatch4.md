@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4fe37e38-ee71-41f0-b620-35fdc18f9dbb
-ms.openlocfilehash: daec9c922a0bac05154c1108f236ddf336a2e380
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 057ef4082bac8d04c006d951db7d2d251be2f8c62e88af65bc1a69678514af81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969005"
 ---
 # <a name="ishelldispatch4-object"></a>Objeto IShellDispatch4
 
@@ -46,7 +46,7 @@ O objeto **IShellDispatch4** tem esses métodos.
 | [**ExplorerPolicy**](ishelldispatch4-explorerpolicy.md)   | Obtém o valor de uma política especificada do Internet Explorer.<br/> |
 | [**GetDefinition**](ishelldispatch4-getsetting.md)           | Recupera uma configuração de shell global.<br/>                        |
 | [**ToggleDesktop**](ishelldispatch4-toggledesktop.md)     | Exibe ou oculta a área de trabalho.<br/>                           |
-| [**WindowsSecurity**](ishelldispatch4-windowssecurity.md) | Exibe a caixa de diálogo **segurança do Windows** .<br/>            |
+| [**WindowsSecurity**](ishelldispatch4-windowssecurity.md) | exibe a caixa de diálogo **Segurança do Windows** .<br/>            |
 
 
 
@@ -54,7 +54,7 @@ O objeto **IShellDispatch4** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter uma discussão sobre os serviços do Windows, consulte a documentação de [Serviços](../services/services.md) .
+para obter uma discussão sobre os serviços de Windows, consulte a documentação de [serviços](../services/services.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,11 +62,11 @@ Para obter uma discussão sobre os serviços do Windows, consulte a documentaç�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
 
 
 

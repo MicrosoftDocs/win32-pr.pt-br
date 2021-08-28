@@ -7,12 +7,12 @@ MSHAttr:
 title: MBNProfileExt
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cf6b821d36fc69c06fd42fad58efc4102e64f6a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: ac9167561aabe151b75a4aa295a1c8aacec974df
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987909"
+ms.locfileid: "122884079"
 ---
 # <a name="span-idwwan_profile_v4element_mbnprofileextspanmbnprofileext"></a><span id="WWAN_profile_v4.element_MBNProfileExt"></span>MBNProfileExt
 
@@ -71,7 +71,7 @@ Nenhum.
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos filho
 
 
-| Elemento filho | Descrição | 
+| Elemento filho | Description | 
 |---------------|-------------|
 | <a href="element-adminenable.md">AdminEnable</a> | <p>Especifica se o perfil está habilitado administrativamente. Esse é um novo elemento para v4.</p> | 
 | <a href="element-adminroamcontrol.md">AdminRoamControl</a> | <p>Especifica se o perfil é controlado por roam-in administrativo. Esse elemento é novo para v4. O valor desse elemento é um <a href="simpletype-roamcontroltype.md"><strong>valor roamControlType.</strong></a> Este é um elemento opcional; se nenhum valor for especificado, <strong>AllRoamAllowed</strong> será o padrão.</p> | 
@@ -105,9 +105,7 @@ Esse elemento mais externo (documento) pode não estar contido por outros elemen
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

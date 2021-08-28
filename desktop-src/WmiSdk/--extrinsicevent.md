@@ -1,8 +1,8 @@
 ---
-description: Serve como uma classe pai para todos os tipos de eventos definidos pelo usuário, também conhecidos como eventos extrínsecos.
+description: Serve como uma classe pai para todos os tipos de evento definidos pelo usuário, também conhecidos como eventos extrínteses.
 ms.assetid: 8fddbcd1-7393-4a3b-8a10-a8b620efc19f
 ms.tgt_platform: multiple
-title: Classe __ExtrinsicEvent
+title: __ExtrinsicEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 76af7a9f32c24b8d44f81c60b0f2fca693c26f51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 592632a7d0b5593a9de200062ef1ae6b167e72aaa2d2f41c44a8f955324b6b6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321015"
 ---
 # <a name="__extrinsicevent-class"></a>\_\_Classe ExtrinsicEvent
 
-A classe de sistema **\_ \_ ExtrinsicEvent** é uma classe base abstrata que serve como uma classe pai para todos os tipos de eventos definidos pelo usuário, também conhecidos como [eventos extrínsecos](determining-the-type-of-event-to-receive.md).
+A **\_ \_ classe de sistema ExtrinsicEvent** é uma classe base abstrata que serve como uma classe pai para todos os tipos de evento definidos pelo usuário, também conhecidos como [eventos extrítico.](determining-the-type-of-event-to-receive.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -41,47 +41,47 @@ class __ExtrinsicEvent : __Event
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ ExtrinsicEvent** tem estes tipos de membros:
+A **\_ \_ classe ExtrinsicEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ ExtrinsicEvent** tem essas propriedades.
+A **\_ \_ classe ExtrinsicEvent** tem essas propriedades.
 
 <dl> <dt>
 
-**\_descritor de segurança**
+**DESCRITOR \_ DE SEGURANÇA**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Esta propriedade é herdada do [**\_ \_ evento**](--event.md). Para obter mais informações sobre constantes usadas para definir esse descritor de segurança, consulte [constantes de segurança do WMI](wmi-security-constants.md).
+Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Essa propriedade é herdada do [**\_ \_ Evento**](--event.md). Para obter mais informações sobre constantes usadas para definir esse descritor de segurança, consulte [Constantes de segurança WMI](wmi-security-constants.md).
 
 </dd> <dt>
 
-**HORA da \_ criação**
+**TEMPO \_ CRIADO**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor exclusivo que indica a hora em que o evento foi gerado. Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (tempo Universal Coordenado). Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
+Valor exclusivo que indica a hora em que o evento foi gerado. Esse é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (Tempos Universais Coordenados). Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **\_ \_ ExtrinsicEvent** é derivada de [**\_ \_ Event**](--event.md).
+A **\_ \_ classe ExtrinsicEvent** é derivada de [**\_ \_ Event**](--event.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ A classe **\_ \_ ExtrinsicEvent** é derivada de [**\_ \_ Event**](--event.md).
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 

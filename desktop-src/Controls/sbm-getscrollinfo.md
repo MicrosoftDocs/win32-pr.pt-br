@@ -1,9 +1,9 @@
 ---
-title: Mensagem de SBM_GETSCROLLINFO (WinUser. h)
-description: A \_ mensagem SBM GETSCROLLINFO é enviada para recuperar os parâmetros de uma barra de rolagem.
+title: SBM_GETSCROLLINFO mensagem (Winuser.h)
+description: A mensagem \_ GETSCROLLINFO do SBM é enviada para recuperar os parâmetros de uma barra de rolagem.
 ms.assetid: 3b43430f-b55f-43ec-8558-baf5c953064f
 keywords:
-- Controles de SBM_GETSCROLLINFO de mensagens do Windows
+- SBM_GETSCROLLINFO controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cb05b05ba2686d755c5fa34adcff0016433346
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5fde18fe30e9d944e547305094e7ea69e6745d4e1e112d8697367cd82833588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919466"
 ---
-# <a name="sbm_getscrollinfo-message"></a>\_Mensagem SBM GETSCROLLINFO
+# <a name="sbm_getscrollinfo-message"></a>Mensagem GETSCROLLINFO do SBM \_
 
-A mensagem **SBM \_ GETSCROLLINFO** é enviada para recuperar os parâmetros de uma barra de rolagem.
+A **mensagem \_ GETSCROLLINFO do SBM** é enviada para recuperar os parâmetros de uma barra de rolagem.
 
-Os aplicativos não devem enviar essa mensagem diretamente. Em vez disso, eles devem usar a função [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) . Uma janela recebe essa mensagem por meio de sua função [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Os aplicativos que implementam um controle de barra de rolagem personalizado devem responder a essas mensagens para que a função **GetScrollInfo** funcione corretamente.
+Os aplicativos não devem enviar essa mensagem diretamente. Em vez disso, eles devem usar a [**função GetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) Uma janela recebe essa mensagem por meio de [*sua função WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Os aplicativos que implementam um controle de barra de rolagem personalizado devem responder a essas mensagens para que a **função GetScrollInfo** funcione corretamente.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -41,19 +41,19 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . Antes de chamar [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), defina o membro **cbSize** da estrutura como **sizeof**(**SCROLLINFO**) e defina o membro **fMask** para especificar os parâmetros da barra de rolagem a serem recuperados. Antes de retornar, a mensagem copia os parâmetros especificados para os membros apropriados da estrutura.
+Ponteiro para uma [**estrutura SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) Antes de [**chamar GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), de definir o membro **cbSize** da estrutura como **sizeof**(**SCROLLINFO**) e definir o membro **fMask** para especificar os parâmetros da barra de rolagem a recuperar. Antes de retornar, a mensagem copia os parâmetros especificados para os membros apropriados da estrutura.
 
-O membro **fMask** pode ser um ou mais dos valores a seguir.
+O **membro fMask** pode ser um ou mais dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                      | Significado                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**SIF \_ todos**</dt> </dl>                | Combinação de \_ Page sif, Sif \_ POS, Sif \_ Range e sif \_ TRACKPOS.<br/>       |
-| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**\_página sif**</dt> </dl>             | Copia a página de rolagem para o membro Nconfiguração.<br/>                              |
-| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**POS do SIF \_**</dt> </dl>                | Copia a posição de rolagem para o membro nPos. <br/>                          |
-| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**intervalo do SIF \_**</dt> </dl>          | Copia o intervalo de rolagem para os membros Nmín e Nmáx. <br/>                   |
-| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**\_TRACKPOS sif**</dt> </dl> | Copia a posição de controle da caixa de rolagem atual para o membro nTrackPos.<br/> |
+| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**SIF \_ ALL**</dt> </dl>                | Combinação de SIF \_ PAGE, SIF \_ POS, SIF \_ RANGE e SIF \_ TRACKPOS.<br/>       |
+| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**PÁGINA \_ SIF**</dt> </dl>             | Copia a página de rolagem para o membro nPage.<br/>                              |
+| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**POS \_ do SIF**</dt> </dl>                | Copia a posição de rolagem para o membro nPos. <br/>                          |
+| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**INTERVALO \_ SIF**</dt> </dl>          | Copia o intervalo de rolagem para os membros nMin e nMax. <br/>                   |
+| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**TRACKPOS do SIF \_**</dt> </dl> | Copia a posição de acompanhamento da caixa de rolagem atual para o membro nTrackPos.<br/> |
 
 
 
@@ -61,15 +61,15 @@ O membro **fMask** pode ser um ou mais dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a mensagem tiver recuperado quaisquer valores, o valor de retorno será **true**; caso contrário, será **false**.
+Se a mensagem tiver recuperado valores, o valor de retorno será **TRUE;** caso contrário, será **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-As mensagens que indicam a posição da barra de rolagem, o [**WM \_ HSCROLL**](wm-hscroll.md) e o [**WM \_ VSCROLL**](wm-vscroll.md), fornecem apenas 16 bits de dados de posição. No entanto, a estrutura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usada por **SBM \_ GETSCROLLINFO**, [**SBM \_ SETSCROLLINFO**](sbm-setscrollinfo.md), [**GETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)e [**SETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) fornece 32 bits de dados de posição da barra de rolagem. Você pode usar essas mensagens e funções durante o processamento das mensagens do **WM \_ HSCROLL** ou do **WM \_ VSCROLL** para obter dados de posição da barra de rolagem de 32 bits.
+As mensagens que indicam a posição da barra de rolagem, [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md)fornecem apenas 16 bits de dados de posição. No entanto, a estrutura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usada por **SBM \_ GETSCROLLINFO,** [**SBM \_ SETSCROLLINFO,**](sbm-setscrollinfo.md) [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)e [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) fornece 32 bits de dados de posição da barra de rolagem. Você pode usar essas mensagens e funções ao processar as mensagens **WM \_ HSCROLL** ou **WM \_ VSCROLL** para obter dados de posição da barra de rolagem de 32 bits.
 
-Para obter a posição de 32 bits da caixa de rolagem (Thumb) durante um \_ código de solicitação do SB THUMBTRACK em uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou do [**WM \_ VSCROLL**](wm-vscroll.md) , envie **SBM \_ GETSCROLLINFO** com o valor de TRACKPOS do SIF \_ no membro **fMask** da estrutura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . A mensagem retorna a posição de rastreamento da caixa de rolagem no membro **nTrackPos** da estrutura **SCROLLINFO** . Isso permite que você obtenha a posição da caixa de rolagem à medida que o usuário a move. Como alternativa, você pode usar a função [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) para obter as mesmas informações.
+Para obter a posição de 32 bits da caixa de rolagem (thumb) durante um código de solicitação SB THUMBTRACK em uma mensagem \_ [**WM \_ HSCROLL**](wm-hscroll.md) ou [**WM \_ VSCROLL,**](wm-vscroll.md) envie **SBM \_ GETSCROLLINFO** com o valor TRACKPOS SIF no membro \_ **fMask** da estrutura [**SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) A mensagem retorna a posição de acompanhamento da caixa de rolagem no **membro nTrackPos** da **estrutura SCROLLINFO.** Isso permite que você receba a posição da caixa de rolagem conforme o usuário a move. Como alternativa, você pode usar a [**função GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) para obter as mesmas informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,9 +77,9 @@ Para obter a posição de 32 bits da caixa de rolagem (Thumb) durante um \_ cód
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -90,16 +90,16 @@ Para obter a posição de 32 bits da caixa de rolagem (Thumb) durante um \_ cód
 **Referência**
 </dt> <dt>
 
-[**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)
+[**Getscrollinfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)
 </dt> <dt>
 
 [**SBM \_ SETSCROLLINFO**](sbm-setscrollinfo.md)
 </dt> <dt>
 
-[**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo)
+[**Scrollinfo**](/windows/win32/api/winuser/ns-winuser-scrollinfo)
 </dt> <dt>
 
-[**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
+[**Setscrollinfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
 </dt> </dl>
 
  

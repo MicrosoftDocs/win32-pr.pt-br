@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c137472d03f1088da061c20b52050ae1a1f6629e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 427ed51c2757075ccb28fd70e5554c49dc8db4e8
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171336"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986819"
 ---
 # <a name="temporary-database-parameters"></a>Parâmetros de banco de dados temporários
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="temporary-database-parameters"></a>Parâmetros de banco de dados temporários
 
@@ -36,58 +36,21 @@ Este tópico contém parâmetros que são usados para o banco de dados temporár
 
 Esse parâmetro controla o uso de transações em tabelas temporárias. Quando esse parâmetro for false, as tabelas temporárias serão mais rápidas, mas não será possível reverter as atualizações feitas em uma transação.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>True</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>Falso, verdadeiro</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Instância</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>True</p> | 
+| <p>Tipo:</p> | <p>Booliano</p> | 
+| <p>Intervalo válido:</p> | <p>Falso, verdadeiro</p> | 
+| <p>Escopo:</p> | <p>Instância</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
+| <p>Afeta o layout físico:</p> | <p>Não</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Sim</p> | 
+| <p>Afeta o desempenho:</p> | <p>Sim</p> | 
+| <p>Afeta os recursos:</p> | <p>Sim</p> | 
+| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramPageTempDBMin*  
@@ -97,58 +60,21 @@ Esse parâmetro controla o tamanho inicial do banco de dados temporário. O tama
 
 Geralmente, é desejável que aplicativos pequenos configurem o banco de dados temporário para que seja o menor possível. Definir esse parâmetro como 14 atingirá o menor banco de dados temporário possível. Observe que também é possível eliminar totalmente o banco de dados temporário definindo **JET_paramMaxTemporaryTables** como zero.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Integer</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 a 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Instância</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>0</p> | 
+| <p>Tipo:</p> | <p>Integer</p> | 
+| <p>Intervalo válido:</p> | <p>0 a 2147483647</p> | 
+| <p>Escopo:</p> | <p>Instância</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
+| <p>Afeta o layout físico:</p> | <p>Sim</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
+| <p>Afeta o desempenho:</p> | <p>Sim</p> | 
+| <p>Afeta os recursos:</p> | <p>Sim</p> | 
+| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 *JET_paramTempPath*  
@@ -158,86 +84,36 @@ Esse parâmetro indica o caminho relativo ou absoluto do sistema de arquivos da 
 
 **Observação**  Se um caminho relativo for especificado, ele será relativo ao diretório de trabalho atual do processo que hospeda o aplicativo que está usando o mecanismo de banco de dados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor padrão:</p></td>
-<td><p>&quot;tmp. edb&quot;</p></td>
-</tr>
-<tr class="even">
-<td><p>Tipo:</p></td>
-<td><p>Caminho (cadeia de caracteres)</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 a 247 caracteres</p></td>
-</tr>
-<tr class="even">
-<td><p>Escopo:</p></td>
-<td><p>Instância</p></td>
-</tr>
-<tr class="odd">
-<td><p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o layout físico:</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta a confiabilidade:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afeta o desempenho:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afeta os recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidade:</p></td>
-<td><p>Tudo</p></td>
-</tr>
-</tbody>
-</table>
+
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>"tmp. edb"</p> | 
+| <p>Tipo:</p> | <p>Caminho (cadeia de caracteres)</p> | 
+| <p>Intervalo válido:</p> | <p>0 a 247 caracteres</p> | 
+| <p>Escopo:</p> | <p>Instância</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
+| <p>Afeta o layout físico:</p> | <p>Sim</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
+| <p>Afeta o desempenho:</p> | <p>Não</p> | 
+| <p>Afeta os recursos:</p> | <p>Não</p> | 
+| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também
 
-[Arquivos do mecanismo de armazenamento extensível](./extensible-storage-engine-files.md)  
+[Arquivos extensíveis Armazenamento mecanismo](./extensible-storage-engine-files.md)  
 [JetCreateInstance](./jetcreateinstance-function.md)  
 [JetInit](./jetinit-function.md)

@@ -1,8 +1,8 @@
 ---
-description: A classe Cim Check representa uma condição ou característica que deve ser verdadeira em um ambiente definido ou com escopo por uma instância de uma \_ classe \_ COMPUTERSystem CIM.
+description: A \_ classe de verificação CIM representa uma condição ou característica que deve ser verdadeira em um ambiente definido ou com escopo por uma instância de uma classe de \_ sistema CIM.
 ms.assetid: f7862fe5-4412-4d57-b5fa-03c939ddba02
 ms.tgt_platform: multiple
-title: CIM_Check classe
+title: Classe CIM_Check
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,23 +23,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 079eded352c81bc7a066a02616cf314435e7c862b7a34b1b957a0a633f73c20e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42852346af5e4f19038594627e9b7f567e2d3e86
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117835061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885303"
 ---
-# <a name="cim_check-class"></a>Classe CIM \_ Check
+# <a name="cim_check-class"></a>\_Classe de verificação CIM
 
-A **classe Cim \_ Check** representa uma condição ou característica que deve ser verdadeira em um ambiente definido ou com escopo por uma instância de uma [**classe \_ COMPUTERSystem CIM.**](cim-computersystem.md) As verificações associadas a um elemento de software específico são organizadas em um dos dois grupos usando a propriedade **Phase** da associação [**CIM \_ SoftwareElementChecks.**](cim-softwareelementchecks.md)
+A classe de **\_ verificação CIM** representa uma condição ou característica que deve ser verdadeira em um ambiente definido ou com escopo por uma instância de uma classe [**de \_ sistema CIM**](cim-computersystem.md) . As verificações associadas a um determinado elemento de software são organizadas em um dos dois grupos usando a propriedade **Phase** da Associação [**\_ SoftwareElementChecks do CIM**](cim-softwareelementchecks.md) .
 
-Condições que devem ser atendidas quando um elemento de software está em um ambiente específico são conhecidas como condições em estado. Condições que devem ser atendidas para fazer a transição do elemento de software atual para seu próximo estado são conhecidas como condições de próximo estado.
+As condições que devem ser satisfeitas quando um elemento de software está em um ambiente específico são conhecidas como condições em estado. As condições que devem ser satisfeitas para fazer a transição do elemento de software atual para seu próximo estado são conhecidas como condições do próximo estado.
 
-Um [**objeto \_ ComputerSystem cim**](cim-computersystem.md) representa o ambiente no qual um [**\_ SoftwareElement CIM**](cim-softwareelement.md) já está instalado ou no qual um Cim **\_ SoftwareElement** será instalado. Para o caso em que um elemento de software já está instalado, a associação [**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) é usada para identificar o objeto **\_ ComputerSystem CIM** que representa o "ambiente". Quando um elemento de software está sendo distribuído e instalado em um computador diferente, o objeto **\_ COMPUTERSystem CIM** para o sistema de alvo é o ambiente.
+Um objeto de [**\_ sistema CIM**](cim-computersystem.md) representa o ambiente em que [**um \_ software CIM**](cim-softwareelement.md) já está instalado ou no qual um **\_ software. CIM** será instalado. Para o caso em que um elemento de software já está instalado, a associação [**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) é usada para identificar o objeto de **sistema de \_ ComputerSystem CIM** que representa o "ambiente". Quando um elemento de software está sendo distribuído e instalado em um computador diferente, o objeto de sistema de computador **CIM \_** para o System de destino é o ambiente.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,20 +65,20 @@ class CIM_Check
 
 ## <a name="members"></a>Membros
 
-A **classe CIM \_ Check** tem estes tipos de membros:
+A classe de **\_ verificação CIM** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe CIM \_ Check** tem esses métodos.
+A classe de **\_ verificação CIM** tem esses métodos.
 
 
 
 | Método                                             | Descrição                                                   |
 |:---------------------------------------------------|:--------------------------------------------------------------|
-| [**Invoke**](invoke-method-in-class-cim-check.md) | Toma uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-check.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -86,7 +86,7 @@ A **classe CIM \_ Check** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe CIM \_ Check** tem essas propriedades.
+A classe de **\_ verificação CIM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -99,14 +99,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Uma breve descrição textual do assunto.
 
 </dd> <dt>
 
-**Checkid**
+**CheckID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -115,7 +115,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador usado em conjunto com outras chaves para identificar exclusivamente a verificação.
@@ -125,15 +125,15 @@ Identificador usado em conjunto com outras chaves para identificar exclusivament
 **CheckMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **TRUE**, espera-se que a condição exista no ambiente. Por exemplo, um arquivo deve estar em um sistema, portanto, o [**método Invoke**](invoke-method-in-class-cim-check.md) deve retornar **TRUE.**
+Se for **true**, espera-se que a condição exista no ambiente. Por exemplo, espera-se que um arquivo esteja em um sistema, portanto, o método [**Invoke**](invoke-method-in-class-cim-check.md) deve retornar **true**.
 
-Se **FALSE**, a condição não deverá existir. Por exemplo, um arquivo não está em um sistema, portanto, o [**método Invoke**](invoke-method-in-class-cim-check.md) deve retornar **FALSE.**
+Se for **false**, a condição não deverá existir. Por exemplo, um arquivo não está em um sistema, portanto, o método [**Invoke**](invoke-method-in-class-cim-check.md) deve retornar **false**.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição dos objetos .
+Uma descrição dos objetos.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome usado para identificar o elemento de software.
@@ -175,23 +175,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Esse é um identificador para esse elemento de software.
+Este é um identificador para este elemento de software.
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O estado do elemento de software de um elemento de software.
@@ -227,18 +227,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento start.
+Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
 
 </dd> </dl>
 
@@ -247,13 +247,13 @@ Descreve os detalhes necessários para monitorar e operar em um elemento start.
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.5")
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informações do componente de software DMTF \| 2,5 ")
 </dt> </dl>
 
 Sistema operacional de destino do elemento de software.
@@ -269,7 +269,7 @@ Sistema operacional de destino do elemento de software.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -292,7 +292,7 @@ Mac OS
 
 </dt> <dd>
 
-AtT UNIX
+ATT UNIX
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ AtT UNIX
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix Digital** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -324,13 +324,13 @@ AtT UNIX
 
 </dt> <dd>
 
-Abrir VMs
+Abrir VMS
 
 </dd> <dt>
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-<span id="HPUX"></span><span id="hpux"></span>**HPUX** (8)
+<span id="HPUX"></span><span id="hpux"></span>HP **(8** )
 
 
 </dt> <dd>
@@ -362,7 +362,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**Sistema operacional/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -374,7 +374,7 @@ HP-UX
 
 </dt> <dd>
 
-VM (Máquina Virtual) da Microsoft para Java
+VM (máquina virtual) da Microsoft para Java
 
 </dd> <dt>
 
@@ -392,13 +392,13 @@ VM (Máquina Virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3.x
+Windows Win
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
+<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
 
 
 </dt> <dd>
@@ -784,8 +784,8 @@ Versão da operação.
 
 A versão da operação deve estar em uma das seguintes formas:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundária. &lt; Revisão&gt;
+-   &lt;&gt;principal. &lt; revisão &gt; &lt; de letra &gt; &lt; secundária&gt;
 
 </dd> </dl>
 

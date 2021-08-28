@@ -1,27 +1,27 @@
 ---
-description: Para os usuários em todo o mundo, a entrada textual faz parte de uma experiência de computação moderna, para Blogs, comentários, tweeting, mensagens instantâneas ou qualquer outro tipo de digitação de texto. No Windows 8, a verificação ortográfica é interna para editar controles.
+description: Para os usuários em todo o mundo, a entrada textual faz parte de uma experiência de computação moderna, para Blogs, comentários, tweeting, mensagens instantâneas ou qualquer outro tipo de digitação de texto. em Windows 8, a verificação ortográfica é interna para editar controles.
 ms.assetid: ED569D4F-568B-4381-91C3-8EAEDA4DD47C
 title: Sobre a API de verificação ortográfica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f0d356823e665781052e2a2d5ea98b358155038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e3c15594be003b67a6e0c9df62e234e8076cd4ea213bc08468f3bb72698f51f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754936"
 ---
 # <a name="about-the-spell-checking-api"></a>Sobre a API de verificação ortográfica
 
-Para os usuários em todo o mundo, a entrada textual faz parte de uma experiência de computação moderna, para Blogs, comentários, tweeting, mensagens instantâneas ou qualquer outro tipo de digitação de texto. No Windows 8, a verificação ortográfica é interna para editar controles.
+Para os usuários em todo o mundo, a entrada textual faz parte de uma experiência de computação moderna, para Blogs, comentários, tweeting, mensagens instantâneas ou qualquer outro tipo de digitação de texto. em Windows 8, a verificação ortográfica é interna para editar controles.
 
-Os desenvolvedores podem usar a API de verificação ortográfica em seus aplicativos para consumir os serviços de verificação ortográfica disponíveis. Os desenvolvedores também podem criar verificadores ortográficos que se tornam provedores e são integrados à estrutura de verificação ortográfica do Windows.
+Os desenvolvedores podem usar a API de verificação ortográfica em seus aplicativos para consumir os serviços de verificação ortográfica disponíveis. os desenvolvedores também podem criar verificadores ortográficos que se tornam provedores e são integrados à estrutura de verificação ortográfica Windows.
 
-A API de verificação ortográfica foi projetada para uso por desenvolvedores Professional C/C++ de aplicativos COM (Windows Component Object Model). Não há suporte para a API de verificação ortográfica para uso em um serviço Windows ou ASP.NET.
+a API de verificação ortográfica foi projetada para uso por desenvolvedores professional C/C++ de aplicativos COM (Windows Component Object Model). não há suporte para a API de verificação ortográfica para uso em um serviço de Windows ou ASP.NET.
 
 ## <a name="versioning"></a>Controle de versão
 
-A API de verificação ortográfica está disponível a partir do Windows 8 ou do Windows Server 2012. Adições futuras à API serão tratadas pela criação de novas interfaces que podem ser determinadas usando [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) nos existentes.
+a API de verificação ortográfica está disponível a partir do Windows 8 ou Windows Server 2012. Adições futuras à API serão tratadas pela criação de novas interfaces que podem ser determinadas usando [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) nos existentes.
 
 ## <a name="interfaces"></a>Interfaces
 

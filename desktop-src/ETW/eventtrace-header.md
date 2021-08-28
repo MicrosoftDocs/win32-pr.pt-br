@@ -1,7 +1,7 @@
 ---
-description: A classe de tipo de evento para o evento de cabeçalho do arquivo de log. Essa classe contém informações sobre a sessão de rastreamento de eventos.
+description: A classe de tipo de evento para o evento de header do arquivo de log. Essa classe contém informações sobre a sessão de rastreamento de eventos.
 ms.assetid: 3d0c4044-da06-4850-95c4-99b4ea28fcd9
-title: Classe EventTrace_Header
+title: EventTrace_Header classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,16 +33,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: dea803849d6aa15c2a3a14deb850d85ade569116
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5d0515b9d7d720409e0a72aec7aad5dc54561637563976a35d03b3e0dec79f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829986"
 ---
-# <a name="eventtrace_header-class"></a>\_Classe de cabeçalho EventTrace
+# <a name="eventtrace_header-class"></a>Classe EventTrace \_ Header
 
-A classe de tipo de evento para o evento de cabeçalho do arquivo de log. Essa classe contém informações sobre a sessão de rastreamento de eventos.
+A classe de tipo de evento para o evento de header do arquivo de log. Essa classe contém informações sobre a sessão de rastreamento de eventos.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -78,20 +78,20 @@ class EventTrace_Header : EventTraceEvent
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ cabeçalho EventTrace** tem estes tipos de membros:
+A **classe EventTrace \_ Header** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ cabeçalho EventTrace** tem essas propriedades.
+A **classe EventTrace \_ Header** tem essas propriedades.
 
 <dl> <dt>
 
-**Boottime**
+**BootTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -100,14 +100,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (17)
 </dt> </dl>
 
-Hora em que o sistema foi iniciado, em intervalos de 100 a nanossegundos desde a meia-noite, 1º de janeiro de 1601.
+Hora em que o sistema foi iniciado, em intervalos de 100 nanossegundos desde a meia-noite de 1º de janeiro de 1601.
 
 </dd> <dt>
 
 **BufferSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -116,14 +116,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (1)
 </dt> </dl>
 
-Tamanho dos buffers da sessão de rastreamento de eventos, em kilobytes.
+Tamanho dos buffers da sessão de rastreamento de eventos, em quilobytes.
 
 </dd> <dt>
 
 **BuffersLost**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -136,10 +136,10 @@ Número total de buffers perdidos.
 
 </dd> <dt>
 
-**BuffersWritten**
+**BuffersEscrito**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -155,7 +155,7 @@ Número total de buffers gravados pela sessão de rastreamento de eventos.
 **CPUSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -173,7 +173,7 @@ Velocidade da CPU, em megahertz.
 **EndTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -182,14 +182,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Hora em que a sessão de rastreamento de eventos foi interrompida, em intervalos de 100 a nanossegundos desde a meia-noite, 1º de janeiro de 1601. Esse valor pode ser 0 se você estiver consumindo eventos em tempo real ou de um arquivo de log ao qual o fornecimento ainda está registrando eventos.
+Hora em que a sessão de rastreamento de eventos parou, em intervalos de 100 nanossegundos desde a meia-noite de 1º de janeiro de 1601. Esse valor pode ser 0 se você estiver consumindo eventos em tempo real ou de um arquivo de log para o qual o provide ainda está registrando eventos.
 
 </dd> <dt>
 
 **EventsLost**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -202,58 +202,58 @@ Número de eventos perdidos durante a sessão de rastreamento de eventos.
 
 </dd> <dt>
 
-**LogFilemode**
+**LogFileMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (8), **formato ("x")**
+Qualificadores: **WmiDataId** (8), **Format("x")**
 </dt> </dl>
 
-Modo de log atual para a sessão de rastreamento de eventos. Para obter uma lista de valores, consulte constantes do modo de log.
+Modo de registro em log atual para a sessão de rastreamento de eventos. Para ver uma lista de valores, consulte Constantes de modo de registro em log.
 
 </dd> <dt>
 
-**LogFileName**
+**Logfilename**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (15), **ponteiro**
+Qualificadores: **WmiDataId** (15), **Ponteiro**
 </dt> </dl>
 
 Nome do arquivo de log de rastreamento de eventos que contém os eventos.
 
 </dd> <dt>
 
-**Loggername**
+**LoggerName**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (14), **ponteiro**
+Qualificadores: **WmiDataId** (14), **Ponteiro**
 </dt> </dl>
 
 Nome da sessão de rastreamento de eventos.
 
 </dd> <dt>
 
-**Cedido**
+**MaxFileSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -269,7 +269,7 @@ Tamanho máximo do arquivo de log, em megabytes.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -285,7 +285,7 @@ Número de processadores no sistema.
 **PerfFreq**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -294,14 +294,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (18)
 </dt> </dl>
 
-Frequência do contador de desempenho de alta resolução, se houver.
+Frequência do contador de desempenho de alta resolução, se houver um.
 
 </dd> <dt>
 
-**Ponteiros**
+**PointerSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -314,10 +314,10 @@ Tamanho de um tipo de dados de ponteiro, em bytes.
 
 </dd> <dt>
 
-**ProviderVersion**
+**Providerversion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -326,14 +326,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (3)
 </dt> </dl>
 
-Número de Build do sistema operacional.
+Número de build do sistema operacional.
 
 </dd> <dt>
 
 **ReservedFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -349,7 +349,7 @@ Reservado.
 **StartBuffers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura

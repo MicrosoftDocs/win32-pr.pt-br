@@ -1,7 +1,7 @@
 ---
-description: Verifica se um construtor deve ser associado a uma determinada propriedade.
+description: Verifica se um construtor deve ser associado a uma propriedade específica.
 ms.assetid: 8fab2dc2-3549-4559-b704-6783d929274e
-title: 'Método IProvidePropertyBuilder:: MapPropertyToBuilder'
+title: Método IProvidePropertyBuilder::MapPropertyToBuilder
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Vsp.dll
-ms.openlocfilehash: 5fa755449bfb97940235fe45f9e299aa828e6faa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35ff9e82164251c4490355bbf0499b7fa690415d388b95f7f9c7fd0e6bd7dd3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001686"
 ---
-# <a name="iprovidepropertybuildermappropertytobuilder-method"></a>Método IProvidePropertyBuilder:: MapPropertyToBuilder
+# <a name="iprovidepropertybuildermappropertytobuilder-method"></a>Método IProvidePropertyBuilder::MapPropertyToBuilder
 
-Verifica se um construtor deve ser associado a uma determinada propriedade.
+Verifica se um construtor deve ser associado a uma propriedade específica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,25 +42,25 @@ void MapPropertyToBuilder(
 
 <dl> <dt>
 
-*DISPID* \[ no\]
+*dispid* \[ Em\]
 </dt> <dd>
 
 O DISPID da propriedade em questão.
 
 </dd> <dt>
 
-*pdwCtlBldType* \[ fora\]
+*pdwCtlBldType* \[ out\]
 </dt> <dd>
 
-O Construtor a ser mapeado. Esse parâmetro pode ser uma combinação dos valores a seguir.
+O construtor a ser mapeado. Esse parâmetro pode ser uma combinação dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                          | Significado                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <span id="CTLBLDTYPE_FSTDPROPBUILDER"></span><span id="ctlbldtype_fstdpropbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FSTDPROPBUILDER**</dt> <dt>1</dt> </dl>    | Invocar um Standard Builder do sistema (sem suporte no Visual Studio).<br/> |
+| <span id="CTLBLDTYPE_FSTDPROPBUILDER"></span><span id="ctlbldtype_fstdpropbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FSTDPROPBUILDER**</dt> <dt>1</dt> </dl>    | Invoque um construtor de sistema padrão (sem suporte no Visual Studio).<br/> |
 | <span id="CTLBLDTYPE_FINTERNALBUILDER"></span><span id="ctlbldtype_finternalbuilder"></span><dl> <dt>**CTLBLDTYPE \_ FINTERNALBUILDER**</dt> <dt>2</dt> </dl> | Invocar um construtor personalizado.<br/>                                           |
-| <span id="CTLBLDTYPE_EDITSOBJDIRECTLY"></span><span id="ctlbldtype_editsobjdirectly"></span><dl> <dt>**CTLBLDTYPE \_ EDITSOBJDIRECTLY**</dt> <dt>4</dt> </dl> | O Construtor modifica o objeto. Esse comportamento é comum.<br/>              |
+| <span id="CTLBLDTYPE_EDITSOBJDIRECTLY"></span><span id="ctlbldtype_editsobjdirectly"></span><dl> <dt>**CTLBLDTYPE \_ EDITSOBJDIRECTLY**</dt> <dt>4</dt> </dl> | O construtor modifica o objeto . Esse é um comportamento comum.<br/>              |
 
 
 
@@ -68,23 +68,23 @@ O Construtor a ser mapeado. Esse parâmetro pode ser uma combinação dos valore
 
 </dd> <dt>
 
-*pbstrGuidBldr* \[ fora\]
+*pbstrGuidBldr* \[ out\]
 </dt> <dd>
 
-O GUID que identifica o construtor para essa propriedade.
+O GUID que identifica o construtor dessa propriedade.
 
 </dd> <dt>
 
 *builderAvailable* \[ out, retval\]
 </dt> <dd>
 
-Esse parâmetro será **true** se essa propriedade atualmente der suporte a um construtor.
+Esse parâmetro será **TRUE** se essa propriedade atualmente dá suporte a um construtor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

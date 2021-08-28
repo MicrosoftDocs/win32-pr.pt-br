@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DEADCHAR (WinUser. h)
-description: Postado na janela com o foco do teclado quando uma \_ mensagem do WM KEYUP é convertida pela função TranslateMessage.
+title: WM_DEADCHAR mensagem (Winuser.h)
+description: Postado na janela com o foco do teclado quando uma mensagem WM KEYUP é convertida \_ pela função TranslateMessage.
 ms.assetid: ada9a61c-dabf-447b-ae13-91803c097f0d
 keywords:
-- Entrada de mouse e teclado de mensagem WM_DEADCHAR
+- WM_DEADCHAR entrada do mouse e teclado da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6053095b912360e9875fa062c2daba7cafcfd43b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e4921d399c4a1c7a86596bfcc907b52d9c834235d133d6455b88c5a5a40c89a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778746"
 ---
-# <a name="wm_deadchar-message"></a>Mensagem do WM \_ DEADCHAR
+# <a name="wm_deadchar-message"></a>Mensagem \_ WM DEADCHAR
 
-Postado na janela com o foco do teclado quando uma mensagem do [**WM \_ KEYUP**](wm-keyup.md) é convertida pela função [**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage) . **WM \_ DEADCHAR** especifica um código de caractere gerado por uma chave inativa. Uma chave inativa é uma chave que gera um caractere, como o trema (ponto duplo), que é combinado com outro caractere para formar um caractere composto. Por exemplo, o caractere de trema () é gerado digitando-se a chave inativa para o caractere de trema e, em seguida, digitando a tecla o.
+Postado na janela com o foco do teclado quando uma mensagem [**WM \_ KEYUP**](wm-keyup.md) é convertida pela [**função TranslateMessage.**](/windows/desktop/api/winuser/nf-winuser-translatemessage) **WM \_ DEADCHAR** especifica um código de caractere gerado por uma chave morta. Uma chave morta é uma chave que gera um caractere, como o umlaut (ponto duplo), que é combinado com outro caractere para formar um caractere composto. Por exemplo, o caractere umlaut-O ( ) é gerado digitando a chave morta para o caractere umlaut e digitando a tecla O.
 
 
 ```C++
@@ -39,7 +39,7 @@ Postado na janela com o foco do teclado quando uma mensagem do [**WM \_ KEYUP**]
 *wParam* 
 </dt> <dd>
 
-O código de caractere gerado pela chave inativa.
+O código de caractere gerado pela chave morta.
 
 </dd> <dt>
 
@@ -52,29 +52,29 @@ A contagem de repetição, o código de verificação, o sinalizador de chave es
 
 | Bits  | Significado                                                                                                                                                                                                                                                               |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | A contagem de repetição para a mensagem atual. O valor é o número de vezes que o pressionamento de tecla é repetido de forma automática como resultado do usuário que mantém a chave. Se a tecla de pressionamento for mantida por tempo suficiente, várias mensagens serão enviadas. No entanto, a contagem de repetição não é cumulativa. |
+| 0-15  | A contagem de repetição para a mensagem atual. O valor é o número de vezes que o comutado de tecla é autoreado como resultado do usuário manter a chave. Se o tipo de tecla for mantido por tempo suficiente, várias mensagens serão enviadas. No entanto, a contagem de repetição não é cumulativa. |
 | 16-23 | O código de verificação. O valor depende do OEM.                                                                                                                                                                                                                          |
-| 24    | Indica se a chave é uma chave estendida, como as teclas ALT direita e CTRL que aparecem em um teclado avançado de 101 ou 102 teclas. O valor será 1 se for uma chave estendida; caso contrário, será 0.                                                              |
-| 25-28 | Reservado Não use.                                                                                                                                                                                                                                                 |
-| 29    | O código do contexto. O valor será 1 se a tecla ALT for mantida pressionada enquanto a tecla for pressionada; caso contrário, o valor será 0.                                                                                                                                                     |
-| 30    | O estado de chave anterior. O valor será 1 se a chave estiver inoperante antes de a mensagem ser enviada ou for 0 se a chave estiver ativa.                                                                                                                                                    |
-| 31    | O estado de transição. O valor será 1 se a chave estiver sendo liberada ou for 0 se a chave estiver sendo pressionada.                                                                                                                                                            |
+| 24    | Indica se a chave é uma tecla estendida, como as teclas ALT e CTRL à direita que aparecem em um teclado aprimorado de 101 ou 102 teclas. O valor será 1 se for uma chave estendida; caso contrário, será 0.                                                              |
+| 25-28 | Reservado; não use.                                                                                                                                                                                                                                                 |
+| 29    | O código de contexto. O valor será 1 se a tecla ALT for mantida pressionada enquanto a tecla é pressionada; caso contrário, o valor será 0.                                                                                                                                                     |
+| 30    | O estado da chave anterior. O valor será 1 se a chave estiver inoperante antes que a mensagem seja enviada ou será 0 se a chave estiver inoperante.                                                                                                                                                    |
+| 31    | O estado de transição. O valor será 1 se a chave estiver sendo liberada ou será 0 se a chave estiver sendo pressionada.                                                                                                                                                            |
 
-Para obter mais detalhes, consulte [sinalizadores de mensagem de pressionamento de tecla](about-keyboard-input.md#keystroke-message-flags).
+Para obter mais detalhes, consulte [Sinalizadores de mensagem de teclas](about-keyboard-input.md#keystroke-message-flags).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um aplicativo deve retornar zero se ele processar essa mensagem.
+Um aplicativo deverá retornar zero se ele processa essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-A mensagem do **WM \_ DEADCHAR** normalmente é usada por aplicativos para fornecer aos comentários do usuário sobre cada tecla pressionada. Por exemplo, um aplicativo pode exibir o acento na posição do caractere atual sem mover o cursor.
+A **mensagem \_ WM DEADCHAR** normalmente é usada por aplicativos para dar ao usuário comentários sobre cada tecla pressionada. Por exemplo, um aplicativo pode exibir o destaque na posição do caractere atual sem mover o acento.
 
-Como não há necessariamente uma correspondência de um para um entre as chaves pressionadas e as mensagens de caracteres geradas, as informações na palavra de ordem superior do parâmetro *lParam* geralmente não são úteis para os aplicativos. As informações na palavra de ordem superior aplicam-se apenas à mensagem do [**WM \_ KEYDOWN**](wm-keydown.md) mais recente que precede o lançamento da mensagem do **WM \_ DEADCHAR** .
+Como não há necessariamente uma correspondência um-para-um entre chaves pressionadas e mensagens de caractere geradas, as informações na palavra de ordem alta do parâmetro *lParam* geralmente não são úteis para aplicativos. As informações na palavra de ordem alta se aplica somente à mensagem [**WM \_ KEYDOWN**](wm-keydown.md) mais recente que precede a postagem da mensagem **WM \_ DEADCHAR.**
 
-Para teclados avançados de 101 e 102 teclas, as chaves estendidas são as teclas ALT direita e direita na seção principal do teclado; as teclas INS, DEL, HOME, END, PAGE UP, PAGE DOWN e Arrow nos clusters à esquerda do teclado numérico; e a divisão (/) e inserir chaves no teclado numérico. Alguns teclados podem dar suporte ao bit de chave estendida no parâmetro *lParam* .
+Para teclados de 101 e 102 teclas aprimorados, as teclas estendidas são a ALT direita e as teclas CTRL à direita na seção principal do teclado; as teclas INS, DEL, HOME, END, PAGE UP, PAGE DOWN e seta nos clusters à esquerda do teclado numérico; e as chaves de divisão (/) e ENTER no teclado numérico. Alguns outros teclados podem dar suporte ao bit de chave estendida no *parâmetro lParam.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Para teclados avançados de 101 e 102 teclas, as chaves estendidas são as tecla
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,22 +95,22 @@ Para teclados avançados de 101 e 102 teclas, as chaves estendidas são as tecla
 **Referência**
 </dt> <dt>
 
-[**TranslateMessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage)
+[**Translatemessage**](/windows/desktop/api/winuser/nf-winuser-translatemessage)
 </dt> <dt>
 
-[**o WM \_ KEYDOWN**](wm-keydown.md)
+[**WM \_ KEYDOWN**](wm-keydown.md)
 </dt> <dt>
 
-[**o WM \_ KEYUP**](wm-keyup.md)
+[**WM \_ KEYUP**](wm-keyup.md)
 </dt> <dt>
 
-[**SYSDEADCHAR do WM \_**](wm-sysdeadchar.md)
+[**WM \_ SYSDEADCHAR**](wm-sysdeadchar.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Entrada de teclado](keyboard-input.md)
+[Entrada do teclado](keyboard-input.md)
 </dt> </dl>
 
  

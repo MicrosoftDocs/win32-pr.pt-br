@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01dc3897a51099088e8e161a64cfff855c381270
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 35a796fdd5372330b3d642c9338200d68c6a61e6c5e1185e73c50aa4e69b26fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646535"
 ---
 # <a name="rpc-ns-profile-entry-attribute"></a>atributo de entrada de perfil RPC-NS-Profile
 
@@ -58,7 +58,7 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -79,7 +79,7 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -100,7 +100,7 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -121,15 +121,15 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A lista de entradas para a prioridade atual.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| Tem valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

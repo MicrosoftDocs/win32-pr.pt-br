@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: cf203e0e6de08b6faff3d3b4a040018ec1122975
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: eb73345dd594f3583b4a6cfbc6e0462848d85de0e9470e6bc8177574a2fff20d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017704"
 ---
 # <a name="ienumpstoreproviders-interface"></a>Interface IEnumPStoreProviders
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[o Armazenamento protegido (pstore) está disponível para uso no Windows Server 2003 e no Windows XP. ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
 
 Fornece métodos de enumeração de padrão COM para a interface [**IPStore**](ipstore.md) .
 
@@ -42,7 +42,7 @@ A interface **IEnumPStoreProviders** tem esses métodos.
 |:--------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [**Clone**](ienumpstoreproviders-clone.md) | Cria outro enumerador que contém o mesmo estado de enumeração do atual.<br/> |
 | [**Avançar**](ienumpstoreproviders-next.md)   | Obtém o próximo provedor especificado na sequência de enumeração.<br/>                           |
-| [**Redefinir**](ienumpstoreproviders-reset.md) | Redefine para o início da sequência de enumeração.<br/>                                    |
+| [**Definido**](ienumpstoreproviders-reset.md) | Redefine para o início da sequência de enumeração.<br/>                                    |
 | [**Ignorar**](ienumpstoreproviders-skip.md)   | Ignora o provedor especificado na sequência de enumeração.<br/>                               |
 
 

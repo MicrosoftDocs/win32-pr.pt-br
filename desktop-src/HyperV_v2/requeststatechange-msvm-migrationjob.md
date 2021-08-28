@@ -1,7 +1,7 @@
 ---
 description: Solicita que o estado do trabalho de migração seja alterado para o estado especificado.
 ms.assetid: f0be5ea8-7e21-407e-b84d-8bd4ca5a6a2c
-title: Método RequestStateChange da classe Msvm_MigrationJob
+title: Método RequestStateChange da classe Msvm_MigrationJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31011de619780ae36f390ee87038300a3b42fef2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7a5934049860e92aa9986a301fe3d75bed8022bda064653ee9e405ad16f6619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014314"
 ---
 # <a name="requeststatechange-method-of-the-msvm_migrationjob-class"></a>Método RequestStateChange da classe Msvm \_ MigrationJob
 
-Solicita que o estado do trabalho de migração seja alterado para o estado especificado. Invocar o método **RequestStateChange** várias vezes pode fazer com que as solicitações anteriores sejam substituídas ou perdidas. Se 0 for retornado, a tarefa será concluída com êxito. Qualquer outro código de retorno indica uma condição de erro.
+Solicita que o estado do trabalho de migração seja alterado para o estado especificado. Invocar o método **RequestStateChange** várias vezes pode resultar em solicitações anteriores sendo substituídas ou perdidas. Se 0 for retornado, a tarefa será concluída com êxito. Qualquer outro código de retorno indica uma condição de erro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*Requestedstate* \[ no\]
+*RequestedState* \[ Em\]
 </dt> <dd>
 
 O novo estado de um trabalho.
@@ -49,12 +49,12 @@ O novo estado de um trabalho.
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Início** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Iniciar** (2)
 
 
 </dt> <dd>
 
-Altera o estado para "em execução".
+Altera o estado para "Em execução".
 
 </dd> <dt>
 
@@ -65,18 +65,18 @@ Altera o estado para "em execução".
 
 </dt> <dd>
 
-Interrompe o trabalho temporariamente. A intenção é reiniciar subsequentemente o trabalho com "Start". Pode ser possível inserir o estado "serviço" ao ser suspenso. (Isso é específico do trabalho.)
+Interrompe o trabalho temporariamente. A intenção é reiniciar o trabalho posteriormente com "Iniciar". Pode ser possível inserir o estado "Serviço" enquanto suspenso. (Isso é específico do trabalho.)
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminar** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Encerrar** (4)
 
 
 </dt> <dd>
 
-Interrompe o trabalho corretamente, salvando os dados, preservando o estado e desligando todos os processos subjacentes de maneira ordenada.
+Interrompe o trabalho corretamente, salvando dados, preservando o estado e desligando todos os processos subjacentes de maneira organizada.
 
 </dd> <dt>
 
@@ -98,13 +98,13 @@ Encerra o trabalho imediatamente sem nenhum requisito para salvar dados ou prese
 
 </dt> <dd>
 
-Coloca o trabalho em um estado de serviço específico do fornecedor. Pode ser possível reiniciar o trabalho.
+Coloca o trabalho em um estado de serviço específico do fornecedor. Talvez seja possível reiniciar o trabalho.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado**
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado**
 
 
 </dt> <dd>
@@ -115,7 +115,7 @@ Reservado.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor reservado**
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor Reservado**
 
 
 </dt> <dd>
@@ -124,14 +124,14 @@ Reservado.
 
 </dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ no\]
+*TimeoutPeriod* \[ Em\]
 </dt> <dd>
 
-Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo Estado tenha. O formato do intervalo deve ser usado para especificar o período de tempo limite. Um valor 0 ou **NULL** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contiver 0 ou **NULL** e a implementação não oferecer suporte a esse parâmetro, um código de retorno 4098 (uso do parâmetro timeout sem suporte) deverá ser retornado.
+Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo estado leve. O formato de intervalo deve ser usado para especificar o período de tempo." Um valor de 0 ou **Null** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contém 0 ou **Null** e a implementação não dá suporte a esse parâmetro, um código de retorno de 4098 (Uso do parâmetro de tempoout sem suporte) deve ser retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 <dl> <dt>
 
@@ -177,10 +177,10 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

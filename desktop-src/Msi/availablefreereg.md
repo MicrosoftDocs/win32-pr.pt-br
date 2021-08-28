@@ -1,31 +1,31 @@
 ---
-description: A propriedade AVAILABLEFREEREG especifica, em quilobytes, o total de espaço livre disponível no registro depois de chamar a ação AllocateRegistrySpace. O valor máximo da propriedade AVAILABLEFREEREG é de 2 milhões quilobytes. Essa propriedade é definida somente no Windows 2000.
+description: A propriedade AVAILABLEFREEREG especifica em quilobytes o espaço livre total disponível no Registro depois de chamar a ação AllocateRegistrySpace. O valor máximo da propriedade AVAILABLEFREEREG é 2000000 quilobytes. Essa propriedade é definida somente no Windows 2000.
 ms.assetid: 95afc397-2f28-4ab9-8d95-d071c2f1f498
 title: Propriedade AVAILABLEFREEREG
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 517073748195c47ee27b68adbe70d6c69f3f585b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b45508494f9ba87ec8261b38ea18f83d0b3ad9796f7390b70349211cbf244df3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650066"
 ---
 # <a name="availablefreereg-property"></a>Propriedade AVAILABLEFREEREG
 
-A propriedade **AVAILABLEFREEREG** especifica, em quilobytes, o total de espaço livre disponível no registro depois de chamar a [ação AllocateRegistrySpace](allocateregistryspace-action.md).
+A **propriedade AVAILABLEFREEREG** especifica em quilobytes o espaço livre total disponível no Registro depois de chamar a ação [AllocateRegistrySpace](allocateregistryspace-action.md).
 
-O valor máximo da propriedade **AVAILABLEFREEREG** é de 2 milhões quilobytes.
+O valor máximo da **propriedade AVAILABLEFREEREG** é 2000000 quilobytes.
 
 Essa propriedade é definida somente no Windows 2000.
 
 ## <a name="remarks"></a>Comentários
 
-A propriedade **AVAILABLEFREEREG** deve ser definida com um valor grande o suficiente para garantir espaço suficiente no registro para todas as informações de Registro adicionadas pela instalação. O valor mínimo necessário para garantir espaço suficiente depende de onde a [ação AllocateRegistrySpace](allocateregistryspace-action.md) está localizada na sequência de ações, pois o instalador aumenta automaticamente o espaço conforme necessário ao registrar informações nas tabelas [registro](registry-table.md), [classe](class-table.md), [selfreg](selfreg-table.md), [extensão](extension-table.md), [MIME](mime-table.md)e [verbo](verb-table.md) . O instalador não aumenta o espaço total do registro para o valor especificado por **AVAILABLEFREEREG** até chegar a AllocateRegistrySpace na sequência de ação.
+A **propriedade AVAILABLEFREEREG** deve ser definida como um valor grande o suficiente para garantir espaço suficiente no Registro para todas as informações de registro adicionadas pela instalação. O valor mínimo necessário para garantir espaço suficiente depende de onde a ação [AllocateRegistrySpace](allocateregistryspace-action.md) está localizada na sequência de ação, pois o instalador aumenta automaticamente o espaço conforme necessário ao registrar informações nas tabelas [Registry](registry-table.md), [Class](class-table.md), [SelfReg](selfreg-table.md), [Extension](extension-table.md), [MIME](mime-table.md)e [Verb.](verb-table.md) O instalador não aumenta o espaço total do Registro para o valor especificado por **AVAILABLEFREEREG** até alcançar AllocateRegistrySpace na sequência de ação.
 
-Se AllocateRegistrySpace for uma das primeiras ações na sequência de ação, **AVAILABLEFREEREG** deverá ser definido como o espaço total exigido pelas informações de registro na tabela do registro, na tabela de classes, na tabela de typelib, na tabela selfreg, na tabela de extensão, na tabela de MIME, na tabela de verbos, no registro de [ações personalizadas](custom-actions.md) , no auto-registro e em qualquer outra informação de registro gravada durante a instalação O valor de **AVAILABLEFREEREG** é a quantidade total de informações adicionadas pela instalação e garante espaço suficiente em todos os casos. Esse também é o caso mais comum.
+Se AllocateRegistrySpace for uma das primeiras ações na sequência de ação, **AVAILABLEFREEREG** deverá ser definido como o espaço total exigido pelas informações de registro na tabela do Registro, tabela Classe, tabela TypeLib, tabela SelfReg, Tabela de extensão, tabela MIME, tabela [Verb,](custom-actions.md) registro de ações personalizadas, registro de autoregisão e quaisquer outras informações do Registro escritas durante a instalação. O valor de **AVAILABLEFREEREG** é a quantidade total de informações adicionadas pela instalação e garante espaço suficiente em todos os casos. Esse também é o caso mais comum.
 
-Se a ação AllocateRegistrySpace puder ser criada na sequência de ação após todas as [ações padrão](standard-actions.md) que gravam dados de registro, como [WriteRegistryValues](writeregistryvalues-action.md) e [RegisterClassInfo](registerclassinfo-action.md), o valor de **AVAILABLEFREEREG** precisará ser definido apenas como o espaço necessário para registrar ações personalizadas, registrar bibliotecas de tipos e quaisquer outras informações ainda não registradas por meio das tabelas.
+Se a ação AllocateRegistrySpace puder ser escrita [](standard-actions.md) na sequência de ação após todas as ações padrão que escrevem dados de registro, como [WriteRegistryValues](writeregistryvalues-action.md) e [RegisterClassInfo](registerclassinfo-action.md), o valor **de AVAILABLEFREEREG** só precisará ser definido para o espaço necessário para registrar ações personalizadas, registrar bibliotecas de tipo e quaisquer outras informações ainda não registradas por meio das tabelas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,7 +33,7 @@ Se a ação AllocateRegistrySpace puder ser criada na sequência de ação após
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

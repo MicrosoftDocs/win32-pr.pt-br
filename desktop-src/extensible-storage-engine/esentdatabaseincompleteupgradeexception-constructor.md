@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 41ef87df165b0336441827dfb2d1805247350a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c99ab2fab4016ac68061f808a8ecac28396a5bfe2312eb6db00f94d6901ee15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621289"
 ---
 # <a name="esentdatabaseincompleteupgradeexception-constructor"></a>Construtor EsentDatabaseIncompleteUpgradeException
 
 Inicializa uma nova instância da classe EsentDatabaseIncompleteUpgradeException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabaseIncompleteUpgradeException()
 
 [Classe EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md)
 
-[Membros do EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-members.md)
+[Membros EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: Notifica um aplicativo quando um IME está prestes a fechar a janela de candidatos. O aplicativo recebe esse comando por meio da \_ mensagem de notificação do IME do WM \_ com configurações de parâmetro, conforme mostrado abaixo.
+description: Notifica um aplicativo quando um IME está prestes a fechar a janela candidatos. O aplicativo recebe esse comando por meio da mensagem WM \_ IME \_ NOTIFY com configurações de parâmetro, conforme mostrado abaixo.
 ms.assetid: d96cea0a-1fc4-4ba7-bb96-7e9c0b67ce5b
-title: IMN_CLOSECANDIDATE código de notificação (IMM. h)
+title: IMN_CLOSECANDIDATE de notificação (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3414d2aa37a50b7f35f0dfb936b641b7c86a932
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dd0a71eac28b2c7dc170724e40c9b4ba6707cd5774145f38efdd791e7ebd8b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107146"
 ---
-# <a name="imn_closecandidate-notification-code"></a>Código de notificação do IMN \_ CLOSECANDIDATE
+# <a name="imn_closecandidate-notification-code"></a>Código de notificação \_ IMN CLOSECANDIDATE
 
-Notifica um aplicativo quando um IME está prestes a fechar a janela de candidatos. O aplicativo recebe esse comando por meio da mensagem de [**\_ \_ notificação do IME do WM**](wm-ime-notify.md) com configurações de parâmetro, conforme mostrado abaixo.
+Notifica um aplicativo quando um IME está prestes a fechar a janela candidatos. O aplicativo recebe esse comando por meio da mensagem [**WM \_ IME \_ NOTIFY**](wm-ime-notify.md) com configurações de parâmetro, conforme mostrado abaixo.
 
 
 ```C++
@@ -26,29 +26,29 @@ IMN_CLOSECANDIDATE
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Defina como IMN \_ CLOSECANDIDATE.
+Definido como IMN \_ CLOSECANDIDATE.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Sinalizador de lista de candidatos. Cada bit corresponde a uma lista de candidatos: bit 0 à primeira lista, bit 1 até o segundo e assim por diante. Se um bit especificado for 1, a janela de candidatos correspondente estará prestes a ser fechada.
+Sinalizador de lista de candidatos. Cada bit corresponde a uma lista de candidatos: bit 0 para a primeira lista, bit 1 para o segundo e assim por diante. Se um bit especificado for 1, a janela candidatos correspondentes estará prestes a ser fechada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Este comando não tem nenhum valor de retorno.
+Esse comando não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo deve processar esse comando se ele exibir os candidatos em si.
+Um aplicativo deverá processar esse comando se ele exibir candidatos em si.
 
-Por padrão, a janela do IME destrói uma janela candidata ao processar esse comando.
+Por padrão, a janela do IME destrói uma janela candidata quando processa esse comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Por padrão, a janela do IME destrói uma janela candidata ao processar esse com
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -66,13 +66,13 @@ Por padrão, a janela do IME destrói uma janela candidata ao processar esse com
 
 <dl> <dt>
 
-[Gerenciador de métodos de entrada](input-method-manager.md)
+[Gerenciador de Métodos de Entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos do Gerenciador de métodos de entrada](input-method-manager-commands.md)
+[Comandos do Gerenciador de Métodos de Entrada](input-method-manager-commands.md)
 </dt> <dt>
 
-[**\_notificação do IME do WM \_**](wm-ime-notify.md)
+[**NOTIFICAÇÃO \_ DO WM IME \_**](wm-ime-notify.md)
 </dt> </dl>
 
  

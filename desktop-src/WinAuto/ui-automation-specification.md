@@ -1,115 +1,115 @@
 ---
-title: Especificação Automação da Interface do Usuário dados
-description: Este tópico fornece uma visão geral da Especificação Automação da Interface do Usuário Microsoft, que forma a base da implementação Windows de Automação da Interface do Usuário.
+title: Especificação de automação da interface do usuário
+description: este tópico fornece uma visão geral da especificação de automação da interface do usuário da Microsoft, que constitui a base da implementação Windows da automação da interface do usuário.
 ms.assetid: 45160767-09b0-4fd1-bd73-bc5ac0e6f75e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc07b70128a401d48813ded68c31dfcfca5bb5a49d2ca46683e9a902af003ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d78298299241545033b25dccc8d79376ec55e1b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118325088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987639"
 ---
-# <a name="ui-automation-specification"></a>Especificação Automação da Interface do Usuário dados
+# <a name="ui-automation-specification"></a>Especificação de automação da interface do usuário
 
-Este tópico fornece uma visão geral da Especificação Automação da Interface do Usuário Microsoft, que forma a base da implementação Windows de Automação da Interface do Usuário. A especificação Automação da Interface do Usuário pode ser suportada em plataformas diferentes do Microsoft Windows. Para obter mais informações, consulte [Automação da Interface do Usuário Especificação](./uiauto-specandcommunitypromise.md)
+este tópico fornece uma visão geral da especificação de automação da interface do usuário da Microsoft, que constitui a base da implementação Windows da automação da interface do usuário. A especificação de automação da interface do usuário pode ter suporte em plataformas diferentes da Microsoft Windows. Para obter mais informações, consulte [especificação de automação da interface do usuário](./uiauto-specandcommunitypromise.md)
 
 Este tópico contém as seguintes seções:
 
 -   [Introducton](#introducton)
--   [Automação da Interface do Usuário elementos](#ui-automation-elements)
--   [Automação da Interface do Usuário árvore](#ui-automation-tree)
--   [Automação da Interface do Usuário propriedades](#ui-automation-properties)
+-   [Elementos de automação da interface do usuário](#ui-automation-elements)
+-   [Árvore de automação da interface do usuário](#ui-automation-tree)
+-   [Propriedades de automação da interface do usuário](#ui-automation-properties)
 -   [Padrões de controle da automação da interface do usuário](#ui-automation-control-patterns)
 -   [Tipos de controle da automação da interface do usuário](#ui-automation-control-types)
--   [Automação da Interface do Usuário eventos](#ui-automation-events)
+-   [Eventos de automação da interface do usuário](#ui-automation-events)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introducton"></a>Introducton
 
-A Especificação Automação da Interface do Usuário fornece acesso programático flexível aos elementos da interface do usuário na área de trabalho do Windows, permitindo que produtos de tecnologia adaptativa, como leitores de tela, forneçam informações sobre a interface do usuário para os usuários finais e manipulem a interface do usuário por meios diferentes da entrada padrão.
+a especificação de automação da interface do usuário fornece acesso de programação flexível a elementos de interface do usuário na área de trabalho Windows, permitindo que os produtos de tecnologia assistencial, como leitores de tela, forneçam informações sobre a interface do usuário aos usuários finais e manipulem a interface do usuário por meio da entrada padrão.
 
-Automação da Interface do Usuário é mais amplo no escopo do que apenas uma definição de interface. Ele fornece:
+A automação da interface do usuário é mais ampla no escopo do que apenas uma definição de interface. Ele fornece:
 
--   Um modelo de objeto e funções que facilitam para aplicativos cliente receber eventos, recuperar valores de propriedade e manipular elementos da interface do usuário.
--   Uma infraestrutura principal para localizar e buscar entre limites de processo.
--   Um conjunto de interfaces para provedores expressarem a estrutura de árvore, as propriedades gerais e a funcionalidade dos elementos da interface do usuário.
--   Uma propriedade de "tipo de controle" que permite que clientes e provedores indiquem claramente as propriedades comuns, a funcionalidade e a estrutura de um objeto de interface do usuário.
+-   Um modelo de objeto e funções que tornam mais fácil para os aplicativos cliente receberem eventos, recuperarem valores de propriedade e manipular elementos da interface do usuário.
+-   Uma infra-estrutura básica para localizar e buscar limites de processo.
+-   Um conjunto de interfaces para provedores para expressar a estrutura de árvore, as propriedades gerais e a funcionalidade dos elementos da interface do usuário.
+-   Uma propriedade de "tipo de controle" que permite que clientes e provedores indiquem claramente as propriedades, a funcionalidade e a estrutura comuns de um objeto de interface do usuário.
 
-Automação da Interface do Usuário aprimora o Microsoft Active Accessibility por:
+A automação da interface do usuário aprimora o Microsoft Acessibilidade Ativa:
 
--   Habilitando clientes fora do processo eficientes, continuando a permitir o acesso em processo.
--   Expor mais informações sobre a interface do usuário de uma maneira que permita que os clientes sejam fora do processo.
--   Coexistir com e aproveitar Microsoft Active Accessibility sem herdar suas limitações. Para obter mais informações, [consulte Microsoft Active Accessibility e Automação da Interface do Usuário comparados.](microsoft-active-accessibility-and-ui-automation-compared.md)
--   Fornecendo uma alternativa ao [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que é simples de implementar.
+-   Habilitando clientes de fora de processo eficientes, enquanto continua a permitir o acesso em processo.
+-   Expor mais informações sobre a interface do usuário de forma a permitir que os clientes estejam fora do processo.
+-   Coexistente com e aproveitando o Microsoft Acessibilidade Ativa sem herdar suas limitações. Para obter mais informações, consulte [Microsoft acessibilidade ativa e automação de interface do usuário em comparação](microsoft-active-accessibility-and-ui-automation-compared.md).
+-   Fornecer uma alternativa ao [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que seja simples de implementar.
 
-A implementação da especificação Automação da Interface do Usuário em Windows recursos Component Object Model interfaces baseadas em COM (interfaces gerenciadas).
+a implementação da especificação de automação da interface do usuário no Windows recursos Component Object Model interfaces baseadas em com (com) e interfaces gerenciadas.
 
-## <a name="ui-automation-elements"></a>Automação da Interface do Usuário elementos
+## <a name="ui-automation-elements"></a>Elementos de automação da interface do usuário
 
-Automação da Interface do Usuário expõe cada parte da interface do usuário para aplicativos cliente como um elemento *de automação*. Os provedores fornecem valores de propriedade para cada elemento. Os elementos são expostos como uma estrutura de árvore, com a área de trabalho como o elemento raiz.
+A automação da interface do usuário expõe todas as partes da interface do usuário para aplicativos cliente como um *elemento de automação*. Os provedores fornecem valores de propriedade para cada elemento. Os elementos são expostos como uma estrutura de árvore, com a área de trabalho como o elemento raiz.
 
-Os elementos de automação expõem propriedades comuns dos elementos de interface do usuário que eles representam. Uma dessas propriedades é o tipo de controle, que descreve sua aparência e funcionalidade básicas (por exemplo, um botão ou uma caixa de seleção).
+Elementos de automação expõem propriedades comuns dos elementos da interface do usuário que eles representam. Uma dessas propriedades é o tipo de controle, que descreve sua aparência e funcionalidade básicas (por exemplo, um botão ou uma caixa de seleção).
 
-## <a name="ui-automation-tree"></a>Automação da Interface do Usuário árvore
+## <a name="ui-automation-tree"></a>Árvore de automação da interface do usuário
 
-A Automação da Interface do Usuário de dados representa toda a interface do usuário: o elemento raiz é a área de trabalho atual e os elementos filho são janelas de aplicativo. Cada um desses elementos filho pode conter elementos que representam menus, botões, barras de ferramentas e assim por diante. Esses elementos, por sua vez, podem conter elementos como itens de lista, como mostra a ilustração a seguir.
+A árvore de automação da interface do usuário representa toda a interface do usuário: o elemento raiz é a área de trabalho atual e os elementos filho são janelas de aplicativo. Cada um desses elementos filho pode conter elementos que representam menus, botões, barras de ferramentas e assim por diante. Esses elementos, por sua vez, podem conter elementos como itens de lista, como mostra a ilustração a seguir.
 
 ![captura de tela mostrando a árvore de automação da interface do usuário](images/uiatree.gif)
 
-Esteja ciente de que a ordem dos irmãos na árvore Automação da Interface do Usuário é muito importante. Os objetos que estão ao lado uns dos outros visualmente também devem estar próximos uns dos outros na árvore Automação da Interface do Usuário dados.
+Lembre-se de que a ordem dos irmãos na árvore de automação da interface do usuário é muito importante. Os objetos que estão próximos entre si também devem ser próximos um do outro na árvore de automação da interface do usuário.
 
-Automação da Interface do Usuário provedores para um controle específico suportam a navegação entre os elementos filho desse controle. No entanto, os provedores não estão preocupados com a navegação entre essas subá árvores de controle. Isso é gerenciado pelo núcleo Automação da Interface do Usuário, usando informações dos provedores de janela padrão.
+Provedores de automação de interface do usuário para um controle específico dão suporte à navegação entre os elementos filho desse controle. No entanto, os provedores não se preocupam com a navegação entre essas subárvores de controle. Isso é gerenciado pelo núcleo de automação da interface do usuário, usando informações dos provedores de janela padrão.
 
-Para ajudar os clientes a processar informações de interface do usuário com mais eficiência, a estrutura dá suporte a exibições alternativas da árvore de automação: exibição bruta, exibição de controle e exibição de conteúdo. Como mostra a tabela a seguir, o tipo de filtragem determina as exibições e o cliente define o escopo de uma exibição.
+Para ajudar os clientes a processar informações da interface do usuário com mais eficiência, a estrutura dá suporte a exibições alternativas da árvore de automação: exibição bruta, exibição de controle e exibição de conteúdo. Como mostra a tabela a seguir, o tipo de filtragem determina as exibições e o cliente define o escopo de uma exibição.
 
 
 
-| Árvore de Automação | Descrição                                                                                                             |
+| Árvore de automação | Descrição                                                                                                             |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------|
-| Exibição bruta        | A árvore completa de objetos de elemento de automação para os quais a área de trabalho é a raiz.                                          |
-| Exibição de controle    | Um subconjunto da exibição bruta que é mapeada de perto para a estrutura da interface do usuário conforme o usuário a percebe.                                |
-| Exibição de conteúdo    | Um subconjunto da exibição de controle que contém o conteúdo mais relevante para o usuário, como os valores em uma caixa de combinação listada. |
+| Exibição bruta        | A árvore completa de objetos de elementos de automação para os quais a área de trabalho é a raiz.                                          |
+| Exibição de controle    | Um subconjunto do modo de exibição bruto que é mapeado de forma mais próxima à estrutura da interface do usuário quando ele a percebe.                                |
+| Exibição de conteúdo    | Um subconjunto do modo de exibição de controle que contém o conteúdo mais relevante para o usuário, como os valores em uma caixa de combinação suspensa. |
 
 
 
  
 
-Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário árvore.](uiauto-treeoverview.md)
+Para obter mais informações, consulte [visão geral da árvore de automação da interface do usuário](uiauto-treeoverview.md).
 
-## <a name="ui-automation-properties"></a>Automação da Interface do Usuário propriedades
+## <a name="ui-automation-properties"></a>Propriedades de automação da interface do usuário
 
-A Automação da Interface do Usuário especificação define dois tipos de propriedades: propriedades do elemento de automação e propriedades de padrão de controle. As propriedades do elemento de automação se aplicam à maioria dos controles, fornecendo informações fundamentais sobre o elemento, como seu nome. As propriedades do padrão de controle se aplicam aos padrões de controle, que são descritos a seguir.
+A especificação de automação da interface do usuário define dois tipos de propriedades: propriedades do elemento Automation e propriedades de padrão de controle. As propriedades do elemento Automation aplicam-se à maioria dos controles, fornecendo informações fundamentais sobre o elemento, como seu nome. As propriedades de padrão de controle se aplicam a padrões de controle, que são descritos a seguir.
 
-Ao contrário Microsoft Active Accessibility, cada Automação da Interface do Usuário é identificada por um GUID e um nome programático, o que facilita a introdução de novas propriedades.
+Ao contrário do Microsoft Acessibilidade Ativa, cada propriedade de automação da interface do usuário é identificada por um GUID e um nome programático, o que torna as novas propriedades mais fáceis de introduzir.
 
-Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário propriedades do](uiauto-propertiesoverview.md).
+Para obter mais informações, consulte [visão geral das propriedades de automação da interface do usuário](uiauto-propertiesoverview.md).
 
 ## <a name="ui-automation-control-patterns"></a>Padrões de controle de automação da interface do usuário
 
-Um padrão de controle descreve um aspecto específico da funcionalidade de um elemento de automação. Por exemplo, um controle simples "com clique", como um botão ou hiperlink, deve dar suporte ao padrão de controle Invocar para representar a ação de "clique".
+Um padrão de controle descreve um aspecto específico da funcionalidade de um elemento de automação. Por exemplo, um simples controle "clicável" como um botão ou hiperlink deve dar suporte ao padrão de controle Invoke para representar a ação "click".
 
-Cada padrão de controle é uma representação canônica de possíveis recursos e funções da interface do usuário. A implementação atual do Automação da Interface do Usuário define 22 padrões de controle. A API Windows automação do Windows também pode dar suporte a padrões de controle personalizados. Ao contrário Microsoft Active Accessibility propriedades de estado ou função, um elemento de automação pode dar suporte a vários Automação da Interface do Usuário de controle.
+Cada padrão de controle é uma representação canônica de possíveis recursos e funções da interface do usuário. A implementação atual da automação da interface do usuário define 22 padrões de controle. a API de automação de Windows também pode oferecer suporte a padrões de controle personalizados. Ao contrário das propriedades de função ou estado do Microsoft Acessibilidade Ativa, um elemento Automation pode dar suporte a vários padrões de controle de automação da interface do usuário.
 
-Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário padrões de controle.](uiauto-controlpatternsoverview.md)
+Para obter mais informações, consulte [visão geral dos padrões de controle de automação da interface do usuário](uiauto-controlpatternsoverview.md).
 
 ## <a name="ui-automation-control-types"></a>Tipos de controle de automação de interface do usuário
 
-Um tipo de controle é uma propriedade de elemento de automação que especifica um controle conhecido que o elemento representa. Atualmente, o Automação da Interface do Usuário define 38 tipos de controle, incluindo Button, CheckBox, ComboBox, DataGrid, Document, Hyperlink, Image, ToolTip, Tree e Window.
+Um tipo de controle é uma propriedade de elemento de automação que especifica um controle bem conhecido que o elemento representa. Atualmente, a automação da interface do usuário define 38 tipos de controle, incluindo botão, caixa de seleção, ComboBox, DataGrid, documento, hiperlink, imagem, dica de ferramenta, árvore e janela.
 
-Antes de atribuir um tipo de controle a um elemento, o elemento precisa atender a determinadas condições, incluindo uma estrutura de árvore de automação específica, valores de propriedade, padrões de controle e eventos. No entanto, você não está limitado a eles. Você pode estender um controle com padrões e propriedades personalizados, bem como com os predefinidos.
+Antes de você poder atribuir um tipo de controle a um elemento, o elemento precisa atender a determinadas condições, incluindo uma estrutura de árvore de automação específica, valores de propriedade, padrões de controle e eventos. No entanto, você não está limitado a esses. Você pode estender um controle com padrões e propriedades personalizadas, bem como com os predefinidos.
 
-O número total de tipos de controle predefinidos é significativamente menor do que Microsoft Active Accessibility funções de objeto [,](object-roles.md)porque os tipos de controle Automação da Interface do Usuário podem ser combinados para expressar um conjunto maior de recursos, enquanto Microsoft Active Accessibility funções não podem.
+O número total de tipos de controle predefinidos é significativamente menor do que as [funções de objeto](object-roles.md)do Microsoft acessibilidade ativa, pois os padrões de controle de automação da interface do usuário podem ser combinados para expressar um conjunto maior de recursos enquanto as funções do Microsoft acessibilidade ativa não podem.
 
-Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário tipos de controle .](uiauto-controltypesoverview.md)
+Para obter mais informações, consulte [visão geral de tipos de controle de automação da interface do usuário](uiauto-controltypesoverview.md).
 
-## <a name="ui-automation-events"></a>Automação da Interface do Usuário eventos
+## <a name="ui-automation-events"></a>Eventos de automação da interface do usuário
 
-Automação da Interface do Usuário eventos notificam aplicativos de alterações e ações realizadas com elementos de automação. Há quatro tipos diferentes de Automação da Interface do Usuário eventos e eles não significam necessariamente que o estado visual da interface do usuário foi alterado. O modelo de evento Automação da Interface do Usuário é independente da estrutura [WinEvent](winevents-infrastructure.md) no Windows, embora a API de Automação do Windows torna Automação da Interface do Usuário eventos interoperáveis com a estrutura Microsoft Active Accessibility.
+Eventos de automação da interface do usuário notificam aplicativos sobre alterações e ações executadas com elementos de automação. Há quatro tipos diferentes de eventos de automação de interface do usuário, e eles não significam necessariamente que o estado visual da interface do usuário foi alterado. o modelo de evento de automação da interface do usuário é independente da estrutura do [WinEvent](winevents-infrastructure.md) no Windows, embora a API de automação do Windows torne os eventos de automação da interface do usuário interoperáveis com o Microsoft Acessibilidade Ativa framework.
 
-Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário eventos do .](uiauto-eventsoverview.md)
+Para obter mais informações, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Especificação Automação da Interface do Usuário ,](./uiauto-specandcommunitypromise.md)visão [geral Windows API de Automação do Windows](windows-automation-api-overview.md)
+[especificação de automação da interface do usuário](./uiauto-specandcommunitypromise.md), [visão geral da API de automação Windows](windows-automation-api-overview.md)
