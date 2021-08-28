@@ -7,12 +7,12 @@ MSHAttr:
 title: ModemDMConfigProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ea408fb35fef5b9b2f89255e6ecb28f59b2370
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 80684cdf2d47d203318afbfd7b5e6bc02de1d3dc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882897"
+ms.locfileid: "122982739"
 ---
 # <a name="span-idwwan_profile_v4element_modemdmconfigprofilespanmodemdmconfigprofile"></a><span id="WWAN_profile_v4.element_ModemDMConfigProfile"></span>ModemDMConfigProfile
 
@@ -57,7 +57,7 @@ Nenhum.
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos filho
 
 
-| Elemento filho | Description | 
+| Elemento filho | Descrição | 
 |---------------|-------------|
 | <a href="element-1-adminenable.md">AdminEnable</a> | <p>Especifica se o perfil está habilitado administrativamente. Este é um novo elemento para v4.</p> | 
 | <a href="element-1-adminroamcontrol.md">AdminRoamControl</a> | <p>Especifica se o perfil é controlado por roaming de forma administrativa. Este elemento é novo para v4. O valor desse elemento é um valor de <a href="simpletype-roamcontroltype.md"><strong>roamControlType</strong></a> . Este é um elemento opcional; Se nenhum valor for especificado, <strong>AllRoamAllowed</strong> será o padrão.</p> | 
@@ -79,7 +79,9 @@ Esse elemento mais externo (documento) pode não estar contido em outros element
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

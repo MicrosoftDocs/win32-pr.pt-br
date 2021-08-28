@@ -1,5 +1,5 @@
 ---
-description: Representa informações sobre o servidor de símbolo de depuração.
+description: Representa informações sobre o servidor de símbolos de depuração.
 MS-HAID: vspixengine.SymbolServerInfo
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 65bf07a8ff915668c6c059b831bd049d9a25d9a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 28f85445e6affc006c5c0898df1c85d71693a66d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087484"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632084"
 ---
 # <a name="span-idvspixenginesymbolserverinfospansymbolserverinfo-structure"></a><span id="vspixengine.symbolserverinfo"></span>Estrutura SymbolServerInfo
 
-Representa informações sobre o servidor de símbolo de depuração.
+Representa informações sobre o servidor de símbolos de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,7 +37,7 @@ Representa informações sobre o servidor de símbolo de depuração.
 
 ## <a name="members"></a>Membros
 
-**symbolPath**  
+**Symbolpath**  
 Uma cadeia de caracteres COM que contém o caminho do servidor de símbolos.
 
 **symbolCacheDir**  
@@ -47,20 +47,20 @@ Uma cadeia de caracteres COM que contém o diretório de cache do servidor de s�
 Uma cadeia de caracteres COM que contém o nome público do servidor de símbolos.
 
 **symbolExcludeList**  
-Uma cadeia de caracteres COM que especifica a lista de símbolos a serem excluídos.
+Uma cadeia de caracteres COM que especifica a lista de símbolos a excluir.
 
 **symbolIncludeList**  
-Uma cadeia de caracteres COM que especifica a lista de símbolos a serem incluídos.
+Uma cadeia de caracteres COM que especifica a lista de símbolos a incluir.
 
 **useExcludeList**  
-true se a lista de exclusões for ignorada; caso contrário, false.
+true se a lista de exclusão for ignorada; caso contrário, false.
 
 **useMSSymbolServer**  
-true se estiver usando o Microsoft Symbol Server; caso contrário, false.
+true se estiver usando o servidor de símbolos da Microsoft; caso contrário, false.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

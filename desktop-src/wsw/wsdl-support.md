@@ -1,26 +1,26 @@
 ---
-title: WSDL e contratos de serviço
-description: O utilitário Wsutil.exe gera um stub de linguagem C de acordo com os metadados WSDL fornecidos, bem como definições de tipo de dados e descrições para tipos de dados descritos por esquemas XML de usuário.
+title: Contratos de serviço e WSDL
+description: O utilitário Wsutil.exe gera um stub de linguagem C de acordo com os metadados WSDL fornecidos, bem como definições e descrições de tipo de dados para tipos de dados descritos por esquemas XML criados pelo usuário.
 ms.assetid: d3c147d6-e370-4e8a-96d8-6660f3a2b996
 keywords:
 - Suporte a WSDL
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 203ee1819a596d2d49a7d0b7c789d5f4e1269b6d8d75f78e2db0913b6a97ec78
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b273bd97d30aca185f35f31d385e6ab5a0bef4e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119880736"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882290"
 ---
-# <a name="wsdl-and-service-contracts"></a>WSDL e contratos de serviço
+# <a name="wsdl-and-service-contracts"></a>Contratos de serviço e WSDL
 
-O [ utilitárioWsutil.exe](web-service-compiler-tool.md) gera um stub de linguagem C de acordo com os metadados WSDL fornecidos, bem como definições de tipo de dados e descrições para tipos de dados descritos por esquemas XML de usuário.
+O utilitário [Wsutil.exe](web-service-compiler-tool.md) gera um stub de linguagem C de acordo com os metadados WSDL fornecidos, bem como definições e descrições de tipo de dados para tipos de dados descritos por esquemas XML criados pelo usuário.
 
 
-Veja a seguir um exemplo de documento WSDL e esquema XML que serve como base para a discussão a seguir:
+Este é um exemplo de documento WSDL e esquema XML que serve como base para a discussão a seguir:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,25 +84,25 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Este exemplo fornece um contrato, ISimpleService, com um único método, SimpleMethod. "SimpleMethod" tem dois parâmetros de entrada do tipo **integer**, *a* e *b*, que são enviados do cliente para o serviço. Da mesma forma, SimpleMethod tem dois parâmetros de saída do tipo **inteiro**, *b* e *c*, que são retornados ao cliente após a conclusão bem-sucedida. Na sintaxe C anotada por SAL, a definição do método aparece da seguinte forma:
+Este exemplo fornece um contrato, ISimpleService, com um único método, SimpleMethod. "SimpleMethod" tem dois parâmetros de entrada do tipo **inteiro**, *a* e *b*, que são enviados do cliente para o serviço. Da mesma forma, SimpleMethod tem dois parâmetros de saída do tipo **inteiro**, *b* e *c*, que são retornados ao cliente após a conclusão bem-sucedida. Na sintaxe C anotada por SAL, a definição do método aparece da seguinte maneira:
 
 ``` syntax
 void SimpleMethod(__in int a, __inout int *  b, __out int * c );
 ```
 
-Nesta definição, ISimpleService é um contrato de serviço com uma única operação de serviço: SimpleMethod.
+Nessa definição, ISimpleService é um contrato de serviço com uma única operação de serviço: SimpleMethod.
 
-O arquivo de header de saída contém definições e descrições para referência externa. Isso inclui:
+O arquivo de cabeçalho de saída contém definições e descrições para referência externa. Isso inclui:
 
 -   Definições de estrutura C para tipos de elementos globais.
 -   Um protótipo de operação conforme definido no arquivo atual.
--   Um protótipo de tabela de funções para os contratos especificados no arquivo WSDL.
--   Protótipos de stub de serviço e proxy de cliente para todas as funções especificadas no arquivo atual.
--   Uma [**estrutura de dados \_ \_ DESCRIÇÃO DO**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) ELEMENTO WS para os elementos de esquema global definidos no arquivo atual.
--   Uma [**estrutura de dados \_ \_ DESCRIÇÃO DA MENSAGEM**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) do WS para todas as mensagens especificadas no arquivo atual.
--   Uma [**estrutura de dados \_ \_ DESCRIÇÃO DO**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) CONTRATO do WS para todos os contratos especificados no arquivo atual.
+-   Um protótipo de tabela de função para os contratos especificados no arquivo WSDL.
+-   Protótipos de cliente e de proxy de serviço para todas as funções especificadas no arquivo atual.
+-   Uma estrutura de dados de [**\_ \_ Descrição do elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) para os elementos do esquema global definidos no arquivo atual.
+-   Uma estrutura de dados de [**\_ \_ Descrição de mensagem WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) para todas as mensagens especificadas no arquivo atual.
+-   Uma estrutura de dados de [**\_ \_ Descrição do contrato WS**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para todos os contratos especificados no arquivo atual.
 
-Uma estrutura global é gerada para encapsular todas as descrições globais para os tipos de esquema e tipos de modelo de serviço aos quais o aplicativo pode se referir. A estrutura é nomeada usando um nome de arquivo normalizado. Neste exemplo, o Wsutil.exe gera uma estrutura de definições globais chamada "wsdl de exemplo" que contém todas as descrições do serviço \_ Web. A definição de estrutura é gerada no arquivo stub.
+Uma estrutura global é gerada para encapsular todas as descrições globais dos tipos de esquema e tipos de modelo de serviço aos quais o aplicativo pode se referir. A estrutura é nomeada usando um nome de arquivo normalizado. Neste exemplo, Wsutil.exe gera uma estrutura de definições globais denominada "exemplo \_ WSDL" que contém todas as descrições do serviço Web. A definição de estrutura é gerada no arquivo de stub.
 
 ``` syntax
 typedef struct _example_wsdl
@@ -123,7 +123,7 @@ typedef struct _example_wsdl
 extern const _stockquote_wsdl stockquote_wsdl;
 ```
 
-Para definições de elemento global no documento de esquema XML (XSD), um protótipo [**de \_ ELEMENT \_ DESCRIPTION do WS,**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) bem como a definição de tipo C correspondente, são gerados para cada um dos elementos. Os protótipos das descrições de elemento para SimpleMethod e SimpleMethodResponse são gerados como membros na estrutura acima. As estruturas C são geradas da seguinte forma:
+Para definições de elementos globais no documento de esquema XML (XSD), um protótipo de [**\_ \_ Descrição de elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) , bem como a definição de tipo C correspondente, são gerados para cada um dos elementos. Os protótipos para as descrições de elemento para SimpleMethod e SimpleMethodResponse são gerados como membros na estrutura acima. As estruturas C são geradas da seguinte maneira:
 
 ``` syntax
 typedef struct SimpleMethod
@@ -139,22 +139,22 @@ typedef struct SimpleMethodResponse
 } SimpleMethodResponse;
 ```
 
-Da mesma forma, para tipos complexos globais, o Wsutil.exe gera definições de estrutura do tipo C como acima, sem descrições de elemento correspondentes.
+Da mesma forma, para tipos complexos globais, Wsutil.exe gera definições de estrutura C, como acima, sem as descrições de elemento correspondentes.
 
 Para entrada WSDL, Wsutil.exe gera os seguintes protótipos e definições:
 
--   Um [**protótipo de \_ DESCRIÇÃO DA MENSAGEM \_ do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) é gerado para a descrição da mensagem. Essa descrição pode ser usada pelo modelo de serviço, bem como pela camada de mensagem. As estruturas de descrição da mensagem são campos chamados "messagename" na estrutura global. Neste exemplo, a descrição da mensagem é gerada como o campo ISimpleService \_ SimpleMethod InputMessage na estrutura \_ ISimpleService \_ SimpleMethod InputMessage, conforme especificado no \_ arquivo WSDL.
--   [**WS \_ O \_ protótipo CONTRACT DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) é gerado para a descrição do contrato. Essa descrição é usada pelo modelo de serviço. As estruturas de descrição do contrato são campos chamados "contractname" na estrutura global. Neste exemplo, a descrição do contrato é gerada como o campo DefaultBinding ISimpleService na estrutura \_ " \_ example \_ wsdl".
+-   Um protótipo de [**\_ \_ Descrição de mensagem WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) é gerado para a descrição da mensagem. Essa descrição pode ser usada pelo modelo de serviço, bem como pela camada de mensagem. Estruturas de descrição de mensagem são campos denominados "" na estrutura global. Neste exemplo, a descrição da mensagem é gerada como o \_ campo ISimpleService SimpleMethod \_ InputMessage na estrutura ISimpleService \_ SimpleMethod \_ InputMessage conforme especificado no arquivo WSDL.
+-   [**WS \_ O \_**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) protótipo de descrição do contrato é gerado para a descrição do contrato. Essa descrição é usada pelo modelo de serviço. Estruturas de descrição de contrato são campos nomeados "contratados" na estrutura global. Neste exemplo, a descrição do contrato é gerada como o campo padrão \_ ISimpleService na estrutura "WSDL de \_ exemplo \_ ".
 
-As especificações de operação e tipo são comuns a proxy e stub e são geradas em ambos os arquivos. Wsutil.exe gera uma cópia somente se o proxy e o stub são gerados no mesmo arquivo.
+As especificações de operação e tipo são comuns ao proxy e ao stub, e são geradas em ambos os arquivos. Wsutil.exe gerará uma cópia somente se o proxy e o stub forem gerados no mesmo arquivo.
 
 ## <a name="identifier-generation"></a>Geração de identificador
 
-As estruturas C gerados automaticamente listadas acima são criadas com base no nome especificado no arquivo WSDL. Um NCName XML normalmente não é considerado um identificador C válido e os nomes são normalizados conforme necessário. Os valores hexatórios não são convertidos e letras comuns como ':', '/' e '.' são convertidas no caractere '' sublinhado para melhorar a \_ capacidade de leitura.
+As estruturas C geradas automaticamente listadas acima são criadas com base no nome especificado no arquivo WSDL. Um NCName XML não é comumente considerado um identificador C válido e os nomes são normalizados conforme necessário. Os valores hexadecimais não são convertidos, e letras comuns, como ': ', '/' e '. ', são convertidas no caractere de sublinhado ' \_ ' para melhorar a legibilidade.
 
-## <a name="header-for-the-stub"></a>Header para o stub
+## <a name="header-for-the-stub"></a>Cabeçalho do stub
 
-Para cada operação no contrato de serviço, uma rotina de retorno de chamada " <operationname> Retorno de chamada" é gerada. (Por exemplo, a operação "SimpleMethod" no contrato de serviço de exemplo tem um retorno de chamada gerado chamado "SimpleMethodCallback".)
+Para cada operação no contrato de serviço, uma rotina de retorno de chamada denominada " &lt; OperationName &gt; callback" é gerada. (Por exemplo, a operação "SimpleMethod" no contrato de serviço de exemplo tem um retorno de chamada gerado chamado "SimpleMethodCallback".)
 
 ``` syntax
 typedef HRESULT (CALLBACK *SimpleMethodCallback) (
@@ -164,7 +164,7 @@ typedef HRESULT (CALLBACK *SimpleMethodCallback) (
   WS_ERROR * error);
 ```
 
-Para cada **portType** WSDL, Wsutil.exe gera uma tabela de funções que representa **portType**. Cada operação no **portType** tem um ponteiro de função correspondente para o retorno de chamada presente na tabela de funções.
+Para cada Wsutil.exe **PORTTYPE** WSDL gera uma tabela de função representando **PortType**. Cada operação em **PortType** tem um ponteiro de função correspondente para o retorno de chamada presente na tabela de funções.
 
 ``` syntax
 struct ISimpleServiceMethodTable
@@ -187,9 +187,9 @@ HRESULT WINAPI SimpleMethod(WS_CHANNEL *channel,
 
 ## <a name="local-only-description-prototype-generation"></a>Geração de protótipo de descrição somente local
 
-Os arquivos proxy estub contêm a definição para a estrutura de definições globais, incluindo protótipos e definições para as estruturas que contêm descrições somente locais e implementações de stub de proxy/serviço do cliente.
+Os arquivos de andstub de proxy contêm a definição para a estrutura de definições globais, incluindo protótipos e definições para as estruturas que contêm descrições somente locais e implementações de stub de serviço/proxy de cliente.
 
-Todos os protótipos e definições locais para o arquivo stub são gerados como parte de uma estrutura de encapsulamento. Essa estrutura de descrição local abrangente fornece uma hierarquia clara das descrições exigidas pela camada de serialização e pelo modelo de serviço. A estrutura de descrição local tem protótipos semelhantes aos mostrados abaixo:
+Todos os protótipos e definições locais para o arquivo stub são gerados como parte de uma estrutura de encapsulamento. Essa estrutura de descrição local abrangente fornece uma hierarquia clara das descrições exigidas pela camada de serialização e o modelo de serviço. A estrutura de descrição local tem protótipos semelhantes aos mostrados abaixo:
 
 ``` syntax
 struct _filenameLocalDefinitions
@@ -218,7 +218,7 @@ struct _filenameLocalDefinitions
 
 ## <a name="referencing-definitions-from-other-files"></a>Referenciando definições de outros arquivos
 
-Definições locais podem referenciar descrições geradas em outro arquivo. Por exemplo, a mensagem pode ser definida no arquivo de código C gerado do arquivo WSDL, mas o elemento de mensagem pode ser definido em outro lugar no arquivo de código C gerado do arquivo XSD. Nesse caso, Wsutil.exe gera referência ao elemento global do arquivo que contém a definição da mensagem, conforme demonstrado abaixo:
+As definições locais podem referenciar descrições geradas em outro arquivo. Por exemplo, a mensagem pode ser definida no arquivo de código C gerado a partir do arquivo WSDL, mas o elemento Message pode ser definido em outro lugar no arquivo de código C gerado a partir do arquivo XSD. Nesse caso, Wsutil.exe gera referência ao elemento global do arquivo que contém a definição de mensagem, conforme demonstrado abaixo:
 
 ``` syntax
 {  // WS_MESSAGE_DESCRIPTION
@@ -229,7 +229,7 @@ Definições locais podem referenciar descrições geradas em outro arquivo. Por
 
 ## <a name="global-element-descriptions"></a>Descrições de elementos globais
 
-Para cada elemento global definido em um arquivo wsdl:type ou XSD, há um campo correspondente chamado **elementName** dentro do **campo GlobalElement.** Neste exemplo, uma estrutura chamada SimpleMethod é gerada:
+Para cada elemento global definido em um arquivo WSDL: Type ou XSD, há um campo correspondente chamado **ElementName** dentro do campo **globalelement** . Neste exemplo, uma estrutura chamada SimpleMethod é gerada:
 
 ``` syntax
 typedef struct _SimpleServiceLocal
@@ -246,7 +246,7 @@ typedef struct _SimpleServiceLocal
 }
 ```
 
-Outras descrições exigidas pela descrição do elemento são geradas como parte da estrutura que o contém. Se o elemento for um elemento de tipo simples, haverá apenas um [**campo WS \_ ELEMENT \_ DESCRIPTION.**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) Se o tipo de elemento for uma estrutura, todos os campos e descrições de estrutura relacionados serão gerados como parte da estrutura do elemento. Neste exemplo, o elemento SimpleMethod é uma estrutura que contém dois campos, **a e** **b**. Wsutil.exe gera a estrutura da seguinte forma:
+Outras descrições exigidas pela descrição do elemento são geradas como parte da estrutura que a contém. Se o elemento for um elemento de tipo simples, haverá apenas um campo de [**\_ \_ Descrição do elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) . Se o tipo de elemento for uma estrutura, todos os campos relacionados e descrições de estrutura serão gerados como parte da estrutura do elemento. Neste exemplo, o elemento SimpleMethod é uma estrutura que contém dois campos, **a** e **b**. Wsutil.exe gera a estrutura da seguinte maneira:
 
 ``` syntax
 ...
@@ -264,11 +264,11 @@ struct // SimpleMethod
 ...
 ```
 
-Estruturas inseridas e elementos inseridos são gerados como sub-estruturas conforme necessário.
+Estruturas inseridas e elementos incorporados são gerados como subestruturas conforme necessário.
 
-## <a name="wsdl-related-definitions"></a>Definições relacionadas ao WSDL
+## <a name="wsdl-related-definitions"></a>Definições relacionadas a WSDL
 
-Wsutil.exe gera um campo na seção WSDL para cada um dos valores **portType** definidos no wsdl:service especificado.
+Wsutil.exe gera um campo sob a seção WSDL para cada um dos valores **PortType** definidos no WSDL: Service especificado.
 
 ``` syntax
 ...
@@ -284,9 +284,9 @@ struct { // WSDL
 ...
 ```
 
-Wsutil.exe gera um campo f que contém todas as descrições necessárias para a operação, uma matriz de ponteiros para cada uma das descrições da operação para cada método e uma DESCRIÇÃO DE [**CONTRATO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para o **portType especificado.**
+Wsutil.exe gera um campo f que contém todas as descrições necessárias para a operação, uma matriz único de ponteiros para cada uma das descrições de operação para cada método e [**uma \_ \_ Descrição de contrato WS**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para o **PortType** especificado.
 
-Todas as descrições necessárias para operações são geradas dentro do **campo operationName** no **portType especificado.** Eles incluem o campo DESCRIÇÃO DO ELEMENTO [**\_ \_ do WS,**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) bem como a sub-estrutura para os parâmetros de entrada e saída. Da mesma forma, os [**campos DESCRIÇÃO \_ DA MENSAGEM \_ do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) para a mensagem de entrada e a mensagem de saída opcional são incluídos junto com o ; [**WS \_ Campo \_ de**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description) lista PARAMETER DESCRIPTION para todos os parâmetros de operação e o [**campo DESCRIÇÃO DA OPERAÇÃO do WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) para a própria operação. Neste exemplo, a estrutura de código para a descrição simpleMethod é gerada conforme visto abaixo:
+Todas as descrições necessárias pelas operações são geradas dentro do campo **operationName** sob o **PortType** especificado. Isso inclui o campo de [**\_ \_ Descrição do elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) , bem como a subestrutura para os parâmetros de entrada e saída s. Da mesma forma, os campos de [**\_ \_ Descrição da mensagem WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) para a mensagem de entrada e a mensagem de saída opcional são incluídos junto com o; [**WS \_ Campo \_**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description) de lista de descrição de parâmetro para todos os parâmetros de operação e o campo de [**\_ \_ Descrição da operação WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) para a própria operação. Neste exemplo, a estrutura de código para a descrição SimpleMethod é gerada como mostrado abaixo:
 
 ``` syntax
 ...
@@ -313,7 +313,7 @@ struct // contracts
 
 ## <a name="xml-dictionary-related-definitions"></a>Definições relacionadas ao dicionário XML
 
-Nomes e namespaces usados em várias descrições são gerados como campos do tipo [**CADEIA DE CARACTERES \_ XML \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string) Todas essas cadeias de caracteres são geradas como parte de um dicionário constante por arquivo. A lista de cadeias de caracteres e o campo DICIONÁRIO XML do [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary) (chamado **dict** no exemplo abaixo) são gerados como parte do campo de dicionário da estrutura **fileNameLocal.**
+Os nomes e namespaces usados em várias descrições são gerados como campos do [**tipo \_ \_ cadeia de caracteres XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string). Todas essas cadeias de caracteres são geradas como parte de um dicionário constante por arquivo. A lista de cadeias de caracteres e o campo de [**\_ \_ dicionário XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary) (denominado **dictname** no exemplo abaixo) são gerados como parte do campo Dictionary da estrutura **fileNameLocal** .
 
 ``` syntax
 struct { // fileNameLocal
@@ -329,9 +329,9 @@ struct { // fileNameLocal
 }; // fileNameLocal;
 ```
 
-A matriz de [**CADEIAS DE CARACTERES \_ XML \_ do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string)é gerada como uma série de campos do tipo CADEIA DE CARACTERES XML do **WS, \_ \_** nomeados com com nomes amigáveis. O stub gerado usa os nomes amigáveis em várias descrições para melhorar a leitura.
+A matriz de [**\_ \_ cadeias de caracteres XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string)é gerada como uma série de campos do tipo **cadeia de \_ \_ caracteres XML do WS**, denominada com nomes amigáveis para o usuário. O stub gerado usa os nomes amigáveis em várias descrições para melhorar a legibilidade.
 
-Proxy de cliente para operações WSDL
+Proxy do cliente para operações WSDL
 
 Wsutil.exe gera um proxy de cliente para todas as operações. Os aplicativos podem substituir a assinatura do método usando uma opção de linha de comando de prefixo.
 
@@ -359,9 +359,9 @@ HRESULT WINAPI bindingName_SimpleMethod(WS_SERVICE_PROXY *serviceProxy,
 }
 ```
 
-O chamador de operação deve passar um parâmetro *de heap* válido. Os parâmetros de saída são alocados usando o valor heap do WS \_ especificado no parâmetro *heap.* A função de chamada pode redefinir ou liberar o heap para liberar memória para todos os parâmetros de saída. Se a operação falhar, informações de erro de detalhes adicionais poderão ser recuperadas do objeto de erro opcional, se estiver disponível.
+O chamador da operação deve passar um parâmetro de *heap* válido. Os parâmetros de saída são alocados usando o valor de heap do WS \_ especificado no parâmetro *heap* . A função de chamada pode redefinir ou liberar o heap para liberar memória para todos os parâmetros de saída. Se a operação falhar, informações adicionais de erro de detalhes poderão ser recuperadas do objeto de erro opcional se ele estiver disponível.
 
-Wsutil.exe gera um stub de serviço para todas as operações descritas na associação.
+Wsutil.exe gera um stub de serviço para todas as operações descritas em Binding.
 
 ``` syntax
 HRESULT CALLBACK ISimpleService_SimpleMethodStub(
@@ -379,9 +379,9 @@ HRESULT CALLBACK ISimpleService_SimpleMethodStub(
 
 A seção acima descreve o protótipo da estrutura local que contém todas as definições locais somente para o arquivo stub. As seções subsequentes descrevem as definições das descrições.
 
-## <a name="wsdl-definition-generation"></a>Geração de definição WSDL
+## <a name="wsdl-definition-generation"></a>Geração de definição de WSDL
 
-Wsutil.exe gera uma estrutura estática constante (**const static**) chamada<nome de arquivo *\_>* LocalDefinitions do tipo<service *name \_>* Local que contém todas as definições somente locais.
+Wsutil.exe gera uma estrutura constante estática (**const estática**) chamada *<\_ nome do arquivo>* LocalDefinitions do tipo *<\_ nome do serviço>* local que contém todas as definições somente locais.
 
 ``` syntax
 const static _SimpleServiceLocal example_wsdlLocalDefinitions =
@@ -402,17 +402,17 @@ const static _SimpleServiceLocal example_wsdlLocalDefinitions =
 },
 ```
 
-Há suporte para as seguintes descrições do WSDL:
+Há suporte para as seguintes descrições WSDL:
 
--   wsdl:service
--   wsdl:binding
--   wsdl:portType
--   wsdl:operation
--   WSDL: mensagem
+-   WSDL: Service
+-   WSDL: Binding
+-   WSDL: portType
+-   WSDL: operação
+-   wsdl:message
 
-## <a name="processing-wsdloperation-and-wsdlmessage"></a>Processando WSDL: Operation e WSDL: Message
+## <a name="processing-wsdloperation-and-wsdlmessage"></a>Processamento wsdl:operation e wsdl:message
 
-Cada operação especificada no documento WSDL é mapeada para uma operação de serviço por [Wsutil.exe](web-service-compiler-tool.md). A ferramenta gera definições separadas das operações de serviço para o servidor e o cliente.
+Cada operação especificada no documento WSDL é mapeada para uma operação [ de ](web-service-compiler-tool.md)serviçoWsutil.exe. A ferramenta gera definições separadas das operações de serviço para o servidor e o cliente.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -436,11 +436,11 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-O layout dos elementos de dados da mensagem andoutput de entrada é avaliado pela ferramenta para gerar os metadados de serialização para a infraestrutura, juntamente com a assinatura real da operação de serviço resultante à qual as mensagens de entrada e saída estão associadas.
+O layout dos elementos de dados da mensagem de entrada e saída é avaliado pela ferramenta para gerar os metadados de serialização para a infraestrutura, juntamente com a assinatura real da operação de serviço resultante à qual as mensagens de entrada e saída estão associadas.
 
-Os metadados de cada operação dentro de um **PortType** específico têm entrada e, opcionalmente, uma mensagem de saída, cada uma dessas mensagens é mapeada para uma [**\_ \_ Descrição de mensagem WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description). Neste exemplo, a entrada e a mensagem de saída na operação em portType mapeado para inputMessageDescription e, opcionalmente, o outputMessageDescription na [**Descrição da \_ operação \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) , respectivamente.
+Os metadados de cada operação dentro de um **portType** específico têm entrada e, opcionalmente, uma mensagem de saída, cada uma dessas mensagens é mapeada para uma [**DESCRIÇÃO DA MENSAGEM \_ \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) Neste exemplo, a entrada e a mensagem de saída na operação no portType mapeadas para inputMessageDescription e, opcionalmente, a outputMessageDescription na [**OPERATION \_ \_ DESCRIPTION do WS,**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) respectivamente.
 
-Para cada mensagem WSDL, a ferramenta gera a [**\_ \_ Descrição da mensagem WS**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) que faz referência à definição da [**\_ \_ Descrição do elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) , conforme demonstrado abaixo:
+Para cada mensagem WSDL, a ferramenta gera a DESCRIÇÃO DA MENSAGEM [**do WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) que faz referência à definição de [**DESCRIÇÃO DO ELEMENTO WS, \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) conforme demonstrado abaixo:
 
 ``` syntax
 ... 
@@ -451,7 +451,7 @@ Para cada mensagem WSDL, a ferramenta gera a [**\_ \_ Descrição da mensagem WS
 ...
 ```
 
-A descrição da mensagem refere-se à descrição do elemento de entrada. Como o elemento é definido globalmente, a descrição da mensagem faz referência à definição global em vez do elemento estático local. Da mesma forma, se o elemento for definido em outro arquivo, Wsutil.exe gerará uma referência à estrutura definida globalmente nesse arquivo. Por exemplo, se SimpleMethodResponse for definido em outro arquivo. xsd de exemplo, Wsutil.exe gerará o seguinte em vez disso:
+A descrição da mensagem refere-se à descrição do elemento de entrada. Como o elemento é definido globalmente, a descrição da mensagem faz referência à definição global em vez do elemento estático local. Da mesma forma, se o elemento for definido em outro arquivo, Wsutil.exe gerará uma referência à estrutura globalmente definida nesse arquivo. Por exemplo, se SimpleMethodResponse for definido em outro arquivo example.xsd, o Wsutil.exe gerará o seguinte:
 
 ``` syntax
 ...
@@ -462,17 +462,17 @@ A descrição da mensagem refere-se à descrição do elemento de entrada. Como 
 ...
 ```
 
-Cada descrição da mensagem contém a ação e a descrição do elemento específico (um campo do tipo [**\_ \_ Descrição do elemento WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description)) para todos os elementos de dados da mensagem. No caso de uma mensagem em estilo RPC ou uma mensagem com várias partes, um elemento wrapper é criado para encapsular as informações adicionais.
+Cada descrição da mensagem contém a ação e a descrição do elemento específico (um campo do tipo [**WS \_ ELEMENT \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description)) para todos os elementos de dados da mensagem. No caso de uma mensagem no estilo RPC ou uma mensagem com várias partes, um elemento wrapper é criado para encapsular as informações adicionais.
 
 ## <a name="rpc-style-support"></a>Suporte ao estilo RPC
 
-Wsutil.exe dá suporte ao estilo de documento, bem como a operações de estilo RPC de acordo com a extensão de associação WSDL 1,1 para a especificação SOAP 1,2. As operações de estilo RPC e literal são marcadas como \_ operação WS RPC \_ literal \_ . O modelo de serviço ignora o nome do elemento wrapper de corpo de resposta em operações RPC/literal.
+Wsutil.exe dá suporte ao estilo de documento, bem como operações no estilo RPC de acordo com a especificação extensão de associação WSDL 1.1 para SOAP 1.2. As operações de estilo literal e RPC são marcadas como OPERAÇÃO \_ LITERAL RPC \_ \_ WS. O modelo de serviço ignora o nome do elemento wrapper do corpo da resposta em operações RPC/literal.
 
-Wsutil.exe não oferece suporte nativo a operações de estilo de codificação. O \_ parâmetro de buffer XML do WS \_ é gerado para mensagens de codificação e os desenvolvedores devem preencher o buffer opaco diretamente.
+Wsutil.exe não dá suporte nativo a operações de estilo de codificação. O parâmetro BUFFER XML do WS é gerado para codificar mensagens e os desenvolvedores devem preencher \_ \_ o buffer opaco diretamente.
 
-## <a name="multiple-message-parts-support"></a>Suporte a várias partes de mensagens
+## <a name="multiple-message-parts-support"></a>Suporte a várias partes de mensagem
 
-O Wsutil.exe dá suporte a várias partes de mensagem em uma mensagem. Uma mensagem de várias partes pode ser especificada da seguinte maneira:
+Wsutil.exe dá suporte a várias partes de mensagem em uma mensagem. Uma mensagem de várias partes pode ser especificada da seguinte forma:
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -486,11 +486,11 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Wsutil.exe gera um campo de [**\_ \_ tipo struct do WS**](/windows/desktop/api/WebServices/ne-webservices-ws_type) para o elemento Message se a mensagem contiver várias partes. Se a mensagem for representada usando o estilo do documento, Wsutil.exe gerará um elemento wrapper com o tipo struct. O elemento wrapper não tem um nome ou um namespace específico, e a estrutura do wrapper contém todos os elementos de todas as partes como campos. O elemento wrapper é somente para uso interno e não será serializado no corpo da mensagem.
+Wsutil.exe gerará um [**campo WS \_ STRUCT \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_type) para o elemento de mensagem se a mensagem contiver várias partes. Se a mensagem for representada usando o estilo do documento, Wsutil.exe gerará um elemento wrapper com o tipo struct. O elemento wrapper não tem um nome ou um namespace específico, e a estrutura wrapper contém todos os elementos em todas as partes como campos. O elemento wrapper é apenas para uso interno e não será serializado no corpo da mensagem.
 
-Se a mensagem estiver usando a representação de estilo de RPC ou literal, Wsutil.exe criará um elemento wrapper com o nome da operação como o nome do elemento e o namespace especificado como namespace de serviço, de acordo com a especificação de extensão SOAP WSDL. A estrutura do elemento contém uma matriz de campos que representa os tipos especificados nas partes da mensagem. O elemento wrapper é mapeado para o elemento top real no corpo da mensagem, conforme indicado na especificação SOAP.
+Se a mensagem estiver usando RPC ou representação de estilo literal , o Wsutil.exe criará um elemento wrapper com o nome da operação como o nome do elemento e o namespace especificado como namespace de serviço de acordo com a especificação da extensão SOAP WSDL. A estrutura do elemento contém uma matriz de campos que representam os tipos especificados nas partes da mensagem. O elemento wrapper é mapeado para o elemento superior real no corpo da mensagem, conforme indicado na especificação SOAP.
 
-No lado do servidor, cada operação resulta em um typedef da operação de serviço do servidor resultante. Esse typedef é usado para fazer referência à operação na tabela de funções, conforme descrito anteriormente. Cada operação também resulta na geração de uma função de stub que nfrastructure chamadas em nome do delegado para o método real.
+No lado do servidor, cada operação resulta em um typedef da operação de serviço do servidor resultante. Esse typedef é usado para se referir à operação na tabela de funções, conforme descrito anteriormente. Cada operação também resulta na geração de uma função stub que a nfrastructure chama em nome do delegado para o método real.
 
 ``` syntax
 typedef HRESULT (CALLBACK *SimpleMethodCallback) (
@@ -503,9 +503,9 @@ typedef HRESULT (CALLBACK *SimpleMethodCallback) (
   );
 ```
 
-Para a operação SimpleMethod, o typedef SimpleMethodOperation é definido acima. Observe que o método gerado tem um argumento expandido listwith a parte da mensagem para a mensagem de entrada e saída para a operação SimpleMethod como parâmetros nomeados.
+Para a operação SimpleMethod, o typedef SimpleMethodOperation é definido acima. Observe que o método gerado tem uma lista de argumentos expandido com a parte da mensagem para a mensagem de entrada e saída para a operação SimpleMethod como parâmetros nomeados.
 
-No lado do cliente, cada operação é mapeada para uma operação de serviço de proxy.
+No lado do cliente, cada operação é mapeada para uma operação de serviço proxy.
 
 ``` syntax
 HRESULT WINAPI SimpleMethod (
@@ -518,11 +518,11 @@ HRESULT WINAPI SimpleMethod (
   WS_ERROR* error);
 ```
 
-## <a name="processing-wsdlbinding"></a>Processando WSDL: Binding
+## <a name="processing-wsdlbinding"></a>Ing wsdl:binding
 
-O modelo de serviço WWSAPI dá suporte à extensão de associação SOAP. Para cada associação, há um **PortType** associado.
+O modelo de serviço WWSAPI dá suporte à extensão de associaçãoSOAP. Para cada associação, há um **portType associado.**
 
-O transporte especificado na extensão de ligação SOAP é apenas para consultoria. O aplicativo precisa fornecer informações de transporte ao criar um canal. Atualmente, damos suporte à \_ Associação http WS \_ e \_ associações de associação TCP WS \_ .
+O transporte especificado na extensão de associação de soap é somente consultoria. O aplicativo precisa fornecer informações de transporte ao criar um canal. Atualmente, damos suporte às vinculações \_ WS HTTP \_ BINDING e \_ WS TCP \_ BINDING.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -545,11 +545,11 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Em nosso documento WSDL de exemplo, temos apenas um **PortType** para ISimpleService. A associação SOAP fornecida indica o transporte HTTP, que é especificado como \_ Associação http WS \_ . Observe que essa estrutura não tem decoração estática, pois essa estrutura precisa estar disponível para o aplicativo.
+Em nosso documento WSDL de exemplo, temos apenas um **portType** para ISimpleService. A associação SOAP fornecida indica o transporte HTTP, que é especificado como WS \_ HTTP \_ BINDING. Observe que essa estrutura não tem decoração estática, pois essa estrutura precisa estar disponível para o aplicativo.
 
-Processando WSDL: portType
+Ing wsdl:portType
 
-Cada **PortType** no WSDL é constituído de uma ou mais operações. A operação deve ser consistente com a extensão de ligação SOAP indicada em WSDL: Binding.
+Cada **portType** no WSDL é feito de uma ou mais operações. A operação deve ser consistente com a extensão de associação SOAP indicada em wsdl:binding.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -564,13 +564,13 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Neste exemplo, o **PortType** ISimpleService contém apenas a operação SimpleMethod. Isso é consistente com a seção de associação em que há apenas uma operação WSDL que é mapeada para uma ação SOAP.
+Neste exemplo, o **portType** ISimpleService contém apenas a operação SimpleMethod. Isso é consistente com a seção de associação em que há apenas uma operação WSDL que mapeia para uma ação SOAP.
 
-Como o **PortType** ISimpleService tem apenas uma operação--SimpleMethod--a tabela de funções correspondente contém apenas SimpleMethod como uma operação de serviço.
+Como o **portType** ISimpleService tem apenas uma operação – SimpleMethod – a tabela de funções correspondente contém apenas SimpleMethod como uma operação de serviço.
 
-Em termos de metadados, cada **PortType** é mapeado por Wsutil.exe para [**uma \_ \_ Descrição de contrato WS**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description). Cada operação dentro de um **PortType** é mapeada para [**uma \_ \_ Descrição de operação do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description).
+Em termos de metadados, **cada portType** é mapeado por Wsutil.exe para uma [**DESCRIÇÃO \_ DO CONTRATO \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) Cada operação dentro de **um portType** é mapeada para uma [**DESCRIÇÃO \_ DA OPERAÇÃO \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description)
 
-Neste exemplo, **PortType** a ferramenta gera a [**\_ \_ Descrição do contrato WS**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para ISimpleService. Esta descrição do contrato contém o número específico de operações disponíveis no **PortType** ISimpleService junto com uma matriz de [**\_ \_ Descrição da operação WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) que representa as operações individuais definidas em PortType para ISimpleService. Como há apenas uma operação em portType ISimpleService para ISimpleService, também há apenas uma definição de **\_ \_ Descrição de operação do WS** .
+Neste exemplo, **portType,** a ferramenta gera [**a DESCRIÇÃO DO CONTRATO \_ \_ do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para ISimpleService. Essa descrição do contrato contém o número específico de operações disponíveis no **portType** ISimpleService juntamente com uma matriz de [**OPERATION \_ \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) do WS que representa as operações individuais definidas no portType para ISimpleService. Como há apenas uma operação em ISimpleService portType para ISimpleService, também há apenas uma **definição \_ de DESCRIÇÃO \_ DA OPERAÇÃO do WS.**
 
 ``` syntax
 ...  part of LocalDefinitions structure
@@ -585,11 +585,11 @@ WS_HTTP_CHANNEL_BINDING,
 },    // DefaultBinding_ISimpleService       ...
 ```
 
-## <a name="processing-wsdlservice"></a>Processando WSDL: Service
+## <a name="processing-wsdlservice"></a>Ing wsdl:service
 
-O WsUtil.exe usa os serviços para encontrar Associação/PortType e gera a estrutura de contrato que descreve tipos, mensagens, definições PortType e assim por diante. As descrições de contrato são acessíveis externamente e são geradas como parte da estrutura de definição global especificada por meio do cabeçalho gerado.
+WsUtil.exe usa os serviços para encontrar associação/porttypes e gera a estrutura de contrato que descreve tipos, mensagens, definições de tipo de porta e assim por diante. As descrições de contrato são acessíveis externamente e são geradas como parte da estrutura de definição global especificada por meio do header gerado.
 
-O WsUtil.exe dá suporte a extensões EndpointReference definidas em WSDL: Port. A referência de ponto de extremidade é definida no WS-ADDRESSing como uma maneira de descrever informações de [ponto de extremidade](endpoint-address.md) de um serviço. O texto da extensão de referência do ponto de extremidade de entrada salvo como [**\_ cadeia de \_ caracteres XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string), junto com a descrição correspondente do [**\_ \_ endereço \_ de ponto de extremidade WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description) , é gerado na seção endpointReferences na estrutura global.
+WsUtil.exe dá suporte a extensões EndpointReference definidas em wsdl:port. A referência de ponto de extremidade é definida no WS-ADDRESSING como uma maneira de descrever informações [de ponto](endpoint-address.md) de extremidade de um serviço. O texto da extensão de referência de ponto de extremidade de entrada salvo como CADEIA DE CARACTERES XML do [**WS, \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string)juntamente com a DESCRIÇÃO DE ENDEREÇO DO PONTO DE EXTREMIDADE do [**WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description) correspondente, são gerados na seção endpointReferences na estrutura global.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -639,7 +639,7 @@ WS_HTTP_CHANNEL_BINDING,
 }
 ```
 
-Para criar [**um \_ \_ endereço de ponto de extremidade WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address) usando os metadados gerados pelo WsUtil:
+Para criar [**o ENDEREÇO DO PONTO DE EXTREMIDADE \_ \_ do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address) usando os metadados gerados pelo WsUtil:
 
 ``` syntax
 WsCreateReader      // Create a WS_XML_READER
@@ -649,7 +649,7 @@ WsReadType        // Read WS_ENDPOINT_ADDRESS from the reader
     // Using WS_ELEMENT_TYPE_MAPPING, WS_ENDPOINT_ADDRESS_TYPE and generated endpointAddressDescription, 
 ```
 
-As cadeias de caracteres constantes no proxy do cliente ou no stub do serviço são geradas como campos do tipo \_ cadeia de caracteres XML do WS \_ , e há um dicionário constante para todas as cadeias de caracteres no arquivo de proxy ou de stub. Cada cadeia de caracteres no dicionário é gerada como um campo na parte de dicionário da estrutura local para melhorar a legibilidade.
+Cadeias de caracteres constantes no proxy do cliente ou no stub de serviço são geradas como campos do tipo CADEIA DE CARACTERES XML do WS e há um dicionário constante para todas as cadeias de caracteres no arquivo de proxy ou \_ \_ stub. Cada cadeia de caracteres no dicionário é gerada como um campo na parte do dicionário da estrutura local para melhor leitura.
 
 ``` syntax
 ... // dictionary part of LocalDefinitions structure
@@ -672,33 +672,33 @@ As cadeias de caracteres constantes no proxy do cliente ou no stub do serviço s
 ...
 ```
 
-## <a name="processing-wsdltype"></a>Processando WSDL: Type
+## <a name="processing-wsdltype"></a>Ing wsdl:type
 
-Wsutil.exe dá suporte apenas a documentos XSD (esquema XML) em especificação WSDL: Type. Um caso especial é quando uma porta de mensagem Especifica uma definição de elemento global. Consulte a seção a seguir para obter mais detalhes sobre a heurística usada nesses casos.
+Wsutil.exe dá suporte apenas a documentos de esquema XML (XSD) na especificação wsdl:type. Um caso especial é quando uma porta de mensagem especifica uma definição de elemento global. Consulte a seção a seguir para obter mais detalhes sobre a heurística usada nesses casos.
 
-## <a name="parameter-processing-heuristics"></a>Heurística de processamento de parâmetro
+## <a name="parameter-processing-heuristics"></a>Heurística de processamento de parâmetros
 
-No modelo de serviço, as mensagens WSDL são mapeadas para parâmetros específicos em um método. Wsutil.exe tem dois estilos de geração de parâmetro: no primeiro estilo, a operação tem um parâmetro para a mensagem de entrada e um parâmetro para a mensagem de saída (se necessário); no segundo estilo, Wsutil.exe usa uma heurística para mapear e expandir os campos nas estruturas para mensagens de entrada e mensagens de saída para parâmetros diferentes na operação. As mensagens de entrada e saída precisam ter elementos de mensagem de tipo de estrutura para gerar essa segunda abordagem.
+No modelo de serviço, as mensagens WSDL são mapeadas para parâmetros específicos em um método . Wsutil.exe tem dois estilos de geração de parâmetro: no primeiro estilo, a operação tem um parâmetro para a mensagem de entrada e um parâmetro para a mensagem de saída (se necessário); no segundo estilo, Wsutil.exe usa uma heurística para mapear e expandir campos nas estruturas para mensagens de entrada e mensagens de saída para parâmetros diferentes na operação. As mensagens de entrada e saída precisam ter elementos de mensagem de tipo de estrutura para gerar essa segunda abordagem.
 
 Wsutil.exe usa as seguintes regras ao gerar parâmetros de operação das mensagens de entrada e saída:
 
--   Para mensagens de entrada e saída com várias partes de mensagem, cada parte de mensagem é um parâmetro separado na operação, com o nome da parte da mensagem como nome do parâmetro.
--   Para a mensagem de estilo RPC com uma parte de mensagem, a parte da mensagem é um parâmetro na operação, com o nome da parte da mensagem como nome do parâmetro.
--   Para mensagens de entrada e saída no estilo de documento com uma parte de mensagem:
-    -   Se o nome de uma parte de mensagem for "Parameters" e o tipo de elemento for uma estrutura, cada campo na estrutura será tratado como um parâmetro separado com o nome do campo sendo o nome do parâmetro.
-    -   Se o nome da parte da mensagem não for "Parameters", a mensagem será um parâmetro na operação com o nome da mensagem usado como o nome do parâmetro correspondente.
--   Para a mensagem de entrada e saída do estilo do documento com o elemento anulável, a mensagem é mapeada para um parâmetro, com o nome da parte da mensagem como nome do parâmetro. Um nível adicional de indireção é adicionado para indicar que o ponteiro pode ser **nulo**.
--   Se um campo aparecer apenas no elemento de mensagem de entrada, o campo será tratado como \[ um \] parâmetro in.
--   Se um campo aparecer somente no elemento de mensagem de saída, o campo será tratado como \[ um \] parâmetro out.
--   Se houver um campo com o mesmo nome e o mesmo tipo que aparece na mensagem de entrada e na mensagem de saída, o campo será tratado como um \[ parâmetro in e out \] .
+-   Para mensagens de entrada e saída com várias partes de mensagem, cada parte da mensagem é um parâmetro separado na operação, com o nome da parte da mensagem como nome do parâmetro.
+-   Para mensagem de estilo RPC com uma parte da mensagem, a parte da mensagem é um parâmetro na operação, com o nome da parte da mensagem como nome do parâmetro.
+-   Para mensagens de entrada e saída no estilo de documento com uma parte da mensagem:
+    -   Se o nome de uma parte da mensagem for "parameters" e o tipo de elemento for uma estrutura, cada campo na estrutura será tratado como um parâmetro separado com o nome do campo sendo o nome do parâmetro.
+    -   Se o nome da parte da mensagem não for "parâmetros", a mensagem será um parâmetro na operação com o nome da mensagem usado como o nome do parâmetro correspondente.
+-   Para a mensagem de entrada e saída de estilo de documento com elemento nillable, a mensagem é mapeada para um parâmetro, com o nome da parte da mensagem como nome do parâmetro. Um nível adicional de indcisão é adicionado para indicar que o ponteiro pode ser **NULL.**
+-   Se um campo aparecer apenas no elemento de mensagem de entrada, o campo será tratado como \[ um parâmetro \] in.
+-   Se um campo aparecer apenas no elemento de mensagem de saída, o campo será tratado como um \[ parâmetro \] out.
+-   Se houver um campo com o mesmo nome e o mesmo tipo que aparece na mensagem de entrada e na mensagem de saída, o campo será tratado como um parâmetro \[ \] in,out.
 
 As ferramentas a seguir são usadas para determinar a direção dos parâmetros:
 
--   Se um campo aparecer apenas no elemento de mensagem de entrada, o campo será tratado como somente no parâmetro.
--   Se um campo aparecer apenas no elemento de mensagem de saída, o campo será tratado como somente parâmetro.
--   Se houver um campo com o mesmo nome e o mesmo tipo que aparece na mensagem de entrada e na mensagem de saída, o campo será tratado como um parâmetro in e out.
+-   Se um campo aparecer apenas no elemento de mensagem de entrada, o campo será tratado como apenas no parâmetro .
+-   Se um campo aparecer apenas no elemento de mensagem de saída, o campo será tratado como somente parâmetro out.
+-   Se houver um campo com o mesmo nome e o mesmo tipo que aparece na mensagem de entrada e na mensagem de saída, o campo será tratado como um parâmetro in,out.
 
-Wsutil.exe só dá suporte a elementos sequenciados. Ele rejeita a ordenação inválida com relação aos \[ parâmetros de saída \] se Wsutil.exe não pode combinar os parâmetros in e out em uma única lista de parâmetros. Os sufixos podem ser adicionados aos nomes de parâmetro para evitar a colisão de nomes.
+Wsutil.exe dá suporte apenas a elementos sequenciados. Ele rejeitará a ordenação inválida em relação aos parâmetros in,out se Wsutil.exe não puder combinar os parâmetros in e out em \[ uma única lista de \] parâmetros. Sufixos podem ser adicionados aos nomes de parâmetro para evitar a colisão de nomes.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -714,7 +714,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Wsutil.exe considera os campos em TNS: SimpleMethod e TNS: SimpleMethodResponse ato são parâmetros, como visto nas definições de parâmetro abaixo:
+Wsutil.exe considera os campos em tns:SimpleMethod e tns:SimpleMethodResponse ato como parâmetros, conforme visto nas definições de parâmetro abaixo:
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -746,7 +746,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Wsutil.exe expande a lista de parâmetros dos campos na lista acima e gera a estrutura **ParamStruct** no exemplo de código a seguir. O tempo de execução do modelo de serviço pode usar essa estrutura para passar argumentos para os stubs do cliente e do servidor.
+Wsutil.exe expande a lista de parâmetros dos campos na lista acima e gera a estrutura **ParamStruct** no exemplo de código a seguir. O tempo de run-time do modelo de serviço pode usar essa estrutura para passar argumentos para os stubs de cliente e servidor.
 
 ``` syntax
 typedef struct SimpleMethodParamStruct {
@@ -756,7 +756,7 @@ typedef struct SimpleMethodParamStruct {
 } ;
 ```
 
-Essa estrutura é usada apenas para descrever o quadro de pilha no cliente e no lado do servidor. Não há nenhuma alteração na descrição da mensagem ou nas descrições de elemento referenciadas pela descrição da mensagem.
+Essa estrutura só é usada para descrever o quadro de pilha no lado do cliente e do servidor. Não há nenhuma alteração na descrição da mensagem ou nas descrições do elemento referenciadas pela descrição da mensagem.
 
 ``` syntax
   // following are local definitions for the complex type
@@ -807,16 +807,16 @@ Essa estrutura é usada apenas para descrever o quadro de pilha no cliente e no 
   },    // message description for ISimpleService_SimpleMethod_InputMessage
 ```
 
-Como regra geral, um nível de indireção é adicionado para todos os \[ \] parâmetros out e \[ in, out \] .
+Como regra geral, um nível de indcisão é adicionado para todos os \[ parâmetros out \] e \[ in,out. \]
 
 ## <a name="parameterless-operation"></a>Operação sem parâmetros
 
-Para operações de documento e literal, Wsutil.exe trata a operação como tendo um parâmetro de entrada e um parâmetro de saída se:
+Para operações literais e de documento, Wsutil.exe a operação como tendo um parâmetro de entrada e um parâmetro de saída se:
 
 -   A mensagem de entrada ou saída tem mais de uma parte.
--   Há apenas uma parte da mensagem e o nome da parte da mensagem não é "parâmetros".
+-   Há apenas uma parte de mensagem e o nome da parte da mensagem não é "parâmetros".
 
-.. No exemplo acima, supondo que as partes da mensagem sejam denominadas *ParamIn*" e *ParamOut*, a assinatura do método se torna o seguinte código:
+.. No exemplo acima, supondo que as partes da mensagem sejam chamadas *parame*"e *paramout*, a assinatura do método se torna o seguinte código:
 
 ``` syntax
 typedef struct SimpleMethod{
@@ -836,9 +836,9 @@ SimpleMethodResponse  * SimpleMethodResponse;
 } ISimpleService_SimpleMethodParamStruct;
 ```
 
-Wsutil.exe gera uma assinatura de versão para a descrição da operação, de forma que o mecanismo de modelo de serviço WsCall e do lado do servidor possa verificar se a descrição gerada é aplicável à plataforma atual.
+Wsutil.exe gera uma assinatura de versão para a descrição da operação de modo que o WsCall e o mecanismo de modelo de serviço do lado do servidor possam verificar se a descrição gerada é aplicável para a plataforma atual.
 
-Essas informações de versão são geradas como parte da estrutura [**OPERATION \_ DESCRIPTION \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) O número de versão pode ser tratado como um seletor de arm de união para tornar a estrutura extensível. Atualmente, a **versionID** é definida como1 sem campos subsequentes. Os versiosn futuros podem incrementar o número de versão e incluir mais campos conforme necessário. Por exemplo, Wsutil.exe atualmente gera o seguinte código com base na ID da versão:
+Essas informações de versão são geradas como parte da estrutura de [**\_ \_ Descrição da operação WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) . O número de versão pode ser tratado como um seletor de União Union para tornar a estrutura extensível. Atualmente, **VersionId** é definido como to1 sem nenhum campo subsequente. O futuro versiosn pode incrementar o número de versão e incluir mais campos, conforme necessário. Por exemplo, Wsutil.exe gera atualmente o seguinte código com base na ID de versão:
 
 ``` syntax
 { // SimpleMethod
@@ -858,7 +858,7 @@ SimpleMethodOperationStub
 },  // SimpleMethod
 ```
 
-No futuro, ele pode ser expandido da seguinte forma:
+No futuro, ele poderia ser expandido da seguinte maneira:
 
 ``` syntax
 WS_OPERATION_DESCRIPTION simpleMethodOperationDesc =
@@ -875,7 +875,7 @@ WS_OPERATION_DESCRIPTION simpleMethodOperationDesc =
 
 ## <a name="security"></a>Segurança
 
-Consulte a seção de segurança no tópico [ferramenta do Compilador Wsutil.](wsutil-compiler-tool.md)
+Consulte a seção segurança no tópico da [ferramenta do compilador do Wsutil](wsutil-compiler-tool.md) .
 
  
 

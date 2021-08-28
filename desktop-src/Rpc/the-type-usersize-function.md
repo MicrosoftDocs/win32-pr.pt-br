@@ -1,21 +1,21 @@
 ---
-title: A função type_UserSize de dados
+title: A type_UserSize função
 description: O tipo \_ função UserSize é uma função auxiliar para os atributos \ wire \_ marshal\ e \ \_ user marshal\.
 ms.assetid: 74a46418-1a02-47ed-a3ab-35f3364cc38f
 keywords:
 - type_UserSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b7c5d0918489dbc41baaa4e799aa1dbbda67723cf8104e0641ced24b9b5bf6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2f997d12e11f643eb2faf9990454a8508d15636
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118923536"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886044"
 ---
 # <a name="the-type_usersize-function"></a>O tipo \_ Função UserSize
 
-A **<type> \_ função UserSize** é uma função auxiliar para os atributos \[ [de marshal de \_ transmissão](/windows/desktop/Midl/wire-marshal) \] e marshal \[ [ \_ de](/windows/desktop/Midl/user-marshal) \] usuário. Os stubs chamam essa função para tamanho do buffer de dados RPC para o objeto de dados do usuário antes que os dados são marshalados no lado do cliente ou do servidor. A função é definida como:
+O **&lt; tipo função &gt; \_ UserSize** é uma função auxiliar para os atributos \[ [de marshal de \_ transmissão](/windows/desktop/Midl/wire-marshal) \] e marshal \[ [ \_ de](/windows/desktop/Midl/user-marshal) \] usuário. Os stubs chamam essa função para tamanho do buffer de dados RPC para o objeto de dados do usuário antes que os dados são marshalados no lado do cliente ou do servidor. A função é definida como:
 
 ``` syntax
 unsigned long __RPC_USER  <type>_UserSize(
@@ -24,7 +24,7 @@ unsigned long __RPC_USER  <type>_UserSize(
     <type>  __RPC_FAR *pMyObj);
 ```
 
-O no nome da função significa o tipo userm, conforme especificado na definição do tipo marshal de <type> **\[ \_ \] transmissão** ou **\[ \_ marshal \]** de usuário. Esse tipo pode ser nãotransmitível ou até mesmo , quando usado com o atributo **\[ \_ de marshal \]** do usuário, desconhecido para o compilador MIDL. O nome do tipo de transmissão (o nome do tipo transmitido pela rede) não é usado no protótipo de função. Observe, no entanto, que o tipo de transmissão define o layout dos dados conforme especificado pelo OSF DCE. Todos os dados devem ser convertidos no formato NDR (representação de dados de rede).
+O &lt; tipo no nome da função significa o tipo userm, conforme especificado na definição do tipo marshal de &gt; **\[ \_ transmissão \]** ou **\[ \_ marshal \]** de usuário. Esse tipo pode ser nãotransmitível ou até mesmo , quando usado com o atributo **\[ \_ de marshal \]** do usuário, desconhecido para o compilador MIDL. O nome do tipo de transmissão (o nome do tipo transmitido pela rede) não é usado no protótipo de função. Observe, no entanto, que o tipo de transmissão define o layout dos dados conforme especificado pelo OSF DCE. Todos os dados devem ser convertidos no formato NDR (representação de dados de rede).
 
 O *parâmetro pFlags* é um ponteiro para um **campo de sinalizador longo sem** sinal. A palavra superior do sinalizador contém sinalizadores de formato NDR, conforme definido pelo OSF DCE para representações de ponto flutuante, ordem de byte e caractere. A palavra inferior contém um sinalizador de contexto de marshaling conforme definido pelo canal COM. O layout exato dos sinalizadores dentro do campo é mostrado na tabela a seguir.
 
@@ -54,9 +54,9 @@ O *parâmetro pMyObj* é um ponteiro para um objeto de tipo de usuário.
 
 O valor de retorno é o novo deslocamento ou a posição do buffer. A função deve retornar o tamanho cumulativo, que é o tamanho inicial mais o preenchimento possível mais o tamanho dos dados.
 
-A **<type> \_ função UserSize** pode retornar um overestimate do tamanho necessário. O tamanho real do buffer enviado é definido pelo tamanho dos dados, não pelo tamanho da alocação do buffer.
+O **&lt; tipo função &gt; \_ UserSize** pode retornar um overestimate do tamanho necessário. O tamanho real do buffer enviado é definido pelo tamanho dos dados, não pelo tamanho da alocação do buffer.
 
-A **<type> \_ função UserSize** não será chamada se o tamanho da transmissão puder ser calculado em tempo de compilação. Observe que, para a maioria das uniões, mesmo que não haja ponteiros, o tamanho real da representação de transmissão pode ser determinado somente em tempo de operação.
+O **&lt; tipo função &gt; \_ UserSize** não será chamado se o tamanho da transmissão puder ser calculado em tempo de compilação. Observe que, para a maioria das uniões, mesmo que não haja ponteiros, o tamanho real da representação de transmissão pode ser determinado somente em tempo de operação.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

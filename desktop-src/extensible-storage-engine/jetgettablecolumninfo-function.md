@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e3940c07cc641d8c8d077c420f8c492ab5122b3f
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 925ade657a4184d5b1cac447aa43619f375bc0b1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984729"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468953"
 ---
 # <a name="jetgettablecolumninfo-function"></a>Função JetGetTableColumnInfo
 
@@ -124,14 +124,7 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetGetTableColumnInfoW</strong> (Unicode) e <strong>JetGetTableColumnInfoA</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetGetTableColumnInfoW</strong> (Unicode) e <strong>JetGetTableColumnInfoA</strong> (ANSI).</p> | 
 
 
 

@@ -8,12 +8,12 @@ keywords:
 - AD de Atributos de Segurança do Usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dfe23252002f2ffbbba3f8e8a8faf5a2d36ce348bdbd7503c0d99a816a81902
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd5dfdbe84234f15b76ceb1799c69cdc0a5bafb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119024884"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881217"
 ---
 # <a name="user-security-attributes"></a>Atributos de segurança do usuário
 
@@ -31,9 +31,9 @@ O [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) espe
 <span id="altSecurityIdentities"></span><span id="altsecurityidentities"></span><span id="ALTSECURITYIDENTITIES"></span>[**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities)
 </dt> <dd>
 
-O [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) é um atributo com vários valores que contém mapeamentos para certificados X.509 ou contas de usuário Kerberos externas para esse usuário para fins de autenticação. Vários pacotes de segurança, incluindo o pacote de autenticação de Chave Pública e o Kerberos, usam esses dados para autenticar usuários quando eles apresentam a forma alternativa de identificação, como certificado, UNIX tíquete Kerberos e assim por diante. Crie um token Windows 2000 com base na conta de usuário correspondente, de forma que possa acessar os recursos do sistema.
+O [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) é um atributo com vários valores que contém mapeamentos para certificados X.509 ou contas de usuário Kerberos externas para esse usuário para fins de autenticação. Vários pacotes de segurança, incluindo o pacote de autenticação de Chave Pública e o Kerberos, usam esses dados para autenticar usuários quando eles apresentam a forma alternativa de identificação, como certificado, UNIX tíquete Kerberos e assim por diante. Crie um token Windows 2000 com base na conta de usuário correspondente, de forma que possa acessar recursos do sistema.
 
-Para certificados X.509, os valores devem ser os nomes emissor e entidade em certificados 509v3, emitidos por uma autoridade de certificação pública externa, que são mapeados para a conta de usuário usada para encontrar uma conta para autenticação. O pacote SSL (Schannel) usa a seguinte sintaxe: X509: <somecertinfotype> somecertinfo. Por exemplo, o valor a seguir especifica o DN do emissor " " com o \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" e a DN de assunto " " com o \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
+Para certificados X.509, os valores devem ser os nomes emissor e entidade em certificados 509v3, emitidos por uma autoridade de certificação pública externa, que são mapeados para a conta de usuário usada para encontrar uma conta para autenticação. O pacote SSL (Schannel) usa a seguinte sintaxe: X509: &lt; somecertinfotype &gt; somecertinfo. Por exemplo, o valor a seguir especifica o DN do emissor " " com o \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" e a DN de assunto " " com o \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
 
 
 ```C++

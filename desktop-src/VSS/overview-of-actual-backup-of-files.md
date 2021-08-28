@@ -4,12 +4,12 @@ ms.assetid: 187f26f2-f191-4703-9bde-3357f1ceef0c
 title: Visão geral do backup real de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98a504ff5a41725e33a2eb27792a3c6c89d00276
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2413111467014b666d219a7a1e92efad26302e5c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813417"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475692"
 ---
 # <a name="overview-of-actual-backup-of-files"></a>Visão geral do backup real de arquivos
 
@@ -19,57 +19,16 @@ A tabela a seguir mostra a sequência de ações e eventos necessários para o b
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Ação do solicitante</th>
-<th>Evento</th>
-<th>Ação do gravador</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Acessar arquivos no volume copiado por sombra (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getsnapshotproperties"><strong>IVssBackupComponents:: Getinstantâneoproperties</strong></a>, <a href="/windows/desktop/api/Vss/ns-vss-vss_snapshot_prop"><strong>VSS_SNAPSHOT_PROP</strong></a>)</td>
-<td>Nenhum</td>
-<td>Nenhum</td>
-</tr>
-<tr class="even">
-<td>Gere a lista de arquivos para fazer backup e copie os dados de arquivo para mídia de backup.</td>
-<td>Nenhum</td>
-<td>Nenhum</td>
-</tr>
-<tr class="odd">
-<td>Indique o êxito ou a falha do backup com <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded"><strong>IVssBackupComponents:: SetBackupSucceeded</strong></a>.</td>
-<td>Nenhum</td>
-<td>Nenhum</td>
-</tr>
-<tr class="even">
-<td>O solicitante indica que o backup foi concluído chamando <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-backupcomplete"><strong>IVssBackupComponents:: BackupComplete</strong></a>.</td>
-<td><a href="vssgloss-b.md"><em>BackupComplete</em></a></td>
-<td>Execute qualquer limpeza após o backup (consulte <a href="/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupcomplete"><strong>CVssWriter:: OnBackupComplete</strong></a>, <a href="/windows/desktop/api/VsWriter/nl-vswriter-ivsswritercomponents"><strong>IVssWriterComponents</strong></a>, <a href="/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent"><strong>IVssComponent</strong></a>).</td>
-</tr>
-<tr class="odd">
-<td>O solicitante espera que todos os gravadores reconheçam o recebimento do evento <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-backupcomplete"><strong>IVssBackupComponents:: BackupComplete</strong></a> usando <a href="/windows/desktop/api/Vss/nn-vss-ivssasync"><strong>IVssAsync</strong></a>. Ele também deve verificar o status do gravador (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus"><strong>IVssBackupComponents:: GatherWriterStatus</strong></a>, <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwriterstatus"><strong>IVssBackupComponents:: GetWriterStatus</strong></a>). O solicitante deve chamar <strong>GatherWriterStatus</strong> no momento para fazer com que a sessão do gravador seja definida como um estado concluído.
-<blockquote>
-[!Note]<br />
-Isso só é necessário no Windows Server 2008 com Service Pack 2 (SP2) e versões anteriores.
-</blockquote>
-<br/></td>
-<td>Nenhum</td>
-<td>Nenhum</td>
-</tr>
-<tr class="even">
-<td>Salve o documento componentes de backup e cada documento de metadados do gravador em documentos XML, que podem ser gravados na mídia de backup (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-saveasxml"><strong>IVssBackupComponents:: SaveAsXML</strong></a> e <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-saveasxml"><strong>IVssExamineWriterMetadata:: SaveAsXML</strong></a>).</td>
-<td>Nenhum</td>
-<td>Nenhum</td>
-</tr>
-</tbody>
-</table>
+
+| Ação do solicitante | Evento | Ação do gravador | 
+|------------------|-------|---------------|
+| Acessar arquivos no volume copiado por sombra (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getsnapshotproperties"><strong>IVssBackupComponents:: Getinstantâneoproperties</strong></a>, <a href="/windows/desktop/api/Vss/ns-vss-vss_snapshot_prop"><strong>VSS_SNAPSHOT_PROP</strong></a>) | Nenhum | Nenhum | 
+| Gere a lista de arquivos para fazer backup e copie os dados de arquivo para mídia de backup. | Nenhum | Nenhum | 
+| Indique o êxito ou a falha do backup com <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setbackupsucceeded"><strong>IVssBackupComponents:: SetBackupSucceeded</strong></a>. | Nenhum | Nenhum | 
+| O solicitante indica que o backup foi concluído chamando <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-backupcomplete"><strong>IVssBackupComponents:: BackupComplete</strong></a>. | <a href="vssgloss-b.md"><em>BackupComplete</em></a> | Execute qualquer limpeza após o backup (consulte <a href="/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onbackupcomplete"><strong>CVssWriter:: OnBackupComplete</strong></a>, <a href="/windows/desktop/api/VsWriter/nl-vswriter-ivsswritercomponents"><strong>IVssWriterComponents</strong></a>, <a href="/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent"><strong>IVssComponent</strong></a>). | 
+| O solicitante espera que todos os gravadores reconheçam o recebimento do evento <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-backupcomplete"><strong>IVssBackupComponents:: BackupComplete</strong></a> usando <a href="/windows/desktop/api/Vss/nn-vss-ivssasync"><strong>IVssAsync</strong></a>. Ele também deve verificar o status do gravador (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus"><strong>IVssBackupComponents:: GatherWriterStatus</strong></a>, <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getwriterstatus"><strong>IVssBackupComponents:: GetWriterStatus</strong></a>). O solicitante deve chamar <strong>GatherWriterStatus</strong> no momento para fazer com que a sessão do gravador seja definida como um estado concluído.<blockquote>[!Note]<br />isso só é necessário no Windows Server 2008 com Service Pack 2 (SP2) e versões anteriores.</blockquote><br /> | Nenhum | Nenhum | 
+| Salve o documento componentes de backup e cada documento de metadados do gravador em documentos XML, que podem ser gravados na mídia de backup (consulte <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-saveasxml"><strong>IVssBackupComponents:: SaveAsXML</strong></a> e <a href="/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-saveasxml"><strong>IVssExamineWriterMetadata:: SaveAsXML</strong></a>). | Nenhum | Nenhum | 
+
 
 
 

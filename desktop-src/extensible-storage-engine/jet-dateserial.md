@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62432356ca490f9f5815b9e5478780bde6ef5e92
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 81b9758932c2374cafd6241e67d3ec37aa883ee1
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466783"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986699"
 ---
 # <a name="jet_dateserial"></a>JET_DATESERIAL
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_dateserial"></a>JET_DATESERIAL
 
-O tipo de dados **JET_DATESERIAL** representa uma data em dias fracionários desde o ano 100.
+O **JET_DATESERIAL** de dados representa uma data em dias fracionais desde o ano 100.
 
 ```cpp
     typedef double JET_DATESERIAL;
@@ -39,12 +39,16 @@ O tipo de dados **JET_DATESERIAL** representa uma data em dias fracionários des
 
 JET_DATESERIAL
 
-Mantém um número de ponto flutuante de precisão dupla (8 bytes). Isso é o mesmo que o tipo de [Data](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) do C++.
+Contém um número de ponto flutuante de precisão dupla (8 byte). Isso é o mesmo que o tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) do C++.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

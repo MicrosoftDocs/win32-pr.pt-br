@@ -4,12 +4,12 @@ ms.assetid: 3b5f4360-887a-4a21-8f16-faa84da34328
 title: Tabela UpgradedFilesToIgnore (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f51143fcf7db350d5ee8aa1e43d49984914bcf9f05a2f8f5f787834a69b7e1a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b3af0a4a8c3385c2d028cdb66ad276d3f480ca8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809546"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884500"
 ---
 # <a name="upgradedfilestoignore-table-patchwizdll"></a>Tabela UpgradedFilesToIgnore (Patchwiz.dll)
 
@@ -21,8 +21,8 @@ A tabela UpgradedFilesToIgnore tem as colunas a seguir.
 
 | Coluna   | Tipo | Chave | Nullable |
 |----------|------|-----|----------|
-| Atualizado | texto | Y   | N        |
-| FTK      | texto | Y   | N        |
+| Atualizado | text | S   | N        |
+| FTK      | text | S   | N        |
 
 
 
@@ -42,7 +42,7 @@ Chave estrangeira para a coluna atualizada da [tabela UpgradedImages (Patchwiz.d
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Chave estrangeira na [tabela de arquivos](file-table.md) da imagem atualizada. Um valor da forma " <prefix> \* " corresponde a todas as chaves de tabela de arquivos na tabela de arquivos que começam com esse prefixo. Nenhum texto pode seguir o asterisco.
+Chave estrangeira na [tabela de arquivos](file-table.md) da imagem atualizada. Um valor da forma " &lt; prefix &gt; \* " corresponde a todas as chaves de tabela de arquivo na tabela de arquivos que começam com esse prefixo. Nenhum texto pode seguir o asterisco.
 
 </dd> </dl>
 

@@ -1,5 +1,5 @@
 ---
-description: Representa uma configuração de ambiente ou de sistema em um Windows de computador.
+description: Representa uma configuração de ambiente ou de sistema em um Windows computador.
 ms.assetid: da7ee891-c759-4046-a9d8-d3caf66ab5a9
 ms.tgt_platform: multiple
 title: Win32_Environment classe
@@ -22,12 +22,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5d7237d83c298916045b4bd0443eadc3048c94dc7ad028a1bd7bfa993c4ce764
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18a85af664a4be8ef96b1882477e2fadec0f0b1a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119391746"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882281"
 ---
 # <a name="win32_environment-class"></a>Classe Ambiente \_ Win32
 
@@ -136,7 +136,7 @@ Tipo de acesso: Leitura/gravação
 Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome"), [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Ambiente do Gerenciador de Sessão do Controle CurrentControlSet do Sistema \| Win32Registry") \\ \\ \\ \\ \\ \\ \\ \\
 </dt> </dl>
 
-Cadeia de caracteres que especifica o nome de uma variável de ambiente Windows com base em dados. Especificando o nome de uma variável que ainda não existe, um aplicativo cria uma nova variável de ambiente.
+Cadeia de caracteres que especifica o nome de uma variável Windows de ambiente baseada em dados. Especificando o nome de uma variável que ainda não existe, um aplicativo cria uma nova variável de ambiente.
 
 Exemplo: "Caminho"
 
@@ -278,7 +278,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nome do proprietário da configuração de ambiente. Ele é definido como para configurações específicas do sistema baseado em Windows (em vez de um usuário específico) e para configurações <SYSTEM> <DEFAULT> de usuário padrão.
+Nome do proprietário da configuração de ambiente. Ele é definido como SYSTEM para configurações específicas para o sistema baseado em Windows (em vez de um usuário específico) e DEFAULT para configurações &lt; &gt; de usuário &lt; &gt; padrão.
 
 Exemplo: "JSmith"
 
@@ -296,7 +296,7 @@ Tipo de acesso: Leitura/gravação
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Variável de espaço reservado de uma Windows de ambiente baseada em dados. Informações como o diretório do sistema de arquivos podem mudar de computador para computador. O sistema operacional substitui os espaço reservados por eles.
+Variável de espaço reservado de uma Windows de ambiente baseada em banco de dados. Informações como o diretório do sistema de arquivos podem mudar de computador para computador. O sistema operacional substitui os espaço reservados por eles.
 
 Exemplo: "%SystemRoot%"
 

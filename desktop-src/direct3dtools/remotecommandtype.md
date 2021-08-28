@@ -1,5 +1,5 @@
 ---
-description: <span id="vspixengine.remotecommandtype"></span>Enumeração RemoteCommandType-uma enumeração usada para comunicação entre o mecanismo de captura e um host (como o Visual Studio Diagnóstico de Gráficos).
+description: <span id="vspixengine.remotecommandtype"></span>enumeração RemoteCommandType-uma enumeração usada para comunicação entre o mecanismo de captura e um host (como Visual Studio Diagnóstico de Gráficos).
 MS-HAID: vspixengine.RemoteCommandType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ed57b9b044613351e99096a8c8cb741b8ad7a269
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73accd6f73a7c33219c83a3285837d2e1c7c133a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110495"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631714"
 ---
 # <a name="span-idvspixengineremotecommandtypespanremotecommandtype-enumeration"></a><span id="vspixengine.remotecommandtype"></span>Enumeração RemoteCommandType
 
-Uma enumeração usada para se comunicar entre o mecanismo de captura e um host (como o Visual Studio Diagnóstico de Gráficos).
+uma enumeração usada para se comunicar entre o mecanismo de captura e um host (como Visual Studio Diagnóstico de Gráficos).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ Inicia uma captura (o mesmo que pressionar a tela de impressão). Enviado por um
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0b9a78a505e390032d091ae5325f7d9b50913e2f69989101e811e3abf8b39ed3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb1b3861c708feeabd82fdbdb6e45ebe2cf15431
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119739846"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474142"
 ---
 # <a name="xmudecn4-constructors"></a>Construtores XMUDECN4
 
 Construtores expostos por `XMUDECN4` .
 
-Constrói instâncias da estrutura [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) .
+Constrói instâncias da [**estrutura XMUDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -33,56 +33,14 @@ Constrói instâncias da estrutura [**XMUDECN4**](/windows/win32/api/directxpack
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(constfloat)"><strong>XMUDECN4 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMUDECN4</code> . <br/> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a>. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(uint32_t)"><strong>XMUDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMUDECN4</code> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(constfloat)"><strong>XMUDECN4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMUDECN4</code> de um argumento de matriz de quatro elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(float_float_float_float)"><strong>XMUDECN4 (float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do <code>XMUDECN4</code> de quatro argumentos normalizados <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de quatro argumentos normalizados <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(constfloat)"><strong>XMUDECN4 ()</strong></a> | Construtor padrão para <code>XMUDECN4</code> . <br /> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4.</strong></a> <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(uint32_t)"><strong>XMUDECN4 (uint32_t)</strong></a> | Inicializa uma nova instância de de uma <code>XMUDECN4</code> <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de uma variável que contém dados <code>uint32_t</code> de componente em um formato empacotado. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(constfloat)"><strong>XMUDECN4 (const float*)</strong></a> | Inicializa uma nova instância de de um <code>XMUDECN4</code> argumento de matriz de quatro <code>float</code> elementos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de um de um argumento de matriz de <code>float</code> quatro elementos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmudecn4-xmudecn4(float_float_float_float)"><strong>XMUDECN4 (float, float, float,float)</strong></a> | Inicializa uma nova instância de de <code>XMUDECN4</code> quatro <code>float</code> argumentos normalizados. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmudecn4"><strong>XMUDECN4</strong></a> de quatro <code>float</code> argumentos normalizados. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+
 
 
 

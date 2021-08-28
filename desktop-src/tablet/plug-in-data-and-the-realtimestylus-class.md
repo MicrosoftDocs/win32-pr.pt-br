@@ -4,12 +4,12 @@ ms.assetid: 827ac817-e0e6-4750-9d48-b939ccd5e679
 title: Dados de plug-in e a classe RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 372b3d297edbad6d339285f45e92118184fa2cfc
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: dac0540d90f291acfef27a09df08ffff645c280d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104571411"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480962"
 ---
 # <a name="plug-in-data-and-the-realtimestylus-class"></a>Dados de plug-in e a classe RealTimeStylus
 
@@ -93,167 +93,106 @@ O objeto [**RealTimeStylus**](realtimestylus-class.md) recebe dados sobre gestos
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><a href="/previous-versions/ms827134(v=msdn.10)">SystemGesture</a></th>
-<th>Objetos que precedem o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a></th>
-<th>Objetos que vêm após o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Toque</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> .<br/></td>
-<td>O objeto [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DoubleTap</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> , o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a> para o gesto do sistema <strong>Tap</strong> e os objetos [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/></td>
-<td>O segundo objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> .<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>RightTap</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> e o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a> para o membro <strong>HoldEnter</strong> da enumeração <a href="/previous-versions/ms827134(v=msdn.10)">SystemGesure</a> .<br/></td>
-<td>O objeto [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Arrastar</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> .<br/></td>
-<td>O objeto [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>RightDrag</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> .<br/></td>
-<td>O objeto [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/></td>
-</tr>
-<tr class="even">
-<td><strong>HoldEnter</strong></td>
-<td>O objeto <a href="/previous-versions/ms824107(v=msdn.10)">StylusDownData</a> .<br/></td>
-<td>O objeto [StylusUpData](/previous-versions/ms824057(v=msdn.10)) .<br/>
-<blockquote>
-[!Note]<br />
-Esse gesto do sistema não será reconhecido se o usuário iniciar um gesto de sistema de <strong>arrastar</strong> ou <strong>RightDrag</strong> .
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>HoldLeave</strong></td>
-<td>Não implementado.<br/></td>
-<td>Não implementado.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>HoverEnter</strong></td>
-<td>Vários objetos <a href="/previous-versions/ms824592(v=msdn.10)">InAirPacketsData</a> de baixa velocidade média.<br/></td>
-<td><blockquote>
-[!Note]<br />
-Pode haver um atraso perceptível antes de receber o gesto do sistema <strong>HoverEnter</strong> . O objeto <a href="realtimestylus-class.md"><strong>RealTimeStylus</strong></a> só receberá esses dados se o objeto <strong>RealTimeStylus</strong> estiver anexado à janela ou ao controle que está diretamente sob a caneta no momento do gesto do sistema.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>HoverLeave</strong></td>
-<td>O objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a> para o gesto do sistema <strong>HoverEnter</strong> e vários objetos <a href="/previous-versions/ms824592(v=msdn.10)">InAirPacketsData</a> de velocidade média suficiente.<br/></td>
-<td><blockquote>
-[!Note]<br />
-Pode haver um atraso perceptível antes de receber o gesto do sistema <strong>HoverLeave</strong> . O objeto <a href="realtimestylus-class.md"><strong>RealTimeStylus</strong></a> só receberá esses dados se o objeto <strong>RealTimeStylus</strong> estiver anexado à janela ou ao controle que está diretamente sob a caneta no momento do gesto do sistema.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| <a href="/previous-versions/ms827134(v=msdn.10)">SystemGesture</a> | Objetos que precedem o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a> | Objetos que vêm após o objeto <a href="/previous-versions/ms824019(v=msdn.10)">SystemGestureData</a> | 
+|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| <strong>Toque</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData.</a><br /> | O [objeto StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /> | 
+| <strong>DoubleTap</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData,</a> o <a href="/previous-versions/ms824019(v=msdn.10)">objeto SystemGestureData</a> para o gesto <strong>tocar</strong> no sistema e os [objetos StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /> | O segundo <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData.</a><br /> | 
+| <strong>RightTap</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData</a> e <a href="/previous-versions/ms824019(v=msdn.10)">o objeto SystemGestureData</a> para o membro <strong>HoldEnter</strong> da <a href="/previous-versions/ms827134(v=msdn.10)">enumeração SystemGesure.</a><br /> | O [objeto StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /> | 
+| <strong>Arrastar</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData.</a><br /> | O [objeto StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /> | 
+| <strong>RightDrag</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData.</a><br /> | O [objeto StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /> | 
+| <strong>HoldEnter</strong> | O <a href="/previous-versions/ms824107(v=msdn.10)">objeto StylusDownData.</a><br /> | O [objeto StylusUpData.](/previous-versions/ms824057(v=msdn.10))<br /><blockquote>[!Note]<br />Esse gesto do sistema não será reconhecido se o usuário iniciar um gesto <strong>do sistema Arrastar</strong> ou <strong>DireitaDrag.</strong></blockquote><br /> | 
+| <strong>HoldLeave</strong> | Não implementado.<br /> | Não implementado.<br /> | 
+| <strong>HoverEnter</strong> | Vários <a href="/previous-versions/ms824592(v=msdn.10)">objetos InAirPacketsData</a> de baixa velocidade média.<br /> | <blockquote>[!Note]<br />Pode haver um atraso perceptível antes de receber <strong>o gesto do sistema HoverEnter.</strong> O <a href="realtimestylus-class.md"><strong>objeto RealTimeStylus</strong></a> só receberá esses dados se o objeto <strong>RealTimeStylus</strong> estiver anexado à janela ou controle que está diretamente sob a caneta no momento do gesto do sistema.</blockquote><br /> | 
+| <strong>HoverLeave</strong> | O <a href="/previous-versions/ms824019(v=msdn.10)">objeto SystemGestureData</a> para o gesto do sistema <strong>HoverEnter</strong> e vários <a href="/previous-versions/ms824592(v=msdn.10)">objetos InAirPacketsData</a> de velocidade média suficiente.<br /> | <blockquote>[!Note]<br />Pode haver um atraso perceptível antes de receber <strong>o gesto hoverLeave</strong> do sistema. O <a href="realtimestylus-class.md"><strong>objeto RealTimeStylus</strong></a> só receberá esses dados se o objeto <strong>RealTimeStylus</strong> estiver anexado à janela ou controle que está diretamente sob a caneta no momento do gesto do sistema.</blockquote><br /> | 
+
 
 
 
  
 
-## <a name="custom-stylus-data"></a>Personalizar dados da caneta
+## <a name="custom-stylus-data"></a>Dados personalizados da caneta
 
-Os dados personalizados da caneta podem ser adicionados ao objeto [**RealTimeStylus**](realtimestylus-class.md) chamando o método [AddCustomStylusDataToQueue](/previous-versions/ms825761(v=msdn.10)) . Os dados personalizados da caneta podem ser adicionados às filas do objeto do **RealTimeStylus** em um dos três locais.
+Os dados personalizados da caneta podem ser adicionados ao objeto [**RealTimeStylus**](realtimestylus-class.md) chamando o [método AddCustomStylusDataToQueue.](/previous-versions/ms825761(v=msdn.10)) Os dados personalizados da caneta podem ser adicionados às filas do objeto **RealTimeStylus** em um dos três locais.
 
--   Quando o parâmetro *Queue* é definido como **output**, os dados personalizados são adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) após os dados atualmente sendo processados pela coleção de plug-ins síncrona.
--   Quando o parâmetro *Queue* é definido como **OutputImmediate**, os dados personalizados são adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) antes dos dados atualmente sendo processados pela coleção de plug-ins síncrona.
--   Quando o parâmetro de *fila* é definido como **entrada**, os dados personalizados são adicionados à fila de entrada do objeto [**RealTimeStylus**](realtimestylus-class.md) e são enviados para a coleção de plug-ins síncrona antes de novos dados do fluxo de dados da caneta do Tablet.
+-   Quando  o parâmetro queue é definido como **Saída**, os dados personalizados são adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) após os dados que estão sendo processados atualmente pela coleção de plug-in síncrono.
+-   Quando  o parâmetro queue é definido como **OutputImmediate**, os dados personalizados são adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) antes dos dados que estão sendo processados atualmente pela coleção de plug-in síncrono.
+-   Quando  o parâmetro de fila é definido como Entrada **,** os dados personalizados são adicionados à fila de entrada do objeto [**RealTimeStylus**](realtimestylus-class.md) e são enviados para a coleção de plug-in síncrono antes de novos dados do fluxo de dados da caneta tablet.
 
-Em cada um dos casos anteriores, os dados adicionados por plug-ins subsequentes na coleção de plug-in síncrona são adicionados após os dados adicionados pelos plug-ins anteriores.
+Em cada um dos casos anteriores, os dados adicionados por plug-ins subsequentes na coleção de plug-ins síncronos são adicionados após os dados adicionados pelos plug-ins anteriores.
 
 > [!Note]  
-> Se a chamada para o método [AddCustomStylusDataToQueue](/previous-versions/ms825761(v=msdn.10)) for feita de um plug-in síncrono em resposta a uma chamada para um de seus métodos [**IStylusSyncPlugin**](/windows/win32/api/rtscom/nn-rtscom-istylussyncplugin) , os dados da caneta personalizada serão adicionados ao fluxo de dados da caneta eletrônica de maneira previsível; caso contrário, ele é adicionado à fila em relação aos dados da caneta atual que o objeto [**RealTimeStylus**](realtimestylus-class.md) está processando e não em relação aos dados que o plug-in assíncrono está processando. O método AddCustomStylusDataToQueue gera uma exceção se o objeto **RealTimeStylus** está desabilitado.
+> Se a chamada para o método [AddCustomStylusDataToQueue](/previous-versions/ms825761(v=msdn.10)) for feita de um plug-in síncrono em resposta a uma chamada para um de seus métodos [**IStylusSyncPlugin,**](/windows/win32/api/rtscom/nn-rtscom-istylussyncplugin) os dados personalizados da caneta serão adicionados ao fluxo de dados da caneta de tablet de maneira previsível; caso contrário, ele será adicionado à fila em relação aos dados de caneta atuais que o objeto [**RealTimeStylus**](realtimestylus-class.md) está izando e não em relação aos dados que o plug-in assíncrono está izando. O método AddCustomStylusDataToQueue lançará uma exceção se o **objeto RealTimeStylus** estiver desabilitado.
 
  
 
-Os dados personalizados da caneta são adicionados à fila como um objeto [CustomStylusData](/previous-versions/ms824747(v=msdn.10)) e os plug-ins recebem esses dados por meio de seu método [Microsoft. StylusInput. IStylusSyncPlugin. CustomStylusDataAdded](/previous-versions/ms824753(v=msdn.10)) ou [Microsoft. StylusInput. IStylusAsyncPlugin. CustomStylusDataAdded](/previous-versions/ms824770(v=msdn.10)) .
+Os dados personalizados da caneta são adicionados à fila como um objeto [CustomStylusData](/previous-versions/ms824747(v=msdn.10)) e os plug-ins recebem esses dados por meio do método [Microsoft.StylusInput.IStylusSyncPlugin.CustomStylusDataAdded](/previous-versions/ms824753(v=msdn.10)) ou [Microsoft.StylusInput.IStylusAsyncPlugin.CustomStylusDataAdded.](/previous-versions/ms824770(v=msdn.10))
 
-Os objetos [**DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) e [**GestureRecognizer**](gesturerecognizer-class.md) podem adicionar dados da caneta personalizada à fila. Para obter mais informações sobre os objetos **DynamicRenderer** e **GestureRecognizer** , consulte plug-ins de [processamento dinâmico](dynamic-renderer-plug-ins.md) e plug- [ins do Recognizer](recognizer-plug-ins.md).
+Os [**objetos DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) e [**GestureRecognizer**](gesturerecognizer-class.md) podem adicionar dados de caneta personalizados à fila. Para obter mais informações sobre **o DynamicRenderer** e os objetos **GestureRecognizer,** consulte [Plug-ins](dynamic-renderer-plug-ins.md) do Renderizador Dinâmico e [Plug-ins do Reconhecedor](recognizer-plug-ins.md).
 
-O objeto [**RealTimeStylus**](realtimestylus-class.md) chama o método [Microsoft. StylusInput. IStylusSyncPlugin. CustomStylusDataAdded](/previous-versions/ms824753(v=msdn.10)) no thread a partir do qual ele recebe a chamada para seu método [AddCustomStylusDataToQueue](/previous-versions/ms825761(v=msdn.10)) .
+O [**objeto RealTimeStylus**](realtimestylus-class.md) chama o método [Microsoft.StylusInput.IStylusSyncPlugin.CustomStylusDataAdded](/previous-versions/ms824753(v=msdn.10)) no thread do qual ele recebe a chamada para seu método [AddCustomStylusDataToQueue.](/previous-versions/ms825761(v=msdn.10))
 
-O diagrama a seguir ilustra a adição de dados de caneta personalizada à fila de saída com o parâmetro de *fila* definido como **saída**.
+O diagrama a seguir ilustra a adição de dados de caneta personalizados à fila de saída com o parâmetro *queue* definido como **Saída**.
 
-![ilustração mostrando fluxo de dados da caneta personalizada para a fila de saída ](images/27bc3672-41bc-432e-bf41-18e4ccec78f5.gif)
+![ilustração mostrando o fluxo de dados da caneta personalizada para a fila de saída ](images/27bc3672-41bc-432e-bf41-18e4ccec78f5.gif)
 
-Neste diagrama, os círculos "A" e "B" representam os dados da caneta eletrônica que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados para a coleção de plug-ins assíncronos. O círculo "C" representa os dados da caneta do Tablet que o objeto **RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-ins síncrona e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam os dados da caneta personalizada que foram adicionados à fila de saída pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados da caneta eletrônica representados por "C". Os plug-ins adicionaram os dados da caneta personalizada com o parâmetro de *fila* definido como **StylusQueues**. O círculo vazio representa a posição na fila de saída em que os dados futuros da caneta do Tablet são adicionados.
+Neste diagrama, os círculos com letra "A" e "B" representam dados de caneta de tablet que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados à coleção de plug-ins assíncronos. O círculo com letra "C" representa os dados da caneta de tablet que o **objeto RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-in síncrono e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam dados de caneta personalizados que foram adicionados à fila de saída pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados da caneta tablet representados por "C". Os plug-ins adicionaram os dados personalizados da caneta com o parâmetro *queue* definido como **StylusQueues.** O círculo vazio representa a posição na fila de saída em que dados futuros de caneta de tablet são adicionados.
 
-O diagrama a seguir ilustra a adição de dados de caneta personalizada à fila de saída com o parâmetro de *fila* definido como **OutputImmediate**.
+O diagrama a seguir ilustra a adição de dados  de caneta personalizados à fila de saída com o parâmetro queue definido como **OutputImmediate**.
 
-![Diagrama que mostra o fluxo de dados personalizado da caneta para a fila de saída.](images/bcf45325-5557-47a2-af43-142c7684e482.gif)
+![Diagrama que mostra o fluxo de dados da caneta personalizada para a fila de saída.](images/bcf45325-5557-47a2-af43-142c7684e482.gif)
 
-Neste diagrama, os círculos "A" e "B" representam os dados da caneta eletrônica que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados para a coleção de plug-ins assíncronos. O círculo "C" representa os dados da caneta do Tablet que o objeto **RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-ins síncrona e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam os dados da caneta personalizada que foram adicionados à fila de saída pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados da caneta eletrônica representados por "C". Os plug-ins adicionaram os dados da caneta personalizada com o parâmetro de *fila* definido como **OutputImmediate**. O círculo vazio representa a posição na fila de saída em que os dados futuros da caneta do Tablet são adicionados.
+Neste diagrama, os círculos com letra "A" e "B" representam dados de caneta de tablet que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados à coleção de plug-ins assíncronos. O círculo com letra "C" representa os dados da caneta de tablet que o **objeto RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-in síncrono e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam dados de caneta personalizados que foram adicionados à fila de saída pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados da caneta tablet representados por "C". Os plug-ins adicionaram os dados personalizados da caneta com o parâmetro *queue* definido como **OutputImmediate.** O círculo vazio representa a posição na fila de saída em que dados futuros de caneta de tablet são adicionados.
 
-O diagrama a seguir ilustra a adição de dados da caneta personalizada à fila de entrada.
+O diagrama a seguir ilustra a adição de dados de caneta personalizados à fila de entrada.
 
-![ilustração mostrando fluxo de dados da caneta personalizada para a fila de saída](images/5dd2cfcc-1086-49b0-a0d5-9276c13c7f61.gif)
+![ilustração mostrando o fluxo de dados da caneta personalizada para a fila de saída](images/5dd2cfcc-1086-49b0-a0d5-9276c13c7f61.gif)
 
-Neste diagrama, os círculos "A" e "B" representam os dados da caneta eletrônica que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados para a coleção de plug-ins assíncronos. O círculo "C" representa os dados da caneta do Tablet que o objeto **RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-ins síncrona e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam os dados da caneta personalizada que foram adicionados à fila de entrada pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados da caneta eletrônica representados por "C". Os plug-ins adicionaram os dados da caneta personalizada com o parâmetro de *fila* definido como **entrada**. Os dados da caneta personalizada numerados "1" são passados para os plug-ins síncronos e, em seguida, para a fila de saída antes dos dados da caneta personalizada numerados "2" e "3", ambos são processados antes que os próximos dados da caneta do Tablet sejam processados. O círculo vazio representa a posição na fila de saída em que os dados futuros da caneta do Tablet são adicionados.
+Neste diagrama, os círculos com letra "A" e "B" representam dados de caneta de tablet que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados à coleção de plug-ins assíncronos. O círculo com letra "C" representa os dados da caneta de tablet que o **objeto RealTimeStylus** está processando no momento. Ele é enviado para a coleção de plug-in síncrono e colocado na fila de saída. Os círculos numerados "1", "2" e "3" representam dados de caneta personalizados que foram adicionados à fila de entrada pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, em resposta aos dados de caneta tablet representados por "C". Os plug-ins adicionaram os dados personalizados da caneta com o parâmetro *queue* definido como **Entrada**. Os dados personalizados de caneta numerados "1" são passados para os plug-ins síncronos e, em seguida, para a fila de saída antes que os dados personalizados da caneta numerados "2" e "3", ambos processados antes que os próximos dados de caneta de tablet sejam processados. O círculo vazio representa a posição na fila de saída em que dados futuros de caneta de tablet são adicionados.
 
 ## <a name="error-data"></a>Dados de erro
 
-Quando um plug-in gera uma exceção, o fluxo normal de dados é interrompido. O objeto [**RealTimeStylus**](realtimestylus-class.md) gera um objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) e chama:
+Quando um plug-in lança uma exceção, o fluxo normal de dados é interrompido. O [**objeto RealTimeStylus**](realtimestylus-class.md) gera um [objeto ErrorData](/previous-versions/ms824740(v=msdn.10)) e chama:
 
--   O método [Microsoft. StylusInput. IStylusSyncPlugin. Error](/previous-versions/ms824754(v=msdn.10)) ou [Microsoft. StylusInput. IStylusAsyncPlugin. Error](/previous-versions/ms824771(v=msdn.10)) do plug-in que gerou a exceção.
--   O método [Microsoft. StylusInput. IStylusSyncPlugin. Error](/previous-versions/ms824754(v=msdn.10)) ou [Microsoft. StylusInput. IStylusAsyncPlugin. Error](/previous-versions/ms824771(v=msdn.10)) dos plug-ins restantes nessa coleção.
+-   O [método Microsoft.StylusInput.IStylusSyncPlugin.Error](/previous-versions/ms824754(v=msdn.10)) ou [Microsoft.StylusInput.IStylusAsyncPlugin.Error](/previous-versions/ms824771(v=msdn.10)) do plug-in que lançou a exceção.
+-   O [método Microsoft.StylusInput.IStylusSyncPlugin.Error](/previous-versions/ms824754(v=msdn.10)) ou [Microsoft.StylusInput.IStylusAsyncPlugin.Error](/previous-versions/ms824771(v=msdn.10)) dos plug-ins restantes nessa coleção.
 
-Se o plug-in que gerou a exceção for um plug-in síncrono, o objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) será adicionado à fila de saída. Em seguida, o objeto [**RealTimeStylus**](realtimestylus-class.md) retoma o processamento normal dos dados originais.
+Se o plug-in que lançou a exceção for um plug-in síncrono, o objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) será adicionado à fila de saída. Em [**seguida, o objeto RealTimeStylus**](realtimestylus-class.md) retoma o processamento normal dos dados originais.
 
-O diagrama a seguir ilustra a adição de dados de erro aos dados da caneta eletrônica.
+O diagrama a seguir ilustra a adição de dados de erro aos dados da caneta do tablet.
 
-![fluxo de dados personalizado da caneta para a fila de saída com a adição de dados de erro](images/c2f79abe-aeb5-498f-b389-1fad9bf01a13.gif)
+![fluxo de dados personalizados da caneta para a fila de saída com a adição de dados de erro](images/c2f79abe-aeb5-498f-b389-1fad9bf01a13.gif)
 
-Neste diagrama, os círculos "A" e "B" representam os dados da caneta eletrônica que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados para a coleção de plug-ins assíncronos. O círculo "C" representa os dados da caneta do Tablet que o objeto **RealTimeStylus** está processando no momento. O círculo "e" representa um objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) gerado pelo objeto **RealTimeStylus** quando o segundo plug-in síncrono, plug-in síncrono 2, gera uma exceção durante o processamento de "C". O objeto **RealTimeStylus** , em seguida, pausa seu processamento de "C" e passa "e" para o plug-in que gerou a exceção e todos os plug-ins subsequentes. O objeto **RealTimeStylus** então coloca "e" na fila de saída e retoma seu processamento de "C", que é passado para os plug-ins restantes na coleção de plug-in síncrona e colocado na fila de saída após "e". O círculo vazio representa a posição na fila de saída em que os dados futuros da caneta do Tablet são adicionados.
+Neste diagrama, os círculos com letra "A" e "B" representam dados de caneta de tablet que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados à coleção de plug-ins assíncronos. O círculo com letra "C" representa os dados da caneta de tablet que o **objeto RealTimeStylus** está processando no momento. O círculo com letra "e" representa um objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) gerado pelo objeto **RealTimeStylus** quando o segundo plug-in síncrono, Plug-in síncrono 2, gera uma exceção enquanto está gerando "C". O **objeto RealTimeStylus** pausa o processamento de "C" e passa "e" para o plug-in que gerou a exceção e todos os plug-ins subsequentes. Em seguida, o objeto **RealTimeStylus** coloca "e" na fila de saída e retoma o processamento de "C", que é passado para os plug-ins restantes na coleção de plug-ins síncronos e colocado na fila de saída após "e". O círculo vazio representa a posição na fila de saída em que dados futuros de caneta de tablet são adicionados.
 
-Se um plug-in lançar uma exceção do seu método de erro, o objeto [**RealTimeStylus**](realtimestylus-class.md) capturará a exceção, mas não gerará um novo objeto [ErrorData](/previous-versions/ms824740(v=msdn.10)) . Isso é para evitar a recursão.
+Se um plug-in gerar uma exceção de seu método Error, o objeto [**RealTimeStylus**](realtimestylus-class.md) capturará a exceção, mas não gerará um novo [objeto ErrorData.](/previous-versions/ms824740(v=msdn.10)) Isso é para evitar a recursão.
 
-Os dados de erro são adicionados à fila de saída após qualquer dado da caneta personalizada que é adicionado na posição **OutputImmediate** antes da exceção que criou os dados do erro e antes dos dados da caneta personalizada que são adicionados à posição **OutputImmediate** por plug-ins subsequentes na coleção de plug-in síncrona.
+Os dados de erro são adicionados à fila de saída após os dados personalizados da caneta que são adicionados na posição **OutputImmediate** antes da exceção que criou os dados de erro e antes de quaisquer dados personalizados da caneta adicionados na posição **OutputImmediate** por plug-ins subsequentes na coleção de plug-ins síncronos.
 
-O diagrama a seguir ilustra como os dados de erro são adicionados à fila de saída em relação aos dados personalizados que são adicionados à fila **OutputImmediate** .
+O diagrama a seguir ilustra como os dados de erro são adicionados à fila de saída em relação aos dados personalizados adicionados à fila **OutputImmediate.**
 
 ![dados de erro adicionados à fila de saída em relação aos dados personalizados adicionados à fila outputimmediate.](images/b00320c4-6fe7-439d-9855-e5f131feeb69.gif)
 
-Neste diagrama, os círculos "A" e "B" representam os dados da caneta eletrônica que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados para a coleção de plug-ins assíncronos. O círculo "C" representa os dados da caneta do Tablet que o objeto **RealTimeStylus** está processando no momento. Os círculos numerados "1", "2" e "3" são adicionados pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, à fila **OutputImmediate** em resposta aos dados representados pelo círculo "C". O círculo "e" representa os dados de erro gerados em resposta a uma exceção gerada pelo segundo plug-in após o segundo plug-in adicionar dados personalizados à fila de saída na posição **OutputImmediate** .
+Neste diagrama, os círculos com letra "A" e "B" representam dados de caneta de tablet que já foram adicionados à fila de saída do objeto [**RealTimeStylus**](realtimestylus-class.md) e que ainda não foram enviados à coleção de plug-ins assíncronos. O círculo com letra "C" representa os dados da caneta de tablet que o **objeto RealTimeStylus** está processando no momento. Os círculos numerados "1", "2" e "3" são adicionados pelo primeiro, segundo e terceiro plug-ins síncronos, respectivamente, à fila **OutputImmediate** em resposta aos dados representados pelo círculo com letra "C". O círculo com letra "e" representa os dados de erro gerados em resposta a uma exceção gerada pelo segundo plug-in após o segundo plug-in adicionar dados personalizados à fila de saída na posição **OutputImmediate.**
 
-Se qualquer plug-in síncrono adicionar dados da caneta personalizada à fila de entrada em resposta aos dados do erro, os dados serão adicionados imediatamente antes dos dados do erro. Se qualquer um dos plug-ins síncronos adicionar dados da caneta personalizada à fila de saída na posição de **saída** em resposta aos dados do erro, os dados serão adicionados imediatamente após os dados do erro.
+Se qualquer plug-in síncrono adicionar dados de caneta personalizados à fila de entrada em resposta aos dados de erro, os dados serão adicionados imediatamente antes dos dados de erro. Se qualquer um dos plug-ins síncronos adicionar dados de  caneta personalizados à fila de saída na posição Saída em resposta aos dados de erro, os dados serão adicionados imediatamente após os dados de erro.
 
-O objeto [**RealTimeStylus**](realtimestylus-class.md) chama o método [Microsoft. StylusInput. IStylusSyncPlugin. Error](/previous-versions/ms824754(v=msdn.10)) no thread do qual a exceção é lançada.
+O [**objeto RealTimeStylus**](realtimestylus-class.md) chama o método [Microsoft.StylusInput.IStylusSyncPlugin.Error](/previous-versions/ms824754(v=msdn.10)) no thread do qual a exceção é lançada.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Microsoft. Ink. Tablet](/previous-versions/ms827783(v=msdn.10))
+[Microsoft.Ink.Tablet](/previous-versions/ms827783(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. StylusInput. PluginData](/previous-versions/ms823992(v=msdn.10))
+[Microsoft.StylusInput.PluginData](/previous-versions/ms823992(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. StylusInput. DataInterestMask](/previous-versions/ms575174(v=vs.100))
+[Microsoft.StylusInput.DataInterestMask](/previous-versions/ms575174(v=vs.100))
 </dt> <dt>
 
-[Microsoft. StylusInput. RealTimeStylus](/previous-versions/ms824830(v=msdn.10))
+[Microsoft.StylusInput.RealTimeStylus](/previous-versions/ms824830(v=msdn.10))
 </dt> <dt>
 
 [Trabalhando com a classe RealTimeStylus](working-with-the-realtimestylus-class.md)

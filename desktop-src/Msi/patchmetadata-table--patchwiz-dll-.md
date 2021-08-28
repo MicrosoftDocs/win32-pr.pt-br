@@ -1,23 +1,23 @@
 ---
-description: A tabela PatchMetadata contém informações sobre um patch Windows Installer que é necessário para remover um patch e que é usado por adicionar ou remover programas.
+description: A Tabela PatchMetadata contém informações sobre um patch do Windows Installer que é necessário para remover um patch e que é usado por Adicionar/Remover Programas.
 ms.assetid: 09a06de4-0713-4e92-ab29-f34f6c94b677
 title: Tabela PatchMetadata (PATCHWIZ.DLL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e2521684714b91d8d172f8eb56bab984ffea87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af760fbe286cf37cdb3aefe389ee8d09d7a759d3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747745"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475442"
 ---
 # <a name="patchmetadata-table-patchwizdll"></a>Tabela PatchMetadata (PATCHWIZ.DLL)
 
-A tabela PatchMetadata contém informações sobre um patch Windows Installer que é necessário para remover um patch e que é usado por adicionar ou remover programas. Todas as propriedades na tabela PatchMetadata são adicionadas à [tabela MsiPatchMetadata](msipatchmetadata-table.md) do arquivo. msp para um patch.
+A Tabela PatchMetadata contém informações sobre um patch do Windows Installer que é necessário para remover um patch e que é usado por Adicionar/Remover Programas. Todas as propriedades na Tabela PatchMetadata são adicionadas à [Tabela MsiPatchMetadata](msipatchmetadata-table.md) do arquivo .msp para um patch.
 
-A tabela PatchMetadata é necessária em arquivos de propriedades de criação de patch (arquivos. PCP) que têm um MinimumRequiredMsiVersion igual a 300 na [tabela de propriedades](properties-table-patchwiz-dll-.md). A tabela será opcional se MinimumRequiredMsiVersion não for igual a 300.
+A Tabela PatchMetadata é necessária nos arquivos de propriedades de criação de patch (arquivos .pcp) que têm um MinimumRequiredMsiVersion igual a 300 na [Tabela de Propriedades](properties-table-patchwiz-dll-.md). A tabela será opcional se MinimumRequiredMsiVersion não for igual a 300.
 
-A tabela PatchMetadata tem as colunas a seguir.
+A Tabela PatchMetadata tem as seguintes colunas.
 
 
 
@@ -35,79 +35,34 @@ A tabela PatchMetadata tem as colunas a seguir.
 
 <dl> <dt>
 
-<span id="Company"></span><span id="company"></span><span id="COMPANY"></span>Corporativa
+<span id="Company"></span><span id="company"></span><span id="COMPANY"></span>Empresa
 </dt> <dd>
 
-O nome da empresa. Um campo vazio (um valor nulo) indica que essa linha contém uma das propriedades de metadados padrão. Uma empresa pode estender o conjunto de propriedades adicionando uma linha à tabela e inserindo um nome de empresa neste campo.
+O nome da empresa. Um campo vazio (um valor Nulo) indica que essa linha contém uma das propriedades de metadados padrão. Uma empresa pode estender o conjunto de propriedades adicionando uma linha à tabela e inserindo um nome da empresa nesse campo.
 
 </dd> <dt>
 
 <span id="Property"></span><span id="property"></span><span id="PROPERTY"></span>Propriedade
 </dt> <dd>
 
-O nome de uma propriedade de metadados. As propriedades AllowRemoval, ManufacturerName, TargetProductName, MoreInfoURL, DisplayName, Description e Classification são necessárias na tabela PatchMetadata. Esse campo deve conter uma das propriedades de metadados padrão a seguir se o campo da empresa estiver vazio (um valor nulo).
+O nome de uma propriedade de metadados. As propriedades AllowRemoval, ManufacturerName, TargetProductName, MoreInfoURL, DisplayName, Description e Classification são necessárias na Tabela PatchMetadata . Esse campo deverá conter uma das seguintes propriedades de metadados padrão se o campo Empresa estiver vazio (um valor Nulo).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propriedade</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AllowRemoval</td>
-<td>Um valor inteiro que indica se o patch é um <a href="uninstallable-patches.md">patch desinstalável</a>. Se o campo de valor contiver um 0 (zero), o patch não poderá ser removido. Se o campo de valor contiver 1 (um), o patch será um patch desinstalável. Essa propriedade é necessária. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> .<br/></td>
-</tr>
-<tr class="even">
-<td>ManufacturerName</td>
-<td>Um valor de cadeia de caracteres que contém o nome do fabricante do aplicativo. Esta propriedade é necessária.</td>
-</tr>
-<tr class="odd">
-<td>MinorUpdateTargetRTM</td>
-<td>Indica que o patch destina-se à versão RTM do produto ou ao patch de atualização principal mais recente. Crie essa propriedade opcional em patches de atualização secundárias que contenham informações de sequenciamento para indicar que o patch remove todos os patches até a versão RTM do produto ou até o patch de atualização principal mais recente. Essa propriedade está disponível a partir do Windows Installer 3,1.
-<blockquote>
-[!Note]<br />
-Para exigir que o Windows Installer 3,1 seja instalado para aplicar o patch, defina a propriedade MinimumRequiredMsiVersion como 310 na <a href="properties-table-patchwiz-dll-.md">tabela Properties</a> do arquivo. PCP.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td>TargetProductName</td>
-<td>Um valor de cadeia de caracteres que contém o nome do aplicativo ou conjunto de aplicativos de destino. Esta propriedade é necessária.</td>
-</tr>
-<tr class="odd">
-<td>MoreInfoURL</td>
-<td>Um valor de cadeia de caracteres que contém uma URL que aponta para informações para esse patch. Essa propriedade necessária é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . A partir do Windows XP com Service Pack 2 (SP2), esse valor pode ser o link de suporte para o patch exibido em Adicionar ou remover programas.<br/></td>
-</tr>
-<tr class="even">
-<td>CreationTimeUTC</td>
-<td>Um valor de cadeia de caracteres que contém a hora de criação do arquivo. msp no formato mm-dd-aa HH: MM (mês-dia-ano hora: minuto). Essa propriedade é opcional.</td>
-</tr>
-<tr class="odd">
-<td>DisplayName</td>
-<td>Um valor de cadeia de caracteres que contém o título para o patch que é adequado para exibição pública. Esta propriedade é necessária. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . A partir do Windows XP com SP2, esse valor é o nome do patch exibido em Adicionar ou remover programas, começando com o Windows XP com SP2.<br/></td>
-</tr>
-<tr class="even">
-<td>Descrição</td>
-<td>Um valor de cadeia de caracteres que contém uma breve descrição do patch. Esta propriedade é necessária.</td>
-</tr>
-<tr class="odd">
-<td>classificação</td>
-<td>Um valor de cadeia de caracteres que contém a categoria arbitrária de atualizações, conforme definido pelo autor do patch. Por exemplo, os autores de patch podem especificar que cada patch seja classificado como um hotfix, ROLLUP de segurança, atualização crítica, atualização, Service Pack ou pacote cumulativo de atualizações. Esta propriedade é necessária.</td>
-</tr>
-<tr class="even">
-<td>OptimizedInstallMode</td>
-<td>Se essa propriedade for definida como 1 (uma) em todos os patches a serem aplicados em uma transação, a aplicação do patch será otimizada, se possível. Para obter informações, consulte <a href="patch-optimization.md">otimização de patch</a>. Disponível a partir do Windows Installer 3,1.</td>
-</tr>
-</tbody>
-</table>
+
+| Propriedade | Descrição | 
+|----------|-------------|
+| AllowRemoval | Um valor inteiro que indica se o patch é ou não um Patch <a href="uninstallable-patches.md">Desinstalável.</a> Se o campo Valor contiver um 0 (zero), o patch não poderá ser removido. Se o campo Valor contiver 1 (um), o patch será um Patch Desinstalável. Essa propriedade é necessária. Essa propriedade é registrada e seu valor pode ser obtido usando a <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>função MsiGetPatchInfoEx.</strong></a><br /> | 
+| ManufacturerName | Um valor de cadeia de caracteres que contém o nome do fabricante do aplicativo. Esta propriedade é necessária. | 
+| MinorUpdateTargetRTM | Indica que o patch tem como destino a versão RTM do produto ou o patch de atualização principal mais recente. Autorize essa propriedade opcional em patches de atualização secundários que contêm informações de sequenciamento para indicar que o patch remove todos os patches até a versão RTM do produto ou até o patch de atualização principal mais recente. Essa propriedade está disponível a partir do Windows Installer 3.1.<blockquote>[!Note]<br />Para exigir que Windows Instalador 3.1 seja instalado para aplicar o patch, de definir a propriedade MinimumRequiredMsiVersion como 310 na Tabela de Propriedades do arquivo .pcp. <a href="properties-table-patchwiz-dll-.md"></a></blockquote><br /><br /> | 
+| TargetProductName | Um valor de cadeia de caracteres que contém o nome do aplicativo ou do pacote de aplicativos de destino. Esta propriedade é necessária. | 
+| MoreInfoURL | Um valor de cadeia de caracteres que contém uma URL que aponta para informações para esse patch. Essa propriedade necessária é registrada e seu valor pode ser obtido usando a <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>função MsiGetPatchInfoEx.</strong></a> Começando com Windows XP com Service Pack 2 (SP2), esse valor pode ser o link de suporte para o patch exibido em Adicionar/Remover Programas.<br /> | 
+| Creationtimeutc | Um valor de cadeia de caracteres que contém a hora de criação do arquivo .msp no formato mm-dd-aa HH:MM (month-day-year hour:minute). Esta propriedade é opcional. | 
+| DisplayName | Um valor de cadeia de caracteres que contém o título do patch adequado para exibição pública. Esta propriedade é necessária. Essa propriedade é registrada e seu valor pode ser obtido usando a <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>função MsiGetPatchInfoEx.</strong></a> Começando com Windows XP com SP2, esse valor é o nome do patch exibido em Adicionar/Remover Programas começando com Windows XP com SP2.<br /> | 
+| Descrição | Um valor de cadeia de caracteres que contém uma breve descrição do patch. Esta propriedade é necessária. | 
+| classificação | Um valor de cadeia de caracteres que contém a categoria arbitrária de atualizações, conforme definido pelo autor do patch. Por exemplo, os autores de patch podem especificar que cada patch seja classificado como um Hotfix, Rollup de Segurança, Atualização Crítica, Atualização, Service Pack ou Pacote De Atualização. Esta propriedade é necessária. | 
+| OptimizedInstallMode | Se essa propriedade for definida como 1 (um) em todos os patches a serem aplicados em uma transação, o aplicativo do patch será otimizado, se possível. Para obter informações, consulte <a href="patch-optimization.md">Otimização de patch</a>. Disponível a partir do Windows Instalador 3.1. | 
+
 
 
 
@@ -118,15 +73,15 @@ Para exigir que o Windows Installer 3,1 seja instalado para aplicar o patch, def
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Valor da propriedade de metadados. Isso nunca pode ser nulo ou uma cadeia de caracteres vazia. Esse valor pode ser localizado.
+Valor da propriedade de metadados. Isso nunca pode ser Nulo ou uma cadeia de caracteres vazia. Esse valor pode ser localizado.
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Comentários
 
-Disponível a partir do Windows Installer 3,0.
+Disponível a partir do Windows Instalador 3.0.
 
-Todas as propriedades criadas na tabela PatchMetadata são adicionadas à tabela MsiPatchMetadata do arquivo MSP. As propriedades AllowRemoval, MoreInfoURL e DisplayName são registradas e podem ser acessadas por meio do [**MsiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa).
+Todas as propriedades autoradas na Tabela PatchMetadata são adicionadas à tabela MsiPatchMetadata do arquivo msp. As propriedades AllowRemoval, MoreInfoURL e DisplayName são registradas e podem ser acessadas por [**meio do MsiGetPatchInfoEx.**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa)
 
  
 

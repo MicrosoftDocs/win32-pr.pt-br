@@ -5,12 +5,12 @@ ms.assetid: C0F9A52C-483D-40B2-9E1F-CB92ADDC2856
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 11/27/2018
-ms.openlocfilehash: 3b229932083d424d3ee767866e8465ff4f8de70dbb4bb9536f5096dcb607544b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e38145bc4aef4c07ba00de4185fc97ad449f4f2c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989694"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881786"
 ---
 # <a name="core-functions"></a>Funções de núcleo
 
@@ -25,6 +25,7 @@ As funções a seguir são declaradas em d3d12. h.
 | [**D3D12CreateVersionedRootSignatureDeserializer**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createversionedrootsignaturedeserializer) | Gera uma interface que pode retornar a estrutura de dados desserializada, por meio de [**GetUnconvertedRootSignatureDesc**](/windows/desktop/api/d3d12/nf-d3d12-id3d12versionedrootsignaturedeserializer-getunconvertedrootsignaturedesc). |
 | [**D3D12EnableExperimentalFeatures**](/windows/desktop/api/d3d12/nf-d3d12-d3d12enableexperimentalfeatures) | Habilita uma lista de recursos experimentais. |
 | [**D3D12GetDebugInterface**](/windows/desktop/api/d3d12/nf-d3d12-d3d12getdebuginterface) | Obtém uma interface de depuração. |
+| [**D3D12GetInterface**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializeversionedrootsignature) | seleciona uma versão do SDK em tempo de execução quando o sistema está no modo de desenvolvedor Windows. |
 | [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature) | Serializa uma versão de assinatura raiz 1,0 que pode ser passada para [**ID3D12Device:: CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature). |
 | [**D3D12SerializeVersionedRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializeversionedrootsignature) | Serializa uma assinatura raiz de qualquer versão que possa ser passada para [**ID3D12Device:: CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature). |
 
@@ -32,9 +33,3 @@ As funções a seguir são declaradas em d3d12. h.
 
 * [Referência de núcleo](direct3d-12-core-reference.md)
 * [Referência do Direct3D 12](direct3d-12-reference.md)
-
-
-
-
-
-

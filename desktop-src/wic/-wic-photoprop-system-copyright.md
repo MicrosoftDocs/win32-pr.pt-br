@@ -4,12 +4,12 @@ ms.assetid: 84d2f55b-5ca4-4912-b038-c18a72e6fc34
 title: Política de metadados de foto System. Copyright
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b00b57bc3523feaa29da9008340bd34c32401879a8fc4e872082bbdcddd1fdf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3e17190205b3df5c2ede9b1a7db231d0fdbbe21
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118710809"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882696"
 ---
 # <a name="systemcopyright-photo-metadata-policy"></a>Política de metadados de foto System. Copyright
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Não
+No
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -45,11 +45,11 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                      | Formato de disco |
+| Order | Caminho                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
 |       | /App1/IFD/{UShort = 33432}                  | ascii       |
 |       | aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /XMP/ <xmpalt> DC: direitos              | Unicode     |
+|       | /XMP/ &lt; xmpalt &gt; DC: direitos              | Unicode     |
 |       | /XMP/DC: direitos                            | Unicode     |
 |       | aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
 
@@ -61,10 +61,10 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                      | Formato de disco |
+| Order | Caminho                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
 |       | /XMP/DC: direitos                            | Unicode     |
-|       | /XMP/ <xmpalt> DC: direitos              | Unicode     |
+|       | /XMP/ &lt; xmpalt &gt; DC: direitos              | Unicode     |
 |       | aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
 |       | /App1/IFD/{UShort = 33432}                  | ascii       |
 
@@ -76,7 +76,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                      |
+| Order | Caminho                                      |
 |-------|-------------------------------------------|
 |       | /XMP/DC: direitos                            |
 |       | aviso de/app13/IRB/8bimiptc/IPTC/Copyright |
@@ -92,11 +92,11 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                    | Formato de disco |
+| Order | Caminho                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 |       | /IFD/{UShort = 33432}                     | ascii       |
 |       | aviso de/IFD/IPTC/Copyright              |             |
-|       | /IFD/XMP/ <xmpalt> DC: direitos        | Unicode     |
+|       | /IFD/XMP/ &lt; xmpalt &gt; DC: direitos        | Unicode     |
 |       | /IFD/XMP/DC: direitos                      | Unicode     |
 |       | aviso de/IFD/IPTC/Copyright              |             |
 |       | aviso de/IFD/IRB/8bimiptc/IPTC/Copyright |             |
@@ -109,10 +109,10 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                    | Formato de disco |
+| Order | Caminho                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 |       | /IFD/XMP/DC: direitos                      | Unicode     |
-|       | /IFD/XMP/ <xmpalt> DC: direitos        | Unicode     |
+|       | /IFD/XMP/ &lt; xmpalt &gt; DC: direitos        | Unicode     |
 |       | aviso de/IFD/IPTC/Copyright              |             |
 |       | aviso de/IFD/IRB/8bimiptc/IPTC/Copyright |             |
 |       | /IFD/{UShort = 33432}                     | ascii       |
@@ -125,7 +125,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 
 
-| Ordem | Caminho                                    |
+| Order | Caminho                                    |
 |-------|-----------------------------------------|
 |       | /IFD/XMP/DC: direitos                      |
 |       | aviso de/IFD/IPTC/Copyright              |

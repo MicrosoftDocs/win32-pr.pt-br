@@ -4,12 +4,12 @@ description: Com uma caixa de listagem, os usuários podem selecionar um conjunt
 ms.assetid: 620e9ff9-b367-446b-9e97-9c9d6d14f4bb
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8d4f30394e9704ba01832c60e7b41e3453a5c7abe1715678ca84405e73724c7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0476b53590cc6e8dcc691faf95be1a851889936e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118218022"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481742"
 ---
 # <a name="list-boxes"></a>Caixas de listagem
 
@@ -84,48 +84,9 @@ As caixas de listagem têm vários padrões de uso:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Listas de seleção única</strong> Permitir que os usuários selecionem um item por vez. <br/></td>
-<td><img src="images/ctrl-list-boxes-image4.png" alt="Screen shot of list box with one item selected " /><br/> Neste exemplo, os usuários podem selecionar apenas um item de exibição.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Listas de seleção múltipla padrão</strong> Permitir que os usuários selecionem qualquer número de itens, incluindo nenhum.<br/></td>
-<td>As listas de seleção múltipla padrão têm exatamente a mesma aparência que as listas de seleção única, portanto, não há nenhuma pista visual de que uma caixa de listagem dá suporte a seleção múltipla. Como os usuários precisam descobrir essa capacidade, esse padrão de lista é melhor usado para tarefas em que a seleção múltipla não é essencial e raramente é usada. <br/> Há dois modos de seleção múltipla diferentes: <a href="glossary.md">múltiplos</a> e <a href="glossary.md">estendidos</a>. O <strong>modo de seleção estendido</strong> é, de longe, o mais comum, em que a seleção pode ser estendida arrastando ou com SHIFT + clique e Ctrl + clique para selecionar grupos de valores contíguos e não adjacentes, respectivamente. No <strong>modo de seleção múltipla</strong>, clicar em qualquer item alterna o estado de seleção, independentemente das teclas Shift e Ctrl. Devido a esse comportamento incomum, o modo de seleção múltipla é preterido e você deve usar listas de caixas de seleção em vez disso.<br/> <img src="images/ctrl-list-boxes-image5.png" alt="Screen shot of list box with several items selected " /><br/> Neste exemplo, os usuários podem selecionar qualquer número de itens usando o modo de seleção múltipla.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Listas de caixas de seleção</strong> Como caixas de listagem de seleção múltipla padrão, as listas de caixas de seleção permitem que os usuários selecionem qualquer número de itens, incluindo nenhum.<br/></td>
-<td>Ao contrário das listas de seleção múltipla padrão, as caixas de seleção indicam claramente que a seleção múltipla é possível. Use esse padrão de lista para tarefas em que a seleção múltipla é essencial ou comumente usada. <br/> <img src="images/ctrl-list-boxes-image6.png" alt="Screen shot of Toolbars check-box list " /><br/> Neste exemplo, os usuários normalmente selecionam mais de um item para que uma lista de caixas de seleção seja usada.<br/> Considerando essa indicação clara de seleção múltipla, você pode pressupor que as listas de caixas de seleção são preferíveis às listas de seleção múltipla padrão. Na prática, poucas tarefas exigem seleção múltipla ou usam muito; usar uma lista de caixas de seleção em tais casos desenha muita atenção à seleção. Consequentemente, as <strong>listas de seleção múltipla padrão são muito mais comuns.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><strong>Listas de visualização</strong> Pode ser uma seleção única ou múltipla, mas mostra uma visualização do efeito da seleção em vez de apenas texto.<br/></td>
-<td><img src="images/ctrl-list-boxes-image7.png" alt="Screen shot of Window Color options preview " /><br/> Neste exemplo, uma visualização de cada opção mostra claramente o efeito da escolha, que é mais eficiente do que usar somente texto.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Listar construtores</strong> Permita que os usuários criem uma lista de opções adicionando um item por vez e, opcionalmente, definindo a ordem da lista.<br/></td>
-<td>Um construtor de listas consiste em duas listas de seleção única: a lista à esquerda é um conjunto fixo de opções e a lista à direita é a lista que está sendo criada. Há dois botões de comando entre as listas: <br/>
-<ul>
-<li>Um botão <strong>Adicionar</strong> que move a opção atualmente selecionada para a lista que está sendo criada, inserida antes do item selecionado. (Clicar duas vezes em um item de opção tem o mesmo efeito.)</li>
-<li>Um <strong>botão</strong> Remover que remove o item selecionado da lista criada e o retorna à lista de opções. (Clicar duas vezes em um item na lista criada tem o mesmo efeito.) Opcionalmente, a lista criada pode ter <strong>comandos Mover</strong> para Cima e Mover <strong>para Baixo</strong> para ordenar os itens da lista.</li>
-</ul>
-<img src="images/ctrl-list-boxes-image8.png" alt="Screen shot of Toolbar buttons list builder " /><br/> Neste exemplo, um construtor de lista é usado para criar uma barra de ferramentas selecionando itens de um conjunto de opções disponíveis e definindo seu pedido.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Adicionar/remover listas</strong> Permitir que os usuários criem uma lista de opções adicionando um ou mais itens por vez e, opcionalmente, definindo a ordem de lista (como construtores de lista).<br/></td>
-<td>Ao contrário de um construtor de lista, clicar <strong>em Adicionar</strong> exibe uma caixa de diálogo para selecionar itens a serem acrescentados à lista. O uso de uma caixa de diálogo separada permite flexibilidade significativa na escolha de itens que você pode usar um selador de objeto especializado ou até mesmo um diálogo comum. Em comparação com o construtor de lista, essa variação é mais compacta, mas requer um pouco mais de esforço para adicionar itens. <br/> <img src="images/ctrl-list-boxes-image9.png" alt="Screen shot of Menu contents list " /><br/> Neste exemplo, os usuários podem adicionar ou remover ferramentas de um menu, bem como definir a ordem.<br/> Embora os padrões de lista de construtor de lista e adicionar/remover sejam significativamente mais pesados do que as outras listas de seleção múltipla, eles oferecem duas vantagens exclusivas:<br/>
-<ul>
-<li>Os usuários têm controle sobre a ordem da lista, ao criar a lista e depois.</li>
-<li>Os usuários podem revisar um resumo dos itens selecionados, o que pode ser um benefício significativo se o número de opções for grande.</li>
-</ul>
-Suas desvantagens são que eles exigem muito mais espaço na tela e podem ser difíceis de usar ao criar uma lista grande de itens do zero. Consequentemente, eles são mais bem usados para criar listas curtas ou modificar listas que já existem.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | <strong>Listas de seleção única</strong> Permitir que os usuários selecionem um item por vez. <br /> | <img src="images/ctrl-list-boxes-image4.png" alt="Screen shot of list box with one item selected " /><br /> Neste exemplo, os usuários podem selecionar apenas um item de exibição.<br /> | | <strong>Listas de seleção múltipla padrão</strong> Permitir que os usuários selecionem qualquer número de itens, incluindo nenhum.<br /> | As listas de seleção múltipla padrão têm exatamente a mesma aparência que as listas de seleção única, portanto, não há nenhuma pista visual de que uma caixa de listagem dá suporte a seleção múltipla. Como os usuários precisam descobrir essa capacidade, esse padrão de lista é melhor usado para tarefas em que a seleção múltipla não é essencial e raramente é usada. <br /> Há dois modos de seleção múltipla diferentes: <a href="glossary.md">múltiplos</a> e <a href="glossary.md">estendidos</a>. O <strong>modo de seleção estendido</strong> é, de longe, o mais comum, em que a seleção pode ser estendida arrastando ou com SHIFT + clique e Ctrl + clique para selecionar grupos de valores contíguos e não adjacentes, respectivamente. No <strong>modo de seleção múltipla</strong>, clicar em qualquer item alterna o estado de seleção, independentemente das teclas Shift e Ctrl. Devido a esse comportamento incomum, o modo de seleção múltipla é preterido e você deve usar listas de caixas de seleção em vez disso.<br /><img src="images/ctrl-list-boxes-image5.png" alt="Screen shot of list box with several items selected " /><br /> Neste exemplo, os usuários podem selecionar qualquer número de itens usando o modo de seleção múltipla.<br /> | | <strong>Listas de caixas de seleção</strong> Como caixas de listagem de seleção múltipla padrão, as listas de caixas de seleção permitem que os usuários selecionem qualquer número de itens, incluindo nenhum.<br /> | Ao contrário das listas de seleção múltipla padrão, as caixas de seleção indicam claramente que a seleção múltipla é possível. Use esse padrão de lista para tarefas em que a seleção múltipla é essencial ou comumente usada. <br /><img src="images/ctrl-list-boxes-image6.png" alt="Screen shot of Toolbars check-box list " /><br /> Neste exemplo, os usuários normalmente selecionam mais de um item para que uma lista de caixas de seleção seja usada.<br /> Considerando essa indicação clara de seleção múltipla, você pode pressupor que as listas de caixas de seleção são preferíveis às listas de seleção múltipla padrão. Na prática, poucas tarefas exigem seleção múltipla ou usam muito; usar uma lista de caixas de seleção em tais casos desenha muita atenção à seleção. Consequentemente, as <strong>listas de seleção múltipla padrão são muito mais comuns.</strong><br /> | | <strong>Listas de visualização</strong> Pode ser uma seleção única ou múltipla, mas mostra uma visualização do efeito da seleção em vez de apenas texto.<br /> | <img src="images/ctrl-list-boxes-image7.png" alt="Screen shot of Window Color options preview " /><br /> Neste exemplo, uma visualização de cada opção mostra claramente o efeito da escolha, que é mais eficiente do que usar somente texto.<br /> | | <strong>Listar construtores</strong> Permita que os usuários criem uma lista de opções adicionando um item por vez e, opcionalmente, definindo a ordem da lista.<br /> | Um construtor de listas consiste em duas listas de seleção única: a lista à esquerda é um conjunto fixo de opções e a lista à direita é a lista que está sendo criada. Há dois botões de comando entre as listas: <br /><ul><li>Um botão <strong>Adicionar</strong> que move a opção atualmente selecionada para a lista que está sendo criada, inserida antes do item selecionado. (Clicar duas vezes em um item de opção tem o mesmo efeito.)</li><li>Um <strong>botão</strong> Remover que remove o item selecionado da lista criada e o retorna à lista de opções. (Clicar duas vezes em um item na lista criada tem o mesmo efeito.) Opcionalmente, a lista criada pode ter <strong>comandos Mover</strong> para Cima e Mover <strong>para Baixo</strong> para ordenar os itens da lista.</li></ul><img src="images/ctrl-list-boxes-image8.png" alt="Screen shot of Toolbar buttons list builder " /><br /> Neste exemplo, um construtor de lista é usado para criar uma barra de ferramentas selecionando itens de um conjunto de opções disponíveis e definindo seu pedido.<br /> | | <strong>Adicionar/remover listas</strong> Permitir que os usuários criem uma lista de opções adicionando um ou mais itens por vez e, opcionalmente, definindo a ordem de lista (como construtores de lista).<br /> | Ao contrário de um construtor de lista, clicar <strong>em Adicionar</strong> exibe uma caixa de diálogo para selecionar itens a serem acrescentados à lista. O uso de uma caixa de diálogo separada permite flexibilidade significativa na escolha de itens que você pode usar um selador de objeto especializado ou até mesmo um diálogo comum. Em comparação com o construtor de lista, essa variação é mais compacta, mas requer um pouco mais de esforço para adicionar itens. <br /><img src="images/ctrl-list-boxes-image9.png" alt="Screen shot of Menu contents list " /><br /> Neste exemplo, os usuários podem adicionar ou remover ferramentas de um menu, bem como definir a ordem.<br /> Embora os padrões de lista de construtor de lista e adicionar/remover sejam significativamente mais pesados do que as outras listas de seleção múltipla, eles oferecem duas vantagens exclusivas:<br /><ul><li>Os usuários têm controle sobre a ordem da lista, ao criar a lista e depois.</li><li>Os usuários podem revisar um resumo dos itens selecionados, o que pode ser um benefício significativo se o número de opções for grande.</li></ul>Suas desvantagens são que eles exigem muito mais espaço na tela e podem ser difíceis de usar ao criar uma lista grande de itens do zero. Consequentemente, eles são mais bem usados para criar listas curtas ou modificar listas que já existem.<br /> | 
+
 
 
 

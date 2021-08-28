@@ -1,7 +1,7 @@
 ---
-description: A Indicação CIM é a classe base abstrata para todas as notificações sobre alterações em objetos de esquema e dados de objeto de esquema, eventos detectados por \_ provedores e instrumentação. Subclasses da Indicação CIM \_ representam tipos específicos de notificações.
+description: '\_A indicação CIM é a classe base abstrata para todas as notificações sobre alterações em objetos de esquema e dados de objeto de esquema, eventos detectados por provedores e instrumentação. As subclasses da \_ indicação CIM representam tipos específicos de notificações.'
 ms.assetid: 85a70425-7b32-449c-9fc0-1cfbf34d9187
-title: CIM_Indication classe
+title: Classe CIM_Indication
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84f6999add608a1b43da2d9272703dd63f52ed2d799f47a0121bd4a50b88e9ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e859e7834a051bad0a5ea402e8bd6c3685b5ad54
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046816"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883531"
 ---
-# <a name="cim_indication-class"></a>Classe cim \_ indicação
+# <a name="cim_indication-class"></a>\_Classe de indicação CIM
 
-**CIM \_ Indicação** é a classe base abstrata para todas as notificações sobre alterações em objetos de esquema e dados de objeto de esquema, eventos detectados por provedores e instrumentação. Subclasses da **Indicação CIM \_** representam tipos específicos de notificações.
+**CIM \_ A indicação** é a classe base abstrata para todas as notificações sobre alterações em objetos de esquema e dados de objeto de esquema, eventos detectados por provedores e instrumentação. As subclasses **da \_ indicação CIM** representam tipos específicos de notificações.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,29 +51,29 @@ class CIM_Indication : __ExtrinsicEvent
 
 ## <a name="members"></a>Membros
 
-A **classe \_ Cim Indication** tem estes tipos de membros:
+A classe de **\_ indicação CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ Cim Indication** tem essas propriedades.
+A classe de **\_ indicação CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **CorrelatedIndications**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **de cadeia de** caracteres
+Tipo de dados: matriz de **cadeia de caracteres**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Notificações correlacionadas"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Indicação CIM \_**.**IndicationIdentifier**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("recomendação. ITU \| X733. Notificações correlacionadas "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ indicação CIM**.**IndicationIdentifier**")
 </dt> </dl>
 
-Uma matriz que contém **valores de IndicationIdentifier** de notificações relacionadas a esta.
+Uma matriz que contém valores **IndicationIdentifier** de notificações que estão relacionadas a este.
 
 </dd> <dt>
 
@@ -89,12 +89,12 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ IndicationFilter.Name")
 </dt> </dl>
 
-O identificador do filtro de indicação que processa a indicação. O serviço de envio define essa propriedade. Essa propriedade está correlacionada com a **propriedade Name** do objeto **CIM \_ IndicationFilter.** O valor de **IndicationFilterName** deve usar o seguinte formato:
+O identificador do filtro de indicação que processa a indicação. O serviço de envio define essa propriedade. Essa propriedade correlaciona com a propriedade **Name** do objeto **CIM \_ IndicationFilter** . O valor de **IndicationFilterName** deve usar o seguinte formato:
 
--   *<OrgID>*:*<LocalID>*
--   *<OrgID>* deve incluir um nome com direitos autorais, marcas comerciais ou exclusivos pertencentes à entidade de negócios que possui o objeto.
--   *<OrgID>* não deve conter dois-pontos (:)
--   *<LocalID>* um identificador exclusivo escolhido pela entidade de negócios que possui o objeto .
+-   *&lt; OrgID &gt;*:*&lt; LocalId &gt;*
+-   *&lt; OrgID &gt;* deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que possui o objeto.
+-   *&lt; OrgID &gt;* não deve conter dois-pontos (:)
+-   LocalId um identificador exclusivo escolhido pela entidade de negócios que possui o objeto. *&lt; &gt;*
 
 </dd> <dt>
 
@@ -107,34 +107,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Identificador de notificação")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("recomendação. ITU \| X733. Identificador de notificação ")
 </dt> </dl>
 
-Um identificador da indicação. Essa propriedade pode ser usada como um valor de chave na matriz de **propriedades CorrelatedIndications.** Portanto, **IndicationIdentifier** deve ser um valor exclusivo dentro do namespace dessa instância de classe.
+Um identificador da indicação. Essa propriedade pode ser usada como um valor de chave na matriz da propriedade **CorrelatedIndications** . Portanto, **IndicationIdentifier** deve ser um valor exclusivo dentro do namespace dessa instância de classe.
 
-Para garantir que **IndicationIdentifier** seja exclusivo, ele deve usar o seguinte formato:
+Para garantir que o **IndicationIdentifier** seja exclusivo, ele deve usar o seguinte formato:
 
--   *<OrgID>*:*<LocalID>*
--   *<OrgID>* deve incluir um nome com direitos autorais, marcas comerciais ou exclusivos pertencentes à entidade de negócios que possui o objeto.
--   *<OrgID>* não deve conter dois-pontos (:)
--   *<LocalID>* um identificador exclusivo escolhido pela entidade de negócios que possui o objeto .
--   Para instâncias definidas por DMTF, *<OrgID>* deve ser definido como "CIM".
+-   *&lt; OrgID &gt;*:*&lt; LocalId &gt;*
+-   *&lt; OrgID &gt;* deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que possui o objeto.
+-   *&lt; OrgID &gt;* não deve conter dois-pontos (:)
+-   LocalId um identificador exclusivo escolhido pela entidade de negócios que possui o objeto. *&lt; &gt;*
+-   Para instâncias definidas por DMTF, *&lt; OrgID &gt;* deve ser definido como "CIM".
 
 </dd> <dt>
 
-**IndicationTime**
+**Indicaçãotime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **datetime**
+Tipo de dados: **DateTime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A hora e a data em que a indicação foi criada. A propriedade poderá ser definida como **NULL** se a entidade que criou a indicação não for capaz de determinar essas informações.
+A data e a hora em que a indicação foi criada. A propriedade pode ser definida como **NULL** se a entidade que criou a indicação não for capaz de determinar essas informações.
 
 > [!Note]  
-> O **valor IndicationTime** pode ser o mesmo para indicações geradas em sucessão rápida.
+> O valor de **indicatime** pode ser o mesmo para indicações que são geradas em sucessão rápida.
 
  
 
@@ -152,20 +152,20 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ AlertIndication**](cim-alertindication.md).**PerceivedSeverity**")
 </dt> </dl>
 
-A severidade da indicação do ponto de vista do notificador quando **PerceivedSeverity** é definido como "1" (Outro).
+A severidade da indicação do ponto de vista do notificador quando **PerceivedSeverity** é definido como "1" (outro).
 
 </dd> <dt>
 
 **PerceivedSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Severidade percebida")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("recomendação. ITU \| X733. Severidade percebida ")
 </dt> </dl>
 
 A severidade da indicação do ponto de vista do notificador.
@@ -179,18 +179,18 @@ A severidade da indicação do ponto de vista do notificador.
 
 </dt> <dd>
 
-A Gravidade Percebida da indicação é desconhecida ou indeterminada.
+a severidade percebida da indicação é desconhecida ou indeterminada.
 
 </dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
 
 
 </dt> <dd>
 
-Indica que o valor da Gravidade pode ser encontrado na **propriedade OtherSeverity.**
+Indica que o valor da severidade pode ser encontrado na propriedade **OtherSeverity** .
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ As informações devem ser usadas ao fornecer uma resposta informativa.
 
 <span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>
 
-<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado/Aviso** (3)
+<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado/aviso** (3)
 
 
 </dt> <dd>
@@ -218,12 +218,12 @@ Deve ser usado quando apropriado para permitir que o usuário decida se a ação
 
 <span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>
 
-<span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>**Menor** (4)
+<span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>**Secundária** (4)
 
 
 </dt> <dd>
 
-A ação é necessária, mas a situação não é grave no momento.
+A ação é necessária, mas a situação não é séria no momento.
 
 </dd> <dt>
 
@@ -234,7 +234,7 @@ A ação é necessária, mas a situação não é grave no momento.
 
 </dt> <dd>
 
-A ação é necessária AGORA.
+A ação é necessária agora.
 
 </dd> <dt>
 
@@ -245,24 +245,24 @@ A ação é necessária AGORA.
 
 </dt> <dd>
 
-A ação é necessária agora e o escopo é amplo (talvez uma paralisação iminente para um recurso crítico resultará).
+A ação é necessária agora e o escopo é amplo (talvez uma interrupção iminente a um recurso crítico resulte).
 
 </dd> <dt>
 
 <span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>
 
-<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Fatal/Não Recupeável** (7)
+<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Fatal/não recuperável** (7)
 
 
 </dt> <dd>
 
-ocorreu um erro, mas é tarde demais para tomar uma ação corretiva.
+ocorreu um erro, mas é tarde demais para realizar uma ação corretiva.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -278,22 +278,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Indicação CIM \_**.**SequenceNumber**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ indicação CIM**.**SequenceNumber**")
 </dt> </dl>
 
-O contexto de sequência do identificador de sequência para a indicação. Se um serviço não dá suporte a identificadores de sequência para indicações, essa propriedade deve ser definida como **NULL.** Se a indicação for entregue de forma reprojetada, essa propriedade permanecerá a mesma.
+O contexto de sequência do identificador de sequência para a indicação. Se um serviço não oferecer suporte a identificadores de sequência para indicações, essa propriedade deverá ser definida como **NULL**. Se a indicação for entregue novamente, essa propriedade permanecerá a mesma.
 
 > [!Note]  
-> O identificador de sequência para a indicação permite que um ouvinte identifique indicações duplicadas quando o serviço tenta entregar indicações, reordenar indicações que chegam fora de ordem e detectar indicações perdidas.
+> O identificador de sequência para a indicação permite que um ouvinte identifique indicações duplicadas quando o serviço tenta entregar indicações novamente, reordenar as indicações que chegam fora de ordem e detectar indicações perdidas.
 
  
 
-Para garantir que **SequenceContext** seja exclusivo, ele deve usar o seguinte formato:
+Para garantir que o **SequenceContext** seja exclusivo, ele deve usar o seguinte formato:
 
--   *indication-service-name* \# *cim-service-start-id* \# *listener-destination-creation-time*
--   *indication-service-name* é o valor da propriedade **Name** da instância **de Cim \_ IndicationService** que fornece a indicação.
--   *cim-service-start-id* é um identificador que identifica exclusivamente a operação de início de um serviço. Por exemplo, isso pode ser um data/hora da hora de início ou um contador que aumenta para cada início ou reinicialização do serviço.
--   *listener-destination-creation-time* é um timestamp da hora de criação da instância **\_ listenerDestination cim** que representa o ouvinte destination.nSince que esse formato é apenas uma recomendação, os clientes CIM devem tratar o valor como um identificador opaco para o contexto de sequência e não devem depender desse formato.
+-   *indicação-nome* \# -do-serviço *CIM-Service-Start-ID* \# *ouvinte-destino-criação-de-tempo*
+-   *indica-Service-Name* é o valor da propriedade **Name** da instância **\_ IndicationService do CIM** que fornece a indicação.
+-   *CIM-Service-Start-ID* é um identificador que identifica exclusivamente a operação de início de um serviço. Por exemplo, isso pode ser um carimbo de hora da hora de início ou um contador que aumenta para cada início ou reinício do serviço.
+-   *Listener-destino-Creation-time* é um carimbo de data/hora do tempo de criação da instância **\_ ListenerDestination do CIM** que representa o destino do ouvinte. nSince esse formato é apenas uma recomendação, os clientes CIM devem tratar o valor como um identificador opaco para o contexto de sequência e não devem depender desse formato.
 
 </dd> <dt>
 
@@ -306,22 +306,22 @@ Tipo de dados: **sint64**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Indicação CIM \_**.**SequenceContext**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ indicação CIM**.**SequenceContext**")
 </dt> </dl>
 
 O número de sequência do identificador de sequência para a indicação.
 
 > [!Note]  
-> O identificador de sequência para a indicação permite que um ouvinte identifique indicações duplicadas quando o serviço tenta entregar indicações, reordenar indicações que chegam fora de ordem e detectar indicações perdidas.
+> O identificador de sequência para a indicação permite que um ouvinte identifique indicações duplicadas quando o serviço tenta entregar indicações novamente, reordenar as indicações que chegam fora de ordem e detectar indicações perdidas.
 
  
 
 O número de sequência tem as seguintes características:
 
--   O número de sequência é redefinido para "0" sempre que **o valor SequenceContext** é muda.
--   Sempre que o destino do ouvinte recebe uma nova indicação, o número de sequência é aumentado em "1".
--   O número de sequência é wraps para "0" quando o intervalo de valor é excedido.
--   Se a indicação for entregue de forma reprojetada, **SequenceNumber** permanecerá o mesmo.
+-   O número de sequência é redefinido como "0" sempre que o valor de **SequenceContext** é alterado.
+-   Sempre que o destino do ouvinte receber uma nova indicação, o número de sequência será aumentado por "1".
+-   O número de sequência é quebrado em "0" quando o intervalo de valores é excedido.
+-   Se a indicação for entregue novamente, **SequenceNumber** permanecerá o mesmo.
 
 </dd> </dl>
 
@@ -333,8 +333,8 @@ O número de sequência tem as seguintes características:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

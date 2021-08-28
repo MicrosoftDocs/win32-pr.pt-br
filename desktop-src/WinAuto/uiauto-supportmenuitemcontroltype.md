@@ -1,40 +1,40 @@
 ---
 title: Tipo de controle MenuItem
-description: Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle MenuItem.
+description: Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o tipo de controle MenuItem.
 ms.assetid: a6a04489-8e28-44ff-a3b0-ecf19c24daab
 keywords:
-- Automação da interface do usuário, suporte para o tipo de controle MenuItem
-- Automação da interface do usuário, tipo de controle MenuItem
-- Automação da interface do usuário, estrutura de árvore para tipo de controle MenuItem
-- Automação da interface do usuário, propriedades para tipo de controle MenuItem
-- Automação da interface do usuário, padrões de controle para tipo de controle MenuItem
-- Automação da interface do usuário, eventos para tipo de controle MenuItem
+- Automação da Interface do Usuário, suporte para o tipo de controle MenuItem
+- Automação da Interface do Usuário, tipo de controle MenuItem
+- Automação da Interface do Usuário, estrutura de árvore para o tipo de controle MenuItem
+- Automação da Interface do Usuário,propriedades para o tipo de controle MenuItem
+- Automação da Interface do Usuário,padrões de controle para o tipo de controle MenuItem
+- Automação da Interface do Usuário, eventos para o tipo de controle MenuItem
 - estruturas de árvore, tipo de controle MenuItem
-- Propriedades, tipo de controle MenuItem
+- properties,MenuItem control type
 - padrões de controle, tipo de controle MenuItem
-- tipo de controle Events, MenuItem
-- suporte para tipo de controle MenuItem
+- eventos, tipo de controle MenuItem
+- suporte para o tipo de controle MenuItem
 - Tipo de controle MenuItem
-- tipos de controle, estrutura de árvore para tipo de controle MenuItem
+- tipos de controle, estrutura de árvore para o tipo de controle MenuItem
 - tipos de controle, padrões de controle para o tipo de controle MenuItem
 - tipos de controle, suporte para MenuItem
 - tipos de controle, MenuItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24033866f749974a41d39094b416e70f3c40f796
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a48b94d7fc18cb9a8a6fe924fb73a250ab28708
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292145"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482503"
 ---
 # <a name="menuitem-control-type"></a>Tipo de controle MenuItem
 
-Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle **MenuItem** .
+Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o **tipo de controle MenuItem.**
 
-Um controle de menu permite a organização hierárquica de elementos associados a comandos e manipuladores de eventos. Em um aplicativo típico do Windows, uma barra de menus contém vários itens de menu (como **arquivo**, **Editar** e **janela**) e cada item de menu exibe um menu. Um menu contém uma coleção de itens de menu (como **novo**, **aberto** e **fechado**), que pode ser expandida para exibir itens de menu adicionais ou executar uma ação específica quando clicado.
+Um controle de menu permite a organização hierárquica de elementos associados a comandos e manipuladores de eventos. Em um aplicativo Windows, uma barra de menus contém vários itens de menu (como **Arquivo,** **Editar** e **Janela)** e cada item de menu exibe um menu. Um menu contém uma coleção de itens de menu (como **Novo,** Abrir e Fechar **),** que podem ser expandidos para exibir itens de menu adicionais ou executar uma ação específica quando clicados.
 
-As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle **MenuItem** . Os requisitos de automação da interface do usuário se aplicam a todos os controles de item de menu onde a estrutura/plataforma da interface do usuário integra o suporte à automação da interface do usuário para tipos de controle
+As seções a seguir definem a estrutura de árvore Automação da Interface do Usuário, as propriedades, os padrões de controle e os eventos necessários para o tipo de controle **MenuItem.** Os Automação da Interface do Usuário se aplicam a todos os controles de item de menu em que a estrutura/plataforma da interface do usuário Automação da Interface do Usuário suporte para tipos de controle e padrões de controle.
 
 Este tópico inclui as seções a seguir.
 
@@ -42,82 +42,54 @@ Este tópico inclui as seções a seguir.
 -   [Propriedades relevantes](#relevant-properties)
 -   [Padrões de controle necessários](#required-control-patterns)
 -   [Eventos necessários](#required-events)
--   [Problemas herdados](#legacy-issues)
+-   [Problemas herdou](#legacy-issues)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="typical-tree-structure"></a>Estrutura de árvore típica
 
-A tabela a seguir descreve um controle típico e a exibição de conteúdo da árvore de automação da interface do usuário que pertence aos controles de item de menu e descreve o que pode ser contido em cada exibição. Para obter mais informações sobre a árvore de automação da interface do usuário, consulte [visão geral da árvore de automação da IU](uiauto-treeoverview.md).
+A tabela a seguir ilustra uma exibição típica de controle e conteúdo da árvore Automação da Interface do Usuário que pertence aos controles de item de menu e descreve o que pode estar contido em cada exibição. Para obter mais informações sobre a árvore Automação da Interface do Usuário, consulte [Visão geral Automação da Interface do Usuário árvore.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Ajuda do MenuItem &quot;&quot;
-<ul>
-<li>Menu (submenu do item de menu ajuda)
-<ul>
-<li>&quot;Tópicos da ajuda MenuItem&quot;</li>
-<li>MenuItem &quot; sobre o bloco de notas&quot;</li>
-</ul></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Ajuda do MenuItem &quot;&quot;
-<ul>
-<li>&quot;Tópicos da ajuda MenuItem&quot;</li>
-<li>MenuItem &quot; sobre o bloco de notas&quot;</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>MenuItem "Ajuda"<ul><li>Menu (submenu do item de menu Ajuda)<ul><li>MenuItem "Tópicos da Ajuda"</li><li>MenuItem "Sobre Bloco de notas"</li></ul></li></ul></li></ul> | <ul><li>MenuItem "Ajuda"<ul><li>MenuItem "Tópicos da Ajuda"</li><li>MenuItem "Sobre Bloco de notas"</li></ul></li></ul> | 
 
 
 
- 
 
-A exibição de controle do controle de item de menu tem a estrutura de árvore de automação da interface do usuário mostrada acima. Observe que o item de menu para obter **ajuda** na barra de menus foi adicionado para ilustrar melhor a estrutura.
+ 
 
-Para o modo de exibição de conteúdo, o **menu** está ausente da árvore de automação da interface do usuário porque não transmite informações significativas para o usuário final.
+A exibição de controle do controle de item de menu tem a estrutura Automação da Interface do Usuário árvore mostrada acima. Observe que o item de menu para **Ajuda** na barra de menus foi adicionado para ilustrar melhor a estrutura.
+
+Para a exibição de conteúdo, **o Menu** está ausente da árvore Automação da Interface do Usuário, pois ele não transmite informações significativas para o usuário final.
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
-A tabela a seguir lista as propriedades de automação da interface do usuário cujo valor ou definição é especialmente relevante para o tipo de controle **MenuItem** . Para obter mais informações sobre propriedades de automação da interface do usuário, consulte [Recuperando propriedades de elementos de automação da interface do usuário](uiauto-propertiesforclients.md).
+A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou definição é especialmente relevante para o tipo de controle **MenuItem.** Para obter mais informações sobre Automação da Interface do Usuário propriedades, consulte [Recuperando propriedades de Automação da Interface do Usuário Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propriedade de automação da interface do usuário                                                                                              | Valor        | Observações                                                                                                                                                                                                                                                                                                                                                                    |
+| Automação da Interface do Usuário propriedade                                                                                              | Valor        | Observações                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Consulte observações.   | O valor dessa propriedade deve ser exclusivo entre todos os elementos de mesmo nível na exibição bruta da árvore de automação da interface do usuário. Aloque a propriedade **AutomationId** para um item de menu se o elemento for conhecido como consistente em diferentes instâncias da interface do usuário. Se o item de menu for dinamicamente populado e não previsível, deixe a propriedade **AutomationId** em branco. |
+| [**\_AutomationIdPropertyId da UIA**](uiauto-automation-element-propids.md)                 | Consulte observações.   | O valor dessa propriedade deve ser exclusivo entre todos os elementos pares na exibição bruta da árvore Automação da Interface do Usuário dados. Aloce a **propriedade AutomationId** para um item de menu se o elemento for conhecido por ser consistente em diferentes instâncias da interface do usuário. Se o item de menu for preenchido dinamicamente e não for previsível, deixe a propriedade **AutomationId** em branco. |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Consulte observações.   | O retângulo mais externo que contém o controle inteiro.                                                                                                                                                                                                                                                                                                                 |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.   | Com suporte se houver um retângulo delimitador. Se nem todos os pontos dentro do retângulo delimitador forem clicáveis, o elemento executará testes de clique especializados, substituirá e fornecerá um ponto clicável.                                                                                                                                                                     |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.   | Com suporte se houver um retângulo delimitador. Se nem todos os pontos dentro do retângulo delimitadores são clicáveis e o elemento executa testes de clique especializados, substitua e forneça um ponto clicável.                                                                                                                                                                     |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **MenuItem** |                                                                                                                                                                                                                                                                                                                                                                          |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE         | O controle de item de menu sempre é incluído na exibição de conteúdo da árvore de automação da interface do usuário.                                                                                                                                                                                                                                                                                  |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE         | O controle de item de menu sempre é incluído na exibição de controle da árvore de automação da interface do usuário.                                                                                                                                                                                                                                                                                  |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE         | O controle de item de menu sempre é incluído na exibição de conteúdo da Automação da Interface do Usuário de menu.                                                                                                                                                                                                                                                                                  |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE         | O controle de item de menu sempre é incluído na exibição de controle da Automação da Interface do Usuário de menu.                                                                                                                                                                                                                                                                                  |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte observações.   | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade.                                                                                                                                                                                                                                                                                                |
-| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações.   | Cadeia de caracteres localizada correspondente ao tipo de controle **MenuItem** . O valor padrão é "item de menu" para en-US ou inglês (Estados Unidos).                                                                                                                                                                                                                                  |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações.   | Cadeia de caracteres localizada correspondente ao **tipo de controle MenuItem.** O valor padrão é "item de menu" para en-US ou inglês (Estados Unidos).                                                                                                                                                                                                                                  |
 | [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Consulte observações.   | O nome do controle de item de menu é o texto usado para rotulá-lo.                                                                                                                                                                                                                                                                                                          |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
-A tabela a seguir lista os padrões de controle de automação da interface do usuário necessários para serem suportados por controles de item de menu. Para obter mais informações sobre padrões de controle, consulte [visão geral dos padrões de controle de automação da interface do usuário](uiauto-controlpatternsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário de controle necessários para serem suportados pelos controles de item de menu. Para obter mais informações sobre padrões de controle, [consulte Visão geral Automação da Interface do Usuário padrões de controle](uiauto-controlpatternsoverview.md).
 
 
 
@@ -130,7 +102,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -154,7 +126,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="legacy-issues"></a>Problemas herdados
 
@@ -173,9 +145,9 @@ Para itens de menu do Microsoft Win32, o padrão de controle [Toggle](uiauto-imp
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

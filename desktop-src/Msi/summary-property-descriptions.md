@@ -4,12 +4,12 @@ ms.assetid: b44b24b7-7fc4-4c3c-9d10-7e2f3c43cf36
 title: Descrições de propriedades de resumo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41addb58571b6d18e1cccc4a34c3026f3d0544cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb93e5881a25b6b79eef0fb0711acc1fec1b6666
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782324"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629539"
 ---
 # <a name="summary-property-descriptions"></a>Descrições de propriedades de resumo
 
@@ -21,8 +21,8 @@ As propriedades de resumo para pacotes de instalação, transformações e patch
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -48,7 +48,7 @@ As propriedades de resumo para pacotes de instalação, transformações e patch
 <td>Uma lista de palavras-chave que podem ser usadas por navegadores de arquivos para realizar pesquisas de palavra-chaves em um arquivo. As palavras-chave devem incluir o &quot; instalador &quot; , bem como palavras-chave específicas do produto.</td>
 </tr>
 <tr class="odd">
-<td><a href="comments-summary.md"><strong>Comentários</strong></a></td>
+<td><a href="comments-summary.md"><strong>Feitos</strong></a></td>
 <td>Contém a frase: &quot; este banco de dados do instalador contém a lógica e os requisitos necessários para instalar <<em>nome do produto</em> > .&quot;</td>
 </tr>
 <tr class="even">
@@ -80,13 +80,13 @@ As propriedades de resumo para pacotes de instalação, transformações e patch
 <td>Contém um valor usado para identificar a versão mínima do instalador exigida por este pacote de instalação. Por exemplo, se o pacote exigir, no mínimo, a versão 2,0 do instalador, essa propriedade deverá ser definida como um inteiro de 200.
 <blockquote>
 [!Note]<br />
-O valor dessa propriedade deve ser 200 ou maior com <a href="64-bit-windows-installer-packages.md">pacotes de Windows Installer de 64 bits</a>.
+o valor dessa propriedade deve ser 200 ou maior com <a href="64-bit-windows-installer-packages.md">pacotes de Windows Installer de 64 bits</a>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="word-count-summary.md"><strong>Contagem de palavras</strong></a> (obrigatória)</td>
-<td>O tipo da imagem do arquivo de origem. Armazenado no lugar da propriedade Count padrão. Essa propriedade é um campo de bits. Consulte o tópico <a href="word-count-summary.md"><strong>contagem de palavras</strong></a> para os valores.<br/> A partir do Windows Installer versão 4,0 no Windows Vista, essa propriedade inclui bits para especificar se são necessários privilégios elevados.<br/></td>
+<td>O tipo da imagem do arquivo de origem. Armazenado no lugar da propriedade Count padrão. Essa propriedade é um campo de bits. Consulte o tópico <a href="word-count-summary.md"><strong>contagem de palavras</strong></a> para os valores.<br/> a partir do Windows Installer versão 4,0 no Windows Vista, essa propriedade inclui bits para especificar se são necessários privilégios elevados.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="character-count-summary.md"><strong>Contagem de caracteres</strong></a></td>
@@ -121,7 +121,7 @@ O valor dessa propriedade deve ser 200 ou maior com <a href="64-bit-windows-inst
 | [**Assunto**](subject-summary.md)                            | O nome do produto instalado pelo pacote de instalação original. Deve ser o mesmo valor que a propriedade de [**Resumo do assunto**](subject-summary.md) no pacote de instalação original.                                                                                            |
 | [**Autor**](author-summary.md)                              | O nome do fabricante desta transformação.                                                                                                                                                                                                                                                   |
 | [**Palavras-chave**](keywords-summary.md)                          | Uma lista de palavras-chave que podem ser usadas por navegadores de arquivos para realizar pesquisas de palavra-chaves em um arquivo. As palavras-chave devem incluir "instalador", bem como palavras-chave específicas do produto.                                                                                                                             |
-| [**Comentários**](comments-summary.md)                          | Contém a frase: "esta transformação contém a lógica e os dados necessários para instalar <*nome do produto*>".                                                                                                                                                                                     |
+| [**Feitos**](comments-summary.md)                          | Contém a frase: "esta transformação contém a lógica e os dados necessários para instalar <*nome do produto*>".                                                                                                                                                                                     |
 | [**Modelo**](template-summary.md) (obrigatório)               | As versões de plataforma e idioma compatíveis com essa transformação. Esse valor pode ser deixado em branco se não houver restrições. Apenas um idioma pode ser especificado para uma transformação. Para obter mais informações sobre a sintaxe, consulte [**Template**](template-summary.md).                                |
 | [**Salvo pela última vez por**](last-saved-by-summary.md)                | A plataforma e as IDs de idioma que o banco de dados tem depois de ser transformado. A propriedade de [**Resumo do modelo**](template-summary.md) no novo banco de dados deve ser definida com os mesmos valores.                                                                                              |
 | [**Número de revisão**](revision-number-summary.md) (obrigatório) | Uma lista dos GUIDs de código do produto e da versão dos produtos novos e originais e o GUID do código de atualização. A lista é separada por ponto e vírgula da seguinte maneira. *Original-produto-código original-versão do produto*; Novo produto de *código novo-produto-versão*; *Atualizar código*<br/>                       |
@@ -145,8 +145,8 @@ O valor dessa propriedade deve ser 200 ou maior com <a href="64-bit-windows-inst
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,7 +172,7 @@ O valor dessa propriedade deve ser 200 ou maior com <a href="64-bit-windows-inst
 <td>Uma lista delimitada por ponto e vírgula de fontes do patch.</td>
 </tr>
 <tr class="odd">
-<td><a href="comments-summary.md"><strong>Comentários</strong></a></td>
+<td><a href="comments-summary.md"><strong>Feitos</strong></a></td>
 <td>Contém a frase: &quot; esse patch contém a lógica e os dados necessários para instalar <<em>nome do produto</em> > .&quot;</td>
 </tr>
 <tr class="even">
@@ -210,7 +210,7 @@ Se o pacote de patch contiver uma tabela <a href="msipatchsequence-table.md"><st
 </tr>
 <tr class="odd">
 <td><a href="word-count-summary.md"><strong>Contagem de palavras</strong></a> (obrigatória)</td>
-<td>Contém um valor que indica a versão de Windows Installer mínima necessária para instalar o patch. Um patch com um valor de contagem de palavras de 4 requer Windows Installer versão 3,0 ou superior para que o patch seja aplicado. Um valor de 3 indica que Windows Installer versão 2,0 ou superior é necessária. Um valor de 2 indica que Windows Installer versão 1,2 ou superior é necessária. O valor padrão é 1.</td>
+<td>contém um valor que indica a versão de Windows Installer mínima necessária para instalar o patch. um patch com um valor de contagem de palavras de 4 requer Windows Installer versão 3,0 ou superior para que o patch seja aplicado. um valor de 3 indica que Windows Installer versão 2,0 ou superior é necessária. um valor de 2 indica que Windows Installer versão 1,2 ou superior é necessária. O valor padrão é 1.</td>
 </tr>
 <tr class="even">
 <td><a href="character-count-summary.md"><strong>Contagem de caracteres</strong></a></td>

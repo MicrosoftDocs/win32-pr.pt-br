@@ -13,12 +13,12 @@ keywords:
 - interoperação do Direct3D, Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951bebc9ea7ca63496a9cdc93fa33ddb74817661e7f5bc072b55d207bfcbdeb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a1f3be132aba742eb1df4b8a893dad245f851a0
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119918228"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631558"
 ---
 # <a name="direct2d-and-gdi-interoperability-overview"></a>visão geral de interoperabilidade Direct2D e GDI
 
@@ -89,7 +89,7 @@ GetClientRect(m_hwnd, &rc);
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

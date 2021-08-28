@@ -1,5 +1,5 @@
 ---
-description: Retorno de chamada para retornar um destino de renderização. O formato do destino de renderização retornado é R8G8B8A8 UNORM, independentemente do formato do \_ rendertarget no mecanismo.
+description: Retorno de chamada para retornar um destino de renderização. O formato do destino de renderização retornado é R8G8B8A8 \_ UNORM, independentemente do formato do renderTarget in-Engine.
 MS-HAID: vspixengine.IFrameBufferCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7705f055fe09839d1e4afe22a9d779ca859ec3ba
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 479796ebf225ceac4e93f429aa6b8412e3f86398
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786532"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628834"
 ---
 # <a name="span-idvspixengineiframebuffercallbackspaniframebuffercallback-interface"></a><span id="vspixengine.iframebuffercallback"></span>Interface IFrameBufferCallback
 
-Retorno de chamada para retornar um destino de renderização. O formato do destino de renderização retornado é R8G8B8A8 UNORM, independentemente do formato do \_ rendertarget no mecanismo.
+Retorno de chamada para retornar um destino de renderização. O formato do destino de renderização retornado é R8G8B8A8 \_ UNORM, independentemente do formato do renderTarget in-Engine.
 
 ## <a name="members"></a>Membros
 
-A interface **IFrameBufferCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameBufferCallback** também tem estes tipos de membros:
+A interface **IFrameBufferCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IFrameBufferCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IFrameBufferCallback** tem esses métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframebuffercallback-resultcallback-dword-dword-dword-dword-double-dword-byte-arr"><strong>Resultcallback</strong></a></td><td ><p>Um retorno de chamada que notifica o host de informações de framebuffer retornadas pela solicitação associada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframebuffercallback-resultcallback-dword-dword-dword-dword-double-dword-byte-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host das informações de framebuffer retornadas pela solicitação associada.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

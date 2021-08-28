@@ -7,12 +7,12 @@ keywords:
 - Enumerando grupos locais AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f1584cf8650b3fa341e7a314e0b6f94120b28c50226f16230c53206d6e14b80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6dcecf0f16cb0679e190197f0677cb9b23a96195
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118191326"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881430"
 ---
 # <a name="enumerating-local-groups"></a>Enumerando grupos locais
 
@@ -28,7 +28,7 @@ somente grupos locais podem ser criados em servidores membros e Windows 2000 Pro
 
 1.  Associe-se ao computador usando as seguintes regras:
     1.  Use uma conta com direitos suficientes para acessar esse computador.
-    2.  Use o seguinte formato de cadeia de vinculação usando o provedor WinNT, o nome do computador e um parâmetro extra para instruir a ADSI que ele está ligando a um computador: "WinNT:// <computer name> <computer> ".
+    2.  Use o seguinte formato de cadeia de vinculação usando o provedor WinNT, o nome do computador e um parâmetro extra para instruir a ADSI que ele está ligando a um computador: "WinNT:// <computer name> , &lt; Computer &gt; ".
 
         "O <computer name> parâmetro" é o nome do grupo de computadores a ser acessado. Esse parâmetro instrui a ADSI de que está ligando a um computador e permite que o analisador do provedor WinNT ignore algumas consultas de resolução de ambigüidade para determinar a qual tipo de objeto você está ligando.
 

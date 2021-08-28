@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da5c999f9fcec38878f339cfb2a927c2be2e5b70
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0986633a450052431dfcef1426488dddc0417d33
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479022"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988439"
 ---
 # <a name="jetossnapshottruncateloginstance-function"></a>Função JetOSSnapshotTruncateLogInstance
 
@@ -85,19 +85,25 @@ Se essa função for bem-sucedida, os arquivos de log de uma ou todas as instân
 
 #### <a name="remarks"></a>Comentários
 
-Essa função deverá ser chamada somente se o instantâneo tiver sido criado com a JET_bitContinueAfterThaw opção . Caso contrário, a sessão de instantâneo termina após a chamada para [JetOSSnapshotThaw](./jetossnapshotthaw-function.md).
+Essa função deverá ser chamada somente se o instantâneo tiver sido criado com a JET_bitContinueAfterThaw opção. Caso contrário, a sessão de instantâneo termina após a chamada para [JetOSSnapshotThaw](./jetossnapshotthaw-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte Também
 
 [Parâmetros de tratamento de erro](./error-handling-parameters.md)  
-[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
+[Erros de mecanismo Armazenamento extensível](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  
 [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)  

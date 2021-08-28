@@ -5,12 +5,12 @@ ms.assetid: fdee4f0a-b39e-4011-af4f-9fe408f6ca6c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efcbbbce67d9928c9ecda3840f34a1cbf6faae79ca4d9fe72830a5b57881177
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c0949d13139b132cd7c1a7a96ff6a95cd3b5e4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118692190"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884070"
 ---
 # <a name="common-errors-adsi"></a>Erros comuns (ADSI)
 
@@ -18,7 +18,7 @@ Todos os erros específicos de ADSI têm uma forma hexadecimal de 80005xxx. Os c
 
 
 
-| Código de erro hexadecimal ADSI | Descrição                                                                                                                                         |
+| Código de erro hexadecimal ADSI | Description                                                                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | 80005000<br/> | Um nome de caminho ADSI inválido foi passado. Esse erro resulta da transmissão de um ADsPath mal formado para **GetObject** durante a associação a um objeto.<br/> |
 | 8000500D<br/> | A propriedade ADSI não pode ser encontrada no cache de propriedades.<br/>                                                                                 |
@@ -36,7 +36,7 @@ Como a ADSI é composta de objetos COM, ela retornará códigos de erro padrão 
 
 
 
-| Código de erro HEX COM  | Descrição                                                                                                                   |
+| Código de erro HEX COM  | Description                                                                                                                   |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 80004005<br/> | Erro não especificado. A causa da falha do objeto COM é indeterminada pela ADSI. <br/>                                  |
 | 800041E4<br/> | Objeto não localizado. Esse erro é basicamente causado devido à grafia incorreta da cadeia de caracteres ADsPath ao associar a um objeto.<br/> |
@@ -51,7 +51,7 @@ Consulte [códigos de erro com genéricos](generic-com-error-codes.md) para obte
 
 Qualquer código de erro do formato hexadecimal 8007xxxx é um código de erro Win32 padrão. se você converter os últimos quatro dígitos de hexadecimal para decimal, poderá acessar o erro na linha de comando do Windows 2000:
 
-**NET HELPMSG <number>**
+**número do NET HELPMSG &lt;&gt;**
 
 Na linha de comando acima, " &lt; número &gt; " é o número decimal obtido pela conversão dos últimos quatro dígitos do código de erro de hexadecimal. Essa linha de comando fornecerá uma descrição mais útil do erro do Win32, que pode ser de grande ajuda para depurar seu script.
 

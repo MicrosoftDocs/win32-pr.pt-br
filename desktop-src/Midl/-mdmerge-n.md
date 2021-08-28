@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3e9575995d80a4c61b5e91be7c5cfc1c802abed892af8cfa653f62c66e602b3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20b54473b282976d2ab871db0f1699c1154070a3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430966"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886046"
 ---
 # <a name="n-switch"></a>opção/n
 
@@ -44,12 +44,12 @@ Aqui estão os formatos de valor possíveis que você pode especificar com a op�
 
 
 
-| Formato de valor                   | Descrição                                                                     |
+| Formato de valor                   | Description                                                                     |
 |--------------------------------|---------------------------------------------------------------------------------|
 | Int32 > 0                   | Compor todos os tipos na profundidade do namespace especificada na opção.               |
 | -1                             | Compor todos os tipos em um arquivo IDL por namespace.                              |
-| <namespace>: Int32 > 0 | Compor todos os tipos com namespace correspondente na profundidade especificada na opção. |
-| <namespace>:-1           | Compor todos os tipos com namespace correspondente em um arquivo por namespace.          |
+| &lt;namespace &gt; : Int32 > 0 | Compor todos os tipos com namespace correspondente na profundidade especificada na opção. |
+| &lt;namespace &gt; :-1           | Compor todos os tipos com namespace correspondente em um arquivo por namespace.          |
 
 
 
@@ -65,7 +65,7 @@ A tabela a seguir mostra os resultados de diferentes combinações da opção **
 
 
 
-| Opções                         | Result                                                                                                                                                                                                                                                       | Explicação                                                                                                                                                                                                                                                                                                                        |
+| Comutadores                         | Result                                                                                                                                                                                                                                                       | Explicação                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/n:-1**  / **n:1**               | Windows.winmd                                                                                                                                                                                                                                                | A última opção/n substitui todas as opções-n anteriores.                                                                                                                                                                                                                                                                           |
 | **/n:-1/n: Windows. INTERFACE DO USUÁRIO: 2**         | <dl> <dt>Windows. Windows Foundation. winmd</dt> <dt>. Windows UI. winmd</dt> <dt>. Web. Syndication. winmd</dt> </dl> | <dl> <dt>**Windows. A base** é sempre composta em – n:2.</dt> <dt>**Windows. Os tipos de interface do usuário** são agrupados.</dt> <dt>**Windows. Web. Syndication** é composto em n:-1.</dt> </dl>       |

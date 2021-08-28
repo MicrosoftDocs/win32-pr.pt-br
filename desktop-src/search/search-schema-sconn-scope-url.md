@@ -1,19 +1,19 @@
 ---
-description: O <url> elemento Especifica uma URL que representa o escopo do conector de pesquisa. Este elemento não tem elementos filho e nenhum atributo.
+description: O &lt; &gt; elemento URL especifica uma URL que representa o escopo do conector de pesquisa. Este elemento não tem elementos filho e nenhum atributo.
 ms.assetid: 5afd84aa-98e3-4118-845a-d4efad19a488
 title: Elemento URL scopeItem (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c573308fe406fe4500f6bb8e88b3762fa0bbac05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63a1db669f7365f04bed49c769ab695ab674b20b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826901"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886702"
 ---
 # <a name="scopeitem-url-element-search-connector-schema"></a>Elemento URL scopeItem (esquema do conector de pesquisa)
 
-O <url> elemento Especifica uma URL que representa o escopo do conector de pesquisa. Este elemento não tem elementos filho e nenhum atributo.
+O &lt; &gt; elemento URL especifica uma URL que representa o escopo do conector de pesquisa. Este elemento não tem elementos filho e nenhum atributo.
 
 ## <a name="syntax"></a>Syntax
 

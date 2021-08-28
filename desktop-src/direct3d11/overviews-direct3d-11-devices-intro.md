@@ -4,12 +4,12 @@ description: O modelo de objeto do Direct3D 11 separa a funcionalidade de criaç
 ms.assetid: b9b45d18-f7b7-40f9-ae4e-576ca7a6eba7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16b03333c6594f17d85fee28880e46928241e06c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f9459574ad7d8732714ac54519294ae232e4d8d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104967025"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475702"
 ---
 # <a name="introduction-to-a-device-in-direct3d-11"></a>Introdução a um dispositivo no Direct3D 11
 
@@ -55,23 +55,9 @@ Esta tabela destaca as diferenças no modelo de threading no Direct3D 11 de vers
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferenças entre o Direct3D 11 e versões anteriores do Direct3D:<br/> Todos os métodos de interface <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11device"><strong>ID3D11Device</strong></a> são de thread livre, o que significa que é seguro ter vários threads chamando as funções ao mesmo tempo.<br/>
-<ul>
-<li>Todas as interfaces derivadas de <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild"><strong>ID3D11DeviceChild</strong></a>(<a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer"><strong>ID3D11Buffer</strong></a>, <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11query"><strong>ID3D11Query</strong></a>, etc.) são de thread livre.</li>
-<li>O Direct3D 11 divide a criação e a renderização de recursos em duas interfaces. MAP, remapear, Begin, end e GetData são implementados em <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext"><strong>ID3D11DeviceContext</strong></a> porque <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11device"><strong>ID3D11Device</strong></a> define fortemente a ordem das operações. As interfaces <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11resource"><strong>ID3D11Resource</strong></a> e <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11asynchronous"><strong>ID3D11Asynchronous</strong></a> também implementam métodos para operações de thread livre.</li>
-<li>Os métodos <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext"><strong>ID3D11DeviceContext</strong></a> (exceto aqueles que existem em <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild"><strong>ID3D11DeviceChild</strong></a>) não são de thread livre, ou seja, eles exigem um único Threading. Somente um thread pode chamar com segurança qualquer um de seus métodos (Draw, copiar, mapear, etc.) de cada vez.</li>
-<li>Em geral, o Threading livre minimiza o número de primitivos de sincronização usados, bem como sua duração. No entanto, um aplicativo que usa a sincronização mantida por um longo tempo pode impactar diretamente a quantidade de simultaneidade que um aplicativo pode esperar alcançar.</li>
-</ul>
-Os métodos de interface ID3D10Device não são projetados para serem de thread livre. ID3D10Device implementa toda a funcionalidade de criação e renderização (como o ID3D9Device no Direct3D 9). Mapear e desmapear são implementados em interfaces derivadas de ID3D10Resource, Begin, end e GetData são implementados em interfaces derivadas de ID3D10Asynchronous.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferenças entre o Direct3D 11 e versões anteriores do Direct3D:<br /> Todos os métodos de interface <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11device"><strong>ID3D11Device</strong></a> são de thread livre, o que significa que é seguro ter vários threads chamando as funções ao mesmo tempo.<br /><ul><li>Todas as interfaces derivadas de <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild"><strong>ID3D11DeviceChild</strong></a>(<a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer"><strong>ID3D11Buffer</strong></a>, <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11query"><strong>ID3D11Query</strong></a>, etc.) são de thread livre.</li><li>O Direct3D 11 divide a criação e a renderização de recursos em duas interfaces. MAP, remapear, Begin, end e GetData são implementados em <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext"><strong>ID3D11DeviceContext</strong></a> porque <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11device"><strong>ID3D11Device</strong></a> define fortemente a ordem das operações. As interfaces <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11resource"><strong>ID3D11Resource</strong></a> e <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11asynchronous"><strong>ID3D11Asynchronous</strong></a> também implementam métodos para operações de thread livre.</li><li>Os métodos <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext"><strong>ID3D11DeviceContext</strong></a> (exceto aqueles que existem em <a href="/windows/desktop/api/D3D11/nn-d3d11-id3d11devicechild"><strong>ID3D11DeviceChild</strong></a>) não são de thread livre, ou seja, eles exigem um único Threading. Somente um thread pode chamar com segurança qualquer um de seus métodos (Draw, copiar, mapear, etc.) de cada vez.</li><li>Em geral, o Threading livre minimiza o número de primitivos de sincronização usados, bem como sua duração. No entanto, um aplicativo que usa a sincronização mantida por um longo tempo pode impactar diretamente a quantidade de simultaneidade que um aplicativo pode esperar alcançar.</li></ul>Os métodos de interface ID3D10Device não são projetados para serem de thread livre. ID3D10Device implementa toda a funcionalidade de criação e renderização (como o ID3D9Device no Direct3D 9). Mapear e desmapear são implementados em interfaces derivadas de ID3D10Resource, Begin, end e GetData são implementados em interfaces derivadas de ID3D10Asynchronous.<br /> | 
+
 
 
 

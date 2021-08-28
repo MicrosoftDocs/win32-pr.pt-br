@@ -1,5 +1,5 @@
 ---
-description: Retorno de chamada para retornar dados de callstack.
+description: Retorno de chamada para retornar dados de pilha de chamadas.
 MS-HAID: vspixengine.ICallStackCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6e39b2a66bda3345d505d48d0bf7953787d40b34413c231158e5afb9e72f03c1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b40893843f92c7906ced1930b9744a58eb49e4d8
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094896"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624922"
 ---
 # <a name="span-idvspixengineicallstackcallbackspanicallstackcallback-interface"></a><span id="vspixengine.icallstackcallback"></span>Interface ICallStackCallback
 
-Retorno de chamada para retornar dados de callstack.
+Retorno de chamada para retornar dados de pilha de chamadas.
 
 ## <a name="members"></a>Membros
 
-A interface **ICallStackCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ICallStackCallback** também tem estes tipos de membros:
+A interface **ICallStackCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ICallStackCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **ICallStackCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host das informações da pilha de chamada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host das informações da pilha de chamadas.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ IgnorePassword (v4)
+description: ModemDMConfigProfile... \/ \/ IgnorePassword (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_IgnorePassword
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,20 +7,20 @@ MSHAttr:
 title: IgnorePassword (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0286fcc7a025bc565916e68b817c6a79f378f26d
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: bbb7be6d4344e6126501223f238642b97efbb059
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987109"
 ---
-# <a name="span-idwwan_profile_v4element_1_ignorepasswordspanmodemdmconfigprofileignorepassword-v4"></a><span id="WWAN_profile_v4.element_1_IgnorePassword"></span>ModemDMConfigProfile \/ ... \/ IgnorePassword (v4)
+# <a name="span-idwwan_profile_v4element_1_ignorepasswordspanmodemdmconfigprofileignorepassword-v4"></a><span id="WWAN_profile_v4.element_1_IgnorePassword"></span>ModemDMConfigProfile... \/ \/ IgnorePassword (v4)
 
-Especifica como as senhas são tratadas durante a atualização de perfis.
+Especifica como as senhas são tratadas ao atualizar perfis.
 
-Se definido como **true** e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será executada e armazenada no novo perfil.
+Se definido como **TRUE** e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será usada e armazenada no novo perfil.
 
-Para obter mais detalhes, consulte a documentação do elemento v1 [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) .
+Para obter mais detalhes, consulte a documentação do [**elemento IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -34,7 +34,7 @@ Para obter mais detalhes, consulte a documentação do elemento v1 [**IgnorePass
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<IgnorePassword\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IgnorePassword>
@@ -56,41 +56,21 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-userlogoncred.md">UserLogonCred</a></td>
-<td><p>Credenciais de logon para uma conexão.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-1-userlogoncred.md">UserLogonCred</a> | <p>Credenciais de logon para uma conexão.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

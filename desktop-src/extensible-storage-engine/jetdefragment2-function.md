@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d31b6203de9feb9301b3c08c01bee84c666a9e9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 08e6cf618be4f3bf7f6eee1b903559db579973c0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465833"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984979"
 ---
 # <a name="jetdefragment2-function"></a>Função JetDefragment2
 
@@ -138,26 +138,33 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 | <p>JET_errTransReadOnly</p> | <p>A sessão fornecida tem somente privilégios somente leitura e não pode iniciar uma tarefa que possa executar uma atualização, incluindo a desfragmentação.</p> | 
 | <p>JET_errVersionStoreOutOfMemory</p> | <p>Esse erro ocorrerá quando o tamanho configurado do repositório de versão for insuficiente para manter todas as atualizações pendentes.</p> | 
 | <p>JET_wrnDefragAlreadyRunning</p> | <p>A opção JET_bitDefragmentBatchStart foi aprovada, mas uma tarefa de desfragmentação já está executando a desfragmentação no banco de dados especificado.</p> | 
-| <p>JET_wrnDefragNotRunning</p> | <p>A JET_bitDefragmentBatchStop foi passada, mas nenhuma tarefa de desfragmentação está em execução no momento.</p> | 
+| <p>JET_wrnDefragNotRunning</p> | <p>A opção JET_bitDefragmentBatchStop foi aprovada, mas nenhuma tarefa de desfragmentação está em execução no momento.</p> | 
 
 
 
-Em caso de êxito, a ação solicitada de iniciar uma tarefa de desfragmentação para determinados dados com determinadas opções é executada ou a ação de interromper uma tarefa de desfragmentação existente é executada.
+Em caso de sucesso, a ação solicitada de iniciar uma tarefa de desfragmentação para determinados dados com determinadas opções é executada ou a ação de parar uma tarefa de desfragmentação existente é executada.
 
 Em caso de falha, a ação solicitada de iniciar ou parar um trabalho de desfragmentação online não é feita. Nenhum outro efeito colateral ocorre.
 
 #### <a name="remarks"></a>Comentários
 
-A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor padrão do parâmetro do sistema é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilita-la seletivamente somente para árvores de espaço de banco de dados, somente bancos de dados, arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online for para uma configuração obsoleta, **JetDefragment2** tratará a configuração como JET_OnlineDefragAll.
+A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor do parâmetro do sistema padrão é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando o [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilitá-la seletivamente somente para árvores de espaço de banco de dados, somente para bancos, somente para arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online for para uma configuração obsoleta, **JetDefragment2** tratará a configuração como JET_OnlineDefragAll.
 
-Pode haver no máximo uma tarefa em execução para cada banco de dados. A tarefa é executado como um thread no processo que hospeda o ESE.
+Pode haver, no máximo, uma tarefa em execução para cada banco de dados. A tarefa é executada como um thread no processo que hospeda o ESE.
 
-A sessão usada para iniciar a tarefa de desfragmentação online pode ser usada posteriormente para operações de banco de dados enquanto a tarefa de desfragmentação continua, porque a tarefa de desfragmentação aloca sua própria sessão. A sessão determinada só é usada para verificar as permissões associadas à sessão de início da tarefa e não é realmente usada para as próprias operações de desfragmentação.
+A sessão usada para iniciar a tarefa de desfragmentação online pode ser usada posteriormente para operações de banco de dados enquanto a tarefa de desfragmentação continuar, pois a tarefa de desfragmentação aloca sua própria sessão. A sessão fornecida é usada apenas para verificar as permissões associadas à sessão de início da tarefa e não é realmente usada para as operações de desfragmentação propriamente ditas.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDefragment2W</strong> (Unicode) e <strong>JetDefragment2A</strong> (ANSI).</p> | 
 
 
 

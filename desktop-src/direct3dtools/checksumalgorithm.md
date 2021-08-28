@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ebf2a80bd121743ab63f6a0adad0f42c6b25618d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 102b2819f496c6091c799b777f5601550dad876d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087651"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627282"
 ---
 # <a name="span-idvspixenginechecksumalgorithmspanchecksumalgorithm-enumeration"></a><span id="vspixengine.checksumalgorithm"></span>Enumeração CHECKSUMALGORITHM
 
 Uma enumeração usada para indicar o algoritmo de soma de verificação a ser usado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -48,7 +48,7 @@ Um valor que indica que as somas de verificação SHA1 devem ser usadas.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

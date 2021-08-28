@@ -1,19 +1,19 @@
 ---
 title: Tipo de controle TreeItem
-description: Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle TreeItem.
+description: Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o tipo de controle TreeItem.
 ms.assetid: 03d8a2a7-0b9a-41f8-a9d3-cebba9c25c63
 keywords:
-- Automação da interface do usuário, suporte para tipo de controle TreeItem
-- Automação da interface do usuário, tipo de controle TreeItem
-- Automação da interface do usuário, estrutura de árvore para tipo de controle TreeItem
-- Automação da interface do usuário, propriedades para tipo de controle TreeItem
-- Automação da interface do usuário, padrões de controle para o tipo de controle TreeItem
-- Automação da interface do usuário, eventos para o tipo de controle TreeItem
+- Automação da Interface do Usuário, suporte para o tipo de controle TreeItem
+- Automação da Interface do Usuário, tipo de controle TreeItem
+- Automação da Interface do Usuário, estrutura de árvore para o tipo de controle TreeItem
+- Automação da Interface do Usuário, propriedades para o tipo de controle TreeItem
+- Automação da Interface do Usuário, padrões de controle para o tipo de controle TreeItem
+- Automação da Interface do Usuário, eventos para o tipo de controle TreeItem
 - estruturas de árvore, tipo de controle TreeItem
-- Propriedades, tipo de controle TreeItem
+- properties,TreeItem control type
 - padrões de controle, tipo de controle TreeItem
 - eventos, tipo de controle TreeItem
-- suporte para tipo de controle TreeItem
+- suporte para o tipo de controle TreeItem
 - Tipo de controle TreeItem
 - tipos de controle, estrutura de árvore para o tipo de controle TreeItem
 - tipos de controle, padrões de controle para o tipo de controle TreeItem
@@ -21,20 +21,20 @@ keywords:
 - tipos de controle, TreeItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0075b4559ed79815f3fc9b46c850fd8dcbc455c8fb30bfed5dbeda1f6f1763f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c07f55ab6d9df8af46253a2428964bdf4ded64c4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119413336"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482922"
 ---
 # <a name="treeitem-control-type"></a>Tipo de controle TreeItem
 
-Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle **TreeItem** .
+Este tópico fornece informações sobre o suporte Automação da Interface do Usuário Microsoft para o tipo de controle **TreeItem.**
 
-O tipo de controle **TreeItem** representa um nó dentro de um contêiner de árvore. Cada nó pode conter outros nós, chamados nós filho. Nós pai ou nós que contêm nós filhos podem ser exibidos como expandidos ou recolhidos.
+O **tipo de controle TreeItem** representa um nó dentro de um contêiner de árvore. Cada nó pode conter outros nós, chamados nós filho. Nós pai ou nós que contêm nós filho podem ser exibidos como expandidos ou recolhidos.
 
-As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle **TreeItem** . Os requisitos de automação da interface do usuário se aplicam a todos os controles de item de árvore onde a estrutura/plataforma da interface do usuário integra o suporte de automação da interface do usuário para tipos de controle
+As seções a seguir definem a estrutura de árvore Automação da Interface do Usuário, as propriedades, os padrões de controle e os eventos necessários para o tipo de controle **TreeItem.** Os Automação da Interface do Usuário se aplicam a todos os controles de item de árvore em que a estrutura/plataforma da interface do usuário integra Automação da Interface do Usuário suporte para tipos de controle e padrões de controle.
 
 Este tópico inclui as seções a seguir.
 
@@ -47,73 +47,47 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="typical-tree-structure"></a>Estrutura de árvore típica
 
-A tabela a seguir descreve um controle típico e a exibição de conteúdo da árvore de automação da interface do usuário que pertence a controles de item de árvore e descreve o que pode ser contido em cada exibição. Para obter mais informações sobre a árvore de automação da interface do usuário, consulte [visão geral da árvore de automação da IU](uiauto-treeoverview.md).
+A tabela a seguir ilustra uma exibição típica de controle e conteúdo da árvore Automação da Interface do Usuário que pertence aos controles de item de árvore e descreve o que pode estar contido em cada exibição. Para obter mais informações sobre a árvore Automação da Interface do Usuário, consulte [Visão geral Automação da Interface do Usuário árvore.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>TreeItem
-<ul>
-<li>Caixa de seleção (0 ou 1)</li>
-<li>Imagem (0 ou 1)</li>
-<li>Botão (0 ou 1)</li>
-<li>TreeItem (0 ou mais)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>TreeItem
-<ul>
-<li>TreeItem (0 ou mais)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Treeitem<ul><li>Caixa de seleção (0 ou 1)</li><li>Imagem (0 ou 1)</li><li>Botão (0 ou 1)</li><li>TreeItem (0 ou mais)</li></ul></li></ul> | <ul><li>Treeitem<ul><li>TreeItem (0 ou mais)</li></ul></li></ul> | 
+
 
 
 
  
 
-Os controles de item de árvore podem ter zero ou mais filhos de item de árvore na exibição de conteúdo da árvore de automação da interface do usuário. Se o controle de item de árvore tiver funcionalidade além do que é exposto nos padrões de controle listados abaixo, o controle deverá ser baseado no tipo de controle [DataItem](uiauto-supportdataitemcontroltype.md) .
+Os controles de item de árvore podem ter zero ou mais filhos de item de árvore na exibição de conteúdo da Automação da Interface do Usuário árvore. Se o controle de item de árvore tiver funcionalidade além do que é exposto nos padrões de controle listados abaixo, o controle deverá ser baseado no tipo de controle [DataItem.](uiauto-supportdataitemcontroltype.md)
 
-Os itens de árvore recolhidos não aparecem no modo de exibição de controle ou de conteúdo até que se tornem expandidos e visíveis (ou possam ser rolados para a exibição).
+Os itens de árvore recolhidos não aparecem na exibição de controle ou na exibição de conteúdo até que eles se tornem expandidos e visíveis (ou possam ser rolados para a exibição).
 
-O modo de exibição de controle pode conter detalhes adicionais para um controle, incluindo uma imagem associada ou um botão. Por exemplo, um item em um modo de exibição de estrutura de tópicos pode conter uma imagem, bem como um botão para expandir ou recolher a estrutura de tópicos. Esses objetos de detalhes não aparecem no modo de exibição de conteúdo porque as informações já estão representadas pelo item de árvore pai.
+A exibição de controle pode conter detalhes adicionais para um controle, incluindo uma imagem associada ou um botão. Por exemplo, um item em uma exibição de estrutura de contornos pode conter uma imagem, bem como um botão para expandir ou fechar o contorno. Esses objetos de detalhes não aparecem na exibição de conteúdo porque as informações já são representadas pelo item de árvore pai.
 
-Os itens de árvore que são rolados para fora da tela aparecem nas exibições de controle e conteúdo da árvore de automação da interface do usuário e devem ter a propriedade [**IUIAutomationElement:: CurrentIsOffscreen**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentisoffscreen) (ou [**CachedIsOffscreen**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisoffscreen)) definida como **true**.
+Os itens de árvore que são rolados para fora da tela aparecem nas exibições de controle e conteúdo da árvore Automação da Interface do Usuário e devem ter a propriedade [**IUIAutomationElement::CurrentIsOffscreen**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentisoffscreen) (ou [**CachedIsOffscreen**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisoffscreen)) definida como **TRUE.**
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
-A tabela a seguir lista as propriedades de automação da interface do usuário cujo valor ou definição é especialmente relevante para o tipo de controle **TreeItem** . Para obter mais informações sobre propriedades de automação da interface do usuário, consulte [Recuperando propriedades de elementos de automação da interface do usuário](uiauto-propertiesforclients.md).
+A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou definição é especialmente relevante para o tipo de controle **TreeItem.** Para obter mais informações sobre Automação da Interface do Usuário propriedades, consulte [Recuperando propriedades de Automação da Interface do Usuário Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propriedade de automação da interface do usuário                                                                                              | Valor        | Observações                                                                                                                                                                                         |
+| Automação da Interface do Usuário propriedade                                                                                              | Valor        | Observações                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Consulte observações.   | O valor dessa propriedade deve ser exclusivo entre todos os elementos de mesmo nível na exibição bruta da árvore de automação da interface do usuário.                                                                                  |
+| [**\_AutomationIdPropertyId da UIA**](uiauto-automation-element-propids.md)                 | Consulte observações.   | O valor dessa propriedade deve ser exclusivo entre todos os elementos pares na exibição bruta da árvore Automação da Interface do Usuário dados.                                                                                  |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Consulte observações.   | O retângulo mais externo que contém o controle inteiro.                                                                                                                                      |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.   | Essa propriedade deve retornar um local que faz com que o item de árvore altere o estado de seleção ou se torne focado.                                                                                   |
-| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **TreeItem** | Esse valor é o mesmo para todas as estruturas de interface do usuário.                                                                                                                                                 |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | O controle de item de árvore sempre é incluído na exibição de conteúdo da árvore de automação da interface do usuário.                                                                                                       |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | O controle de item de árvore sempre é incluído no modo de exibição de controle da árvore de automação da interface do usuário.                                                                                                       |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.   | Essa propriedade deve retornar um local que faz com que o item de árvore altere o estado de seleção ou se concentre.                                                                                   |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **Treeitem** | Esse valor é o mesmo para todas as estruturas de interface do usuário.                                                                                                                                                 |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | O controle de item de árvore sempre é incluído na exibição de conteúdo da Automação da Interface do Usuário árvore.                                                                                                       |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | **TRUE**     | O controle de item de árvore sempre é incluído na exibição de controle da Automação da Interface do Usuário árvore.                                                                                                       |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte observações.   | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade.                                                                                                                     |
 | [**UIA \_ IsOffscreenPropertyId**](uiauto-automation-element-propids.md)                   | Consulte observações.   | Essa propriedade indica se um controle de item de árvore é rolado para fora da tela.                                                                                                               |
-| [**UIA \_ ItemStatusPropertyId**](uiauto-automation-element-propids.md)                     | Consulte observações.   | Se o controle contiver o status que está sendo atualizado dinamicamente, essa propriedade deverá ter suporte para que uma tecnologia assistencial possa receber atualizações quando o status do elemento for alterado. |
-| [**UIA \_ ItemTypePropertyId**](uiauto-automation-element-propids.md)                         | Consulte observações.   | Se o controle de item de árvore usar um ícone de Visual para indicar que é um tipo específico de item, essa propriedade deverá ter suporte e deve indicar o tipo de item.                                   |
-| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | **NULL**     | Os controles de item de árvore são autorotulados.                                                                                                                                                         |
+| [**UIA \_ ItemStatusPropertyId**](uiauto-automation-element-propids.md)                     | Consulte observações.   | Se o controle contiver o status que está sendo atualizado dinamicamente, essa propriedade deverá ter suporte para que uma tecnologia adaptativa possa receber atualizações quando o status do elemento for atualizado. |
+| [**UIA \_ ItemTypePropertyId**](uiauto-automation-element-propids.md)                         | Consulte observações.   | Se o controle de item de árvore usar um ícone visual para indicar que é um tipo específico de item, essa propriedade deverá ter suporte e deverá indicar o tipo de item.                                   |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | **NULL**     | Controles de item de árvore são auto-rotulagem.                                                                                                                                                         |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Consulte observações.   | Cadeia de caracteres localizada correspondente ao tipo de controle TreeItem. O valor padrão é "item de árvore" para en-US ou inglês (Estados Unidos).                                                           |
 | [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Consulte observações.   | Essa propriedade expõe o texto exibido para cada controle de item de árvore.                                                                                                                          |
 
@@ -123,7 +97,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
-A tabela a seguir lista os padrões de controle de automação da interface do usuário que devem ter suporte de todos os controles de item de árvore. Para obter mais informações sobre padrões de controle, consulte [visão geral dos padrões de controle de automação da interface do usuário](uiauto-controlpatternsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário padrões de controle necessários para serem suportados por todos os controles de item de árvore. Para obter mais informações sobre padrões de controle, [consulte Visão geral Automação da Interface do Usuário padrões de controle](uiauto-controlpatternsoverview.md).
 
 
 

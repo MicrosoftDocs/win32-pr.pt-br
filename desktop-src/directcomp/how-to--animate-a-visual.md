@@ -8,17 +8,17 @@ keywords:
 - aplicando animações DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d83f01ba00e750b6a06aa13246ef1616635f415a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ecba1bde3c430acbb49f640dc7611452f0967746
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007931"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474222"
 ---
 # <a name="how-to-apply-animations"></a>Como aplicar animações
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico demonstra como animar as propriedades de um Visual usando o Microsoft DirectComposition. O exemplo neste tópico anima a Propriedade Effect de um Visual, fazendo com que a opacidade do Visual mude de zero (transparente) para um (totalmente opaco) em um período de dois segundos.
 
@@ -96,42 +96,19 @@ hr = m_pDevice->CreateEffectGroup(&m_pEffectGroup);
 
 <span codelanguage="ManagedCPlusPlus"></span>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>C++</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><pre><code>if (SUCCEEDED(hr))
-{
-    hr = m_pEffectGroup->SetOpacity(m_pFadeInAnimation);
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| C++ | 
+|-----|
+| <pre><code>if (SUCCEEDED(hr)){    hr = m_pEffectGroup-&gt;SetOpacity(m_pFadeInAnimation);}</code></pre> | 
+
 
 <span codelanguage="ManagedCPlusPlus"></span>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>C++</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><pre><code>hr = m_pVisual->SetEffect(m_pEffectGroup);</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| C++ | 
+|-----|
+| <pre><code>hr = m_pVisual-&gt;SetEffect(m_pEffectGroup);</code></pre> | 
+
 
 
 
@@ -1011,6 +988,6 @@ HRESULT DemoApp::GetImageFilenames(TCHAR szDir[MAX_PATH])
 [Animação](animation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

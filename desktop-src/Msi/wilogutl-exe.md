@@ -1,46 +1,46 @@
 ---
-description: Wilogutl.exe ajuda na análise de arquivos de log de uma instalação do Windows Installer e exibe soluções sugeridas para erros encontrados em um arquivo de log.
+description: Wilogutl.exe ajuda na análise de arquivos de log de uma instalação do Windows e exibe soluções sugeridas para erros encontrados em um arquivo de log.
 ms.assetid: 09aa03ba-992f-47ab-999b-ebdfe85c1ea7
 title: Wilogutl.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74ee29553cba4105b5e6ff250f5b388adc964b9477bde5d1f25d073bbf2b1355
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d9958b91513dccc32f3bfc82ff781f65f166c208
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883857"
 ---
 # <a name="wilogutlexe"></a>Wilogutl.exe
 
-Wilogutl.exe ajuda na análise de arquivos de log de uma instalação do Windows Installer e exibe soluções sugeridas para erros encontrados em um arquivo de log.
+Wilogutl.exe ajuda na análise de arquivos de log de uma instalação do Windows e exibe soluções sugeridas para erros encontrados em um arquivo de log.
 
-Os erros não críticos não são exibidos. Wilogutl.exe pode ser executado no modo silencioso ou com uma interface do usuário (IU). A ferramenta gera relatórios como arquivos de texto na interface do usuário e nos modos silenciosos. ele funciona melhor com arquivos de log Windows Installer detalhados, mas também funciona com logs não detalhados. Para obter mais informações, consulte [Logging](logging.md).
+Erros não críticos não são exibidos. Wilogutl.exe pode ser executado no modo silencioso ou com uma interface do usuário. A ferramenta gera relatórios como arquivos de texto na interface do usuário e nos modos silenciosos. Ele funciona melhor com arquivos de log Windows instalador detalhados, mas também funciona com logs não detalhados. Para obter mais informações, consulte [Registro em log.](logging.md)
 
-essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Essa ferramenta só está disponível nos componentes [do SDK do Windows para desenvolvedores Windows instalador.](platform-sdk-components-for-windows-installer-developers.md)
 
 ## <a name="syntax"></a>Syntax
 
-**wilogutl.exe***\[<options>\]\[<source file>\]\[<options>\]\[<report file directory>\]*
+**wilogutl.exe** *\[ &lt; opções de &gt; \] \[ <source file> \] \[ &lt; configuração &gt; \] \[ <report file directory> \]*
 
 Você pode usar as linhas de comando a seguir para executar no modo silencioso.
 
-**Wilogutl/q/l** *c: \\ mymsilog. log* **/o** *c \\ OutputDir \\*
+**wilogutl /q /l c:** *\\ mymsilog.log* **/o** c *\\ outputdir \\*
 
-**Wilogutl/q/l** *c: \\ mymsilog. log*
+**wilogutl /q /l** *c: \\ mymsilog.log*
 
 ## <a name="command-line-options"></a>Opções de Linha de Comando
 
-Wilogutl.exe usa as seguintes opções de linha de comando sem diferenciação de maiúsculas e minúsculas. Um delimitador de traço pode ser usado no lugar de uma barra.
+Wilogutl.exe usa as seguintes opções de linha de comando sem maiúsculas e minúsculas. Um delimiter de traço pode ser usado no lugar de uma barra.
 
 
 
 | Opção | Descrição                                                                                                                                                                                     |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| nenhum   | É executado no modo de interface do usuário — sem opções de linha de comando.                                                                                                                                                   |
+| nenhum   | É executado no modo de interface do usuário— sem opções de linha de comando.                                                                                                                                                   |
 | /q     | Especifica o modo silencioso. Wilogutl.exe gera arquivos de relatório e não exibe uma interface do usuário.                                                                                            |
 | /l     | Especifica o nome do arquivo de log a ser analisado. Essa opção é necessária ao usar o modo silencioso.                                                                                           |
-| /o     | Especifica o diretório de saída para arquivos de relatório. Esse caminho de saída é usado somente quando executado no modo silencioso. Se a opção não estiver presente, os relatórios serão colocados no diretório C: \\ WiLogResults. |
+| /o     | Especifica o diretório de saída para arquivos de relatório. Esse caminho de saída é usado somente durante a execução no modo silencioso. Se a opção não estiver presente, os relatórios serão colocados no diretório C: \\ WiLogResults. |
 
 
 
@@ -50,73 +50,15 @@ Quando executado no modo de interface do usuário, Wilogutl.exe exibe as caixas 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Analisador detalhado de log do instalador</td>
-<td>a Windows Installer caixa de diálogo analisador de Log detalhado permite que os usuários selecionem um arquivo de Log para análise:
-<ul>
-<li>o botão <strong>abrir</strong> abre o arquivo em Bloco de notas. A área de visualização pode ser usada para verificar se o arquivo de log correto foi selecionado.</li>
-<li>O botão <strong>analisar</strong> começa a análise do arquivo de log e exibe a caixa de diálogo exibição detalhada do arquivo de log.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Exibição detalhada do arquivo de log</td>
-<td>A caixa de diálogo exibição do arquivo de log detalhado exibe informações de erro registradas. Use os botões <strong>voltar</strong> e <strong>Avançar</strong> para navegar por vários erros. Para exibir erros não críticos, marque a caixa de seleção <strong>mostrar erros de depuração ignorados</strong> . A versão do instalador no computador usado para executar a instalação registrada é exibida. Se a instalação registrada tiver sido executada com permissões elevadas, a caixa de seleção <strong>instalação elevada</strong> será marcada e as informações serão fornecidas nas caixas de texto <strong>detalhes do privilégio do lado do cliente</strong> e detalhes de <strong>privilégio do lado do servidor</strong> . A caixa de diálogo exibição detalhada do arquivo de log contém os seguintes botões:<br/>
-<ul>
-<li><strong>Estados</strong> - do Mostrar a caixa de diálogo de recursos e Estados de componentes.</li>
-<li><strong>Propriedades</strong> - do Mostrar a caixa de diálogo Propriedades.</li>
-<li><strong>Políticas</strong> - do Mostrar a caixa de diálogo políticas.</li>
-<li>Log anotado em <strong>HTML</strong> - Mostrar log como arquivo HTML anotado.</li>
-<li><strong>Salvar resultados</strong> - Salvar arquivos de relatório no diretório especificado.</li>
-<li>Ajuda da mensagem de <strong>erro</strong> - Mostrar ajuda da mensagem de erro do instalador.</li>
-<li><strong>Ajuda</strong> - do mostrar ajuda para o Windows Installer Setup Log Analyzer.</li>
-<li><strong>Como ler um arquivo</strong> - de log Mostrar o documento de ajuda do arquivo de log.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Estados de recursos e componentes</td>
-<td>A caixa de diálogo Estados de recursos <strong>e componentes</strong> exibe os Estados dos recursos e componentes:
-<ul>
-<li>A coluna <strong>recurso</strong> mostra o nome do recurso no pacote de instalação.</li>
-<li>A coluna <strong>componente</strong> mostra o nome do componente no pacote de instalação.</li>
-<li>A coluna <strong>instalado</strong> mostra o estado do recurso ou componente no final da instalação.</li>
-<li>A coluna <strong>solicitação</strong> mostra a seleção do usuário durante a instalação para o estado do recurso ou componente.</li>
-<li>A coluna <strong>ação</strong> mostra a ação realizada pelo instalador para o recurso ou componente.</li>
-</ul>
-Para obter mais informações, consulte <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetcomponentstatea"><strong>MsiGetComponentState</strong></a> e <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetfeaturestatea"><strong>MsiGetFeatureState</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td>Propriedades</td>
-<td>a caixa de diálogo propriedades mostra Windows Installer <a href="properties.md">propriedades</a> e seus valores no final da instalação. Você pode classificar as propriedades por nome ou por valor:
-<ul>
-<li>A guia <strong>cliente</strong> mostra Propriedades e valores durante a parte do lado do cliente da instalação.</li>
-<li>A guia <strong>servidor</strong> mostra Propriedades e valores durante a parte do servidor da instalação.</li>
-<li>A guia <strong>aninhada</strong> mostra as propriedades e os valores de qualquer <a href="concurrent-installations.md">instalação simultânea</a>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Políticas</td>
-<td>A caixa de diálogo políticas exibe o conjunto de <a href="system-policy.md">políticas do sistema</a> após a instalação:
-<ul>
-<li>Um valor de 0 (zero) definido para a política significa que a política não está habilitada.</li>
-<li>Um valor de 1 (um) significa que a política está habilitada.</li>
-<li>Um valor de? (ponto de interrogação) significa que o valor da política não é registrado no log.</li>
-</ul>
-Se você precisar de um valor de política que não esteja no log, tente usar Regedit.exe para verificar as chaves do registro no computador que está falhando na instalação.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome | Descrição | 
+|------|-------------|
+| Windows Analisador de Log Detalhado do Instalador | A Windows de diálogo Analisador de Log Detalhado do Instalador permite que os usuários selecionem um arquivo de log para análise:<ul><li>O <strong>botão</strong> Abrir abre o arquivo Bloco de notas. A área de visualização pode ser usada para verificar se o arquivo de log correto foi selecionado.</li><li>O <strong>botão Analisar</strong> inicia a análise de arquivo de log e exibe a caixa de diálogo Exibição Detalhada do Arquivo de Log.</li></ul> | 
+| Exibição detalhada do arquivo de log | A caixa de diálogo Exibição Detalhada do Arquivo de Log exibe informações de erro registradas. Use os <strong>botões Voltar</strong> <strong>e</strong> Próximo para navegar por vários erros. Para exibir erros não críticos, marque a caixa de seleção Mostrar <strong>Erros de Depuração</strong> Ignorados. A versão do instalador no computador usado para executar a instalação registrada é exibida. Se a instalação registrada em registro tiver sido executado com permissões elevadas, a <strong></strong> caixa de <strong></strong> seleção Instalação com privilégios elevados será marcada e as informações serão fornecidas nas caixas de texto Detalhes do Privilégio do Lado do Cliente e Detalhes do Privilégio do Lado do Servidor. <strong></strong> A caixa de diálogo Exibição Detalhada do Arquivo de Log contém os seguintes botões:<br /><ul><li><strong>Estados</strong> – mostra a caixa de diálogo Estados de Recurso e Componente.</li><li><strong>Propriedades</strong> – mostra a caixa de diálogo Propriedades.</li><li><strong>Políticas</strong> – mostra a caixa de diálogo Políticas.</li><li><strong>Log Anotado HTML –</strong> Mostrar log como arquivo HTML anotado.</li><li><strong>Salvar Resultados</strong> – salve arquivos de relatório no diretório especificado.</li><li><strong>Ajuda da mensagem de</strong> erro – mostrar a ajuda da mensagem de erro do instalador.</li><li><strong>Ajuda</strong> – mostre ajuda para o Windows do Instalador do Instalador de Log.</li><li><strong>Como ler um arquivo de log</strong> – mostrar o documento de ajuda do arquivo de log.</li></ul> | 
+| Estados de recurso e componente | A <strong>caixa de diálogo Estados de Recurso</strong> e Componente exibe os estados de recursos e componentes:<ul><li>A <strong>coluna</strong> Recurso mostra o nome do recurso no pacote de instalação.</li><li>A <strong>coluna</strong> Componente mostra o nome do componente no pacote de instalação.</li><li>A <strong>coluna Instalado</strong> mostra o estado do recurso ou do componente no final da instalação.</li><li>A <strong>coluna</strong> Solicitação mostra a seleção do usuário durante a instalação do estado do recurso ou do componente.</li><li>A <strong>coluna</strong> Ação mostra a ação tomada pelo instalador para o recurso ou componente.</li></ul>Para obter mais informações, <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetcomponentstatea"><strong>consulte MsiGetComponentState</strong></a> e <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetfeaturestatea"><strong>MsiGetFeatureState</strong></a>.<br /> | 
+| Propriedades | A caixa de diálogo Propriedades Windows propriedades do <a href="properties.md">instalador</a> e seus valores no final da instalação. Você pode classificar as propriedades por nome ou por valor:<ul><li>A <strong>guia</strong> Cliente mostra propriedades e valores durante a parte do lado do cliente da instalação.</li><li>A <strong>guia</strong> Servidor mostra propriedades e valores durante a parte do servidor da instalação.</li><li>A <strong>guia Aninhada</strong> mostra as propriedades e os valores de <a href="concurrent-installations.md">qualquer Instalação Simultânea.</a></li></ul> | 
+| Políticas | A caixa de diálogo Políticas exibe o conjunto <a href="system-policy.md">de Políticas do</a> Sistema após a instalação:<ul><li>Um valor de 0 (zero) definido para a política significa que a política não está habilitada.</li><li>Um valor de 1 (um) significa que a política está habilitada.</li><li>Um valor de ? (ponto de interrogação) significa que o valor da política não está registrado no log.</li></ul>Se você precisar de um valor de política que não está no log, tente usar o Regedit.exe para verificar as chaves do Registro no computador que está falhando na instalação.<br /> | 
+
 
 
 
@@ -124,7 +66,7 @@ Se você precisar de um valor de política que não esteja no log, tente usar Re
 
 ## <a name="report-files"></a>Arquivos de relatório
 
-ao executar uma análise de modo silencioso ou clicar no botão **salvar resultados** na caixa de diálogo **exibir arquivo de log detalhado** , a ferramenta Windows Installer Setup Analyzer gera três arquivos de texto e um arquivo de Log anotado em HTML.
+Ao executar uma análise de  modo silencioso ou clicar no botão Salvar Resultados na caixa de diálogo Exibição detalhada do Arquivo de **Log,** a ferramenta analisador de instalação do instalador do Windows gera três arquivos de texto e um arquivo de log anotado em HTML.
 
 A tabela a seguir identifica os nomes e o conteúdo nos arquivos de relatório.
 
@@ -132,9 +74,9 @@ A tabela a seguir identifica os nomes e o conteúdo nos arquivos de relatório.
 
 | Nome                      | Descrição                                                                                                                    |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| LogFileName \_summary.txt  | Resume o arquivo de log. Lista as informações exibidas pela caixa de diálogo exibição detalhada do arquivo de log e o primeiro erro.         |
-| LogFileName \_errors.txt   | Identifica o número de erros, os erros e as soluções recomendadas. Esse arquivo lista os erros críticos e não críticos. |
-| LogFileName \_policies.txt | Identifica os nomes de política e os valores definidos no final da instalação como na caixa de diálogo políticas.                       |
+| logfilename \_summary.txt  | Resume o arquivo de log. Lista as informações exibidas pela caixa de diálogo Exibição Detalhada do Arquivo de Log e o primeiro erro.         |
+| logfilename \_errors.txt   | Identifica o número de erros, os erros e as soluções recomendadas. Esse arquivo lista erros críticos e não críticos. |
+| logfilename \_policies.txt | Identifica os nomes de política e os valores definidos no final da instalação como na caixa de diálogo Políticas.                       |
 | detalhes \_logfilename.htm  | Um log anotado em HTML com uma legenda para a codificação de cores.                                                                      |
 
 
@@ -143,14 +85,14 @@ A tabela a seguir identifica os nomes e o conteúdo nos arquivos de relatório.
 
 ## <a name="return-values"></a>Valores de retorno
 
-Se argumentos de linha de comando inválidos forem passados para operações de modo silencioso, o Wilogutl.exe não fará nada e o processo retornará um dos valores na tabela a seguir.
+Se argumentos de linha de comando inválidos são passados para operações de modo silencioso, Wilogutl.exe não faz nada e o processo retorna um dos valores na tabela a seguir.
 
 
 
 | Valor | Significado                                                                 |
 |-------|-------------------------------------------------------------------------|
-| 1     | Diretório de saída inválidos especificado.                                      |
-| 2     | Nome de arquivo de log inadequado especificado.                                         |
+| 1     | Diretório de saída ruim especificado.                                      |
+| 2     | Nome de arquivo de log ruim é especificado.                                         |
 | 3     | Passou/q, mas está faltando a opção/l necessária para o nome do arquivo de log. |
 | 4     | Passou em/l, mas não tem a opção necessária/q para o modo silencioso.        |
 

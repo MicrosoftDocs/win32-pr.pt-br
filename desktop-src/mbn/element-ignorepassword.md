@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ IgnorePassword (v4)
+description: MBNProfileExt... \/ \/ IgnorePassword (v4)
 MS-HAID: WWAN\_profile\_v4.element\_IgnorePassword
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,20 +7,20 @@ MSHAttr:
 title: IgnorePassword
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb24eafebac1ab657a4a721031b05e043f3a2f9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e85c41bab92d127a81a8b86a4ac575d448605d0e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465643"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982789"
 ---
-# <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt \/ ... \/ IgnorePassword (v4)
+# <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt... \/ \/ IgnorePassword (v4)
 
-Especifica como as senhas são tratadas durante a atualização de perfis.
+Especifica como as senhas são tratadas ao atualizar perfis.
 
-Se definido como **true** e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será executada e armazenada no novo perfil.
+Se definido como **TRUE** e um perfil com o mesmo nome existir no momento da operação de atualização, a senha desse perfil será usada e armazenada no novo perfil.
 
-Para obter mais detalhes, consulte a documentação do elemento v1 [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) .
+Para obter mais detalhes, consulte a documentação do [**elemento IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -34,7 +34,7 @@ Para obter mais detalhes, consulte a documentação do elemento v1 [**IgnorePass
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<IgnorePassword\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IgnorePassword>
@@ -67,7 +67,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  
