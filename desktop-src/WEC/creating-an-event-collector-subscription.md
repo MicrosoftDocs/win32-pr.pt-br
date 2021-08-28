@@ -1,31 +1,31 @@
 ---
 title: Criando uma assinatura iniciada pelo coletor
-description: Você pode assinar para receber eventos em um computador local (o coletor de eventos) que são encaminhados de computadores remotos (as fontes de evento) usando uma assinatura iniciada pelo coletor.
+description: Você pode assinar para receber eventos em um computador local (o coletor de eventos) que são encaminhados de computadores remotos (as origens do evento) usando uma assinatura iniciada pelo coletor.
 ms.assetid: 76f14e01-7a84-4c94-aea6-91189573eb89
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b5fdcff469ad8f6dfef4f775e0c79da814e9f4c6e05a71a95b6ddf70446d4ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f05b2a0e6628256ca5efd86c142bac09f5fcc2b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886235"
 ---
 # <a name="creating-a-collector-initiated-subscription"></a>Criando uma assinatura iniciada pelo coletor
 
-Você pode assinar para receber eventos em um computador local (o coletor de eventos) que são encaminhados de computadores remotos (as fontes de evento) usando uma assinatura iniciada pelo coletor. Em uma assinatura iniciada pelo coletor, a assinatura deve conter uma lista de todas as fontes de evento. Antes que um computador coletor possa assinar eventos e uma origem de evento remoto possa encaminhar eventos, ambos os computadores devem ser configurados para coleta e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte [Configurar computadores para encaminhar e coletar eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
+Você pode assinar para receber eventos em um computador local (o coletor de eventos) que são encaminhados de computadores remotos (as origens do evento) usando uma assinatura iniciada pelo coletor. Em uma assinatura iniciada pelo coletor, a assinatura deve conter uma lista de todas as origens do evento. Antes que um computador coletor possa assinar eventos e uma fonte de evento remoto possa encaminhar eventos, ambos os computadores devem ser configurados para coleta e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte [configurar computadores para encaminhar e coletar eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
 O exemplo de código a seguir segue uma série de etapas para criar uma assinatura iniciada pelo coletor:
 
 **Para criar uma assinatura iniciada pelo coletor**
 
-1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a [**função EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obter mais informações sobre direitos de acesso, [**consulte constantes Windows coletor de eventos**](windows-event-collector-constants.md).
-2.  De definir as propriedades da assinatura chamando a [**função EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Para obter mais informações sobre as propriedades de assinatura que podem ser definidas, consulte a [**enumeração \_ \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) da PROPRIEDADE DA ASSINATURA EC.
-3.  Salve a assinatura chamando a [**função EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
-4.  Feche a assinatura chamando a [**função EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
+1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . para obter mais informações sobre direitos de acesso, consulte [**Windows constantes do coletor de eventos**](windows-event-collector-constants.md).
+2.  Defina as propriedades da assinatura chamando a função [**EcSetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) . Para obter mais informações sobre as propriedades de assinatura que podem ser definidas, consulte a enumeração de [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
+3.  Salve a assinatura chamando a função [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
+4.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
 
-Para obter mais informações sobre como adicionar uma origem de evento, consulte [Adicionando uma origem de evento a uma assinatura do coletor de eventos](adding-an-event-source-to-an-event-collector-subscription.md).
+Para obter mais informações sobre como adicionar uma origem do evento, consulte [adicionando uma origem do evento a uma assinatura do coletor de eventos](adding-an-event-source-to-an-event-collector-subscription.md).
 
 O exemplo de código C++ a seguir mostra como criar uma assinatura iniciada pelo coletor:
 
@@ -515,18 +515,18 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
 1.  No computador do coletor de eventos, conclua o seguinte procedimento:
 
-    1.  Execute o seguinte comando em um prompt de comando com privilégios elevados para obter o status de runtime da assinatura:
+    1.  Execute o comando a seguir em um prompt de comando de privilégio elevado para obter o status de tempo de execução da assinatura:
 
-        **wecutil gr***<subscriptionID>*
+        o **wecutil gr** *&lt; SubscriptionId &gt;*
 
-    2.  Verifique se a origem do evento se conectou. Talvez seja necessário aguardar até que o intervalo de atualização especificado na política tenha acabado depois de criar a assinatura para que a origem do evento seja conectada.
-    3.  Execute o seguinte comando para obter as informações da assinatura:
+    2.  Verifique se a origem do evento está conectada. Talvez seja necessário aguardar até que o intervalo de atualização especificado na política fique acima depois que você criar a assinatura para a origem do evento ser conectada.
+    3.  Execute o seguinte comando para obter as informações de assinatura:
 
-        **wecutil gs***<subscriptionID>*
+        *&lt; inscriçõeid &gt;* de **wecutil GS**
 
-    4.  Obter o valor DeliveryMaxItems das informações da assinatura.
+    4.  Obtenha o valor de DeliveryMaxItems das informações de assinatura.
 
-2.  No computador de origem do evento, aumente os eventos que corresponderem à consulta da assinatura do evento. O número deliveryMaxItems de eventos deve ser gerado para que os eventos sejam encaminhados.
+2.  No computador de origem do evento, gere os eventos que correspondem à consulta da assinatura do evento. O número DeliveryMaxItems de eventos deve ser gerado para que os eventos sejam encaminhados.
 3.  No computador do coletor de eventos, valide se os eventos foram encaminhados para o log ForwardedEvents ou para o log especificado na assinatura.
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -536,7 +536,7 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 [Configurar computadores para encaminhar e coletar eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
 </dt> <dt>
 
-[Adicionando uma origem de evento a uma assinatura do coletor de eventos](adding-an-event-source-to-an-event-collector-subscription.md)
+[Adicionando uma origem do evento a uma assinatura do coletor de eventos](adding-an-event-source-to-an-event-collector-subscription.md)
 </dt> <dt>
 
 [Windows Referência do coletor de eventos](windows-event-collector-reference.md)

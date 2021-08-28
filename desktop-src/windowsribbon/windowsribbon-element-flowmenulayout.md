@@ -3,7 +3,7 @@ title: Elemento FlowMenuLayout
 description: Representa um layout horizontal com quebras de linha para itens em uma galeria.
 ms.assetid: 40c3a2e1-e58a-4d34-a237-b1bea116c82e
 keywords:
-- Faixa de Opções do Windows do elemento FlowMenuLayout
+- Elemento FlowMenuLayout Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 31a040fb51ad46feb30147fea97c19210cc16094
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4d3c5ea50ae50edc3d6be16ad771229ea82801f4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442877"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625732"
 ---
 # <a name="flowmenulayout-element"></a>Elemento FlowMenuLayout
 
@@ -39,10 +39,10 @@ Representa um layout horizontal com quebras de linha para itens em uma galeria.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

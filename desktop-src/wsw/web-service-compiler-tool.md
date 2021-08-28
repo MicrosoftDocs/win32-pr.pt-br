@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e92e1195cd9d3a8e8d9fa1b7be94421d68f3cbdf2242be6fa0d05be5cc3c743f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6789b9e2b6e38d89e422adc363326656b8f693e2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880984"
 ---
 # <a name="web-service-compiler-tool"></a>Ferramenta de compilador de serviço Web
 
@@ -24,7 +24,7 @@ Para dar suporte à [serialização](serialization.md), o compilador gera cabeç
 
 Uso
 
-**Opções de opção de linha de comando deWsUtil.exe \[ \[ \] :\]<filename>**
+**Opção de opções de linha de comandoWsUtil.exe- \[ \[ opções \] : \] &lt; nome de arquivo&gt;**
 
 opções de linha de comando
 
@@ -33,14 +33,14 @@ Especifica WsUtil.exe opções do compilador. As opções podem aparecer em qual
 Lista de opções de linha de comando
 
 -   @filename Especifica que o arquivo de entrada deve ser tratado como um arquivo de resposta. Essa opção pode ser usada várias vezes, em qualquer lugar na lista de argumentos.
--   /WSDL: <filename> : <\_ url opcional> especifica que o arquivo de entrada deve ser tratado como um arquivo WSDL. Várias entradas WSDL são permitidas e todos os arquivos WSDL especificados são processados. A \_ URL opcional especifica o local do qual os metadados foram recuperados. Se nenhuma \_ URL opcional for especificada, Wsutil gerará uma URL exclusiva internamente. Consulte também [suporte a políticas](policy-support.md).
--   /xsd: <filename> especifica que o nome de arquivo de entrada deve ser tratado como um arquivo de esquema. Várias entradas XSD são permitidas e todos os arquivos de esquema especificados são processados.
--   /WSP: <filename> : <\_ url opcional> especifica que o nome de arquivo de entrada deve ser tratado como metadados de política. Várias entradas WSP são permitidas e todos os arquivos de política especificados são processados. A \_ URL opcional especifica o local do qual os metadados foram recuperados. Se nenhuma \_ URL opcional for especificada, Wsutil gerará uma URL exclusiva internamente. Os arquivos de política serão ignorados se o sinalizador/nopolicy for especificado. Consulte também [suporte a políticas](policy-support.md).
+-   /WSDL: &lt; filename &gt; : <\_ URL opcional> especifica que o arquivo de entrada deve ser tratado como um arquivo WSDL. Várias entradas WSDL são permitidas e todos os arquivos WSDL especificados são processados. A \_ URL opcional especifica o local do qual os metadados foram recuperados. Se nenhuma \_ URL opcional for especificada, Wsutil gerará uma URL exclusiva internamente. Consulte também [suporte a políticas](policy-support.md).
+-   /xsd: &lt; filename &gt; especifica que o nome de arquivo de entrada deve ser tratado como um arquivo de esquema. Várias entradas XSD são permitidas e todos os arquivos de esquema especificados são processados.
+-   /WSP: &lt; filename &gt; : <\_ URL opcional> especifica que o nome de arquivo de entrada deve ser tratado como metadados de política. Várias entradas WSP são permitidas e todos os arquivos de política especificados são processados. A \_ URL opcional especifica o local do qual os metadados foram recuperados. Se nenhuma \_ URL opcional for especificada, Wsutil gerará uma URL exclusiva internamente. Os arquivos de política serão ignorados se o sinalizador/nopolicy for especificado. Consulte também [suporte a políticas](policy-support.md).
 -   /nopolicy desabilitar o processamento de política.
--   /out: <dirname> especifica o nome do diretório para arquivos de saída
+-   /out: &lt; dirname &gt; especifica o nome do diretório para arquivos de saída
 -   /noclient não geram o stub do lado do cliente.
 -   /noservice não geram o stub do lado do serviço.
--   /prefix: <string> preceder a cadeia de caracteres especificada para todos os identificadores gerados.
+-   /prefix: a &lt; cadeia &gt; de caracteres precede a cadeia de caracteres especificada para todos os identificadores gerados.
 -   /FullName preceda o nome de arquivo normalizado para identificadores gerados. Por padrão, somente o nome especificado no atributo "Name" será usado para gerar identificadores para descrições relacionadas.
 -   /String: <WS \_ string>\|<WCHAR \*> por padrão, Wsutil gera WCHAR \* para o tipo xsd: String. O aplicativo pode usar esse sinalizador para substituir esse comportamento e gera a \_ cadeia de caracteres WS para xsd: Type.
 -   /Help exibir mensagem de ajuda
@@ -162,7 +162,7 @@ typedef struct exmaple_xsd_SimpleStruct {
 
 ## <a name="globalization"></a>Globalização
 
-A ferramenta é neutra de idioma e pode ser localizada em idiomas diferentes. Todas as mensagens de erro/saída do console podem ser localizadas. No entanto, as opções de linha de comando permanecem em inglês.
+A ferramenta é neutra em idioma e pode ser localizada para idiomas diferentes. Todas as mensagens de erro/saída do console podem ser localizadas. No entanto, as opções de linha de comando permanecem em inglês.
 
 ## <a name="environment-variable"></a>Variável de ambiente
 
@@ -170,9 +170,9 @@ WsUtil.exe não usa nenhuma variável de ambiente.
 
 ## <a name="platform-independent"></a>Independente de plataforma
 
-Os arquivos de saída de WsUtil.exe são independentes de plataforma. Não há código dependente de arquitetura gerado no stub; qualquer outra arquitetura específica será encarregada pelo compilador do C. O stub pode ser usado em todas as plataformas às quais damos suporte.
+Os arquivos de saída WsUtil.exe são independentes de plataforma. Não há nenhum código dependente de arquitetura gerado no stub; qualquer arquitetura específica será cuidada pelo compilador C. O stub pode ser usado em todas as plataformas que damos suporte.
 
-A descrição de wsutil.exe saída pode ser encontrada em [suporte WSDL](wsdl-support.md) e parte de [suporte do esquema](schema-support.md) .
+A descrição wsutil.exe saída pode ser encontrada em Suporte [a WSDL](wsdl-support.md) e parte de suporte [a esquema.](schema-support.md)
 
  
 

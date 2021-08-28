@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f5a689b74bd18138361d9377358ddee5cf5979f
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 29b0c234d2410d512e2f034f92cbc4a2d6ad7449
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880267"
 ---
 # <a name="argument-element"></a>Elemento Argument
 
@@ -66,7 +66,7 @@ Quando o atributo **Name** de um elemento **Fragment** é uma característica de
 <thead>
 <tr class="header">
 <th>Valor do atributo</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -78,9 +78,9 @@ Quando o atributo **Name** de um elemento **Fragment** é uma característica de
 <td>Valor</td>
 <td>O conteúdo do elemento <strong>Argument</strong> é a parte de valor de uma cadeia de caracteres de condição. Por exemplo, no artista de cadeia de caracteres de condição &quot; igual a Joe &quot; , a parte de valor é &quot; Joe &quot; . Exemplo<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Artist&quot;>
-  <argument name = &quot;Condition&quot;>Equals</argument>
-  <argument name = &quot;Value&quot;>Joe</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Condition&quot;>Equals&lt;/argument&gt;
+  <argument name = &quot;Value&quot;>Joe&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -113,14 +113,14 @@ Quando o atributo de **nome** de um elemento de **fragmento** é "limitar o tama
 <td>Número</td>
 <td>O conteúdo do elemento <strong>Argument</strong> é um número que limita o tamanho ou a duração da lista de reprodução. Disso<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Total Size To&quot;>
-  <argument name = &quot;Format&quot;>Megabytes</argument>
-  <argument name = &quot;Number&quot;>5</argument>
-</fragment>
+  <argument name = &quot;Format&quot;>Megabytes&lt;/argument&gt;
+  <argument name = &quot;Number&quot;>5&lt;/argument&gt;
+&lt;/fragment&gt;
 
 <fragment name = &quot;Limit Total Duration To&quot;>
-  <argument name = &quot;Format&quot;>Minutes</argument>
-  <argument name = &quot;Number&quot;>20</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Format&quot;>Minutes&lt;/argument&gt;
+  <argument name = &quot;Number&quot;>20&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -141,7 +141,7 @@ Quando o atributo **Name** de um elemento **Fragment** é "limitar número de it
 <thead>
 <tr class="header">
 <th>Valor do atributo</th>
-<th>Descrição</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -149,8 +149,8 @@ Quando o atributo **Name** de um elemento **Fragment** é "limitar número de it
 <td>Número</td>
 <td>O conteúdo do elemento <strong>Argument</strong> é um número que limita o número de itens em uma lista de reprodução. Exemplo<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Number of Items&quot;>
-  <argument name = &quot;Number&quot;>15</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Number&quot;>15&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>

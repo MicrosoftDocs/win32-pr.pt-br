@@ -1,19 +1,19 @@
 ---
-description: O elemento opcional especifica uma coleção de elementos que definem as inclusões e exclusões de escopo <scope> para esse conector de pesquisa <scopeItem> específico.
+description: O elemento de escopo opcional especifica uma coleção de elementos scopeItem que definem as inclusões e exclusões de escopo &lt; para esse conector de pesquisa &gt; &lt; &gt; específico.
 ms.assetid: 9e92e3db-3d5e-4f86-8d67-90eb5469b04b
 title: Elemento scope (Esquema do Conector de Pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d5fcdb3908f495d07199c61a2005a4f97ba5a01c641fb4e854961489e7abe0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80c011eee8def80a7f1d395a7a52a72d30fb4935
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119944296"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886699"
 ---
 # <a name="scope-element-search-connector-schema"></a>Elemento scope (Esquema do Conector de Pesquisa)
 
-O elemento opcional especifica uma coleção de elementos que definem as inclusões e exclusões de escopo <scope> para esse conector de pesquisa <scopeItem> específico. Se <scope> estiver presente, ele DEVERÁ conter pelo menos um <scopeItem> elemento. Esse elemento não tem atributos.
+O elemento de escopo opcional especifica uma coleção de elementos scopeItem que definem as inclusões e exclusões de escopo &lt; para esse conector de pesquisa &gt; &lt; &gt; específico. Se &lt; o escopo estiver &gt; presente, ele DEVERÁ conter pelo menos um &lt; elemento &gt; scopeItem. Esse elemento não tem atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -55,7 +55,7 @@ O elemento opcional especifica uma coleção de elementos que definem as inclus�
 
 ## <a name="remarks"></a>Comentários
 
-Use os <scope> elementos e para identificar quais locais devem ser <scopeItem> pesquisados e quais locais devem ser excluídos da pesquisa.
+Use os &lt; elementos scope &gt; e &lt; scopeItem &gt; para identificar quais locais devem ser pesquisados e quais locais devem ser excluídos da pesquisa.
 
 ## <a name="example"></a>Exemplo
 

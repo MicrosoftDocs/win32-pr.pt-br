@@ -4,12 +4,12 @@ description: Com um modo de exibição de lista, os usuários podem exibir e int
 ms.assetid: 62a7bfc8-96a9-450d-9db9-ec9dab6687b7
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8f1440608e5a9aded6acf55d9e6bb3d9ce1bb096
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8b8a1ce068b03ddf2a7aba40a0044f79914102d3
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472142"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983059"
 ---
 # <a name="list-views"></a>Listar exibições
 
@@ -91,7 +91,11 @@ O controle de exibição de lista dá suporte a cinco exibições padrão:
 
 
 
-| | | <strong>Seletor de coluna</strong><br /> As exibições de lista às vezes têm tantas colunas que não é prático mostrar todas elas. Nesse caso, a melhor abordagem é exibir as colunas mais úteis por padrão e permitir que os usuários adicionem ou removam colunas conforme necessário. <br /> | <img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br /> Clicar com o botão direito do mouse no título da coluna exibe um menu de contexto que permite aos usuários adicionar ou remover colunas.<br /><img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br /> Clicar em mais no menu de contexto de cabeçalho de coluna exibe a caixa de diálogo escolher colunas, que permite aos usuários adicionar ou remover colunas, bem como reordená-las.<br /> | | <strong>Exibir lista de caixas de seleção</strong><br /> Permitir que os usuários selecionem vários itens.<br /> | As exibições de lista de seleção múltipla têm exatamente a mesma aparência que as exibições de lista de seleção única, portanto, não há nenhuma pista visual de que ofereça suporte a seleção múltipla. Uma exibição de lista da caixa de seleção pode ser usada para indicar claramente que a seleção múltipla é possível. Consequentemente, esse padrão deve ser usado para tarefas em que a seleção múltipla é essencial ou comumente usada.<br /><img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br /> Neste exemplo, um modo de exibição de ícone pequeno usa caixas de seleção porque várias seleções são essenciais para a tarefa.<br /> | | <strong>Listar exibições com grupos</strong><br /> Organize os dados em grupos.<br /> | Embora as exibições de detalhes com frequência ofereçam suporte à classificação dos dados por qualquer uma das colunas, as exibições de lista permitem que os usuários organizem os itens em grupos. Alguns benefícios do agrupamento são:<br /><ul><li>Os grupos funcionam em todas as exibições (exceto lista); portanto, por exemplo, os usuários podem agrupar um grande modo de exibição de ícones grandes de álbuns por artista.</li><li>Os grupos podem ser coleções de alto nível, que geralmente são mais significativas do que agrupar diretamente fora dos dados. Por exemplo, Windows Explorer grupos datas em Hoje, Ontem, Semana Passada, Início deste ano e Há muito tempo.</li></ul><img src="images/ctrl-list-views-image10.png" alt="Screen shot of list view with several data groups " /><br /> Neste exemplo, o Windows Centro de Boas-Vindas mostra itens agrupados em uma exibição de lista.<br /> | 
+| Rótulo | Valor |
+|--------|-------|
+| <strong>Seletor de coluna</strong><br /> As exibições de lista às vezes têm tantas colunas que não é prático mostrar todas elas. Nesse caso, a melhor abordagem é exibir as colunas mais úteis por padrão e permitir que os usuários adicionem ou removam colunas conforme necessário. <br /> | <img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br /> Clicar com o botão direito do mouse no título da coluna exibe um menu de contexto que permite aos usuários adicionar ou remover colunas.<br /><img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br /> Clicar em mais no menu de contexto de cabeçalho de coluna exibe a caixa de diálogo escolher colunas, que permite aos usuários adicionar ou remover colunas, bem como reordená-las.<br /> | 
+| <strong>Exibir lista de caixas de seleção</strong><br /> Permitir que os usuários selecionem vários itens.<br /> | As exibições de lista de seleção múltipla têm exatamente a mesma aparência que as exibições de lista de seleção única, portanto, não há nenhuma pista visual de que ofereça suporte a seleção múltipla. Uma exibição de lista da caixa de seleção pode ser usada para indicar claramente que a seleção múltipla é possível. Consequentemente, esse padrão deve ser usado para tarefas em que a seleção múltipla é essencial ou comumente usada.<br /><img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br /> Neste exemplo, um modo de exibição de ícone pequeno usa caixas de seleção porque várias seleções são essenciais para a tarefa.<br /> | 
+| <strong>Listar exibições com grupos</strong><br /> Organize os dados em grupos.<br /> | Embora as exibições de detalhes com frequência ofereçam suporte à classificação dos dados por qualquer uma das colunas, as exibições de lista permitem que os usuários organizem os itens em grupos. Alguns benefícios do agrupamento são:<br /><ul><li>Os grupos funcionam em todas as exibições (exceto lista); portanto, por exemplo, os usuários podem agrupar um grande modo de exibição de ícones grandes de álbuns por artista.</li><li>Os grupos podem ser coleções de alto nível, que geralmente são mais significativas do que o agrupamento diretamente dos dados. por exemplo, Windows Explorer agrupa datas em hoje, ontem, semana passada, no início deste ano e há muito tempo.</li></ul><img src="images/ctrl-list-views-image10.png" alt="Screen shot of list view with several data groups " /><br /> neste exemplo, o centro de boas-vindas Windows mostra itens agrupados em uma exibição de lista.<br /> | 
 
 
 
@@ -102,122 +106,122 @@ O controle de exibição de lista dá suporte a cinco exibições padrão:
 
 ### <a name="presentation"></a>Apresentação
 
--   **Classificar itens de lista em uma ordem lógica.** Classificar nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica.
--   **Se apropriado, permita que os usuários alterem a ordem de classificação.** A classificação do usuário será importante se a lista tiver muitos itens ou se houver cenários em que os itens sejam encontrados com mais eficiência usando uma ordem de classificação diferente do padrão.
--   **Use o atributo Sempre Mostrar** Seleção para que os usuários possam determinar prontamente o item selecionado, mesmo quando o controle não tiver foco.
+-   **Classificar itens de lista em uma ordem lógica.** Classifique os nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica.
+-   **Se apropriado, permita que os usuários alterem a ordem de classificação.** A classificação do usuário será importante se a lista tiver muitos itens ou se houver cenários em que os itens sejam encontrados com mais eficiência usando uma ordem de classificação diferente da padrão.
+-   **Use o atributo de seleção sempre mostrar** para que os usuários possam imediatamente determinar o item selecionado, mesmo quando o controle não tiver foco.
 -   **Evite apresentar exibições de lista vazia.** Se os usuários criarem uma lista, inicialize a lista com instruções ou itens de exemplo que os usuários possam precisar.
 
-    ![captura de tela da caixa de diálogo de pesquisa com instruções ](images/ctrl-list-views-image11.png)
+    ![captura de tela da caixa de diálogo Pesquisar com instruções ](images/ctrl-list-views-image11.png)
 
-    Neste exemplo, a exibição de lista Pesquisa apresenta instruções inicialmente.
+    Neste exemplo, a exibição de lista de pesquisa inicialmente apresenta instruções.
 
--   **Se os usuários puderem alterar exibições, agrupar, classificar por colunas ou alterar colunas e suas larguras e ordem, faça com que essas configurações persistam para que elas entre em vigor na próxima vez que a exibição de lista for exibida.** Faça com que eles persistam em uma exibição por lista, por usuário.
+-   **Se os usuários puderem alterar as exibições, agrupar, classificar por colunas ou alterar colunas e suas larguras e ordenar, faça essas configurações persistirem para que entrem em vigor na próxima vez que a exibição de lista for exibida.** Faça com que eles persistam em uma exibição por lista, por usuário.
 
 ### <a name="interaction"></a>Interação
 
--   **Use um clique único para selecionar o item de lista para o que o usuário está apontando. Exceção:** para o padrão de lista de links de comando, um clique seleciona o item e fecha a janela ou navega para a próxima página.
--   **Considere fornecer o comportamento de clique duplo.** Clicar duas vezes deve ter o mesmo efeito que selecionar um item e executar seu comando padrão.
--   **Tornar o comportamento de clique duplo redundante.** Sempre deve haver um botão de comando ou um comando de menu de contexto que tenha o mesmo efeito.
--   Se um item de lista exigir mais explicações, **forneça a explicação em uma** [infotip](ctrl-tooltips-and-infotips.md). Use frases completas e pontuação final.
+-   **Usar um clique para selecionar o item de lista ao qual o usuário está apontando. Exceção:** para o padrão de lista de links de comando, o clique único seleciona o item e fecha a janela ou navega para a próxima página.
+-   **Considere fornecer um comportamento de clique duplo.** Clicar duas vezes deve ter o mesmo efeito que selecionar um item e executar o comando padrão.
+-   **Faça com que o comportamento de clique duplo seja redundante.** Sempre deve haver um botão de comando ou comando de menu de contexto que tenha o mesmo efeito.
+-   Se um item de lista exigir mais explicações, **forneça a explicação em um** [InfoTip](ctrl-tooltips-and-infotips.md). Use frases completas e pontuação final.
 
-    ![captura de tela da exibição de lista com infotip do teclado ](images/ctrl-list-views-image12.png)
+    ![captura de tela da exibição de lista com o teclado InfoTip ](images/ctrl-list-views-image12.png)
 
-    Neste exemplo, uma infotip é usada para fornecer mais informações.
+    Neste exemplo, um InfoTip é usado para fornecer mais informações.
 
--   **Forneça menus de contexto de comandos relevantes.** Esses comandos incluem Recortar, Copiar, Colar, Remover ou Excluir, Renomear e Propriedades.
--   **Se os usuários puderem alterar a ordem de classificação e o grupo, forneça os menus de contexto Classificar por e Agrupar por.** O primeiro clique em um nome de coluna classifica ou classifica a lista na ordem crescente para essa coluna, o segundo clique classifica ou grupos em ordem decrescente. Use a ordem anterior (de outra coluna) como a chave secundária.
+-   **Fornecer menus de contexto de comandos relevantes.** Esses comandos incluem recortar, copiar, colar, remover ou excluir, renomear e propriedades.
+-   **Se os usuários puderem alterar a ordem de classificação e o agrupamento, forneça os menus de contexto classificar por e agrupar por.** O primeiro clique em um nome de coluna classifica ou agrupa a lista na ordem crescente para essa coluna, o segundo clique classifica ou agrupa em ordem decrescente. Use a ordem anterior (de outra coluna) como a chave secundária.
 
-    ![captura de tela da exibição de lista com o menu 'classificar por' ](images/ctrl-list-views-image13.png)
+    ![captura de tela da exibição de lista com o menu "classificar por" ](images/ctrl-list-views-image13.png)
 
-    Neste exemplo, o menu de contexto Classificar por altera a ordem de classificação. Clicar em Nome uma vez classifica por nome em ordem crescente. Clicar em Nome classifica novamente por nome em ordem decrescente.
+    Neste exemplo, o menu classificar por contexto altera a ordem de classificação. Clicar em nome uma vez classifica por nome em ordem crescente. Clicar em nome novamente classifica por nome em ordem decrescente.
 
--   **Tornar o header da coluna de exibição de lista acessível usando o teclado.**
-    -   **Desenvolvedores:** Você pode fazer isso definindo o foco no controle de header de coluna. Essa funcionalidade é nova para Windows Vista.
--   **Ao desabilitar uma exibição de lista, desabilite também quaisquer rótulos e botões de comando associados.**
--   **Evite a rolagem horizontal.** O modo Lista usa rolagem horizontal. Esse modo geralmente é o mais compacto, mas a rolagem horizontal geralmente é mais difícil de usar do que a rolagem vertical. Considere usar a exibição Ícone Pequeno se a compactação não for importante. No entanto, o modo lista é uma boa opção quando há muitos itens alfabéticos ordenados e espaço de tela suficiente para um controle amplo.
+-   **Torne o cabeçalho da coluna de exibição de lista acessível usando o teclado.**
+    -   **Desenvolvedores:** Você pode fazer isso definindo o foco no controle de cabeçalho de coluna. essa funcionalidade é nova no Windows Vista.
+-   **Ao desabilitar um modo de exibição de lista, desabilite também todos os rótulos e botões de comando associados.**
+-   **Evite a rolagem horizontal.** O modo de lista usa a rolagem horizontal. Esse modo é geralmente o mais compacto, mas a rolagem horizontal geralmente é mais difícil de usar do que a rolagem vertical. Considere usar a exibição de ícone pequeno em vez disso, se a compactação não for importante. No entanto, o modo de lista é uma boa opção quando há muitos itens classificados alfabeticamente e espaço em tela suficiente para um controle amplo.
 
     **Aceitável:**
 
-    ![captura de tela de um controle de modo de lista amplo ](images/ctrl-list-views-image14.png)
+    ![captura de tela de um controle de modo de lista grande ](images/ctrl-list-views-image14.png)
 
-    Neste exemplo, o modo Lista é usado porque há muitos itens e muito espaço de tela disponível para um controle largo.
+    Neste exemplo, o modo de lista é usado porque há muitos itens e muito espaço de tela disponível para um controle amplo.
 
 ### <a name="multiple-selection-lists"></a>Listas de seleção múltipla
 
--   **Considere exibir o número de itens selecionados abaixo da lista,** especialmente se os usuários provavelmente selecionarem vários itens. Essas informações não só dão comentários úteis, mas também indicam claramente que a exibição de lista dá suporte a várias seleções.
+-   **Considere a exibição do número de itens selecionados abaixo da lista**, especialmente se for provável que os usuários selecionem vários itens. Essas informações não apenas fornecem comentários úteis, mas também indica claramente que a exibição de lista dá suporte à seleção múltipla.
 
     ![captura de tela da lista de cinco miniaturas selecionadas ](images/ctrl-list-views-image15.png)
 
     Neste exemplo, o número de itens selecionados é exibido abaixo da lista.
 
--   Como alternativa, em vez do número de itens selecionados, você pode dar outras métricas de seleção que podem ser mais significativas, como os recursos necessários para as seleções.
+-   Como alternativa, em vez do número de itens selecionados, você pode fornecer outras métricas de seleção que podem ser mais significativas, como os recursos necessários para as seleções.
 
-    ![captura de tela da caixa de diálogo mostrando o espaço em disco ](images/ctrl-list-views-image16.png)
+    ![captura de tela da caixa de diálogo mostrando espaço em disco ](images/ctrl-list-views-image16.png)
 
     Neste exemplo, o espaço em disco necessário para instalar os componentes é mais significativo do que o número de componentes selecionados.
 
--   Para exibições de lista de caixas de seleção, se houver potencialmente muitos itens e a seleção ou a limpeza de todos eles for provável, adicione os botões Select all e Limpar todos os comandos.
+-   Para exibições de lista de caixas de seleção, se houver potencialmente muitos itens e a seleção ou limpeza de todos eles for provável, adicione selecionar tudo e desmarcar todos os botões de comando.
 -   **Use caixas de seleção de estado misto para indicar a seleção parcial dos itens em um contêiner.** O estado misto não é usado como um terceiro estado para um item individual.
 
 ### <a name="changing-views"></a>Alterando exibições
 
 Se os usuários puderem alterar as exibições:
 
--   **Escolha a exibição mais conveniente por padrão.** Todas as alterações feitas pelos usuários devem ser persistentes em uma exibição por lista, por usuário.
--   **Altere a exibição usando um botão de divisão, um botão de menu ou uma lista de menus suspensos.** Sempre que for prático, use [um botão de](ctrl-command-buttons.md) divisão na barra de ferramentas e altere o rótulo do botão para refletir a exibição atual.
+-   **Escolha a exibição mais conveniente por padrão.** As alterações feitas pelos usuários devem se tornar persistentes em uma exibição por lista, por usuário.
+-   **Altere a exibição usando um botão de divisão, botão de menu ou lista suspensa.** Sempre que for prático, use um [botão de divisão](ctrl-command-buttons.md) na barra de ferramentas e altere o rótulo do botão para refletir o modo de exibição atual.
 
-    ![captura de tela da lista com o botão dividir "exibições" ](images/ctrl-list-views-image17.png)
+    ![captura de tela da lista com o botão ' exibições ' dividido ](images/ctrl-list-views-image17.png)
 
     Neste exemplo, um botão de divisão na barra de ferramentas é usado para alterar as exibições.
 
--   **Forneça um menu De exibição de contexto.**
+-   **Forneça um menu de contexto de exibição.**
 
-    ![captura de tela da lista com o menu de contexto "exibir" ](images/ctrl-list-views-image18.png)
+    ![captura de tela da lista com o menu de contexto ' Exibir ' ](images/ctrl-list-views-image18.png)
 
-Neste exemplo, um menu De exibição de contexto é usado para alterar as exibições.
+Neste exemplo, um menu de contexto de exibição é usado para alterar as exibições.
 
 ### <a name="details-views"></a>Exibições de detalhes
 
--   **Considere o uso da exibição de blocos para melhorar a capacidade de leitura.**
+-   **Considere usar a exibição de blocos para melhorar a legibilidade.**
 
     **Aceitável:**
 
     ![captura de tela da lista de detalhes com colunas estreitas ](images/ctrl-list-views-image19.png)
 
-    Neste exemplo, há muitos dados e a janela, a lista e as colunas são muito pequenas, tornando os itens de lista difíceis de ler.
+    Neste exemplo, há muitos dados e a janela, lista e colunas são muito pequenas, tornando os itens de lista difíceis de ler.
 
     **Melhor:**
 
     ![captura de tela da lista de detalhes com dados em grupos ](images/ctrl-list-views-image20.png)
 
-    Neste exemplo, a exibição Tile exibe os dados sem truncamento.
+    Neste exemplo, a exibição de bloco exibe os dados sem truncamento.
 
--   **Escolha larguras de coluna padrão apropriadas para os dados mais longos.** As exibições de lista truncam automaticamente dados longos com reellipses, portanto, as larguras da coluna são apropriadas se algumas reellipses são exibidas por padrão. Embora os usuários possam reorganizar colunas, prefira outras soluções:
+-   **Escolha as larguras de coluna padrão apropriadas para os dados mais longos.** As exibições de lista truncam automaticamente dados longos com reticências, portanto, as larguras das colunas são apropriadas se algumas elipses são exibidas por padrão. Embora os usuários possam redimensionar colunas, prefira outras soluções:
 
-    -   Tamanho de cada largura de coluna para ajustar seus dados.
-    -   Tamanho da largura do controle para ajustar suas colunas mais quaisquer barras de rolagem prováveis.
+    -   Dimensione a largura de cada coluna para ajustar seus dados.
+    -   Dimensione a largura do controle para se ajustar a suas colunas, além de barras de rolagem prováveis.
     -   Se necessário, use a rolagem horizontal.
     -   Ter dados truncados somente para itens de tamanho ímpar ou como último recurso.
 
-    Se os dados de tamanho normal devem ser truncados por padrão, faça com que a janela e a exibição de lista sejam resizáveis. Inclua 30% adicionais (até 200% para texto mais curto) para qualquer texto (mas não números) que será localizado.
+    Se os dados de tamanho normal devem ser truncados por padrão, torne a janela e a exibição de lista redimensionável. Inclua mais 30% (até 200 por cento para texto mais curto) para qualquer texto (mas não números) que serão localizados.
 
     **Incorreto:**
 
     ![captura de tela de colunas de lista com dados truncados ](images/ctrl-list-views-image21.png)
 
-    Neste exemplo, a maioria dos dados é truncada. As muitas reellipses indicam claramente que as larguras do controle e da coluna são muito pequenas para os dados.
+    Neste exemplo, a maioria dos dados é truncada. As várias reticências indicam claramente que as larguras de controle e coluna são muito pequenas para os dados.
 
     **Incorreto:**
 
-    ![captura de tela da lista de uma coluna com dados truncados ](images/ctrl-list-views-image22.png)
+    ![captura de tela de lista de uma coluna com dados truncados ](images/ctrl-list-views-image22.png)
 
     Neste exemplo, os dados são truncados sem motivo.
 
--   **Escolha uma ordem de coluna padrão apropriada.** Em geral, ordenar as colunas da seguinte maneira:
+-   **Escolha uma ordem de coluna padrão apropriada.** Em geral, ordene as colunas da seguinte maneira:
 
-    -   Primeiro, o nome do item ou a identificação de dados.
-    -   Em seguida, outros dados úteis para diferenciação dos itens de lista.
-    -   Em seguida, os dados mais úteis (preferencialmente curtos ou de comprimento fixo).
+    -   Primeiro, o nome do item ou os dados de identificação.
+    -   Em seguida, outros dados são úteis para diferenciar os itens da lista.
+    -   Em seguida, os dados mais úteis (preferencialmente curto ou fixo).
     -   Em seguida, dados menos úteis (preferíveis de comprimento curto ou fixo).
     -   Dados por último, longos e de comprimento variável.
 

@@ -4,12 +4,12 @@ ms.assetid: 7a9e304c-57ef-41a3-83be-2b2d31435da8
 title: Exemplo de controle da Web de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a2f305f1dcbb412325970510c6eaa5f09732bf10d870c961820ab8d8749eda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfe2035028ab622f896489b304ca850db4e25462
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032194"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882033"
 ---
 # <a name="ink-web-control-sample"></a>Exemplo de controle da Web de tinta
 
@@ -33,7 +33,7 @@ Este exemplo consiste em uma solução que inclui dois projetos e um arquivo HTM
 
 ## <a name="referencing-the-control-in-html"></a>Referenciando o controle em HTML
 
-A solução inclui um arquivo HTML, default.htm. Esse arquivo é a página para a que o navegador navega para carregar o controle. O arquivo contém uma <object> marca que faz referência ao controle . Ele também inclui um script que é chamado quando a página é descarregada, conforme indicado pela presença do atributo onload=" `OnUnload()` no <body> tag. Essa função chama o `DisposeResources` método no controle para garantir que todos os recursos sejam liberados corretamente no desligamento.
+A solução inclui um arquivo HTML, default.htm. Esse arquivo é a página para a que o navegador navega para carregar o controle. O arquivo contém uma &lt; marca de objeto que faz referência ao controle &gt; . Ele também inclui um script que é chamado quando a página é descarregada, conforme indicado pela presença do atributo onload=" `OnUnload()` na marca &lt; de &gt; corpo. Essa função chama o `DisposeResources` método no controle para garantir que todos os recursos sejam liberados corretamente no desligamento.
 
 
 ```C++
@@ -59,7 +59,7 @@ A solução inclui um arquivo HTML, default.htm. Esse arquivo é a página para 
 
 
 
-Observe o formato do valor do atributo classid para a <object> marca. Ele nomeia o assembly, seguido por um separador de sinal e, em seguida, o namespace que contém o controle e, em seguida, o nome \# de classe do controle.
+Observe o formato do valor do atributo classid para a marca &lt; de &gt; objeto. Ele nomeia o assembly, seguido por um separador de sinal e, em seguida, o namespace que contém o controle e, em seguida, o nome \# de classe do controle.
 
 Um controle de usuário do mundo real provavelmente incluiria métodos adicionais usados para persistir ou enviar os dados coletados no aplicativo.
 

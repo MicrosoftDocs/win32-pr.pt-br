@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4a382225f526f18731b8b9f0541e617cb31dfb4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9121179b744857d5e7d0bec5a2ae814c603c6b1c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782886"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885848"
 ---
 # <a name="logontype-principaltype-element"></a>Elemento Logontype (dirigetype)
 
@@ -36,9 +36,9 @@ O elemento **Logontype** é definido pelo tipo complexo de [**PrincipalType**](t
 
 
 
-| Elemento                                                                  | Derivado de                                                           | Descrição                                                    |
+| Elemento                                                                  | Derivado de                                                           | Description                                                    |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Beneficiário**](taskschedulerschema-principal-principaltype-element.md) | [**principalType**](taskschedulerschema-principaltype-complextype.md) | Especifica as credenciais de segurança para uma entidade.<br/> |
+| [**Beneficiário**](taskschedulerschema-principal-principaltype-element.md) | [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) | Especifica as credenciais de segurança para uma entidade.<br/> |
 
 
 
@@ -56,7 +56,7 @@ Esse elemento (definido pelo tipo simples de [**Logontype**](taskschedulerschema
 -   Senha: o usuário deve fazer logon usando uma senha.
 -   InteractiveToken: o usuário já deve estar conectado. A tarefa será executada somente em uma sessão interativa existente.
 
-Para uma tarefa que contém uma ação de caixa de mensagem, a caixa de mensagem será exibida se a tarefa for ativada e a tarefa tiver um tipo de logon interativo. Para definir o tipo de logon da tarefa como interativo, especifique **InteractiveToken** no **<LogonType>** elemento da entidade de segurança da tarefa.
+Para uma tarefa que contém uma ação de caixa de mensagem, a caixa de mensagem será exibida se a tarefa for ativada e a tarefa tiver um tipo de logon interativo. Para definir o tipo de logon da tarefa como interativo, especifique **InteractiveToken** no elemento **&lt; Logontype &gt;** da entidade de segurança da tarefa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Para uma tarefa que contém uma ação de caixa de mensagem, a caixa de mensagem
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

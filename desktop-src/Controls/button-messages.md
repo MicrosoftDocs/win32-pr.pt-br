@@ -4,12 +4,12 @@ description: Um botão pode enviar mensagens para sua janela pai e uma janela pa
 ms.assetid: 2d2358fb-b17d-48a9-8def-15ae8bad9162
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1601f269ec1242a10579d2ace812723d3ead7f84
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 136310a3718f17900f604287bf78186f7c927259
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103642785"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625712"
 ---
 # <a name="button-messages"></a>Mensagens de botão 
 
@@ -66,7 +66,7 @@ A mensagem e a resposta da janela pai dependem do tipo, do estilo e do estado at
 
 
 
- 
+ 
 
 Um botão envia os códigos de notificação [bilhão \_ Disable](bn-disable.md), [bilhão \_ Push](bn-pushed.md), [bilhão \_ KILLFOCUS](bn-killfocus.md), [bilhão \_ Paint](bn-paint.md), [bilhão \_ SETFOCUS](bn-setfocus.md)e [bilhão sem \_ envio](bn-unpushed.md) de notificações somente se ele tiver o estilo de [**\_ notificação BS**](button-styles.md) . [Bilhão \_](bn-dblclk.md) Os códigos de notificação do DBLCLK são enviados automaticamente para os botões de [**\_ UserButton**](button-styles.md), [**BS \_**](button-styles.md)e BS [**\_ OWNERDRAW**](button-styles.md) da BS. Outros tipos de botão enviam bilhão \_ DBLCLK somente se tiverem o estilo de **\_ notificação BS** . Todos os botões enviam o código de notificação [ \_ clicado bilhão](bn-clicked.md) , independentemente de seus estilos de botão.
 
@@ -93,7 +93,7 @@ O sistema fornece valores de cor padrão para botões. Um aplicativo pode recupe
 
 
 
- 
+ 
 
 No entanto, chamar [**SetSysColors**](/windows/desktop/api/winuser/nf-winuser-setsyscolors) afeta todos os aplicativos, portanto, você não deve chamar essa função para personalizar botões para seu aplicativo.
 
@@ -107,8 +107,8 @@ O procedimento de janela para a classe de janela de controle de botão predefini
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -203,7 +203,7 @@ O procedimento de janela para a classe de janela de controle de botão predefini
 </tbody>
 </table>
 
-<p> </p></td>
+<p> </p></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/winmsg/wm-getfont"><strong>WM_GETFONT</strong></a></td>
@@ -270,7 +270,7 @@ O procedimento de janela para a classe de janela de controle de botão predefini
 
 
 
- 
+ 
 
 O procedimento de janela predefinido transmite todas as outras mensagens para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para o processamento padrão.
 
@@ -281,6 +281,6 @@ O procedimento de janela predefinido transmite todas as outras mensagens para a 
 [Mensagens de controle](control-messages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

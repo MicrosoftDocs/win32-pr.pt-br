@@ -1,7 +1,7 @@
 ---
 description: Representa um sistema de computador físico ou uma máquina virtual.
 ms.assetid: 1db9e169-1466-4898-ab95-e9d622fe43cb
-title: Msvm_ComputerSystem classe
+title: Classe Msvm_ComputerSystem
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -59,20 +59,20 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a8a81d5e1503c868865f1f1fae7238be74f024c1bd1c992f5610ce75b5702ab6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e35ebd6000dfae5e99c4b589f4c0a62e84f1e1d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119531776"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880915"
 ---
-# <a name="msvm_computersystem-class"></a>Classe Msvm \_ ComputerSystem
+# <a name="msvm_computersystem-class"></a>\_Classe de ComputerSystem Msvm
 
 Representa um sistema de computador físico ou uma máquina virtual.
 
-Para recuperar informações para o VMMS, use a [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
+Para recuperar informações para o VMMS, use a classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
 
-A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -130,23 +130,23 @@ class Msvm_ComputerSystem : CIM_ComputerSystem
 
 ## <a name="members"></a>Membros
 
-A **classe \_ ComputerSystem Msvm** tem estes tipos de membros:
+A classe de **\_ ComputerSystem Msvm** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe \_ ComputerSystem Msvm** tem esses métodos.
+A classe **Msvm \_ ComputerSystem** tem esses métodos.
 
 
 
 | Método                                                                                         | Descrição                                                                                                                                                                                                                                                                                                                         |
 |:-----------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**InjectNonMaskableInterrupt**](injectnonmaskableinterrupt-msvm-computersystem.md)           | Injeta uma interrupção não mascarável na máquina virtual. Esse método só tem suporte para instâncias da **classe Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/> **Windows 8.1:** Esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>                                    |
-| [**RequestReplicationStateChange**](msvm-computersystem-requestreplicationstatechange.md)     | Solicita que o estado de replicação da máquina virtual seja alterado para o valor especificado. Esse método só tem suporte para instâncias da **classe Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/>                                                                                                        |
-| [**RequestReplicationStateChangeEx**](msvm-requestreplicationstatechangeex-computersystem.md) | Solicita que o estado de replicação da máquina virtual seja alterado para o valor especificado. Esse método só tem suporte para instâncias da **classe Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/> **Windows 8.1:** Esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/> |
-| [**RequestStateChange**](requeststatechange-msvm-computersystem.md)                           | Solicita que o estado da máquina virtual seja alterado. Esse método só tem suporte para instâncias da **classe Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/>                                                                                                                                           |
+| [**InjectNonMaskableInterrupt**](injectnonmaskableinterrupt-msvm-computersystem.md)           | Injeta uma interrupção não mascarável na máquina virtual. Esse método só tem suporte para instâncias da classe **Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>                                    |
+| [**RequestReplicationStateChange**](msvm-computersystem-requestreplicationstatechange.md)     | Solicita que o estado de replicação da máquina virtual seja alterado para o valor especificado. Esse método só tem suporte para instâncias da classe **Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/>                                                                                                        |
+| [**RequestReplicationStateChangeEx**](msvm-requestreplicationstatechangeex-computersystem.md) | Solicita que o estado de replicação da máquina virtual seja alterado para o valor especificado. Esse método só tem suporte para instâncias da classe **Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/> |
+| [**RequestStateChange**](requeststatechange-msvm-computersystem.md)                           | Solicita que o estado da máquina virtual seja alterado. Esse método só tem suporte para instâncias da classe **Msvm \_ ComputerSystem** que representam uma máquina virtual.<br/>                                                                                                                                           |
 | **SetPowerState**                                                                              | Não há suporte para o método.<br/>                                                                                                                                                                                                                                                                                            |
 
 
@@ -155,22 +155,22 @@ A **classe \_ ComputerSystem Msvm** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ ComputerSystem Msvm** tem essas propriedades.
+A classe **Msvm \_ ComputerSystem** tem essas propriedades.
 
 <dl> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **matriz uint16**
+Tipo de dados: a matriz **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o *parâmetro RequestedState* do [**método RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada de **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do objeto [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85)) Essa propriedade poderá ser não nula **se** uma implementação puder anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **Null se** uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
+Indica os valores possíveis para o parâmetro *requestedstate* do método [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada do **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do objeto [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) . Essa propriedade pode ser não **nula** se uma implementação for capaz de anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **nula** se uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
 
-Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
+Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
 
 <dl> <dt>
 
@@ -189,10 +189,10 @@ Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-ver
 <span id="Test"></span><span id="test"></span><span id="TEST"></span>**Teste** (7)
 </dt> <dt>
 
-<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Adiar** (8)
+<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Defer** (8)
 </dt> <dt>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Desativar** (9)
 </dt> <dt>
 
 <span id="Reboot"></span><span id="reboot"></span><span id="REBOOT"></span>**Reinicializar** (10)
@@ -201,7 +201,7 @@ Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-ver
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Redefinir** (11)
 </dt> <dt>
 
-<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF Reservado** (.. )
+<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF reservado** (.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -215,14 +215,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto . Essa propriedade é herdada da [**classe \_ ManagedElement cim**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) e conterá um dos valores a seguir.
+Uma breve descrição do objeto. Essa propriedade é herdada da classe [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) e conterá um dos valores a seguir.
 
 
 
 | Valor                                                                                                | Significado                                                  |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>"Máquina Virtual"</dt> </dl>         | A instância representa uma máquina virtual.<br/>    |
-| <dl> <dt>"Sistema de Computador de Hospedagem"</dt> </dl> | A instância representa o computador de hospedagem.<br/> |
+| <dl> <dt>"Máquina virtual"</dt> </dl>         | A instância representa uma máquina virtual.<br/>    |
+| <dl> <dt>"Sistema de computador de hospedagem"</dt> </dl> | A instância representa o computador de hospedagem.<br/> |
 
 
 
@@ -233,13 +233,13 @@ Uma breve descrição do objeto . Essa propriedade é herdada da [**classe \_ Ma
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
 
 </dd> <dt>
 
@@ -252,20 +252,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada do [**\_ sistema CIM**](/windows/desktop/CIMWin32Prov/cim-system)e é sempre definida como "Msvm \_ ComputerSystem".
+O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**do \_ sistema CIM**](/windows/desktop/CIMWin32Prov/cim-system)e é sempre definida como "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
 **Dedicado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **matriz uint16**
+Tipo de dados: a matriz **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o sistema de computador é um sistema de finalidade especial (dedicado a um uso específico), em vez de ser um sistema de uso geral. Essa propriedade é herdada do [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)e sempre é definida como 0 (Não Dedicado).
+Indica se o sistema de computador é um sistema de finalidade especial (dedicado a um uso específico), em vez de ser um sistema de finalidade geral. Essa propriedade é herdada do [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)e é sempre definida como 0 (não dedicada).
 
 </dd> <dt>
 
@@ -278,14 +278,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada [**de \_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e conterá um dos valores a seguir.
+Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e conterá um dos valores a seguir.
 
 
 
 | Valor                                                                                                          | Significado                                                  |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>"Sistema de Computador Virtual da Microsoft"</dt> </dl> | A instância representa uma máquina virtual.<br/>    |
-| <dl> <dt>"Sistema de Computador de Hospedagem da Microsoft"</dt> </dl> | A instância representa o computador de hospedagem.<br/> |
+| <dl> <dt>"Sistema de computador virtual da Microsoft"</dt> </dl> | A instância representa uma máquina virtual.<br/>    |
+| <dl> <dt>"Sistema de computador de hospedagem da Microsoft"</dt> </dl> | A instância representa o computador de hospedagem.<br/> |
 
 
 
@@ -296,13 +296,13 @@ Uma descrição do objeto . Essa propriedade é herdada [**de \_ ManagedElement 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
 
 </dd> <dt>
 
@@ -315,7 +315,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como o nome de exibição do computador para uma máquina virtual ou o nome NetBIOS do sistema operacional de gerenciamento.
+Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como o nome de exibição do computador para uma máquina virtual ou o nome NetBIOS do sistema operacional de gerenciamento.
 
 </dd> <dt>
 
@@ -558,7 +558,7 @@ No Windows 8, há uma única instância de [**ReplicationSettingData**](msvm-rep
 
 | Nome da propriedade  | Windows 8 valor               | Windows 8.1 valor                          |
 |----------------|-------------------------------|--------------------------------------------|
-| **InstanceID** | Microsoft: <vmguid> \\ HVR | Microsoft: <vmguid> \\ HVR \\<0/1> |
+| **InstanceID** | Microsoft: &lt; vmguid &gt; \\ HVR | Microsoft: &lt; vmguid &gt; \\ HVR \\<0/1> |
 
 
 
