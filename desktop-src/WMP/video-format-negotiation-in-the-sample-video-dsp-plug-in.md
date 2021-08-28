@@ -3,31 +3,31 @@ title: Negociação de formato de vídeo no plug-in de DSP de vídeo de exemplo
 description: Negociação de formato de vídeo no plug-in de DSP de vídeo de exemplo
 ms.assetid: 3e92ce10-2b9b-4689-a181-f56c33472fea
 keywords:
-- Plug-ins do Windows Media Player, DSP de vídeo
+- plug-ins Windows Media Player, DSP de vídeo
 - plug-ins, DSP de vídeo
 - plug-ins de processamento de sinal digital, negociação de formato de vídeo
 - Plug-ins do DSP, negociação de formato de vídeo
 - plug-ins de DSP de vídeo, negociação de formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c287a38fbfcf11f1b9d74087a91c5825b22f1243
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 90154f3fe7824fb9af563cb662fdcb2847339bc6061d79b3e92cab9c6e36e44d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761816"
 ---
 # <a name="video-format-negotiation-in-the-sample-video-dsp-plug-in"></a>Negociação de formato de vídeo no plug-in de DSP de vídeo de exemplo
 
-Antes de o Windows Media Player inserir um plug-in de DSP de vídeo na cadeia de sinais, o Player deve determinar se o plug-in pode processar o vídeo que está sendo reproduzido. O processo pelo qual o plug-in e o Player se comunicam sobre formatos de vídeo com suporte é chamado de negociação de formato.
+antes que Windows Media Player insira um plug-in de DSP de vídeo na cadeia de sinais, o Player deve determinar se o plug-in pode processar o vídeo que está sendo reproduzido. O processo pelo qual o plug-in e o Player se comunicam sobre formatos de vídeo com suporte é chamado de negociação de formato.
 
 ## <a name="providing-the-supported-input-and-output-types"></a>Fornecendo os tipos de entrada e saída com suporte
 
-Se o plug-in do DSP estiver agindo como um DMO (objeto de mídia do DirectX), o Player consultará o plug-in sobre seus formatos com suporte fazendo uma sequência de chamadas para **IMediaObject:: GetInputType** e **IMediaObject:: GetOutputType**.
+se o plug-in do DSP estiver agindo como um objeto de mídia DirectX (DMO), o Player consultará o plug-in sobre seus formatos com suporte fazendo uma sequência de chamadas para **IMediaObject:: getinputtype** e **IMediaObject:: getoutputtype**.
 
 Se o plug-in do DSP estiver agindo como uma Media Foundation transformação (MFT), o Player consultará o plug-in sobre seus formatos com suporte fazendo uma sequência de chamadas para **IMFTransform:: GetInputAvailableType** e **IMFTransform:: GetOutputAvailableType**.
 
-O plug-in de vídeo de exemplo gerado pelo assistente de plug-in do Windows Media Player armazena a lista de formatos de vídeo com suporte como uma matriz de GUIDs. O código a seguir é do arquivo Main. cpp:
+o plug-in de vídeo de exemplo gerado pelo assistente de plug-in Windows Media Player armazena a lista de formatos de vídeo com suporte como uma matriz de guids. O código a seguir é do arquivo Main. cpp:
 
 
 ```C++
@@ -68,9 +68,9 @@ else // Otherwise use default for this plug-in.
 
 ## <a name="setting-the-input-and-output-types"></a>Definindo os tipos de entrada e saída
 
-Se o plug-in do DSP estiver agindo como DMO, o Windows Media Player definirá o tipo de mídia chamando **IMediaObject:: SetInputType** e **IMediaObject:: SetOutputType**, passando para cada função um ponteiro para uma estrutura de **\_ \_ tipo de mídia DMO** que representa o tipo de mídia solicitado.
+se o plug-in do DSP estiver agindo como um DMO, Windows Media Player definirá o tipo de mídia chamando **IMediaObject:: setinputtype** e **IMediaObject:: setoutputtype**, passando para cada função um ponteiro para uma estrutura de **\_ \_ tipo de mídia DMO** que representa o tipo de mídia solicitado.
 
-Se o plug-in do DSP estiver agindo como um MFT, o Windows Media Player definirá o tipo de mídia chamando **IMFTransform:: SetInputType** e **IMFTransform:: SetOutputType**, passando para cada função um ponteiro para uma interface **IMFMediaType** que representa o tipo de mídia solicitado.
+se o plug-in do DSP estiver agindo como um MFT, Windows Media Player definirá o tipo de mídia chamando **IMFTransform:: setinputtype** e **IMFTransform:: setoutputtype**, passando para cada função um ponteiro para uma interface **IMFMediaType** que representa o tipo de mídia solicitado.
 
 Não há nenhuma garantia de que o Player chamará métodos de negociação de formato em qualquer ordem específica, portanto, o código de plug-in deve lidar com qualquer caso. Por exemplo, se o Player chamar **Setoutputtypetype** antes de chamar **SetInputType**, ele será um curso de ação válido para que o plug-in rejeite o tipo de mídia de saída proposto. O código a seguir da implementação de exemplo de **IMediaObject:: SetOutputType** demonstra isso:
 
@@ -107,9 +107,9 @@ Se o tipo de mídia proposto passar os testes de validação, ele será armazena
 [**Implementando um plug-in de DSP de vídeo**](implementing-a-video-dsp-plug-in.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

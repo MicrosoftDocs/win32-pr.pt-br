@@ -4,16 +4,16 @@ ms.assetid: 4a5c0085-0e7b-424d-9205-5ec39518a088
 title: Sobre a arquitetura do ACM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f037a1823f7045ccaf1dc573c6d213beeebe0a63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d75b6b365970c34174facd035ddf38c625e3e4fac72f011e612998c46e9bee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065167"
 ---
 # <a name="about-the-acm-architecture"></a>Sobre a arquitetura do ACM
 
-O módulo de configuração automática (ACM) é o novo componente de configuração sem fio para o Windows Vista. O Windows XP com Service Pack 3 (SP3) e a API de LAN sem fio para Windows XP com Service Pack 2 (SP2) usam o serviço WZC (Wireless Zero Configuration).
+o módulo de configuração automática (ACM) é o novo componente de configuração sem fio para o Windows Vista. Windows o XP com service pack 3 (SP3) e a API de LAN sem fio para Windows XP com service pack 2 (SP2) usam o serviço WZC (Wireless Zero Configuration).
 
 O ACM verifica as redes periodicamente e usa um processo iterativo para selecionar e se conectar à rede mais preferencial no intervalo, se essa rede tiver uma interface habilitada para conexão automática. O ACM também salva e recupera perfis de rede, que contêm configurações do ACM, módulo específico de mídia (MSM), segurança e fornecedor de hardware independente (IHV). Esses perfis de rede são para configuração automática.
 

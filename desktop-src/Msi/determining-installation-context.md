@@ -4,18 +4,18 @@ ms.assetid: 162bda20-0c62-4eac-8c1f-fd107e42c528
 title: Determinando o contexto de instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24367e2367f845dfef2e4947a32d9dec84d644cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89c3ea847a410c5d253061e93153da4462e3cdd8ae8da12b4b6b701812d37d89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764256"
 ---
 # <a name="determining-installation-context"></a>Determinando o contexto de instalação
 
 Um aplicativo pode chamar as funções [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa) ou [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa) para enumerar os produtos que estão instalados ou anunciados no sistema. Essa função pode enumerar todos os produtos instalados no [contexto de instalação](installation-context.md)por máquina. Ele pode enumerar os produtos instalados no contexto por usuário para o usuário atual. O aplicativo pode recuperar informações sobre o contexto desses produtos chamando as funções [**MsiGetProductInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoexa) ou [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa) .
 
-O Windows Installer pode instalar produtos para serem executados com privilégios elevados (sistema) para usuários não administradores. Isso requer a permissão de um usuário administrador. Um produto que é instalado com privilégios elevados é chamado de "gerenciado". Todos os produtos instalados por computador são gerenciados. Os produtos instalados por usuário só serão gerenciados se um agente do sistema local executar um anúncio ao representar um usuário. Esse é o método usado pela implantação de software por meio de [política de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Aplicativos por usuário instalados enquanto as políticas de [AlwaysInstallElevated](alwaysinstallelevated.md) são definidas não são considerados gerenciados. Ao chamar [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda), um aplicativo pode verificar se um produto específico é gerenciado.
+o Windows Installer pode instalar produtos para serem executados com privilégios elevados (sistema) para usuários não administradores. Isso requer a permissão de um usuário administrador. Um produto que é instalado com privilégios elevados é chamado de "gerenciado". Todos os produtos instalados por computador são gerenciados. Os produtos instalados por usuário só serão gerenciados se um agente do sistema local executar um anúncio ao representar um usuário. Esse é o método usado pela implantação de software por meio de [política de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Aplicativos por usuário instalados enquanto as políticas de [AlwaysInstallElevated](alwaysinstallelevated.md) são definidas não são considerados gerenciados. Ao chamar [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda), um aplicativo pode verificar se um produto específico é gerenciado.
 
 O exemplo a seguir demonstra como um aplicativo determina o contexto usando [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa), [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)e [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda).
 

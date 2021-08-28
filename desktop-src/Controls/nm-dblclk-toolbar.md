@@ -3,7 +3,7 @@ title: Código de notificação de NM_DBLCLK (barra de ferramentas) (commctrl. h
 description: Notifica a janela pai de um controle ToolBar que o usuário clicou duas vezes com o botão esquerdo do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: c6198245-cfd4-4e1f-877d-94c1d47e09d2
 keywords:
-- Código de notificação de NM_DBLCLK (barra de ferramentas) controles do Windows
+- código de notificação de NM_DBLCLK (barra de ferramentas) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5441f86fa47f25a98dad82f9bfde05a84b5f498
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75abaf61938fbf377dbe8b6c5eaca99ff5ab027abe08c670de72a218dd51f1b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919656"
 ---
 # <a name="nm_dblclk-toolbar-notification-code"></a>\_Código de notificação nm DBLCLK (barra de ferramentas)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **false** para permitir que o controle Toolbar execute o processamento padrão do evento ou **true** para impedir que o controle processe o evento.
 
@@ -55,9 +55,9 @@ Retorna **false** para permitir que o controle Toolbar execute o processamento p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

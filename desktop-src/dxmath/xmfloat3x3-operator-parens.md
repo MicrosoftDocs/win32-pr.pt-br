@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e46ffcd2b434b4b7864f14615615c306ffaa5976
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9edbc18a03d485a8710411ecde37ac18848c8918
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164950"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468773"
 ---
 # <a name="xmfloat3x3-operator--operators"></a>Operadores do operador XMFLOAT3X3 ()
 
@@ -28,38 +28,12 @@ Acessa elementos de matriz específicos referenciados por linha e coluna da inst
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: Operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Retorna um <code>reference</code> para um elemento Matrix de uma instância <code>XMFLOAT3X3</code> , conforme especificado pelos argumentos Row e Column. <br/> Esse operador retorna um <code>reference</code> para um elemento de matriz de uma instância <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> conforme especificado por argumentos de linha e coluna. <br/>
-<blockquote>
-[!Note]<br />
-Esse operador só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: Operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Retorna o valor de um elemento Matrix em uma instância <code>XMFLOAT3X3</code> , conforme especificado por argumentos de linha e coluna. <br/> Esse operador retorna o valor de um elemento Matrix de uma instância <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> conforme especificado por argumentos de linha e coluna. <br/>
-<blockquote>
-[!Note]<br />
-Esse operador só está disponível ao desenvolver com C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Operador | Descrição | 
+|----------|-------------|
+| <a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: Operator () (size_t, size_t)</strong></a> | Retorna um <code>reference</code> para um elemento Matrix de uma instância <code>XMFLOAT3X3</code> , conforme especificado pelos argumentos Row e Column. <br /> Esse operador retorna um <code>reference</code> para um elemento de matriz de uma instância <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> conforme especificado por argumentos de linha e coluna. <br /><blockquote>[!Note]<br />Esse operador só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: Operator () (size_t, size_t)</strong></a> | Retorna o valor de um elemento Matrix em uma instância <code>XMFLOAT3X3</code> , conforme especificado por argumentos de linha e coluna. <br /> Esse operador retorna o valor de um elemento Matrix de uma instância <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> conforme especificado por argumentos de linha e coluna. <br /><blockquote>[!Note]<br />Esse operador só está disponível ao desenvolver com C++.</blockquote><br /> | 
+
 
 
 

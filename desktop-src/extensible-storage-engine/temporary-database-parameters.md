@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 427ed51c2757075ccb28fd70e5554c49dc8db4e8
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: fffc56a699e059adb5096489a7f643297251002e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986819"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477442"
 ---
 # <a name="temporary-database-parameters"></a>Parâmetros de banco de dados temporários
 
@@ -37,19 +37,7 @@ Este tópico contém parâmetros que são usados para o banco de dados temporár
 Esse parâmetro controla o uso de transações em tabelas temporárias. Quando esse parâmetro for false, as tabelas temporárias serão mais rápidas, mas não será possível reverter as atualizações feitas em uma transação.
 
 
-| Rótulo | Valor |
-|--------|-------|
-| <p>Valor padrão:</p> | <p>True</p> | 
-| <p>Tipo:</p> | <p>Booliano</p> | 
-| <p>Intervalo válido:</p> | <p>Falso, verdadeiro</p> | 
-| <p>Escopo:</p> | <p>Instância</p> | 
-| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
-| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
-| <p>Afeta o layout físico:</p> | <p>Não</p> | 
-| <p>Afeta a confiabilidade:</p> | <p>Sim</p> | 
-| <p>Afeta o desempenho:</p> | <p>Sim</p> | 
-| <p>Afeta os recursos:</p> | <p>Sim</p> | 
-| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+| | | <p>Valor padrão:</p> | <p>Verdadeiro</p> | | <p>Tipo:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>Falso, verdadeiro</p> | | <p>Escopo:</p> | <p>Instância</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Sim</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
 
 
 
@@ -61,19 +49,7 @@ Esse parâmetro controla o tamanho inicial do banco de dados temporário. O tama
 Geralmente, é desejável que aplicativos pequenos configurem o banco de dados temporário para que seja o menor possível. Definir esse parâmetro como 14 atingirá o menor banco de dados temporário possível. Observe que também é possível eliminar totalmente o banco de dados temporário definindo **JET_paramMaxTemporaryTables** como zero.
 
 
-| Rótulo | Valor |
-|--------|-------|
-| <p>Valor padrão:</p> | <p>0</p> | 
-| <p>Tipo:</p> | <p>Integer</p> | 
-| <p>Intervalo válido:</p> | <p>0 a 2147483647</p> | 
-| <p>Escopo:</p> | <p>Instância</p> | 
-| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
-| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
-| <p>Afeta o layout físico:</p> | <p>Sim</p> | 
-| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
-| <p>Afeta o desempenho:</p> | <p>Sim</p> | 
-| <p>Afeta os recursos:</p> | <p>Sim</p> | 
-| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+| | | <p>Valor padrão:</p> | <p>0</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>0 a 2147483647</p> | | <p>Escopo:</p> | <p>Instância</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Sim</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta os recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
 
 
 
@@ -85,35 +61,19 @@ Esse parâmetro indica o caminho relativo ou absoluto do sistema de arquivos da 
 **Observação**  Se um caminho relativo for especificado, ele será relativo ao diretório de trabalho atual do processo que hospeda o aplicativo que está usando o mecanismo de banco de dados.
 
 
-| Rótulo | Valor |
-|--------|-------|
-| <p>Valor padrão:</p> | <p>"tmp. edb"</p> | 
-| <p>Tipo:</p> | <p>Caminho (cadeia de caracteres)</p> | 
-| <p>Intervalo válido:</p> | <p>0 a 247 caracteres</p> | 
-| <p>Escopo:</p> | <p>Instância</p> | 
-| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
-| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | 
-| <p>Afeta o layout físico:</p> | <p>Sim</p> | 
-| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
-| <p>Afeta o desempenho:</p> | <p>Não</p> | 
-| <p>Afeta os recursos:</p> | <p>Não</p> | 
-| <p>Disponibilidade:</p> | <p>Tudo</p> | 
+| | | <p>Valor padrão:</p> | <p>"tmp. edb"</p> | | <p>Tipo:</p> | <p>Caminho (cadeia de caracteres)</p> | | <p>Intervalo válido:</p> | <p>0 a 247 caracteres</p> | | <p>Escopo:</p> | <p>Instância</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Sim</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Não</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>Tudo</p> | 
 
 
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 
 ### <a name="see-also"></a>Consulte Também
 
-[Arquivos extensíveis Armazenamento mecanismo](./extensible-storage-engine-files.md)  
+[arquivos do mecanismo de Armazenamento extensível](./extensible-storage-engine-files.md)  
 [JetCreateInstance](./jetcreateinstance-function.md)  
 [JetInit](./jetinit-function.md)

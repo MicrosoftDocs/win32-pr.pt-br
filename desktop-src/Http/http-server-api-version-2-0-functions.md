@@ -1,22 +1,22 @@
 ---
-title: Funções da API do Servidor HTTP versão 2.0
-description: A API do Servidor HTTP versão 2.0 fornece as seguintes funções.
+title: Funções da API do servidor HTTP versão 2,0
+description: A API do servidor HTTP versão 2,0 fornece as funções a seguir.
 ms.assetid: 12daffca-b403-4f06-8037-206f90e33252
 keywords:
-- Funções da API do Servidor HTTP versão 2.0
-- Funções HTTP, API do Servidor HTTP versão 2.0
+- Funções da API do servidor HTTP versão 2,0
+- Funções HTTP, API do servidor HTTP versão 2,0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92e4d5c09c001caa58d43c1e61d800f66b39706b
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 1b832a3f8fb1a97c48c49809d3e2f1975965becdc4c7bbf3942601d577d4702d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981356"
 ---
-# <a name="http-server-api-version-20-functions"></a>Funções da API do Servidor HTTP versão 2.0
+# <a name="http-server-api-version-20-functions"></a>Funções da API do servidor HTTP versão 2,0
 
-A API do Servidor HTTP versão 2.0 fornece as seguintes funções.
+A API do servidor HTTP versão 2,0 fornece as funções a seguir.
 
 | Função | Descrição |
 |-|-|
@@ -24,7 +24,7 @@ A API do Servidor HTTP versão 2.0 fornece as seguintes funções.
 | [**HttpFindUrlGroupId**](/windows/win32/api/http/nf-http-httpfindurlgroupid) | Recupera uma ID de grupo de URL para uma URL e uma fila de solicitação. |
 | [**HttpIsFeatureSupported**](/windows/win32/api/http/nf-http-httpisfeaturesupported) | Verifica se há suporte para um recurso específico. |
 
-## <a name="server-session"></a>Sessão do servidor
+## <a name="server-session"></a>Sessão de servidor
 
 | Função | Descrição |
 |-|-|
@@ -33,7 +33,7 @@ A API do Servidor HTTP versão 2.0 fornece as seguintes funções.
 | [**HttpQueryServerSessionProperty**](/windows/desktop/api/Http/nf-http-httpqueryserversessionproperty) | |
 | [**HttpSetServerSessionProperty**](/windows/desktop/api/Http/nf-http-httpsetserversessionproperty) | |
 
-## <a name="url-groups"></a>Grupos de URL
+## <a name="url-groups"></a>Grupos de URLs
 
 | Função | Descrição |
 |-|-|

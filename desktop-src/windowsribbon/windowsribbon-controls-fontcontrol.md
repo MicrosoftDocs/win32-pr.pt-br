@@ -4,12 +4,12 @@ description: para simplificar a integração e a configuração do suporte a fon
 ms.assetid: 6052f2e3-2c9e-432e-9ed6-c1e3a50843d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2c80ce84e17573925b8bf64637df1330c7447b6bebe501de1f20ebc4b1ac79d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 106163c03c506e438ffcffa261ebd7e3a2115e2a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119710647"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470722"
 ---
 # <a name="font-control"></a>Controle de fonte
 
@@ -198,7 +198,7 @@ Sim
 
 \-
 
-**Botão Reduzir** fonte
+Botão **reduzir fonte**
 
 Sim
 
@@ -212,7 +212,7 @@ Sim
 
 \-
 
-**Botão Negrito**
+Botão **negrito**
 
 Sim
 
@@ -226,7 +226,7 @@ Sim
 
 Não
 
-**Botão Itálico**
+Botão **itálico**
 
 Sim
 
@@ -240,7 +240,7 @@ Sim
 
 Não
 
-**Botão Sublinhado**
+Botão **sublinhado**
 
 Sim
 
@@ -254,7 +254,7 @@ Sim
 
 Sim
 
-**Botão Tachado**
+Botão **tachado**
 
 Sim
 
@@ -268,7 +268,7 @@ Sim
 
 Sim
 
-**Botão Subscrito**
+Botão **subscrito**
 
 Sim
 
@@ -282,7 +282,7 @@ Não
 
 \-
 
-**Botão Sobrescrito**
+Botão **sobrescrito**
 
 Sim
 
@@ -296,7 +296,7 @@ Não
 
 \-
 
-**Botão de cor de realçada de** texto
+Botão de **cor de realce de texto**
 
 Sim
 
@@ -310,7 +310,7 @@ Sim
 
 \-
 
-**Botão De cor do** texto
+Botão de **cor do texto**
 
 Sim
 
@@ -328,13 +328,13 @@ Não
 
  
 
-Quando o comportamento de layout de um Controle de Fonte é declarado, a estrutura de Faixa de Opções fornece um modelo de layout *SizeDefinition* opcional, , que define duas configurações de subcontrole com base no tamanho da Faixa de Opções e no espaço disponível para o Controle de `OneFontControl` Fonte. Para obter mais informações, consulte [Personalização de uma faixa de opções por definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
+Quando o comportamento de layout de um controle de fonte é declarado, a estrutura da faixa de faixas fornece um modelo de layout *SizeDefinition* opcional, `OneFontControl` , que define duas configurações de subcontrole com base no tamanho da faixa de opção e no espaço disponível para o controle de fonte. Para obter mais informações, consulte [Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
 
-### <a name="adding-a-fontcontrol-to-a-ribbon"></a>Adicionando um FontControl a uma faixa de opções
+### <a name="adding-a-fontcontrol-to-a-ribbon"></a>Adicionando um FontControl a uma faixa de faixas
 
-Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um Controle de Fonte a uma Faixa de Opções:
+Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a uma faixa de opções:
 
-Esta seção de código mostra a marcação [](windowsribbon-element-tab.md) de declaração de Comando [**FontControl,**](windowsribbon-element-fontcontrol.md) incluindo os Comandos tab e [**group**](windowsribbon-element-group.md) necessários para exibir um controle na Faixa de [**Opções**](windowsribbon-element-ribbon.md).
+Esta seção de código mostra a marcação de declaração de comando [**FontControl**](windowsribbon-element-fontcontrol.md) , incluindo os comandos de [**guia**](windowsribbon-element-tab.md) e de [**grupo**](windowsribbon-element-group.md) que são necessários para exibir um controle na [**faixa de faixas**](windowsribbon-element-ribbon.md).
 
 
 ```C++
@@ -354,7 +354,7 @@ Esta seção de código mostra a marcação [](windowsribbon-element-tab.md) de 
 
 
 
-Esta seção de código mostra a marcação necessária para declarar e associar [**um FontControl**](windowsribbon-element-fontcontrol.md) a um [**Comando**](windowsribbon-element-command.md) por meio de uma ID de comando. Este exemplo específico inclui as declarações [**Tab**](windowsribbon-element-tab.md) e [**Group,**](windowsribbon-element-group.md) com preferências de dimensionamento.
+Esta seção de código mostra a marcação necessária para declarar e associar um [**FontControl**](windowsribbon-element-fontcontrol.md) a um [**comando**](windowsribbon-element-command.md) por meio de uma ID de comando. Esse exemplo específico inclui as declarações de [**guia**](windowsribbon-element-tab.md) e de [**grupo**](windowsribbon-element-group.md) , com preferências de dimensionamento.
 
 
 ```C++
@@ -380,11 +380,11 @@ Esta seção de código mostra a marcação necessária para declarar e associar
 
 ### <a name="adding-a-fontcontrol-to-a-contextpopup"></a>Adicionando um FontControl a um ContextPopup
 
-Adicionar um controle de fonte a um [pop-up](windowsribbon-controls-contextpopup.md) de contexto requer um procedimento semelhante ao da adição de um Controle de Fonte à Faixa de Opções. No entanto, um Controle de Fonte em uma [**MiniToolbar**](windowsribbon-element-minitoolbar.md) é restrito ao conjunto de subcontroles padrão que são comuns a todos os modelos de Controle de **Fonte:** Família de fontes, **Tamanho** da fonte, **Negrito** e **Itálico.**
+A adição de um controle de fonte a um [pop-up de contexto](windowsribbon-controls-contextpopup.md) requer um procedimento semelhante ao da adição de um controle de fonte à faixa de tipos. No entanto, um controle de fonte em um [**Minibarra**](windowsribbon-element-minitoolbar.md) é restrito ao conjunto de subcontroles padrão que são comuns a todos os modelos de controle de fonte: **família de fontes**, **tamanho da fonte**, **negrito** e **itálico**.
 
-Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a um [pop-up de contexto](windowsribbon-controls-contextpopup.md):
+Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a um [Popup de contexto](windowsribbon-controls-contextpopup.md):
 
-Esta seção de código mostra a marcação de declaração do [**Comando FontControl**](windowsribbon-element-fontcontrol.md) necessária para exibir **um FontControl** no [**ContextPopup.**](windowsribbon-element-contextpopup.md)
+Esta seção de código mostra a marcação de declaração de comando [**FontControl**](windowsribbon-element-fontcontrol.md) que é necessária para exibir um **FontControl** no [**ContextPopup**](windowsribbon-element-contextpopup.md).
 
 
 ```C++
@@ -393,7 +393,7 @@ Esta seção de código mostra a marcação de declaração do [**Comando FontCo
 
 
 
-Esta seção de código mostra a marcação necessária para declarar e associar [**um FontControl**](windowsribbon-element-fontcontrol.md) a um Comando por meio de uma ID de comando.
+Esta seção de código mostra a marcação necessária para declarar e associar um [**FontControl**](windowsribbon-element-fontcontrol.md) a um comando por meio de uma ID de comando.
 
 
 ```C++
@@ -410,94 +410,40 @@ Esta seção de código mostra a marcação necessária para declarar e associar
 
 ### <a name="keytips"></a>Dicas de tecla
 
-Cada subcontrole no Controle de Fonte da Faixa de Opções é acessível por meio de um atalho de teclado ou dica de tecla. Essa dica de chave é predefinida e atribuída a cada subcontrole pela estrutura.
+Cada subcontrole no controle de fonte da faixa de bits pode ser acessado por meio de um atalho de teclado ou KeyTip. Esse KeyTip é predefinido e atribuído a cada subcontrole da estrutura.
 
-Se um *valor de atributo Keytip* for atribuído ao [**elemento FontControl**](windowsribbon-element-fontcontrol.md) na marcação, esse valor será adicionado como um prefixo à dica de chave definida pela estrutura.
+Se um valor de atributo *KeyTip* for atribuído ao elemento [**FontControl**](windowsribbon-element-fontcontrol.md) na marcação, esse valor será adicionado como um prefixo ao KeyTip definido pelo Framework.
 
 > [!Note]  
 > O aplicativo deve impor uma regra de caractere único para esse prefixo.
 
  
 
-A tabela a seguir lista as dicas de chave definidas pela estrutura. 
+A tabela a seguir lista as keytips definidas pela estrutura. 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Subcontrole</th>
-<th>Keytip</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Família de fontes</td>
-<td>F</td>
-</tr>
-<tr class="even">
-<td>Estilo da fonte</td>
-<td>T</td>
-</tr>
-<tr class="odd">
-<td>Tamanho da fonte</td>
-<td>S</td>
-</tr>
-<tr class="even">
-<td>Aumentar fonte</td>
-<td>G</td>
-</tr>
-<tr class="odd">
-<td>Reduzir fonte</td>
-<td>K</td>
-</tr>
-<tr class="even">
-<td>Negrito</td>
-<td>B</td>
-</tr>
-<tr class="odd">
-<td>Itálico</td>
-<td>I</td>
-</tr>
-<tr class="even">
-<td>Underline</td>
-<td>U</td>
-</tr>
-<tr class="odd">
-<td>Tachado</td>
-<td>X</td>
-</tr>
-<tr class="even">
-<td>Sobrescrito</td>
-<td>Y ou Z
-<blockquote>
-[!Note]<br />
-Se o <em>atributo Keytip</em> não for declarado na marcação, a dica de chave padrão será Y; caso contrário, a dica de chave padrão <em>será Keytip</em> + Z.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>Subscrito</td>
-<td>Um</td>
-</tr>
-<tr class="even">
-<td>Cor da fonte</td>
-<td>C</td>
-</tr>
-<tr class="odd">
-<td>Realçada da fonte</td>
-<td>H</td>
-</tr>
-</tbody>
-</table>
+
+| Subcontrole | KeyTip | 
+|-------------|--------|
+| Família de fontes | F | 
+| Estilo da fonte | T | 
+| Tamanho da fonte | S | 
+| Aumentar fonte | G | 
+| Reduzir fonte | K | 
+| Negrito | B | 
+| Itálico | I | 
+| Underline | U | 
+| Tachado | X | 
+| Sobrescrito | Y ou Z<blockquote>[!Note]<br />Se o atributo <em>KeyTip</em> não for declarado na marcação, o KeyTip padrão será Y; caso contrário, o KeyTip padrão será <em>KeyTip</em> + Z.</blockquote><br /> | 
+| Subscrito | A | 
+| Cor da fonte | C | 
+| Realce de fonte | H | 
+
 
 
 
  
 
-O prefixo recomendado para uma faixa Interface de Usuário Multilíngue (MUI) EN-US é 'F', conforme mostrado no exemplo a seguir.
+o prefixo recomendado para uma faixa de opções do Interface de Usuário Multilíngue (MUI) EN-US é ' F ', conforme mostrado no exemplo a seguir.
 
 
 ```C++
@@ -506,13 +452,13 @@ O prefixo recomendado para uma faixa Interface de Usuário Multilíngue (MUI) EN
 
 
 
-A captura de tela a seguir ilustra as dicas de tecla do Controle de Fonte conforme elas são definidas no exemplo anterior.
+A captura de tela a seguir ilustra as dicas de teclado do controle de fonte conforme elas são definidas no exemplo anterior.
 
-![captura de tela do fontcontrol keytips no WordPad para Windows 7.](images/controls/fontcontrol-keytips.png)
+![captura de tela das dicas de tecla fontcontrol no wordpad para windows 7.](images/controls/fontcontrol-keytips.png)
 
-### <a name="the-ribbon-resource-file"></a>O arquivo de recurso da faixa de faixas
+### <a name="the-ribbon-resource-file"></a>O arquivo de recurso da faixa de opções
 
-Quando o arquivo de marcação é compilado, um arquivo de recurso que contém todas as referências de recurso para o aplicativo da faixa de faixas é gerado.
+Quando o arquivo de marcação é compilado, um arquivo de recurso que contém todas as referências de recurso para o aplicativo de Faixa de Opções é gerado.
 
 Exemplo de um arquivo de recurso simples:
 
@@ -545,37 +491,37 @@ FCSAMPLE_RIBBON    UIFILE    "Debug\\FCSample.bml"
 
 
 
-### <a name="font-control-properties"></a>Propriedades de controle de fonte
+### <a name="font-control-properties"></a>Propriedades do controle de fonte
 
-A estrutura da faixa de faixas define uma coleção de [chaves de propriedade](windowsribbon-reference-properties.md) para o controle de fonte e seus subcontroles constituintes.
+A estrutura ribbon define uma coleção de chaves [de propriedade](windowsribbon-reference-properties.md) para o Controle de Fonte e seus subcontroles constituintes.
 
-Normalmente, uma propriedade de controle de fonte é atualizada na interface do usuário da faixa de forma invalidando o comando associado ao controle por meio de uma chamada para o método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . O evento Invalidation é tratado e as atualizações de propriedade são definidas pelo método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, uma propriedade Controle de Fonte é atualizada na interface do usuário da faixa de opções invalidando o Comando associado ao controle por meio de uma chamada para o [**método IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) O evento de invalidação é tratado e as atualizações de propriedade definidas pelo método de retorno de chamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-O método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consultou um valor de propriedade atualizado, até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle revelado na interface do usuário da faixa de ferramentas, ou quando uma dica de ferramenta é exibida.
+O método de retorno de chamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consulta um valor de propriedade atualizado até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle é revelado na interface do usuário da faixa de opções ou quando uma dica de ferramenta é exibida.
 
 > [!Note]  
-> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o [**método IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-A tabela a seguir lista as chaves de propriedade que estão associadas ao controle de fonte.
+A tabela a seguir lista as chaves de propriedade associadas ao Controle de Fonte.
 
 
 
 | Chave de propriedade                                                                                                                  | Observações                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Interface do usuário \_ PKEY \_ fontproperties](windowsribbon-reference-properties-uipkey-fontproperties.md)                                      | Expõe, em Aggregate como um objeto [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) , todas as propriedades de subcontrole de controle Font.<br/> A estrutura consulta essa propriedade quando `UI_INVALIDATIONS_VALUE` é passada como o valor dos *sinalizadores* na chamada para [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand).<br/> |
-| [Interface do usuário \_ PKEY \_ fontproperties \_ alteradoproperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md) | Expõe, em agregação como um objeto [**IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) , somente Propriedades de subcontrole de controle de fonte que foram alteradas.<br/>                                                                                                                                                                                                        |
-| [\_KeyTip PKEY \_ UI](windowsribbon-reference-properties-uipkey-keytip.md)                                                      | Só pode ser atualizado por meio de invalidação.                                                                                                                                                                                                                                                                                                                                                      |
-| [Interface do usuário \_ PKEY \_ habilitada](windowsribbon-reference-properties-uipkey-enabled.md)                                                    | Dá suporte a [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty).                                                                                                                                                                  |
+| [\_FontProperties PKEY \_ da interface do usuário](windowsribbon-reference-properties-uipkey-fontproperties.md)                                      | Expõe, em agregação como um [objeto IPropertyStore,](/windows/win32/api/propsys/nn-propsys-ipropertystore) todas as propriedades de subcontrole do Controle de Fonte.<br/> A estrutura consulta essa propriedade quando é passado como o valor de sinalizadores na chamada para `UI_INVALIDATIONS_VALUE` [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) <br/> |
+| [Fonte \_ PKEY da \_ interface do usuárioPropriedades \_ AlteradasPropriedades](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md) | Expõe, em agregação como um objeto [**IUISimplePropertySet,**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) somente propriedades de subcontrole do Controle de Fonte que foram alteradas.<br/>                                                                                                                                                                                                        |
+| [Dica de \_ tecla PKEY \_ da interface do usuário](windowsribbon-reference-properties-uipkey-keytip.md)                                                      | Só pode ser atualizado por meio de invalidação.                                                                                                                                                                                                                                                                                                                                                      |
+| [PKEY \_ da interface do usuário \_ habilitada](windowsribbon-reference-properties-uipkey-enabled.md)                                                    | Dá [**suporte a IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) [**e IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)                                                                                                                                                                  |
 
 
 
  
 
-Além das propriedades com suporte pelo controle de fonte em si, a estrutura da faixa de faixas também define uma [chave de propriedade](windowsribbon-reference-properties.md) para cada subcontrole de controle de fonte. Essas chaves de propriedade e seus valores são expostos pela estrutura por meio de uma implementação de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) que define os métodos para gerenciar uma coleção, também chamada de recipiente de propriedades, de pares de nome e valor.
+Além das propriedades com suporte do próprio Controle de Fonte, [a](windowsribbon-reference-properties.md) estrutura de Faixa de Opções também define uma chave de propriedade para cada subcontrole do Controle de Fonte. Essas chaves de propriedade e seus valores são expostos pela estrutura por meio de uma implementação de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) que define os métodos para gerenciar uma coleção, também chamada de conjunto de propriedades, de pares de nome e valor.
 
-O aplicativo traduz as estruturas de fonte para propriedades que podem ser acessadas por meio dos métodos de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) . esse modelo enfatiza a distinção entre o controle de fonte e os componentes de pilha de texto Windows Graphics Device Interface (GDI) ([estrutura LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfonta), [estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e [estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a)) que têm suporte na estrutura.
+O aplicativo converte as estruturas de fonte em propriedades acessíveis por meio dos métodos de interface [IPropertyStore.](/windows/win32/api/propsys/nn-propsys-ipropertystore) Esse modelo enfatiza a distinção entre o Controle de Fonte e os componentes de pilha de texto Windows Graphics Device Interface (GDI) ( Estrutura[LOGFONT,](/windows/win32/api/wingdi/ns-wingdi-logfonta) [Estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e [Estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a)) que têm suporte na estrutura.
 
 A tabela a seguir lista os controles individuais e suas chaves de propriedade associadas.
 
@@ -583,33 +529,33 @@ A tabela a seguir lista os controles individuais e suas chaves de propriedade as
 
 | Controles                 | Chave de propriedade                                                                                                                                                                                                                                                           | Observações                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tamanho da fonte**            | [\_Tamanho da \_ fonte de PKEY da interface do usuário \_](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Quando uma execução de texto de tamanho heterogêneo é realçada, a estrutura da faixa de faixas define o controle de **tamanho da fonte** como em branco e o valor da [interface do usuário \_ PKEY \_ fontproperties \_ tamanho](windowsribbon-reference-properties-uipkey-fontproperties-size.md) como 0. Quando o botão **aumentar fonte** ou **reduzir fonte** é clicado, todo o texto realçado é redimensionado, mas a diferença relativa em tamanhos de texto é preservada.                                                                                                                                                    |
-| **Família de fontes**          | [IU \_ \_ da família PKEY fontproperties \_](windowsribbon-reference-properties-uipkey-fontproperties-family.md)                                                                                                                                                                | Os nomes da família de fontes GDI variam com a localidade do sistema. Assim, se o valor da [interface do usuário \_ PKEY \_ FontProperty \_ ](windowsribbon-reference-properties-uipkey-fontproperties-family.md) for preservado entre as sessões do aplicativo, esse valor deverá ser recuperado em cada nova sessão.                                                                                                                                                                                                                                                                            |
-| **Aumentar fonte**            | [\_Tamanho da \_ fonte de PKEY da interface do usuário \_](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Consulte **tamanho da fonte**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Reduzir fonte**          | [\_Tamanho da \_ fonte de PKEY da interface do usuário \_](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Consulte **tamanho da fonte**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Negrito**                 | [Interface do usuário \_ PKEY \_ FontProperty \_ bold](windowsribbon-reference-properties-uipkey-fontproperties-bold.md)                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Itálico**               | [Interface do usuário \_ PKEY \_ fontproperties \_ itálico](windowsribbon-reference-properties-uipkey-fontproperties-italic.md)                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Underline**            | [Interface do usuário \_ PKEY \_ fontproperties \_ sublinhado](windowsribbon-reference-properties-uipkey-fontproperties-underline.md)                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Tachado**        | [Interface do usuário \_ PKEY \_ fontproperties \_ tachado](windowsribbon-reference-properties-uipkey-fontproperties-strikethrough.md)                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Subscrito**            | [Interface do usuário \_ PKEY \_ fontproperties \_ VerticalPositioning](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o botão **subscrito** for definido, o **sobrescrito** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Sobrescrito**          | [Interface do usuário \_ PKEY \_ fontproperties \_ VerticalPositioning](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o botão **sobrescrito** for definido, o **subscript** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Cor de realce de texto** | [Interface do usuário \_ PKEY \_ fontproperties \_ backgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor), [IU \_ PKEY \_ FontProperty \_ backgroundcolortype](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md) | Fornece a mesma funcionalidade que o `HighlightColors` modelo do elemento [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) .<br/> É altamente recomendável que apenas um valor de **cor de realce de texto** inicial seja definido pelo aplicativo. O último valor selecionado deve ser preservado e não definido quando o cursor é reposicionado dentro de um documento. Isso permite o acesso rápido à última seleção do usuário, e o seletor de cores não precisa ser reaberto.<br/> As amostras de cor não podem ser personalizadas.<br/> |
-| **Cor do texto**           | [Interface do usuário \_ PKEY \_ fontproperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md), [interface do usuário \_ PKEY \_ fontproperties \_ ForegroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolortype.md)           | Fornece a mesma funcionalidade que o `StandardColors` modelo do elemento [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) .<br/> É altamente recomendável que apenas um valor de **cor de texto** inicial seja definido pelo aplicativo. O último valor selecionado deve ser preservado e não definido quando o cursor é reposicionado dentro de um documento. Isso permite o acesso rápido à última seleção do usuário, e o seletor de cores não precisa ser reaberto.<br/> As amostras de cor não podem ser personalizadas.<br/>            |
+| **Tamanho da fonte**            | [Tamanho de \_ \_ FontProperties de PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Quando uma série de texto de tamanho heterogêneo é realçada, a estrutura de Faixa de Opções define o controle Tamanho da fonte como em branco e o valor de  [ \_ \_ FontProperties \_ PKEY](windowsribbon-reference-properties-uipkey-fontproperties-size.md) da interface do usuário como 0. Quando o **botão Aumentar fonte** **ou** Reduzir fonte é clicado, todo o texto realçado é resizado, mas a diferença relativa em tamanhos de texto é preservada.                                                                                                                                                    |
+| **Família de fontes**          | [Família \_ \_ fontProperties PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-fontproperties-family.md)                                                                                                                                                                | Os nomes de família de fontes GDI variam de acordo com a localidade do sistema. Dessa forma, se o valor da Família [ \_ \_ fontProperties \_ PKEY](windowsribbon-reference-properties-uipkey-fontproperties-family.md) da interface do usuário for preservado entre as sessões do aplicativo, esse valor deverá ser recuperado em cada nova sessão.                                                                                                                                                                                                                                                                            |
+| **Aumentar fonte**            | [Tamanho de \_ \_ FontProperties de PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Consulte **Tamanho da fonte.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Reduzir fonte**          | [Tamanho de \_ \_ FontProperties de PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Consulte **Tamanho da fonte.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Negrito**                 | [\_ \_ FontProperties PKEY da interface do usuário em \_ negrito](windowsribbon-reference-properties-uipkey-fontproperties-bold.md)                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Itálico**               | [Fonte \_ de PKEY \_ da interface do \_ usuárioPropriedades itálico](windowsribbon-reference-properties-uipkey-fontproperties-italic.md)                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Underline**            | [\_Sublinhado FontProperties de PKEY \_ \_ da interface do usuário](windowsribbon-reference-properties-uipkey-fontproperties-underline.md)                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Tachado**        | [Tachado \_ de \_ FontProperties de PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-fontproperties-strikethrough.md)                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Subscrito**            | [\_ \_ FontProperties \_ VerticalPositioning da interface do usuário PKEY](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o **botão Subscrito** estiver definido, o **Superscript** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Sobrescrito**          | [\_ \_ FontProperties \_ VerticalPositioning da interface do usuário PKEY](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o **botão Superscript** estiver definido, o **Subscrito** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Cor do realçando texto** | [Interface do usuário \_ PKEY \_ FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor), [UI \_ PKEY \_ FontProperties \_ BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md) | Fornece a mesma funcionalidade que o `HighlightColors` modelo do [**elemento DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)<br/> É altamente recomendável que apenas um valor de cor **de realçamento** de texto inicial seja definido pelo aplicativo. O último valor selecionado deve ser preservado e não definido quando o cursor é reposicionado dentro de um documento. Isso permite acesso rápido à última seleção do usuário e o seletor de cores não precisa ser reaberto.<br/> As travas de cores não podem ser personalizadas.<br/> |
+| **Cor do texto**           | [Interface do usuário \_ PKEY \_ FontProperties \_ ForegroundColor,](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) [UI \_ PKEY \_ FontProperties \_ ForegroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolortype.md)           | Fornece a mesma funcionalidade que o `StandardColors` modelo do [**elemento DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)<br/> É altamente recomendável que apenas um valor **de cor de** texto inicial seja definido pelo aplicativo. O último valor selecionado deve ser preservado e não definido quando o cursor é reposicionado dentro de um documento. Isso permite acesso rápido à última seleção do usuário e o seletor de cores não precisa ser reaberto.<br/> As travas de cores não podem ser personalizadas.<br/>            |
 
 
 
  
 
-## <a name="define-a-fontcontrol-command-handler"></a>Definir um manipulador de comando FontControl
+## <a name="define-a-fontcontrol-command-handler"></a>Definir um manipulador de comandos FontControl
 
-Esta seção descreve as etapas necessárias para associar um controle de fonte a um manipulador de comandos.
+Esta seção descreve as etapas necessárias para vincular um Controle de Fonte a um manipulador de comandos.
 
 > [!WARNING]
-> Qualquer tentativa de selecionar uma amostra de cor do seletor de cores de um controle de fonte pode resultar em uma violação de acesso se nenhum manipulador de comando estiver associado ao controle.
+> Qualquer tentativa de selecionar um swatch de cor do seletor de cores de um Controle de Fonte poderá resultar em uma violação de acesso se nenhum manipulador de comandos estiver associado ao controle.
 
  
 
-O exemplo de código a seguir demonstra como associar comandos que são declarados na marcação a um manipulador de comandos.
+O exemplo de código a seguir demonstra como vincular comandos declarados na marcação a um manipulador de comandos.
 
 
 ```C++
@@ -642,7 +588,7 @@ STDMETHODIMP CApplication::OnCreateUICommand(
 
 
 
-O exemplo de código a seguir ilustra como implementar o método [**IUICommandHandler:: execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para um controle de fonte.
+O exemplo de código a seguir ilustra como implementar o [**método IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para um Controle de Fonte.
 
 
 ```C++
@@ -738,7 +684,7 @@ STDMETHODIMP CCommandHandler::Execute(
 
 
 
-O exemplo de código a seguir ilustra como implementar o método [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) para um controle de fonte.
+O exemplo de código a seguir ilustra como implementar o [**método IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) para um controle de fonte.
 
 
 ```C++
@@ -791,13 +737,13 @@ STDMETHODIMP CCommandHandler::UpdateProperty(
 
 <dl> <dt>
 
-[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
+[Windows Biblioteca de Controle da Estrutura de Faixa de Opções](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento FontControl**](windowsribbon-element-fontcontrol.md)
 </dt> <dt>
 
-[Propriedades de controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
+[Propriedades do controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
 [Exemplo de FontControl](windowsribbon-fontcontrolsample.md)

@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Wzcsapi.dll
-ms.openlocfilehash: 3f2ac1bd546403dca781b3a132b44f96d80bb5c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43f2b35215c930517d5352073c679a116388eb49aaa3bd6a3c567467e50be1a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064506"
 ---
 # <a name="wzcrefreshinterface-function"></a>Função WZCRefreshInterface
 
-\[Não há suporte para **WZCRefreshInterface** a partir do Windows Vista e do windows Server 2008. Em vez disso, use a [API Wi-Fi nativa](native-wifi-reference.md), que fornece funcionalidade semelhante. Para obter mais informações, consulte [sobre a API Wi-Fi nativa](about-the-native-wifi-api.md).\]
+\[**WZCRefreshInterface** não tem suporte a partir do Windows Vista e do Windows Server 2008. Em vez disso, use a [API Wi-Fi nativa](native-wifi-reference.md), que fornece funcionalidade semelhante. Para obter mais informações, consulte [sobre a API Wi-Fi nativa](about-the-native-wifi-api.md).\]
 
 A função **WZCRefreshInterface** atualiza informações de interface para uma interface LAN sem fio específica.
 
@@ -86,7 +86,7 @@ Um conjunto de campos que foram atualizados com êxito.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -110,7 +110,7 @@ Se a função falhar, o valor de retorno poderá ser um dos códigos de retorno 
 O membro **wszGuid** da estrutura [**de \_ entrada INTF**](intf-entry.md) apontada pelo parâmetro *pIntf* deve conter um GUID de interface para uma interface de LAN sem fio. Uma lista de interfaces de LAN sem fio pode ser recuperada chamando a função [**WZCEnumInterfaces**](wzcenuminterfaces.md) .
 
 > [!Note]  
-> O arquivo de cabeçalho *wzcsapi. h* e o arquivo de biblioteca de importação *wzcsapi. lib* não estão disponíveis no SDK do Windows.
+> o arquivo de cabeçalho *Wzcsapi. h* e o arquivo de biblioteca de importação *Wzcsapi. lib* não estão disponíveis no SDK do Windows.
 
  
 
@@ -120,11 +120,11 @@ O membro **wszGuid** da estrutura [**de \_ entrada INTF**](intf-entry.md) aponta
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
 | Fim do suporte do cliente<br/>    | Windows XP com SP3<br/>                                                         |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Wzcsapi. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wzcsapi.dll</dt> </dl> |
 

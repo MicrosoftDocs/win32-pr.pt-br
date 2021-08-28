@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5d3ab7032768cacfab6415548a09def453ab4f9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c574d1032d9e392973478bc1df1e22cde6a49145b6f4775d928aac0b35e6988b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067476"
 ---
 # <a name="savepp-switch"></a>comutador/savePP
 
@@ -48,9 +48,9 @@ Essa opção permite aos desenvolvedores discernir o que está sendo analisado p
 [/// \_ /nocpp](-no-cpp-nocpp.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Propriedade DropDownGallery. MenuLayout
+title: Propriedade DropDownGallery.MenuLayout
 description: Representa um contêiner para layouts de menu suspenso DropDownGallery.
 ms.assetid: 7251e889-377d-4d7f-b049-bd81a202774d
 keywords:
-- Faixa de DropDownGallery de propriedades do Windows. MenuLayout
+- Propriedade DropDownGallery.MenuLayout Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1b6ad3f07f369dfef90b1e6c52c34793e60520
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b3fa4c0e2cca92aa2f95f73e0c817314bb71a8260db21a89cb40ec78fff7765
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810676"
 ---
-# <a name="dropdowngallerymenulayout-property"></a>Propriedade DropDownGallery. MenuLayout
+# <a name="dropdowngallerymenulayout-property"></a>Propriedade DropDownGallery.MenuLayout
 
-Representa um contêiner para layouts de menu suspenso [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Representa um contêiner para layouts de menu suspenso [**DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -60,7 +60,7 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Pode ocorrer no máximo uma vez para [**cada elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 > [!Note]  
 > Um máximo de um elemento filho ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) ou [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)) é permitido.
@@ -69,9 +69,9 @@ Pode ocorrer no máximo uma vez para cada elemento [**DropDownGallery**](windows
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
+O exemplo a seguir demonstra a marcação básica para [**o DropDownGallery**](windowsribbon-element-dropdowngallery.md).
 
-Esta seção de código mostra a declaração de controle **DropDownGallery. MenuLayout** .
+Esta seção de código mostra a **declaração de controle DropDownGallery.MenuLayout.**
 
 
 ```XML
@@ -108,8 +108,8 @@ Esta seção de código mostra a declaração de controle **DropDownGallery. Men
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -117,7 +117,7 @@ Esta seção de código mostra a declaração de controle **DropDownGallery. Men
 
 <dl> <dt>
 
-[**Controle da Galeria suspensa**](windowsribbon-element-dropdowngallery.md)
+[**Controle da Galeria De lista listada**](windowsribbon-element-dropdowngallery.md)
 </dt> <dt>
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)

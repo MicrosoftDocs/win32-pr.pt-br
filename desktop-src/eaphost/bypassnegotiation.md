@@ -4,12 +4,12 @@ description: A chave do registro BypassNegotiation determina se as capacidades d
 ms.assetid: 51e21e9c-d6cb-454b-9584-3f48d76a649a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9fdf883249fc5af7a37be83bb153a670295ba1d
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 00ba914b9c1ec1d5e3caef6b86ddbda49d021268e456c877ff4f67db86efd2cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104365347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978246"
 ---
 # <a name="bypassnegotiation"></a>BypassNegotiation
 
@@ -19,7 +19,7 @@ A chave do registro BypassNegotiation determina se as capacidades de negociaçã
 
 ```
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\PPP\EAP\25
-   BypassNegotiation = value
+   BypassNegotiation = value
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -35,7 +35,7 @@ Esse é um valor de **reg \_ DWORD** .
 
 
 
- 
+ 
 
 Se esse valor de registro não estiver presente, o servidor e o cliente negociarão os recursos EAP..
 
@@ -43,12 +43,12 @@ Se esse valor de registro não estiver presente, o servidor e o cliente negociar
 
 <dl> <dt>
 
-[Configurações do registro EAPHost](eaphost-registry-settings.md)
+[Configurações de registro do EAPHost](eaphost-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

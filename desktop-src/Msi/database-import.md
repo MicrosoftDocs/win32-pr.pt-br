@@ -1,7 +1,7 @@
 ---
-description: O método de importação do objeto de banco de dados importa uma tabela de banco de dados de arquivos mortos de texto, descartando qualquer tabela existente.
+description: O método Import do objeto Database importa uma tabela de banco de dados de arquivos de texto, soltando qualquer tabela existente.
 ms.assetid: 9ecc31d9-bccd-48cc-b205-9ce70aaf638a
-title: Método Database. Import
+title: Método Database.Import
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b931b77e6cf736bc291079532d20d9c6b48dd243
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31bd306475460b03e9b4b5137cbd8fe214128dbec0dac516d2d9557de137a82f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075026"
 ---
-# <a name="databaseimport-method"></a>Método Database. Import
+# <a name="databaseimport-method"></a>Método Database.Import
 
-O método de **importação** do objeto de [**banco de dados**](database-object.md) importa uma tabela de banco de dados de [arquivos mortos de texto](text-archive-files.md), descartando qualquer tabela existente.
+O **método Import** do objeto [**Database**](database-object.md) importa uma tabela de banco de dados de arquivos de [texto,](text-archive-files.md)soltando qualquer tabela existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ Database.Import(
 *path* 
 </dt> <dd>
 
-Pasta necessária onde o arquivo de texto está presente.
+Pasta necessária em que o arquivo de texto está presente.
 
 </dd> <dt>
 
 *file* 
 </dt> <dd>
 
-Nome necessário do arquivo a ser importado. Isso não inclui a pasta, pois ela deve ser definida no objeto Path. O nome da tabela é especificado dentro do arquivo.
+Nome necessário do arquivo a ser importado. Isso não inclui a pasta , pois ela deve ser definida no objeto path. O nome da tabela é especificado dentro do arquivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se o método falhar, você poderá obter informações de erro estendidas usando o método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Se o método falhar, você poderá obter informações de erro estendidas usando o [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Se o método falhar, você poderá obter informações de erro estendidas usando
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IDatabase é definido como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
+| IID<br/>     | IID IDatabase é definido como \_ 000C109D-0000-0000-C000-00000000046<br/>                                                                                                                                                                            |
 
 
 
@@ -78,7 +78,7 @@ Se o método falhar, você poderá obter informações de erro estendidas usando
 
 <dl> <dt>
 
-[**Backup de banco de dados**](database-object.md)
+[**Banco de dados**](database-object.md)
 </dt> <dt>
 
 [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta)

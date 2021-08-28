@@ -4,12 +4,12 @@ ms.assetid: 483ab73a-3ff7-4111-a6b5-eac990d85bd7
 title: Propriedade privilegiada
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5d28a7079e7ab12b9832447172f1b3b2c8650a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0bfe61f17e5ef3453021c98bac8eb383171a678adfb204886ecdaa840e0df832
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129126"
 ---
 # <a name="privileged-property"></a>Propriedade privilegiada
 
@@ -23,7 +23,7 @@ O instalador não definirá essa propriedade se o usuário não tiver permissão
 
 Os desenvolvedores de pacotes do instalador podem usar a propriedade **Privileged** para tornar a instalação condicional na diretiva do sistema, o usuário sendo um administrador ou uma atribuição por um administrador.
 
-Ao executar no Windows Vista, o **Privileged** e o [**AdminUser**](adminuser.md) são os mesmos.
+ao executar o Windows Vista, os **privilégios** e [**AdminUser**](adminuser.md) são os mesmos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Ao executar no Windows Vista, o **Privileged** e o [**AdminUser**](adminuser.md)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

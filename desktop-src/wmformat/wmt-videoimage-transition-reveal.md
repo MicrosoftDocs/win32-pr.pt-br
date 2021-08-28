@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b916a5142f09628852a016754f9fb3ad691882731466d802b8367e03837b9699
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 140271d365d9673c948c4ff6f540e9bef33e8006
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083730"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469313"
 ---
 # <a name="wmt_videoimage_transition_reveal"></a>REVELAÇÃO DA TRANSIÇÃO DO WMT \_ \_ \_ VIDEOIMAGE
 
@@ -31,47 +31,13 @@ A tabela a seguir descreve os parâmetros usados por essa transição e lista os
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Membro da estrutura</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Distância</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Quantidade da nova imagem revelada, em pixels. Esse valor é relativo ao lado de origem do quadro.</td>
-</tr>
-<tr class="even">
-<td>Direção</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Direção da revelação. De acordo com um dos seguintes valores:<br/>
-<ul>
-<li>0 – Revelar à direita; originam-se do lado esquerdo do quadro.</li>
-<li>1 - Revelar à esquerda; originam-se do lado direito do quadro.</li>
-<li>2 - Revelar para cima; originam-se da parte inferior do quadro.</li>
-<li>3 - Revelar para baixo; originam-se da parte superior do quadro.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Composição</td>
-<td><strong>fEffectPara2</strong></td>
-<td>De acordo com um dos seguintes valores:
-<ul>
-<li>0 – Especifica a composição normal, na qual a imagem anterior é a plano de fundo e a imagem atual é o primeiro plano.</li>
-<li>1 - Especifica a composição invertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Membro da estrutura | Descrição | 
+|-----------|------------------|-------------|
+| Distância | <strong>fEffectPara0</strong> | Quantidade da nova imagem revelada, em pixels. Esse valor é relativo ao lado de origem do quadro. | 
+| Direção | <strong>fEffectPara1</strong> | Direção da revelação. De acordo com um dos seguintes valores:<br /><ul><li>0 – Revelar à direita; originam-se do lado esquerdo do quadro.</li><li>1 - Revelar à esquerda; originam-se do lado direito do quadro.</li><li>2 - Revelar para cima; originam-se da parte inferior do quadro.</li><li>3 - Revelar para baixo; originam-se da parte superior do quadro.</li></ul> | 
+| Composição | <strong>fEffectPara2</strong> | De acordo com um dos seguintes valores:<ul><li>0 – Especifica a composição normal, na qual a imagem anterior é a plano de fundo e a imagem atual é o primeiro plano.</li><li>1 - Especifica a composição invertida, na qual a imagem atual é a imagem de plano de fundo e a imagem anterior é o primeiro plano</li></ul> | 
+
 
 
 

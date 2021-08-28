@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c440d8cb5c720bf6922707f04bc75e2383755c1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a5fd02168c19a5424ef455380bd9e1251f2e8f6c48a9dd8ea5ec4e9e1a1b1e4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759906"
 ---
 # <a name="setdnsdomain-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDNSDomain da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -51,7 +51,7 @@ Exemplo: "microsoft.com"
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -323,7 +323,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -381,7 +381,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -395,7 +395,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -408,15 +408,15 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Essa é uma chamada de método dependente de instância que se aplica a uma base por adaptador. A configuração se aplica ao adaptador de destino.
+Essa é uma chamada de método dependente de instância que se aplica por adaptador. A configuração se aplica ao adaptador de alvo.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código de [atribuir o domínio DNS para um adaptador de rede](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) VBScript na galeria do TechNet usa **SetDNSDomain** para definir o domínio DNS para um adaptador de rede vinculado a TCP/IP.
+O exemplo de código Atribuir o domínio [DNS](https://Gallery.TechNet.Microsoft.Com/6044a0a4-d320-4c18-a94b-c125796d219b) para um adaptador de rede VBScript na galeria do TechNet usa **SetDNSDomain** para definir o domínio DNS para um adaptador de rede vinculado a TCP/IP.
 
-O exemplo de código [Modificar a configuração de TCP/IP para um computador](https://Gallery.TechNet.Microsoft.Com/3d5ae334-1d75-4cea-8079-78c6bd836faf) do VBScript Code na galeria do TechNet usa **SetDNSDomain** para modificar as configurações de TCP/IP de um adaptador de rede.
+O exemplo modificar a configuração [de TCP/IP](https://Gallery.TechNet.Microsoft.Com/3d5ae334-1d75-4cea-8079-78c6bd836faf) de um computador VBScript na Galeria do TechNet usa **SetDNSDomain** para modificar as configurações de TCP/IP para um adaptador de rede.
 
-A amostra [Ativar configurações de DHCP em um computador](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) VBScript na galeria do TechNet usa **SetDNSDomain** para definir todas as configurações normalmente necessárias para habilitar o DHCP em um computador.
+A amostra Habilitar [Configurações DHCP](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) em um computador VBScript na Galeria do TechNet usa **SetDNSDomain** para definir todas as configurações normalmente necessárias para habilitar o DHCP em um computador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -426,8 +426,8 @@ A amostra [Ativar configurações de DHCP em um computador](https://Gallery.Tech
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -439,13 +439,13 @@ A amostra [Ativar configurações de DHCP em um computador](https://Gallery.Tech
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

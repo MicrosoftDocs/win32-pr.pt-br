@@ -1,6 +1,6 @@
 ---
 title: WMPEFFECTS
-description: Isso é um efeito predefinido com os valores padrão a seguir.
+description: Esse é um EFFECTS predefinido com os seguintes valores padrão.
 ms.assetid: ebee17e3-96b0-4748-b69f-4ff41d0bc386
 keywords:
 - WMPEFFECTS Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: db3e35143242c5ca7888ffc50feb006f586e68d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e84f33833e9d69c39cb50ff81bd6c97ff8f79d1e2f881f82d6e4d293e78d87bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761266"
 ---
 # <a name="wmpeffects"></a>WMPEFFECTS
 
-Isso é um **efeito** predefinido com os valores padrão a seguir.
+Esse é um **EFFECTS predefinido** com os seguintes valores padrão.
 
 ``` syntax
 horizontalAlignment="stretch"
@@ -35,11 +35,11 @@ onclick="next();"
 
 ## <a name="remarks"></a>Comentários
 
-Isso criará um elemento **Effects** que irá percorrer as predefinições de visualização quando o usuário clicar no controle. Ele também irá ampliar as visualizações quando o player for redimensionado.
+Isso criará um **elemento EFFECTS** que passará pelas predefinições de visualização quando o usuário clicar no controle. Ele também ampliará as visualizações quando o jogador for reessado.
 
-A predefinição de visualização inicial mostrada é aquela selecionada no menu **Exibir** em **visualizações**. Alterar a seleção nesse menu alterará automaticamente a predefinição exibida por esse elemento quando o Player estiver no modo de capa. O menu **Exibir** é exibido no modo completo do Player ou quando o atributo **View. TitleBar** é definido como true em uma capa.
+A predefinição de visualização inicial mostrada é aquela selecionada no menu **Exibir** em **Visualizações**. Alterar a seleção nesse menu alterará automaticamente a predefinição exibida por esse elemento quando o Player estiver no modo de capa. O  menu Exibir é exibido no modo completo do Player ou quando o atributo **VIEW.titleBar** é definido como true em uma capa.
 
-Todas as propriedades desse elemento **Effects** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **elemento EFFECTS** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Todas as propriedades desse elemento **Effects** podem ser substituídas especif
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versão<br/> | Windows Media Player 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 7.0 ou posterior<br/> |
 
 
 
@@ -55,7 +55,7 @@ Todas as propriedades desse elemento **Effects** podem ser substituídas especif
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

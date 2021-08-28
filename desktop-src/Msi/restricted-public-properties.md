@@ -1,21 +1,21 @@
 ---
-description: Em determinados casos, um usuário que não é um administrador do sistema só pode substituir uma lista aprovada de propriedades públicas Windows Installerdas restritas.
+description: em determinados casos, um usuário que não é um administrador do sistema só pode substituir uma lista aprovada de propriedades públicas Windows Installerdas restritas.
 ms.assetid: e16e8187-75b6-4104-a53c-928a56fcee6b
 title: Propriedades públicas restritas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e4f08be7f625cd45cdb48373eb0107ade708949
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af09200f10261e50564ae79dbad961474d23d8a6354cee7344aa107c8b73fb57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979296"
 ---
 # <a name="restricted-public-properties"></a>Propriedades públicas restritas
 
 No caso de uma instalação gerenciada, o autor do pacote pode precisar limitar quais [Propriedades públicas](public-properties.md) são passadas para o lado do servidor e podem ser alteradas por um usuário que não seja um administrador do sistema. Algumas restrições são comumente necessárias para manter um ambiente seguro quando a instalação requer que o instalador use privilégios elevados. Se todas as condições a seguir forem atendidas, um usuário que não seja um administrador do sistema só poderá substituir uma lista aprovada de propriedades públicas restritas:
 
--   O sistema é o Windows 2000.
+-   o sistema está Windows 2000.
 -   O usuário não é um administrador do sistema.
 -   O aplicativo ou produto está sendo instalado com privilégios elevados.
 
@@ -45,7 +45,7 @@ Se todas as condições acima forem verdadeiras, o instalador usa como padrão a
 -   [**Install**](reinstall.md)
 -   [**REINSTALLMODE**](reinstallmode.md)
 -   [**Volte**](resume.md)
--   [**SEQUENCE**](sequence.md)
+-   [**ORDEM**](sequence.md)
 -   [**SHORTFILENAMES**](shortfilenames.md)
 -   [**TRANSFORMAÇÕES**](transforms.md)
 -   [**TRANSFORMSATSOURCE**](transformsatsource.md)

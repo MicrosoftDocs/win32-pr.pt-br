@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 11a073f817da27dbbd45be26a008486a776470cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d87a78d5a8ea43cc8a1a59bbabf5b8091948d153420dbdf91ba7e14fc1616b7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980956"
 ---
 # <a name="cim_resourcepool-class"></a>\_Classe CIM ResourcePool
 
@@ -364,7 +364,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="CD_Drive"></span><span id="cd_drive"></span><span id="CD_DRIVE"></span>
 
-**Unidade de CD** (15)
+**Unidade cd** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -392,7 +392,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extensão de armazenamento** (19)
+**Armazenamento extensão** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -427,14 +427,14 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>
 
-**Controlador de gráficos** (24)
+**Controlador gráfico** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_1394_Controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>
 
-**Controlador IEEE 1394** (25)
+**IEEE 1394 controlador** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -448,7 +448,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>
 
-**Unidade particionável de base** (27)
+**Unidade particionável base** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -469,7 +469,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>
 
-**Porta do comutador Ethernet** (30)
+**Porta do comutamento Ethernet** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -483,7 +483,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volume de armazenamento** (32)
+**Armazenamento volume** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -504,7 +504,7 @@ O tipo de recurso alocado pelo pool de recursos.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (0x8000.. 0xFFFF
+**Fornecedor Reservado** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -519,8 +519,8 @@ O tipo de recurso alocado pelo pool de recursos.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

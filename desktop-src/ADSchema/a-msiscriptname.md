@@ -1,11 +1,11 @@
 ---
-title: Atributo MSI-script-Name
-description: O nome do arquivo de script de anúncio do Microsoft Installer para este aplicativo.
+title: Atributo Msi-Script-Name
+description: O nome do arquivo de script de anúncio do instalador da Microsoft para este aplicativo.
 ms.assetid: f4666441-f416-4103-8ad5-6cdb6f4b0a97
 ms.tgt_platform: multiple
 keywords:
-- MSI-script-Name atributo AD Schema
-- Esquema de AD do atributo msiScriptName
+- Esquema do AD do atributo Msi-Script-Name
+- Esquema do AD do atributo msiScriptName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73f155bd9a1dd62bdd72f5a589c6583742ebaa65
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 179e14d748922c29c423b829bd2f06eeed2c20788a637fe5085c1539b263cfe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425049"
 ---
-# <a name="msi-script-name-attribute"></a>Atributo MSI-script-Name
+# <a name="msi-script-name-attribute"></a>Atributo Msi-Script-Name
 
-O nome do arquivo de script de anúncio do Microsoft Installer para este aplicativo.
+O nome do arquivo de script de anúncio do instalador da Microsoft para este aplicativo.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MSI-script-Name                             |
-| LDAP-Display-Name | msiScriptName                               |
+| CN                | Msi-Script-Name                             |
+| Ldap-Display-Name | msiScriptName                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.845                      |
-| System-ID-GUID    | 96a7dd62-9118-11d1-aebc-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 96a7dd62-9118-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -79,10 +79,10 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -100,10 +100,10 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -121,7 +121,7 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
@@ -142,7 +142,7 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
@@ -163,7 +163,7 @@ O nome do arquivo de script de anúncio do Microsoft Installer para este aplicat
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |

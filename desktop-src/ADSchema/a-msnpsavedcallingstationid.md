@@ -1,10 +1,10 @@
 ---
-title: atributo msNPSavedCallingStationID
+title: Atributo msNPSavedCallingStationID
 description: O atributo msNPSavedCallingStationID é usado internamente.
 ms.assetid: aa967146-d736-421d-9d03-0be5ebde88e5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo msNPSavedCallingStationID
+- Esquema do AD do atributo msNPSavedCallingStationID
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41dc2a00d14903ef5d86f07111a412628ed597a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c63d9a9ed48d969889cc0d93edc9c5ecb23d29305edd8a4a810f1668929c01ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761886"
 ---
-# <a name="msnpsavedcallingstationid-attribute"></a>atributo msNPSavedCallingStationID
+# <a name="msnpsavedcallingstationid-attribute"></a>Atributo msNPSavedCallingStationID
 
-O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique esse valor diretamente.
+O **atributo msNPSavedCallingStationID** é usado internamente. Não modifique esse valor diretamente.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | msNPSavedCallingStationID            |
-| LDAP-Display-Name | msNPSavedCallingStationID            |
+| Ldap-Display-Name | msNPSavedCallingStationID            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1130              |
-| System-ID-GUID    | db0c908e-c1f2-11d1-bbc5-0080c76670c0 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | db0c908e-c1f2-11d1-football5-0080c76670c0 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -57,10 +57,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -78,10 +78,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -99,10 +99,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -120,10 +120,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -141,10 +141,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -162,10 +162,10 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -178,7 +178,7 @@ O atributo **msNPSavedCallingStationID** é usado internamente. Não modifique e
 
 <dl> <dt>
 
-[Funções de administração de RAS](/windows/desktop/RRAS/ras-administration-functions)
+[Funções de administração ras](/windows/desktop/RRAS/ras-administration-functions)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: be8f4c81-fb34-44ab-b026-97435243ac93
 title: Propriedade de resumo do título
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 950a4c8af9e892381d507c2eb627d85ca8cd3ace
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6216dfa0b85197f8d89d9596ad21397a4c23619230fbd19f62e77ebfb6e9d59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810696"
 ---
 # <a name="title-summary-property"></a>Propriedade de resumo do título
 
@@ -21,7 +21,7 @@ A propriedade **Resumo do título** descreve brevemente o tipo do pacote do inst
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 

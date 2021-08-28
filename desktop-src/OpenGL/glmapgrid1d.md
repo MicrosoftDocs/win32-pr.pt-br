@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30b1900f5597e8c516100504ca7288137ed99ded
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71fcf2ac8871ab1008a5f0e31c6264383cc790edaebd3decc29dbc2ca39845fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103837736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128256"
 ---
 # <a name="glmapgrid1d-function"></a>função glMapGrid1d
 
@@ -42,7 +42,7 @@ void WINAPI glMapGrid1d(
 
 <dl> <dt>
 
-*anula* 
+*un* 
 </dt> <dd>
 
 O número de partições no intervalo de intervalo de grade \[ U1, U2 \] . Esse valor deve ser positivo.

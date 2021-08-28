@@ -12,12 +12,12 @@ keywords:
 - sombreamento simples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 124bb002f6f133b4d47dd40e1a0e8738c512ce99
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4ee4265341e17843dbe4752bb51e5728aa54914ec5670c08b6b7921537050a6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012034"
 ---
 # <a name="porting-shading-models"></a>Modelos de sombreamento de portador
 

@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado de transformação
-description: Variáveis de estado de transformação
+title: Variáveis de Estado de Transformação
+description: Variáveis de Estado de Transformação
 ms.assetid: 3a6be5ac-ac7a-4c3e-8b65-0404849ae67c
 keywords:
 - Variáveis de estado de transformação OpenGL
@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7b53e0abae08447df86d8968a33a361be08a1e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3c79b4363419d97a64184dd2408a9f6221ada52adc49adbb28eb3d049a4b2a36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011914"
 ---
-# <a name="transformation-state-variables"></a>Variáveis de estado de transformação
+# <a name="transformation-state-variables"></a>Variáveis de Estado de Transformação
 
-<dl> <dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>\_MODELVIEW \_ matriz GL</dt> <dd> 
+<dl> <dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>MATRIZ GL \_ MODELVIEW \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | Pilha de matriz Modelview             |
+| Descrição:     | Pilha de matriz do Modelview             |
 | Grupo de atributos: |                                    |
 | Valor inicial:   | Identidade                           |
 | Comando Get:     | [**glGetFloatv**](glgetfloatv.md) |
@@ -34,7 +34,7 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>\_matriz de projeção GL \_</dt> <dd> 
+</dd> <dt><span id="GL_PROJECTION_MATRIX"></span><span id="gl_projection_matrix"></span>MATRIZ \_ DE PROJEÇÃO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>\_matriz de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MATRIX"></span><span id="gl_texture_matrix"></span>MATRIZ \_ DE TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
@@ -60,12 +60,12 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>\_visor GL</dt> <dd> 
+</dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>GL \_ VIEWPORT</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Origem e extensão do visor                                                       |
-| Grupo de atributos: | visor                                                                         |
+| Descrição:     | Origem e extensão do viewport                                                       |
+| Grupo de atributos: | Viewport                                                                         |
 | Valor inicial:   |                                                                                  |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -73,12 +73,12 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>\_intervalo de profundidade do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_DEPTH_RANGE"></span><span id="gl_depth_range"></span>INTERVALO \_ DE PROFUNDIDADE \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Intervalo de profundidade próximo e longe                                                       |
-| Grupo de atributos: | visor                                                                       |
+| Descrição:     | Intervalo de profundidade próximo e distante                                                       |
+| Grupo de atributos: | Viewport                                                                       |
 | Valor inicial:   | 0, 1                                                                           |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -86,11 +86,11 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>\_profundidade de \_ pilha \_ MODELVIEW GL</dt> <dd> 
+</dd> <dt><span id="GL_MODELVIEW_STACK_DEPTH"></span><span id="gl_modelview_stack_depth"></span>GL \_ MODELVIEW \_ STACK \_ DEPTH</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Ponteiro de pilha de matriz Modelview                                                   |
+| Descrição:     | Ponteiro de pilha de matriz do Modelview                                                   |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 1                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -99,11 +99,11 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>\_profundidade da pilha de projeção GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_PROJECTION_STACK_DEPTH"></span><span id="gl_projection_stack_depth"></span>PROFUNDIDADE DA \_ PILHA \_ DE PROJEÇÃO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Ponteiro da pilha da matriz de projeção                                                  |
+| Descrição:     | Ponteiro de pilha da matriz de projeção                                                  |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 1                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -112,7 +112,7 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>\_profundidade da \_ pilha de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_STACK_DEPTH"></span><span id="gl_texture_stack_depth"></span>PROFUNDIDADE \_ DA PILHA DE TEXTURA \_ \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -125,20 +125,20 @@ ms.locfileid: "107908824"
 
  
 
-</dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>\_modo de matriz GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MATRIX_MODE"></span><span id="gl_matrix_mode"></span>MODO DE \_ MATRIZ \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
 | Descrição:     | Modo de matriz atual                                                              |
 | Grupo de atributos: | transformação                                                                        |
-| Valor inicial:   | \_MODELVIEW GL                                                                    |
+| Valor inicial:   | GL \_ MODELVIEW                                                                    |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>\_NORMALIZE GL</dt> <dd> 
+</dd> <dt><span id="GL_NORMALIZE"></span><span id="gl_normalize"></span>GL \_ NORMALIZE</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|-------------------------------------|
