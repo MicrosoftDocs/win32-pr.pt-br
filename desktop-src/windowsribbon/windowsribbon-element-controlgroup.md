@@ -1,9 +1,9 @@
 ---
-title: Elemento ControlGroup
+title: Elemento Control
 description: Representa um grupo de controles em um modelo de layout SizeDefinition.
 ms.assetid: 688f3fa5-f305-4554-b16a-590983cf23b9
 keywords:
-- Elemento ControlGroup Windows Faixa de Opções
+- elemento control do Windows faixa de controle
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a1777bd469b6bf07530881f9c20888d69fe98117ecbdeba4f3f5557f01ced172
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33640f8e451f7124efda8c0e5377a3145d221668
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117851022"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631984"
 ---
-# <a name="controlgroup-element"></a>Elemento ControlGroup
+# <a name="controlgroup-element"></a>Elemento Control
 
-Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](windowsribbon-element-sizedefinition.md)
+Representa um grupo de controles em um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
 
 ## <a name="usage"></a>Uso
 
@@ -39,10 +39,10 @@ Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](wi
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,8 +57,8 @@ Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](wi
 <td><strong>SequenceNumber</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>Não<br/></td>
-<td>Válido somente quando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> é o elemento pai.<br/> Cada <em>SequenceNumber</em> deve ser exclusivo dentro de um <a href="windowsribbon-element-group.md"><strong>elemento Group.</strong></a> Os valores de <em>SequenceNumber</em> devem aumentar para cada <strong>elemento Group,</strong> mas não precisam ser sequenciais. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Qualquer valor inteiro positivo entre 1000 e 59999, inclusive.<br/> </dd> </dl></td>
+<td>Válido somente quando o <a href="windowsribbon-element-group.md"><strong>grupo</strong></a> é o elemento pai.<br/> Cada <em>SequenceNumber</em> deve ser exclusivo dentro de um elemento de <a href="windowsribbon-element-group.md"><strong>grupo</strong></a> . Os valores de <em>SequenceNumber</em> devem aumentar para cada elemento de <strong>grupo</strong> , mas não precisam ser sequenciais. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs: positiveInteger)<br/> </dt> <dd> Qualquer valor inteiro positivo entre 1000 e 59999, inclusive.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -72,9 +72,9 @@ Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](wi
 | Elemento                                                                                 | Descrição                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                               | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Checkbox**](windowsribbon-element-checkbox.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Verificação**](windowsribbon-element-checkbox.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Controlsizedefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>               | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/>     | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>             | Pode ocorrer uma ou mais vezes<br/> <br/> |
@@ -93,10 +93,10 @@ Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](wi
 
 | Elemento                                                                             |
 |-------------------------------------------------------------------------------------|
-| **ControlGroup**<br/>                                                         |
+| **Controlador de controle**<br/>                                                         |
 | [**Grupo**](windowsribbon-element-group.md)<br/>                             |
 | [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> |
-| [**Linha**](windowsribbon-element-row.md)<br/>                                 |
+| [**Fila**](windowsribbon-element-row.md)<br/>                                 |
 
 
 
@@ -104,17 +104,17 @@ Representa um grupo de controles em um modelo de layout [**SizeDefinition.**](wi
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada [**elemento Group**](windowsribbon-element-group.md) ou **ControlGroup.**
+Pode ocorrer uma ou mais vezes para cada elemento [**Group**](windowsribbon-element-group.md) ou **Control** .
 
-Se nenhum número de sequência for fornecido, os elementos serão renderizados na ordem especificada na marcação Faixa de Opções.
+Se nenhum número de sequência for fornecido, os elementos serão renderizados na ordem especificada na marcação da faixa de lista.
 
-Se [**Group**](windowsribbon-element-group.md) ou **ControlGroup** for o elemento pai, **ControlGroup** será restrito aos seguintes elementos filho possíveis: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**InRibbonGallery,**](windowsribbon-element-inribbongallery.md) [**Spinner,**](windowsribbon-element-spinner.md) [**SplitButton,**](windowsribbon-element-splitbutton.md) [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)ou [**ToggleButton**](windowsribbon-element-togglebutton.md)
+Se [**Group ou grupo**](windowsribbon-element-group.md) de **controle** for o elemento pai, então **Control** agrupar será restrito aos seguintes elementos filho possíveis: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md), [**Spinner**](windowsribbon-element-spinner.md), [**SplitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)ou [**ToggleButton**](windowsribbon-element-togglebutton.md)
 
-Caso contrário, [**quando Row**](windowsribbon-element-row.md) ou [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) for o pai, [**Group**](windowsribbon-element-group.md) será restrito ao seguinte elemento filho possível: [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md).
+Caso contrário, quando [**Row**](windowsribbon-element-row.md) ou [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) for o pai, [**Group**](windowsribbon-element-group.md) será restrito ao seguinte elemento filho possível: [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir demonstra a marcação básica para um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado de quatro botões com vários [**elementos group.**](windowsribbon-element-group.md)
+O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com vários elementos de [**grupo**](windowsribbon-element-group.md) .
 
 
 ```XML
@@ -206,8 +206,8 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo de l
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Não
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 
@@ -215,7 +215,7 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo de l
 
 <dl> <dt>
 
-[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

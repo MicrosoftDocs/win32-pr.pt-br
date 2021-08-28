@@ -4,12 +4,12 @@ description: Ponto flutuante redondo para integral float. | round_z (sm4-ASM)
 ms.assetid: 97C0E0F2-2571-4A94-BB04-B0CDBA0B5C0C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc874c6d0a1f26902086af300784c55950b71569
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 08a95d0cb1e8432b0b5bf0ea73bf2619c8a221754775fc0d64c3649d69086295
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095306"
 ---
 # <a name="round_z-sm4---asm"></a>Round \_ z (sm4-ASM)
 
@@ -73,7 +73,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

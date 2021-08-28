@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4239d21362d589cae84252c728387b2a2b6159e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bfe29be7dd329def41e8a6726f141a850eb2daecd05e05d6b5988f543f64864c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072436"
 ---
 # <a name="restartonfailure-settingstype-element"></a>Elemento RestartOnFailure (settingstype)
 
@@ -49,7 +49,7 @@ O elemento **RestartOnFailure** é definido pelo tipo complexo [**settingstype**
 
 | Elemento                                                              | Type         | Descrição                                                                                        |
 |----------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------|
-| [**Contar**](taskschedulerschema-count-restarttype-element.md)       | unsignedByte | Especifica o número de vezes que o Agendador de Tarefas tentará reiniciar a tarefa.<br/> |
+| [**Contagem**](taskschedulerschema-count-restarttype-element.md)       | unsignedByte | Especifica o número de vezes que o Agendador de Tarefas tentará reiniciar a tarefa.<br/> |
 | [**Intervalo**](taskschedulerschema-interval-restarttype-element.md) | duration     | Especifica por quanto tempo o Agendador de Tarefas tentará reiniciar a tarefa.<br/>                 |
 
 
@@ -66,8 +66,8 @@ Ambos os elementos filho devem ser definidos para especificar como o Agendador d
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

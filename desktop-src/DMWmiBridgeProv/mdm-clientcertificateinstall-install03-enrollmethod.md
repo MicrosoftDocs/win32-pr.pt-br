@@ -1,11 +1,11 @@
 ---
-title: Método EnrollMethod da classe MDM_ClientCertificateInstall_Install03
+title: Método EnrollMethod da MDM_ClientCertificateInstall_Install03 classe
 description: Dispara o dispositivo para iniciar o registro de certificado.
 ms.assetid: 21a31574-0b19-44bf-90db-4bb9e2611364
 keywords:
 - Método EnrollMethod
-- Método EnrollMethod, classe MDM_ClientCertificateInstall_Install03
-- Classe MDM_ClientCertificateInstall_Install03, método EnrollMethod
+- Método EnrollMethod, MDM_ClientCertificateInstall_Install03 classe
+- MDM_ClientCertificateInstall_Install03 classe, método EnrollMethod
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7903407d5a97f056835e529eb21408bdcbe800ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ddeca621f58015aa3806212c1250aeb43554a51cbb28e15414e779571b9c102
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109396"
 ---
-# <a name="enrollmethod-method-of-the-mdm_clientcertificateinstall_install03-class"></a>Método EnrollMethod da \_ classe Install03 do MDM ClientCertificateInstall \_
+# <a name="enrollmethod-method-of-the-mdm_clientcertificateinstall_install03-class"></a>Método EnrollMethod da classe MDM \_ ClientCertificateInstall \_ Install03
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Dispara o dispositivo para iniciar o registro de certificado. O dispositivo não notificará o servidor MDM após a conclusão do registro de certificado. O servidor MDM pode consultar o dispositivo posteriormente para descobrir se o novo certificado foi adicionado. Consulte também [**registrar**](/windows/client-management/mdm/clientcertificateinstall-csp).
+Dispara o dispositivo para iniciar o registro de certificado. O dispositivo não notificará o servidor MDM depois que o registro de certificado for feito. O servidor MDM pode consultar posteriormente o dispositivo para descobrir se o novo certificado foi adicionado. Consulte também [**Registrar**](/windows/client-management/mdm/clientcertificateinstall-csp).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,9 +42,9 @@ uint32 EnrollMethod();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Obrigatórios. Dispara o dispositivo para iniciar o registro de certificado. O dispositivo não notificará o servidor MDM após a conclusão do registro de certificado. O servidor MDM pode consultar o dispositivo posteriormente para descobrir se o novo certificado foi adicionado.
+Obrigatórios. Dispara o dispositivo para iniciar o registro de certificado. O dispositivo não notificará o servidor MDM depois que o registro de certificado for feito. O servidor MDM pode consultar posteriormente o dispositivo para descobrir se o novo certificado foi adicionado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,10 +52,10 @@ Obrigatórios. Dispara o dispositivo para iniciar o registro de certificado. O d
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ Obrigatórios. Dispara o dispositivo para iniciar o registro de certificado. O d
 
 <dl> <dt>
 
-[**\_Install03 CLIENTCERTIFICATEINSTALL \_ MDM**](mdm-clientcertificateinstall-install03.md)
+[**MDM \_ ClientCertificateInstall \_ Install03**](mdm-clientcertificateinstall-install03.md)
 </dt> <dt>
 
 [Como usar os scripts do PowerShell com o provedor de ponte WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)

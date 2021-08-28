@@ -3,7 +3,7 @@ title: evento. screenity
 description: O atributo de tela recupera a coordenada y absoluta do ponteiro do mouse em relação à tela.
 ms.assetid: a689a621-ebfd-4ff9-8412-59db339f8c1a
 keywords:
-- Event. verificando o Windows Media Player
+- Windows Media Player de evento. Screen
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7199c60d56b59dc5eed0c8f1d726b8e11525693
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ce4b93a0caf4dee70e8d0b7025153b28f9ea6ddc1630587fc873550807dc30b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123626"
 ---
 # <a name="eventscreeny"></a>evento. screenity
 

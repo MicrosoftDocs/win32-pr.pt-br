@@ -4,12 +4,12 @@ description: O código de exemplo a seguir usa a função EnumProcesses para enu
 ms.assetid: 0ed81548-4936-40e9-bfc8-baa71492310e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89798ed3d2d7e44f014d95833302edb5d5be078daf557eed32d3496c863539e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea7f0091ee42da39990eae00b135283d288acc4f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117681003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885672"
 ---
 # <a name="enumerating-all-processes"></a>Enumerando todos os processos
 
@@ -94,7 +94,7 @@ int main( void )
 
 
 
-A função main Obtém uma lista de processos usando a função [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Para cada processo, Main chama a função **PrintProcessNameAndID** , passando-a para o identificador do processo. O **PrintProcessNameAndID** , por sua vez, chama a função [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obter o identificador de processo. Se **OpenProcess** falhar, a saída mostrará o nome do processo como <unknown> . Por exemplo, **OpenProcess** falha para os processos Idle e CSRSS porque suas restrições de acesso impedem que o código do usuário os abra. Em seguida, **PrintProcessNameAndID** chama a função [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para obter as alças do módulo. Por fim, **PrintProcessNameAndID** chama a função [**GetModuleBaseName**](/windows/desktop/api/Psapi/nf-psapi-getmodulebasenamea) para obter o nome do arquivo executável e exibe o nome junto com o identificador do processo.
+A função main Obtém uma lista de processos usando a função [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Para cada processo, Main chama a função **PrintProcessNameAndID** , passando-a para o identificador do processo. O **PrintProcessNameAndID** , por sua vez, chama a função [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obter o identificador de processo. Se **OpenProcess** falhar, a saída mostrará o nome do processo como &lt; desconhecido &gt; . Por exemplo, **OpenProcess** falha para os processos Idle e CSRSS porque suas restrições de acesso impedem que o código do usuário os abra. Em seguida, **PrintProcessNameAndID** chama a função [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para obter as alças do módulo. Por fim, **PrintProcessNameAndID** chama a função [**GetModuleBaseName**](/windows/desktop/api/Psapi/nf-psapi-getmodulebasenamea) para obter o nome do arquivo executável e exibe o nome junto com o identificador do processo.
 
  
 

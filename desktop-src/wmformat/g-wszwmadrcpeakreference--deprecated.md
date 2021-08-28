@@ -1,6 +1,6 @@
 ---
 title: g_wszWMADRCPeakReference (Wmcodecdsp. h)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | g_wszWMADRCPeakReference (Wmcodecdsp. h)
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | g_wszWMADRCPeakReference (Wmcodecdsp. h)
 ms.assetid: a048323c-e2f1-4df3-86e6-dcad405fa8d9
 keywords:
 - g_wszWMADRCPeakReference o formato Windows Media
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1659e0db97cb4914fda4385733623160346a46d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b86050e71d934b8f14395cb6748f64af6f390149c552e57f521da7827299881c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110456"
 ---
 # <a name="g_wszwmadrcpeakreference"></a>g \_ wszWMADRCPeakReference
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 

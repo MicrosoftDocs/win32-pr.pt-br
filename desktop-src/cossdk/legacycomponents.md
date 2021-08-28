@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5761950dcb0ceb5c857daf37ba2236733ec30c22
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0815c9124020ff08e7033f7d1f18f8d9c5b6736763d401a3564bbdd8c6ffdf34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120396"
 ---
 # <a name="legacycomponents-collection"></a>Coleção LegacyComponents
 
@@ -159,7 +159,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Representa o tipo de bit de bits binário do componente. Em sistemas que usam o Windows de 64 bits, essa propriedade distingue componentes de 64 bits e componentes de 32 bits. |
+| Descrição    | Representa o tipo de bit de bits binário do componente. em sistemas que usam Windows de 64 bits, essa propriedade distingue entre componentes de 64 bits e componentes de 32 bits. |
 | Access         | ReadOnly                                                                                                                                                              |
 | Tipo           | Valores longos possíveis: COMAdmin32BitComponent (0x1) COMAdmin64BitComponent (0x2)                                                                                         |
 | Padrão        | N/D                                                                                                                                                                   |
@@ -258,7 +258,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Descrição    | Se o aplicativo ou componente COM+ estiver desabilitado, IsEnabled será false. Se o aplicativo ou componente COM+ estiver habilitado, IsEnabled será true. |
 | Access         | ReadWrite                                                                                                                                 |
 | Tipo           | Bool                                                                                                                                      |
-| Padrão        | True                                                                                                                                      |
+| Padrão        | Verdadeiro                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                |
 
 
@@ -271,7 +271,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------|
-| Descrição    | Especifica as contas de usuário que são permitidas ou com permissão negada para iniciar este componente. |
+| Descrição    | Especifica as contas de usuário que têm permissão permitida ou negada para iniciar esse componente. |
 | Access         | ReadWrite                                                                              |
 | Type           | String                                                                                 |
 | Padrão        | N/D                                                                                    |
@@ -287,7 +287,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Especifica o caminho completo para um aplicativo de servidor local de 32 bits. Para ajudar a proteger a segurança do sistema, use cadeias de caracteres entre aspas no caminho para indicar onde o nome do arquivo executável termina e os argumentos começam. Por exemplo, " \\ C: \\ Program Files \\ arquivos da empresa \\Application.exe\\ " param1 param2 ". |
+| Descrição    | Especifica o caminho completo para um aplicativo de servidor local de 32 bits. Para ajudar a proteger a segurança do sistema, use cadeias de caracteres entre aspas no caminho para indicar onde o nome de arquivo executável termina e os argumentos começam. Por exemplo, " \\ "C: Arquivos de Empresa de Arquivos \\ de ProgramasApplication.exe" \\ \\ \\ param1 param2". |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                   |
 | Type           | String                                                                                                                                                                                                                                                                                      |
 | Padrão        | N/D                                                                                                                                                                                                                                                                                         |
@@ -319,7 +319,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Define a senha usada pelo processo do servidor para fazer logon na identidade RunAs especificada. A senha deve ser definida ao mesmo tempo que a identidade RunAs, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque a senha e a identidade são validadas antes de serem salvas. Se a senha e a identidade forem obtidas fora de sincronia, o componente não poderá ser iniciado até que eles sejam redefinidos por um administrador. |
+| Descrição    | Define a senha usada pelo processo do servidor para fazer logoff na identidade RunAs especificada. A senha deve ser definida ao mesmo tempo que a identidade RunAs, antes de usar [**SaveChanges,**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges)porque a senha e a identidade são validadas antes de serem salvas. Se a senha e a identidade ficam fora de sincronia, o componente não pode ser lançado até que eles sejam redefinidos por um administrador. |
 | Access         | WriteOnly                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Type           | String                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Padrão        | NULO                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -345,7 +345,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="remoteserver"></a>RemoteServer
+### <a name="remoteserver"></a>Remoteserver
 
 
 
@@ -367,7 +367,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Especifica o usuário sob a identidade cujo componente será executado. A senha deve ser definida ao mesmo tempo que a identidade RunAs, antes de usar [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), porque a senha e a identidade são validadas antes de serem salvas. Se a senha e a identidade forem obtidas fora de sincronia, o componente não poderá ser iniciado até que eles sejam redefinidos por um administrador. |
+| Descrição    | Especifica o usuário em cuja identidade o componente será executado. A senha deve ser definida ao mesmo tempo que a identidade RunAs, antes de usar [**SaveChanges,**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges)porque a senha e a identidade são validadas antes de serem salvas. Se a senha e a identidade ficam fora de sincronia, o componente não pode ser lançado até que eles sejam redefinidos por um administrador. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                         |
 | Type           | String                                                                                                                                                                                                                                                                                                                                                                                            |
 | Padrão        | N/D                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -377,13 +377,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="serviceparameter"></a>Fileparameter
+### <a name="serviceparameter"></a>ServiceParameter
 
 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------|
-| Descrição    | Especifica os parâmetros passados para o aplicativo quando chamado como um aplicativo de serviço. |
+| Descrição    | Especifica os parâmetros passados para o aplicativo quando invocados como um aplicativo de serviço. |
 | Access         | ReadWrite                                                                                 |
 | Type           | String                                                                                    |
 | Padrão        | N/D                                                                                       |
@@ -399,17 +399,17 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Indica o nível de confiança da política de restrição de software (SRP) do componente. O nível de confiança do SRP refere-se ao nível de confiança que você está disposto a dar a um componente. Um nível de confiança de SRP irrestrito corresponde ao valor de \_ enumeração de FULLYTRUSTED de nível mais seguro \_ , enquanto um nível de confiança SRP não permitido corresponde ao valor de enumeração mais seguro de \_ levelid não \_ permitido. A enumeração para os níveis de confiança é definida em Winsafer. h. |
+| Descrição    | Indica o nível de confiança SRP (política de restrição de software) do componente. O nível de confiança SRP refere-se ao nível de confiança que você está disposto a dar a um componente. Um nível de confiança SRP irrestrito corresponde ao valor de enum SAFER LEVELID FULLYTRUSTED, enquanto um nível de confiança SRP não permitido corresponde ao valor de \_ \_ enum SAFER \_ LEVELID \_ DISALLOWED. A enumeração para os níveis de confiança é definida em Winsafer.h. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Tipo           | Valores longos possíveis: nível mais seguro \_ de redistribuirid não \_ permitido (0x0) \_ FULLYTRUSTED de nível mais seguro \_ (0x40000)                                                                                                                                                                                                                                                                                                                                         |
-| Padrão        | nível mais seguro de \_ \_ FULLYTRUSTED                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Tipo           | Valores long possible:SAFER \_ LEVELID \_ DISALLOWED (0x0)SAFER \_ LEVELID \_ FULLYTRUSTED (0x40000)                                                                                                                                                                                                                                                                                                                                         |
+| Padrão        | LEVELID \_ MAIS \_ SEGURO TOTALMENTETRUSTED                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
 
  
 
-Um componente ao qual você está disposto a confiar com acesso irrestrito deve ter a segurança mais rigorosa anexada a ele. Os aplicativos que são irrestritos podem carregar apenas componentes irrestritos, enquanto os aplicativos não permitidos não poderão ser executados e, portanto, não poderão carregar nenhum componente.
+Um componente em que você está disposto a confiar com o acesso irrestrito deve ter a segurança mais rigorosa anexada a ele. Aplicativos irrestritos podem carregar apenas componentes irrestritos, enquanto aplicativos não permitidos não terão permissão para serem executados e, portanto, não podem carregar nenhum componente.
 
 ### <a name="threadingmodel"></a>ThreadingModel
 
@@ -417,9 +417,9 @@ Um componente ao qual você está disposto a confiar com acesso irrestrito deve 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Determina como as instâncias do componente são atribuídas a threads para execução do método. Os valores correspondem aos modelos de Threading COM.                                                  |
+| Descrição    | Determina como as instâncias do componente são atribuídas a threads para execução de método. Os valores correspondem aos modelos de threading COM.                                                  |
 | Access         | ReadOnly                                                                                                                                                                            |
-| Tipo           | Valores longos possíveis: COMAdminThreadingModelApartment (0) COMAdminThreadingModelFree (1) COMAdminThreadingModelMain (2) COMAdminThreadingModelBoth (3) COMAdminThreadingModelNeutral (4) |
+| Tipo           | Valores long possible:COMAdminThreadingModelApartment (0)COMAdminThreadingModelFree (1)COMAdminThreadingModelMain (2)COMAdminThreadingModelBoth (3)COMAdminThreadingModelNeutral (4) |
 | Padrão        | N/D                                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                                          |
 

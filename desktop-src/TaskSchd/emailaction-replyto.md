@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc7ed1fd84245e4d938d329f0e9773271efec45b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7b3d59d2708736519cd7623f7aeb7c2519d29b4a396d7f6e9503e9174e1274f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100286"
 ---
 # <a name="emailactionreplyto-property"></a>Propriedade emailaction. ReplyTo
 
@@ -50,8 +50,8 @@ O endereço de email que você deseja responder.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                    |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |

@@ -1,16 +1,16 @@
 - name: Configuração do Monitor
   href: monitor-configuration.md
   items:
-    - name: Sobre a configuração do monitor
+    - name: Sobre a configuração do Monitor
       href: about-monitor-configuration.md
-    - name: Usando a configuração do monitor
+    - name: Usando a configuração do Monitor
       href: using-monitor-configuration.md
       items:
-        - name: Usando as funções de configuração do monitor de High-Level
+        - name: Usando as funções de configuração High-Level Monitor
           href: using-the-high-level-monitor-configuration-functions.md
-        - name: Usando as funções de configuração do monitor de Low-Level
+        - name: Usando as funções de configuração Low-Level Monitor
           href: using-the-low-level-monitor-configuration-functions.md
-    - name: Referência de configuração do monitor
+    - name: Referência de configuração do Monitor
       href: monitor-configuration-reference.md
       items:
         - name: Monitorar funções de configuração
@@ -103,24 +103,24 @@
         - name: Monitorar estruturas de configuração
           href: monitor-configuration-structures.md
           items:
-            - name: Estrutura de MC_TIMING_REPORT
+            - name: estrutura MC_TIMING_REPORT dados
               href: /windows/win32/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report
-            - name: Estrutura de PHYSICAL_MONITOR
+            - name: estrutura PHYSICAL_MONITOR de dados
               href: /windows/win32/api/PhysicalMonitorEnumerationAPI/ns-physicalmonitorenumerationapi-physical_monitor
         - name: Monitorar tipos de enumeração de configuração
           href: monitor-configuration-enumeration-types.md
           items:
-            - name: Enumeração de MC_COLOR_TEMPERATURE
+            - name: enumeração MC_COLOR_TEMPERATURE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_color_temperature
-            - name: Enumeração de MC_DISPLAY_TECHNOLOGY_TYPE
+            - name: enumeração MC_DISPLAY_TECHNOLOGY_TYPE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_display_technology_type
-            - name: Enumeração de MC_DRIVE_TYPE
+            - name: enumeração MC_DRIVE_TYPE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_drive_type
-            - name: Enumeração de MC_GAIN_TYPE
+            - name: enumeração MC_GAIN_TYPE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_gain_type
-            - name: Enumeração de MC_POSITION_TYPE
+            - name: enumeração MC_POSITION_TYPE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_position_type
-            - name: Enumeração de MC_SIZE_TYPE
+            - name: enumeração MC_SIZE_TYPE dados
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_size_type
-            - name: Enumeração de MC_VCP_CODE_TYPE
+            - name: enumeração MC_VCP_CODE_TYPE dados
               href: /windows/win32/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type

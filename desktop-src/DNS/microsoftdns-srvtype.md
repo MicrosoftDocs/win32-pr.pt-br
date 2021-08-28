@@ -21,12 +21,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aea955cad281e9361b4fa1ca5b033a4ca0d39719
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aaff2c570647386ecd8d53592b940cbd54477764b323b5457dbec3357cf3b98c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104006"
 ---
 # <a name="microsoftdns_srvtype-class"></a>\_Classe MicrosoftDNS SRVType
 

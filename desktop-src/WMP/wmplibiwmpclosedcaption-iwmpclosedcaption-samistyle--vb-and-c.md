@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cede8964636073c393cb34bfa1be22855467f4cb243834bd1e11a4ffc492665
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e147b48ffb80e1114133b59018cef514eefd2ae7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031416"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885862"
 ---
 # <a name="iwmpclosedcaptionsamistyle-property"></a>Propriedade IWMPClosedCaption:: SAMIstyle
 
@@ -50,7 +50,7 @@ O **System. String** que é o nome especificado no identificador de estilo de um
 
 ## <a name="remarks"></a>Comentários
 
-Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre as marcas <STYLE> e </STYLE> no arquivo Sami. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
+Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre o &lt; estilo &gt; e as </STYLE> marcas no arquivo Sami. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
 
 
 ```

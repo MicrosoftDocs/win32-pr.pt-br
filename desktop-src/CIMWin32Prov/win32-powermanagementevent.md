@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e0e7dfa68646dbefb6d6b70218fe99830b44a0c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 536963be51d665b03af77bb81c7592b44d2a6eb5ddc449bfa82896dd7f7da9b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064416"
 ---
 # <a name="win32_powermanagementevent-class"></a>\_Classe Win32 PowerManagementEvent
 
@@ -187,7 +187,7 @@ A classe **Win32 \_ PowerManagementEvent** pode ser usada para monitorar altera�
 
 A classe **Win32 \_ PowerManagementEvent** tem apenas duas propriedades: EventType, usada para indicar o tipo de evento de alteração de energia que ocorreu e OEMEventType, que é usado por alguns fabricantes de equipamentos originais para definir eventos de alteração de energia adicionais.
 
-Para obter mais informações sobre como responder a eventos de energia do Windows, consulte o artigo [monitorar e responder a eventos de energia do Windows com o PowerShell](https://blogs.technet.com/b/heyscriptingguy/archive/2011/08/16/monitor-and-respond-to-windows-power-events-with-powershell.aspx) no Ei! Equipe de scripts! blog.
+para obter mais informações sobre como responder a Windows eventos de energia, consulte o artigo [monitorar e responder a Windows eventos de energia com o PowerShell](https://blogs.technet.com/b/heyscriptingguy/archive/2011/08/16/monitor-and-respond-to-windows-power-events-with-powershell.aspx) no ei! Equipe de scripts! blog.
 
 ## <a name="examples"></a>Exemplos
 

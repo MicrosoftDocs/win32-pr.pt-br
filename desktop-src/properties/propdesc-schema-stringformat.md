@@ -1,23 +1,23 @@
 ---
-description: Especifica como IPropertyDescription::FormatForDisplay deve formatar o valor da propriedade stringFormat como uma cadeia de caracteres.
+description: 'Especifica como IPropertyDescription:: FormatForDisplay deve formatar o valor da propriedade stringFormat como uma cadeia de caracteres.'
 ms.assetid: 7c38bc15-be86-4260-b2e4-13afc90de6d7
 title: stringFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e76c72865c3a0f327657d3d97cda55d57ebae1023793dabcad03db513319c004
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb40ec92ed7b31486062b5cca027eb5257e07af
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117867452"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631893"
 ---
 # <a name="stringformat"></a>stringFormat
 
-Especifica como [**IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formatar o valor da propriedade como uma cadeia de caracteres. Isso será aplicável somente se <displayInfo displayType="String"> . Deve haver apenas um elemento [stringFormat]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
+Especifica como [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formatar o valor da propriedade como uma cadeia de caracteres. Isso é aplicável somente se <displayInfo displayType="String"> . Deve haver apenas um elemento [StringFormat]() para cada elemento [DisplayInfo](./propdesc-schema-displayinfo.md) .
 
-Se houver vários elementos, o último será usado. Se nenhum [elemento stringFormat]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
+Se houver vários elementos, o último será usado. Se nenhum elemento [StringFormat]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -58,8 +58,8 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento stringFo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -69,8 +69,8 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento stringFo
 </thead>
 <tbody>
 <tr class="odd">
-<td>formatAs</td>
-<td>Público. Opcional. O padrão é &quot; &quot; Geral. Os seguintes valores são válidos: 
+<td>formato de</td>
+<td>Público. Opcional. O padrão é &quot; geral &quot; . Os seguintes valores são válidos: 
 <table>
 <thead>
 <tr class="header">
@@ -85,15 +85,15 @@ Se houver vários elementos, o último será usado. Se nenhum [elemento stringFo
 </tr>
 <tr class="even">
 <td>FileName</td>
-<td>Formatar o valor como um nome de arquivo. Oculta a extensão de acordo com as configurações do usuário. Requer que o tipo de propriedade seja String.</td>
+<td>Formata o valor como um nome de arquivo. Oculta a extensão de acordo com as configurações do usuário. Requer que o tipo de propriedade seja cadeia de caracteres.</td>
 </tr>
 <tr class="odd">
 <td>FilePath</td>
-<td>Formatar o valor como um caminho de arquivo. Oculta a extensão de acordo com as configurações do usuário. Requer que o tipo de propriedade seja String.</td>
+<td>Formata o valor como um caminho de arquivo. Oculta a extensão de acordo com as configurações do usuário. Requer que o tipo de propriedade seja cadeia de caracteres.</td>
 </tr>
 <tr class="even">
 <td>Hyperlink</td>
-<td>Formatar o valor como um hiperlink.</td>
+<td>Formata o valor como um hiperlink.</td>
 </tr>
 </tbody>
 </table>

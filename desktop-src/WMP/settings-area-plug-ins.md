@@ -1,27 +1,27 @@
 ---
-title: Plug-ins da área de configurações
-description: Plug-ins da área de configurações
+title: Configurações Plug-ins de área
+description: Configurações Plug-ins de área
 ms.assetid: 55626c4b-524c-45d3-9024-4d8f0a79ef0c
 keywords:
-- Plug-ins do Windows Media Player, área de configurações
+- Windows Media Player plug-ins, área de configurações
 - plug-ins, área de configurações
 - plug-ins de interface do usuário, área de configurações
 - Plug-ins de interface do usuário, área de configurações
-- plug-ins da área de configurações
+- plug-ins de área de configurações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 171c2e66ba3002aea39190427fb3cb7ffd8444cf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b525ef76185f3e9104aed14eb542ee053f785d9bda599dbb11345bea06b91495
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123116"
 ---
-# <a name="settings-area-plug-ins"></a>Plug-ins da área de configurações
+# <a name="settings-area-plug-ins"></a>Configurações Plug-ins de área
 
-Para o Microsoft Windows Media Player 11 e versões anteriores, os plug-ins da interface do usuário da área de configurações são mostrados na área ferramentas do painel em **execução** abaixo da área de exibição principal e acima dos controles de transporte. Para o Microsoft Windows Media Player 12 e posterior, os plug-ins da interface do usuário da área de configurações aparecem como janelas separadas. Somente um plug-in de área de configurações pode ser habilitado por vez.
+Para o Microsoft Windows Media Player 11 e anteriores, os plug-ins de interface do  usuário da área de configurações são mostrados na área Ferramentas do painel Agora Em reprodução abaixo da área de exibição principal e acima dos controles de transporte. Para o Microsoft Windows Media Player 12 e posteriores, os plug-ins de interface do usuário da área de configurações aparecem como janelas separadas. Somente um plug-in de área de configurações pode ser habilitado por vez.
 
-Plug-ins de área de configurações são úteis para exibir painéis de controle personalizados semelhantes aos controles de equalizador gráfico ou de configurações de vídeo.
+Configurações plug-ins de área são úteis para exibir painéis de controle personalizados semelhantes aos controles de configurações de vídeo ou equalizador gráfico.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -30,9 +30,9 @@ Plug-ins de área de configurações são úteis para exibir painéis de control
 [**Visão geral do plug-in da interface do usuário**](ui-plug-in-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

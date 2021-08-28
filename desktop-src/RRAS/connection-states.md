@@ -4,12 +4,12 @@ description: Durante o processo de conexão com um servidor remoto, o Gerenciado
 ms.assetid: 7a8b0086-308b-47d2-888e-69ff473c6015
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df4488cc020a8a1b2a7da93384a4a5be1edb5182
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6d9e52e1e4ea4a071f6606681aa2dc2fc15e88df659f8fd16746abf2d84727d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074216"
 ---
 # <a name="connection-states"></a>Estado da conexão
 
@@ -40,6 +40,6 @@ Os Estados de terminal ocorrem quando a conexão foi estabelecida com êxito, a 
 
 Há vários mecanismos que um cliente RAS pode usar para determinar o estado atual de uma operação de conexão. Quando um cliente RAS executa a função [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) de forma assíncrona, o Gerenciador de conexão de acesso remoto envia notificações de progresso para o [manipulador de notificação](notification-handlers.md) do cliente sempre que o estado da conexão é alterado. Além disso, o cliente pode usar a função [**RasGetConnectStatus**](/windows/desktop/api/Ras/nf-ras-rasgetconnectstatusa) para obter o estado atual de qualquer operação de conexão RAS.
 
- 
+ 
 
- 
+ 

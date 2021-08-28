@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: c2dff2cf70a6d989928f17447fa3491dd9509f24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e31c5c729bba133fa4c4d3e36bbc54035a274923a03a8718acf05a601192775b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074496"
 ---
 # <a name="run-callback-function"></a>Executar função de retorno de chamada
 
@@ -95,7 +95,7 @@ O parâmetro *HWND* do pai (geralmente a interface do usuário monitor de rede).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida (ou seja, se o especialista for iniciado), o valor de retorno será **true**.
 

@@ -1,27 +1,27 @@
 ---
-description: IDATE de localidade \_
+description: LOCALE \_ IDATE
 ms.assetid: ac919b9b-2532-49f6-ba7f-a8eb16a178e5
 title: LOCALE_IDATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81bd3e447d18a67d75b388791ce69bdc916a2cce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63da7b0a4009583936a072bb5cefe71e6f5c46b79897100ff5f263ebbff135b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106816"
 ---
-# <a name="locale_idate"></a>IDATE de localidade \_
+# <a name="locale_idate"></a>LOCALE \_ IDATE
 
-Formato de data abreviada – especificador de ordenação. O especificador deve ser um dos valores a seguir. Nenhum valor especificado pelo usuário é permitido. É preferível que seu aplicativo use a [localidade \_ SSHORTDATE](locale-sshortdate.md) em vez da localidade \_ IDATE.
+Especificador de ordenação de formato de data curta. O especificador deve ser um dos valores a seguir. Nenhum valor especificado pelo usuário é permitido. É preferível que seu aplicativo use [LOCALE \_ SSHORTDATE em](locale-sshortdate.md) vez de LOCALE \_ IDATE.
 
 
 
 | Valor | Significado        |
 |-------|----------------|
-| 0     | Mês-dia-ano |
-| 1     | Dia-mês-ano |
-| 2     | Ano-mês-dia |
+| 0     | Mês-Dia-Ano |
+| 1     | Day-Month-Year |
+| 2     | Year-Month-Day |
 
 
 

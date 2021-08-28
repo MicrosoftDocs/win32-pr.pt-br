@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 26dd58f23dc18a086c6c59f6f8a6a098e3449fea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e7a351f947b0526b8daf77b0b15ea0d2a2894ef6ff90390be484b5d0ce4b7fa3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076166"
 ---
 # <a name="ctransinplaceoutputpinenummediatypes-method"></a>Método CTransInPlaceOutputPin. EnumMediaTypes
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                           | Descrição                                         |
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Sucesso.<br/>                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                                 |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Memória insuficiente.<br/>                     |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>             | Ponteiro **nulo** .<br/>                        |
 | <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O pino de entrada do filtro não está conectado.<br/> |
@@ -76,12 +76,12 @@ Esse método retorna a interface **IEnumMediaTypes** do pino de saída upstream.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Transip. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

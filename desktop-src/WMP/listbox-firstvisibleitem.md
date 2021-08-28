@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. firstVisibleItem
+title: LISTBOX.firstVisibleItem
 description: O atributo firstVisibleItem especifica ou recupera o índice da primeira linha visível no controle de caixa de listagem.
 ms.assetid: 20209f55-2895-4c71-9169-0441e7c5c026
 keywords:
-- LISTBOX. firstVisibleItem Windows Media Player
+- LISTBOX.firstVisibleItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f7ee51848b6bd60e306f70a2f5a90006d1bf6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 768eb489224dfb2cf15e9107a1b6e6b98459f21b4fd4c497e2a85e79be304a8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123456"
 ---
-# <a name="listboxfirstvisibleitem"></a>LISTBOX. firstVisibleItem
+# <a name="listboxfirstvisibleitem"></a>LISTBOX.firstVisibleItem
 
-O atributo **firstVisibleItem** especifica ou recupera o índice da primeira linha visível no controle de caixa de listagem.
+O **atributo firstVisibleItem** especifica ou recupera o índice da primeira linha visível no controle de caixa de listagem.
 
 ``` syntax
         elementID.firstVisibleItem
@@ -29,7 +29,7 @@ O atributo **firstVisibleItem** especifica ou recupera o índice da primeira lin
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**).
+Esse atributo é um número de **leitura/gravação** (**longo).**
 
 ## <a name="remarks"></a>Comentários
 

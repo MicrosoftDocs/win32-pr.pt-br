@@ -1,9 +1,9 @@
 ---
-title: Código de notificação LBN_DBLCLK (WinUser. h)
-description: Notifica o aplicativo de que o usuário clicou duas vezes em um item em uma caixa de listagem. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem de comando do WM \_ .
+title: LBN_DBLCLK de notificação (Winuser.h)
+description: Notifica o aplicativo de que o usuário clicou duas vezes em um item em uma caixa de listagem. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem WM \_ COMMAND.
 ms.assetid: 487282cb-833a-4123-987e-6a417fbd09d4
 keywords:
-- LBN_DBLCLK de código de notificação controles do Windows
+- LBN_DBLCLK de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a60623aafb287f2006d9e27da49d0df34c05b05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 132e1b68527aca9227702caeea40ffd8deb46e375ffdd87bcf1288dfb01584e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085306"
 ---
-# <a name="lbn_dblclk-notification-code"></a>Código de notificação do LBN \_ DBLCLK
+# <a name="lbn_dblclk-notification-code"></a>Código de \_ notificação DBLCLK do LBN
 
-Notifica o aplicativo de que o usuário clicou duas vezes em um item em uma caixa de listagem. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+Notifica o aplicativo de que o usuário clicou duas vezes em um item em uma caixa de listagem. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,13 +49,13 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Identificador para a caixa de listagem.
+Lidar com a caixa de listagem.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Este código de notificação é enviado somente por uma caixa de listagem que tem o estilo de [**\_ notificação L BS**](button-styles.md) .
+Esse código de notificação é enviado apenas por uma caixa de listagem que tem o estilo L [**BS \_ NOTIFY.**](button-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Este código de notificação é enviado somente por uma caixa de listagem que t
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -82,13 +82,13 @@ Este código de notificação é enviado somente por uma caixa de listagem que t
 **Outros recursos**
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando do WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ac94dd6f088a82c932aaca5b60ec16f49644f92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b19d783480a8d82485bce32689b8d49e046b0285
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755743"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623502"
 ---
 # <a name="jetgetdatabasefileinfo-function"></a>Função JetGetDatabaseFileInfo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetdatabasefileinfo-function"></a>Função JetGetDatabaseFileInfo
 
@@ -71,8 +71,8 @@ Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -96,12 +96,12 @@ Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou 
 <tr class="even">
 <td><p>JET_DbInfoDBInUse</p></td>
 <td><p><em>pvResult</em> será interpretado como um bool (4 bytes). Isso retornará se o mecanismo de banco de dados tem, no momento, qualquer banco de dados aberto ou anexado.</p>
-<p><strong>Windows XP:  </strong> Esse valor é introduzido no Windows XP.</p></td>
+<p><strong>Windows XP:</strong> esse valor é introduzido no Windows XP.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_DbInfoPageSize</p></td>
 <td><p><em>pvResult</em> será interpretado como um longo não assinado. Isso retornará o tamanho da página do banco de dados em bytes.</p>
-<p><strong>Windows XP:  </strong> Esse valor é introduzido no Windows XP.</p></td>
+<p><strong>Windows XP:</strong> esse valor é introduzido no Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_DbInfoCp</p></td>
@@ -125,13 +125,13 @@ Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou 
 </tr>
 <tr class="odd">
 <td><p>JET_DbInfoFileType</p></td>
-<td><p><strong>Windows Vista:  </strong> Esse valor de <em>InfoLevel</em> é introduzido no Windows Vista.</p>
-<p><em>pvResult</em> será tratado como um ponteiro para um DWORD. Retorna um valor de enumeração, indicando que tipo de arquivo o mecanismo considera isso. Os tipos de arquivo são listados na tabela a seguir. Para obter mais informações sobre esses tipos de arquivos e seu uso para o mecanismo, consulte <a href="gg294069(v=exchg.10).md">arquivos do mecanismo de armazenamento extensível</a>.</p>
+<td><p><strong>Windows Vista:</strong> esse valor de <em>InfoLevel</em> é introduzido no Windows Vista.</p>
+<p><em>pvResult</em> será tratado como um ponteiro para um DWORD. Retorna um valor de enumeração, indicando que tipo de arquivo o mecanismo considera isso. Os tipos de arquivo são listados na tabela a seguir. para obter mais informações sobre esses tipos de arquivos e seu uso para o mecanismo, consulte <a href="gg294069(v=exchg.10).md">arquivos do mecanismo de Armazenamento extensível</a>.</p>
 <div class="tableSection">
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,12 +171,12 @@ Se o buffer *pvResult* fornecido for muito pequeno, JET_errInvalidBufferSize ou 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -217,17 +217,17 @@ Se essa função falhar, o buffer de saída estará em um estado indefinido.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

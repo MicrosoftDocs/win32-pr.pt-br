@@ -4,12 +4,12 @@ ms.assetid: 9178e61e-05a4-441c-a9f1-e05e23ab48a5
 title: Sintaxe de anotação (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 303065e9c49c380a5accba6faadbc641ec0f528a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ea0c02e250438f25a22f8ba6d059a723299f1ee1fa175b51ce2ffe87b07c5f87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119995"
 ---
 # <a name="annotation-syntax-direct3d-10"></a>Sintaxe de anotação (Direct3D 10)
 
@@ -17,7 +17,7 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 
 
-| <Valor do nome do *tipo de dados*   =  ;...; > |
+| <*Valor do Nome* *de*  =  *DataType*; ... ; > |
 |--------------------------------------------|
 
 
@@ -30,10 +30,10 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 | Item                                                                                                   | Descrição                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DataType"></span><span id="datatype"></span><span id="DATATYPE"></span>*Tipo de dados*<br/> | \[no \] tipo de dados, que inclui qualquer tipo de [HLSL escalar](../direct3dhlsl/dx-graphics-hlsl-scalar.md) , bem como o [tipo de cadeia de caracteres](../direct3dhlsl/dx-graphics-hlsl-scalar.md).<br/> |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nomes*<br/>                 | \[em \] uma cadeia de caracteres ASCII, que representa o nome da anotação.<br/>                                                                                                          |
-| <span id="Value"></span><span id="value"></span><span id="VALUE"></span>*Valor*<br/>             | \[no \] valor inicial da anotação.<br/>                                                                                                                           |
-| <span id="..."></span>*...*<br/>                                                                 | \[em \] anotações adicionais (pares nome-valor).<br/>                                                                                                                     |
+| <span id="DataType"></span><span id="datatype"></span><span id="DATATYPE"></span>*Datatype*<br/> | \[em \] O tipo de dados, que inclui qualquer tipo escalar de [HLSL,](../direct3dhlsl/dx-graphics-hlsl-scalar.md) bem como o tipo [de cadeia de caracteres](../direct3dhlsl/dx-graphics-hlsl-scalar.md).<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nome*<br/>                 | \[em \] uma cadeia de caracteres ASCII, que representa o nome da anotação.<br/>                                                                                                          |
+| <span id="Value"></span><span id="value"></span><span id="VALUE"></span>*Valor*<br/>             | \[em \] O valor inicial da anotação.<br/>                                                                                                                           |
+| <span id="..."></span>*...*<br/>                                                                 | \[em \] Anotações adicionais (pares nome-valor).<br/>                                                                                                                     |
 
 
 
@@ -41,11 +41,11 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 ## <a name="remarks"></a>Comentários
 
-Você pode adicionar mais de uma anotação dentro dos colchetes angulares, cada uma separada por um ponto-e-vírgula. As APIs de estrutura de efeito reconhecem as anotações em variáveis globais; todas as outras anotações são ignoradas.
+Você pode adicionar mais de uma anotação entre colchetes angulares, cada uma separada por ponto e vírgula. As APIs da estrutura de efeito reconhecem anotações em variáveis globais; todas as outras anotações são ignoradas.
 
 ## <a name="example"></a>Exemplo
 
-Aqui estão alguns exemplos.
+Veja alguns exemplos.
 
 
 ```
@@ -76,7 +76,7 @@ return pos;
 
 <dl> <dt>
 
-[Sintaxe da variável de efeito](d3d10-effect-variable-syntax.md)
+[Sintaxe de variável de efeito](d3d10-effect-variable-syntax.md)
 </dt> </dl>
 
  

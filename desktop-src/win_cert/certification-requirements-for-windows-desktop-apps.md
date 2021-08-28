@@ -1,6 +1,6 @@
 ---
 title: Requisitos de certificação da área de trabalho
-description: Documento versão 10Document date 29 de julho de 2015 Este documento contém os requisitos técnicos e as qualificações de qualificação que um aplicativo da área de trabalho deve atender para participar do Programa de Certificação de Aplicativos da Área de Trabalho Windows 10.
+description: documento versão 10Document data de julho 29, o documento 2015This contém os requisitos técnicos e as qualificações de qualificação que um aplicativo de desktop deve atender para participar do programa de certificação de aplicativo de área de trabalho Windows 10.
 ms.assetid: 0F19774E-5258-4152-BBD7-9C37A05C7F69
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4e78de8aef47479cdeb286b3c179a9a3c0520af4
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: ad78afd89768eb7c362b1ed2171272a348a6466e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122879689"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624962"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps"></a>Requisitos de certificação de Aplicativos da Área de Trabalho do Windows
 
@@ -22,100 +22,100 @@ ms.locfileid: "122879689"
 
 **Data do documento:** 29 de julho de 2015
 
-Este documento contém os requisitos técnicos e as qualificações de qualificação que um aplicativo da área de trabalho deve atender para participar do programa Windows 10 de Certificação de Aplicativos da Área de Trabalho.
+este documento contém os requisitos técnicos e as qualificações de qualificação que um aplicativo de desktop deve atender para participar do programa de certificação de aplicativo de área de trabalho Windows 10.
 
 ## <a name="welcome"></a>Seja bem-vindo!
 
-A Windows plataforma dá suporte a um amplo ecossistema de produtos e parceiros. Exibir o logotipo Windows em seu produto representa uma relação e um compromisso compartilhado com a qualidade entre a Microsoft e sua empresa. Os clientes confiam na Windows em seu produto porque ele garante que ele atenda aos padrões de compatibilidade e seja bem-Windows plataforma. Passar com êxito Windows certificação de aplicativo permite que seu aplicativo seja apresentado no Centro de Compatibilidade do Windows e você pode exibir o logotipo de certificação em seu site.
+a plataforma Windows dá suporte a um amplo ecossistema de produtos e parceiros. a exibição do logotipo de Windows em seu produto representa uma relação e um compromisso compartilhado com a qualidade entre a Microsoft e a sua empresa. os clientes confiam na marca de Windows em seu produto, pois garantem que ele atenda aos padrões de compatibilidade e que funcione bem na plataforma de Windows. a transmissão de Windows certificação de aplicativo permite que seu aplicativo seja exibido no centro de compatibilidade de Windows e você pode exibir o logotipo de certificação em seu site.
 
-O Windows de Certificação de Aplicativos é feito de requisitos técnicos e de programa para ajudar a garantir que aplicativos de terceiros que carregam a marca Windows sejam fáceis de instalar e confiáveis em PCs que executam Windows. Os clientes dão valor à estabilidade, à compatibilidade, à confiabilidade, ao desempenho e à qualidade nos sistemas que compram. A Microsoft concentra seus investimentos para atender a esses requisitos para aplicativos de software projetados para executar na plataforma Windows para PCs. Esses esforços incluem testes de compatibilidade para consistência de experiência, melhor desempenho e segurança aprimorada em PCs que executam Windows software. Os testes de compatibilidade da Microsoft foram projetados em colaboração com parceiros do setor e são continuamente aprimorados em resposta aos desenvolvimentos do setor e à demanda do consumidor.
+o programa de certificação de aplicativo Windows é composto de requisitos de programa e técnicos para ajudar a garantir que aplicativos de terceiros que possuem a marca de Windows sejam fáceis de instalar e confiáveis em computadores que executam o Windows. Os clientes precisam de estabilidade, compatibilidade, confiabilidade, desempenho e qualidade nos sistemas comprados. a Microsoft concentra seus investimentos para atender a esses requisitos para aplicativos de software projetados para serem executados na plataforma de Windows para PCs. esses esforços incluem testes de compatibilidade de consistência de experiência, desempenho aprimorado e segurança aprimorada em computadores que executam Windows software. Os testes de compatibilidade da Microsoft foram projetados em colaboração com parceiros do setor e são aprimorados continuamente em resposta aos desenvolvimentos do setor e à demanda do consumidor.
 
-O kit de certificação de aplicativo Windows é usado para validar a conformidade com esses requisitos e substitui as versões anteriores do kit usadas para validar no Windows 7, Windows 8 ou Windows 8.1. O Windows kit de certificação de aplicativos é um dos componentes incluídos no SDK (Software Development Kit) do Windows para Windows 10.
+o Kit de certificação de aplicativo Windows é usado para validar a conformidade com esses requisitos e substitui as versões anteriores do Kit usadas para validar no Windows 7, Windows 8 ou Windows 8.1. o kit de certificação de aplicativos Windows é um dos componentes incluídos no Software Development kit (SDK) do Windows para Windows 10.
 
 ## <a name="app-eligibility"></a>Qualificação do aplicativo
 
-Para que um aplicativo seja qualificado para Windows 10 de Aplicativos da Área de Trabalho, ele deve atender aos critérios a seguir e a todos os requisitos técnicos listados neste documento.
+para que um aplicativo se qualifique para a certificação de aplicativo de área de trabalho Windows 10, ele deve atender aos critérios a seguir e a todos os requisitos técnicos listados neste documento.
 
 -   Ele deve ser um aplicativo autônomo
--   Ele deve ser executado em um computador Windows 10 local
--   Ele pode ser um componente cliente de um aplicativo Windows Server certificado
+-   ele deve ser executado em um computador Windows 10 local
+-   pode ser um componente de cliente de um aplicativo do certified Windows Server
 -   Ele deve ser o código e o recurso concluídos
--   Ele não deve se comunicar com aplicativos Windows Store por meio de mecanismos locais, incluindo por meio de arquivos e chaves do Registro, exceto nos cenários empresariais com suporte
--   Ele não deve comprometer nem comprometer a segurança ou a funcionalidade do Windows sistema
--   Ele deve ter um nome exclusivo e não deve ser registrado por outras pessoas
--   Todos os componentes externos devem ser certificados separadamente ou estar em conformidade com o kit Windows de Certificação de Aplicativos
--   Ele deve ter uma opção de aceitação para todos os aplicativos agrupados
+-   ele não deve se comunicar com aplicativos da Windows Store por meio de mecanismos locais, incluindo arquivos e chaves do registro, exceto nos cenários empresariais com suporte
+-   ele não deve prejudicar ou comprometer a segurança ou a funcionalidade do sistema Windows
+-   Ele deve ter um nome exclusivo e não deve ser marcado por outras pessoas
+-   todos os componentes externos devem ser certificados separadamente ou estar em conformidade com o Kit de certificação de aplicativo Windows
+-   Ele deve ter uma opção de recusa para qualquer aplicativo agrupado
 
-Se o aplicativo da área de trabalho for enviado para a categoria de produtos antivírus e/ou anti-spyware (ou seja, antimalware), ele deverá estar em conformidade com as DIRETRIZES DA PLATAFORMA ANTIMALWARE. A LICENÇA E O CONTRATO DE LISTAGEM DA API ANTIMALWARE DO WINDOWS 10 devem ter sido assinados e em vigor antes do envio. O parceiro deve ser membro do ou ter pesquisadores que são membros do e em boa posição em uma das organizações listadas no contrato. A funcionalidade deve ser certificada Windows 10 por uma das organizações listadas no contrato. O aplicativo deve ter sido testado pelo menos uma vez nos últimos 12 meses e certificado para detecção e limpeza.
+Se o aplicativo da área de trabalho for enviado para a categoria de produtos antivírus e/ou anti-spyware (ou seja, Antimalware), ele deverá estar em conformidade com as diretrizes da plataforma antimalware. O contrato de listagem e licença da API antimalware do WINDOWS 10 deve ter sido assinado e estar em vigor antes do envio. O parceiro deve ser membro ou ter pesquisadores que sejam membros de e em boas condições em uma das organizações listadas no contrato. a funcionalidade deve ser certificada em Windows 10 por uma das organizações listadas no contrato. O aplicativo deve ter sido testado pelo menos uma vez nos últimos 12 meses e certificado para detecção e limpeza.
 
-## <a name="1-apps-are-compatible-and-resilient"></a>1. Os aplicativos são compatíveis e resilientes
+## <a name="1-apps-are-compatible-and-resilient"></a>1. os aplicativos são compatíveis e resilientes
 
-Os momentos em que um aplicativo falha ou para de responder causam muita frustração do usuário. Espera-se que os aplicativos sejam resilientes e estáveis e eliminar essas falhas ajuda a garantir que o software seja mais previsível, mantenível, com desempenho e confiável.<dl> 1.1 Seu aplicativo não deve assumir uma dependência de modos de compatibilidade Windows, mensagem AppHelp e outras correções de compatibilidade  
-1.2 Seu aplicativo deve ter um manifesto de compatibilidade e usar os GUIDs apropriados para as versões com suporte do Windows  
-1.3 Seu aplicativo deve estar ciente de DPI usando o manifesto do assembly do aplicativo em vez de chamar SetProcessDPIAware  
-1.4 Seu aplicativo não deve assumir uma dependência do runtime VB6  
-1.5 Seu aplicativo não deve carregar DLLs arbitrárias para interceptar chamadas à API win32 usando dlls do Software HKLM \\ \\ Microsoft Windows NT \\ \\ CurrentVersion Windows \\ AppInit. \_  
+Os horários em que um aplicativo falha ou param de responder causam grande frustração do usuário. Os aplicativos devem ser resilientes e estáveis e a eliminação dessas falhas ajuda a garantir que o software seja mais previsível, passível de manutenção, de alto desempenho e confiável.<dl> 1,1 seu aplicativo não deve assumir uma dependência de Windows modos de compatibilidade, mensagem AppHelp e ou quaisquer outras correções de compatibilidade  
+1,2 seu aplicativo deve ter um manifesto de compatibilidade e usar os GUIDs apropriados para as versões com suporte do Windows  
+1,3 seu aplicativo deve ter reconhecimento de DPI usando o manifesto do assembly do aplicativo em vez de chamar SetProcessDPIAware  
+1,4 seu aplicativo não deve assumir uma dependência do tempo de execução do VB6  
+1,5 seu aplicativo não deve carregar dlls arbitrárias para interceptar chamadas à API \\ do Win32 usando o Software HKLM \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Windows \_ DLLs AppInit.  
 </dl>
 
-## <a name="2-apps-must-adhere-to-windows-security-best-practices"></a>2. Os aplicativos devem seguir as Windows práticas recomendadas de segurança
+## <a name="2-apps-must-adhere-to-windows-security-best-practices"></a>2. os aplicativos devem aderir às práticas recomendadas de segurança Windows
 
-Usar Windows práticas recomendadas de segurança ajudará a evitar a criação de exposição Windows superfícies de ataque. Superfícies de ataque são os pontos de entrada que um invasor mal-intencionado pode usar para explorar o sistema operacional aproveitando as vulnerabilidades no software de destino. Uma das piores vulnerabilidades de segurança é a elevação de privilégio.
+o uso de Windows práticas recomendadas de segurança ajudará a evitar a criação de exposição para Windows superfícies de ataque. As superfícies de ataque são os pontos de entrada que um invasor mal-intencionado poderia usar para explorar o sistema operacional aproveitando as vulnerabilidades no software de destino. Uma das piores vulnerabilidades de segurança é a elevação de privilégio.
 
-Observe que os testes 2.1 2.6 são aplicáveis somente a aplicativos da área de trabalho testados no Windows 7, Windows 8 ou Windows 8.1.<dl> 2.1 Seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger arquivos executáveis  
-2.2 Seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger diretórios  
-2.3 Seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger chaves do Registro  
-2.4 Seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger diretórios que contêm objetos  
-2.5 Seu aplicativo deve reduzir o acesso não administrador a serviços vulneráveis a adulterações  
-2.6 Seu aplicativo deve impedir que serviços com reinicializações rápidas reiniciem mais de duas vezes a cada 24 horas  
+observe que os testes 2,1 2,6 são aplicáveis somente para aplicativos de desktop testados no Windows 7, Windows 8 ou Windows 8.1.<dl> 2,1 seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger arquivos executáveis  
+2,2 seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger diretórios  
+2,3 seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger chaves do registro  
+2,4 seu aplicativo deve usar [ACLs](/windows/desktop/SecAuthZ/access-control-lists) fortes e apropriadas para proteger diretórios que contêm objetos  
+2,5 seu aplicativo deve reduzir o acesso de não administrador aos serviços que estão vulneráveis à violação  
+2,6 seu aplicativo deve impedir que os serviços com reinicializações rápidas reiniciem mais de duas vezes a cada 24 horas  
 </dl>
 
 **Observação: o acesso só deve ser concedido às entidades que o exigem.**
 
-O Windows de Certificação de Aplicativos verificará se as superfícies de ataque do Windows não são expostas verificando se as ACLs e os Serviços são implementados de uma maneira que não coloque o sistema Windows em risco.
+o programa de certificação de aplicativo Windows verificará se Windows superfícies de ataque não são expostas verificando se as ACLs e os serviços são implementados de uma forma que não coloca o sistema de Windows em risco.
 
-## <a name="3-apps-support-windows-security-features"></a>3. Os aplicativos são Windows recursos de segurança
+## <a name="3-apps-support-windows-security-features"></a>3. os aplicativos dão suporte a recursos de segurança Windows
 
-O Windows sistema operacional tem muitos recursos que suportam segurança e privacidade do sistema. Os aplicativos devem dar suporte a esses recursos para manter a integridade do sistema operacional. Aplicativos compilados incorretamente podem causar estouros de buffer que, por sua vez, podem causar negação de serviço ou permitir a execução de código mal-intencionado. <dl> 3.1 Seu aplicativo não deve usar AllowPartiallyTrustedCallersAttribute (APTCA) para garantir o acesso seguro a assemblies de nome forte  
-3.2 Seu aplicativo deve ser compilado usando o sinalizador /SafeSEH para garantir o tratamento seguro de exceções  
-3.3 Seu aplicativo deve ser compilado usando o sinalizador /NXCOMPAT para impedir a execução de dados  
-3.4 Seu aplicativo deve ser compilado usando o sinalizador /DYNAMICBASE para randomização de layout de espaço de endereço (ASLR)  
-3.5 Seu aplicativo não deve ler/gravar as seções pe compartilhadas  
+o sistema operacional Windows tem muitos recursos que dão suporte à segurança e privacidade do sistema. Os aplicativos devem dar suporte a esses recursos para manter a integridade do sistema operacional. Aplicativos compilados incorretamente poderiam causar estouros de buffer que podem, por sua vez, causar negação de serviço ou permitir a execução de código mal-intencionado. <dl> 3,1 seu aplicativo não deve usar AllowPartiallyTrustedCallersAttribute (APTCA) para garantir o acesso seguro a assemblies de nome forte  
+3,2 seu aplicativo deve ser compilado usando o sinalizador/SafeSEH para garantir a manipulação de exceções seguras  
+3,3 seu aplicativo deve ser compilado usando o sinalizador/NXCOMPAT para impedir a execução de dados  
+3,4 seu aplicativo deve ser compilado usando o sinalizador/DYNAMICBASE para o ASLR (Address Space layout Randomization)  
+3,5 seu aplicativo não deve ler/gravar as seções do PE compartilhadas  
 </dl>
 
-## <a name="4-apps-must-adhere-to-system-restart-manager-messages"></a>4. Os aplicativos devem aderir às mensagens do gerenciador de reinicialização do sistema
+## <a name="4-apps-must-adhere-to-system-restart-manager-messages"></a>4. os aplicativos devem aderir às mensagens do Gerenciador de reinicialização do sistema
 
-Quando os usuários iniciam o desligamento, eles geralmente têm um forte desejo de ver o desligamento bem-sucedido; eles podem estar com uma vontade de sair do escritório e apenas querem que seus computadores desliguem. Os aplicativos devem respeitar esse desejo sem bloquear o desligamento. Embora, na maioria dos casos, um desligamento possa não ser crítico, os aplicativos devem estar preparados para a possibilidade de um desligamento crítico.<dl> 4.1 Seu aplicativo deve lidar com desligamentos críticos adequadamente <dl> Em um desligamento crítico, os aplicativos que retornam FALSE para WM QUERYENDSESSION serão enviados WM ENDSESSION e fechados, enquanto aqueles que se desempenham em resposta a \_ \_ WM \_ QUERYENDSESSION serão encerrados.  
-</dl> </dd> 4.2 A GUI app must return TRUE immediately in preparation for a restart <dl> WM \_ QUERYENDSESSION com LPARAM = ENDSESSION \_ CLOSEAPP(0x1).  
-Os aplicativos de console podem chamar SetConsoleCtrlHandler para especificar a função que manipulará notificações de desligamento. Os aplicativos de serviço podem chamar RegisterServiceCtrlHandlerEx para especificar a função que receberá notificações de desligamento.  
-</dl> </dd> 4.3 Your app must return 0 within 30 seconds and shut down <dl> WM \_ ENDSESSION com LPARAM = ENDSESSION \_ CLOSEAPP(0x1).  
-No mínimo, o aplicativo deve se preparar salvando todos os dados do usuário e informando as informações necessárias após uma reinicialização.  
+Quando os usuários iniciam o desligamento, eles geralmente têm um desejo forte de ver o desligamento com sucesso; Eles podem estar com pressa para sair do escritório e apenas querem que seus computadores sejam desligados. Os aplicativos devem respeitar esse desejo não bloqueando o desligamento. Na maioria dos casos, um desligamento pode não ser crítico, os aplicativos devem estar preparados para a possibilidade de um desligamento crítico.<dl> 4,1 seu aplicativo deve lidar com desligamentos críticos adequadamente <dl> Em um desligamento crítico, os aplicativos que retornam FALSE para o WM \_ QUERYENDSESSION serão enviados ao WM \_ EndSession e fechados, enquanto aqueles que atingirem o tempo limite em resposta ao WM \_ QUERYENDSESSION serão encerrados.  
+</dl> </dd> 4.2 A GUI app must return TRUE immediately in preparation for a restart <dl> WM \_ QUERYENDSESSION com lParam = EndSession \_ CLOSEAPP (0x1).  
+Os aplicativos de console podem chamar SetConsoleCtrlHandler para especificar a função que tratará as notificações de desligamento. Os aplicativos de serviço podem chamar RegisterServiceCtrlHandlerEx para especificar a função que receberá notificações de desligamento.  
+</dl> </dd> 4.3 Your app must return 0 within 30 seconds and shut down <dl> \_EndSession do WM com lParam = EndSession \_ CLOSEAPP (0x1).  
+No mínimo, o aplicativo deve se preparar salvando os dados do usuário e estado as informações necessárias após uma reinicialização.  
 </dl> </dd> 4.4 Console apps that receive the CTRL\_C\_EVENT notification should shut down immediately  
 4.5 Drivers must not veto a system shutdown event  
 </dl>
-<strong>Observação: os aplicativos que devem bloquear o desligamento devido a uma operação que não pode ser interrompida devem explicar o motivo para o usuário.</strong> Use ShutdownBlockReasonCreate para registrar uma cadeia de caracteres que explica o motivo para o usuário. Quando a operação for concluída, o aplicativo deverá chamar ShutdownBlockReasonDestroy para indicar que o sistema pode ser desligado.
+<strong>Observação: os aplicativos que devem bloquear o desligamento por causa de uma operação que não pode ser interrompida devem explicar o motivo do usuário.</strong> Use ShutdownBlockReasonCreate para registrar uma cadeia de caracteres que explica o motivo para o usuário. Quando a operação for concluída, o aplicativo deverá chamar ShutdownBlockReasonDestroy para indicar que o sistema pode ser desligado.
 
-## <a name="5-apps-must-support-a-clean-reversible-installation"></a>5. Os aplicativos devem dar suporte a uma instalação limpa e reversível
+## <a name="5-apps-must-support-a-clean-reversible-installation"></a>5. os aplicativos devem oferecer suporte a uma instalação limpa e reversível
 
-Uma instalação limpa e reversível permite que os usuários gerenciem (implantem e removam) aplicativos em seus sistemas com êxito.<dl> 5.1 Seu aplicativo deve implementar corretamente uma instalação limpa e reversível <dl> Se a instalação falhar, o aplicativo deverá ser capaz de reverter e restaurar o computador para seu estado anterior.  
+Uma instalação limpa e reversível permite que os usuários gerenciem com êxito (implante e removam) aplicativos em seus sistemas.<dl> 5,1 seu aplicativo deve implementar corretamente uma instalação limpa e reversível <dl> Se a instalação falhar, o aplicativo deverá ser capaz de reverter e restaurar o computador para seu estado anterior.  
 </dl> </dd> 5.2 Your app must never force the user to restart the computer immediately <dl> Reiniciar o computador nunca deve ser a única opção no final de uma instalação, desinstalação ou atualização. Os usuários devem ter a oportunidade de reiniciar mais tarde.  
 </dl> </dd> 5.3 Your app must never be dependent on 8.3 short file names (SFN)  
 5.4 Your app must never block silent install/uninstall  
-5.5 Your app installer must create the correct registry entries to allow successful detection and uninstalls <dl> Windows ferramentas de inventário e ferramentas de telemetria exigem informações completas sobre aplicativos instalados. Se você estiver usando um instalador baseado em MSI, o MSI criará automaticamente as entradas do Registro abaixo. Se você não estiver usando um instalador MSI, o módulo de instalação deverá criar as seguintes entradas do Registro durante a instalação:  
+5.5 Your app installer must create the correct registry entries to allow successful detection and uninstalls <dl> as ferramentas de inventário Windows e as ferramentas de telemetria exigem informações completas sobre os aplicativos instalados. Se você estiver usando um instalador baseado em MSI, o MSI criará automaticamente as entradas de registro abaixo. Se você não estiver usando um instalador MSI, o módulo de instalação deverá criar as seguintes entradas de registro durante a instalação:  
 </dl>
 
 -   DisplayName
 -   InstallLocation
 -   Publisher
 -   UninstallString
--   VersionMajor ou MajorVersion
+-   Propriedade VersionMajor ou MajorVersion
 -   VersionMinor ou MinorVersion
 
 </dd> 5.6 The app must remove all of its entries from Add/ Remove Programs upon uninstall  
 </dl>
 
-## <a name="6-apps-must-digitally-sign-files-and-drivers"></a>6. Os aplicativos devem assinar arquivos e drivers digitalmente
+## <a name="6-apps-must-digitally-sign-files-and-drivers"></a>6. os aplicativos devem assinar digitalmente arquivos e drivers
 
-Uma assinatura digital Authenticode permite que os usuários certifiquem-se de que o software é original. Ele também permite detectar se um arquivo foi adulterado, como se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso de Windows conhecido como CI (integridade de código), que melhora a segurança do sistema operacional verificando a integridade de um arquivo sempre que a imagem do arquivo é carregada na memória. A CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo de kernel falha ao verificar corretamente. <dl> 6.1 Todos os arquivos executáveis (.exe, .dll, .ocx, .sys, .cpl, .drv, .scr) devem ser assinados com um certificado Authenticode  
+Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, como se ele foi infectado por um vírus. a imposição de assinatura de código no modo Kernel é um recurso Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente. <dl> 6,1 todos os arquivos executáveis (.exe, .dll,. ocx, .sys, .cpl,. drv,. SCR) devem ser assinados com um certificado Authenticode  
 6,2 todos os drivers de modo kernel instalados pelo aplicativo devem ter uma assinatura da Microsoft obtida por meio do programa de certificação de Hardware Windows. Todos os drivers de filtro do sistema de arquivos devem ser assinados pela Microsoft.  
 6,3 exceções e renúncias <dl> As renúncias serão consideradas apenas para redistribuíveis de terceiros não assinados, excluindo drivers. Uma prova de comunicação solicitando uma versão assinada dos redistribuíveis (s) é necessária para que essa renúncia seja concedida.  
 </dl> </dd> </dl>
@@ -168,8 +168,8 @@ Os usuários devem ter uma experiência consistente e segura com o local de inst
 -   Menu iniciar todos os programas > inicialização
 
 </dd> 10.3 Your app data, which must be shared among users on the computer, should be stored within ProgramData  
-10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\&lt;username&gt;\\AppData  
-10.5 Your app must never write directly to the "Windows" directory and or subdirectories <dl> Use os métodos corretos para instalar arquivos, como fontes ou drivers.  
+10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\<username>\\AppData  
+10,5 seu aplicativo nunca deve gravar diretamente no diretório "Windows" e nos subdiretórios <dl> Use os métodos corretos para instalar arquivos, como fontes ou drivers.  
 </dl> </dd> 10.6 Your app must write user data at first run and not during the installation in  per-machine  installations <dl> Quando o aplicativo é instalado, não há nenhum local de usuário correto no qual armazenar dados. As tentativas de um aplicativo para modificar os comportamentos de associação padrão em um nível de máquina após a instalação não serão bem-sucedidas. Em vez disso, os padrões devem ser reivindicados em um nível por usuário, o que impede que vários usuários substituam os padrões uns dos outros.  
 </dl> </dd> 10.7 Exceptions and Waivers <dl> Uma renúncia é necessária para aplicativos que gravam em aplicativos .NET do GAC (cache de assembly global) devem manter as dependências de assembly particulares e armazená-las no diretório do aplicativo, a menos que o compartilhamento de um assembly seja explicitamente necessário.  
 </dl> </dd> </dl>
@@ -208,19 +208,19 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 | Data          | Versão | Descrição da revisão                   | Link para o documento                                                                 |
 |---------------|---------|----------------------------------------|----------------------------------------------------------------------------------|
 | 20 de dezembro de 2011  | 1.0     | Rascunho inicial do documento para visualização. |                                                                                  |
-| 26 de janeiro de 2012  | 1,1     | Atualize para a seção \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md)     |
-| 31 de maio de 2012  | 1.2     | Resultados de teste de resumo adicionados             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md)     |
+| 26 de janeiro de 2012  | 1,1     | Atualize para a \# seção 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md)     |
+| 31 de maio de 2012  | 1.2     | Adicionados resultados de teste de resumo             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md)     |
 | 29 de junho de 2012  | 3.0     | Windows 8 documento final               | [3.0](archive--certification-requirements-for-windows-desktop-apps-v3-0.md)     |
 | 18 de junho de 2013  | 3.1     | Windows 8.1 documento                   | [3.1](archive--certification-requirements-for-windows-desktop-apps-v3-1.md)     |
 | 20 de fevereiro de 2014  | 3.2     | Atualização interna                        |                                                                                  |
 | 18 de março de 2014  | 3.3     | Windows 8.1 Update 1                   | [3.3](https://www.bing.com/search?q=3.3) |
-| 29 de julho de 2015 | 10      | Windows 10 Cumulativo                      | 10                                                                               |
+| 29 de julho de 2015 | 10      | Windows 10 Atualização                      | 10                                                                               |
 
 
 
 
 
-## <a name="learn-more-about-desktop-app-certification"></a>Saiba mais sobre a certificação de aplicativos de desktop
+## <a name="learn-more-about-desktop-app-certification"></a>Saiba mais sobre a certificação de aplicativo da área de trabalho
 
 
 
@@ -236,17 +236,17 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 </tr>
 <tr class="even">
 <td>Compatibilidade e resiliência</td>
-<td>Falhas & travas são uma grande interrupção dos usuários e causam frustração. Os aplicativos devem ser resilientes e estáveis, eliminando essas falhas ajuda a garantir que o software seja mais previsível, passível de manutenção, com bom desempenho e confiável.<br/> O ponto de entrada do aplicativo voltado para o usuário deve ser manifestado para compatibilidade, bem como para declarar o GUID correto. <br/> Os pontos de entrada de aplicativo voltados para o usuário devem ser manifestados para conscientização de alto DPI e que as APIs apropriadas estejam sendo chamadas para dar suporte a DPI alto.<br/> Para obter mais informações, consulte:
+<td>Falhas & travamentos são uma grande interrupção para os usuários e causam frustração. Espera-se que os aplicativos sejam resilientes e estáveis, eliminar essas falhas ajuda a garantir que o software seja mais previsível, mantenível, com desempenho e confiável.<br/> O ponto de entrada do aplicativo voltado para o usuário deve ser manifestado para compatibilidade, bem como declarar o GUID correto. <br/> Os pontos de entrada do aplicativo voltados para o usuário devem ser manifestados para reconhecimento de ALTO DPI e que as APIs apropriadas estão sendo chamadas para dar suporte a HIGH-DPI.<br/> Para obter mais informações, consulte:
 <ul>
 <li><a href="https://support.microsoft.com/kb/197571">AppInit DLLs</a></li>
 <li><a href="/windows/desktop/w8cookbook/application--executable--manifest">Manifesto do aplicativo (executável)</a></li>
-<li><a href="/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows">Gravando aplicativos Win32 de alto DPI</a></li>
+<li><a href="/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows">Escrevendo aplicativos Win32 de alto DPI</a></li>
 </ul>
 <br/></td>
 </tr>
 <tr class="odd">
-<td>aderir a Segurança do Windows práticas recomendadas</td>
-<td>o uso de Windows práticas recomendadas de segurança ajudará a evitar a criação de exposição para Windows superfícies de ataque. As superfícies de ataque são os pontos de entrada que um invasor mal-intencionado poderia usar para explorar o sistema operacional aproveitando as vulnerabilidades no software de destino. Uma das piores vulnerabilidades de segurança é a elevação de privilégio.<br/> Para obter mais informações, consulte:
+<td>Seguir as Segurança do Windows práticas recomendadas</td>
+<td>Usar Windows práticas recomendadas de segurança ajudará a evitar a criação de exposição Windows superfícies de ataque. Superfícies de ataque são os pontos de entrada que um invasor mal-intencionado pode usar para explorar o sistema operacional aproveitando as vulnerabilidades no software de destino. Uma das piores vulnerabilidades de segurança é a elevação de privilégio.<br/> Para obter mais informações, consulte:
 <ul>
 <li><a href="https://technet.microsoft.com/security/gg749821">Analisador de superfície de ataque</a></li>
 <li><a href="/windows/desktop/SecAuthZ/access-control-lists">Listas de controle de acesso</a></li>
@@ -254,54 +254,54 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 <br/></td>
 </tr>
 <tr class="even">
-<td>recursos de Segurança do Windows de suporte</td>
-<td>o sistema operacional Windows implementou muitas medidas para dar suporte à segurança e privacidade do sistema. Os aplicativos devem dar suporte a essas medidas para manter a integridade do sistema operacional. Aplicativos compilados incorretamente poderiam causar estouros de buffer que, por sua vez, poderiam causar negação de serviço ou fazer com que um código mal-intencionado seja executado. Para obter mais informações, consulte a <a href="https://blogs.microsoft.com/cybertrust/2012/08/15/microsofts-free-security-tools-binscope-binary-analyzer/">referência da ferramenta BinScope</a>.</td>
+<td>Suporte Segurança do Windows recursos</td>
+<td>O Windows sistema operacional implementou muitas medidas para dar suporte à segurança e à privacidade do sistema. Os aplicativos devem dar suporte a essas medidas para manter a integridade do sistema operacional. Aplicativos compilados incorretamente podem causar estouros de buffer que, por sua vez, podem causar negação de serviço ou fazer com que o código mal-intencionado seja executado. Para obter mais informações, consulte a <a href="https://blogs.microsoft.com/cybertrust/2012/08/15/microsofts-free-security-tools-binscope-binary-analyzer/">referência da ferramenta BinScope</a>.</td>
 </tr>
 <tr class="odd">
-<td>Aderir às mensagens do Gerenciador de reinicialização do sistema</td>
-<td>Quando os usuários iniciam o desligamento, na grande maioria dos casos, eles têm um desejo forte de ver o desligamento com sucesso; Eles podem estar com pressa para sair do escritório e &quot; apenas querem &quot; que seus computadores sejam desligados. Os aplicativos devem respeitar esse desejo não bloqueando o desligamento. Na maioria dos casos, um desligamento pode não ser crítico, os aplicativos devem estar preparados para a possibilidade de um desligamento crítico.</td>
+<td>Aderir às mensagens do System Restart Manager</td>
+<td>Quando os usuários iniciam o desligamento, na grande maioria dos casos, eles têm um forte desejo de ver o desligamento bem-sucedido; eles podem estar com uma vontade de sair do escritório e &quot; apenas querem que seus &quot; computadores desliguem. Os aplicativos devem respeitar esse desejo sem bloquear o desligamento. Embora, na maioria dos casos, um desligamento possa não ser crítico, os aplicativos devem estar preparados para a possibilidade de um desligamento crítico.</td>
 </tr>
 <tr class="even">
-<td>Instalação reversível limpa</td>
-<td>Uma instalação limpa e reversível permite que os usuários gerenciem com êxito (implante e removam) aplicativos em seus sistemas. para obter mais informações, consulte <a href="/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application?view=vs-2015">como instalar pré-requisitos com um aplicativo ClickOnce</a>.</td>
+<td>Limpar instalação reversível</td>
+<td>Uma instalação limpa e reversível permite que os usuários gerenciem (implantem e removam) aplicativos em seus sistemas com êxito. Para obter mais informações, <a href="/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application?view=vs-2015">consulte Como instalar pré-requisitos com um ClickOnce aplicativo</a>.</td>
 </tr>
 <tr class="odd">
-<td>Assinar digitalmente arquivos e drivers</td>
-<td>Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, por exemplo, se ele foi infectado por um vírus. a imposição de assinatura de código no modo Kernel é um recurso Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente.<br/></td>
+<td>Assinar arquivos e drivers digitalmente</td>
+<td>Uma assinatura digital Authenticode permite que os usuários certifiquem-se de que o software é original. Ele também permite detectar se um arquivo foi adulterado, por exemplo, se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso conhecido como CI (integridade de código), que melhora a segurança do sistema operacional verificando Windows a integridade de um arquivo sempre que a imagem do arquivo é carregada na memória. A CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo de kernel falha ao verificar corretamente.<br/></td>
 </tr>
 <tr class="even">
-<td>Não bloquear instalação ou inicialização de aplicativo com base na verificação de versão do sistema operacional</td>
-<td>É importante que os clientes não sejam artificialmente impedidos de instalar ou executar seu aplicativo quando não houver nenhuma limitação técnica. em geral, se os aplicativos foram escritos para o Windows Vista ou versões posteriores, eles não devem ter nenhum motivo para verificar a versão do sistema operacional. Para obter mais informações, consulte <a href="/windows/desktop/Win7AppQual/operating-system-versioning">controle de versão do sistema operacional</a>.</td>
+<td>Não bloqueie a instalação ou a iniciação do aplicativo com base na verificação de versão do sistema operacional</td>
+<td>É importante que os clientes não sejam impedidos artificialmente de instalar ou executar seu aplicativo quando não houver limitações técnicas. Em geral, se os aplicativos foram escritos para Windows Vista ou versões posteriores, eles não devem ter motivo para verificar a versão do sistema operacional. Para obter mais informações, consulte <a href="/windows/desktop/Win7AppQual/operating-system-versioning">Versão do sistema operacional</a>.</td>
 </tr>
 <tr class="odd">
-<td>não carregar serviços e Drivers no modo de Cofre</td>
-<td>o modo de Cofre permite que os usuários diagnostiquem e solucionem problemas de Windows. A menos que seja necessário para as operações básicas do sistema (por exemplo, drivers de dispositivo de armazenamento) ou para fins de diagnóstico e recuperação (por exemplo, scanners antivírus), os drivers e serviços não devem ser definidos para serem carregados no modo de segurança. Por padrão, o modo de segurança não inicia a maioria dos drivers e serviços que não vieram pré-instalados com o Windows. Eles devem permanecer desabilitados, a menos que o sistema os exija para operações básicas ou para fins de diagnóstico e recuperação.<br/> Para obter mais informações, consulte:
+<td>Não carregar serviços e drivers no modo Cofre aplicativo</td>
+<td>Cofre modo permite que os usuários dia diagnosticem e solucionem problemas Windows. A menos que seja necessário para operações básicas do sistema (por exemplo, drivers de dispositivo de armazenamento) ou para fins de diagnóstico e recuperação (por exemplo, scanners antivírus), os drivers e os serviços não devem ser definidos para serem carregados no modo de segurança. Por padrão, o modo de segurança não inicia a maioria dos drivers e serviços que não foram pré-instalados com Windows. Eles devem permanecer desabilitados, a menos que o sistema os exija para operações básicas ou para fins de diagnóstico e recuperação.<br/> Para obter mais informações, consulte:
 <ul>
-<li><a href="/windows-hardware/drivers/kernel/determining-whether-the-operating-system-is-running-in-safe-mode">determinando se o sistema operacional está sendo executado no modo de Cofre</a></li>
-<li><a href="https://support.microsoft.com/kb/837643">como determinar se o sistema está sendo executado no modo de Cofre de um driver de dispositivo</a></li>
+<li><a href="/windows-hardware/drivers/kernel/determining-whether-the-operating-system-is-running-in-safe-mode">Determinando se o sistema operacional está em execução no modo Cofre sistema</a></li>
+<li><a href="https://support.microsoft.com/kb/837643">Como determinar se o sistema está em execução no modo Cofre de um driver de dispositivo</a></li>
 </ul>
 <br/></td>
 </tr>
 <tr class="even">
-<td>Seguir as diretrizes de controle de conta de usuário (UAC)</td>
-<td>alguns Windows aplicativo são executados no contexto de segurança de uma conta de administrador e muitos exigem direitos de usuário e privilégios de Windows excessivos. Controlar o acesso a recursos permite que os usuários estejam no controle de seus sistemas contra alterações indesejadas (uma alteração indesejada pode ser mal-intencionada, como um rootkit furtivamente assumir a máquina ou uma ação de pessoas que têm privilégios limitados, por exemplo, um funcionário instalando software proibido em um computador de trabalho). A regra mais importante para controlar o acesso a recursos é fornecer a menor quantidade de contexto de usuário padrão de acesso necessário para que um usuário execute suas tarefas necessárias. As diretrizes do UAC a seguir fornecem ao aplicativo as permissões necessárias, quando necessário, sem deixar o sistema constantemente exposto a riscos de segurança.<br/> Para obter mais informações, consulte:
+<td>Seguir as diretrizes do UAC (Controle de Conta de Usuário)</td>
+<td>Alguns Windows aplicativo são executados no contexto de segurança de uma conta de administrador e muitos exigem direitos de usuário excessivos e Windows privilégios. Controlar o acesso aos recursos permite que os usuários controlem seus sistemas contra alterações indesejadas (uma alteração indesejada pode ser mal-intencionada, como um rootkit assumindo o computador de forma furtiva ou uma ação de pessoas que têm privilégios limitados, por exemplo, um funcionário instalando software proibido em um computador de trabalho). A regra mais importante para controlar o acesso aos recursos é fornecer a menor quantidade de contexto de usuário padrão de acesso necessária para que um usuário execute suas tarefas necessárias. As diretrizes de UAC a seguir fornece ao aplicativo as permissões necessárias quando necessário, sem deixar o sistema constantemente exposto a riscos de segurança.<br/> Para obter mais informações, consulte:
 <ul>
 <li><a href="/windows/desktop/uxguide/winenv-uac">Controle de conta de usuário</a></li>
-<li><a href="/previous-versions/aa480152(v=msdn.10)">UAC: diretrizes de atualização de aplicativo</a></li>
+<li><a href="/previous-versions/aa480152(v=msdn.10)">UAC: Diretrizes de atualização de aplicativo</a></li>
 </ul>
 <br/></td>
 </tr>
 <tr class="odd">
-<td>Instalar nas pastas corretas por padrão</td>
-<td>Os usuários devem ter uma experiência consistente e segura com o local de instalação padrão dos arquivos, mantendo a opção de instalar um aplicativo no local escolhido. Também é necessário armazenar os dados do aplicativo no local correto para permitir que várias pessoas usem o mesmo computador sem corromper ou substituir os dados e as configurações uns dos outros. Para obter mais informações, consulte <a href="/previous-versions/ms954376(v=msdn.10)">Resumo dos requisitos de instalação/desinstalação</a>.</td>
+<td>Instalar as pastas corretas por padrão</td>
+<td>Os usuários devem ter uma experiência consistente e segura com o local de instalação padrão dos arquivos, mantendo a opção de instalar um aplicativo no local escolhido. Também é necessário armazenar dados do aplicativo no local correto para permitir que várias pessoas usem o mesmo computador sem corromper ou sobrescrever os dados e as configurações umas das outras. Para obter mais informações, consulte <a href="/previous-versions/ms954376(v=msdn.10)">Resumo dos requisitos de instalação/desinstalação.</a></td>
 </tr>
 <tr class="even">
 <td>Suporte a sessões de vários usuários</td>
-<td>Windows os usuários devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções. Para obter mais informações, consulte <a href="/windows/desktop/TermServ/terminal-services-programming-guidelines">diretrizes de programação de serviços de área de trabalho remota</a>.</td>
+<td>Windows os usuários devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções. Para obter mais informações, consulte <a href="/windows/desktop/TermServ/terminal-services-programming-guidelines">Diretrizes Serviços de Área de Trabalho Remota programação.</a></td>
 </tr>
 <tr class="odd">
 <td>Suporte a versões x64 do Windows</td>
-<td>Como o hardware de 64 bits se torna mais predominante, os usuários esperam que os desenvolvedores de aplicativos aproveitem os benefícios da arquitetura de 64 bits migrando seus aplicativos para 64 bits ou que as versões de 32 bits do aplicativo sejam executadas bem em versões de 64 bits do Windows.</td>
+<td>À medida que o hardware de 64 bits se torna mais predominante, os usuários esperam que os desenvolvedores de aplicativos aproveitem os benefícios da arquitetura de 64 bits migrando seus aplicativos para 64 bits ou que as versões de 32 bits do aplicativo são bem executados em versões de 64 bits do Windows.</td>
 </tr>
 </tbody>
 </table>
@@ -312,5 +312,5 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 
 ## <a name="see-also"></a>Confira também
 
--   [Windows Programa de certificação de hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
--   [como usar o Kit de certificação de aplicativo Windows](./using-the-windows-app-certification-kit.md)
+-   [Windows Programa de Certificação de Hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
+-   [Como usar o Kit Windows de Certificação de Aplicativos](./using-the-windows-app-certification-kit.md)

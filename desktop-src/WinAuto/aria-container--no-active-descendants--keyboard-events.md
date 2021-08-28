@@ -1,23 +1,23 @@
 ---
-title: Erro de acessibilidade do teclado (sem o descendente ativo) da função de contêiner do ARIA
-description: Erro de acessibilidade do teclado (sem o descendente ativo) da função de contêiner do ARIA
+title: Erro de acessibilidade do teclado da Função de Contêiner do ARIA (sem descendente ativo)
+description: Erro de acessibilidade do teclado da Função de Contêiner do ARIA (sem descendente ativo)
 ms.assetid: 15EDD3CC-FC2A-42FC-95DD-B04D9AF3515E
 keywords:
 - AriaContainerWithoutActiveDescendantKeyboardAccessiblityId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9e30e0194f156426e2b61aa774ac1f3e0f5b91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 30b653ac3bf2dc8254b25c52a89cdb3503b89b9f05997a3ea9fb4f4ef3a77cb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071876"
 ---
-# <a name="aria-container-role-without-active-descendant-keyboard-accessibility-error"></a>Erro de acessibilidade do teclado (sem o descendente ativo) da função de contêiner do ARIA
+# <a name="aria-container-role-without-active-descendant-keyboard-accessibility-error"></a>Erro de acessibilidade do teclado da Função de Contêiner do ARIA (sem descendente ativo)
 
 ## <a name="text"></a>Texto
 
-O elemento é um contêiner com foco sem um descendente ativo definido e sem os / manipuladores de eventos de AoApertarTecla **OnKeyPress** / **onkeyup** (nem no contêiner nem em um dos elementos filho).
+O elemento é um contêiner focalizado sem descendente ativo definido e sem manipuladores de eventos / **OnKeyPress OnKeyUp** / **onKeyPress** (nem no contêiner nem em um dos elementos filho).
 
 ## <a name="type"></a>Tipo
 
@@ -25,11 +25,11 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-Este erro se aplica a elementos que têm uma função de contêiner, não têm um atributo **Aria-activedescendant** e não estão desabilitados. Esses elementos implementam a navegação por teclado entre elementos filho usando o conceito conhecido como *índice de movimentação*. Nesse conceito, os atributos **TabIndex** dos elementos filho são mantidos dinamicamente, garantindo que, em todos os momentos, apenas um elemento filho esteja na ordem de tabulação.
+Esse erro se aplica a elementos que têm uma função de contêiner, não têm um atributo **aria-activedescendant** e não estão desabilitados. Esses elementos implementam a navegação por teclado entre elementos filho usando o conceito conhecido como *índice de aprovação*. Nesse conceito, os atributos **tabindex** de elementos filho são mantidos dinamicamente, garantindo que, em todos os momentos, apenas um elemento filho está na ordem de tabulação.
 
-Esse erro indica que um elemento de contêiner que não tem o atributo **Aria-activedescendant** e que não está desabilitado não está acessível para usuários de teclado. O problema existe porque o contêiner não tem os manipuladores de eventos de teclado necessários (**KeyDown**, **KeyUp** ou **KeyPress**) e nenhum dos elementos filho do contêiner.
+Esse erro indica que um elemento de contêiner que não tem o atributo **aria-activedescendant** e que não está desabilitado não está acessível aos usuários de teclado. O problema existe porque o contêiner não tem os manipuladores de eventos de teclado necessários **(keydown,** **keyup** ou **keypress)** e nenhum dos elementos filho do contêiner.
 
-Para corrigir esse erro, defina um manipulador de eventos **KeyDown**, **KeyUp** ou **KeyPress** para o contêiner ou um de seus elementos filho.
+Para corrigir esse erro, defina um manipulador de eventos **keydown**, **keyup** ou **keypress** para o contêiner ou um de seus elementos filho.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,9 +78,9 @@ Para corrigir esse erro, defina um manipulador de eventos **KeyDown**, **KeyUp**
 [Erro de acessibilidade do teclado da função de contêiner do ARIA](aria-container-keyboard-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

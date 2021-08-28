@@ -1,7 +1,7 @@
 ---
-description: Um elemento lógico que representa uma unidade de trabalho a ser executada, como um script ou um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado ou enfileirado e sua execução não está limitada a um único sistema.
+description: Um elemento lógico que representa uma unidade de trabalho a ser executada, como um script ou um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado ou ensuado e sua execução não está limitada a um único sistema.
 ms.assetid: 35e35c3f-617b-429b-b68f-fa0c0c330e92
-title: Classe CIM_Job (gerenciamento do Hyper-V)
+title: CIM_Job classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,16 +34,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b59a162d36ee677ad00c8cc574282f970bc1d80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8eb8f63ec9d2cdd881a2ba0946f83a40fb8be866
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922257"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474582"
 ---
-# <a name="cim_job-class-hyper-v-management"></a>Classe CIM_Job (gerenciamento do Hyper-V)
+# <a name="cim_job-class-hyper-v-management"></a>CIM_Job classe (gerenciamento do Hyper-V)
 
-Um elemento lógico que representa uma unidade de trabalho a ser executada, como um script ou um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado ou enfileirado e sua execução não está limitada a um único sistema.
+Um elemento lógico que representa uma unidade de trabalho a ser executada, como um script ou um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado ou ensuado e sua execução não está limitada a um único sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -77,40 +77,22 @@ class CIM_Job : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ trabalho CIM** tem estes tipos de membros:
+A **classe De \_ trabalho CIM** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ trabalho CIM** tem esses métodos.
+A **classe \_ job CIM** tem esses métodos.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Método</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="cim-job-killjob.md"><strong>KillJob</strong></a></td>
-<td style="text-align: left;">Esse método é preterido. Em vez disso, use o método <strong>RequestStateChange</strong> .<br/>
-<blockquote>
-[!Note]<br />
-Descrição preterida: desliga um trabalho.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Método | Descrição | 
+|--------|-------------|
+| <a href="cim-job-killjob.md"><strong>KillJob</strong></a> | Esse método é preterido. Em vez disso, use <strong>o método RequestStateChange.</strong><br /><blockquote>[!Note]<br />Descrição preterida: desliga um trabalho.</blockquote><br /> | 
+
 
 
 
@@ -118,23 +100,23 @@ Descrição preterida: desliga um trabalho.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ trabalho CIM** tem essas propriedades.
+A **classe \_ Job CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **DeleteOnCompletion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**True** para excluir o trabalho após a conclusão; caso contrário, **false**.
+**True** para excluir o trabalho após a conclusão; caso contrário, **false.**
 
 > [!Note]  
-> Essa propriedade não excluirá trabalhos concluídos antes que essa propriedade seja definida como **true**.
+> Essa propriedade não excluirá trabalhos concluídos antes que essa propriedade seja definida como **True.**
 
  
 
@@ -143,29 +125,29 @@ Tipo de acesso: leitura/gravação
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A duração pela qual o trabalho foi executado.
+A duração para a qual o trabalho foi executado.
 
 </dd> <dt>
 
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabalho CIM**.**ErrorDescription**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Trabalho CIM \_**.**ErrorDescription**")
 </dt> </dl>
 
-Um código de erro específico do fornecedor que captura informações de processamento para trabalhos recorrentes. O valor deve ser definido como zero se o trabalho for concluído sem erros.
+Um código de erro específico do fornecedor que captura informações de processamento para trabalhos recorrentes. O valor deverá ser definido como zero se o trabalho for concluído sem erro.
 
 </dd> <dt>
 
@@ -178,20 +160,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabalho CIM**.**ErrorCode**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Trabalho CIM \_**.**ErrorCode**")
 </dt> </dl>
 
-Uma cadeia de caracteres de forma livre que contém uma descrição do código de erro correspondente na propriedade **ErrorCode** .
+Uma cadeia de caracteres de forma livre que contém uma descrição do código de erro correspondente na **propriedade ErrorCode.**
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O número de vezes para executar o trabalho.
@@ -217,13 +199,13 @@ Uma cadeia de caracteres de forma livre que representa o status do trabalho.
 **LocalOrUtcTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se os horários nas propriedades **RunStartInterval** e **UntilTime** representam horários locais ou horários UTC.
+Indica se as horas nas propriedades **RunStartInterval** e **UntilTime** representam horários locais ou horários UTC.
 
 <dt>
 
@@ -249,10 +231,10 @@ Indica se os horários nas propriedades **RunStartInterval** e **UntilTime** rep
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O usuário para notificar quando um trabalho for concluído ou falhar.
+O usuário a notificar quando um trabalho for concluído ou falhar.
 
 </dd> <dt>
 
@@ -265,10 +247,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabalho CIM**.**Recoveryaction**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Trabalho CIM \_**.**RecoveryAction**")
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve a ação de recuperação quando a propriedade **recoveryaction** é **outra** ("1").
+Uma cadeia de caracteres que descreve a ação de recuperação quando a **propriedade RecoveryAction** é **Other** ("1").
 
 </dd> <dt>
 
@@ -284,23 +266,23 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OwningJobElement**](cim-owningjobelement.md).")
 </dt> </dl>
 
-O usuário que enviou o trabalho ou o nome do serviço ou do método que solicitou o trabalho.
+O usuário que enviou o Trabalho ou o nome do serviço ou método que solicitou o trabalho.
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("percent"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **PUnit** ("porcentagem")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percent"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **PUnit** ("percent")
 </dt> </dl>
 
-A porcentagem do trabalho concluído.
+O percentual do trabalho concluído.
 
 > [!Note]  
 > O valor "101" é indefinido e não será permitido na próxima revisão principal da especificação.
@@ -312,29 +294,29 @@ A porcentagem do trabalho concluído.
 **Prioridade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 A importância do trabalho. Quanto menor o número, maior a prioridade.
 
 </dd> <dt>
 
-**Recuperação de**
+**RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabalho CIM**.**OtherRecoveryAction**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Trabalho CIM \_**.**OtherRecoveryAction**")
 </dt> </dl>
 
-Descreve a ação de recuperação a ser tomada quando um trabalho de execução falha.
+Descreve a ação de recuperação a ser tomada quando um trabalho de executar falha.
 
 <dt>
 
@@ -345,24 +327,24 @@ Descreve a ação de recuperação a ser tomada quando um trabalho de execução
 
 </dt> <dd>
 
-É desconhecido quanto à ação de recuperação a ser tomada.
+Não se sabe qual ação de recuperação deve ser tomada.
 
 </dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
 
-A ação de recuperação será especificada na propriedade **OtherRecoveryAction** .
+A ação de recuperação será especificada na **propriedade OtherRecoveryAction.**
 
 </dd> <dt>
 
 <span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>
 
-<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>Não **continuar** (2)
+<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>**Não continuar** (2)
 
 
 </dt> <dd>
@@ -384,23 +366,23 @@ Continue com o próximo trabalho na fila.
 
 <span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>
 
-<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho novamente** (4)
+<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho de novo** (4)
 
 
 </dt> <dd>
 
-O trabalho deve ser executado novamente.
+O trabalho deve ser executado de novo.
 
 </dd> <dt>
 
 <span id="Run_Recovery_Job"></span><span id="run_recovery_job"></span><span id="RUN_RECOVERY_JOB"></span>
 
-<span id="Run_Recovery_Job"></span><span id="run_recovery_job"></span><span id="RUN_RECOVERY_JOB"></span>**Executar trabalho de recuperação** (5)
+<span id="Run_Recovery_Job"></span><span id="run_recovery_job"></span><span id="RUN_RECOVERY_JOB"></span>**Executar Trabalho de Recuperação** (5)
 
 
 </dt> <dd>
 
-Execute o trabalho associado usando a relação **RecoveryJob** . Observe que o trabalho de recuperação já deve estar na fila na qual ele será executado.
+Execute o Trabalho associado usando a relação **RecoveryJob.** Observe que o Trabalho de recuperação já deve estar na fila da qual ele será executado.
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ description: Licenciamento e IClassFactory2
 ms.assetid: 2bead555-8c62-4f48-a4c6-6f0942ec75f8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9376d5187588ba14da434161309409bf1d189a8f
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: b8248b24d6b629d42e9ca631b1574c5a6719f0f4f626b2ea22792c3196c591e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096926"
 ---
 # <a name="licensing-and-iclassfactory2"></a>Licenciamento e IClassFactory2
 
@@ -30,7 +30,7 @@ Para incorporar um componente licenciado ao seu aplicativo cliente, use os segui
 > [!Note]  
 > Em suas informações de tipo, um componente usa o atributo licenciado para marcar a coclasse que dá suporte a licenciamento por meio de [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2).
 
- 
+ 
 
 Primeiro, você precisa de uma ferramenta de desenvolvimento separada que também seja um cliente do componente licenciado. A finalidade dessa ferramenta é obter a chave de licença em tempo de execução e salvá-la em seu aplicativo cliente. Essa ferramenta é executada somente em um computador que possui uma licença de computador para o componente. A ferramenta chama os métodos [**GetLicInfo**](/windows/desktop/api/OCIdl/nf-ocidl-iclassfactory2-getlicinfo) e [**RequestLicKey**](/windows/desktop/api/OCIdl/nf-ocidl-iclassfactory2-requestlickey) para obter a chave de licença de tempo de execução e salva a chave de licença em seu aplicativo cliente. Por exemplo, a ferramenta de desenvolvimento pode criar um arquivo de cabeçalho (. h) contendo a chave de licença BSTR e, em seguida, você deve incluir esse arquivo. h em seu aplicativo cliente.
 
@@ -47,6 +47,6 @@ A interface [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfacto
 [Responsabilidades do servidor COM](com-server-responsibilities.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

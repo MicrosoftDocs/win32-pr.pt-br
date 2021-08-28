@@ -3,7 +3,7 @@ title: Mensagem de EM_GETFILELINE (CommCtrl. h)
 description: Copia uma linha de texto de um controle de edição, independentemente de como as linhas são exibidas na tela e as coloca em um buffer especificado.
 ms.assetid: ff56d2c6-5013-46c6-90d8-ee2bdc9074b1
 keywords:
-- Controles de EM_GETFILELINE de mensagens do Windows
+- controles de Windows de mensagem de EM_GETFILELINE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 6b3be3ea4ae883fc808f7ddc8fb60f0d93bcd6ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 470c437280b279f56c3dcc8b45de93cf3f792afc5053b7e312b2c19c7ffcec8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049216"
 ---
 # <a name="em_getfileline-message-commctrlh"></a>Mensagem de EM_GETFILELINE (CommCtrl. h)
 
@@ -43,7 +43,7 @@ Um ponteiro para o buffer que recebe uma cópia da linha. Antes de enviar a mens
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o número de **TCHAR** s copiados. O valor de retorno será zero se o número de linha especificado pelo parâmetro *wParam* for maior que o número de linhas no controle de edição.
 
@@ -57,9 +57,9 @@ A linha copiada não contém um caractere nulo de terminação.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 10, 1809\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, 1809 \[ aplicativos de área de trabalho apenas\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

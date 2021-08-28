@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 title: 'Operadores WBEMTime:: Operator (WbemTime. h)'
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 39256ba9d922ea9d3eef8e442115e840b963ca71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7748020c1dcf1e332384c3a29c18b37da53e020f42d6cb608d9bf3233608aaaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120746"
 ---
 # <a name="wbemtimeoperator--operators"></a>Operadores WBEMTime:: Operator
 
@@ -40,8 +40,8 @@ O operador de subtração da classe [**WBEMTime**](wbemtime.md) () foi sobrecarr
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
-| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>WbemTime. h</dt> </dl>                                                                         |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2008<br/>                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>WbemTime. h</dt> </dl>                                                                         |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

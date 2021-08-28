@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bb87e8a4f2daee78146929df64dbee1f61774ed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a89ed2e9fdc1ff9a01e51e1610adc276b8f47e8c
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114254"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786942"
 ---
 # <a name="span-idvspixengineipipelinestagesrequestspanipipelinestagesrequest-interface"></a><span id="vspixengine.ipipelinestagesrequest"></span>Interface IPipeLineStagesRequest
 
@@ -38,13 +38,13 @@ A interface **IPipeLineStagesRequest** herda da interface [**IUnknown**](/window
 
 A interface **IPipeLineStagesRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestasync-eventid-dword-pipelinestagesid-arr-dword-dword-ipipelinestagescallback-ptr-bool-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Uma solicitação assíncrona para obter imagens de visualização para a janela de estágios de pipeline de gráficos.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestsupportedstagesasync-dword-eventid-ipipelinestagescallback-ptr-dword-dword"><strong>RequestSupportedStagesAsync</strong></a></td><td style="text-align: left;"><p>Uma solicitação assíncrona para obter uma lista de estágios usados para o quadro e o evento especificados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestasync-eventid-dword-pipelinestagesid-arr-dword-dword-ipipelinestagescallback-ptr-bool-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Uma solicitação assíncrona para obter imagens de visualização para a janela de estágios de pipeline de gráficos.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest-requestsupportedstagesasync-dword-eventid-ipipelinestagescallback-ptr-dword-dword"><strong>RequestSupportedStagesAsync</strong></a></td><td ><p>Uma solicitação assíncrona para obter uma lista de estágios usados para o quadro e o evento especificados.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

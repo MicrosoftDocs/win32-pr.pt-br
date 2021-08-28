@@ -1,7 +1,7 @@
 ---
 description: Determina se uma localidade especificada pelo nome está instalada ou tem suporte no sistema operacional.
 ms.assetid: 6df92e4d-d78e-48b5-9515-18f0497de95b
-title: Função RtlIsValidLocaleName (Ntrtl. h)
+title: Função RtlIsValidLocaleName (Ntrtl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 3433daaf48e81f662945f1d223e9cf7188ddb706
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 993d819324987fccdfb66c26343bccfb9a815606655a18ff1a1e43f9a2af0eac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130276"
 ---
 # <a name="rtlisvalidlocalename-function"></a>Função RtlIsValidLocaleName
 
 Determina se uma localidade especificada pelo nome está instalada ou tem suporte no sistema operacional.
 
 > [!Note]  
-> Essa função está disponível para uso somente no Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes. Os aplicativos devem usar o [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename).
+> Essa função está disponível para uso somente Windows Vista. Ele pode ser alterado ou não disponível nas versões subsequentes. Os aplicativos devem [**usar IsValidLocaleName.**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename)
 
  
 
@@ -45,27 +45,27 @@ BOOL RtlIsValidLocaleName(
 
 <dl> <dt>
 
-*Localename* \[ no\]
+*LocaleName* \[ Em\]
 </dt> <dd>
 
-[Nome da localidade](locale-names.md) para validar. Esse parâmetro pode especificar o nome de uma [localidade personalizada](custom-locales.md).
+[Nome da localidade a](locale-names.md) ser validado. Esse parâmetro pode especificar o nome de uma [localidade personalizada.](custom-locales.md)
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ Em\]
 </dt> <dd>
 
-Sinalizadores que indicam se as localidades neutras são consideradas válidas. Atualmente, o único sinalizador definido é a [localidade \_ permitir \_ neutro](locale-allow-neutral.md). O valor padrão é que eles não são.
+Sinalizadores que indicam se localidades neutras são consideradas válidas. Atualmente, o único sinalizador definido é [LOCALE \_ ALLOW \_ NEUTRAL.](locale-allow-neutral.md) O valor padrão é que eles não são.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor diferente de zero se for bem-sucedido ou 0 caso contrário.
+Retornará um valor diferente de zero se for bem-sucedido ou 0 caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é semelhante a [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename). A única diferença é que, se \_ a localidade permitir \_ neutro for definida, **RtlIsValidLocaleName** retornará **true** para um nome que corresponda a uma localidade neutra (como "en"), enquanto [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename) retorna **true** somente para uma localidade específica (como "en-US"). As localidades neutras são usadas como parte da estratégia de carregamento de recursos no Windows Vista e versões posteriores. Apenas uma pequena classe de aplicativos altamente especializados usa **RtlIsValidLocaleName** e define a \_ localidade \_ como neutra, pois as localidades neutras são de uso muito limitado. Nenhuma das funções descritas na [chamada das funções "nome de localidade"](calling-the--locale-name--functions.md) aceita localidades neutras como entradas.
+Essa função é semelhante a [**IsValidLocaleName.**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename) A única diferença é que, se LOCALE ALLOW NEUTRAL estiver \_ \_ definido, **RtlIsValidLocaleName**  retornará TRUE para um nome que corresponda a uma localidade neutra (como "en"), enquanto [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename) **retornará TRUE** somente para uma localidade específica (como "en-US"). Localidades neutras são usadas como parte da estratégia de carregamento de recursos no Windows Vista e posterior. Somente uma pequena classe de aplicativos altamente especializados usa **RtlIsValidLocaleName** e definir LOCALE ALLOW NEUTRAL, pois localidades neutras são de \_ \_ uso muito limitado. Nenhuma das funções descritas em Chamar as funções ["Nome da Localidade"](calling-the--locale-name--functions.md) aceita localidades neutras como entradas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,9 +73,9 @@ Essa função é semelhante a [**IsValidLocaleName**](/windows/desktop/api/Winnl
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Ntrtl. h</dt> </dl>      |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Ntrtl.h</dt> </dl>      |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl> |
 
@@ -85,10 +85,10 @@ Essa função é semelhante a [**IsValidLocaleName**](/windows/desktop/api/Winnl
 
 <dl> <dt>
 
-[Suporte ao idioma nacional](national-language-support.md)
+[Suporte a idiomas nacionais](national-language-support.md)
 </dt> <dt>
 
-[Funções de suporte ao idioma nacional](national-language-support-functions.md)
+[Funções de suporte a idiomas nacionais](national-language-support-functions.md)
 </dt> <dt>
 
 [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename)

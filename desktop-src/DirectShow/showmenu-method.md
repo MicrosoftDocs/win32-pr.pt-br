@@ -1,17 +1,17 @@
 ---
-description: O método de menu de exibição exibe o menu especificado na tela.
+description: O método ShowMenu exibe o menu especificado na tela.
 ms.assetid: 971c5bc3-a327-4840-8f3c-9a6573204ffb
-title: Método de menu
+title: Método ShowMenu
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c64b2a08c8881001cc47c972ad8cc865af8a174
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eb9135e2999675dc46774f15ee79afd835085b40fe210d0ca1cfd173f8a99fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050506"
 ---
-# <a name="showmenu-method"></a>Método de menu
+# <a name="showmenu-method"></a>Método ShowMenu
 
 > [!Note]  
 > Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
@@ -31,7 +31,7 @@ MSWebDVD.ShowMenu(iMenuID)
 <span id="iMenuID"></span><span id="imenuid"></span><span id="IMENUID"></span>*iMenuID*
 </dt> <dd>
 
-Especifica a ID do menu como um inteiro.
+Especifica a ID do menu como um Inteiro.
 
 
 
@@ -56,7 +56,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Os nomes de menu de DVD podem ser um pouco confusos. O menu título é outro nome para o menu Gerenciador de vídeo, o menu principal do disco inteiro; em geral, ele lista todos os conjuntos de títulos de vídeo disponíveis no disco. O menu raiz é o menu de um conjunto de título de vídeo, que pode conter um título ou um grupo de títulos. Todos os títulos em um conjunto de título compartilham os mesmos menus de subimagem, áudio e ângulo.
+Nomes de menu de DVD podem ser um pouco confusos. O menu de título é outro nome para o Menu gerenciador de vídeo, o menu principal para todo o disco; geralmente lista todos os conjuntos de títulos de vídeo disponíveis no disco. O menu raiz é o menu para um conjunto de títulos de vídeo, que pode conter um título ou um grupo de títulos. Todos os títulos em um conjunto de título compartilham os mesmos menus Subpicture, Audio e Angle.
 
  
 

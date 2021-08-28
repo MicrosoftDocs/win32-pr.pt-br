@@ -6,12 +6,12 @@ keywords:
 - AriaGridStructureErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd692c5fb82675b8fdcc6bf88fe35695113c9ef0
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 5b91010417ed01f211859839ceab124b299b10679b3d460f860c03e5b2473f77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103642923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122376"
 ---
 # <a name="aria-grid-structure-error"></a>Erro de estrutura de grade do ARIA
 
@@ -41,9 +41,9 @@ Um nome acessível deve ser definido para os elementos **Grid**, **ColumnHeader*
 -   atributo [**Aria-Label**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) para definir o nome acessível diretamente.
 -   [**título**](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/title) para criar uma dica de ferramenta que é ao mesmo tempo usada como um nome.
 
- 
+ 
 
- 
+ 
 
 
 

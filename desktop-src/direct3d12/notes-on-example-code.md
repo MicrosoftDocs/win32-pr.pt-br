@@ -1,29 +1,29 @@
 ---
-title: Código de exemplo na referência de D3D12
+title: Código de exemplo na referência D3D12
 description: Explica o uso de código de exemplo na documentação do Direct3D 12.
 ms.assetid: C2323482-D06D-43B7-9BDE-BFB9A6A6B70D
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d65dd8db64dd829a7a318717e44a64ea189c7a3
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: 6a789ba8fa913b6852d8f7528183a71da31095d69539a79b2351e5b9ab7d3462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119516"
 ---
-# <a name="example-code-in-the-d3d12-reference"></a>Código de exemplo na referência de D3D12
+# <a name="example-code-in-the-d3d12-reference"></a>Código de exemplo na referência D3D12
 
 Explica o uso de código de exemplo na documentação do Direct3D 12.
 
--   [Código de trecho de exemplo](#example-snippet-code)
+-   [Código de snippet de exemplo](#example-snippet-code)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="example-snippet-code"></a>Código de trecho de exemplo
+## <a name="example-snippet-code"></a>Código de snippet de exemplo
 
-O código de exemplo mostrado na referência do Direct3D 12 não é um código compilável ou que pode ser executado, ele é simplesmente um trecho de código que fornece um exemplo de como a API é chamada. Alguns exemplos listam as variáveis globais e os membros de classe usados pelas chamadas, por exemplo:
+O código de exemplo mostrado na referência do Direct3D 12 não é compilável ou pode ser executado, é simplesmente um snippet de código que dá um exemplo de como a API é chamada. Alguns exemplos listam as variáveis globais e os membros de classe usados pelas chamadas, por exemplo:
 
-Objetos de pipeline global.
+Objetos de pipeline globais.
 
 
 ```C++
@@ -43,7 +43,7 @@ UINT m_rtvDescriptorSize;
 
 
 
-Populando listas de comandos.
+Preenchendo listas de comandos.
 
 
 ```C++
@@ -94,10 +94,10 @@ ThrowIfFailed(m_commandList->Close());
 [Referência do Direct3D 12](direct3d-12-reference.md)
 </dt> <dt>
 
-[Instruções passo a passo de código do D3D12](d3d12-code-walk-throughs.md)
+[Guia detalhado do código D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
-[Exemplos de trabalho](working-samples.md)
+[Exemplos de trabalhos](working-samples.md)
 </dt> </dl>
 
  

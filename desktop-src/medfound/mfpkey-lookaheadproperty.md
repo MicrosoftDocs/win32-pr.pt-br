@@ -4,12 +4,12 @@ ms.assetid: e5cdd066-e25a-4107-9523-5611bd792372
 title: Propriedade MFPKEY_LOOKAHEAD (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1a024c4d0be6ef7ab16c4bf51f290b01de3282b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa5b11abbacc19a4a66dda785d628b1f5d67f636a0f02c7392402ad64a7c3926
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113326"
 ---
 # <a name="mfpkey_lookahead-property"></a>\_Propriedade LOOKAHEAD de MFPKEY
 
@@ -31,7 +31,7 @@ g \_ wszWMVCLookAhead
 
 Quando o codec usa antecipadamente, ele pode codificar o vídeo com mais eficiência.
 
-O objeto gravador do SDK do Windows Media Format espera que o codec codifique cada exemplo imediatamente. Como resultado, esse recurso não funciona corretamente no software que usa o objeto do gravador (incluindo o Windows Media Encoder e o Windows Media Player). Todas as extensões de unidade de dados associadas a quadros de vídeo serão anexadas ao quadro de saída errado. O número de quadros pelos quais as extensões de unidade de dados são colocadas incorretas é igual ao número de quadros de antecipação que são usados.
+o objeto do gravador do SDK do formato de mídia Windows espera que o codec codifique cada exemplo imediatamente. como resultado, esse recurso não funciona corretamente no software que usa o objeto do gravador (incluindo Windows Media Encoder e Windows Media Player). Todas as extensões de unidade de dados associadas a quadros de vídeo serão anexadas ao quadro de saída errado. O número de quadros pelos quais as extensões de unidade de dados são colocadas incorretas é igual ao número de quadros de antecipação que são usados.
 
 Os valores de lookahead válidos variam de 0 a 16 quadros. O valor recomendado é 16.
 
@@ -41,9 +41,9 @@ Os valores de lookahead válidos variam de 0 a 16 quadros. O valor recomendado �
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

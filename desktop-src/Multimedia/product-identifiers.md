@@ -1,35 +1,35 @@
 ---
-title: Identificadores de produtos
-description: Identificadores de produtos
+title: Identificadores de produto
+description: Identificadores de produto
 ms.assetid: 671440bb-0ed7-44fe-873c-fcefda8380bc
 keywords:
-- Multimídia do Windows, identificadores de produtos
-- multimídia, identificadores de produtos
-- identificadores de produtos
-- identificadores de produtos de multimídia
-- empresas de multimídia
+- Windows multimídia, identificadores de produto
+- multimídia, identificadores de produto
+- identificadores de produto
+- identificadores de produto multimídia
+- empresas multimídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7046ffae1b8cf3031548abbc778955127e27a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15f9117299214aba4658443739f1bc359f7b5ed7
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292708"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625322"
 ---
-# <a name="product-identifiers"></a>Identificadores de produtos
+# <a name="product-identifiers"></a>Identificadores de produto
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Empresa</th>
-<th>Identificadores de produtos</th>
+<th>Identificadores de produto</th>
 </tr>
 </thead>
 <tbody>
@@ -47,7 +47,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Aztech Labs, Inc.</td>
+<td>Operação Labs, Inc.</td>
 <td><ul>
 <li>MM_AZTECH_AUX_CD</li>
 <li>MM_AZTECH_AUX_LINE</li>
@@ -99,7 +99,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="even">
-<td>DSP Group, Inc.</td>
+<td>Grupo DSP, Inc.</td>
 <td><ul>
 <li>MM_DSP_GROUP_TRUESPEECH</li>
 </ul></td>
@@ -125,7 +125,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>ESS Technology, Inc.</td>
+<td>Tecnologia ESS, Inc.</td>
 <td><ul>
 <li>MM_ESS_AMAUX</li>
 <li>MM_ESS_AMMIDIIN</li>
@@ -142,7 +142,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Mágica da e/s Corporation</td>
+<td>E/S Magic Corporation</td>
 <td><ul>
 <li>MM_IOMAGIC_TEMPO_AUXOUT</li>
 <li>MM_IOMAGIC_TEMPO_MIDIOUT</li>
@@ -153,7 +153,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Ndo. C. Olivetti & C., S.p.A.</td>
+<td>Ing. C. O & C., S.p.A.</td>
 <td><ul>
 <li>MM_OLIVETTI_ACM_ADPCM</li>
 <li>MM_OLIVETTI_ACM_CELP</li>
@@ -171,7 +171,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Sistemas de circuito integrado, Inc.</td>
+<td>Integrated Circuit Systems, Inc.</td>
 <td><ul>
 <li>MM_ICS_WAVEDECK_AUX</li>
 <li>MM_ICS_WAVEDECK_MIXER</li>
@@ -188,7 +188,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Computadores de negócios internacionais</td>
+<td>Máquinas de negócios internacionais</td>
 <td><ul>
 <li>MM_IBM_PCMCIA_AUX</li>
 <li>MM_IBM_PCMCIA_MIDIIN</li>
@@ -214,7 +214,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Matsushita Electric Corporation da América</td>
+<td>Corporationa Electric da América</td>
 <td><ul>
 <li>MM_MATSUSHITA_AUX</li>
 <li>MM_MATSUSHITA_FMSYNTH_STEREO</li>
@@ -345,7 +345,7 @@ ms.locfileid: "104292708"
 </ul></td>
 </tr>
 <tr class="even">
-<td>Laboratórios de microengenharia</td>
+<td>microEngineering Labs</td>
 <td><ul>
 <li>MM_MELABS_MIDI2GO</li>
 </ul></td>
@@ -521,11 +521,11 @@ ms.locfileid: "104292708"
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

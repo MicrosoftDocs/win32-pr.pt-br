@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get SrcHeight recupera a altura do retângulo de origem.
+description: O método \_ get SrcHeight recupera a altura do retângulo de origem.
 ms.assetid: 3c6647b3-dfca-490d-a3d5-9aa6988e387d
-title: 'Método IDxtCompositor:: get_SrcHeight (QEdit. h)'
+title: Método IDxtCompositor::get_SrcHeight (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b3ad874d7c02a9c9300af7fe3dbc69f6d351bba8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 443cb76832b6ff399248e3da1a5f83537f15b978f80a35ab255e36fc56ce00f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051576"
 ---
-# <a name="idxtcompositorget_srcheight-method"></a>Método IDxtCompositor:: get \_ SrcHeight
+# <a name="idxtcompositorget_srcheight-method"></a>Método IDxtCompositor::get \_ SrcHeight
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -45,26 +45,26 @@ HRESULT get_SrcHeight(
 
 <dl> <dt>
 
-*PVal* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recebe a altura do retângulo de origem, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IDxtCompositor**](idxtcompositor.md)
+[**IDxtCompositor Interface**](idxtcompositor.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 46d45f59-33fa-434a-b329-20b6257c9a19
 title: Função DecryptMessage (Digest)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 5363a5efc79d78c9c88e4a817c1c341e0e0f9c02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f87828263766643a10cf5400e38cabe9d3096403
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461193"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480862"
 ---
 # <a name="decryptmessage-digest-function"></a>Função DecryptMessage (Digest)
 
@@ -55,10 +55,14 @@ Um ponteiro para uma variável do tipo **ULONG** que recebe sinalizadores espec�
 
 Esse parâmetro pode ser um dos sinalizadores a seguir.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>A mensagem não foi criptografada, mas um cabeçalho ou trailer foi produzido.<br/><blockquote>[!Note]<br />
-KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br/></td></tr><tr class="even"><td><span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl> <dt><strong>SIGN_ONLY</strong></dt> </dl></td><td>Ao usar o SSP de resumo, use esse sinalizador quando o [*contexto de segurança*](../secgloss/s-gly.md) for definido para verificar apenas a [*assinatura*](../secgloss/s-gly.md) . Para obter mais informações, consulte [qualidade de proteção](quality-of-protection.md).<br/></td></tr></tbody></table>
 
-## <a name="return-value"></a>Retornar valor
+| Valor | Significado | 
+|-------|---------|
+| <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | A mensagem não foi criptografada, mas um cabeçalho ou trailer foi produzido.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br /> | 
+| <span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl><dt><strong>SIGN_ONLY</strong></dt></dl> | Ao usar o SSP de resumo, use esse sinalizador quando o [*contexto de segurança*](../secgloss/s-gly.md) for definido para verificar apenas a [*assinatura*](../secgloss/s-gly.md) . Para obter mais informações, consulte [qualidade de proteção](quality-of-protection.md).<br /> | 
+
+
+## <a name="return-value"></a>Valor retornado
 
 Se a função verificar que a mensagem foi recebida na sequência correta, a função retornará s \_ E \_ OK.
 
@@ -84,9 +88,9 @@ Se a função falhar ao descriptografar a mensagem, ela retornará um dos seguin
 
 | Requisito | Valor |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\]          |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\] |
-| parâmetro                   | SSPI. h (incluir Security. h)               |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\]          |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\] |
+| Cabeçalho                   | SSPI. h (incluir Security. h)               |
 | Biblioteca                  | Secur32. lib                               |
 | DLL                      | Secur32.dll                               |
 

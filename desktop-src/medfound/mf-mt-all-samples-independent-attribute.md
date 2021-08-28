@@ -1,17 +1,17 @@
 ---
 description: Especifica para um tipo de mídia se cada amostra é independente dos outros exemplos no fluxo.
 ms.assetid: 40434f63-e191-45e1-b788-5f80fe7f49ae
-title: Atributo MF_MT_ALL_SAMPLES_INDEPENDENT (Mfapi. h)
+title: MF_MT_ALL_SAMPLES_INDEPENDENT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f82173e99a30e033b3d90f6cfec0dc2aa8b3af97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ada34232ccbc7eb30fc9a5bcb64e96542b0375140de426fae951f5e0317c9e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060746"
 ---
-# <a name="mf_mt_all_samples_independent-attribute"></a>\_ \_ Atributo independente de todos os \_ exemplos \_ do MF MT
+# <a name="mf_mt_all_samples_independent-attribute"></a>Atributo MF \_ MT \_ ALL \_ SAMPLES \_ INDEPENDENT
 
 Especifica para um tipo de mídia se cada amostra é independente dos outros exemplos no fluxo.
 
@@ -19,17 +19,17 @@ Especifica para um tipo de mídia se cada amostra é independente dos outros exe
 
 **UINT32**
 
-Tratar como um valor booliano.
+Trate como um valor booliana.
 
 ## <a name="remarks"></a>Comentários
 
-Se esse atributo for **false**, alguns exemplos não poderão ser usados sem fazer referência a outros exemplos no fluxo. Por exemplo, se um formato de vídeo contiver quadros Delta, esse atributo deverá ser **false**.
+Se esse atributo for **FALSE,** algumas amostras não poderão ser usadas sem se referir a outros exemplos no fluxo. Por exemplo, se um formato de vídeo contiver quadros delta, esse atributo deverá ser **FALSE.**
 
-Esse atributo corresponde ao campo **bTemporalCompression** na estrutura do [**tipo de \_ mídia \_**](/windows/win32/api/strmif/ns-strmif-am_media_type) do DirectShow am.
+Esse atributo corresponde ao campo **bTemporalCompression** na estrutura DirectShow [**TIPO DE \_ MÍDIA \_**](/windows/win32/api/strmif/ns-strmif-am_media_type) AM.
 
-Defina esse atributo como **true** para todos os tipos de mídia descompactados.
+De definir esse atributo como **TRUE para** todos os tipos de mídia descompactados.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,13 +47,13 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

@@ -3,7 +3,7 @@ title: Mensagem de MCM_GETMINREQRECT (commctrl. h)
 description: Recupera o tamanho mínimo necessário para exibir um mês inteiro em um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ GetMinReqRect.
 ms.assetid: f0378338-4809-48e9-9387-ed8b79356f95
 keywords:
-- Controles de MCM_GETMINREQRECT de mensagens do Windows
+- controles de Windows de mensagem de MCM_GETMINREQRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac6b2e2b16a70841836a277ffe55e030a6d6a241
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 575636837b1485de62dd5e603a0dea38455c4c99926c13f3bd05101fe2a27eca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062046"
 ---
 # <a name="mcm_getminreqrect-message"></a>\_Mensagem MCM GETMINREQRECT
 
@@ -39,7 +39,7 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna zero e *lParam* recebe as informações delimitadoras aplicáveis, se bem-sucedidas. Caso contrário, a mensagem retornará zero.
 
@@ -60,9 +60,9 @@ Os membros **superior** e **esquerdo** da estrutura apontados por *lParam* serã
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

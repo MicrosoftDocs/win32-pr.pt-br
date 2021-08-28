@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixDeterminant (D3dx9math. h) – retorna o determinante de uma matriz.
+description: Função D3DXMatrixDeterminant (D3dx9math.h) – retorna o determinante de uma matriz.
 ms.assetid: 711ba616-4c90-41d1-b9d5-0893b3e47284
-title: Função D3DXMatrixDeterminant (D3dx9math. h)
+title: Função D3DXMatrixDeterminant (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8d54651e11f1b3de02803d9ea123ca7eff24d7a5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 92a233f70ca43764a7d7a1898749cd8e59ef0a0b9fdb49baf6a3f73d5e1b083f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119096"
 ---
-# <a name="d3dxmatrixdeterminant-function-d3dx9mathh"></a>Função D3DXMatrixDeterminant (D3dx9math. h)
+# <a name="d3dxmatrixdeterminant-function-d3dx9mathh"></a>Função D3DXMatrixDeterminant (D3dx9math.h)
 
 Retorna o determinante de uma matriz.
 
@@ -40,18 +40,18 @@ FLOAT D3DXMatrixDeterminant(
 
 <dl> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
+Ponteiro para a estrutura [**D3DXMATRIX de origem.**](d3dxmatrix.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Retorna o determinante da matriz.
 
@@ -61,12 +61,12 @@ Retorna o determinante da matriz.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

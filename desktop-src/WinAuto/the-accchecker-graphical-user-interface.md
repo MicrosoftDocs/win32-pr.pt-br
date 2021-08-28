@@ -4,12 +4,12 @@ description: Este tópico descreve os elementos que compõem a GUI do AccChecker
 ms.assetid: C8C156F6-AB29-4011-9DCD-74261AC17404
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e26d847d1bc198958ca28dd77d67b0e99b9d7745
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: ebf645a3afd35bdd906d1ab26453d16672311cb4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "104557949"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473382"
 ---
 # <a name="the-accchecker-graphical-user-interface"></a>A interface gráfica do usuário do AccChecker
 
@@ -41,7 +41,7 @@ A guia **verificações** contém os componentes a seguir.
 
     ![Guia de resultados do accchecker com o item de contexto de supressão realçado](images/accchecker-results-tab-with-suppress.png)
 
-    O exemplo a seguir mostra o conteúdo de um arquivo de supressão gerado pela execução das verificações de **Propriedades** no aplicativo do painel de controle do firewall do Windows. O erro com uma ID de "ElementHasNoName" foi escolhido para supressão neste exemplo.
+    o exemplo a seguir mostra o conteúdo de um arquivo de supressão gerado pela execução das verificações de **propriedades** no aplicativo do painel de controle Windows Firewall. O erro com uma ID de "ElementHasNoName" foi escolhido para supressão neste exemplo.
 
     ```XML
     <?xml version="1.0" encoding="utf-8"?><ArrayOfLogEvent xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="https://www.w3.org/2001/XMLSchema">
@@ -87,13 +87,13 @@ Os elementos são navegados e registrados assim como um leitor de tela os lêem.
 
 A rotina de verificação **ScreenReader** em **consistente** deve ser selecionada na guia **verificações** para que a **guia leitor de tela MSAA** seja exibida. Da mesma forma, a rotina de verificação de **UiaScreenReader** deve ser selecionada para que a guia do **leitor de tela UIA** seja exibida.
 
-A captura de tela a seguir mostra a guia leitor de tela UIA com um exemplo de verificação do bloco de notas.
+a captura de tela a seguir mostra a guia leitor de tela UIA com uma verificação de exemplo de Bloco de notas.
 
 ![guia leitor de tela do accchecker exibindo resultados da verificação de exemplo](images/accchecker-screen-reader-tab.png)
 
 ## <a name="msaa-and-uia-tree-tabs"></a>Guias de árvore MSAA e UIA
 
-Executar qualquer rotina de verificação faz com que o AccChecker compile todos os elementos visíveis no destino de verificação e os exiba hierarquicamente na guia de **árvore MSAA** e na guia de **árvore UIA** . A captura de tela a seguir mostra a guia de árvore MSAA com a hierarquia de elementos para o bloco de notas.
+Executar qualquer rotina de verificação faz com que o AccChecker compile todos os elementos visíveis no destino de verificação e os exiba hierarquicamente na guia de **árvore MSAA** e na guia de **árvore UIA** . a captura de tela a seguir mostra a guia de árvore MSAA com a hierarquia de elementos para Bloco de notas.
 
 ![Guia de árvore de MSAA accchecker](images/accchecker-tree-tab.png)
 
@@ -101,84 +101,21 @@ Executar qualquer rotina de verificação faz com que o AccChecker compile todos
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Menu</th>
-<th>Comando</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td rowspan="5"><strong>Arquivo</strong>$ {remove} $<br />
-</td>
-<td><strong>Abrir</strong></td>
-<td>Fornece as opções a seguir.<br/>
-<ul>
-<li><strong>Dll de verificações</strong> Abre uma DLL de verificação. As verificações de AccChecker nativas são encapsuladas em uma DLL autônoma (VerificationRoutines.dll). Esse design permite que as equipes de teste criem seu próprio conjunto de verificações com base na plataforma de interface do usuário que está sendo testada.</li>
-<li><strong>Arquivo de log</strong> Permite que você escolha um arquivo de log de verificação para abrir.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Carregar automaticamente as verificações disponíveis</strong></td>
-<td>Carrega automaticamente todas as verificações de AccChecker disponíveis.</td>
 
-</tr>
-<tr class="odd">
-<td><strong>Salvar log</strong></td>
-<td>Salve o log de verificação como XML ou como texto sem formatação. O texto sem formatação é mais legível.</td>
+| Menu | Comando | Descrição | 
+|------|---------|-------------|
+| <strong>Arquivo</strong>$ {remove} $<br /> | <strong>Abrir</strong> | Fornece as opções a seguir.<br /><ul><li><strong>Dll de verificações</strong> Abre uma DLL de verificação. As verificações de AccChecker nativas são encapsuladas em uma DLL autônoma (VerificationRoutines.dll). Esse design permite que as equipes de teste criem seu próprio conjunto de verificações com base na plataforma de interface do usuário que está sendo testada.</li><li><strong>Arquivo de log</strong> Permite que você escolha um arquivo de log de verificação para abrir.</li></ul> | 
+| <strong>Carregar automaticamente as verificações disponíveis</strong> | Carrega automaticamente todas as verificações de AccChecker disponíveis. | 
+| <strong>Salvar log</strong> | Salve o log de verificação como XML ou como texto sem formatação. O texto sem formatação é mais legível. | 
+| <strong>Salvar supressão</strong> | Salve o log de supressão como XML. Esse arquivo especifica as mensagens de verificação a serem ignoradas no teste de regressão. | 
+| <strong>Sair</strong> | Fecha a ferramenta AccChecker. | 
+| <strong>Verificações</strong>$ {remove} $<br /> | <strong>Executar agora</strong> | Execute as rotinas de verificação conforme especificado para o destino de verificação escolhido. | 
+| <strong>Habilitar tudo</strong> | Marque todas as caixas de seleção de rotina de verificação. | 
+| <strong>Desabilitar tudo</strong> | Desmarque todas as caixas de seleção de rotina de verificação. | 
+| <strong>Opções</strong> | <strong>Always On superior</strong> | Tornar AccChecker a janela superior na ordem z. | 
+| <strong>Ajuda</strong>$ {remove} $<br /> | <strong>Ajuda</strong> | Exibir informações de ajuda. | 
+| <strong>Sobre</strong> | Exiba a versão do AccChecker e um endereço de email para entrar em contato com a Microsoft sobre o AccChecker. | 
 
-</tr>
-<tr class="even">
-<td><strong>Salvar supressão</strong></td>
-<td>Salve o log de supressão como XML. Esse arquivo especifica as mensagens de verificação a serem ignoradas no teste de regressão.</td>
-
-</tr>
-<tr class="odd">
-<td><strong>Sair</strong></td>
-<td>Fecha a ferramenta AccChecker.</td>
-
-</tr>
-<tr class="even">
-<td rowspan="3"><strong>Verificações</strong>$ {remove} $<br />
-</td>
-<td><strong>Executar agora</strong></td>
-<td>Execute as rotinas de verificação conforme especificado para o destino de verificação escolhido.</td>
-</tr>
-<tr class="odd">
-<td><strong>Habilitar tudo</strong></td>
-<td>Marque todas as caixas de seleção de rotina de verificação.</td>
-
-</tr>
-<tr class="even">
-<td><strong>Desabilitar tudo</strong></td>
-<td>Desmarque todas as caixas de seleção de rotina de verificação.</td>
-
-</tr>
-<tr class="odd">
-<td><strong>Opções</strong></td>
-<td><strong>Always On superior</strong></td>
-<td>Tornar AccChecker a janela superior na ordem z.</td>
-</tr>
-<tr class="even">
-<td rowspan="2"><strong>Ajuda</strong>$ {remove} $<br />
-</td>
-<td><strong>Ajuda</strong></td>
-<td>Exibir informações de ajuda.</td>
-</tr>
-<tr class="odd">
-<td><strong>Sobre</strong></td>
-<td>Exiba a versão do AccChecker e um endereço de email para entrar em contato com a Microsoft sobre o AccChecker.</td>
-
-</tr>
-</tbody>
-</table>
 
 
 

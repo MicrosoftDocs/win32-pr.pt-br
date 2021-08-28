@@ -1,6 +1,6 @@
 ---
 title: Elemento AUTHOR
-description: O elemento autor contém o nome do autor de um metarquivo de mídia do Windows ou clipe de mídia.
+description: o elemento autor contém o nome do autor de um metarquivo de mídia Windows ou clipe de mídia.
 ms.assetid: d80aad3d-4471-4310-8d43-2733ed83103c
 keywords:
 - Elemento de autor Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d20498ebd7c8a56edc2e32bc2e76422c9b22242
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 058753d73049debe01e442f49bf12476642111549ad890e931100026badaeb3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098886"
 ---
 # <a name="author-element"></a>Elemento AUTHOR
 
-O elemento **autor** contém o nome do autor de um metarquivo de mídia do Windows ou clipe de mídia.
+o elemento **autor** contém o nome do autor de um metarquivo de mídia Windows ou clipe de mídia.
 
 ``` syntax
 <AUTHOR>   
@@ -49,7 +49,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento contém uma cadeia de texto que representa o nome do autor de um metarquivo de mídia do Windows ou clipe de mídia. Você pode usar o elemento **Author** dentro do elemento **ASX** e dentro de elementos de **entrada** .
+esse elemento contém uma cadeia de texto que representa o nome do autor de um metarquivo de mídia Windows ou clipe de mídia. Você pode usar o elemento **Author** dentro do elemento **ASX** e dentro de elementos de **entrada** .
 
 Se esse elemento aparecer no elemento **ASX** , o texto será exibido como **Mostrar** informações.
 
@@ -87,10 +87,10 @@ Cada elemento de **entrada** e **ASX** pai deve conter no máximo um elemento de
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: cd47d45b-ea47-4dec-867e-d51145d7f084
 title: Localizando tipos de saída do codificador de áudio (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5389274cca1178ebc0ae03e21f7a804f73a5db48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f80dd5aa5204887472e08c6ec5ff375a99b8788924ed0848764cde9ba4b5b97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061567"
 ---
 # <a name="finding-audio-encoder-output-types-microsoft-media-foundation"></a>Localizando tipos de saída do codificador de áudio (Microsoft Media Foundation)
 

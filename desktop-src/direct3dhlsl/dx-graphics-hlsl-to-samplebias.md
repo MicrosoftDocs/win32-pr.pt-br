@@ -1,6 +1,6 @@
 ---
-title: SampleBias (objeto de textura DirectX HLSL)
-description: Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipmap.
+title: SampleBias (objeto de textura directX HLSL)
+description: Amostra uma textura, depois de aplicar o desvio de entrada ao nível de mipmap.
 ms.assetid: 1bc03ad8-7b69-4001-81c7-64d8c631d68d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 01087ab36bdbe90ff73643899229c7ec6ccfbdbe
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a279a92db9d38c8f0a8e80edbd87ec667d580d05
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826791"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624522"
 ---
-# <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (objeto de textura DirectX HLSL)
+# <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (objeto de textura directX HLSL)
 
-Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipmap.
+Amostra uma textura, depois de aplicar o desvio de entrada ao nível de mipmap.
 
-&lt;Tipo de modelo &gt; Object. SampleBias (amostras de \_ estado S, local de flutuação, inclinação flutuante \[ , deslocamento int \] );
+&lt;Template Type &gt; Object.SampleBias( sampler \_ state S, float Location, float Bias \[ , int Offset \] );
 
 
 
@@ -32,8 +32,8 @@ Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipm
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -44,19 +44,19 @@ Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipm
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Objeto</em><br/></td>
-<td>Qualquer tipo <a href="dx-graphics-hlsl-to-type.md">de objeto de textura</a> (exceto Texture2DMS e Texture2DMSArray).<br/></td>
+<td>Qualquer <a href="dx-graphics-hlsl-to-type.md">tipo de objeto de</a> textura (exceto Texture2DMS e Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
-<td><span id="S"></span><span id="s"></span><em>&</em><br/></td>
-<td>no Um <a href="dx-graphics-hlsl-sampler.md">estado de amostra</a>. Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.<br/></td>
+<td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
+<td>[in] Um <a href="dx-graphics-hlsl-sampler.md">estado sampler</a>. Esse é um objeto declarado em um arquivo de efeito que contém atribuições de estado.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Local</em><br/></td>
-<td>no As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto Texture. <br/> 
+<td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Localização</em><br/></td>
+<td>[in] As coordenadas de textura. O tipo de argumento depende do tipo de objeto de textura. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parâmetro</th>
 </tr>
 </thead>
@@ -83,17 +83,17 @@ Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipm
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Bias"></span><span id="bias"></span><span id="BIAS"></span><em>Bias</em></p></td>
-<td><p>no O valor de tendência, que é um número de ponto flutuante entre-16,0 e 15,99, é aplicado a um nível de MIP antes da amostragem.</p></td>
+<td><p><span id="Bias"></span><span id="bias"></span><span id="BIAS"></span><em>Viés</em></p></td>
+<td><p>[in] O valor de desvio, que é um número de ponto flutuante entre -16,0 e 15,99, é aplicado a um nível mip antes da amostragem.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Desvio</em></p></td>
-<td><p>no Um deslocamento de coordenadas de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. Os deslocamentos de textura precisam ser estáticos. O tipo de argumento é dependente do tipo de objeto Texture. Para obter mais informações, consulte <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">aplicando deslocamentos de coordenadas de textura</a>.</p>
+<td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Deslocamento</em></p></td>
+<td><p>[in] Um deslocamento de coordenada de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. Os deslocamentos de textura precisam ser estáticos. O tipo de argumento depende do tipo de objeto de textura. Para obter mais informações, consulte <a href="/windows/win32/direct3dhlsl/dx-graphics-hlsl-to-sample#applying-texture-coordinate-offsets">Aplicando deslocamentos de coordenadas de textura.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parâmetro</th>
 </tr>
 </thead>
@@ -108,7 +108,7 @@ Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipm
 </tr>
 <tr class="odd">
 <td>Texture3D</td>
-<td>Int3</td>
+<td>int3</td>
 </tr>
 <tr class="even">
 <td>TextureCube, TextureCubeArray </td>
@@ -128,15 +128,15 @@ Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipm
 
 ## <a name="return-value"></a>Valor Retornado
 
-O tipo de modelo da textura, que pode ser um vetor de único ou vários componentes. O formato é baseado no [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)da textura.
+O tipo de modelo da textura, que pode ser um vetor de um ou vários componentes. O formato é baseado no formato [**DXGI \_ da textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 |          |           | x        | x         |          |           |
 
@@ -144,14 +144,14 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
  
 
-1.  O TextureCubeArray está disponível no modelo de sombreador 4,1 ou superior.
-2.  O modelo do sombreador 4,1 está disponível no Direct3D 10,1 ou superior.
+1.  TextureCubeArray está disponível no Modelo de Sombreador 4.1 ou superior.
+2.  O Modelo de Sombreador 4.1 está disponível no Direct3D 10.1 ou superior.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Textura-objeto](dx-graphics-hlsl-to-type.md)
+[Objeto de textura](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

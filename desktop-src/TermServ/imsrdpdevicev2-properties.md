@@ -5,12 +5,12 @@ ms.assetid: 763A6D57-5C38-4B8E-AEAB-A0E0390AA751
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0db1b1e169c49f694ddd8f6ed1ade018e4264c1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2da0f377eee4d32aef4a6292cbc589cd21ffbd510aafdf8d6838df9e2da2c964
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105769383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125646"
 ---
 # <a name="imsrdpdevicev2-properties"></a>Propriedades de IMsRdpDeviceV2
 
@@ -23,14 +23,14 @@ A interface [**IMsRdpDeviceV2**](imsrdpdevicev2.md) expõe as propriedades a seg
 [**Propriedade CmClassGuid**](imsrdpdevicev2-cmclassguid.md)
 </dt> <dd>
 
-Contém o GUID da classe de instalação do Configuration Manager para o dispositivo.
+Contém o GUID da classe de instalação do configuration manager para o dispositivo.
 
 </dd> <dt>
 
 [**Propriedade CmDeviceInstance**](imsrdpdevicev2-cmdeviceinstance.md)
 </dt> <dd>
 
-Contém a instância de dispositivo do Configuration Manager do dispositivo.
+Contém a instância de dispositivo do configuration Manager do dispositivo.
 
 </dd> <dt>
 
@@ -58,20 +58,20 @@ Especifica se o dispositivo é um dispositivo composto.
 [**Propriedade IsOptionalDevice**](imsrdpdevicev2-isoptionaldevice.md)
 </dt> <dd>
 
-Especifica se o dispositivo é opcional para o redirecionamento de USB.
+Especifica se o dispositivo é opcional para redirecionamento de USB.
 
 </dd> <dt>
 
 [**Propriedade IsUSBDevice**](imsrdpdevicev2-isusbdevice.md)
 </dt> <dd>
 
-Especifica se o dispositivo é para o redirecionamento de USB.
+Especifica se o dispositivo é para redirecionamento DE USB.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

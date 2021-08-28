@@ -1,9 +1,9 @@
 ---
-title: comando de funcionalidade
-description: O comando Capability solicita informações sobre um recurso específico de um dispositivo. Todos os dispositivos MCI reconhecem este comando.
+title: comando capability
+description: O comando de funcionalidade solicita informações sobre uma funcionalidade específica de um dispositivo. Todos os dispositivos MCI reconhecem esse comando.
 ms.assetid: 1b470473-0de6-41ba-9f6e-41f0b13ceaeb
 keywords:
-- Multimídia do Windows de comando de funcionalidade
+- comando capability Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a6ac87b98fb8d748a5baf2665cc5a63230b6a98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 44e57a793f799214753f50504d80bce7051fba14
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454810"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469153"
 ---
-# <a name="capability-command"></a>comando de funcionalidade
+# <a name="capability-command"></a>comando capability
 
-O comando Capability solicita informações sobre um recurso específico de um dispositivo. Todos os dispositivos MCI reconhecem este comando.
+O comando de funcionalidade solicita informações sobre uma funcionalidade específica de um dispositivo. Todos os dispositivos MCI reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -49,351 +49,70 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszRequest"></span><span id="lpszrequest"></span><span id="LPSZREQUEST"></span>*lpszRequest*
 </dt> <dd>
 
-Sinalizador que identifica uma funcionalidade de dispositivo. A tabela a seguir lista os tipos de dispositivo que reconhecem o comando de **capacidade** e os sinalizadores usados por cada tipo:
+Sinalizador que identifica uma funcionalidade do dispositivo. A tabela a seguir lista os tipos de dispositivo que reconhecem **o comando de funcionalidade** e os sinalizadores usados por cada tipo:
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Tipo</th>
-<th>Tipo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>cdaudio</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode salvar</li>
-<li>dispositivo composto</li>
-</ul></td>
-<td><ul>
-<li>tipo de dispositivo</li>
-<li>com áudio</li>
-<li>tem vídeo</li>
-<li>usa arquivos</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>digitalvideo</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode congelar</li>
-<li>pode bloquear</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode reverter</li>
-<li>pode salvar</li>
-<li>pode ampliar</li>
-<li>pode ampliar a entrada</li>
-<li>pode testar</li>
-</ul></td>
-<td><ul>
-<li>dispositivo composto</li>
-<li>tipo de dispositivo</li>
-<li>com áudio</li>
-<li>ainda</li>
-<li>tem vídeo</li>
-<li>taxa de execução máxima</li>
-<li>taxa mínima de execução</li>
-<li>usa arquivos</li>
-<li>usa paletas</li>
-<li>windows</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>overlay</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode congelar</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode salvar</li>
-<li>pode ampliar</li>
-</ul></td>
-<td><ul>
-<li>dispositivo composto</li>
-<li>tipo de dispositivo</li>
-<li>com áudio</li>
-<li>tem vídeo</li>
-<li>usa arquivos</li>
-<li>windows</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>sequenciador</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode salvar</li>
-<li>dispositivo composto</li>
-</ul></td>
-<td><ul>
-<li>tipo de dispositivo</li>
-<li>com áudio</li>
-<li>tem vídeo</li>
-<li>usa arquivos</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>videocassete</td>
-<td><ul>
-<li>pode detectar comprimento</li>
-<li>pode ejetar</li>
-<li>pode congelar</li>
-<li>pode monitorar fontes</li>
-<li>pode reproduzir</li>
-<li>pode ser prevertido</li>
-<li>pode Visualizar</li>
-<li>pode registrar</li>
-<li>pode reverter</li>
-<li>pode salvar</li>
-<li>pode testar</li>
-</ul></td>
-<td><ul>
-<li>taxa de incremento de relógio</li>
-<li>dispositivo composto</li>
-<li>tipo de dispositivo</li>
-<li>com áudio</li>
-<li>tem relógio</li>
-<li>tem código de paficação</li>
-<li>tem vídeo</li>
-<li>número de marcas</li>
-<li>precisão da busca</li>
-<li>usa arquivos</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>videodisc</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode reverter</li>
-<li>pode salvar</li>
-<li>CAV</li>
-<li>CLV</li>
-<li>dispositivo composto</li>
-</ul></td>
-<td><ul>
-<li>tipo de dispositivo</li>
-<li>taxa de reprodução rápida</li>
-<li>com áudio</li>
-<li>tem vídeo</li>
-<li>taxa de reprodução normal</li>
-<li>taxa de reprodução lenta</li>
-<li>usa arquivos</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>waveaudio</td>
-<td><ul>
-<li>pode ejetar</li>
-<li>pode reproduzir</li>
-<li>pode registrar</li>
-<li>pode salvar</li>
-<li>dispositivo composto</li>
-<li>tipo de dispositivo</li>
-</ul></td>
-<td><ul>
-<li>com áudio</li>
-<li>tem vídeo</li>
-<li>entradas</li>
-<li>outputs</li>
-<li>usa arquivos</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Tipo | Tipo | 
+|-------|------|------|
+| cdaudio | <ul><li>pode ejetar</li><li>pode reproduzir</li><li>pode registrar</li><li>pode salvar</li><li>dispositivo composto</li></ul> | <ul><li>tipo de dispositivo</li><li>tem áudio</li><li>tem vídeo</li><li>usa arquivos</li></ul> | 
+| digitalvideo | <ul><li>pode ejetar</li><li>pode congelar</li><li>pode bloquear</li><li>pode reproduzir</li><li>pode registrar</li><li>pode reverter</li><li>pode salvar</li><li>pode alongar</li><li>pode alongar a entrada</li><li>pode testar</li></ul> | <ul><li>dispositivo composto</li><li>tipo de dispositivo</li><li>tem áudio</li><li>ainda tem</li><li>tem vídeo</li><li>taxa de reprodução máxima</li><li>taxa de reprodução mínima</li><li>usa arquivos</li><li>usa paletas</li><li>windows</li></ul> | 
+| overlay | <ul><li>pode ejetar</li><li>pode congelar</li><li>pode reproduzir</li><li>pode registrar</li><li>pode salvar</li><li>pode alongar</li></ul> | <ul><li>dispositivo composto</li><li>tipo de dispositivo</li><li>tem áudio</li><li>tem vídeo</li><li>usa arquivos</li><li>windows</li></ul> | 
+| sequenciador | <ul><li>pode ejetar</li><li>pode reproduzir</li><li>pode registrar</li><li>pode salvar</li><li>dispositivo composto</li></ul> | <ul><li>tipo de dispositivo</li><li>tem áudio</li><li>tem vídeo</li><li>usa arquivos</li></ul> | 
+| Videocassete | <ul><li>pode detectar comprimento</li><li>pode ejetar</li><li>pode congelar</li><li>pode monitorar fontes</li><li>pode reproduzir</li><li>pode pré-fazer o pré-roll</li><li>pode visualizar</li><li>pode registrar</li><li>pode reverter</li><li>pode salvar</li><li>pode testar</li></ul> | <ul><li>taxa de incremento do relógio</li><li>dispositivo composto</li><li>tipo de dispositivo</li><li>tem áudio</li><li>tem relógio</li><li>tem código de hora</li><li>tem vídeo</li><li>número de marcas</li><li>precisão de busca</li><li>usa arquivos</li></ul> | 
+| videodisc | <ul><li>pode ejetar</li><li>pode reproduzir</li><li>pode registrar</li><li>pode reverter</li><li>pode salvar</li><li>CAV</li><li>CLV</li><li>dispositivo composto</li></ul> | <ul><li>tipo de dispositivo</li><li>taxa de reprodução rápida</li><li>tem áudio</li><li>tem vídeo</li><li>taxa de reprodução normal</li><li>taxa de reprodução lenta</li><li>usa arquivos</li></ul> | 
+| Waveaudio | <ul><li>pode ejetar</li><li>pode reproduzir</li><li>pode registrar</li><li>pode salvar</li><li>dispositivo composto</li><li>tipo de dispositivo</li></ul> | <ul><li>tem áudio</li><li>tem vídeo</li><li>entradas</li><li>outputs</li><li>usa arquivos</li></ul> | 
+
 
 
 
  
 
-A tabela a seguir lista os sinalizadores que podem ser especificados no parâmetro *lpszRequest* e seus significados:
+A tabela a seguir lista os sinalizadores que podem ser especificados no *parâmetro lpszRequest* e seus significados:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Flags</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>pode detectar comprimento</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder detectar o comprimento da mídia.</td>
-</tr>
-<tr class="even">
-<td>pode ejetar</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder ejetar a mídia.</td>
-</tr>
-<tr class="odd">
-<td>pode congelar</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder congelar dados no buffer de quadros.</td>
-</tr>
-<tr class="even">
-<td>pode bloquear</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder bloquear dados.</td>
-</tr>
-<tr class="odd">
-<td>pode monitorar fontes</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder passar uma entrada (origem) para a saída monitorada, independentemente da seleção de entrada atual.</td>
-</tr>
-<tr class="even">
-<td>pode reproduzir</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder ser executado.</td>
-</tr>
-<tr class="odd">
-<td>pode ser prevertido</td>
-<td>Retornará <strong>true</strong> se o dispositivo der suporte ao &quot; sinalizador preroll &quot; com o comando <a href="cue.md">Cue</a> .</td>
-</tr>
-<tr class="even">
-<td>pode Visualizar</td>
-<td>Retornará <strong>true</strong> se o dispositivo oferecer suporte a visualizações.</td>
-</tr>
-<tr class="odd">
-<td>pode registrar</td>
-<td>Retornará <strong>true</strong> se o dispositivo der suporte à gravação.</td>
-</tr>
-<tr class="even">
-<td>pode reverter</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder reproduzir em ordem inversa.</td>
-</tr>
-<tr class="odd">
-<td>pode salvar</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder salvar dados.</td>
-</tr>
-<tr class="even">
-<td>pode ampliar</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder alongar quadros para preencher um determinado retângulo de exibição.</td>
-</tr>
-<tr class="odd">
-<td>pode ampliar a entrada</td>
-<td>Retornará <strong>true</strong> se o dispositivo puder redimensionar uma imagem no processo de digitalização no buffer de quadros.</td>
-</tr>
-<tr class="even">
-<td>pode testar</td>
-<td>Retornará <strong>true</strong> se o dispositivo reconhecer a palavra-chave test.</td>
-</tr>
-<tr class="odd">
-<td>cav</td>
-<td>Quando combinado com outros itens, esse sinalizador especifica que as informações de retorno se aplicam ao formato CAV videodiscs. Esse será o padrão se nenhum VIDEODISC for inserido.</td>
-</tr>
-<tr class="even">
-<td>taxa de incremento de relógio</td>
-<td>Retorna o número de subdivisãos com suporte do relógio externo por segundo. Se o relógio externo for um relógio de milissegundo, o valor de retorno será 1000. Se o valor de retorno for 0, não haverá suporte para nenhum relógio.</td>
-</tr>
-<tr class="odd">
-<td>clv</td>
-<td>Quando combinado com outros itens, esse sinalizador especifica que as informações de retorno se aplicam ao formato CLV videodiscs.</td>
-</tr>
-<tr class="even">
-<td>dispositivo composto</td>
-<td>Retornará <strong>true</strong> se o dispositivo der suporte a um nome de elemento (filename).</td>
-</tr>
-<tr class="odd">
-<td>tipo de dispositivo</td>
-<td>Retorna um nome de tipo de dispositivo, que pode ser um dos seguintes:
-<ul>
-<li>cdaudio</li>
-<li>DATs</li>
-<li>digitalvideo</li>
-<li>outros</li>
-<li>overlay</li>
-<li>verificador</li>
-<li>sequenciador</li>
-<li>videocassete</li>
-<li>videodisc</li>
-<li>waveaudio</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>taxa de reprodução rápida</td>
-<td>Retorna a taxa de reprodução rápida em quadros por segundo ou zero se o dispositivo não puder ser executado rapidamente.</td>
-</tr>
-<tr class="odd">
-<td>com áudio</td>
-<td>Retornará <strong>true</strong> se o dispositivo der suporte à reprodução de áudio.</td>
-</tr>
-<tr class="even">
-<td>tem relógio</td>
-<td>Retornará <strong>true</strong> se o dispositivo tiver um relógio.</td>
-</tr>
-<tr class="odd">
-<td>ainda</td>
-<td>Retornará <strong>true</strong> se o dispositivo tratar arquivos com uma única imagem com mais eficiência do que arquivos de vídeo de movimento.</td>
-</tr>
-<tr class="even">
-<td>tem código de paficação</td>
-<td>Retornará <strong>true</strong> se o dispositivo for capaz de dar suporte ao código de Code ou se for desconhecido.</td>
-</tr>
-<tr class="odd">
-<td>tem vídeo</td>
-<td>Retornará <strong>true</strong> se o dispositivo der suporte a vídeo.</td>
-</tr>
-<tr class="even">
-<td>entradas</td>
-<td>Retorna o número total de dispositivos de entrada.</td>
-</tr>
-<tr class="odd">
-<td>taxa de execução máxima</td>
-<td>Retorna a taxa de execução máxima, em quadros por segundo, para o dispositivo.</td>
-</tr>
-<tr class="even">
-<td>taxa mínima de execução</td>
-<td>Retorna a taxa mínima de reprodução, em quadros por segundo, para o dispositivo.</td>
-</tr>
-<tr class="odd">
-<td>taxa de reprodução normal</td>
-<td>Retorna a taxa de reprodução normal, em quadros por segundo, para o dispositivo.</td>
-</tr>
-<tr class="even">
-<td>número de marcas</td>
-<td>Retorna o número máximo de marcas que podem ser usadas; zero indica que não há suporte para marcas.</td>
-</tr>
-<tr class="odd">
-<td>outputs</td>
-<td>Retorna o número total de dispositivos de saída.</td>
-</tr>
-<tr class="even">
-<td>precisão da busca</td>
-<td>Retorna a precisão esperada de uma pesquisa em quadros; 0 indica que o dispositivo é preciso de quadro, 1 indica que o dispositivo espera estar dentro de um quadro da posição de busca indicada e assim por diante.</td>
-</tr>
-<tr class="odd">
-<td>taxa de reprodução lenta</td>
-<td>Retorna a taxa de reprodução lenta em quadros por segundo ou zero se o dispositivo não puder ser executado lentamente.</td>
-</tr>
-<tr class="even">
-<td>usa arquivos</td>
-<td>Retornará <strong>true</strong> se o armazenamento de dados usado por um dispositivo composto for um arquivo.</td>
-</tr>
-<tr class="odd">
-<td>usa paletas</td>
-<td>Retornará <strong>true</strong> se o dispositivo usar paletas.</td>
-</tr>
-<tr class="even">
-<td>windows</td>
-<td>Retorna o número de janelas de exibição simultâneas às quais o dispositivo pode dar suporte.</td>
-</tr>
-</tbody>
-</table>
+
+| Flags | Significado | 
+|-------|---------|
+| pode detectar comprimento | Retornará <strong>TRUE</strong> se o dispositivo puder detectar o comprimento da mídia. | 
+| pode ejetar | Retornará <strong>TRUE</strong> se o dispositivo puder ejetar a mídia. | 
+| pode congelar | Retornará <strong>TRUE</strong> se o dispositivo puder congelar dados no buffer de quadro. | 
+| pode bloquear | Retornará <strong>TRUE</strong> se o dispositivo puder bloquear dados. | 
+| pode monitorar fontes | Retornará <strong>TRUE</strong> se o dispositivo puder passar uma entrada (origem) para a saída monitorada, independentemente da seleção de entrada atual. | 
+| pode reproduzir | Retornará <strong>TRUE</strong> se o dispositivo puder reproduzir. | 
+| pode pré-fazer o pré-roll | Retornará <strong>TRUE</strong> se o dispositivo for compatível com o sinalizador "preroll" com o <a href="cue.md">comando de indicação.</a> | 
+| pode visualizar | Retornará <strong>TRUE</strong> se o dispositivo for compatível com visualizações. | 
+| pode registrar | Retornará <strong>TRUE</strong> se o dispositivo for compatível com a gravação. | 
+| pode reverter | Retornará <strong>TRUE</strong> se o dispositivo puder reproduzir em ordem inversa. | 
+| pode salvar | Retornará <strong>TRUE</strong> se o dispositivo puder salvar dados. | 
+| pode alongar | Retornará <strong>TRUE</strong> se o dispositivo puder alongar quadros para preencher um retângulo de exibição específico. | 
+| pode alongar a entrada | Retornará <strong>TRUE</strong> se o dispositivo puder ressarcimento de uma imagem no processo de digitá-la no buffer de quadro. | 
+| pode testar | Retornará <strong>TRUE</strong> se o dispositivo reconhecer a palavra-chave test. | 
+| Cav | Quando combinado com outros itens, esse sinalizador especifica que as informações de retorno se aplica a videodiscs de formato DECOD. Esse será o padrão se nenhum videodisc for inserido. | 
+| taxa de incremento do relógio | Retorna o número de subdivisões que o relógio externo dá suporte por segundo. Se o relógio externo for um relógio de milissegundos, o valor de retorno será 1000. Se o valor de retorno for 0, nenhum relógio será suportado. | 
+| clv | Quando combinado com outros itens, esse sinalizador especifica que as informações de retorno se aplica a videodiscs de formato CLV. | 
+| dispositivo composto | Retornará <strong>TRUE</strong> se o dispositivo for compatível com um nome de elemento (nome do arquivo). | 
+| tipo de dispositivo | Retorna um nome de tipo de dispositivo, que pode ser um dos seguintes:<ul><li>cdaudio</li><li>Dat</li><li>digitalvideo</li><li>other</li><li>overlay</li><li>verificador</li><li>sequenciador</li><li>Videocassete</li><li>videodisc</li><li>Waveaudio</li></ul> | 
+| taxa de reprodução rápida | Retorna a taxa de reprodução rápida em quadros por segundo ou zero se o dispositivo não puder reproduzir rapidamente. | 
+| tem áudio | Retornará <strong>TRUE</strong> se o dispositivo for compatível com reprodução de áudio. | 
+| tem relógio | Retornará <strong>TRUE</strong> se o dispositivo tiver um relógio. | 
+| ainda tem | Retornará <strong>TRUE</strong> se o dispositivo tratar arquivos com uma única imagem com mais eficiência do que arquivos de vídeo de movimento. | 
+| tem código de hora | Retornará <strong>TRUE</strong> se o dispositivo for capaz de dar suporte ao código de tempo ou se for desconhecido. | 
+| tem vídeo | Retornará <strong>TRUE</strong> se o dispositivo for compatível com vídeo. | 
+| entradas | Retorna o número total de dispositivos de entrada. | 
+| taxa de reprodução máxima | Retorna a taxa de reprodução máxima, em quadros por segundo, para o dispositivo. | 
+| taxa de reprodução mínima | Retorna a taxa de reprodução mínima, em quadros por segundo, para o dispositivo. | 
+| taxa de reprodução normal | Retorna a taxa de reprodução normal, em quadros por segundo, para o dispositivo. | 
+| número de marcas | Retorna o número máximo de marcas que podem ser usadas; zero indica que não há suporte para marcas. | 
+| outputs | Retorna o número total de dispositivos de saída. | 
+| precisão de busca | Retorna a precisão esperada de uma pesquisa em quadros; 0 indica que o dispositivo tem um quadro preciso, 1 indica que o dispositivo espera estar dentro de um quadro da posição de busca indicada e assim por diante. | 
+| taxa de reprodução lenta | Retorna a taxa de reprodução lenta em quadros por segundo ou zero se o dispositivo não puder reproduzir lentamente. | 
+| usa arquivos | Retornará <strong>TRUE</strong> se o armazenamento de dados usado por um dispositivo composto for um arquivo. | 
+| usa paletas | Retornará <strong>TRUE</strong> se o dispositivo usar paletas. | 
+| windows | Retorna o número de janelas de exibição simultâneas que o dispositivo pode dar suporte. | 
+
 
 
 
@@ -404,13 +123,13 @@ A tabela a seguir lista os sinalizadores que podem ser especificados no parâmet
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna informações no parâmetro *lpszReturnString* da função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) . As informações dependem do tipo de solicitação.
+Retorna informações no *parâmetro lpszReturnString* da [**função mciSendString.**](/previous-versions//dd757161(v=vs.85)) As informações dependem do tipo de solicitação.
 
 ## <a name="examples"></a>Exemplos
 
@@ -441,7 +160,7 @@ capability mysound device type
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[advertência](cue.md)
+[Cue](cue.md)
 </dt> </dl>
 
  

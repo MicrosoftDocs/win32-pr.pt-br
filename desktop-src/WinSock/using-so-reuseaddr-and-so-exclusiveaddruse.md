@@ -1,68 +1,68 @@
 ---
-description: O desenvolvimento de uma infraestrutura de rede de alto nível segura é uma prioridade para a maioria dos desenvolvedores de aplicativos de rede. No entanto, a segurança do soquete geralmente é ignorada, apesar de ser muito importante ao considerar uma solução totalmente segura.
+description: Desenvolver uma infraestrutura de rede segura de alto nível é uma prioridade para a maioria dos desenvolvedores de aplicativos de rede. No entanto, a segurança de soquete geralmente é ignorada, apesar de ser muito crítica ao considerar uma solução totalmente segura.
 ms.assetid: b37a3e33-65ee-43b1-bc8b-3280db7ebee4
 title: Usando SO_REUSEADDR e SO_EXCLUSIVEADDRUSE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa4024f031102cbd634c235bb39f4c7860e6c1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d58b0249ab19b4c7a1655a1c65130d545d328ef4fba3fd56ae9b05a911cb3fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121137"
 ---
-# <a name="using-so_reuseaddr-and-so_exclusiveaddruse"></a>Usando o \_ REUSEADDR e, portanto, \_ EXCLUSIVEADDRUSE
+# <a name="using-so_reuseaddr-and-so_exclusiveaddruse"></a>Usando SO \_ REUSEADDR e SO \_ EXCLUSIVEADDRUSE
 
-O desenvolvimento de uma infraestrutura de rede de alto nível segura é uma prioridade para a maioria dos desenvolvedores de aplicativos de rede. No entanto, a segurança do soquete geralmente é ignorada, apesar de ser muito importante ao considerar uma solução totalmente segura. A segurança de soquete, especificamente, lida com processos que se associam à mesma porta associada anteriormente por outro processo de aplicativo. No passado, era possível que um aplicativo de rede "seqüestrasse" a porta de outro aplicativo, o que poderia facilmente causar um ataque de "negação de serviço" ou roubo de dados.
+Desenvolver uma infraestrutura de rede segura de alto nível é uma prioridade para a maioria dos desenvolvedores de aplicativos de rede. No entanto, a segurança de soquete geralmente é ignorada, apesar de ser muito crítica ao considerar uma solução totalmente segura. A segurança de soquete, especificamente, lida com processos que se vinculam à mesma porta anteriormente vinculada por outro processo de aplicativo. No passado, era possível que um aplicativo de rede "sequestro" a porta de outro aplicativo, o que poderia facilmente levar a um ataque de "negação de serviço" ou roubo de dados.
 
-Em geral, a segurança do soquete se aplica a processos do lado do servidor. Mais especificamente, a segurança de soquete se aplica a qualquer aplicativo de rede que aceite conexões e receba o tráfego de datagrama IP. Esses aplicativos normalmente se associam a uma porta conhecida e são destinos comuns de código de rede mal-intencionado.
+Em geral, a segurança de soquete se aplica a processos do lado do servidor. Mais especificamente, a segurança de soquete se aplica a qualquer aplicativo de rede que aceite conexões e receba tráfego de datagrama IP. Esses aplicativos normalmente se vinculam a uma porta conhecida e são destinos comuns para código de rede mal-intencionado.
 
-Os aplicativos cliente têm menos probabilidade de serem os destinos desses ataques — não porque eles são menos suscetíveis, mas porque a maioria dos clientes se associa a portas locais "efêmeras" em vez de portas "de serviço" estáticas. Os aplicativos de rede do cliente devem sempre ser associados a portas efêmeras (especificando a porta 0 na estrutura [**SOCKADDR**](sockaddr-2.md) apontada pelo parâmetro *Name* ao chamar a função [**BIND**](/windows/win32/api/winsock/nf-winsock-bind) ), a menos que haja um motivo de arquitetura atraente para não. As portas locais efêmeras consistem em portas maiores que a porta 49151. A maioria dos aplicativos de servidor para serviços dedicados se associa a uma porta reservada conhecida que é menor ou igual à porta 49151. Portanto, para a maioria dos aplicativos, geralmente não há um conflito para solicitações de ligação entre aplicativos cliente e servidor.
+Os aplicativos cliente têm menor probabilidade de serem os destinos desses ataques , não porque são menos suscetíveis, mas porque a maioria dos clientes se vincula a portas locais "efêmeras" em vez de portas estáticas de "serviço". Os aplicativos de rede cliente sempre devem se vincular a portas efêmeras  (especificando a porta 0 na estrutura [**SOCKADDR**](sockaddr-2.md) apontada pelo parâmetro name ao chamar a função [**bind),**](/windows/win32/api/winsock/nf-winsock-bind) a menos que haja um motivo de arquitetura atraente para não fazer isso. As portas locais efêmeras consistem em portas maiores que a porta 49151. A maioria dos aplicativos de servidor para serviços dedicados se vincula a uma porta reservada conhecida que é menor ou igual à porta 49151. Portanto, para a maioria dos aplicativos, geralmente não há um conflito para vincular solicitações entre aplicativos cliente e servidor.
 
-Esta seção descreve o nível padrão de segurança em várias plataformas do Microsoft Windows e como as opções de soquete específicas são **\_ REUSEADDR** e [, portanto, \_ EXCLUSIVEADDRUSE](so-exclusiveaddruse.md) o impacto e afeta a segurança do aplicativo de rede. Um recurso adicional chamado segurança avançada de soquete está disponível no Windows Server 2003 e posterior. A disponibilidade dessas opções de soquete e a segurança avançada de soquete varia em todas as versões dos sistemas operacionais da Microsoft, conforme mostrado na tabela a seguir.
+Esta seção descreve o nível padrão de segurança em várias plataformas microsoft Windows e como as opções de soquete específicas **SO \_ REUSEADDR** e [SO \_ EXCLUSIVEADDRUSE](so-exclusiveaddruse.md) afetam e afetam a segurança do aplicativo de rede. Um recurso adicional chamado segurança de soquete aprimorada está disponível Windows Server 2003 e posterior. A disponibilidade dessas opções de soquete e a segurança de soquete aprimorada variam entre as versões dos sistemas operacionais da Microsoft, conforme mostrado na tabela abaixo.
 
-| Plataforma            | \_REUSEADDR | \_EXCLUSIVEADDRUSE                  | Segurança de soquete aprimorada |
+| Plataforma            | PORTANTO, \_ REUTILIZARADDR | ENTÃO \_ EXCLUSIVEADDRUSE                  | Segurança de soquete aprimorada |
 |---------------------|---------------|---------------------------------------|--------------------------|
 | Windows 95          | Disponível     | Não disponível                         | Não disponível            |
 | Windows 98          | Disponível     | Não disponível                         | Não disponível            |
-| Windows me          | Disponível     | Não disponível                         | Não disponível            |
+| Windows Me          | Disponível     | Não disponível                         | Não disponível            |
 | Windows NT 4.0      | Disponível     | Disponível no Service Pack 4 e posterior | Não disponível            |
 | Windows 2000        | Disponível     | Disponível                             | Não disponível            |
 | Windows XP          | Disponível     | Disponível                             | Não disponível            |
 | Windows Server 2003 | Disponível     | Disponível                             | Disponível                |
 | Windows Vista       | Disponível     | Disponível                             | Disponível                |
 | Windows Server 2008 | Disponível     | Disponível                             | Disponível                |
-| Windows 7and mais recente  | Disponível     | Disponível                             | Disponível                |
+| Windows 7 e mais novos  | Disponível     | Disponível                             | Disponível                |
 
-## <a name="using-so_reuseaddr"></a>Usando o \_ REUSEADDR
+## <a name="using-so_reuseaddr"></a>Usando SO \_ REUSEADDR
 
-A opção de soquete **\_ REUSEADDR** permite que um soquete seja forçado a ligar a uma porta em uso por outro soquete. O segundo Soquete chama [**setsockopt**](/windows/win32/api/winsock/nf-winsock-setsockopt) com o parâmetro *OptName* definido como **\_ REUSEADDR** e o parâmetro *optval* definido como um valor booliano de **true** antes de chamar a [**Associação**](/windows/win32/api/winsock/nf-winsock-bind) na mesma porta que o soquete original. Depois que o segundo soquete for associado com êxito, o comportamento de todos os soquetes vinculados a essa porta será indeterminado. Por exemplo, se todos os soquetes na mesma porta fornecerem o serviço TCP, qualquer solicitação de conexão TCP de entrada na porta não poderá ser processada pelo soquete correto — o comportamento é não determinístico. Um programa mal-intencionado pode usar **, portanto, \_ REUSEADDR** para forçar o BIND Sockets em uso para serviços de protocolo de rede padrão a fim de negar acesso a esses serviços. Nenhum privilégio especial é necessário para usar essa opção.
+A **opção \_ soquete SO REUSEADDR** permite que um soquete seja forçado a se vincular a uma porta em uso por outro soquete. O segundo soquete chama [**setsockopt**](/windows/win32/api/winsock/nf-winsock-setsockopt) com o parâmetro *optname* definido como SO **\_ REUSEADDR** [](/windows/win32/api/winsock/nf-winsock-bind) e o parâmetro *optval* definido como um valor boolário **true** antes de chamar bind na mesma porta que o soquete original. Depois que o segundo soquete tiver sido vinculado com êxito, o comportamento de todos os soquetes vinculados a essa porta será indeterminado. Por exemplo, se todos os soquetes na mesma porta fornecerem serviço TCP, nenhuma solicitação de conexão TCP de entrada pela porta poderá ser tratada pelo soquete correto – o comportamento é não determinístico. Um programa mal-intencionado pode usar **SO \_ REUSEADDR** para vincular forçosamente soquetes já em uso para serviços de protocolo de rede padrão a fim de negar o acesso a esses serviços. Nenhum privilégio especial é necessário para usar essa opção.
 
-Se um aplicativo cliente for associado a uma porta antes que um aplicativo de servidor seja capaz de se associar à mesma porta, poderão ocorrer problemas. Se o aplicativo de servidor for forçado a se associar usando a opção de soquete **\_ REUSEADDR** para a mesma porta, o comportamento de todos os soquetes vinculados a essa porta será indeterminado.
+Se um aplicativo cliente se vincular a uma porta antes que um aplicativo de servidor seja capaz de se vincular à mesma porta, poderão resultar problemas. Se o aplicativo de servidor for forçado a ser vinculado usando a opção soquete **SO \_ REUSEADDR** à mesma porta, o comportamento de todos os soquetes vinculados a essa porta será indeterminado.
 
-A exceção a esse comportamento não determinístico são os soquetes multicast. Se dois soquetes estiverem associados à mesma interface e porta e forem membros do mesmo grupo de multicast, os dados serão entregues a ambos os soquetes, em vez de um escolhido arbitrariamente.
+A exceção a esse comportamento não determinístico são soquetes multicast. Se dois soquetes estão associados à mesma interface e porta e são membros do mesmo grupo multicast, os dados serão entregues a ambos os soquetes, em vez de um escolhido arbitrariamente.
 
-## <a name="using-so_exclusiveaddruse"></a>Usando o \_ EXCLUSIVEADDRUSE
+## <a name="using-so_exclusiveaddruse"></a>Usando SO \_ EXCLUSIVEADDRUSE
 
-Antes que a opção de soquete **\_ EXCLUSIVEADDRUSE** fosse introduzida, havia muito pouco um desenvolvedor de aplicativos de rede a fim de impedir que um programa mal-intencionado se vinculasse à porta na qual o aplicativo de rede tinha seus próprios soquetes ligados. Para resolver esse problema de segurança, o Windows Sockets introduziu a opção de soquete **\_ EXCLUSIVEADDRUSE** , que se tornou disponível no Windows NT 4,0 com Service Pack 4 (SP4) e posterior.
+Antes da opção soquete **SO \_ EXCLUSIVEADDRUSE** ter sido introduzida, havia muito pouco que um desenvolvedor de aplicativos de rede pudesse fazer para impedir que um programa mal-intencionado se vincular à porta na qual o aplicativo de rede tinha seus próprios soquetes vinculados. Para resolver esse problema de segurança, o Windows Sockets introduziu a opção soquete **SO \_ EXCLUSIVEADDRUSE,** que ficou disponível no Windows NT 4.0 com o Service Pack 4 (SP4) e posterior.
 
-A opção de soquete **\_ EXCLUSIVEADDRUSE** só pode ser usada por membros do grupo de segurança Administradores no Windows XP e versões anteriores. Os motivos pelos quais esse requisito foi alterado no Windows Server 2003 e versões posteriores são discutidos posteriormente neste artigo.
+A **opção \_ soquete SO EXCLUSIVEADDRUSE** só pode ser usada por membros do grupo de segurança Administradores no Windows XP e anterior. Os motivos pelos quais esse requisito foi alterado no Windows Server 2003 e posterior são discutidos posteriormente neste artigo.
 
-A **opção \_ EXCLUSIVEADDRUSE** é definida chamando a função [**setsockopt**](/windows/win32/api/winsock/nf-winsock-setsockopt) com o parâmetro *OptName* definido como **\_ EXCLUSIVEADDRUSE** e o parâmetro *optval* definido como um valor booliano de **true** antes de o soquete ser associado. Após a opção ser definida, o comportamento das chamadas de [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) subsequentes difere dependendo do endereço de rede especificado em cada chamada de **ligação** .
+A **opção SO \_ EXCLUSIVEADDRUSE** é definida chamando a função [**setsockopt**](/windows/win32/api/winsock/nf-winsock-setsockopt) com o parâmetro *optname* definido como **SO \_ EXCLUSIVEADDRUSE** e o parâmetro *optval* definido como um valor booliana **true** antes que o soquete seja limitado. Depois que a opção for definida, o comportamento das chamadas de [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) subsequentes será diferente dependendo do endereço de rede especificado em cada chamada **de** ligação.
 
-A tabela a seguir descreve o comportamento que ocorre no Windows XP e versões anteriores quando um segundo soquete tenta se associar a um endereço associado anteriormente a um primeiro soquete usando opções de soquete específicas.
+A tabela a seguir descreve o comportamento que ocorre no Windows XP e anterior quando um segundo soquete tenta se vincular a um endereço anteriormente vinculado a por um primeiro soquete usando opções de soquete específicas.
 
 > [!NOTE]  
-> Na tabela abaixo, "wildcard" denota o endereço curinga para o protocolo fornecido (como "0.0.0.0" para IPv4 e "::" para IPv6). "Específico" indica um endereço IP específico atribuído a uma interface. As células da tabela indicam se a ligação foi bem-sucedida ("success") ou se um erro é retornado ("INUSE" para o erro [WSAEADDRINUSE](windows-sockets-error-codes-2.md) ; "Acesso" para o erro [WSAEACCES](windows-sockets-error-codes-2.md) ).
+> Na tabela abaixo, "curinga" indica o endereço curinga para o protocolo determinado (como "0.0.0.0" para IPv4 e "::" para IPv6). "Específico" indica um endereço IP específico atribuído a uma interface. As células da tabela indicam se a vinculação foi bem-sucedida ("Êxito") ou se um erro foi retornado ("INUSE" para o erro [WSAEADDRINUSE;](windows-sockets-error-codes-2.md) "ACCESS" para [o erro WSAEACCES).](windows-sockets-error-codes-2.md)
 
 <table>
     <tr>
-        <td bgcolor="#C0C0C0" colspan="2" rowspan="3">Primeira chamada de <a href="/windows/win32/api/winsock/nf-winsock-bind"><strong>ligação</strong></a></td>
-        <td bgcolor="#C0C0C0" colspan="6">Segunda chamada de <a href="/windows/win32/api/winsock/nf-winsock-bind"><strong>ligação</strong></a></td>
+        <td bgcolor="#C0C0C0" colspan="2" rowspan="3">Primeira <a href="/windows/win32/api/winsock/nf-winsock-bind"><strong>chamada de</strong></a> ligação</td>
+        <td bgcolor="#C0C0C0" colspan="6">Segunda <a href="/windows/win32/api/winsock/nf-winsock-bind"><strong>chamada de</strong></a> ligação</td>
     </tr>
     <tr>
         <td bgcolor="#C0C0C0" colspan="2">Padrão</td>
-        <td bgcolor="#C0C0C0" colspan="2">SO_REUSEADDR</td>
+        <td bgcolor="#C0C0C0" colspan="2">So_reuseaddr</td>
         <td bgcolor="#C0C0C0" colspan="2">SO_EXCLUSIVEADDRUSE</td>
     </tr>
     <tr>
@@ -148,9 +148,9 @@ A \_ opção de soquete remanescente pode ser definida em um soquete para impedi
 
 ## <a name="enhanced-socket-security"></a>Segurança de soquete aprimorada
 
-A segurança avançada de soquete foi adicionada com o lançamento do Windows Server 2003. Em versões anteriores do sistema operacional Microsoft Server, a segurança de soquete padrão permitia facilmente processos para seqüestrar portas de aplicativos desconhecidos. No Windows Server 2003, os soquetes não estão em um estado compartilhável por padrão. Portanto, se um aplicativo quiser permitir que outros processos reutilizem uma porta na qual um soquete já esteja associado, ele deverá habilitá-lo especificamente. Se esse for o caso, o primeiro soquete para chamar a [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) na porta deve ter **\_ REUSEADDR** definido no soquete. A única exceção a esse caso ocorre quando a segunda chamada de **ligação** é executada pela mesma conta de usuário que fez com que a chamada original fosse **associada**. Essa exceção existe apenas para fornecer compatibilidade com versões anteriores.
+a segurança avançada de soquete foi adicionada com o lançamento do Windows Server 2003. Em versões anteriores do sistema operacional Microsoft Server, a segurança de soquete padrão permitia facilmente processos para seqüestrar portas de aplicativos desconhecidos. no Windows Server 2003, os soquetes não estão em um estado compartilhável por padrão. Portanto, se um aplicativo quiser permitir que outros processos reutilizem uma porta na qual um soquete já esteja associado, ele deverá habilitá-lo especificamente. Se esse for o caso, o primeiro soquete para chamar a [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) na porta deve ter **\_ REUSEADDR** definido no soquete. A única exceção a esse caso ocorre quando a segunda chamada de **ligação** é executada pela mesma conta de usuário que fez com que a chamada original fosse **associada**. Essa exceção existe apenas para fornecer compatibilidade com versões anteriores.
 
-A tabela a seguir descreve o comportamento que ocorre no Windows Server 2003 e sistemas operacionais posteriores quando um segundo soquete tenta se associar a um endereço associado anteriormente a um primeiro soquete usando opções de soquete específicas.
+a tabela a seguir descreve o comportamento que ocorre no Windows Server 2003 e sistemas operacionais posteriores quando um segundo soquete tenta se associar a um endereço associado anteriormente a um primeiro soquete usando opções de soquete específicas.
 
 > [!NOTE]
 > Na tabela abaixo, "wildcard" denota o endereço curinga para o protocolo fornecido (como "0.0.0.0" para IPv4 e "::" para IPv6). "Específico" indica um endereço IP específico atribuído a uma interface. As células da tabela indicam se a ligação foi bem-sucedida ("success") ou o erro retornado ("INUSE" para o erro [WSAEADDRINUSE](windows-sockets-error-codes-2.md) ; "Acesso" para o erro [WSAEACCES](windows-sockets-error-codes-2.md) ).
@@ -179,17 +179,17 @@ A tabela a seguir descreve o comportamento que ocorre no Windows Server 2003 e s
         <td bgcolor="#C0C0C0" rowspan="2">Padrão</td>
         <td bgcolor="#C0C0C0">Curinga</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>ACCESS</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>ACCESS</td>
         <td>INUSE</td>
         <td>INUSE</td>
@@ -202,11 +202,11 @@ A tabela a seguir descreve o comportamento que ocorre no Windows Server 2003 e s
         <td>Êxito</td>
         <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
         <td>Êxito</td>
         <td>Êxito</td>
@@ -225,9 +225,9 @@ A tabela a seguir descreve o comportamento que ocorre no Windows Server 2003 e s
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>ACCESS</td>
         <td>INUSE</td>
         <td>INUSE</td>
@@ -238,7 +238,7 @@ Algumas entradas na tabela acima da explicação de mérito.
 
 Por exemplo, se o primeiro chamador definir **, portanto, \_ EXCLUSIVEADDRUSE** em um endereço específico, e o segundo chamador tentar chamar [**BIND**](/windows/win32/api/winsock/nf-winsock-bind) com um endereço curinga na mesma porta, a segunda chamada de **ligação** terá sucesso. Nesse caso em particular, o segundo chamador é associado a todas as interfaces, exceto o endereço específico ao qual o primeiro chamador está associado. Observe que o inverso desse caso não é verdadeiro: se o primeiro conjunto de chamadas for **\_ EXCLUSIVEADDRUSE** e chamar **BIND** com o sinalizador curinga, o segundo chamador não poderá chamar **BIND** com a mesma porta.
 
-O comportamento de associação de soquete é alterado quando as chamadas de ligação de soquete são feitas em contas de usuário diferentes. A tabela a seguir especifica o comportamento que ocorre no Windows Server 2003 e sistemas operacionais posteriores quando um segundo soquete tenta se associar a um endereço associado anteriormente a um primeiro soquete usando opções de soquete específicas e uma conta de usuário diferente.
+O comportamento de associação de soquete é alterado quando as chamadas de ligação de soquete são feitas em contas de usuário diferentes. a tabela a seguir especifica o comportamento que ocorre no Windows Server 2003 e sistemas operacionais posteriores quando um segundo soquete tenta se associar a um endereço associado anteriormente a um primeiro soquete usando opções de soquete específicas e uma conta de usuário diferente.
 
 <table>
     <tr>
@@ -270,9 +270,9 @@ O comportamento de associação de soquete é alterado quando as chamadas de lig
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>ACCESS</td>
         <td>INUSE</td>
         <td>INUSE</td>
@@ -289,7 +289,7 @@ O comportamento de associação de soquete é alterado quando as chamadas de lig
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
         <td>Êxito</td>
         <td>Êxito</td>
@@ -308,9 +308,9 @@ O comportamento de associação de soquete é alterado quando as chamadas de lig
     </tr>
     <tr>
         <td bgcolor="#C0C0C0">Específicas</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>INUSE</td>
-        <td>Sucesso</td>
+        <td>Êxito</td>
         <td>ACCESS</td>
         <td>INUSE</td>
         <td>INUSE</td>
@@ -319,7 +319,7 @@ O comportamento de associação de soquete é alterado quando as chamadas de lig
 
 Observe que o comportamento padrão é diferente quando as chamadas de [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) são feitas em contas de usuário diferentes. Se o primeiro chamador não definir nenhuma opção no soquete e associar-se ao endereço curinga, o segundo chamador não poderá definir a opção for **\_ REUSEADDR** e se associar com êxito à mesma porta. O comportamento padrão sem opções definidas também retorna um erro.
 
-No Windows Vista e posterior, um soquete de pilha dual pode ser criado, que opera em IPv6 e IPv4. Quando um soquete de pilha dupla está associado ao endereço curinga, a porta fornecida é reservada nas pilhas de rede IPv4 e IPv6 e as verificações associadas a **\_ REUSEADDR** e **\_ EXCLUSIVEADDRUSE** (se definido) são feitas. Essas verificações devem ter sucesso em ambas as pilhas de rede. Por exemplo, se um soquete TCP de pilha dupla contiver **\_ EXCLUSIVEADDRUSE** e tentar se associar à porta 5000, nenhum outro soquete TCP poderá ser associado anteriormente à porta 5000 (curinga ou específico). Nesse caso, se um soquete TCP IPv4 tiver sido associado anteriormente ao endereço de loopback na porta 5000, a chamada de [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) para o soquete de pilha dupla falharia com [WSAEACCES](windows-sockets-error-codes-2.md).
+no Windows Vista e posterior, um soquete de pilha dual pode ser criado, que opera em IPv6 e IPv4. Quando um soquete de pilha dupla está associado ao endereço curinga, a porta fornecida é reservada nas pilhas de rede IPv4 e IPv6 e as verificações associadas a **\_ REUSEADDR** e **\_ EXCLUSIVEADDRUSE** (se definido) são feitas. Essas verificações devem ter sucesso em ambas as pilhas de rede. Por exemplo, se um soquete TCP de pilha dupla contiver **\_ EXCLUSIVEADDRUSE** e tentar se associar à porta 5000, nenhum outro soquete TCP poderá ser associado anteriormente à porta 5000 (curinga ou específico). Nesse caso, se um soquete TCP IPv4 tiver sido associado anteriormente ao endereço de loopback na porta 5000, a chamada de [**ligação**](/windows/win32/api/winsock/nf-winsock-bind) para o soquete de pilha dupla falharia com [WSAEACCES](windows-sockets-error-codes-2.md).
 
 ## <a name="application-strategies"></a>Estratégias de aplicativo
 
@@ -329,4 +329,4 @@ A **opção \_ REUSEADDR** tem muito poucos usos em aplicativos normais além do
 
 Todos os aplicativos de servidor devem definir **\_ EXCLUSIVEADDRUSE** para um nível forte de segurança de soquete. Isso não apenas impede que software mal-intencionado Capture a porta, mas também indica se outro aplicativo está associado ou não à porta solicitada. Por exemplo, uma chamada para [**ligar**](/windows/win32/api/winsock/nf-winsock-bind) o endereço curinga por um processo com o **\_ EXCLUSIVEADDRUSE** Socket Option Set falhará se outro processo estiver atualmente associado à mesma porta em uma interface específica.
 
-Por fim, embora a segurança de soquete tenha sido aprimorada no Windows Server 2003, um aplicativo sempre deve definir a opção de soquete **\_ EXCLUSIVEADDRUSE** para garantir que ele seja associado a todas as interfaces específicas que o processo solicitou. A segurança de soquete no Windows Server 2003 adiciona um nível maior de segurança para aplicativos herdados, mas os desenvolvedores de aplicativos ainda precisam projetar seus produtos com todos os aspectos da segurança em mente.
+por fim, embora a segurança de soquete tenha sido aprimorada no Windows Server 2003, um aplicativo sempre deve definir a opção de soquete **\_ EXCLUSIVEADDRUSE** para garantir que ele seja associado a todas as interfaces específicas que o processo solicitou. a segurança de soquete no Windows Server 2003 adiciona um nível maior de segurança para aplicativos herdados, mas os desenvolvedores de aplicativos ainda precisam projetar seus produtos com todos os aspectos de segurança em mente.

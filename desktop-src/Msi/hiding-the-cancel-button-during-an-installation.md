@@ -1,31 +1,31 @@
 ---
-description: Você pode ocultar o botão Cancelar que é usado para cancelar uma instalação usando uma opção de linha de comando, a API Windows Installer ou uma ação personalizada. O botão Cancelar pode ser ocultado para parte ou para toda a instalação, dependendo do método usado.
+description: Você pode ocultar o botão Cancelar usado para cancelar uma instalação usando uma opção de linha de comando, a API do instalador Windows ou uma ação personalizada. O botão Cancelar pode ser oculto para parte ou toda a instalação, dependendo do método usado.
 ms.assetid: de2bb788-0d19-4818-8038-cae6000b38c4
 title: Ocultando o botão Cancelar durante uma instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e55658bc69fe81b83b13d6c6ee7da84db77ad466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9b838803b65b8923dc45f36e17579e30114c1bc6d86c8fba2e533252e524568
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129526"
 ---
 # <a name="hiding-the-cancel-button-during-an-installation"></a>Ocultando o botão Cancelar durante uma instalação
 
-Você pode ocultar o botão **Cancelar** que é usado para cancelar uma instalação usando uma opção de linha de comando, a API Windows Installer ou uma ação personalizada. O botão **Cancelar** pode ser ocultado para parte ou para toda a instalação, dependendo do método usado.
+Você pode ocultar o **botão** Cancelar usado para cancelar uma instalação usando uma opção de linha de comando, a API do instalador Windows ou uma ação personalizada. O **botão** Cancelar pode ser oculto para parte ou toda a instalação, dependendo do método usado.
 
 ## <a name="hiding-the-cancel-button-from-the-command-line"></a>Ocultando o botão Cancelar da linha de comando
 
-O botão **Cancelar** pode ser ocultado durante a instalação usando a opção de linha de comando (!). Isso só pode ser feito para uma instalação básica no nível da interface do usuário (/QB). O botão **Cancelar** está oculto para toda a instalação. Para obter mais informações, consulte [Opções de linha de comando](command-line-options.md) e níveis de interface do [usuário](user-interface-levels.md). A linha de comando a seguir oculta o botão **Cancelar** e instala Example.msi.
+O **botão** Cancelar pode ser ocultado durante a instalação usando a opção de linha de comando (!). Isso só pode ser feito para uma instalação básica de nível de interface do usuário (/qb). O **botão** Cancelar fica oculto para toda a instalação. Para obter mais informações, consulte [Opções de linha de comando](command-line-options.md) e Interface do Usuário [níveis](user-interface-levels.md). A linha de comando a seguir oculta o **botão Cancelar** e instala Example.msi.
 
-**msiexec/I example.msi/QB!**
+**msiexec /I example.msi /qb!**
 
 ## <a name="hiding-the-cancel-button-from-an-application-or-script"></a>Ocultando o botão Cancelar de um aplicativo ou script
 
-Você pode escrever um aplicativo ou script para ocultar o botão **Cancelar** . Isso só pode ser feito para uma instalação básica no nível da interface do usuário para que o botão **Cancelar** fique oculto em toda a instalação.
+Você pode escrever um aplicativo ou script para ocultar o **botão** Cancelar. Isso só pode ser feito para uma instalação básica no nível da interface do usuário para que o **botão** Cancelar seja ocultado para toda a instalação.
 
-Para ocultar o botão de cancelamento de um aplicativo, defina INSTALLUILEVEL \_ HIDECANCEL ao chamar [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui). O exemplo a seguir oculta o botão **Cancelar** e instala Example.msi.
+Para ocultar o botão Cancelar de um aplicativo, de definido INSTALLUILEVEL \_ HIDECANCEL ao chamar [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui). O exemplo a seguir oculta o **botão Cancelar** e instala Example.msi.
 
 
 ```C++
@@ -49,7 +49,7 @@ return 0;
 
 
 
-Para ocultar o botão **Cancelar** do script, adicione msiUILevelHideCancel à propriedade [**UILevel**](installer-uilevel.md) do objeto do [**instalador**](installer-object.md). O exemplo de VBScript a seguir oculta o botão **Cancelar** e instala Example.msi.
+Para ocultar o **botão** Cancelar do script, adicione msiUILevelHideCancel à propriedade [**UILevel**](installer-uilevel.md) do [**Objeto do Instalador**](installer-object.md). O exemplo de VBScript a seguir oculta o **botão Cancelar** e instala Example.msi.
 
 
 ```VB
@@ -63,11 +63,11 @@ Installer.InstallProduct "example.msi"
 
 ## <a name="hiding-the-cancel-button-for-parts-of-an-installation-using-a-custom-action"></a>Ocultando o botão Cancelar para partes de uma instalação usando uma ação personalizada
 
-Sua instalação pode ocultar e reexibir o botão **Cancelar** durante partes de uma instalação enviando uma mensagem INSTALLMESSAGE \_ COMMONDATA usando uma ação personalizada de dll ou scripts. Para obter mais informações, consulte [bibliotecas de vínculo dinâmico](dynamic-link-libraries.md), [scripts](scripts.md), [ações personalizadas](custom-actions.md)e [envio de mensagens para Windows Installer usando o MsiProcessMessage](sending-messages-to-windows-installer-using-msiprocessmessage.md).
+Sua instalação pode ocultar e  desabocar o botão Cancelar durante partes de uma instalação enviando uma mensagem INSTALLMESSAGE COMMONDATA usando uma ação ou \_ scripts personalizados da DLL. Para obter mais informações, consulte [Bibliotecas](dynamic-link-libraries.md) [](custom-actions.md)de vínculo dinâmico, [scripts,](scripts.md)ações personalizadas e Enviar mensagens para o instalador Windows [usando o MsiProcessMessage](sending-messages-to-windows-installer-using-msiprocessmessage.md).
 
-Uma chamada para uma ação personalizada deve fornecer um registro. O campo 1 deste registro deve conter o valor 2 (dois) para especificar o botão **Cancelar** . O campo 2 deve conter o valor 0 ou 1. Um valor de 0 no campo 2 oculta o botão e um valor de 1 no campo 2 Reexibe o botão. Observe que alocar um registro de tamanho 2 com [**MsiCreateRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msicreaterecord) fornece os campos 0, 1 e 2.
+Uma chamada para uma ação personalizada deve fornecer um registro. O campo 1 desse registro deve conter o valor 2 (dois) para especificar o **botão** Cancelar. O campo 2 deve conter o valor 0 ou 1. Um valor de 0 no Campo 2 oculta o botão e um valor de 1 no Campo 2 desaloca o botão. Observe que alocar um registro de tamanho 2 com [**MsiCreateRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msicreaterecord) fornece os campos 0, 1 e 2.
 
-A ação personalizada de DLL de exemplo a seguir oculta o botão **Cancelar** .
+A ação personalizada da DLL de exemplo a seguir oculta o **botão** Cancelar.
 
 
 ```C++
@@ -95,7 +95,7 @@ UINT __stdcall HideCancelButton(MSIHANDLE hInstall)
 
 
 
-A ação personalizada do VBScript a seguir oculta o botão **Cancelar** .
+A ação personalizada do VBScript a seguir oculta o **botão** Cancelar.
 
 
 ```VB

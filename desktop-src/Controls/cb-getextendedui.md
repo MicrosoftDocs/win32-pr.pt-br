@@ -3,7 +3,7 @@ title: Mensagem de CB_GETEXTENDEDUI (WinUser. h)
 description: Determina se uma caixa de combinação tem a interface do usuário padrão ou a interface do usuário estendida.
 ms.assetid: 4f5580e0-68b1-4584-bf79-561fb8222fe0
 keywords:
-- Controles de CB_GETEXTENDEDUI de mensagens do Windows
+- controles de Windows de mensagem de CB_GETEXTENDEDUI
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94d90550bf341fc8586174c7ec57eb77fad08c59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05201b0986b114e97523716edacc6fe391908d3ed2841d36bf7578a6455f42a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089216"
 ---
 # <a name="cb_getextendedui-message"></a>\_Mensagem de GETEXTENDEDUI CB
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a caixa de combinação tiver a interface do usuário estendida, o valor de retorno será **true**; caso contrário, será **false**.
 
@@ -57,9 +57,9 @@ Por padrão, a tecla F4 é aberta ou fecha a lista e a seta para baixo altera a 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

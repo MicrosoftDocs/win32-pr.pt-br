@@ -18,12 +18,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 446444e09b0b6aff3e0ba8ca8b12cfbf6dc94128
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 0ce89287d969683b72eb6db6d352300ce5295852
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826064"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481162"
 ---
 # <a name="variable-syntax"></a>Sintaxe de Variável
 
@@ -39,82 +39,25 @@ Use as seguintes regras de sintaxe para declarar variáveis HLSL.
 
 <dl> <dt>
 
-<span id="Storage_Class_"></span><span id="storage_class_"></span><span id="STORAGE_CLASS_"></span>*Classe de \_ armazenamento* 
+<span id="Storage_Class_"></span><span id="storage_class_"></span><span id="STORAGE_CLASS_"></span>*\_Armazenamento Classe* 
 </dt> <dd>
 
-Modificadores opcionais de classe de armazenamento que dão ao compilador dicas sobre o escopo e o tempo de vida da variável; os modificadores podem ser especificados em qualquer ordem.
+Modificadores opcionais de classe de armazenamento que dão dicas do compilador sobre o escopo e o tempo de vida da variável; os modificadores podem ser especificados em qualquer ordem.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>extern</strong></td>
-<td>Marcar uma variável global como uma entrada externa para o sombreador; essa é a marcação padrão para todas as variáveis globais. Não pode ser combinado com <strong>estático.</strong></td>
-</tr>
-<tr class="even">
-<td><strong>nointerpolation</strong></td>
-<td>Não interpole as saídas de um sombreador de vértice antes de passá-las para um sombreador de pixel.</td>
-</tr>
-<tr class="odd">
-<td><strong>Preciso</strong></td>
-<td>A <strong>palavra-chave</strong> precisa quando aplicada a uma variável restringirá todos os cálculos usados para produzir o valor atribuído a essa variável das seguintes maneiras:
 
-*   Operações separadas são mantidas separadas. Por exemplo, em que uma operação mul e add pode ter sido mesclada em uma operação desarmada, <strong>a</strong> precisão força as operações a permanecerem separadas. Em vez disso, você deve usar explicitamente a função intrínseco intrínseco.
-*   A ordem das operações é mantida. Onde a ordem das instruções pode ter sido embaralhada para melhorar o desempenho, <strong>o precisa</strong> garante que o compilador preserve a ordem conforme gravado.
-*   As operações não seguras do IEEE são restritas. Em que o compilador pode ter usado operações matemáticas rápidas que não são contabilizar valores de NaN (não um número) e INF (infinito), a precisão força os requisitos de IEEE relativos aos valores NaN e INF a serem respeitados. <strong></strong> Sem <strong>precisão</strong>, essas otimizações e operações matemáticas não são seguras para IEEE.
-*   Qualificar uma variável <strong>precisa</strong> não faz operações que usam a variável <strong>precisa.</strong> Como <strong></strong> a precisão se propaga apenas para operações que <strong></strong>contribuem para os valores <strong>atribuídos</strong> à variável qualificada de precisão, fazer cálculos desejados com precisão pode ser complicado, portanto, recomendamos marcar as saídas do sombreador diretamente onde você as declara, seja em um campo de estrutura ou em um parâmetro de saída ou o tipo de retorno da função de entrada. <strong></strong>
+| Valor | Descrição | 
+|-------|-------------|
+| <strong>extern</strong> | Marcar uma variável global como uma entrada externa para o sombreador; essa é a marcação padrão para todas as variáveis globais. Não pode ser combinado com <strong>estático.</strong> | 
+| <strong>nointerpolation</strong> | Não interpole as saídas de um sombreador de vértice antes de passá-las para um sombreador de pixel. | 
+| <strong>Preciso</strong> | A <strong>palavra-chave</strong> precisa quando aplicada a uma variável restringirá todos os cálculos usados para produzir o valor atribuído a essa variável das seguintes maneiras:* Operações separadas são mantidas separadas. Por exemplo, em que uma operação mul e add pode ter sido mesclada em uma operação desarmada, <strong>a</strong> precisão força as operações a permanecerem separadas. Em vez disso, você deve usar explicitamente a função intrínseco.* A ordem das operações é mantida. Em que a ordem das instruções pode ter sido embaralhada para melhorar o <strong>desempenho,</strong> o compilador garante que a ordem preservada como escrita.* As operações não seguras do IEEE são restritas. Em que o compilador pode ter usado operações matemáticas rápidas que não são contabilizar valores de NaN (não um número) e INF (infinito), a precisão força os requisitos de IEEE relativos aos valores NaN e INF a serem respeitados. <strong></strong> Sem <strong>precisão</strong>, essas otimizações e operações matemáticas não <strong></strong> são seguras IEEE.* Qualificar uma variável precisa não faz operações que usam a variável <strong>precisa.</strong> Como <strong></strong> a precisão se propaga somente para operações que <strong></strong>contribuem para os valores <strong>atribuídos</strong> à variável qualificada de precisão, fazer cálculos desejados com precisão pode ser complicado, portanto, recomendamos marcar as saídas do sombreador diretamente onde você as declara, seja em um campo de estrutura ou em um parâmetro de saída ou o tipo de retorno da função de entrada. <strong></strong> A capacidade de controlar otimizações dessa maneira mantém a invariância de resultado para a variável de saída modificada desabilitando otimizações que podem afetar os resultados finais devido a diferenças nas diferenças de precisão acumuladas. É útil quando você deseja que sombreadores para mosaico mantenham as marcas de patch com água rígida ou que corresponderem aos valores de profundidade em várias passagens. [Código de exemplo:](https://github.com/microsoft/DirectXShaderCompiler/blob/master/tools/clang/test/HLSLFileCheck/hlsl/types/modifiers/precise/precise4.hlsl)```HLSLmatrix g_mWorldViewProjection;void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position){  // operation is precise because it contributes to the precise parameter OutPos  OutPos = mul( float4( InPos, 1.0 ), g_mWorldViewProjection );}``` | 
+| <strong>Compartilhado</strong> | Marcar uma variável para compartilhamento entre efeitos; essa é uma dica para o compilador. | 
+| <strong>groupshared</strong> | Marque uma variável para memória compartilhada de grupo de threads para sombreadores de computação. Em D3D10, o tamanho total máximo de todas as variáveis com a classe de armazenamento groupshared é de 16kb; em D3D11, o tamanho máximo é 32kb. Veja exemplos. | 
+| <strong>static</strong> | Marque uma variável local para que ela seja inicializada uma vez e persista entre chamadas de função. Se a declaração não incluir um inicializador, o valor será definido como zero. Uma variável global marcada <strong>como estática</strong> não é visível para um aplicativo. | 
+| <strong>uniforme</strong> | Marcar uma variável cujos dados são constantes durante a execução de um sombreador (como uma cor de material em um sombreador de vértice); as variáveis globais são <strong>consideradas uniformes</strong> por padrão. | 
+| <strong>volatile</strong> | Marcar uma variável que muda com frequência; essa é uma dica para o compilador. Esse modificador de classe de armazenamento se aplica somente a uma variável local.<br /><blockquote>[!Note]<br />Atualmente, o compilador HLSL ignora esse modificador de classe de armazenamento.</blockquote><br /> | 
 
-A capacidade de controlar otimizações dessa maneira mantém a invariância de resultado para a variável de saída modificada desabilitando otimizações que podem afetar os resultados finais devido a diferenças nas diferenças de precisão acumuladas. É útil quando você deseja que sombreadores para mosaico mantenham as marcas de patch com água rígida ou que corresponderem aos valores de profundidade em várias passagens.
-
-[Código de exemplo:](https://github.com/microsoft/DirectXShaderCompiler/blob/master/tools/clang/test/HLSLFileCheck/hlsl/types/modifiers/precise/precise4.hlsl) 
-```HLSL
-matrix g_mWorldViewProjection;
-void main(in float3 InPos : Position, out precise float4 OutPos : SV_Position)
-{
-  // operation is precise because it contributes to the precise parameter OutPos
-  OutPos = mul( float4( InPos, 1.0 ), g_mWorldViewProjection );
-}
-```
-</td>
-</tr>
-<tr class="even">
-<td><strong>Compartilhado</strong></td>
-<td>Marcar uma variável para compartilhamento entre efeitos; essa é uma dica para o compilador.</td>
-</tr>
-<tr class="odd">
-<td><strong>groupshared</strong></td>
-<td>Marque uma variável para memória compartilhada de grupo de threads para sombreadores de computação. Em D3D10, o tamanho total máximo de todas as variáveis com a classe de armazenamento groupshared é de 16kb; em D3D11, o tamanho máximo é 32kb. Veja exemplos.</td>
-</tr>
-<tr class="even">
-<td><strong>static</strong></td>
-<td>Marque uma variável local para que ela seja inicializada uma vez e persista entre chamadas de função. Se a declaração não incluir um inicializador, o valor será definido como zero. Uma variável global marcada <strong>como estática</strong> não é visível para um aplicativo.</td>
-</tr>
-<tr class="odd">
-<td><strong>uniforme</strong></td>
-<td>Marque uma variável cujos dados são constantes durante a execução de um sombreador (como uma cor de material em um sombreador de vértice); as variáveis globais são <strong>consideradas uniformes</strong> por padrão.</td>
-</tr>
-<tr class="even">
-<td><strong>volatile</strong></td>
-<td>Marcar uma variável que muda com frequência; essa é uma dica para o compilador. Esse modificador de classe de armazenamento se aplica somente a uma variável local.<br/>
-<blockquote>
-[!Note]<br />
-Atualmente, o compilador HLSL ignora esse modificador de classe de armazenamento.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -132,7 +75,7 @@ Modificador de tipo variável opcional.
 | Valor             | Descrição                                                                                                                                                                                                                                  |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **const**         | Marque uma variável que não pode ser alterada por um sombreador, portanto, ela deve ser inicializada na declaração de variável. As variáveis globais são **consideradas const** por padrão (suprir esse comportamento fornecendo o sinalizador /Gec ao compilador). |
-| **row \_ major**    | Marque uma variável que armazena quatro componentes em uma única linha para que possam ser armazenados em um único registro constante.                                                                                                                             |
+| **row \_ major**    | Marque uma variável que armazena quatro componentes em uma única linha para que eles possam ser armazenados em um único registro constante.                                                                                                                             |
 | **coluna \_ principal** | Marque uma variável que armazena quatro componentes em uma única coluna para otimizar a matemática da matriz.                                                                                                                                                         |
 
 
@@ -140,7 +83,7 @@ Modificador de tipo variável opcional.
  
 
 > [!Note]  
-> Se você não especificar um valor modificador de tipo, o compilador usará **a coluna \_ principal** como o valor padrão.
+> Se você não especificar um valor modificador de tipo, o compilador usará a **coluna \_ principal** como o valor padrão.
 
  
 
@@ -231,14 +174,14 @@ const float4 lightDirection = {0,0,1};
 O HLSL permite que threads de um sombreador de computação troquem valores por meio de memória compartilhada. O HLSL fornece primitivos de barreira, como [**GroupMemoryBaoryWithGroupSync**](groupmemorybarrierwithgroupsync.md)e assim por diante, para garantir a ordenação correta de leituras e gravações na memória compartilhada no sombreador e evitar a corrida de dados.
 
 > [!Note]  
-> O hardware executa threads em grupos (warpes ou ondulados) e a sincronização de barreira, às vezes, pode ser omitida para aumentar o desempenho quando apenas os threads que pertencem ao mesmo grupo estão corretos. Mas não é altamente recomendável essa omissão por esses motivos:
+> O hardware executa threads em grupos (distorções ou frontes de onda) e a sincronização de barreira às vezes pode ser omitida para aumentar o desempenho quando apenas os threads de sincronização que pertencem ao mesmo grupo estão corretos. Mas é altamente recomendável essa omissão por estes motivos:
 >
 > -   Essa omissão resulta em código não portátil, que pode não funcionar em algum hardware e não funciona em rasterizadores de software que normalmente executam threads em grupos menores.
-> -   As melhorias de desempenho que você pode atingir com essa omissão serão pequenas em comparação com a barreira de todos os threads.
+> -   As melhorias de desempenho que você pode obter com essa omissão serão secundárias em comparação com o uso da barreira de todos os threads.
 
  
 
-No Direct3D 10 não há sincronização de threads ao gravar em **groupshared**, portanto, isso significa que cada thread é limitado a um único local em uma matriz para gravação. Use o valor do sistema [ \_ GroupIndex VA](dx-graphics-hlsl-semantics.md) para indexar nessa matriz ao gravar para garantir que dois threads possam colidir. Em termos de leitura, todos os threads têm acesso a toda a matriz para leitura.
+No Direct3D 10, não há nenhuma sincronização de threads ao escrever em grupos **compartilhadas,** portanto, isso significa que cada thread está limitado a um único local em uma matriz para escrita. Use o [valor do sistema SV \_ GroupIndex](dx-graphics-hlsl-semantics.md) para indexar nessa matriz ao escrever para garantir que nenhum dois threads possam colidir. Em termos de leitura, todos os threads têm acesso a toda a matriz para leitura.
 
 
 ```

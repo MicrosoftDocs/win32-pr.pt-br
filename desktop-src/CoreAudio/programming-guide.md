@@ -4,12 +4,12 @@ ms.assetid: 825c7cd7-dc66-47b6-a1b6-d10101daebb3
 title: Guia de programação de áudio principal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02f02e27206c70cca69abf263cfa49dfd439c480
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: f2b8f65d0c5508cd821b49a42b4b89ea42859390913a30534319d5ef7c79224f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088386"
 ---
 # <a name="core-audio-programming-guide"></a>Guia de programação de áudio principal
 
@@ -26,11 +26,11 @@ Esta seção contém os seguintes tópicos.
 | [Dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md)                                                                       | Um dispositivo de ponto de extremidade de áudio é uma abstração de software que permite interações amigáveis com dispositivos de áudio, como microfones e alto-falantes.                                                              |
 | [Sessões de áudio](audio-sessions.md)                                                                                       | Uma sessão de áudio é uma abstração de software que permite que um cliente gerencie uma coleção de fluxos de áudio relacionados como uma única unidade.                                                                           |
 | [Controles de volume](volume-controls.md)                                                                                     | O sistema integra suas configurações de volume baseadas em políticas com as configurações de volume do usuário de maneira lógica e consistente.                                                                                      |
-| [Gerenciamento de Fluxo](stream-management.md)                                                                                 | A API de Sessão de Áudio do Windows (WASAPI) fornece a um cliente um conjunto completo de métodos para criar e gerenciar fluxos de áudio.                                                                             |
+| [Gerenciamento de Fluxo](stream-management.md)                                                                                 | A API Windows de Sessão de Áudio (WASAPI) fornece a um cliente um conjunto completo de métodos para criar e gerenciar fluxos de áudio.                                                                             |
 | [Topologias de dispositivo](device-topologies.md)                                                                                 | A API DeviceTopology permite que um cliente descubra os controles de áudio que estão ao longo dos vários caminhos de dados no hardware de áudio.                                                                          |
 | [Usando a interface IKsControl para acessar propriedades de áudio](using-the-ikscontrol-interface-to-access-audio-properties.md) | Um aplicativo de áudio especializado pode precisar usar a interface IKsControl para acessar as propriedades de um adaptador de áudio.                                                                                     |
-| [Interoperabilidade com APIs de áudio herdado](interoperability-with-legacy-audio-apis.md)                                     | Os principais recursos das PRINCIPAIS APIs de áudio no Windows Vista podem ser incorporados em aplicativos existentes que usam DirectSound, DirectShow e as funções de multimídia do Windows **waveOutXxx** e **waveInXxx.** |
-| [Som espacial](spatial-sound.md)                                                                                         | Fornece diretrizes para usar o Windows Sonic, a solução de nível de plataforma da Microsoft para suporte a som espacial no Xbox e no Windows, permitindo versões de áudio surround e elevação (acima ou abaixo do ouvinte). |
+| [Interoperabilidade com APIs de áudio herdado](interoperability-with-legacy-audio-apis.md)                                     | Os principais recursos das PRINCIPAIS APIs de áudio no Windows Vista podem ser incorporados em aplicativos existentes que usam o DirectSound, DirectShow e as funções **waveOutXxx** e **waveInXxx** multimídia do Windows. |
+| [Som espacial](spatial-sound.md)                                                                                         | Fornece diretrizes para usar Windows Sonic, a solução de nível de plataforma da Microsoft para suporte a som espacial no Xbox e no Windows, permitindo habilitando as habilitações de áudio surround e elevação (acima ou abaixo do ouvinte). |
 
 
 

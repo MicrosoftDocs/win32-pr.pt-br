@@ -1,7 +1,7 @@
 ---
-description: O método stat recupera informações estatísticas do objeto Stream.
+description: O método Stat recupera informações estatísticas do objeto de fluxo.
 ms.assetid: 7dfb59e9-143a-402e-990a-a2b35e6443dd
-title: 'Método IByteBuffer:: stat (Scardssp. h)'
+title: Método IByteBuffer::Stat (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: bbbf033fc9ad5a25b3bcf5c22028ac1237f46c14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd80b408765985b2e009b2e580eb1bf81b08cb5ea1f2e7aaa5ed628a76073a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127396"
 ---
-# <a name="ibytebufferstat-method"></a>Método IByteBuffer:: stat
+# <a name="ibytebufferstat-method"></a>Método IByteBuffer::Stat
 
-\[O método **stat** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A interface [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornece funcionalidade semelhante.\]
+\[O **método Stat** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A interface [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornece funcionalidade semelhante.\]
 
-O método **stat** recupera informações estatísticas do objeto Stream.
+O **método Stat** recupera informações estatísticas do objeto de fluxo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,27 +42,27 @@ HRESULT Stat(
 
 <dl> <dt>
 
-*pStatStg* \[ fora\]
+*pstatstg* \[ out\]
 </dt> <dd>
 
-Aponta para uma estrutura **STATSTRUCT** em que esse método coloca informações sobre este objeto de fluxo. Esse ponteiro será **nulo** se ocorrer um erro.
+Aponta para uma **estrutura STATSTRUCT** em que esse método coloca informações sobre esse objeto de fluxo. Esse ponteiro será **NULL** se ocorrer um erro.
 
 </dd> <dt>
 
-*grfStatFlag* \[ no\]
+*grfStatFlag* \[ Em\]
 </dt> <dd>
 
-Especifica que esse método não retorna alguns dos campos na estrutura **STATSTRUCT** , salvando assim uma operação de alocação de memória. Os valores são obtidos da enumeração [**STATFLAG**](/windows/win32/api/wtypes/ne-wtypes-statflag)
+Especifica que esse método não retorna alguns dos campos na estrutura **STATSTRUCT,** salvando assim uma operação de alocação de memória. Os valores são retirados da [**enumeração STATFLAG**](/windows/win32/api/wtypes/ne-wtypes-statflag)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um **HRESULT**. Um valor de S \_ OK indica que a chamada foi bem-sucedida.
+O valor de retorno é **um HRESULT.** Um valor de S \_ OK indica que a chamada foi bem-sucedida.
 
 ## <a name="remarks"></a>Comentários
 
-O método **IByteBuffer:: stat** recupera um ponteiro para a estrutura **STATSTRUCT** que contém informações sobre esse fluxo aberto.
+O **método IByteBuffer::Stat** recupera um ponteiro para a estrutura **STATSTRUCT** que contém informações sobre esse fluxo aberto.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,14 +90,14 @@ else
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scardssp. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                   |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IByteBuffer é definido como E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
+| IID<br/>                      | IID IByteBuffer é definido como \_ E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
 
 
 

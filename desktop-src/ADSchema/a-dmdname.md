@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b25684af133748ca73c8ace31b0471a5d1e0a787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 43650fdf846a605e3751ef16729295574321bacf9e67bc26c5a4c51d2e9a8da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085966"
 ---
 # <a name="dmd-name-attribute"></a>DMD-Name atributo
 
@@ -59,7 +59,7 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -80,7 +80,7 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -101,7 +101,7 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -109,7 +109,7 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classes usadas em        | [**DMD**](c-dmd.md)<br/> |
+| Classes usadas em        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classes usadas em        | [**DMD**](c-dmd.md)<br/> |
+| Classes usadas em        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classes usadas em        | [**DMD**](c-dmd.md)<br/> |
+| Classes usadas em        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classes usadas em        | [**DMD**](c-dmd.md)<br/> |
+| Classes usadas em        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Um nome usado para identificar a partição do esquema. Não usado pelo AD.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8C56                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classes usadas em        | [**DMD**](c-dmd.md)<br/> |
+| Classes usadas em        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

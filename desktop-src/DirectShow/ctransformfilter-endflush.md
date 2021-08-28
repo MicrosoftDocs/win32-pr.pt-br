@@ -1,7 +1,7 @@
 ---
-description: Método CTransformFilter. EndFlush – o método EndFlush termina uma operação de liberação.
+description: Método CTransformFilter.EndFlush – o método EndFlush encerra uma operação de liberação.
 ms.assetid: ebb6beec-84e2-49a7-9771-bbd191faada7
-title: Método CTransformFilter. EndFlush (Transfrm. h)
+title: Método CTransformFilter.EndFlush (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a4f38a6897443763f676951f193fab5606ad2a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 593ce39dbba6ccf90838b4847bb0a548b67e4785bb21d3f299882e1eecdf8394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083906"
 ---
-# <a name="ctransformfilterendflush-method"></a>Método CTransformFilter. EndFlush
+# <a name="ctransformfilterendflush-method"></a>Método CTransformFilter.EndFlush
 
 O `EndFlush` método encerra uma operação de liberação.
 
@@ -42,13 +42,13 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK ou outro valor **HRESULT** .
+Retorna S \_ OK ou outro valor **HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-No final de uma operação de liberação, o método [**CTransformInputPin:: EndFlush**](ctransforminputpin-endflush.md) do pino de entrada chama esse método. Esse método passa a `EndFlush` chamada downstream.
+No final de uma operação de liberação, o método [**CTransformInputPin::EndFlush**](ctransforminputpin-endflush.md) do pino de entrada chama esse método. Esse método passa a `EndFlush` chamada downstream.
 
-Se a classe derivada usar um thread de trabalho para fornecer amostras, ela deverá descartar todos os dados na fila antes de enviar a `EndFlush` chamada downstream. Para obter mais informações, consulte [fluxo de dados para os desenvolvedores de filtro](data-flow-for-filter-developers.md).
+Se a classe derivada usar um thread de trabalho para fornecer exemplos, ela deverá descartar todos os dados na fila antes de enviar a `EndFlush` chamada downstream. Para obter mais informações, consulte [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,12 +56,12 @@ Se a classe derivada usar um thread de trabalho para fornecer amostras, ela deve
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

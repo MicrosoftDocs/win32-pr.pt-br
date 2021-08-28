@@ -4,20 +4,20 @@ ms.assetid: ae1f8835-ef6c-42bb-b44f-ad374337a012
 title: typeInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa783a606066163fd8b17f53ef8a0fe2da44e539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a70c6eeaee63bcb99ee19217ccff5d3ff7086a2
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758362"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632164"
 ---
 # <a name="typeinfo"></a>typeInfo
 
-Especifica as informações de tipo de uma propriedade. Deve haver apenas um elemento [TypeInfo]() para cada [propertyDescription](./propdesc-schema-propertydescription.md). Esse elemento foi alterado para o Windows 7.
+Especifica as informações de tipo de uma propriedade. Deve haver apenas um elemento [TypeInfo]() para cada [propertyDescription](./propdesc-schema-propertydescription.md). este elemento foi alterado para Windows 7.
 
 Se houver vários elementos, o último será usado. Se nenhum elemento [TypeInfo]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-## <a name="syntax-for-windows-7"></a>Sintaxe do Windows 7
+## <a name="syntax-for-windows-7"></a>sintaxe para Windows 7
 
 
 ```
@@ -132,8 +132,8 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [TypeInfo
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -218,7 +218,7 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [TypeInfo
 <td>O valor deve ser um VT_BLOB, que são bytes de comprimento fixo.</td>
 </tr>
 <tr class="odd">
-<td>Stream</td>
+<td>STREAM</td>
 <td>O valor deve ser um VT_STREAM, que é um objeto que implementa <a href="/windows/desktop/api/objidl/nn-objidl-istream"><strong>IStream</strong></a>.</td>
 </tr>
 <tr class="even">
@@ -316,7 +316,7 @@ Uma propriedade cujo valor de <em>isInnate</em> é &quot; false &quot; (o que si
 <div>
  
 </div>
-<p>Embora esse atributo tenha sido introduzido no Windows Vista com Service Pack 1 (SP1), um arquivo. propDesc que inclui esse atributo é compatível com o Windows Vista antes do Windows Vista com SP1. O atributo <em>canBePurged</em> é simplesmente ignorado nessa situação.</p></td>
+<p>embora esse atributo tenha sido introduzido no Windows Vista com Service Pack 1 (SP1), um arquivo. propdesc que inclui esse atributo é compatível com o Windows vista antes do Windows vista com SP1. O atributo <em>canBePurged</em> é simplesmente ignorado nessa situação.</p></td>
 </tr>
 <tr class="odd">
 <td>multipleValues</td>
@@ -324,7 +324,7 @@ Uma propriedade cujo valor de <em>isInnate</em> é &quot; false &quot; (o que si
 </tr>
 <tr class="even">
 <td>isGroup</td>
-<td>Público. Opcional. O padrão é &quot;false&quot;. Especifica se a propriedade é um título de grupo. Um título de grupo é estritamente usado em proplistes, não tem valor, nunca é armazenado em um arquivo e também deve ter <typeInfo type=&quot;Null&quot;> . Algumas interfaces do usuário no sistema usam o proplistor para indicar a sequência das propriedades a serem exibidas. Essas proplistes podem incluir referências a títulos de grupo (por exemplo, System. propus. Camera), que dizem à interface do usuário para iniciar uma nova seção de grupo (por exemplo, &quot; configurações de câmera &quot; ). Uma descrição de propriedade com IsGroup = &quot; true &quot; deve especificar um <labelInfo label=&quot;Some localized label&quot;> , caso contrário, não é uma propriedade útil. Esse valor é mapeado para o sinalizador de PDTF_ISGROUP definido em <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usado em <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>Público. Opcional. O padrão é &quot;false&quot;. Especifica se a propriedade é um título de grupo. Um título de grupo é estritamente usado em proplistes, não tem valor, nunca é armazenado em um arquivo e também deve ter <typeInfo type=&quot;Null&quot;> . Algumas interfaces do usuário no sistema usam o proplistor para indicar a sequência das propriedades a serem exibidas. essas proplistes podem incluir referências a títulos de grupo (por exemplo, System. propus. Camera), que dizem à interface do usuário para iniciar uma nova seção de grupo (por exemplo, a &quot; câmera Configurações &quot; ). Uma descrição de propriedade com IsGroup = &quot; true &quot; deve especificar um <labelInfo label=&quot;Some localized label&quot;> , caso contrário, não é uma propriedade útil. Esse valor é mapeado para o sinalizador de PDTF_ISGROUP definido em <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usado em <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>aggregationType</td>
@@ -385,7 +385,7 @@ Uma propriedade cujo valor de <em>isInnate</em> é &quot; false &quot; (o que si
 </tr>
 <tr class="even">
 <td>isconsultáable</td>
-<td>Somente Windows Vista. Sem suporte no Windows 7 e posterior. Público. Opcional. O valor padrão é &quot;false&quot;. Especifica se esta propriedade deve estar disponível na interface do usuário do Construtor de Consultas de pesquisa. Uma propriedade deve ter isviewable = &quot; true &quot; antes de isconsultáable = &quot; true &quot; ser respeitada. Esse valor é mapeado para o sinalizador de PDTF_ISQUERYABLE definido em <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usado em <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
+<td>Windows Somente vista. sem suporte no Windows 7 e posterior. Público. Opcional. O valor padrão é &quot;false&quot;. Especifica se esta propriedade deve estar disponível na interface do usuário do Construtor de Consultas de pesquisa. Uma propriedade deve ter isviewable = &quot; true &quot; antes de isconsultáable = &quot; true &quot; ser respeitada. Esse valor é mapeado para o sinalizador de PDTF_ISQUERYABLE definido em <a href="/windows/win32/api/propsys/ne-propsys-propdesc_type_flags"><strong>PROPDESC_TYPE_FLAGS</strong></a> e usado em <a href="/windows/win32/api/propsys/nf-propsys-ipropertydescription-gettypeflags"><strong>IPropertyDescription:: GetTypeFlags</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td>searchRawValue</td>
@@ -393,7 +393,7 @@ Uma propriedade cujo valor de <em>isInnate</em> é &quot; false &quot; (o que si
 </tr>
 <tr class="even">
 <td>includeInFullTextQuery</td>
-<td>Somente Windows Vista. Sem suporte no Windows 7 e posterior. Público. Opcional. O valor padrão é &quot;false&quot;.</td>
+<td>Windows Somente vista. sem suporte no Windows 7 e posterior. Público. Opcional. O valor padrão é &quot;false&quot;.</td>
 </tr>
 <tr class="odd">
 <td>conditionType</td>

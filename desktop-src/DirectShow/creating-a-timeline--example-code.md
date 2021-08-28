@@ -4,21 +4,21 @@ ms.assetid: efe6e8d7-2465-4374-8c99-a410091f8d46
 title: 'Criando uma linha do tempo: código de exemplo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 877bd79b055171dfa5bd12cff0ae257d60e76a16
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 614d6e2dfa676b09bac2cc9c81fd67c795d73f61df2df4b603307943ac0ada71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105787395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108226"
 ---
 # <a name="creating-a-timeline-example-code"></a>Criando uma linha do tempo: código de exemplo
 
-\[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
+\[Essa API não tem suporte e pode ser alterada ou não disponível no futuro.\]
 
-O exemplo de código a seguir mostra como criar e visualizar uma linha do tempo nos [serviços de edição do DirectShow](directshow-editing-services.md).
+O exemplo de código a seguir mostra como criar e visualizar uma linha do tempo [DirectShow Editing Services](directshow-editing-services.md).
 
 > [!Note]  
-> Para fins de brevidade, o código de exemplo não executa nenhuma verificação de erro. Em um aplicativo real, você deve verificar os valores de retorno das chamadas de método para garantir que nenhum tenha falhado.
+> Por questão de brevidade, o código de exemplo não executa nenhuma verificação de erro. Em um aplicativo real, você deve verificar os valores de retorno das chamadas de método para verificar se nenhum falhou.
 
  
 

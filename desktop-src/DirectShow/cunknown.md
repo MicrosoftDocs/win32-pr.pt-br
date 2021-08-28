@@ -1,5 +1,5 @@
 ---
-description: A classe CUnknown implementa a interface IUnknown. A maioria dos objetos COM Component Object Model (COM) no DirectShow deriva de CUnknown.
+description: A classe CUnknown implementa a interface IUnknown. a maioria dos objetos COM Component Object Model (COM) no DirectShow deriva de CUnknown.
 ms.assetid: 9711d36b-6987-4fb0-a8df-eba94348dc7b
 title: Classe CUnknown (combase. h)
 ms.topic: reference
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4818a088119f7cba25ce8a470f63cab722998c45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06b6089f7f1c108a9b99ad4f1b16f4638b84d8d687a3590353c32841ccfff499
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075987"
 ---
 # <a name="cunknown-class"></a>Classe CUnknown
 
 ![hierarquia de classe CUnknown](images/cbase01.png)
 
-A classe **CUnknown** implementa a interface **IUnknown** . A maioria dos objetos COM Component Object Model (COM) no DirectShow deriva de **CUnknown**.
+A classe **CUnknown** implementa a interface **IUnknown** . a maioria dos objetos COM Component Object Model (COM) no DirectShow deriva de **CUnknown**.
 
 Se você implementar um objeto COM, talvez queira derivá-lo de **CUnknown**. A derivação de **CUnknown** fornece uma implementação thread-safe e economiza o problema de implementação de **IUnknown**.
 
@@ -61,7 +61,7 @@ Para obter uma discussão detalhada sobre como usar essa classe base, consulte [
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>combase. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
@@ -70,7 +70,7 @@ Para obter uma discussão detalhada sobre como usar essa classe base, consulte [
 
 <dl> <dt>
 
-[Classes base do DirectShow](directshow-base-classes.md)
+[DirectShow Classes base](directshow-base-classes.md)
 </dt> </dl>
 
  

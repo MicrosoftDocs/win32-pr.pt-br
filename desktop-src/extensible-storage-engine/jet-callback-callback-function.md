@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d50f0f3a0908b725d7f704df962324a0f16af1fc6f7353515a8d604e87edd0a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08d992d1e8b6ca7c6a987a57f44b48d6ba291328
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487609"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471162"
 ---
 # <a name="jet_callback-callback-function"></a>JET_CALLBACK de retorno de chamada
 
@@ -31,7 +31,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 A **JET_CALLBACK** é uma função de retorno de chamada de várias finalidades usada pelo mecanismo de banco de dados para informar a aplicação de um evento que envolve desfragmentação online e notificações de estado do cursor.
 
-Confira [JET_CBTYP](./jet-cbtyp.md) configurações específicas a ser usadas para os parâmetros dessa função, pois essas configurações serão diferentes dependendo da **opção JET_CBTYP** selecionada para uso no parâmetro *cbtyp.*
+Consulte [JET_CBTYP](./jet-cbtyp.md) configurações específicas a ser usadas para os parâmetros dessa função, pois essas configurações serão diferentes dependendo da **opção JET_CBTYP** selecionada para uso no parâmetro *cbtyp.*
 
 ```cpp
     JET_ERR JET_API* JET_CALLBACK(
@@ -82,7 +82,7 @@ Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chama
 
 #### <a name="return-value"></a>Valor Retornado
 
-A função retorna um dos códigos de erro [extensível Armazenamento Engine](./extensible-storage-engine-error-codes.md). Para obter informações sobre como retornar esses códigos como HRESULTs, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md). Em caso de êxito, a operação que emitiu o retorno de chamada pode continuar normalmente. Em alguns casos, o retorno de chamada pode retornar um aviso que influencia essa operação. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desses avisos pela operação.
+A função retorna um dos códigos [de erro extensível Armazenamento Mecanismo](./extensible-storage-engine-error-codes.md). Para obter informações sobre como retornar esses códigos como HRESULTs, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md). Em caso de êxito, a operação que emitiu o retorno de chamada pode continuar normalmente. Em alguns casos, o retorno de chamada pode retornar um aviso que influencia essa operação. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desses avisos pela operação.
 
 Em caso de falha, a operação que emitiu o retorno de chamada pode continuar normalmente ou pode falhar. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso do código de erro pela operação.
 
@@ -132,26 +132,9 @@ Ao projetar o retorno de chamada, leve em conta que, mesmo com essas restriçõe
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

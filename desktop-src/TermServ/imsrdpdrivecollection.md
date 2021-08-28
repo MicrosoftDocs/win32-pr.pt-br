@@ -4,8 +4,8 @@ description: Representa uma coleção de objetos de unidade.
 ms.assetid: 26926b85-021d-4678-845f-93ba62b2b4a3
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpDriveCollection
-- Serviços de Área de Trabalho Remota da interface IMsRdpDriveCollection, descrita
+- Interface IMsRdpDriveCollection Serviços de Área de Trabalho Remota
+- Interface IMsRdpDriveCollection Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7b2588ddb0945ba1fcab8fbb4c5b9b078a1af9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d9f85a491da97fe0093d9b02e8ceda59c3562f237d8678323078e2613250f28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125626"
 ---
 # <a name="imsrdpdrivecollection-interface"></a>Interface IMsRdpDriveCollection
 
@@ -29,7 +29,7 @@ Representa uma coleção de objetos de unidade.
 
 ## <a name="members"></a>Membros
 
-A interface **IMsRdpDriveCollection** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMsRdpDriveCollection** também tem estes tipos de membros:
+A interface **IMsRdpDriveCollection** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpDriveCollection** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
@@ -81,7 +81,7 @@ A interface **IMsRdpDriveCollection** tem essas propriedades.
 
 <dl> <dt>
 
-[Referência de Conexão Web de Área de Trabalho Remota](remote-desktop-web-connection-reference.md)
+[Conexão Web de Área de Trabalho Remota referência](remote-desktop-web-connection-reference.md)
 </dt> <dt>
 
 [**IMsRdpDrive**](imsrdpdrive.md)

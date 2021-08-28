@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, hiperlink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71547f37380aeb029e4f73f8d9b2286b285187ff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52735983429a60061a548bf4cce71b7b128f4b6e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635839"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466953"
 ---
 # <a name="hyperlink-control-type"></a>Tipo de controle de hiperlink
 
@@ -51,32 +51,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Hyperlink</li>
-</ul></td>
-<td><ul>
-<li>Hyperlink</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Hyperlink</li></ul> | <ul><li>Hyperlink</li></ul> | 
 
 
 
- 
+
+ 
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
@@ -99,7 +82,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -115,7 +98,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -129,24 +112,24 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 | [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId. |                                                                                                                            |
 | [**UIA \_ invocar \_ InvokedEventId**](uiauto-event-ids.md)                                                     |                                                                                                                            |
 | [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                 | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
+| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
-O tipo de controle hiperlink deve ser aplicado somente a um objeto que, quando clicado, faz com que a navegação ocorra; Ele não deve ser aplicado ao contêiner do hiperlink. Por exemplo, somente os "pontos de acesso" clicáveis dentro de um mapa de imagem devem ter o tipo de controle **Hyperlink** . O mesmo é verdadeiro para hiperlinks em um campo de texto ou contêiner de documento. Nesse caso, somente o texto ou a imagem do hiperlink deve ter o tipo de controle **Hyperlink** , não o contêiner.
+O tipo de controle Hiperlink deve ser aplicado somente a um objeto que, quando clicado, faz com que a navegação ocorra; ele não deve ser aplicado ao contêiner do hiperlink. Por exemplo, somente os "pontos de acesso" clicáveis dentro de um mapa de imagem devem ter o **tipo de controle Hiperlink.** O mesmo é verdadeiro para hiperlinks em um campo de texto ou contêiner de documento. Nesse caso, somente o texto ou a imagem de hiperlink deve ter o tipo de controle **Hiperlink,** não o contêiner.
 
-O padrão de controle de [texto](uiauto-implementingtextandtextrange.md) é ideal para dar suporte a hiperlinks inseridos em elementos de texto ou documento.
+O [padrão de](uiauto-implementingtextandtextrange.md) controle De texto é ideal para dar suporte a hiperlinks inseridos em elementos de texto ou documento.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -155,9 +138,9 @@ O padrão de controle de [texto](uiauto-implementingtextandtextrange.md) é idea
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

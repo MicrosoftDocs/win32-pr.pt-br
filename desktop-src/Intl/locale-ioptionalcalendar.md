@@ -1,23 +1,23 @@
 ---
-description: IOPTIONALCALENDAR de localidade \_
+description: LOCALE \_ IOPTIONALCALENDAR
 ms.assetid: a944bdfc-6c07-4e78-b4d2-a26d66f18327
 title: LOCALE_IOPTIONALCALENDAR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d44da351da95d0864f20af03aa669da4ea933bb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60e93d840f8811b3e770e09a9e9441bb2efa08db443a2e85e9751e8fac6ef61e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106526"
 ---
-# <a name="locale_ioptionalcalendar"></a>IOPTIONALCALENDAR de localidade \_
+# <a name="locale_ioptionalcalendar"></a>LOCALE \_ IOPTIONALCALENDAR
 
-Um tipo de calendário opcional que está disponível para uma localidade. O tipo de calendário pode representar apenas um calendário opcional que está disponível para a localidade correspondente. Para recuperar todos os calendários opcionais disponíveis para uma localidade, o aplicativo pode usar as seguintes funções NLS:
+Um tipo de calendário opcional que está disponível para uma localidade. O tipo de calendário só pode representar um calendário opcional que está disponível para a localidade correspondente. Para recuperar todos os calendários opcionais disponíveis para uma localidade, o aplicativo pode usar as seguintes funções NLS:
 
 -   [EnumCalendarInfo](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa)
 -   [EnumCalendarInfoEx](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa)
--   [EnumCalendarInfoExEx](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexex)
+-   [EnumCalendarInfoExExEx](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexex)
 
  
 
