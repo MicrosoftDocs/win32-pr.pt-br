@@ -4,12 +4,12 @@ ms.assetid: 0f1ff41f-7c4c-4516-bb55-bf09a8f2f3bc
 title: Gerenciando raízes de pesquisa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 758d3c10a4c69f336202274cd1fb40528848b0ddb431fd58646cf700d2b2d736
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9cbe5fe6184681e6c37cb0b6a7f9a35c677fec53
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095283"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880194"
 ---
 # <a name="managing-search-roots"></a>Gerenciando raízes de pesquisa
 
@@ -40,7 +40,7 @@ or
 
 
 
-O segmento deve ser seguido por duas (2) barras ('/'), a menos que seja o arquivo: protocolo, que requer três barras <protocol> (file:///). O segmento representa um armazenamento de conteúdo ou um identificador de segurança do usuário se a raiz da pesquisa <site or SID> deve ser específica para o usuário. O segmento é um conjunto de contêineres, como diretórios ou pastas, e pode incluir o <path> caractere curinga ' \* '. O <item> O segmento é opcional e também pode incluir o caractere curinga \* ' '. Se você não incluir um item, certifique-se de concluir o segmento de caminho com uma barra ou o indexador assumirá que o último subcontidor é um item.
+O segmento de protocolo deve ser seguido por duas &lt; (2) barras ('/'), a menos que seja o arquivo: protocolo, que requer três barras &gt; (file:///). O segmento representa um armazenamento de conteúdo ou um identificador de segurança do usuário se a raiz da pesquisa <site or SID> deve ser específica para o usuário. O segmento de caminho é um conjunto de contêineres, como diretórios ou pastas, e pode incluir o &lt; &gt; caractere curinga ' \* '. O &lt; segmento de item é opcional e também pode incluir o caractere &gt; curinga ' \* '. Se você não incluir um item, certifique-se de concluir o segmento de caminho com uma barra ou o indexador assumirá que o último subcontidor é um item.
 
 Por exemplo, suponha que você implementou um manipulador de protocolo (myPH) para manipular arquivos do tipo \* .myext para um aplicativo personalizado. Todos esses arquivos estarão localizados na pasta WorkteamA \\ ProjectFiles em um computador local. A raiz da pesquisa para que pode ter esta aparência:
 
@@ -79,7 +79,7 @@ Depois de fazer alterações no Gerenciador do Escopo de Rastreamento (CSM), voc
 
 ## <a name="windows-7-new-crawl-scope-manager-api"></a>Windows 7: Nova API de Gerenciador do Escopo de Rastreamento
 
-No **Windows 7 e** posteriores, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) estende a funcionalidade da interface [**ISearchCrawlScopeManager.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) O [**método ISearchCrawlScopeManager2::GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) obtém a versão Gerenciador do Escopo de Rastreamento (CSM), que informa aos clientes se o estado do CSM foi alterado. **ISearchCrawlScopeManager2::GetVersion** não resulta em uma chamada entre processos. Se a função for bem-sucedida, o ponteiro retornado permanecerá válido até que o cliente chama **UnmapViewOfFile** no ponteiro e **CloseHandle** no alça retornado.
+No **Windows 7 e** posterior, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) estende a funcionalidade da interface [**ISearchCrawlScopeManager.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) O [**método ISearchCrawlScopeManager2::GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) obtém a versão Gerenciador do Escopo de Rastreamento (CSM), que informa aos clientes se o estado do CSM foi alterado. **ISearchCrawlScopeManager2::GetVersion** não resulta em uma chamada entre processos. Se a função for bem-sucedida, o ponteiro retornado permanecerá válido até que o cliente chama **UnmapViewOfFile** no ponteiro e **CloseHandle** no alça retornado.
 
  
 
@@ -121,7 +121,7 @@ Para remover uma raiz de pesquisa existente, chame [**ISearchCrawlScopeManager::
 A remoção de uma raiz de pesquisa também remove a URL da interface do usuário para as opções Windows Search, portanto, os usuários podem não ser capazes de adicionar esse contêiner ou local usando a interface do usuário. Também é possível remover todas as substituições definidas pelo usuário de uma raiz de pesquisa e reverter para as regras de escopo e raiz de pesquisa originais. Para obter mais informações, consulte [Gerenciando regras de escopo](-search-3x-wds-extidx-csm-scoperules.md).
 
 > [!Note]  
-> No Windows Vista, se os usuários são removidos por meio de Perfis de Usuário no Painel de Controle, o CSM remove todas as regras e raízes com seu SID e remove seus itens indexados do catálogo. No Windows XP, você precisa remover as raízes e as regras dos usuários manualmente.
+> No Windows Vista, se os usuários são removidos por meio de Perfis de Usuário no Painel de Controle, o CSM remove todas as regras e raízes com seu SID e remove seus itens indexados do catálogo. No Windows XP, você precisa remover manualmente as raízes e as regras dos usuários.
 
  
 

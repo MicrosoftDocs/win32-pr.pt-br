@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff31d347e0ab6bedce29898c40451976e3a38990adebc7ae2396878bf726ce1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43c399b4ce63f84c41bcb2d65140356ac20a6ddd
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119061815"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479442"
 ---
 # <a name="glcopypixels-function"></a>função glCopyPixels
 
@@ -79,46 +79,13 @@ Especifica se **glCopyPixels** é para copiar valores de cor, valores de profund
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="GL_COLOR"></span><span id="gl_color"></span><dl> <dt><strong>GL_COLOR</strong></dt> </dl></td>
-<td>A função <strong>glCopyPixels</strong> lê índices ou cores RGBA do buffer especificado no momento como o buffer de origem de leitura (consulte <a href="glreadbuffer.md"><strong>glReadBuffer</strong></a>). <br/> Se OpenGL estiver no modo de índice de cor:<br/>
-<ol>
-<li>Cada índice lido desse buffer é convertido em um formato de ponto fixo com um número não especificado de bits à direita do ponto binário.</li>
-<li>Cada índice é deslocado para a esquerda por GL_INDEX_SHIFT bits e adicionado a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT for negativo, a mudança será à direita. Em ambos os casos, zero bits ocupam locais de bits não especificados no resultado.<br/></li>
-<li>Se GL_MAP_COLOR for true, o índice será substituído pelo valor que ele faz referência na tabela de pesquisa GL_PIXEL_MAP_I_TO_I.</li>
-<li>Se a substituição da pesquisa do índice for concluída ou não, a parte inteira do índice será, então, Ed com 2<em><sup>b</sup></em> 1 <strong>, em que</strong> <em>b</em> é o número de bits em um buffer de índice de cor.</li>
-</ol>
-Se OpenGL estiver no modo RGBA:<br/>
-<ol>
-<li>Os componentes vermelho, verde, azul e alfa de cada pixel lido são convertidos em um formato de ponto flutuante interno com precisão não especificada.</li>
-<li>A conversão mapeia o maior valor de componente representável para 1,0 e o valor de componente de zero a 0,0.</li>
-<li>Os valores de cor de ponto flutuante resultantes são então multiplicados por GL_c_SCALE e adicionados a GL_c_BIAS, em que <em>c</em> é vermelho, verde, azul e alfa para os respectivos componentes de cor.</li>
-<li>Os resultados são clamped para o intervalo [0, 1].</li>
-<li>Se GL_MAP_COLOR for true, cada componente de cor será dimensionado pelo tamanho da tabela de pesquisa GL_PIXEL_MAP_c_TO_c e, em seguida, substituído pelo valor referenciado nessa tabela; <em>c</em> é R, G, B ou A, respectivamente. Os índices resultantes ou as cores RGBA são então convertidas em fragmentos anexando as coordenadas de coordenadas <em>z</em>e de textura atuais a cada pixel e, em seguida, atribuindo coordenadas de janela (<em>x</em><sub>r</sub> + i, <em>y</em><sub>r</sub> + <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição atual da varredura e o pixel era o pixel na posição <em>i</em> na linha <em>j</em> . Esses fragmentos de pixel são tratados exatamente como os fragmentos gerados pela rasterização de pontos, linhas ou polígonos. O mapeamento de textura, a neblina e todas as operações de fragmento são aplicadas antes que os fragmentos sejam gravados no framebuffer.<br/></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><span id="GL_DEPTH"></span><span id="gl_depth"></span><dl> <dt><strong>GL_DEPTH</strong></dt> </dl></td>
-<td>Os valores de profundidade são lidos do buffer de profundidade e convertidos diretamente em um formato de ponto flutuante interno com precisão não especificada. O valor de profundidade de ponto flutuante resultante é então multiplicado por GL_DEPTH_SCALE e adicionado ao GL_DEPTH_BIAS. O resultado é clamped para o intervalo [0, 1]. <br/> Os componentes de profundidade resultantes são então convertidos em fragmentos anexando a cor atual da posição de rasterização ou o índice de cor e as coordenadas de textura a cada pixel e, em seguida, atribuindo coordenadas de janela (<em>x</em><sub>r</sub> + i, <em>y</em><sub>r</sub> + <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição atual <em></em> da varredura, e o pixel era o pixel na posição <em>i</em> Esses fragmentos de pixel são tratados exatamente como os fragmentos gerados pela rasterização de pontos, linhas ou polígonos. O mapeamento de textura, a neblina e todas as operações de fragmento são aplicadas antes que os fragmentos sejam gravados no framebuffer.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="GL_STENCIL"></span><span id="gl_stencil"></span><dl> <dt><strong>GL_STENCIL</strong></dt> </dl></td>
-<td>Os índices de estêncil são lidos do buffer de estêncil e convertidos em um formato de ponto fixo interno com um número não especificado de bits à direita do ponto binário. Cada índice de ponto fixo é então deslocado para a esquerda por GL_INDEX_SHIFT bits e adicionado ao GL_INDEX_OFFSET. Se GL_INDEX_SHIFT for negativo, a mudança será à direita. Em ambos os casos, zero bits ocupam locais de bits não especificados no resultado. Se GL_MAP_STENCIL for true, o índice será substituído pelo valor que ele faz referência na tabela de pesquisa GL_PIXEL_MAP_S_TO_S. Se a substituição da pesquisa do índice for concluída ou não, a parte inteira do índice será <strong>, então,</strong>Ed com 2<sup>b</sup> - 1, em que <em>b</em> é o número de bits no buffer do estêncil. Os índices de estêncil resultantes são gravados no buffer do estêncil, de modo que o índice lido do local <em>i</em> da linha <em>j</em> seja gravado no local (<em>x</em><sub>r</sub> + <em>i</em>, <em>y</em><sub>r</sub> + <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição atual da varredura. Somente o teste de propriedade de pixel, o teste de tesoura e o estêncil writemask afetam essas gravações.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="GL_COLOR"></span><span id="gl_color"></span><dl><dt><strong>GL_COLOR</strong></dt></dl> | A função <strong>glCopyPixels</strong> lê índices ou cores RGBA do buffer especificado no momento como o buffer de origem de leitura (consulte <a href="glreadbuffer.md"><strong>glReadBuffer</strong></a>). <br /> Se OpenGL estiver no modo de índice de cor:<br /><ol><li>Cada índice lido desse buffer é convertido em um formato de ponto fixo com um número não especificado de bits à direita do ponto binário.</li><li>Cada índice é deslocado para a esquerda por GL_INDEX_SHIFT bits e adicionado a GL_INDEX_OFFSET. Se GL_INDEX_SHIFT for negativo, a mudança será à direita. Em ambos os casos, zero bits ocupam locais de bits não especificados no resultado.<br /></li><li>Se GL_MAP_COLOR for true, o índice será substituído pelo valor que ele faz referência na tabela de pesquisa GL_PIXEL_MAP_I_TO_I.</li><li>Se a substituição da pesquisa do índice for concluída ou não, a parte inteira do índice será, então, Ed com 2<em><sup>b</sup></em> 1 <strong>, em que</strong> <em>b</em> é o número de bits em um buffer de índice de cor.</li></ol>Se OpenGL estiver no modo RGBA:<br /><ol><li>Os componentes vermelho, verde, azul e alfa de cada pixel lido são convertidos em um formato de ponto flutuante interno com precisão não especificada.</li><li>A conversão mapeia o maior valor de componente representável para 1,0 e o valor de componente de zero a 0,0.</li><li>Os valores de cor de ponto flutuante resultantes são então multiplicados por GL_c_SCALE e adicionados a GL_c_BIAS, em que <em>c</em> é vermelho, verde, azul e alfa para os respectivos componentes de cor.</li><li>Os resultados são clamped para o intervalo [0, 1].</li><li>Se GL_MAP_COLOR for true, cada componente de cor será dimensionado pelo tamanho da tabela de pesquisa GL_PIXEL_MAP_c_TO_c e, em seguida, substituído pelo valor referenciado nessa tabela; <em>c</em> é R, G, B ou A, respectivamente. Os índices resultantes ou as cores RGBA são então convertidas em fragmentos anexando as coordenadas de coordenadas <em>z</em>e de textura atuais a cada pixel e, em seguida, atribuindo coordenadas de janela (<em>x</em><sub>r</sub> + i, <em>y</em><sub>r</sub>  +  <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição de rasterização atual, <em></em> e o pixel era o pixel na posição <em>j</em> da l. Esses fragmentos de pixel são tratados exatamente como os fragmentos gerados pela rasterização de pontos, linhas ou polígonos. O mapeamento de textura, a neblina e todas as operações de fragmento são aplicadas antes que os fragmentos sejam gravados no framebuffer.<br /></li></ol> | 
+| <span id="GL_DEPTH"></span><span id="gl_depth"></span><dl><dt><strong>GL_DEPTH</strong></dt></dl> | Os valores de profundidade são lidos do buffer de profundidade e convertidos diretamente em um formato de ponto flutuante interno com precisão não especificada. O valor de profundidade de ponto flutuante resultante é então multiplicado por GL_DEPTH_SCALE e adicionado ao GL_DEPTH_BIAS. O resultado é clamped para o intervalo [0, 1]. <br /> Os componentes de profundidade resultantes são então convertidos em fragmentos anexando a cor atual da posição de varredura ou as coordenadas de textura e índice de cor a cada pixel, em seguida, atribuindo coordenadas de janela (<em>x</em><sub>r</sub> + i, <em>y</em><sub>r</sub>  +  <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição <em></em> atual da rasterização e o pixel era o pixel na posição <em>j</em> na linha Esses fragmentos de pixel são tratados exatamente como os fragmentos gerados pela rasterização de pontos, linhas ou polígonos. O mapeamento de textura, a neblina e todas as operações de fragmento são aplicadas antes que os fragmentos sejam gravados no framebuffer.<br /> | 
+| <span id="GL_STENCIL"></span><span id="gl_stencil"></span><dl><dt><strong>GL_STENCIL</strong></dt></dl> | Os índices de estêncil são lidos do buffer de estêncil e convertidos em um formato de ponto fixo interno com um número não especificado de bits à direita do ponto binário. Cada índice de ponto fixo é então deslocado para a esquerda por GL_INDEX_SHIFT bits e adicionado ao GL_INDEX_OFFSET. Se GL_INDEX_SHIFT for negativo, a mudança será à direita. Em ambos os casos, zero bits ocupam locais de bits não especificados no resultado. Se GL_MAP_STENCIL for true, o índice será substituído pelo valor que ele faz referência na tabela de pesquisa GL_PIXEL_MAP_S_TO_S. Se a substituição da pesquisa do índice for concluída ou não, a parte inteira do índice será <strong>, então,</strong>Ed com 2<sup>b</sup> -1, onde <em>b</em> é o número de bits no buffer do estêncil. Os índices de estêncil resultantes são gravados no buffer do estêncil, de modo que o índice lido do local <em>i</em> da linha <em>j</em> seja gravado no local (<em>x</em><sub>r</sub>  +  <em>i</em>, <em>y</em><sub>r</sub>  +  <em>j</em>), em que (<em>x</em><sub>r</sub> , <em>y</em><sub>r</sub> ) é a posição atual da varredura. Somente o teste de propriedade de pixel, o teste de tesoura e o estêncil writemask afetam essas gravações.<br /> | 
+
 
 
 
@@ -188,8 +155,8 @@ Para copiar o pixel de cor no canto inferior esquerdo da janela para a posição
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

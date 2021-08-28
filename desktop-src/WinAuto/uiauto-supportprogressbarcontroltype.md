@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, ProgressBar
 ms.topic: article
 ms.date: 12/04/2019
-ms.openlocfilehash: 98be22a4a3d3b99e113d3c0d1402f2c45ee25550
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: 5dc5dd22abcaca70ae9ce86717db6055642a21ce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "104084297"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472292"
 ---
 # <a name="progressbar-control-type"></a>Tipo de controle ProgressBar
 
@@ -48,28 +48,11 @@ Este tópico inclui as seções a seguir.
 
 A tabela a seguir descreve um controle típico e a exibição de conteúdo da árvore de automação da interface do usuário que pertence aos controles de barra de progresso e descreve o que pode ser contido em cada exibição. Para obter mais informações sobre a árvore de automação da interface do usuário, consulte [visão geral da árvore de automação da IU](uiauto-treeoverview.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ProgressBar</li>
-</ul></td>
-<td><ul>
-<li>ProgressBar</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>ProgressBar</li></ul> | <ul><li>ProgressBar</li></ul> | 
+
 
 Os controles da barra de progresso não têm nenhum filho na exibição de controle ou de conteúdo da árvore de automação da interface do usuário.
 
@@ -92,7 +75,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -103,44 +86,44 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 | Propriedade padrão de controle/padrão                              | Suporte/valor | Observações                                                                                                                                      |
 |---------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)     | Depende       | Os controles de barra de progresso que usam um intervalo numérico devem implementar o padrão de controle [RangeValue](uiauto-implementingrangevalue.md) .        |
-| [**Máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Depende           | O valor dessa propriedade é o valor mínimo para o qual o controle pode ser definido. Esse valor deve ser menor que o [**máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum).                                                      |
-| [**Maior**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Depende         | O valor dessa propriedade é o valor máximo para o qual o controle pode ser definido. Esse valor deve ser maior que o [**mínimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum).                                                        |
+| [**Mínimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Depende           | O valor dessa propriedade é o valor mínimo para o qual o controle pode ser definido. Esse valor deve ser menor que o [**máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum).                                                      |
+| [**Máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Depende         | O valor dessa propriedade é o valor máximo para o qual o controle pode ser definido. Esse valor deve ser maior que o [**mínimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum).                                                        |
 | [**SmallChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | **NaN**       | Essa propriedade não é necessária porque os controles de barra de progresso são somente leitura.                                                                 |
 | [**LargeChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | **NaN**       | Essa propriedade não é necessária porque os controles de barra de progresso são somente leitura.                                                                 |
-| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)               | Depende       | Os controles de barra de progresso que fornecem uma indicação textual do progresso devem implementar o padrão de controle de [valor](uiauto-implementingvalue.md) . |
-| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_isreadonly)        | **TRUE**      | O valor dessa propriedade é sempre **verdadeiro**.                                                                                            |
+| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)               | Depende       | Controles de barra de progresso que dão uma indicação textual de progresso devem implementar o [padrão de controle](uiauto-implementingvalue.md) Valor. |
+| [**IsReadOnly**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_isreadonly)        | **TRUE**      | O valor dessa propriedade é sempre **TRUE.**                                                                                            |
 | [**Valor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_value)                  | Consulte observações.    | Essa propriedade expõe o progresso textual de um controle de barra de progresso.                                                                          |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário para os quais as barras de progresso são necessárias para dar suporte. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que as barras de progresso são necessárias para dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                   | Observações                                                                                                                      |
+| Automação da Interface do Usuário evento                                                                                                                   | Observações                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                 | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade NamePropertyId.                           |                                                                                                                            |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade. |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                 | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.             | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento de alteração de propriedade NamePropertyId.**](uiauto-automation-element-propids.md)                           |                                                                                                                            |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade RangeValueValuePropertyId.        | Se o controle der suporte ao padrão de controle [RangeValue](uiauto-implementingrangevalue.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ValueValuePropertyId.                  | Se o controle der suporte ao padrão de controle de [valor](uiauto-implementingvalue.md) , ele deverá dar suporte a esse evento.             |
+| [**UIA \_ Evento de alteração de propriedade RangeValueValuePropertyId.**](uiauto-control-pattern-propids.md)        | Se o controle for compatível com o padrão de controle [RangeValue,](uiauto-implementingrangevalue.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade ValueValuePropertyId**](uiauto-control-pattern-propids.md) alterado.                  | Se o controle for compatível [com o padrão de](uiauto-implementingvalue.md) controle Valor, ele deverá dar suporte a esse evento.             |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -149,9 +132,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário para 
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

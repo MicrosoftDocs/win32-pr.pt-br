@@ -21,18 +21,18 @@ keywords:
 - tipos de controle, árvore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4679af32f974cd1611cbd31c71e66db62631391
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ea7ac6330428c2e79fca1e9a51d4ca0f7c63e8a7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007986"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472842"
 ---
 # <a name="tree-control-type"></a>Tipo de controle de árvore
 
 Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle de **árvore** .
 
-O tipo de controle de **árvore** é usado para contêineres cujo conteúdo tem relevância como uma hierarquia de nós, assim como no modo como os arquivos e pastas são exibidos no painel esquerdo do Windows Explorer. Cada nó tem o potencial de conter outros nós, chamados de nós filho. Nós pai ou nós que contêm nós filhos podem ser exibidos como expandidos ou recolhidos. O controle de exibição de árvore do Windows (conforme identificado por [**WC \_ TreeView**](/windows/desktop/Controls/common-control-window-classes)) é um exemplo de um controle que pertence ao tipo de controle **Tree** .
+o tipo de controle de **árvore** é usado para contêineres cujo conteúdo tem relevância como uma hierarquia de nós, assim como no modo como os arquivos e pastas são exibidos no painel esquerdo do Windows Explorer. Cada nó tem o potencial de conter outros nós, chamados de nós filho. Nós pai ou nós que contêm nós filhos podem ser exibidos como expandidos ou recolhidos. o controle de exibição de árvore Windows (conforme identificado por [**WC \_ TREEVIEW**](/windows/desktop/Controls/common-control-window-classes)) é um exemplo de um controle que pertence ao tipo de controle **tree** .
 
 As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle de **árvore** . Os requisitos de automação da interface do usuário se aplicam a todos os controles de item de árvore onde a estrutura/plataforma da interface do usuário integra o suporte de automação da interface do usuário para tipos de controle
 
@@ -50,53 +50,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Árvore
-<ul>
-<li>DataItem (0 ou mais)</li>
-<li>TreeItem (0 ou mais)
-<ul>
-<li>TreeItem (0 ou mais)
-<ul>
-<li>...</li>
-</ul></li>
-</ul></li>
-<li>ScrollBar (0, 1, 2)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Árvore
-<ul>
-<li>DataItem (0 ou mais)</li>
-<li>TreeItem (0 ou mais)
-<ul>
-<li>TreeItem (0 ou mais)
-<ul>
-<li>...</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Árvore<ul><li>DataItem (0 ou mais)</li><li>TreeItem (0 ou mais)<ul><li>TreeItem (0 ou mais)<ul><li>...</li></ul></li></ul></li><li>ScrollBar (0, 1, 2)</li></ul></li></ul> | <ul><li>Árvore<ul><li>DataItem (0 ou mais)</li><li>TreeItem (0 ou mais)<ul><li>TreeItem (0 ou mais)<ul><li>...</li></ul></li></ul></li></ul></li></ul> | 
 
 
 
- 
+
+ 
 
 A exibição de controle da árvore de automação da interface do usuário consiste em:
 
@@ -126,7 +88,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -137,44 +99,44 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 | Propriedade padrão de controle/padrão                                             | Suporte/valor | Observações                                                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)                            | Depende       | Implemente o padrão de controle [Scroll](uiauto-implementingscroll.md) se os itens no contêiner de árvore puderem ser rolados.                                                                                                                 |
-| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                      | Depende       | Os controles de árvore que contêm um conjunto de itens selecionáveis devem implementar o padrão de controle [Selection](uiauto-implementingselection.md) . Ele não precisa ser implementado se a seleção de um item não transmite nenhuma informação significativa ao usuário. |
-| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple)     | Consulte observações.    | Implemente esta propriedade se o controle de árvore der suporte a seleção múltipla (a maioria dos controles de árvore não oferece suporte para seleção múltipla).                                                                                                       |
-| [**IsSelectionRequired**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired) | Consulte observações.    | O valor dessa propriedade será exposto se o controle exigir que um item seja selecionado.                                                                                                                                               |
+| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                      | Depende       | Os controles de árvore que contêm um conjunto de itens selecionáveis devem implementar o [padrão de controle](uiauto-implementingselection.md) Seleção. Ele não precisará ser implementado se a seleção de um item não transmitir informações significativas para o usuário. |
+| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple)     | Consulte observações.    | Implemente essa propriedade se o controle de árvore for compatível com várias seleções (a maioria dos controles de árvore não dá suporte a várias seleções).                                                                                                       |
+| [**Isselectionrequired**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired) | Consulte observações.    | O valor dessa propriedade será exposto se o controle exigir que um item seja selecionado.                                                                                                                                               |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário aos quais todos os controles de árvore devem dar suporte. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que todos os controles de árvore devem dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                                        | Observações                                                                                                                      |
+| Automação da Interface do Usuário evento                                                                                                                                        | Observações                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                           |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId.                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                                      | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.                                  | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollHorizontallyScrollablePropertyId.   | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollHorizontalScrollPercentPropertyId. | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollHorizontalViewSizePropertyId.           | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollVerticalScrollPercentPropertyId.     | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollVerticallyScrollablePropertyId.       | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ScrollVerticalViewSizePropertyId.               | Se o controle der suporte ao padrão de controle [Scroll](uiauto-implementingscroll.md) , ele deverá dar suporte a esse evento.           |
-| [**\_InvalidatedEventId de seleção de UIA \_**](uiauto-event-ids.md)                                                            | Se o controle der suporte ao padrão de controle [Selection](uiauto-implementingselection.md) , ele deverá dar suporte a esse evento.     |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade.                      |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                                      | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.                                  | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento de propriedade ScrollHorizontallyScrollablePropertyId**](uiauto-control-pattern-propids.md) alterado.   | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de alteração de propriedade ScrollHorizontalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md) | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de propriedade ScrollHorizontalViewSizePropertyId**](uiauto-control-pattern-propids.md) alterado.           | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de propriedade ScrollVerticalScrollPercentPropertyId**](uiauto-control-pattern-propids.md) alterado.     | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de propriedade ScrollVerticallyScrollablePropertyId**](uiauto-control-pattern-propids.md) alterado.       | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**UIA \_ Evento de propriedade ScrollVerticalViewSizePropertyId**](uiauto-control-pattern-propids.md) alterado.               | Se o controle for compatível com o padrão de controle [Scroll,](uiauto-implementingscroll.md) ele deverá dar suporte a esse evento.           |
+| [**Seleção de UIA \_ \_ InvalidatedEventId**](uiauto-event-ids.md)                                                            | Se o controle for compatível [com o padrão de](uiauto-implementingselection.md) controle Seleção, ele deverá dar suporte a esse evento.     |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -183,6 +145,6 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-title: Como indexar vários fluxos de saída
-description: No sombreador modelo 5, um sombreador Geometry pode dar suporte a até quatro fluxos separados. Isso significa que um único sombreador pode gerar uma saída entre um e quatro fluxos de saída, dependendo do número de fluxos declarados.
+title: Como indexar várias saídas Fluxos
+description: No modelo de sombreador 5, um sombreador de geometria pode dar suporte a até 4 fluxos separados. Isso significa que um único sombreador pode ser produzido entre um e quatro fluxos de saída, dependendo do número de fluxos declarados.
 ms.assetid: 2ddde992-6746-4033-9190-bde7d7b14add
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f8564917be9565e862043e370840f8ac7280f174
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37aefd8b7cdcab05515bda6f81fa6c679751dc95
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004991"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473392"
 ---
-# <a name="how-to-index-multiple-output-streams"></a>Como: indexar vários fluxos de saída
+# <a name="how-to-index-multiple-output-streams"></a>Como indexar várias saídas Fluxos
 
-No sombreador modelo 5, um sombreador Geometry pode dar suporte a até quatro fluxos separados. Isso significa que um único sombreador pode gerar uma saída entre um e quatro fluxos de saída, dependendo do número de fluxos declarados.
+No modelo de sombreador 5, um sombreador de geometria pode dar suporte a até 4 fluxos separados. Isso significa que um único sombreador pode ser produzido entre um e quatro fluxos de saída, dependendo do número de fluxos declarados.
 
 Para indexar vários fluxos de saída
 
@@ -38,7 +38,7 @@ Para indexar vários fluxos de saída
 
     
 
-3.  Dados de saída para (ou ambos) fluxos usando as funções intrínsecas do objeto de saída de fluxo (como Append ou RestartStrip).
+3.  Dados de saída para fluxos (ou ambos) usando as funções intrínsecas do objeto de saída de fluxo (como Append ou RestartStrip).
 
     ```
     void MyGS( 
@@ -55,37 +55,19 @@ Para indexar vários fluxos de saída
 
     
 
-Ao usar um único fluxo de saída, você pode emitir faixas de triângulo, faixas de linha ou listas de pontos. Quando você armazena as faixas de triângulo e de linha no buffer de saída de fluxo, elas são expandidas para listas de linhas e triângulos, respectivamente. Você também pode rasterizar um fluxo e não enviá-lo para um buffer de memória.
+Ao usar um único fluxo de saída, você pode emitir faixas de triângulo, faixas de linha ou listas de pontos. Quando você armazena as faixas de triângulo e linha no buffer de saída do fluxo, elas são expandidas para listas de triângulos e linhas, respectivamente. Você também pode rasterizar um fluxo e não enviá-lo para um buffer de memória.
 
 Ao usar vários fluxos de saída, todos os fluxos devem conter pontos e até um fluxo de saída pode ser enviado para o rasterizador. Mais comumente, um aplicativo não rasterizará nenhum fluxo.
 
-Depois de transmitir dados para um buffer, você pode usar esses dados para renderizar qualquer tipo primitivo, não apenas o tipo primitivo que você usou para preencher o buffer.
+Depois de transmitir dados para um buffer, você pode usar esses dados para renderizar qualquer tipo primitivo, não apenas o tipo primitivo usado para preencher o buffer.
 
-A saída total do sombreador Geometry é limitada a 1024 escalares. Quando há vários fluxos, o número de escalares é computado do maior tipo de fluxo multiplicado pela contagem máxima de vértices.
+A saída total do sombreador de geometria é limitada a 1024 escalares. Quando existem vários fluxos, o número de escalares é calculado do maior tipo de fluxo multiplicado pela contagem máxima de vértices.
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferenças entre o modelo de sombreador 4 e o modelo de sombreador 5:<br/> Modelo do sombreador 4:<br/>
-<ul>
-<li>O número máximo de escalares para a saída do fluxo é 64.</li>
-<li>A máscara de registro por componente deve corresponder ao intervalo de índice.</li>
-</ul>
-Modelo do sombreador 5:<br/>
-<ul>
-<li>O número máximo de escalares para a saída do fluxo é 128.</li>
-<li>A máscara de registro por componente não precisa corresponder ao intervalo de índice.</li>
-<li>A indexação dinâmica de saídas deve ser válida em todos os fluxos.</li>
-<li>Os modos de interpolação não precisam corresponder aos fluxos.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferenças entre o modelo de sombreador 4 e o modelo de sombreador 5:<br /> Modelo de sombreador 4:<br /><ul><li>O número máximo de escalares para a saída de fluxo é 64.</li><li>A máscara de registro por componente deve corresponder ao intervalo de índice.</li></ul>Modelo de sombreador 5:<br /><ul><li>O número máximo de escalares para a saída de fluxo é 128.</li><li>A máscara de registro por componente não precisa corresponder no intervalo de índice.</li><li>A indexação dinâmica de saídas deve ser legal em todos os fluxos.</li><li>Os modos de interpolação não precisam corresponder aos fluxos.</li></ul> | 
+
 
 
 
@@ -95,7 +77,7 @@ Modelo do sombreador 5:<br/>
 
 <dl> <dt>
 
-[Recursos do sombreador de geometria](overviews-direct3d-11-hlsl-gs-features.md)
+[Recursos de sombreador de geometria](overviews-direct3d-11-hlsl-gs-features.md)
 </dt> </dl>
 
  

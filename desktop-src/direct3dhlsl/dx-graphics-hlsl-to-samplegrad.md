@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 959304d36da2b95bdf6289fba1b8c75d6ecfa314
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 1e315cfc32b10274eee47258360e85543f15311a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111825733"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624092"
 ---
 # <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (objeto de textura DirectX HLSL)
 
@@ -32,8 +32,8 @@ Amostra uma textura usando um gradiente para influenciar a maneira como o local 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

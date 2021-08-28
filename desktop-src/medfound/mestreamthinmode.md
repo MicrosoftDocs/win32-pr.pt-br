@@ -4,12 +4,12 @@ ms.assetid: 7de8cb64-122a-475f-990c-c19590a9d9d8
 title: Evento MEStreamThinMode (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7e19d25e5ab0430d96a9d431c941288e260092b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f13a9cc5b625a8b366bece1debc2017fce51e35d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793289"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479512"
 ---
 # <a name="mestreamthinmode-event"></a>Evento MEStreamThinMode
 
@@ -23,29 +23,11 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>VARTYPE</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VT_BOOL<br/></td>
-<td>Indica se a fina foi iniciada ou interrompida.<br/>
-<ul>
-<li>VARIANT_TRUE: amostras entregues depois que esse evento é finado.</li>
-<li>VARIANT_FALSE: exemplos entregues após esse evento não são Finados.</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| VARTYPE | Descrição | 
+|---------|-------------|
+| VT_BOOL<br /> | Indica se a fina foi iniciada ou interrompida.<br /><ul><li>VARIANT_TRUE: amostras entregues depois que esse evento é finado.</li><li>VARIANT_FALSE: exemplos entregues após esse evento não são Finados.</li></ul><br /> | 
+
 
 
 
@@ -55,9 +37,9 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 

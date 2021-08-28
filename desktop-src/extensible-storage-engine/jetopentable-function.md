@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7a288e3e1a625106c72f57125eea8a4219555f86
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 816bed58b4c886cc2e9984a44e1e4e10f7768f4f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988479"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472512"
 ---
 # <a name="jetopentable-function"></a>Função JetOpenTable
 
@@ -121,14 +121,7 @@ As tabelas abertas com **JetOpenTable** normalmente devem ser fechadas com [JetC
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetOpenTableW</strong> (Unicode) e <strong>JetOpenTableA</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetOpenTableW</strong> (Unicode) e <strong>JetOpenTableA</strong> (ANSI).</p> | 
 
 
 

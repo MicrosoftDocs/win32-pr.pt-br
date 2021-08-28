@@ -4,12 +4,12 @@ ms.assetid: 6f1657f9-063b-4d57-ad76-95e3dbe25786
 title: Sintaxe de instrução condicional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dfea7ec31cecbe9c72dee9c660b0e6ee9d07cee2f1818941d036a781c104a93
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f131cf9513d4bf19bb84c5777d1fed1411a682ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886439"
 ---
 # <a name="conditional-statement-syntax"></a>Sintaxe de instrução condicional
 
@@ -23,7 +23,7 @@ Essa tabela e a lista a seguir resumem a sintaxe a ser usada em expressões cond
 
 | Item                | Syntax                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------|
-| valor               | \|inteiro literal de símbolo \|                                                                                    |
+| value               | \|inteiro literal de símbolo \|                                                                                    |
 | operador de comparação | < \| > \| <= \| >= \| = \| <>                                                                 |
 | Termo                | valor \| do valor Comparison-operador value \| (expressão)\|                                                    |
 | Fator booliano      | termo \| **não** termo                                                                                            |
@@ -147,38 +147,38 @@ A tabela a seguir mostra onde é válido usar os símbolos de operador de compon
 
 
 
-| Operador <state> | Em que essa sintaxe é válida                                                                                                                                         |
+| Estado do operador &lt;&gt; | Onde essa sintaxe é válida                                                                                                                                         |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| $component ação      | Na tabela [Condição](condition-table.md) e nas tabelas [de sequência,](using-a-sequence-table.md) após a [ação CostFinalize.](costfinalize-action.md) |
-| &ação de recurso        | Na tabela [Condição](condition-table.md) e nas tabelas [de sequência,](using-a-sequence-table.md) após a [ação CostFinalize.](costfinalize-action.md) |
-| !feature-state         | Na tabela [Condição](condition-table.md) e nas tabelas [de sequência,](using-a-sequence-table.md) após a [ação CostFinalize.](costfinalize-action.md) |
-| ?estado do componente       | Na tabela [Condição](condition-table.md) e nas tabelas [de sequência,](using-a-sequence-table.md) após a [ação CostFinalize.](costfinalize-action.md) |
+| ação de $component      | Na tabela [condição](condition-table.md) , e nas tabelas de [sequência](using-a-sequence-table.md) , após a ação [CostFinalize](costfinalize-action.md) . |
+| Recurso de &-ação        | Na tabela [condição](condition-table.md) , e nas tabelas de [sequência](using-a-sequence-table.md) , após a ação [CostFinalize](costfinalize-action.md) . |
+| ! recurso-estado         | Na tabela [condição](condition-table.md) , e nas tabelas de [sequência](using-a-sequence-table.md) , após a ação [CostFinalize](costfinalize-action.md) . |
+| ? Estado do componente       | Na tabela [condição](condition-table.md) , e nas tabelas de [sequência](using-a-sequence-table.md) , após a ação [CostFinalize](costfinalize-action.md) . |
 
 
 
  
 
-A tabela a seguir mostra os valores de estado do recurso e do componente usados em expressões condicionais. Esses estados não são definidos até [**que MsiSetInstallLevel**](/windows/desktop/api/Msiquery/nf-msiquery-msisetinstalllevel) seja chamado, diretamente ou pela [ação CostFinalize.](costfinalize-action.md)
+A tabela a seguir mostra os valores de estado do componente e do recurso usados em expressões condicionais. Esses Estados não são definidos até que [**MsiSetInstallLevel**](/windows/desktop/api/Msiquery/nf-msiquery-msisetinstalllevel) seja chamado, seja diretamente ou pela ação [CostFinalize](costfinalize-action.md) .
 
 
 
 | Estado                    | Valor | Significado                                                         |
 |--------------------------|-------|-----------------------------------------------------------------|
-| INSTALLSTATE \_ UNKNOWN    | -1    | Nenhuma ação a ser tomada no recurso ou componente.              |
-| INSTALLSTATE \_ ANUNCIADO | 1     | Recurso anunciado. Esse estado não está disponível para componentes. |
-| INSTALLSTATE \_ ABSENT     | 2     | O recurso ou o componente não está presente.                            |
-| INSTALLSTATE \_ LOCAL      | 3     | Recurso ou componente no computador local.                     |
-| INSTALLSTATE \_ SOURCE     | 4     | O recurso ou o componente são executados da origem.                       |
+| INSTALLstate \_ desconhecido    | -1    | Nenhuma ação a ser executada no recurso ou componente.              |
+| INSTALLstate \_ anunciado | 1     | Recurso anunciado. Esse estado não está disponível para os componentes do. |
+| INSTALLstate \_ ausente     | 2     | O recurso ou componente não está presente.                            |
+| INSTALAR \_ local      | 3     | Recurso ou componente no computador local.                     |
+| origem de INSTALLstate \_     | 4     | Execução de recurso ou componente da origem.                       |
 
 
 
  
 
-Por exemplo, a expressão condicional "&MyFeature=3" será avaliada como True somente se MyFeature estiver mudando de seu estado atual para o estado de ser instalado no computador local, INSTALLSTATE \_ LOCAL.
+Por exemplo, a expressão condicional "&MyFeature = 3" será avaliada como true somente se MyFeature estiver mudando de seu estado atual para o estado de ser instalado no computador local, INSTALLstate \_ local.
 
-Observe que você não deve depender da condição $Component 1=3 para verificar se o Component1 está instalado localmente no computador. Isso poderá falhar se Component1 for instalado por mais de um produto. Depois que Component1 tiver sido instalado localmente pelo Product1, o instalador avaliará a condição $Component 1=3 como False durante a instalação do Product2. Isso porque o instalador determina a versão do componente usando o caminho de chave do componente e marca o componente para instalação se sua versão for maior ou igual ao componente instalado.
+Observe que você não deve depender da condição $Component 1 = 3 para verificar se o Component1 está instalado localmente no computador. Isso poderá falhar se o Component1 for instalado por mais de um produto. Depois que o Component1 tiver sido instalado localmente pelo Product1, o instalador avaliará a condição $Component 1 = 3 como false durante a instalação do Product2. Isso ocorre porque o instalador determina a versão do componente usando o caminho de chave do componente e marca o componente para instalação se sua versão for maior ou igual ao componente instalado.
 
-Observe que o instalador não fará comparações diretas do tipo de dados [Version](version.md) em instruções condicionais. Por exemplo, você não pode usar operadores comparativos para comparar versões como "01.10" e "1.010" em uma instrução condicional. Em vez disso, use um método válido para pesquisar uma versão, como descrito em Pesquisando aplicativos [existentes, arquivos,](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)entradas de registro ou .ini de arquivo e, em seguida, de definir uma propriedade .
+Observe que o instalador não fará comparações diretas do tipo de dados [version](version.md) em instruções condicionais. Por exemplo, você não pode usar operadores comparativa para comparar versões como "1,10" e "1, 10" em uma instrução condicional. Em vez disso, use um método válido para pesquisar uma versão, como descrito em [pesquisando aplicativos existentes, arquivos, entradas de registro ou .ini entradas de arquivo](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)e, em seguida, defina uma propriedade.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

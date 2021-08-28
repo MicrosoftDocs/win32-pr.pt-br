@@ -1,7 +1,7 @@
 ---
-description: A função FindNextPrinterChangeNotification recupera informações sobre a notificação de alteração mais recente para um objeto de notificação de alteração associado a um servidor de impressão ou impressora.
+description: A função FindNextPrinterChangeNotification recupera informações sobre a notificação de alteração mais recente para um objeto de notificação de alteração associado a uma impressora ou servidor de impressão.
 ms.assetid: ea7774ae-361f-41e4-bbc6-3f100028b22a
-title: Função FindNextPrinterChangeNotification (winspool. h)
+title: Função FindNextPrinterChangeNotification (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: ef3ece0d4831409d79e2152cf7b6a37d6bbdc8b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37b05603a75f7bc8e68ead2d0dffdec2e99e7618e5461360760f2d9c89ae52da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112476"
 ---
 # <a name="findnextprinterchangenotification-function"></a>Função FindNextPrinterChangeNotification
 
-A função **FindNextPrinterChangeNotification** recupera informações sobre a notificação de alteração mais recente para um objeto de notificação de alteração associado a um servidor de impressão ou impressora. Chame essa função quando uma operação de espera no objeto de notificação de alteração for satisfeita.
+A **função FindNextPrinterChangeNotification** recupera informações sobre a notificação de alteração mais recente para um objeto de notificação de alteração associado a uma impressora ou servidor de impressão. Chame essa função quando uma operação de espera no objeto de notificação de alteração for atendida.
 
-A função também redefine o objeto de notificação de alteração para o estado não sinalizado. Você pode usar o objeto em outra operação de espera para continuar a monitorar a impressora ou o servidor de impressão. O sistema operacional definirá o objeto para o estado sinalizado na próxima vez que um de um conjunto especificado de alterações ocorrer na impressora ou no servidor de impressão. A função [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) cria o objeto de notificação de alteração e especifica o conjunto de alterações a ser monitorado.
+A função também redefine o objeto de notificação de alteração para o estado não sinalizado. Em seguida, você pode usar o objeto em outra operação de espera para continuar monitorando a impressora ou o servidor de impressão. O sistema operacional definirá o objeto como o estado sinalizado na próxima vez que ocorrer uma das alterações especificadas no servidor de impressão ou impressora. A [**função FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) cria o objeto de notificação de alteração e especifica o conjunto de alterações a serem monitoradas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,43 +44,43 @@ BOOL FindNextPrinterChangeNotification(
 
 <dl> <dt>
 
-*hChange* \[ no\]
+*hChange* \[ Em\]
 </dt> <dd>
 
-Um identificador para um objeto de notificação de alteração associado a uma impressora ou a um servidor de impressão. Você obtém esse identificador chamando a função [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) . O sistema operacional define esse objeto de notificação de alteração para o estado sinalizado quando detecta uma das alterações especificadas no filtro de notificação de alteração do objeto.
+Um identificador para um objeto de notificação de alteração associado a uma impressora ou servidor de impressão. Você obtém esse tipo de alça chamando a [**função FindFirstPrinterChangeNotification.**](findfirstprinterchangenotification.md) O sistema operacional define esse objeto de notificação de alteração para o estado sinalizado quando detecta uma das alterações especificadas no filtro de notificação de alteração do objeto.
 
 </dd> <dt>
 
 *pdwChange* \[ out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma variável cujos bits são definidos para indicar as alterações que ocorreram para causar a notificação mais recente. Os sinalizadores de bit que podem ser definidos correspondem àqueles especificados no parâmetro *fdwFilter* da chamada [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) . O sistema define um ou mais dos seguintes sinalizadores de bits.
+Um ponteiro para uma variável cujos bits são definidos para indicar as alterações que ocorreram para causar a notificação mais recente. Os sinalizadores de bit que podem ser definidos correspondem aos especificados no parâmetro *fdwFilter* da [**chamada FindFirstPrinterChangeNotification.**](findfirstprinterchangenotification.md) O sistema define um ou mais dos sinalizadores de bits a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                             | Significado                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <span id="PRINTER_CHANGE_ADD_FORM"></span><span id="printer_change_add_form"></span><dl> <dt>**\_ \_ Adicionar formulário de alteração de impressora \_**</dt> </dl>                                                     | Um formulário foi adicionado ao servidor.<br/>                |
-| <span id="PRINTER_CHANGE_ADD_JOB"></span><span id="printer_change_add_job"></span><dl> <dt>**\_ \_ Adicionar trabalho de alteração de impressora \_**</dt> </dl>                                                        | Um trabalho de impressão foi enviado para a impressora.<br/>           |
-| <span id="PRINTER_CHANGE_ADD_PORT"></span><span id="printer_change_add_port"></span><dl> <dt>**\_ \_ Adicionar porta alterar \_ impressora**</dt> </dl>                                                     | Uma porta ou monitor foi adicionado ao servidor.<br/>     |
-| <span id="PRINTER_CHANGE_ADD_PRINT_PROCESSOR"></span><span id="printer_change_add_print_processor"></span><dl> <dt>**mudança de impressora \_ \_ Adicionar \_ processador de impressão \_**</dt> </dl>                   | Um processador de impressão foi adicionado ao servidor.<br/>     |
-| <span id="PRINTER_CHANGE_ADD_PRINTER"></span><span id="printer_change_add_printer"></span><dl> <dt>**\_ \_ Adicionar impressora alterar \_ impressora**</dt> </dl>                                            | Uma impressora foi adicionada ao servidor.<br/>             |
-| <span id="PRINTER_CHANGE_ADD_PRINTER_DRIVER"></span><span id="printer_change_add_printer_driver"></span><dl> <dt>**\_alterar impressora \_ Adicionar \_ Driver de impressora \_**</dt> </dl>                      | Um driver de impressora foi adicionado ao servidor.<br/>      |
-| <span id="PRINTER_CHANGE_CONFIGURE_PORT"></span><span id="printer_change_configure_port"></span><dl> <dt>**\_porta de \_ configuração de alteração da impressora \_**</dt> </dl>                                   | Uma porta foi configurada no servidor.<br/>           |
-| <span id="PRINTER_CHANGE_DELETE_FORM"></span><span id="printer_change_delete_form"></span><dl> <dt>**\_formulário de \_ exclusão de alteração de impressora \_**</dt> </dl>                                            | Um formulário foi excluído do servidor.<br/>            |
-| <span id="PRINTER_CHANGE_DELETE_JOB"></span><span id="printer_change_delete_job"></span><dl> <dt>**\_trabalho de \_ exclusão de alteração de impressora \_**</dt> </dl>                                               | Um trabalho foi excluído.<br/>                             |
-| <span id="PRINTER_CHANGE_DELETE_PORT"></span><span id="printer_change_delete_port"></span><dl> <dt>**\_porta de \_ exclusão de alteração de impressora \_**</dt> </dl>                                            | Uma porta ou monitor foi excluído do servidor.<br/> |
-| <span id="PRINTER_CHANGE_DELETE_PRINT_PROCESSOR"></span><span id="printer_change_delete_print_processor"></span><dl> <dt>**\_processador de \_ exclusão de alteração \_ de impressora \_**</dt> </dl>          | Um processador de impressão foi excluído do servidor.<br/> |
-| <span id="PRINTER_CHANGE_DELETE_PRINTER"></span><span id="printer_change_delete_printer"></span><dl> <dt>**impressora de \_ exclusão de alteração de impressora \_ \_**</dt> </dl>                                   | Uma impressora foi excluída.<br/>                         |
-| <span id="PRINTER_CHANGE_DELETE_PRINTER_DRIVER"></span><span id="printer_change_delete_printer_driver"></span><dl> <dt>**\_Driver de \_ impressora de exclusão de alteração de impressora \_ \_**</dt> </dl>             | Um driver de impressora foi excluído do servidor.<br/>  |
-| <span id="PRINTER_CHANGE_FAILED_CONNECTION_PRINTER"></span><span id="printer_change_failed_connection_printer"></span><dl> <dt>**impressora de conexão de alteração de impressora \_ \_ com falha \_ \_**</dt> </dl> | Falha em uma conexão de impressora.<br/>               |
-| <span id="PRINTER_CHANGE_SET_FORM"></span><span id="printer_change_set_form"></span><dl> <dt>**\_formulário do \_ conjunto de alterações da impressora \_**</dt> </dl>                                                     | Um formulário foi definido no servidor.<br/>                  |
-| <span id="PRINTER_CHANGE_SET_JOB"></span><span id="printer_change_set_job"></span><dl> <dt>**\_trabalho do \_ conjunto de alterações da impressora \_**</dt> </dl>                                                        | Um trabalho foi definido.<br/>                                 |
-| <span id="PRINTER_CHANGE_SET_PRINTER"></span><span id="printer_change_set_printer"></span><dl> <dt>**\_impressora do \_ conjunto de alterações da impressora \_**</dt> </dl>                                            | Uma impressora foi definida.<br/>                             |
-| <span id="PRINTER_CHANGE_SET_PRINTER_DRIVER"></span><span id="printer_change_set_printer_driver"></span><dl> <dt>**\_Driver de \_ impressora do conjunto de alterações de impressora \_ \_**</dt> </dl>                      | Um driver de impressora foi definido.<br/>                      |
-| <span id="PRINTER_CHANGE_WRITE_JOB"></span><span id="printer_change_write_job"></span><dl> <dt>**\_trabalho de \_ gravação de alteração de impressora \_**</dt> </dl>                                                  | Os dados do trabalho foram gravados.<br/>                          |
-| <span id="PRINTER_CHANGE_TIMEOUT"></span><span id="printer_change_timeout"></span><dl> <dt>**\_tempo limite de alteração da impressora \_**</dt> </dl>                                                         | O tempo limite do trabalho foi atingido.<br/>                             |
-| <span id="PRINTER_CHANGE_SERVER"></span><span id="printer_change_server"></span><dl> <dt>**\_servidor de alteração de impressora \_**</dt> </dl>                                                            | Windows 7: ocorreu uma alteração no servidor.<br/>    |
+| <span id="PRINTER_CHANGE_ADD_FORM"></span><span id="printer_change_add_form"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR \_ \_ FORMULÁRIO**</dt> </dl>                                                     | Um formulário foi adicionado ao servidor.<br/>                |
+| <span id="PRINTER_CHANGE_ADD_JOB"></span><span id="printer_change_add_job"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR \_ \_ TRABALHO**</dt> </dl>                                                        | Um trabalho de impressão foi enviado para a impressora.<br/>           |
+| <span id="PRINTER_CHANGE_ADD_PORT"></span><span id="printer_change_add_port"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR \_ \_ PORTA**</dt> </dl>                                                     | Uma porta ou monitor foi adicionado ao servidor.<br/>     |
+| <span id="PRINTER_CHANGE_ADD_PRINT_PROCESSOR"></span><span id="printer_change_add_print_processor"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR PROCESSADOR DE \_ \_ \_ IMPRESSÃO**</dt> </dl>                   | Um processador de impressão foi adicionado ao servidor.<br/>     |
+| <span id="PRINTER_CHANGE_ADD_PRINTER"></span><span id="printer_change_add_printer"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR \_ \_ IMPRESSORA**</dt> </dl>                                            | Uma impressora foi adicionada ao servidor.<br/>             |
+| <span id="PRINTER_CHANGE_ADD_PRINTER_DRIVER"></span><span id="printer_change_add_printer_driver"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA ADICIONAR DRIVER DE \_ \_ \_ IMPRESSORA**</dt> </dl>                      | Um driver de impressora foi adicionado ao servidor.<br/>      |
+| <span id="PRINTER_CHANGE_CONFIGURE_PORT"></span><span id="printer_change_configure_port"></span><dl> <dt>**ALTERAÇÃO \_ DA IMPRESSORA CONFIGURAR \_ \_ PORTA**</dt> </dl>                                   | Uma porta foi configurada no servidor.<br/>           |
+| <span id="PRINTER_CHANGE_DELETE_FORM"></span><span id="printer_change_delete_form"></span><dl> <dt>**FORMULÁRIO DE \_ EXCLUSÃO \_ DE ALTERAÇÃO DE \_ IMPRESSORA**</dt> </dl>                                            | Um formulário foi excluído do servidor.<br/>            |
+| <span id="PRINTER_CHANGE_DELETE_JOB"></span><span id="printer_change_delete_job"></span><dl> <dt>**TRABALHO DE \_ EXCLUSÃO DE \_ ALTERAÇÃO DE \_ IMPRESSORA**</dt> </dl>                                               | Um trabalho foi excluído.<br/>                             |
+| <span id="PRINTER_CHANGE_DELETE_PORT"></span><span id="printer_change_delete_port"></span><dl> <dt>**ALTERAR \_ A PORTA DE \_ \_ EXCLUSÃO DA IMPRESSORA**</dt> </dl>                                            | Uma porta ou monitor foi excluído do servidor.<br/> |
+| <span id="PRINTER_CHANGE_DELETE_PRINT_PROCESSOR"></span><span id="printer_change_delete_print_processor"></span><dl> <dt>**ALTERAÇÃO DA \_ IMPRESSORA EXCLUIR PROCESSADOR DE \_ \_ \_ IMPRESSÃO**</dt> </dl>          | Um processador de impressão foi excluído do servidor.<br/> |
+| <span id="PRINTER_CHANGE_DELETE_PRINTER"></span><span id="printer_change_delete_printer"></span><dl> <dt>**IMPRESSORA \_ DE \_ EXCLUSÃO DE ALTERAÇÃO DE \_ IMPRESSORA**</dt> </dl>                                   | Uma impressora foi excluída.<br/>                         |
+| <span id="PRINTER_CHANGE_DELETE_PRINTER_DRIVER"></span><span id="printer_change_delete_printer_driver"></span><dl> <dt>**ALTERAÇÃO DA \_ IMPRESSORA EXCLUIR DRIVER DE \_ \_ \_ IMPRESSORA**</dt> </dl>             | Um driver de impressora foi excluído do servidor.<br/>  |
+| <span id="PRINTER_CHANGE_FAILED_CONNECTION_PRINTER"></span><span id="printer_change_failed_connection_printer"></span><dl> <dt>**IMPRESSORA COM \_ FALHA NA ALTERAÇÃO DA \_ \_ \_ IMPRESSORA**</dt> </dl> | Falha em uma conexão de impressora.<br/>               |
+| <span id="PRINTER_CHANGE_SET_FORM"></span><span id="printer_change_set_form"></span><dl> <dt>**FORMULÁRIO DO \_ CONJUNTO DE ALTERAÇÕES DA \_ \_ IMPRESSORA**</dt> </dl>                                                     | Um formulário foi definido no servidor.<br/>                  |
+| <span id="PRINTER_CHANGE_SET_JOB"></span><span id="printer_change_set_job"></span><dl> <dt>**TRABALHO DO \_ CONJUNTO DE ALTERAÇÕES DA \_ \_ IMPRESSORA**</dt> </dl>                                                        | Um trabalho foi definido.<br/>                                 |
+| <span id="PRINTER_CHANGE_SET_PRINTER"></span><span id="printer_change_set_printer"></span><dl> <dt>**IMPRESSORA DO \_ CONJUNTO DE ALTERAÇÕES DA \_ \_ IMPRESSORA**</dt> </dl>                                            | Uma impressora foi definida.<br/>                             |
+| <span id="PRINTER_CHANGE_SET_PRINTER_DRIVER"></span><span id="printer_change_set_printer_driver"></span><dl> <dt>**DRIVER DE \_ IMPRESSORA DO CONJUNTO DE ALTERAÇÕES DA \_ \_ \_ IMPRESSORA**</dt> </dl>                      | Um driver de impressora foi definido.<br/>                      |
+| <span id="PRINTER_CHANGE_WRITE_JOB"></span><span id="printer_change_write_job"></span><dl> <dt>**TRABALHO DE \_ GRAVAÇÃO DE ALTERAÇÃO DE \_ \_ IMPRESSORA**</dt> </dl>                                                  | Os dados do trabalho foram gravados.<br/>                          |
+| <span id="PRINTER_CHANGE_TIMEOUT"></span><span id="printer_change_timeout"></span><dl> <dt>**TEMPO DE \_ TEMPO DE ALTERAÇÃO DA \_ IMPRESSORA**</dt> </dl>                                                         | O trabalho foi eliminado.<br/>                             |
+| <span id="PRINTER_CHANGE_SERVER"></span><span id="printer_change_server"></span><dl> <dt>**SERVIDOR DE \_ ALTERAÇÃO DE \_ IMPRESSORA**</dt> </dl>                                                            | Windows 7: ocorreu uma alteração no servidor.<br/>    |
 
 
 
@@ -88,49 +88,49 @@ Um ponteiro para uma variável cujos bits são definidos para indicar as altera�
 
 </dd> <dt>
 
-*pPrinterNotifyOptions* \[ em, opcional\]
+*pPrinterNotifyOptions* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ Opções de notificação de impressora**](printer-notify-options.md) . Defina o membro **flags** desta estrutura para **Opções de \_ notificação de impressora \_ \_ Atualizar**, para fazer com que a função retorne os dados atuais para todos os campos de informações de impressora monitorados. A função ignora todos os outros membros da estrutura. Este parâmetro pode ser **NULL**.
+Um ponteiro para uma estrutura [**PRINTER \_ NOTIFY \_ OPTIONS.**](printer-notify-options.md) De definir **o membro Sinalizadores** dessa estrutura como **PRINTER NOTIFY OPTIONS \_ \_ \_ REFRESH**, para fazer com que a função retorne os dados atuais para todos os campos de informações de impressora monitorados. A função ignora todos os outros membros da estrutura. Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
 *ppPrinterNotifyInfo* \[ out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma variável de ponteiro que recebe um ponteiro para um buffer somente leitura alocado pelo sistema. Chame a função [**FreePrinterNotifyInfo**](freeprinternotifyinfo.md) para liberar o buffer quando tiver terminado de fazê-lo. Esse parâmetro poderá ser **nulo** se nenhuma informação for necessária.
+Um ponteiro para uma variável de ponteiro que recebe um ponteiro para um buffer somente leitura alocado pelo sistema. Chame a [**função FreePrinterNotifyInfo**](freeprinternotifyinfo.md) para liberar o buffer quando terminar de fazer isso. Esse parâmetro poderá ser **NULL** se nenhuma informação for necessária.
 
-O buffer contém uma estrutura de [**\_ \_ informações de notificação de impressora**](printer-notify-info.md) , que contém uma matriz de estruturas de [**\_ \_ \_ dados de informações de notificação de impressora**](printer-notify-info-data.md) . Cada elemento da matriz contém informações sobre um dos campos especificados no parâmetro *pPrinterNotifyOptions* da chamada [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) . Normalmente, a função fornece dados somente para os campos que foram alterados para causar a notificação mais recente. No entanto, se a estrutura apontada pelo parâmetro *pPrinterNotifyOptions* especificar **Opções de notificação de impressora \_ \_ \_ Atualizar**, a função fornecerá dados para todos os campos monitorados.
+O buffer contém uma estrutura [**PRINTER \_ NOTIFY \_ INFO,**](printer-notify-info.md) que contém uma matriz de estruturas [**DE DADOS PRINTER NOTIFY \_ \_ \_ INFO.**](printer-notify-info-data.md) Cada elemento da matriz contém informações sobre um dos campos especificados no parâmetro *pPrinterNotifyOptions* da [**chamada FindFirstPrinterChangeNotification.**](findfirstprinterchangenotification.md) Normalmente, a função fornece dados somente para os campos que foram alterados para causar a notificação mais recente. No entanto, se a estrutura apontada pelo parâmetro *pPrinterNotifyOptions* especificar **PRINTER NOTIFY OPTIONS \_ \_ \_ REFRESH**, a função fornece dados para todos os campos monitorados.
 
-Se o bit de **notificação de informação de impressora \_ \_ \_ descartada** estiver definido no membro **flags** da estrutura de [**\_ \_ informações de notificação da impressora**](printer-notify-info.md) , ocorrerá um estouro ou erro e as notificações podem ter sido perdidas. Nesse caso, nenhuma notificação adicional será enviada até que você faça uma segunda chamada **FindNextPrinterChangeNotification** que especifica a **\_ atualização das \_ opções \_ de notificação de impressora**.
+Se o bit **PRINTER \_ NOTIFY INFO \_ \_ DISCARDED** estiver definido no membro **Flags** da estrutura [**PRINTER NOTIFY \_ \_ INFO,**](printer-notify-info.md) um estouro ou erro poderá ter sido perdido. Nesse caso, nenhuma notificação adicional será enviada até que você faça uma segunda chamada **FindNextPrinterChangeNotification** que especifique **PRINTER NOTIFY OPTIONS \_ \_ \_ REFRESH**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
+Se a função for bem-sucedida, o valor de retorno será um valor não zero.
 
 Se a função falhar, o valor retornado será zero.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração de servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
+> Essa é uma função de bloqueio ou síncrona e pode não retornar imediatamente. A rapidez com que essa função retorna depende de fatores de tempo de execução, como status de rede, configuração do servidor de impressão e fatores de implementação de driver de impressora que são difíceis de prever ao escrever um aplicativo. Chamar essa função de um thread que gerencia a interação com a interface do usuário pode fazer com que o aplicativo pareça não responder.
 
  
 
-Chame a função **FindNextPrinterChangeNotification** depois que uma operação de espera em um objeto de notificação criado por [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) tiver sido satisfeita. Chamar **FindNextPrinterChangeNotification** permite que você obtenha informações sobre a alteração que satisfez a operação de espera e redefine o objeto de notificação para que ele possa ser sinalizado quando ocorrer a próxima alteração.
+Chame a **função FindNextPrinterChangeNotification** após uma operação de espera em um objeto de notificação criado por [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) ter sido atendida. Chamar **FindNextPrinterChangeNotification** permite obter informações sobre a alteração que atendia a operação de espera e redefine o objeto de notificação para que ele possa ser sinalizado quando a próxima alteração ocorrer.
 
-Com uma exceção, não chame a função **FindNextPrinterChangeNotification** se o objeto de notificação de alteração não estiver no estado sinalizado. Se uma função Wait retornar o **\_ tempo limite de espera** de valor, o objeto de alteração não estará no estado sinalizado. Chame a função **FindNextPrinterChangeNotification** somente se a função Wait for realizada com sucesso sem tempo limite. A exceção é quando **FindNextPrinterChangeNotification** é chamado com o bit de **\_ \_ \_ atualização opções de notificação de impressora** definido no parâmetro *pPrinterNotifyOptions* . Observe que mesmo quando esse sinalizador é definido, ainda é possível que o sinalizador **de \_ \_ informações de \_ notificação de impressora** seja definido no parâmetro *ppPrinterNotifyInfo* .
+Com uma exceção, não chame a **função FindNextPrinterChangeNotification** se o objeto de notificação de alteração não estiver no estado sinalizado. Se uma função wait retornar o **valor WAIT \_ TIMEOUT**, o objeto de alteração não está no estado sinalizado. Chame a **função FindNextPrinterChangeNotification** somente se a função de espera for bem-sucedida sem tempo de vida. A exceção é **quando FindNextPrinterChangeNotification** é chamado com o bit **REFRESH PRINTER NOTIFY \_ \_ \_ OPTIONS** definido no *parâmetro pPrinterNotifyOptions.* Observe que, mesmo quando esse sinalizador é definido, ainda é possível que o sinalizador **PRINTER \_ NOTIFY INFO \_ \_ DISCARDED** seja definido no *parâmetro ppPrinterNotifyInfo.*
 
-Para continuar a monitorar as alterações na impressora ou no servidor de impressão, repita o ciclo de chamar uma das [funções de espera](/windows/desktop/Sync/wait-functions) e, em seguida, chamando a função **FindNextPrinterChangeNotification** para examinar a alteração e redefinir o objeto de notificação.
+Para continuar monitorando a impressora ou o servidor de impressão [](/windows/desktop/Sync/wait-functions) em busca de alterações, repita o ciclo de chamada a uma das funções de espera e, em seguida, chamando a função **FindNextPrinterChangeNotification** para examinar a alteração e redefinir o objeto de notificação.
 
-**FindNextPrinterChangeNotification** pode combinar várias alterações no mesmo campo de informações de impressora em uma única notificação. Quando isso ocorre, a função normalmente recolhe todas as alterações do campo em uma única entrada na matriz de estruturas de [**\_ dados de \_ informações \_ de notificação de impressora**](printer-notify-info-data.md) em *ppPrinterNotifyInfo*; a única entrada relata apenas as informações mais atuais. No entanto, para alguns campos de informações de trabalho e impressora, a função pode retornar várias entradas de matriz para o mesmo campo. Nesse caso, a última entrada de matriz para o campo relata os dados atuais e as entradas anteriores contêm os dados para os estágios intermediários.
+**FindNextPrinterChangeNotification** pode combinar várias alterações no mesmo campo de informações da impressora em uma única notificação. Quando isso ocorre, a função normalmente colapsa todas as alterações do campo em uma única entrada na matriz de estruturas [**PRINTER \_ NOTIFY INFO \_ \_ DATA**](printer-notify-info-data.md) em *ppPrinterNotifyInfo*; a única entrada relata apenas as informações mais atuais. No entanto, para alguns campos de informações de trabalho e impressora, a função pode retornar várias entradas de matriz para o mesmo campo. Nesse caso, a última entrada de matriz para o campo relata os dados atuais e as entradas anteriores contêm os dados para os estágios intermediários.
 
-Quando você não precisar mais do objeto de notificação de alteração, feche-o chamando a função [**FindClosePrinterChangeNotification**](findcloseprinterchangenotification.md) .
+Quando você não precisar mais do objeto de notificação de alteração, feche-o chamando a [**função FindClosePrinterChangeNotification.**](findcloseprinterchangenotification.md)
 
 > [!Note]  
-> No Windows XP com Service Pack 2 (SP2) e posterior, o firewall de conexão com a Internet (ICF) bloqueia as portas de impressora por padrão, mas uma exceção para o compartilhamento de arquivos e impressoras pode ser habilitada. Se um usuário fizer uma conexão de impressora com outro computador e a exceção não estiver habilitada, o usuário não receberá notificações de alteração de impressora do servidor. Um administrador de máquina precisará habilitar a exceção.
+> No Windows XP com Service Pack 2 (SP2) e posterior, o Firewall de Conexão com a Internet (ICF) bloqueia as portas da impressora por padrão, mas uma exceção para Compartilhamento de Arquivos e Impressão pode ser habilitada. Se um usuário fizer uma conexão de impressora com outro computador e a exceção não estiver habilitada, o usuário não receberá notificações de alteração de impressora do servidor. Um administrador de computador terá que habilitar a exceção.
 
  
 

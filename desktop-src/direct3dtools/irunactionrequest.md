@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8a4c25265d21a1908e6b7e16f5d7a787b90d6513
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c8a994c400c0ffd2295dec0afa2bfac62127f22d
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456676"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786751"
 ---
 # <a name="span-idvspixengineirunactionrequestspanirunactionrequest-interface"></a><span id="vspixengine.irunactionrequest"></span>Interface IRunActionRequest
 
@@ -38,13 +38,13 @@ A interface **IRunActionRequest** herda da interface [**IUnknown**](/windows/des
 
 A interface **IRunActionRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Uma solicitação assíncrona para iniciar uma ação (por exemplo, capturar um quadro) no mecanismo.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/irunactionrequest-requestasync-refguid-iunknown-ptr-irunactioncallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Uma solicitação assíncrona para iniciar uma ação (por exemplo, capturar um quadro) no mecanismo.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

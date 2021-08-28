@@ -4,12 +4,12 @@ ms.assetid: 32d8a5bd-eeb4-4db6-8129-b5cd3508a7e5
 title: Fazendo backup e restaurando uma pasta FRS-Replicated SYSVOL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea83ccbc156182a4a3b84c758cb22153f4f7110f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d841f64bab62114824847f91876ba8bbffbb0166db942c0f3cb9d010b72f106
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124596"
 ---
 # <a name="backing-up-and-restoring-an-frs-replicated-sysvol-folder"></a>Fazendo backup e restaurando uma pasta FRS-Replicated SYSVOL
 
@@ -26,7 +26,7 @@ Este tópico aborda os seguintes assuntos:
 
 -   [Determinando se a pasta SYSVOL do controlador de domínio é replicada pelo DFSR ou pelo FRS](#determining-whether-a-domain-controllers-sysvol-folder-is-replicated-by-dfsr-or-frs)
 -   [Fazendo backup de uma pasta DFSR-Replicated SYSVOL](#backing-up-a-dfsr-replicated-sysvol-folder)
--   [Fazendo backup de uma pasta FRS-Replicated SYSVOL em um domínio do Windows Server 2008 ou do Windows Server 2003](#backing-up-an-frs-replicated-sysvol-folder-on-a-windows-server-2008-or-windows-server-2003-domain)
+-   [fazendo backup de uma pasta FRS-Replicated SYSVOL em um domínio Windows server 2008 ou Windows server 2003](#backing-up-an-frs-replicated-sysvol-folder-on-a-windows-server-2008-or-windows-server-2003-domain)
 -   [Documento de metadados do gravador do FRS de exemplo](#sample-frs-writer-metadata-document)
 -   [Definindo chaves do registro para uma restauração de uma pasta FRS-Replicated SYSVOL](#setting-registry-keys-for-a-restore-of-an-frs-replicated-sysvol-folder)
 -   [Executando uma restauração não autoritativa de uma pasta FRS-Replicated SYSVOL](#performing-a-nonauthoritative-restore-of-an-frs-replicated-sysvol-folder)
@@ -38,31 +38,31 @@ A tabela a seguir resume como determinar se uma pasta SYSVOL do controlador de d
 
 | Se o controlador de domínio estiver em execução                                                                                                                  | O SYSVOL é replicado por |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| Windows Server 2008 + nível funcional de domínio da migração do Windows Server 2008 + [SYSVOL](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) concluída | DFSR                    |
-| Windows Server 2008 + nível funcional do domínio abaixo do Windows Server 2008                                                                              | DUPLIQUE                     |
+| Windows servidor 2008 + nível funcional de domínio do Windows server 2008 + [migração de SYSVOL](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) concluída | DFSR                    |
+| Windows servidor 2008 + nível funcional de domínio abaixo Windows Server 2008                                                                              | DUPLIQUE                     |
 | Windows Server 2003                                                                                                                                  | DUPLIQUE                     |
 
 
 
  
 
-Se o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)) do domínio for o Windows Server 2008 e o domínio tiver passou na [migração de SYSVOL](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx), o [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) será usado para replicar a pasta SYSVOL. Se o primeiro controlador de domínio no domínio for promovido diretamente para o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))do Windows Server 2008, o DFSR será usado automaticamente para replicação de SYSVOL. Nesses casos, não há necessidade de migração de replicação de SYSVOL do FRS para o DFSR. Se o domínio tiver sido atualizado para o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))do Windows Server 2008, o FRS será usado para replicação do SYSVOL até que o processo de [migração](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) do FRS para o DFSR seja concluído.
+se o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)) do domínio for Windows Server 2008 e o domínio tiver passou na [migração de sysvol](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx), o [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) será usado para replicar a pasta sysvol. se o primeiro controlador de domínio no domínio tiver sido promovido diretamente para o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))do Windows Server 2008, o DFSR será usado automaticamente para replicação do SYSVOL. Nesses casos, não há necessidade de migração de replicação de SYSVOL do FRS para o DFSR. se o domínio tiver sido atualizado para o [nível funcional](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))do Windows Server 2008, o frs será usado para replicação do SYSVOL até que o processo de [migração](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) do frs para o DFSR seja concluído.
 
-Para determinar se o DFSR ou o FRS estão sendo usados em um controlador de domínio que está executando o Windows Server 2008, verifique o valor de **HKEY \_ local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **DFSR** \\ **Parameters** \\  \\  \\  do sistema de serviços Se essa subchave do registro existir e seu valor for definido como 3 (ELIMINAdo), o [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) estará sendo usado. Se a subchave não existir ou se tiver um valor diferente, o FRS será usado.
+para determinar se o DFSR ou o FRS está sendo usado em um controlador de domínio que está executando o Windows Server 2008, verifique o valor de **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **DFSR** \\ **parameters** do sistema de domínios de \\ **migração sysvols** \\  \\  . Se essa subchave do registro existir e seu valor for definido como 3 (ELIMINAdo), o [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) estará sendo usado. Se a subchave não existir ou se tiver um valor diferente, o FRS será usado.
 
 ## <a name="backing-up-a-dfsr-replicated-sysvol-folder"></a>Fazendo backup de uma pasta DFSR-Replicated SYSVOL
 
 Se a pasta SYSVOL for replicada pelo [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr), o gravador VSS do DFSR poderá ser usado para fazer o backup. Para obter mais informações sobre o gravador VSS DFSR, consulte [pastas replicadas do DFSR](/previous-versions/windows/desktop/dfsr/dfsr-replicated-folders).
 
-## <a name="backing-up-an-frs-replicated-sysvol-folder-on-a-windows-server-2008-or-windows-server-2003-domain"></a>Fazendo backup de uma pasta FRS-Replicated SYSVOL em um domínio do Windows Server 2008 ou do Windows Server 2003
+## <a name="backing-up-an-frs-replicated-sysvol-folder-on-a-windows-server-2008-or-windows-server-2003-domain"></a>fazendo backup de uma pasta FRS-Replicated SYSVOL em um domínio Windows server 2008 ou Windows server 2003
 
-Em um controlador de domínio que esteja executando o Windows Server 2008 ou o Windows Server 2003, a infraestrutura do VSS está presente e, portanto, o gravador VSS do FRS pode ser usado para fazer backup da pasta SYSVOL e dos componentes do FRS.
+em um controlador de domínio que está executando o Windows server 2008 ou Windows server 2003, a infraestrutura do vss está presente e, portanto, o gravador VSS do frs pode ser usado para fazer backup da pasta SYSVOL e dos componentes do frs.
 
 O documento de metadados do gravador do gravador VSS do FRS fornece informações sobre o local da pasta SYSVOL e as listas de exclusão para o gravador. Com base nessas informações, um aplicativo de backup VSS (solicitante) pode fazer backup da pasta SYSVOL usando as técnicas regulares de backup baseado em VSS.
 
 O documento de metadados do gravador contém informações sobre o gravador, os dados que o gravador possui e como restaurá-los. Este é um documento somente leitura que pode ser recuperado pelo aplicativo de backup antes de fazer um backup. A ferramenta [DiskShadow](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc772172(v=ws.11)) pode ser usada para exibir o documento de metadados do gravador do gravador VSS do FRS. O comando [DiskShadow list writers](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc772172(v=ws.11)) fornece informações sobre os gravadores presentes no sistema. Essa lista contém informações sobre o gravador do FRS em controladores de domínio que usam o FRS para replicação do SYSVOL ou em servidores de arquivos que usam o FRS para replicação de [destinos de link DFS](/previous-versions/windows/it-pro/windows-server-2003/cc782417(v=ws.10)).
 
-A seção exemplo de documento de metadados do gravador do FRS a seguir mostra um exemplo de documento de metadados do gravador do FRS para um controlador de domínio que tem a pasta SYSVOL em D: \\ Windows \\ SYSVOL. O caminho mostrado na seção "arquivos excluídos" será o mesmo obtido ao consultar a chave do registro **SYSVOL** do serviço Netlogon:
+a seção exemplo de documento de metadados do gravador do frs a seguir mostra um exemplo de documento de metadados do gravador do frs para um controlador de domínio que tem a pasta sysvol em D: \\ Windows \\ SYSVOL. O caminho mostrado na seção "arquivos excluídos" será o mesmo obtido ao consultar a chave do registro **SYSVOL** do serviço Netlogon:
 
 **HKEY \_ Sistema de \_ máquina local** \\  \\ **CurrentControlSet** \\ **Serviços** \\ **Netlogon** \\ **parâmetros** \\ **SYSVOL**
 
@@ -71,13 +71,13 @@ A única exceção a essa regra ocorre quando o controlador de domínio está no
 O gravador VSS do FRS requer um método de restauração personalizado. Isso significa que determinadas etapas personalizadas devem ser executadas durante a restauração de arquivos que estão sendo replicados pelo FRS. Para obter mais informações, consulte executando uma restauração não autoritativa de uma pasta FRS-Replicated SYSVOL.
 
 > [!Note]  
-> Os backups de estado do sistema para controladores de domínio do Windows não incluem o banco de dados do FRS que mantém informações de estado para o serviço FRS pertencentes aos arquivos na pasta SYSVOL e outros conjuntos de conteúdo. O banco de dados do FRS, os logs de depuração, os arquivos da área de preparação e os arquivos na [pasta de dado pré-existente](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) são excluídos de um backup de estado do sistema. A especificação de gravador do FRS de exemplo a seguir contém a lista de exclusões na seção "arquivos excluídos".
+> os backups de estado do sistema para Windows controladores de domínio não incluem o banco de dados do frs que mantém informações de estado para o serviço FRS pertencentes aos arquivos dentro da pasta SYSVOL e outros conjuntos de conteúdo. O banco de dados do FRS, os logs de depuração, os arquivos da área de preparação e os arquivos na [pasta de dado pré-existente](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) são excluídos de um backup de estado do sistema. A especificação de gravador do FRS de exemplo a seguir contém a lista de exclusões na seção "arquivos excluídos".
 
  
 
 ## <a name="sample-frs-writer-metadata-document"></a>Documento de metadados do gravador do FRS de exemplo
 
-Veja a seguir um exemplo de documento de metadados do gravador do FRS para um controlador de domínio cujo caminho de pasta SYSVOL é D: \\ Windows \\ SYSVOL.
+veja a seguir um exemplo de documento de metadados do gravador do FRS para um controlador de domínio cujo caminho de pasta SYSVOL é D: \\ Windows \\ SYSVOL.
 
 ``` syntax
 * WRITER "FRS Writer"

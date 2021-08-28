@@ -1,9 +1,9 @@
 ---
-title: Elemento de palavras-chave (MetadataType)
-description: Define uma lista de palavras-chave que categorizam eventos. | Elemento de palavras-chave (MetadataType)
+title: Elemento keywords (MetadataType)
+description: Define uma lista de palavras-chave que categorizam eventos. | Elemento keywords (MetadataType)
 ms.assetid: 1e32d17d-71be-4c69-9709-ee65d8d578e7
 keywords:
-- EventLog de elemento de palavras-chave
+- elemento keywords EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 03145bcaa3c99b3275b983a3f115b7cc85be791b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0e4c19d6281430ac483c390ee313856ca0ef23357c6cde3a3c76e160c4bb6da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124406"
 ---
-# <a name="keywords-metadatatype-element"></a>Elemento de palavras-chave (MetadataType)
+# <a name="keywords-metadatatype-element"></a>Elemento keywords (MetadataType)
 
 Define uma lista de palavras-chave que categorizam eventos.
 
@@ -30,7 +30,7 @@ Define uma lista de palavras-chave que categorizam eventos.
  />
 ```
 
-O elemento **Keywords** é definido pelo tipo complexo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+O **elemento keywords** é definido pelo tipo complexo [**MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Keywords** é definido pelo tipo complexo [**MetadataType**](eventm
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

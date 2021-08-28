@@ -1,27 +1,27 @@
 ---
 description: Especifica a taxa de quadros de saída como uma taxa.
 ms.assetid: a825f3a5-f9b5-49c3-853c-87d1dcb3c4ca
-title: Propriedade MFPKEY_CONV_OUTPUTFRAMERATE (Wmcodecdsp. h)
+title: MFPKEY_CONV_OUTPUTFRAMERATE propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f58c834a7a0c423171a35ee974bc83fed957d2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57b13f9b82697a878d1fb73ff8a28493e584d269fc5ace5893448e404c76fd4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113346"
 ---
-# <a name="mfpkey_conv_outputframerate-property"></a>\_Propriedade MFPKEY CONV \_ OUTPUTFRAMERATE
+# <a name="mfpkey_conv_outputframerate-property"></a>Propriedade MFPKEY \_ CONV \_ OUTPUTFRAMERATE
 
 Especifica a taxa de quadros de saída como uma taxa.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_UI8 VT
+VT \_ UI8
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,7 +29,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 ## <a name="remarks"></a>Comentários
 
-Armazene o numerador em mais de 4 bytes e o denominador nos 4 bytes inferiores.
+Armazene o numerador nos 4 bytes superiores e o denominador nos 4 bytes inferiores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Armazene o numerador em mais de 4 bytes e o denominador nos 4 bytes inferiores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Armazene o numerador em mais de 4 bytes e o denominador nos 4 bytes inferiores.
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

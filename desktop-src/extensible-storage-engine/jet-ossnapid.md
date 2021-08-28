@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2dac261072ac9a5ce5a845ff046628cf348cd5815c34e16fccb575c2c0da3095
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6185f17c16cbdb2a45e172a14af346c3519aa12
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765072"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468363"
 ---
 # <a name="jet_ossnapid"></a>JET_OSSNAPID
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_ossnapid"></a>JET_OSSNAPID
 
-O **JET_OSSNAPID** de dados contém um identificador para um instantâneo do banco de dados.
+O tipo de dados **JET_OSSNAPID** contém um identificador para um instantâneo do banco de dado.
 
 ```cpp
     typedef JET_API_PTR JET_OSSNAPID;
@@ -39,30 +39,13 @@ O **JET_OSSNAPID** de dados contém um identificador para um instantâneo do ban
 
 JET_OSSNAPID
 
-Um handle para um instantâneo do banco de dados. Esse handle é usado em elementos da API JET que estão envolvidos com o backup de instantâneo.
+Um identificador para um instantâneo do banco de dados. Esse identificador é usado em elementos da API do JET que estão envolvidos no backup de instantâneo.
 
-**NULL** pode ser usado para indicar um alça inválido.
+**NULL** pode ser usado para indicar um identificador inválido.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+
 

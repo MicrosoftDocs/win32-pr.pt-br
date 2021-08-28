@@ -8,12 +8,12 @@ keywords:
 - funções de cadeia de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3231006de2dfe6ed611b58e5b511819a40c21e8b
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: a3799c151b828dba1d687068da6f7f5924aded09
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103642299"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478892"
 ---
 # <a name="strings"></a>Cadeias de caracteres
 
@@ -37,149 +37,41 @@ Esta seção descreve as funções de cadeia de caracteres e explica como usá-l
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charlowera"><strong>CharLower</strong></a></td>
-<td>Converte uma cadeia de caracteres ou um único caractere em minúsculas. Se o operando for uma cadeia de caracteres, a função converterá os caracteres em vigor. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charlowerbuffa"><strong>CharLowerBuff</strong></a></td>
-<td>Converte caracteres maiúsculos em um buffer para caracteres minúsculos. A função converte os caracteres em vigor. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charnexta"><strong>CharNext</strong></a></td>
-<td>Recupera um ponteiro para o próximo caractere em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charnextexa"><strong>CharNextExA</strong></a></td>
-<td>Recupera o ponteiro para o próximo caractere em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charpreva"><strong>CharPrev</strong></a></td>
-<td>Recupera um ponteiro para o caractere anterior em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charprevexa"><strong>CharPrevExA</strong></a></td>
-<td>Recupera o ponteiro para o caractere anterior em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-chartooema"><strong>CharToOem</strong></a></td>
-<td>Traduz uma cadeia de caracteres no conjunto de caracteres definido pelo OEM.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-chartooembuffa"><strong>CharToOemBuff</strong></a></td>
-<td>Converte um número especificado de caracteres em uma cadeia de caracteres no conjunto de caracteres definido pelo OEM.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charuppera"><strong>CharUpper</strong></a></td>
-<td>Converte uma cadeia de caracteres ou um único caractere em maiúsculas. Se o operando for uma cadeia de caracteres, a função converterá os caracteres em vigor. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-charupperbuffa"><strong>CharUpperBuff</strong></a></td>
-<td>Converte caracteres minúsculos em um buffer em caracteres maiúsculos. A função converte os caracteres em vigor. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>CompareString</strong></a></td>
-<td>Compara duas cadeias de caracteres, usando a localidade especificada.
-<blockquote>
-[!Note]<br />
-Para compatibilidade com Unicode, use <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringex"><strong>CompareStringEx</strong></a> ou a versão Unicode de <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>CompareString</strong></a>.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringex"><strong>CompareStringEx</strong></a></td>
-<td>Compara duas cadeias de caracteres Unicode (caractere largo), usando a localidade especificada.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/stringapiset/nf-stringapiset-foldstringw"><strong>FoldString</strong></a></td>
-<td>Mapeia uma cadeia de caracteres para outra, executando uma opção de transformação especificada. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/winnls/nf-winnls-getstringtypea"><strong>GetStringTypeA</strong></a></td>
-<td>Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/win32/api/stringapiset/nf-stringapiset-getstringtypeexw"><strong>GetStringTypeEx</strong></a></td>
-<td>Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles. <br/> Ao contrário de seus parentes <a href="/windows/desktop/api/winnls/nf-winnls-getstringtypea"><strong>GetStringTypeA</strong></a> e <a href="/windows/desktop/api/stringapiset/nf-stringapiset-getstringtypew"><strong>GetStringTypeW</strong></a>, o <a href="/windows/win32/api/stringapiset/nf-stringapiset-getstringtypeexw"><strong>GetStringTypeEx</strong></a> exibe o comportamento padrão por meio do uso da opção <strong> # definir Unicode</strong> . É a função recomendada.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/stringapiset/nf-stringapiset-getstringtypew"><strong>GetStringTypeW</strong></a></td>
-<td>Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-ischaralphaa"><strong>IsCharAlpha</strong></a></td>
-<td>Determina se um caractere é um caractere alfabético. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-ischaralphanumerica"><strong>IsCharAlphaNumeric</strong></a></td>
-<td>Determina se um caractere é um caractere alfabético ou numérico. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-ischarlowera"><strong>IsCharLower</strong></a></td>
-<td>Determina se um caractere é minúsculo. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-ischaruppera"><strong>IsCharUpper</strong></a></td>
-<td>Determina se um caractere é maiúsculo. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-loadstringa"><strong>Cadeia de caracteres LoadString</strong></a></td>
-<td>Carrega um recurso de cadeia de caracteres do arquivo executável associado a um módulo especificado, copia a cadeia de caracteres em um buffer e anexa um caractere nulo de terminação.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrcata"><strong>lstrcat</strong></a></td>
-<td>Acrescenta uma cadeia de caracteres a outra.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrcmpa"><strong>lstrcmp</strong></a></td>
-<td>Compara duas cadeias de caracteres. A comparação diferencia maiúsculas de minúsculas.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrcmpia"><strong>lstrcmpi</strong></a></td>
-<td>Compara duas cadeias de caracteres. A comparação não diferencia maiúsculas de minúsculas.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrcpya"><strong>lstrcpy</strong></a></td>
-<td>Copia uma cadeia de caracteres em um buffer.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrcpyna"><strong>lstrcpyn</strong></a></td>
-<td>Copia um número especificado de caracteres de uma cadeia de caracteres de origem em um buffer. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winbase/nf-winbase-lstrlena"><strong>lstrlen</strong></a></td>
-<td>Determina o comprimento da cadeia de caracteres especificada (não incluindo o caractere nulo de terminação).<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-oemtochara"><strong>OemToChar</strong></a></td>
-<td>Traduz uma cadeia de caracteres do conjunto de caracteres definido pelo OEM em uma cadeia de caracteres ANSI ou de caractere largo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-oemtocharbuffa"><strong>OemToCharBuff</strong></a></td>
-<td>Converte um número especificado de caracteres em uma cadeia de caractere do conjunto de caracteres definido pelo OEM em uma cadeia de caracteres ANSI ou de caractere largo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-wsprintfa"><strong>wsprintf</strong></a></td>
-<td>Grava dados formatados no buffer especificado.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-wvsprintfa"><strong>wvsprintf</strong></a></td>
-<td>Grava dados formatados no buffer especificado usando um ponteiro para uma lista de argumentos.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome | Descrição | 
+|------|-------------|
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charlowera"><strong>CharLower</strong></a> | Converte uma cadeia de caracteres ou um único caractere em minúsculas. Se o operando for uma cadeia de caracteres, a função converterá os caracteres em vigor. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charlowerbuffa"><strong>CharLowerBuff</strong></a> | Converte caracteres maiúsculos em um buffer para caracteres minúsculos. A função converte os caracteres em vigor. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charnexta"><strong>CharNext</strong></a> | Recupera um ponteiro para o próximo caractere em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charnextexa"><strong>CharNextExA</strong></a> | Recupera o ponteiro para o próximo caractere em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charpreva"><strong>CharPrev</strong></a> | Recupera um ponteiro para o caractere anterior em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charprevexa"><strong>CharPrevExA</strong></a> | Recupera o ponteiro para o caractere anterior em uma cadeia de caracteres. Essa função pode lidar com cadeias de caracteres que consistem em caractere de um ou vários bytes.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-chartooema"><strong>CharToOem</strong></a> | Traduz uma cadeia de caracteres no conjunto de caracteres definido pelo OEM.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-chartooembuffa"><strong>CharToOemBuff</strong></a> | Converte um número especificado de caracteres em uma cadeia de caracteres no conjunto de caracteres definido pelo OEM.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charuppera"><strong>CharUpper</strong></a> | Converte uma cadeia de caracteres ou um único caractere em maiúsculas. Se o operando for uma cadeia de caracteres, a função converterá os caracteres em vigor. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-charupperbuffa"><strong>CharUpperBuff</strong></a> | Converte caracteres minúsculos em um buffer em caracteres maiúsculos. A função converte os caracteres em vigor. <br /> | 
+| <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>CompareString</strong></a> | Compara duas cadeias de caracteres, usando a localidade especificada.<blockquote>[!Note]<br />Para compatibilidade com Unicode, use <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringex"><strong>CompareStringEx</strong></a> ou a versão Unicode de <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>CompareString</strong></a>.</blockquote><br /><br /> | 
+| <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringex"><strong>CompareStringEx</strong></a> | Compara duas cadeias de caracteres Unicode (caractere largo), usando a localidade especificada.<br /> | 
+| <a href="/windows/desktop/api/stringapiset/nf-stringapiset-foldstringw"><strong>FoldString</strong></a> | Mapas uma cadeia de caracteres para outra, executando uma opção de transformação especificada. <br /> | 
+| <a href="/windows/desktop/api/winnls/nf-winnls-getstringtypea"><strong>GetStringTypeA</strong></a> | Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles.<br /> | 
+| <a href="/windows/win32/api/stringapiset/nf-stringapiset-getstringtypeexw"><strong>GetStringTypeEx</strong></a> | Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles. <br /> Ao contrário de seus parentes <a href="/windows/desktop/api/winnls/nf-winnls-getstringtypea"><strong>GetStringTypeA</strong></a> e <a href="/windows/desktop/api/stringapiset/nf-stringapiset-getstringtypew"><strong>GetStringTypeW</strong></a>, o <a href="/windows/win32/api/stringapiset/nf-stringapiset-getstringtypeexw"><strong>GetStringTypeEx</strong></a> exibe o comportamento padrão por meio do uso da opção <strong>#define Unicode</strong> . É a função recomendada.<br /> | 
+| <a href="/windows/desktop/api/stringapiset/nf-stringapiset-getstringtypew"><strong>GetStringTypeW</strong></a> | Recupera informações de tipo de caractere para os caracteres na cadeia de caracteres de origem especificada. Para cada caractere na cadeia de caracteres, a função define um ou mais bits no elemento de 16 bits correspondente da matriz de saída. Cada bit identifica um determinado tipo de caractere, como se o caractere é uma letra, um dígito ou nenhum deles.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-ischaralphaa"><strong>IsCharAlpha</strong></a> | Determina se um caractere é um caractere alfabético. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-ischaralphanumerica"><strong>IsCharAlphaNumeric</strong></a> | Determina se um caractere é um caractere alfabético ou numérico. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-ischarlowera"><strong>IsCharLower</strong></a> | Determina se um caractere é minúsculo. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-ischaruppera"><strong>IsCharUpper</strong></a> | Determina se um caractere é maiúsculo. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-loadstringa"><strong>Cadeia de caracteres LoadString</strong></a> | Carrega um recurso de cadeia de caracteres do arquivo executável associado a um módulo especificado, copia a cadeia de caracteres em um buffer e anexa um caractere nulo de terminação.<br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrcata"><strong>lstrcat</strong></a> | Acrescenta uma cadeia de caracteres a outra.<br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrcmpa"><strong>lstrcmp</strong></a> | Compara duas cadeias de caracteres. A comparação diferencia maiúsculas de minúsculas.<br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrcmpia"><strong>lstrcmpi</strong></a> | Compara duas cadeias de caracteres. A comparação não diferencia maiúsculas de minúsculas.<br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrcpya"><strong>lstrcpy</strong></a> | Copia uma cadeia de caracteres em um buffer.<br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrcpyna"><strong>lstrcpyn</strong></a> | Copia um número especificado de caracteres de uma cadeia de caracteres de origem em um buffer. <br /> | 
+| <a href="/windows/desktop/api/Winbase/nf-winbase-lstrlena"><strong>lstrlen</strong></a> | Determina o comprimento da cadeia de caracteres especificada (não incluindo o caractere nulo de terminação).<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-oemtochara"><strong>OemToChar</strong></a> | Traduz uma cadeia de caracteres do conjunto de caracteres definido pelo OEM em uma cadeia de caracteres ANSI ou de caractere largo.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-oemtocharbuffa"><strong>OemToCharBuff</strong></a> | Converte um número especificado de caracteres em uma cadeia de caractere do conjunto de caracteres definido pelo OEM em uma cadeia de caracteres ANSI ou de caractere largo.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-wsprintfa"><strong>wsprintf</strong></a> | Grava dados formatados no buffer especificado.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-wvsprintfa"><strong>wvsprintf</strong></a> | Grava dados formatados no buffer especificado usando um ponteiro para uma lista de argumentos.<br /> | 
+
 
 
 

@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f97cbb495fb8105be012c44942aeedb39377e3d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78f2433d2b75e2c348fdf6e7a8ff35db56c9a0c8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758348"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879876"
 ---
 # <a name="cim_bioselement-class-hyper-v-management"></a>Classe CIM_BIOSElement (gerenciamento do Hyper-V)
 
@@ -142,7 +142,7 @@ Uma cadeia de caracteres de forma livre que descreve o Utilitário Flash/carrega
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -217,8 +217,8 @@ Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("
 
 A versão da operação. A versão da operação deve estar em um dos seguintes formatos:
 
--   *<major>*.*<minor>*.*<revision>*
--   *<major>*.*<minor><letter><revision>*
+-   *&lt; principal &gt;**. &lt; secundária &gt;*. *&lt; revisão &gt;*
+-   *&lt; principal &gt;**. &lt; &gt; &lt; &gt; &lt; revisão &gt; de letra secundária*
 
 </dd> </dl>
 

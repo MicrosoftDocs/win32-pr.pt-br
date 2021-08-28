@@ -1,19 +1,19 @@
 ---
-description: O Gerenciador de escopo de rastreamento (CSM) permite que você defina regras de escopo que incluem ou excluem URLs do escopo de rastreamento do Windows Search.
+description: o gerenciador de escopo de rastreamento (CSM) permite que você defina regras de escopo que incluem ou excluem URLs do escopo de rastreamento de pesquisa Windows.
 ms.assetid: 132a55f9-680d-438e-b983-f5ce4cf66a41
 title: Gerenciando regras de escopo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20d45199726cfe36dc1c4936e9ac7699a288c3ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 134e4241e9dcd66e468935ae56a4029a51a96c37
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090103"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880220"
 ---
 # <a name="managing-scope-rules"></a>Gerenciando regras de escopo
 
-O Gerenciador de escopo de rastreamento (CSM) permite que você defina regras de escopo que incluem ou excluem URLs do escopo de rastreamento do Windows Search.
+o gerenciador de escopo de rastreamento (CSM) permite que você defina regras de escopo que incluem ou excluem URLs do escopo de rastreamento de pesquisa Windows.
 
 O CSM permite que você faça o seguinte:
 
@@ -45,7 +45,7 @@ Por exemplo, suponha que você tenha instalado um novo aplicativo cujos arquivos
 Há três tipos de regras, com a seguinte ordem de precedência:
 
 1.  As regras de Política de Grupo são definidas por administradores e podem substituir todas as outras regras.
-2.  As regras de usuário são definidas por usuários que modificam o escopo na interface do usuário de opções do Windows Search. Os usuários ou outros aplicativos podem remover todas as regras de usuário e reverter para as regras padrão.
+2.  as regras de usuário são definidas por usuários modificando o escopo na interface do usuário de opções de Windows Search. Os usuários ou outros aplicativos podem remover todas as regras de usuário e reverter para as regras padrão.
 3.  As regras padrão normalmente são definidas por um aplicativo para definir um escopo padrão. Por exemplo, regras padrão podem ser definidas quando um novo manipulador de protocolo ou contêiner é adicionado ao sistema.
 
 Juntos, esses tipos de regras incluem o *conjunto de regras de trabalho* do qual o Gerenciador de escopo de rastreamento (CSM) gera a lista completa de URLs a serem rastreadas. Embora as regras padrão possam ser substituídas pelas regras de diretiva de grupo e por regras de usuário, elas são mantidas em seu próprio conjunto de regras padrão, que pode ser revertido a qualquer momento. O indexador rastreia as URLs do conjunto de regras de trabalho e adiciona itens, propriedades e conteúdo ao catálogo.
@@ -84,7 +84,7 @@ Depois de fazer alterações no Gerenciador de escopo de rastreamento, você dev
 As regras de trabalho definidas para o CSM incluem regras de usuário e padrão, bem como todas as regras forçadas pela política de grupo. As regras de usuário são configuradas por usuários em uma interface do usuário e as regras padrão podem ser definidas por qualquer um dos seguintes:
 
 -   Diretivas de Grupo implementadas por um administrador do sistema (elas não usam a interface [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) .)
--   A instalação ou atualização de um aplicativo como o Windows Search ou um manipulador de protocolo
+-   a instalação ou atualização de um aplicativo como Windows pesquisa ou um manipulador de protocolo
 -   Um aplicativo de instalação para a adição de um novo armazenamento de dados ou contêiner
 
 O [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) fornece dois métodos para adicionar novas regras de escopo, conforme descrito na tabela a seguir. Os caminhos para regras de inclusão para o sistema de arquivos devem terminar com uma barra invertida ' \\ ' (por exemplo, file:///C: \\ files \\ ) e os caminhos para regras de exclusão devem terminar com um asterisco (por exemplo, file:///c: \\ files \\ \* ). Somente as regras de exclusão podem conter URLs de padrão. Além disso, é recomendável incluir SIDs (identificadores de segurança) dos usuários em caminhos, para maior segurança. Os caminhos por usuário são mais seguros, pois as consultas seriam executadas em um processo por usuário, garantindo que um usuário não possa ver itens indexados da caixa de entrada de outro usuário, por exemplo.
@@ -134,12 +134,12 @@ Você pode usar a interface [**ISearchCrawlScopeManager**](/windows/desktop/api/
 
 Cada método usa uma URL e um sinalizador que indica se a regra a ser removida é uma regra de inclusão ou exclusão. Esses métodos retornarão um erro se uma regra com essa URL e o sinalizador de inclusão/exclusão não for encontrado.
 
-**Dica:** Se você quiser remover completamente um escopo do escopo do rastreamento, use o método [**RemoveRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-removeroot) , que remove a raiz de pesquisa e todas as regras de escopo associadas. Fazer isso durante a desinstalação, por exemplo, é considerado uma prática recomendada.
+**Dica:** Se você quiser remover completamente um escopo do escopo do rastreamento, use o método [**RemoveRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-removeroot) , que remove a raiz de pesquisa e todas as regras de escopo associadas. Fazer isso durante a desinstalação, por exemplo, é considerada a melhor prática.
 
-Também é possível remover todas as substituições do conjunto de usuários de uma raiz de pesquisa e reverter para as regras raiz de pesquisa original e escopo padrão. Para obter mais informações, consulte a próxima seção.
+Também é possível remover todas as substituições definidas pelo usuário de uma raiz de pesquisa e reverter para as regras de escopo padrão e raiz de pesquisa originais. Para obter mais informações, consulte a próxima seção.
 
 > [!Note]  
-> No Windows Vista, se os usuários forem removidos por meio de perfis de usuário no painel de controle, CSM removerá todas as regras e raízes que incluem seu SID e removerá seus itens indexados do catálogo. No Windows XP, você deve remover as raízes e as regras dos usuários manualmente.
+> No Windows Vista, se os usuários são removidos por meio de Perfis de Usuário no Painel de Controle, o CSM remove todas as regras e raízes que incluem seu SID e remove seus itens indexados do catálogo. No Windows XP, você deve remover manualmente as raízes e as regras dos usuários.
 
  
 
@@ -147,19 +147,19 @@ Também é possível remover todas as substituições do conjunto de usuários d
 
 ## <a name="reverting-to-default-rules"></a>Revertendo para regras padrão
 
-A reversão para regras padrão remove todas as regras de usuário de uma URL ou raiz e restaura todas as regras padrão para o conjunto de regras de trabalho. No entanto, ele não remove regras definidas pela política de grupo. O método [**RevertToDefaultScopes**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-reverttodefaultscopes) não usa nenhum parâmetro e retorna um código de erro se não for possível reverter para as regras padrão.
+Reverter para regras padrão remove todas as regras de usuário para uma URL ou raiz e restaura todas as regras padrão para o conjunto de regras de trabalho. No entanto, ele não remove as regras definidas pela política de grupo. O [**método RevertToDefaultScopes**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-reverttodefaultscopes) não recebe parâmetros e retorna um código de erro se não for possível reverter para as regras padrão.
 
  
 
 ## <a name="enumerating-scope-rules"></a>Enumerando regras de escopo
 
-O CSM enumera regras de escopo usando uma interface de enumerador de estilo COM padrão, [**IEnumSearchScopeRules**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchscoperules) . Você pode usar essa interface para enumerar regras de escopo para várias finalidades. Por exemplo, talvez você queira exibir todo o conjunto de regras de trabalho em uma interface do usuário ou descobrir se uma regra ou o filho de uma regra já está no escopo do rastreamento.
+O CSM enumera regras de escopo usando uma interface de enumerador de estilo COM padrão, [**IEnumSearchScopeRules**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchscoperules) . Você pode usar essa interface para enumerar regras de escopo para várias finalidades. Por exemplo, talvez você queira exibir todo o conjunto de regras de trabalho em uma interface do usuário ou descobrir se uma regra ou o filho de uma regra já está no escopo de rastreamento.
 
  
 
 ## <a name="tracing-scope-rules"></a>Regras de escopo de rastreamento
 
-O CSM também permite que você determine se uma URL especificada está incluída no escopo do rastreamento e se ela tem uma regra de escopo pai ou filho. Você também pode descobrir por que uma URL é incluída ou excluída do escopo do rastreamento. Esses métodos não se destinam a serem usados com URLs de padrão.
+O CSM também permite que você determine se uma URL especificada está incluída no escopo de rastreamento e se ela tem uma regra de escopo pai ou filho. Você também pode descobrir por que uma URL é incluída ou excluída do escopo de rastreamento. Esses métodos não devem ser usados com URLs padrão.
 
 A tabela a seguir descreve os métodos de [**ISearchCrawlScopeManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) usados para adicionar novas regras de escopo.
 
@@ -167,11 +167,11 @@ A tabela a seguir descreve os métodos de [**ISearchCrawlScopeManager**](/window
 
 | Método                                                                                      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetParentScopeVersionId**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-getparentscopeversionid) | Obtém a ID da versão da URL de inclusão pai. Você pode usar esse método para ver se o escopo pai foi alterado desde a última vez que você o marcou.<br/> Exemplo: se um aplicativo de email usar notificações gerenciadas pelo provedor, ele poderá obter a versão do escopo pai antes de fechar e verificar a versão novamente quando for aberto. Em seguida, o aplicativo pode determinar se ele precisa enviar por push um novo conjunto de notificações para o indexador.<br/> |
-| [**HasChildScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-haschildscoperule)             | Retornará **true** se a URL especificada tiver uma regra filho (uma regra sendo aplicada a um filho em qualquer nível dentro de sua hierarquia de URL). <br/> Exemplo: se a URL for file:///C: \\ Folder \\ , esse método retornará **true** se CSM tiver uma regra de escopo especificamente para \\ subpasta file:///C: Folder \\ \\ .<br/>                                                                                                                                              |
-| [**HasParentScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-hasparentscoperule)           | Retornará **true** se a URL especificada tiver uma regra pai (uma regra aplicada a um pai em qualquer nível na hierarquia de URL).<br/> Exemplo: se a URL for file:///C: subpasta \\ Folder \\ , esse método retornará **true** se CSM tiver uma regra de escopo especificamente para file:///C: \\ Folder \\ .<br/>                                                                                                                                                   |
-| [**IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope)       | Retornará **true** se a URL especificada estiver incluída no escopo do rastreamento.                                                                                                                                                                                                                                                                                                                                                                                  |
-| [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex)   | Retorna um valor da enumeração [**CLUSION \_ Reason**](/windows/win32/api/searchapi/ne-searchapi-clusion_reason) explicando por que a URL é incluída ou excluída do escopo do rastreamento e recupera o valor **true** se a URL for incluída no escopo do rastreamento. Esse método pode ajudá-lo a identificar conflitos em seu conjunto de regras de trabalho.                                                                                                                                       |
+| [**GetParentScopeVersionId**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-getparentscopeversionid) | Obtém a ID da versão da URL de inclusão pai. Você pode usar esse método para ver se o escopo pai foi alterado desde a última vez que você o verificou.<br/> Exemplo: se um aplicativo de email usar notificações gerenciadas pelo provedor, ele poderá obter a versão do escopo pai antes de fechar e verificar a versão novamente quando for aberta. Em seguida, o aplicativo pode determinar se precisa fazer push de um novo conjunto de notificações para o indexador.<br/> |
+| [**HasChildScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-haschildscoperule)             | Retornará **TRUE** se a URL especificada tiver uma regra filho (uma regra que se aplica a um filho em qualquer nível dentro de sua hierarquia de URL). <br/> Exemplo: se a URL for file:///C: Pasta , esse método retornará TRUE se o CSM tiver uma regra de escopo especificamente para \\ \\ file:///C:  \\ \\ Subpasta de Pasta \\ .<br/>                                                                                                                                              |
+| [**HasParentScopeRule**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-hasparentscoperule)           | Retornará **TRUE** se a URL especificada tiver uma regra pai (uma regra que se aplica a um pai em qualquer nível na hierarquia de URL).<br/> Exemplo: se a URL for file:///C: Subpasta de Pasta, esse método retornará TRUE se o CSM tiver uma regra de escopo especificamente \\ \\ para file:///C: Pasta  \\ \\ .<br/>                                                                                                                                                   |
+| [**IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope)       | Retornará **TRUE** se a URL especificada estiver incluída no escopo do rastreamento.                                                                                                                                                                                                                                                                                                                                                                                  |
+| [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex)   | Retorna um valor da enumeração [**CLUSION \_ REASON**](/windows/win32/api/searchapi/ne-searchapi-clusion_reason) explicando por que a URL está incluída ou excluída do escopo de rastreamento e recupera o valor **TRUE** se a URL estiver incluída no escopo de rastreamento. Esse método pode ajudá-lo a identificar conflitos em seu conjunto de regras de trabalho.                                                                                                                                       |
 
 
 
@@ -180,11 +180,11 @@ A tabela a seguir descreve os métodos de [**ISearchCrawlScopeManager**](/window
  
 
 > [!Note]  
-> Os métodos [**IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope) e [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex) determinam se a URL será rastreada com base apenas nas regras no CSM. Pode haver outros motivos pelos quais uma URL não é rastreada, como o bit de que está sendo definido (ou seja, um usuário não permitiu a indexação rápida na caixa de diálogo de propriedade da pasta).
+> Os [**métodos IncludedInCrawlScope**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscope) e [**IncludedInCrawlScopeEx**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-includedincrawlscopeex) determinam se a URL será rastreada com base apenas nas regras no CSM. Pode haver outros motivos pelos quais uma URL não está rastreada, como o bit FANCI que está sendo definido (ou seja, um usuário não tem permitido a indexação rápida na caixa de diálogo Propriedade da pasta.)
 
  
 
-Se você acreditar que um caminho de arquivo deve ser excluído, mas ele estiver listado como incluído, certifique-se de que as regras de exclusão terminem com " <path> \\ \* ". Se você acreditar que um arquivo ou caminho de arquivo deve ser incluído, mas não está, certifique-se de verificar a configuração de bit de um pouco para o arquivo ou caminho. Você pode fazer isso clicando com o botão direito do mouse no arquivo ou caminho do arquivo e selecionando **Propriedades**. em seguida, verifique se a caixa **de seleção para pesquisa rápida, permitir serviço de indexação para indexar esta pasta** está marcada. Se o arquivo ou caminho do arquivo não estiver marcado para indexação aqui, ele não será indexado mesmo que esteja em uma regra de inclusão.
+Se você acredita que um caminho de arquivo deve ser excluído, mas ele está listado como incluído, certifique-se de que as regras de exclusão terminem com " &lt; caminho &gt; \\ \* ". Se você acredita que um arquivo ou caminho de arquivo deve ser incluído, mas não está, verifique a configuração de bit FANCI para o arquivo ou caminho. Você pode fazer isso clicando com o botão direito do mouse no caminho do arquivo ou arquivo e selecionando Propriedades e, em seguida, verifique se a caixa de seleção Para pesquisa **rápida,** permita que o Serviço de Indexação indexe essa pasta está marcada. Se o caminho do arquivo ou do arquivo não estiver marcado para indexação aqui, ele não será indexado mesmo se estiver em uma regra de inclusão.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -205,7 +205,7 @@ Se você acreditar que um caminho de arquivo deve ser excluído, mas ele estiver
 [**IEnumSearchScopeRules**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchscoperules)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Gerenciando raízes de pesquisa](-search-3x-wds-extidx-csm-searchroots.md)

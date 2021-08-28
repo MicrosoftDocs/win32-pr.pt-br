@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, BarraDeMenu
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94bb60c13b5999bc8020eb70b84f6c932a2fb94
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 558a734d69a9197b3e0a8d6c5655405074878bca
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781508"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468153"
 ---
 # <a name="menubar-control-type"></a>Tipo de controle MenuBar
 
@@ -50,40 +50,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>MenuBar
-<ul>
-<li>MenuItem (1 ou mais)</li>
-<li>Outros controles (0 ou muitos)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Não aplicável
-<ul>
-<li>MenuItem (1 ou mais)</li>
-<li>Outros controles (0 ou muitos)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>MenuBar<ul><li>MenuItem (1 ou mais)</li><li>Outros controles (0 ou muitos)</li></ul></li></ul> | <ul><li>Não aplicável<ul><li>MenuItem (1 ou mais)</li><li>Outros controles (0 ou muitos)</li></ul></li></ul> | 
 
 
 
- 
+
+ 
 
 Um controle barra de menus sempre aparece no modo de exibição de controle, mas não no modo de exibição de conteúdo porque ele geralmente não transmite informações significativas para o usuário final (a menos que o aplicativo contenha mais de uma barra de menus).
 
@@ -114,7 +89,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -124,38 +99,38 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 | Padrão de controle                                                   | Suporte | Observações                                                                                                                                       |
 |-------------------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Depende | Se o controle puder ser expandido ou recolhido, ele deverá implementar o padrão de controle [ExpandCollapse](uiauto-implementingexpandcollapse.md) . |
-| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)                     | Depende | Se o controle puder ser encaixado em partes diferentes da tela, ele deverá implementar o padrão de controle [Dock](uiauto-implementingdock.md) .   |
-| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider)           | Depende | Se o controle puder ser redimensionado, girado ou movido, ele deverá implementar o padrão de controle [Transform](uiauto-implementingtransform.md) .      |
+| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Depende | Se o controle puder ser expandido ou recolhido, ele deverá implementar o padrão de controle [ExpandCollapse.](uiauto-implementingexpandcollapse.md) |
+| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)                     | Depende | Se o controle puder ser encaixado em diferentes partes da tela, ele deverá implementar o padrão [de](uiauto-implementingdock.md) controle Dock.   |
+| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider)           | Depende | Se o controle puder ser reessado, girado ou movido, ele deverá implementar o [padrão de controle](uiauto-implementingtransform.md) Transformar.      |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário aos quais os controles de barra de menu devem dar suporte. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que os controles da barra de menus são necessários para dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                                                | Observações                                                                                                                            |
+| Automação da Interface do Usuário evento                                                                                                                                                | Observações                                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                                   |                                                                                                                                  |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId.                              |                                                                                                                                  |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ExpandCollapseExpandCollapseStatePropertyId. | Se o controle der suporte ao padrão de controle [ExpandCollapse](uiauto-implementingexpandcollapse.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                                              | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.         |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.                                          | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.       |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade.                              |                                                                                                                                  |
+| [**UIA \_ Evento de propriedade alterado ExpandCollapseExpandCollapseStatePropertyId.**](uiauto-control-pattern-propids.md) | Se o controle for compatível [com o padrão de controle ExpandCollapse,](uiauto-implementingexpandcollapse.md) ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                                              | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.         |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.                                          | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.       |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                               |                                                                                                                                  |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -164,9 +139,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

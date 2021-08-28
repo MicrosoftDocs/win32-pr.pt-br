@@ -1,19 +1,19 @@
 ---
-description: Esse <templateInfo> elemento opcional especifica um tipo de pasta para exibir os resultados de uma consulta nesse conector de pesquisa. Este elemento não tem atributos e apenas um filho obrigatório.
+description: Esse &lt; elemento templateInfo opcional &gt; especifica um tipo de pasta para exibir os resultados de uma consulta nesse conector de pesquisa. Este elemento não tem atributos e apenas um filho obrigatório.
 ms.assetid: fe42f589-5c47-4629-94eb-78dbaffa4112
 title: Elemento templateInfo (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fd28780689b4d544f251bbaf1542bc379ecdaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72c815d04e23f1e1af9582ad93ba08d118855676
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880389"
 ---
 # <a name="templateinfo-element-search-connector-schema"></a>Elemento templateInfo (esquema do conector de pesquisa)
 
-Esse <templateInfo> elemento opcional especifica um tipo de pasta para exibir os resultados de uma consulta nesse conector de pesquisa. Este elemento não tem atributos e apenas um filho obrigatório.
+Esse &lt; elemento templateInfo opcional &gt; especifica um tipo de pasta para exibir os resultados de uma consulta nesse conector de pesquisa. Este elemento não tem atributos e apenas um filho obrigatório.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,7 +53,7 @@ Esse <templateInfo> elemento opcional especifica um tipo de pasta para exibir os
 
 ## <a name="remarks"></a>Comentários
 
-Se você não especificar um tipo de pasta específico no <templateInfo> elemento, o Windows usará o tipo de pasta do conector de pesquisa geral {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
+se você não especificar um tipo de pasta específico no &lt; &gt; elemento templateInfo, Windows usará o tipo de pasta do conector de pesquisa geral {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
 
 ## <a name="example-of-a-templateinfo-element"></a>Exemplo de um elemento templateInfo
 

@@ -1,56 +1,56 @@
 ---
-description: Arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas.
+description: Os arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas.
 ms.assetid: 12F6E6AE-2776-408c-B9AC-E885BE93C27F
 title: Esquema de descrição da biblioteca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a6da99820e81c55e5d705c72d4d0509ea271a4a
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 2bfbaa8401468a6bab79cf4bccc5d7d4cd0ff7bb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581734"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879642"
 ---
 # <a name="library-description-schema"></a>Esquema de descrição da biblioteca
 
-Arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas. As bibliotecas agregam itens de locais de armazenamento local e remoto em uma única exibição no Windows Explorer. Os arquivos de descrição da biblioteca seguem o esquema de Descrição da Biblioteca e são salvos como \* arquivos .library-ms.
+Os arquivos de descrição da biblioteca são arquivos XML que definem bibliotecas. as bibliotecas agregam itens de locais de armazenamento local e remoto em uma única exibição no Windows Explorer. Os arquivos de descrição da biblioteca seguem o esquema de descrição da biblioteca e são salvos como \* arquivos. Library-MS.
 
 Este tópico contém as seguintes seções:
 
 -   [Visão geral do esquema de descrição da biblioteca](#overview-of-the-library-description-schema)
--   [Versão do namespace](#namespace-versioning)
--   [Exemplo de um arquivo de descrição da biblioteca](#example-of-a-library-description-file)
+-   [Controle de versão do namespace](#namespace-versioning)
+-   [Exemplo de um arquivo de descrição de biblioteca](#example-of-a-library-description-file)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="overview-of-the-library-description-schema"></a>Visão geral do esquema de descrição da biblioteca
 
-As bibliotecas contêm arquivos armazenados em um ou mais locais de armazenamento. As bibliotecas não armazenam esses arquivos; Em vez disso, eles monitoram as pastas que contêm os arquivos e permitem que os usuários acessem e organizem os arquivos de maneiras diferentes. Por exemplo, um usuário pode ter arquivos de música em várias pastas em um disco rígido local e também em um disco rígido externo. Usando a **Biblioteca de** Música , o usuário pode acessar todos esses arquivos ao mesmo tempo e classificar todos eles por nome de artista ou título de álbum como um único grupo.
+As bibliotecas contêm arquivos que são armazenados em um ou mais locais de armazenamento. As bibliotecas não armazenam esses arquivos de fato; em vez disso, eles monitoram as pastas que contêm os arquivos e permitem que os usuários acessem e organizem os arquivos de maneiras diferentes. Por exemplo, um usuário pode ter arquivos de música em várias pastas em um disco rígido local e também em um disco rígido externo. Usando a **biblioteca de músicas**, o usuário pode acessar todos esses arquivos ao mesmo tempo e classificá-los por nome de artista ou título de álbum como um único grupo.
 
-O esquema de Descrição da Biblioteca consiste em três partes principais, descritas na tabela a seguir:
+O esquema de descrição da biblioteca consiste em três partes principais, descritas na tabela a seguir:
 
 
 
 | Parte                        | Descrição                                                                                                                                                |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Informações gerais da biblioteca | Informações sobre a biblioteca, como nome, proprietário, versão, ícone, que Windows Explorer pode usar quando exibe a biblioteca para um usuário.                   |
-| Propriedades da biblioteca          | Uma ou mais propriedades que descrevem a biblioteca. Essas propriedades personalizadas são específicas da biblioteca.                                                     |
-| Locais da biblioteca           | Um ou mais conectores de pesquisa que identificam os locais de armazenamento a incluir na biblioteca. Cada um desses locais também pode ter um conjunto exclusivo de propriedades. |
+| Informações gerais da biblioteca | informações sobre a biblioteca, como nome, proprietário, versão, ícone, que Windows Explorer pode usar quando ele exibe a biblioteca para um usuário.                   |
+| Propriedades da biblioteca          | Uma ou mais propriedades que descrevem a biblioteca. Essas propriedades personalizadas são específicas para a biblioteca.                                                     |
+| Locais de biblioteca           | Um ou mais conectores de pesquisa que identificam os locais de armazenamento a serem incluídos na biblioteca. Cada um desses locais também pode ter um conjunto exclusivo de propriedades. |
 
 
 
  
 
-Os arquivos de biblioteca Windows 7 são armazenados na pasta conhecida, Bibliotecas \_ FOLDERID. Por padrão, a pasta Bibliotecas FOLDERID está localizada \_ em %USERPROFILE% \\ AppData \\ Roaming \\ Microsoft Windows \\ \\ Bibliotecas.
+os arquivos de biblioteca no Windows 7 são armazenados na pasta conhecida, nas \_ bibliotecas folderid. por padrão, a pasta de \_ bibliotecas folderid está localizada em% USERPROFILE% \\ AppData \\ roaming \\ Microsoft \\ Windows \\ library.
 
-## <a name="namespace-versioning"></a>Versão do namespace
+## <a name="namespace-versioning"></a>Controle de versão do namespace
 
-As versões do formato de arquivo Descrição da Biblioteca ( \* .library-ms) são controladas alterando o namespace . Por Windows 7, o formato de arquivo tem o seguinte namespace padrão: https://schemas.microsoft.com/windows/2009/library .
+As versões do formato de arquivo de descrição da biblioteca ( \* . Library-MS) são rastreadas alterando o namespace. para Windows 7, o formato de arquivo tem o seguinte namespace padrão: https://schemas.microsoft.com/windows/2009/library .
 
-No entanto, as versões do conteúdo da biblioteca são rastreadas usando o [<version>](schema-library-version.md) elemento em um arquivo de Descrição da Biblioteca específico.
+As versões do conteúdo da biblioteca, no entanto, são rastreadas usando o elemento [ &lt; version &gt; ](schema-library-version.md) em um arquivo de descrição de biblioteca específico.
 
-## <a name="example-of-a-library-description-file"></a>Exemplo de um arquivo de descrição da biblioteca
+## <a name="example-of-a-library-description-file"></a>Exemplo de um arquivo de descrição de biblioteca
 
-A seguir está um exemplo de um arquivo de Descrição da Biblioteca que define uma biblioteca para arquivos de documento.
+Veja a seguir um exemplo de um arquivo de descrição de biblioteca que define uma biblioteca para arquivos de documentos.
 
 
 ```
@@ -91,7 +91,7 @@ A seguir está um exemplo de um arquivo de Descrição da Biblioteca que define 
 
 <dl> <dt>
 
-[Elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)
+[Elemento FolderType (esquema de biblioteca)](schema-library-foldertype.md)
 </dt> <dt>
 
 [Elemento iconReference (esquema de biblioteca)](schema-library-iconreference.md)
@@ -103,13 +103,13 @@ A seguir está um exemplo de um arquivo de Descrição da Biblioteca que define 
 [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
-[Elemento name (esquema de biblioteca)](schema-library-name.md)
+[Elemento Name (esquema de biblioteca)](schema-library-name.md)
 </dt> <dt>
 
-[Elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
+[Elemento OwnerId (esquema de biblioteca)](schema-library-ownersid.md)
 </dt> <dt>
 
-[Elemento property (esquema de biblioteca)](schema-library-property.md)
+[Elemento Property (esquema de biblioteca)](schema-library-property.md)
 </dt> <dt>
 
 [Elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
@@ -124,7 +124,7 @@ A seguir está um exemplo de um arquivo de Descrição da Biblioteca que define 
 [Elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[Elemento version (esquema de biblioteca)](schema-library-version.md)
+[Elemento Version (esquema de biblioteca)](schema-library-version.md)
 </dt> <dt>
 
 [Esquema de descrição do conector de pesquisa](../search/search-sconn-desc-schema-entry.md)

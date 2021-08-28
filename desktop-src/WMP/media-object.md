@@ -3,7 +3,7 @@ title: Objeto de mídia
 description: O objeto de mídia fornece uma maneira de especificar ou recuperar propriedades de um item de mídia, usando as propriedades e os métodos a seguir.
 ms.assetid: 45c1c760-808b-4d11-8e6b-057a2ca685d0
 keywords:
-- Objeto de mídia Windows Media Player
+- Windows Media Player de objeto de mídia
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 88eff6ee0a97e63df6a0c073ef18425cbb576e85
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3c1dbcb3dc662a431f279e03697620b80c242c99eb32e3bbcdc26d71796f7e50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105785011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123306"
 ---
 # <a name="media-object"></a>Objeto de mídia
 
@@ -42,7 +42,7 @@ O objeto de **mídia** dá suporte às propriedades a seguir.
 
 
 
- 
+ 
 
 O objeto de **mídia** dá suporte aos métodos a seguir.
 
@@ -64,7 +64,7 @@ O objeto de **mídia** dá suporte aos métodos a seguir.
 
 
 
- 
+ 
 
 O objeto de **mídia** é acessado por meio das propriedades e métodos a seguir.
 
@@ -74,11 +74,11 @@ O objeto de **mídia** é acessado por meio das propriedades e métodos a seguir
 |---------------------------------|--------------------------------------------------------------------------|
 | [Controles](controls-object.md) | [currentItem](controls-currentitem.md)                                  |
 | [Jogador](player-object.md)     | [currentMedia](player-currentmedia.md), [newMedia](player-newmedia.md) |
-| [7.1](playlist-object.md) | [item](playlist-item.md)                                                |
+| [Playlist](playlist-object.md) | [item](playlist-item.md)                                                |
 
 
 
- 
+ 
 
 Porque é o meio mais comum de acesso, *Player*. **currentMedia** é usado para fins de ilustração nas seções de sintaxe de referência.
 
@@ -89,9 +89,9 @@ Porque é o meio mais comum de acesso, *Player*. **currentMedia** é usado para 
 [**Referência de modelo de objeto para scripts**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

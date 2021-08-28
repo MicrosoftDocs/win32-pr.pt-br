@@ -3,7 +3,7 @@ title: Elemento QuickAccessToolbar
 description: Representa a QAT (Barra de Ferramentas de Acesso Rápido), uma pequena barra de ferramentas que exibe atalhos para Comandos da Faixa de Opções.
 ms.assetid: 59aa35c3-a844-46b3-b066-c9a321fb0891
 keywords:
-- Faixa de Opções do Windows do elemento QuickAccessToolbar
+- Elemento QuickAccessToolbar Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ae01f620d66298a5f7200d0be947dbfb3750af4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: fa9d097823d049d145c25d1027bdb5a67d688692
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443297"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624162"
 ---
 # <a name="quickaccesstoolbar-element"></a>Elemento QuickAccessToolbar
 
@@ -40,10 +40,10 @@ Representa a [QAT (Barra](windowsribbon-controls-quickaccesstoolbar.md)de Ferram
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,7 +105,7 @@ Para consistência entre aplicativos de Faixa de Opções, é recomendável que 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para **o QuickAccessToolbar**.
+O exemplo a seguir demonstra a marcação básica para **o QuickAccessToolbar.**
 
 Esta seção de código mostra a **declaração comando QuickAccessToolbar.**
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetSetTableSequential'
+description: 'Saiba mais sobre: Função JetSetTableSequential'
 title: Função JetSetTableSequential
 TOCTitle: JetSetTableSequential Function
 ms:assetid: 874ddd3c-0d69-4d48-b61a-e9e0457426ef
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b633b348b712e446535054c5a39d2768236b7705
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a8b49b112c9566b15226e8ffd52f4240cff2fb8
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808334"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471712"
 ---
 # <a name="jetsettablesequential-function"></a>Função JetSetTableSequential
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetsettablesequential-function"></a>Função JetSetTableSequential
 
-A função **JetSetTableSequential** notifica o mecanismo de banco de dados de que o aplicativo está verificando todo o índice atual que contém um determinado cursor. Consequentemente, os métodos usados para acessar os dados do índice serão ajustados para tornar esse cenário o mais rápido possível.
+A **função JetSetTableSequential** notifica o mecanismo de banco de dados de que o aplicativo está digitalizando todo o índice atual que contém um determinado cursor. Consequentemente, os métodos usados para acessar os dados de índice serão ajustados para tornar esse cenário o mais rápido possível.
 
-**Windows XP:** o **JetSetTableSequential** é introduzido no Windows XP.  
+**Windows XP:****JetSetTableSequential** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetSetTableSequential(
@@ -48,125 +48,56 @@ A função **JetSetTableSequential** notifica o mecanismo de banco de dados de q
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
-*TableID*
+*Tableid*
 
-O cursor a ser usado para esta chamada.
+O cursor a ser usado para essa chamada.
 
 *grbit*
 
-Um grupo de bits que especifica zero ou mais das opções a seguir.
+Um grupo de bits que especificam zero ou mais das opções a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitPrereadForward</p></td>
-<td><p>Essa opção é usada para indexar na direção de encaminhamento.</p>
-<p><strong>Windows 7:</strong>o<strong>JET_bitPrereadForward</strong> é introduzido no Windows 7.  </p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitPrereadBackward</p></td>
-<td><p>Essa opção é usada para indexar na direção de retrocesso.</p>
-<p><strong>Windows 7:</strong>o<strong>JET_bitPrereadBackward</strong> é introduzido no Windows 7.  </p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitPrereadForward</p> | <p>Essa opção é usada para indexar na direção da frente.</p><p><strong>Windows 7:</strong><strong>JET_bitPrereadForward</strong> é introduzido no Windows 7.  </p> | 
+| <p>JET_bitPrereadBackward</p> | <p>Essa opção é usada para indexar na direção para trás.</p><p><strong>Windows 7:</strong><strong>JET_bitPrereadBackward</strong> é introduzido no Windows 7.  </p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>A operação não pode ser concluída porque todas as atividades na instância associada à sessão foram desativadas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que requer que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-Se essa função for realizada com sucesso, o índice atual do cursor será otimizado para uma verificação sequencial de todo o índice. Nenhuma alteração no estado do banco de dados ocorrerá.
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errClientRequestToStopJetService</p> | <p>A operação não pode ser concluída porque todas as atividades na instância associada à sessão foram quiesced como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p> | 
+| <p>JET_errNotInitialized</p> | <p>A operação não pode ser concluída porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errTermInProgress</p> | <p>A operação não pode ser concluída porque a instância associada à sessão está sendo fechada.</p> | 
+
+
+
+Se essa função for bem-sucedida, o índice atual do cursor será otimizado para uma verificação sequencial de todo o índice. Nenhuma alteração no estado do banco de dados ocorrerá.
 
 Se essa função falhar, nenhuma alteração na configuração do cursor ocorrerá. Nenhuma alteração no estado do banco de dados ocorrerá.
 
 #### <a name="remarks"></a>Comentários
 
-Se o aplicativo precisar examinar com eficiência um subconjunto conhecido de um índice, uma otimização semelhante também será executada sempre que um intervalo de índice for estabelecido usando [JetSetIndexRange](./jetsetindexrange-function.md). Essa otimização só está disponível no Windows XP e versões posteriores.
+Se o aplicativo precisar verificar com eficiência um subconjunto conhecido de um índice, uma otimização semelhante também será executada sempre que um intervalo de índices for estabelecido usando [JetSetIndexRange](./jetsetindexrange-function.md). Essa otimização só está disponível no Windows XP e versões posteriores.
 
-Se o aplicativo precisar examinar com eficiência um subconjunto desconhecido de um índice, nenhuma ação deverá ser executada. O mecanismo pode detectar automaticamente o comportamento da verificação e buscará os dados antecipadamente. No entanto, esse comportamento não é tão agressivo.
+Se o aplicativo precisar verificar com eficiência um subconjunto desconhecido de um índice, nenhuma ação deverá ser tomada. O mecanismo pode detectar automaticamente o comportamento de verificação e buscará dados com antecedência. No entanto, esse comportamento não é tão agressivo.
 
-Essa otimização tornará a verificação do índice primário eficiente e fará com que a verificação apenas dos dados de entrada de índice em um índice secundário seja eficiente. Ele não fará a verificação de um índice secundário enquanto recupera dados de registro eficientes. Isso ocorre porque o mecanismo não executa uma leitura antecipada nos dados do registro.
+Essa otimização torna a verificação do índice primário eficiente e torna a verificação apenas os dados de entrada de índice em um índice secundário eficiente. Ele não tornará a verificação de um índice secundário ao recuperar dados de registro eficiente. Isso acontece porque o mecanismo não executa uma leitura antecipada nos dados de registro.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Representando objetos em XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cae7eefc495cee7e515d699faf5074d187c726365d4723d9bbf443d346edb1dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68bcbc47a0e5466b69775b4ff9a6c09ce20bae6f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050374"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879659"
 ---
 # <a name="representing-objects-in-xml"></a>Representando objetos em XML
 
@@ -68,7 +68,7 @@ O procedimento a seguir descreve como codificar um objeto em XML usando C ou C++
     </tr>
     <tr class="even">
     <td>&quot;&quot; <strong>VT_I4</strong> PathLevel</td>
-    <td><dl> 0 = um <CLASS> <INSTANCE> elemento ou é gerado.<br />
+    <td><dl> 0 = uma &lt; classe &gt; ou <INSTANCE> elemento é gerado.<br />
 1 = um <VALUE.NAMEDOBJECT> elemento é gerado.<br />
 2 = um <VALUE.OBJECTWITHLOCALPATH> elemento é gerado.<br />
 3 = A <VALUE.OBJECTWITHPATH> é gerada.<br />

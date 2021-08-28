@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre o parâmetro DocumentImpositionColor. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o parâmetro DocumentImpositionColor. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: e1cb7e46-3078-46bf-a8c8-e10f6b9dd222
 title: DocumentImpositionColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b747487c19160d29778f306a91b62cf43d245f65
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 834f5ec9ac613fcd683c22fe77252b99223e320b9fbde43bb3bad5a1bed8958c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112516"
 ---
 # <a name="documentimpositioncolor"></a>DocumentImpositionColor
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-O conteúdo do aplicativo rotulado com a cor nomeada especificada deve aparecer em todas as separações de cores.
+O conteúdo do aplicativo rotulado com a cor nomeada especificada DEVE aparecer em todas as separações de cores.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ O conteúdo do aplicativo rotulado com a cor nomeada especificada deve aparecer 
 | Nome | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
-| Prefixo de escopo <br/> | Documento<br/>     |
+| Prefixo de definição de scoping <br/> | Documento<br/>     |
 | Observações <br/>          | Nenhum<br/>         |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

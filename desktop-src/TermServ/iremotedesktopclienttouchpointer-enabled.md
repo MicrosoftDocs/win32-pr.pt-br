@@ -1,12 +1,12 @@
 ---
-title: Propriedade habilitada para IRemoteDesktopClientTouchPointer
-description: Se o recurso de ponteiro de toque está habilitado no controle de cliente do contêiner de aplicativo RDP.
+title: Propriedade IRemoteDesktopClientTouchPointer Enabled
+description: Se o recurso de ponteiro de toque está habilitado no controle de cliente do contêiner do aplicativo RDP.
 ms.assetid: f1e2f2f2-1b96-4c5a-b0dd-fd57627c5ec3
 ms.tgt_platform: multiple
 keywords:
-- Propriedade habilitada Serviços de Área de Trabalho Remota
-- Propriedade Enabled Serviços de Área de Trabalho Remota, interface IRemoteDesktopClientTouchPointer
-- Serviços de Área de Trabalho Remota de interface IRemoteDesktopClientTouchPointer, Propriedade Enabled
+- Propriedades habilitadas Serviços de Área de Trabalho Remota
+- Propriedade habilitada Serviços de Área de Trabalho Remota , interface IRemoteDesktopClientTouchPointer
+- Interface IRemoteDesktopClientTouchPointer Serviços de Área de Trabalho Remota , propriedade Enabled
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd534a9f8ec77903f196bbdfa10e1823a18dff4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7ce04e38b41fce462973606f40f0099f010e6f4ab785900039e6771b0a9aaf4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124846"
 ---
-# <a name="iremotedesktopclienttouchpointerenabled-property"></a>Propriedade IRemoteDesktopClientTouchPointer:: Enabled
+# <a name="iremotedesktopclienttouchpointerenabled-property"></a>Propriedade IRemoteDesktopClientTouchPointer::Enabled
 
-Se o recurso de ponteiro de toque está habilitado no controle de cliente do contêiner de aplicativo RDP.
+Se o recurso de ponteiro de toque está habilitado no controle de cliente do contêiner do aplicativo RDP.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_Enabled(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-**true** se o recurso de ponteiro de toque estiver habilitado; caso contrário, **false**.
+**true** se o recurso de ponteiro de toque estiver habilitado; caso contrário, **false.**
 
 ## <a name="requirements"></a>Requisitos
 

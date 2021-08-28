@@ -1,31 +1,31 @@
 ---
-description: Propriedade MFPKEY_COLORCONV_SRCTOP-especifica a borda superior do retângulo de origem, em pixels.
+description: MFPKEY_COLORCONV_SRCTOP Propriedade - especifica a borda superior do retângulo de origem, em pixels.
 ms.assetid: 1dfd5557-3f3b-4d59-9df6-e73cb1157619
-title: Propriedade MFPKEY_COLORCONV_SRCTOP (Wmcodecdsp. h)
+title: MFPKEY_COLORCONV_SRCTOP propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4b0eca375fa0f28f26f5b19ad31596678fbfab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ab32b1ae9093c72ef9c5d7fb19505881f6afa78b8bc45e4a86a72d87ee72184
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113476"
 ---
-# <a name="mfpkey_colorconv_srctop-property"></a>\_Propriedade MFPKEY COLORCONV \_ SRCTOP
+# <a name="mfpkey_colorconv_srctop-property"></a>Propriedade SRCTOP MFPKEY \_ COLORCONV \_
 
 Especifica a borda superior do retângulo de origem, em pixels.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de conversor de cores](colorconverter.md)
+-   [DSP do Conversor de Cores](colorconverter.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,17 +33,17 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

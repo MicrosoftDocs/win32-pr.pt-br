@@ -30,12 +30,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d131a2630c0c64e4b4b6bcec371eb901665c989948a1db510b47a41d9159f06d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd99ec5a0a9f3bd4bd07fa88cfc15139c69a442b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950095"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886572"
 ---
 # <a name="msvm_summaryinformationbase-class"></a>\_Classe Msvm SummaryInformationBase
 
@@ -201,13 +201,13 @@ InstanceID é uma propriedade opcional que pode ser usada para identificar de fo
 
 Para garantir a exclusividade no NameSpace, o valor de InstanceID deve ser construído usando o seguinte algoritmo "preferencial":
 
-<OrgID>:<LocalID>
+&lt;OrgID &gt; : &lt; LocalId&gt;
 
-Onde <OrgID> e <LocalID> são separados por dois-pontos (:), e onde <OrgID> devem incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que está criando ou definindo a InstanceId ou que é uma ID registrada atribuída à entidade de negócios por uma autoridade global reconhecida. (Esse requisito é semelhante ao <Schema Name> \_ <Class Name> estrutura de nomes de classe de esquema.) Além disso, para garantir a exclusividade, <OrgID> não deve conter dois-pontos (:). Ao usar esse algoritmo, os primeiros dois-pontos a serem exibidos em InstanceID devem aparecer entre <OrgID> e <LocalID> .
+Onde &lt; OrgID &gt; e &lt; LocalId &gt; são separados por dois-pontos (:), e onde &lt; OrgID &gt; deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que está criando ou definindo a InstanceId ou que é uma ID registrada atribuída à entidade de negócios por uma autoridade global reconhecida. (Esse requisito é semelhante ao <Schema Name> \_ <Class Name> estrutura de nomes de classe de esquema.) Além disso, para garantir a exclusividade, &lt; OrgID &gt; não deve conter dois-pontos (:). Ao usar esse algoritmo, os primeiros dois-pontos para aparecer em InstanceID devem aparecer entre &lt; OrgID &gt; e &lt; LocalId &gt; .
 
-<LocalID> é escolhido pela entidade de negócios e não deve ser reutilizado para identificar elementos subjacentes (reais) diferentes. Se não for nulo e o algoritmo "preferencial" acima não for usado, a entidade de definição deverá garantir que a InstanceID resultante não seja reutilizada em quaisquer InstanceIDs produzidas por este ou outros provedores para o NameSpace dessa instância.
+&lt;A localId &gt; é escolhida pela entidade de negócios e não deve ser reutilizada para identificar elementos subjacentes (reais) diferentes. Se não for nulo e o algoritmo "preferencial" acima não for usado, a entidade de definição deverá garantir que a InstanceID resultante não seja reutilizada em quaisquer InstanceIDs produzidas por este ou outros provedores para o NameSpace dessa instância.
 
-Se não estiver definido como nulo para instâncias definidas por DMTF, o algoritmo "preferencial" deverá ser usado com o <OrgID> conjunto como CIM.
+Se não estiver definido como nulo para instâncias definidas por DMTF, o algoritmo "preferencial" deverá ser usado com o &lt; OrgID &gt; definido como CIM.
 
 </dd> <dt>
 
@@ -352,14 +352,14 @@ O subtipo do sistema virtual.
 
 <span id="Microsoft_Hyper-V_SubType_1"></span><span id="microsoft_hyper-v_subtype_1"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_1"></span>
 
-**Microsoft: Hyper-v: subtipo: 1** ("Microsoft: Hyper-v: subtipo: 1")
+**Microsoft:Hyper-V:SubType:1** ("Microsoft:Hyper-V:SubType:1")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Microsoft_Hyper-V_SubType_2"></span><span id="microsoft_hyper-v_subtype_2"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_2"></span>
 
-**Microsoft: Hyper-v: subtipo: 2** ("Microsoft: Hyper-v: subtipo: 2")
+**Microsoft:Hyper-V:SubType:2** ("Microsoft:Hyper-V:SubType:2")
 
 
 </dt> <dd></dd> </dl>
@@ -372,10 +372,10 @@ O subtipo do sistema virtual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -384,7 +384,7 @@ O subtipo do sistema virtual.
 
 <dl> <dt>
 
-[**Exibição de CIM \_**](cim-view.md)
+[**Exibição CIM \_**](cim-view.md)
 </dt> </dl>
 
  

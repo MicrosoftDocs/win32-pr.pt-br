@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 848d575f6fd8598aa3262273e9da3ce4cd1aaed12bcb2dc17e41e0d2f98bfdad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d37762166f079c7810a5ea28f2affe460d3bc08f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118978856"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478272"
 ---
 # <a name="jetsetcolumn-function"></a>Função JetSetColumn
 
@@ -72,67 +72,21 @@ Tamanho em bytes do buffer de entrada.
 
 Um grupo de bits que contém as opções a serem usadas para esta chamada, que incluem zero ou mais dos seguintes:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitSetAppendLV</p></td>
-<td><p>Essa opção é usada para acrescentar dados a uma coluna do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>. O mesmo comportamento pode ser obtido determinando o tamanho do valor longo existente e especificando <em>ibLongValue</em> em <em>psetinfo</em>. No entanto, é mais simples usar esse <em>grbit</em> , já que saber o tamanho do valor da coluna existente não é necessário.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetOverwriteLV</p></td>
-<td><p>Essa opção é usada para substituir o valor longo existente pelos dados fornecidos recentemente. Quando essa opção é usada, é como se o valor longo existente tiver sido definido como 0 (zero) comprimento antes da definição dos novos dados.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetRevertToDefaultValue</p></td>
-<td><p>Essa opção só é aplicável a colunas marcadas, esparsas ou com vários valores. Faz com que a coluna retorne o valor de coluna padrão em operações de recuperação de coluna subsequentes. Todos os valores de coluna existentes são removidos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetSeparateLV</p></td>
-<td><p>Essa opção é usada para forçar um valor longo, as colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>, a serem armazenadas separadamente do restante dos dados de registro. Isso ocorre normalmente quando o tamanho do valor longo impede que ele seja armazenado com os dados de registro restantes. No entanto, essa opção pode ser usada para forçar o valor longo a ser armazenado separadamente. Observe que valores longos de quatro bytes de tamanho menor não podem ser forçados a serem separados. Nesses casos, a opção é ignorada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetSizeLV</p></td>
-<td><p>Essa opção é usada para interpretar o buffer de entrada como um número inteiro de bytes a serem definidos como o comprimento do valor longo descrito pelo <em>columnid</em> fornecido e, se fornecido, o número de sequência em psetinfo- &gt; itagSequence. Se o tamanho fornecido for maior que o valor da coluna existente, a coluna será estendida com 0s. Se o tamanho for menor do que o valor da coluna existente, o valor será truncado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetUniqueMultiValues</p></td>
-<td><p>Essa opção é usada para impor que todos os valores em uma coluna com valores múltiplos sejam distintos. Essa opção compara os dados da coluna de origem, sem nenhuma transformação, com outros valores de coluna existentes e um erro será retornado se uma duplicata for encontrada. Se essa opção for fornecida, JET_bitSetAppendLV, JET_bitSetOverwriteLV e JET_bitSetSizeLV também não poderão ser fornecidos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetUniqueNormalizedMultiValues</p></td>
-<td><p>Essa opção é usada para impor que todos os valores em uma coluna com valores múltiplos sejam distintos. Essa opção compara a transformação normalizada da chave de dados de coluna com outros valores de coluna existentes transformados de forma semelhante e um erro será retornado se uma duplicata for encontrada. Se essa opção for fornecida, JET_bitSetAppendLV, JET_bitSetOverwriteLV e JET_bitSetSizeLV também não poderão ser fornecidos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetZeroLength</p></td>
-<td><p>Essa opção é usada para definir um valor de comprimento zero. Normalmente, um valor de coluna é definido como <strong>NULL</strong> passando um cbMax de 0 (zero). No entanto, para alguns tipos, como <a href="gg269213(v=exchg.10).md">JET_coltypText</a>, um valor de coluna pode ser 0 (zero), em vez de <strong>NULL</strong>, e essa opção é usada para diferenciar entre <strong>NULL</strong> e 0 (zero) comprimento.</p>
-<p><strong>Observação</strong>  Em geral, se a coluna for uma coluna de comprimento fixo, esse bit será ignorado e a coluna será definida como <strong>NULL</strong>. No entanto, se a coluna for uma coluna marcada de comprimento fixo, o comprimento da coluna será definido como 0. Quando a coluna marcada de comprimento fixo for definida como 0 comprimento, as tentativas de recuperar a coluna com <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> ou <a href="gg294135(v=exchg.10).md">JetRetrieveColumns</a> terão sucesso, mas o comprimento real retornado no parâmetro <em>cbActual</em> será 0.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetIntrinsicLV</p></td>
-<td><p>Essa opção é usada para armazenar o valor longo inteiro no registro.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetCompressed</p></td>
-<td><p>Essa opção é usada para tentar a compactação de dados ao armazenar os dados.</p>
-<p><strong>Windows 7:</strong>  JET_bitSetCompressed é introduzido no Windows 7.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetUncompressed</p></td>
-<td><p>Essa opção não é usada para tentar a compactação durante o armazenamento dos dados.</p>
-<p><strong>Windows 7:</strong>  JET_bitSetUnCompressed é introduzido no Windows 7.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitSetAppendLV</p> | <p>Essa opção é usada para acrescentar dados a uma coluna do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>. O mesmo comportamento pode ser obtido determinando o tamanho do valor longo existente e especificando <em>ibLongValue</em> em <em>psetinfo</em>. No entanto, é mais simples usar esse <em>grbit</em> , já que saber o tamanho do valor da coluna existente não é necessário.</p> | 
+| <p>JET_bitSetOverwriteLV</p> | <p>Essa opção é usada para substituir o valor longo existente pelos dados fornecidos recentemente. Quando essa opção é usada, é como se o valor longo existente tiver sido definido como 0 (zero) comprimento antes da definição dos novos dados.</p> | 
+| <p>JET_bitSetRevertToDefaultValue</p> | <p>Essa opção só é aplicável a colunas marcadas, esparsas ou com vários valores. Faz com que a coluna retorne o valor de coluna padrão em operações de recuperação de coluna subsequentes. Todos os valores de coluna existentes são removidos.</p> | 
+| <p>JET_bitSetSeparateLV</p> | <p>Essa opção é usada para forçar um valor longo, as colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>, a serem armazenadas separadamente do restante dos dados de registro. Isso ocorre normalmente quando o tamanho do valor longo impede que ele seja armazenado com os dados de registro restantes. No entanto, essa opção pode ser usada para forçar o valor longo a ser armazenado separadamente. Observe que valores longos de quatro bytes de tamanho menor não podem ser forçados a serem separados. Nesses casos, a opção é ignorada.</p> | 
+| <p>JET_bitSetSizeLV</p> | <p>Essa opção é usada para interpretar o buffer de entrada como um número inteiro de bytes a serem definidos como o comprimento do valor longo descrito pelo <em>columnid</em> fornecido e, se fornecido, o número de sequência em psetinfo- &gt; itagSequence. Se o tamanho fornecido for maior que o valor da coluna existente, a coluna será estendida com 0s. Se o tamanho for menor do que o valor da coluna existente, o valor será truncado.</p> | 
+| <p>JET_bitSetUniqueMultiValues</p> | <p>Essa opção é usada para impor que todos os valores em uma coluna com valores múltiplos sejam distintos. Essa opção compara os dados da coluna de origem, sem nenhuma transformação, com outros valores de coluna existentes e um erro será retornado se uma duplicata for encontrada. Se essa opção for fornecida, JET_bitSetAppendLV, JET_bitSetOverwriteLV e JET_bitSetSizeLV também não poderão ser fornecidos.</p> | 
+| <p>JET_bitSetUniqueNormalizedMultiValues</p> | <p>Essa opção é usada para impor que todos os valores em uma coluna com valores múltiplos sejam distintos. Essa opção compara a transformação normalizada da chave de dados de coluna com outros valores de coluna existentes transformados de forma semelhante e um erro será retornado se uma duplicata for encontrada. Se essa opção for fornecida, JET_bitSetAppendLV, JET_bitSetOverwriteLV e JET_bitSetSizeLV também não poderão ser fornecidos.</p> | 
+| <p>JET_bitSetZeroLength</p> | <p>Essa opção é usada para definir um valor de comprimento zero. Normalmente, um valor de coluna é definido como <strong>NULL</strong> passando um cbMax de 0 (zero). No entanto, para alguns tipos, como <a href="gg269213(v=exchg.10).md">JET_coltypText</a>, um valor de coluna pode ser 0 (zero), em vez de <strong>NULL</strong>, e essa opção é usada para diferenciar entre <strong>NULL</strong> e 0 (zero) comprimento.</p><p><strong>Observação</strong>  Em geral, se a coluna for uma coluna de comprimento fixo, esse bit será ignorado e a coluna será definida como <strong>NULL</strong>. No entanto, se a coluna for uma coluna marcada de comprimento fixo, o comprimento da coluna será definido como 0. Quando a coluna marcada de comprimento fixo for definida como 0 comprimento, as tentativas de recuperar a coluna com <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> ou <a href="gg294135(v=exchg.10).md">JetRetrieveColumns</a> terão sucesso, mas o comprimento real retornado no parâmetro <em>cbActual</em> será 0.</p> | 
+| <p>JET_bitSetIntrinsicLV</p> | <p>Essa opção é usada para armazenar o valor longo inteiro no registro.</p> | 
+| <p>JET_bitSetCompressed</p> | <p>Essa opção é usada para tentar a compactação de dados ao armazenar os dados.</p><p><strong>Windows 7:</strong>  JET_bitSetCompressed é introduzido no Windows 7.</p> | 
+| <p>JET_bitSetUncompressed</p> | <p>Essa opção não é usada para tentar a compactação durante o armazenamento dos dados.</p><p><strong>Windows 7:</strong>  JET_bitSetUnCompressed é introduzido no Windows 7.</p> | 
+
 
 
 *psetinfo*
@@ -143,142 +97,45 @@ Se *psetinfo* for atribuído como **NULL** , a função se comporta como se um *
 
 As seguintes opções podem ser definidas para este parâmetro:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ibLongValue</p></td>
-<td><p>Deslocamento binário em um valor de coluna longo em que os dados definidos devem começar.</p></td>
-</tr>
-<tr class="even">
-<td><p>itagSequence</p></td>
-<td><p>Número de sequência do valor de coluna de valores múltiplos desejado a ser definido. Se <em>itagSequence</em> for definido como 0 (zero), o valor fornecido deverá ser acrescentado ao final da sequência de valores com vários valors. Se o número de sequência fornecido for maior do que o último valor de valores múltiplos, o valor especificado será acrescentado ao final da sequência. Se o número de sequência corresponder a um valor existente, esse valor será substituído pelo valor especificado.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>ibLongValue</p> | <p>Deslocamento binário em um valor de coluna longo em que os dados definidos devem começar.</p> | 
+| <p>itagSequence</p> | <p>Número de sequência do valor de coluna de valores múltiplos desejado a ser definido. Se <em>itagSequence</em> for definido como 0 (zero), o valor fornecido deverá ser acrescentado ao final da sequência de valores com vários valors. Se o número de sequência fornecido for maior do que o último valor de valores múltiplos, o valor especificado será acrescentado ao final da sequência. Se o número de sequência corresponder a um valor existente, esse valor será substituído pelo valor especificado.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
 Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBadColumnId</p></td>
-<td><p>A ID de coluna fornecida está fora dos limites legais de uma ID de coluna.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnNotFound</p></td>
-<td><p>A coluna descrita pelo <em>columnid</em> fornecido não existe na tabela.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errColumnNotUpdatable</p></td>
-<td><p>Foi feita uma tentativa ilegal de atualizar um valor longo durante uma operação de exclusão de atualização original de cópia de inserção.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnTooBig</p></td>
-<td><p>Os dados de valor de coluna fornecidos no buffer de entrada excedem a limitação de tamanho natural para uma coluna de comprimento fixo ou configurados para texto de comprimento fixo ou colunas binárias. Esse erro também é retornado ao passar mais de 1024 bytes de dados para uma coluna longa e definir o sinalizador de JET_bitSetIntrinsicLV.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidBufferSize</p></td>
-<td><p>O tamanho de dados do valor da coluna fornecido não corresponde ao que é natural para o tipo de dados de comprimento fixo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidColumnType</p></td>
-<td><p>Foi feita uma tentativa ilegal de atualizar uma coluna de incremento automático durante uma operação de inserção ou atualização, ou para atualizar uma coluna de versão durante uma operação de substituição.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>As opções fornecidas são desconhecidas ou uma combinação ilegal de configurações de bit conhecido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>O psetinfo- &gt; cbStruct fornecido não é um tamanho válido para a estrutura de <a href="gg294090(v=exchg.10).md">JET_SETINFO</a> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errMultiValuedDuplicate</p></td>
-<td><p>A operação definir coluna tentou criar um valor duplicado e especificou JET_bitSetUniqueMultiValues ou JET_bitSetUniqueNormalizedMultiValues.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInTransaction</p></td>
-<td><p>Foi feita uma tentativa ilegal de atualizar um valor de coluna longo quando a sessão de chamada não estava em uma transação.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNullInvalid</p></td>
-<td><p>Foi feita uma tentativa ilegal de definir uma coluna não<strong>nula</strong> como <strong>nula</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnIllegalNull</p></td>
-<td><p>O mesmo que JET_errNullInvalid.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRecordTooBig</p></td>
-<td><p>O valor da coluna não pôde ser definido como o valor no buffer de entrada porque ele teria feito com que o registro excedesse sua limitação de tamanho relacionada ao tamanho da página. As colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> podem ser armazenadas separadamente dos dados de registro restantes. No entanto, outras colunas devem ser armazenadas com o registro e podem fazer com que a limitação do tamanho do registro seja excedida. Colunas longas exigem 5 bytes de espaço dentro do registro como uma ligação e isso também pode levar a JET_errRecordTooBig retornando.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p>
-<p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errUpdateNotPrepared</p></td>
-<td><p>O cursor não está atualmente no processo de inserir um novo registro ou atualizar um registro existente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errVersionStoreOutOfMemory</p></td>
-<td><p>Esse erro ocorrerá quando o tamanho configurado do repositório de versão for insuficiente para manter todas as atualizações pendentes.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnColumnMaxTruncated</p></td>
-<td><p>O valor da coluna no buffer de entrada excedeu o comprimento máximo configurado para uma coluna de comprimento variável e foi truncado.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBadColumnId</p> | <p>A ID de coluna fornecida está fora dos limites legais de uma ID de coluna.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Não é possível concluir a operação porque toda a atividade na instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errColumnNotFound</p> | <p>A coluna descrita pelo <em>columnid</em> fornecido não existe na tabela.</p> | 
+| <p>JET_errColumnNotUpdatable</p> | <p>Foi feita uma tentativa ilegal de atualizar um valor longo durante uma operação de exclusão de atualização original de cópia de inserção.</p> | 
+| <p>JET_errColumnTooBig</p> | <p>Os dados de valor de coluna fornecidos no buffer de entrada excedem a limitação de tamanho natural para uma coluna de comprimento fixo ou configurados para texto de comprimento fixo ou colunas binárias. Esse erro também é retornado ao passar mais de 1024 bytes de dados para uma coluna longa e definir o sinalizador de JET_bitSetIntrinsicLV.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidBufferSize</p> | <p>O tamanho de dados do valor da coluna fornecido não corresponde ao que é natural para o tipo de dados de comprimento fixo.</p> | 
+| <p>JET_errInvalidColumnType</p> | <p>Foi feita uma tentativa ilegal de atualizar uma coluna de incremento automático durante uma operação de inserção ou atualização, ou para atualizar uma coluna de versão durante uma operação de substituição.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>As opções fornecidas são desconhecidas ou uma combinação ilegal de configurações de bit conhecido.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>O psetinfo- &gt; cbStruct fornecido não é um tamanho válido para a estrutura de <a href="gg294090(v=exchg.10).md">JET_SETINFO</a> .</p> | 
+| <p>JET_errMultiValuedDuplicate</p> | <p>A operação definir coluna tentou criar um valor duplicado e especificou JET_bitSetUniqueMultiValues ou JET_bitSetUniqueNormalizedMultiValues.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errNotInTransaction</p> | <p>Foi feita uma tentativa ilegal de atualizar um valor de coluna longo quando a sessão de chamada não estava em uma transação.</p> | 
+| <p>JET_errNullInvalid</p> | <p>Foi feita uma tentativa ilegal de definir uma coluna não<strong>nula</strong> como <strong>nula</strong>.</p> | 
+| <p>JET_errColumnIllegalNull</p> | <p>O mesmo que JET_errNullInvalid.</p> | 
+| <p>JET_errRecordTooBig</p> | <p>O valor da coluna não pôde ser definido como o valor no buffer de entrada porque ele teria feito com que o registro excedesse sua limitação de tamanho relacionada ao tamanho da página. As colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> podem ser armazenadas separadamente dos dados de registro restantes. No entanto, outras colunas devem ser armazenadas com o registro e podem fazer com que a limitação do tamanho do registro seja excedida. Colunas longas exigem 5 bytes de espaço dentro do registro como uma ligação e isso também pode levar a JET_errRecordTooBig retornando.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p><p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligada.</p> | 
+| <p>JET_errUpdateNotPrepared</p> | <p>O cursor não está atualmente no processo de inserir um novo registro ou atualizar um registro existente.</p> | 
+| <p>JET_errVersionStoreOutOfMemory</p> | <p>Esse erro ocorrerá quando o tamanho configurado do repositório de versão for insuficiente para manter todas as atualizações pendentes.</p> | 
+| <p>JET_wrnColumnMaxTruncated</p> | <p>O valor da coluna no buffer de entrada excedeu o comprimento máximo configurado para uma coluna de comprimento variável e foi truncado.</p> | 
+
 
 
 Em caso de sucesso, a parte desejada de um valor de coluna para a coluna especificada é definida com os dados copiados do buffer de entrada. O conjunto de dados pode ter sido truncado se ele excedeu o comprimento máximo especificado para uma coluna de comprimento variável.
@@ -295,34 +152,9 @@ Um registro é limitado em tamanho com base no tamanho da página do banco de da
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

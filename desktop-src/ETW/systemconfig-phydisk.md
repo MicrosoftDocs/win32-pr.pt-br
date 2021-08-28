@@ -27,12 +27,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 465fe0bacd23ad99bb744c915b60056b96419761f93a4aefd5f1a3d2fb4c6129
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d39c56dd5c099974c9dac281d1ed4c961b946b56
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119766346"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886382"
 ---
 # <a name="systemconfig_phydisk-class"></a>Classe SystemConfig \_ PhyDisk
 
@@ -88,7 +88,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (14), **Max** (3), **Format("s")**
 </dt> </dl>
 
-Letra da unidade de inicialização no formato " <letter> :".
+Letra da unidade de inicialização no formato " &lt; letra &gt; :".
 
 </dd> <dt>
 
