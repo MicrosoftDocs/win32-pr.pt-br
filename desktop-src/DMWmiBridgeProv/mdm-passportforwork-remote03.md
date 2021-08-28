@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_PassportForWork_Remote03
-description: A \_ classe MDM PassportForWork \_ Remote03 define as configurações de política remota do Windows Hello para empresas.
+description: a \_ classe MDM PassportForWork \_ Remote03 define as Windows Hello para configurações de política remotas de negócios.
 ms.assetid: 221701be-944f-42cd-847e-553d41281749
 keywords:
 - Classe MDM_PassportForWork_Remote03
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae111389ad0f7c46b1f0b217bffc016e451ca9e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3385a8bc2dee36bdfaa0707778ec0b1b40e0def22e9baea42eba2534c00b6be3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104276"
 ---
 # <a name="mdm_passportforwork_remote03-class"></a>\_ \_ Classe REMOTE03 do MDM PassportForWork
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ PassportForWork \_ Remote03** define as configurações de política remota do Windows Hello para empresas.
+a classe **MDM \_ PassportForWork \_ Remote03** define as Windows Hello para configurações de política remotas de negócios.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -68,7 +68,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nó interior para definir políticas remotas do Windows Hello para empresas. Esse nó foi adicionado no Windows 10, versão 1511.
+nó Interior para definir Windows Hello remoto para políticas de negócios. esse nó foi adicionado no Windows 10, versão 1511.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nó para definir as configurações de política do Windows Hello para empresas.
+nó para definir as Windows Hello para configurações de política de negócios.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

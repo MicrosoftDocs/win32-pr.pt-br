@@ -1,7 +1,7 @@
 ---
 description: Quando substituído em uma classe derivada, avalia se um objeto IContextNode especificado atende aos critérios.
 ms.assetid: ade8e59c-6aeb-4a87-a95d-229f8f0b2223
-title: 'Método IMatchesCriteriaCallBack:: EvaluateContextNode (IACom. h)'
+title: Método IMatchesCriteriaCallBack::EvaluateContextNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 554cf451396101de2238258de0a0706956f24a02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5855928e0827632240c8230bdcc57dff836c5287eec61f2911cc62367a8915f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719046"
 ---
-# <a name="imatchescriteriacallbackevaluatecontextnode-method"></a>Método IMatchesCriteriaCallBack:: EvaluateContextNode
+# <a name="imatchescriteriacallbackevaluatecontextnode-method"></a>Método IMatchesCriteriaCallBack::EvaluateContextNode
 
 Quando substituído em uma classe derivada, avalia se um objeto [**IContextNode**](icontextnode.md) especificado atende aos critérios.
 
@@ -40,27 +40,27 @@ HRESULT EvaluateContextNode(
 
 <dl> <dt>
 
-*pContextNodeToEvaluate* \[ no\]
+*pContextNodeToEvaluate* \[ Em\]
 </dt> <dd>
 
-O objeto [**IContextNode**](icontextnode.md) a ser avaliado.
+O [**objeto IContextNode**](icontextnode.md) a ser avaliada.
 
 </dd> <dt>
 
-*pbResult* \[ fora\]
+*pbResult* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** se *pContextNodeToEvaluate* corresponder aos critérios; caso contrário, **Variant \_ false**.
+**VARIANT \_ TRUE** se *pContextNodeToEvaluate corresponde* aos critérios; caso contrário, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-Para usar o método [**IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md) ou [**IInkAnalyzer:: FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md), crie uma classe que implemente [**IMatchesCriteriaCallBack**](imatchescriteriacallback.md). Implemente **IMatchesCriteriaCallBack:: EvaluateContextNode** para retornar **Variant \_ true** se o objeto [**IContextNode**](icontextnode.md) corresponder aos seus critérios e **Variant \_ false** caso contrário. Para alguns critérios, talvez seja necessário fornecer um meio de inicializar ou manter o estado do seu objeto **IMatchesCriteriaCallBack** .
+Para usar [**o método IInkAnalyzer::FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md) ou o método [**IInkAnalyzer::FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md), crie uma classe que implemente [**IMatchesCriteriaCallBack.**](imatchescriteriacallback.md) Implemente **IMatchesCriteriaCallBack::EvaluateContextNode** para retornar **VARIANT \_ TRUE** se o objeto [**IContextNode**](icontextnode.md) corresponde aos seus critérios e **VARIANT \_ FALSE** caso contrário. Para alguns critérios, talvez seja necessário fornecer um meio de inicializar ou manter o estado do objeto **IMatchesCriteriaCallBack.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Para usar o método [**IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-find
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,10 +82,10 @@ Para usar o método [**IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-find
 [**IMatchesCriteriaCallBack**](imatchescriteriacallback.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
+[**Método IInkAnalyzer::FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
+[**Método IInkAnalyzer::FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

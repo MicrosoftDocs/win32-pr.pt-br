@@ -1,11 +1,11 @@
 ---
 title: Sync-Membership atributo
-description: Lista de membros contidos em um grupo SAM Builtin para sincronização.
+description: Lista de membros contidos em um grupo integrado sam para sincronização.
 ms.assetid: 48635e12-8dc4-44f1-92cd-5bfe01904807
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Sync-Membership do atributo AD
-- Esquema de AD do atributo syncMembership
+- Sync-Membership atributo AD Schema
+- Esquema do AD do atributo syncMembership
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17fe3a0de061a491082e045cabfd9f3c54434c77
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a64e966ef394fbcac5c8f6b1d3ac13852b4a563222574862bf61093ea00bdc79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022074"
 ---
 # <a name="sync-membership-attribute"></a>Sync-Membership atributo
 
-Lista de membros contidos em um grupo SAM Builtin para sincronização.
+Lista de membros contidos em um grupo integrado sam para sincronização.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Sync-Membership                         |
-| LDAP-Display-Name | syncMembership                          |
+| Ldap-Display-Name | syncMembership                          |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.665                  |
-| System-ID-GUID    | 037651e3-441d-11d1-a9c3-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 037651e3-441d-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,10 +58,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -79,10 +79,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -100,10 +100,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -121,10 +121,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -142,10 +142,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -163,10 +163,10 @@ Lista de membros contidos em um grupo SAM Builtin para sincronização.
 | ID do link                | 78           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

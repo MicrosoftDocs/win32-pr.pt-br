@@ -1,16 +1,16 @@
-- name: Usando os cabeçalhos do Windows
+- name: Usando os Windows de dados
   href: using-the-windows-headers.md
   items:
-    - name: Anotações de cabeçalho
+    - name: Anotações de header
       href: header-annotations.md
-    - name: Verificação de tipo estrito
+    - name: Verificação de tipo STRICT
       href: strict-type-checking.md
       items:
         - name: Habilitando STRICT
           href: enabling-strict.md
-        - name: Desabilitando estrito
+        - name: Desabilitando STRICT
           href: disabling-strict.md
-        - name: Conformidade estrita
+        - name: Conformidade ESTRITA
           href: strict-compliance.md
     - name: Tipos de dados do Windows
       href: windows-data-types.md
@@ -18,7 +18,7 @@
         - name: Inteiros grandes
           href: large-integers.md
           items:
-            - name: Funções de inteiro grandes
+            - name: Funções de inteiro grande
               href: large-integer-functions.md
               items:
                 - name: Int32x32To64

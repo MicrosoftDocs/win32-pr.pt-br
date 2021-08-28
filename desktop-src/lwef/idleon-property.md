@@ -1,39 +1,39 @@
 ---
-title: Propriedade idleize
-description: Propriedade idleize
+title: Propriedade IdleOn
+description: Propriedade IdleOn
 ms.assetid: ba436dec-c7b4-42e8-99d6-c6ff93afd73c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53e7fcec4bd6e163baab7722e4d893146819408a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03e08ada4d48197e3090b5fc821b0c5b9f532f47074985218019bb14be8881e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118749503"
 ---
-# <a name="idleon-property"></a>Propriedade idleize
+# <a name="idleon-property"></a>Propriedade IdleOn
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Retorna ou define um valor booliano que determina se o servidor gerencia as animações de estado **deixar** do caractere especificado.
+Retorna ou define um valor booliana que determina se o servidor gerencia as animações de estado **de Idling** do caractere especificado.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *").* *  \[  =  *Booliano* de ociosidade\]
+*agent***. Caracteres ("**_CharacterID_*_"). Booliana IdleOn_ *  \[  =  \]
 
 </dd> </dl> 
 
 | Parte      | Descrição                                                                                                                                                                                                             |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *booleano* | Uma expressão booliana que especifica se o servidor gerencia o modo ocioso. **True** (padrão) a manipulação de servidor do estado ocioso está habilitada. <br/> **Falso** A manipulação de servidor do estado ocioso está desabilitada. <br/> |
+| *booleano* | Uma expressão booliana que especifica se o servidor gerencia o modo ocioso. **A** manipulação de servidor True (Padrão) do estado ocioso está habilitada. <br/> **False** A manipulação do servidor do estado ocioso está desabilitada. <br/> |
 
 
 
@@ -41,9 +41,9 @@ Retorna ou define um valor booliano que determina se o servidor gerencia as anim
 
 ## <a name="remarks"></a>Comentários
 
-O servidor define automaticamente um tempo limite após a última animação executada para um caractere. Quando o intervalo desse temporizador for concluído, o servidor começará o estado **deixar** de um caractere, jogando suas animações **deixar** associadas em intervalos regulares. Se você quiser desabilitar o servidor de reproduzir automaticamente as animações de estado **deixar** , defina a propriedade como **false** e reproduza uma animação ou chame o método [**Stop**](stop-method.md) . A definição desse valor não afeta o estado de animação atual do caractere.
+O servidor define automaticamente um tempo-out após a última animação tocada para um caractere. Quando o intervalo desse temporizador for concluído, o servidor começará o estado de **Idling** de um caractere, tocando suas animações de **Idling** associadas em intervalos regulares. Se você quiser desabilitar o servidor de reproduzir automaticamente as animações de estado de **Idling,** de definir a propriedade como **False** e reproduzir uma animação ou chamar o [**método Stop.**](stop-method.md) Definir esse valor não afeta o estado de animação atual do caractere.
 
-Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
+Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 
  
 

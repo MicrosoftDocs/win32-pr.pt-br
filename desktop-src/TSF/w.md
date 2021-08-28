@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 3f208441-edb5-4507-9691-c726b62b34e9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 114dfe4c7d811379fcf56c7b5906120606fb0e06
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 13c7afee32fd04589040c1ac16170f71371d69e2549a1789daf487d66f3ae395
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105760350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873146"
 ---
 # <a name="w-text-services-framework"></a>W (estrutura de serviços de texto)
 

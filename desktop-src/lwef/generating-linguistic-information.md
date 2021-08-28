@@ -4,12 +4,12 @@ description: Gerando informações linguísticas
 ms.assetid: 903561f0-89dc-4297-8ea0-3fa150f2e6dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a068153863236b7096b67a976bbcf0654af9c75df87d2f527027830a4df33eb4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38f6f0409280e96ac288992efa560e83abd7c553
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118479268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879760"
 ---
 # <a name="generating-linguistic-information"></a>Gerando informações linguísticas
 
@@ -43,7 +43,7 @@ Ajustar o limite de um rótulo de phoneme altera o tempo de um phoneme quando o 
 
 Você também pode substituir uma atribuição de phoneme selecionando o rótulo phoneme e escolhendo Substituir **Phoneme** no **menu** Editar ou clicando com o botão direito do mouse no rótulo do phoneme e escolhendo Substituir **Phoneme** no menu pop-up. O editor exibe a caixa **de diálogo Substituir Phoneme** e realça a atribuição de phoneme atual do rótulo. Você pode escolher um phoneme de substituição selecionando um na lista **IPA** ou escolhendo outra entrada na **lista** Nome. Se mais de uma tradução de IPA estiver disponível para esse nome, escolha um item na **lista IPA.** Para inserir uma designação de IPA para um phoneme que pode não ser incluído diretamente na linguagem, digite seu valor hexatório ou vários valores hexatórios, concatenados com um caractere de a mais (+). Depois de selecionar as informações de phoneme de substituição, escolha **OK** e o editor substituirá o rótulo de phoneme selecionado.
 
-![Captura de tela que mostra a caixa de diálogo 'Substituir Phoneme', com '<SIL>' selecionado como o rótulo descritivo.](images/f5listphone.gif)
+![Captura de tela que mostra a caixa de diálogo 'Substituir Phoneme', com ' &lt; SIL ' selecionado como o rótulo &gt; descritivo.](images/f5listphone.gif)
 
 Da mesma forma, você pode substituir um rótulo de palavra clicando na caixa do rótulo e escolhendo  Substituir **Palavra** ou clicando com o botão direito do mouse na caixa do rótulo e escolhendo Substituir Palavra no menu pop-up. O editor exibe a caixa **de diálogo Substituir Palavra.** Insira a palavra de substituição e escolha **OK.**
 

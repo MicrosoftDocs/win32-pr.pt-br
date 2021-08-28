@@ -1,7 +1,7 @@
 ---
-description: Função D3DXUVAtlasCreate – criar um Atlas UV para uma malha.
+description: Função D3DXUVAtlasCriar – Criar um atlas UV para uma malha.
 ms.assetid: 70256990-b177-451e-b42a-84799fdc2a17
-title: Função D3DXUVAtlasCreate (D3DX9Mesh. h)
+title: Função D3DXUVAtlasCriar (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f382e7d59f3a5b5db8ba3cfd65ba6cc1a11e86d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31ab8315370b68e2bc71e4a964440e7c7703d392cf5902e244e976080c893779
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804077"
 ---
-# <a name="d3dxuvatlascreate-function"></a>Função D3DXUVAtlasCreate
+# <a name="d3dxuvatlascreate-function"></a>Função D3DXUVAtlasCriar
 
-Crie um Atlas UV para uma malha.
+Crie um atlas UV para uma malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,75 +58,75 @@ HRESULT D3DXUVAtlasCreate(
 
 <dl> <dt>
 
-*pMesh* \[ no\]
+*pMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Ponteiro para uma malha de entrada (consulte [**ID3DXMesh**](id3dxmesh.md)) que contém a geometria do objeto para calcular o Atlas. No mínimo, a malha deve conter dados de posição e coordenadas de textura 2D.
+Ponteiro para uma malha de entrada (consulte [**ID3DXMesh**](id3dxmesh.md)) que contém a geometria do objeto para calcular o atlas. No mínimo, a malha deve conter dados de posição e coordenadas de textura 2D.
 
 </dd> <dt>
 
-*dwMaxChartNumber* \[ no\]
+*dwMaxChartNumber* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-O número máximo de gráficos para particionar a malha. Consulte comentários sobre os modos de particionamento. Use 0 para informar ao D3DX que o Atlas deve ser parametrizado com base na ampliação.
+O número máximo de gráficos para particionar a malha. Consulte comentários sobre os modos de particionamento. Use 0 para dizer ao D3DX que o atlas deve ser parametrizado com base no stretch.
 
 </dd> <dt>
 
-*fMaxStretch* \[ no\]
+*fMaxStretch* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 A quantidade de alongamento permitida. 0 significa que nenhum alongamento é permitido, 1 significa que qualquer quantidade de alongamento pode ser usada.
 
 </dd> <dt>
 
-*dwWidth* \[ no\]
+*dwWidth* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Largura da textura.
 
 </dd> <dt>
 
-*dwHeight* \[ no\]
+*dwHeight* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Altura da textura.
 
 </dd> <dt>
 
-*fGutter* \[ no\]
+*fGutter* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-A distância mínima, em texels, entre dois gráficos no Atlas. A medianiz sempre é dimensionada pela largura; Portanto, se uma medianiz de 2,5 for usada em uma textura 512x512, a distância mínima entre dois gráficos será 2,5/512,0 texels.
+A distância mínima, em texels, entre dois gráficos no atlas. A medianiz sempre é dimensionada pela largura; portanto, se uma medianeira de 2,5 for usada em uma textura 512x512, a distância mínima entre dois gráficos será de 2,5 /512,0 texels.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ no\]
+*dwTextureIndex* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de coordenadas de textura baseado em zero que identifica o conjunto de coordenadas de textura a ser usado.
+Índice de coordenadas de textura baseado em zero que identifica qual conjunto de coordenadas de textura usar.
 
 </dd> <dt>
 
-*pdwAdjacency* \[ no\]
+*pdwAdjacency* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Um ponteiro para uma matriz de dados de adjacência. com 3 DWORDs por face, indicando quais triângulos são adjacentes entre si (consulte [**ID3DXBaseMesh:: GenerateAdjacency**](id3dxbasemesh--generateadjacency.md)).
+Um ponteiro para uma matriz de dados de adjacency. com 3 DWORDs por face, indicando quais triângulos são adjacentes uns aos outros (consulte [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md)).
 
 </dd> <dt>
 
@@ -135,38 +135,38 @@ Um ponteiro para uma matriz de dados de adjacência. com 3 DWORDs por face, indi
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Uma matriz com 3 DWORDs por face. Cada face indica se uma borda é falsa ou não. Uma borda diferente de falsa é indicada por-1, uma borda falsa é indicada por qualquer outro valor. Isso permite a parametrização de uma malha de quatro processadores em que as bordas no meio do meio de cada Quad não serão recortadas.
+Uma matriz com 3 DWORDS por face. Cada face indica se uma borda é falsa ou não. Uma borda não falsa é indicada por -1, uma borda falsa é indicada por qualquer outro valor. Isso permite a parametrização de uma malha de quads em que as bordas no meio de cada quad não serão cortadas.
 
 </dd> <dt>
 
-*pfIMTArray* \[ no\]
+*pfIMTArray* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Um ponteiro para uma matriz de tempos de métricas integrados que descreve como alongar um triângulo (consulte [IntegratedMetricTensor](using-uvatlas.md)).
+Um ponteiro para uma matriz de tensores de métrica integrados que descreve como alongar um triângulo (consulte [IntegratedMetricTensor](using-uvatlas.md)).
 
 </dd> <dt>
 
-*pCallback* \[ no\]
+*pCallback* \[ Em\]
 </dt> <dd>
 
 Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
 
-Um ponteiro para uma função de retorno de chamada (consulte [LPD3DXUVATLASCB](lpd3dxuvatlascb.md)) que é útil para monitorar o progresso.
+Um ponteiro para uma função de retorno de chamada [(consulte LPD3DXUVATLASCB](lpd3dxuvatlascb.md)) que é útil para monitorar o progresso.
 
 </dd> <dt>
 
-*fCallbackFrequency* \[ no\]
+*fCallbackFrequency* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especifique com que frequência o D3DX chamará o retorno de chamada; um valor padrão razoável é 0,0001 f.
+Especifique com que frequência o D3DX chamará o retorno de chamada; um valor padrão razoável é 0,0001f.
 
 </dd> <dt>
 
-*pUserContent* \[ no\]
+*pUserContent* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
@@ -175,7 +175,7 @@ Ponteiro para um valor definido pelo usuário que é passado para a função de 
 
 </dd> <dt>
 
-*dwOptions* \[ no\]
+*dwOptions* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -184,48 +184,48 @@ Especifique a qualidade dos gráficos gerados. Consulte [**D3DXUVATLAS**](./d3dx
 
 </dd> <dt>
 
-*ppMeshOut* \[ no\]
+*ppMeshOut* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Ponteiro para a malha criada com o Atlas (consulte [**ID3DXMesh**](id3dxmesh.md)).
+Ponteiro para a malha criada com o atlas (consulte [**ID3DXMesh**](id3dxmesh.md)).
 
 </dd> <dt>
 
-*ppFacePartitioning* \[ fora\]
+*ppFacePartitioning* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Um ponteiro para uma matriz dos dados de particionamento de face final. Cada elemento contém um DWORD por face (consulte [**ID3DXBuffer**](id3dxbuffer.md)).
+Um ponteiro para uma matriz dos dados finais de particionamento facial. Cada elemento contém uma DWORD por face (consulte [**ID3DXBuffer**](id3dxbuffer.md)).
 
 </dd> <dt>
 
-*ppVertexRemapArray* \[ fora\]
+*ppVertexRemapArray* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Um ponteiro para uma matriz de vértices remapeados. Cada elemento da matriz identifica o vértice original do qual cada vértice final veio (se o vértice foi dividido durante o remapeamento). Cada elemento de matriz contém um DWORD por vértice.
+Um ponteiro para uma matriz de vértices remapped. Cada elemento de matriz identifica o vértice original de origem de cada vértice final (se o vértice foi dividido durante o remapeamento). Cada elemento de matriz contém uma DWORD por vértice.
 
 </dd> <dt>
 
-*pfMaxStretchOut* \[ fora\]
+*pfMaxStretchOut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Um ponteiro para o valor máximo de Stretch gerado pelo algoritmo do Atlas. O intervalo está entre 0,0 e 1,0.
+Um ponteiro para o valor máximo de alongamento gerado pelo algoritmo atlas. O intervalo está entre 0,0 e 1,0.
 
 </dd> <dt>
 
-*pdwNumChartsOut* \[ fora\]
+*pdwNumChartsOut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Um ponteiro para o número de gráficos criados pelo algoritmo do Atlas. Se dwMaxChartNumber for muito baixo, esse parâmetro retornará o número mínimo de gráficos necessários para criar um Atlas.
+Um ponteiro para o número de gráficos criados pelo algoritmo atlas. Se dwMaxChartNumber for muito baixo, esse parâmetro retornará o número mínimo de gráficos necessários para criar um atlas.
 
 </dd> </dl>
 
@@ -233,14 +233,14 @@ Um ponteiro para o número de gráficos criados pelo algoritmo do Atlas. Se dwMa
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for realizada com sucesso, o valor de retorno será D3D \_ OK; caso contrário, o valor será D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D OK; caso contrário, o valor \_ será D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-D3DXUVAtlasCreate pode particionar a geometria de malha de duas maneiras:
+D3DXUVAtlasCriar pode particionar geometria de malha de duas maneiras:
 
 -   Com base no número de gráficos
--   Com base na ampliação máxima permitida. Se a ampliação máxima permitida for 0, cada triângulo provavelmente estará em seu próprio gráfico.
+-   Com base no alongamento máximo permitido. Se o stretch máximo permitido for 0, cada triângulo provavelmente estará em seu próprio gráfico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -248,19 +248,19 @@ D3DXUVAtlasCreate pode particionar a geometria de malha de duas maneiras:
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Funções UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> <dt>
 
-[Ferramenta de Command-Line do Atlas de UV (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
+[Ferramenta de Command-Line UV Atlas (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
 </dt> </dl>
 
  

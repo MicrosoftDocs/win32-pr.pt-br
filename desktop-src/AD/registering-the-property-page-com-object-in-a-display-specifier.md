@@ -1,6 +1,6 @@
 ---
 title: Registrando o objeto COM da página de propriedades em um especificador de exibição
-description: Este tópico mostra como registrar uma DLL de extensão que contém uma folha de propriedades Active Directory com o registro do Windows e Active Directory.
+description: este tópico mostra como registrar uma DLL de extensão que contém uma folha de propriedades Active Directory com o registro Windows e Active Directory.
 ms.assetid: e2d6142b-c2fe-4435-b4af-83f7cd45218b
 ms.tgt_platform: multiple
 keywords:
@@ -9,28 +9,28 @@ keywords:
 - Active Directory de especificadores de exibição, registrando o objeto COM da página de propriedades em
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5b08ac0ea6329026a6d367e71064bde917b1a6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0f6685e406cb1bfdc16f73dd2fddd94a195fe74a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084437"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881236"
 ---
 # <a name="registering-the-property-page-com-object-in-a-display-specifier"></a>Registrando o objeto COM da página de propriedades em um especificador de exibição
 
-Ao usar COM para criar uma DLL de extensão de folha de propriedades para Active Directory Domain Services, você também deve registrar a extensão com o registro do Windows e Active Directory Domain Services. O registro da extensão permite que os snap-ins administrativos do MMC Active Directory e o Shell do Windows reconheçam a extensão.
+ao usar com para criar uma DLL de extensão de folha de propriedades para Active Directory Domain Services, você também deve registrar a extensão com o registro Windows e Active Directory Domain Services. o registro da extensão habilita os snap-ins administrativos Active Directory do MMC e o shell de Windows para reconhecer a extensão.
 
-## <a name="registering-in-the-windows-registry"></a>Registrando no registro do Windows
+## <a name="registering-in-the-windows-registry"></a>registrando no registro de Windows
 
-Como todos os servidores COM, uma extensão de folha de propriedades deve ser registrada no registro do Windows. A extensão é registrada sob a chave a seguir.
+como todos os servidores COM, uma extensão de folha de propriedades deve ser registrada no registro de Windows. A extensão é registrada sob a chave a seguir.
 
 ```
 HKEY_CLASSES_ROOT
-   CLSID
-      <clsid>
+   CLSID
+      <clsid>
 ```
 
-*<clsid>* é a representação de cadeia de caracteres do CLSID, conforme produzido pela função [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) . Sob a *<clsid>* chave, há uma chave **InprocServer32** que identifica o objeto como um servidor no processo de 32 bits. Na chave **InprocServer32** , o local da dll é especificado no valor padrão e o modelo de threading é especificado no valor de **ThreadingModel** . Todas as extensões de folha de propriedades devem usar o modelo de Threading "Apartment".
+*&lt; CLSID &gt;* é a representação de cadeia de caracteres do CLSID, conforme produzido pela função [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) . Sob a chave *&lt; &gt; CLSID* , há uma chave **InprocServer32** que identifica o objeto como um servidor no processo de 32 bits. Na chave **InprocServer32** , o local da dll é especificado no valor padrão e o modelo de threading é especificado no valor de **ThreadingModel** . Todas as extensões de folha de propriedades devem usar o modelo de Threading "Apartment".
 
 ## <a name="registering-with-active-directory-domain-services"></a>Registrando com Active Directory Domain Services
 
@@ -40,9 +40,9 @@ Há três atributos de especificador de exibição para os quais uma extensão d
 
 O atributo [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) identifica as páginas de propriedades administrativas a serem exibidas em Active Directory snap-ins administrativos. A página de propriedades é exibida quando o usuário exibe as propriedades de objetos da classe apropriada em um dos snap-ins administrativos do MMC Active Directory.
 
-O atributo [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica as páginas de propriedades do usuário final a serem exibidas no Shell do Windows. A página de propriedades é exibida quando o usuário exibe as propriedades dos objetos da classe apropriada no Windows Explorer. A partir dos sistemas operacionais Windows Server 2003, o Shell do Windows não exibe mais objetos do Active Directory Domain Services.
+o atributo [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica as páginas de propriedades do usuário final a serem exibidas no Windows shell. a página de propriedades é exibida quando o usuário exibe as propriedades dos objetos da classe apropriada no Windows Explorer. a partir dos sistemas operacionais Windows Server 2003, o Windows shell não exibe mais objetos do Active Directory Domain Services.
 
-O [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) só está disponível nos sistemas operacionais Windows Server 2003. A página de propriedades é exibida quando o usuário exibe as propriedades de mais de um objeto da classe apropriada em um dos snap-ins administrativos do MMC Active Directory.
+o [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) só está disponível nos sistemas operacionais Windows Server 2003. A página de propriedades é exibida quando o usuário exibe as propriedades de mais de um objeto da classe apropriada em um dos snap-ins administrativos do MMC Active Directory.
 
 Todos esses atributos têm valores múltiplos.
 
@@ -111,9 +111,9 @@ O exemplo de código a seguir é um valor de exemplo que pode ser usado para os 
 
 
 > [!IMPORTANT]
-> Para o Shell do Windows, os dados do especificador de exibição são recuperados no logon do usuário e armazenados em cache para a sessão do usuário. Para snap-ins administrativos, os dados do especificador de exibição são recuperados quando o snap-in é carregado e armazenado em cache durante o tempo de vida do processo. Para o Shell do Windows, isso indica que as alterações nos especificadores de exibição entram em vigor depois que um usuário faz logoff e, em seguida, faz logon novamente. Para os snap-ins administrativos, as alterações entram em vigor quando o snap-in ou o arquivo de console é carregado.
+> para o Windows shell, os dados do especificador de exibição são recuperados no logon do usuário e armazenados em cache para a sessão do usuário. Para snap-ins administrativos, os dados do especificador de exibição são recuperados quando o snap-in é carregado e armazenado em cache durante o tempo de vida do processo. para o Windows shell, isso indica que as alterações nos especificadores de exibição entram em vigor depois que um usuário faz logoff e, em seguida, faz logon novamente. Para os snap-ins administrativos, as alterações entram em vigor quando o snap-in ou o arquivo de console é carregado.
 
- 
+ 
 
 ## <a name="adding-a-value-to-the-property-sheet-extension-attributes"></a>Adicionando um valor aos atributos de extensão da folha de propriedades
 
@@ -434,6 +434,6 @@ HRESULT GetDisplaySpecifier(IADsContainer *pContainer, LPOLESTR szDispSpec, IADs
 
 
 
- 
+ 
 
- 
+ 

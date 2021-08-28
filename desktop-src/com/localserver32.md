@@ -6,12 +6,12 @@ keywords:
 - COM chave do registro LocalServer32
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd068f51f33b6c283384198c0206bc9c3b6357f
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 105cb352ffa3833c59e5ee8d042689e82e77b29dbcea7e49608d0047876bdd37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104499170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859396"
 ---
 # <a name="localserver32"></a>LocalServer32
 
@@ -21,15 +21,15 @@ Especifica o caminho completo para um aplicativo de servidor local de 32 bits.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      LocalServer32
-         (Default) = path
-         ServerExecutable = path
+   {CLSID}
+      LocalServer32
+         (Default) = path
+         ServerExecutable = path
 ```
 
 ## <a name="remarks"></a>Comentários
 
-O valor **ServerExecutable** , que é do tipo **reg \_ sz** e tem suporte a partir do Windows Server 2003, funciona em conjunto com a subchave **LocalServer32** para evitar qualquer ambiguidade ao usar a função [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) . **LocalServer32** especifica o local do aplicativo de servidor com a ser iniciado, e essas informações são passadas como o primeiro parâmetro *lpApplicationName* para **CreateProcess**. Dependendo da implementação de **CreateProcess**, essas informações podem ser ambíguas. Por esse motivo, se **ServerExecutable** for especificado, com passará o valor nomeado **ServerExecutable** para o parâmetro *lpApplicationName* de **CreateProcess**. Se **ServerExecutable** não for especificado, com passará **NULL** como o valor para o primeiro parâmetro de **CreateProcess**.
+o valor **ServerExecutable** , que é do tipo **REG \_ SZ** e tem suporte a partir do Windows Server 2003, funciona em conjunto com a subchave **LocalServer32** para evitar qualquer ambiguidade ao usar a função [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) . **LocalServer32** especifica o local do aplicativo de servidor com a ser iniciado, e essas informações são passadas como o primeiro parâmetro *lpApplicationName* para **CreateProcess**. Dependendo da implementação de **CreateProcess**, essas informações podem ser ambíguas. Por esse motivo, se **ServerExecutable** for especificado, com passará o valor nomeado **ServerExecutable** para o parâmetro *lpApplicationName* de **CreateProcess**. Se **ServerExecutable** não for especificado, com passará **NULL** como o valor para o primeiro parâmetro de **CreateProcess**.
 
 Para ajudar a fornecer segurança do sistema, use cadeias de caracteres entre aspas no caminho para indicar onde o nome do arquivo executável termina e os argumentos começam. Por exemplo, em vez de especificar o seguinte caminho como a entrada **LocalServer32** :
 
@@ -59,6 +59,6 @@ Se você estiver implementando classes como serviços, deve estar ciente de que 
 [**LocalService**](localservice.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

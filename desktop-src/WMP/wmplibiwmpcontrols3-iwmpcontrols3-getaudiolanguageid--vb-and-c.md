@@ -3,9 +3,9 @@ title: Método IWMPControls3 getAudioLanguageID
 description: O método getAudioLanguageID retorna o LCID (identificador de localidade) para um índice de idioma de áudio especificado.
 ms.assetid: 880bbfca-6f69-41ce-a078-467c1939fae5
 keywords:
-- método getAudioLanguageID Windows Media Player
+- Windows Media Player do método getAudioLanguageID
 - método getAudioLanguageID Windows Media Player, interface IWMPControls3
-- Interface IWMPControls3 Windows Media Player, método getAudioLanguageID
+- Windows Media Player de interface IWMPControls3, método getAudioLanguageID
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb8112eafec018b12012d20b37bfe30f7b464377
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e853d5a13c40316341c0759899e06e7292c006c00068a1b527e5035ff10422b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506206"
 ---
 # <a name="iwmpcontrols3getaudiolanguageid-method"></a>Método IWMPControls3:: getAudioLanguageID
 
@@ -60,7 +60,7 @@ Um **System. Int32** que é o índice baseado em um do idioma de áudio.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. Int32** que é o LCID.
 
@@ -68,7 +68,7 @@ Um **System. Int32** que é o LCID.
 
 Um LCID identifica exclusivamente um dialeto de idioma específico, chamado de localidade.
 
-Para conteúdo baseado no Windows, as propriedades e os métodos relacionados à seleção de idioma dão suporte a apenas uma única saída.
+para Windows conteúdo baseado em mídia, as propriedades e os métodos relacionados à seleção de idioma dão suporte a apenas uma única saída.
 
 Use a propriedade **audioLanguageCount** para obter o número de idiomas de áudio com suporte e, em seguida, acesse um idioma de áudio individualmente usando um índice com base em um.
 

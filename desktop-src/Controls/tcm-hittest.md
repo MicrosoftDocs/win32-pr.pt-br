@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TCM_HITTEST (commctrl. h)
-description: Determina qual guia, se houver, está em uma posição de tela especificada. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ HitTest.
+title: TCM_HITTEST mensagem (Commctrl.h)
+description: Determina qual guia, se alguma, está em uma posição de tela especificada. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ HitTest.
 ms.assetid: 0334f616-8d39-4460-a7f8-692a9ffab012
 keywords:
-- Controles de TCM_HITTEST de mensagens do Windows
+- TCM_HITTEST controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04787662e417513d8c9c93e45cecd0d8bddc6cfa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47f0e619303300c5d04fc26a4b32009923422aede2a97b8faeb2175297c87d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104826"
 ---
-# <a name="tcm_hittest-message"></a>\_Mensagem de HITTEST TCM
+# <a name="tcm_hittest-message"></a>Mensagem TCM \_ HITTEST
 
-Determina qual guia, se houver, está em uma posição de tela especificada. Você pode enviar essa mensagem explicitamente ou usando a macro [**TabCtrl \_ HitTest**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_hittest) .
+Determina qual guia, se alguma, está em uma posição de tela especificada. Você pode enviar essa mensagem explicitamente ou usando a [**macro TabCtrl \_ HitTest.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_hittest)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Determina qual guia, se houver, está em uma posição de tela especificada. Voc
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TCHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-tchittestinfo) que especifica a posição da tela a ser testada.
+Ponteiro para uma [**estrutura TCHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-tchittestinfo) que especifica a posição da tela a ser testada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o índice da guia ou-1 se nenhuma guia estiver na posição especificada.
+Retorna o índice da guia ou -1 se nenhuma guia estiver na posição especificada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retorna o índice da guia ou-1 se nenhuma guia estiver na posição especificada
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

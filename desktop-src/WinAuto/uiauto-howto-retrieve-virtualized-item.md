@@ -1,22 +1,22 @@
 ---
 title: Como recuperar um item virtualizado
-description: Este tópico contém um código de exemplo que mostra como localizar e recuperar informações da interface do usuário sobre itens virtualizados em um controle.
+description: Este tópico contém um código de exemplo que mostra como encontrar e recuperar informações da interface do usuário sobre itens virtualizados em um controle .
 ms.assetid: 1882b8a9-0d03-4388-a1d0-1bff0ab9fc66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae878ce25dd4d279211948ddaa6f9d0965ce9b40
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d13a120d85ec106b05886128b4c5b44b81d377a933d4f8eb473500ba69aa9d17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859486"
 ---
 # <a name="how-to-retrieve-a-virtualized-item"></a>Como recuperar um item virtualizado
 
-Este tópico contém um código de exemplo que mostra como localizar e recuperar informações da interface do usuário sobre itens virtualizados em um controle.
+Este tópico contém um código de exemplo que mostra como encontrar e recuperar informações da interface do usuário sobre itens virtualizados em um controle .
 
 
-O exemplo a seguir pesquisa um contêiner de um item que tem o nome especificado e recupera a interface [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para o item. O exemplo procura primeiro na subárvore de automação da interface do usuário. Se o item não estiver lá, o exemplo usará a interface [**IUIAutomationItemContainerPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationitemcontainerpattern) do contêiner para localizar o item e, em seguida, usará a interface [**IUIAutomationVirtualizedItemPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvirtualizeditempattern) do item para perceber o item.
+O exemplo a seguir pesquisa um contêiner para um item que tem o nome especificado e recupera a interface [**IUIAutomationElement**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) para o item. O exemplo procura na subárvore Automação da Interface do Usuário primeiro. Se o item não estiver lá, o exemplo usará a interface [**IUIAutomationItemContainerPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationitemcontainerpattern) do contêiner para encontrar o item e, em seguida, usará a interface [**IUIAutomationVirtualizedItemPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvirtualizeditempattern) do item para realizar o item.
 
 
 ```C++
@@ -111,13 +111,13 @@ cleanup:
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Trabalhando com itens virtualizados](uiauto-workingwithvirtualizeditems.md)
 </dt> <dt>
 
-[Tópicos de instruções para clientes de automação da interface do usuário](uiauto-howto-topics-for-uiautomation-clients.md)
+[Tópicos de ida e Automação da Interface do Usuário clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
  

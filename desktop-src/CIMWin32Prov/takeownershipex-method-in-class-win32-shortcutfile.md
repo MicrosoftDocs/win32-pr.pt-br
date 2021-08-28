@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 69988c7995ee295297c92bbabf0ee83059304a94
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a5fc613cf722bd48e68c880f16964b1a695caf8ca6ba8a2b800f5ff5d68e6456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020334"
 ---
 # <a name="takeownershipex-method-of-the-win32_shortcutfile-class"></a>Método TakeOwnerShipEx da \_ classe shortcutfile do Win32
 
@@ -70,7 +70,7 @@ Se **for true**, a alteração de propriedade será aplicada recursivamente aos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -121,7 +121,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 

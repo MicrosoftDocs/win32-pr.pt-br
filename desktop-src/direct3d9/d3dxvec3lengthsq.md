@@ -1,7 +1,7 @@
 ---
 description: Retorna o quadrado do comprimento de um vetor 3D.
 ms.assetid: 25dc50cc-542b-4989-a858-9b37603393a0
-title: Função D3DXVec3LengthSq (D3dx9math. h)
+title: Função D3DXVec3LengthSq (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7bb7d17d4f1bc06d68a73a2cff9288d159381387
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bfb57d8275231ed02d696abe0d6886dcc9efc788b912fe1f57a70ebfaa020380
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105761229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803871"
 ---
 # <a name="d3dxvec3lengthsq-function"></a>Função D3DXVec3LengthSq
 
@@ -40,18 +40,18 @@ FLOAT D3DXVec3LengthSq(
 
 <dl> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para a estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para a estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 O comprimento quadrado do vetor.
 
@@ -61,8 +61,8 @@ O comprimento quadrado do vetor.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

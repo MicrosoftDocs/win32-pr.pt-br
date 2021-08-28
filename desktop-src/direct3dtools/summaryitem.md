@@ -1,5 +1,5 @@
 ---
-description: Representa informações de resumo sobre um evento.
+description: Representa informações resumidas sobre um evento.
 MS-HAID: vspixengine.SummaryItem
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b0ad0c468d2a9ec2c1f4f0c5ec8c7844e80ab2b1d2655781ae0dc6fa11d0ae05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7cf9d299c40c6afae5539e98758193bbbbb0cd9f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985436"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625982"
 ---
 # <a name="span-idvspixenginesummaryitemspansummaryitem-structure"></a><span id="vspixengine.summaryitem"></span>Estrutura SummaryItem
 
-Representa informações de resumo sobre um evento.
+Representa informações resumidas sobre um evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,12 +46,12 @@ Uma cadeia de caracteres COM que contém um valor relacionado ao evento.
 **ID**  
 A ID do evento.
 
-**ParentID**  
-A ID do evento pai, se houver.
+**Parentid**  
+A ID do evento Pai, se for o caso.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

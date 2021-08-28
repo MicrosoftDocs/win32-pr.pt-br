@@ -13,12 +13,12 @@ keywords:
 - gestos, solução de problemas de aplicativos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfadf28f5582f702c27f5cb1e15aff142ae14bcf
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 166f8c02fde7a9f53d1303c3e79a4fc9910be309
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881856"
 ---
 # <a name="troubleshooting-applications"></a>Solução de problemas de aplicativos
 
@@ -60,7 +60,7 @@ Esta seção fornece soluções para problemas comuns.
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>Não consigo distinguir entre a entrada do mouse e a Windows touch.</td>
+<td>Não consigo distinguir entre a entrada do mouse e a entrada Windows Touch.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
@@ -68,7 +68,7 @@ Esta seção fornece soluções para problemas comuns.
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Você pode chamar <a href="/windows/win32/api/winuser/nf-winuser-getmessageextrainfo">GetMessageExtraInfo</a> para as <strong>mensagens WM_LBUTTONDOWN</strong> <strong>e</strong> WM_LBUTTONUP para determinar a origem. O código a seguir mostra como isso pode ser feito. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Você pode chamar <a href="/windows/win32/api/winuser/nf-winuser-getmessageextrainfo">GetMessageExtraInfo para</a> as <strong>mensagens WM_LBUTTONDOWN</strong> <strong>e</strong> WM_LBUTTONUP para determinar a origem. O código a seguir mostra como isso pode ser feito. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
 <col  />
@@ -162,7 +162,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>Estou incluindo windows.h, mas ele ainda diz que <a href="wm-touchdown.md"><strong>WM_TOUCH</strong></a> não está definido.</td>
+<td>Estou incluindo windows.h, mas ele ainda diz <a href="wm-touchdown.md"><strong>que WM_TOUCH</strong></a> está definido.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
@@ -229,7 +229,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <tr class="odd">
 <td><pre><code>      POINT ptInput;
       if (GetTouchInputInfo((HTOUCHINPUT)lParam, cInputs, pInputs, sizeof(TOUCHINPUT))){
-        for (int i=0; i < static_cast<INT>(cInputs); i++){
+        for (int i=0; i < static_cast&lt;INT&gt;(cInputs); i++){
           TOUCHINPUT ti = pInputs[i];                       
           if (ti.dwID != 0){                
             // Do something with your touch input handle.
@@ -294,7 +294,7 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Depois de lidar com [**a mensagem WM \_ GESTURE,**](wm-gesture.md) eu para de receber comentários de limite. Ou então, um gesto que funcionou anteriormente não funciona agora.                                                                                                                                                                                                                         |
 | Causa    | Consumindo a [**mensagem WM \_ GESTURE**](wm-gesture.md) sem lidar com ela.                                                                                                                                                                                                                                                                                                    |
-| Solução | Você provavelmente está consumindo uma Windows Touch sem encaminhá-la para [DefWindowProc,](/windows/win32/api/winuser/nf-winuser-defwindowproca)o que resultará em comportamento inesperado. Verifique [Ponto de Partida com gestos Windows para](getting-started-with-multi-touch-gestures.md) obter mais informações sobre como lidar corretamente com mensagens WM [**\_ GESTURE.**](wm-gesture.md) |
+| Solução | Você provavelmente está consumindo uma Windows Touch sem encaminhá-la para [DefWindowProc,](/windows/win32/api/winuser/nf-winuser-defwindowproca)o que resultará em comportamento inesperado. Verifique [Ponto de Partida com Windows gestos para](getting-started-with-multi-touch-gestures.md) obter mais informações sobre como lidar corretamente com mensagens WM [**\_ GESTURE.**](wm-gesture.md) |
 
 
 
@@ -330,7 +330,7 @@ Para usar a função <a href="/windows/desktop/api/winuser/nf-winuser-screentocl
 </tr>
 <tr class="odd">
 <td>Solução</td>
-<td>Você precisa chamar <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> quando receber uma mensagem <a href="wm-gesturenotify.md"><strong>WM_GESTURENOTIFY,</strong></a> conforme descrito na referência <strong>WM_GESTURENOTIFY</strong> ou você precisa adicionar um manipulador para a mensagem <strong>WM_GESTURENOTIFY.</strong> O código a seguir mostra como um manipulador pode ser implementado para habilitar o suporte para rotação. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Você precisa chamar <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> quando receber uma mensagem <a href="wm-gesturenotify.md"><strong>WM_GESTURENOTIFY</strong></a> conforme descrito na referência <strong>do WM_GESTURENOTIFY</strong> ou você precisa adicionar um manipulador para a mensagem <strong>WM_GESTURENOTIFY.</strong> O código a seguir mostra como um manipulador pode ser implementado para habilitar o suporte para rotação. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
 <col  />

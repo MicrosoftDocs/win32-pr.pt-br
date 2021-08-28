@@ -1,5 +1,5 @@
 ---
-description: Pesquisa a próxima marca correspondente no pai especificado e retorna o TAGID da correspondência.
+description: Pesquisa a próxima combinação tag dentro do pai especificado e retorna o TAGID da match.
 ms.assetid: c96aa1c1-b0e6-49f5-9f74-7d0e050bee3b
 title: Função SdbFindNextTag
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 7a5baf728a75e4c02c20ed4207b7d6b9a968af1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fe9b9914ed9126a364fb377adc4afae84784df156a8e75c3d0d2f997f6185811
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103696"
 ---
 # <a name="sdbfindnexttag-function"></a>Função SdbFindNextTag
 
-Pesquisa a próxima marca correspondente no pai especificado e retorna o **TagId** da correspondência.
+Pesquisa a próxima combinação tag dentro do pai especificado e retorna **o TAGID** da match.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,34 +41,34 @@ TAGID WINAPI SdbFindNextTag(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tiParent* \[ no\]
+*tiParent* \[ Em\]
 </dt> <dd>
 
-O **TagId** do início da pesquisa. Esse parâmetro pode ser **TagId \_ raiz** ou **\_ \_ lista de tipos de marca**.
+O **TAGID** do início da pesquisa. Esse parâmetro pode ser **TAGID \_ ROOT ou** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tiPrev* \[ no\]
+*tiPrev* \[ Em\]
 </dt> <dd>
 
-O **TagId** da correspondência anterior.
+O **TAGID** da corresponder anterior.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O **TagId** da correspondência.
+O **TAGID** da combinação.
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar essa função, chame a função [**SdbFindFirstTag**](sdbfindfirsttag.md) .
+Antes de chamar essa função, chame a [**função SdbFindFirstTag.**](sdbfindfirsttag.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Antes de chamar essa função, chame a função [**SdbFindFirstTag**](sdbfindfir
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

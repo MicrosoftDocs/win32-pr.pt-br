@@ -1,9 +1,9 @@
 ---
-title: Função MB_GetString (User. h)
+title: MB_GetString função (User.h)
 description: Retorna cadeias de caracteres para botões de caixa de mensagem padrão.
 ms.assetid: D2AF238D-F5A8-477D-BF47-0F5D4D68B27E
 keywords:
-- Caixas de diálogo MB_GetString função
+- MB_GetString caixa de diálogo da função
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eafd33f268f2ef1ef87755b79aba6d5d0aa77bb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9bdd984a2f65ab8c2eed8a77fffa56af1d94633c828196428a674c9eee78c3ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985356"
 ---
-# <a name="mb_getstring-function"></a>\_Função GetString de MB
+# <a name="mb_getstring-function"></a>Função \_ GetString do MB
 
 Retorna cadeias de caracteres para botões de caixa de mensagem padrão.
 
@@ -43,11 +43,11 @@ LPCWSTR WINAPI MB_GetString(
 *wBtn* 
 </dt> <dd>
 
-A ID da cadeia de caracteres a ser retornada. Eles são identificados pelos valores de ID de comando da caixa de diálogo listados em winuser. h.
+A ID da cadeia de caracteres a ser retornada. Eles são identificados pelos valores de ID de comando da caixa de diálogo listados em winuser.h.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A cadeia de caracteres ou NULL se não for encontrado.
 
@@ -57,8 +57,8 @@ A cadeia de caracteres ou NULL se não for encontrado.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>User. h</dt> </dl>     |
-| Biblioteca<br/> | <dl> <dt>User32. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>User.h</dt> </dl>     |
+| Biblioteca<br/> | <dl> <dt>User32.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>User32.dll</dt> </dl> |
 
 

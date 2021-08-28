@@ -4,12 +4,12 @@ ms.assetid: cae7e5b3-8aaf-452d-80df-fb0ae04a342c
 title: IMR_QUERYCHARPOSITION código de notificação (IMM. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 947eec9b3dd1f678d9266bb795214cf392629193
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6a37679dce6a17d5687aeed1c8fbd1d5c8bf6651b3cfc597cfdfc2e419ecba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948763"
 ---
 # <a name="imr_querycharposition-notification-code"></a>Código de notificação do IMR \_ QUERYCHARPOSITION
 
@@ -56,7 +56,7 @@ Um aplicativo que desenha a própria cadeia de caracteres de composição, em ve
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 

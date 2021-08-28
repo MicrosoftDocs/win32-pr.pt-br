@@ -1,19 +1,19 @@
 ---
-description: Controlando um grafo de captura
+description: Controlando um Graph de captura
 ms.assetid: e7afafca-e993-4096-bad4-399ee6c67fe9
-title: Controlando um grafo de captura
+title: Controlando um Graph de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a00573256c1c010e23dfc598ceca5ac62d772711
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: d678e00452fbf90591fbc187039ddbbc37cc4fde446e2e285c77fcaab415e815
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652136"
 ---
-# <a name="controlling-a-capture-graph"></a>Controlando um grafo de captura
+# <a name="controlling-a-capture-graph"></a>Controlando um Graph de captura
 
-A interface [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) do Gerenciador de grafo de filtro tem métodos para executar, parar e pausar todo o grafo. No entanto, se o grafo de filtro tiver fluxos de captura e visualização, provavelmente você desejará controlar os dois fluxos de forma independente. Por exemplo, talvez você queira Visualizar o vídeo sem capturá-lo. Você pode fazer isso por meio do método [**ICaptureGraphBuilder2:: ControlStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-controlstream) .
+o filtro Graph interface [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) do gerenciador tem métodos para executar, parar e pausar todo o grafo. No entanto, se o grafo de filtro tiver fluxos de captura e visualização, provavelmente você desejará controlar os dois fluxos de forma independente. Por exemplo, talvez você queira Visualizar o vídeo sem capturá-lo. Você pode fazer isso por meio do método [**ICaptureGraphBuilder2:: ControlStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-controlstream) .
 
 > [!Note]  
 > Esse método não funciona ao capturar para um arquivo ASF (Advanced Systems Format).

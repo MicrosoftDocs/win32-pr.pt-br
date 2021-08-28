@@ -26,12 +26,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c0303f4696d1baa5129d93cd2e6a7703be611ed9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 75de4ab4d173b68f02eff73962fb198270770806
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753993"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882039"
 ---
 # <a name="cim_copyfileaction-class"></a>Classe do CIM \_ CopyAction
 
@@ -82,7 +82,7 @@ A classe **CIM \_ CopyValue** tem esses métodos.
 
 | Método                                                      | Descrição                                                                                                                                  |
 |:------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-copyfileaction.md) | Executa uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-copyfileaction.md) | Executa uma ação específica. Os detalhes de como o método executa a ação são específicos da implementação. Não implementado pelo WMI.<br/> |
 
 
 
@@ -467,7 +467,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -549,7 +549,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -677,7 +677,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -689,7 +689,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 
@@ -863,8 +863,8 @@ Versão da operação.
 
 A versão da operação deve estar em um dos seguintes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;principal &gt; . &lt; secundária &gt; . &lt; revisão&gt;
+-   &lt;principal &gt; . &lt; &gt; &lt; revisão de letra &gt; &lt; secundária&gt;
 
 Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 
