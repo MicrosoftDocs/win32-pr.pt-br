@@ -1,7 +1,7 @@
 ---
-description: Defina os dados de atributo da malha.
+description: Definir os dados de atributo da malha.
 ms.assetid: bcf7b1b3-b923-400a-8d12-5094f3844d8f
-title: 'Método ID3DX10Mesh:: SetAttributeData (D3DX10. h)'
+title: Método ID3DX10Mesh::SetAttributeData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 19d69f8747196d7b25c85cb04fb173adef193098
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2cdc3086e828134b8addbc657e69b08f02544b2e2fa162087009322e615666c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990336"
 ---
-# <a name="id3dx10meshsetattributedata-method"></a>Método ID3DX10Mesh:: SetAttributeData
+# <a name="id3dx10meshsetattributedata-method"></a>Método ID3DX10Mesh::SetAttributeData
 
-Defina os dados de atributo da malha.
+Definir os dados de atributo da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ HRESULT SetAttributeData(
 
 <dl> <dt>
 
-*pData* \[ no\]
+*pData* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**uint**](../winprog/windows-data-types.md) \***
+Tipo: **const [**UINT**](../winprog/windows-data-types.md) \***
 
-Os dados de atributo a serem definidos.
+Os dados de atributo a definir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

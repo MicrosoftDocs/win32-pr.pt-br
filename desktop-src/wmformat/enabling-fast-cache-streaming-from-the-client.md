@@ -3,8 +3,8 @@ title: Habilitando o streaming de cache rápido do cliente
 description: Habilitando o streaming de cache rápido do cliente
 ms.assetid: 2a850d6f-8e1d-4aeb-9791-c51c3debf118
 keywords:
-- Windows Media Format SDK, habilitando o streaming de cache rápido
-- SDK do Windows Media Format, streaming de cache rápido
+- Windows SDK do formato de mídia, habilitando o streaming de cache rápido
+- Windows SDK do formato de mídia, streaming de cache rápido
 - ASF (Advanced Systems Format), habilitando o streaming de cache rápido
 - ASF (formato de sistemas avançados), habilitando o streaming de cache rápido
 - ASF (Advanced Systems Format), streaming de cache rápido
@@ -13,12 +13,12 @@ keywords:
 - Streaming de cache rápido, habilitando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3f8423a6f71b86ea91a05ed74b931eaa28a64be
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 5b0f02a571d5fac456d4dbc743e5fb936f98342a0ed8e8739d653b659ab7c6f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447616"
 ---
 # <a name="enabling-fast-cache-streaming-from-the-client"></a>Habilitando o streaming de cache rápido do cliente
 
@@ -42,7 +42,7 @@ Com essas configurações, o leitor ativará o cache rápido por padrão se a la
 
 
 
- 
+ 
 
 O modificador WMCache = 1 força o leitor a usar o streaming de cache rápido, independentemente da banda de rede ou da taxa de bits do conteúdo, independentemente de quaisquer chamadas anteriores para **SetEnableFastCache**. No entanto, ele não substitui a configuração **SetEnableContentCaching** no leitor; nem substitui a configuração do servidor.
 
@@ -58,9 +58,9 @@ Mais de um modificador pode ser especificado; Use um e comercial (&) para separ�
 
 mms://MyServer/MyVideo.wmv? WMCache = 1&WMContentBitrate = 56000
 
- 
+ 
 
- 
+ 
 
 
 

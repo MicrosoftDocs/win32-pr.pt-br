@@ -1,19 +1,19 @@
 ---
-description: Coloca uma instrução de inclusão C ou IDL no código gerado.
+description: Coloca uma instrução include C ou IDL no código gerado.
 ms.assetid: 7a7ffd54-09e9-412d-a637-5dc27597b46e
-title: elemento literalInclude
+title: Elemento literalInclude
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e1f43f1b8d3d95e2ad8a378dd1c8cbada7758ad
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bcfbd72300607dd2c6f3f21e4be3666083b559cb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995123"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625312"
 ---
-# <a name="literalinclude-element"></a>elemento literalInclude
+# <a name="literalinclude-element"></a>Elemento literalInclude
 
-Coloca uma instrução de inclusão C ou IDL no código gerado.
+Coloca uma instrução include C ou IDL no código gerado.
 
 ## <a name="usage"></a>Uso
 
@@ -29,10 +29,10 @@ Coloca uma instrução de inclusão C ou IDL no código gerado.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -45,17 +45,17 @@ Coloca uma instrução de inclusão C ou IDL no código gerado.
 <tbody>
 <tr class="odd">
 <td><strong>Idioma</strong><br/></td>
-<td>Cadeia de caracteres de idioma<br/></td>
+<td>cadeia de caracteres de linguagem<br/></td>
 <td>Não<br/></td>
-<td>O tipo de arquivo de cabeçalho a ser incluído. <br/> <br/>
-<dt><strong>&</strong></dt> <dd> Incluir um arquivo de cabeçalho C.<br/> </dd> <dt><strong>INSERI</strong></dt> <dd> Incluir um arquivo IDL.<br/> </dd> </dl></td>
+<td>O tipo de arquivo de header a ser incluído. <br/> <br/>
+<dt><strong>C</strong></dt> <dd> Inclua um arquivo de header C.<br/> </dd> <dt><strong>IDL</strong></dt> <dd> Inclua um arquivo IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Local</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Esse atributo só é usado quando o <strong>idioma</strong> é definido como &quot; C &quot; .<br/> <br/>
-<dt><strong>True</strong></dt> <dd> Pesquisa o diretório atual para o cabeçalho nomeado antes de Pesquisar os diretórios do sistema.<br/> </dd> <dt><strong>For</strong></dt> <dd> Pesquise somente os diretórios do sistema para o cabeçalho nomeado.<br/> </dd> </dl></td>
+<td>Esse atributo só é usado quando <strong>Language</strong> é definido como &quot; &quot; C.<br/> <br/>
+<dt><strong>Verdade</strong></dt> <dd> Pesquisa o diretório atual para o header nomeado antes de pesquisar os diretórios do sistema.<br/> </dd> <dt><strong>False</strong></dt> <dd> Pesquise apenas os diretórios do sistema para o header nomeado.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -72,15 +72,15 @@ Não há elementos filho.
 
 | Elemento                         | Descrição                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Grupo**](file.md)<br/> | Gera um arquivo do gerador de código.<br/> <br/> |
+| [**file**](file.md)<br/> | Saída de um arquivo do gerador de código.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos a seguir mostram o código gerado de diferentes elementos **literalInclude** .
+Os exemplos a seguir mostram o código gerado de diferentes **elementos literalIncluir.**
 
-### <a name="example-1---generating-a-c-include-statement"></a>Exemplo 1-gerando uma instrução C include
+### <a name="example-1---generating-a-c-include-statement"></a>Exemplo 1 – Gerando uma instrução de inclusão C
 
 XML de entrada:
 
@@ -94,7 +94,7 @@ Código de saída:
 #include <wsdapi.h>
 ```
 
-### <a name="example-2---generating-a-c-include-statement"></a>Exemplo 2-gerando uma instrução C include
+### <a name="example-2---generating-a-c-include-statement"></a>Exemplo 2 – Gerando uma instrução de inclusão C
 
 XML de entrada:
 
@@ -108,7 +108,7 @@ Código de saída:
 #include "wsdapi.h"
 ```
 
-### <a name="example-3---generating-an-idl-import-statement"></a>Exemplo 3-gerando uma instrução de importação de IDL
+### <a name="example-3---generating-an-idl-import-statement"></a>Exemplo 3 – Gerando uma instrução de importação de IDL
 
 XML de entrada:
 
@@ -126,7 +126,7 @@ import wsdclient.idl;
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a754d88d048abccd199c6ab20a6a00fcfdc036
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7d2c25e3d44b9e4952a62bab98d16ea3e1987d616a05f18c2e0627e7a50bf0ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301176"
 ---
 # <a name="mapi-id-attribute"></a>Atributo MAPI-ID
 
@@ -57,8 +57,8 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -78,8 +78,8 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -99,8 +99,8 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -120,16 +120,16 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -141,16 +141,16 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -162,16 +162,16 @@ Um inteiro pelo qual os clientes MAPI identificam esse atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera o TAGID e um identificador para o banco de dados de Shim para o TAGREF especificado.
+description: Recupera o TAGID e um handle para o banco de dados shim para o TAGREF especificado.
 ms.assetid: 869c6af5-4c10-4358-9d6a-1a354be6f4e9
 title: Função SdbTagRefToTagID
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: faff00adc25a741342e586adea2f645a62eca36d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: feeb622fd196ed20efb60d866d59b634fdcd9ecd955a97a1d7af0aef1347c8f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815315"
 ---
 # <a name="sdbtagreftotagid-function"></a>Função SdbTagRefToTagID
 
-Recupera o **TagId** e um identificador para o banco de dados de Shim para o [**TAGREF**](tagref.md)especificado.
+Recupera o **TAGID e** um handle para o banco de dados shim para o [**TAGREF especificado.**](tagref.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbTagRefToTagID(
 
 <dl> <dt>
 
-*hSDB* \[ no\]
+*hSDB* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim retornado pela função [**SdbInitDatabase**](sdbinitdatabase.md) .
+Um handle para o banco de dados shim retornado pela [**função SdbInitDatabase.**](sdbinitdatabase.md)
 
 </dd> <dt>
 
-*trWhich* \[ no\]
+*trWhich* \[ Em\]
 </dt> <dd>
 
-O [**TAGREF**](tagref.md).
+O [**TAGREF.**](tagref.md)
 
 </dd> <dt>
 
-*ppdb* \[ fora\]
+*ppdb* \[ out\]
 </dt> <dd>
 
-O identificador resultante para o banco de dados de Shim.
+O alça resultante para o banco de dados shim.
 
 </dd> <dt>
 
-*ptiWhich* \[ fora\]
+*ptiWhich* \[ out\]
 </dt> <dd>
 
-O **TagId** resultante.
+O **TAGID resultante.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

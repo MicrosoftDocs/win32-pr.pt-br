@@ -1,23 +1,23 @@
 ---
-title: Código de exemplo para excluir uma partição de diretório de aplicativo
-description: Este tópico inclui exemplos de código usados para excluir uma partição de diretório de aplicativo.
+title: Código de exemplo para excluir uma partição de diretório do aplicativo
+description: Este tópico inclui exemplos de código usados para excluir uma partição de diretório do aplicativo.
 ms.assetid: 74eb46a1-9300-452a-86b6-a19aff58a4f0
 ms.tgt_platform: multiple
 keywords:
-- código de exemplo para excluir uma partição de diretório de aplicativo Active Directory
-- partições de diretório de aplicativo Active Directory, código de exemplo para exclusão
+- código de exemplo para excluir uma partição do diretório de aplicativos do Active Directory
+- partições do diretório do aplicativo Active Directory , código de exemplo para exclusão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b04be132d9a9ea58b72f732efd5e5fcc9f370b4
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: fa41e98fcc90e9f4af1c9f46ed7c414b723daedc1d600d5899c941f88a393871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694075"
 ---
-# <a name="example-code-for-deleting-an-application-directory-partition"></a>Código de exemplo para excluir uma partição de diretório de aplicativo
+# <a name="example-code-for-deleting-an-application-directory-partition"></a>Código de exemplo para excluir uma partição de diretório do aplicativo
 
-O exemplo de código C++ a seguir pode ser usado para excluir uma partição de diretório de aplicativo usando ADSI. Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas no [código de exemplo para localizar o contêiner de partições](example-code-for-locating-the-partitions-container.md).
+O exemplo de código C++ a seguir pode ser usado para excluir uma partição de diretório do aplicativo usando ADSI. Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas em Código de exemplo para localizar [o contêiner de partições](example-code-for-locating-the-partitions-container.md).
 
 
 ```C++
@@ -218,7 +218,7 @@ HRESULT DeleteAppPartition( LPCWSTR pwszPartitionDN,
 
 
 
-O exemplo de código a seguir Visual Basic Scripting Edition pode ser usado para excluir uma partição de diretório de aplicativo usando ADSI. Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas no [código de exemplo para localizar o contêiner de partições](example-code-for-locating-the-partitions-container.md).
+O exemplo Visual Basic código do Scripting Edition a seguir pode ser usado para excluir uma partição de diretório do aplicativo usando ADSI. Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas em Código de exemplo para localizar [o contêiner de partições](example-code-for-locating-the-partitions-container.md).
 
 
 ```VB
@@ -315,7 +315,7 @@ End Sub
 
 
 
-O exemplo de código C# a seguir pode ser usado para excluir uma partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices). Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas no [código de exemplo para localizar o contêiner de partições](example-code-for-locating-the-partitions-container.md).
+O exemplo de código C# a seguir pode ser usado para excluir uma partição de diretório do aplicativo [usando System.DirectoryServices](/dotnet/api/system.directoryservices). Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas em Código de exemplo para localizar [o contêiner de partições](example-code-for-locating-the-partitions-container.md).
 
 
 ```CSharp
@@ -414,7 +414,7 @@ static void DeleteAppPartition(
 
 
 
-O exemplo de código .NET a seguir Visual Basic pode ser usado para excluir uma partição de diretório de aplicativo usando [System. DirectoryServices](/dotnet/api/system.directoryservices). Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas no [código de exemplo para localizar o contêiner de partições](example-code-for-locating-the-partitions-container.md).
+O exemplo Visual Basic código .NET a seguir pode ser usado para excluir uma partição de diretório do aplicativo usando [System.DirectoryServices](/dotnet/api/system.directoryservices). Este exemplo usa uma das funções de exemplo **GetPartitionsDN \*** descritas em Código de exemplo para localizar [o contêiner de partições](example-code-for-locating-the-partitions-container.md).
 
 
 ```VB
@@ -511,6 +511,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

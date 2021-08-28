@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Subject.
+description: A política de metadados de foto para a propriedade System.Subject.
 ms.assetid: 5ab7c74b-8a5e-4329-8a49-291470d406cc
-title: Política de metadados de foto System. Subject
+title: Política de metadados de foto System.Subject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceabbab95a52a1155db949dbc60b4525dd5f9d73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9321e866c34027df3e932f84d532162def959cbaf365bb4020c19647d547adea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881966"
 ---
-# <a name="systemsubject-photo-metadata-policy"></a>Política de metadados de foto System. Subject
+# <a name="systemsubject-photo-metadata-policy"></a>Política de metadados de foto System.Subject
 
-A política de metadados de foto para a propriedade [System. Subject](../properties/props-system-subject.md) .
+A política de metadados de foto para a [propriedade System.Subject.](../properties/props-system-subject.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-Assunto do PKEY \_
+Assunto \_ PKEY
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,30 +25,30 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-Uma VT \_ LPWSTR ou VT \_ LPWSTR
+VT \_ LPWSTR ou VT \_ LPWSTR
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /App1/IFD/{UShort = 40095} | \_bytes Unicode |
-| 2     | /App1/IFD/{UShort = 270}   | ascii          |
+| 1     | /app1/ifd/{ushort=40095} | Bytes \_ unicode |
+| 2     | /app1/ifd/{ushort=270}   | ascii          |
 
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /App1/IFD/{UShort = 40095} | \_bytes Unicode |
+| 1     | /app1/ifd/{ushort=40095} | Bytes \_ unicode |
 
 
 
@@ -72,8 +72,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/{UShort = 40095} |
-| 2     | /App1/IFD/{UShort = 270}   |
+| 1     | /app1/ifd/{ushort=40095} |
+| 2     | /app1/ifd/{ushort=270}   |
 
 
 
@@ -81,14 +81,14 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policy"></a>Política TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /IFD/{UShort = 40095} | \_bytes Unicode |
-| 2     | /IFD/{UShort = 270}   | ascii          |
+| 1     | /ifd/{ushort=40095} | Bytes \_ unicode |
+| 2     | /ifd/{ushort=270}   | ascii          |
 
 
 
@@ -100,7 +100,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /IFD/{UShort = 40095} | \_bytes Unicode |
+| 1     | /ifd/{ushort=40095} | Bytes \_ unicode |
 
 
 
@@ -112,8 +112,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                |
 |-------|---------------------|
-| 1     | /IFD/{UShort = 40095} |
-| 2     | /IFD/{UShort = 270}   |
+| 1     | /ifd/{ushort=40095} |
+| 2     | /ifd/{ushort=270}   |
 
 
 
@@ -125,7 +125,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[Sistema. Subject](../properties/props-system-subject.md)
+[System.Subject](../properties/props-system-subject.md)
 </dt> </dl>
 
  

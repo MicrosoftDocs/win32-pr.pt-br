@@ -1,7 +1,7 @@
 ---
-description: Enumeração D3DXERR-os erros são representados por valores negativos e não podem ser combinados.
+description: Enumeração D3DXERR – os erros são representados por valores negativos e não podem ser combinados.
 ms.assetid: 2318278e-e1e1-4cd8-a5ce-5c99f3bc47ba
-title: Enumeração D3DXERR (D3dx9. h)
+title: Enumeração D3DXERR (D3dx9.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9.h
-ms.openlocfilehash: 1c1dd03500a493b30d7c1d3bfdfdf800b65a6d82
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2fc6f72ab88a3c85eff592e289364a1f67eb9c220a7592397eda14b8bf4aace6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988506"
 ---
 # <a name="d3dxerr-enumeration"></a>Enumeração D3DXERR
 
-Os erros são representados por valores negativos e não podem ser combinados. Veja a seguir uma lista de valores que podem ser retornados por métodos incluídos na biblioteca do utilitário D3DX. Consulte as descrições do método individual para obter listas dos valores que cada um pode retornar. Essas listas não são necessariamente abrangentes.
+Os erros são representados por valores negativos e não podem ser combinados. Veja a seguir uma lista de valores que podem ser retornados por métodos incluídos na biblioteca do utilitário D3DX. Confira as descrições de método individuais para ver as listas dos valores que cada um pode retornar. Essas listas não são necessariamente abrangentes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -48,7 +48,7 @@ enum _D3DXERR {
 
 <dl> <dt>
 
-<span id="D3DXERR_CANNOTMODIFYINDEXBUFFER"></span><span id="d3dxerr_cannotmodifyindexbuffer"></span>**D3DXERR \_ CANNOTMODIFYINDEXBUFFER**
+<span id="D3DXERR_CANNOTMODIFYINDEXBUFFER"></span><span id="d3dxerr_cannotmodifyindexbuffer"></span>**D3DXERR \_ NÃO PODEMODIFYINDEXBUFFER**
 </dt> <dd>
 
 O buffer de índice não pode ser modificado.
@@ -62,17 +62,17 @@ A malha é inválida.
 
 </dd> <dt>
 
-<span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**D3DXERR \_ CANNOTATTRSORT**
+<span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**D3DXERR \_ NÃO PODEATTRSORT**
 </dt> <dd>
 
 A classificação de atributo (D3DXMESHOPT \_ ATTRSORT) não tem suporte como uma técnica de otimização.
 
 </dd> <dt>
 
-<span id="D3DXERR_SKINNINGNOTSUPPORTED"></span><span id="d3dxerr_skinningnotsupported"></span>**D3DXERR \_ SKINNINGNOTSUPPORTED**
+<span id="D3DXERR_SKINNINGNOTSUPPORTED"></span><span id="d3dxerr_skinningnotsupported"></span>**D3DXERR \_ NÃO COMPATÍVEL**
 </dt> <dd>
 
-Não há suporte para a casca de capa.
+Não há suporte para a reação de dados.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Já existe um fragmento com esse nome.
 
 </dd> <dt>
 
-<span id="D3DXERR_CANNOTREMOVELASTITEM"></span><span id="d3dxerr_cannotremovelastitem"></span>**D3DXERR \_ CANNOTREMOVELASTITEM**
+<span id="D3DXERR_CANNOTREMOVELASTITEM"></span><span id="d3dxerr_cannotremovelastitem"></span>**D3DXERR \_ NÃO PODEREMOVELASTITEM**
 </dt> <dd>
 
 O último item não pode ser excluído.
@@ -113,7 +113,7 @@ O último item não pode ser excluído.
 
 ## <a name="remarks"></a>Comentários
 
-O código de instalação \_ FACDD é usado para gerar códigos de erro, como nas macros a seguir.
+O código \_ de instalação FACDD é usado para gerar códigos de erro, como nas macros a seguir.
 
 
 ```
@@ -134,11 +134,11 @@ enum _D3DXERR {
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

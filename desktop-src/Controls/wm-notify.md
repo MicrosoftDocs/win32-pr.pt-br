@@ -3,7 +3,7 @@ title: Mensagem de WM_NOTIFY (WinUser. h)
 description: Enviado por um controle comum para sua janela pai quando um evento ocorreu ou o controle requer algumas informações.
 ms.assetid: vs|controls|~\controls\common\messages\wm_notify.htm
 keywords:
-- Controles de WM_NOTIFY de mensagens do Windows
+- controles de Windows de mensagem de WM_NOTIFY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1905954e7fb164f8436216fa918cc6f243f4b17
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9139f2dab6410eeb2bacbde93b5e163c0591f350626046861426ddc53beab389
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539706"
 ---
 # <a name="wm_notify-message"></a>Mensagem de notificação do WM \_
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-rich
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado, exceto pelas mensagens de notificação que especificam o contrário.
 
@@ -98,7 +98,7 @@ Algumas notificações, principalmente as que estiveram na API há muito tempo, 
 
 Se o manipulador de mensagens estiver em um procedimento de caixa de diálogo, você deverá usar a função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) com DWL \_ MSGRESULT para definir um valor de retorno.
 
-Para sistemas Windows Vista e posteriores, a mensagem de **\_ notificação do WM** não pode ser enviada entre processos.
+para os sistemas Windows Vista e posterior, a mensagem de **\_ notificação do WM** não pode ser enviada entre processos.
 
 Muitas notificações estão disponíveis nos formatos ANSI e Unicode. A janela que envia a mensagem de **\_ notificação do WM** usa a mensagem do [**WM \_ NOTIFYFORMAT**](wm-notifyformat.md) para determinar qual formato deve ser usado. Consulte o **WM \_ NOTIFYFORMAT** para mais discussões.
 
@@ -108,9 +108,9 @@ Muitas notificações estão disponíveis nos formatos ANSI e Unicode. A janela 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 5db5c5da16a65b53b6e266886ee6ab8472dc3246
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4602970ffd67492c8f98317488686b454a2698b7e94048da2894982c7ce78bae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987766"
 ---
 # <a name="id3dxbaseeffectgetpass-method"></a>Método ID3DXBaseEffect:: getpass
 
@@ -59,7 +59,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 

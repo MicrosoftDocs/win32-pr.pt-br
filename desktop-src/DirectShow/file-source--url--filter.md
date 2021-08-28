@@ -4,12 +4,12 @@ ms.assetid: 405fd6ea-aa17-4d11-8f07-067468cb090b
 title: Filtro de origem do arquivo (URL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0ddfa7282adbf5117bd2c52465c6eb30efbd69e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a096d25e5e04246385ece9662ed93e209115756491b1a3581cbb01de38225e66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685616"
 ---
 # <a name="file-source-url-filter"></a>Filtro de origem do arquivo (URL)
 
@@ -17,11 +17,11 @@ O filtro de origem do arquivo de URL é um filtro de origem assíncrono genéric
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMOpenProgress**](/windows/desktop/api/Strmif/nn-strmif-iamopenprogress), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFileSourceFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesourcefilter)       |
-| Tipos de mídia de pino de entrada                    | Não aplicável                                                                                                                       |
-| Interfaces de pino de entrada                     | Não aplicável                                                                                                                       |
+| Tipos de mídia de pino de entrada                    | Não se aplica                                                                                                                       |
+| Interfaces de pino de entrada                     | Não se aplica                                                                                                                       |
 | Tipos de mídia do pino de saída                   | Fluxo de MEDIATYPE \_ . O subtipo depende do formato de mídia. (MEDIASUBTYPE \_ NULL se o filtro não reconhecer o formato.)         |
 | Interfaces de pino de saída                    | [**IAMAsyncReaderTimestampScaling**](/windows/desktop/api/Strmif/nn-strmif-iamasyncreadertimestampscaling), [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) |
 | CLSID do filtro                             | \_URLREADER CLSID                                                                                                                     |
@@ -42,7 +42,7 @@ Esse filtro usa URLMon e oferece suporte a páginas de código.
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

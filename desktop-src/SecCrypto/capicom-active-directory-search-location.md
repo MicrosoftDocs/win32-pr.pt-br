@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: cd630bdc0c09a6bb57a9163ec972451011f3e826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52f205717f3ba361c2c15dafc6e53f6cef3cd9d41cbbbf2ed243c60a74c2ca62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879436"
 ---
 # <a name="capicom_active_directory_search_location-enumeration"></a>\_ \_ \_ Enumeração do local de pesquisa do Active Directory CAPICOM \_
 
@@ -40,7 +40,7 @@ O tipo de enumeração do **local de \_ pesquisa do Active \_ Directory \_ \_ CA
 
 Esse tipo de enumeração é usado pela seguinte propriedade:
 
--   [**Settings. ActiveDirectorySearchLocation**](settings-activedirectorysearchlocation.md)
+-   [**Configurações. ActiveDirectorySearchLocation**](settings-activedirectorysearchlocation.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ Esse tipo de enumeração é usado pela seguinte propriedade:
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
 
 
 

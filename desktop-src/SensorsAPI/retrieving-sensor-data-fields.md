@@ -1,25 +1,25 @@
 ---
 description: Este tópico descreve como recuperar dados de um sensor, de forma síncrona e assíncrona.
 ms.assetid: 4ae80816-5e53-4ed1-9300-4b38c22d65e2
-title: Recuperando valores de dados de sensor
+title: Recuperando valores de dados do sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4642f120e549cd77b1b37610037092facf2ead1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e240b9bc14d917db0e0c4280ad957aa139369eb7762abfcd69441d25e66857d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960026"
 ---
-# <a name="retrieving-sensor-data-values"></a>Recuperando valores de dados de sensor
+# <a name="retrieving-sensor-data-values"></a>Recuperando valores de dados do sensor
 
 Este tópico descreve como recuperar dados de um sensor, de forma síncrona e assíncrona.
 
 ## <a name="retrieving-data-synchronously"></a>Recuperando dados de forma síncrona
 
-Você pode recuperar os dados do sensor de forma síncrona chamando [**ISensor:: GetData**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getdata).
+Você pode recuperar dados do sensor de forma síncrona chamando [**ISensor::GetData.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getdata)
 
-O código de exemplo a seguir recupera um relatório de dados de sensor e, em seguida, recupera três valores de campo de dados individuais. O sensor de exemplo fornece dados personalizados sobre a hora local atual em campos de dados de hora, minuto e segundo. A variável chamada pSensor contém um ponteiro para [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) que representa o sensor que fornece os dados.
+O código de exemplo a seguir recupera um relatório de dados do sensor e recupera três valores de campo de dados individuais. O sensor de exemplo fornece dados personalizados sobre a hora local atual em campos de dados de hora, minuto e segundo. A variável chamada pSensor contém um ponteiro para [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) que representa o sensor que fornece os dados.
 
 
 ```C++
@@ -85,9 +85,9 @@ if(SUCCEEDED(hr))
 
 ## <a name="retrieving-data-asynchronously"></a>Recuperando dados de forma assíncrona
 
-Você pode receber dados de sensor de forma assíncrona, registrando para receber o evento [**ISensorEvents:: OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) . Para entender como receber retornos de chamada de evento de sensor, consulte [usando eventos de API de sensor](using-sensor-api-events.md).
+Você pode receber dados do sensor de forma assíncrona registrando-se para receber o evento [**ISensorEvents::OnDataUpdated.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) Para entender como receber retornos de chamada de evento de sensor, consulte [Usando eventos de API do sensor](using-sensor-api-events.md).
 
-O código de exemplo a seguir mostra uma implementação de [**ISensorEvents:: OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) que recupera os valores de dados do relatório de dados fornecido pelo evento. O sensor de exemplo fornece dados personalizados sobre a hora local atual em campos de dados de hora, minuto e segundo.
+O código de exemplo a seguir mostra uma implementação de [**ISensorEvents::OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) que recupera valores de dados do relatório de dados fornecido pelo evento. O sensor de exemplo fornece dados personalizados sobre a hora local atual em campos de dados de hora, minuto e segundo.
 
 
 ```C++

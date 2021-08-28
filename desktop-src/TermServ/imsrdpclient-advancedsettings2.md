@@ -1,30 +1,30 @@
 ---
 title: Propriedade IMsRdpClient AdvancedSettings2
-description: Recupera um ponteiro para a interface IMsRdpClientAdvancedSettings. A interface pode ser usada para definir configurações avançadas para o controle de cliente.
+description: Recupera um ponteiro para a interface IMsRdpClientAdvancedSettings. A interface pode ser usada para definir configurações avançadas para o controle do cliente.
 ms.assetid: 207b625c-fc2b-41ad-9339-9f3c3b8eeab7
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade AdvancedSettings2
-- Propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade AdvancedSettings2
+- Propriedades AdvancedSettings2 Serviços de Área de Trabalho Remota
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
+- A propriedade AdvancedSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings2
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 683d56d5e9501114b1e60635ca406b4509d2032b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 569813dd0f836b74f998e6cad716170e3d6e95464712201c8fa14c98f06fd3d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475846"
 ---
-# <a name="imsrdpclientadvancedsettings2-property"></a>Propriedade IMsRdpClient:: AdvancedSettings2
+# <a name="imsrdpclientadvancedsettings2-property"></a>Propriedade IMsRdpClient::AdvancedSettings2
 
-Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md) . A interface pode ser usada para definir configurações avançadas para o controle de cliente.
+Recupera um ponteiro para a interface [**IMsRdpClientAdvancedSettings.**](imsrdpclientadvancedsettings-interface.md) A interface pode ser usada para definir configurações avançadas para o controle do cliente.
 
 Esta propriedade é somente para leitura.
 
@@ -80,15 +80,15 @@ HRESULT get_AdvancedSettings2(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Ponteiro para a interface [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md) . A interface pode ser usada para definir configurações avançadas para o controle de cliente.
+Ponteiro para a interface [**IMsRdpClientAdvancedSettings.**](imsrdpclientadvancedsettings-interface.md) A interface pode ser usada para definir configurações avançadas para o controle do cliente.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor **HRESULT** indica que a chamada falhou.
+Se o método for bem-sucedido, **S \_ OK** será retornado. Qualquer outro **valor HRESULT** indica que a chamada falhou.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,7 +108,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)

@@ -1,17 +1,17 @@
 ---
 description: Especifica o esquema de proteção para exemplos criptografados.
 ms.assetid: 04E9F908-C61C-43DC-8CF5-9A629FCDD82C
-title: Atributo MFSampleExtension_Encryption_ProtectionScheme (Mfidl. h)
+title: MFSampleExtension_Encryption_ProtectionScheme atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de298eb310e1258274a4ce24d49e9b53def38cde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a9db7d00d67b0e9806167ea574d10c3dca5f199293c03f5e055d60430c2dd75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603176"
 ---
-# <a name="mfsampleextension_encryption_protectionscheme-attribute"></a>Atributo MFSampleExtension de \_ criptografia \_ ProtectionScheme
+# <a name="mfsampleextension_encryption_protectionscheme-attribute"></a>Atributo MFSampleExtension \_ \_ Encryption ProtectionScheme
 
 Especifica o esquema de proteção para exemplos criptografados.
 
@@ -21,15 +21,15 @@ Especifica o esquema de proteção para exemplos criptografados.
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um membro da enumeração [**MFSampleEncryptionProtectionScheme**](/windows/win32/api/mfapi/ne-mfapi-mfsampleencryptionprotectionscheme) . Nos casos em que a origem da mídia é baseada em MP4, o valor é definido com base no valor do campo **\_ tipo de esquema** na caixa tipo de esquema (' schm ') no cabeçalho MP4 (' Moov ' ou ' Moof ').
+O valor desse atributo é um membro da [**enumeração MFSampleEncryptionProtectionScheme.**](/windows/win32/api/mfapi/ne-mfapi-mfsampleencryptionprotectionscheme) Nos casos em que a fonte de mídia é baseada em **\_** MP4, o valor é definido com base no valor do campo de tipo de esquema dentro da caixa de tipo de esquema ('set') no header MP4 ('moov' ou 'moof').
 
-Se o **campo \_ tipo de esquema** em um arquivo baseado em MP4, ou fluxo, for definido como ' Cenc ' ou ' cbc1 ', o **atributo \_ \_ ProtectionScheme de criptografia MFSampleExtension** deverá ser definido como **esquema de proteção \_ \_ AES \_ CTR** ou o **esquema de proteção \_ \_ CBC**, respectivamente, e nenhum valor deve ser definido para MFSampleExtension [ \_ Encryption \_](mfsampleextension-encryption-cryptbyteblock.md) CryptByteBlock e [MFSampleExtension \_ Encryption \_](mfsampleextension-encryption-skipbyteblock.md)SkipByteBlock.
+Se **o \_** campo de tipo de esquema em um arquivo baseado em MP4 ou fluxo estiver definido como 'cenc' ou 'cbc1', o atributo **MFSampleExtension \_ Encryption \_ ProtectionScheme** deverá ser definido como PROTECTION **SCHEME \_ \_ AES \_ CTR** ou **PROTECTION SCHEME \_ \_ CBC,** respectivamente, e nenhum valor deverá ser definido para [ \_ \_ CryptByteBlock de Criptografia MFSampleExtension e](mfsampleextension-encryption-cryptbyteblock.md) [MFSampleExtension \_ Encryption \_ SkipByteBlock](mfsampleextension-encryption-skipbyteblock.md).
 
-Se o **campo \_ tipo de esquema** em um arquivo baseado em MP4, ou fluxo, for definido como ' Cens ' ou ' CBCs ', o **atributo \_ \_ ProtectionScheme de criptografia MFSampleExtension** deverá ser definido como **esquema de proteção \_ \_ AES \_ CTR** ou o **esquema de proteção \_ \_ CBC**, respectivamente, e MFSampleExtension [ \_ criptografia \_](mfsampleextension-encryption-cryptbyteblock.md) CryptByteBlock e MFSampleExtension [ \_ Encryption \_ SkipByteBlock](mfsampleextension-encryption-skipbyteblock.md) devem ser definidos usando os valores na caixa ' tenc '.
+Se o **campo de \_ tipo de** esquema em um arquivo baseado em MP4, ou stream, é definido como 'cens' ou 'cbcs', o atributo **MFSampleExtension \_ Encryption \_ ProtectionScheme** deve ser definido como **PROTECTION SCHEME \_ \_ AES \_ CTR** ou **PROTECTION SCHEME \_ \_ CBC**, respectivamente, e [MFSampleExtension \_ Encryption \_ CryptByteBlock](mfsampleextension-encryption-cryptbyteblock.md) e [MFSampleExtension \_ Encryption \_ SkipByteBlock](mfsampleextension-encryption-skipbyteblock.md) devem ser definidos usando os valores na caixa 'tenc'.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como definir o **\_ \_ ProtectionScheme de criptografia MFSampleExtension** e os **atributos \_ \_ CryptByteBlock** de criptografia de MFSampleExtension e MFSampleExtension de criptografia de grupo de SkipByteBlock associados. **\_ \_**
+O exemplo a seguir mostra como definir o **MFSampleExtension \_ Encryption \_ ProtectionScheme** e os atributos **de Criptografia MFSampleExtension \_ \_ CryptByteBlock** e **MFSampleExtension \_ \_ SkipByteBlock** associados.
 
 
 ```C++
@@ -74,9 +74,9 @@ HRESULT AddEncryptionAttributes(_In_ IMFSample* pSample, _In_ bool fIsEncrypted)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

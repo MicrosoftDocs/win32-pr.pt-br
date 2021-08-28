@@ -4,12 +4,12 @@ ms.assetid: 8f172e2c-4cd1-4108-9c8d-01a731aca83b
 title: Usando WsdCodeGen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e09bd2b0c8f96d51751aa90bc3206a0824f19b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6395d39a84415cc56e66949ea82ef7a1acd9fc009b7e1b2c93fa2712e8a81a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119463166"
 ---
 # <a name="using-wsdcodegen"></a>Usando WsdCodeGen
 
@@ -21,7 +21,7 @@ ms.locfileid: "105763337"
 4.  Gere código usando WsdCodeGen, fornecendo o arquivo de configuração como entrada. Para obter mais informações, consulte [sintaxe de linha de comando WsdCodeGen](wsdcodegen-command-line-syntax.md).
 5.  Use o código gerado para criar um cliente, host ou ambos.
 
-O SDK do Windows inclui alguns arquivos WSDL de exemplo, arquivos de configuração WsdCodeGen e código gerado. Para obter mais informações, consulte [exemplos de WSDAPI](wsdapi-samples.md).
+o SDK do Windows inclui alguns arquivos WSDL de exemplo, arquivos de configuração WsdCodeGen e código gerado. Para obter mais informações, consulte [exemplos de WSDAPI](wsdapi-samples.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,10 +1,10 @@
 ---
 title: Interface IDRMStatusCallback
-description: A interface IDRMStatusCallback fornece um método para receber o status em chamadas DRM assíncronas.
+description: A interface IDRMStatusCallback fornece um método para receber status em chamadas DRM assíncronas.
 ms.assetid: d036e259-2451-4020-9516-9631f0ff4095
 keywords:
-- Formato de mídia do Windows da interface IDRMStatusCallback
-- Formato de mídia do Windows da interface IDRMStatusCallback, descrito
+- Formato de mídia da interface IDRMStatusCallback
+- IDRMStatusCallback interface windows Media Format , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 415d04e3934d39ad43787596f4dab16970241b0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bda2e2de173198ca9ac81f0b5d8b49d1159ae0e2aa4e75139a91f49646513c1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105771527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702850"
 ---
 # <a name="idrmstatuscallback-interface"></a>Interface IDRMStatusCallback
 
-A interface **IDRMStatusCallback** fornece um método para receber o status em chamadas DRM assíncronas.
+A interface **IDRMStatusCallback** fornece um método para receber status em chamadas DRM assíncronas.
 
 ## <a name="members"></a>Membros
 
-A interface **IDRMStatusCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IDRMStatusCallback** também tem estes tipos de membros:
+A interface **IDRMStatusCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDRMStatusCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 

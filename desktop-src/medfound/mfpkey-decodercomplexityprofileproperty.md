@@ -1,17 +1,17 @@
 ---
 description: Especifica o perfil de complexidade do conteúdo codificado.
 ms.assetid: 2e238d31-98b2-4c79-96b0-9e6949010a73
-title: Propriedade MFPKEY_DECODERCOMPLEXITYPROFILE (Wmcodecdsp. h)
+title: MFPKEY_DECODERCOMPLEXITYPROFILE propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f39544830a0a05e21779a637da61d3bcb310fcd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca206357a3f3a396ac6d07ea16a1b72bc245c641095a5523e46139dfd6af7f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604216"
 ---
-# <a name="mfpkey_decodercomplexityprofile-property"></a>\_Propriedade MFPKEY DECODERCOMPLEXITYPROFILE
+# <a name="mfpkey_decodercomplexityprofile-property"></a>Propriedade MFPKEY \_ DECODERCOMPLEXITYPROFILE
 
 Especifica o perfil de complexidade do conteúdo codificado.
 
@@ -25,7 +25,7 @@ g \_ wszWMVCDecoderComplexityProfile
 
 ## <a name="remarks"></a>Comentários
 
-Você pode ler esse valor somente após a conclusão da codificação.
+Você pode ler esse valor somente depois que a codificação for concluída.
 
 Para áudio, essa propriedade tem um dos valores a seguir.
 
@@ -33,17 +33,17 @@ Para áudio, essa propriedade tem um dos valores a seguir.
 
 | Valor | Descrição                                                                                    |
 |-------|------------------------------------------------------------------------------------------------|
-| L1  | Codificação padrão com uma taxa de amostragem de 44,1 KHz e uma taxa de bits máxima de 161 kbps.         |
-| Cache  | Codificação padrão com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 161 kbps.         |
-| MB  | Codificação padrão com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 385 kbps.         |
-| "M0a" | Codificação profissional com taxas de amostragem de até 48 KHz e taxas de bits entre 48 e 192 kbps.  |
-| "M0b" | Codificação profissional com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 192 kbps.      |
-| M1  | Codificação profissional com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 384 kbps.      |
-| M2  | Codificação profissional com taxas de amostragem de até 96 KHz e uma taxa de bits máxima de 768 Kbps.      |
-| M3  | Codificação profissional com taxas de amostragem de até 96 KHz e uma taxa de bits máxima de 1,5 Mbps.      |
-| Múltiplos  | Codificação sem perdas com taxas de amostragem de até 48 KHz e um máximo de 2 canais.                |
-| N2  | Codificação sem perdas com taxas de amostragem de até 96 KHz e um máximo de 6 canais (5,1 surround). |
-| N3  | Codificação sem perdas com taxas de amostragem de até 96 KHz e um máximo de 8 canais (7,1 surround). |
+| "L1"  | Codificação padrão com uma taxa de amostragem de 44,1 KHz e uma taxa de bits máxima de 161 Kbps.         |
+| "L2"  | Codificação padrão com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 161 Kbps.         |
+| "L3"  | Codificação padrão com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 385 Kbps.         |
+| "M0a" | Professional codificação com taxas de amostragem de até 48 KHz e taxas de bits entre 48 e 192 Kbps.  |
+| "M0b" | Professional codificação com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 192 Kbps.      |
+| "M1"  | Professional codificação com taxas de amostragem de até 48 KHz e uma taxa de bits máxima de 384 Kbps.      |
+| "M2"  | Professional codificação com taxas de amostragem de até 96 KHz e uma taxa de bits máxima de 768 Kbps.      |
+| "M3"  | Professional codificação com taxas de amostragem de até 96 KHz e uma taxa de bits máxima de 1,5 Mbps.      |
+| "N1"  | Codificação sem perda com taxas de amostragem de até 48 KHz e um máximo de 2 canais.                |
+| "N2"  | Codificação sem perda com taxas de amostragem de até 96 KHz e um máximo de 6 canais (cerca de 5,1). |
+| "N3"  | Codificação sem perda com taxas de amostragem de até 96 KHz e um máximo de 8 canais (cerca de 7,1). |
 
 
 
@@ -55,16 +55,16 @@ Para vídeo, essa propriedade tem um dos seguintes valores:
 
 | Valor | Descrição                                                                       |
 |-------|-----------------------------------------------------------------------------------|
-| PONTOS  | perfil avançado (disponível somente no codec de perfil avançado do vídeo do Windows Media 9) |
-| CP  | Não tem mais suporte                                                               |
-| MP  | Perfil principal                                                                      |
-| SP3  | Perfil simples                                                                    |
+| "AP"  | perfil avançado (disponível somente no codec Windows Perfil Avançado do Vídeo de Mídia 9) |
+| "CP"  | não há mais suporte para                                                               |
+| "MP"  | perfil principal                                                                      |
+| "SP"  | perfil simples                                                                    |
 
 
 
  
 
-Para conteúdo de vídeo, você pode solicitar um nível de perfil definindo [MFPKEY \_ DECODERCOMPLEXITYREQUESTED](mfpkey-decodercomplexityrequestedproperty.md) antes de começar a codificação. O codec tentará codificar dentro dos parâmetros do nível de complexidade solicitado, mas as outras configurações que você configurar terão precedência. Você sempre deve verificar o valor do perfil de complexidade real após a codificação, caso sua solicitação não possa ser respeitada.
+Para conteúdo de vídeo, você pode solicitar um nível de perfil definindo [MFPKEY \_ DECODERCOMPLEXITYREQUESTED](mfpkey-decodercomplexityrequestedproperty.md) antes de começar a codificação. O codec tentará codificar dentro dos parâmetros do nível de complexidade solicitado, mas as outras configurações que você configurar terão precedência. Você sempre deve verificar o valor real do perfil de complexidade após a codificação, caso sua solicitação não possa ser a mesma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Para conteúdo de vídeo, você pode solicitar um nível de perfil definindo [MF
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Para conteúdo de vídeo, você pode solicitar um nível de perfil definindo [MF
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

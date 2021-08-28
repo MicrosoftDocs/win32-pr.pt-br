@@ -1,7 +1,7 @@
 ---
-description: CTransformOutputPin. ~ CTransformOutputPin destruidor-método Destruitor.
+description: Destruidor CTransformOutputPin.~CTransformOutputPin – método Destruidor.
 ms.assetid: 48951e4e-b7fa-4e9d-9eec-3781fb72bae4
-title: CTransformOutputPin. ~ CTransformOutputPin Destruitor (Transfrm. h)
+title: Destruidor CTransformOutputPin.~CTransformOutputPin (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b68af47d2c168221f8621dec7b5ba42a2611cab9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ccfd0cd3ffa7b66dd52d56072afe7c5be23411f45f3eb5f7b02a3f69e6af34b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686976"
 ---
-# <a name="ctransformoutputpinctransformoutputpin-destructor"></a>Destruidor CTransformOutputPin. ~ CTransformOutputPin
+# <a name="ctransformoutputpinctransformoutputpin-destructor"></a>Destruidor CTransformOutputPin.~CTransformOutputPin
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,8 +42,8 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

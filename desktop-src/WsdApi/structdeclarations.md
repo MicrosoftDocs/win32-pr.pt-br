@@ -1,17 +1,17 @@
 ---
 description: Gera declarações de estrutura C para tipos conhecidos.
 ms.assetid: bfef9302-eea6-4957-b67d-d497f5db99a5
-title: elemento structDeclarations
+title: Elemento structDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e80f5a30ffb5de0d30a4b66a1b3b9204fce43c4e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d0f6c556feaabd1581e7520f59930218b661dba1efbf2fade7c84a28665cde36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991576"
 ---
-# <a name="structdeclarations-element"></a>elemento structDeclarations
+# <a name="structdeclarations-element"></a>Elemento structDeclarations
 
 Gera declarações de estrutura C para tipos conhecidos.
 
@@ -35,7 +35,7 @@ Não há elementos filho.
 
 | Elemento                         | Descrição                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Grupo**](file.md)<br/> | Gera um arquivo do gerador de código.<br/> <br/> |
+| [**Arquivo**](file.md)<br/> | Saída de um arquivo do gerador de código.<br/> <br/> |
 
 
 
@@ -47,7 +47,7 @@ Estruturas para tipos conhecidos são referenciadas por grande parte do código 
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

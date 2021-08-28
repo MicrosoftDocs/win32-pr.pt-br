@@ -1,7 +1,7 @@
 ---
-description: O método StreamingThreadUsingOutputPin determina se algum thread está executando uma operação de streaming no PIN.
+description: O método StreamingThreadUsingOutputPin determina se qualquer thread está executando uma operação de streaming no pino.
 ms.assetid: b6432a11-4e8b-4eb4-ad8e-aaff9398641b
-title: Método CDynamicOutputPin. StreamingThreadUsingOutputPin (Amfilter. h)
+title: Método CDynamicOutputPin.StreamingThreadUsingOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 797dcb94e227861642de2a05e6edf24f675bb4e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4687db225a616adef6d1c756ae9295e2c273c0315f37d119c7bacd0c226233e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539716"
 ---
-# <a name="cdynamicoutputpinstreamingthreadusingoutputpin-method"></a>Método CDynamicOutputPin. StreamingThreadUsingOutputPin
+# <a name="cdynamicoutputpinstreamingthreadusingoutputpin-method"></a>Método CDynamicOutputPin.StreamingThreadUsingOutputPin
 
-O método StreamingThreadUsingOutputPin determina se algum thread está executando uma operação de streaming no PIN.
+O método StreamingThreadUsingOutputPin determina se qualquer thread está executando uma operação de streaming no pino.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ virtual bool StreamingThreadUsingOutputPin();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se um thread estiver executando uma operação de streaming no PIN. Caso contrário, retornará **false**.
+Retornará **TRUE** se um thread estiver executando uma operação de streaming no pino. Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Se algum thread retornar com êxito do método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) e não tiver feito uma chamada correspondente para o método [**CDynamicOutputPin:: StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) , esse método retornará **true**.
+Se algum thread tiver retornado com êxito do método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) e não tiver feito uma chamada correspondente para o [**método CDynamicOutputPin::StopUsingOutputPin,**](cdynamicoutputpin-stopusingoutputpin.md) esse método retornará **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Se algum thread retornar com êxito do método [**CDynamicOutputPin:: StartUsing
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

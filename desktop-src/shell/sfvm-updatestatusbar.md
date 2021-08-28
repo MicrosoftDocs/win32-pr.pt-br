@@ -1,6 +1,6 @@
 ---
-description: 'Notifica o objeto de retorno de chamada que a barra de status está sendo atualizada. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensagem de SFVM_UPDATESTATUSBAR (shlobj. h)
+description: Notifica o objeto de retorno de chamada de que a barra de status está sendo atualizada. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_UPDATESTATUSBAR mensagem (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: f1bac364-1011-4308-8b9b-8ed1800dd30d
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 14045c797d7292099c1c7b2c67f5958609d8d6b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106782383b90af85dca82e445dfc21f77e0f3def73174da9147aadc988f2694e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883896"
 ---
-# <a name="sfvm_updatestatusbar-message"></a>\_Mensagem SFVM UPDATESTATUSBAR
+# <a name="sfvm_updatestatusbar-message"></a>Mensagem SFVM \_ UPDATESTATUSBAR
 
-Notifica o objeto de retorno de chamada que a barra de status está sendo atualizada. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica o objeto de retorno de chamada de que a barra de status está sendo atualizada. Usado por [**IShellFolderViewCB::MessageSFVCB.**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb)
 
 
 ```C++
@@ -39,20 +39,20 @@ SFVM_UPDATESTATUSBAR
 
 <dl> <dt>
 
-*fInitialize* \[ no\]
+*fInitialize* \[ Em\]
 </dt> <dd>
 
-Um valor **bool** que será definido como **true** se a barra de status estiver sendo inicializada.
+Um **valor BOOL** definido como **TRUE se** a barra de status estiver sendo inicializada.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Quando você receber esta notificação:
+Quando você receber essa notificação:
 
--   Retorne \_ os S ok se você for manipular a atualização.
--   Retorne MAKE \_ HRESULT ( \_ êxito de severidade, 0, 1) para que o objeto de exibição da pasta do sistema defina o texto da barra de status.
--   Return E \_ falha ao fazer com que o objeto de exibição da pasta do sistema manipule a barra de status.
+-   Retorne S \_ OK se você manipular a atualização.
+-   Retorne MAKE \_ HRESULT(SEVERITY SUCCESS,0,1) para que o objeto de exibição de pasta do sistema \_ defina o texto da barra de status.
+-   Retornar E \_ FAIL para que o objeto de exibição de pasta do sistema manipular a barra de status.
 
 O texto da barra de status padrão é o seguinte.
 
@@ -60,9 +60,9 @@ O texto da barra de status padrão é o seguinte.
 
 | Status                      | Texto da barra de status                         |
 |-----------------------------|-----------------------------------------|
-| Nenhum item selecionado           | " \# \# Objects" (na pasta)          |
-| Um item selecionado           | O InfoTip do item, se disponível. |
-| Mais de um item selecionado | " \# \# objetos selecionados"                 |
+| Nenhum item selecionado           | \# \# "objects" (na pasta)          |
+| Um item selecionado           | A infotip para o item, se disponível. |
+| Mais de um item selecionado | "objetos \# \# selecionados"                 |
 
 
 
@@ -76,7 +76,7 @@ O texto da barra de status padrão é o seguinte.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

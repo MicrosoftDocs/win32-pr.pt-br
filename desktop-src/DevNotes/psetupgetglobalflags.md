@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 625e84e9ee88edb1ede310ec4459e89ef2e44be6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5b4ceedc81af400d670a586df6aa0b8fcbb830e816c32e37113ab18d99028f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690876"
 ---
 # <a name="psetupgetglobalflags-function"></a>função pSetupGetGlobalFlags
 
-\[Essa função não está disponível no Windows Vista ou no Windows Server 2008.\]
+\[essa função não está disponível no Windows Vista ou no Windows Server 2008.\]
 
 A função **pSetupGetGlobalFlags** é um utilitário sem suporte.
 
@@ -39,7 +39,7 @@ VOID WINAPI pSetupGetGlobalFlags(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 

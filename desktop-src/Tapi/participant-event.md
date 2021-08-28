@@ -1,21 +1,21 @@
 ---
-description: A enumeração de evento do participante \_ descreve os eventos do participante.
+description: A enum \_ EVENTO PARTICIPANTE descreve os eventos do participante.
 ms.assetid: 678165f2-ad0b-415f-86bf-8c4e3bd8d793
-title: Enumeração de PARTICIPANT_EVENT (Ipmsp. h)
+title: PARTICIPANT_EVENT enumeração (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 225b1b9901efa5648dfaa326c53ed69cff2c4295
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef5eb7a98a445ecb89b25fe2d18ef77be31aa54b5fac2920814fba2c4a3f6b08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959766"
 ---
-# <a name="participant_event-enumeration"></a>Enumeração de evento de participante \_
+# <a name="participant_event-enumeration"></a>\_Enumeração PARTICIPANT EVENT
 
-\[ Essa enumeração não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Essa enumeração não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-A enumeração de **\_ evento do participante** descreve os eventos do participante. O método de [**\_ evento ITParticipantEvent:: Get**](itparticipantevent-get-event.md) retorna um membro desse enum para indicar o tipo de evento de participante de conferência que ocorreu. Essa enumeração é usada por aplicativos que acessam o [IPConf MSP](ipconf-msp.md).
+A **enum \_ EVENTO PARTICIPANTE** descreve os eventos do participante. O [**método ITParticipantEvent::get \_ Event**](itparticipantevent-get-event.md) retorna um membro dessa enum para indicar o tipo de evento de participante de conferência que ocorreu. Essa enum é usada por aplicativos que acessam [o IPConf MSP.](ipconf-msp.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,94 +30,94 @@ A enumeração de **\_ evento do participante** descreve os eventos do participa
 
 <dl> <dt>
 
-<span id="PE_NEW_PARTICIPANT"></span><span id="pe_new_participant"></span>**\_novo \_ participante do PE**
+<span id="PE_NEW_PARTICIPANT"></span><span id="pe_new_participant"></span>**NOVO \_ PARTICIPANTE DO PE \_**
 </dt> <dd>
 
 Um novo participante foi adicionado à conferência.
 
 </dd> <dt>
 
-<span id="PE_INFO_CHANGE"></span><span id="pe_info_change"></span>**\_alteração de informações do PE \_**
+<span id="PE_INFO_CHANGE"></span><span id="pe_info_change"></span>**ALTERAÇÃO DE INFORMAÇÕES DO PE \_ \_**
 </dt> <dd>
 
-As informações em um participante foram alteradas.
+As informações sobre um participante foram alteradas.
 
 </dd> <dt>
 
-<span id="PE_PARTICIPANT_LEAVE"></span><span id="pe_participant_leave"></span>**\_sair do participante do PE \_**
+<span id="PE_PARTICIPANT_LEAVE"></span><span id="pe_participant_leave"></span>**PE \_ PARTICIPANT \_ LEAVE**
 </dt> <dd>
 
 Um participante saiu da conferência.
 
 </dd> <dt>
 
-<span id="PE_NEW_SUBSTREAM"></span><span id="pe_new_substream"></span>**\_novo \_ Subfluxo do PE**
+<span id="PE_NEW_SUBSTREAM"></span><span id="pe_new_substream"></span>**PE \_ NEW \_ SUBSTREAM**
 </dt> <dd>
 
 Um novo substream foi adicionado ao participante.
 
 </dd> <dt>
 
-<span id="PE_SUBSTREAM_REMOVED"></span><span id="pe_substream_removed"></span>**\_SUBFLUXO PE \_ removido**
+<span id="PE_SUBSTREAM_REMOVED"></span><span id="pe_substream_removed"></span>**SUBSTREAM PE \_ \_ REMOVIDO**
 </dt> <dd>
 
 Um novo substream foi removido do participante.
 
 </dd> <dt>
 
-<span id="PE_SUBSTREAM_MAPPED"></span><span id="pe_substream_mapped"></span>**Subfluxo do PE \_ \_ mapeado**
+<span id="PE_SUBSTREAM_MAPPED"></span><span id="pe_substream_mapped"></span>**\_PE SUBSTREAM \_ MAPEADO**
 </dt> <dd>
 
 Um participante foi mapeado para um substream.
 
 </dd> <dt>
 
-<span id="PE_SUBSTREAM_UNMAPPED"></span><span id="pe_substream_unmapped"></span>**Subfluxo do PE não \_ \_ mapeado**
+<span id="PE_SUBSTREAM_UNMAPPED"></span><span id="pe_substream_unmapped"></span>**PE \_ SUBSTREAM \_ UNMAPPED**
 </dt> <dd>
 
-Um participante foi desmapeado de um substream.
+Um participante foi não mapeado de um substream.
 
 </dd> <dt>
 
-<span id="PE_PARTICIPANT_TIMEOUT"></span><span id="pe_participant_timeout"></span>**\_tempo limite de participante do PE \_**
+<span id="PE_PARTICIPANT_TIMEOUT"></span><span id="pe_participant_timeout"></span>**PE \_ PARTICIPANT \_ TIMEOUT**
 </dt> <dd>
 
-Um participante foi removido da conferência devido a um tempo limite.
+Um participante foi removido da conferência devido a um tempoout.
 
 </dd> <dt>
 
-<span id="PE_PARTICIPANT_RECOVERED"></span><span id="pe_participant_recovered"></span>**participante do PE \_ \_ recuperado**
+<span id="PE_PARTICIPANT_RECOVERED"></span><span id="pe_participant_recovered"></span>**PARTICIPANTE \_ PE \_ RECUPERADO**
 </dt> <dd>
 
-Um participante removido é visível novamente. Normalmente, esse é um participante que atingiu o tempo limite, mas os sinais agora estão sendo recebidos.
+Um participante removido fica visível novamente. Normalmente, esse é um participante que teve o tempo de vida, mas os sinais agora estão sendo recebidos.
 
 </dd> <dt>
 
-<span id="PE_PARTICIPANT_ACTIVE"></span><span id="pe_participant_active"></span>**participante do PE \_ \_ ativo**
+<span id="PE_PARTICIPANT_ACTIVE"></span><span id="pe_participant_active"></span>**PARTICIPANTE DO PE \_ \_ ATIVO**
 </dt> <dd>
 
 O participante se tornou ativo na conferência.
 
 </dd> <dt>
 
-<span id="PE_PARTICIPANT_INACTIVE"></span><span id="pe_participant_inactive"></span>**participante do PE \_ \_ inativo**
+<span id="PE_PARTICIPANT_INACTIVE"></span><span id="pe_participant_inactive"></span>**PE \_ PARTICIPANT \_ INACTIVE**
 </dt> <dd>
 
 O participante se tornou inativo na conferência.
 
 </dd> <dt>
 
-<span id="PE_LOCAL_TALKING"></span><span id="pe_local_talking"></span>**\_comunicação local do PE \_**
+<span id="PE_LOCAL_TALKING"></span><span id="pe_local_talking"></span>**PE \_ LOCAL \_ TALKING**
 </dt> <dd>
 
 O participante local começou a falar.
 
 </dd> <dt>
 
-<span id="PE_LOCAL_SILENT"></span><span id="pe_local_silent"></span>**LOCAL do PE \_ \_ silencioso**
+<span id="PE_LOCAL_SILENT"></span><span id="pe_local_silent"></span>**PE \_ LOCAL \_ SILENT**
 </dt> <dd>
 
-O participante local tornou-se silencioso na conferência.
+O participante local se tornou silencioso na conferência.
 
 </dd> </dl>
 
@@ -127,8 +127,8 @@ O participante local tornou-se silencioso na conferência.
 
 | Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                              |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                              |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -136,13 +136,13 @@ O participante local tornou-se silencioso na conferência.
 
 <dl> <dt>
 
-[**Evento ITParticipantEvent:: get \_**](itparticipantevent-get-event.md)
+[**Evento ITParticipantEvent::get \_**](itparticipantevent-get-event.md)
 </dt> <dt>
 
 [IPConf MSP](ipconf-msp.md)
 </dt> <dt>
 
-[Interfaces MSP IPConf](ipconf-msp-interfaces.md)
+[IPConf MSP Interfaces](ipconf-msp-interfaces.md)
 </dt> </dl>
 
  

@@ -4,20 +4,20 @@ ms.assetid: 364b7bfb-5d6e-4ca6-b0c8-7a0180c3f61a
 title: Enumerando efeitos e transições
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e533f36501ac8da6015cc31eea6c2c111bf6a208
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bd94dee9ff6774e9608d6b599986c0b943b60d335df2ab9b27e8c2eb64d7fe42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685806"
 ---
 # <a name="enumerating-effects-and-transitions"></a>Enumerando efeitos e transições
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-O DirectShow fornece um objeto [enumerador de dispositivo do sistema](system-device-enumerator.md) para enumerar dispositivos. Você pode usá-lo para recuperar os monikers para efeitos ou transições instalados no sistema do usuário.
+DirectShow fornece um objeto [enumerador de dispositivo do sistema](system-device-enumerator.md) para enumerar dispositivos. Você pode usá-lo para recuperar os monikers para efeitos ou transições instalados no sistema do usuário.
 
-O enumerador de dispositivo do sistema expõe a interface [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) . Ele retorna enumeradores de categoria para categorias de dispositivo especificadas. Um enumerador de categoria, por sua vez, expõe a interface [**IEnumMoniker**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) e retorna monikers para cada dispositivo na categoria. Para obter uma discussão detalhada sobre como usar o **ICreateDevEnum**, consulte [enumerando dispositivos e filtros](enumerating-devices-and-filters.md). Veja a seguir um breve resumo, específico dos serviços de edição do DirectShow.
+O enumerador de dispositivo do sistema expõe a interface [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) . Ele retorna enumeradores de categoria para categorias de dispositivo especificadas. Um enumerador de categoria, por sua vez, expõe a interface [**IEnumMoniker**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) e retorna monikers para cada dispositivo na categoria. Para obter uma discussão detalhada sobre como usar o **ICreateDevEnum**, consulte [enumerando dispositivos e filtros](enumerating-devices-and-filters.md). veja a seguir um breve resumo, específico para DirectShow serviços de edição.
 
 Para enumerar efeitos ou transições, execute as etapas a seguir.
 

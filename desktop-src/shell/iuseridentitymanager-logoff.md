@@ -1,7 +1,7 @@
 ---
-description: O logoff não tem suporte e pode ser alterado ou não estar disponível no futuro. Em vez disso, use contas de usuário com troca rápida de usuário e Área de Trabalho Remota.
+description: Não há suporte para logoff e podem ser alterados ou não disponíveis no futuro. Em vez disso, use Contas de Usuário com Troca rápida de usuário e Área de Trabalho Remota.
 ms.assetid: e03fb15c-47d3-40ba-ae70-b7b0ba010004
-title: 'Método IUserIdentityManager:: logoff (Msident. h)'
+title: Método IUserIdentityManager::Logoff (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 4266e6116e43b7b792c3040d7c86a60037ca4c44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6011bf839e2f91b3eb835cfe295e0c1845a6c6697a262c0f9bf7525d6c157565
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884056"
 ---
-# <a name="iuseridentitymanagerlogoff-method"></a>Método IUserIdentityManager:: logoff
+# <a name="iuseridentitymanagerlogoff-method"></a>Método IUserIdentityManager::Logoff
 
-\[O **logoff** não tem suporte e pode ser alterado ou não estar disponível no futuro. Em vez disso, use [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md).\]
+\[**Não há** suporte para logoff e podem ser alterados ou não disponíveis no futuro. Em vez disso, use [Contas de Usuário com a Opção de Usuário Rápida e Área de Trabalho Remota](fastuserswitching.md).\]
 
 Preterido. Faça logoff da identidade atual.
 
@@ -41,20 +41,20 @@ HRESULT Logoff(
 
 <dl> <dt>
 
-*hwndParent* \[ no\]
+*hwndParent* \[ Em\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
-Um valor de **HWND** que identifica uma janela que será colocada em primeiro plano quando o logoff for concluído.
+Um **valor HWND** que identifica uma janela que será levada para o primeiro plano quando o logoff for concluído.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,10 +64,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Fim do suporte do cliente<br/>    | Windows 2000 Professional<br/>                                                   |
-| Fim do suporte do servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows 2000 Professional<br/>                                                   |
+| Fim do suporte ao servidor<br/>    | Windows 2000 Server<br/>                                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IUserIdentityManager**](iuseridentitymanager.md)
 </dt> <dt>
 
-[**IUserIdentityManager:: logon**](iuseridentitymanager-logon.md)
+[**IUserIdentityManager::Logon**](iuseridentitymanager-logon.md)
 </dt> <dt>
 
 [**IUserIdentityManager::ManageIdentities**](iuseridentitymanager-manageidentities.md)

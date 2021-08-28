@@ -4,12 +4,12 @@ ms.assetid: 427f0dca-f945-4c89-a87a-a7c86291b1c5
 title: Atributo MF_PD_ASF_FILEPROPERTIES_FLAGS (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee294642188a0f2e22143feeca6791fea591cbb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ebc42bac8ae6efd8c28fe93a4114b7e0b2e85f4daaba708a35e06231e62de9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449046"
 ---
 # <a name="mf_pd_asf_fileproperties_flags-attribute"></a>\_Atributo de \_ \_ sinalizadores FileProperties do MF PD ASF \_
 
@@ -52,8 +52,8 @@ Além disso, os valores de atributo de [**\_ \_ \_ \_ \_ \_ tamanho**](mf-pd-asf
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 

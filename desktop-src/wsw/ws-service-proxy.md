@@ -1,21 +1,21 @@
 ---
-title: WS_SERVICE_PROXY (WebServices. h)
-description: Um tipo opaco usado para fazer referência a um proxy de serviço.
+title: WS_SERVICE_PROXY (WebServices.h)
+description: Um tipo opaco usado para referenciar um proxy de serviço.
 ms.assetid: 623766ae-fe82-40f9-93c8-e78fe48bc6d1
 keywords:
 - WS_SERVICE_PROXY
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cfe81f45141b2ac6eb64e17895261c3e6fea8db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ba5c17b36d0ca36ce43192fe29a3ef9113cc47530f0fe8e00d67717f42f71bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105814161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119880756"
 ---
-# <a name="ws_service_proxy"></a>\_proxy de serviço WS \_
+# <a name="ws_service_proxy"></a>PROXY DE \_ SERVIÇO \_ WS
 
-Um tipo opaco usado para fazer referência a um proxy de serviço.
+Um tipo opaco usado para referenciar um proxy de serviço.
 
 
 ```C++
@@ -26,7 +26,7 @@ typedef struct _WS_SERVICE_PROXY WS_SERVICE_PROXY;
 
 ## <a name="remarks"></a>Comentários
 
-Este objeto é thread-safe. Para obter mais informações, consulte [segurança do thread](thread-safety.md).
+Esse objeto é thread-safe. Para obter mais informações, consulte [thread safety](thread-safety.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,9 +34,9 @@ Este objeto é thread-safe. Para obter mais informações, consulte [segurança 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows aplicativos UWP de 7 \[ \| áreas de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 R2 \|\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Este objeto é thread-safe. Para obter mais informações, consulte [segurança 
 
 <dl> <dt>
 
-[Proxy de serviço](service-proxy.md)
+[Proxy de Serviço](service-proxy.md)
 </dt> <dt>
 
 [Acesso thread-safe](thread-safety.md)

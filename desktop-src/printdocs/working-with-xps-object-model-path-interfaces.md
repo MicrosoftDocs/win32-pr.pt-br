@@ -4,12 +4,12 @@ ms.assetid: 4e76355a-ad53-4177-b8c7-3e768a1d4e3f
 title: Trabalhando com interfaces de caminho de OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca66b65c6f20dc3b585de706e223df1f76d518a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 136d742db0b176875715b3b715c4401bb8131323ceeb9f8d2a77311fb75a0672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460326"
 ---
 # <a name="working-with-xps-om-path-interfaces"></a>Trabalhando com interfaces de caminho de OM XPS
 

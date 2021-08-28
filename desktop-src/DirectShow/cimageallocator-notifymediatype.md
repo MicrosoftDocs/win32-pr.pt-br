@@ -1,7 +1,7 @@
 ---
 description: O método NotifyMediaType informa o objeto do tipo de mídia atual.
 ms.assetid: 6fb708ff-e968-4867-baca-ebe2515c9fab
-title: Método CImageAllocator. NotifyMediaType (Winutil. h)
+title: Método CImageAllocator.NotifyMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cb9261884b8940b571876502741fcc52e1c40a33
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de8630d4189ccbbf0d90b402ebeda6b785192c098aaa1e6d29c8c2a2dac2a3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688316"
 ---
-# <a name="cimageallocatornotifymediatype-method"></a>Método CImageAllocator. NotifyMediaType
+# <a name="cimageallocatornotifymediatype-method"></a>Método CImageAllocator.NotifyMediaType
 
 O `NotifyMediaType` método informa o objeto do tipo de mídia atual.
 
@@ -45,19 +45,19 @@ void NotifyMediaType(
 *pMediaType* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) ou **NULL** para limpar o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) ou **NULL** para limpar o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O filtro proprietário deve chamar esse método sempre que o tipo de mídia for alterado. Normalmente, isso ocorre quando o PIN se conecta pela primeira vez e após uma alteração de formato dinâmico. O alocador usa o tipo de mídia para validar as propriedades de alocador propostas e também quando cria amostras de mídia.
+O filtro de propriedade deve chamar esse método sempre que o tipo de mídia mudar. Normalmente, isso ocorre quando o pino se conecta pela primeira vez e após uma alteração de formato dinâmico. O alocador usa o tipo de mídia para validar as propriedades do alocador propostas e também quando cria exemplos de mídia.
 
-O objeto **CImageAllocator** armazena o ponteiro *pMediaType* na variável de membro **m \_ pMediaType** . Portanto, se o chamador precisar liberar o objeto **CMediaType** , ele deverá atualizar o alocador chamando esse método novamente, seja com um novo ponteiro ou com um valor **nulo** . Caso contrário, um erro pode ocorrer quando o alocador tenta referenciar o ponteiro antigo.
+O **objeto CImageAllocator** armazena o *ponteiro pMediaType* na **variável de membro m \_ pMediaType.** Portanto, se o chamador precisar liberar o objeto **CMediaType,** ele deverá atualizar o alocador chamando esse método novamente, com um novo ponteiro ou com um **valor NULL.** Caso contrário, um erro poderá ocorrer quando o alocador tentar referenciar o ponteiro antigo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ O objeto **CImageAllocator** armazena o ponteiro *pMediaType* na variável de me
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

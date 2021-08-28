@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_SETTOPINDEX (WinUser. h)
-description: Garante que o item especificado em uma caixa de listagem esteja visível.
+title: LB_SETTOPINDEX mensagem (Winuser.h)
+description: Garante que o item especificado em uma caixa de listagem seja visível.
 ms.assetid: vs|controls|~\controls\listboxes\listboxreference\listboxmessages\lb_settopindex.htm
 keywords:
-- Controles de LB_SETTOPINDEX de mensagens do Windows
+- LB_SETTOPINDEX controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b415c2369ccc7963a5139ab001159bdba7d6326
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4b640b55ed2c6e3e38eea0b8bd23eb4f99d770dd49b4499f054f5ec38b71873
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435456"
 ---
-# <a name="lb_settopindex-message"></a>SETTOPINDEX de mensagens de LB \_
+# <a name="lb_settopindex-message"></a>Mensagem \_ LB S PINDEX
 
-Garante que o item especificado em uma caixa de listagem esteja visível.
+Garante que o item especificado em uma caixa de listagem seja visível.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,9 +32,9 @@ Garante que o item especificado em uma caixa de listagem esteja visível.
 *wParam* 
 </dt> <dd>
 
-O índice de base zero do item na caixa de listagem.
+O índice baseado em zero do item na caixa de listagem.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
+Windows 95/Windows 98/Windows Edition DaNium (Windows Me) : o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
 
 </dd> <dt>
 
@@ -45,13 +45,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se ocorrer um erro, o valor de retorno será um erro de LB \_ .
+Se ocorrer um erro, o valor de retorno será LB \_ ERR.
 
 ## <a name="remarks"></a>Comentários
 
-O sistema rola o conteúdo da caixa de listagem para que o item especificado seja exibido na parte superior da caixa de listagem ou o intervalo máximo de rolagem tenha sido atingido.
+O sistema rola o conteúdo da caixa de listagem para que o item especificado apareça na parte superior da caixa de listagem ou o intervalo máximo de rolagem tenha sido atingido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ O sistema rola o conteúdo da caixa de listagem para que o item especificado sej
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ O sistema rola o conteúdo da caixa de listagem para que o item especificado sej
 
 <dl> <dt>
 
-[**\_GETTOPINDEX lb**](lb-gettopindex.md)
+[**LB \_ GETTOPINDEX**](lb-gettopindex.md)
 </dt> </dl>
 
  

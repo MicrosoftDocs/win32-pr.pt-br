@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 360a4b88c8c03d2f04ad55bc65eebf6be3797c92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e5126fde495c9553975daaf2db9e82de4ab4530a4629d217eba51818e20d1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689076"
 ---
 # <a name="camschedulegetevent-method"></a>Método CAMSchedule. GetEvent
 
@@ -40,7 +40,7 @@ HANDLE GetEvent();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um identificador para um evento.
 
@@ -54,7 +54,7 @@ Se a próxima hora do aviso for alterada em outras palavras, se uma nova solicit
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Dsschedule. h (incluir fluxos. h)</dt> </dl>                                                                                |
+| parâmetro<br/>  | <dl> <dt>Dsschedule. h (incluir Fluxos. h)</dt> </dl>                                                                                |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

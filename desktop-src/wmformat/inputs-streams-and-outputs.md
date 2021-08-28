@@ -1,11 +1,11 @@
 ---
-title: Entradas, fluxos e saídas
-description: Entradas, fluxos e saídas
+title: entradas, Fluxos e saídas
+description: entradas, Fluxos e saídas
 ms.assetid: f9f979c4-a15c-4f2a-b63c-7fe776394fdd
 keywords:
-- SDK do Windows Media Format, entradas
-- SDK do Windows Media Format, fluxos
-- SDK do Windows Media Format, saídas
+- Windows SDK do formato de mídia, entradas
+- Windows SDK do formato de mídia, fluxos
+- Windows SDK do formato de mídia, saídas
 - ASF (Advanced Systems Format), entradas
 - ASF (formato de sistemas avançados), entradas
 - ASF (Advanced Systems Format), fluxos
@@ -14,14 +14,14 @@ keywords:
 - ASF (formato de sistemas avançados), saídas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84e6b6941a990b108c16b49648ec0d8d028a44d7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c4518ed60495aa2318ad27cdade2885aa2660698b5dbf2659290dabf985246da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118701814"
 ---
-# <a name="inputs-streams-and-outputs"></a>Entradas, fluxos e saídas
+# <a name="inputs-streams-and-outputs"></a>entradas, Fluxos e saídas
 
 Uma "entrada" nesta documentação é qualquer fluxo de dados de mídia digital (como áudio ou vídeo) que seu aplicativo entrega ao objeto do gravador de uma fonte usando as APIs apropriadas. As entradas devem ser entregues em um formato com suporte. Há suporte para vários formatos padrão RGB e YUV como entrada, e os codecs de áudio dão suporte a PCM. Se um formato de entrada especificado não tiver suporte nativo pelo codec, o objeto do gravador criará uma instância de um objeto auxiliar de áudio ou vídeo capaz de converter uma ampla variedade de formatos em formatos que o codec pode aceitar. Para entradas de áudio, o objeto auxiliar ajustará a profundidade de bits, a taxa de amostragem e o número de canais conforme necessário. Para entradas de vídeo, o objeto auxiliar de vídeo executará conversões de espaço em cores e ajustes de tamanho de retângulo. Em alguns casos, dados compactados de áudio e vídeo podem ser passados em um fluxo de entrada. Uma entrada pode ser de outro tipo de mídia além de áudio e vídeo, como texto, comandos de script, imagens ainda ou dados de arquivo arbitrários.
 
@@ -46,9 +46,9 @@ O terceiro tipo de relação pode ocorrer quando uma exclusão mútua personaliz
 Há alguma variação nas relações descritas anteriormente. Por exemplo, um arquivo pode conter todas as três relações, ou uma ou duas delas. Também é possível que algumas entradas sejam compactadas, caso em que o gravador não executa nenhuma compactação adicional. O leitor, além disso, pode fornecer amostras compactadas. Mas, quando faz isso, você deve acessá-los por número de fluxo, não pelo número de saída.
 
 > [!Note]  
-> As entradas, os fluxo e as saídas são todos os números atribuídos pelos objetos do SDK do Windows Media Format. Os fluxos têm um número de fluxo, que é baseado em 1, que você define no perfil. Cada fluxo também é atribuído a um índice de fluxo para uso na enumeração de fluxos em um perfil. Nenhum desses números tem a garantia de estar consistente entre si. Ou seja, o número de entrada 1 pode não corresponder ao fluxo número 1, o número de fluxo 1 pode não corresponder ao índice de fluxo 1 e assim por diante.
+> as entradas, os fluxo e as saídas são todos os números atribuídos pelos objetos do SDK do formato de mídia Windows. Fluxos tem um número de fluxo, que é baseado em 1, que você define no perfil. Cada fluxo também é atribuído a um índice de fluxo para uso na enumeração de fluxos em um perfil. Nenhum desses números tem a garantia de estar consistente entre si. Ou seja, o número de entrada 1 pode não corresponder ao fluxo número 1, o número de fluxo 1 pode não corresponder ao índice de fluxo 1 e assim por diante.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -60,9 +60,9 @@ Há alguma variação nas relações descritas anteriormente. Por exemplo, um ar
 [**Exclusão mútua**](mutual-exclusion.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
