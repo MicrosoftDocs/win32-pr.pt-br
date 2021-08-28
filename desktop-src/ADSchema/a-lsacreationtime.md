@@ -1,6 +1,6 @@
 ---
 title: LSA – atributo de tempo de criação
-description: O atributo LSA-Creation-time é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+description: o atributo LSA-Creation-Time é usado para dar suporte à replicação para Windows NT domínios 4,0.
 ms.assetid: a5446cbf-aa35-4ea6-a2e0-9d0ea58edaf1
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f32092e7d71d02807f4700d381da0ce099ccaf7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa3e93b7df9c44e9277b9e49a87b056a74e31814f1c69787b2ccb7d3aed5fa3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301536"
 ---
 # <a name="lsa-creation-time-attribute"></a>LSA – atributo de tempo de criação
 
-O atributo **LSA-Creation-time** é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+o atributo **LSA-Creation-Time** é usado para dar suporte à replicação para Windows NT domínios 4,0.
 
 
 
@@ -58,7 +58,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,7 +121,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **LSA-Creation-time** é usado para dar suporte à replicação em do
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

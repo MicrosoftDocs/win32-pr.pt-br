@@ -6,12 +6,12 @@ keywords:
 - desfoque direcional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e1c098d17929563cf69f4e61416fa0d93a88dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2a43dcaa60f8627473444572ec36a13c3949e9430c9befbb5c064b51d7813bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260426"
 ---
 # <a name="directional-blur-effect"></a>Efeito de desfoque direcional
 
@@ -34,7 +34,7 @@ O CLSID para esse efeito é CLSID \_ D2D1DirectionalBlur.
 | Antes                                                          |
 |-----------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)      |
-| After (após)                                                           |
+| Depois                                                           |
 | ![a imagem após a transformação.](images/2-directionalblur.png) |
 
 
@@ -75,7 +75,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Nome                                          | Descrição                                                                                                                           |
+| Name                                          | Descrição                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Velocidade de otimização do D2D1 \_ DIRECTIONALBLUR \_ \_    | Aplica otimizações internas, como o dimensionamento prévio em raios relativamente pequenos. Usa filtragem linear.                                  |
 | D2D1 \_ DIRECTIONALBLUR de \_ otimização \_ balanceada | Usa os mesmos limites de otimização que o modo de velocidade, mas usa filtragem triline.                                                    |
@@ -89,7 +89,7 @@ m_d2dContext->EndDraw();
 
 
 
-| Nome                     | Descrição                                                                                                                                                                                                              |
+| Name                     | Descrição                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_Modo de borda d2d1 \_ \_ Soft | O efeito preenche a imagem com pixels pretos transparentes à medida que aplica o kernel de desfoque, resultando em uma borda suave. <br/>                                                                                             |
 | \_Modo de borda d2d1 \_ \_ Hard | O efeito coloca a saída para o tamanho da imagem de entrada. Quando o efeito aplica o kernel de desfoque, ele estende a imagem de entrada com uma transformação de borda de tipo espelho para exemplos fora dos limites de entrada.<br/> |
@@ -119,8 +119,8 @@ O tamanho do bitmap de saída aumenta com base no desvio padrão, no ângulo do 
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
 | parâmetro                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 

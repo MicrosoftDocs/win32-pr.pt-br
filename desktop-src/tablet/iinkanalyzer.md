@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: bd1bca0a00cbe95c4d32b2dfad8afe6c5db8ad63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b37e6d72b87ac31bda7e6c9b0d6f9bf3d35af524eea201e446b50905447404b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939846"
 ---
 # <a name="iinkanalyzer-interface"></a>Interface IInkAnalyzer
 
@@ -45,7 +45,7 @@ A interface **IInkAnalyzer** tem esses métodos.
 | [**AddStrokesForLanguage**](iinkanalyzer-addstrokesforlanguage.md)                                     | Adiciona dados de traço para vários traços ao **IInkAnalyzer** e atribui o identificador de cultura especificado aos traços.<br/>                                                        |
 | [**AddStrokesToCustomRecognizer**](iinkanalyzer-addstrokestocustomrecognizer.md)                       | Adiciona dados de traço para vários traços a um nó de reconhecedor personalizado.<br/>                                                                                                                |
 | [**AddStrokeToCustomRecognizer**](iinkanalyzer-addstroketocustomrecognizer.md)                         | Adiciona dados de traço para um único traço para um nó de reconhecedor personalizado.<br/>                                                                                                                 |
-| [**Observa**](iinkanalyzer-analyze.md)                                                                 | Executa a análise de tinta síncrona.<br/>                                                                                                                                                |
+| [**Analisar**](iinkanalyzer-analyze.md)                                                                 | Executa a análise de tinta síncrona.<br/>                                                                                                                                                |
 | [**BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)                                             | Executa a análise de tinta assíncrona.<br/>                                                                                                                                               |
 | [**ClearStrokeData**](iinkanalyzer-clearstrokedata.md)                                                 | Limpa os dados de pacote de traço do **IInkAnalyzer**.<br/>                                                                                                                              |
 | [**CreateAnalysisHint**](iinkanalyzer-createanalysishint.md)                                           | Adiciona um novo nó de dica de análise com uma área infinita ao **IInkAnalyzer**.<br/>                                                                                                      |
@@ -82,19 +82,19 @@ A interface **IInkAnalyzer** tem esses métodos.
 | [**Reconcile**](iinkanalyzer-reconcile.md)                                                             | Determina quais partes dos resultados da análise foram alteradas durante a análise de tinta em segundo plano.<br/>                                                                                    |
 | [**RemoveStroke**](iinkanalyzer-removestroke.md)                                                       | Remove o traço especificado do **IInkAnalyzer**.<br/>                                                                                                                           |
 | [**RemoveStrokes**](iinkanalyzer-removestrokes.md)                                                     | Remove os traços especificados do **IInkAnalyzer**.<br/>                                                                                                                          |
-| [**SaveResults**](iinkanalyzer-saveresults.md)                                                         | Salva todos os resultados da análise de um **IInkAnalyzer**.<br/>                                                                                                                               |
-| [**SaveResultsForNodes**](iinkanalyzer-saveresultsfornodes.md)                                         | Salva os resultados da análise de uma coleção de nós de contexto específica associada a um **IInkAnalyzer**.<br/>                                                                                |
-| [**SaveResultsForStrokes**](iinkanalyzer-saveresultsforstrokes.md)                                     | Salva os resultados da análise para os traços especificados associados a um **IInkAnalyzer**.<br/>                                                                                             |
-| [**Search**](iinkanalyzer-search.md)                                                                   | Fornece uma pesquisa difusa, sem diferenciação de maiúsculas e minúsculas, para os traços de escrita analisado e os traços de desenho analisados que têm tipos reconhecidos.<br/>                                      |
-| [**SearchWithLanguageId**](iinkanalyzer-searchwithlanguageid.md)                                       | Fornece uma pesquisa difusa, sem diferenciação de maiúsculas e minúsculas, para os traços de escrita analisado e os traços de desenho analisados que têm tipos reconhecidos.<br/>                                      |
-| [**SetAnalysisModes**](iinkanalyzer-setanalysismodes.md)                                               | Modifica os sinalizadores que controlam como o **IInkAnalyzer** executa a análise de tinta.<br/>                                                                                                       |
+| [**SaveResults**](iinkanalyzer-saveresults.md)                                                         | Salva todos os resultados da análise para **um IInkAnalyzer.**<br/>                                                                                                                               |
+| [**SaveResultsForNodes**](iinkanalyzer-saveresultsfornodes.md)                                         | Salva os resultados da análise para uma coleção de nós de contexto específica associada a **um IInkAnalyzer.**<br/>                                                                                |
+| [**SaveResultsForRogkes**](iinkanalyzer-saveresultsforstrokes.md)                                     | Salva os resultados da análise para os traços especificados associados a **um IInkAnalyzer.**<br/>                                                                                             |
+| [**Search**](iinkanalyzer-search.md)                                                                   | Fornece uma pesquisa com base em frases difusas e sem reconhecimento de maiúsculas e minúsculas para traços de escrita analisados e traços de desenho analisados que têm tipos reconhecidos.<br/>                                      |
+| [**SearchWithLanguageId**](iinkanalyzer-searchwithlanguageid.md)                                       | Fornece uma pesquisa com base em frases difusas e sem reconhecimento de maiúsculas e minúsculas para traços de escrita analisados e traços de desenho analisados que têm tipos reconhecidos.<br/>                                      |
+| [**SetAnalysisModes**](iinkanalyzer-setanalysismodes.md)                                               | Modifica sinalizadores que controlam como o **IInkAnalyzer** executa a análise de tinta.<br/>                                                                                                       |
 | [**SetDirtyRegion**](iinkanalyzer-setdirtyregion.md)                                                   | Modifica a área que foi alterada desde a última operação de análise.<br/>                                                                                                             |
-| [**SetHighestPriorityInkAnalysisRecognizer**](iinkanalyzer-sethighestpriorityinkanalysisrecognizer.md) | Move o [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) especificado para a primeira posição na lista de reconhecedores de tinta do objeto **IInkAnalyzer** .<br/>                      |
-| [**SetStrokeLanguageId**](iinkanalyzer-setstrokelanguageid.md)                                         | Altera o identificador de localidade para o traço especificado.<br/>                                                                                                                           |
-| [**SetStrokesLanguageId**](iinkanalyzer-setstrokeslanguageid.md)                                       | Altera o identificador de localidade para os traços especificados.<br/>                                                                                                                          |
-| [**Settraçostype**](iinkanalyzer-setstrokestype.md)                                                   | Altera o tipo dos traços especificados.<br/>                                                                                                                                        |
-| [**Setstroketype**](iinkanalyzer-setstroketype.md)                                                     | Altera o tipo do traço especificado.<br/>                                                                                                                                         |
-| [**UpdateStrokesData**](iinkanalyzer-updatestrokesdata.md)                                             | Atualiza os dados de pacote para os traços especificados.<br/>                                                                                                                                |
+| [**SetHighestPriorityInkAnalysisRecognizer**](iinkanalyzer-sethighestpriorityinkanalysisrecognizer.md) | Move o [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) especificado para a primeira posição na lista de reconhecedores de tinta do objeto **IInkAnalyzer.**<br/>                      |
+| [**SetEntrokeLanguageId**](iinkanalyzer-setstrokelanguageid.md)                                         | Altera o identificador de localidade para o traço especificado.<br/>                                                                                                                           |
+| [**SetEntrokesLanguageId**](iinkanalyzer-setstrokeslanguageid.md)                                       | Altera o identificador de localidade para os traços especificados.<br/>                                                                                                                          |
+| [**SetStrokesType**](iinkanalyzer-setstrokestype.md)                                                   | Altera o tipo dos traços especificados.<br/>                                                                                                                                        |
+| [**SetStrokeType**](iinkanalyzer-setstroketype.md)                                                     | Altera o tipo do traço especificado.<br/>                                                                                                                                         |
+| [**UpdateStrokesData**](iinkanalyzer-updatestrokesdata.md)                                             | Atualiza os dados do pacote para os traços especificados.<br/>                                                                                                                                |
 
 
 
@@ -102,63 +102,63 @@ A interface **IInkAnalyzer** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-O **IInkAnalyzer** usa dados de pacote de traços para analisar a tinta e não interage com os objetos de [coleção de InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) ou [**classe InkDisp**](inkdisp-class.md) diretamente.
+**IInkAnalyzer** usa dados de pacote de traço para analisar tinta e não interage diretamente com objetos [**InkDisp Class**](inkdisp-class.md) ou [InkStrkes Collection.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 
-Para adicionar ou remover traços para o **IInkAnalyzer** para análise, use um dos métodos a seguir.
+Para adicionar ou remover traços ao **IInkAnalyzer** para análise, use um dos métodos a seguir.
 
--   [**Método IInkAnalyzer:: addstroke**](iinkanalyzer-addstroke.md)
--   [**Método IInkAnalyzer:: AddStrokes**](iinkanalyzer-addstrokes.md)
--   [**Método IInkAnalyzer:: RemoveStroke**](iinkanalyzer-removestroke.md)
--   [**Método IInkAnalyzer:: RemoveStrokes**](iinkanalyzer-removestrokes.md)
+-   [**Método IInkAnalyzer::AddStrke**](iinkanalyzer-addstroke.md)
+-   [**Método IInkAnalyzer::AddStrkes**](iinkanalyzer-addstrokes.md)
+-   [**Método IInkAnalyzer::RemoveStrke**](iinkanalyzer-removestroke.md)
+-   [**Método IInkAnalyzer::RemoveStrkes**](iinkanalyzer-removestrokes.md)
 
-Esses métodos atualizam a região suja (consulte o [**método IInkAnalyzer:: GetDirtyRegion**](iinkanalyzer-getdirtyregion.md)), que é a região para a qual os traços são analisados na próxima operação de análise.
+Esses métodos atualizam a região suja (consulte [**Método IInkAnalyzer::GetDirtyRegion**](iinkanalyzer-getdirtyregion.md)), que é a região para a qual os traços são analisados na próxima operação de análise.
 
-Para analisar a tinta, use o método do método [**IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md) ou [**IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) . Durante a análise, o **IInkAnalyzer** executa a análise de layout, a classificação de traço e o reconhecimento de manuscrito.
+Para analisar tinta, use o [**método IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md) ou o método [**IInkAnalyzer::BackgroundAnalyze.**](iinkanalyzer-backgroundanalyze.md) Durante a análise, **o IInkAnalyzer** executa análise de layout, classificação de traço e reconhecimento de manuscrito.
 
-Para alterar as configurações de análise de layout e de classificação de traço, use a propriedade do [**método IInkAnalyzer:: SetAnalysisModes**](iinkanalyzer-setanalysismodes.md) .
+Para alterar as configurações de análise de layout e classificação de traço, use a [**propriedade Método IInkAnalyzer::SetAnalysisModes.**](iinkanalyzer-setanalysismodes.md)
 
-Durante a análise, o **IInkAnalyzer** recebe vários eventos, incluindo eventos gerados durante a análise em segundo plano. O [**\_ IAnalysisProxyEvents**](-ianalysisproxyevents.md) dá suporte aos recursos de proxy de dados do **IInkAnalyzer**. Para obter mais informações, consulte [proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md). Para interromper o processo de análise de dentro de um manipulador de eventos, chame o [**método IInkAnalyzer:: Abort**](iinkanalyzer-abort.md).
+Durante a análise, **o IInkAnalyzer** recebe vários eventos, incluindo eventos gerados durante a análise em segundo plano. [**\_ IAnalysisProxyEvents dá**](-ianalysisproxyevents.md) suporte aos recursos de proxy de dados do **IInkAnalyzer.** Para obter mais informações, consulte [Proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md). Para interromper o processo de análise de dentro de um manipulador de eventos, chame [**o Método IInkAnalyzer::Abort.**](iinkanalyzer-abort.md)
 
-Para modificar o idioma que o analisador de tinta usa para reconhecer manuscrito, use o método [**IInkAnalyzer:: SetStrokeLanguageId**](iinkanalyzer-setstrokelanguageid.md) ou o método [**IInkAnalyzer:: SetStrokesLanguageId**](iinkanalyzer-setstrokeslanguageid.md). Para modificar como o analisador de tinta classifica traços específicos, use o método [**IInkAnalyzer:: Setstroketype**](iinkanalyzer-setstroketype.md) ou [**IInkAnalyzer:: setstrokestype**](iinkanalyzer-setstrokestype.md).
+Para modificar a linguagem que o analisador de tinta usa para reconhecer manuscrito, use o Método [**IInkAnalyzer::SetRogkeLanguageId**](iinkanalyzer-setstrokelanguageid.md) ou o Método [**IInkAnalyzer::SetBonkesLanguageId**](iinkanalyzer-setstrokeslanguageid.md). Para modificar a forma como o analisador de tinta classifica traços específicos, use o Método [**IInkAnalyzer::SetStrokeType**](iinkanalyzer-setstroketype.md) ou o Método [**IInkAnalyzer::SetOsekesType**](iinkanalyzer-setstrokestype.md).
 
-O **IInkAnalyzer** carrega informações para todos os reconhecedores de tinta instalados. O [**método IInkAnalyzer:: GetInkAnalysisRecognizersByPriority**](iinkanalyzer-getinkanalysisrecognizersbypriority.md) retorna uma coleção [**IInkAnalysisRecognizers**](iinkanalysisrecognizers.md) que contém cada [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md)disponível. Se mais de um reconhecedor de tinta der suporte a uma linguagem específica, use o [**método IInkAnalyzer:: SetHighestPriorityInkAnalysisRecognizer**](iinkanalyzer-sethighestpriorityinkanalysisrecognizer.md) para definir qual reconhecedor de tinta lida com os traços para esse idioma.
+O **IInkAnalyzer** carrega informações para todos os reconhecedores de tinta instalados. O método [**IInkAnalyzer::GetInkAnalysisRecognizersByPriority**](iinkanalyzer-getinkanalysisrecognizersbypriority.md) retorna uma coleção [**IInkAnalysisRecognizers**](iinkanalysisrecognizers.md) que contém cada [**IInkAnalysisRecognizer disponível.**](iinkanalysisrecognizer.md) Se mais de um reconhecedor de tinta dá suporte a uma linguagem específica, use o Método [**IInkAnalyzer::SetHighestPriorityInkAnalysisRecognizer**](iinkanalyzer-sethighestpriorityinkanalysisrecognizer.md) para definir qual reconhecedor de tinta lida com traços dessa linguagem.
 
-O uso de dicas de análise pode melhorar a precisão do reconhecimento fornecendo um contexto extra para o analisador de tinta. As informações adicionais de contexto podem ajudar o analisador de tinta a limitar o número de possíveis resultados de reconhecimento. Por exemplo, você pode restringir o escopo definindo os factos e as palavras esperadas ou estruturando sua entrada em um guia de reconhecimento. Para obter mais informações sobre como fornecer contexto ao analisador de tinta, consulte:
+O uso de dicas de análise pode melhorar a precisão do reconhecimento fornecendo contexto extra ao analisador de tinta. As informações de contexto adicionais podem ajudar o analisador de tinta a limitar o número de resultados de reconhecimento possíveis. Por exemplo, você pode restringir o escopo definindo factoids e palavras esperadas ou estruturando sua entrada em um guia de reconhecimento. Para obter mais informações sobre como fornecer contexto ao analisador de tinta, consulte:
 
--   [**Método IInkAnalyzer:: CreateAnalysisHint**](iinkanalyzer-createanalysishint.md)
--   [**IInkAnalyzer: método eleteAnalysisHint de:D**](iinkanalyzer-deleteanalysishint.md)
--   [**Método IInkAnalyzer:: GetAnalysisHints**](iinkanalyzer-getanalysishints.md)
--   [**Método IInkAnalyzer:: GetAnalysisHintsByName**](iinkanalyzer-getanalysishintsbyname.md)
+-   [**Método IInkAnalyzer::CreateAnalysisHint**](iinkanalyzer-createanalysishint.md)
+-   [**Método IInkAnalyzer::D eleteAnalysisHint**](iinkanalyzer-deleteanalysishint.md)
+-   [**Método IInkAnalyzer::GetAnalysisHints**](iinkanalyzer-getanalysishints.md)
+-   [**Método IInkAnalyzer::GetAnalysisHintsByName**](iinkanalyzer-getanalysishintsbyname.md)
 
-O analisador de tinta representa os resultados da análise como uma cadeia de caracteres ou como uma árvore de objetos [**IContextNode**](icontextnode.md) . Para acessar a cadeia de caracteres reconhecida, use o [**método IInkAnalyzer:: reconhecívelstring**](iinkanalyzer-getrecognizedstring.md). Para acessar a raiz da árvore de nós de contexto, use o [**método IInkAnalyzer:: GetRootNode**](iinkanalyzer-getrootnode.md). O Ink Analyzer tem os seguintes métodos para localizar texto ou nós de contexto específicos.
+O analisador de tinta representa os resultados da análise como uma cadeia de caracteres ou como uma árvore de [**objetos IContextNode.**](icontextnode.md) Para acessar a cadeia de caracteres reconhecida, use [**o Método IInkAnalyzer::GetRecognizedString**](iinkanalyzer-getrecognizedstring.md). Para acessar a raiz da árvore de nós de contexto, use [**o Método IInkAnalyzer::GetRootNode**](iinkanalyzer-getrootnode.md). O analisador de tinta tem os métodos a seguir para localizar nós de contexto ou texto específicos.
 
--   [**Método IInkAnalyzer:: FindInkLeafNodes**](iinkanalyzer-findinkleafnodes.md)
--   [**Método IInkAnalyzer:: FindInkLeafNodesForStrokes**](iinkanalyzer-findinkleafnodesforstrokes.md)
--   [**Método IInkAnalyzer:: FindLeafNodes**](iinkanalyzer-findleafnodes.md)
--   [**Método IInkAnalyzer:: FindNode**](iinkanalyzer-findnode.md)
--   [**Método IInkAnalyzer:: FindNodesOfType**](iinkanalyzer-findnodesoftype.md)
--   [**Método IInkAnalyzer:: FindNodesOfTypeForStrokes**](iinkanalyzer-findnodesoftypeforstrokes.md)
--   [**Método IInkAnalyzer:: FindNodesOfTypeInSubTree**](iinkanalyzer-findnodesoftypeinsubtree.md)
--   [**Método IInkAnalyzer:: FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
--   [**Método IInkAnalyzer:: FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
+-   [**Método IInkAnalyzer::FindInkLeafNodes**](iinkanalyzer-findinkleafnodes.md)
+-   [**Método IInkAnalyzer::FindInkLeafNodesForStrkes**](iinkanalyzer-findinkleafnodesforstrokes.md)
+-   [**Método IInkAnalyzer::FindLeafNodes**](iinkanalyzer-findleafnodes.md)
+-   [**Método IInkAnalyzer::FindNode**](iinkanalyzer-findnode.md)
+-   [**Método IInkAnalyzer::FindNodesOfType**](iinkanalyzer-findnodesoftype.md)
+-   [**Método IInkAnalyzer::FindNodesOfTypeForRogkes**](iinkanalyzer-findnodesoftypeforstrokes.md)
+-   [**Método IInkAnalyzer::FindNodesOfTypeInSubTree**](iinkanalyzer-findnodesoftypeinsubtree.md)
+-   [**Método IInkAnalyzer::FindNodesWithCallBack**](iinkanalyzer-findnodeswithcallback.md)
+-   [**Método IInkAnalyzer::FindNodesWithCallBackInSubTree**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
 
 Para trabalhar com resultados de análise alternativos, use um dos métodos a seguir.
 
--   [**Método IInkAnalyzer:: getalternations**](iinkanalyzer-getalternates.md)
--   [**Método IInkAnalyzer:: GetAlternatesForContextNodes**](iinkanalyzer-getalternatesforcontextnodes.md)
--   [**Método IInkAnalyzer:: GetAlternatesForStrokes**](iinkanalyzer-getalternatesforstrokes.md)
--   [**Método IInkAnalyzer:: ModifyTopAlternate**](iinkanalyzer-modifytopalternate.md)
--   [**Método IInkAnalyzer:: ModifyTopAlternateWithConfirmation**](iinkanalyzer-modifytopalternatewithconfirmation.md)
+-   [**Método IInkAnalyzer::GetAlternates**](iinkanalyzer-getalternates.md)
+-   [**Método IInkAnalyzer::GetAlternatesForContextNodes**](iinkanalyzer-getalternatesforcontextnodes.md)
+-   [**Método IInkAnalyzer::GetAlternatesForRogkes**](iinkanalyzer-getalternatesforstrokes.md)
+-   [**Método IInkAnalyzer::ModifyTopAlternate**](iinkanalyzer-modifytopalternate.md)
+-   [**Método IInkAnalyzer::ModifyTopAlternateWithConfirmation**](iinkanalyzer-modifytopalternatewithconfirmation.md)
 
 Para salvar os resultados da análise, use um dos métodos a seguir.
 
--   [**Método IInkAnalyzer:: SaveResults**](iinkanalyzer-saveresults.md)
--   [**Método IInkAnalyzer:: SaveResultsForNodes**](iinkanalyzer-saveresultsfornodes.md)
--   [**Método IInkAnalyzer:: SaveResultsForStrokes**](iinkanalyzer-saveresultsforstrokes.md)
+-   [**Método IInkAnalyzer::SaveResults**](iinkanalyzer-saveresults.md)
+-   [**Método IInkAnalyzer::SaveResultsForNodes**](iinkanalyzer-saveresultsfornodes.md)
+-   [**Método IInkAnalyzer::SaveResultsForRogkes**](iinkanalyzer-saveresultsforstrokes.md)
 
-Para carregar os resultados salvos, use o [**método IInkAnalyzer:: Loadresults**](iinkanalyzer-loadresults.md).
+Para carregar os resultados salvos, use [**o Método IInkAnalyzer::LoadResults**](iinkanalyzer-loadresults.md).
 
-Para obter mais informações sobre como usar o **IInkAnalyzer** para analisar a tinta, consulte [visão geral da análise de tinta](ink-analysis-overview.md).
+Para obter mais informações sobre como usar **o IInkAnalyzer para** analisar tinta, consulte Visão [geral da análise de tinta.](ink-analysis-overview.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -166,9 +166,9 @@ Para obter mais informações sobre como usar o **IInkAnalyzer** para analisar a
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

@@ -3,7 +3,7 @@ title: Mensagem de MCM_SETRANGE (commctrl. h)
 description: Define as datas mínimas e máximas permitidas para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a \_ macro SetRange calendário mensal.
 ms.assetid: dab9ebb0-f397-4e71-b060-ef8d7d89a6bc
 keywords:
-- Controles de MCM_SETRANGE de mensagens do Windows
+- controles de Windows de mensagem de MCM_SETRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 380e599da8cd4a054c02135bc64f57f29d2c81d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c66e9cca17aabd93bfba896d361da6b90eab0c5c21fc4d50ec3c81a9eba5ccd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105762751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319246"
 ---
 # <a name="mcm_setrange-message"></a>\_Mensagem SETRANGE MCM
 
@@ -54,7 +54,7 @@ Ponteiro para uma matriz de dois elementos de estruturas [**SYSTEMTIME**](/windo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -64,9 +64,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

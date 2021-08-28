@@ -3,7 +3,7 @@ title: Elemento ScalingPolicy
 description: Representa um contêiner para especificações de dimensionamento.
 ms.assetid: 133e7994-9901-43e8-82b0-3d910cf8758e
 keywords:
-- Faixa de ScalingPolicy do elemento do Windows
+- Elemento ScalingPolicy Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 812256b0ff329073eb516c6ab2eb7501db8de40d
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 202112a24a74c9b20d429910fd0ee9447002ce7f2cb95133165fb968eaaf4f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007466"
 ---
 # <a name="scalingpolicy-element"></a>Elemento ScalingPolicy
 
@@ -42,7 +42,7 @@ Não há atributos.
 
 | Elemento                                                                                       | Descrição                                        |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Escalonáve**](windowsribbon-element-scale.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Escala**](windowsribbon-element-scale.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
 
 
@@ -53,7 +53,7 @@ Não há atributos.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Guia. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> |
+| [**Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> |
 
 
 
@@ -61,22 +61,22 @@ Não há atributos.
 
 Obrigatórios.
 
-Deve ocorrer uma vez para cada [**guia. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md).
+Deve ocorrer uma vez para [**cada Tab.ScalingPolicy.**](windowsribbon-element-tab-scalingpolicy.md)
 
-O elemento **ScalingPolicy** contém um manifesto de [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e declarações de [**escala**](windowsribbon-element-scale.md) que especificam preferências de layout adaptável para um ou mais elementos de [**grupo**](windowsribbon-element-group.md) quando a faixa de opções é redimensionada.
+O **elemento ScalingPolicy** contém um manifesto de [**declarações ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) e [**Scale**](windowsribbon-element-scale.md) que especificam preferências de layout adaptável para um ou mais elementos [**Group**](windowsribbon-element-group.md) quando a Faixa de Opções é recalizada.
 
-A lista de declarações de [**escala**](windowsribbon-element-scale.md) deve estar em ordem decrescente de tamanhos válidos (Large, Medium, Small, popup) para o [**SizeDefinition**](windowsribbon-element-sizedefinition.md) associado ao elemento [**Group**](windowsribbon-element-group.md) .
+A lista [**de**](windowsribbon-element-scale.md) declarações scale deve estar em ordem decrescente de tamanhos válidos (Grande, Médio, Pequeno, Pop-up) para o [**SizeDefinition**](windowsribbon-element-sizedefinition.md) associado ao [**elemento Group.**](windowsribbon-element-group.md)
 
 > [!Note]  
-> É altamente recomendável que a escala de detalhes da política de dimensionamento adequada seja especificada de modo que uma faixa de bits possa ser renderizada sem barras de rolagem quando redimensionada para uma largura de 300 pixels a 96 pontos por polegada (DPI).
+> É altamente recomendável que os detalhes adequados da política de dimensionamento sejam especificados de forma que uma Faixa de Opções seja capaz de renderizar sem barras de rolagem quando re dimensionada para uma largura de 300 pixels a 96 pontos por polegada (dpi).
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra como a aparência de controles em um [**grupo**](windowsribbon-element-group.md) pode ser personalizada por meio da funcionalidade de layout adaptável dos modelos de faixa de opções [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+O exemplo a seguir demonstra como [**a**](windowsribbon-element-group.md) aparência dos controles em um grupo pode ser personalizada por meio da funcionalidade de layout adaptável dos modelos Ribbon [**SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
-O manifesto **ScalingPolicy** neste exemplo especifica uma preferência de [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma guia **página inicial** . Além disso, os elementos [**Scale**](windowsribbon-element-scale.md) são especificados para influenciar o comportamento de recolhimento, em ordem de tamanho decrescente, de cada grupo.
+O **manifesto ScalingPolicy** neste exemplo especifica uma preferência [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma **guia** Início. Além disso, [**os elementos Scale**](windowsribbon-element-scale.md) são especificados para influenciar o comportamento de ressução, em ordem de tamanho decrescente, de cada grupo.
 
 
 ```XML
@@ -144,8 +144,8 @@ O manifesto **ScalingPolicy** neste exemplo especifica uma preferência de [**Sc
 
 ## <a name="element-information"></a>Informações do elemento
 
-- **Sistema mínimo com suporte**: Windows 7 
-- **Pode estar vazio**: não
+- **Sistema mínimo com suporte:** Windows 7 
+- **Pode estar vazio:** Não
 
 
 
@@ -153,7 +153,7 @@ O manifesto **ScalingPolicy** neste exemplo especifica uma preferência de [**Sc
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

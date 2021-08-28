@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherCmpGreen (S, float, float, int)'
-description: 'Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente verde em relação a um valor de comparação. | Função Texture2D:: GatherCmpGreen (S, float, float, int)'
+title: Função Texture2D::GatherCmpGreen(S,float,float,int)
+description: Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente verde em relação a um valor de comparação. | Função Texture2D::GatherCmpGreen(S,float,float,int)
 ms.assetid: 5a11ce0c-56b2-460a-95d7-15688dd158ff
 keywords:
-- HLSL da função GatherCmpGreen
+- Função GatherCmpGreen HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9346d8b66f90ed780e48e6fcae88e71dc9d9ca1b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 44ebf3590a756ea0bb78e6cc9c636523cb584cdd862059418f7b7c9508bfecfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095116"
 ---
-# <a name="texture2dgathercmpgreensfloatfloatint-function"></a>Função Texture2D:: GatherCmpGreen (S, float, float, int)
+# <a name="texture2dgathercmpgreensfloatfloatint-function"></a>Função Texture2D::GatherCmpGreen(S,float,float,int)
 
-Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente verde em relação a um valor de comparação.
+Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente verde em relação a um valor de comparação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,12 +48,12 @@ O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*local* \[ do no\]
+*local* \[ Em\]
 </dt> <dd>
 
 Tipo: **float2**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
@@ -62,34 +62,34 @@ As coordenadas de exemplo (u, v).
 
 Tipo: **float**
 
-Um valor para comparar cada valor de amostra.
+Um valor para comparar cada um com cada valor amostrado.
 
 </dd> <dt>
 
-*deslocamento* \[ no\]
+*deslocamento* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 Um deslocamento que é aplicado à coordenada de textura antes da amostragem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
 Um valor de quatro componentes, cada componente é o resultado de uma comparação por componente.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

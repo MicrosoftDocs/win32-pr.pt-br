@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c4a71aaaffe7ed11429efa67b6065f94ecd154d0
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 38be37d9d11e40f336eab58691d18113664ff49138704ea563efe083800d7c14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096596"
 ---
 # <a name="id3dx10meshbuffermap-method"></a>Método ID3DX10MeshBuffer::Map
 
@@ -59,7 +59,7 @@ O tamanho do buffer em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

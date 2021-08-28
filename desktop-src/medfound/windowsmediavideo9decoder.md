@@ -4,12 +4,12 @@ ms.assetid: 08f68d1c-c226-4bf6-abd0-fce0f9ddbc05
 title: Windows Decodificador de vídeo de mídia 9 (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b251b46c94ef88283577dbd8268c3275d8ed6aab9321c98e115a42501e2729ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df973e78f69e1f1ff0e649b2c4f5637380be9f27
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118237258"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474302"
 ---
 # <a name="windows-media-video-9-decoder"></a>Windows Decodificador de vídeo de mídia 9
 
@@ -96,80 +96,18 @@ o decodificador de vídeo de mídia Windows dá suporte às propriedades a segui
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propriedade</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mfpkey-decoder-deinterlacingproperty.md">MFPKEY_DECODER_DEINTERLACING</a></td>
-<td>Especifica se o codec decodifica quadros de vídeo entrelaçados do fluxo compactado como quadros progressivos.<br/> <dl> Windows XP e posterior.<br />
-Perfil simples, perfil principal, perfil avançado.<br />
-Leitura/gravação.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-dxva-enabledproperty.md">MFPKEY_DXVA_ENABLED</a></td>
-<td>Especifica se o decodificador usará o hardware de aceleração de vídeo do DirectX, se disponível.<br/> <dl> Windows XP e posterior.<br />
-Perfil simples, perfil principal, perfil avançado.<br />
-Somente gravação.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-avdecvideoswpowerlevelproperty.md">MFPKEY_AVDecVideoSWPowerLevel</a></td>
-<td>Especifica o nível de energia para o decodificador.<br/> <dl> Windows 7.<br />
-Perfil simples, perfil principal, perfil avançado, imagem.<br />
-Leitura/gravação.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-fi-enabledproperty.md">MFPKEY_FI_ENABLED</a></td>
-<td>Especifica se o decodificador deve usar a interpolação de quadros.<br/> <dl> Windows XP e posterior.<br />
-Perfil simples, perfil principal, perfil avançado, imagem.<br />
-Somente gravação.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-fi-supportedproperty.md">MFPKEY_FI_SUPPORTED</a></td>
-<td>Especifica se o decodificador dá suporte à interpolação de quadros.<br/> <dl> Windows XP e posterior.<br />
-Perfil simples, perfil principal, perfil avançado, imagem<br />
-Somente leitura.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><a href="mfpkey-numthreadsdecproperty.md">MFPKEY_NUMTHREADSDEC</a></td>
-<td>Especifica o número de threads que o decodificador usará.<br/> <dl> Windows Vista e posterior.<br />
-Perfil simples, perfil principal, perfil avançado, imagem.<br />
-Leitura/gravação.<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td><a href="mfpkey-postprocessmodeproperty.md">MFPKEY_POSTPROCESSMODE</a></td>
-<td>Especifica o modo de pós-processamento do decodificador.<br/> <dl> Windows Vista e posterior.<br />
-Perfil simples, perfil principal, perfil avançado, imagem.<br />
-Somente gravação.<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td><strong>g_wszWMVCNeedsDrain</strong></td>
-<td>Especifica se o decodificador deve ser drenado.<br/> <dl> Windows 8<br />
-Somente leitura.<br />
-</dl> essa propriedade é usada pelo tempo de execução do Windows Media format. O tipo de propriedade é <strong>VARIANT_BOOL</strong>. Se o valor for <strong>VARIANT_TRUE</strong>, o decodificador deverá ser esgotado após uma descontinuidade. Para obter mais informações sobre como descarregar uma MFT, consulte <a href="basic-mft-processing-model.md">modelo básico de processamento de MFT</a>.<br/>
-<blockquote>
-[!Note]<br />
-Para consultar essa propriedade, use a interface <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>IPropertyBag</strong></a> .
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Propriedade | Descrição | 
+|----------|-------------|
+| <a href="mfpkey-decoder-deinterlacingproperty.md">MFPKEY_DECODER_DEINTERLACING</a> | Especifica se o codec decodifica quadros de vídeo entrelaçados do fluxo compactado como quadros progressivos.<br /><dl> Windows XP e posterior.<br />Perfil simples, perfil principal, perfil avançado.<br />Leitura/gravação.<br /></dl> | 
+| <a href="mfpkey-dxva-enabledproperty.md">MFPKEY_DXVA_ENABLED</a> | Especifica se o decodificador usará o hardware de aceleração de vídeo do DirectX, se disponível.<br /><dl> Windows XP e posterior.<br />Perfil simples, perfil principal, perfil avançado.<br />Somente gravação.<br /></dl> | 
+| <a href="mfpkey-avdecvideoswpowerlevelproperty.md">MFPKEY_AVDecVideoSWPowerLevel</a> | Especifica o nível de energia para o decodificador.<br /><dl> Windows 7.<br />Perfil simples, perfil principal, perfil avançado, imagem.<br />Leitura/gravação.<br /></dl> | 
+| <a href="mfpkey-fi-enabledproperty.md">MFPKEY_FI_ENABLED</a> | Especifica se o decodificador deve usar a interpolação de quadros.<br /><dl> Windows XP e posterior.<br />Perfil simples, perfil principal, perfil avançado, imagem.<br />Somente gravação.<br /></dl> | 
+| <a href="mfpkey-fi-supportedproperty.md">MFPKEY_FI_SUPPORTED</a> | Especifica se o decodificador dá suporte à interpolação de quadros.<br /><dl> Windows XP e posterior.<br />Perfil simples, perfil principal, perfil avançado, imagem<br />Somente leitura.<br /></dl> | 
+| <a href="mfpkey-numthreadsdecproperty.md">MFPKEY_NUMTHREADSDEC</a> | Especifica o número de threads que o decodificador usará.<br /><dl> Windows Vista e posterior.<br />Perfil simples, perfil principal, perfil avançado, imagem.<br />Leitura/gravação.<br /></dl> | 
+| <a href="mfpkey-postprocessmodeproperty.md">MFPKEY_POSTPROCESSMODE</a> | Especifica o modo de pós-processamento do decodificador.<br /><dl> Windows Vista e posterior.<br />Perfil simples, perfil principal, perfil avançado, imagem.<br />Somente gravação.<br /></dl> | 
+| <strong>g_wszWMVCNeedsDrain</strong> | Especifica se o decodificador deve ser esvaziado.<br /><dl> Windows 8<br />Somente leitura.<br /></dl> Essa propriedade é usada pelo runtime Windows Formato de Mídia. O tipo de propriedade é <strong>VARIANT_BOOL</strong>. Se o valor for <strong>VARIANT_TRUE</strong>, o decodificador deverá ser esvaziado após uma descontinuidade. Para obter mais informações sobre como esvaziar um MFT, consulte <a href="basic-mft-processing-model.md">Modelo básico de processamento MFT</a>.<br /><blockquote>[!Note]<br />Para consultar essa propriedade, use a interface <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>IPropertyBag.</strong></a></blockquote><br /> | 
+
 
 
 
@@ -177,7 +115,7 @@ Para consultar essa propriedade, use a interface <a href="/windows/desktop/com/i
 
 ## <a name="remarks"></a>Comentários
 
-a resolução máxima permitida pelo decodificador Windows Media Video 9 é 4096x4096.
+A resolução máxima permitida pelo decodificador Windows Media Video 9 é 4096x4096.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -186,19 +124,19 @@ a resolução máxima permitida pelo decodificador Windows Media Video 9 é 4096
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Wmvdecod.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Objetos de codec](codecobjects.md)
+[Objetos codec](codecobjects.md)
 </dt> <dt>
 
-[Implementação de codec](codecimplementation.md)
+[Implementação do Codec](codecimplementation.md)
 </dt> </dl>
 
  

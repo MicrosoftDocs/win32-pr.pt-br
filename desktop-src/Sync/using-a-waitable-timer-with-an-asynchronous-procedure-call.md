@@ -1,29 +1,29 @@
 ---
-description: O exemplo a seguir associa uma função APC (chamada de procedimento assíncrono), também conhecida como rotina de conclusão, com um temporizador de espera quando o temporizador é definido.
+description: O exemplo a seguir associa uma função APC (chamada de procedimento assíncrono), também conhecida como rotina de conclusão, com um temporizador que pode ser aguardado quando o temporizador é definido.
 ms.assetid: aea3c080-caf2-4c16-adc5-51357a0340b8
 title: Usando temporizadores de espera com uma chamada de procedimento assíncrono
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 628288b1c5e1ce7c83e104cf6daa9e6fdcc3eb9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62436011a3da0ac17525a0ce977e7bcd25382c5c267b62b9c972381e0f28562d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661146"
 ---
 # <a name="using-waitable-timers-with-an-asynchronous-procedure-call"></a>Usando temporizadores de espera com uma chamada de procedimento assíncrono
 
-O exemplo a seguir associa uma função APC ( [chamada de procedimento assíncrono](asynchronous-procedure-calls.md) ), também conhecida como rotina de conclusão, com um [temporizador de espera](waitable-timer-objects.md) quando o temporizador é definido. O endereço da rotina de conclusão é o quarto parâmetro para a função [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) . O quinto parâmetro é um ponteiro void que você pode usar para passar argumentos para a rotina de conclusão.
+O exemplo [a](waitable-timer-objects.md) seguir associa uma função APC (chamada de procedimento assíncrono), também conhecida como rotina de conclusão, com um temporizador que pode ser aguardado quando o temporizador é definido. [](asynchronous-procedure-calls.md) O endereço da rotina de conclusão é o quarto parâmetro para a [**função SetWaitableTimer.**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) O quinto parâmetro é um ponteiro nulo que você pode usar para passar argumentos para a rotina de conclusão.
 
-A rotina de conclusão será executada pelo mesmo thread que chamou [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer). Esse thread deve estar em um estado de alerta para executar a rotina de conclusão. Ele realiza isso chamando a função [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) , que é uma função alertável.
+A rotina de conclusão será executada pelo mesmo thread que chamou [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer). Esse thread deve estar em um estado alertável para executar a rotina de conclusão. Ele faz isso chamando a [**função SleepEx,**](/windows/win32/api/synchapi/nf-synchapi-sleepex) que é uma função alertável.
 
-Cada thread tem uma fila da APC. Se houver uma entrada na fila da APC do thread no momento em que uma das funções de alerta for chamada, o thread não será colocado em suspensão. Em vez disso, a entrada é removida da fila da APC e a rotina de conclusão é chamada.
+Cada thread tem uma fila APC. Se houver uma entrada na fila APC do thread no momento em que uma das funções alertáveis for chamada, o thread não será colocado em espera. Em vez disso, a entrada é removida da fila APC e a rotina de conclusão é chamada.
 
-Se não existir nenhuma entrada na fila da APC, o thread será suspenso até que a espera seja satisfeita. A espera pode ser satisfeita adicionando-se uma entrada à fila da APC, por um tempo limite ou por um identificador sendo sinalizado. Se a espera for satisfeita por uma entrada na fila da APC, o thread será ativado e a rotina de conclusão será chamada. Nesse caso, o valor de retorno da função é **aguardando \_ a \_ conclusão da e/s**.
+Se nenhuma entrada existir na fila APC, o thread será suspenso até que a espera seja atendida. A espera pode ser atendida adicionando uma entrada à fila APC, por um tempoout ou por um handle que está sendo sinalizado. Se a espera for atendida por uma entrada na fila APC, o thread será atendido e a rotina de conclusão será chamada. Nesse caso, o valor de retorno da função é **WAIT \_ IO \_ COMPLETION.**
 
-Após a execução da rotina de conclusão, o sistema verifica se há outra entrada na fila da APC para processar. Uma função alertável será retornada somente depois que todas as entradas da APC tiverem sido processadas. Portanto, se as entradas estiverem sendo adicionadas à fila da APC mais rápido do que podem ser processadas, é possível que uma chamada para uma função alertável nunca seja retornada. Isso é especialmente possível com temporizadores de espera, se o período for menor do que o tempo necessário para executar a rotina de conclusão.
+Depois que a rotina de conclusão é executada, o sistema verifica se há outra entrada na fila APC a ser processado. Uma função alertable retornará somente depois que todas as entradas APC foram processadas. Portanto, se as entradas estão sendo adicionadas à fila APC mais rapidamente do que podem ser processadas, é possível que uma chamada a uma função alertável nunca retorne. Isso é especialmente possível com temporizadores de espera, se o período for menor do que o tempo necessário para executar a rotina de conclusão.
 
-Quando você estiver usando um temporizador que pode ser aguardado com uma APC, o thread que define o temporizador não deve aguardar o identificador do temporizador. Ao fazer isso, você faria com que o thread fosse ativado como resultado do temporizador sendo sinalizado em vez do resultado de uma entrada adicionada à fila da APC. Como resultado, o thread não está mais em um estado de alerta e a rotina de conclusão não é chamada. No código a seguir, a chamada para [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) desperta o thread quando uma entrada é adicionada à fila da APC do thread depois que o temporizador é definido como o estado sinalizado.
+Quando você estiver usando um temporizador que pode ser aguardado com um APC, o thread que define o temporizador não deve esperar no alça do temporizador. Ao fazer isso, você faria com que o thread fosse a wake up como resultado da sinalização do temporizador em vez de como resultado de uma entrada ser adicionada à fila APC. Como resultado, o thread não está mais em um estado alertável e a rotina de conclusão não é chamada. No código a seguir, a chamada para [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) chama o thread quando uma entrada é adicionada à fila APC do thread depois que o temporizador é definido como o estado sinalizado.
 
 
 ```C++
@@ -130,7 +130,7 @@ int main( void )
 
 <dl> <dt>
 
-[Usando objetos de timer de espera](using-waitable-timer-objects.md)
+[Usando objetos de temporizador que podem ser aguardados](using-waitable-timer-objects.md)
 </dt> </dl>
 
  

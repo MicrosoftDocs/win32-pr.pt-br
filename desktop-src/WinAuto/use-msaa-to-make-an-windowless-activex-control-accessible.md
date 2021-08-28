@@ -1,41 +1,41 @@
 ---
-title: Usar MSAA para tornar um controle ActiveX sem janela acessível
-description: Descreve como usar o Microsoft Acessibilidade Ativa \ 32; API para garantir que o controle Microsoft ActiveX sem janela esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
+title: Use a MSAA para tornar um controle de ActiveX sem janela acessível
+description: Descreve como usar o Microsoft Acessibilidade Ativa \ 32; API para garantir que o controle de ActiveX da Microsoft sem janelas esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
 ms.assetid: 30F874F9-EA45-4365-8798-FEA011C62DA9
 keywords:
-- Controle ActiveX, acessibilidade
+- ActiveX Controle, acessibilidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3a76aa72fadef502a6a4319284ab34fdd5214d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6bac5c4d2a27e5f069f2242999438eebe85e2ea7df1a6bc94890aec142db246c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105813717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098106"
 ---
-# <a name="use-msaa-to-make-a-windowless-activex-control-accessible"></a>Usar MSAA para tornar um controle ActiveX sem janela acessível
+# <a name="use-msaa-to-make-a-windowless-activex-control-accessible"></a>Use a MSAA para tornar um controle de ActiveX sem janela acessível
 
-Descreve como usar a API do Microsoft Acessibilidade Ativa para garantir que o controle Microsoft ActiveX sem janela esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
+descreve como usar a API do microsoft Acessibilidade Ativa para garantir que o controle de ActiveX da microsoft sem janelas esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles ActiveX](/windows/desktop/com/activex-controls)
+-   [ActiveX Controles](/windows/desktop/com/activex-controls)
 -   [Acessibilidade Ativa da Microsoft](microsoft-active-accessibility.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
 -   Programação do COM (Microsoft Win32 e Component Object Model)
--   Controles ActiveX sem janela
+-   controles de ActiveX sem janela
 -   Servidores Microsoft Acessibilidade Ativa
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1-implement-the-iaccessible-interface"></a>Etapa 1: implementar a interface IAccessible.
 
-Para tornar o controle ActiveX sem janela acessível, você deve implementar a interface do Microsoft Acessibilidade Ativa [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , assim como faria com um controle baseado em janela, exceto conforme descrito nas etapas a seguir. Para obter mais informações sobre como implementar o **IAccessible**, consulte o [Guia do desenvolvedor para servidores de acessibilidade ativa](developer-s-guide-for-active-accessibility-servers.md).
+para tornar o controle de ActiveX sem janela acessível, você deve implementar a interface do Microsoft Acessibilidade Ativa [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , assim como faria com um controle baseado em janela, exceto conforme descrito nas etapas a seguir. Para obter mais informações sobre como implementar o **IAccessible**, consulte o [Guia do desenvolvedor para servidores de acessibilidade ativa](developer-s-guide-for-active-accessibility-servers.md).
 
 ### <a name="step-2-implement-the-iserviceprovider-interface"></a>Etapa 2: implementar a interface IServiceProvider.
 
@@ -104,7 +104,7 @@ HRESULT CMyAccessibleMSAAControl::get_accParent(IDispatch **ppdispParent)
 
 ### <a name="step-4-acquire-a-range-of-object-ids-to-assign-to-the-event-sources-in-your-windowless-control"></a>Etapa 4: adquirir um intervalo de IDs de objeto para atribuir às fontes de evento no controle sem janela.
 
-Assim como os controles baseados em janela, um controle ActiveX sem janela chama a função [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) para notificar os clientes sobre eventos importantes. Os parâmetros de função incluem a ID de objeto do item que está gerando o evento. O controle sem janela deve atribuir IDs de objeto usando um valor de um intervalo adquirido chamando o método [**IAccessibleWindowlessSite:: AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) do site de controle.
+assim como os controles baseados em janela, um controle de ActiveX sem janela chama a função [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) para notificar os clientes sobre eventos importantes. Os parâmetros de função incluem a ID de objeto do item que está gerando o evento. O controle sem janela deve atribuir IDs de objeto usando um valor de um intervalo adquirido chamando o método [**IAccessibleWindowlessSite:: AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) do site de controle.
 
 Este exemplo mostra como adquirir um intervalo de valores de ID de objeto do contêiner de controle.
 
@@ -137,12 +137,12 @@ Se um aplicativo cliente responder ao evento, o contêiner de controle receberá
 
 <dl> <dt>
 
-[Usar a automação da interface do usuário para tornar um controle ActiveX sem janela acessível](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
+[Use a automação da interface do usuário para tornar um controle de ActiveX sem janelas acessível](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
 </dt> <dt>
 
-[Acessibilidade de controle ActiveX sem janela](windowless-activex-control-accessibility.md)
+[acessibilidade de controle de ActiveX sem janelas](windowless-activex-control-accessibility.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

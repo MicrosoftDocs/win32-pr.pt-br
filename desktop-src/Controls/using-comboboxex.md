@@ -4,12 +4,12 @@ description: Esta seção contém código de exemplo e informações sobre como 
 ms.assetid: 3c932a7e-e0cb-4e1e-a982-c480fac4a323
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6a323e7875cb64c2906af055dcf7cba2252e67
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 612ed0008fdf168e45fdbf9efccb52b481fbf475738af0b80dac60f3747bd881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059426"
 ---
 # <a name="using-comboboxex-controls"></a>Usando controles ComboBoxEx
 

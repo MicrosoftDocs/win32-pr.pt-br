@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da7acc706017c0346e5a701144d60bcbbfd7cf40
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 60920995e72fdc1f45dcc6c083be7bcc1a91b3fa
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983789"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466403"
 ---
 # <a name="jet_sesid"></a>JET_SESID
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_sesid"></a>JET_SESID
 
-O **JET_SESID** de dados contém um identificador para a sessão a ser usada para uma chamada à API jet.
+O tipo de dados **JET_SESID** contém um identificador para a sessão a ser usado para uma chamada para a API do Jet.
 
 ```cpp
     typedef JET_API_PTR JET_SESID;
@@ -39,26 +39,22 @@ O **JET_SESID** de dados contém um identificador para a sessão a ser usada par
 
 JET_SESID
 
-NULL  ou [JET_sesidNil](./invalid-handle-constants.md) pode ser usado para indicar um alça de sessão inválido.
+**Nulo** ou [JET_sesidNil](./invalid-handle-constants.md) pode ser usado para indicar um identificador de sessão inválido.
 
 ### <a name="remarks"></a>Comentários
 
-Uma sessão é o contexto de transação do mecanismo de banco de dados. Ele pode ser usado para iniciar, fazer commit ou anular transações que afetam a visibilidade e a durabilidade das alterações feitas por esta ou outras sessões.
+Uma sessão é o contexto de transação do mecanismo de banco de dados. Ele pode ser usado para iniciar, confirmar ou anular transações que afetam a visibilidade e a durabilidade das alterações feitas por esta ou outras sessões.
 
-Uma transação pode ser iniciada usando [JetBeginTransaction](./jetbegintransaction-function.md). Uma sessão pode ser criada usando [JetBeginSession](./jetbeginsession-function.md). O número máximo de sessões que podem ser criadas a qualquer momento é controlado pelo [JET_paramMaxSessions](./resource-parameters.md), que pode ser configurado por meio de [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+Uma transação pode ser iniciada usando [JetBeginTransaction](./jetbegintransaction-function.md). Uma sessão pode ser criada usando [JetBeginSession](./jetbeginsession-function.md). O número máximo de sessões que podem ser criadas a qualquer momento é controlado por [JET_paramMaxSessions](./resource-parameters.md), que pode ser configurado por meio de [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
-Uma sessão é encerrada explicitamente por uma chamada para [JetEndSession](./jetendsession-function.md) ou termina implicitamente por uma chamada para [JetTerm](./jetterm-function.md).
+Uma sessão é encerrada explicitamente por uma chamada para [JetEndSession](./jetendsession-function.md) ou encerrada implicitamente por uma chamada para [JetTerm](./jetterm-function.md).
 
-Cada sessão só pode ser usada por um thread por vez. Além disso, o comportamento padrão do mecanismo é restringir o uso de uma sessão para o mesmo thread desde o momento em que a primeira chamada para [JetBeginTransaction](./jetbegintransaction-function.md) é feita até o momento em que a chamada correspondente para [JetCommitTransaction](./jetcommittransaction-function.md) ou [JetRollback](./jetrollback-function.md) é feita. Esse comportamento pode ser alterado para remover essa segunda restrição definindo um contexto de sessão personalizado usando [JetSetSessionContext](./jetsetsessioncontext-function.md) e [JetResetSessionContext](./jetresetsessioncontext-function.md).
+Cada sessão só pode ser usada por um thread por vez. Além disso, o comportamento padrão do mecanismo é restringir o uso de uma sessão para o mesmo thread a partir do momento em que a primeira chamada para [JetBeginTransaction](./jetbegintransaction-function.md) é feita até o momento em que a chamada de correspondência para [JetCommitTransaction](./jetcommittransaction-function.md) ou [JetRollback](./jetrollback-function.md) é feita. Esse comportamento pode ser alterado para remover essa segunda restrição definindo um contexto de sessão personalizado usando [JetSetSessionContext](./jetsetsessioncontext-function.md) e [JetResetSessionContext](./jetresetsessioncontext-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 

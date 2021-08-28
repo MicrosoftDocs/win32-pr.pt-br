@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 453352574a7aec10c56492060ac2de6ceeca030f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 655557c23475dbc2d7f2e92fb48f5f71a8e818954bff83f5a47bb2470a26ca20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836186"
 ---
 # <a name="surname-attribute"></a>Atributo sobrenome
 
@@ -58,9 +58,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                    |
 | MAPI-Id                | 0x3A11                                |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
-| É indexado             | True                                  |
-| No catálogo global      | True                                  |
+| É de valor único       | Verdadeiro                                  |
+| É indexado             | Verdadeiro                                  |
+| No catálogo global      | Verdadeiro                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
 | Range-Lower            | 1                                     |
 | Range-Upper            | 64                                    |
@@ -79,9 +79,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
+| É indexado             | Verdadeiro                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
@@ -100,9 +100,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
+| É indexado             | Verdadeiro                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
@@ -121,9 +121,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
+| É indexado             | Verdadeiro                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
@@ -142,9 +142,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
+| É indexado             | Verdadeiro                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |
@@ -163,9 +163,9 @@ Esse atributo contém a família ou o sobrenome de um usuário.
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | 0x3A11                                                                                        |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
+| É indexado             | Verdadeiro                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | 1                                                                                             |
 | Range-Upper            | 64                                                                                            |

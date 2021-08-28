@@ -4,12 +4,12 @@ description: Este tópico contém um código de exemplo que mostra como implemen
 ms.assetid: 6b6549b8-795b-45a8-8fef-59842cc990e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 159e95e739ae73f1c37d99ae065032fd680f0720
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09448bd9088b8338e9de14079b2ee446bf43f4e2c41e15ce17114eda958ed210
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098376"
 ---
 # <a name="how-to-implement-event-handlers"></a>Como implementar manipuladores de eventos
 
@@ -23,7 +23,7 @@ Este tópico contém um código de exemplo que mostra como implementar interface
 
 ## <a name="handling-general-ui-automation-events"></a>Manipulando eventos gerais de automação da interface do usuário
 
-O exemplo de código a seguir é um aplicativo de console do Microsoft Windows que implementa um manipulador de eventos de automação da interface do usuário para eventos gerais de automação da interface Este exemplo manipula eventos de criação e destruição para dicas de ferramenta e outras janelas.
+o exemplo de código a seguir é um aplicativo de console do Microsoft Windows que implementa um manipulador de eventos de automação da interface do usuário para eventos gerais de automação da interface Este exemplo manipula eventos de criação e destruição para dicas de ferramenta e outras janelas.
 
 
 ```C++
@@ -192,7 +192,7 @@ cleanup:
 
 ## <a name="handling-focus-changed-events"></a>Manipulando eventos de Focus-Changed
 
-O exemplo de código a seguir é um aplicativo de console do Windows que implementa um manipulador para eventos de foco alterado.
+o exemplo de código a seguir é um aplicativo de console Windows que implementa um manipulador para eventos de foco alterado.
 
 
 ```C++
@@ -316,7 +316,7 @@ cleanup:
 
 ## <a name="handling-property-changed-events"></a>Manipulando eventos de Property-Changed
 
-O exemplo de código a seguir é um aplicativo de console do Windows que implementa um manipulador para eventos de alteração de propriedade.
+o exemplo de código a seguir é um aplicativo de console Windows que implementa um manipulador para eventos de alteração de propriedade.
 
 
 ```C++
@@ -471,7 +471,7 @@ cleanup:
 
 ## <a name="handling-structure-changed-events"></a>Manipulando eventos de Structure-Changed
 
-O exemplo de código a seguir é um aplicativo de console do Windows que implementa um manipulador para eventos de alteração de estrutura.
+o exemplo de código a seguir é um aplicativo de console Windows que implementa um manipulador para eventos de alteração de estrutura.
 
 
 ```C++
@@ -646,9 +646,9 @@ cleanup:
 [Tópicos de instruções para clientes de automação da interface do usuário](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificação LBN_SELCHANGE (WinUser. h)
-description: Notifica o aplicativo que a seleção em uma caixa de listagem foi alterada como resultado da entrada do usuário. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem de comando do WM \_ .
+title: LBN_SELCHANGE de notificação (Winuser.h)
+description: Notifica o aplicativo de que a seleção em uma caixa de listagem foi alterada como resultado da entrada do usuário. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem WM \_ COMMAND.
 ms.assetid: 126d2c47-816e-4179-a870-f5c5a34c5513
 keywords:
-- LBN_SELCHANGE de código de notificação controles do Windows
+- LBN_SELCHANGE código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e029d1753a0fa74f39a59a459d6ede45811a40fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ef87aebcf2ce804a10b4682bfaf2cba900bd227a06671959d11babce5f46774
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085176"
 ---
-# <a name="lbn_selchange-notification-code"></a>Código de notificação do LBN \_ SELCHANGE
+# <a name="lbn_selchange-notification-code"></a>Código de \_ notificação DO LBN SELCHANGE
 
-Notifica o aplicativo que a seleção em uma caixa de listagem foi alterada como resultado da entrada do usuário. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+Notifica o aplicativo de que a seleção em uma caixa de listagem foi alterada como resultado da entrada do usuário. A janela pai da caixa de listagem recebe esse código de notificação por meio da mensagem [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,17 +49,17 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Identificador para a caixa de listagem.
+Lidar com a caixa de listagem.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Esse código de notificação é enviado somente por uma caixa de listagem que tem o estilo de [**\_ notificação lbs**](list-box-styles.md) .
+Esse código de notificação é enviado apenas por uma caixa de listagem que tem o estilo [**\_ NOTIFICAÇÃO DO LBS.**](list-box-styles.md)
 
-Esse código de notificação não será enviado se [**o \_ lb SETSEL**](lb-setsel.md), [**lb \_ setcurseal**](lb-setcursel.md), lb [**\_ SelectString**](lb-selectstring.md), [**lb \_ SELITEMRANGE**](lb-selitemrange.md) ou [**lb \_ SELITEMRANGEEX**](lb-selitemrangeex.md) Message alterar a seleção.
+Esse código de notificação não será enviado se a mensagem [**LB \_ SETSEL**](lb-setsel.md), [**LB \_ SETCURSEL**](lb-setcursel.md), [**LB \_ SELECTSTRING,**](lb-selectstring.md) [**LB \_ SELITEMRANGE**](lb-selitemrange.md) ou [**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md) mudar a seleção.
 
-Para uma caixa de listagem de seleção múltipla, o \_ código de notificação lbn SELCHANGE é enviado sempre que o usuário pressiona uma tecla de seta, mesmo que a seleção não seja alterada.
+Para uma caixa de listagem de seleção múltipla, o código de notificação LBN SELCHANGE é enviado sempre que o usuário pressiona uma tecla de seta, mesmo que a seleção \_ não seja alterada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Para uma caixa de listagem de seleção múltipla, o \_ código de notificação
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Para uma caixa de listagem de seleção múltipla, o \_ código de notificação
 **Referência**
 </dt> <dt>
 
-[**LB- \_ REcursel**](lb-setcursel.md)
+[**LB \_ SETCURSEL**](lb-setcursel.md)
 </dt> <dt>
 
 [LBN \_ DBLCLK](lbn-dblclk.md)
@@ -92,7 +92,7 @@ Para uma caixa de listagem de seleção múltipla, o \_ código de notificação
 **Outros recursos**
 </dt> <dt>
 
-[**comando do WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

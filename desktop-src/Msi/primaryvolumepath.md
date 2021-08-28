@@ -4,12 +4,12 @@ ms.assetid: 6de21e4e-13cd-4a3f-a068-3b38672ae79c
 title: Propriedade PrimaryVolumePath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da36cad6f35118c7631aba66213a000f6a2cc3e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f0c440e6c99e09e045fb9c91fcc720d3e64e707b6444f765448401080f7b9b38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082646"
 ---
 # <a name="primaryvolumepath-property"></a>Propriedade PrimaryVolumePath
 
@@ -21,7 +21,7 @@ O instalador define o valor da propriedade **PrimaryVolumePath** como o caminho 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

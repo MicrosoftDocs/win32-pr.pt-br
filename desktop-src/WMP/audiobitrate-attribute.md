@@ -1,6 +1,6 @@
 ---
 title: Atributo AudioBitrate
-description: O atributo AudioBitrate é a taxa de bits para o fluxo de áudio em um arquivo de vídeo, em bits por segundo.
+description: O atributo AudioBitrate é a taxa de bits para o fluxo de áudio dentro de um arquivo de vídeo, em bits por segundo.
 ms.assetid: 28272aa2-49ac-4c13-aa3e-6e733cc49514
 keywords:
 - Atributo AudioBitrate Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49dcbcd85d986bb9dd2d7ced329e5142a13eaa8c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86dbeb4f9b5fb728b759d8208df5cb8f5c14c85cb87552251eff5876c0dba3fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098896"
 ---
 # <a name="audiobitrate-attribute"></a>Atributo AudioBitrate
 
-O atributo **AudioBitrate** é a taxa de bits para o fluxo de áudio em um arquivo de vídeo, em bits por segundo.
+O **atributo AudioBitrate** é a taxa de bits para o fluxo de áudio dentro de um arquivo de vídeo, em bits por segundo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,9 +29,9 @@ O atributo **AudioBitrate** é a taxa de bits para o fluxo de áudio em um arqui
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca quanto no arquivo de vídeo.
+Esse atributo é armazenado na biblioteca e no arquivo de vídeo.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d4878774a01016f52c25574b49cd8b8669bc6691
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 40eab8fa294a8b3843dfff471369a725c8875320
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812340"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622312"
 ---
 # <a name="span-idvspixengineissuespanissue-structure"></a><span id="vspixengine.issue"></span>Estrutura do problema
 
@@ -41,7 +41,7 @@ Representa informações sobre um problema.
 Uma cadeia de caracteres COM que contém uma descrição do problema.
 
 **Código**  
-Uma cadeia de caracteres COM que contém o código identificadoras associado ao problema.
+Uma cadeia de caracteres COM que contém o código dec associado ao problema.
 
 **ID**  
 A ID do problema.
@@ -51,7 +51,7 @@ A ID do evento associado.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

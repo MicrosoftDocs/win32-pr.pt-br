@@ -1,10 +1,10 @@
 - name: Gerenciador de Conexão do Windows
   href: windows-connection-manager-portal.md
   items:
-    - name: Referência do Gerenciador de conexões do Windows
+    - name: Windows Referência do Gerenciador de conexões
       href: windows-connection-manager-reference.md
       items:
-        - name: Tipos enumerados do Gerenciador de conexões do Windows
+        - name: Windows Tipos enumerados do Gerenciador de conexões
           href: wcm-enumerated-types.md
           items:
             - name: WCM_CONNECTION_COST
@@ -15,7 +15,7 @@
               href: /windows/win32/api/Wcmapi/ne-wcmapi-wcm_media_type
             - name: WCM_PROPERTY
               href: /windows/win32/api/Wcmapi/ne-wcmapi-wcm_property
-        - name: Funções do Gerenciador de conexões do Windows
+        - name: Windows Funções do Gerenciador de conexões
           href: wcm-functions.md
           items:
             - name: WcmFreeMemory
@@ -28,7 +28,7 @@
               href: /windows/desktop/api/Wcmapi/nf-wcmapi-wcmsetprofilelist
             - name: WcmSetProperty
               href: /windows/desktop/api/Wcmapi/nf-wcmapi-wcmsetproperty
-        - name: Estruturas do Gerenciador de conexões do Windows
+        - name: Windows Estruturas do Gerenciador de conexões
           href: wcm-structures.md
           items:
             - name: WCM_BILLING_CYCLE_INFO

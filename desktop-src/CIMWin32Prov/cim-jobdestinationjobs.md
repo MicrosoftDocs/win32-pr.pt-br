@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM JobDestinationJobs descreve onde um trabalho é enviado para processamento (ou seja, para qual destino de trabalho).
+description: A associação JobDestinationJobs do CIM descreve onde um trabalho é enviado para processamento \_ (ou seja, para qual destino do trabalho).
 ms.assetid: 6f732d34-2284-4909-a966-6b4066780cb0
 ms.tgt_platform: multiple
-title: Classe CIM_JobDestinationJobs
+title: CIM_JobDestinationJobs classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e59e20f776c410db53294b6f6e98a1b13aef0de
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5947ac9a8539227f27dbea62aeebcfbc07b14a7626e25234e3a39ee3267d81c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438425"
 ---
-# <a name="cim_jobdestinationjobs-class"></a>\_Classe CIM JobDestinationJobs
+# <a name="cim_jobdestinationjobs-class"></a>Classe \_ JobDestinationJobs cim
 
-A associação **CIM \_ JobDestinationJobs** descreve onde um trabalho é enviado para processamento (ou seja, para qual destino de trabalho).
+A **associação \_ JobDestinationJobs** do CIM descreve onde um trabalho é enviado para processamento (ou seja, para qual destino do trabalho).
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_JobDestinationJobs : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ JobDestinationJobs** tem estes tipos de membros:
+A **classe \_ JobDestinationJobs cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ JobDestinationJobs** tem essas propriedades.
+A **classe \_ JobDestinationJobs cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ JobDestination**
+Tipo de dados: **\_ JobDestination do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Um [**\_ JobDestination CIM**](cim-jobdestination.md) que descreve o destino do trabalho, possivelmente uma fila.
+Um [**\_ JobDestination cim que**](cim-jobdestination.md) descreve o destino do trabalho, possivelmente uma fila.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ trabalho do CIM**
+Tipo de dados: **Trabalho CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ trabalho CIM**](cim-job.md) que descreve o trabalho que está na fila/destino do trabalho.
+Um [**trabalho CIM \_**](cim-job.md) que descreve o trabalho que está na fila/Destino do trabalho.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-**CIM \_ JobDestinationJobs** é derivado da [**\_ dependência CIM**](cim-dependency.md).
+**CIM \_ JobDestinationJobs** é derivado da Dependência [**CIM. \_**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Registrando um provedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53592ecb452de1b6071cbb8f59cfaaef42b57f1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 265d3a9f8617c68793fc30c0dc23fd3e9f0106ee98a9e3c757754e2fe589dda8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995916"
 ---
 # <a name="registering-a-provider"></a>Registrando um provedor
 
@@ -163,7 +163,7 @@ O procedimento a seguir descreve como registrar um provedor.
 
 1.  Registre o provedor como um servidor COM.
 
-    Se necessário, talvez seja necessário criar entradas do registro. Esse processo se aplica a todos os servidores COM e não está relacionado ao WMI. Para obter mais informações, consulte a seção COM na documentação do SDK (Software Development Kit) do Microsoft Windows.
+    Se necessário, talvez seja necessário criar entradas do registro. Esse processo se aplica a todos os servidores COM e não está relacionado ao WMI. para obter mais informações, consulte a seção COM na documentação do sdk (Software Development Kit) do Microsoft Windows.
 
 2.  Crie um arquivo MOF que contém instâncias do [**\_ \_ Win32Provider**](--win32provider.md) e uma instância de uma classe derivada direta ou indiretamente de [**\_ \_ ProviderRegistration**](--providerregistration.md), como [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Somente os administradores podem registrar ou excluir um provedor criando instâncias de classes derivadas de **\_ \_ Win32Provider** ou [**\_ \_ ProviderRegistration**](--providerregistration.md).
 3.  Defina o [**HostingModel**](--win32provider.md) na instância do **\_ \_ Win32Provider** de acordo com os valores em [modelos de hospedagem](provider-hosting-and-security.md).

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 04a4f6dd09e03f26b13649e860beb7f2621ce952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35de48ee77cde7c598088b3f3877083efc2151f5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646850"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481482"
 ---
 # <a name="using-and-configuring-autoplay"></a>Usando e configurando a reprodução automática
 
@@ -26,7 +26,7 @@ Quando o Shell detecta a inserção de uma nova mídia ou o anexo de um disposit
 -   Exibe uma exibição de pasta padrão dos arquivos.
 -   Não faz nada se, anteriormente, o usuário tivesse escolhido não **executar nenhuma ação** para esse tipo de conteúdo, bem como o especificado **sempre faz a ação selecionada**.
 
-Se o conteúdo não atender aos critérios de reprodução automática, o evento será passado para a WIA (aquisição de imagem do Windows).
+se o conteúdo não atender aos critérios de reprodução automática, o evento será passado para Windows de aquisição de imagem (WIA).
 
 Os tópicos a seguir abordam a configuração e o uso da reprodução automática.
 
@@ -34,8 +34,8 @@ Os tópicos a seguir abordam a configuração e o uso da reprodução automátic
 -   [Como a reprodução automática pesquisa mídia](#how-autoplay-searches-media)
 -   [Definindo tipos de conteúdo únicos e mistos](#defining-single-and-mixed-content-types)
 -   [Cenários de exemplo](#sample-scenarios)
-    -   [Reprodução automática para dispositivos de armazenamento com mídia de imagem](#autoplay-for-storage-devices-with-picture-media)
-    -   [Reprodução automática de dispositivos de música e dispositivos de armazenamento com mídia de música](#autoplay-for-music-file-playback-devices-and-storage-devices-containing-music-media)
+    -   [reprodução automática para dispositivos Armazenamento com mídia de imagem](#autoplay-for-storage-devices-with-picture-media)
+    -   [reprodução automática para dispositivos de reprodução de arquivo de música e dispositivos Armazenamento que contêm mídia de música](#autoplay-for-music-file-playback-devices-and-storage-devices-containing-music-media)
     -   [Reprodução automática para reprodução de vídeo na primeira apresentação](#autoplay-for-video-playback-on-first-presentation)
 -   [Atribuindo aplicativos de manipulador padrão](#assigning-default-handler-applications)
 -   [Manipulando mídia que contém tipos de conteúdo mistos](#handling-media-containing-mixed-content-types)
@@ -70,7 +70,7 @@ A reprodução automática define três categorias de conteúdo principal.
 -   Música
 -   Vídeo
 
-Uma mídia é considerada para conter um único tipo de conteúdo se todos os arquivos na mídia se enquadram em apenas uma dessas três categorias. Observe que isso não significa que os arquivos devem ser do mesmo tipo de *arquivo* ;. jpg,. gif e. bmp são tipos de arquivo diferentes, mas um tipo de conteúdo (imagens).
+Uma mídia é considerada para conter um único tipo de conteúdo se todos os arquivos na mídia se enquadram em apenas uma dessas três categorias. Observe que isso não significa que os arquivos devem ser do mesmo tipo de *arquivo* ; .jpg, .gif e .bmp são tipos de arquivo diferentes, mas um tipo de conteúdo (imagens).
 
 Se os tipos de conteúdo com suporte estiverem presentes na mídia, mas nenhum tipo de conteúdo único puder considerar 100 por cento do total, a mídia será considerada para conter o tipo de conteúdo misto e será manipulada de acordo. Para obter mais informações, consulte [manipulando mídia que contém tipos de conteúdo mistos](#handling-media-containing-mixed-content-types).
 
@@ -78,21 +78,21 @@ Se os tipos de conteúdo com suporte estiverem presentes na mídia, mas nenhum t
 
 Os cenários a seguir fornecem uma compreensão básica do que esperar da reprodução automática.
 
-### <a name="autoplay-for-storage-devices-with-picture-media"></a>Reprodução automática para dispositivos de armazenamento com mídia de imagem
+### <a name="autoplay-for-storage-devices-with-picture-media"></a>reprodução automática para dispositivos Armazenamento com mídia de imagem
 
-1.  O usuário anexa um dispositivo de leitor USB SanDisk CompactFlash que já tem mídia inserida contendo o tipo de conteúdo de imagem de 100% na forma de arquivos. jpg.
+1.  O usuário anexa um dispositivo de leitor USB SanDisk CompactFlash que já tem mídia inserida contendo o tipo de conteúdo de imagem de 100% na forma de arquivos de .jpg.
 2.  As exibições **de notificação encontraram novo hardware – SanDisk ImageMate**.
 3.  A reprodução automática inicia o aplicativo de imagem apropriado.
 
 Da mesma forma, quando o usuário insere essa mesma mídia do CompactFlash no leitor quando o leitor já está anexado ao sistema, o evento de inserção de mídia também faz com que a reprodução automática inicie o aplicativo de apresentação de slides de imagem. O usuário tem a opção de ir para a página de propriedades do dispositivo de mídia SanDisk para alterar o padrão para outro aplicativo de reprodução automática registrado, como o assistente de scanner e câmera ou o Picture It!.
 
-### <a name="autoplay-for-music-file-playback-devices-and-storage-devices-containing-music-media"></a>Reprodução automática de dispositivos de música e dispositivos de armazenamento com mídia de música
+### <a name="autoplay-for-music-file-playback-devices-and-storage-devices-containing-music-media"></a>reprodução automática para dispositivos de reprodução de arquivo de música e dispositivos Armazenamento que contêm mídia de música
 
 1.  O usuário anexa um player de MP3 USB Diamond Rio.
 2.  As telas de notificação **encontraram um novo hardware-Diamond Rio MP3 Player**.
-3.  A reprodução automática reproduz os arquivos usando seu manipulador padrão registrado — por exemplo, o Windows Media Player.
+3.  A reprodução automática reproduz os arquivos usando seu manipulador padrão registrado, por exemplo, Windows Media Player.
 
-Da mesma forma, se o usuário insere qualquer mídia contendo arquivos. mp3 (por exemplo, CompactFlash, SmartMedia, Memory Stick ou CD-ROM) que conta com 100% do conteúdo total com suporte em um dispositivo de armazenamento, o evento de inserção de mídia também faria com que a reprodução automática reproduza os arquivos usando o Windows Media Player. O usuário pode acessar a folha de propriedades do dispositivo de armazenamento e alterar a ação padrão para outro aplicativo de reprodução automática registrado, como WinAmp ou real player.
+Da mesma forma, se o usuário inserir qualquer mídia que contenha arquivos de .mp3 (por exemplo, CompactFlash, SmartMedia, Memory Stick ou CD-ROM) que tenha 100 por cento do total de conteúdo com suporte em um dispositivo de armazenamento, o evento de inserção de mídia também fará com que a reprodução reproduza os arquivos usando o Windows Media Player. O usuário pode acessar a folha de propriedades do dispositivo de armazenamento e alterar a ação padrão para outro aplicativo de reprodução automática registrado, como WinAmp ou real player.
 
 ### <a name="autoplay-for-video-playback-on-first-presentation"></a>Reprodução automática para reprodução de vídeo na primeira apresentação
 
@@ -101,47 +101,17 @@ Da mesma forma, se o usuário insere qualquer mídia contendo arquivos. mp3 (por
 
 ## <a name="assigning-default-handler-applications"></a>Atribuindo aplicativos de manipulador padrão
 
-Uma nova instalação do Windows localiza a reprodução automática com um conjunto de aplicativos de manipulador registrados. Os aplicativos registrados por padrão durante uma instalação do Windows são os seguintes.
+uma nova instalação do Windows localiza a reprodução automática com um conjunto de aplicativos de manipulador registrados. os aplicativos registrados por padrão durante uma instalação Windows são os seguintes.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo de Mídia</th>
-<th>Aplicativos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Imagens</td>
-<td><ul>
-<li>Apresentação de slides (padrão)</li>
-<li>Assistente de câmera e scanner</li>
-<li>Assistente de impressão</li>
-<li>Abrir pasta</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Música</td>
-<td><ul>
-<li>Windows Media Player (padrão)</li>
-<li>Abrir pasta</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Vídeo</td>
-<td><ul>
-<li>Windows Media Player (padrão)</li>
-<li>Abrir pasta</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Tipo de Mídia | Aplicativos | 
+|------------|--------------|
+| Imagens | <ul><li>Apresentação de slides (padrão)</li><li>Assistente de câmera e scanner</li><li>Assistente de impressão</li><li>Abrir pasta</li></ul> | 
+| Música | <ul><li>Windows Media Player (padrão)</li><li>Abrir pasta</li></ul> | 
+| Vídeo | <ul><li>Windows Media Player (padrão)</li><li>Abrir pasta</li></ul> | 
+
 
 
 
@@ -186,9 +156,9 @@ Os usuários podem executar uma das ações a seguir.
 -   Liste os arquivos na mídia em um modo de exibição de pasta normal.
 -   Não executar nenhuma ação.
 
-Um usuário também pode salvar uma opção como a ação padrão para essa mídia clicando na caixa de **ação sempre fazer a seleção** . Depois que essa opção for feita, a caixa de diálogo não será mostrada novamente. No entanto, no Windows XP Service Pack 1 (SP1), se um novo aplicativo que pode manipular um determinado tipo de mídia for adicionado ao computador, a caixa de diálogo será novamente apresentada ao usuário, dando a oportunidade de selecionar o novo aplicativo como a ação de reprodução automática padrão. Os aplicativos também podem ser definidos como a seleção padrão quando são instalados.
+Um usuário também pode salvar uma opção como a ação padrão para essa mídia clicando na caixa de **ação sempre fazer a seleção** . Depois que essa opção for feita, a caixa de diálogo não será mostrada novamente. no entanto, no Windows XP Service Pack 1 (SP1), se um novo aplicativo que pode manipular um determinado tipo de mídia for adicionado ao computador, a caixa de diálogo será novamente apresentada ao usuário, dando a oportunidade de selecionar o novo aplicativo como a ação de reprodução automática padrão. Os aplicativos também podem ser definidos como a seleção padrão quando são instalados.
 
-O Windows XP SP1 também adiciona um recurso que retém a opção de ação de reprodução automática do usuário se eles não clicarem na caixa de **ação sempre fazer a seleção** . Se um usuário escolher uma ação de reprodução automática para uma única instância, na próxima vez que essa caixa de diálogo for apresentada para esse tipo de mídia, a mesma ação será a seleção padrão.
+Windows O XP SP1 também adiciona um recurso que retém a opção de ação de reprodução automática do usuário se eles não clicarem na caixa de **ação sempre fazer a seleção** . Se um usuário escolher uma ação de reprodução automática para uma única instância, na próxima vez que essa caixa de diálogo for apresentada para esse tipo de mídia, a mesma ação será a seleção padrão.
 
 Para que um aplicativo seja incluído na lista de ações possíveis, ele deve ser registrado com a reprodução automática. Para obter mais informações, consulte [preparando o hardware e o software para uso com a reprodução automática](#preparing-hardware-and-software-for-use-with-autoplay).
 

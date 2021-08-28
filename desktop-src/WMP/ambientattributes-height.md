@@ -3,7 +3,7 @@ title: Ambiente. altura
 description: O atributo Height Especifica ou recupera a altura do controle.
 ms.assetid: a5c85d86-15d4-451d-b8bc-ed3b6e0dfd7d
 keywords:
-- Windows Media Player de ambiente. altura
+- Windows Media Player de ambiente. de altura
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 662268bfeaf00b3185d531ff10d8dd17c9127a66
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5cbc03f631fffc4d1544906721476f229cbeb926e5d56b08dc1647f2dfd3b243
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098946"
 ---
 # <a name="ambientattributesheight"></a>Ambiente. altura
 

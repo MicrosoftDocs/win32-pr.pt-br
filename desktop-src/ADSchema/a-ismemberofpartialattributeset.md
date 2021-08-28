@@ -1,11 +1,11 @@
 ---
-title: Atributo is-member-of-parcial-Attribute-Set
-description: Se for TRUE, esse atributo será replicado para o catálogo global.
+title: Atributo Is-Member-Of-Partial-Attribute-Set
+description: Se TRUE, esse atributo será replicado para o catálogo global.
 ms.assetid: 9ffd85e8-da1a-4b39-9758-2dc049204ca0
 ms.tgt_platform: multiple
 keywords:
-- É membro do atributo AD-member-of-partial-Attribute-Set
-- Esquema de AD do atributo isMemberOfPartialAttributeSet
+- Esquema do AD do atributo Is-Member-Of-Partial-Attribute-Set
+- Esquema do AD do atributo isMemberOfPartialAttributeSet
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cbbd05f95a46ec4e42c139ddda157a4057bde60
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d299b14d85fa1c5c4be03c18462106d43f4bb8209378e2a77f78aeee39c7f90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322216"
 ---
-# <a name="is-member-of-partial-attribute-set-attribute"></a>Atributo is-member-of-parcial-Attribute-Set
+# <a name="is-member-of-partial-attribute-set-attribute"></a>Atributo Is-Member-Of-Partial-Attribute-Set
 
-Se **for true**, esse atributo será replicado para o catálogo global.
+Se **TRUE**, esse atributo será replicado para o catálogo global.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | É membro-do-conjunto de atributos parciais   |
-| LDAP-Display-Name | isMemberOfPartialAttributeSet        |
+| CN                | Is-Member-of-Partial-Attribute-Set   |
+| Ldap-Display-Name | isMemberOfPartialAttributeSet        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Administrador de esquema                 |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.639               |
-| System-ID-GUID    | 19405b9d-3cfa-11d1-a9c0-0000f80367c1 |
+| System-Id-Guid    | 19405b9d-3cfa-11d1-a9c0-0000f80367c1 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -44,7 +44,7 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Se **for true**, esse atributo será replicado para o catálogo global.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 

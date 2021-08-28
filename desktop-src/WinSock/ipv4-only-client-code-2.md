@@ -1,19 +1,19 @@
 ---
-description: O código a seguir é o arquivo Simplec. c, que é um cliente do Windows Sockets somente IPv4 (uma versão habilitada para IPv6 do arquivo Simplec. c pode ser encontrada no apêndice B).
+description: o código a seguir é o arquivo Simplec. c, que é um cliente de soquetes de Windows somente IPv4 (uma versão habilitada para IPv6 do arquivo Simplec. c pode ser encontrada no apêndice B).
 ms.assetid: 32a11b37-c2e9-455b-8359-92186d3801d1
 title: Código de cliente somente IPv4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b337ab8c56898c8fdef0de93a55868c27557b0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c51db140d6ebe47c365bdeb646877836ddfd5205da8e77fae7ab19830279e5d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097726"
 ---
 # <a name="ipv4-only-client-code"></a>Código de cliente somente IPv4
 
-O código a seguir é o arquivo Simplec. c, que é um cliente do Windows Sockets somente IPv4 (uma versão habilitada para IPv6 do arquivo Simplec. c pode ser encontrada no apêndice B). Esse código é fornecido apenas para fins de comparação — use o apêndice B para obter um exemplo de como escrever um cliente habilitado para IPv6.
+o código a seguir é o arquivo Simplec. c, que é um cliente de soquetes de Windows somente IPv4 (uma versão habilitada para IPv6 do arquivo Simplec. c pode ser encontrada no apêndice B). Esse código é fornecido apenas para fins de comparação — use o apêndice B para obter um exemplo de como escrever um cliente habilitado para IPv6.
 
 
 ```C++

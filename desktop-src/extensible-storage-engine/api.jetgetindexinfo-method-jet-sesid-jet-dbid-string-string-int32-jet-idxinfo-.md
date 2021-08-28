@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e8c9f7427388dc0f1da90297f05307c7afb5b1c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bbdbf14caebfa29c93d3aea8ea91eae1d52103bf2b19871de53c6c18a643013
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840916"
 ---
 # <a name="apijetgetindexinfo-method-jet_sesid-jet_dbid-string-string-int32-jet_idxinfo"></a>Método API. JetGetIndexInfo (JET_SESID, JET_DBID, String, String, Int32, JET_IdxInfo)
 

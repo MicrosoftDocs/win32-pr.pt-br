@@ -1,7 +1,7 @@
 ---
-description: Método Shell. AddToRecent – adiciona um arquivo à lista MRU (usada mais recentemente).
+description: Método Shell.AddToRecent – adiciona um arquivo à lista de MRU (usados mais recentemente).
 ms.assetid: 26D2AE5A-FC7E-4c7c-9F10-8D3D7AA236E7
-title: Método Shell. AddToRecent (shldisp. h)
+title: Método Shell.AddToRecent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 92ea7432c318939a01f86405ae33d8ac90b88c80
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 47382014587057cfe5e1db20e040f2a220f71eee3379521ab93e4006f45930e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660786"
 ---
-# <a name="shelladdtorecent-method"></a>Método Shell. AddToRecent
+# <a name="shelladdtorecent-method"></a>Método Shell.AddToRecent
 
-Adiciona um arquivo à lista MRU (usada mais recentemente).
+Adiciona um arquivo à lista de MRU (usados mais recentemente).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,23 +51,23 @@ Shell.AddToRecent( _
 
 <dl> <dt>
 
-*varFile* \[ no\]
+*varFile* \[ Em\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-Uma **cadeia de caracteres** que contém o caminho do arquivo a ser adicionado à lista de documentos usados recentemente.
+Uma **Cadeia de** caracteres que contém o caminho do arquivo a ser acrescentado à lista de documentos usados recentemente.
 
-**Windows Vista**: defina esse parâmetro como **nulo** para limpar a pasta documentos recentes.
+**Windows Vista:** de definir esse parâmetro como **nulo** para limpar a pasta de documentos recentes.
 
 </dd> <dt>
 
-*bstrCategory* \[ em, opcional\]
+*bstrCategory* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que contém o nome da categoria na qual o arquivo será colocado.
+Uma **Cadeia de** caracteres que contém o nome da categoria na qual colocar o arquivo.
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Esse método não retorna um valor.
 
 Os exemplos a seguir mostram o uso de **AddToRecent** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -113,7 +113,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -180,11 +180,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
 
 
 

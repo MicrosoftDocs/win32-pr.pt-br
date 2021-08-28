@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2a5ce81d96858488395e34f84232ca758ddabc59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d79b75a4d4bb44aded7367fd4acfd758887815bba6fc6fcfd965f9123ac58c54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658786"
 ---
 # <a name="requiredprivilegestype-complex-type"></a>Tipo complexo requiredPrivilegesType
 
@@ -42,7 +42,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Elemento                                                                           | Type                                                                  | Descrição                                                |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------|
-| [**Privilégio**](taskschedulerschema-privilege-requiredprivilegestype-element.md) | [**privilégiotype**](taskschedulerschema-privilegetype-simpletype.md) | Especifica os privilégios necessários da tarefa. <br/> |
+| [**Privilege**](taskschedulerschema-privilege-requiredprivilegestype-element.md) | [**privilégiotype**](taskschedulerschema-privilegetype-simpletype.md) | Especifica os privilégios necessários da tarefa. <br/> |
 
 
 
@@ -52,8 +52,8 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

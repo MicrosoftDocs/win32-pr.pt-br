@@ -1,26 +1,26 @@
 ---
-title: Atributo from (line) (VML)
-description: Atributo from (line) (VML)
+title: From Attribute (Line)(VML)
+description: From Attribute (Line)(VML)
 ms.assetid: 37cc9b2e-c18d-48ea-bac5-a2d2ea10d3d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 950b3cae8e3b73efdc3a92bdc49a0b9e4366e224
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87a8bf41462f698397b193835d08655f8d6acefb2df77b17e035ec170c3c4781
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099306"
 ---
-# <a name="from-attribute-linevml"></a>Atributo from (line) (VML)
+# <a name="from-attribute-linevml"></a>From Attribute (Line)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o ponto de partida de uma linha. Leitura/gravação. **VgVector2D**.
+Define o ponto inicial de uma linha. Leitura/gravação. **VgVector2D.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Define o ponto de partida de uma linha. Leitura/gravação. **VgVector2D**.
 
 **Sintaxe de marca**
 
-<v: *Element* de = " *expression* " >
+<v: *elemento* from=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . from = "*expressão*"
+*elemento* .from="*expression*"
 
-*expressão* = de *elemento*. from
+*expressão* = *elemento*.from
 
 **Comentários**
 
-Define o ponto inicial da linha no espaço de coordenadas do elemento pai. Se o pai não for um elemento VML, a [unidade](msdn-online-vml-units.md) padrão será um pixel (mas no, cm, mm, pt, o PC também poderá ser especificado). O padrão é 0, 0.
+Define o ponto inicial da linha no espaço de coordenadas do elemento pai. Se o pai não for um [](msdn-online-vml-units.md) elemento VML, a unidade padrão será um pixel (mas em, cm, mm, pt, pc também poderá ser especificado). O padrão é 0,0.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A linha começa em um local 10 aponta para baixo e 10 pontos à direita do canto superior esquerdo do espaço pai.
+A linha começa em um local 10 pontos para baixo e 10 aponta para a direita do canto superior esquerdo do espaço pai.
 
 
 ```HTML
@@ -55,6 +55,6 @@ A linha começa em um local 10 aponta para baixo e 10 pontos à direita do canto
 
 
 
- 
+ 
 
- 
+ 

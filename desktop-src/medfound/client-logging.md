@@ -4,12 +4,12 @@ ms.assetid: f91b48ae-3989-4c1d-929c-8ab28d7c8177
 title: Log de cliente (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f6e26d2034f87a6bf18fc626cdcdffec87da83cd20fe8a1a65db8d29f75f100
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3874c413f61b3495dc7e67f082a83e789a7a1357
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118974995"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122483082"
 ---
 # <a name="client-logging-microsoft-media-foundation"></a>Log de cliente (Microsoft Media Foundation)
 
@@ -33,48 +33,16 @@ A tabela a seguir descreve os campos de log e as propriedades correspondentes qu
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Campo de log</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>c-playerid</td>
-<td>Identificação exclusiva do Player. Essas informações são enviadas no início da conexão. Normalmente, esse é um GUID do cliente. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-playerid-property.md"><strong>MFNETSOURCE_PLAYERID</strong></a> .<br/> O cliente envia essas informações ao servidor no início da conexão.<br/> Valor de exemplo: &quot; {c579d042-CECC-11D1-BB31-00a0c9603954}&quot;<br/></td>
-</tr>
-<tr class="even">
-<td>c-playerversion</td>
-<td>O número de versão do Player que é enviado no início da conexão. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-playerversion-property.md"><strong>MFNETSOURCE_PLAYERVERSION</strong></a> .<br/> O cliente envia essas informações ao servidor no início da conexão.<br/></td>
-</tr>
-<tr class="odd">
-<td>CS (agente do usuário)</td>
-<td>Tipo de navegador usado se o Player foi inserido em um navegador. Esse valor pode ser definido pelo cliente na propriedade <a href="mfnetsource-browseruseragent-property.md"><strong>MFNETSOURCE_BROWSERUSERAGENT</strong></a> .<br/> Se o Player não tiver sido inserido, esse campo se referirá ao agente de usuário do cliente que gerou o log. Nesse caso, o cliente deve definir a propriedade <a href="mfnetsource-playeruseragent-property.md"><strong>MFNETSOURCE_PLAYERUSERAGENT</strong></a> .<br/> O cliente envia essas informações ao servidor no início da conexão.<br/> Valor de exemplo: &quot; Mozilla/4.0 _ (compatível; _MSIE_4.01; _Windows_98)&quot;<br/></td>
-</tr>
-<tr class="even">
-<td>CS (referenciador)</td>
-<td>URL da página da Web na qual o Player foi inserido (se foi inserido). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-browserwebpage-property.md"><strong>MFNETSOURCE_BROWSERWEBPAGE</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/> Valor de exemplo: &quot; https://www.example.microsoft.com&quot ;<br/></td>
-</tr>
-<tr class="odd">
-<td>c-hostexe</td>
-<td>Para entradas de log do Player, o programa de host (.exe) que foi executado. por exemplo, uma página da web em um navegador, um miniaplicativo do Microsoft Visual Basic ou um player autônomo. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/> Valores de amostra:<br/>
-<ul>
-<li>&quot;iexplore.exe&quot;</li>
-<li>&quot;myplayer.exe&quot;</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>c-hostexever</td>
-<td>Número de versão do .exe (programa de host). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostversion-property.md"><strong>MFNETSOURCE_HOSTVERSION</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Campo de log | Descrição | 
+|---------------|-------------|
+| c-playerid | Identificação exclusiva do Player. Essas informações são enviadas no início da conexão. Normalmente, esse é um GUID do cliente. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-playerid-property.md"><strong>MFNETSOURCE_PLAYERID</strong></a> .<br /> O cliente envia essas informações ao servidor no início da conexão.<br /> Valor de exemplo: "{c579d042-CECC-11D1-BB31-00a0c9603954}"<br /> | 
+| c-playerversion | O número de versão do Player que é enviado no início da conexão. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-playerversion-property.md"><strong>MFNETSOURCE_PLAYERVERSION</strong></a> .<br /> O cliente envia essas informações ao servidor no início da conexão.<br /> | 
+| CS (agente do usuário) | Tipo de navegador usado se o Player foi inserido em um navegador. Esse valor pode ser definido pelo cliente na propriedade <a href="mfnetsource-browseruseragent-property.md"><strong>MFNETSOURCE_BROWSERUSERAGENT</strong></a> .<br /> Se o Player não tiver sido inserido, esse campo se referirá ao agente de usuário do cliente que gerou o log. Nesse caso, o cliente deve definir a propriedade <a href="mfnetsource-playeruseragent-property.md"><strong>MFNETSOURCE_PLAYERUSERAGENT</strong></a> .<br /> O cliente envia essas informações ao servidor no início da conexão.<br /> Valor de exemplo: "Mozilla/4.0 _ (compatível; _MSIE_4.01; _Windows_98)"<br /> | 
+| CS (referenciador) | URL da página da Web na qual o Player foi inserido (se foi inserido). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-browserwebpage-property.md"><strong>MFNETSOURCE_BROWSERWEBPAGE</strong></a> .<br /> O cliente envia essas informações ao servidor no final da conexão.<br /> Valor de exemplo: " https://www.example.microsoft.com "<br /> | 
+| c-hostexe | Para entradas de log do Player, o programa de host (.exe) que foi executado. por exemplo, uma página da web em um navegador, um miniaplicativo do Microsoft Visual Basic ou um player autônomo. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> .<br /> O cliente envia essas informações ao servidor no final da conexão.<br /> Valores de amostra:<br /><ul><li>"iexplore.exe"</li><li>"myplayer.exe"</li></ul> | 
+| c-hostexever | Número de versão do .exe (programa de host). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostversion-property.md"><strong>MFNETSOURCE_HOSTVERSION</strong></a> .<br /> O cliente envia essas informações ao servidor no final da conexão.<br /> | 
+
 
 
 

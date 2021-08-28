@@ -1,6 +1,6 @@
 ---
 title: LSA-modificado-atributo de contagem
-description: O atributo LSA-Modified-Count é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+description: o atributo LSA-Modified-Count é usado para dar suporte à replicação para Windows NT domínios 4,0.
 ms.assetid: 6af5931c-5d4f-4061-81a1-e8947d760abc
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e042d4d52974457eb1853a3705adb87cc24a7dc3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ce292f49f779ddd8ecbf185bcb274a28c7267a44e85590dc1a481b65950a18f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105752973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301526"
 ---
 # <a name="lsa-modified-count-attribute"></a>LSA-modificado-atributo de contagem
 
-O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+o atributo **LSA-Modified-Count** é usado para dar suporte à replicação para Windows NT domínios 4,0.
 
 
 
@@ -58,7 +58,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,7 +121,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **LSA-Modified-Count** é usado para dar suporte à replicação em d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

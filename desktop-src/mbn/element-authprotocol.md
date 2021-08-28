@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ AuthProtocol (v4)
+description: MBNProfileExt... \/ \/ AuthProtocol (v4)
 MS-HAID: WWAN\_profile\_v4.element\_AuthProtocol
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,20 +16,20 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 90b3b64c5052a16f18c0a1b9fd154e2e73acd714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 487c58bda5e3b891b0e14614fa6c91830bc7512e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811455"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482732"
 ---
-# <a name="span-idwwan_profile_v4element_authprotocolspanmbnprofileextauthprotocol-v4"></a><span id="WWAN_profile_v4.element_AuthProtocol"></span>MBNProfileExt \/ ... \/ AuthProtocol (v4)
+# <a name="span-idwwan_profile_v4element_authprotocolspanmbnprofileextauthprotocol-v4"></a><span id="WWAN_profile_v4.element_AuthProtocol"></span>MBNProfileExt... \/ \/ AuthProtocol (v4)
 
->Especifica o protocolo de autenticação a ser usado para ativar um contexto de protocolo de dados de pacote (PDP).
+>Especifica o protocolo de autenticação a ser usado para ativar um contexto pdp (protocolo de dados de pacote).
 
-Observe que no v4, um novo valor de enumeração está disponível para esse elemento. **Seleção** configurada significa que um protocolo de autenticação deve ser escolhido por camadas inferiores.
+Observe que, na v4, um novo valor de enumeração está disponível para esse elemento. **AutoSelection** significa que um protocolo de auth deve ser escolhido por camadas inferiores.
 
-Para obter mais informações, consulte a documentação do elemento v1 [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) .
+Para obter mais informações, consulte a documentação do [**elemento AuthProtocol**](./schema-authprotocol-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -63,41 +63,19 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento pai</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-context.md">Contexto</a></td>
-<td><p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento pai | Descrição | 
+|----------------|-------------|
+| <a href="element-context.md">Contexto</a> | <p>Especifica os parâmetros necessários para estabelecer uma conexão de dados.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Namespace</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

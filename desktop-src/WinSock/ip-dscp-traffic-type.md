@@ -1,5 +1,5 @@
 ---
-description: A tabela a seguir descreve \_ \_ as opções de soquete do tipo de tráfego IP DSCP \_ .
+description: A tabela a seguir descreve opções de \_ soquete IP DSCP \_ TRAFFIC \_ TYPE.
 ms.assetid: 0042B53F-B84E-453A-8E18-87052280DAD5
 title: IP_DSCP_TRAFFIC_TYPE
 ms.topic: reference
@@ -13,22 +13,22 @@ api_type:
 - HeaderDef
 api_location:
 - N/A
-ms.openlocfilehash: 80cbe41e58cf36cd366015d83af380f5952630ce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87915dc214b0ba306b4f38dbd833b27199277564fa8c2815b9147e0d82253589
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097846"
 ---
-# <a name="ip_dscp_traffic_type"></a>\_tipo de \_ tráfego IP DSCP \_
+# <a name="ip_dscp_traffic_type"></a>TIPO \_ DE TRÁFEGO IP DSCP \_ \_
 
-A tabela a seguir descreve \_ \_ as opções de soquete do tipo de tráfego IP DSCP \_ .
+A tabela a seguir descreve opções de \_ soquete IP DSCP \_ TRAFFIC \_ TYPE.
 
-<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**\_tipo de \_ tráfego IP DSCP \_**</dt> <dd> <dl> <dt> 
+<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**TIPO \_ DE TRÁFEGO IP DSCP \_ \_**</dt> <dd> <dl> <dt> 
 
-| Opção              | Obter | Definir | Tipo de optval | Descrição                                                                                                                                                                                                                                                                                                                                      |
+| Opção              | Obter | Definir | Tipo de aceitação | Descrição                                                                                                                                                                                                                                                                                                                                      |
 |---------------------|-----|-----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_tipo de tráfego DSCP \_ | Sim | Sim | DWORD       | Ao definir esse valor como valores definidos no **\_ \_ tipo de tráfego DSCP**, um aplicativo poderá solicitar que seus pacotes de rede sejam tratados de acordo com o tipo de serviço que está sendo solicitado. Chamadas semelhantes a [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) podem ser usadas para obter a configuração atual para o tipo de tráfego solicitado no soquete especificado |
+| TIPO DE TRÁFEGO \_ \_ DSCP | Sim | Sim | DWORD       | Ao definir esse valor como valores definidos em **TIPO DE TRÁFEGO DSCP, \_ \_** um aplicativo poderá solicitar que seus pacotes de rede sejam tratados de acordo com o tipo de serviço que está sendo solicitado. Da mesma forma, chamadas [**para getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) podem ser usadas para obter a configuração atual para o tipo de tráfego solicitado no soquete determinado |
 
 
 
@@ -43,9 +43,9 @@ A tabela a seguir descreve \_ \_ as opções de soquete do tipo de tráfego IP D
 
 | Requisito | Valor |
 |----------------------------------|--------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows 10<br/>                                                          |
-| Fim do suporte do servidor<br/> | Windows Server 2016<br/>                                                 |
-| parâmetro<br/>                | <dl> <dt>N/A</dt> </dl> |
+| Fim do suporte ao cliente<br/> | Windows 10<br/>                                                          |
+| Fim do suporte ao servidor<br/> | Windows Server 2016<br/>                                                 |
+| Cabeçalho<br/>                | <dl> <dt>N/A</dt> </dl> |
 
 
 

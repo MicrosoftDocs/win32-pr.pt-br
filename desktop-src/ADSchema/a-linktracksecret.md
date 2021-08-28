@@ -1,11 +1,11 @@
 ---
-title: Atributo link-Track-secreto
+title: Atributo Link-Track-Secret
 description: Esse atributo armazena um link para uma chave secreta que permite que um arquivo criptografado seja convertido em texto não criptografado.
 ms.assetid: e476f4af-71a8-4bd9-a81d-f825bfbf267b
 ms.tgt_platform: multiple
 keywords:
-- Link-Track-secreto atributo do AD esquema
-- Esquema de AD do atributo linkTrackSecret
+- Esquema do AD do atributo Link-Track-Secret
+- Esquema do AD do atributo linkTrackSecret
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb172ec0985acc7c93c62796881c369c7ad0b82
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c90fd71ed399c8a2881f16c13942f7210b152d20ebf5a284f071e8af85b40bf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301996"
 ---
-# <a name="link-track-secret-attribute"></a>Atributo link-Track-secreto
+# <a name="link-track-secret-attribute"></a>Atributo Link-Track-Secret
 
 Esse atributo armazena um link para uma chave secreta que permite que um arquivo criptografado seja convertido em texto não criptografado.
 
@@ -29,14 +29,14 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Link-Track-secreto                                     |
-| LDAP-Display-Name | linkTrackSecret                                       |
+| CN                | Link-Track-Secret                                     |
+| Ldap-Display-Name | linkTrackSecret                                       |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.269                                |
-| System-ID-GUID    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo armazena um link para uma chave secreta que permite que um arquivo
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

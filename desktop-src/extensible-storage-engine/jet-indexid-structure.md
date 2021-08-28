@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura JET_INDEXID dados'
-title: estrutura JET_INDEXID de dados
+description: 'Saiba mais sobre: estrutura de JET_INDEXID'
+title: Estrutura de JET_INDEXID
 TOCTitle: JET_INDEXID Structure
 ms:assetid: 8b1d90f0-bc93-4b30-90d1-b9e93ad26654
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269327(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89af1b81b5221ab1cdebc0c91d5340acc62dd330
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 61e51e85fe990cfeee8a5c1ee048a77179d49766
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983969"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475952"
 ---
-# <a name="jet_indexid-structure"></a>estrutura JET_INDEXID de dados
+# <a name="jet_indexid-structure"></a>Estrutura de JET_INDEXID
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_indexid-structure"></a>estrutura JET_INDEXID de dados
+## <a name="jet_indexid-structure"></a>Estrutura de JET_INDEXID
 
-A **JET_INDEXID** estrutura contém uma ID de índice. Uma ID de índice é uma dica usada para acelerar a seleção do índice atual usando [JetSetCurrentIndex.](./jetsetcurrentindex-function.md) Ele é mais útil quando há um número muito grande de índices em uma tabela. A ID do índice pode ser recuperada usando [JetGetIndexInfo](./jetgetindexinfo-function.md) ou [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md)
+A estrutura de **JET_INDEXID** contém uma ID de índice. Uma ID de índice é uma dica usada para acelerar a seleção do índice atual usando [JetSetCurrentIndex](./jetsetcurrentindex-function.md). Ele é mais útil quando há um número muito grande de índices em uma tabela. A ID do índice pode ser recuperada usando [JetGetIndexInfo](./jetgetindexinfo-function.md) ou [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ```cpp
     typedef struct tagJET_INDEXID {
@@ -40,11 +40,11 @@ A **JET_INDEXID** estrutura contém uma ID de índice. Uma ID de índice é uma 
 
 ### <a name="members"></a>Membros
 
-**Cbstruct**
+**cbStruct**
 
 O tamanho, em bytes, da ID do índice.
 
-Esse é o tamanho real da ID do índice que é retornada no buffer de saída de [JetGetIndexInfo](./jetgetindexinfo-function.md) ou [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+Esse é o tamanho real da ID de índice que é retornada no buffer de saída de [JetGetIndexInfo](./jetgetindexinfo-function.md) ou [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 **rgbIndexId**
 
@@ -55,11 +55,7 @@ Não tente interpretar o BLOB de informações. Não é um tamanho definido.
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 

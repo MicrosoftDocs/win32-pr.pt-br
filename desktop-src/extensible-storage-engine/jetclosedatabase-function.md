@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 13657c59cafa589bb7d06626126677d01a7e471c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: ef8bbc98d4cee68ecb8c5fab1ba62ea9be290e87
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985079"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466643"
 ---
 # <a name="jetclosedatabase-function"></a>Função JetCloseDatabase
 
@@ -72,13 +72,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

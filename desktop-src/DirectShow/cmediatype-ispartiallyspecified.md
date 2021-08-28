@@ -1,7 +1,7 @@
 ---
-description: O método IsPartiallySpecified determina se o tipo de mídia está parcialmente definido. Um tipo de mídia será parcial se o tipo de tipo principal, subtipo ou formato for GUID \_ NULL.
+description: O método IsPartiallySpecified determina se o tipo de mídia está parcialmente definido. Um tipo de mídia será parcial se o tipo principal, subtipo ou tipo de formato for GUID \_ NULL.
 ms.assetid: 26dd7a2b-b2f8-485f-a9af-31c3a9eb1def
-title: Método CMediaType. IsPartiallySpecified (mtype. h)
+title: Método CMediaType.IsPartiallySpecified (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32c39942ab3f97d45ecf71ba841d56b7afd4be62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c2e7bdbbc43195222b4054f71ec05ebe3c8a7e15ac8c634d57fba61e45bf319
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084466"
 ---
-# <a name="cmediatypeispartiallyspecified-method"></a>Método CMediaType. IsPartiallySpecified
+# <a name="cmediatypeispartiallyspecified-method"></a>Método CMediaType.IsPartiallySpecified
 
-O `IsPartiallySpecified` método determina se o tipo de mídia está parcialmente definido. Um tipo de mídia será *parcial* se o tipo de tipo principal, subtipo ou formato for GUID \_ NULL.
+O `IsPartiallySpecified` método determina se o tipo de mídia está parcialmente definido. Um tipo de mídia *será parcial* se o tipo principal, subtipo ou tipo de formato for GUID \_ NULL.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ BOOL IsPartiallySpecified() const;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o tipo de mídia for especificado parcialmente. Caso contrário, retornará **false**.
+Retornará **TRUE** se o tipo de mídia for parcialmente especificado. Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-O método [**IPin:: Connect**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect) pode aceitar tipos de mídia parciais.
+O [**método IPin::Conexão**](/windows/desktop/api/Strmif/nf-strmif-ipin-connect) pode aceitar tipos de mídia parciais.
 
-A implementação, na verdade, não testa o subtipo. Se houver um tipo de formato especificado, o tipo de mídia não será considerado parcial, mesmo que o subtipo seja \_ nulo como GUID.
+Na verdade, a implementação não testa o subtipo . Se houver um tipo de formato especificado, o tipo de mídia não será considerado parcial, mesmo que o subtipo seja GUID \_ NULL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ A implementação, na verdade, não testa o subtipo. Se houver um tipo de format
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
