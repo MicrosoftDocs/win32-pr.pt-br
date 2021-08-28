@@ -3,7 +3,7 @@ title: Evento OpenStateChange do objeto AxWindowsMediaPlayer
 description: O evento OpenStateChange ocorre quando a propriedade OpenState muda de valor. | Evento OpenStateChange do objeto AxWindowsMediaPlayer
 ms.assetid: 0229f8b4-7216-44f6-9838-a640b99bd9f3
 keywords:
-- Evento OpenStateChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento OpenStateChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dcd1f2b7e59fdfd35bf31719cbb6a1a5e6c29e66
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ccf7619e86268fe6b465d2a64ca00d650a7a7051b3aa4f44e2a73a98929be13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003976"
 ---
 # <a name="openstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento OpenStateChange do objeto AxWindowsMediaPlayer
 
@@ -55,9 +55,9 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Media Player pode passar por vários Estados abertos enquanto tenta abrir um arquivo de rede, como localizar o servidor, conectar-se ao servidor e, finalmente, abrir o arquivo. Esse evento será acionado sempre que o estado aberto for alterado.
+Windows Media Player pode passar por vários estados abertos enquanto tenta abrir um arquivo de rede, como localizar o servidor, conectar-se ao servidor e, finalmente, abrir o arquivo. Esse evento será acionado sempre que o estado aberto for alterado.
 
-Não há garantia de que os Estados do Windows Media Player ocorram em uma ordem específica. Além disso, nem todo estado ocorre necessariamente durante uma sequência de eventos. Você não deve escrever código que dependa da ordem de estado.
+não há garantia de que os estados de Windows Media Player ocorram em uma ordem específica. Além disso, nem todo estado ocorre necessariamente durante uma sequência de eventos. Você não deve escrever código que dependa da ordem de estado.
 
 ## <a name="requirements"></a>Requisitos
 

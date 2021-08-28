@@ -1,6 +1,6 @@
 ---
-title: Abrindo e fechando dispositivos do mixer
-description: Abrindo e fechando dispositivos do mixer
+title: abrindo e fechando dispositivos Mixer
+description: abrindo e fechando dispositivos Mixer
 ms.assetid: b1943308-3778-485e-80f3-6d80cb583e00
 keywords:
 - áudio de multimídia, abrindo dispositivos de mixer
@@ -18,14 +18,14 @@ keywords:
 - mixers, identificadores de dispositivo versus identificadores de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea2be7fcc0563508aabfd957109d62c7dbfe1c1a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9bc3b1cb524dc8a48eb8a7c2cc805f958429ba65413961d8e677bb62ba3102b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893046"
 ---
-# <a name="opening-and-closing-mixer-devices"></a>Abrindo e fechando dispositivos do mixer
+# <a name="opening-and-closing-mixer-devices"></a>abrindo e fechando dispositivos Mixer
 
 Quando você quiser usar um dispositivo de mixer, você pode simplesmente começar a usá-lo ou pode abrir o dispositivo explicitamente antes de usá-lo. A abertura explícita de um dispositivo de mixer oferece dois benefícios principais:
 
@@ -37,10 +37,10 @@ Você pode usar a função [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-m
 > [!Note]  
 > A diferença entre identificadores de dispositivo e identificadores de dispositivo é importante. Os identificadores de dispositivo são retornados quando você abre um driver de dispositivo usando **mixerOpen**. Os identificadores de dispositivo são determinados implicitamente do número de dispositivos presentes em um sistema; Esse número é obtido usando a função [**mixerGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs) .
 
- 
+ 
 
 Você pode usar a função [**mixerClose**](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose) para fechar um dispositivo de mixer. Você deve fechar o dispositivo depois de terminar de usá-lo.
 
- 
+ 
 
- 
+ 

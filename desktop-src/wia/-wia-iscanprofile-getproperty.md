@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 48137e61d88d580ac556220b4e47b949d9e2c242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef09115c7131df21697540fa941f8bd863650bc029601088b4a0f8c80e9b1a44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814076"
 ---
 # <a name="iscanprofilegetproperty-method"></a>Método IScanProfile:: GetProperty
 
@@ -53,24 +53,24 @@ O número de entradas nas matrizes que são apontadas por *pid* e *pvar*.
 *pid* \[ no\]
 </dt> <dd>
 
-Tipo: **Propid \** _
+Tipo: **Propid \***
 
 Um ponteiro para uma matriz dos números de identificação das propriedades a serem definidas. Cada valor na matriz é uma [constante de propriedade WIA](-wia-wia-property-constants.md).
 
 </dd> <dt>
 
-_pvar * \[ out\]
+*pvar* \[ fora\]
 </dt> <dd>
 
-Tipo: **[PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) \** _
+Tipo: **[PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)\***
 
 Um ponteiro para uma matriz de valores.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Retornará S \_ false se qualquer um dos valores de propriedade não estiver disponível; caso contrário, retornará S \_ OK ou um código de erro com padrão.
 
@@ -86,9 +86,9 @@ Cada valor na matriz que *pid* aponta para é uma das constantes da [Propriedade
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
 | INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
 
 

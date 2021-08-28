@@ -3,16 +3,16 @@ title: Entradas do sistema para compactadores, descompactadores e renderizadores
 description: Entradas do sistema para compactadores, descompactadores e renderizadores
 ms.assetid: b27bbd5b-a218-49bb-b179-b24ce39869a1
 keywords:
-- Vídeo para Windows (VFW), compressor entradas do sistema
+- vídeo para Windows (VFW), entradas do sistema de compressor
 - VFW (vídeo para Windows), entradas do sistema de compressor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b46d9c6fd8974511698bcb687c580e68be3757ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d0afa453603eacffe0db1b3a904709a096e638dc284aa64aa388968a0e555c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892556"
 ---
 # <a name="system-entries-for-compressors-decompressors-and-renderers"></a>Entradas do sistema para compactadores, descompactadores e renderizadores
 
@@ -29,7 +29,7 @@ O sistema usa entradas no registro para localizar drivers VCM. Essas entradas es
 
 
 
- 
+ 
 
 Renderizadores personalizados podem definir seus próprios códigos de quatro caracteres.
 
@@ -39,9 +39,9 @@ Ao abrir um driver VCM, um aplicativo especifica o tipo de driver e o tipo de ma
 
 Ao procurar o driver, o sistema tenta corresponder os códigos de quatro caracteres especificados para o tipo de driver e o manipulador de dados com os especificados na entrada do driver. Por exemplo, se um aplicativo especificar o compressor MSSQ, o sistema pesquisará o registro para a entrada de driver VIDC. MSSQ. Se não for possível encontrar uma correspondência, ele abrirá cada driver correspondente ao tipo de driver e localizará um que possa manipular o tipo de dados que seu aplicativo especifica. No exemplo anterior, se o sistema não pôde localizar VIDC. MSSQ, ele abriria todos os drivers com o código de quatro caracteres "VIDC" e localizará um que possa lidar com os dados.
 
- 
+ 
 
- 
+ 
 
 
 

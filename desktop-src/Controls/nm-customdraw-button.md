@@ -3,7 +3,7 @@ title: Código de notificação de NM_CUSTOMDRAW (botão) (commctrl. h)
 description: Notifica a janela pai de um controle de botão sobre as operações de desenho personalizadas no botão. O controle de botão envia esse código de notificação na forma de uma \_ mensagem de notificação do WM.
 ms.assetid: cabe5515-ba64-4c53-8746-7a0559df8989
 keywords:
-- Código de notificação de NM_CUSTOMDRAW (botão) controles do Windows
+- código de notificação de NM_CUSTOMDRAW (botão) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3cc4eb73c3a0185131bb6ef2198458888ec89d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5930dd9023bac636fb645b7309c17cb4d70902b88a2b4f8a8ba857984a54ac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061736"
 ---
 # <a name="nm_customdraw-button-notification-code"></a>\_Código de notificação nm CUSTOMDRAW (botão)
 
@@ -47,7 +47,7 @@ Um ponteiro para uma estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor que seu aplicativo pode retornar depende do estágio de desenho atual. O membro **dwDrawStage** da estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) associada contém um valor que especifica o estágio de desenho. Você deve retornar um dos valores a seguir.
 
@@ -80,9 +80,9 @@ Consulte [usando o desenho personalizado](custom-draw.md) para mais discussões.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h (incluir Windows. h)</dt> </dl> |
 
 
 

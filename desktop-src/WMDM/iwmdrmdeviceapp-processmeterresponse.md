@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDeviceApp ProcessMeterResponse (WMDRMDeviceApp. h)
-description: O método ProcessMeterResponse redefine algumas ou todas as contagens de medição em um dispositivo, depois que os dados do dispositivo tiverem sido enviados e processados pelo servidor.
+title: Método IWMDRMDeviceApp ProcessMeterResponse (WMDRMDeviceApp.h)
+description: O método ProcessMeterResponse redefine algumas ou todas as contagens de medição em um dispositivo, depois que os dados do dispositivo são enviados e processados pelo servidor.
 ms.assetid: bafc4bb2-aa3c-4b2a-a818-1a78577cefc5
 keywords:
-- Método ProcessMeterResponse Windows Media Gerenciador de Dispositivos
-- Método ProcessMeterResponse Windows Media Gerenciador de Dispositivos, interface IWMDRMDeviceApp
-- Interface IWMDRMDeviceApp Windows Media Gerenciador de Dispositivos, método ProcessMeterResponse
+- Método ProcessMeterResponse windows Media Gerenciador de Dispositivos
+- Método ProcessMeterResponse windows Media Gerenciador de Dispositivos , interface IWMDRMDeviceApp
+- Interface IWMDRMDeviceApp windows Media Gerenciador de Dispositivos , método ProcessMeterResponse
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b57312dc2f401207e41f38f5bf75cddf69a13b1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 20e20338482533293559f135a221b90220f1e371137b3bc1d62502cb3f2e779b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766446"
 ---
-# <a name="iwmdrmdeviceappprocessmeterresponse-method"></a>IWMDRMDeviceApp: método rocessMeterResponse de:P
+# <a name="iwmdrmdeviceappprocessmeterresponse-method"></a>Método IWMDRMDeviceApp::P rocessMeterResponse
 
-O método **ProcessMeterResponse** redefine algumas ou todas as contagens de medição em um dispositivo, depois que os dados do dispositivo tiverem sido enviados e processados pelo servidor.
+O **método ProcessMeterResponse** redefine algumas ou todas as contagens de medição em um dispositivo, depois que os dados do dispositivo são enviados e processados pelo servidor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,28 +46,28 @@ HRESULT ProcessMeterResponse(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
-Ponteiro para um objeto [**IWMDMDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice) .
+Ponteiro para um [**objeto IWMDMDevice.**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
 
 </dd> <dt>
 
-*pbResponse* \[ no\]
+*pbResponse* \[ Em\]
 </dt> <dd>
 
-Resposta recebida de um servidor de medição depois de enviar dados gerados usando [**GenerateMeterChallenge**](iwmdrmdeviceapp-generatemeterchallenge.md).
+Resposta recebida de um servidor de medição, depois de enviar dados gerados [**usando GenerateMeterChallenge**](iwmdrmdeviceapp-generatemeterchallenge.md).
 
 </dd> <dt>
 
-*cbResponse* \[ no\]
+*cbResponse* \[ Em\]
 </dt> <dd>
 
 Tamanho de *pbResponse*, em bytes.
 
 </dd> <dt>
 
-*pdwFlags* \[ fora\]
+*pdwFlags* \[ out\]
 </dt> <dd>
 
 Um **DWORD** da tabela a seguir que indica se há mais dados de medição no dispositivo que precisam ser processados.
@@ -76,8 +76,8 @@ Um **DWORD** da tabela a seguir que indica se há mais dados de medição no dis
 
 | Sinalizador                            | Descrição                                     |
 |---------------------------------|-------------------------------------------------|
-| \_ \_ todas as respostas de medidor de WMDRM \_     | Todos os dados de medição foram processados.           |
-| \_parcial de \_ resposta de medidor de WMDRM \_ | Dados de medição adicionais precisam ser processados. |
+| RESPOSTA DO MEDIDOR WMDRM \_ \_ \_ ALL     | Todos os dados de medição foram processados.           |
+| RESPOSTA DO MEDIDOR WMDRM \_ \_ \_ PARCIAL | Dados de medição adicionais precisam ser processados. |
 
 
 
@@ -85,9 +85,9 @@ Um **DWORD** da tabela a seguir que indica se há mais dados de medição no dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -95,9 +95,9 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                             | O método foi bem-sucedido.<br/>                                              |
 | <dl> <dt>**DRM \_ E \_ INVALIDARG**</dt> </dl>                | Um ou mais argumentos não são válidos.<br/>                               |
-| <dl> <dt>**Erros do dispositivo**</dt> </dl>            | Qualquer um dos vários erros do dispositivo.<br/>                                  |
-| <dl> <dt>**Erros do cliente DRM**</dt> </dl>        | Qualquer um dos vários erros internos do cliente DRM.<br/>                     |
-| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl> | O dispositivo especificado não é um dispositivo compatível com DRM do Windows Media.<br/> |
+| <dl> <dt>**Erros do dispositivo**</dt> </dl>            | Qualquer um de vários erros de dispositivo.<br/>                                  |
+| <dl> <dt>**Erros do cliente DRM**</dt> </dl>        | Qualquer um de vários erros internos do cliente DRM.<br/>                     |
+| <dl> <dt>**NS \_ E \_ DEVICE \_ NOT \_ WMDRM \_ DEVICE**</dt> </dl> | O dispositivo especificado não é um dispositivo compatível Windows DRM de mídia.<br/> |
 
 
 
@@ -105,7 +105,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Mais informações sobre medição, incluindo exemplos de código, podem ser encontradas no White Paper [monitorando o uso de conteúdo de mídia digital com o Windows Media DRM 10](/previous-versions//bb614723(v=vs.85)) no site do MSDN.
+Mais informações sobre medição, incluindo exemplos de código, podem ser encontradas no whitepaper Medição do uso de conteúdo de mídia digital com Windows DRM de mídia [10](/previous-versions//bb614723(v=vs.85)) no site do MSDN.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,8 +113,8 @@ Mais informações sobre medição, incluindo exemplos de código, podem ser enc
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDRMDeviceApp. h (também requer Wmdrmdeviceapp \_ i. c, criado a partir de WMDRMDeviceApp. idl)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl>                                                                        |
+| parâmetro<br/>  | <dl> <dt>WMDRMDeviceApp.h (também requer Wmdrmdeviceapp \_ i.c, criado do WMDRMDeviceApp.idl)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl>                                                                        |
 
 
 
@@ -122,13 +122,13 @@ Mais informações sobre medição, incluindo exemplos de código, podem ser enc
 
 <dl> <dt>
 
-[**Lidando com conteúdo protegido no aplicativo**](handling-protected-content-in-the-application.md)
+[**Manipulando conteúdo protegido no aplicativo**](handling-protected-content-in-the-application.md)
 </dt> <dt>
 
-[**Interface IWMDMDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
+[**IWMDMDevice Interface**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
 </dt> <dt>
 
-[**Interface IWMDRMDeviceApp**](iwmdrmdeviceapp.md)
+[**IWMDRMDeviceApp Interface**](iwmdrmdeviceapp.md)
 </dt> </dl>
 
  

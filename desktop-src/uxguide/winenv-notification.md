@@ -4,12 +4,12 @@ description: A área de notificação fornece notificações e status. Programas
 ms.assetid: d30e293f-b424-4fe3-8191-1692c081245d
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c580d80bd95684cc80dc24e59273553f4a08e11f
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 48550b37068b44c83254f09983b68f9881845c6a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985449"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471692"
 ---
 # <a name="notification-area"></a>Área de notificação
 
@@ -51,7 +51,7 @@ Para decidir, considere estas perguntas:
 
     -   **O status é crítico? A ação imediata é necessária?** Nesse caso, exibe as informações de uma forma que exige atenção e não pode ser facilmente ignorada, como uma caixa [de diálogo](win-dialog-box.md).
 
-    Os programas projetados para Windows 7 podem usar ícones de sobreposição no botão da barra de tarefas do programa para mostrar a alteração do status, bem como barras de progresso do botão da barra de tarefas para mostrar o progresso das tarefas de execução longa.
+    Os programas projetados para Windows 7 podem usar ícones de sobreposição no botão da barra de tarefas do programa para mostrar a alteração do status, bem como barras de progresso do botão da barra de tarefas para mostrar o progresso das tarefas de longa execução.
 
 -   **O recurso já tem "presença da área de trabalho"?** Ou seja, quando executado, o recurso aparece em uma janela na área de trabalho (possivelmente minimizado)? Nesse caso, exibe o status na barra de status do programa, em outra área de [status](ctrl-status-bars.md)ou, Windows 7, diretamente no botão da barra de tarefas. Se o recurso não tiver presença na área de trabalho, você poderá usar um ícone para acesso ao programa e para mostrar o status.
 -   **O ícone é principalmente para iniciar um programa ou acessar seus recursos ou configurações rapidamente?** Em caso afirmativos, use o menu Iniciar para iniciar programas. A área de notificação não se destina ao acesso rápido de programa ou comando.
@@ -68,7 +68,7 @@ Para decidir, considere estas perguntas:
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-### <a name="the-windows-desktop"></a>A área Windows desktop
+### <a name="the-windows-desktop"></a>O Windows desktop
 
 A Windows desktop tem os seguintes pontos de acesso do programa:
 
@@ -89,11 +89,11 @@ Os Windows de acesso à área de trabalho incluem a botão Iniciar, a barra de t
 
 A área de notificação foi originalmente destinada como uma fonte temporária para notificações e status. Sua eficiência e conveniência incentivam os desenvolvedores a dar a ele outras finalidades, como iniciar programas e executar comandos. Infelizmente, ao longo do tempo, essas adições tornou a área de notificação muito grande e com muitos nós e confundiram sua finalidade com os outros pontos de acesso da área de trabalho.
 
-Windows O XP abordou o problema de escala tornando a área relegível e ocultando os ícones nãoutilados. Windows O Vista abordou o ruído removendo notificações desnecessárias e entediantes. Windows 7 foi um passo além concentrando a notificação em sua finalidade original de ser uma fonte de notificação. **A maioria dos ícones está oculta por padrão Windows 7, mas pode ser promovida para a área de notificação manualmente pelo usuário. Para manter os usuários no controle de suas áreas de trabalho, não é possível que seu programa execute essa promoção automaticamente.** Windows ainda exibe notificações para ícones ocultos, promovendo-os temporariamente.
+Windows O XP abordou o problema de escala tornando a área relegível e ocultando os ícones nãoutilados. Windows O Vista abordou o ruído removendo notificações desnecessárias e entediantes. Windows 7 foi um passo além concentrando a notificação em sua finalidade original de ser uma fonte de notificação. **A maioria dos ícones está oculta por padrão Windows 7, mas pode ser promovida manualmente para a área de notificação pelo usuário. Para manter os usuários no controle de suas áreas de trabalho, não é possível que seu programa execute essa promoção automaticamente.** Windows ainda exibe notificações para ícones ocultos, promovendo-os temporariamente.
 
 ![captura de tela da área de notificação e estouro ](images/winenv-notification-image7.png)
 
-No Windows 7, a maioria dos ícones de área de notificação está oculta por padrão.
+No Windows 7, a maioria dos ícones de área de notificação é ocultada por padrão.
 
 Além disso, Windows 7 dá suporte a muitos recursos diretamente nos botões da barra de tarefas. Especificamente, você pode usar:
 
@@ -108,20 +108,20 @@ Em resumo, se o programa tiver presença na área de trabalho, aproveite ao máx
 Manter os usuários no controle se estende além do uso correto da área de notificação. Dependendo da natureza do ícone, talvez você queira permitir que os usuários faça o seguinte:
 
 -   **Remova o ícone.** Seu ícone pode fornecer status relevante e útil, mas, mesmo assim, os usuários podem não querer vê-lo. Windows permite que os usuários o ocultam ícones, mas esse recurso não é facilmente descoberto. Para manter os usuários no controle, forneça uma **opção Ícone de** exibição na área de notificação no menu de contexto do ícone. Observe que remover um ícone não precisa afetar o programa, o recurso ou o processo subjacente.
--   **Selecione os tipos de notificações a exibir.** Sua notificação deve ser útil e relevante, mas pode haver notificações que os usuários não querem ver. Isso é especialmente verdadeiro para [notificações](mess-notif.md)do FYI. Permita que os usuários optem por habilitar os menos importantes.
--   **Suspender recursos opcionais.** Os ícones são usados para exibir o status de recursos sem presença na área de trabalho. Esses recursos tendem a ser execução demorada, tarefas em segundo plano opcionais, como impressão, indexação, verificação ou sincronização. Os usuários podem querer suspender esses recursos para aumentar o desempenho do sistema, reduzir o consumo de energia ou porque estão offline.
--   **Encerre o programa.** Forneça as opções mais adequadas:
-    -   **Encerre o programa temporariamente.** o programa é interrompido e reiniciado quando Windows é reiniciado. Essa abordagem é adequada para utilitários de sistema importantes, como programas de segurança.
-    -   **Encerre o programa permanentemente.** o programa é interrompido e não é reiniciado quando Windows é reiniciado (a menos que o usuário opte por reiniciar mais tarde). O usuário não deseja mais executar o programa ou deseja executar o programa sob demanda, talvez para melhorar o desempenho do sistema.
+-   **Selecione os tipos de notificações a exibir.** Sua notificação deve ser útil e relevante, mas pode haver notificações que os usuários não querem ver. Isso é especialmente verdadeiro [](mess-notif.md)para notificações de FYI. Permita que os usuários optem por habilitar os menos importantes.
+-   **Suspender recursos opcionais.** Ícones são usados para exibir o status de recursos sem a presença da área de trabalho. Esses recursos tendem a ser tarefas em segundo plano opcionais de execução longa, como impressão, indexação, verificação ou sincronização. Os usuários podem querer suspender esses recursos para aumentar o desempenho do sistema, reduzir o consumo de energia ou porque estão offline.
+-   **Saia do programa.** Forneça o mais adequado dessas opções:
+    -   **Sair temporariamente do programa.** O programa é interrompido e reiniciado quando Windows é reiniciado. Essa abordagem é adequada para utilitários importantes do sistema, como programas de segurança.
+    -   **Encerrar programa permanentemente.** O programa é interrompido e não reiniciado quando Windows é reiniciado (a menos que o usuário opte por reiniciar mais tarde). O usuário não deseja mais executar o programa ou deseja executar o programa sob demanda talvez para melhorar o desempenho do sistema.
 
-Embora seja uma boa ideia fornecer a maioria dessas configurações no menu de contexto do ícone, a experiência padrão do programa deve ser adequada para a maioria dos usuários. Não ative tudo por padrão e espere que os usuários Desativem os recursos. Em vez disso, ative os recursos importantes por padrão e permita que os usuários habilitem recursos adicionais conforme desejado.
+Embora seja uma boa ideia fornecer a maioria dessas configurações no menu de contexto do ícone, a experiência padrão do programa deve ser adequada para a maioria dos usuários. Não ligue tudo por padrão e espere que os usuários desliguem os recursos. Em vez disso, ative os recursos importantes por padrão e permita que os usuários habilitam recursos adicionais conforme desejado.
 
 **Se você fizer apenas quatro coisas...**
 
-1.  Não se preocupe com a área de notificação. Use-o apenas como uma fonte para notificações e status e para recursos sem presença na área de trabalho.
+1.  Não abuse a área de notificação. Use-o apenas como uma fonte para notificações e status e para recursos sem presença da área de trabalho.
 2.  Mantenha os usuários no controle. Forneça as opções apropriadas para controlar o ícone, suas notificações e os recursos subjacentes.
-3.  Apresente uma experiência padrão adequada para a maioria dos usuários. Permita que os usuários habilitem os recursos desejados em vez de esperar que eles desabilitem aqueles indesejados.
-4.  aproveite ao máximo os recursos do botão da barra de tarefas do Windows 7 para mostrar o status e tornar as tarefas executadas com mais frequência do programa eficientes.
+3.  Apresentar uma experiência padrão adequada para a maioria dos usuários. Permitir que os usuários habilitam os recursos desejados em vez de esperar que eles desabilitem os recursos desejados.
+4.  Aproveite ao máximo os recursos da barra de tarefas Windows 7 para mostrar o status e tornar eficientes as tarefas executadas com mais frequência do programa.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -130,13 +130,7 @@ Os ícones da área de notificação têm vários padrões de uso:
 
 
 
-| Rótulo | Valor |
-|--------|-------|
-| <strong>Status do sistema e acesso</strong><br /> Exibido continuamente para mostrar o status do sistema importante, mas não crítico, e para fornecer acesso a recursos e configurações relevantes. <br /> | Os recursos do sistema que precisam de ícones da área de notificação não têm presença de área de trabalho persistente. Também pode ser usado como uma fonte de notificação. <br /><img src="images/winenv-notification-image8.png" alt="Screenshot that shows a notification area and icons for system status." /><br /> Neste exemplo, os ícones de bateria, rede e volume são exibidos continuamente quando aplicável.<br /> | 
-| <strong>Status e acesso da tarefa em segundo plano</strong><br /> Exibido enquanto uma tarefa em segundo plano está em execução para mostrar o status e fornecer acesso a recursos e configurações. <br /> | Os processos em segundo plano precisam de ícones da área de notificação quando não têm presença na área de trabalho. Também pode ser usado como uma fonte de notificação. <br /><img src="images/winenv-notification-image9.png" alt="Screenshot that shows notification area and icon for background task status." /><br /> Neste exemplo, o ícone da central de ações permite que os usuários verifiquem seu status mesmo quando não há presença na área de trabalho.<br /> | 
-| <strong>Status do evento temporário</strong><br /> Programas com presença na área de trabalho podem exibir ícones temporariamente para mostrar eventos importantes ou alterações no status. <br /> | <img src="images/winenv-notification-image10.png" alt="Screenshot that shows notification area and icons for a temporary event status." /><br /> Neste exemplo, os ícones para impressão e instalação de atualizações são exibidos temporariamente para mostrar eventos importantes ou alterações no status.<br /> | 
-| <strong>Origem de notificação temporária</strong><br /> Exibido temporariamente para mostrar uma notificação. Removido após um tempo limite ou quando o problema subjacente é resolvido ou a tarefa foi executada. <br /> | Ícones temporários são preferenciais para fontes de notificação puras. Não exiba um ícone que não forneça um status útil, relevante e dinâmico apenas porque um recurso pode precisar exibir uma notificação no futuro. <br /><img src="images/winenv-notification-image11.png" alt="Screen shot of notification area install message " /><br /> Neste exemplo, o ícone de plug-and-Play é exibido enquanto uma nova notificação de hardware detectado é mostrada.<br /> | 
-| <strong>Aplicativo de instância única minimizada</strong><br /> Para reduzir a aglomeração da barra de tarefas, um aplicativo de instância única e de execução longa pode ser minimizado para um ícone da área de notificação. <br /> | <img src="images/winenv-notification-image12.png" alt="Screen shot of notification area and icons " /><br /> neste exemplo do Windows Vista, Outlook e Windows Live Messenger são aplicativos de instância única que minimizam para ícones da área de notificação.<br /> Considere o uso desse padrão somente se todos os itens a seguir se aplicarem: <br /><ul><li>O aplicativo pode ter apenas uma única instância.</li><li>O aplicativo é executado por um longo período de tempo.</li><li>O ícone mostra o status.</li><li>O ícone pode ser uma fonte de notificação.</li><li>Isso é opcional e os usuários devem <a href="glossary.md">aceitar</a>.</li></ul>Se todas essas condições se aplicarem, a minimização para um ícone eliminará a existência de dois pontos de acesso quando apenas um for necessário. <br /><strong>Observação:</strong> esse padrão de ícone não é mais recomendado para o Windows 7. Use botões normais da barra de tarefas se o seu programa tiver presença na área de trabalho.<br /><img src="images/winenv-notification-image13.png" alt="Screen shot of Outlook and Messenger taskbar icons " /><br /> neste exemplo do Windows 7, um botão de barra de tarefas normal ocupa pouco espaço, mas beneficia-se dos recursos do botão da barra de tarefas do Windows 7, incluindo listas de atalhos, ícones de sobreposição e miniaturas sofisticadas.<br /> | 
+| | | <strong>Status e acesso do sistema</strong><br /> Exibido continuamente para mostrar o status do sistema importante, mas não crítico, e para fornecer acesso a recursos e configurações relevantes. <br /> | Os recursos do sistema que precisam de ícones de área de notificação não têm presença de área de trabalho persistente. Também pode ser usado como uma fonte de notificação. <br /><img src="images/winenv-notification-image8.png" alt="Screenshot that shows a notification area and icons for system status." /><br /> Neste exemplo, os ícones de bateria, rede e volume são exibidos continuamente quando aplicável.<br /> | | <strong>Status e acesso da tarefa em segundo plano</strong><br /> Exibido enquanto uma tarefa em segundo plano está em execução para mostrar o status e fornecer acesso a recursos e configurações. <br /> | Os processos em segundo plano precisam de ícones de área de notificação quando não têm nenhuma presença da área de trabalho. Também pode ser usado como uma fonte de notificação. <br /><img src="images/winenv-notification-image9.png" alt="Screenshot that shows notification area and icon for background task status." /><br /> Neste exemplo, o ícone da Central de Ações permite que os usuários verifiquem seu status mesmo quando ele não tem nenhuma presença de área de trabalho.<br /> | | <strong>Status do evento temporário</strong><br /> Programas com presença de área de trabalho podem exibir ícones temporariamente para mostrar eventos importantes ou alterações no status. <br /> | <img src="images/winenv-notification-image10.png" alt="Screenshot that shows notification area and icons for a temporary event status." /><br /> Neste exemplo, ícones para imprimir e instalar atualizações são exibidos temporariamente para mostrar eventos importantes ou alterações no status.<br /> | | <strong>Fonte de notificação temporária</strong><br /> Exibido temporariamente para mostrar uma notificação. Removido após um tempo final ou quando o problema subjacente é resolvido ou tarefa executada. <br /> | Ícones temporários são preferenciais para fontes de notificação puras. Não exibir um ícone que não forneça status dinâmico útil, relevante, apenas porque um recurso talvez precise exibir uma notificação no futuro. <br /><img src="images/winenv-notification-image11.png" alt="Screen shot of notification area install message " /><br /> Neste exemplo, o ícone de plug-and-play é exibido enquanto uma nova notificação de hardware detectada é mostrada.<br /> | | <strong>Aplicativo de instância única minimizado</strong><br /> Para reduzir a confusão da barra de tarefas, um aplicativo de instância única e de execução longa pode ser minimizado para um ícone de área de notificação. <br /> | <img src="images/winenv-notification-image12.png" alt="Screen shot of notification area and icons " /><br /> Neste exemplo do Windows Vista, Outlook e Windows Live Messenger são aplicativos de instância única que minimizam os ícones da área de notificação.<br /> Considere usar esse padrão somente se todas as seguintes se aplicarem: <br /><ul><li>O aplicativo pode ter apenas uma única instância.</li><li>O aplicativo é executado por um longo período de tempo.</li><li>O ícone mostra o status.</li><li>O ícone pode ser uma fonte de notificação.</li><li>Isso é opcional e os usuários devem <a href="glossary.md">optar por</a>.</li></ul>Se todas essas condições se aplicarem, minimizar a um ícone eliminará a necessidade de dois pontos de acesso quando apenas um for necessário. <br /><strong>Observação:</strong> Esse padrão de ícone não é mais recomendado para Windows 7. Use botões regulares da barra de tarefas se o programa tiver presença na área de trabalho.<br /><img src="images/winenv-notification-image13.png" alt="Screen shot of Outlook and Messenger taskbar icons " /><br /> Neste exemplo do Windows 7, um botão de barra de tarefas regular ocupa pouco espaço, mas se beneficia dos recursos de botão da barra de tarefas do Windows 7, incluindo Listas de Saltos, ícones de sobreposição e miniaturas avançados.<br /> | 
 
 
 
@@ -147,40 +141,40 @@ Os ícones da área de notificação têm vários padrões de uso:
 
 ### <a name="general"></a>Geral
 
--   **Forneça apenas um ícone da área de notificação por componente.**
--   **Use um ícone com as versões 16x16, 20x20 e 24x24 pixel.** As versões maiores são usadas em modos de exibição de alto dpi.
+-   **Forneça apenas um ícone de área de notificação por componente.**
+-   **Use um ícone com versões de 16x16, 20x20 e 24 x 24 pixels.** As versões maiores são usadas em modos de exibição de alto dpi.
 
 ### <a name="when-to-show"></a>Quando mostrar
 
 -   Para o padrão de origem de notificação temporária:
     -   Windows exibe o ícone quando a notificação é exibida.
-    -   Remova o ícone com base em seu padrão de [design de notificação](mess-notif.md) :
+    -   Remova o ícone com base em seu padrão [de design de](mess-notif.md) notificação:
 
 
 
     | Padrão                                     | Quando remover                                         |
     |--------------------------------------|------------------------------------------|
-    | Êxito na ação<br/>            | Quando a notificação é removida.<br/> |
-    | Falha na ação<br/>            | Quando o problema é resolvido.<br/>     |
-    | Evento não crítico do sistema<br/> | Quando o problema é resolvido.<br/>     |
-    | Tarefa opcional do usuário<br/>        | Quando a tarefa é concluída.<br/>            |
-    | CONHECIMENTO<br/>                       | Quando a notificação é removida.<br/> |
+    | Sucesso da ação<br/>            | Quando a notificação é removida.<br/> |
+    | Falha de ação<br/>            | Quando o problema é resolvido.<br/>     |
+    | Evento do sistema não crítico<br/> | Quando o problema é resolvido.<br/>     |
+    | Tarefa de usuário opcional<br/>        | Quando a tarefa é feita.<br/>            |
+    | FYI<br/>                       | Quando a notificação é removida.<br/> |
 
 
 
  
 
--   **Para o padrão de status de evento temporário, exiba o ícone enquanto o evento estiver acontecendo.**
--   Para todos os outros padrões, **exiba o ícone quando o programa, o recurso ou o processo estiver em execução e o ícone for relevante** , a menos que o usuário tenha apagado seu **ícone de exibição na opção área de notificação** (para obter mais informações, consulte menus de [contexto](#context-menus)). a maioria dos ícones fica oculta por padrão no Windows 7, mas pode ser promovida para a área de notificação pelo usuário.
--   **Não exiba ícones destinados a administradores a usuários padrão.** registre as informações no log de eventos Windows.
+-   **Para o padrão de status do evento temporário, exibe o ícone enquanto o evento está acontecendo.**
+-   Para todos os outros padrões, exibe o ícone quando o **programa,** o recurso ou  o processo está em execução e o ícone é relevante, a menos que o usuário tenha limpo sua opção Exibir ícone na área de notificação (para obter mais informações, consulte [Menus](#context-menus)de contexto ). A maioria dos ícones está oculta por padrão Windows 7, mas pode ser promovida para a área de notificação pelo usuário.
+-   **Não exibir ícones destinados a administradores para usuários padrão.** Registre as informações no log Windows eventos.
 
 ### <a name="where-to-show"></a>Onde mostrar
 
--   **Janelas de exibição iniciadas de ícones da área de notificação próximo à área de notificação.**
+-   **Exibir janelas lançadas de ícones de área de notificação próximos à área de notificação.**
 
-![Figura de uma janela próxima à área de notificação ](images/winenv-notification-image14.png)
+![figura de uma janela perto da área de notificação ](images/winenv-notification-image14.png)
 
-Windows iniciado a partir de ícones da área de notificação são exibidos próximo à área de notificação.
+Windows ícones de área de notificação são exibidos próximos à área de notificação.
 
 ### <a name="icons"></a>Ícones
 
@@ -188,9 +182,9 @@ Windows iniciado a partir de ícones da área de notificação são exibidos pr�
 
     | Padrão                                                 | Tipo de ícone                                   |
     |--------------------------------------------------|------------------------------------|
-    | Status do sistema e acesso<br/>              | Ícone de recurso do sistema<br/>     |
+    | Status e acesso do sistema<br/>              | Ícone de recurso do sistema<br/>     |
     | Status e acesso da tarefa em segundo plano<br/>     | Ícone de programa ou recurso<br/> |
-    | Origem de notificação temporária<br/>         | Ícone de programa ou recurso<br/> |
+    | Fonte de notificação temporária<br/>         | Ícone de programa ou recurso<br/> |
     | Status do evento temporário<br/>                | Ícone de programa ou recurso<br/> |
     | Aplicativo de instância única minimizado<br/> | Ícone do programa<br/>            |
 
@@ -208,7 +202,7 @@ Windows iniciado a partir de ícones da área de notificação são exibidos pr�
     | Sobreposição                                                                                                       | Status                                 |
     |--------------------------------------------------------------------------------------------------------|----------------------------------|
     | ![captura de tela do ícone de aviso pequeno ](images/winenv-notification-image16.png)<br/>               | Aviso<br/>               |
-    | ![captura de tela do ícone de erro pequeno ](images/winenv-notification-image17.png)<br/>                 | Erro<br/>                 |
+    | ![captura de tela do ícone de erro pequeno ](images/winenv-notification-image17.png)<br/>                 | Erro do<br/>                 |
     | ![captura de tela do ícone pequeno desabilitado/desconectado ](images/winenv-notification-image18.png)<br/> | Desabilitado/Desconectado<br/> |
     | ![captura de tela do pequeno ícone bloqueado/offline ](images/winenv-notification-image19.png)<br/>       | Bloqueado/Offline<br/>       |
 
@@ -322,9 +316,9 @@ Comandos secundários
 
 Suspender/retomar o comando habilitar/desabilitar (marca de seleção)
 
-"Minimizada para a área de notificação" (marca de seleção)
+"Minimizado para a área de notificação" (marca de seleção)
 
-Aceitar notificações (marca de seleção)
+Optar por notificações (marca de seleção)
 
 "Exibir ícone na área de notificação" (marca de seleção)
 
@@ -431,8 +425,8 @@ Para obter as diretrizes gerais da caixa de diálogo opções e exemplos, consul
     -   O programa é executado por um longo período de tempo.
     -   O ícone mostra o status.
     -   O ícone pode ser uma fonte de notificação.
-    -   Isso é opcional e os usuários devem [optar por](glossary.md).
--   Use o botão Minimizar na barra de título do aplicativo, não no botão Fechar.
+    -   Isso é opcional e os usuários devem [aceitar](glossary.md).
+-   Use o botão minimizar na barra de título do aplicativo, não o botão fechar.
 
 ## <a name="text"></a>Texto
 

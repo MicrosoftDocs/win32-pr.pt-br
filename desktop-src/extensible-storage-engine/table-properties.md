@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.tabl
 ms:contentKeyID: 55104150
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5aa437e1cdb9871d3c13e338209fbe05d6880a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85cb259bad42e655af166030581daa5be1b83d34ac29ff35b66d5f41c4e0297c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093126"
 ---
 # <a name="table-properties"></a>Propriedades da tabela
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [tabela](./table-class.md) expõe os membros a seguir.
+O [tipo](./table-class.md) Tabela expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -35,17 +35,17 @@ O tipo de [tabela](./table-class.md) expõe os membros a seguir.
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
 <td><a href="dn350578(v=exchg.10).md">HasResource</a></td>
-<td>Obtém um valor que indica se o recurso subjacente está alocado no momento. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Obtém um valor que indica se o recurso subjacente está alocado no momento. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351171(v=exchg.10).md">JetTableid</a></td>
-<td>Obtém o JET_TABLEID que esta tabela contém.</td>
+<td>Obtém a JET_TABLEID que esta tabela contém.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351170(v=exchg.10).md">Nome</a></td>
-<td>Obtém o nome desta tabela.</td>
+<td>Obtém o nome dessa tabela.</td>
 </tr>
 </tbody>
 </table>
@@ -57,6 +57,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe de tabela](./table-class.md)
+[Classe Table](./table-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

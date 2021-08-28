@@ -1,17 +1,17 @@
 - name: Reinicialização e recuperação de aplicativos
   href: application-recovery-and-restart-portal.md
   items:
-    - name: Usando a recuperação e reinicialização do aplicativo
+    - name: Usando a recuperação e a reinicialização do aplicativo
       href: using-application-recovery-and-restart.md
       items:
-        - name: Registrando para recuperação de aplicativo
+        - name: Registrando-se para a Recuperação de Aplicativo
           href: registering-for-application-recovery.md
-        - name: Registrando para reinicialização do aplicativo
+        - name: Registrando-se para reinicialização do aplicativo
           href: registering-for-application-restart.md
-    - name: Recuperação de aplicativo e referência de reinicialização
+    - name: Referência de recuperação e reinicialização de aplicativos
       href: application-recovery-and-restart-reference.md
       items:
-        - name: Recuperação de aplicativo e funções de reinicialização
+        - name: Funções de recuperação e reinicialização de aplicativos
           href: application-recovery-and-restart-functions.md
           items:
             - name: ApplicationRecoveryCallback

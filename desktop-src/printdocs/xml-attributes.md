@@ -4,12 +4,12 @@ ms.assetid: 41bc10fe-6c00-44c5-ba9a-10414b31cbdf
 title: Atributos XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5312137328de0bf5c2fa8609b53cdf39b7eb15fde9dc1517ae6cc0394d8c12f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20fa19a64dd5d3c59f7c5d26b86186912065a5f1
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886286"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883474"
 ---
 # <a name="xml-attributes"></a>Atributos XML
 
@@ -23,10 +23,10 @@ Embora as partes privadas não tenham permissão para introduzir novas definiç�
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,7 +58,7 @@ O exemplo a seguir mostra como identificar uma instância de opção usando um a
     <psf:ScoredProperty name=&quot;psk:SheetCapacity&quot; >
       <psf:Value xsi:type=&quot;xs:integer&quot;>_Undefined_</psf:Value>
     </psf:ScoredProperty>
-  </psf:Option></code></pre></td>
+  &lt;/psf:Option&gt;</code></pre></td>
 </tr>
 <tr class="even">
 <td>propagar <br/></td>

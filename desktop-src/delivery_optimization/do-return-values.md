@@ -4,16 +4,16 @@ description: As constantes abaixo representam valores de retorno que a otimizaç
 ms.assetid: 68AC4581-C748-49AB-A588-15816E534756
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e58d66587061cc44fc441249407b73653153322
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e16dc435fa22268d92c4403709a5444b1b87e325d66429da853844fd7f836b40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118101847"
 ---
 # <a name="do-return-values"></a>Valores de retorno
 
-As constantes abaixo representam valores de retorno que a otimização de entrega gera e valores de retorno HTTP que capturam. Todos os outros valores de retorno que você pode receber são COM, RPC ou valores de retorno DO Windows convertidos (o usa a macro [HRESULT_FROM_WIN32](/windows/win32/api/winerror/nf-winerror-hresult_from_win32) para converter os valores de retorno do Windows em valores de HRESULT).
+As constantes abaixo representam valores de retorno que a otimização de entrega gera e valores de retorno HTTP que capturam. todos os outros valores de retorno que você pode receber são COM, RPC ou convertidos Windows valores de retorno (usa a macro [HRESULT_FROM_WIN32](/windows/win32/api/winerror/nf-winerror-hresult_from_win32) para converter os valores de retorno Windows em valores HRESULT).
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Não é possível chamar SetProperty () em uma propriedade somente leitura.
 <span id="DO_E_INVALID_STATE__0x80d02013_"></span><span id="do_e_invalid_state__0x80d02013_"></span><span id="DO_E_INVALID_STATE__0X80D02013_"></span>DO_E_INVALID_STATE (0x80d02013)
 </dt> <dd>
 
-A ação solicitada não é permitida no estado do trabalho atual. O trabalho pode ter sido cancelado ou concluído.
+A operação solicitada não é permitida no estado de trabalho atual. O trabalho poderia ter sido cancelado ou concluído a transferência.
 
 </dd> <dt>
 
@@ -171,6 +171,6 @@ Erro fatal encontrado no núcleo.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

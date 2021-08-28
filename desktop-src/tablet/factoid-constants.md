@@ -4,12 +4,12 @@ ms.assetid: 247a1f7d-8205-4e4d-9cfc-daad9bd2191f
 title: Constantes do factor (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa748c84f8bd39f18f83e1ec72474bcfbe3017f2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: c84b2d24135d8461c8b70db043ed8b2c7940cb61
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883679"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471112"
 ---
 # <a name="factoid-constants"></a>Constantes do factor
 
@@ -58,7 +58,7 @@ Define valores de cadeia de caracteres constantes que são usados para aumentar 
 
 ## <a name="remarks"></a>Comentários
 
-Em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h, localizado no &lt; &gt; diretório systemdrive: \\ Program Files \\ Microsoft Tablet PC Platform SDK \\ include, se você instalou o SDK no local padrão.
+Em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h, que está localizado no <systemdrive> diretório: \\ arquivos \\ de programas Microsoft Tablet PC Platform SDK \\ include se você instalou o SDK no local padrão.
 
 > [!Note]  
 > Essas constantes são WCHARs, não BSTRs. Eles devem ser convertidos em BSTRs antes de usar como parâmetros para métodos de objeto. Para obter mais informações sobre o tipo de dados BSTR, consulte [usando a biblioteca com](using-the-com-library.md).
@@ -79,21 +79,21 @@ As seguintes combinações de factors têm suporte apenas para idiomas ocidentai
 | Combinação               | Definição                                                |
 |---------------------------|-----------------------------------------------------------|
 | "listas de palavras da WEB \| "           | O facto da Web ou a lista de palavras.                         |
-| "listas de palavras de EMAIL \| "         | O facto de email ou a lista de palavras.                       |
-| " \| listas de palavras da Web de nome de arquivo \| " | O nome do arquivo ou o factor da Web ou a lista de palavras. |
+| "listas de palavras de EMAIL \| "         | O factoid email ou a lista de palavras.                       |
+| "FILENAME \| WEB \| WORDLIST" | O factoid Filename, o factoid da Web ou a lista de palavras. |
 
 
 
  
 
-Se você estiver usando o controle [InkEdit](inkedit-control-reference.md) , o factor poderá ser definido como uma propriedade do controle.
+Se você estiver usando o [controle InkEdit,](inkedit-control-reference.md) o factoid poderá ser definido como uma propriedade do controle .
 
-Se você estiver usando as APIs de plataforma do Tablet PC, poderá definir a propriedade [**factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) em um objeto [**InkRecognizerContext**](inkrecognizercontext-class.md) .
+Se você estiver usando as APIs da Plataforma de Tablet PC, poderá definir a propriedade [**Factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) em [**um objeto InkRecognizerContext.**](inkrecognizercontext-class.md)
 
-Como alternativa, você pode definir essa propriedade com a constante de cadeia de caracteres de factor real.
+Como alternativa, você pode definir essa propriedade com a constante de cadeia de caracteres factoid real.
 
 > [!Note]  
-> Constantes de cadeia de caracteres de facto diferencia maiúsculas de minúsculas. Para obter mais informações sobre os factos e como usá-los, consulte usando o contexto para [melhorar a precisão](using-context-to-improve-accuracy.md). Para determinar se um factor está disponível em um idioma específico, consulte as [edições com suporte na versão 1](supported-factoids-from-version-1.md).
+> Constantes de cadeia de caracteres factoid são sensíveis a minúsculas. Para obter mais informações sobre factoids e como usá-los, consulte Using Context to [Improve Accuracy](using-context-to-improve-accuracy.md). Para determinar se um factoid está disponível em um idioma específico, consulte [Factoids com suporte da versão 1.](supported-factoids-from-version-1.md)
 
  
 
@@ -103,9 +103,9 @@ Como alternativa, você pode definir essa propriedade com a constante de cadeia 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 
 
 
@@ -113,19 +113,19 @@ Como alternativa, você pode definir essa propriedade com a constante de cadeia 
 
 <dl> <dt>
 
-[**Classe InkRecognizeContext de Propriedade do factor \[\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid)
+[**Classe Factoid Property \[ InkRecognizeContext\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid)
 </dt> <dt>
 
-[**Classe PenInputPanel de Propriedade do factor \[\]**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_factoid)
+[**Classe Factoid Property \[ PenInputPanel\]**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_factoid)
 </dt> <dt>
 
-[**Controle de Propriedade InkEdit do factor \[\]**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)
+[**Controle InkEdit da propriedade Factoid \[\]**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)
 </dt> <dt>
 
 [Usando o contexto para melhorar a precisão](using-context-to-improve-accuracy.md)
 </dt> <dt>
 
-[Factos com suporte da versão 1](supported-factoids-from-version-1.md)
+[Factoids com suporte da versão 1](supported-factoids-from-version-1.md)
 </dt> </dl>
 
  

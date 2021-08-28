@@ -1,7 +1,7 @@
 ---
-description: Construtor de CTransInPlaceInputPin. CTransInPlaceInputPin-método de construtor.
+description: Construtor CTransInPlaceInputPin.CTransInPlaceInputPin – Método de construtor.
 ms.assetid: db0a3f78-ddb9-43b5-aab5-da2faaebb527
-title: Construtor CTransInPlaceInputPin. CTransInPlaceInputPin (TRANSip. h)
+title: Construtor CTransInPlaceInputPin.CTransInPlaceInputPin (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6f97c89142e43691c91b2a4c0d04721d9112ed49
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 266e67bc0d177aef592024236c87ab49c26cb81ef2264b4dde234232a3509006
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812766"
 ---
-# <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Construtor CTransInPlaceInputPin. CTransInPlaceInputPin
+# <a name="ctransinplaceinputpinctransinplaceinputpin-constructor"></a>Construtor CTransInPlaceInputPin.CTransInPlaceInputPin
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,34 +48,34 @@ CTransInPlaceInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, consulte [**CBaseObject**](cbaseobject.md).
+Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, [**consulte CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Ponteiro para o filtro que criou esse PIN, que deve ser um objeto [**CTransInPlaceFilter**](ctransinplacefilter.md) .
+Ponteiro para o filtro que criou esse pino, que deve ser um [**objeto CTransInPlaceFilter.**](ctransinplacefilter.md)
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor **HRESULT** que indica o êxito ou a falha do método. Inicialize o valor para S \_ OK antes de criar o objeto. O valor será alterado somente se ocorrer um erro.
+Ponteiro para uma variável que recebe um **valor HRESULT** que indica o êxito ou a falha do método. Inicialize o valor como S \_ OK antes de criar o objeto . O valor será alterado somente se ocorrer um erro.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Cadeia de caracteres largos contendo o nome do PIN.
+Cadeia de caracteres largos que contém o nome do pino.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O parâmetro *pname* especifica o nome do PIN, que é retornado pelo método [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) . No entanto, essa cadeia de caracteres não é usada para o identificador de PIN. O identificador de PIN para essa classe está sempre no. Para obter mais informações, consulte [**CTransformInputPin:: QueryId**](ctransforminputpin-queryid.md).
+O *parâmetro pName* especifica o nome do pino, que é retornado pelo [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) No entanto, essa cadeia de caracteres não é usada para o identificador de pino. O identificador de pino para essa classe é sempre In. Para obter mais informações, [**consulte CTransformInputPin::QueryId**](ctransforminputpin-queryid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,12 +83,12 @@ O parâmetro *pname* especifica o nome do PIN, que é retornado pelo método [**
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

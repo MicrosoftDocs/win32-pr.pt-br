@@ -1,29 +1,29 @@
 ---
-description: Esta seção descreve como configurar seu ambiente para usar as bibliotecas COM da plataforma Tablet PC em C++.
+description: Esta seção descreve como configurar seu ambiente para usar as bibliotecas COM da plataforma de Tablet PC no C++.
 ms.assetid: c0d7f703-d4aa-4c26-ae81-a4c888383c1e
-title: Biblioteca COM e controles ActiveX
+title: Biblioteca COM e controles ActiveX dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b9304880380ea95bc698c52d200931b77f64480
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78bc76f9caa2bcb72fe26ed2e01e251c977f87ce01c12794aad78608d2f5887f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009086"
 ---
-# <a name="com-library-and-activex-controls"></a>Biblioteca COM e controles ActiveX
+# <a name="com-library-and-activex-controls"></a>Biblioteca COM e controles ActiveX dados
 
-Esta seção descreve como configurar seu ambiente para usar as bibliotecas COM da plataforma Tablet PC em C++.
+Esta seção descreve como configurar seu ambiente para usar as bibliotecas COM da plataforma de Tablet PC no C++.
 
 ## <a name="microsoft-visual-c"></a>Microsoft Visual C++
 
-Para criar aplicativos de Tablet PC no Visual C++, você precisa atualizar as variáveis de ambiente do sistema, configurar as opções de diretório para o Visual Studio e acessar as interfaces do Tablet PC em seu projeto.
+Para criar aplicativos de tablet pc no Visual C++, você precisa atualizar as variáveis de ambiente do sistema, configurar opções de diretório para Visual Studio e acessar as interfaces do Tablet PC em seu projeto.
 
 Para atualizar as variáveis de ambiente, siga as instruções fornecidas pelo SDK do Windows para adicionar as variáveis de ambiente ao Visual Studio.
 
-### <a name="accessing-the-tablet-pc-interfaces"></a>Acessando as interfaces do Tablet PC
+### <a name="accessing-the-tablet-pc-interfaces"></a>Acessando as interfaces de tablet pc
 
-Para acessar as interfaces do Tablet PC, você deve incluir os arquivos Msinkaut. h e Msinkaut \_ i. c em seu projeto.
+Para acessar as interfaces do Tablet PC, você deve incluir os arquivos Msinkaut.h e Msinkaut \_ i.c em seu projeto.
 
 
 ```C++
@@ -33,7 +33,7 @@ Para acessar as interfaces do Tablet PC, você deve incluir os arquivos Msinkaut
 
 
 
-Você também pode usar a seguinte diretiva de importação em vez das \# instruções include listadas anteriormente.
+Você também pode usar a seguinte diretiva de importação em vez das instruções \# include listadas anteriormente.
 
 
 ```C++
@@ -42,7 +42,7 @@ Você também pode usar a seguinte diretiva de importação em vez das \# instru
 
 
 
-Para acessar as interfaces InkAnalysis, você deve incluir os arquivos IACom. h e IACom \_ i. c em seu projeto.
+Para acessar as interfaces inkAnalysis, você deve incluir arquivos IACom.h e IACom \_ i.c em seu projeto.
 
 
 ```C++
@@ -52,7 +52,7 @@ Para acessar as interfaces InkAnalysis, você deve incluir os arquivos IACom. h 
 
 
 
-Você também pode usar a seguinte diretiva de importação em vez das \# instruções include listadas anteriormente.
+Você também pode usar a seguinte diretiva de importação em vez das instruções \# include listadas anteriormente.
 
 
 ```C++
@@ -61,10 +61,10 @@ Você também pode usar a seguinte diretiva de importação em vez das \# instru
 
 
 
-Para acessar as interfaces [**InkDivider**](inkdivider-class.md) , você deve incluir os \_ arquivos msinkaut15 i. c e msinkaut15. h em seu projeto.
+Para acessar as interfaces [**InkDivider,**](inkdivider-class.md) você deve incluir arquivos msinkaut15 \_ i.c e msinkaut15.h em seu projeto.
 
 > [!Note]  
-> InkDivider foi substituído pelas APIs de análise de tinta.
+> InkDivider foi superado pelas APIs de Análise de Tinta.
 
  
 
@@ -85,7 +85,7 @@ Você também pode usar a seguinte diretiva de importação em vez das \# instru
 
 
 
-Para acessar as interfaces [**PenInputPanel**](peninputpanel-class.md) , você deve incluir os \_ arquivos PenInputPanel i. c e PenInputPanel. h em seu projeto.
+Para acessar as interfaces [**PenInputPanel,**](peninputpanel-class.md) você deve incluir os arquivos PenInputPanel \_ i.c e PenInputPanel.h em seu projeto.
 
 
 ```C++
@@ -105,11 +105,11 @@ Você também pode usar a seguinte diretiva de importação em vez das \# instru
 
 
 > [!Note]  
-> As APIs PenInputPanel foram substituídas no Windows Vista pelas novas interfaces do painel de entrada de texto.
+> As APIs PenInputPanel foram superadas no Windows Vista pelas novas interfaces do Painel de Entrada de Texto.
 
  
 
-Para acessar as interfaces de controle [InkEdit](inkedit-control-reference.md) , você deve incluir os arquivos Inked. h e Inked \_ i. c em seu projeto.
+Para acessar as interfaces [do InkEdit](inkedit-control-reference.md) Control, você deve incluir os arquivos Inked.h e Inked \_ i.c em seu projeto.
 
 
 ```C++
@@ -119,7 +119,7 @@ Para acessar as interfaces de controle [InkEdit](inkedit-control-reference.md) ,
 
 
 
-Como alternativa, você pode \# importar o arquivo de InkEd.dll.
+Como alternativa, você pode \# importar o arquivo InkEd.dll dados.
 
 
 ```C++
