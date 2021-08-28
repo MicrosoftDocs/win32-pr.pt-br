@@ -7,24 +7,24 @@ MSHAttr:
 title: IMSI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c5e8c0fa64a19f7c2966672d3bc4ab5b2162861
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 5322ba1059a3c7ba4ae60f921cf4a33a3720b8fc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477122"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988779"
 ---
 # <a name="span-idwwan_profile_v4element_imsispanimsi"></a><span id="WWAN_profile_v4.element_IMSI"></span>IMSI
 
-Especifica que esse perfil está ativo somente quando o IMSI atual que está sendo usado no ICCID é o especificado. Caso contrário, o perfil não será aplicável e não poderá ser usado para ativar um contexto de protocolo de dados de pacote (PDP).
+Especifica que esse perfil está ativo somente quando o IMSI atual que está sendo usado no ICCID é o especificado. Caso contrário, o perfil não será aplicável e não poderá ser usado para ativar um contexto PDP (Protocolo de Dados de Pacote).
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<ProfileConditionedOn>](element-profileconditionedon.md)  
-**<IMSI>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
+**&lt;IMSI&gt;**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IMSI>
@@ -49,7 +49,7 @@ Nenhum.
 
 | Elemento pai | Descrição | 
 |----------------|-------------|
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica as condições que devem ser satisfeitas para que um perfil seja aplicável.</p><p>Este elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em diferentes condições e para que o perfil apropriado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica as condições que devem ser atendidas para que um perfil seja aplicável.</p><p>Esse elemento é novo para v4. Ele permite que você especifique vários perfis que se aplicam em condições diferentes e que o perfil adequado seja usado automaticamente quando aplicável. Esse elemento é opcional. Se você não especificá-lo, o perfil sempre será aplicável em relação às condições listadas.</p> | 
 
 
  
@@ -57,7 +57,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

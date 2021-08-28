@@ -1,5 +1,5 @@
 ---
-description: Representa informações sobre um quadro na pilha de chamadas.
+description: Representa informações sobre um quadro na callstack.
 MS-HAID: vspixengine.CallStackFrame
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: fbe527c59a64e91f46a390344ea576c7560ef1f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c6cb4b0e32213165149d7df8c7bf334049e37399
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105813456"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631334"
 ---
 # <a name="span-idvspixenginecallstackframespancallstackframe-structure"></a><span id="vspixengine.callstackframe"></span>Estrutura CallStackFrame
 
-Representa informações sobre um quadro na pilha de chamadas.
+Representa informações sobre um quadro na callstack.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,21 +37,21 @@ Representa informações sobre um quadro na pilha de chamadas.
 
 ## <a name="members"></a>Membros
 
-**functionName**  
+**Functionname**  
 Uma cadeia de caracteres COM que contém o nome da função associada.
 
-**sourceFile**  
-Uma cadeia de caracteres COM que contém o caminho de arquivo de origem associado.
+**Sourcefile**  
+Uma cadeia de caracteres COM que contém o caminho do arquivo de origem associado.
 
 **moduleName**  
 Uma cadeia de caracteres COM que contém o nome do módulo de código associado.
 
-**lineNumber**  
-O número da linha associada.
+**Linenumber**  
+O número de linha associado.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

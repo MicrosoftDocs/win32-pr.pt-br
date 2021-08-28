@@ -4,12 +4,12 @@ ms.assetid: b2442579-e559-4053-869f-9d96e4db202e
 title: Técnicas de mitigação de ameaças
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 435ec2b8db3a634ea93ce77d585038909056c7d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 315a79ec1db48a16de858d655bd1550fa1458720
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829730"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482442"
 ---
 # <a name="threat-mitigation-techniques"></a>Técnicas de mitigação de ameaças
 
@@ -22,7 +22,7 @@ Há várias técnicas de mitigação de ameaças disponíveis que podem ser usad
 | CryptoAPI                       | O CryptoAPI fornece um conjunto de funções que ajudam a aplicar rotinas de criptografia às entidades de destino. A CryptoAPI pode fornecer hashes, resumos, criptografia e descriptografia, para mencionar sua funcionalidade principal. O CryptoAPI também tem outros recursos. Para saber mais sobre criptografia e a CryptoAPI, consulte [noções básicas sobre criptografia](/windows/desktop/SecCrypto/cryptography-essentials).           |
 | Listas de controle de acesso            | Uma ACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/a-gly) ) é uma lista de proteções de segurança que se aplica a um objeto. Um objeto pode ser um arquivo, processo, evento ou qualquer outra coisa que tenha um descritor de segurança. Para obter mais informações sobre ACLs, consulte [listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists) (ACLs). |
 | API de proteção de dados             | A API de proteção de dados (DPAPI) fornece as quatro funções a seguir que você usa para criptografar e descriptografar dados confidenciais: [**CryptProtectData**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectdata), [**CryptUnprotectData**](/windows/desktop/api/dpapi/nf-dpapi-cryptunprotectdata), [**CryptProtectMemory**](/windows/desktop/api/dpapi/nf-dpapi-cryptprotectmemory)e [**CryptUnprotectMemory**](/windows/desktop/api/dpapi/nf-dpapi-cryptunprotectmemory).                  |
-| Nomes de usuário e senhas armazenados | Funcionalidade de armazenamento que torna o tratamento de senhas de usuários e outras credenciais, como chaves privadas, mais fáceis, mais consistentes e mais seguras. Para obter mais informações sobre essa funcionalidade, consulte [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa).                                                                                                         |
+| Nomes de usuário e senhas armazenados | Armazenamento funcionalidade que torna o tratamento de senhas de usuários e outras credenciais, como chaves privadas, mais fáceis, consistentes e mais seguras. Para obter mais informações sobre essa funcionalidade, consulte [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa).                                                                                                         |
 
 
 
@@ -30,38 +30,12 @@ Há várias técnicas de mitigação de ameaças disponíveis que podem ser usad
 
 Essas tecnologias não estão disponíveis em todos os sistemas operacionais. Portanto, a extensão para a qual a segurança pode ser aprimorada depende de quais sistemas operacionais estão envolvidos. Aqui estão as tecnologias que estão disponíveis em cada sistema operacional.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sistema operacional</th>
-<th>Tecnologia</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Server 2003 e Windows XP</td>
-<td><ul>
-<li>CryptoAPI</li>
-<li>Listas de controle de acesso</li>
-<li>API de proteção de dados</li>
-<li>Nomes de usuário e senhas armazenados</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Windows 2000</td>
-<td><ul>
-<li>CryptoAPI</li>
-<li>Listas de controle de acesso</li>
-<li><a href="/windows/desktop/api/dpapi/nf-dpapi-cryptprotectdata"><strong>CryptProtectData</strong></a></li>
-<li><a href="/windows/desktop/api/dpapi/nf-dpapi-cryptunprotectdata"><strong>CryptUnprotectData</strong></a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Sistema operacional | Tecnologia | 
+|------------------|------------|
+| Windows Server 2003 e Windows XP | <ul><li>CryptoAPI</li><li>Listas de controle de acesso</li><li>API de proteção de dados</li><li>Nomes de usuário e senhas armazenados</li></ul> | 
+| Windows 2000 | <ul><li>CryptoAPI</li><li>Listas de controle de acesso</li><li><a href="/windows/desktop/api/dpapi/nf-dpapi-cryptprotectdata"><strong>CryptProtectData</strong></a></li><li><a href="/windows/desktop/api/dpapi/nf-dpapi-cryptunprotectdata"><strong>CryptUnprotectData</strong></a></li></ul> | 
+
 
 
 

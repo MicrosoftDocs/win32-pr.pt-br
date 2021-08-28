@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7953c2359d651d1bb6c9d5a006c02d9b19de6662
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 183169f8356a664b450e74534558286607fed62c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477912"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984769"
 ---
 # <a name="jetgetsessionparameter-function"></a>Função JetGetSessionParameter
 
@@ -82,11 +82,17 @@ O parâmetro Session é usado para o tempo de vida da sessão ou até que o valo
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 
-#### <a name="see-also"></a>Confira também
+#### <a name="see-also"></a>Consulte também
 
 [JET_API_PTR](./jet-api-ptr.md)  
 [JET_ERR](./jet-err.md)  

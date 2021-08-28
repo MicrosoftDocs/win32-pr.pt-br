@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f9fdce5268e6981fa018f58ed14b31c2c078cce
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 9916039ee20f9d1c13865ce5dc3ba4d2de053029
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985940"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482852"
 ---
 # <a name="jetdefragment-function"></a>Função JetDefragment
 
@@ -122,7 +122,7 @@ Em caso de falha, a ação solicitada de iniciar ou parar um trabalho de desfrag
 
 #### <a name="remarks"></a>Comentários
 
-A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor padrão do parâmetro do sistema é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilita-la seletivamente somente para árvores de espaço de banco de dados, somente bancos de dados, arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online estiver definida como uma configuração obsoleta, **JetDefragment** tratará a configuração como JET_OnlineDefragAll.
+A desfragmentação online é controlada por uma configuração de parâmetro, bem como por essa API. O valor padrão do parâmetro do sistema é JET_OnlineDefragAll, o que significa que a desfragmentação está habilitada para todas as estruturas de dados com suporte. No entanto, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md), é possível desabilitar a desfragmentação online ou habilita-la seletivamente somente para árvores de espaço de banco de dados, somente bancos de dados, arquivos de streaming ou qualquer combinação dessas opções. Se a configuração do sistema para desfragmentação online estiver definida como uma configuração obsoleta, **o JetDefragment** tratará a configuração como JET_OnlineDefragAll.
 
 Pode haver no máximo uma tarefa em execução para cada banco de dados. A tarefa é executado como um thread no processo que hospeda o ESE.
 
@@ -131,14 +131,7 @@ A sessão usada para iniciar a tarefa de desfragmentação online pode ser usada
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDefragmentW</strong> (Unicode) e <strong>JetDefragmentA</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDefragmentW</strong> (Unicode) e <strong>JetDefragmentA</strong> (ANSI).</p> | 
 
 
 

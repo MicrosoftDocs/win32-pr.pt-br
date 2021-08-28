@@ -4,12 +4,12 @@ description: A impressão é a experiência do usuário em papel. É fácil de i
 ms.assetid: 26f5a8dc-27b2-4c2d-a05a-f942784c3cf9
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 50eb7523b3f816e54bf296632687b4811fac1b1c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 125c0eab965597c3e359f323f43b8881ff50b754
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987259"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482152"
 ---
 # <a name="printing-design-basics"></a>Impressão (noções básicas de Design)
 
@@ -108,33 +108,33 @@ A caixa de diálogo opções de impressão comum fornece opções para:
 
 -   Selecione a impressora e o tamanho do papel.
 -   Definir propriedades da impressora.
--   Selecione o intervalo de páginas, o número de cópias e a colagem.
+-   Selecione o intervalo de páginas, o número de cópias e o agrupamento.
 -   Use ambos os lados do papel.
 
-Seu programa pode exigir opções adicionais, como opções de conteúdo do documento (qual conteúdo imprimir), opções de formato (como imprimir, incluindo qualidade de impressão, tamanhos de imagem, ajuste ao quadro) e opções de cores. Se você precisar fornecer opções adicionais, faça isso estendendo a caixa de diálogo Comum Opções de impressão. Não crie uma caixa de diálogo Imprimir personalizada.
+Seu programa pode exigir opções adicionais, como opções de conteúdo do documento (que conteúdo imprimir), opções de formato (como imprimir, incluindo qualidade de impressão, tamanhos de imagem, ajuste ao quadro) e opções de cores. Se você precisar fornecer opções adicionais, faça isso estendendo a caixa de diálogo opções de impressão comum. Não crie uma caixa de diálogo de impressão personalizada.
 
-Ao projetar as opções imprimir, considere a experiência ao imprimir vários documentos. É provável que o próximo trabalho de impressão seja muito semelhante ao último trabalho de impressão. Otimizar as configurações padrão para reprints e trabalhos de impressão semelhantes não fazem com que os usuários comecem completamente a cada vez.
+Ao criar as opções de impressão, considere a experiência ao imprimir vários documentos. As chances são o próximo trabalho de impressão que será muito semelhante ao último trabalho de impressão. Otimizar as configurações padrão para reimpressões e trabalhos de impressão semelhantes não fazem com que os usuários recomecem completamente a cada vez.
 
 ### <a name="design-print-preview-for-performance-and-usability"></a>Visualização de impressão de design para desempenho e usabilidade
 
-**Um trabalho de impressão incorreto perde tempo e dinheiro. Para programas de criação de documentos, os usuários devem ser capazes de avaliar os resultados antes de fazer a impressão real.** Uma visualização de impressão deve permitir que os usuários:
+**Um trabalho de impressão incorreto desperdiça tempo e dinheiro. Para programas de criação de documentos, os usuários devem ser capazes de avaliar os resultados antes de fazer a impressão real.** Uma visualização de impressão deve permitir que os usuários:
 
--   Avalie margens, quebras de página, orientação de página, headers e rodapés.
+-   Avalie as margens, as quebras de página, a orientação da página, os cabeçalhos e os rodapés.
 -   Navegue por todas as páginas.
 -   Imprima diretamente da visualização de impressão.
 
-Alguns documentos complexos (como desenhos CAD de design auxiliado por computador) podem levar muito tempo para \[ \] renderizar. O desempenho da versão prévia é importante, uma visualização de impressão pode se tornar bastante entediante se levar algum tempo para renderizar cada página. **Consequentemente, é melhor ter uma visualização de impressão que renderiza rapidamente e é precisa o suficiente para permitir que os usuários avaliem os resultados da impressão do que ter uma visualização completamente precisa que renderiza lentamente.**
+Alguns documentos complexos (como desenhos de CAD de design auxiliados por computador \[ \] ) podem levar muito tempo para serem renderizados. O desempenho da visualização é importante, uma visualização de impressão pode se tornar bastante entediante se levar algum tempo para renderizar cada página. **Consequentemente, é melhor ter uma visualização de impressão que seja processada rapidamente e seja preciso o suficiente para permitir que os usuários avaliem os resultados impressos do que ter uma visualização completamente precisa que se torne lento.**
 
-Ao projetar a visualização de impressão, considere toda a tarefa de preparação para impressão. O que os usuários vão procurar? O que eles vão alterar? Os programas de criação de documentos devem fornecer uma visualização de impressão interativa para que os usuários possam ajustar as configurações alteradas com frequência, como margens e quebras de linha na versão prévia.
+Ao criar a visualização de impressão, considere toda a tarefa de preparação para impressão. O que os usuários vão procurar? O que eles vão mudar? Os programas de criação de documentos devem fornecer uma visualização de impressão interativa para que os usuários possam ajustar as configurações alteradas com frequência, como margens e quebras de linha na visualização.
 
-No entanto, na melhor medida possível, seu programa deve fazer a coisa certa por padrão. Quando necessário, avisar sobre situações de impressão que são improváveis de serem o que o usuário pretendia. Não confie em usuários encontrando problemas usando a visualização de impressão. Por exemplo, suponha que uma planilha tenha muitas colunas para imprimir em uma única página no modo retrato. Embora o programa possa apresentar uma caixa de diálogo de confirmação, uma solução melhor é imprimir automaticamente no modo paisagem.
+No entanto, para a melhor extensão possível, o programa deve fazer a coisa certa por padrão. Quando necessário, avise sobre as situações de impressão que são improváveis de serem as pretendidas pelo usuário. Não confie nos usuários encontrando problemas usando a visualização de impressão. Por exemplo, suponha que uma planilha tenha muitas colunas para imprimir em uma única página no modo retrato. Embora o programa possa apresentar uma caixa de diálogo de confirmação, uma solução melhor é imprimir automaticamente no modo paisagem.
 
 **Se você fizer apenas cinco coisas...**
 
-1.  Projete uma experiência de impressão apropriada para o tipo de programa.
-2.  Revise os cenários do programa que envolvem impressão e, na melhor medida possível, tornar a necessidade de imprimir opcional.
-3.  Forneça extensões de impressão úteis personalização da caixa de diálogo Comum imprimir. Não crie uma caixa de diálogo Imprimir personalizada para essa finalidade.
-4.  Otimize as opções imprimir para reprints e trabalhos de impressão semelhantes.
+1.  Crie uma experiência de impressão apropriada para o tipo de programa.
+2.  Examine os cenários do programa que envolvem a impressão e, na melhor medida possível, faça a necessidade de imprimir opcional.
+3.  Forneça extensões de impressão úteis Personalizando a caixa de diálogo Imprimir comum. Não crie uma caixa de diálogo de impressão personalizada para essa finalidade.
+4.  Otimize as opções de impressão para reimpressões e trabalhos de impressão semelhantes.
 5.  Forneça um recurso de visualização sempre que apropriado.
 
 ## <a name="printing-patterns"></a>Padrões de impressão
@@ -144,13 +144,7 @@ O tipo de programa é o principal indicador da experiência de impressão apropr
 
 
 
-| Rótulo | Valor |
-|--------|-------|
-| <strong>Criação avançada de documentos</strong><br /> Usado para criar, exibir e imprimir documentos de alto nível. A capacidade de criar impressões de alta qualidade é um dos principais motivos pelos quais o programa existe. Direcionado a usuários especialistas. <br /> | <strong>Metas do usuário:</strong> Controle detalhado dos resultados perfeitos sobre a saída de impressão.<br /><strong>Exemplo:</strong> Microsoft Word<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>Saída otimizada para impressão (WYSIWYG).</li><li>Recursos avançados de formatação de documento, com opções para imprimir objetos grandes.</li><li>Opções de impressão avançadas, incluindo os rodapés e os rodapés. As opções de impressão relacionadas ao documento são salvas no próprio documento.</li><li>Visualizações de impressão rápidas, precisas e poderosas.</li></ul> | 
-| <strong>Criação intermediária de documentos</strong><br /> Usado para criar e exibir documentos mais complexos. A capacidade de criar impressões de boa qualidade é importante, mas não necessariamente um dos principais motivos pelos quais o programa existe. Direcionado a usuários intermediários. <br /> | <strong>Metas do usuário:</strong> Bons resultados com esforço mínimo. Algum controle sobre a saída de impressão.<br /><strong>Exemplos:</strong> A maioria Microsoft Office programas, como Outlook e Excel.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>Saída otimizada para impressão (WYSIWYG).</li><li>Alguns recursos de formatação de documento, com capacidade de imprimir objetos grandes sem truncamento.</li><li>Algumas opções de impressão personalizadas, incluindo os rodapés e os rodapés.</li><li>Visualizações precisas e fáceis de usar.</li></ul> | 
-| <strong>Criação de documento simples</strong><br /> Usado para criar e exibir documentos simples. Direcionado a todos os usuários. <br /> | <strong>Metas do usuário:</strong> Suporte à impressão básica com opções de impressão padrão. Os usuários esperam bons resultados sem nenhum ajuste.<br /><strong>Exemplos:</strong> WordPad, Paint.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>Alguns recursos de formatação de documento, com capacidade de imprimir objetos grandes sem truncamento.</li><li>Opções de impressão padrão; as opções de impressão personalizadas são opcionais.</li><li>Visualizações simples ou sem impressão.</li></ul> | 
-| <strong>Visualizadores de documentos</strong><br /> Usado para exibir documentos. Os usuários não podem alterar o conteúdo ou o formato do documento. <br /> | <strong>Metas do usuário:</strong> Suporte à impressão básica com opções de impressão padrão. Os usuários esperam bons resultados sem nenhum ajuste. Problemas de impressão são tratados automaticamente porque os usuários não podem modificar o documento.<br /><strong>Exemplo:</strong> Windows Internet Explorer<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>O programa lida automaticamente com quebras de página, elimina páginas em branco, trata objetos grandes e remove telas de fundo e outros elementos de design.</li><li>Opções de impressão padrão; as opções de impressão personalizadas são opcionais.</li><li>Visualizações simples ou sem impressão.</li></ul> | 
-| <strong>Utilitários ou aplicativos de linha de negócios</strong><br /> Usado para executar tarefas simples e específicas. Direcionado a todos os usuários. <br /> | <strong>Metas do usuário:</strong> Capacidade de exportar dados selecionados com eficiência. Os usuários esperam bons resultados sem nenhum ajuste. Geralmente, para esses programas, os usuários ficam muito surpresas em encontrar qualquer suporte de impressão.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>O suporte à impressão é opcional dependendo dos cenários com suporte.</li><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>Alguns recursos de formatação de documento. Pode ser aceitável se objetos grandes são truncados.</li><li>Opções de impressão padrão.</li><li>Imprimir visualizações opcionais.</li></ul> | 
+| | | <strong>Criação avançada de documentos</strong><br /> Usado para criar, exibir e imprimir documentos de high-end. A capacidade de criar impressões de alta qualidade é uma das principais razões pelas quais o programa existe. Direcionado a usuários avançados. <br /> | <strong>Objetivos do usuário:</strong> Resultados perfeitos controle detalhado sobre a saída de impressão.<br /><strong>exemplo:</strong> Microsoft Word<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>Saída otimizada para impressão (WYSIWYG).</li><li>Recursos avançados de formatação de documentos, com opções para imprimir objetos grandes.</li><li>Opções avançadas de impressão, incluindo cabeçalhos e rodapés. As opções de impressão relacionadas a documentos são salvas no próprio documento.</li><li>Visualizações de impressão rápidas, precisas e poderosas.</li></ul> | | <strong>Criação de documento intermediário</strong><br /> Usado para criar e exibir documentos mais complexos. A capacidade de criar impressões de boa qualidade é importante, mas não necessariamente uma das principais razões pelas quais o programa existe. Direcionado a usuários intermediários. <br /> | <strong>Objetivos do usuário:</strong> Bons resultados com esforço mínimo. Algum controle sobre a saída de impressão.<br /><strong>Exemplos:</strong> a maioria dos programas Microsoft Office, como Outlook e Excel.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>Saída otimizada para impressão (WYSIWYG).</li><li>Alguns recursos de formatação de documentos, com a capacidade de Imprimir objetos grandes sem truncamento.</li><li>Algumas opções de impressão personalizadas, incluindo cabeçalhos e rodapés.</li><li>Visualizações de impressão precisas e fáceis de usar.</li></ul> | | <strong>Criação de documento simples</strong><br /> Usado para criar e exibir documentos simples. Destinado a todos os usuários. <br /> | <strong>Objetivos do usuário:</strong> Suporte de impressão básica com opções de impressão padrão. Os usuários esperam bons resultados sem qualquer ajuste.<br /><strong>Exemplos:</strong> WordPad, Paint.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>Alguns recursos de formatação de documentos, com a capacidade de Imprimir objetos grandes sem truncamento.</li><li>Opções de impressão padrão; as opções de impressão personalizadas são opcionais.</li><li>Visualização simples ou sem impressão.</li></ul> | | <strong>Visualizadores de documentos</strong><br /> Usado para exibir documentos. Os usuários não podem alterar o formato ou o conteúdo do documento. <br /> | <strong>Objetivos do usuário:</strong> Suporte de impressão básica com opções de impressão padrão. Os usuários esperam bons resultados sem qualquer ajuste. Os problemas de impressão são tratados automaticamente porque os usuários não podem modificar o documento.<br /><strong>exemplo:</strong> Windows Internet Explorer<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>O programa manipula automaticamente as quebras de página, elimina páginas em branco, manipula objetos grandes e remove planos de fundo e outros elementos de design.</li><li>Opções de impressão padrão; as opções de impressão personalizadas são opcionais.</li><li>Visualização simples ou sem impressão.</li></ul> | | <strong>Utilitários ou aplicativos de linha de negócios</strong><br /> Usado para executar tarefas simples e específicas. Destinado a todos os usuários. <br /> | <strong>Objetivos do usuário:</strong> Capacidade de exportar dados selecionados com eficiência. Os usuários esperam bons resultados sem qualquer ajuste. Geralmente, para esses programas, os usuários têm uma surpresa agradável para encontrar qualquer suporte à impressão.<br /><strong>Experiência de impressão recomendada:</strong><br /><ul><li>O suporte à impressão é opcional, dependendo dos cenários com suporte.</li><li>A saída pode ser otimizada para impressão (WYSIWYG), mas isso não é necessário.</li><li>Alguns recursos de formatação de documentos. Poderá ser aceitável se os objetos grandes estiverem truncados.</li><li>Opções de impressão padrão.</li><li>Imprimir visualizações opcionais.</li></ul> | 
 
 
 
@@ -162,99 +156,99 @@ O tipo de programa é o principal indicador da experiência de impressão apropr
 ### <a name="general"></a>Geral
 
 -   **Não imprima páginas em branco ou páginas com apenas cabeçalhos e rodapés.** No entanto, imprima páginas em branco se os cabeçalhos ou rodapés contiverem números de página e esses números de página forem referenciados em outro lugar.
--   **Faça o spool completo de todos os trabalhos de impressão pendentes antes de desligar um programa.**
+-   **Fazer o spool completo de todos os trabalhos de impressão pendentes antes de desligar um programa.**
 
-### <a name="formatting-pages"></a>Formatando páginas
+### <a name="formatting-pages"></a>Páginas de formatação
 
--   **Reformate o layout de texto para ajustá-lo no tamanho da página de destino.** Nunca truncar texto.
--   Se os usuários não controlam o formato do documento:
-    -   **Manipule objetos grandes automaticamente dimensionando, girando ou dividindo em páginas.** Para obter mais diretrizes sobre a impressão de objetos grandes, consulte [objetos superdimensionados](#oversized-objects).
+-   **Reformate o layout de texto para se ajustar ao tamanho da página de destino.** Nunca truncar texto.
+-   Se os usuários não controlarem o formato do documento:
+    -   **Manipular automaticamente objetos grandes dimensionando, girando ou dividindo entre páginas.** Para obter mais diretrizes sobre como imprimir objetos grandes, consulte [Objetos superestados.](#oversized-objects)
     -   **Otimize as quebras de página para eliminar páginas em branco e quase em branco.**
-    -   **Converta o texto claro em um plano de fundo escuro em texto escuro em um plano de fundo branco.**
-    -   **Remova planos de fundo e outros elementos de design,** especialmente se eles não forem adequados para uma impressora em preto e branco.
--   **Se o seu programa apresentar documentos parciais separados, forneça uma opção de formato amigável para a impressora para consolidá-los em um único documento para impressão.**
+    -   **Converta texto claro em uma plano de fundo escuro em texto escuro em uma plano de fundo branco.**
+    -   **Remova os backgrounds e outros elementos de design,** especialmente se eles não são adequados para uma impressora em preto e branco.
+-   **Se o programa apresentar documentos parciais separados, forneça uma opção de formato amigável para impressora para consolá-los em um único documento para impressão.**
 -   **Remover elementos interativos:**
-    -   Remover controles de navegação e botões de comando.
-    -   Verifique se todos os dados estão visíveis sem barras de rolagem.
-    -   Substitua os links pelo texto equivalente.
+    -   Remova os controles de navegação e os botões de comando.
+    -   Certifique-se de que todos os dados estão visíveis sem barras de rolagem.
+    -   Substitua os links pelo equivalente de texto.
 
         **Aceitável:**
 
-        Para obter mais informações, consulte Guia do UX.
+        Para obter mais informações, consulte Guia de UX.
 
         **Otimizado para impressão:**
 
-        Para obter mais informações, consulte Guia do UX ( https://msdn.microsoft.com/windowsvista/uxguide) .
+        Para obter mais informações, consulte Guia de UX ( https://msdn.microsoft.com/windowsvista/uxguide) .
 
         Neste exemplo, o link é substituído por seu texto equivalente entre parênteses.
 
-    -   Mova informações úteis exibidas ao passar o mouse para embutido.
+    -   Mova informações úteis exibidas ao passar o mouse para em linha.
 
-### <a name="oversized-objects"></a>Objetos superdimensionados
+### <a name="oversized-objects"></a>Objetos sobresstados
 
-Lidar com objetos grandes, como planilhas, gráficos e fotos, é um problema exclusivo para a impressão. Escolha uma das seguintes abordagens:
+Lidar com objetos grandes, como planilhas, gráficos e fotos, é um problema exclusivo da impressão. Escolha uma das seguintes abordagens:
 
--   **Dimensione o objeto para caber na página.** Essa abordagem funciona bem se o objeto é apenas um pouco grande para ser impresso, manter o objeto em uma única página é importante e o objeto ainda é legível quando reduzido.
+-   **Dimensione o objeto para caber na página.** Essa abordagem funcionará bem se o objeto for apenas um pouco grande demais para imprimir, manter o objeto em uma única página é importante e o objeto ainda é legível quando escalado para baixo.
 
-    ![captura de tela da foto dimensionada para a metade de uma página ](images/exper-printing-image3.png)
+    ![captura de tela da foto dimensionada para metade de uma página ](images/exper-printing-image3.png)
 
     Neste exemplo, a imagem grande é dimensionada para caber na página.
 
--   **Girar a página.** Essa abordagem funciona bem quando algumas páginas são mais impressas no modo paisagem no modo retrato (e vice-versa).
+-   **Gire a página.** Essa abordagem funciona bem quando algumas páginas são impressas melhor no modo paisagem quando no modo retrato (e vice-versa).
 
-    ![captura de tela da foto em paisagem girada para retrato ](images/exper-printing-image4.png)
+    ![captura de tela da foto paisagem girada para retrato ](images/exper-printing-image4.png)
 
     Neste exemplo, a imagem grande é girada para se ajustar melhor à página.
 
--   **Imprima o objeto em várias páginas.** A abordagem funciona bem quando o objeto não pode ser dimensionado, ou não deve ser dimensionado, e a rotação da página não ajuda ou não é desejada. Se o objeto tiver limites internos (como os divisores de coluna e linha em uma planilha), quebre as páginas nesses limites em vez de dentro do conteúdo. Além disso, repita os elementos necessários para entender a página, como legendas ou cabeçalhos de coluna. Ao dividir um objeto em várias páginas, atribua os números de página na ordem de leitura (da esquerda para a direita, de cima para baixo).
+-   **Imprima o objeto em várias páginas.** A abordagem funciona bem quando o objeto não pode ser dimensionado ou não deve ser dimensionado e girar a página não ajuda ou não é procurado. Se o objeto tiver limites internos (como os divisores de coluna e linha em uma planilha), divida as páginas nesses limites em vez de dentro do conteúdo. Além disso, repita todos os elementos necessários para entender a página, como legendas ou headers de coluna. Ao dividir um objeto em várias páginas, atribua os números de página na ordem de leitura (da esquerda para a direita, de cima para baixo).
 
-    ![captura de tela de títulos de coluna repetidos na próxima página ](images/exper-printing-image5.png)
+    ![captura de tela de cabeceadas de coluna repetidas na próxima página ](images/exper-printing-image5.png)
 
-    Neste exemplo, a tabela grande é impressa em duas páginas. Os cabeçalhos de coluna persistem da página para a página para facilitar a compreensão rápida.
+    Neste exemplo, a tabela grande é impressa em duas páginas. Os headers de coluna persistem de página em página para facilitar a compreensão rápida.
 
--   **Truncar o objeto** (imprimindo apenas a parte do objeto ainda fica visível após o truncamento). Essa abordagem é a solução mais simples para implementar, mas provavelmente será a menos aceitável. Observe também que o truncamento nunca é aceitável para texto.
+-   **Truncar o objeto** (imprimindo apenas a parte do objeto ainda visível após o truncamento). Essa abordagem é a solução mais simples de implementar, mas provavelmente é a menos aceitável. Observe também que o truncando nunca é aceitável para texto.
 
-    ![captura de tela da metade da largura da foto na página retrato ](images/exper-printing-image6.png)
+    ![captura de tela da metade da foto larga na página retrato ](images/exper-printing-image6.png)
 
-    Neste exemplo, a imagem grande está truncada.
+    Neste exemplo, a imagem grande é truncada.
 
 ### <a name="headers-and-footers"></a>Cabeçalhos e rodapés
 
--   **Forneça cabeçalhos e rodapés para programas de criação de documentos avançados e intermediários.** Considere fornecer cabeçalhos e rodapés para outros tipos de programas se eles forem usados para documentos com multipáginas.
--   **Tornar os cabeçalhos e os rodapés personalizáveis.** Permitir que os usuários definam as partes esquerda, Central e direita.
-    -   Para cabeçalhos, coloque o nome do documento no lado esquerdo por padrão.
-    -   Para os rodapés, coloque o documento de direitos autorais ou origem no lado esquerdo e o número da página à direita, por padrão.
--   **Use caminho e URLs de arquivo amigável.** Exibir espaços como espaços, não "%20".
+-   **Forneça os rodapés e os rodapés para programas de criação de documentos avançados e intermediários.** Considere fornecer os rodapés e os rodapés para outros tipos de programas se eles são usados para documentos de várias páginas.
+-   **Tornar os rodapés e os rodapés personalizáveis.** Permitir que os usuários definam as partes esquerda, centro e direita.
+    -   Para os headers, coloque o nome do documento no lado esquerdo por padrão.
+    -   Para rodapés, coloque o documento de direitos autorais ou fonte no lado esquerdo e o número da página no lado direito, por padrão.
+-   **Use URLs e caminho de arquivo amigável.** Exibe espaços como espaços, não "%20".
 
 ### <a name="print-commands"></a>Comandos de impressão
 
--   **Para barras de menus e menus de atalho, use o comando Imprimir que exibe a caixa de diálogo opções de impressão comum.** Use uma elipse para indicar que informações adicionais são necessárias.
+-   **Para barras de menu e menus de atalho, use o comando Imprimir que exibe a caixa de diálogo Opções de impressão comuns.** Use uma reellipse para indicar que informações adicionais são necessárias.
 
-    ![captura de tela do menu arquivo, comando Imprimir selecionado ](images/exper-printing-image7.png)
+    ![captura de tela do menu arquivo, comando de impressão selecionado ](images/exper-printing-image7.png)
 
-    Neste exemplo, o comando Print tem reticências para indicar que ele exibirá a caixa de diálogo opções de impressão comum para obter mais informações.
+    Neste exemplo, o comando Imprimir tem reellipses para indicar que ele exibirá a caixa de diálogo Opções de impressão comuns para obter mais informações.
 
--   **Para barras de ferramentas usadas com uma barra de menus, use um comando de impressão imediato.** Clicar no botão imprime uma única cópia do documento para a impressora padrão. Esses comandos de barra de ferramentas devem ser imediatos. Para indicar que o comando é imediato, coloque a impressora padrão na dica de ferramenta. Os usuários podem acessar o comando impressão completa na barra de menus.
+-   **Para barras de ferramentas usadas com uma barra de menus, use um comando Print imediato.** Clicar no botão imprime uma única cópia do documento na impressora padrão. Esses comandos da barra de ferramentas devem ser imediatos. Para indicar que o comando é imediato, coloque a impressora padrão na dica de ferramenta. Os usuários podem acessar o comando Imprimir completo na barra de menus.
 
     ![captura de tela do ícone de impressora e sua dica de ferramenta ](images/exper-printing-image8.png)
 
-    Neste exemplo, o comando Imprimir em uma barra de ferramentas é impresso imediatamente em vez de exibir a caixa de diálogo opções de impressão comum. Colocar a impressora padrão na dica de ferramenta fornece reforço textual que o usuário está ignorando a caixa de diálogo.
+    Neste exemplo, o comando Imprimir em uma barra de ferramentas imprime imediatamente em vez de exibir a caixa de diálogo Comum Opções de impressão. Colocar a impressora padrão na dica de ferramenta fornece um reforço textual de que o usuário está ignorando a caixa de diálogo.
 
--   **Para barras de ferramentas usadas sem uma barra de menus, use um botão Imprimir divisão.** Clicar no botão imprime uma única cópia do documento para a impressora padrão. Clicar na parte de seta do botão remove um menu com os comandos de impressão completa, visualização de impressão e configuração de página.
+-   **Para barras de ferramentas usadas sem uma barra de menus, use um botão Imprimir divisão.** Clicar no botão imprime uma única cópia do documento na impressora padrão. Clicar na parte de seta do botão descarta um menu com os comandos Imprimir, Imprimir versão prévia e Configuração de página completos.
 
-    ![captura de tela do ícone de impressora no botão de divisão ](images/exper-printing-image9.png)
+    ![captura de tela do ícone de impressora no botão dividir ](images/exper-printing-image9.png)
 
-    neste exemplo, a barra de ferramentas do Windows Internet Explorer usa um controle de botão de divisão para fornecer todos os comandos de impressão.
+    Neste exemplo, a barra Windows Internet Explorer de ferramentas usa um controle de botão de divisão para fornecer todos os comandos de impressão.
 
--   **Para a interface do usuário do comando da faixa de Ribbon, coloque o comando Imprimir no menu do aplicativo.**
+-   **Para a interface do usuário do comando da faixa de opções, coloque o comando Imprimir no menu do aplicativo.**
 
     ![captura de tela de comandos colocados verticalmente à esquerda ](images/exper-printing-image10.png)
 
-    Para as faixas de faixa, o comando Print é acessado usando o menu Application.
+    Para faixas de opções, o comando Imprimir é acessado usando o menu do aplicativo.
 
 ### <a name="print-options"></a>Opções de impressão
 
--   **Não crie uma caixa de diálogo opções de impressão personalizadas.** Se você precisar fornecer opções adicionais, estenda a caixa de diálogo opções de impressão comum. Não use uma caixa de diálogo separada para opções de impressão adicionais.
+-   **Não crie uma caixa de diálogo Opções de impressão personalizadas.** Se você precisa fornecer opções adicionais, estenda a caixa de diálogo Comum Opções de impressão. Não use uma caixa de diálogo separada para opções de impressão adicionais.
 
 **Incorreto:**
 
@@ -262,62 +256,62 @@ Lidar com objetos grandes, como planilhas, gráficos e fotos, é um problema exc
 
 Neste exemplo, a Fabrikam usa incorretamente uma caixa de diálogo separada para opções de impressão adicionais.
 
-**Desenvolvedores:** Para obter informações sobre como estender a caixa de diálogo Imprimir comum, consulte [estrutura PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexa).
+**Desenvolvedores:** Para obter informações sobre como estender a caixa de diálogo Comum de Impressão, consulte [Estrutura PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexa).
 
--   **Ao estender a caixa de diálogo opções de impressão comum, não duplique nenhum recurso já fornecido.**
--   **Se for provável que os usuários mantenham as configurações de um trabalho de impressão para o próximo, torne essas configurações os padrões.** Para o primeiro trabalho de impressão após a inicialização do programa, use os valores padrão standard, incluindo a impressora padrão. Para trabalhos de impressão subsequentes na [instância](glossary.md)do programa, preserve a última impressora selecionada e o tamanho do papel. Não preserve o número de cópias ou intervalos de páginas, pois elas têm muito menos probabilidade de serem remarcadas mais tarde.
--   **Otimize as configurações removendo as opções que não se aplicam atualmente.** Remova as opções que estão inconsistentes com os recursos da impressora selecionada ou características do documento atual. Por exemplo, um aplicativo de impressão de fotos pode limitar as combinações de tamanho de papel, tipo de papel e qualidade de impressão que fornecem os melhores resultados, portanto, escolher uma opção de papel brilhante pode remover envelopes dos formatos de papel. Se, por qualquer motivo, os usuários desejarem ver todas as opções, você poderá fornecer essa capacidade por meio de um controle como uma caixa de seleção.
+-   **Ao estender a caixa de diálogo comum Opções de impressão, não duplique os recursos já fornecidos.**
+-   **Se os usuários provavelmente manterem as configurações de um trabalho de impressão para o próximo, faça com que essas configurações sejam os padrões.** Para o primeiro trabalho de impressão após a iniciação do programa, use os valores padrão, incluindo a impressora padrão. Para trabalhos de impressão subsequentes na instância [do programa](glossary.md), preserve a última impressora selecionada e o tamanho do papel. Não preserve o número de cópias ou intervalos de páginas, pois elas têm muito menos probabilidade de serem reeseledas posteriormente.
+-   **Otimize as configurações removendo as opções que atualmente não se aplicam.** Remova opções inconsistentes com os recursos da impressora ou características selecionadas do documento atual. Por exemplo, um aplicativo de impressão de fotos pode limitar as combinações de tamanho de papel, tipo de papel e qualidade de impressão que dão os melhores resultados, portanto, escolher uma opção de papel de glossário pode remover envelopes dos formatos de papel. Se, por algum motivo, os usuários quiserem ver todas as opções, você poderá fornecer essa capacidade por meio de um controle, como uma caixa de seleção.
 
-**Desenvolvedores:** Para saber como determinar os recursos da impressora selecionada, consulte [Imprimir esquema](../printdocs/print-schema.md).
+**Desenvolvedores:** Para saber como determinar os recursos da impressora selecionada, consulte [Imprimir Esquema](../printdocs/print-schema.md).
 
--   **Para programas de criação de documentos avançados, salve as opções de impressão relacionadas ao documento no próprio documento.** Para esses programas, as opções de impressão são parte integrante do documento.
--   **Para outros tipos de programas, salve as configurações em uma base por usuário.**
--   **Considere a seleção de uma impressora não padrão para impressão especializada.** Por exemplo, um aplicativo de impressão de fotos sempre poderia selecionar a impressora usada pela última vez pelo programa, independentemente da impressora padrão do sistema. Isso pressupõe que a impressora padrão do sistema não é provavelmente uma impressora de fotos. Esses programas devem salvar a configuração da última impressora selecionada.
--   **Não bloqueie seu programa ao detectar recursos de impressora.** Isso apresenta uma experiência de usuário ruim. Em vez disso, seja:
-    -   Execute a detecção de capacidade da impressora em um thread separado.
-    -   Tempo limite após 10 segundos.
+-   **Para programas de criação de documentos avançados, salve as opções de impressão relacionadas a documentos dentro do próprio documento.** Para esses programas, as opções de impressão são uma parte integrante do documento.
+-   **Para outros tipos de programas, salve as configurações por usuário.**
+-   **Considere selecionar uma impressora não padrão para impressão especializada.** Por exemplo, um aplicativo de impressão de fotos sempre pode selecionar a impressora usada pela última vez pelo programa, independentemente da impressora padrão do sistema. Isso pressu que a impressora padrão do sistema provavelmente não seja uma impressora de fotos. Esses programas devem salvar a configuração da última impressora selecionada.
+-   **Não bloqueie seu programa durante a detecção de funcionalidades de impressora.** Isso apresenta uma experiência de usuário ruim. Em vez disso, qualquer uma das duas:
+    -   Execute a detecção de funcionalidade de impressora em um thread separado.
+    -   Tempo decor entre 10 segundos.
     -   Forneça uma caixa de diálogo para permitir que os usuários cancelem.
 
-![captura de tela da caixa de diálogo "conectando-se a" ](images/exper-printing-image12.png)
+![captura de tela da caixa de diálogo 'conectando-se a' ](images/exper-printing-image12.png)
 
-Neste exemplo, a caixa de diálogo torna fácil cancelar a detecção de capacidade da impressora se o usuário decidir que a tarefa está demorando muito.
+Neste exemplo, a caixa de diálogo facilita o cancelamento da detecção de funcionalidades da impressora se o usuário decidir que a tarefa está demorando muito.
 
 ### <a name="print-previews"></a>Visualizações de impressão
 
--   **Forneça um recurso de visualização de impressão sempre que apropriado.** Todos os programas de criação de documentos se beneficiam das visualizações de impressão, mas os usuários não as esperam em programas simples de criação de documentos. Para programas avançados de criação de documentos, considere o suporte à visualização de impressão diretamente na janela principal do programa.
+-   **Forneça um recurso de visualização de impressão sempre que apropriado.** Todos os programas de criação de documentos se beneficiam de visualizações de impressão, mas os usuários não os esperam em programas simples de criação de documentos. Para programas de criação de documentos avançados, considere ter suporte de visualização de impressão diretamente dentro da janela principal do programa.
 
 ![captura de tela da página exibida na visualização de impressão ](images/exper-printing-image13.png)
 
-Neste exemplo, o Word tem suporte à visualização de impressão na janela principal do programa.
+Neste exemplo, o Word tem suporte para visualização de impressão dentro da janela principal do programa.
 
--   Fornecer recursos de visualização de impressão que permitem aos usuários:
-    -   Avalie as margens, as quebras de página, a orientação da página, os cabeçalhos e os rodapés.
+-   Forneça recursos de visualização de impressão que permitem aos usuários:
+    -   Avalie margens, quebras de página, orientação de página, headers e rodapés.
     -   Navegue por todas as páginas.
     -   Imprima diretamente da visualização de impressão.
 
-Considere fornecer uma visualização de impressão interativa para que os usuários possam ajustar as configurações com frequência alteradas, como margens e quebras de linha diretamente dentro da versão prévia.
+Considere fornecer uma visualização de impressão interativa para que os usuários possam ajustar as configurações alteradas com frequência, como margens e quebras de linha diretamente na versão prévia.
 
--   **Fazer com que as páginas de visualização de impressão sejam renderizadas em um segundo.** É melhor ter uma visualização de impressão que seja renderizada rapidamente e seja preciso o suficiente para permitir que os usuários avaliem os resultados impressos do que para ter uma visualização completamente precisa que se torne lenta.
--   **Para programas avançados de criação de documentos, considere estender a caixa de diálogo de impressão padrão incorporando a funcionalidade de visualização diretamente dentro dela,** em vez de criar uma caixa de diálogo separada para ela.
+-   **Fazer com que as páginas de visualização de impressão renderizarem dentro de um segundo.** É melhor ter uma visualização de impressão que renderiza rapidamente e é precisa o suficiente para permitir que os usuários avaliem os resultados da impressão do que ter uma visualização completamente precisa que renderiza lentamente.
+-   **Para programas de criação de documentos avançados,** considere estender a caixa de diálogo Imprimir padrão incorporando a funcionalidade de visualização diretamente dentro dela, em vez de criar um diálogo separado para ela.
 -   **Forneça um botão óbvio para fechar o modo de visualização.**
 
-![captura de tela do ícone e rótulo de visualização de impressão fechar ](images/exper-printing-image14.png)
+![captura de tela do ícone e rótulo de visualização de impressão de fechamento ](images/exper-printing-image14.png)
 
-O modo de visualização de impressão no Word tem um comando fechar visualização óbvia.
+O modo de Visualização de Impressão no Word tem um comando de visualização de fechamento óbvio.
 
 ### <a name="printing-errors"></a>Erros de impressão
 
-**Observação:** depois que o trabalho de impressão tiver sido colocado em spool na impressora, Windows será responsável por quaisquer erros subsequentes. Seu programa precisa apenas tratar os erros que ocorrem antes que o trabalho de impressão seja colocado em spool.
+**Observação:** Depois que o trabalho de impressão tiver sido em spool para a impressora, Windows será responsável por quaisquer erros subsequentes. Seu programa só precisa lidar com erros que ocorrem antes que o trabalho de impressão seja em spool.
 
--   **Antes de colocar em spool um trabalho de impressão, verifique se há possíveis problemas de impressão que o usuário pode corrigir.** Apresente uma confirmação clara e concisa antes de continuar a impressão. Sempre que possível, ofereça para corrigir o problema automaticamente. Isso pode evitar um desperdício de tempo e dinheiro.
+-   **Antes de fazer o spool de um trabalho de impressão, verifique se há possíveis problemas de impressão que o usuário possa corrigir.** Apresente uma confirmação clara e concisa antes de continuar a imprimir. Sempre que possível, ofereça para corrigir o problema automaticamente. Isso pode impedir um desperdício de tempo e dinheiro.
 
 ## <a name="text"></a>Texto
 
--   Para a opção de imprimir em ambos os lados do papel, rotule a opção imprimir lado e verso. Não use a frase duplex manual.
+-   Para a opção de imprimir em ambos os lados do papel, rotule a opção Imprimir de lado duplo. Não use a frase Duplex Manual.
 
 ## <a name="documentation"></a>Documentação
 
--   Use imprimir, não imprimir, como um verbo.
--   É aceitável usar a impressão impressa para fazer referência ao resultado de um trabalho de impressão.
--   Use fila de impressão, não fila de impressora.
+-   Use print, não print out, como um verbo.
+-   É aceitável usar printout para se referir ao resultado de um trabalho de impressão.
+-   Use a fila de impressão, não a fila da impressora.
 

@@ -4,12 +4,12 @@ ms.assetid: cfea9f7d-a069-497b-8138-b3949002fa5d
 title: Permissões nativas da API WiFi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afafec7619e0920a17e3769a430c8c79aeff3828
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da56faac08b40ace46ef1e33c5d5644be87b45c6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169388"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480722"
 ---
 # <a name="native-wifi-api-permissions"></a>Permissões nativas da API WiFi
 
@@ -21,63 +21,16 @@ A tabela a seguir mostra as funções WiFi nativas que usam objetos protegíveis
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Função</th>
-<th>Objeto protegível</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlangetfilterlist"><strong>WlanGetFilterList</strong></a>, <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetfilterlist"> <strong>WlanSetFilterList</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_deny_list</li>
-<li>wlan_secure_permit_list</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlanihvcontrol"><strong>WlanIhvControl</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_ihv_control</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlanqueryautoconfigparameter"><strong>WlanQueryAutoConfigParameter</strong></a>, <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlansetautoconfigparameter"> <strong>WlanSetAutoConfigParameter</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_show_denied</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlanqueryinterface"><strong>WlanQueryInterface</strong></a>, <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlansetinterface"> <strong>WlanSetInterface</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_ac_enabled</li>
-<li>wlan_secure_bc_scan_enabled</li>
-<li>wlan_secure_bss_type</li>
-<li>wlan_secure_current_operation_mode</li>
-<li>wlan_secure_interface_properties</li>
-<li>wlan_secure_media_streaming_mode_enabled</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile"><strong>WlanSetProfile</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_add_new_all_user_profiles</li>
-<li>wlan_secure_add_new_per_user_profiles</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofilelist"><strong>WlanSetProfileList</strong></a>, <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofileposition"> <strong>WlanSetProfilePosition</strong></a><br/></td>
-<td><ul>
-<li>wlan_secure_all_user_profiles_order</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Função | Objeto protegível | 
+|----------|------------------|
+| <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlangetfilterlist"><strong>WlanGetFilterList</strong></a>, <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetfilterlist"> <strong>WlanSetFilterList</strong></a><br /> | <ul><li>wlan_secure_deny_list</li><li>wlan_secure_permit_list</li></ul> | 
+| <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlanihvcontrol"><strong>WlanIhvControl</strong></a><br /> | <ul><li>wlan_secure_ihv_control</li></ul> | 
+| <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlanqueryautoconfigparameter"><strong>WlanQueryAutoConfigParameter</strong></a>, <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlansetautoconfigparameter"> <strong>WlanSetAutoConfigParameter</strong></a><br /> | <ul><li>wlan_secure_show_denied</li></ul> | 
+| <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlanqueryinterface"><strong>WlanQueryInterface</strong></a>, <a href="/windows/desktop/api/Wlanapi/nf-wlanapi-wlansetinterface"> <strong>WlanSetInterface</strong></a><br /> | <ul><li>wlan_secure_ac_enabled</li><li>wlan_secure_bc_scan_enabled</li><li>wlan_secure_bss_type</li><li>wlan_secure_current_operation_mode</li><li>wlan_secure_interface_properties</li><li>wlan_secure_media_streaming_mode_enabled</li></ul> | 
+| <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile"><strong>WlanSetProfile</strong></a><br /> | <ul><li>wlan_secure_add_new_all_user_profiles</li><li>wlan_secure_add_new_per_user_profiles</li></ul> | 
+| <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofilelist"><strong>WlanSetProfileList</strong></a>, <a href="/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofileposition"> <strong>WlanSetProfilePosition</strong></a><br /> | <ul><li>wlan_secure_all_user_profiles_order</li></ul> | 
+
 
 
 
@@ -89,7 +42,7 @@ Cada objeto protegível tem uma DACL associada a ele por padrão. As permissões
 
 Todos os perfis de usuário têm permissões adicionais associadas ao próprio perfil. As permissões em um perfil de todos os usuários são estabelecidas quando o perfil é criado ou modificado usando [**WlanSetProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile) ou [**WlanSaveTemporaryProfile**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansavetemporaryprofile). O parâmetro *strAllUserProfileSecurity* especifica as permissões necessárias para modificar um perfil, excluir um perfil ou conectar-se a uma rede usando um perfil. Excluir ou modificar um perfil requer permissão de acesso de gravação de WLAN \_ \_ . Conectar-se a uma rede usando um perfil requer permissão de acesso de execução de WLAN \_ \_ .
 
-* * Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2: * * não há suporte para as funções [**WlanGetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetsecuritysettings) e [**WlanSetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetsecuritysettings) . O parâmetro *strAllUserProfileSecurity* não é usado.
+* * Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2: * * não há suporte para as funções [**WlanGetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetsecuritysettings) e [**WlanSetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetsecuritysettings) . O parâmetro *strAllUserProfileSecurity* não é usado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: AdminEnable (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 942f561cb17173ad48c51feeefd3c38f6bdbe382
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ddeb2edd551550d4c329f8618113f8d871ead0ef
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467593"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988869"
 ---
 # <a name="span-idwwan_profile_v4element_1_adminenablespanmodemdmconfigprofileadminenable-v4"></a><span id="WWAN_profile_v4.element_1_AdminEnable"></span>ModemDMConfigProfile \/ AdminEnable (v4)
 
@@ -26,7 +26,7 @@ Especifica se o perfil está habilitado administrativamente. Esse é um novo ele
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<AdminEnable\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <AdminEnable>
@@ -60,7 +60,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

@@ -1,40 +1,40 @@
 ---
 title: Tipos de VML básicos
-description: Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem do VML para SVG ou outros padrões amplamente suportados.
+description: este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem de VML para SVG ou outros padrões amplamente suportados.
 ms.assetid: 07c17e7b-5ac4-4a8d-a468-559307408d5b
 keywords:
-- linguagem VML (VML), tipos básicos
+- Linguagem VML (VML), tipos básicos
 - VML (linguagem VML), tipos básicos
-- gráficos vetoriais, tipos de VML básicos
-- linguagem VML (VML), tipos
+- gráficos vetoriais, tipos básicos de VML
+- Linguagem VML (VML), tipos
 - VML (linguagem VML), tipos
 - gráficos vetoriais, tipos de VML
 - tipos de VML básicos
-- tipo booliana
+- tipo booliano
 - tipo de fração
-- tipo ordinate
+- tipo de ordenada
 - tipo de comprimento
 - tipo de medida
 - tipo de ângulo
 - tipo de cor
 - tipo de fonte
-- tipo bitmap
+- tipo de bitmap
 - tipo de vetor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70dbb2e540e809b88b446cceda9973f8988c7241cae7f4f96402a0edc7906550
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a640dbacf875284008714ae404ba462b61652067
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118347751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883276"
 ---
 # <a name="basic-vml-types"></a>Tipos de VML básicos
 
-Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -43,10 +43,10 @@ Este tópico descreve o VML, um recurso que foi preterido a partir Windows Inter
 -   [Introdução](#introduction)
 -   [booleano](#boolean)
 -   [fração](#fraction)
--   [Ordenada](#ordinate)
+-   [ordenada](#ordinate)
 -   [length](#length)
     -   [Representações alternativas](#alternative-representations)
--   [Medida](#measure)
+-   [mensura](#measure)
     -   [Representações alternativas](#alternative-representations)
 -   [angle](#angle)
     -   [Representações alternativas](#alternative-representations)
@@ -56,38 +56,38 @@ Este tópico descreve o VML, um recurso que foi preterido a partir Windows Inter
     -   [Cores do esquema](#scheme-colors)
     -   [Cores do sistema](#system-colors)
     -   [Cores puras](#pure-colors)
-    -   [Ajustes de cor](#color-adjustments)
--   [Fonte](#font)
+    -   [Ajustes de cores](#color-adjustments)
+-   [la](#font)
 -   [bitmap](#bitmap)
     -   [Formatos de arquivo de imagem](#picture-file-formats)
--   [Vetor](#vector)
+-   [vetor](#vector)
 
 ## <a name="introduction"></a>Introdução
 
-Essa proposta usa um pequeno número de tipos básicos, listados na tabela abaixo.
+Essa proposta usa um pequeno número de tipos básicos, listados na tabela a seguir.
 
 
 
-| Tipo                  | Elemento           | Representação fundamental | Descrição                                                                                          |
+| Type                  | Elemento           | Representação fundamental | Description                                                                                          |
 |-----------------------|-------------------|----------------------------|------------------------------------------------------------------------------------------------------|
-| [booleano](#boolean)   |                   | 1 bit                      | Um valor booliana: true ou false.                                                                      |
-| [fração](#fraction) |                   | número 2 6                 | Um valor numérico, dimensionado por 2 6 (65536) e armazenado como um inteiro com sinal.                               |
-| [Ordenada](#ordinate) |                   | Sinal de inteiro de 30 bits mais   | Parte de uma coordenada (por exemplo, em um caminho ), os valores definidos por coord.                                |
-| [length](#length)     |                   | [Uem](#length)             | Um comprimento físico, como a largura de uma linha ou o tamanho de uma fonte.                                |
-| [Medida](#measure)   |                   | EMU ou número 2 6          | Um comprimento físico, incluindo um número de pixels de dispositivo ou uma fração de alguma outra quantidade. |
-| [angle](#angle)       |                   | graus 2 6                | Um ângulo; positivo é no sentido horário.                                                                     |
+| [booleano](#boolean)   |                   | 1 bit                      | Um valor booliano: true ou false.                                                                      |
+| [fração](#fraction) |                   | número 2 6                 | Um valor numérico, dimensionado por 2 6 (65536) e armazenado como um inteiro assinado.                               |
+| [ordenada](#ordinate) |                   | sinal de adição de inteiro de 30 bits   | Parte de uma coordenada (por exemplo, em um caminho), os valores definidos por coord.                                |
+| [length](#length)     |                   | [MONETÁRIA](#length)             | Um comprimento físico, como a largura de uma linha ou o tamanho de uma fonte.                                |
+| [mensura](#measure)   |                   | EMU ou número 2 6          | Um comprimento físico, incluindo um número de pixels de dispositivo ou uma fração de alguma outra quantidade. |
+| [angle](#angle)       |                   | graus de 2 6                | Um ângulo; positivo é no sentido horário.                                                                     |
 | [color](#color)       | [c](#color)       | complex                    | Um elemento que permite que uma cor seja derivada.                                                        |
-| [Fonte](#font)         | [Fonte](#font)     | complex                    | Uma descrição de uma fonte.                                                                             |
+| [la](#font)         | [la](#font)     | complex                    | Uma descrição de uma fonte.                                                                             |
 | [bitmap](#bitmap)     | [bitmap](#bitmap) | href                       | Uma referência a um arquivo de imagem externa.                                                             |
-| [Vetor](#vector)     | [v](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
+| [vetor](#vector)     | [l](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
 
 
 
  
 
-A "representação fundamental" é a representação de precisão mais alta que a proposta exige que uma implementação em conformidade seja mantida; os dados serão perdidos se a implementação não for capaz de representar os dados para a precisão necessária. Os tipos de cor, fonte e vetor correspondem aos elementos que têm a própria estrutura – em certo sentido, eles não são tipos básicos; no entanto, é conveniente tratá-los como tal dentro dessa proposta.
+A "representação fundamental" é a representação de precisão mais alta que a proposta exige para manter uma implementação em conformidade; os dados serão perdidos se a implementação não puder representar os dados para a precisão necessária. Os tipos de cor, fonte e vetor correspondem a elementos que, por sua conta, têm estrutura – de certa forma, não são tipos básicos; no entanto, é conveniente tratá-los como tal nessa proposta.
 
-Cada tipo básico não complexo tem um elemento associado com o mesmo nome. Esses nomes de elemento são reservados e podem não ser usados para nenhuma outra finalidade dentro de extensões, mesmo se o uso estiver dentro de um elemento de extensão onview="skip". Por isso, é possível que uma implementação que encontra XML desconhecido forneça um armazenamento interno eficiente do XML desconhecido, desde que os valores sejam incluídos nos elementos "type".
+Cada tipo básico não complexo tem um elemento associado de mesmo nome. Esses nomes de elementos são reservados e não podem ser usados para nenhuma outra finalidade dentro de extensões, mesmo que o uso esteja dentro de um elemento de extensão OnView = "Skip". Por isso, é possível que uma implementação que encontra XML desconhecido forneça um armazenamento interno eficiente do XML desconhecido, desde que os valores estejam entre os elementos de "tipo".
 
 
 ```HTML
@@ -97,11 +97,11 @@ Cada tipo básico não complexo tem um elemento associado com o mesmo nome. Esse
 
 
 
-No primeiro exemplo acima, a cadeia de caracteres "1,578" deve ser armazenada como uma sequência de caracteres (a implementação não sabe se é uma cadeia de caracteres ou um número); no segundo exemplo, o elemento de fração indica que o conteúdo é um número, portanto, ele pode ser convertido para a representação de fração de alta precisão.
+No primeiro exemplo acima, a cadeia de caracteres "1,578" deve ser armazenada como uma sequência de caracteres (a implementação não sabe se é uma cadeia de caracteres ou um número); no segundo exemplo, o elemento fracionário indica que o conteúdo é um número, portanto, ele pode ser convertido na representação de fração de alta precisão.
 
 Tipos complexos (incluindo bitmap) têm nomes de elementos associados que são usados para delimitar o valor. Isso simplifica a análise garantindo que as tarefas de análise mais complexas sejam associadas a marcas de elemento exclusivas.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="boolean"></a>booleano
 
@@ -113,7 +113,7 @@ boolean
 
 
 
-Um valor booliana é representado como uma palavra-chave que indica o estado do sinalizador. As palavras-chave a seguir são definidas.
+Um valor booliano é representado como uma palavra-chave que indica o estado do sinalizador. As palavras-chave a seguir são definidas.
 
 
 
@@ -197,7 +197,7 @@ Todos os qualificadores de unidade [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1
 
 
 
-| Número de EMUs | Número por polegada | Número por milímetro | Descrição             |
+| Número de EMUs | Número por polegada | Número por milímetro | Description             |
 |----------------|-----------------|-----------------------|-------------------------|
 | 360            |                 | 0,01                  | HIMETRIC Win32          |
 | 12700          | 72              |                       | empresas                 |
@@ -346,13 +346,13 @@ Nas definições do XPointer, a origem do local é o elemento que contém o valo
 | fillBack         | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, back)<br/> child(1, color)<br/> | 1     | A cor da tela de fundo do preenchimento de forma.                                                                                                                                   |
 | line             | ancestor(1,shape)<br/> child(1, line)<br/> child(1, color)<br/>                           | 1     | A cor da linha de primeiro plano da forma.                                                                                                                                   |
 | lineBack         | ancestor(1,shape)<br/> child(1, line)<br/> child(1,back) <br/> child(1, color)<br/> | 1     | A cor da linha da tela de fundo da forma.                                                                                                                                   |
-| lineOrFill       | linha, preenchimento                                                                                                  | 1     | O valor da linha, se não for padrão, caso contrário, o valor de preenchimento. Isso retorna efetivamente a cor que está na borda da forma.                                           |
-| fillThenLine     | fill, line                                                                                                  | 1     | O valor de preenchimento, se não for padrão, caso contrário, o valor de linha. Isso efetivamente retorna a cor da forma principal (se a forma for des preenchida, o resultado será a cor da linha).   |
-| shadow           | ancestor(1,shape)<br/> child(1, shadow)<br/> child(1, color)<br/>                         | 2     | A cor da sombra (esse é um recurso de nível 2).                                                                                                                      |
-| scheme           | Veja abaixo                                                                                                   | 1     | Uma cor de esquema do esquema definido para o documento; veja abaixo.                                                                                                       |
-| scheme(*index*)  | Veja abaixo                                                                                                   | 1     | Índice de cores *do esquema,* começando em 0; veja abaixo.                                                                                                                         |
-| this             | Implícita                                                                                                     | 2     | A operação (preenchendo um caminho ou desenhando-o) é definida de alguma outra maneira (por exemplo, como um bitmap) e a cor especifica uma "modificação" nas cores, de modo implícito. |
-| paleta(*índice*) | Implícita                                                                                                     | 3     | Comporta-se da mesma maneira que isso, exceto que exatamente uma entrada em uma tabela de cores de bitmap é identificada. Permitido somente quando explicitamente declarado.                             |
+| lineOrFill       | linha, preenchimento                                                                                                  | 1     | O valor da linha, se não for padrão, caso contrário, o valor de preenchimento. Isso efetivamente retorna a cor que está na borda da forma.                                           |
+| fillThenLine     | preenchimento, linha                                                                                                  | 1     | O valor de preenchimento, se não for padronizado, caso contrário, o valor da linha. Isso efetivamente retorna a cor da forma principal (se a forma não estiver preenchida, o resultado será a cor da linha).   |
+| shadow           | ancestral (1, forma)<br/> filho (1, sombra)<br/> filho (1, cor)<br/>                         | 2     | A cor da sombra (esse é um recurso de nível 2).                                                                                                                      |
+| scheme           | Veja abaixo                                                                                                   | 1     | Uma cor do esquema do esquema definido para o documento; Veja abaixo.                                                                                                       |
+| esquema (*índice*)  | Veja abaixo                                                                                                   | 1     | *Índice* de cores do esquema, começando em 0; Veja abaixo.                                                                                                                         |
+| this             | Implícita                                                                                                     | 2     | A operação (preencher um caminho ou desenhá-la) é definida de alguma outra maneira (por exemplo, como um bitmap) e a cor especifica uma "modificação" nas cores, portanto implícita. |
+| paleta (*índice*) | Implícita                                                                                                     | 3     | Se comporta da mesma maneira, exceto que exatamente uma entrada em uma tabela de cores de bitmap é identificada. Permitido apenas onde explicitamente declarado.                             |
 | nenhum             | \-                                                                                                          | 2     | Indica a ausência de uma cor; pode ser usado para cancelar uma operação de desenho que usa a cor.                                                                          |
 | sistema           | Veja abaixo                                                                                                   | 3     | Uma cor definida pela interface do usuário do sistema.                                                                                                                             |
 
@@ -360,59 +360,59 @@ Nas definições do XPointer, a origem do local é o elemento que contém o valo
 
  
 
-Essa cor permite que um valor de cor especifique uma modificação em uma cor derivada de alguma outra maneira; em particular, uma única operação pode ser especificada para todas as cores em um bitmap. A cor da paleta (*índice*) identifica uma entrada específica em um bitmap mapeado por paleta. O uso disso só é definido para registrar uma entrada de tabela de cores que deve ser considerada transparente em tal bitmap.
+Essa cor permite que um valor de cor especifique uma modificação em uma cor que seja derivada de alguma outra maneira; em particular, uma única operação pode ser especificada para todas as cores em um bitmap. A cor da paleta (*índice*) identifica uma determinada entrada em um bitmap mapeado para a paleta. O uso dele só é definido para gravar uma entrada de tabela de cores que deve ser considerada transparente nesse bitmap.
 
-A definição de um valor de cor não deve se referir a si mesma, direta ou indiretamente. Se essa definição for encontrada, é recomendável, mas não necessário, que a implementação trate o valor indefinido como preto.
+A definição de um valor de cor não deve se referir, direta ou indiretamente. Se essa definição for encontrada, é recomendável, mas não necessária, que a implementação trate o valor indefinido como preto.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ### <a name="html-colors"></a>Cores HTML
 
-[HTML](https://www.w3.org/TR/wd-html40-970708/types.mdl#type-color) define os seguintes 16 nomes de cores:
+O [HTML](https://www.w3.org/TR/wd-html40-970708/types.mdl#type-color) define os dezesseis nomes de cor a seguir:
 
 
 
-Nomes de cores e valores sRGB
+Nomes de cor e valores sRGB
 
 ![Exemplo de cor preta.](images/black.gif)
 
-Preto = " \# 000000"
+Black = " \# 000000"
 
 ![Exemplo de cor verde.](images/green.gif)
 
 Verde = " \# 008000"
 
-![Exemplo de cor prata.](images/silver.gif)
+![Exemplo de cor prateada.](images/silver.gif)
 
 Prata = " \# C0C0C0"
 
-![Exemplo de cor de cinza.](images/lime.gif)
+![Exemplo de cor de verde-limão.](images/lime.gif)
 
-Calca = " \# 00FF00"
+Verde-limão = " \# 00FF00"
 
 ![Exemplo de cor cinza.](images/gray.gif)
 
 Cinza = " \# 808080"
 
-![Exemplo de cor da coloração.](images/olive.gif)
+![Exemplo de cor de verde-oliva.](images/olive.gif)
 
-Verde-verde = " \# 808000"
+Verde-oliva = " \# 808000"
 
 ![Exemplo de cor branca.](images/white.gif)
 
-White = " \# FFFFFF"
+Branco = " \# FFFFFF"
 
-![Exemplo de cor ywllow.](images/yellow.gif)
+![Exemplo de cor de ywllow.](images/yellow.gif)
 
 Amarelo = " \# FFFF00"
 
-![Exemplo de cor da coloração.](images/maroon.gif)
+![Exemplo de cor de bordô.](images/maroon.gif)
 
-Mário = " \# 800000"
+Bordô = " \# 800000"
 
-![Exemplo de cor da cor da coloração.](images/navy.gif)
+![Exemplo de cor azul.](images/navy.gif)
 
-Ão = " \# 000080"
+Azul = " \# 000080"
 
 ![Exemplo de cor vermelha.](images/red.gif)
 
@@ -420,33 +420,33 @@ Vermelho = " \# FF0000"
 
 ![Exemplo de cor azul.](images/blue.gif)
 
-Azul = " \# 0000FF"
+Blue = " \# 0000FF"
 
 ![Exemplo de cor roxa.](images/purple.gif)
 
 Roxo = " \# 800080"
 
-![Exemplo de cor teal.](images/teal.gif)
+![Exemplo de cor azul-petróleo.](images/teal.gif)
 
-Teal = " \# 008080"
+Azul-petróleo = " \# 008080"
 
-![Exemplo de cor de fuchsia.](images/fuchsia.gif)
+![Exemplo de cor de Fuchsia.](images/fuchsia.gif)
 
 Fuchsia = " \# FF00FF"
 
-![Exemplo de cor azul-azul.](images/aqua.gif)
+![Exemplo de cor de azul-piscina.](images/aqua.gif)
 
-Aqua = " \# 00FFFF"
+Azul-piscina = " \# 00ffff"
 
 
 
  
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ### <a name="scheme-colors"></a>Cores do esquema
 
-As cores do esquema referenciadas por esquema são definidas no nível do documento usando a meta tag com um atributo de nome de "Esquema de Cores do Tema".
+As cores do esquema referenciadas pelo esquema são definidas no nível do documento usando a marca meta com um atributo Name de "esquema de cores do tema".
 
 
 ```HTML
@@ -456,36 +456,36 @@ As cores do esquema referenciadas por esquema são definidas no nível do docume
 
 
 
-Essa marca permite que até oito cores de esquema sejam definidas. As cores indefinidas devem ser o padrão preto. As cores do esquema permitem que o esquema de cores usado para um documento completo seja alterado apenas alterando o conteúdo do Esquema de Cores do Tema. Para garantir que gráficos importados de diferentes aplicativos de criação façam uso consistente das cores do esquema, as interpretações a seguir são definidas. O "uso" é uma breve descrição da finalidade e a coluna "descrição" fornece detalhes adicionais.
+Essa marca permite que até oito cores de esquema sejam definidas. As cores indefinidas devem padronizar para preto. As cores do esquema permitem que o esquema de cores usado para um documento completo seja alterado apenas alterando o conteúdo do esquema de cores do tema. Para garantir que os gráficos importados de diferentes aplicativos de criação façam uso consistente das cores do esquema, as seguintes interpretações são definidas. O "uso" é uma breve descrição da finalidade e a coluna "Descrição" fornece detalhes adicionais.
 
 
 
 | Índice | Nome              | Uso                         | Descrição                                                                                                              |
 |-------|-------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| 0     | scheme.background | Segundo plano                    | A cor usada para a tela de fundo de um gráfico (e, com frequência, para toda a página).                                    |
-| 1     | scheme.text       | Texto e linhas                | A cor do texto anexado a uma forma e a cor da linha padrão.                                                      |
-| 2     | scheme.shadow     | Sombras                       | Cor de sombra padrão – a cor normalmente usada para sombras de formas.                                                     |
-| 3     | esquema. title      | Texto do título                    | A cor a ser usada para o texto de título ou título.                                                                              |
-| 4     | esquema. Fill       | Esgota                         | Cor de preenchimento padrão – a cor normalmente usada para preencher formas.                                                          |
-| 5     | esquema. acentuação     | Ênfase                        | Cor normal de "Realce" usada para enfatizar um elemento importante de um elemento gráfico.                                             |
-| 6     | esquema. Hyperlink  | Acento e hiperlink          | Cor de realce usada para hiperlinks. Pode ser usado para outras finalidades em que a cor denota um link para outras informações. |
-| 7     | esquema. seguido   | Acento e hiperlink seguido | Cor de realce para hiperlinks seguidos; também apropriado para links "versões anteriores".                                         |
+| 0     | esquema. plano de fundo | Tela de fundo                    | A cor usada para o plano de fundo de um elemento gráfico (e, frequentemente, para a página inteira).                                    |
+| 1     | esquema. texto       | Texto e linhas                | A cor do texto anexado a uma forma e a cor da linha padrão.                                                      |
+| 2     | esquema. sombra     | Sombras                       | Cor de sombra padrão – a cor normalmente usada para sombras de forma.                                                     |
+| 3     | scheme.title      | Texto do título                    | A cor a ser usada para texto de título ou título.                                                                              |
+| 4     | scheme.fill       | Preenche                         | Cor de preenchimento padrão – a cor normalmente usada para preencher formas.                                                          |
+| 5     | scheme.accent     | Sotaque                        | Cor "realçada" normal usada para enfatizar um elemento importante de um gráfico.                                             |
+| 6     | scheme.hyperlink  | Destaque e hiperlink          | Realça a cor usada para hiperlinks. Pode ser usado para outras finalidades em que a cor indica um link para outras informações. |
+| 7     | scheme.followed   | Destaque e hiperlink seguido | Realça a cor para hiperlinks seguidos; também apropriado para links "para trás".                                         |
 
 
 
  
 
-Uma cor de esquema pode ser referenciada por nome ou por índice, portanto, esquema. Fill e Scheme (4) são a mesma cor.
+Uma cor de esquema pode ser referenciada por nome ou por índice, portanto, scheme.fill e scheme(4) são da mesma cor.
 
-As cores do esquema não participarão do esquema padrão se uma cor não for especificada. Uma cor de preenchimento não especificada sempre deve ser interpretada como branca, independentemente da cor da cor do esquema 4. As cores de "destaque" devem ser iguais às cores do plano de fundo (0) e do preenchimento (4), e as cores do texto e do título devem ter a mesma propriedade. Uma técnica padrão é fazer com que os acentos sejam coloridos e o texto padrão não seja colorido (normalmente preto ou branco).
+As cores do esquema não participarão do esquema padrão se uma cor não for especificada. Uma cor de preenchimento não especificada sempre deve ser interpretada como branca, independentemente da cor do esquema 4. As cores de "destaque" devem contrastar com as cores de plano de fundo (0) e preenchimento (4), e as cores de texto e texto do título devem ter a mesma propriedade. Uma técnica padrão é tornar os acentos coloridos e o texto padrão descolorido (normalmente preto ou branco).
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="system-colors"></a>Cores do sistema
 
-Às vezes, os aplicativos registram cores com base nas configurações do sistema operacional em gráficos. Normalmente, eles são transitórios e não precisam ser gravados; as definições de thesystemcolor existem exclusivamente para dar suporte a isso. Uma cor do sistema é introduzida definindo uma marca apropriada em um novo namespace e inserindo as informações apropriadas no conteúdo do elemento.
+Às vezes, os aplicativos registram cores com base nas configurações do sistema operacional em elementos gráficos. Normalmente, eles são transitórios e não precisam ser gravados; as definições de thesystemcolor existem exclusivamente para dar suporte a isso. Uma cor do sistema é introduzida definindo uma marca apropriada em um novo namespace e inserindo as informações apropriadas no conteúdo do elemento.
 
-essa proposta define tal marca para codificar as cores da interface do usuário Windows definidas no arquivo de cabeçalho winuser. h.
+Essa proposta define essa marca para codificar as cores Windows interface do usuário definidas no arquivo de título winuser.h.
 
 
 ```HTML
@@ -495,9 +495,9 @@ win.color
 
 
 
-O conteúdo do elemento é um único inteiro que contém o valor da cor relevante \_ definida de WinUser. h. Uma técnica semelhante pode ser adotada para qualquer especificação de cor específica do sistema ou do aplicativo. É altamente recomendável que esse recurso seja usado apenas para compatibilidade com versões anteriores.
+O conteúdo do elemento é um único inteiro que contém o valor da COLOR \_ relevante definida de winuser.h. Uma técnica semelhante pode ser adotada para qualquer especificação de cor específica do sistema ou do aplicativo. É altamente recomendável que esse recurso seja usado somente para compatibilidade com backward.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="pure-colors"></a>Cores puras
 
@@ -509,15 +509,15 @@ pure
 
 
 
-Se o elemento <pure/> aparecer em um valor de cor, será uma dica de que a cor não deve ser aproximada por um padrão de pontilhamento. Esse é um recurso de nível 1, e uma implementação de conformidade não precisa atendê-lo. A designação é importante para os gráficos exibidos em dispositivos de alta resolução, como vídeos de vídeo, em que os pequenos recursos (como linhas) podem causar alias inadequado com cores diexistentes. Em dispositivos como impressoras, que normalmente pontilham todas as cores, exceto para as poucas cores totalmente saturadas, o pontilhado normalmente é suficientemente bom para evitar esse problema.
+Se o elemento pure/ aparecer em um valor de cor, será uma dica de que a cor não deve ser aproximada &lt; &gt; por um padrão dither. Esse é um recurso de nível 1 e uma implementação em conformidade não precisa obedecer a ele. A designação é importante para gráficos exibidos em dispositivos de resolução média, como exibições de vídeo, em que recursos pequenos (como linhas) podem causar aliases ruins com cores dithered. Em dispositivos como impressoras, que normalmente dither todas as cores, exceto as poucas cores totalmente saturadas, o dithering normalmente é suficientemente bom para evitar esse problema.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
-### <a name="color-adjustments"></a>Ajustes de cores
+### <a name="color-adjustments"></a>Ajustes de cor
 
-A cor base pode ser ajustada por operações aritméticas no valor RGB. Essas operações são definidas usando elementos adicionais dentro do valor de cor. Esses ajustes são úteis somente quando aplicados a cores derivadas de outros elementos. É válido especificar um ajuste desse tipo em um valor de cor fixo; no entanto, uma implementação tem permissão para reduzir isso para o valor RGB correspondente e armazená-lo em vez do original.
+A cor base pode ser ajustada por operações aritméticas no valor RGB. Essas operações são definidas usando elementos adicionais dentro do valor de cor. Esses ajustes são úteis somente quando aplicados a cores derivadas de outros elementos. É válido especificar esse ajuste em um valor de cor fixo; no entanto, uma implementação tem permissão para reduzir isso para o valor RGB correspondente e armazená-lo em vez do original.
 
-Todos os recursos de ajuste de cores descritos nesta seção são recursos de nível 1.
+Todos os recursos de ajuste de cor descritos nesta seção são recursos de nível 1.
 
 
 ```HTML
@@ -552,33 +552,33 @@ color.adj
 
 
 
-O parâmetro das seis primeiras operações é um único valor numérico integral no intervalo de 0 a 255. O ajuste é executado no valor de 3x8bit RGB da seguinte maneira:
+O parâmetro das primeiras seis operações é um único valor numérico integral no intervalo de 0 a 255. O ajuste é executado no valor RGB de 3x8bits da seguinte forma:
 
-1.  Se <gray/> for especificado, o valor RGB será substituído por yyy, em que y é o valor de luminescência (y ") calculado a partir do valor sRGB no seguinte do ITU-r BT. 709. Esse cálculo é:
+1.  Se gray/ for especificado, o valor RGB será substituído por aaa, em que y é o valor de luminância (y') calculado com base no valor sRGB no seguinte &lt; &gt; ITU-r BT.709. Esse cálculo é:
     ```HTML
     y = 0 2125xr + 0 7154xg + 0 0721xb
     ```
 
     
 
-2.  Se uma modificação de Color. op for fornecida, cada componente será ajustado separadamente de acordo com a tabela a seguir. c é o valor do componente e p é o valor Color. Parameter.
+2.  Se uma modificação color.op for dada, cada componente será ajustado separadamente de acordo com a tabela abaixo. c é o valor do componente e p é o valor color.parameter.
 
     | Operação       | Fórmula                            |
     |-----------------|------------------------------------|
-    | escureça          | c: = CXP/255                       |
-    | clarea         | c: = 255-(255-c) XP/255           |
-    | adicionar             | c: = c + p                         |
-    | subtrair        | c: = c-p                         |
-    | reversesubtract | c: = p-c                         |
-    | blackwhite      | se c < p thenc: = 0elsec: = 255 |
+    | Darken          | c := cxp/255                       |
+    | Aliviar         | c := 255 – (255-c)xp/255           |
+    | add             | c := c + p                         |
+    | subtrair        | c := c - p                         |
+    | reversesubtract | c := p - c                         |
+    | Blackwhite      | se c < p thenc := 0elsec := 255 |
 
     
 
      
 
-    Em cada caso, se o valor do componente calculado, c, exceder 255, 255 será usado e, se for menor que 0, será usado 0.
+    Em cada caso, se o valor do componente calculado, c, exceder 255, 255 será usado e, se for menor que 0, 0 será usado.
 
-3.  Se <INVERT128/> for fornecido, o valor 128 será subtraído ou adicionado a cada componente de acordo com se o componente é menor que 128 ou não.
+3.  Se INVERT128/ for dado, o valor 128 será subtraído ou adicionado a cada componente de acordo com se o componente é menor que &lt; &gt; 128 ou não.
     ```HTML
     if c < 128
         then
@@ -589,16 +589,16 @@ O parâmetro das seis primeiras operações é um único valor numérico integra
 
     
 
-4.  Se <invert/> for fornecido, cada componente será substituído por 255 menos o valor do componente.
+4.  Se &lt; invert/ &gt; for dado, cada componente será substituído por 255 menos o valor do componente.
     ```HTML
     c := 255-c
     ```
 
     
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
-## <a name="font"></a>la
+## <a name="font"></a>Fonte
 
 
 ```HTML
@@ -610,11 +610,11 @@ font
 
 
 
-Uma fonte é identificada usando um atributo Style, conforme definido na [seção CSS1 5,2 (Propriedades da fonte)](https://www.w3.org/pub/WWW/TR/REC-CSS1#font-properties) . O corpo do elemento font é, no momento, indefinido, mas pode ser usado no futuro para codificar informações de fonte padrão. As implementações iniciais dessa proposta devem preservar, mas não interpretar as informações.
+Uma fonte é identificada usando um atributo de estilo conforme definido na [seção CSS1 5.2 (propriedades da fonte).](https://www.w3.org/pub/WWW/TR/REC-CSS1#font-properties) O corpo do elemento de fonte é, no momento, indefinido, mas pode ser usado no futuro para codificar informações de fonte padrão. As implementações iniciais dessa proposta devem preservar, mas não interpretar as informações.
 
-É possível que o suporte seja adicionado no futuro para informações sobre fontes fora de linha (fontes para download ou recursos de fontes compartilhadas). Isso será feito por um elemento de link de XML dentro do conteúdo do elemento font, garantindo compatbility para trás com implementações iniciais.
+É concebível que o suporte seja adicionado no futuro para informações de fonte fora de linha (fontes baixáveis ou recursos de fonte compartilhada). Isso será feito por um elemento xml-link dentro do conteúdo do elemento de fonte, garantindo a compatibilidade com as implementações iniciais.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="bitmap"></a>bitmap
 
@@ -635,7 +635,7 @@ bitmap
 
 
 
-O elemento bitmap permite uma referência a um recurso de imagem fora de linha (normalmente um bitmap) a ser incluído em um gráfico.
+O elemento bitmap permite que uma referência a um recurso de imagem fora de linha (normalmente um bitmap) seja incluída em um gráfico.
 
 bitmap é um recurso de nível 1.
 
@@ -645,40 +645,40 @@ O atributo de comportamento pode ser usado para indicar como o bitmap deve ser t
 
 | Token    | Descrição                                                                                                                                                                                                                                                                             |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| separado | Marca o bitmap como uma entidade separada, que não deve ser considerada como parte integral do documento. O bitmap não deve ser mantido com o documento. Se o documento for copiado, o bitmap não deverá ser copiado; Se o documento for movido, o bitmap não deverá ser movido com ele. |
+| separado | Marca o bitmap como uma entidade separada, que não deve ser considerada uma parte integral do documento. O bitmap não deve ser mantido com o documento. Se o documento for copiado, o bitmap não deverá ser copiado; se o documento for movido, o bitmap não deverá ser movido com ele. |
 | original | O atributo title identifica o local original do bitmap como uma URL; caso contrário, o significado do título não será especificado.                                                                                                                                                          |
 
 
 
  
 
-Esses valores são dicas para o comportamento esperado. A opção separada refere-se ao comportamento dos dados referenciados por href. Se o separado e o original forem fornecidos, o aplicativo deverá desconsiderar o URI href e regenerar o bitmap a partir dos dados originais. Se apenas o original for fornecido, o aplicativo deverá usar o URI href para localizar o bitmap, mas poderá dar ao usuário a opção de gerá-lo novamente.
+Esses valores são dicas sobre o comportamento esperado. A opção separada refere-se ao comportamento dos dados referenciados por href. Se ambos separados e originais são fornecidos, espera-se que o aplicativo ignore o URI href e regenere o bitmap dos dados originais. Se apenas original for fornecido, espera-se que o aplicativo use o URI href para encontrar o bitmap, mas pode dar ao usuário a opção de regenerá-lo.
 
-É válido fazer com que o URI href e o atributo title tenham o mesmo valor (léxico) – isso é apropriado se o bitmap referenciado não for "armazenado com" o documento. Ele é destinado (embora não necessário) que href seja usado para a própria cópia do documento do bitmap, que pode ser excluído se as formas de referência forem excluídas--e esse título for usado para indicar uma cópia compartilhada. Portanto, se ambos contiverem o mesmo valor, não haverá cópia específica do documento.
+É válido tornar o URI href e o atributo de título o mesmo valor (lexical) – isso será apropriado se o bitmap referenciado não for "armazenado com" o documento. Destina-se (embora não seja necessário) que href seja usado para a própria cópia do bitmap do documento , que pode ser excluída se as formas de referência são excluídas e esse título é usado para indicar uma cópia compartilhada. Portanto, se ambos contêm o mesmo valor, não há nenhuma cópia específica do documento.
 
-Os aplicativos podem desconsiderar a dica se não couber com o modelo de armazenamento real dos dados XML.
+Os aplicativos poderão desconsiderar a dica se não se ajustarem ao modelo de armazenamento real dos dados XML.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="picture-file-formats"></a>Formatos de arquivo de imagem
 
-Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, nenhum formato de bitmap externo precisa ser suportado-os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível 1 de renderização, os bitmaps precisam ter suporte. O nível de renderização 1 inclui (apenas) os seguintes formatos:
+Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, não é necessário ter suporte para nenhum formato de bitmap externo– os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível de renderização 1, é necessário dar suporte a bitmaps. O nível de renderização 1 inclui (somente) os seguintes formatos:
 
-1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o cabeçalho JFIF (que pode ser considerado um marcador APP0 específico após o SOI Maker) e incluindo (somente) o intervalo de formatos JPEG com suporte no código V6 IJG.
-2.  PNG, conforme definido pela especificação do PNG versão 1,0.
+1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o header JFIF (que pode ser considerado um marcador APP0 específico após o criador soi) e incluindo (somente) o intervalo de formatos JPEG com suporte pelo código IJG v6.
+2.  PNG, conforme definido pela especificação PNG versão 1.0.
 
 O nível de renderização 2 também inclui suporte para o seguinte:
 
--   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente chamado de "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente do requisito de extensionswithouta de controle de gráficos para a entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem formatação. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia desta proposta, elas devem conter apenas os dados de edição, não de renderização.
+-   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente conhecido como "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente de extensões de controle de gráficos sem um requisito de entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem-texto. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia dessa proposta, elas devem conter apenas os dados de edição, não de renderização.
 
-Qualquer outro formato de dados usado no gráfico força esse gráfico a ser pelo menos o nível 3 de edição e, possivelmente, o nível 3 de renderização (se os dados forem necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos que ele suporta. por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais nativamente e, portanto, pode gravar dados de edição neste formulário:
+Qualquer outro formato de dados usado no gráfico força esse gráfico a ter pelo menos o nível de edição 3 e possivelmente renderizar o nível 3 (se os dados são necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos aos quais ele dá suporte. Por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais na verdade e, portanto, pode gravar dados de edição neste formulário:
 
-1.  WMF--metarquivo de Windows (formato Win 3,1)
-2.  EMF--Windows metarquivo "avançado" (formato Win32)
-3.  PICT--Mac OS arquivo QuickDraw PICT (todas as versões, mas sem registros QuickTime ou outras extensões)
-4.  BMP--formato de arquivo de bitmap Windows, formatos "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e BITMAPV5
+1.  WMF – Windows metarquivo (formato Win 3.1)
+2.  EMF – Windows metarquivo "avançado" (formato Win32)
+3.  PICT – Mac OS arquivo QUICKDraw PICT (todas as versões, mas sem registros de QuickTime ou outras extensões)
+4.  BMP -- Windows formato de arquivo bitmap, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e formatos BITMAPV5
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="vector"></a>vector
 
@@ -690,9 +690,9 @@ v
 
 
 
-Um caminho gráfico vetorial é codificado como PCDATA. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
+Um caminho gráfico de vetor é codificado como pcdata. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
 
-[Voltar para a visão geral da VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
+[Voltar à visão geral do VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
 
  
 

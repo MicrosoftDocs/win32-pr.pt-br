@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4cf9639ded8774be2b46c3a62bc97c6b56b9f15e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 4a62c3fee0b961268c11974e0a6064f091474d34
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465663"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984339"
 ---
 # <a name="jetsetcolumns-function"></a>Função JetSetColumns
 
@@ -83,7 +83,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 | <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
 | <p>JET_errNotInTransaction</p> | <p>Foi feita uma tentativa ilegal de atualizar um valor de coluna longo quando a sessão de chamada não estava em uma transação.</p> | 
 | <p>JET_errNullInvalid</p> | <p>Foi feita uma tentativa ilegal de definir uma coluna não NULL como NULL.</p> | 
-| <p>JET_errRecordTooBig</p> | <p>O valor da coluna não pôde ser definido como o valor no buffer de entrada porque ele teria feito com que o registro excedesse sua limitação de tamanho relacionado ao tamanho da página. Colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> ou <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> podem ser armazenadas separadamente dos dados de registro restantes. No entanto, outras colunas devem ser armazenadas com o registro e podem fazer com que a limitação de tamanho do registro seja excedida. Até mesmo colunas longas exigem 5 bytes de espaço dentro do registro como uma vinculação e isso também pode levar a JET_errRecordTooBig sendo retornados.</p> | 
+| <p>JET_errRecordTooBig</p> | <p>O valor da coluna não pôde ser definido como o valor no buffer de entrada porque ele teria feito com que o registro excedesse sua limitação de tamanho relacionado ao tamanho da página. Colunas do tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> <a href="gg269213(v=exchg.10).md">ou JET_coltypLongBinary</a> podem ser armazenadas separadamente dos dados de registro restantes. No entanto, outras colunas devem ser armazenadas com o registro e podem fazer com que a limitação de tamanho do registro seja excedida. Até mesmo colunas longas exigem 5 bytes de espaço dentro do registro como uma vinculação e isso também pode levar a JET_errRecordTooBig ser retornado.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>Não é possível concluir a operação porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
 | <p>JET_errTermInProgress</p> | <p>Não é possível concluir a operação porque a instância associada à sessão está sendo desligado.</p> | 
@@ -103,7 +103,13 @@ Se qualquer operação de coluna de conjunto individual retornar um erro, toda a
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

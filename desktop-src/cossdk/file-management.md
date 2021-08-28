@@ -4,12 +4,12 @@ ms.assetid: 8c59577b-34ea-4675-aaea-a2732fd5ce14
 title: Gerenciamento de Arquivos (Serviços de Componentes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31685287e783dc5ae45d564897a37733568cc150d9af43322d5f435100e8f199
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 936375060b43e8abfd99f2d282e1cc05aada0d0e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118307302"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882542"
 ---
 # <a name="file-management"></a>Gerenciamento de Arquivos
 
@@ -21,7 +21,7 @@ Para habilitar a transferência de arquivos de aplicativo, o COMREPL gerencia au
 
 | Pasta                   | Finalidade                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ReplicaSource<br/> | Os aplicativos exportados durante a fase de preparação são armazenados aqui.<br/> Essa pasta é substituída sempre que a fase de preparação é executada em um determinado computador de origem. Essa pasta nunca é excluída explicitamente, portanto, a replicação para destinos pode ocorrer a qualquer momento depois que a origem é preparada.<br/> Cada aplicativo é armazenado em sua própria subpasta chamada <appName> + <appID> .<br/> |
+| ReplicaSource<br/> | Os aplicativos exportados durante a fase de preparação são armazenados aqui.<br/> Essa pasta é substituída sempre que a fase de preparação é executada em um determinado computador de origem. Essa pasta nunca é excluída explicitamente, portanto, a replicação para destinos pode ocorrer a qualquer momento depois que a origem é preparada.<br/> Cada aplicativo é armazenado em sua própria subpasta chamada &lt; appName &gt; + &lt; appID &gt; .<br/> |
 
 
 

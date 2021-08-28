@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_ENUMCOLUMNVALUE'
-title: Estrutura de JET_ENUMCOLUMNVALUE
+description: 'Saiba mais sobre: estrutura JET_ENUMCOLUMNVALUE dados'
+title: estrutura JET_ENUMCOLUMNVALUE dados
 TOCTitle: JET_ENUMCOLUMNVALUE Structure
 ms:assetid: a9882d7b-0c53-4a5d-bc98-0979e6e68c88
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294052(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86905d49bb798d37bad48087c48e77349ec10f57
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3a4d9500980434c21f9dfa6584db666418605de8
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482282"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988609"
 ---
-# <a name="jet_enumcolumnvalue-structure"></a>Estrutura de JET_ENUMCOLUMNVALUE
+# <a name="jet_enumcolumnvalue-structure"></a>estrutura JET_ENUMCOLUMNVALUE dados
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_enumcolumnvalue-structure"></a>Estrutura de JET_ENUMCOLUMNVALUE
+## <a name="jet_enumcolumnvalue-structure"></a>estrutura JET_ENUMCOLUMNVALUE dados
 
-A estrutura de **JET_ENUMCOLUMNVALUE** enumera os valores de coluna de um registro usando a função [JetEnumerateColumns](./jetenumeratecolumns-function.md) . [JetEnumerateColumns](./jetenumeratecolumns-function.md) retorna uma matriz de estruturas de **JET_ENUMCOLUMNVALUE** . A matriz é retornada na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para essa função.
+A **JET_ENUMCOLUMNVALUE** enumera os valores de coluna de um registro usando a [função JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns retorna](./jetenumeratecolumns-function.md) uma matriz de **JET_ENUMCOLUMNVALUE** estruturas. A matriz é retornada na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para essa função.
 
 ```cpp
     typedef struct {
@@ -46,16 +46,16 @@ A estrutura de **JET_ENUMCOLUMNVALUE** enumera os valores de coluna de um regist
 
 O valor da coluna (por índice baseado em um) que foi enumerado.
 
-**erra**
+**Err**
 
 O código de status da coluna resultante da enumeração do valor da coluna.
 
 
 | <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_wrnColumnNull</p> | <p>O valor da coluna solicitada é nulo.</p> | 
-| <p>JET_wrnColumnSkipped</p> | <p>O <em>itagSequence</em> especificado no elemento da matriz <em>rgtagSequence</em> no struct <a href="gg294138(v=exchg.10).md">JET_ENUMCOLUMN</a> correspondente a este <strong>JET_ENUMCOLUMNVALUE</strong> struct era zero.</p> | 
-| <p>JET_wrnColumnTruncated</p> | <p>O valor da coluna solicitada foi truncado para o tamanho especificado antes de ser retornado.</p><p>Esse truncamento ocorre apenas para longas colunas de texto e binários longos que contêm grandes quantidades de dados.</p> | 
+| <p>JET_wrnColumnNull</p> | <p>O valor da coluna solicitada é NULL.</p> | 
+| <p>JET_wrnColumnSkipped</p> | <p>O <em>itagSequence</em> especificado no elemento da matriz <em>rgtagSequence</em> no struct JET_ENUMCOLUMN correspondente <a href="gg294138(v=exchg.10).md">a</a> esse JET_ENUMCOLUMNVALUE <strong>struct</strong> era zero.</p> | 
+| <p>JET_wrnColumnTruncated</p> | <p>O valor da coluna solicitada foi truncado para o tamanho especificado antes de ser retornado.</p><p>Esse truncamento ocorre somente para texto longo e colunas binárias longas que contêm grandes quantidades de dados.</p> | 
 
 
 
@@ -63,18 +63,22 @@ O código de status da coluna resultante da enumeração do valor da coluna.
 
 O valor da coluna que foi enumerado para a coluna.
 
-O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-**pvData**
+**Pvdata**
 
 O valor da coluna que foi enumerado para a coluna.
 
-O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 3FDB4908-C75D-4AE0-B32E-93F840E4F30A
 title: GPU-Based Proteção de Conteúdo com vídeo D3D11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78097492d375d50688f2472f5d2de99cc21f8594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24af51187c400c11afa2ea273e7718c2d38ce429
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010306"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481732"
 ---
 # <a name="gpu-based-content-protection-with-d3d11-video"></a>GPU-Based Proteção de Conteúdo com vídeo D3D11
 
@@ -132,156 +132,105 @@ Recursos adicionais são indicados no membro **Caps** .
 
 A próxima etapa é configurar o canal autenticado.
 
-1.  Chame [**ID3D11VideoDevice:: CreateAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createauthenticatedchannel) para criar o canal autenticado. Para o parâmetro *channelType* , especifique um tipo de canal que corresponda aos recursos do driver.
-    -   O tipo de canal **D3D11_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE** corresponde a **D3D11_CONTENT_PROTECTION_CAPS_SOFTWARE**.
-    -   O tipo de canal **D3D11_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE** corresponde a **D3D11_CONTENT_PROTECTION_CAPS_HARDWARE**.
+1.  Chame [**ID3D11VideoDevice:: CreateAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createauthenticatedchannel) para criar o canal autenticado. Para o *parâmetro ChannelType,* especifique um tipo de canal que corresponde aos recursos do driver.
+    -   O **D3D11_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE** de canal correspondente a **D3D11_CONTENT_PROTECTION_CAPS_SOFTWARE**.
+    -   O **D3D11_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE** de canal correspondente a **D3D11_CONTENT_PROTECTION_CAPS_HARDWARE**.
 
-    O método **CreateAuthenticatedChannel** retorna um ponteiro para a interface [**ID3D11AuthenticatedChannel**](/windows/desktop/api/d3d11/nn-d3d11-id3d11authenticatedchannel) .
-2.  Chame [**ID3D11AuthenticatedChannel:: Getcertificates**](/windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificatesize) para obter o tamanho do certificado X. 509 do driver. Aloque um buffer do tamanho necessário.
-3.  Chame [**ID3D11AuthenticatedChannel:: Getcertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificate) para obter o certificado. O método copia o certificado no buffer que foi alocado na etapa anterior.
+    O **método CreateAuthenticatedChannel** retorna um ponteiro para a interface [**ID3D11AuthenticatedChannel.**](/windows/desktop/api/d3d11/nn-d3d11-id3d11authenticatedchannel)
+2.  Chame [**ID3D11AuthenticatedChannel::GetCertificateSize**](/windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificatesize) para obter o tamanho do certificado X.509 do driver. Aloce um buffer do tamanho necessário.
+3.  Chame [**ID3D11AuthenticatedChannel::GetCertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificate) para obter o certificado. O método copia o certificado para o buffer que foi alocado na etapa anterior.
 4.  Verifique se o certificado do driver foi assinado pela Microsoft e não foi revogado.
-5.  Obtenha a chave pública do certificado.
-6.  Gere uma chave de sessão de RSA aleatória. Essa chave de sessão é usada para assinar dados que são enviados para o canal autenticado. Criptografe a chave de sessão usando a chave pública do driver.
-7.  Chame [**ID3D11VideoContext:: NegotiateAuthenticatedChannelKeyExchange**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-negotiateauthenticatedchannelkeyexchange) para enviar a chave de sessão criptografada para o driver.
-8.  Inicialize o canal seguro da seguinte maneira:
-    1.  Preencha uma estrutura de [**D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input) , conforme descrito na documentação.
-    2.  Envie o comando [**D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input) chamando [**ID3D11VideoContext:: ConfigureAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel) conforme descrito na seção [enviando comandos de canal autenticados](#sending-authenticated-channel-commands). Esse comando contém os números de sequência iniciais para os comandos e consultas que são enviados para o canal autenticado.
-9.  Verifique o tipo de canal enviando uma consulta [**D3D11_AUTHENTICATED_QUERY_CHANNEL_TYPE**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_channel_type_output) para o canal autenticado, conforme descrito na seção [enviando consultas de canal autenticado](#sending-authenticated-channel-queries). Verifique se o tipo de canal corresponde ao que você especificou no método [**CreateAuthenticatedChannel**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel) .
+5.  Obter a chave pública do certificado.
+6.  Gere uma chave de sessão RSA aleatória. Essa chave de sessão é usada para assinar dados que são enviados para o canal autenticado. Criptografe a chave de sessão usando a chave pública do driver.
+7.  Chame [**ID3D11VideoContext::NegotiateAuthenticatedChannelKeyExchange**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-negotiateauthenticatedchannelkeyexchange) para enviar a chave de sessão criptografada para o driver.
+8.  Inicialize o canal seguro da seguinte forma:
+    1.  Preencha uma [**estrutura D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE_INPUT,**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input) conforme descrito na documentação.
+    2.  Envie o [**comando D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input) chamando [**ID3D11VideoContext::ConfigureAuthenticatedChannel,**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel) conforme descrito na seção Enviando comandos de canal [autenticados](#sending-authenticated-channel-commands). Esse comando contém os números de sequência inicial para os comandos e consultas que são enviados para o canal autenticado.
+9.  Verifique o tipo de canal enviando [**uma D3D11_AUTHENTICATED_QUERY_CHANNEL_TYPE**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_channel_type_output) para o canal autenticado, conforme descrito na seção Enviando consultas de canal [autenticadas](#sending-authenticated-channel-queries). Verifique se o tipo de canal corresponde ao que você especificou no [**método CreateAuthenticatedChannel.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel)
 
-### <a name="3-configure-the-cryptographic-session"></a>3. configurar a sessão de criptografia
+### <a name="3-configure-the-cryptographic-session"></a>3. Configurar a sessão criptográfica
 
-Em seguida, configure a sessão de criptografia e estabeleça a chave de sessão.
+Em seguida, configure a sessão criptográfica e estabeleça a chave de sessão.
 
-1.  Chame [**ID3D11VideoDevice:: CreateCryptoSession**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createcryptosession) para criar a sessão criptográfica. Esse método retorna um ponteiro para a interface [**ID3D11CryptoSession**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession) .
-2.  Chame [**ID3D11CryptoSession:: Getcertificates**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificatesize) para obter o tamanho do certificado X. 509 do driver. Aloque um buffer do tamanho necessário.
-3.  Chame [**ID3D11CryptoSession:: Getcertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificate) para obter o certificado. O método copia o certificado no buffer que foi alocado na etapa anterior.
+1.  Chame [**ID3D11VideoDevice::CreateCryptoSession**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-createcryptosession) para criar a sessão criptográfica. Esse método retorna um ponteiro para a [**interface ID3D11CryptoSession.**](/windows/desktop/api/d3d11/nn-d3d11-id3d11cryptosession)
+2.  Chame [**ID3D11CryptoSession::GetCertificateSize**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificatesize) para obter o tamanho do certificado X.509 do driver. Aloce um buffer do tamanho necessário.
+3.  Chame [**ID3D11CryptoSession::GetCertificate**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificate) para obter o certificado. O método copia o certificado para o buffer que foi alocado na etapa anterior.
 4.  Verifique se o certificado do driver foi assinado pela Microsoft e não foi revogado.
-5.  Obtenha a chave pública do certificado.
-6.  Gere uma chave de sessão de RSA aleatória. Essa é uma chave de sessão separada da chave de sessão de canal autenticado. Criptografe a chave de sessão usando a chave pública do driver.
-7.  Chame [**ID3D11VideoContext:: NegotiateCryptoSessionKeyExchange**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-negotiatecryptosessionkeyexchange) para enviar a chave de sessão criptografada para o driver.
-8.  Se os recursos de proteção de conteúdo incluírem **3D11_CONTENT_PROTECTION_CAPS_CONTENT_KEY**, crie uma chave de conteúdo de RSA aleatória. Isso será usado posteriormente no processo de decodificação.
+5.  Obter a chave pública do certificado.
+6.  Gere uma chave de sessão RSA aleatória. Essa é uma chave de sessão separada da chave de sessão do canal autenticado. Criptografe a chave de sessão usando a chave pública do driver.
+7.  Chame [**ID3D11VideoContext::NegotiateCryptoSessionKeyExchange**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-negotiatecryptosessionkeyexchange) para enviar a chave de sessão criptografada para o driver.
+8.  Se os recursos de proteção de conteúdo **3D11_CONTENT_PROTECTION_CAPS_CONTENT_KEY**, crie uma chave de conteúdo RSA aleatória. Isso será usado posteriormente no processo de decodificação.
 
-### <a name="4-associate-the-decoder-with-the-cryptographic-session"></a>4. associar o decodificador à sessão de criptografia
+### <a name="4-associate-the-decoder-with-the-cryptographic-session"></a>4. Associar o decodificador à sessão criptográfica
 
-Em seguida, associe o dispositivo decodificador ao dispositivo Direct3D11 e a sessão criptográfica, da seguinte maneira:
+Em seguida, associe o dispositivo decodificador ao dispositivo Direct3D11 e à sessão criptográfica, da seguinte forma:
 
-1.  Obtenha um identificador para o dispositivo Direct3D11, enviando uma consulta de [**D3D11_AUTHENTICATED_QUERY_DEVICE_HANDLE**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_device_handle_output) para o canal autenticado.
-2.  Preencha uma estrutura de [**D3D11_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_crypto_session_input) com as seguintes informações:
-    -   Defina o membro **DecodeHandle** para o identificador retornado de [**ID3D11VideoDecoder:: GetDriverHandle**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodecoder-getdriverhandle).
-    -   Defina o membro **CryptoSessionHandle** para o identificador retornado de [**ID3D11CryptoSession:: GetCryptoSessionHandle**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcryptosessionhandle).
-    -   Defina o membro **DeviceHandle** para o identificador do dispositivo Direct3D11.
-3.  Chame [**ID3D11VideoContext:: ConfigureAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel) para enviar um comando [**D3D11_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_crypto_session_input) para o canal autenticado.
+1.  Obter um handle para o dispositivo Direct3D11, enviando [**um**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_device_handle_output) D3D11_AUTHENTICATED_QUERY_DEVICE_HANDLE consulta para o canal autenticado.
+2.  Preencha uma [**estrutura D3D11_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_crypto_session_input) com as seguintes informações:
+    -   De definir **o membro DecodeHandle** como o handle retornado de [**ID3D11VideoDecoder::GetDriverHandle**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videodecoder-getdriverhandle).
+    -   De definir **o membro CryptoSessionHandle** como o handle retornado de [**ID3D11CryptoSession::GetCryptoSessionHandle**](/windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcryptosessionhandle).
+    -   De definir **o membro DeviceHandle** como o alça do dispositivo Direct3D11.
+3.  Chame [**ID3D11VideoContext::ConfigureAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel) para enviar um [**D3D11_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_crypto_session_input) para o canal autenticado.
 
-O diagrama a seguir ilustra a troca de identificadores:
+O diagrama a seguir ilustra a troca de alças:
 
-![um diagrama que mostra como o decodificador DXVA está associado à sessão criptográfica.](images/d3d9video03.png)
+![um diagrama que mostra como o decodificador dxva está associado à sessão criptográfica.](images/d3d9video03.png)
 
-O decodificador de software agora pode usar a chave de sessão de criptografia para criptografar os buffers de vídeo compactados. Cada buffer compactado terá seu próprio vetor de inicialização (IV) especificado no membro **pIV** da estrutura de [**D3D11_VIDEO_DECODER_BUFFER_DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_buffer_desc) .
+O decodificador de software agora pode usar a chave de sessão criptográfica para criptografar os buffers de vídeo compactados. Cada buffer compactado terá seu próprio IV (vetor de inicialização) especificado no membro **pIV** da [**estrutura D3D11_VIDEO_DECODER_BUFFER_DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_video_decoder_buffer_desc) dados.
 
 ## <a name="sending-authenticated-channel-commands"></a>Enviando comandos de canal autenticado
 
-Um conjunto de comandos é definido para configurar o canal autenticado e definir várias proteções de conteúdo. Para obter uma lista de comandos, consulte [proteção de conteúdo comandos](content-protection-commands.md).
+Um conjunto de comandos é definido para configurar o canal autenticado e definir várias proteções de conteúdo. Para ver uma lista de comandos, consulte [Proteção de Conteúdo comandos](content-protection-commands.md).
 
 Para enviar um comando para o canal autenticado, execute as etapas a seguir.
 
-1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre uma estrutura de [**D3D11_AUTHENTICATED_CONFIGURE_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_input) seguida por campos adicionais. Preencha a estrutura de **D3D11_AUTHENTICATED_CONFIGURE_INPUT** , conforme mostrado na tabela a seguir.
+1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre [**uma estrutura D3D11_AUTHENTICATED_CONFIGURE_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_input) seguida por campos adicionais. Preencha a estrutura **D3D11_AUTHENTICATED_CONFIGURE_INPUT,** conforme mostrado na tabela a seguir.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>DESCRIÇÃO</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>omac</strong></td>
-    <td>Ignore este campo por enquanto.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>Configuratype</strong></td>
-    <td>GUID que identifica o comando. Para obter uma lista de comandos, consulte <a href="content-protection-commands.md">proteção de conteúdo comandos</a>.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>hChannel</strong></td>
-    <td>O identificador para o canal autenticado.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>SequenceNumber</strong></td>
-    <td>O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input"><strong>D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outro comando, aumente esse número em 1. O número de sequência protege contra ataques de repetição.
-    <blockquote>
-    [!Note]<br />
-Dois números de sequência separados são usados, um para comandos e outro para consultas.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | DESCRIÇÃO | 
+|--------|-------------|
+| <strong>omac</strong> | Ignore esse campo por enquanto. | 
+| <strong>ConfigureType</strong> | GUID que identifica o comando. Para ver uma lista de comandos, consulte <a href="content-protection-commands.md">Proteção de Conteúdo comandos</a>. | 
+| <strong>hChannel</strong> | O alça para o canal autenticado. | 
+| <strong>SequenceNumber</strong> | O número de sequência. O primeiro número de sequência é especificado enviando um <a href="/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input"><strong>D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE</strong></a> comando. Sempre que você enviar outro comando, incremente esse número em 1. O número de sequência protege contra ataques de reprodução.    <blockquote>    [!Note]<br />    Dois números de sequência separados são usados, um para comandos e outro para consultas.    </blockquote><br /><br /> | 
+
 
     
 
      
 
-2.  Calcule a marca OMAC para o bloco de dados que aparece após o membro **OMAC** da estrutura de entrada. Em seguida, copie esse valor de marca para o membro **OMAC** .
-3.  Chame [**ID3D11VideoContext:: ConfigureAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel).
-4.  O driver coloca a saída do comando na estrutura de [**D3D11_AUTHENTICATED_CONFIGURE_OUTPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_output) .
-5.  Calcule a marca OMAC para o bloco de dados que aparece após o membro **OMAC** da estrutura de saída. Compare isso com o valor do membro **OMAC** . Falha se eles não corresponderem.
-6.  Compare os valores dos membros **configuratype**, **hChannel** e **SequenceNumber** na estrutura de saída com seus valores para esses membros. Falha se eles não corresponderem.
-7.  Incrementar o número de sequência para o próximo comando.
+2.  Calcule a marca OMAC para o bloco de dados que aparece após **o membro omac** da estrutura de entrada. Em seguida, copie esse valor de marca para **o membro omac.**
+3.  Chame [**ID3D11VideoContext::ConfigureAuthenticatedChannel.**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-configureauthenticatedchannel)
+4.  O driver coloca a saída do comando na estrutura [**D3D11_AUTHENTICATED_CONFIGURE_OUTPUT.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_output)
+5.  Calcule a marca OMAC para o bloco de dados que aparece após **o membro omac** da estrutura de saída. Compare isso com o valor do **membro omac.** Falhará se eles não corresponderem.
+6.  Compare os valores dos **membros ConfigureType**, **hChannel** e **SequenceNumber** na estrutura de saída com os valores desses membros. Falhará se eles não corresponderem.
+7.  Incremente o número de sequência para o próximo comando.
 
 ## <a name="sending-authenticated-channel-queries"></a>Enviando consultas de canal autenticado
 
-Um conjunto de consultas é definido para recuperar informações sobre o canal autenticado. Para obter uma lista de consultas, consulte [proteção de conteúdo consultas](content-protection-queries.md).
+Um conjunto de consultas é definido para recuperar informações sobre o canal autenticado. Para ver uma lista de consultas, [consulte Proteção de Conteúdo consultas](content-protection-queries.md).
 
 Para enviar um comando para o canal autenticado, execute as etapas a seguir.
 
-1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre uma estrutura de [**D3D11_AUTHENTICATED_QUERY_INPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_input) , possivelmente seguida por campos adicionais. Preencha a estrutura de **D3D11_AUTHENTICATED_QUERY_INPUT** , conforme mostrado na tabela a seguir.
+1.  Preencha a estrutura de dados de entrada. Essa estrutura de dados é sempre [**uma D3D11_AUTHENTICATED_QUERY_INPUT,**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_input) possivelmente seguida por campos adicionais. Preencha a estrutura **D3D11_AUTHENTICATED_QUERY_INPUT,** conforme mostrado na tabela a seguir.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Membro</th>
-    <th>DESCRIÇÃO</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>QueryType</strong></td>
-    <td>GUID que identifica a consulta. Para obter uma lista de consultas, consulte <a href="content-protection-queries.md">proteção de conteúdo consultas</a>.</td>
-    </tr>
-    <tr class="even">
-    <td><strong>hChannel</strong></td>
-    <td>O identificador para o canal autenticado.</td>
-    </tr>
-    <tr class="odd">
-    <td><strong>SequenceNumber</strong></td>
-    <td>O número de sequência. O primeiro número de sequência é especificado com o envio de um comando <a href="/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input"><strong>D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE</strong></a> . Cada vez que você enviar outra consulta, aumente esse número em 1. O número de sequência protege contra ataques de repetição.
-    <blockquote>
-    [!Note]<br />
-Dois números de sequência separados são usados, um para comandos e outro para consultas.
-    </blockquote>
-    <br/> <br/></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Membro | DESCRIÇÃO | 
+|--------|-------------|
+| <strong>QueryType</strong> | GUID que identifica a consulta. Para ver uma lista de consultas, <a href="content-protection-queries.md">consulte Proteção de Conteúdo consultas</a>. | 
+| <strong>hChannel</strong> | O alça para o canal autenticado. | 
+| <strong>SequenceNumber</strong> | O número de sequência. O primeiro número de sequência é especificado enviando um <a href="/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_configure_initialize_input"><strong>D3D11_AUTHENTICATED_CONFIGURE_INITIALIZE</strong></a> comando. Sempre que você enviar outra consulta, incremente esse número em 1. O número de sequência protege contra ataques de reprodução.    <blockquote>    [!Note]<br />    Dois números de sequência separados são usados, um para comandos e outro para consultas.    </blockquote><br /><br /> | 
+
 
     
 
      
 
-2.  Chame [**ID3D11VideoContext:: QueryAuthenticatedChannel**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-queryauthenticatedchannel).
-3.  O driver coloca a saída da consulta em uma estrutura de [**D3D11_AUTHENTICATED_QUERY_OUTPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_output) . Essa estrutura é seguida por campos adicionais, dependendo do tipo de consulta.
-4.  Calcule a marca OMAC para o bloco de dados que aparece após o membro **OMAC** da estrutura de saída. Compare isso com o valor do membro **OMAC** . Falha se eles não corresponderem.
-5.  Compare os valores dos membros **configuratype**, **hChannel** e **SequenceNumber** na estrutura de saída com seus valores para esses membros. Falha se eles não corresponderem.
-6.  Incrementar o número de sequência para a próxima consulta.
+2.  Chame [**ID3D11VideoContext::QueryAuthenticatedChannel.**](/windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-queryauthenticatedchannel)
+3.  O driver coloca a saída da consulta em uma [**estrutura D3D11_AUTHENTICATED_QUERY_OUTPUT**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_authenticated_query_output) dados. Essa estrutura é seguida por campos adicionais, dependendo do tipo de consulta.
+4.  Calcule a marca OMAC para o bloco de dados que aparece após **o membro omac** da estrutura de saída. Compare isso com o valor do **membro omac.** Falhará se eles não corresponderem.
+5.  Compare os valores dos **membros ConfigureType**, **hChannel** e **SequenceNumber** na estrutura de saída com os valores desses membros. Falhará se eles não corresponderem.
+6.  Incremente o número de sequência para a próxima consulta.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

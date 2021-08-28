@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a5839559751fe45ec18a55de14c565116a0f9a4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 069339aefbac335bf1c7bb4b35efe4466b526225
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785255"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475932"
 ---
 # <a name="jetattachdatabase2-function"></a>Função JetAttachDatabase2
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetattachdatabase2-function"></a>Função JetAttachDatabase2
 
@@ -65,100 +65,35 @@ Passar zero significa que não há nenhum máximo imposto pelo mecanismo de banc
 
 Um grupo de bits que contém as opções a serem usadas para esta chamada, que incluem zero ou mais dos seguintes:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitDbDeleteCorruptIndexes</p></td>
-<td><p>Se <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> tiver sido definido, todos os índices sobre dados Unicode serão excluídos. Para obter mais detalhes, consulte a seção Comentários.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDbDeleteUnicodeIndexes</p></td>
-<td><p>Todos os índices sobre dados Unicode serão excluídos, independentemente da configuração de <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a>. Para obter mais detalhes, consulte a seção Comentários.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitDbReadOnly</p></td>
-<td><p>Impede modificações no banco de dados.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDbUpgrade</p></td>
-<td><p>Reservado para uso futuro.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitDbDeleteCorruptIndexes</p> | <p>Se <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> tiver sido definido, todos os índices sobre dados Unicode serão excluídos. Para obter mais detalhes, consulte a seção Comentários.</p> | 
+| <p>JET_bitDbDeleteUnicodeIndexes</p> | <p>Todos os índices sobre dados Unicode serão excluídos, independentemente da configuração de <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a>. Para obter mais detalhes, consulte a seção Comentários.</p> | 
+| <p>JET_bitDbReadOnly</p> | <p>Impede modificações no banco de dados.</p> | 
+| <p>JET_bitDbUpgrade</p> | <p>Reservado para uso futuro.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-A função retorna um dos [JET_ERR](./jet-err.md) códigos de erro. Veja a seguir as mais comumente retornadas. (Para obter uma lista completa de erros para essa API, consulte [códigos de erro do mecanismo de armazenamento extensível](./extensible-storage-engine-error-codes.md).)
+A função retorna um dos [JET_ERR](./jet-err.md) códigos de erro. Veja a seguir as mais comumente retornadas. (para obter uma lista completa de erros para essa API, consulte [códigos de erro do mecanismo de Armazenamento extensível](./extensible-storage-engine-error-codes.md).)
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupInProgress</p></td>
-<td><p>Não é permitido anexar um banco de dados durante um backup.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseFileReadOnly</p></td>
-<td><p>O arquivo de banco de dados especificado por <em>szFilename</em> deve ser gravável. O atributo Read-Only não deve ser definido e o processo em execução deve ter privilégios suficientes para gravar no arquivo.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDatabaseInUse</p></td>
-<td><p>O arquivo de banco de dados já está aberto por outro processo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseInvalidPath</p></td>
-<td><p>Um caminho inválido foi fornecido em <em>szFilename</em>. <em>szFilename</em> deve ser não nulo e referir-se a um caminho válido.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDatabaseSharingViolation</p></td>
-<td><p>O arquivo de banco de dados já foi anexado por uma sessão diferente.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errFileNotFound</p></td>
-<td><p>O arquivo fornecido em <em>szFilename</em> não existe.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errPrimaryIndexCorrupted</p></td>
-<td><p>Há um erro com o índice primário. Isso pode ser de corrupção física (como corrupção de disco ou memória). Ele também pode ser retornado ao anexar um banco de dados que foi modificado pela última vez em um sistema operacional mais antigo e o índice primário está sobre uma coluna com dado Unicode. Consulte os comentários para obter mais informações sobre índices sobre dados Unicode.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSecondaryIndexCorrupted</p></td>
-<td><p>Há um erro com um índice secundário. Isso pode ser de corrupção física (como corrupção de disco ou memória). Ele também pode ser retornado ao anexar um banco de dados modificado pela última vez em um sistema operacional mais antigo, e um índice secundário está sobre uma coluna com dado Unicode. Consulte os comentários para obter mais informações sobre índices sobre dados Unicode. Os índices secundários são completamente recriados quando um banco de dados é desfragmentado com um utilitário offline usando o seguinte comando: <strong>esentutl-d</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTooManyAttachedDatabases</p></td>
-<td><p>Somente um número finito de bancos de dados pode ser anexado por instância. Atualmente, o limite é de sete bancos de dados por instância.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnDatabaseAttached</p></td>
-<td><p>Um aviso não fatal que indica que o arquivo de banco de dados já foi anexado por esta sessão.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBackupInProgress</p> | <p>Não é permitido anexar um banco de dados durante um backup.</p> | 
+| <p>JET_errDatabaseFileReadOnly</p> | <p>O arquivo de banco de dados especificado por <em>szFilename</em> deve ser gravável. O atributo Read-Only não deve ser definido e o processo em execução deve ter privilégios suficientes para gravar no arquivo.</p> | 
+| <p>JET_errDatabaseInUse</p> | <p>O arquivo de banco de dados já está aberto por outro processo.</p> | 
+| <p>JET_errDatabaseInvalidPath</p> | <p>Um caminho inválido foi fornecido em <em>szFilename</em>. <em>szFilename</em> deve ser não nulo e referir-se a um caminho válido.</p> | 
+| <p>JET_errDatabaseSharingViolation</p> | <p>O arquivo de banco de dados já foi anexado por uma sessão diferente.</p> | 
+| <p>JET_errFileNotFound</p> | <p>O arquivo fornecido em <em>szFilename</em> não existe.</p> | 
+| <p>JET_errPrimaryIndexCorrupted</p> | <p>Há um erro com o índice primário. Isso pode ser de corrupção física (como corrupção de disco ou memória). Ele também pode ser retornado ao anexar um banco de dados que foi modificado pela última vez em um sistema operacional mais antigo e o índice primário está sobre uma coluna com dado Unicode. Consulte os comentários para obter mais informações sobre índices sobre dados Unicode.</p> | 
+| <p>JET_errSecondaryIndexCorrupted</p> | <p>Há um erro com um índice secundário. Isso pode ser de corrupção física (como corrupção de disco ou memória). Ele também pode ser retornado ao anexar um banco de dados modificado pela última vez em um sistema operacional mais antigo, e um índice secundário está sobre uma coluna com dado Unicode. Consulte os comentários para obter mais informações sobre índices sobre dados Unicode. Os índices secundários são completamente recriados quando um banco de dados é desfragmentado com um utilitário offline usando o seguinte comando: <strong>esentutl-d</strong>.</p> | 
+| <p>JET_errTooManyAttachedDatabases</p> | <p>Somente um número finito de bancos de dados pode ser anexado por instância. Atualmente, o limite é de sete bancos de dados por instância.</p> | 
+| <p>JET_wrnDatabaseAttached</p> | <p>Um aviso não fatal que indica que o arquivo de banco de dados já foi anexado por esta sessão.</p> | 
+
 
 
 #### <a name="remarks"></a>Comentários
@@ -169,43 +104,14 @@ Consulte [JetAttachDatabase](./jetattachdatabase-function.md) para ver comentár
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetAttachDatabase2W</strong> (Unicode) e <strong>JetAttachDatabase2A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetAttachDatabase2W</strong> (Unicode) e <strong>JetAttachDatabase2A</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
 
-[Arquivos do mecanismo de armazenamento extensível](./extensible-storage-engine-files.md)  
+[arquivos do mecanismo de Armazenamento extensível](./extensible-storage-engine-files.md)  
 [JET_ERR](./jet-err.md)  
 [JET_GRBIT](./jet-grbit.md)  
 [JET_SESID](./jet-sesid.md)  

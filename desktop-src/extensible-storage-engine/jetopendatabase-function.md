@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3492a037ac0c52a78bbe3265bd629969c301771c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fc7f484921dab0967ea991ac4060e5af7d78ec0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663501"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988489"
 ---
 # <a name="jetopendatabase-function"></a>Função JetOpenDatabase
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetopendatabase-function"></a>Função JetOpenDatabase
 
@@ -68,116 +68,44 @@ Ponteiro para um buffer que, em uma chamada bem-sucedida, contém o identificado
 
 Um grupo de bits que especifica zero ou mais das opções a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitDbExclusive</p></td>
-<td><p>Permite que apenas uma única sessão anexe um banco de dados. Normalmente, várias sessões podem abrir um banco de dados.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitDbReadOnly</p></td>
-<td><p>Impede modificações no banco de dados.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitDbExclusive</p> | <p>Permite que apenas uma única sessão anexe um banco de dados. Normalmente, várias sessões podem abrir um banco de dados.</p> | 
+| <p>JET_bitDbReadOnly</p> | <p>Impede modificações no banco de dados.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDatabaseInUse</p></td>
-<td><p>O acesso exclusivo foi solicitado, mas não pôde ser concedido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseInvalidPath</p></td>
-<td><p>Um caminho inválido foi fornecido em <em>szFilename</em>. <em>szFilename</em> deve ser não nulo e referir-se a um arquivo válido.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDatabaseLocked</p></td>
-<td><p>Outra sessão já abriu o banco de dados exclusivamente (usando JET_bitDbExclusive).</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDatabaseNotFound</p></td>
-<td><p>O banco de dados não foi anexado anteriormente (consulte <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a>).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidDatabase</p></td>
-<td><p>Foi feita uma tentativa de abrir um arquivo que não é um arquivo de banco de dados válido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOneDatabasePerSession</p></td>
-<td><p>Foi feita uma tentativa de abrir mais de um banco de dados e <a href="gg269337(v=exchg.10).md">JET_paramOneDatabasePerSession</a> foi definido. Para obter mais informações, consulte <a href="gg294139(v=exchg.10).md">parâmetros do sistema</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnFileOpenReadOnly</p></td>
-<td><p>O arquivo foi anexado como somente leitura, mas <strong>JetOpenDatabase</strong> não passou JET_bitDbReadOnly. O banco de dados ainda está aberto com acesso somente leitura.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errDatabaseInUse</p> | <p>O acesso exclusivo foi solicitado, mas não pôde ser concedido.</p> | 
+| <p>JET_errDatabaseInvalidPath</p> | <p>Um caminho inválido foi fornecido em <em>szFilename</em>. <em>szFilename</em> deve ser não nulo e referir-se a um arquivo válido.</p> | 
+| <p>JET_errDatabaseLocked</p> | <p>Outra sessão já abriu o banco de dados exclusivamente (usando JET_bitDbExclusive).</p> | 
+| <p>JET_errDatabaseNotFound</p> | <p>O banco de dados não foi anexado anteriormente (consulte <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a>).</p> | 
+| <p>JET_errInvalidDatabase</p> | <p>Foi feita uma tentativa de abrir um arquivo que não é um arquivo de banco de dados válido.</p> | 
+| <p>JET_errOneDatabasePerSession</p> | <p>Foi feita uma tentativa de abrir mais de um banco de dados e <a href="gg269337(v=exchg.10).md">JET_paramOneDatabasePerSession</a> foi definido. Para obter mais informações, consulte <a href="gg294139(v=exchg.10).md">parâmetros do sistema</a>.</p> | 
+| <p>JET_wrnFileOpenReadOnly</p> | <p>O arquivo foi anexado como somente leitura, mas <strong>JetOpenDatabase</strong> não passou JET_bitDbReadOnly. O banco de dados ainda está aberto com acesso somente leitura.</p> | 
+
 
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetOpenDatabaseW</strong> (Unicode) e <strong>JetOpenDatabaseA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetOpenDatabaseW</strong> (Unicode) e <strong>JetOpenDatabaseA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

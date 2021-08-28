@@ -1,15 +1,15 @@
 ---
-title: URIs em Windows 8.1
+title: URIs no Windows 8.1
 description: Windows 8.1 permite apenas URIs https, não URIs http
 ms.assetid: 06BDD3A3-67B7-4085-83DA-F322F718C876
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3246cad0fb6114a3a01d781ed990e0c277547e2b9ee489572c8124a23e7e81b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 022485f9fc5dc2657127f7bae49127e0bd3b5954
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028804"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886116"
 ---
 # <a name="windows-81-allows-only-https-uris-not-http-uris"></a>Windows 8.1 permite apenas URIs https, não URIs http
 
@@ -19,9 +19,9 @@ ms.locfileid: "119028804"
 Servidores – Windows Server 2012 R2  
 </dl>
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-Embora os aplicativos Windows 8 possam incluir URIs http e https em seus URIs de conteúdo do aplicativo, os aplicativos Windows 8.1 podem incluir apenas URIs https.
+Embora os aplicativos Windows 8 possam incluir URIs http e https em seus URIs de conteúdo de aplicativo, os aplicativos Windows 8.1 podem incluir apenas URIs https.
 
 A única exceção é para ContentUriRules dinâmico especificado no arquivo AppxManifest.xml aplicativo. Com o ContentUriRules dinâmico, os aplicativos podem acessar domínios adicionais ou recursos de rede fornecidos pelo administrador, como uris Política de Grupo dados. No entanto, ContentUriRules dinâmico só estará disponível para aplicativos Windows Store se atenderem a estas condições:
 
@@ -37,9 +37,9 @@ Ao executar um aplicativo criado para Windows 8 no Windows 8.1, o uso de URIs ht
 
 ## <a name="mitigations"></a>Atenuações
 
-Recomendamos que os desenvolvedores do WWA alternem de para o controle [<iframe>](https://msdn.microsoft.com/library/windows/apps/hh465955.aspx) [WebView](/uwp/api/Windows.UI.Xaml.Controls.WebView?view=winrt-19041) (<x-ms-webview>). No entanto, se você precisar de suporte para AppCache, IndexedDB, localização geográfica ou acesso de área de transferência programática, você precisará continuar usando <iframe> para Windows 8.1.
+Recomendamos que os desenvolvedores do WWA [<iframe>](https://msdn.microsoft.com/library/windows/apps/hh465955.aspx) alternem de para o controle [WebView](/uwp/api/Windows.UI.Xaml.Controls.WebView?view=winrt-19041) ( &lt; x-ms-webview &gt; ). No entanto, se você precisar de suporte para AppCache, IndexedDB, localização geográfica ou acesso de área de transferência programática, você precisará continuar usando <iframe> para Windows 8.1.
 
-Uso contínuo de <iframe> para conteúdo remoto exigirá uma nova entrada no ApplicationContentUriRules para o aplicativo. Os aplicativos com WebView exigirão novas entradas no ApplicationContentUriRules se o conteúdo da Web precisar invocar window.external.notify para gerar um [evento ScriptNotify.](/uwp/api/Windows.UI.Xaml.Controls.WebView?view=winrt-19041) Se você não tiver Visual Studio, poderá atualizar o manifesto do aplicativo adicionando o seguinte XML, incluindo curingas para subdomasins (por exemplo, https:// \* .microsoft.com):
+Uso contínuo de <iframe> para conteúdo remoto exigirá uma nova entrada no ApplicationContentUriRules para o aplicativo. Os aplicativos com WebView exigirão novas entradas no ApplicationContentUriRules se o conteúdo da Web precisar invocar window.external.notify para gerar um [evento ScriptNotify.](/uwp/api/Windows.UI.Xaml.Controls.WebView?view=winrt-19041) Se você não tiver Visual Studio, poderá atualizar o manifesto do aplicativo adicionando o xml a seguir, incluindo curingas para subdomains (por exemplo, https:// \* .microsoft.com):
 
 
 ```

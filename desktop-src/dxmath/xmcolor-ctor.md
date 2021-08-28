@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 57ad0e2855b8f6901f9ddf1deb1f014350f7645a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d493f60a1218660f0b59a25d85f0391b0978fcc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764099"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122483162"
 ---
 # <a name="xmcolor-constructors"></a>Construtores XMCOLOR
 
@@ -33,56 +33,14 @@ Constrói instâncias da estrutura [**XMCOLOR**](/windows/desktop/api/DirectXPac
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(constfloat)"><strong>XMCOLOR ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMCOLOR</code><br/> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"> <strong>XMCOLOR</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Isso só está disponível para desenvolvimento baseado em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(uint32_t)"><strong>XMCOLOR (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMCOLOR</code> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(constfloat)"><strong>XMCOLOR (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMCOLOR</code> de um argumento de matriz de quatro elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(float_float_float_float)"><strong>XMCOLOR (float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMCOLOR</code> quatro <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de quatro <code>float</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(constfloat)"><strong>XMCOLOR ()</strong></a> | Construtor padrão para <code>XMCOLOR</code><br /> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"> <strong>XMCOLOR</strong></a><br /><blockquote>[!Note]<br />Isso só está disponível para desenvolvimento baseado em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(uint32_t)"><strong>XMCOLOR (uint32_t)</strong></a> | Inicializa uma nova instância de <code>XMCOLOR</code> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(constfloat)"><strong>XMCOLOR (const float *)</strong></a> | Inicializa uma nova instância de <code>XMCOLOR</code> de um argumento de matriz de quatro elementos <code>float</code> . <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> . <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-xmcolor(float_float_float_float)"><strong>XMCOLOR (float, float, float, float)</strong></a> | Inicializa uma nova instância do de <code>XMCOLOR</code> quatro <code>float</code> argumentos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> de quatro <code>float</code> argumentos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+
 
 
 

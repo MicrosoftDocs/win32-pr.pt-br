@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura JET_RECSIZE dados'
-title: estrutura JET_RECSIZE dados
+description: 'Saiba mais sobre: estrutura de JET_RECSIZE'
+title: Estrutura de JET_RECSIZE
 TOCTitle: JET_RECSIZE Structure
 ms:assetid: bb2a63bb-7956-46c2-9791-0d0678a6c366
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294072(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7ea4520a75e83c77a6403a583e9131a15df337b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4fd0f59c821fa80d8de46f97e05aa1944354018e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988219"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475942"
 ---
-# <a name="jet_recsize-structure"></a>estrutura JET_RECSIZE dados
+# <a name="jet_recsize-structure"></a>Estrutura de JET_RECSIZE
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_recsize-structure"></a>estrutura JET_RECSIZE dados
+## <a name="jet_recsize-structure"></a>Estrutura de JET_RECSIZE
 
-A **estrutura JET_RECSIZE** é usada pelo [JetGetRecordSize](./jetgetrecordsize-function.md) para retornar informações sobre os requisitos de uso de um registro no espaço de dados do usuário, o número de colunas definidas, o número de valores e o espaço de sobrecarga da estrutura de registro ESE.
+A estrutura de **JET_RECSIZE** é usada pelo [JetGetRecordSize](./jetgetrecordsize-function.md) para retornar informações sobre os requisitos de uso de um registro no espaço de dados do usuário, o número de colunas definidas, o número de valores e o espaço de sobrecarga da estrutura de registro do ESE.
 
-**Windows Vista:** A **estrutura JET_RECSIZE** é introduzida no Windows Vista.
+**Windows Vista:** a estrutura de **JET_RECSIZE** é introduzida no Windows Vista.
 
 ```cpp
     typedef struct {
@@ -56,19 +56,19 @@ Conjunto de dados do usuário no registro.
 
 **cbLongValueData**
 
-Dados do usuário associados ao registro, mas armazenados na árvore de valor longo.
+Dados de usuário associados ao registro, mas armazenados na árvore de valor longo.
 
-**Observação**  Isso não conta valores longos intrínsecos.
+**Observação**  Isso não conta os valores intrínsecos longos.
 
 **cbOverhead**
 
-A sobrecarga da estrutura de registro ESE para esse registro. Isso inclui o tamanho da chave do registro.
+A sobrecarga da estrutura do registro ESE para esse registro. Isso inclui o tamanho da chave do registro.
 
 **cbLongValueOverhead**
 
 A sobrecarga dos dados de valor longo.
 
-**Observação**  Isso não conta valores longos intrínsecos.
+**Observação**  Isso não conta os valores intrínsecos longos.
 
 **cNonTaggedColumns**
 
@@ -80,13 +80,13 @@ Número total de colunas marcadas definidas neste registro.
 
 **cLongValues**
 
-Número total de valores longos armazenados na árvore de valores longos para esse registro.
+Número total de valores longos armazenados na árvore de valor longo deste registro.
 
-**Observação**  Isso não conta valores longos intrínsecos.
+**Observação**  Isso não conta os valores intrínsecos longos.
 
 **cMultiValues**
 
-O acúmulo do número total de valores além do primeiro para todas as colunas no registro.
+A acumulação do número total de valores além do primeiro para todas as colunas no registro.
 
 ### <a name="remarks"></a>Comentários
 
@@ -95,11 +95,7 @@ O número total de valores no registro seria **cMultiValues**  +  **cNonTaggedCo
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 

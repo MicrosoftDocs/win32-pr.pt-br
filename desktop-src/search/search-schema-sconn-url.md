@@ -1,19 +1,19 @@
 ---
-description: O <url> elemento Especifica uma URL para o local para esse conector de pesquisa.
+description: O &lt; &gt; elemento URL especifica uma URL para o local para esse conector de pesquisa.
 ms.assetid: fdc9e138-2e98-4f01-ab7b-0c3dfad5a4dd
 title: Elemento URL simpleLocation (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fce95943017f4905414f65b75086d4babdf3750505fece0b73255e0e63623e9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8818eacdaecd33353d4340270770e80b4a63ceee
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118226321"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883104"
 ---
 # <a name="simplelocation-url-element-search-connector-schema"></a>Elemento URL simpleLocation (esquema do conector de pesquisa)
 
-O <url> elemento Especifica uma URL para o local para esse conector de pesquisa. Esse valor pode ser uma URL file://regular, conforme definido no RFC 1738 ( https://www.ietf.org/rfc/rfc1738.txt) documento ou ou uma URL que usa o protocolo KnownFolders:. Este elemento não tem elementos filho e nenhum atributo.
+O &lt; &gt; elemento URL especifica uma URL para o local para esse conector de pesquisa. Esse valor pode ser uma URL file://regular, conforme definido no RFC 1738 ( https://www.ietf.org/rfc/rfc1738.txt) documento ou ou uma URL que usa o protocolo KnownFolders:. Este elemento não tem elementos filho e nenhum atributo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -159,14 +159,14 @@ a tabela a seguir mostra os guids de pasta conhecidos do Windows 7.
 | FOLDERID \_ SystemX86              | {D65231B0-B2F1-4857-A4-CE-A8-E7-C6-EA-7D-27} |
 | Modelos \_ FOLDERID              | {A63293E8-664E-48DB-A0-79-DF-75-9E-05-09-F7} |
 | FOLDERID \_ UserPinned             | {9e3995ab-1f9c-4f13-b8-27-48-b2-4b-6c-71-74} |
-| Usuários \_ FOLDERIDArquivos             | {f3ce0f7c-4901-4acc-86-48-D5-D4-4B-04-EF-8F} |
-| PASTA de \_ UsersLibraries         | {a302545d-definitivamente-464b-AB-E8-61-C8-64-8D-93-9B} |
-| PASTA de os perfis de user \_           | {0762D272-C50A-4BB0-A3-82-69-7D-CD-72-9B-80} |
-| FOLDERid \_ Userprogramfiles       | {5cd7aee2-2219-4A67-B8-5D-6C-9c-E1-56 -60-CB} |
-| PASTA de \_ UserProgramFilesCommon | {bcbd3057-ca5c-4622-B4-2D-BC-56-DB-0A-E5-16} |
-| Vídeos de FOLDERid \_                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
-| FOLDERid \_ VideosLibrary {        | 491e922f-5643-4af4-a7-EB-4e-7a-13-8D-81-74}  |
-| FOLDERid \_ Windows {              | F38BF404-1D43-42F2-93-05 -67-DE-0B-28-FC-23}  |
+| Usuários \_ FOLDERIDArquivos             | {f3ce0f7c-4901-4acc-86-48-d5-d4-4b-04-ef-8f} |
+| Usuários \_ FOLDERIDLibraries         | {a302545d-definitely-464b-ab-e8-61-c8-64-8d-93-9b} |
+| FOLDERID \_ UserProfiles           | {0762D272-C50A-4BB0-A3-82-69-7D-CD-72-9B-80} |
+| FOLDERID \_ UserProgramFiles       | {5cd7aee2-2219-4a67-b8-5d-6c-9c-e1-56-60-cb} |
+| FOLDERID \_ UserProgramFilesCommon | {bcbd3057-ca5c-4622-b4-2d-bc-56-db-0a-e5-16} |
+| Vídeos de \_ FOLDERID                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
+| FOLDERID \_ VideosLibrary {        | 491e922f-5643-4af4-a7-eb-4e-7a-13-8d-81-74}  |
+| FOLDERID \_ Windows {              | F38BF404-1D43-42F2-93-05-67-DE-0B-28-FC-23}  |
 
 
 

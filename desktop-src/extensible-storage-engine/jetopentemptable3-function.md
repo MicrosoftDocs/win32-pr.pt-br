@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d27531b9d70098746f60238a264c4762ff8f2058
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: a1005f9804e0ccf9c4aa5080b3985906471b1386
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474462"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988909"
 ---
 # <a name="jetopentemptable3-function"></a>Função JetOpenTempTable3
 
@@ -91,7 +91,7 @@ Um grupo de bits que contém as opções a serem usadas para essa chamada, que i
 | <p>JET_bitTTForceMaterialization</p> | <p>Essa opção força o gerenciador de tabela temporário a abandonar qualquer tentativa de escolher uma estratégia inteligente para gerenciar a tabela temporária que resultará em desempenho aprimorado.</p> | 
 | <p>JET_bitTTForwardOnly</p> | <p>Essa opção solicita que a tabela temporária seja criada somente se o gerenciador de tabela temporário puder usar a implementação otimizada para resultados intermediários da consulta. Se qualquer característica da tabela temporária impedir o uso dessa otimização, a operação falhará com JET_errCannotMaterializeForwardOnlySort.</p><p>Um efeito colateral dessa opção é permitir que a tabela temporária contenha registros com chaves de índice duplicadas. Consulte JET_bitTTUnique para obter mais informações.</p><p>Essa opção só está disponível no Windows Server 2003 e versões posteriores.</p> | 
 | <p>JET_bitTTIndexed</p> | <p>Essa opção solicita que a tabela temporária seja flexível o suficiente para permitir o uso de <a href="gg294103(v=exchg.10).md">JetSeek</a> para procurar registros por chave de índice.</p><p>Se essa funcionalidade não for necessária, é melhor não solicitá-la. Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
-| <p>JET_bitTTUnique</p> | <p>Essa opção solicita que os registros com chaves de índice duplicadas sejam removidos do conjunto final de registros na tabela temporária.</p><p>Antes do Windows Server 2003, o mecanismo de banco de dados sempre presumiu que essa opção estava em vigor devido ao fato de que todos os índices clusterados também devem ser uma chave primária e, portanto, devem ser exclusivos. A partir Windows Server 2003, agora é possível criar uma tabela temporária que NÃO remove duplicatas quando a opção JET_bitTTForwardOnly também é especificada.</p><p>Não é possível saber qual duplicata vencerá e quais duplicatas serão descartadas em geral. No entanto, quando a JET_bitTTErrorOnDuplicateInsertion for solicitada, o primeiro registro com uma determinada chave de índice a ser inserido na tabela temporária sempre vencerá.</p> | 
+| <p>JET_bitTTUnique</p> | <p>Essa opção solicita que os registros com chaves de índice duplicadas sejam removidos do conjunto final de registros na tabela temporária.</p><p>Antes do Windows Server 2003, o mecanismo de banco de dados sempre presumia que essa opção estava em vigor devido ao fato de que todos os índices clusterados também devem ser uma chave primária e, portanto, devem ser exclusivos. A partir Windows Server 2003, agora é possível criar uma tabela temporária que NÃO remove duplicatas quando a opção JET_bitTTForwardOnly também é especificada.</p><p>Não é possível saber qual duplicata vencerá e quais duplicatas serão descartadas em geral. No entanto, quando a JET_bitTTErrorOnDuplicateInsertion for solicitada, o primeiro registro com uma determinada chave de índice a ser inserido na tabela temporária sempre vencerá.</p> | 
 | <p>JET_bitTTUpdatable</p> | <p>Essa opção solicita que a tabela temporária seja flexível o suficiente para permitir que os registros inseridos anteriormente sejam alterados posteriormente. Se essa funcionalidade não for necessária, é melhor não solicitá-la.</p><p>Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
 | <p>JET_bitTTScrollable</p> | <p>Essa opção solicita que a tabela temporária seja flexível o suficiente para permitir que os registros sejam verificados em ordem arbitrária e direção usando <a href="gg294117(v=exchg.10).md">JetMove</a>.</p><p>Se essa funcionalidade não for necessária, é melhor não solicitá-la. Se essa funcionalidade não for solicitada, o gerenciador de tabela temporário poderá escolher uma estratégia para gerenciar a tabela temporária que resultará em um desempenho aprimorado.</p> | 
 | <p>JET_bitTTSortNullsHigh</p> | <p>Essa opção solicita que os valores de coluna de chave NULL são classificar mais próximos ao final do índice do que valores de coluna de chave não NULL.</p> | 
@@ -124,7 +124,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 | <p>JET_errInvalidCodePage</p> | <p>O <strong>membro cp</strong> da estrutura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como uma página de código válida. Os únicos valores válidos para colunas de texto são inglês (1252) e Unicode (1200). Um valor de 0 significa que o padrão será usado (inglês, 1252).</p> | 
 | <p>JET_errInvalidColumnType</p> | <p>O <strong>membro coltyp</strong> da <a href="gg294130(v=exchg.10).md">estrutura JET_COLUMNDEF</a> não foi definido como um tipo de coluna válido.</p> | 
 | <p>JET_errInvalidLanguageId</p> | <p>Não foi possível criar o índice porque foi feita uma tentativa de usar uma ID de localidade inválida. A ID da localidade pode ser completamente inválida ou o pacote de idiomas associado pode não estar instalado.</p> | 
-| <p>JET_errInvalidLCMapStringFlags</p> | <p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização. Esse erro só será retornado por Windows XP e versões posteriores. No Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef em vez disso.</p> | 
+| <p>JET_errInvalidLCMapStringFlags</p> | <p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização. Esse erro só será retornado por Windows XP e versões posteriores. No Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef.</p> | 
 | <p>JET_errInvalidSesid</p> | <p>O alça de sessão é inválido ou refere-se a uma sessão fechada. Esse erro não é retornado em todas as circunstâncias. Os alças são validados apenas com base no melhor esforço.</p> | 
 | <p>JET_errNotInitialized</p> | <p>Não é possível concluir a operação porque a instância associada à sessão ainda não foi inicializada.</p> | 
 | <p>JET_errOutOfCursors</p> | <p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para abrir um novo cursor. Os recursos de cursor são configurados <a href="gg294044(v=exchg.10).md">usando JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">com JET_paramMaxCursors</a>.</p> | 
@@ -146,13 +146,19 @@ Em caso de falha, a tabela temporária não será criada e um cursor não será 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte Também
 
-[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
+[Erros de mecanismo Armazenamento extensível](./extensible-storage-engine-errors.md)  
 [Parâmetros de tratamento de erro](./error-handling-parameters.md)  
 [JET_COLUMNDEF](./jet-columndef-structure.md)  
 [JET_COLUMNID](./jet-columnid.md)  

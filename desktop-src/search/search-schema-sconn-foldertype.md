@@ -1,19 +1,19 @@
 ---
-description: O <folderType> elemento especifica GUID para o tipo de pasta. Esse elemento será necessário se o <templateInfo> elemento existir. Ele não tem atributos e nenhum elemento filho.
+description: O &lt; elemento folderType &gt; especifica GUID para o tipo de pasta. Esse elemento será necessário se o &lt; elemento templateInfo &gt; existir. Ele não tem atributos e nenhum elemento filho.
 ms.assetid: 2361bbf5-adeb-4189-a8ff-5fdd1c9b0ec6
 title: Elemento folderType (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6b9d5682a85126a467c051b9f1103a4ac10f2f6936cc24dd4438a5f8c75d44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b693a1ff7007e6d63e108d16abe77ee421b3821a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862595"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882469"
 ---
 # <a name="foldertype-element-search-connector-schema"></a>Elemento folderType (esquema do conector de pesquisa)
 
-O <folderType> elemento especifica GUID para o tipo de pasta. Esse elemento será necessário se o <templateInfo> elemento existir. Ele não tem atributos e nenhum elemento filho.
+O &lt; elemento folderType &gt; especifica GUID para o tipo de pasta. Esse elemento será necessário se o &lt; elemento templateInfo &gt; existir. Ele não tem atributos e nenhum elemento filho.
 
 ## <a name="syntax"></a>Syntax
 

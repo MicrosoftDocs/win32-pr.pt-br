@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455b46465733a906b879dcedc4b5a2f4e6ef1f9e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 2f821d3aea8055f6c1344ed9d5107417adbaf604
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472472"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985509"
 ---
 # <a name="meta-parameters"></a>Metadados de parâmetros
 
@@ -87,7 +87,19 @@ A Configuração Pequena também tem vários outros efeitos no mecanismo de banc
   - Várias atividades de manutenção são dimensionados novamente para evitar a atividade de thread em segundo plano
 
 
-| | | <p>Valor padrão:</p> | <p>1 (Herdou)</p> | | <p>Tipo:</p> | <p>Inteiro</p> | | <p>Intervalo válido:</p> | <p>0 – 1</p> | | <p>Escopo:</p> | <p>Instância</p> | | <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sim</p> | | <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Sim</p> | | <p>Afeta recursos:</p> | <p>Sim</p> | | <p>Disponibilidade:</p> | <p>A partir do Windows Server 2008 e Windows Vista</p> | 
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>1 (Herdou)</p> | 
+| <p>Tipo:</p> | <p>Integer</p> | 
+| <p>Intervalo válido:</p> | <p>0 – 1</p> | 
+| <p>Escopo:</p> | <p>Instância</p> | 
+| <p>Definido após <a href="gg269354(v=exchg.10).md">JetCreateInstance:</a></p> | <p>Sim</p> | 
+| <p>Definido após <a href="gg294068(v=exchg.10).md">JetInit:</a></p> | <p>Não</p> | 
+| <p>Afeta o layout físico:</p> | <p>Não</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
+| <p>Afeta o desempenho:</p> | <p>Sim</p> | 
+| <p>Afeta recursos:</p> | <p>Sim</p> | 
+| <p>Disponibilidade:</p> | <p>A partir do Windows Server 2008 e Windows Vista</p> | 
 
 
 
@@ -178,14 +190,30 @@ Os seguintes parâmetros do sistema serão protegidos de serem definidos quando 
   - JET_paramCheckpointIOMax
 
 
-| | | <p>Valor padrão:</p> | <p>Verdadeiro</p> | | <p>Tipo:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>Falso, verdadeiro</p> | | <p>Escopo:</p> | <p>Instância</p> | | <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | | <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sim</p> | | <p>Afeta o layout físico:</p> | <p>Não</p> | | <p>Afeta a confiabilidade:</p> | <p>Não</p> | | <p>Afeta o desempenho:</p> | <p>Não</p> | | <p>Afeta os recursos:</p> | <p>Não</p> | | <p>Disponibilidade:</p> | <p>a partir do Windows Server 2008 e Windows Vista</p> | 
+| Rótulo | Valor |
+|--------|-------|
+| <p>Valor padrão:</p> | <p>True</p> | 
+| <p>Tipo:</p> | <p>Booliano</p> | 
+| <p>Intervalo válido:</p> | <p>Falso, verdadeiro</p> | 
+| <p>Escopo:</p> | <p>Instância</p> | 
+| <p>Definir após <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p> | <p>Sim</p> | 
+| <p>Definir após <a href="gg294068(v=exchg.10).md">JetInit</a>:</p> | <p>Sim</p> | 
+| <p>Afeta o layout físico:</p> | <p>Não</p> | 
+| <p>Afeta a confiabilidade:</p> | <p>Não</p> | 
+| <p>Afeta o desempenho:</p> | <p>Não</p> | 
+| <p>Afeta os recursos:</p> | <p>Não</p> | 
+| <p>Disponibilidade:</p> | <p>a partir do Windows Server 2008 e Windows Vista</p> | 
 
 
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
 
 
 

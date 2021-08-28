@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthValidationRequest GetSoHRequest (NapSystemHealthValidator. h)
-description: Permite que os SHVs (validadores da integridade do sistema) recuperem e validem as informações de SoHRequest enviadas por seus equivalentes de SHA (agente de integridade do sistema) no cliente.
+title: Método INapSystemHealthValidationRequest GetSoHRequest (NapSystemHealthValidator.h)
+description: Permite que os SHVs (Validadores de Saúde do Sistema) recuperem e validem as informações do SoHRequest enviadas por seus equivalentes do SHA (System Health Agent) no cliente.
 ms.assetid: e06e07c6-7305-4171-b94e-19c360e94c67
 keywords:
-- Método GetSoHRequest NAP
+- NAP do método GetSoHRequest
 - Método GetSoHRequest NAP, interface INapSystemHealthValidationRequest
-- INapSystemHealthValidationRequest interface NAP, método GetSoHRequest
+- Interface NAP INapSystemHealthValidationRequest , método GetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9d9dc3b28aec92b7125dc2cad6bf8b843975945ca89687957d56be0ff562d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9c140af202de263e99f0fa8ec72186da6e995ec
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118367724"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882616"
 ---
-# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>Método INapSystemHealthValidationRequest:: GetSoHRequest
+# <a name="inapsystemhealthvalidationrequestgetsohrequest-method"></a>Método INapSystemHealthValidationRequest::GetSoHRequest
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapSystemHealthValidationRequest:: GetSoHRequest** permite que os SHVs (validadores da integridade do sistema) recuperem e validem as informações de [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviadas por suas contrapartes do Sha (agente de integridade do sistema) no cliente.
+O método **INapSystemHealthValidationRequest::GetSoHRequest** permite que os SHVs (Validadores de Saúde do Sistema) recuperem e validem as informações [**do SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) enviadas por seus equivalentes do SHA (System Health Agent) no cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,31 +48,31 @@ HRESULT GetSoHRequest(
 
 <dl> <dt>
 
-*sohRequest* \[ fora\]
+*sohRequest* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um ponteiro para uma estrutura [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+Um ponteiro para um ponteiro para uma [**estrutura SoHRequest.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 </dd> <dt>
 
-*napSystemGenerated* \[ fora\]
+*napSystemGenerated* \[ out\]
 </dt> <dd>
 
-Um **bool** que é **verdadeiro** se a soh foi criada pelo NAPAGENT em nome do Sha e **false** caso contrário. Ele é usado principalmente para indicar uma falha de SHA para o SHV.
+Um **BOOL** que será **TRUE se** o SoH tiver sido criado pelo NapAgent em nome do SHA e **FALSE,** caso contrário. Ele é usado principalmente para indicar uma falha SHA para o SHV.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
-| Código de retorno                                                                                     | Descrição                                                        |
+| Código de retorno                                                                                     | Description                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -80,13 +80,13 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 ## <a name="remarks"></a>Comentários
 
-O parâmetro *sohRequest* pode retornar **NULL** se o cliente não enviou um [**sohRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) para o SHV. Nesse cenário, o SHV pode popular um **SoHResponse** com o código de erro de [**NAP \_ E \_ faltando \_ soh**](nap-error-constants.md).
+O *parâmetro sohRequest* pode retornar **NULL** se o cliente não enviou um [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) para o SHV. Nesse cenário, o SHV pode popular um **SoHResponse** com o código de erro [**NAP E MISSING \_ \_ \_ SOH**](nap-error-constants.md).
 
-Se o parâmetro *napSystemGenerated* for **true**, o formato de *SoHRequest* será o seguinte:
+Se o *parâmetro napSystemGenerated* for **TRUE**, o formato *de SoHRequest* será o seguinte:
 
--   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
+-   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) =  &lt; Id&gt;
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **<Sha-falha-erro-código>**](nap-error-constants.md)
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **&lt; sha-failure-error-code &gt;**](nap-error-constants.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,9 +95,9 @@ Se o parâmetro *napSystemGenerated* for **true**, o formato de *SoHRequest* ser
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                               |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
-| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 

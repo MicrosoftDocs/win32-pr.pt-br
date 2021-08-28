@@ -1,17 +1,17 @@
 ---
 description: Uma WS-Transfer mensagem usada para solicitar metadados.
 ms.assetid: 18bf27aa-6ae5-4419-ae68-6df9eda10cd4
-title: Get (troca de metadados) solicitação e mensagem HTTP
+title: obter mensagem e solicitação HTTP de Get (Exchange de metadados)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8ad240a51fdbabf4184b8769f4e3cca6daa4244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 994e02b990dc87cf8551e215bc7eae94dbcf7852
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790334"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632064"
 ---
-# <a name="get-metadata-exchange-http-request-and-message"></a>Get (troca de metadados) solicitação e mensagem HTTP
+# <a name="get-metadata-exchange-http-request-and-message"></a>obter mensagem e solicitação HTTP de Get (Exchange de metadados)
 
 Uma mensagem Get é uma WS-Transfer que é usada para solicitar metadados. Para obter mais informações sobre como obter mensagens, consulte a seção 3,1 da [especificação WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf). Como a troca de metadados é feita por HTTP, uma mensagem Get é a carga de uma solicitação HTTP.
 
@@ -42,9 +42,9 @@ Uma solicitação GET HTTP tem os seguintes pontos de foco.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -109,9 +109,9 @@ Uma mensagem Get tem os seguintes pontos de foco.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -153,7 +153,7 @@ Uma mensagem Get tem os seguintes pontos de foco.
 
 <dl> <dt>
 
-[Descoberta e mensagens de troca de metadados](discovery-and-metadata-exchange-message-patterns.md)
+[descoberta e metadados Exchange mensagens](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Mensagem GetResponse](getresponse--metadata-exchange--message.md)

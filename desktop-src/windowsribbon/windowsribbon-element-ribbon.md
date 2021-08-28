@@ -1,9 +1,9 @@
 ---
 title: Elemento Ribbon
-description: Representa o controle de faixa de opções na Exibição da Faixa de Opções.
+description: Representa o controle da faixa de faixas na exibição da faixa de faixas.
 ms.assetid: 51083180-4e86-4c90-9fd1-a58c12bcc756
 keywords:
-- Elemento Ribbon Windows Ribbon
+- faixa de Windows de elemento da faixa de faixas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e5dd422013bdaf81d5d6aac6d0a34f4c9479af26cd79f64b854299caa3cac3f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70841866ec656dc840fb467d598cc42bf919283b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202197"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630912"
 ---
 # <a name="ribbon-element"></a>Elemento Ribbon
 
-Representa o controle de faixa de opções na Exibição da Faixa de Opções.
+Representa o controle da faixa de faixas na exibição da faixa de faixas.
 
 ## <a name="usage"></a>Uso
 
@@ -40,10 +40,10 @@ Representa o controle de faixa de opções na Exibição da Faixa de Opções.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,14 +58,14 @@ Representa o controle de faixa de opções na Exibição da Faixa de Opções.
 <td><strong>GroupSpacing</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td><dt><span></span><span></span><strong></strong> (Pequeno)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (Médio)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd></dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> Menores<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> Médio<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Vários<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nome</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td>Usado para anotar o elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo não é desaconsudido.<br/> </dd> </dl></td>
+<td>Usado para anotar o elemento Command.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo é não associado.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -78,12 +78,12 @@ Representa o controle de faixa de opções na Exibição da Faixa de Opções.
 
 | Elemento                                                                                         | Descrição                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [**Ribbon.ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**Ribbon.ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**Ribbon.HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**Ribbon.QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**Ribbon.SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Ribbon. ApplicationMenu**](windowsribbon-element-ribbon-applicationmenu.md)<br/>       | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Ribbon. ContextualTabs**](windowsribbon-element-ribbon-contextualtabs.md)<br/>         | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Ribbon. HelpButton**](windowsribbon-element-ribbon-helpbutton.md)<br/>                 | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Ribbon. QuickAccessToolbar**](windowsribbon-element-ribbon-quickaccesstoolbar.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Ribbon. SizeDefinitions**](windowsribbon-element-ribbon-sizedefinitions.md)<br/>       | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**Faixa de guia. guias**](windowsribbon-element-ribbon-tabs.md)<br/>                             | Pode ocorrer no máximo uma vez<br/> <br/> |
 
 
 
@@ -93,7 +93,7 @@ Representa o controle de faixa de opções na Exibição da Faixa de Opções.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Application.Views**](windowsribbon-element-application-views.md)<br/> |
+| [**Application. views**](windowsribbon-element-application-views.md)<br/> |
 
 
 
@@ -101,11 +101,11 @@ Representa o controle de faixa de opções na Exibição da Faixa de Opções.
 
 Obrigatórios.
 
-Deve ocorrer exatamente uma vez para cada [**elemento Application.Views.**](windowsribbon-element-application-views.md)
+Deve ocorrer exatamente uma vez para cada elemento [**Application. views**](windowsribbon-element-application-views.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para uma **Exibição** da Faixa de Opções.
+O exemplo a seguir demonstra a marcação básica para um modo de exibição de **faixa** de opções.
 
 
 ```XML
@@ -138,8 +138,8 @@ O exemplo a seguir demonstra a marcação básica para uma **Exibição** da Fai
 
 
 
-* **Sistema mínimo com suporte:** Windows 7
-* **Pode estar vazio:** Não
+* **sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 

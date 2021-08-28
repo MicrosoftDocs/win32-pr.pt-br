@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetCloseTable'
+description: 'Saiba mais sobre: Função JetCloseTable'
 title: Função JetCloseTable
 TOCTitle: JetCloseTable Function
 ms:assetid: c8975145-e48a-4029-9522-1509263019ae
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b38ba9b14c34d20b01b6530f2ed3406e55b3bc3f
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: fe7f3c084a52faa9b5f011474bd0b502aebd277b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104506543"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989059"
 ---
 # <a name="jetclosetable-function"></a>Função JetCloseTable
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetclosetable-function"></a>Função JetCloseTable
 
-A função **JetCloseTable** fecha uma tabela aberta em um banco de dados. A tabela pode ser uma tabela temporária ou uma tabela normal.
+A **função JetCloseTable** fecha uma tabela aberta em um banco de dados. A tabela pode ser uma tabela temporária ou uma tabela normal.
 
 ```cpp
 JET_ERR JET_API JetCloseTable(
@@ -45,74 +45,42 @@ JET_ERR JET_API JetCloseTable(
 
 *sesid*
 
-Identifica o contexto de sessão de banco de dados que será usado para a chamada à API.
+Identifica o contexto de sessão do banco de dados que será usado para a chamada à API.
 
-*TableID*
+*Tableid*
 
 Identifica a tabela a ser fechada.
 
-Defina *TableName* como JET_tableidNil para liberar memória.
+De *definir tableid* como JET_tableidNil para liberar memória.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+
 
 
 #### <a name="remarks"></a>Comentários
 
-Essa função deve ser chamada em todas as tabelas abertas com [JetOpenTable](./jetopentable-function.md).
+Essa função deve ser chamada em todas as tabelas abertas [com JetOpenTable](./jetopentable-function.md).
 
-A exceção a essa regra ocorre quando [JetOpenTable](./jetopentable-function.md) é chamado em uma transação e a transação é revertida (com [JetRollback](./jetrollback-function.md)). Ao reverter uma transação, a tabela é fechada automaticamente. Nesse caso, é um erro fechar a tabela com **JetCloseTable**.
+A exceção a essa regra ocorre [quando JetOpenTable](./jetopentable-function.md) é chamado em uma transação e a transação é reenvelhada (com [JetRollback](./jetrollback-function.md)). Ao reverter uma transação, a tabela é fechada automaticamente. Nesse caso, é um erro fechar a tabela com **JetCloseTable.**
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também
