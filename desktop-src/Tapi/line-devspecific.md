@@ -1,19 +1,19 @@
 ---
-description: A mensagem de DEVSPECIFIC de linha TAPI \_ é enviada para notificar o aplicativo sobre eventos específicos do dispositivo que ocorrem em uma linha, endereço ou chamada. O significado da mensagem e da interpretação dos parâmetros são específicos do dispositivo.
+description: A mensagem TAPI LINE DEVSPECIFIC é enviada para notificar o aplicativo sobre eventos específicos do dispositivo que ocorrem em uma \_ linha, endereço ou chamada. O significado da mensagem e a interpretação dos parâmetros são específicos do dispositivo.
 ms.assetid: 6a58e77b-6ee2-4d2d-aca2-71b239f6a1dc
-title: Mensagem de LINE_DEVSPECIFIC (TAPI. h)
+title: LINE_DEVSPECIFIC mensagem (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91907b10c0176258648fa165bbeb922a61a402ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aca1ba410ac3127ff917965e8eda7c579be68dab5150c6dcae63a1930a98d265
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975666"
 ---
-# <a name="line_devspecific-message"></a>Mensagem de DEVSPECIFIC de linha \_
+# <a name="line_devspecific-message"></a>Mensagem LINE \_ DEVSPECIFIC
 
-A mensagem **de \_ DEVSPECIFIC de linha** TAPI é enviada para notificar o aplicativo sobre eventos específicos do dispositivo que ocorrem em uma linha, endereço ou chamada. O significado da mensagem e da interpretação dos parâmetros são específicos do dispositivo.
+A mensagem TAPI **LINE \_ DEVSPECIFIC** é enviada para notificar o aplicativo sobre eventos específicos do dispositivo que ocorrem em uma linha, endereço ou chamada. O significado da mensagem e a interpretação dos parâmetros são específicos do dispositivo.
 
 
 ```C++
@@ -29,7 +29,7 @@ A mensagem **de \_ DEVSPECIFIC de linha** TAPI é enviada para notificar o aplic
 *hDevice* 
 </dt> <dd>
 
-Um identificador para um dispositivo de linha ou uma chamada. Este é um dispositivo específico.
+Um alça para um dispositivo de linha ou uma chamada. Isso é específico do dispositivo.
 
 </dd> <dt>
 
@@ -40,14 +40,14 @@ A instância de retorno de chamada fornecida ao abrir a linha.
 
 </dd> <dt>
 
-*dwParam1* 
+*Dwparam1* 
 </dt> <dd>
 
 Específico do dispositivo.
 
 </dd> <dt>
 
-*dwParam2* 
+*Dwparam2* 
 </dt> <dd>
 
 Específico do dispositivo.
@@ -61,13 +61,13 @@ Específico do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-A **mensagem \_ DEVSPECIFIC de linha** é usada por um provedor de serviços em conjunto com a função [**lineDevSpecific**](/windows/desktop/api/Tapi/nf-tapi-linedevspecific) . Seu significado é específico ao dispositivo.
+A **mensagem LINE \_ DEVSPECIFIC** é usada por um provedor de serviços em conjunto com a [**função lineDevSpecific.**](/windows/desktop/api/Tapi/nf-tapi-linedevspecific) Seu significado é específico do dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ A **mensagem \_ DEVSPECIFIC de linha** é usada por um provedor de serviços em 
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

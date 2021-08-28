@@ -1,11 +1,11 @@
 ---
-title: Método decompactar ID3DX11DataLoader (D3DX11core. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Descompacta dados codificados.
+title: Método Descompactador ID3DX11DataLoader (D3DX11core.h)
+description: Observação A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store. Descompacta dados codificados.
 ms.assetid: 68579c86-9f77-444b-86b3-746cff745be8
 keywords:
-- Método de descompactação do Direct3D 11
-- Método descompactar o Direct3D 11, interface ID3DX11DataLoader
-- Interface ID3DX11DataLoader Direct3D 11, método decompactar
+- Método Descompactar Direct3D 11
+- Método Descompactar Direct3D 11 , interface ID3DX11DataLoader
+- ID3DX11DataLoader interface Direct3D 11 , método Descompactar
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b515eb38fb70fc31f0bbd0d02e20dcfb9f66ea5b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8a4f2424d46748b33918c8b6870c07dbaf4486217f8f3ba7a0a64f881792b81c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633026"
 ---
-# <a name="id3dx11dataloaderdecompress-method"></a>ID3DX11DataLoader: método ecompress de:D
+# <a name="id3dx11dataloaderdecompress-method"></a>Método ID3DX11DataLoader::D ecompress
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 
  
 
@@ -49,35 +49,35 @@ HRESULT Decompress(
 
 <dl> <dt>
 
-*ppData* \[ fora\]
+*ppData* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-Ponteiro para os dados brutos a serem descompactados.
+Ponteiro para os dados brutos a descompactar.
 
 </dd> <dt>
 
-*pcBytes* \[ no\]
+*pcBytes* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)\***
 
 O tamanho dos dados apontados por ppData.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 Use esse método para carregar recursos de sistemas de arquivos, como arquivos ZIP. Ao carregar de um recurso descompactado, o estágio de descompactação não precisa fazer nenhum trabalho.
 
-A [**interface ID3DX11DataLoader**](id3dx11dataloader.md) pode ser herdada e seus membros redefinidos para dar suporte a formatos de arquivo personalizados.
+[**A Interface ID3DX11DataLoader**](id3dx11dataloader.md) pode ser herdada e seus membros redefinidos para dar suporte a formatos de arquivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ A [**interface ID3DX11DataLoader**](id3dx11dataloader.md) pode ser herdada e seu
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -97,7 +97,7 @@ A [**interface ID3DX11DataLoader**](id3dx11dataloader.md) pode ser herdada e seu
 [ID3DX11DataLoader](id3dx11dataloader.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: TVN_SINGLEEXPAND código de notificação (commctrl. h)
-description: Enviado por um controle de exibição de árvore com o \_ estilo de TVs SINGLEEXPAND quando o usuário abre ou fecha um item de árvore usando um único clique do mouse. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: TVN_SINGLEEXPAND de notificação (Commctrl.h)
+description: Enviado por um controle de exibição de árvore com o estilo TVS SINGLEEXPAND quando o usuário abre ou fecha um item de árvore usando um único clique \_ do mouse. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: ae738237-172a-400b-b9fe-33832224e299
 keywords:
-- TVN_SINGLEEXPAND de código de notificação controles do Windows
+- TVN_SINGLEEXPAND código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 976c0e8acfee1f024e4ee7f88d9f745e4029ec82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61cd83dedbe16bad81c340f35a176b18804de6b7db6847fb65bc847160a2ff8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132196"
 ---
-# <a name="tvn_singleexpand-notification-code"></a>Código de notificação do TVN \_ SINGLEEXPAND
+# <a name="tvn_singleexpand-notification-code"></a>Código de \_ notificação TVN SINGLEEXPAND
 
-Enviado por um controle de exibição de árvore com o estilo de [**TVs \_ SINGLEEXPAND**](tree-view-control-window-styles.md) quando o usuário abre ou fecha um item de árvore usando um único clique do mouse. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado por um controle de exibição de árvore com o estilo [**TVS \_ SINGLEEXPAND**](tree-view-control-window-styles.md) quando o usuário abre ou fecha um item de árvore usando um único clique do mouse. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,20 +41,20 @@ TVN_SINGLEEXPAND
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) que contém informações sobre este código de notificação.
+Ponteiro para uma [**estrutura NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) que contém informações sobre esse código de notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorne \_ o padrão TVNRET para permitir que o comportamento padrão ocorra. Para modificar o comportamento padrão, retorne:
+Retornar TVNRET \_ DEFAULT para permitir que o comportamento padrão ocorra. Para modificar o comportamento padrão, retorne:
 
 
 
 | Código de retorno                                                                                    | Descrição                                                      |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <dl> <dt>**TVNRET \_ SKIPOLD**</dt> </dl> | Ignorar o processamento padrão do item que está sendo desmarcado.<br/> |
-| <dl> <dt>**TVNRET \_ SKIPNEW**</dt> </dl> | Ignorar o processamento padrão do item que está sendo selecionado.<br/>   |
+| <dl> <dt>**TVNRET \_ SKIPOLD**</dt> </dl> | Ignore o processamento padrão do item que está sendo deseletivo.<br/> |
+| <dl> <dt>**TVNRET \_ SKIPNEW**</dt> </dl> | Ignore o processamento padrão do item que está sendo selecionado.<br/>   |
 
 
 
@@ -62,9 +62,9 @@ Retorne \_ o padrão TVNRET para permitir que o comportamento padrão ocorra. Pa
 
 ## <a name="remarks"></a>Comentários
 
-Para ignorar o processamento padrão de itens selecionados e não selecionados, retorne TVNRET \_ SKIPOLD e TVNRET \_ SKIPNEW combinando-os com um OR lógico.
+Para ignorar o processamento padrão de itens selecionados e não selecionados, retorne TVNRET SKIPOLD e TVNRET SKIPNEW combinando-os \_ \_ com um OR lógico.
 
-Esse código de notificação é enviado somente por controles de exibição de árvore que têm o estilo [**\_ SINGLEEXPAND de TVs**](tree-view-control-window-styles.md) .
+Esse código de notificação só é enviado por controles de exibição de árvore que têm o [**\_ estilo TVS SINGLEEXPAND.**](tree-view-control-window-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Esse código de notificação é enviado somente por controles de exibição de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

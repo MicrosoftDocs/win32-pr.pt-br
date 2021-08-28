@@ -3,7 +3,7 @@ title: LVN_GETEMPTYMARKUP código de notificação (commctrl. h)
 description: Enviado por controle de exibição de lista para sua janela pai quando o controle não tem itens. O \_ código de notificação LVN GETEMPTYMARKUP é uma solicitação para que a janela pai forneça o texto de marcação. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 5ea74120-f347-493a-af14-6bda5b8f6082
 keywords:
-- LVN_GETEMPTYMARKUP de código de notificação controles do Windows
+- LVN_GETEMPTYMARKUP código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dea693475ca42f962be07936f980cd3f5d52479c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5da87d0585a22d41743e58e946c4b1b39ca24c8bb131e9084596ce4f8c2b7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118005697"
 ---
 # <a name="lvn_getemptymarkup-notification-code"></a>Código de notificação do LVN \_ GETEMPTYMARKUP
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMLVEMPTYMARKUP**](/windows/win32/api/commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **true** para definir o texto de marcação no controle de exibição de lista ou **false** caso contrário.
 
@@ -59,9 +59,9 @@ O receptor de notificação converte *lParam* para recuperar a estrutura [**NMLV
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

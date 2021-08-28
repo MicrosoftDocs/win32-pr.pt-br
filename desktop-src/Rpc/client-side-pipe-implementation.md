@@ -4,12 +4,12 @@ description: Implementação de pipe do lado do cliente na chamada de procedimen
 ms.assetid: d790f859-47a9-4b6c-a218-8cbe05db21b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5666656f1f7296c252395255c17902a91cb32a8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11ecae4d01e8da37c3ce65ee530643dc84abdc47da71c0e4dacbcdff21c37317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022647"
 ---
 # <a name="client-side-pipe-implementation"></a>Implementação de pipe de Client-Side
 
@@ -30,9 +30,9 @@ Esta seção aborda a implementação do cliente de pipes de entrada e saída na
 -   [Implementando pipes de entrada no cliente](implementing-input-pipes-on-the-client.md)
 -   [Implementando os pipes de saída no cliente](implementing-output-pipes-on-the-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

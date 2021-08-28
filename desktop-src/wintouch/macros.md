@@ -1,23 +1,23 @@
 ---
-title: Macros (gestos do Windows Touch)
-description: Esta seção contém macros para gestos do Windows Touch.
+title: macros (Windows gestos de toque)
+description: esta seção contém macros para Windows gestos de toque.
 ms.assetid: 00877809-e8c7-41a5-928b-2cf66364d42a
 keywords:
-- Windows Touch, macros
-- Toque do Windows, gestos
+- Windows Toque, macros
+- Windows Toque, gestos
 - gestos, macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05983de841aaa6b51ea3c819f1d39712816e0eaa
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 856ebb3ec815da65cbaa96b2ee1b43c68aaeb7c09f862aa5b192d213589486ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030002"
 ---
-# <a name="macros-windows-touch-gestures"></a>Macros (gestos do Windows Touch)
+# <a name="macros-windows-touch-gestures"></a>macros (Windows gestos de toque)
 
-Esta seção contém macros para gestos do Windows Touch.
+esta seção contém macros para Windows gestos de toque.
 
 As macros a seguir são especificadas nesta seção.
 
@@ -36,7 +36,7 @@ As macros a seguir são especificadas nesta seção.
 
 <dl> <dt>
 
-[Gestos de toque do Windows](multi-touch-gestures.md)
+[Windows Gestos de toque](multi-touch-gestures.md)
 </dt> <dt>
 
 [Guia de programação para gestos](guide-multi-touch-gestures.md)

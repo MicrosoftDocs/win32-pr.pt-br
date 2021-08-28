@@ -1,19 +1,19 @@
 ---
 title: Suporte a IDN no WinINet
-description: A partir do Windows Server 2008 e do Windows Vista, a parte do host da URL Unicode é convertida para o IDN (nome de domínio internacionalizado).
+description: a partir do Windows Server 2008 e Windows Vista, a parte do host da URL Unicode é convertida para o IDN (nome de domínio internacionalizado).
 ms.assetid: 7c56908e-f6d0-48dc-9ac1-73f888fb7b6c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 510b1bc8d2ab77534d7f5dac587f287d5e7095af
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 998005ff6d46a768403c9c3a18ac14457139ee871fe135fb1306ad677e9e029a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071676"
 ---
 # <a name="idn-support-in-wininet"></a>Suporte a IDN no WinINet
 
-A partir do Windows Server 2008 e do Windows Vista, a parte do host da URL Unicode é convertida para o IDN (nome de domínio internacionalizado). Partes separadas da codificação de URL Unicode também podem ser modificadas por configurações definidas pelo aplicativo. As versões ANSI da API do WinINet continuam a enviar a URL pela transmissão, conforme inserido pelo aplicativo, no entanto, as versões Unicode do WinINet da API agora estão em conformidade com o padrão IDN (RFC3490) para codificações de URL.
+a partir do Windows Server 2008 e Windows Vista, a parte do host da URL Unicode é convertida para o IDN (nome de domínio internacionalizado). Partes separadas da codificação de URL Unicode também podem ser modificadas por configurações definidas pelo aplicativo. As versões ANSI da API do WinINet continuam a enviar a URL pela transmissão, conforme inserido pelo aplicativo, no entanto, as versões Unicode do WinINet da API agora estão em conformidade com o padrão IDN (RFC3490) para codificações de URL.
 
 Por padrão, quando uma URL é inserida como um parâmetro Unicode, a parte do host, para conexões diretas e proxy, é convertida no formato IDN. O aplicativo tem a opção de desabilitar a formatação de host IDN definindo a opção **Internet \_ Option \_ IDN** . A conversão de host IDN pode ser habilitada somente nas conexões diretas ou de proxy usando os sinalizadores de **\_ \_ \_ proxy** de IDN **\_ \_ \_ direto** ou sinalizador da Internet com a **\_ opção \_ IDNs** da Internet.
 
@@ -64,13 +64,13 @@ A tabela a seguir define as opções que dão suporte a IDN. Para obter mais inf
 
 
 
- 
+ 
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 

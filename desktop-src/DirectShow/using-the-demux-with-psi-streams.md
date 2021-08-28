@@ -1,17 +1,17 @@
 ---
-description: Usando o demux com fluxos PSI
+description: usando o Demux com PSI Fluxos
 ms.assetid: 355e905e-ff21-4bde-a018-ed9631ef5ed5
-title: Usando o demux com fluxos PSI
+title: usando o Demux com PSI Fluxos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 659e4a12bfef25f24a5e6cac38d191f86ab80b4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3935e188b6e06d1037f08d4ca7bab98918f87d2c652b8506650a6cf3a280dc04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633136"
 ---
-# <a name="using-the-demux-with-psi-streams"></a>Usando o demux com fluxos PSI
+# <a name="using-the-demux-with-psi-streams"></a>usando o Demux com PSI Fluxos
 
 Para obter informações de PSI de um fluxo de transporte MPEG-2 usando o Filtro Demux MPEG-2, crie um PIN de saída no demux com o seguinte tipo de mídia:
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_EXITMENULOOP (WinUser. h)
-description: Notifica o procedimento de janela principal de um aplicativo que um loop modal de menu foi encerrado.
+title: WM_EXITMENULOOP mensagem (Winuser.h)
+description: Notifica o procedimento de janela principal de um aplicativo de que um loop modal de menu foi fechado.
 ms.assetid: b2a9d537-af7c-4c8a-932a-95e45eb8deb5
 keywords:
-- WM_EXITMENULOOP menus de mensagens e outros recursos
+- WM_EXITMENULOOP menus de mensagem e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8440e1a255968eb3e1607b5d54375900f7b5de16
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec6d2cfb8457a748b7bb7bbdda481a0a1f73e5331891d45bd1bf1cabdfe0c5c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886376"
 ---
-# <a name="wm_exitmenuloop-message"></a>Mensagem do WM \_ EXITMENULOOP
+# <a name="wm_exitmenuloop-message"></a>Mensagem WM \_ EXITMENULOOP
 
-Notifica o procedimento de janela principal de um aplicativo que um loop modal de menu foi encerrado.
+Notifica o procedimento de janela principal de um aplicativo de que um loop modal de menu foi fechado.
 
 
 ```C++
@@ -39,7 +39,7 @@ Notifica o procedimento de janela principal de um aplicativo que um loop modal d
 *wParam* 
 </dt> <dd>
 
-Especifica se o menu é um menu de atalho. Esse parâmetro tem um valor de **true** se for um menu de atalho, **false** se não for.
+Especifica se o menu é um menu de atalho. Esse parâmetro tem um valor **true se** for um menu de atalho, **FALSE** se não for.
 
 </dd> <dt>
 
@@ -50,13 +50,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um aplicativo deve retornar zero se ele processar essa mensagem.
+Um aplicativo deverá retornar zero se ele processa essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) retorna zero.
+A [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) retorna zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -77,13 +77,13 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 **Referência**
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**ENTERMENULOOP do WM \_**](wm-entermenuloop.md)
+[**WM \_ ENTERMENULOOP**](wm-entermenuloop.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Menus](menus.md)

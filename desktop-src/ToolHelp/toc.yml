@@ -1,4 +1,4 @@
-- name: Biblioteca de Ajuda da Ferramenta
+- name: Biblioteca de ajuda da ferramenta
   href: tool-help-library.md
   items:
     - name: Sobre as funções de ajuda da ferramenta
@@ -6,29 +6,29 @@
       items:
         - name: Instantâneos do sistema
           href: snapshots-of-the-system.md
-        - name: Process Walking
+        - name: Movimentação de processo
           href: process-walking.md
-        - name: Thread Walking
+        - name: Movimentação de thread
           href: thread-walking.md
-        - name: Módulo de ida e volta
+        - name: Movimentação de módulo
           href: module-walking.md
-        - name: Heap Lists and Heap Walking
+        - name: Listas de heap e movimentação de heap
           href: heap-lists-and-heap-walking.md
     - name: Usando as funções de ajuda da ferramenta
       href: using-the-tool-help-functions.md
       items:
-        - name: Tirar um instantâneo e exibir processos
+        - name: Fazendo um instantâneo e exibindo processos
           href: taking-a-snapshot-and-viewing-processes.md
-        - name: Percorrendo a lista de threads
+        - name: Atravessando a lista de threads
           href: traversing-the-thread-list.md
-        - name: Percorrendo a lista de módulos
+        - name: Atravessando a lista de módulos
           href: traversing-the-module-list.md
         - name: Percorrendo a lista de heaps
           href: traversing-the-heap-list.md
-    - name: Referência da Ajuda da Ferramenta
+    - name: Referência da ajuda da ferramenta
       href: tool-help-reference.md
       items:
-        - name: Funções de Ajuda da Ferramenta
+        - name: Funções de ajuda da ferramenta
           href: tool-help-functions.md
           items:
             - name: CreateToolhelp32Snapshot
@@ -55,7 +55,7 @@
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next
             - name: Toolhelp32ReadProcessMemory
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-toolhelp32readprocessmemory
-        - name: Estruturas de Ajuda da Ferramenta
+        - name: Estruturas de ajuda da ferramenta
           href: tool-help-structures.md
           items:
             - name: HEAPENTRY32

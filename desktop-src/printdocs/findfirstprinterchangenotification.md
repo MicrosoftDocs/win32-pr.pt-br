@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 2da6a2ae73aa5b987ea3b8f8789f81ed0b4cdf06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 679d0bfe4b87f934f223ad83f1fd1ee341b5ce891736727a4faa537d782d3687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971525"
 ---
 # <a name="findfirstprinterchangenotification-function"></a>Função FindFirstPrinterChangeNotification
 
@@ -110,7 +110,7 @@ Para obter uma lista de campos que podem ser monitorados, consulte [**Opções d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um identificador para um objeto de notificação de alteração associado à impressora ou ao servidor de impressão especificado.
 
@@ -138,7 +138,7 @@ Os chamadores de **FindFirstPrinterChangeNotification** devem garantir que o ide
 **FindFirstPrinterChangeNotification** não enviará notificações de alteração para impressoras 3D para identificadores do servidor.
 
 > [!Note]  
-> No Windows XP com Service Pack 2 (SP2) e posterior, o firewall de conexão com a Internet (ICF) bloqueia as portas de impressora por padrão, mas uma exceção para o compartilhamento de arquivos e impressoras pode ser habilitada. Se um usuário fizer uma conexão de impressora com outro computador e a exceção não estiver habilitada, o usuário não receberá notificações de alteração de impressora do servidor. Um administrador de máquina precisará habilitar a exceção.
+> no Windows XP com Service Pack 2 (SP2) e posterior, o Firewall de conexão com a Internet (ICF) bloqueia as portas de impressora por padrão, mas uma exceção para o compartilhamento de arquivos e impressoras pode ser habilitada. Se um usuário fizer uma conexão de impressora com outro computador e a exceção não estiver habilitada, o usuário não receberá notificações de alteração de impressora do servidor. Um administrador de máquina precisará habilitar a exceção.
 
  
 

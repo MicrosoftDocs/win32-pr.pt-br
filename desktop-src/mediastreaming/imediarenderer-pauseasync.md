@@ -1,11 +1,11 @@
 ---
-title: Método IMediaRenderer PauseAsync
-description: Instrui o DMR de forma assíncrona a pausar a reprodução do conteúdo atual. | Método IMediaRenderer PauseAsync
+title: Método PauseAsync do IMediaRenderer
+description: Instrui a DMR de forma assíncrona a pausar a reprodução do conteúdo atual. | Método PauseAsync do IMediaRenderer
 ms.assetid: 2EADD9BE-2306-4CDA-AD5C-8342C06EAF1B
 keywords:
-- API de streaming de mídia do método PauseAsync
-- API de streaming de mídia do método PauseAsync, interface IMediaRenderer
-- API de streaming de mídia da interface IMediaRenderer, método PauseAsync
+- API de Streaming de Mídia do método PauseAsync
+- API de Streaming de Mídia do método PauseAsync, interface IMediaRenderer
+- API de Streaming de Mídia da interface IMediaRenderer, método PauseAsync
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8713fa4b2fe46a694024c2873cd50a0ec89ce898
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a953d024ee0f90f7cb466574b29d7e3cfe150072bf1a3787734f8365916cb2a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105812040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972265"
 ---
-# <a name="imediarendererpauseasync-method"></a>IMediaRenderer: método auseAsync de:P
+# <a name="imediarendererpauseasync-method"></a>Método IMediaRenderer::P auseAsync
 
-Instrui o DMR de forma assíncrona a pausar a reprodução do conteúdo atual.
+Instrui a DMR de forma assíncrona a pausar a reprodução do conteúdo atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,20 +41,20 @@ HRESULT PauseAsync(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Recebe uma referência a um objeto [**PlaybackOperation**](playbackoperation.md) que é usado para obter resultados da operação assíncrona.
+Recebe uma referência a um [**objeto PlaybackOperation**](playbackoperation.md) que é usado para obter resultados da operação assíncrona.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
-| Código de retorno                                                                          | Description                      |
+| Código de retorno                                                                          | Descrição                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 

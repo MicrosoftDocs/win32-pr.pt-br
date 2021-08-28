@@ -4,11 +4,11 @@ description: Este código de exemplo mostra uma função que enumera dispositivo
 ms.assetid: 0236a629-c09a-4687-a8ba-fa05107fab33
 keywords:
 - Windows Media Player, dispositivos portáteis
-- Windows Media Player de objeto, dispositivos portáteis
+- modelo de objeto Windows Media Player, dispositivos portáteis
 - modelo de objeto, dispositivos portáteis
 - Windows Media Player ActiveX controle, dispositivos portáteis
-- ActiveX controle, dispositivos portáteis
-- Windows Media Player Controle ActiveX dispositivos móveis, dispositivos portáteis
+- controle de ActiveX, dispositivos portáteis
+- Windows Media Player controle de ActiveX móvel, dispositivos portáteis
 - Windows Media Player Dispositivos móveis e portáteis
 - dispositivos portáteis, enumerando
 - enumerações, dispositivos portáteis
@@ -23,11 +23,11 @@ ms.locfileid: "118339854"
 ---
 # <a name="enumerating-devices"></a>Enumerando dispositivos
 
-Windows Media Player representa dispositivos portáteis usando a interface **IWMPSyncDevice.** O código de exemplo a seguir mostra uma função que cria uma matriz de ponteiros para **IWMPSyncDevice**. Cada ponteiro na matriz representa um dispositivo para o qual Windows Media Player tem informações armazenadas. Um dispositivo não precisa estar conectado ao computador, nem é necessário ter uma parceria com a instância Windows Media Player atual.
+Windows Media Player representa dispositivos portáteis usando a interface **IWMPSyncDevice** . O código de exemplo a seguir mostra uma função que cria uma matriz de ponteiros para **IWMPSyncDevice**. cada ponteiro na matriz representa um dispositivo para o qual Windows Media Player tem informações armazenadas. um dispositivo não precisa estar conectado ao computador, nem precisa ter uma parceria com a instância de Windows Media Player atual.
 
-Você deve enumerar dispositivos sempre que receber o evento **DeviceConnect** ou **o evento DeviceDisconnect.**
+Você deve enumerar dispositivos sempre que receber o evento **DeviceConnect** ou o evento **DeviceDisconnect** .
 
-A função a seguir enumera os dispositivos. O *parâmetro bConnectedOnly* especifica se apenas os dispositivos conectados ao computador do usuário são enumerados no momento.
+A função a seguir enumera os dispositivos. O parâmetro *bConnectedOnly* especifica se os dispositivos atualmente conectados ao computador do usuário devem ser enumerados.
 
 
 ```C++
@@ -121,7 +121,7 @@ STDMETHODIMP CMainDlg::EnumDevices(BOOL bConnectedOnly)
 
 
 
-Você pode usar código semelhante para recuperar outras listas de dispositivos desse tipo. Por exemplo, você pode usar [o \_ status IWMPSyncDevice::get](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para criar uma matriz de dispositivos para os quais existe uma parceria.
+Você pode usar um código semelhante para recuperar outras listas de dispositivos. Por exemplo, você pode usar [IWMPSyncDevice:: get \_ status](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_status) para criar uma matriz de dispositivos para os quais existe uma parceria.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -133,13 +133,13 @@ Você pode usar código semelhante para recuperar outras listas de dispositivos 
 [**IWMPEvents2::D eviceDisconnect**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents2-devicedisconnect)
 </dt> <dt>
 
-[**IWMPSyncDevice Interface**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
+[**Interface IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
 </dt> <dt>
 
-[**IWMPSyncDevice::get \_ connected**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
+[**IWMPSyncDevice: \_ : conectar**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_connected)
 </dt> <dt>
 
-[**IWMPSyncServices Interface**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
+[**Interface IWMPSyncServices**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncservices)
 </dt> <dt>
 
 [**Trabalhando com dispositivos portáteis**](working-with-portable-devices.md)

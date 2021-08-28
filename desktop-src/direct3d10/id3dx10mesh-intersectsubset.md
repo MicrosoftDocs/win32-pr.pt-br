@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a08d4db92dc75f40d0073367dda9a9ea26863418
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1975c6704faa0fdbf9647b92edff805e7930c0a612fc8e5fb845b8bb26fd4ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069967"
 ---
 # <a name="id3dx10meshintersectsubset-method"></a>Método ID3DX10Mesh:: IntersectSubset
 
@@ -129,7 +129,7 @@ Ponteiro para uma [**interface ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

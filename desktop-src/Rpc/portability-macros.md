@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c184365496db7757524a12f1b0807c3c53e24b27
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 20aa6ebda92d7c3998082fdbb5e5f07aa1be22f37a6ec65a8e81327b8614565a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "103930075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019217"
 ---
 # <a name="portability-macros"></a>Macros de portabilidade
 

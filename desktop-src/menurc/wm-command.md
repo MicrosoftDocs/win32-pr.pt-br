@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: 1826c4668f3be8a2991c914e60320b55de867e33
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 545e4dd2a47216dcf85fc7927692d99df69ea37bd76c3101457bdd68cff02de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886496"
 ---
 # <a name="wm_command-message"></a>Mensagem de comando do WM \_
 
@@ -51,7 +51,7 @@ Para obter uma descrição desse parâmetro, consulte comentários.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -85,7 +85,7 @@ BOOL AboutDlg (
     return bRet;
 }
 ```
-Exemplo obtido de [exemplos clássicos do Windows](https://github.com/microsoft/Windows-classic-samples) no github.
+exemplo obtido de [amostras Windows clássicas](https://github.com/microsoft/Windows-classic-samples) em GitHub.
 
 
 ## <a name="remarks"></a>Comentários
@@ -124,7 +124,7 @@ Se ocorrer uma tecla aceleradora que corresponda a um item de menu quando a jane
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

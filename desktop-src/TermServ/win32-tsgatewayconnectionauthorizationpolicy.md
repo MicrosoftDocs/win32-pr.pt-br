@@ -448,7 +448,7 @@ Lista de nomes de grupos de usuários separados por ponto e vírgula. Os nomes s
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -458,8 +458,8 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
+| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -468,22 +468,22 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
+[**\_TSGatewayConnection Win32**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
+[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
+[**\_TSGatewayRADIUSServer Win32**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
+[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
 </dt> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

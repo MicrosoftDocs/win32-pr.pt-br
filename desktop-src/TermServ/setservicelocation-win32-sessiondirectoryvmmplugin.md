@@ -1,12 +1,12 @@
 ---
-title: Método SetServiceLocation da classe Win32_SessionDirectoryVMMPlugin classe
+title: Método SetServiceLocation da classe Win32_SessionDirectoryVMMPlugin
 description: Define o local do serviço para o plug-in.
 ms.assetid: e886a40b-9ea9-4159-a2ea-776160559410
 ms.tgt_platform: multiple
 keywords:
-- Método SetServiceLocation Serviços de Área de Trabalho Remota
-- Método SetServiceLocation Serviços de Área de Trabalho Remota , Win32_SessionDirectoryVMMPlugin classe
-- Win32_SessionDirectoryVMMPlugin classe Serviços de Área de Trabalho Remota , método SetServiceLocation
+- Serviços de Área de Trabalho Remota do método SetServiceLocation
+- Método SetServiceLocation Serviços de Área de Trabalho Remota, classe Win32_SessionDirectoryVMMPlugin
+- Classe Win32_SessionDirectoryVMMPlugin Serviços de Área de Trabalho Remota, método SetServiceLocation
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118349397"
 ---
-# <a name="setservicelocation-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método SetServiceLocation da classe \_ SessionDirectoryVMMPlugin do Win32
+# <a name="setservicelocation-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método SetServiceLocation da classe Win32 \_ SessionDirectoryVMMPlugin
 
 Define o local do serviço para o plug-in.
 
@@ -43,16 +43,16 @@ uint32 SetServiceLocation(
 
 <dl> <dt>
 
-*sServiceLocation* \[ Em\]
+*sServiceLocation* \[ no\]
 </dt> <dd>
 
-O local de serviço que o plug-in deve contatar.
+O local do serviço que o plug-in deve contatar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
+| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_SessionDirectoryVMMPlugin do Win32**](win32-sessiondirectoryvmmplugin.md)
+[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Para um arquivo, define ou obtém a data e a hora da última modificação. Para uma pasta, recupera a data e a hora em que uma pasta foi modificada pela última vez, mas não pode defini-la.
+description: Para um arquivo, define ou obtém a data e a hora em que ele foi modificado pela última vez. Para uma pasta, recupera a data e a hora em que uma pasta foi modificada pela última vez, mas não pode defini-la.
 ms.assetid: bb60c800-863b-469b-b937-9816b8b338bf
-title: Propriedade FolderItem. ModifyDate (shldisp. h)
+title: Propriedade FolderItem.ModifyDate (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b9ea5fa6b611a0311840507fb2068d08801a5bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06e6c0b4d8254b4e67ccf4f7d09afbedb662c122584f71bf2dea7e25005031aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937076"
 ---
-# <a name="folderitemmodifydate-property"></a>Propriedade FolderItem. ModifyDate
+# <a name="folderitemmodifydate-property"></a>Propriedade FolderItem.ModifyDate
 
-Para um arquivo, define ou obtém a data e a hora da última modificação. Para uma pasta, recupera a data e a hora em que uma pasta foi modificada pela última vez, mas não pode defini-la.
+Para um arquivo, define ou obtém a data e a hora em que ele foi modificado pela última vez. Para uma pasta, recupera a data e a hora em que uma pasta foi modificada pela última vez, mas não pode defini-la.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,13 +38,13 @@ FolderItem.ModifyDate = iModifyDate
 
 ## <a name="property-value"></a>Valor da propriedade
 
-**Data** que especifica ou recebe a data e a hora da última modificação do item.
+**Data** que especifica ou recebe a data e a hora em que o item foi modificado pela última vez.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **ModifyDate** para recuperar a data da última modificação do bloco de notas e, em seguida, redefini-lo para um longo tempo atrás. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa ModifyDate** para recuperar a data da última modificação do Bloco de notas e, em seguida, redefini-la para um tempo muito longo atrás. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -152,11 +152,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

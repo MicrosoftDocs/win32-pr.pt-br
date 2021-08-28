@@ -4,12 +4,12 @@ ms.assetid: 21cbde27-a2ca-4298-9197-43bcaf05588d
 title: Adicionando informações de fluxo ao sink do arquivo ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de8202de8da5cb8e17534c334e3d39dddb3c4f99
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d0273f6080293803db7fa7451460e8f8d7700c5e405b9ed09d8d35e384abc8ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975035"
 ---
 # <a name="adding-stream-information-to-the-asf-file-sink"></a>Adicionando informações de fluxo ao sink do arquivo ASF
 
@@ -17,11 +17,11 @@ O sink de arquivo ASF é uma implementação de [**IMFMediaSink**](/windows/desk
 
 Depois de criar uma instauência do sink de arquivo, ele deve ser configurado antes de criar a topologia. O sink de arquivo precisa saber sobre os fluxos no arquivo de saída, as informações do modo de codificação e os metadados. Este tópico descreve o processo de adição de fluxo no sink de arquivos.
 
--   [Adicionando fluxos no sink de arquivo ASF](#adding-streams-in-the-asf-file-sink)
+-   [Adicionando Fluxos no sink do arquivo ASF](#adding-streams-in-the-asf-file-sink)
 -   [Enumerando os sinks de fluxo](#enumerating-stream-sinks)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="adding-streams-in-the-asf-file-sink"></a>Adicionando fluxos no sink de arquivo ASF
+## <a name="adding-streams-in-the-asf-file-sink"></a>Adicionando Fluxos no sink do arquivo ASF
 
 O sink de arquivo deve conhecer os fluxos de saída e suas propriedades para que ele possa gerar amostras de saída de acordo e adicioná-los ao arquivo ASF de saída. Essas configurações são escritas no objeto de header ASF final.
 
@@ -32,11 +32,11 @@ O procedimento a seguir resume as etapas gerais para configurar o fluxo usando o
 **Para configurar informações de fluxo no sink do arquivo ASF**
 
 1.  Crie um objeto de perfil ASF chamando [**MFCreateASFProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfprofile).
-2.  Para cada fluxo no arquivo de saída, crie um tipo de mídia para o fluxo de destino a ser adicionado no sink de arquivo. O tipo de mídia deve ser compatível com os tipos de saída compatíveis com os codificadores de Mídia do Windows.
+2.  Para cada fluxo no arquivo de saída, crie um tipo de mídia para o fluxo de destino a ser adicionado no sink de arquivos. O tipo de mídia deve ser compatível com os tipos de saída compatíveis com os codificadores Windows Media.
 
-    Para obter informações sobre como adicionar fluxos de áudio ao perfil, consulte Criando fluxos de áudio para codificação ASF.
+    Para obter informações sobre como adicionar fluxos de áudio ao perfil, consulte Creating Audio Fluxos for ASF Encoding.
 
-    Para obter informações sobre como adicionar fluxos de vídeo ao perfil, consulte Criando fluxos de vídeo para codificação ASF.
+    Para obter informações sobre como adicionar fluxos de vídeo ao perfil, consulte Creating Video Fluxos for ASF Encoding.
 
 3.  Crie fluxos com base nos tipos de mídia criados na etapa 2 chamando [**IMFASFProfile::CreateStream.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-createstream)
 4.  Atribua um número de fluxo para o fluxo recém-criado chamando o ponteiro da interface [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) recebido na etapa 3.
@@ -44,11 +44,11 @@ O procedimento a seguir resume as etapas gerais para configurar o fluxo usando o
     -   Parâmetros de bucket vazado definindo os atributos: [**\_ MF ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md) [**ou \_ MF ASFSTREAMCONFIG \_ LEAKYBUCKET2**](mf-asfstreamconfig-leakybucket2-attribute.md)
     -   Extensão de carga, exclusão mútua chamando [**métodos IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
 6.  Opcionalmente, de definir o tamanho do pacote de dados para o perfil definindo atributos [**\_ MF ASFPROFILE \_ MINPACKETSIZE**](mf-asfprofile-minpacketsize-attribute.md) e [**\_ MF ASFPROFILE \_ MAXPACKETSIZE.**](mf-asfprofile-maxpacketsize-attribute.md) O perfil ASF expõe a interface [**IMFAttributes,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) à qual um aplicativo pode obter referência chamando **IMFASFProfile::QueryInterface**.
-7.  Definir informações de codificação para o fluxo no sink de arquivo. Discutido na [configuração de propriedades no sink de arquivo](setting-properties-in-the-file-sink.md).
+7.  Definir informações de codificação para o fluxo no sink de arquivos. Discutido na [configuração de propriedades no sink de arquivo](setting-properties-in-the-file-sink.md).
 8.  Adicione o fluxo ao perfil chamando [**IMFASFProfile::SetStream.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-setstream)
 9.  Associe o perfil ao objeto ContentInfo chamando [**IMFASFContentInfo::SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile).
 
-Para modificar um fluxo existente, o aplicativo pode obter uma referência à interface [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) do fluxo e reconfigurá-la de acordo com os requisitos. Para adicionar ou remover fluxos, o aplicativo deve chamar [**IMFASFProfile::RemoveStream.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-removestream) Para aplicar essas alterações, modificações de fluxo ou remoção, você deve definir o perfil novamente no objeto ContentInfo. Isso substitui o perfil existente que já está associado ao objeto ContentInfo.
+Para modificar um fluxo existente, o aplicativo pode obter uma referência à interface [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) do fluxo e reconfigurá-lo de acordo com os requisitos. Para adicionar ou remover fluxos, o aplicativo deve chamar [**IMFASFProfile::RemoveStream.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-removestream) Para aplicar essas alterações, modificações de fluxo ou remoção, você deve definir o perfil novamente no objeto ContentInfo. Isso substitui o perfil existente que já está associado ao objeto ContentInfo.
 
 
 ```C++
@@ -133,11 +133,11 @@ O procedimento a seguir resume as etapas gerais para enumerar os sinks de fluxo 
 1.  Chame [**IMFMediaSink::GetStreamSinkCount**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkcount) para obter o número total de sinks de fluxo no sink do arquivo ASF.
 2.  Loop pelos sinks de fluxo e obter uma referência à interface [**GetStreamSinkByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkbyindex) do fluxo.
 
-    – ou –
+    -ou-
 
     Chame [**IMFMediaSink::GetStreamSinkById**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkbyid) para obter o sink de fluxo especificando o número do fluxo. Cada sink de fluxo é identificado com o número de fluxo definido durante a criação do fluxo no perfil.
 
-Se você estiver criando uma topologia parcial para codificar um arquivo de mídia, deverá adicionar o sink de arquivo à topologia como um nó de topologia de saída. Você pode fazer isso especificando cada sink de fluxo no sink do arquivo ou definindo o objeto de ativação do sink de arquivo e os identificadores do sink de fluxo. Para obter mais informações e exemplo de código, consulte [Criando nós de saída](creating-output-nodes.md).
+Se você estiver criando uma topologia parcial para codificar um arquivo de mídia, deverá adicionar o sink de arquivo à topologia como um nó de topologia de saída. Você pode fazer isso especificando cada sink de fluxo no sink de arquivo ou definindo o objeto de ativação do sink de arquivo e os identificadores do sink de fluxo. Para obter mais informações e exemplo de código, consulte [Criando nós de saída](creating-output-nodes.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -146,7 +146,7 @@ Se você estiver criando uma topologia parcial para codificar um arquivo de míd
 [Sinks de mídia do ASF](asf-media-sinks.md)
 </dt> <dt>
 
-[Suporte a ASF no Media Foundation](asf-support-in-media-foundation.md)
+[Suporte a ASF em Media Foundation](asf-support-in-media-foundation.md)
 </dt> </dl>
 
  

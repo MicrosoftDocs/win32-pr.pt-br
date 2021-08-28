@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Interfaces de automação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 652e9a1fb35a66bddb9f0aebe543770e89e6e2ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c05c1682513e0c0a0d76d88990e80bcc8e6e2d22767ea6fced6f1facca59119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105797633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118820286"
 ---
 # <a name="automation-interfaces"></a>Interfaces de automação
 

@@ -4,26 +4,26 @@ ms.assetid: 26358bc5-71e9-40f0-9243-9bddd961a0e5
 title: Manipulação direta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 6db2a50893914dfb25050768f88cb289a1ecf3ea
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f449079a1772fd6dd43b51a2e5af3920ab3e173e1dc8590567ed4555b6deaf31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022577"
 ---
 # <a name="direct-manipulation"></a>Manipulação direta
 
 As APIs de manipulação direta permitem que você crie grandes experiências de usuário panorâmica, zoom e arrastar. Para fazer isso, ele processa a entrada por toque em uma região ou um objeto, gera transformações de saída e aplica as transformações aos elementos da interface do usuário. Você pode usar a manipulação direta para otimizar a capacidade de resposta e reduzir a latência por meio do processamento de entrada fora do thread, testes de clique de entrada fora do thread opcional e previsão de entrada/saída.
 
-Qualquer aplicativo que usa a manipulação direta para processar interações de toque exibe as animações do fluido do Windows 8 e os comportamentos de comentários de interação que estão em conformidade com as [diretrizes para interações comuns do usuário](/windows/uwp/design/input/).
+qualquer aplicativo que usa a manipulação direta para processar interações de toque exibe as animações de Windows 8 fluida e os comportamentos de comentários de interação que estão em conformidade com as [diretrizes para interações comuns do usuário](/windows/uwp/design/input/).
 
 ## <a name="developer-audience"></a>Público do desenvolvedor
 
-A API de manipulação direta é para desenvolvedores experientes que conhecem o C/C++, têm uma compreensão sólida do [com (Component Object Model)](../com/component-object-model--com--portal.md)e estão familiarizados com os conceitos de programação do Windows.
+a API de manipulação direta é para desenvolvedores experientes que conhecem o C/C++, têm uma compreensão sólida do [COM (Component Object Model)](../com/component-object-model--com--portal.md)e estão familiarizados com os conceitos de programação de Windows.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-A manipulação direta foi introduzida no Windows 8. Ele está incluído nas versões de 32 bits e 64 bits.
+A manipulação direta foi introduzida em Windows 8. Ele está incluído nas versões de 32 bits e 64 bits.
 
 ## <a name="why-use-directmanipulation"></a>Por que usar DirectManipulation
 

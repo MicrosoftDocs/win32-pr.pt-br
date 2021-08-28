@@ -1,22 +1,22 @@
 ---
-description: O Microsoft&\# 160; O provedor Win32 recupera e atualiza dados relevantes para sistemas Windows&\# 8212; dados como as configurações atuais de variáveis de ambiente e os atributos de um disco lógico.
+description: O Microsoft&\# 160; o provedor Win32 recupera e atualiza dados relevantes para Windows sistemas&\# 8212; dados como as configurações atuais de variáveis de ambiente e os atributos de um disco lógico.
 ms.assetid: 71c13736-0504-4d50-b8a4-5d68d4ba9a90
 ms.tgt_platform: multiple
 title: Provedor Win32
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dfb29b6f80ed833de0f4185070d46770c6cd2f9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dca4426f849b59dfbfb5f667c32e8e3b9cd47ca7482fd3547d631592a080f968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118007769"
 ---
 # <a name="win32-provider"></a>Provedor Win32
 
-O provedor Microsoft Win32 recupera e atualiza os dados relevantes para sistemas Windows — dados como as configurações atuais de variáveis de ambiente e os atributos de um disco lógico. Com o provedor do Win32, os aplicativos de gerenciamento podem usar o WMI para acessar facilmente esses dados. O provedor Win32 recupera suas informações fazendo chamadas de função do Windows e consultando o registro do sistema.
+o provedor do Microsoft Win32 recupera e atualiza os dados relevantes para Windows sistemas — dados como as configurações atuais de variáveis de ambiente e os atributos de um disco lógico. Com o provedor do Win32, os aplicativos de gerenciamento podem usar o WMI para acessar facilmente esses dados. o provedor Win32 recupera suas informações fazendo Windows chamadas de função e consultando o registro do sistema.
 
-O provedor Win32 define as classes usadas para descrever o hardware ou o software disponível em sistemas Windows e as relações entre eles.
+o provedor Win32 define as classes usadas para descrever o hardware ou software disponível em sistemas Windows e as relações entre eles.
 
 Como um provedor de instância e método, o provedor Win32 implementa a interface [**IWbemProviderInit**](/windows/win32/api/wbemprov/nn-wbemprov-iwbemproviderinit) padrão, bem como os seguintes métodos de [**IWbemServices**](/windows/win32/api/wbemcli/nn-wbemcli-iwbemservices) :
 

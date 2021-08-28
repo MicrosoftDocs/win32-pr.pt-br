@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 20a995f31a062586bf931e06e045aa00483af8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f90fe2f4cd254e5ee603cb47a6224914007a96c070a25b76cf27c09223dd07dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902433"
 ---
 # <a name="apiretrievecolumnasbyte-method"></a>Método API. RetrieveColumnAsByte
 

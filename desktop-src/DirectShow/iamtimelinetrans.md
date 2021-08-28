@@ -1,7 +1,7 @@
 ---
-description: A interface IAMTimelineTrans fornece métodos para manipular transições em serviços de edição do DirectShow (DES).
+description: A interface IAMTimelineTrans fornece métodos para manipular transições no DES (Serviços de DirectShow de Edição).
 ms.assetid: e29ff0cc-0e48-4a72-8a1b-051ed62c8130
-title: Interface IAMTimelineTrans (QEdit. h)
+title: Interface IAMTimelineTrans (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cd3c39d0a5434befdd5607b340fef936644bf48e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28d7fd409c3ab377393f6c70359d0f6a0a07a3e14c64a77acb2912d9863c6d13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117998719"
 ---
 # <a name="iamtimelinetrans-interface"></a>Interface IAMTimelineTrans
 
@@ -28,15 +28,15 @@ ms.locfileid: "105779234"
 
  
 
-A `IAMTimelineTrans` interface fornece métodos para manipular transições em [serviços de edição do DirectShow](directshow-editing-services.md) (des). Uma transição é uma progressão entre uma camada de vídeo e a composição renderizada de todas as camadas de vídeo com uma prioridade mais baixa. Uma transição pode ser adicionada a qualquer objeto de linha do tempo que expõe a interface [**IAMTimelineTransable**](iamtimelinetransable.md) . Para definir propriedades em uma transição, use a interface [**IPropertySetter**](ipropertysetter.md) .
+A `IAMTimelineTrans` interface fornece métodos para manipular transições DirectShow [DES (Serviços](directshow-editing-services.md) de Edição). Uma transição é uma progressão entre uma camada de vídeo e a composição renderizada de todas as camadas de vídeo com uma prioridade mais baixa. Uma transição pode ser adicionada a qualquer objeto de linha do tempo que expõe a interface [**IAMTimelineTransable.**](iamtimelinetransable.md) Para definir propriedades em uma transição, use a interface [**IPropertySetter.**](ipropertysetter.md)
 
-O objeto de transição DES é, na verdade, um wrapper para um objeto de transformação do DirectX. Qualquer objeto de transformação DirectX de entrada 2 pode ser usado para implementar o efeito visual para a transição. A Microsoft não dá mais suporte ao desenvolvimento de objetos de transformação DirectX de terceiros. Para especificar o objeto de transformação DirectX para uma transição, chame o método [**IAMTimelineObj:: SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) .
+O objeto de transição de DES é, na verdade, um wrapper para um objeto Transformação DirectX. Qualquer objeto transformação DirectX de duas entradas pode ser usado para implementar o efeito visual para a transição. A Microsoft não dá mais suporte ao desenvolvimento de objetos de Transformação DirectX de terceiros. Para especificar o objeto Transformação DirectX para uma transição, chame o [**método IAMTimelineObj::SetSubObjectGUID.**](iamtimelineobj-setsubobjectguid.md)
 
-Para criar um objeto de transição, chame [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) com o valor linha de tempo de \_ \_ tipo principal \_ TRANSITION. Você pode consultar o ponteiro [**IAMTimelineObj**](iamtimelineobj.md) retornado para a `IAMTimelineTrans` interface.
+Para criar um objeto de transição, chame [**IAMTimeline::CreateEmptyNode com**](iamtimeline-createemptynode.md) o valor TIMELINE \_ MAJOR TYPE \_ \_ TRANSITION. Você pode consultar o ponteiro [**IAMTimelineObj**](iamtimelineobj.md) retornado para a `IAMTimelineTrans` interface.
 
 ## <a name="members"></a>Membros
 
-A interface **IAMTimelineTrans** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IAMTimelineTrans** também tem estes tipos de membros:
+A interface **IAMTimelineTrans** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineTrans** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -48,13 +48,13 @@ A interface **IAMTimelineTrans** tem esses métodos.
 
 | Método                                                  | Descrição                                                                            |
 |:--------------------------------------------------------|:---------------------------------------------------------------------------------------|
-| [**GetCutPoint**](iamtimelinetrans-getcutpoint.md)     | Recupera o ponto de recorte.<br/>                                                    |
-| [**GetCutPoint2**](iamtimelinetrans-getcutpoint2.md)   | Recupera o ponto de recorte, como um valor [**REFTIME**](reftime.md) .<br/>             |
-| [**GetCutsOnly**](iamtimelinetrans-getcutsonly.md)     | Determina se a transição é renderizada como um recorte.<br/>                     |
+| [**GetCutPoint**](iamtimelinetrans-getcutpoint.md)     | Recupera o ponto de corte.<br/>                                                    |
+| [**GetCutPoint2**](iamtimelinetrans-getcutpoint2.md)   | Recupera o ponto de corte, como um [**valor REFTIME.**](reftime.md)<br/>             |
+| [**GetCutsOnly**](iamtimelinetrans-getcutsonly.md)     | Determina se a transição é renderizada como um corte.<br/>                     |
 | [**GetSwapInputs**](iamtimelinetrans-getswapinputs.md) | Recupera um valor que indica se as entradas de transição são trocadas.<br/> |
-| [**SetCutPoint**](iamtimelinetrans-setcutpoint.md)     | Define o ponto de recorte.<br/>                                                         |
-| [**SetCutPoint2**](iamtimelinetrans-setcutpoint2.md)   | Define o ponto de recorte, como um valor [**REFTIME**](reftime.md) .<br/>                  |
-| [**SetCutsOnly**](iamtimelinetrans-setcutsonly.md)     | Especifica se a transição é renderizada como um recorte.<br/>                      |
+| [**SetCutPoint**](iamtimelinetrans-setcutpoint.md)     | Define o ponto de corte.<br/>                                                         |
+| [**SetCutPoint2**](iamtimelinetrans-setcutpoint2.md)   | Define o ponto de corte, como um [**valor REFTIME.**](reftime.md)<br/>                  |
+| [**SetCutsOnly**](iamtimelinetrans-setcutsonly.md)     | Especifica se a transição é renderizada como um corte.<br/>                      |
 | [**SetSwapInputs**](iamtimelinetrans-setswapinputs.md) | Especifica se as entradas de transição são trocadas.<br/>                        |
 
 
@@ -64,12 +64,12 @@ A interface **IAMTimelineTrans** tem esses métodos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -79,8 +79,8 @@ A interface **IAMTimelineTrans** tem esses métodos.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

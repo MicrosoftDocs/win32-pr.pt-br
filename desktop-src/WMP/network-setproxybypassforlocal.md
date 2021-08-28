@@ -1,11 +1,11 @@
 ---
-title: Método Network. setProxyBypassForLocal
+title: Método Network.setProxyBypassForLocal
 description: O método setProxyBypassForLocal especifica um valor que indica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
 ms.assetid: 3023a561-f3b7-45c8-a432-baadd795aaa6
 keywords:
-- método setProxyBypassForLocal Windows Media Player
-- método setProxyBypassForLocal Windows Media Player, classe de rede
-- Classe de rede Windows Media Player, método setProxyBypassForLocal
+- Método setProxyBypassForLocal Windows Media Player
+- Método setProxyBypassForLocal Windows Media Player classe , Network
+- Classe de Windows Media Player , método setProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9426c310c8977317cf5a8415fd19966b8dfc8fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3f0b975ea1f4ddade347205b627c13a708ad33d2132cf2990075c034957f071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118836228"
 ---
-# <a name="networksetproxybypassforlocal-method"></a>Método Network. setProxyBypassForLocal
+# <a name="networksetproxybypassforlocal-method"></a>Método Network.setProxyBypassForLocal
 
-O método **setProxyBypassForLocal** especifica um valor que indica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
+O **método setProxyBypassForLocal** especifica um valor que indica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,35 +43,35 @@ Network.setProxyBypassForLocal(
 
 <dl> <dt>
 
-*protocolo* \[ do no\]
+*protocolo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+**Cadeia de** caracteres que especifica o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> <dt>
 
-*ignorar* \[ no\]
+*bypass* \[ Em\]
 </dt> <dd>
 
-**Booliano** que especifica se o servidor proxy é ignorado.
+**Booliana** especificando se o servidor proxy é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não tem efeito, a menos que **getProxySettings** retorne um valor de 2 (use as configurações manuais).
+Esse método não tem efeito, a **menos que getProxySettings** retorne um valor de 2 (use configurações manuais).
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **setProxyBypassForLocal** para especificar se o servidor proxy do Windows Media Player foi ignorado, ao usar o protocolo MMS, se o servidor de origem estiver em uma rede local. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Rede*. **setProxyBypassForLocal** para especificar se o servidor proxy Windows Media Player é ignorado, ao usar o protocolo MMS, se o servidor de origem estiver em uma rede local. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ alert("Proxy settings must be manual!");
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

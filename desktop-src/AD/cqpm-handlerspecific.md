@@ -1,10 +1,10 @@
 ---
-title: Mensagem de CQPM_HANDLERSPECIFIC (Cmnquery. h)
+title: CQPM_HANDLERSPECIFIC mensagem (Cmnquery.h)
 description: Valor base usado para mensagens que são privadas para o manipulador de consulta.
 ms.assetid: c3badb89-ee4e-4317-97aa-15187b9bb3e8
 ms.tgt_platform: multiple
 keywords:
-- Mensagem de CQPM_HANDLERSPECIFIC Active Directory
+- CQPM_HANDLERSPECIFIC mensagem do Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed06d4bd2b33eaf6224bb72f4814dfdced5cce2e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd01907a6c5e0e83f9264da56c93b58e56f8b4cb9204f64796af2f7c2b2e788a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021163"
 ---
-# <a name="cqpm_handlerspecific-message"></a>\_Mensagem CQPM HANDLERSPECIFIC
+# <a name="cqpm_handlerspecific-message"></a>Mensagem CQPM \_ HANDLERSPECIFIC
 
-A mensagem **CQPM \_ HANDLERSPECIFIC** é o valor base usado para mensagens que são particulares ao manipulador de consultas. O manipulador de consulta deve adicionar esse valor a mensagens privadas para garantir que as colisões de mensagem não ocorram.
+A **mensagem CQPM \_ HANDLERSPECIFIC** é o valor base usado para mensagens privadas para o manipulador de consulta. O manipulador de consultas deve adicionar esse valor a mensagens privadas para garantir que não ocorram colisões de mensagens.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -44,7 +44,7 @@ Contém dados de mensagem adicionais. O conteúdo desse parâmetro é definido p
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O significado do valor de retorno é definido pelo manipulador de consulta.
 
@@ -56,7 +56,7 @@ O significado do valor de retorno é definido pelo manipulador de consulta.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 

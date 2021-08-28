@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Build
+title: atributo MS-SQL-Build
 description: A versão atual, incluindo o número da compilação.
 ms.assetid: 230ef785-b5bf-44fa-a166-38050934143a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Build
-- Esquema de AD do atributo mS-SQL-Build
+- esquema de AD do atributo MS-SQL-Build
+- esquema de AD do atributo mS-SQL-Build
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f70b9c9df99de71712c027d97634800d8a7af0d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 034ed191fa5eeefc44d7778a0504f067e0a3f0379a37c1a69c7624cd37a3715d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118016533"
 ---
-# <a name="ms-sql-build-attribute"></a>Atributo MS-SQL-Build
+# <a name="ms-sql-build-attribute"></a>atributo MS-SQL-Build
 
 A versão atual, incluindo o número da compilação.
 
@@ -121,7 +121,7 @@ A versão atual, incluindo o número da compilação.
 | ID do link                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                            |
@@ -163,7 +163,7 @@ A versão atual, incluindo o número da compilação.
 | ID do link                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                            |

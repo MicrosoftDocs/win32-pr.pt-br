@@ -3,7 +3,7 @@ title: LVN_COLUMNDROPDOWN código de notificação (commctrl. h)
 description: Enviado por um controle de exibição de lista quando o botão suspenso da exibição de lista é pressionado. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 752d745e-4482-425c-af3c-f9707cbb03d7
 keywords:
-- LVN_COLUMNDROPDOWN de código de notificação controles do Windows
+- LVN_COLUMNDROPDOWN código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 792d29268548d95a7f3e70b05d9d2de368a03cd6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8e9fb40ba03006056b485911e96316a5cce1b325400c12795b02d82d11f2fc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170325"
 ---
 # <a name="lvn_columndropdown-notification-code"></a>Código de notificação do LVN \_ COLUMNDROPDOWN
 
@@ -47,7 +47,7 @@ Defina o membro **iItem** da estrutura [**NMLISTVEIW**](/windows/win32/api/commc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -63,9 +63,9 @@ Se um controle de cabeçalho for um filho do modo de exibição de lista, o cont
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

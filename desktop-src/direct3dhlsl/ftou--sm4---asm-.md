@@ -4,12 +4,12 @@ description: Ponto flutuante para conversão de inteiro sem sinal.
 ms.assetid: 0E3E090B-72C0-4CED-AFA5-2DDCF67D7263
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4a5e65e4bb9d4e71e4a2000f00861cf63e7c181
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: aedea930ef2cf0b691261e64940990510d0ec1be9c0dbce8aa5422ecfe90d49c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907460"
 ---
 # <a name="ftou-sm4---asm"></a>ftou (sm4-ASM)
 

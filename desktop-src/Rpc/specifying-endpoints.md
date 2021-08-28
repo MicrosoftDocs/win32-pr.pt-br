@@ -4,12 +4,12 @@ description: Especificando pontos de extremidade bem conhecidos e dinâmicos na 
 ms.assetid: fc39b527-11e6-45a7-b3b5-8bcf469633d8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 373fb2818dd14670f5a939aa524c81fcdb05e20b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0ff73f13f752e42917353a217f5a2fcfa8d1fcfa9dc60edf585c42d72b0d306e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105748747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017606"
 ---
 # <a name="specifying-endpoints"></a>Especificando pontos de extremidade
 
@@ -42,6 +42,6 @@ Se todos os testes forem bem-sucedidos, o mapeador de ponto de extremidade retor
 
 Os pontos de extremidade dinâmicos são limpos automaticamente do banco de dados mapeador de pontos de extremidades quando o processo do servidor para de ser executado. Você pode remover o ponto de extremidade do banco de dados do mapeador de ponto de extremidade antes de o programa de servidor sair usando a função [**RpcEpUnregister**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcepunregister) ou pode permitir que a limpeza automática gerencie a remoção do ponto de extremidade.
 
- 
+ 
 
- 
+ 

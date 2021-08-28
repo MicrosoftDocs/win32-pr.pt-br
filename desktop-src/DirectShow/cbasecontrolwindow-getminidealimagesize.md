@@ -1,7 +1,7 @@
 ---
-description: O método GetMinIdealImageSize recupera o tamanho mínimo da imagem ideal.
+description: O método GetMinIdealImageSize recupera o tamanho mínimo ideal da imagem.
 ms.assetid: f2f2d10e-ee2c-4f8a-91ce-576319038e0d
-title: Método CBaseControlWindow. GetMinIdealImageSize (Ctlutil. h)
+title: Método CBaseControlWindow.GetMinIdealImageSize (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 24eeb4cdb5972f81e6dd66a812c9a38b61dcab91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cab33ac28153f2a22ef4ca07f4c7f83d700377909d404dbfe6d707037423f248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158448"
 ---
-# <a name="cbasecontrolwindowgetminidealimagesize-method"></a>Método CBaseControlWindow. GetMinIdealImageSize
+# <a name="cbasecontrolwindowgetminidealimagesize-method"></a>Método CBaseControlWindow.GetMinIdealImageSize
 
-O `GetMinIdealImageSize` método recupera o tamanho mínimo da imagem ideal.
+O `GetMinIdealImageSize` método recupera o tamanho mínimo ideal da imagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,29 +43,29 @@ HRESULT GetMinIdealImageSize(
 
 <dl> <dt>
 
-*pWidth* 
+*Pwidth* 
 </dt> <dd>
 
-Aponta para a largura mínima ideal, em pixels.
+Ponteiro para a largura ideal mínima, em pixels.
 
 </dd> <dt>
 
 *pHeight* 
 </dt> <dd>
 
-Aponta para a altura ideal mínima, em pixels.
+Ponteiro para a altura ideal mínima, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Vários renderizadores têm restrições de desempenho quanto ao tamanho das imagens que podem ser exibidas. Embora eles ainda devam funcionar corretamente quando solicitados a exibir imagens maiores do que o máximo especificado, os renderizadores podem indicar os tamanhos ideais mínimo e máximo por meio da interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Essa interface pode ser chamada somente quando o grafo de filtro é pausado ou está em execução, porque não é até que os recursos sejam alocados e o renderizador possa reconhecer suas restrições. Se não houver restrições, o renderizador preencherá os parâmetros *pWidth* e *pHeight* com as dimensões de vídeo nativa e retornará S \_ false. Se houver restrições, a largura e a altura restritas serão inseridas e a função de membro retornará S \_ OK.
+Vários renderadores têm restrições de desempenho quanto ao tamanho das imagens que podem ser exibidas. Embora eles ainda devem funcionar corretamente quando solicitado a exibir imagens maiores que o máximo especificado, os renderizadores podem nomear os tamanhos ideais mínimo e máximo por meio da interface [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Essa interface só pode ser chamada quando o grafo de filtro está em pausa ou em execução, porque não é até lá que os recursos são alocados e o renderista pode reconhecer suas restrições. Se não existir nenhuma restrição, o renderista preencherá os parâmetros *pWidth* e *pHeight* com as dimensões de vídeo nativas e retornará S \_ FALSE. Se existirem restrições, a largura restrita e a altura serão inseridas e a função membro retornará S \_ OK.
 
-As dimensões se aplicam ao tamanho do vídeo de destino e não ao tamanho geral da janela. Portanto, ao calcular o tamanho da janela a ser definida, a conta para os estilos de janela atuais (por exemplo, WS \_ Caption e WS \_ Border).
+As dimensões se aplicam ao tamanho do vídeo de destino e não ao tamanho geral da janela. Portanto, ao calcular o tamanho da janela a ser definida, contabilização dos estilos de janela atuais (por exemplo, LEGENDA do WS \_ e BORDA do \_ WS).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ As dimensões se aplicam ao tamanho do vídeo de destino e não ao tamanho geral
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: Ao contrário de ponteiros exclusivos, os ponteiros completos dão 
 ms.assetid: 38023942-a4c2-4de7-b7d5-10d508cf083b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18687b496ddd28dca9e70afca8deafb18774500a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2bdbdc223125889eeb1849e60d162e5690b5c307b18b6667d43c578a46282400
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021247"
 ---
 # <a name="full-pointers"></a>Ponteiros completos
 
@@ -45,6 +45,6 @@ Neste exemplo, os parâmetros *ptrName1* e *ptrName2* são definidos como pontei
 
 \[**PTR** \] é necessário ao fornecer suporte a alias. No entanto, como ela requer o processamento máximo de todos os ponteiros disponíveis no RPC, ela não é recomendada para a maioria dos aplicativos.
 
- 
+ 
 
- 
+ 

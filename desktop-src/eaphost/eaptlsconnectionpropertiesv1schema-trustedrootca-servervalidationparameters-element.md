@@ -1,6 +1,6 @@
 ---
-title: Elemento TrustedRootCA (ServerValidationParameters)-conexão
-description: Captura a impressão em miniatura das CAs (autoridades de certificação) raiz confiáveis do cliente. | Elemento TrustedRootCA (ServerValidationParameters)
+title: Elemento TrustedRootCA (ServerValidationParameters) – Conexão
+description: Captura a impressão digital de autoridades de certificação raiz (CAs) que são confiáveis para o cliente. | Elemento TrustedRootCA (ServerValidationParameters)
 ms.assetid: 81e3b6ca-6360-42dc-bfd3-298e81e66c1a
 keywords:
 - Elemento TrustedRootCA EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6f91816ba90300a76545a7a22cea6d037b4e897
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c8f5b129f2db80bc46b24d1a935eea9294d423b205268ec0885869613d44a8e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105772921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904468"
 ---
 # <a name="trustedrootca-servervalidationparameters-element-for-connection-properties"></a>Elemento TrustedRootCA (ServerValidationParameters) para propriedades de conexão
 
-O elemento **TrustedRootCA (ServerValidationParameters)** captura a impressão digital das CAS (autoridades de certificação) raiz confiáveis do cliente.
+O **elemento TrustedRootCA (ServerValidationParameters)** captura a impressão digital das autoridades de certificação raiz (CAs) que são confiáveis pelo cliente.
 
 ``` syntax
 <xs:element name="TrustedRootCA"
@@ -31,11 +31,11 @@ O elemento **TrustedRootCA (ServerValidationParameters)** captura a impressão d
  />
 ```
 
-O elemento **TrustedRootCA** é definido pelo tipo complexo [**ServerValidationParameters**](eaptlsconnectionpropertiesv1schema-servervalidationparameters-complextype.md) .
+O **elemento TrustedRootCA** é definido pelo [**tipo complexo ServerValidationParameters.**](eaptlsconnectionpropertiesv1schema-servervalidationparameters-complextype.md)
 
 ## <a name="remarks"></a>Comentários
 
-O Thumb Print é uma cadeia de caracteres hexadecimal que contém o hash SHA-1 do certificado. O elemento **TrustedRootCA** é opcional.
+A impressão digital é uma cadeia de caracteres hexadecimal que contém o hash SHA-1 do certificado. O **elemento TrustedRootCA** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ O Thumb Print é uma cadeia de caracteres hexadecimal que contém o hash SHA-1 d
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -73,7 +73,7 @@ O Thumb Print é uma cadeia de caracteres hexadecimal que contém o hash SHA-1 d
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos do esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

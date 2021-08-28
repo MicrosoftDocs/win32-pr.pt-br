@@ -1,17 +1,17 @@
 ---
 description: Depois que o soquete estiver ouvindo uma conexão, o programa deverá lidar com as solicitações de conexão nesse soquete.
 ms.assetid: d01f3d90-4d83-442e-aada-e7b082ef7699
-title: Aceitando uma conexão (Windows Sockets 2)
+title: aceitando uma conexão (Windows sockets 2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03e066b53c22dd9964ad44dc8d67c15969641362
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 410dcdebb660ec290ee5723b569ca358e0317777300a479e17a516e594744b49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996886"
 ---
-# <a name="accepting-a-connection-windows-sockets-2"></a>Aceitando uma conexão (Windows Sockets 2)
+# <a name="accepting-a-connection-windows-sockets-2"></a>aceitando uma conexão (Windows sockets 2)
 
 Depois que o soquete estiver ouvindo uma conexão, o programa deverá lidar com as solicitações de conexão nesse soquete.
 
@@ -53,10 +53,10 @@ Depois que o soquete estiver ouvindo uma conexão, o programa deverá lidar com 
 
 3.  Quando a conexão do cliente tiver sido aceita, um aplicativo de servidor normalmente passaria o soquete de cliente aceito (a variável ClientSocket no código de exemplo acima) para um thread de trabalho ou uma porta de conclusão de e/s e continuaria aceitando conexões adicionais. Neste exemplo básico, o servidor continua para a próxima etapa.
 
-    Há uma série de outras técnicas de programação que podem ser usadas para escutar e aceitar várias conexões. Isso inclui o uso das funções [**Select**](/windows/desktop/api/Winsock2/nf-winsock2-select) ou [**WSAPoll**](/windows/win32/api/winsock2/nf-winsock2-wsapoll) . Exemplos de algumas dessas várias técnicas de programação são ilustrados nos [exemplos de Winsock avançados](getting-started-with-winsock.md) incluídos no SDK (Software Development Kit) do Microsoft Windows.
+    Há uma série de outras técnicas de programação que podem ser usadas para escutar e aceitar várias conexões. Isso inclui o uso das funções [**Select**](/windows/desktop/api/Winsock2/nf-winsock2-select) ou [**WSAPoll**](/windows/win32/api/winsock2/nf-winsock2-wsapoll) . exemplos de algumas dessas várias técnicas de programação são ilustrados nos [exemplos de Winsock avançados](getting-started-with-winsock.md) incluídos no Microsoft Windows Software Development Kit (SDK).
 
     > [!Note]  
-    > Em sistemas UNIX, uma técnica de programação comum para servidores era para um aplicativo escutar conexões. Quando uma conexão foi aceita, o processo pai chamaria a função **Fork** para criar um novo processo filho para lidar com a conexão do cliente, herdando o soquete do pai. Não há suporte para essa técnica de programação no Windows, pois não há suporte para a função **Fork** . Essa técnica também não é normalmente adequada para servidores de alto desempenho, pois os recursos necessários para criar um novo processo são muito maiores do que os necessários para um thread.
+    > Em sistemas UNIX, uma técnica de programação comum para servidores era para um aplicativo escutar conexões. Quando uma conexão foi aceita, o processo pai chamaria a função **Fork** para criar um novo processo filho para lidar com a conexão do cliente, herdando o soquete do pai. não há suporte para essa técnica de programação na Windows, pois não há suporte para a função **fork** . Essa técnica também não é normalmente adequada para servidores de alto desempenho, pois os recursos necessários para criar um novo processo são muito maiores do que os necessários para um thread.
 
      
 

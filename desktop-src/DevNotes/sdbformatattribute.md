@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e06bbaa288c7ecb0e85cd8a779100d547c33d687
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 44303a568a9f7775893033edc512e8a916004c43207277e308e1d4826d9f9537
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161548"
 ---
 # <a name="sdbformatattribute-function"></a>Função SdbFormatAttribute
 
@@ -62,7 +62,7 @@ O tamanho do buffer *pchBuffer* , em caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retornará **true** em caso de êxito ou **falso** se o buffer for muito pequeno ou se o atributo não for encontrado.
 
@@ -72,8 +72,8 @@ A função retornará **true** em caso de êxito ou **falso** se o buffer for mu
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

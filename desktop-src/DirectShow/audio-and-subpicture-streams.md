@@ -4,12 +4,12 @@ ms.assetid: 8d361da3-a33a-401c-a750-f9b952022cf6
 title: Fluxos de áudio e subimagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2f5c8c74f7507557f374d690a671b62e8b43343
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f553b5e569274cf7abafd34e897ba53f82e0292899661fb47ace9ada92dd84f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001358"
 ---
 # <a name="audio-and-subpicture-streams"></a>Fluxos de áudio e subimagem
 

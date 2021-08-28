@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: estrutura JET_RECORDLIST dados'
-title: Estrutura JET_RECORDLIST dados
+title: estrutura JET_RECORDLIST de JET_RECORDLIST
 TOCTitle: JET_RECORDLIST Structure
 ms:assetid: 6b4d97a0-4b42-4f7c-bb18-b6db3c92668a
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269287(v=EXCHG.10)
@@ -15,19 +15,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e83145f74d5edf97658fdadc62f018a151ee8b55
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 983a0d6a73d4a3bb5e44095f46cc52d537ce15f3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988220"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465093"
 ---
-# <a name="jet_recordlist-structure"></a>Estrutura JET_RECORDLIST dados
+# <a name="jet_recordlist-structure"></a>estrutura JET_RECORDLIST de JET_RECORDLIST
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_recordlist-structure"></a>Estrutura JET_RECORDLIST dados
+## <a name="jet_recordlist-structure"></a>estrutura JET_RECORDLIST de JET_RECORDLIST
 
 A **JET_RECORDLIST** localiza registros que estão na interseção de intervalos de índice especificados quando são usados com a [função JetIntersectIndexes.](./jetintersectindexes-function.md)
 
@@ -65,11 +65,7 @@ A tabela temporária identificada por **tableid** tem uma única coluna. Essa ú
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

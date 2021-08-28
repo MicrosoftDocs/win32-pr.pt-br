@@ -6,12 +6,12 @@ keywords:
 - RPC_BINDING_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e37d14bc5186f05815c10f538b0c90bdddd353
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0218f1a7331a070340b7740c83f8464b2286de2698daf67ac1092aa5c057db03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018580"
 ---
 # <a name="rpc_binding_handle"></a>\_identificador de associação RPC \_
 
@@ -32,11 +32,11 @@ Um identificador de associação de servidor contém as informações necessári
 
 Um identificador de associação de cliente não pode ser usado para fazer uma chamada de procedimento remoto. A biblioteca de tempo de execução RPC cria e fornece um identificador de ligação de cliente para um procedimento chamado-Server (também chamado de rotina Server-Manager) como \_ o \_ parâmetro identificador de associação RPC. O identificador de associação de cliente contém informações sobre o cliente de chamada.
 
-As funções ** \* RpcBinding* _ _*e \* RpcNsBinding*_ retornam o código de status RPC \_ S \_ \_ tipo \_ de associação incorreto \_ quando um aplicativo fornece o tipo de identificador de associação incorreto.
+As funções **RpcBinding \* *_ e _* RpcNsBinding \*** retornam o código de status RPC \_ S \_ \_ tipo de associação incorreto \_ \_ quando um aplicativo fornece o tipo de identificador de associação incorreto.
 
 Um aplicativo pode compartilhar um único identificador de associação entre vários threads de execução. A biblioteca de tempo de execução RPC gerencia chamadas de procedimento remoto simultâneas que usam um único identificador de associação. No entanto, o aplicativo é responsável pelo controle de simultaneidade de identificador de associação para operações que modificam um identificador de associação. Essas operações incluem as seguintes rotinas:
 
--   [_ *RpcBindingFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree)
+-   [**RpcBindingFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree)
 -   [**RpcBindingReset**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingreset)
 -   [**RpcBindingSetAuthInfo**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetauthinfo)
 -   [**RpcBindingSetObject**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetobject)

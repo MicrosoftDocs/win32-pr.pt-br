@@ -1,17 +1,17 @@
 ---
-title: Estruturas da caixa de listagem
-description: Estruturas da caixa de listagem
+title: Estruturas de caixa de listagem
+description: Estruturas de caixa de listagem
 ms.assetid: 54fcf6dd-9dd6-49d4-9afb-98bf6f235d9d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a13bb1e72c2e891157d59318ea382cd821f5132a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ff2c62d264b02de82e860fc3cedf4acc4901a3856eaa4c5eb4a9a7070d1ec02d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971456"
 ---
-# <a name="list-box-structures"></a>Estruturas da caixa de listagem
+# <a name="list-box-structures"></a>Estruturas de caixa de listagem
 
 ## <a name="in-this-section"></a>Nesta seção
 

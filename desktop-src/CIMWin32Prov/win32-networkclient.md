@@ -1,5 +1,5 @@
 ---
-description: A \_ classe WMI vinculado do Win32 representa um cliente de rede em um sistema Windows. Qualquer sistema de computador na rede com uma relação de cliente com o sistema é um descendente (ou membro) dessa classe.
+description: a \_ classe WMI vinculado do Win32 representa um cliente de rede em um sistema Windows. Qualquer sistema de computador na rede com uma relação de cliente com o sistema é um descendente (ou membro) dessa classe.
 ms.assetid: f0cc2cef-be23-42f4-a592-2c292aa5085f
 ms.tgt_platform: multiple
 title: Classe Win32_NetworkClient
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 54579073b3974a6c4954ef95b1da3fe2e9fd8348
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 14abd69af85118068681971299f26f9692b1d9ae6b7e18816e3bdba12cee890c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972616"
 ---
 # <a name="win32_networkclient-class"></a>\_Classe Win32 vinculado
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) **\_ vinculado do Win32** representa um cliente de rede em um sistema Windows. Qualquer sistema de computador na rede com uma relação de cliente com o sistema é um descendente (ou membro) dessa classe.
+a [classe WMI](../wmisdk/retrieving-a-class.md) **\_ vinculado do Win32** representa um cliente de rede em um sistema Windows. Qualquer sistema de computador na rede com uma relação de cliente com o sistema é um descendente (ou membro) dessa classe.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -146,7 +146,7 @@ Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**substituição**](..
 
 Nome de rede do cliente de rede em execução no sistema de computador que executa o Windows.
 
-Exemplo: "rede do Microsoft Windows"
+exemplo: "Microsoft Windows Network"
 
 </dd> <dt>
 

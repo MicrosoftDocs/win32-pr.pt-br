@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8128c2b991f978cbece2d3bc37e851611d3420
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf1a9e4099740b46b8a773bf6a96b0d7e955505330c36db398960eca226ec824
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072235"
 ---
 # <a name="itsremoteprogram3-interface"></a>Interface ITSRemoteProgram3
 
@@ -53,7 +53,7 @@ A interface **ITSRemoteProgram3** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                            |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

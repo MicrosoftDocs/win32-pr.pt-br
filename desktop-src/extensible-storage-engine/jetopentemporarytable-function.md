@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a67a26a396f2910dd22fea351cc3d9b8a32a1c49
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: f441f1f83325f33ab9d34eb1d560d700f7191e05
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983359"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465683"
 ---
 # <a name="jetopentemporarytable-function"></a>Função JetOpenTemporaryTable
 
@@ -64,7 +64,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
 | <p>JET_errOutOfMemory</p> | <p>A operação falhou porque não foi possível alocar memória suficiente para a conclusão.</p><p><strong>JetOpenTemporaryTable</strong> poderá retornar JET_errOutOfMemory se o espaço de endereço do processo de host ficar muito fragmentado. O gerenciador de tabela temporário alocará uma parte de 1 MB de espaço de endereço para cada tabela temporária criada, independentemente da quantidade de dados armazenados.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou a combinação de vários valores de parâmetro resultou em um resultado inesperado.</p><p>Esse erro é retornado por <strong>JetOpenTemporaryTable</strong> nas seguintes condições:</p><ul><li><p>O <strong>membro cbStruct</strong> da <a href="gg269206(v=exchg.10).md">estrutura JET_OPENTEMPORARYTABLE</a> não corresponde a uma versão dessa estrutura que é suportada por essa versão do mecanismo de banco de dados</p></li><li><p>O <strong>membro cbKeyMost</strong> da estrutura <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é menor que JET_cbKeyMostMin.</p></li><li><p>O <strong>membro cbKeyMost</strong> da estrutura <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é maior que o maior valor com suporte para o tamanho da página do banco de dados para a instância (JET_paramDatabasePageSize). Consulte o JET_paramKeyMost na lista de <a href="gg269241(v=exchg.10).md">Parâmetros Informacionais</a> para obter mais informações.</p></li><li><p>O membro cbVarSegMac da <a href="gg269206(v=exchg.10).md">estrutura JET_OPENTEMPORARYTABLE</a> é maior que o <strong>membro cbKeyMost.</strong></p></li></ul> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou a combinação de vários valores de parâmetro resultou em um resultado inesperado.</p><p>Esse erro é retornado por <strong>JetOpenTemporaryTable</strong> nas seguintes condições:</p><ul><li><p>O <strong>membro cbStruct</strong> da estrutura <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> não corresponde a uma versão dessa estrutura com suporte nessa versão do mecanismo de banco de dados</p></li><li><p>O <strong>membro cbKeyMost</strong> da estrutura <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é menor que JET_cbKeyMostMin.</p></li><li><p>O <strong>membro cbKeyMost</strong> da estrutura <a href="gg269206(v=exchg.10).md">JET_OPENTEMPORARYTABLE</a> é maior que o maior valor com suporte para o tamanho da página do banco de dados para a instância (JET_paramDatabasePageSize). Consulte o JET_paramKeyMost na lista de <a href="gg269241(v=exchg.10).md">Parâmetros Informacionais</a> para obter mais informações.</p></li><li><p>O membro cbVarSegMac da <a href="gg269206(v=exchg.10).md">estrutura JET_OPENTEMPORARYTABLE</a> é maior que o <strong>membro cbKeyMost.</strong></p></li></ul> | 
 | <p>JET_errNotInitialized</p> | <p>A operação não pode ser concluída porque a instância associada à sessão ainda não foi inicializada.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>A operação não pode ser concluída porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p><strong>Windows XP:</strong>  Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
@@ -72,13 +72,13 @@ Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de 
 | <p>JET_errRestoreInProgress</p> | <p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p><p><strong>Windows XP:</strong>  Esse erro só será retornado por Windows XP e versões posteriores.</p> | 
 | <p>JET_errInvalidSesid</p> | <p>O alça de sessão é inválido ou refere-se a uma sessão fechada.</p><p><strong>Observação</strong>  Esse erro não é retornado em todas as circunstâncias. Os alças são validados apenas com base no melhor esforço.</p> | 
-| <p>JET_errOutOfCursors</p> | <p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para abrir um novo cursor. Os recursos de cursor são configurados usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269201(v=exchg.10).md">com JET_paramMaxCursors</a>.</p> | 
+| <p>JET_errOutOfCursors</p> | <p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para abrir um novo cursor. Os recursos de cursor são configurados usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269201(v=exchg.10).md">JET_paramMaxCursors</a>.</p> | 
 | <p>JET_errTooManySorts</p> | <p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para criar uma tabela temporária. Os recursos de tabela temporários são configurados <a href="gg294044(v=exchg.10).md">usando JetSetSystemParameter</a> <a href="gg294140(v=exchg.10).md">com JET_paramMaxTemporaryTables</a>.</p> | 
 | <p>JET_errCannotMaterializeForwardOnlySort</p> | <p><strong>JetOpenTemporaryTable</strong> falhou porque JET_bitTTForwardOnly foi especificada e a tabela temporária especificada não pôde ser criada usando a otimização somente de encaminhamento.</p><p><strong>Windows Server 2003:</strong>  Esse erro só será retornado pelo Windows Server 2003 e versões posteriores.</p> | 
 | <p>JET_errTooManyColumns</p> | <p>Foi feita uma tentativa de adicionar muitas colunas à tabela. Uma tabela não pode ter mais de JET_ccolFixedMost colunas fixas, não mais do que JET_ccolVarMost colunas de comprimento variável e não mais do que JET_ccolTaggedMost colunas marcadas.</p> | 
 | <p>JET_errTooManyOpenTables</p> | <p>A operação falhou porque o mecanismo não pode alocar os recursos necessários para armazenar em cache o esquema da tabela. Para configurar o número de tabelas que têm esquemas que podem ser armazenados em cache, use <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269201(v=exchg.10).md">JET_paramMaxOpenTables</a>.</p> | 
 | <p>JET_errInvalidCodePage</p> | <p>O <strong>membro cp</strong> da estrutura <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como uma página de código válida. Os únicos valores válidos para colunas de texto são inglês (1252) e Unicode (1200). Um valor de 0 significa que o padrão será usado (inglês, 1252).</p> | 
-| <p>JET_errInvalidColumnType</p> | <p>O <strong>membro coltyp</strong> da <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como um tipo de coluna válido.</p> | 
+| <p>JET_errInvalidColumnType</p> | <p>O <strong>membro coltyp</strong> do <a href="gg294130(v=exchg.10).md">JET_COLUMNDEF</a> não foi definido como um tipo de coluna válido.</p> | 
 | <p>JET_errInvalidLanguageId</p> | <p>Não foi possível criar o índice porque foi feita uma tentativa de usar uma ID de localidade inválida. A ID da localidade pode ser completamente inválida ou o pacote de idiomas associado pode não estar instalado.</p> | 
 | <p>JET_errInvalidLCMapStringFlags</p> | <p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização.</p><p><strong>Windows XP:</strong>  Esse erro só será retornado por Windows XP e versões posteriores.</p><p><strong>Windows 2000:</strong>  No Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef.</p> | 
 | <p>JET_errIndexInvalidDef</p> | <p>Não foi possível criar o índice porque uma definição de índice inválida foi especificada. <strong>JetOpenTemporaryTable</strong> retornará esse erro sob as seguintes condições:</p><ul><li><p>A localidade Neutra da Linguagem é especificada.</p></li><li><p>Um conjunto inválido de sinalizadores de normalização é especificado.</p></li></ul><p><strong>Windows 2000:</strong>  Esse erro só será retornado por Windows 2000.</p> | 
@@ -225,13 +225,7 @@ Quando a tabela temporária não está materializada e está na fase de extraç�
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

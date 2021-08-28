@@ -4,12 +4,12 @@ ms.assetid: 0f084f3f-7432-4514-ae6a-c8179a99dec7
 title: Codificação de taxa de bits constante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bea372a12d03a962f08e449bd707654391a2313b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5318cbf6d1a0b9c635fcd8313589581839fe74c7402411d59a1b5dfbdb55739d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974825"
 ---
 # <a name="constant-bit-rate-encoding"></a>Codificação de taxa de bits constante
 
@@ -21,10 +21,10 @@ A desvantagem da codificação CBR é que a qualidade do conteúdo codificado n�
 
 Em geral, as variações na qualidade de um arquivo CBR são mais pronunciadas em taxas de bits inferiores. Em taxas de bits mais altas, a qualidade de um arquivo codificado em CBR ainda variará, mas os problemas de qualidade serão menos perceptíveis para o usuário. Ao usar a codificação de CBR, você deve definir a largura de banda tão alta quanto o cenário de entrega permitir.
 
--   [Parâmetros de configuração da CBR](#cbr-configuration-settings)
+-   [Configurações de configuração de CBR](#cbr-configuration-settings)
 -   [Configurações de Bucket de vazamento](#leaky-bucket-settings)
 
-### <a name="cbr-configuration-settings"></a>Parâmetros de configuração da CBR
+### <a name="cbr-configuration-settings"></a>Configurações de configuração de CBR
 
 Você deve configurar um codificador especificando o tipo de codificação e as várias configurações específicas de fluxo antes da sessão de codificação.
 
@@ -192,7 +192,7 @@ Para definir valores de Bucket de vazamento, crie uma matriz de DWORDs pode defi
 [Tipos de codificação ASF](asf-encoding-types.md)
 </dt> <dt>
 
-[Tutorial: 1-transmitir codificação de mídia do Windows](tutorial--1-pass-windows-media-encoding.md)
+[Tutorial: 1-transmitir Windows codificação de mídia](tutorial--1-pass-windows-media-encoding.md)
 </dt> <dt>
 
 [Tutorial: gravando um arquivo WMA usando a codificação de CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)

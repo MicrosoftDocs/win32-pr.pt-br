@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 46ba61b7a630ca46546f1fa0605d52b5ec3befe7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d37da04942c61c813409750bb1576428a66707567b158c33dcb237afa56cd9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779492"
 ---
 # <a name="esentdiskfullexception-constructor"></a>Construtor EsentDiskFullException
 
 Inicializa uma nova instância da classe EsentDiskFullException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDiskFullException()
 
 [Classe EsentDiskFullException](./esentdiskfullexception-class.md)
 
-[Membros do EsentDiskFullException](./esentdiskfullexception-members.md)
+[Membros EsentDiskFullException](./esentdiskfullexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,31 +1,31 @@
 ---
 title: Gerando os arquivos stub
-description: Depois de definir a interface do cliente/servidor, você geralmente desenvolve os arquivos de origem do cliente e do servidor.
+description: Depois de definir a interface de cliente/servidor, você geralmente desenvolve os arquivos de origem do cliente e do servidor.
 ms.assetid: e4d08bee-ab9a-4426-a1af-72a7d763797f
 keywords:
-- Chamada de procedimento remoto RPC, tarefas, gerando arquivos stub
+- RPC de Chamada de Procedimento Remoto , tarefas, gerando arquivos stub
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e092663711be60a3a0dc0dd8a4e99c0fa92a3ef
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c03fbffb165e94b89e6801c212d0a8b63cd4e77fab28ad4a4afc4b4243ae0e79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020876"
 ---
 # <a name="generating-the-stub-files"></a>Gerando os arquivos stub
 
-Depois de definir a interface do cliente/servidor, você geralmente desenvolve os arquivos de origem do cliente e do servidor. Em seguida, use um único makefile para gerar os arquivos de stub e de cabeçalho. Compile e vincule os aplicativos cliente e servidor. No entanto, se essa for sua primeira exposição ao ambiente de computação distribuída, talvez você queira invocar o compilador MIDL agora para ver o que o MIDL gera antes de continuar. O compilador MIDL (Midl.exe) é instalado automaticamente quando você instala o SDK (Software Development Kit) da plataforma.
+Depois de definir a interface de cliente/servidor, você geralmente desenvolve os arquivos de origem do cliente e do servidor. Em seguida, use um único makefile para gerar os arquivos de stub e de header. Compile e vincule os aplicativos cliente e servidor. No entanto, se essa for sua primeira exposição ao ambiente de computação distribuída, talvez você queira invocar o compilador MIDL agora para ver o que o MIDL gera antes de continuar. O compilador MIDL (Midl.exe) é instalado automaticamente quando você instala o SDK (Kit de Desenvolvimento de Software de Plataforma).
 
-Ao compilar esses arquivos, verifique se Hello. idl e Hello. ACF estão no mesmo diretório. O comando a seguir gerará o arquivo de cabeçalho Hello. h e os stubs de cliente e de servidor, Olá \_ c. c e Hello \_ s.c.
+Ao compilar esses arquivos, certifique-se de que Hello.idl e Hello.acf estão no mesmo diretório. O comando a seguir gerará o arquivo de header Hello.h e os stubs de cliente e servidor, Hello \_ c.c e Hello \_ s.c.
 
-**MIDL Olá. idl**
+**midl hello.idl**
 
-Observe que Hello. h contém protótipos de função para HelloProc e Shutdown, bem como declarações de encaminhamento para duas funções de gerenciamento de memória, **\_ \_ alocação de usuário de MIDL** e usuário de **MIDL \_ \_ gratuito**. Você fornecerá essas duas funções no aplicativo de servidor. Se os dados estavam sendo transmitidos do servidor para o cliente (por meio de um parâmetro de \[ **saída** \] ), você também precisaria fornecer essas duas funções de gerenciamento de memória no aplicativo cliente.
+Observe que Hello.h contém protótipos de função para HelloProc e Shutdown, bem como declarações de encaminhamento para duas funções de gerenciamento de **memória, \_ \_** alocação de usuário médio e usuário médio **\_ \_ livre.** Você fornecerá essas duas funções no aplicativo de servidor. Se os dados fossem transmitidos do servidor para o cliente (por meio de um parâmetro out), você também precisaria fornecer essas duas funções de gerenciamento de memória no \[  \] aplicativo cliente.
 
-Observe as definições para a variável de identificador global, Olá \_ IfHandle e os nomes de identificador de interface de cliente e de servidor, Olá \_ v1 \_ 0 \_ c \_ ifspec e Olá \_ v1 \_ 0 \_ s \_ ifspec. Os aplicativos cliente e servidor usarão os nomes de identificador de interface em chamadas em tempo de execução.
+Observe as definições para a variável de alça global, hello IfHandle e os nomes de alça da interface do cliente e do \_ servidor, hello \_ v1 \_ 0 c ifspec e \_ hello \_ \_ v1 \_ 0 \_ s \_ ifspec. Os aplicativos cliente e servidor usarão os nomes de alça de interface em chamadas em tempo de executar.
 
-Neste ponto, você não precisa fazer nada com os arquivos de stub Olá \_ c. c e Olá \_ s.c.
+Neste ponto, você não precisa fazer nada com os arquivos stub Hello \_ c.c e hello \_ s.c.
 
 ``` syntax
 /*file: hello.h */
@@ -80,9 +80,9 @@ extern RPC_IF_HANDLE hello_v1_0_s_ifspec;
 #endif
 ```
 
- 
+ 
 
- 
+ 
 
 
 
