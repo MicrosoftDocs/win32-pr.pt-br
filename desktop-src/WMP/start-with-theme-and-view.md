@@ -1,32 +1,32 @@
 ---
-title: Iniciar com tema e exibição
-description: Iniciar com tema e exibição
+title: Começar com TEMA e EXIBIÇÃO
+description: Começar com TEMA e EXIBIÇÃO
 ms.assetid: 1ac92f3a-463a-4343-a269-5230c644b57f
 keywords:
-- Criando capas, elemento THEME
-- Capas do Windows Media Player, elemento THEME
-- capas, elemento THEME
+- criando capas, elemento THEME
+- Windows Media Player capas, elemento THEME
+- skins, elemento THEME
 - arquivos de definição de capa, elemento THEME
 - Elemento THEME
-- Criando capas, elemento VIEW
-- Capas do Windows Media Player, elemento VIEW
-- aparência, elemento VIEW
+- criando capas, elemento VIEW
+- Windows Media Player capas, elemento VIEW
+- skins, elemento VIEW
 - arquivos de definição de capa, elemento VIEW
 - Elemento VIEW
-- elementos, exibição
-- elementos, tema
+- elementos, VIEW
+- elementos, THEME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 499444ee2093e743f58174797794a50fbf74555a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 51bcb18a9d56a8780e56d81d6de60ca269036c72
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883715"
 ---
-# <a name="start-with-theme-and-view"></a>Iniciar com tema e exibição
+# <a name="start-with-theme-and-view"></a>Começar com TEMA e EXIBIÇÃO
 
-Cada capa deve ter exatamente um elemento **Theme** e pelo menos um elemento **View** .
+Cada capa deve ter exatamente um **elemento THEME** e pelo menos um **elemento VIEW.**
 
 Usando seu editor de texto, crie o seguinte texto:
 
@@ -46,27 +46,27 @@ Usando seu editor de texto, crie o seguinte texto:
 
 
 
-Deixe algumas linhas em branco antes da marca de **exibição** de fechamento, pois você adicionará mais código aqui mais tarde.
+Deixe algumas linhas em branco antes da marca **VIEW** de fechamento, pois você adicionará mais código aqui mais tarde.
 
-Salve o arquivo com qualquer nome de arquivo que desejar, mas certifique-se de que a extensão seja. WMS. Por exemplo, um nome de arquivo típico pode ser skinone. WMS.
+Salve o arquivo com qualquer nome de arquivo que desejar, mas certifique-se de que a extensão seja .wms. Por exemplo, um nome de arquivo típico pode ser skinone.wms.
 
-Cada capa deve começar com <THEME> e terminar com </THEME>. Você só pode ter um elemento **Theme** em sua capa, mas deve ter um.
+Cada capa deve começar com &lt; THEME e terminar com &gt; </THEME> . Você só pode ter **um elemento THEME** em sua capa, mas deve ter um.
 
-Você também deve ter pelo menos um elemento de **exibição** . Você pode ter mais de uma **exibição**, mas este exemplo tem apenas uma. Você deve ter uma abertura <VIEW> e um fechamento <VIEW>. Observe que a marca de abertura </VIEW> não fecha a marca imediatamente, mas inclui vários atributos antes do colchete angular de fechamento (>). Os seguintes atributos são usados no elemento **Theme** neste exemplo:
+Você também deve ter pelo menos um **elemento VIEW.** Você pode ter mais de um **VIEW**, mas este exemplo tem apenas um. Você deve ter um &lt; VIEW de abertura e um VIEW de &gt; &lt; &gt; fechamento. Observe que a marca /VIEW de abertura não fecha a marca imediatamente, mas inclui vários atributos antes do colchete angular de &lt; &gt; fechamento (>). Os seguintes atributos são usados no **elemento THEME** neste exemplo:
 
 **clippingColor**
 
-Nem sempre será necessário o atributo **clippingColor** se as bordas da sua capa forem retangulares. A capa neste exemplo é formada por oval, portanto, você precisa de uma cor de recorte para as partes da capa para as quais você deseja ver a área de trabalho; essencialmente, todas as partes fora da oval. Nesta capa de exemplo, usaremos um amarelo escuro, especificado como " \# CCCC00" no formato da Web. Os motivos para essa escolha são fornecidos na [criação do arquivo de arte principal](creating-the-primary-art-file.md). Essencialmente, esse valor sempre será um número que você obtém do seu programa de arte.
+Você nem sempre precisará do **atributo clippingColor** se as bordas da sua capa são retangulares. A capa neste exemplo é em forma de oval, portanto, você precisa de uma cor de recorte para as partes da capa pelas quais você deseja ver a área de trabalho; essencialmente todas as partes fora da oval. Nesta capa de exemplo, vamos usar um amarelo escuro, especificado como " \# CCCC00" no formato Web. Os motivos para essa escolha são determinados em [Criando o arquivo de arte primário.](creating-the-primary-art-file.md) Essencialmente, esse valor sempre será um número que você obterá do seu programa de arte.
 
 **backgroundImage**
 
-Esse é o nome do arquivo de arte primário. Deve ser o nome exato do arquivo e o caminho do seu arquivo de arte primário. Somente arquivos BMP, JPG, GIF e PNG têm suporte e o BMP é recomendado.
+Esse é o nome do arquivo de arte principal. Ele deve ser o nome e o caminho exatos do arquivo de arte principal. Há suporte apenas para arquivos BMP, JPG, GIF e PNG, e o BMP é recomendado.
 
-**titleBar**
+**Titlebar**
 
-Essa capa não tem uma **TitleBar**, portanto, o valor será "false". Você só desejará uma barra de título se quiser que sua capa tenha uma cor de plano de fundo e seja retangular.
+Essa capa não tem uma **titleBar,** portanto, o valor será "false". Você só deseja uma barra de título se quiser que sua capa tenha uma cor da tela de fundo e seja retangular.
 
-Certifique-se de colocar o colchete angular de fechamento (>) após o valor da **TitleBar** para indicar que você terminou de definir a **exibição**. Deixe algumas linhas em branco antes da **exibição** de fechamento e das marcas de **tema** . Você precisará das linhas para o código que será adicionado posteriormente.
+Certifique-se de colocar o colchete angular de fechamento (>) após o valor **titleBar** para indicar que você concluiu a definição de **VIEW**. Deixe algumas linhas em branco antes das marcas **VIEW** e **THEME de** fechamento. Você precisará das linhas para o código que adicionará posteriormente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -75,9 +75,9 @@ Certifique-se de colocar o colchete angular de fechamento (>) após o valor da *
 [**Criando o arquivo de definição de capa**](creating-the-skin-definition-file.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

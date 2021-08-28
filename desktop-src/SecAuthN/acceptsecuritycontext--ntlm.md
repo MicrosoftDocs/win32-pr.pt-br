@@ -4,12 +4,12 @@ ms.assetid: 7a0f5118-be6d-443d-8b01-596dc4030b3b
 title: Função AcceptSecurityContext (NTLM) (SSPI. h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: cd3a3aa27776cd1922539dc4104eb246accfbed2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6909f5469bfb29e7a38e13cd4da45d93fcf32111
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104370711"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628668"
 ---
 # <a name="acceptsecuritycontext-ntlm-function"></a>Função AcceptSecurityContext (NTLM)
 
@@ -129,13 +129,13 @@ Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna um dos valores a seguir.
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Código/valor de retorno</th><th>Descrição</th></tr></thead><tbody><tr class="odd"><td><dl> <dt><strong>SEC_E_INSUFFICIENT_MEMORY</strong></dt> <dt>0x80090300L</dt> </dl></td><td>A função falhou. Não há memória suficiente disponível para concluir a ação solicitada.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INTERNAL_ERROR</strong></dt> <dt>0x80090304L</dt> </dl></td><td>A função falhou. Ocorreu um erro que não foi mapeado para um código de erro SSPI.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_INVALID_HANDLE</strong></dt> <dt>0x80100003L</dt> </dl></td><td>A função falhou. O identificador passado para a função não é válido.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INVALID_TOKEN</strong></dt> <dt>0x80090308L</dt> </dl></td><td>A função falhou. O token passado para a função não é válido.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_LOGON_DENIED</strong></dt> <dt>0x8009030CL</dt> </dl></td><td>Falha no logon.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_NO_AUTHENTICATING_AUTHORITY</strong></dt> <dt>0x80090311L</dt> </dl></td><td>A função falhou. Nenhuma autoridade pode ser contatada para autenticação. Isso pode ser devido às seguintes condições:<br/><ul><li>O nome de domínio da parte de autenticação está incorreto.</li><li>O domínio não está disponível.</li><li>Falha na relação de confiança.</li></ul></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_OK</strong></dt> <dt>0x00000000l</dt> </dl></td><td>A função foi bem-sucedida. O [*contexto de segurança*](../secgloss/s-gly.md) recebido do cliente foi aceito. Se um token de saída foi gerado pela função, ele deve ser enviado para o processo do cliente.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_COMPLETE_AND_CONTINUE</strong></dt> <dt>0x00090314L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve chamar [<strong>CompleteAuthToken</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-CompleteAuthToken) e passar o token de saída para o cliente. Em seguida, o servidor aguarda um token de retorno do cliente e, em seguida, faz outra chamada para [<strong>AcceptSecurityContext (NTLM)</strong>] (AcceptSecurityContext--NTLM.MD).<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_I_COMPLETE_NEEDED</strong></dt> <dt>0x00090313L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve concluir a compilação da mensagem do cliente e, em seguida, chamar a função [<strong>CompleteAuthToken</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-CompleteAuthToken).<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_CONTINUE_NEEDED</strong></dt> <dt>0x00090312L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve enviar o token de saída para o cliente e aguardar um token retornado. O token retornado deve ser passado em <em>pInput</em> para outra chamada para [<strong>AcceptSecurityContext (NTLM)</strong>] (AcceptSecurityContext--NTLM.MD).<br/></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th>Código/valor de retorno</th><th>Descrição</th></tr></thead><tbody><tr class="odd"><td><dl> <dt><strong>SEC_E_INSUFFICIENT_MEMORY</strong></dt> <dt>0x80090300L</dt> </dl></td><td>A função falhou. Não há memória suficiente disponível para concluir a ação solicitada.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INTERNAL_ERROR</strong></dt> <dt>0x80090304L</dt> </dl></td><td>A função falhou. Ocorreu um erro que não foi mapeado para um código de erro SSPI.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_INVALID_HANDLE</strong></dt> <dt>0x80100003L</dt> </dl></td><td>A função falhou. O identificador passado para a função não é válido.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_INVALID_TOKEN</strong></dt> <dt>0x80090308L</dt> </dl></td><td>A função falhou. O token passado para a função não é válido.<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_LOGON_DENIED</strong></dt> <dt>0x8009030CL</dt> </dl></td><td>Falha no logon.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_E_NO_AUTHENTICATING_AUTHORITY</strong></dt> <dt>0x80090311L</dt> </dl></td><td>A função falhou. Nenhuma autoridade pode ser contatada para autenticação. Isso pode ser devido às seguintes condições:<br/><ul><li>O nome de domínio da parte de autenticação está incorreto.</li><li>O domínio não está disponível.</li><li>Falha na relação de confiança.</li></ul></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_E_OK</strong></dt> <dt>0x00000000l</dt> </dl></td><td>A função foi bem-sucedida. O [*contexto de segurança*](../secgloss/s-gly.md) recebido do cliente foi aceito. Se um token de saída foi gerado pela função, ele deve ser enviado para o processo do cliente.<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_COMPLETE_AND_CONTINUE</strong></dt> <dt>0x00090314L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve chamar [<strong>CompleteAuthToken</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-CompleteAuthToken) e passar o token de saída para o cliente. Em seguida, o servidor aguarda um token de retorno do cliente e, em seguida, faz outra chamada para [<strong>AcceptSecurityContext (NTLM)</strong>] (AcceptSecurityContext--NTLM.MD).<br/></td></tr><tr class="odd"><td><dl> <dt><strong>SEC_I_COMPLETE_NEEDED</strong></dt> <dt>0x00090313L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve concluir a compilação da mensagem do cliente e, em seguida, chamar a função [<strong>CompleteAuthToken</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-CompleteAuthToken).<br/></td></tr><tr class="even"><td><dl> <dt><strong>SEC_I_CONTINUE_NEEDED</strong></dt> <dt>0x00090312L</dt> </dl></td><td>A função foi bem-sucedida. O servidor deve enviar o token de saída para o cliente e aguardar um token retornado. O token retornado deve ser passado em <em>pInput</em> para outra chamada para [<strong>AcceptSecurityContext (NTLM)</strong>](acceptsecuritycontext--ntlm.md).<br/></td></tr></tbody></table>
 
 
 
@@ -143,26 +143,26 @@ Essa função retorna um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-A função **AcceptSecurityContext (NTLM)** é a contraparte do servidor para a função [**InitializeSecurityContext (NTLM)**](initializesecuritycontext--ntlm.md) .
+A **função AcceptSecurityContext (NTLM)** é o equivalente do servidor à função [**InitializeSecurityContext (NTLM).**](initializesecuritycontext--ntlm.md)
 
-Quando o servidor recebe uma solicitação de um cliente, o servidor usa o parâmetro *fContextReq* para especificar o que é necessário para a sessão. Dessa maneira, um servidor pode especificar que os clientes devem ser capazes de usar uma sessão confidencial ou com verificação de [*integridade*](../secgloss/i-gly.md), e pode rejeitar clientes que não podem atender a essa demanda. Como alternativa, um servidor pode não exigir nada e tudo o que o cliente pode fornecer ou exigir é retornado no parâmetro *pfContextAttr* .
+Quando o servidor recebe uma solicitação de um cliente, o servidor usa o *parâmetro fContextReq* para especificar o que ele requer da sessão. Dessa forma, um servidor pode especificar que os clientes [](../secgloss/i-gly.md)devem ser capazes de usar uma sessão confidencial ou de integridade verificada e pode rejeitar clientes que não podem atender a essa demanda. Como alternativa, um servidor não pode exigir nada e o que o cliente puder fornecer ou exigir será retornado no *parâmetro pfContextAttr.*
 
-Para um pacote que dá suporte à autenticação de vários trechos, como a autenticação mútua, a sequência de chamada é a seguinte:
+Para um pacote que dá suporte à autenticação de várias etapas, como autenticação mútua, a sequência de chamada é a seguinte:
 
 1.  O cliente transmite um token para o servidor.
-2.  O servidor chama **AcceptSecurityContext (NTLM)** pela primeira vez, o que gera um token de resposta que é enviado para o cliente.
-3.  O cliente recebe o token e o transmite para [**InitializeSecurityContext (NTLM)**](initializesecuritycontext--ntlm.md). Se **InitializeSecurityContext (NTLM)** retornar s \_ e \_ OK, a autenticação mútua foi concluída e uma sessão segura pode começar. Se **InitializeSecurityContext (NTLM)** retornar um código de erro, a negociação de autenticação mútua terminará. Caso contrário, o token de segurança retornado por **InitializeSecurityContext (NTLM)** é enviado ao cliente e as etapas 2 e 3 são repetidas.
+2.  O servidor chama **AcceptSecurityContext (NTLM)** pela primeira vez, o que gera um token de resposta que é enviado ao cliente.
+3.  O cliente recebe o token e o passa para [**InitializeSecurityContext (NTLM).**](initializesecuritycontext--ntlm.md) Se **InitializeSecurityContext (NTLM)** retornar SEC E OK, a autenticação mútua será concluída e \_ uma sessão segura poderá \_ começar. Se **InitializeSecurityContext (NTLM)** retornar um código de erro, a negociação de autenticação mútua terminará. Caso contrário, o token de segurança retornado por **InitializeSecurityContext (NTLM)** será enviado ao cliente e as etapas 2 e 3 serão repetidas.
 
-Os parâmetros *fContextReq* e *pfContextAttr* são bitmasks que representam vários atributos de contexto. Para obter uma descrição dos vários atributos, consulte [requisitos de contexto](context-requirements.md).
+Os *parâmetros fContextReq* e *pfContextAttr* são bitmasks que representam vários atributos de contexto. Para ver uma descrição dos vários atributos, confira [Requisitos de contexto.](context-requirements.md)
 
 > [!Note]  
-> O parâmetro *pfContextAttr* é válido em qualquer retorno bem-sucedido, mas somente no retorno bem-sucedido final, você deve examinar os sinalizadores referentes aos aspectos de segurança do contexto. Os retornos intermediários podem definir, por exemplo, o \_ \_ sinalizador de memória alocada do ISC RET \_ .
+> O *parâmetro pfContextAttr* é válido em qualquer retorno bem-sucedido, mas somente no retorno final bem-sucedido você deve examinar os sinalizadores pertencentes aos aspectos de segurança do contexto. Os retornos intermediários podem definir, por exemplo, o sinalizador ISC \_ RET \_ ALLOCATED \_ MEMORY.
 
  
 
-O chamador é responsável por determinar se os atributos de contexto final são suficientes. Se, por exemplo, a confidencialidade (criptografia) tiver sido solicitada, mas não puder ser estabelecida, alguns aplicativos poderão optar por desligar a conexão imediatamente. Se o [*contexto de segurança*](../secgloss/s-gly.md) não puder ser estabelecido, o servidor deverá liberar o contexto parcialmente criado chamando a função [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) . Para obter informações sobre quando chamar a função **DeleteSecurityContext** , consulte **DeleteSecurityContext**.
+O chamador é responsável por determinar se os atributos de contexto finais são suficientes. Se, por exemplo, a confidencialidade (criptografia) tiver sido solicitada, mas não puder ser estabelecida, alguns aplicativos poderão optar por desligar a conexão imediatamente. Se o [*contexto de segurança*](../secgloss/s-gly.md) não puder ser estabelecido, o servidor deverá liberar o contexto parcialmente criado chamando a função [**DeleteSecurityContext.**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) Para obter informações sobre quando chamar a **função DeleteSecurityContext,** consulte **DeleteSecurityContext**.
 
-Depois que o [*contexto de segurança*](../secgloss/s-gly.md) tiver sido estabelecido, o aplicativo de servidor poderá usar a função [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar um identificador para a conta de usuário para a qual o certificado de cliente foi mapeado. Além disso, o servidor pode usar a função [**ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para representar o usuário.
+Depois que [*o*](../secgloss/s-gly.md) contexto de segurança tiver sido estabelecido, o aplicativo de servidor poderá usar a função [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar um handle para a conta de usuário para a qual o certificado do cliente foi mapeado. Além disso, o servidor pode usar a [**função ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para representar o usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -170,10 +170,10 @@ Depois que o [*contexto de segurança*](../secgloss/s-gly.md) tiver sido estabel
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Sspi.h (inclua Security.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 
 

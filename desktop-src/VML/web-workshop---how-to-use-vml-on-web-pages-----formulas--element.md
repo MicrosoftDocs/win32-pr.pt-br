@@ -1,48 +1,48 @@
 ---
-title: Usando o elemento Formulas
-description: Usando o elemento Formulas
+title: Usando o elemento fórmulas
+description: Usando o elemento fórmulas
 ms.assetid: f5a381b4-4132-4b66-b41a-3cada26b41e2
 keywords:
-- Workshop da Web, elemento formulas
-- projetando páginas da Web, elemento de fórmulas
-- linguagem VML (VML), elemento formulas
-- Elemento VML (linguagem VML),fórmulas
-- elementos gráficos vetoriais, fórmulas
+- Web Workshop, elemento formulas
+- Criando páginas da Web, elemento formulas
+- Linguagem VML (VML), elemento formulas
+- VML (linguagem VML), elemento formulas
+- elementos gráficos vetoriais, elemento fórmulas
 - elemento formulas
-- Elementos VML, fórmulas
-- Formas VML, elemento de fórmulas
-- linguagem VML (VML), definindo caminhos para formas
+- Elementos de VML, fórmulas
+- Formas de VML, elemento formulas
+- Linguagem VML (VML), definindo caminhos para formas
 - VML (linguagem VML), definindo caminhos para formas
-- gráficos vetoriais, definindo caminhos para formas
-- Formas VML, definindo caminhos
+- gráficos vetoriais, definição de caminhos para formas
+- Formas de VML, definindo caminhos
 - definindo caminhos para formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23810ae6612e18132566c7d546db7f1f3a569871050b7919cbd8512f3d832808
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9db791533190cd2f67e1043e345954fe71de251
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119512787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885629"
 ---
-# <a name="using-the-formulas-element"></a>Usando o elemento Formulas
+# <a name="using-the-formulas-element"></a>Usando o elemento fórmulas
 
-Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Neste tópico, ilustramos como usar o `<formulas>` subconjunto para definir um caminho ajustável para uma forma.
+Neste tópico, Ilustraremos como usar o `&lt;formulas&gt;` subelemento para definir um caminho ajustável para uma forma.
 
-Você pode colocar o <formulas> subconjunto dentro `<shape>` de ou para definir `<shapetype>` fórmulas que podem variar o caminho de uma forma. Dentro do `<formulas>` subconjunto, um subconjunto **f** define uma fórmula para que um valor seja avaliado com base nessa fórmula. Por exemplo, a fórmula `<v:f eqn="prod 10 4 5"/>` define um valor equivalente a "10 x 4 /5".
+Você pode posicionar &lt; o &gt; subelemento de fórmulas dentro `<shape>` ou `<shapetype>` para definir fórmulas que podem variar o caminho de uma forma. Dentro do `&lt;formulas&gt;` subelemento, um subelemento **f** define uma fórmula para que um valor seja avaliado com base na fórmula. Por exemplo, a fórmula `<v:f eqn="prod 10 4 5"/>` define um valor equivalente a "10 x 4/5".
 
-Você pode colocar muitos subconjunto **f** dentro de um `<formulas>` subconjunto. As fórmulas podem referenciar os valores definidos anteriormente em outras fórmulas dentro do mesmo `<formulas>` subconjunto. O valor definido na primeira fórmula pode ser chamado de , o valor definido na segunda fórmula pode ser chamado de @0 @1 e assim por diante.
+Você pode inserir muitos elementos **f** dentro de um `&lt;formulas&gt;` subelemento. As fórmulas podem referenciar os valores que são definidos anteriormente em outras fórmulas dentro do mesmo `&lt;formulas&gt;` subelemento. O valor definido na primeira fórmula pode ser referido como @0 , o valor definido na segunda fórmula pode ser referido como @1 , e assim por diante.
 
-Além disso, você pode especificar o atributo de propriedade **adj** do elemento, como `<shape>` adj="100, 200, 150". Dentro do `<formulas>` elemento , você pode fazer referência a esses valores na lista **adj.** O primeiro valor (100) na lista **adj** pode ser chamado de 0, o segundo \# valor (200) pode ser chamado de 1 e assim por \# diante.
+Além disso, você pode especificar o atributo de propriedade **adj** do `<shape>` elemento, como adj = "100, 200, 150". Dentro do `&lt;formulas&gt;` elemento, você pode fazer referência a esses valores na lista de **adj** . O primeiro valor (100) na lista de **adj** pode ser referido como \# 0, o segundo valor (200) pode ser referido como \# 1 e assim por diante.
 
-Por exemplo, para desenhar um rosto de sorriso, você pode digitar a seguinte representação de VML:
+Por exemplo, para desenhar um sorriso, você pode digitar a seguinte representação de VML:
 
 ![shape1.gif (735 bytes)](images/shape1f.gif)
 
@@ -68,13 +68,13 @@ m4960@0c8853@3,12747@3,16640@0nfe">
 
 
 -   `adj="17520"` define um valor (= 17520). Esse valor pode ser referenciado como \# 0.
--   A primeira fórmula, `<v:f eqn="sum 33030 0 #0"/>` , define o valor (= 33030 + 0 - \# 0). Esse valor pode ser referenciado como @0 .
--   A segunda fórmula, `<v:f eqn="prod #0 4 3"/>` , define o valor (= \# 0 \* 4 /3). Esse valor pode ser referenciado como @1 .
--   A terceira fórmula, `<v:f eqn="prod @0 1 3"/>` , define o valor (= @0 \* 1 /3). Esse valor pode ser referenciado como @2 .
--   A quarta fórmula, `<v:f eqn="sum @1 0 @2"/>` , define o valor (= + @1 0 -@2 ). Esse valor pode ser referenciado como @3 .
--   Dentro do elemento , os valores definidos na primeira ( ) e na quarta ( ) fórmulas são usados para determinar o contorno `<path>` @0 da @3 forma.
+-   A primeira fórmula, `<v:f eqn="sum 33030 0 #0"/>` , define o valor (= 33030 + 0- \# 0). Esse valor pode ser referenciado como @0 .
+-   A segunda fórmula, `<v:f eqn="prod #0 4 3"/>` , define o valor (= \# 0 \* 4/3). Esse valor pode ser referenciado como @1 .
+-   A terceira fórmula, `<v:f eqn="prod @0 1 3"/>` , define o valor (= @0 \* 1/3). Esse valor pode ser referenciado como @2 .
+-   A quarta fórmula, `<v:f eqn="sum @1 0 @2"/>` , define o valor (= @1 + 0 -@2 ). Esse valor pode ser referenciado como @3 .
+-   Dentro do `<path>` elemento, os valores definidos nas @0 fórmulas First () e quarta ( @3 ) são usados para determinar o contorno da forma.
 
-Se você alterar a lista **adj,** como , os valores das fórmulas que referenciam a lista adj também serão alterados, afetando o rosto dela da `adj="20000"` seguinte forma: 
+Se você alterar a lista de **adj** , como `adj="20000"` , os valores das fórmulas que fazem referência à lista de **adj** também serão alterados, afetando o sorriso da seguinte maneira:
 
 ![shape2.gif (765 bytes)](images/shape2f.gif)
 
@@ -99,7 +99,7 @@ m4960@0c8853@3,12747@3,16640@0nfe">
 
 
 
-Para obter mais informações sobre esse elemento, consulte a [especificação de VML](https://www.w3.org/TR/NOTE-VML#-toc416858392) .
+Para obter mais informações sobre esse elemento, consulte a [especificação da VML](https://www.w3.org/TR/NOTE-VML#-toc416858392) .
 
  
 

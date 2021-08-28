@@ -7,12 +7,12 @@ keywords:
 - AD de grupos, obtendo o nome do estilo de conta de domínio de um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc1b5a076ab3e63059fb79fa784039a8fb2ffb0b1c6396392140b64fa36e16f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eac1a93689ab91d0fe4e349fefd99355a9273912
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118189085"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881419"
 ---
 # <a name="getting-the-domain-account-style-name-of-a-group"></a>Obtendo o nome de Account-Style de domínio de um grupo
 
@@ -25,7 +25,7 @@ Usuários, grupos, computadores e outras entidades de segurança podem ser repre
 
 
 
-em que " <domain> " é o nome do domínio de Windows NT que contém o usuário e " <account> " é a propriedade **samAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
+em que " &lt; domain &gt; " é o nome do domínio de Windows NT que contém o usuário e " &lt; account &gt; " é a propriedade **samAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
 
 O formulário conta de domínio pode especificar o confiável em uma ACE em um descritor de segurança. ele também é usado para o nome de logon em computadores que executam o Windows versão NT 4,0 e anterior.
 

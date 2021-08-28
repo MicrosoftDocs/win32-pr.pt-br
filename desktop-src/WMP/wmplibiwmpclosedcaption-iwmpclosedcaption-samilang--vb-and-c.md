@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPClosedCaption SAMILang
-description: A propriedade SAMILang Obtém ou define o idioma exibido para Legendagem oculta.
+title: Propriedade SAMILang IWMPClosedCaption
+description: A propriedade SAMILang obtém ou define o idioma exibido para legendas fechadas.
 ms.assetid: dcdd6bcd-b869-439f-b500-df26d3873b04
 keywords:
-- Windows Media Player da propriedade SAMILang
-- propriedade SAMILang Windows Media Player, interface IWMPClosedCaption
-- Windows Media Player de interface IWMPClosedCaption, propriedade SAMILang
+- Propriedade SAMILang Windows Media Player
+- A propriedade SAMILang Windows Media Player , interface IWMPClosedCaption
+- Interface IWMPClosedCaption Windows Media Player , propriedade SAMILang
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98354d5e1e4f796442dd0347a4ed2796cafdf7297d3829af9b8839d48df00c3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9577f7d9030a12a12596fe2cdc2a999922658ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887176"
 ---
-# <a name="iwmpclosedcaptionsamilang-property"></a>Propriedade IWMPClosedCaption:: SAMILang
+# <a name="iwmpclosedcaptionsamilang-property"></a>Propriedade IWMPClosedCaption::SAMILang
 
-A propriedade **SAMILang** Obtém ou define o idioma exibido para Legendagem oculta.
+A **propriedade SAMILang** obtém ou define o idioma exibido para legendas fechadas.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,11 +46,11 @@ Public Property SAMILang As System.String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O **System. String** que é o nome especificado no identificador de idioma de um arquivo Sami.
+O **System.String** que é o nome especificado no identificador de idioma de um arquivo SAMI.
 
 ## <a name="remarks"></a>Comentários
 
-Um arquivo SAMI pode conter texto para uma ou várias linguagens. Os idiomas disponíveis para legendas codificadas são definidos entre as marcas <STYLE> e </STYLE> no arquivo Sami. Um identificador de idioma é especificado com uma cadeia de caracteres alfanumérica exclusiva que é precedida por um ponto (.). O nome especificado para um idioma pode ser qualquer cadeia de caracteres. Por exemplo, o seguinte pode ser usado para definir o inglês dos EUA:
+Um arquivo SAMI pode conter texto para um ou vários idiomas. Os idiomas disponíveis para legendas fechadas são definidos entre &lt; o STYLE e as marcas no arquivo &gt; </STYLE> SAMI. Um identificador de idioma é especificado com uma cadeia de caracteres alfanumérico exclusiva precedida por um ponto (.). O nome especificado para um idioma pode ser qualquer cadeia de caracteres. Por exemplo, o seguinte pode ser usado para definir o inglês dos EUA:
 
 
 ```
@@ -59,9 +59,9 @@ Um arquivo SAMI pode conter texto para uma ou várias linguagens. Os idiomas dis
 
 
 
-Se nenhum idioma SAMI for especificado, o primeiro idioma definido no arquivo SAMI será usado por padrão.
+Se nenhuma linguagem SAMI for especificada, o primeiro idioma definido no arquivo SAMI será usado por padrão.
 
-A cadeia de caracteres que você define usando **SAMILang** deve corresponder ao atributo **Name** no especificador de idioma.
+A cadeia de caracteres definida **usando SAMILang** deve corresponder ao **atributo Name** no especificador de idioma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ A cadeia de caracteres que você define usando **SAMILang** deve corresponder ao
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -79,7 +79,7 @@ A cadeia de caracteres que você define usando **SAMILang** deve corresponder ao
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interface IWMPClosedCaption (VB e C#)**](iwmpclosedcaption--vb-and-c.md)

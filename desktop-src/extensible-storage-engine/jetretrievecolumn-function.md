@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7457e747a0539965efe0fab9ebfd69660178a2ea
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f8a9ce96be028329dea18f32459fbde88b80b75f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985619"
 ---
 # <a name="jetretrievecolumn-function"></a>Função JetRetrieveColumn
 
@@ -125,7 +125,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 | <p>JET_errColumnNotFound</p> | <p>A coluna descrita pelo <em>columnid</em> fornecido não existe na tabela.</p> | 
 | <p>JET_errIndexTuplesCannotRetrieveFromIndex</p> | <p>As colunas indexadas como subcadeias de caracteres não podem ser recuperadas do índice, já que apenas uma pequena parte da coluna está normalmente presente em cada entrada de índice.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p> | 
-| <p>JET_errInvalidBufferSize</p> | <p>Em alguns casos, o buffer determinado para a coluna de recuperação deve ser dimensionado o suficiente para retornar qualquer quantidade do valor da coluna. Por exemplo, colunas atualizáveis de escrow são ajustadas para serem consistentes para o contexto transacional da sessão de chamada e esse ajuste requer o buffer fornecido pelo chamador. Se for fornecido espaço em buffer insuficiente, JET_errInvalidBufferSize será retornado e nenhum dado de coluna será retornado.</p> | 
+| <p>JET_errInvalidBufferSize</p> | <p>Em alguns casos, o buffer determinado para a coluna de recuperação deve ser dimensionado o suficiente para retornar qualquer quantidade do valor da coluna. Por exemplo, colunas atualizáveis de escrow são ajustadas para serem consistentes para o contexto transacional da sessão de chamada e esse ajuste requer o buffer fornecido pelo chamador. Se o espaço de buffer insuficiente for fornecido, JET_errInvalidBufferSize será retornado e nenhum dado de coluna será retornado.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>Um ou mais dos parâmetros determinados está incorreto. Isso poderá acontecer se o retinfo.cbStruct for menor que o tamanho <a href="gg294049(v=exchg.10).md">de JET_RETINFO</a>.</p> | 
 | <p>JET_errInvalidgrbit</p> | <p>As opções fornecidas são desconhecidas ou uma combinação ilegal de configurações de bits conhecidas.</p> | 
 | <p>JET_errNoCurrentRecord</p> | <p>O cursor não está posicionado em um registro. Isso pode ocorrer por vários motivos diferentes. Por exemplo, isso ocorrerá se o cursor estiver posicionado no momento após o último registro no índice atual.</p> | 
@@ -150,7 +150,7 @@ Recuperar todos os valores de uma coluna com vários valores pode ser feito cham
 
 Se essa função for chamada no nível da transação 0 (zero), por exemplo, a sessão de chamada não estiver em uma transação, uma transação será aberta e fechada dentro da função. A finalidade disso é retornar resultados consistentes no caso de um valor longo abranger páginas de banco de dados. Observe que a transação é liberada entre chamadas de função e uma série de chamadas para essa função quando a sessão não está em uma transação pode retornar dados atualizados após a primeira chamada para essa função.
 
-O valor da coluna padrão será recuperado quando a coluna não tiver sido definida explicitamente como outro valor, a menos que a opção JET_bitRetrieveIgnoreDefault seja definida.
+O valor da coluna padrão será recuperado quando a coluna não tiver sido definida explicitamente como outro valor, a menos que JET_bitRetrieveIgnoreDefault opção seja definida.
 
 Recuperar o valor da coluna de recremento automático do buffer de cópia antes da inserção é um meio comum de identificar um registro exclusivamente para vinculação ao inserir dados normalizados em várias tabelas. O valor de acremento automático é alocado quando a operação de inserção é iniciada e pode ser recuperado do buffer de cópia a qualquer momento até que a atualização seja concluída.
 
@@ -159,7 +159,13 @@ Ao recuperar todas as colunas marcadas, com valores múltiplos e esparsos, defin
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

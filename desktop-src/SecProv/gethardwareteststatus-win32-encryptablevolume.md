@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 26d1984a79edef5f00f7687260fda7b211153863
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32d0d477459dbc7352d1d8f6779c5c76cfbd537d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796357"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475352"
 ---
 # <a name="gethardwareteststatus-method-of-the-win32_encryptablevolume-class"></a>Método GetHardwareTestStatus da classe Win32 \_ EncryptableVolume
 
@@ -51,36 +51,13 @@ Especifica se um teste de hardware está pendente, bem como o sucesso da falha d
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="NotFailed_and_NonePending"></span><span id="notfailed_and_nonepending"></span><span id="NOTFAILED_AND_NONEPENDING"></span><dl> <dt><strong>NotFailed_and_NonePending</strong></dt> <dt>0</dt> </dl></td>
-<td>Se um teste foi solicitado, o teste foi bem-sucedido na última reinicialização do computador e a criptografia do volume agora está em andamento. Para obter o status de criptografia, consulte o método <a href="getconversionstatus-win32-encryptablevolume.md"><strong>GetConversionStatus</strong></a> . Caso contrário, nenhum teste foi executado na última reinicialização do computador e nenhum está pendente. <br/></td>
-</tr>
-<tr class="even">
-<td><span id="Failed"></span><span id="failed"></span><span id="FAILED"></span><dl> <dt><strong>Com falha</strong></dt> <dt>1</dt> </dl></td>
-<td>A criptografia do volume não foi iniciada. Todos os protetores de chave foram removidos.<br/> Para resolver um teste com falha:<br/>
-<ul>
-<li>Consulte as informações no parâmetro <em>TestError</em> .</li>
-<li>Adicione protetores de chave e use o método <a href="encryptafterhardwaretest-win32-encryptablevolume.md"><strong>EncryptAfterHardwareTest</strong></a> novamente.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span id="Pending"></span><span id="pending"></span><span id="PENDING"></span><dl> <dt><strong>Pendente</strong></dt> <dt>2</dt> </dl></td>
-<td>Um teste foi solicitado e será executado na próxima reinicialização do computador.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="NotFailed_and_NonePending"></span><span id="notfailed_and_nonepending"></span><span id="NOTFAILED_AND_NONEPENDING"></span><dl><dt><strong>NotFailed_and_NonePending</strong></dt><dt>0</dt></dl> | Se um teste foi solicitado, o teste foi bem-sucedido na última reinicialização do computador e a criptografia do volume agora está em andamento. Para obter o status de criptografia, consulte o método <a href="getconversionstatus-win32-encryptablevolume.md"><strong>GetConversionStatus</strong></a> . Caso contrário, nenhum teste foi executado na última reinicialização do computador e nenhum está pendente. <br /> | 
+| <span id="Failed"></span><span id="failed"></span><span id="FAILED"></span><dl><dt><strong>Com falha</strong></dt><dt>1</dt></dl> | A criptografia do volume não foi iniciada. Todos os protetores de chave foram removidos.<br /> Para resolver um teste com falha:<br /><ul><li>Consulte as informações no parâmetro <em>TestError</em> .</li><li>Adicione protetores de chave e use o método <a href="encryptafterhardwaretest-win32-encryptablevolume.md"><strong>EncryptAfterHardwareTest</strong></a> novamente.</li></ul> | 
+| <span id="Pending"></span><span id="pending"></span><span id="PENDING"></span><dl><dt><strong>Pendente</strong></dt><dt>2</dt></dl> | Um teste foi solicitado e será executado na próxima reinicialização do computador.<br /> | 
+
 
 
 
@@ -112,7 +89,7 @@ Especifica o erro do último teste de hardware concluído.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -147,7 +124,7 @@ Um teste bem-sucedido determina que:
 
 Os resultados de teste de hardware não estarão disponíveis após as alterações na conversão ou após a próxima reinicialização do computador. Verifique o log de eventos do sistema para obter as informações sobre os testes de hardware que foram executados anteriormente no computador.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -155,8 +132,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows vista Enterprise, \[ somente aplicativos de área de trabalho do vista Ultimate Windows\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

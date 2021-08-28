@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_DBINFOUPGRADE'
+description: 'Saiba mais sobre: estrutura JET_DBINFOUPGRADE dados'
 title: Estrutura JET_DBINFOUPGRADE
 TOCTitle: JET_DBINFOUPGRADE Structure
 ms:assetid: dd8a881a-33b5-4314-8cfb-b1d75ad37b21
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57c9265f45412bd31e087a52ab2b923c9c55c430
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0e2e6d6e812b5f56c89eba2e4b19d2730d589548
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985199"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Estrutura JET_DBINFOUPGRADE
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfoupgrade-structure"></a>Estrutura JET_DBINFOUPGRADE
 
-A estrutura de **JET_DBINFOUPGRADE** contém informações sobre o status de atualização do banco de dados. Esse valor será recuperado somente se **JET_DBINFOUPGRADE** foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Essa estrutura não é necessária para as versões atuais do sistema operacional do mecanismo de banco de dados.
+A **JET_DBINFOUPGRADE** contém informações sobre o status de atualização do banco de dados. Esse valor será recuperado somente se **JET_DBINFOUPGRADE** foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md) Essa estrutura não é necessária para versões atuais do sistema operacional do mecanismo de banco de dados.
 
 ```cpp
     typedef struct {
@@ -51,33 +51,33 @@ A estrutura de **JET_DBINFOUPGRADE** contém informações sobre o status de atu
 
 ### <a name="members"></a>Membros
 
-**cbStruct**
+**Cbstruct**
 
-Defina como o tamanho da estrutura de **JET_DBINFOUPGRADE** , em bytes.
+Definido como o tamanho da estrutura **JET_DBINFOUPGRADE,** em bytes.
 
 **cbFilesizeLow**
 
-O **DWORD** baixo que reflete o tamanho de arquivo atual do banco de dados.
+O **DWORD baixo** que reflete o tamanho do arquivo atual para o banco de dados.
 
 **cbFilesizeHigh**
 
-O **DWORD** alto que reflete o tamanho do arquivo atual para o banco de dados.
+O **DWORD alto que** reflete o tamanho do arquivo atual para o banco de dados.
 
 **cbFreeSpaceRequiredLow**
 
-O menor **DWORD** do espaço livre em disco estimado necessário para uma atualização in-loco.
+A **DWORD baixa do** espaço livre estimado em disco necessário para uma atualização in-place.
 
 **cbFreeSpaceRequiredHigh**
 
-O grande **DWORD** do espaço livre em disco estimado necessário para uma atualização in-loco.
+A alta **DWORD do** espaço livre estimado em disco necessário para uma atualização in-place.
 
 **csecToUpgrade**
 
-O tempo estimado necessário para a atualização, em segundos.
+O tempo estimado necessário para atualizar, em segundos.
 
-**ulFlags**
+**Ulflags**
 
-Um campo de bits formado por zero ou mais dos seguintes sinalizadores: **fUpgradable**, **fAlreadyUpgraded**.
+Um campo de bits feito de zero ou mais dos seguintes sinalizadores: **fUpgradable,** **fAlreadyUpgraded.**
 
 **fUpgradable**
 
@@ -89,12 +89,16 @@ O banco de dados é atualizado para o formato de banco de dados atual.
 
 ### <a name="remarks"></a>Comentários
 
-Uma estrutura de **JET_DBINFOUPGRADE** é populada por uma chamada para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Se a função não for concluída com sucesso, o conteúdo da estrutura será indefinido.
+Uma **JET_DBINFOUPGRADE** é populada por uma chamada para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Se a função não for bem-sucedida, o conteúdo da estrutura será indefinido.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

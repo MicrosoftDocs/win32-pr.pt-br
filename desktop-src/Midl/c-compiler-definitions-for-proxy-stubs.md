@@ -6,12 +6,12 @@ keywords:
 - MIDL do compilador MIDL, C-Compiler, definições para proxy/stubs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f12b9fd1e2688545137dba870816c1765102ce3593d09ea3cb062bd8250c7c28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b272b8b540420930366864c45e993172f5c00e67
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117807825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882060"
 ---
 # <a name="c-compiler-definitions-for-proxystubs"></a>C-definições de compilador para proxy/stubs
 
@@ -19,10 +19,10 @@ O arquivo de cabeçalho RpcProxy. h inclui as seguintes definições de macro, e
 
 
 
-| MACRO                                                                                                                                                                                           | Descrição                                                                                                                                                                                                          |
+| MACRO                                                                                                                                                                                           | Description                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | REGISTRAR \_ dll de proxy \_                                                                                                                                                                            | Gera as funções **DllMain**, **DllRegisterServer** e **DLLUNREGISTERSERVER** para registrar automaticamente uma DLL de proxy.                                                                                       |
-| CLSID do PROXY \_ =<clsid>                                                                                                                                                                      | Especifica um identificador de classe para o servidor. Se essa macro não estiver definida, o CLSID padrão será o primeiro identificador de interface que o compilador MIDL encontrará na especificação IDL do servidor proxy/stub. |
+| CLSID de PROXY \_ = &lt; CLSID&gt;                                                                                                                                                                      | Especifica um identificador de classe para o servidor. Se essa macro não estiver definida, o CLSID padrão será o primeiro identificador de interface que o compilador MIDL encontrará na especificação IDL do servidor proxy/stub. |
 | CLSID de PROXY \_ \_ é = {0x *8hexdigits*,*0x 4hexdigits*, 0x *4hexdigits*, {0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*,}} | Especifica o valor do identificador de classe do servidor no formato hexadecimal binário.                                                                                                                                           |
 
 
@@ -33,7 +33,7 @@ Ao definir a macro da **\_ \_ dll do proxy de registro** ao compilar dlldata. c,
 
 Esse código de registro padrão usa o GUID da primeira interface encontrado como o CLSID para registrar todo o servidor DLL de proxy/stub. O COM mais tarde usa esse CLSID para localizar e carregar o servidor proxy/stub compilado para o marshaling de qualquer uma das interfaces que o servidor está registrado para manipular. Quando um aplicativo faz uma chamada de método de interface que cruza os limites do thread, do processo ou do computador, COM usa a entrada do registro do identificador de interface para localizar a entrada do Registro CLSID para o servidor de marshaling do proxy/stub. Em seguida, ele usa esse CLSID para carregar o servidor (se ele ainda não estiver carregado) para que a chamada de interface possa ser empacotada.
 
-Use a **macro \_ CLSID do proxy** = <clsid> quando desejar especificar explicitamente o CLSID do servidor de proxy/stub em vez de confiar no CLSID padrão. Por exemplo, se você estiver criando uma DLL de marshaling padrão como seu próprio servidor COM em processo, ou se precisar definir seu próprio **DllMain** para manipular a \_ anexação do processo de dll \_ .
+Use a **macro \_ CLSID de proxy** CLSID = &lt; &gt; quando desejar especificar explicitamente o CLSID do servidor de proxy/stub em vez de confiar no CLSID padrão. Por exemplo, se você estiver criando uma DLL de marshaling padrão como seu próprio servidor COM em processo, ou se precisar definir seu próprio **DllMain** para manipular a \_ anexação do processo de dll \_ .
 
 Use **CLSID de proxy \_ \_ é**= macro em vez de **\_ CLSID de proxy** para definir o valor do CLSID no formato hexadecimal binário que a macro **define \_ GUID** usa.
 

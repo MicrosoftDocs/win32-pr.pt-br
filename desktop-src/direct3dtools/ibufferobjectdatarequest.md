@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7f695e1a5079f37b44fbd370b8eebd38a771eb58
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 82c5ef3f3b696ddcb0c8198ff81372aff0b44ca4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122787372"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624952"
 ---
 # <a name="span-idvspixengineibufferobjectdatarequestspanibufferobjectdatarequest-interface"></a><span id="vspixengine.ibufferobjectdatarequest"></span>Interface IBufferObjectDataRequest
 
@@ -34,11 +34,11 @@ A interface **IBufferObjectDataRequest** herda da interface [**IUnknown**](/wind
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IBufferObjectDataRequest** tem esses métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descrição</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ibufferobjectdatarequest-requestasync-eventid-dword-bstr-bstr-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Solicitações para obter o conteúdo bruto de um objeto (buffer, textura, exibição de destino de renderização, etc.)</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ibufferobjectdatarequest-requestasync-eventid-dword-bstr-bstr-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicitações para obter o conteúdo bruto de um objeto (buffer, textura, exibição de destino de renderização, etc.)</p></td></tr></tbody></table>
 
  
 

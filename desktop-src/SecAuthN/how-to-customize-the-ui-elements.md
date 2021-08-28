@@ -4,18 +4,18 @@ ms.assetid: 6F1E0B2E-E013-4C5B-86A4-0AF8606D0C12
 title: Como personalizar os elementos da interface do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19314f8e4c5d4944a500a0eef3aa0f75cd231b12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a99e8e7da789653226db40763116472eb065df0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829461"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884554"
 ---
 # <a name="how-to-customize-the-ui-elements"></a>Como personalizar os elementos da interface do usuário
 
-Uma página da Web personaliza a interface do usuário com o título, o ícone e a cor do cabeçalho usando as marcas de metadados definidas na página da Web. Os desenvolvedores da Web podem usar <meta> marcas HTML para exibir a personalidade e a marca do provedor na interface do usuário do agente de autenticação da Web. Além disso, os desenvolvedores podem direcionar ações de usuário mais complexas, por exemplo, inscrever-se e recuperar senhas. O conceito é muito semelhante ao recurso Sites fixos do Windows Internet Explorer 9 e do Windows 7.
+Uma página da Web personaliza a interface do usuário com o título, o ícone e a cor do cabeçalho usando as marcas de metadados definidas na página da Web. Os desenvolvedores da Web podem &lt; usar &gt; marcas meta HTML para exibir a personalidade e a marca do provedor na interface do usuário do agente de autenticação da Web. Além disso, os desenvolvedores podem direcionar ações de usuário mais complexas, por exemplo, inscrever-se e recuperar senhas. o conceito é muito semelhante ao recurso Sites fixos do Windows Internet Explorer 9 e Windows 7.
 
-Além de personalizar a interface do usuário na área da página da Web, a página da Web também deve aproveitar os estilos dos controles do Windows 8, estar habilitado para toque e permitir que os links sejam abertos no navegador, quando apropriado.
+além de personalizar a interface do usuário na área da página da web, a página da web também deve aproveitar os estilos dos controles de Windows 8, estar habilitado para toque e permitir que os links sejam abertos no navegador, quando apropriado.
 
 Veja a seguir um exemplo de uma página da Web que aproveitou o modelo de personalização do agente de autenticação da Web. ![elementos da interface do usuário do agente de autenticação da Web](images/wab-figure7.png)
 
@@ -29,7 +29,7 @@ A página da Web pode fornecer um ícone usando uma marca meta de mswebdialog.
 <meta name="mswebdialog-logo" content="https://www.contoso.com/logo.png"/>
 ```
 
-O conteúdo é uma URL que pode ser uma página relativa ou absoluta. O esquema da URL pode ser HTTP ou HTTPS. O formato do arquivo deve ser PNG ou JPG. O tamanho da imagem deve ser 30x30 pixels. Se a imagem for do tamanho diferente, ela será reduzida ou verticalmente pelo sistema operacional para se ajustar ao espaço 30x30. A imagem deve ser projetada para renderizar bem quando dimensionada para até 140% e 180% para considerar as telas de resolução mais alta. Para testar diferentes fatores de dimensionamento, use o [aplicativo de exemplo do SDK do agente de autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker) carregado no Visual Studio 11, que permite simular diferentes resoluções e fatores de dimensionamento usando as janelas do dispositivo do modo de design.
+O conteúdo é uma URL que pode ser uma página relativa ou absoluta. O esquema da URL pode ser HTTP ou HTTPS. O formato do arquivo deve ser PNG ou JPG. O tamanho da imagem deve ser 30x30 pixels. Se a imagem for do tamanho diferente, ela será reduzida ou verticalmente pelo sistema operacional para se ajustar ao espaço 30x30. A imagem deve ser projetada para renderizar bem quando dimensionada para até 140% e 180% para considerar as telas de resolução mais alta. para testar diferentes fatores de dimensionamento, use o [aplicativo de exemplo do SDK do agente de autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker) carregado no Visual Studio 11, que permite simular diferentes resoluções e fatores de dimensionamento usando as janelas do dispositivo do modo de Design.
 
 ### <a name="step-2-customize-the-title-text"></a>Etapa 2: personalizar o texto do título
 
@@ -49,7 +49,7 @@ A página da Web pode fornecer a cor que representa sua identidade de marca a se
 <meta name="mswebdialog-header-color" content="#1267DF"/>
 ```
 
-A cor pode ser qualquer valor especificado aqui. No entanto, o agente de autenticação da Web ignorará qualquer valor de canal alfa. Com essa cor especificamente e com as cores usadas na página em geral, é recomendável seguir as mesmas cores usadas no aplicativo do Windows 8 do provedor se esse aplicativo existir.
+A cor pode ser qualquer valor especificado aqui. No entanto, o agente de autenticação da Web ignorará qualquer valor de canal alfa. com essa cor especificamente e com as cores usadas na página em geral, é recomendável seguir as mesmas cores usadas no aplicativo Windows 8 do provedor se esse aplicativo existir.
 
 > [!Note]  
 > Os ícones e as cores são armazenados em cache por servidor no cliente depois que as marcas META são analisadas. Limpe o cache do cliente antes de iniciar a interface do usuário para que as alterações entrem em vigor. Para fazer isso, modifique as seguintes configurações do registro.
@@ -72,15 +72,15 @@ Depois que um ícone é baixado, ele não é selecionado novamente por 24 horas.
 
 ### <a name="step-4-customize-the-web-page"></a>Etapa 4: personalizar a página da Web
 
-Além de personalizar a interface do usuário em toda a página da Web, os desenvolvedores também devem criar páginas da Web que são integradas à experiência geral do Windows 8. Isso inclui o uso de estilos recomendados, garantindo que as páginas da Web funcionem bem com dispositivos habilitados para toque e abram determinadas páginas da Web no navegador da Web.
+além de personalizar a interface do usuário em toda a página da web, os desenvolvedores também devem criar páginas da web que são integradas à experiência de Windows 8 geral. Isso inclui o uso de estilos recomendados, garantindo que as páginas da Web funcionem bem com dispositivos habilitados para toque e abram determinadas páginas da Web no navegador da Web.
 
 -   Estilo
 
-    É altamente recomendável usar o estilo recomendado aqui para criar uma experiência de usuário mais consistente nas páginas da Web do agente de autenticação da Web e outros componentes da interface do usuário do Windows 8. A página da Web deve usar um plano de fundo branco e nenhuma borda. Os botões como logon ou cancelar devem ser posicionados no canto inferior direito e usar a mesma cor que o cabeçalho. Por fim, como o agente de autenticação da Web fornece um botão voltar, é recomendável eliminar completamente um botão Cancelar da página da Web.
+    É altamente recomendável usar o estilo recomendado aqui para criar uma experiência do usuário mais consistente nas páginas da Web do agente de autenticação da Web e outros componentes da interface do usuário do Windows 8. A página da Web deve usar um plano de fundo branco e nenhuma borda. Os botões como logon ou cancelar devem ser posicionados no canto inferior direito e usar a mesma cor que o cabeçalho. Por fim, como o agente de autenticação da Web fornece um botão voltar, é recomendável eliminar completamente um botão Cancelar da página da Web.
 
 -   Habilitando toque
 
-    A página da Web deve ser projetada com uma interação de usuário baseada em toque em mente. Para obter mais informações sobre como projetar para toque no Windows 8, consulte o tópico [design de interação de toque](https://msdn.microsoft.com/library/Hh465415(v=Win.10).aspx) .
+    A página da Web deve ser projetada com uma interação de usuário baseada em toque em mente. para obter mais informações sobre como criar para tocar no Windows 8, consulte o tópico [design de interação de toque](https://msdn.microsoft.com/library/Hh465415(v=Win.10).aspx) .
 
 -   Personalizando o destino dos hiperlinks
 

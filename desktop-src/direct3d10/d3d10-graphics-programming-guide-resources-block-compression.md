@@ -4,12 +4,12 @@ ms.assetid: add98d8f-6846-4dd6-b0e2-a4b6e89cbcc5
 title: Compactação de bloco (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edf93a9d475b21b54baa59f9324a7f69b043bb0c21787c0c2892bfdbe2f6c66d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90068e932d94a7b76e871313e60a50260dbaf479
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118101213"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480552"
 ---
 # <a name="block-compression-direct3d-10"></a>Compactação de bloco (Direct3D 10)
 
@@ -19,9 +19,9 @@ Mesmo com perdas, a compactação de bloco funciona bem e é recomendada para to
 
 Uma textura compactada em bloco deve ser criada como um múltiplo do tamanho de 4 em todas as dimensões e não pode ser usada como uma saída do pipeline.
 
--   [Como o bloqueio de compactação funciona?](#how-does-block-compression-work)
-    -   [Armazenando dados descompactados](#storing-uncompressed-data)
-    -   [Armazenando dados compactados](#storing-compressed-data)
+-   [Como funciona a compactação de bloco?](#how-does-block-compression-work)
+    -   [Armazenar dados descompactados](#storing-uncompressed-data)
+    -   [Armazenar dados compactados](#storing-compressed-data)
 -   [Usando compactação de bloco](#using-block-compression)
     -   [Tamanho virtual versus tamanho físico](#virtual-size-versus-physical-size)
 -   [Algoritmos de compactação](#compression-algorithms)
@@ -30,40 +30,40 @@ Uma textura compactada em bloco deve ser criada como um múltiplo do tamanho de 
     -   [BC3](#bc3)
     -   [BC4](#bc4)
     -   [BC5](#bc5)
--   [Conversão de formato usando o Direct3D 10,1](#format-conversion-using-direct3d-101)
+-   [Conversão de formato usando o Direct3D 10.1](#format-conversion-using-direct3d-101)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="how-does-block-compression-work"></a>Como o bloqueio de compactação funciona?
+## <a name="how-does-block-compression-work"></a>Como funciona a compactação de bloco?
 
 A compactação de bloco é uma técnica para reduzir a quantidade de memória necessária para armazenar dados de cor. Armazenando algumas cores no tamanho original e outras cores usando um esquema de codificação, você pode reduzir significativamente a quantidade de memória necessária para armazenar a imagem. Como o hardware decodifica automaticamente os dados compactados, não há nenhuma penalidade de desempenho para o uso de texturas compactadas.
 
 Para ver como funciona a compactação, examine os dois exemplos a seguir. O primeiro exemplo descreve a quantidade de memória usada para armazenar dados não compactados; o segundo exemplo descreve a quantidade de memória usada para armazenar dados compactados.
 
-### <a name="storing-uncompressed-data"></a>Armazenando dados descompactados
+### <a name="storing-uncompressed-data"></a>Armazenar dados descompactados
 
 A ilustração a seguir representa uma textura de 4 × 4 não compactada. Suponha que cada cor contenha um componente único de cor (vermelho, por exemplo) e é armazenado em um byte de memória.
 
-![ilustração de uma textura 4x4 não compactada](images/d3d10-block-compress-1.png)
+![ilustração de uma textura 4x4 descompactada](images/d3d10-block-compress-1.png)
 
 Os dados não compactados são dispostos na memória sequencialmente e exigem 16 bytes, conforme mostrado na ilustração a seguir.
 
 ![ilustração de dados descompactados na memória sequencial](images/d3d10-block-compress-2.png)
 
-### <a name="storing-compressed-data"></a>Armazenando dados compactados
+### <a name="storing-compressed-data"></a>Armazenar dados compactados
 
-Agora que você já viu quanta memória uma imagem descompactada utiliza, dê uma olhada na quantidade de memória poupada por uma imagem compactada. O formato de compactação [BC4](#bc4) armazena 2 cores (1 byte cada) e índices de 16 3 bits (48 bits ou 6 bytes) que são usados para interpolar as cores originais na textura, conforme mostrado na ilustração a seguir.
+Agora que você já viu quanta memória uma imagem descompactada utiliza, dê uma olhada na quantidade de memória poupada por uma imagem compactada. O formato de compactação [BC4](#bc4) armazena 2 cores (1 byte cada) e 16 índices de 3 bits (48 bits ou 6 bytes) que são usados para interpolar as cores originais na textura, conforme mostrado na ilustração a seguir.
 
-![ilustração do formato de compactação BC4](images/d3d10-block-compress-3.png)
+![ilustração do formato de compactação bc4](images/d3d10-block-compress-3.png)
 
 O espaço total obrigatório para armazenar os dados compactados é de 8 bytes, que é uma economia de memória de 50% em relação ao exemplo não compactado. A economia é ainda maior quando mais de um componente de cor é usado.
 
 A economia de memória substancial proporcionada pelo compactação de bloco pode causar um aumento no desempenho. Esse desempenho impacta a qualidade da imagem (devido à interpolação de cores); no entanto, a baixa qualidade geralmente não é perceptível.
 
-A próxima seção mostra como o Direct3D 10 torna mais fácil usar a compactação de bloco em seu aplicativo.
+A próxima seção mostra como o Direct3D 10 facilita o uso da compactação de blocos em seu aplicativo.
 
 ## <a name="using-block-compression"></a>Usando compactação de bloco
 
-Crie uma textura compactada por bloco, assim como uma textura não compactada (consulte [criar uma textura de um arquivo](d3d10-graphics-programming-guide-resources-creating-textures.md)), exceto que você especificar um formato compactado por bloco.
+Crie uma textura compactada em bloco como uma textura descompactada (consulte Criar uma textura de um arquivo [),](d3d10-graphics-programming-guide-resources-creating-textures.md)exceto que você especifica um formato compactado em bloco.
 
 
 ```
@@ -73,7 +73,7 @@ D3DX10CreateTextureFromFile(...);
 
 
 
-Em seguida, crie uma exibição para associar a textura ao pipeline. Como uma textura compactada por bloco pode ser usada somente como uma entrada para um estágio de sombreador, você deseja criar uma exibição de recurso de sombreador chamando [**CreateShaderResourceView**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview).
+Em seguida, crie uma exibição para vincular a textura ao pipeline. Como uma textura compactada em bloco pode ser usada apenas como uma entrada para um estágio de sombreador, você deseja criar uma exibição de sombreador-recurso chamando [**CreateShaderResourceView**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createshaderresourceview).
 
 Use uma textura compactada em bloco da mesma maneira que você usaria uma textura não compactada. Se seu aplicativo receberá um ponteiro de memória para dados compactados em bloco, você precisa levar em conta a memória preenchimento em uma minimapa que faz com que o tamanho declarado ser diferente do tamanho real.
 
@@ -81,7 +81,7 @@ Use uma textura compactada em bloco da mesma maneira que você usaria uma textur
 
 Se você tiver o código do app que usa um ponteiro de memória para percorrer a memória de um bloco de textura compactado, há uma consideração importante que pode exigir uma modificação no código do seu app. Uma textura compactada em bloco deve ser um múltiplo de 4 em todas as dimensões porque os algoritmos de compactação de bloco operam em blocos de texel de 4 x 4. Isso será um problema para um mipmap cujas dimensões iniciais são divisíveis por 4, mas os níveis subdivididos não são. O diagrama a seguir mostra a diferença na área entre o tamanho virtual (declarado) e o tamanho físico (real) de cada nível de mipmap.
 
-![diagrama de níveis de mipmap não compactados e compactados](images/d3d10-block-compress-pad.png)
+![diagrama de níveis de mipmap descompactados e compactados](images/d3d10-block-compress-pad.png)
 
 O lado esquerdo do diagrama mostra os tamanhos de nível de mipmap que são gerados para uma textura de 60 × 40 não compactada. O tamanho de nível superior é retirado da chamada de API que gera a textura; cada nível subsequente é metade do tamanho do nível anterior. Para uma textura descompactada, não há nenhuma diferença entre o tamanho virtual (declarado) e o tamanho físico (real).
 
@@ -117,11 +117,11 @@ O Direct3D implementa vários esquemas de compactação, cada um implementa um e
 
 ### <a name="bc1"></a>BC1
 
-Use o primeiro formato de compactação de bloco (BC1) (o \_ formato dxgi \_ BC1 não \_ tipado, \_ formato DXGI \_ BC1 \_ UNORM ou dxgi \_ BC1 \_ UNORM \_ sRGB) para armazenar dados de três componentes coloridos usando uma cor 5:6:5 (5 bits vermelho, 6 bits verde, 5 bits azul). Isso vale até mesmo quando os dados também contêm alfa de 1 bit. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, o formato BC1 reduz a memória necessária de 48 bytes (16 cores × 3 componentes/cor × 1 byte/componente) para 8 bytes de memória.
+Use o primeiro formato de compactação de bloco (BC1) (DXGI FORMAT BC1 TYPELESS, DXGI FORMAT BC1 UNORM ou DXGI BC1 UNORM SRGB) para armazenar dados de cores de três componentes usando uma cor \_ \_ de \_ \_ \_ \_ \_ \_ \_ 5:6:5 (5 bits vermelho, 6 bits verde, 5 bits azul). Isso vale até mesmo quando os dados também contêm alfa de 1 bit. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, o formato BC1 reduz a memória necessária de 48 bytes (16 cores × 3 componentes/cor × 1 byte/componente) para 8 bytes de memória.
 
-O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores, o algoritmo salva 2 cores de referência (cor \_ 0 e cor \_ 1) e índices de cores de 16 2 bits (bloqueia a – p), conforme mostrado no diagrama a seguir.
+O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores, o algoritmo salva duas cores de referência (cor 0 e cor 1) e 16 índices de cor de 2 bits \_ (bloqueia a-p), conforme mostrado no diagrama \_ a seguir.
 
-![diagrama do layout da compactação BC1](images/d3d10-compression-bc1.png)
+![diagrama do layout para compactação bc1](images/d3d10-compression-bc1.png)
 
 Os índices de cor (a–p) são usados para procurar as cores originais em uma tabela de cores. A tabela de cores contém 4 cores. As duas primeiras cores — cor \_ 0 e cor \_ 1 — são as cores mínimas e máximas. As outras duas cores, cor \_ 2 e cor \_ 3, são cores intermediárias calculadas com interpolação linear.
 
@@ -159,20 +159,9 @@ color_3 = 0;
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Esse formato existe tanto no Direct3D 9 quanto no 10.<br/>
-<ul>
-<li>No Direct3D 9, o formato BC1 é chamado de D3DFMT_DXT1.</li>
-<li>No Direct3D 10, o formato BC1 é representado por DXGI_FORMAT_BC1_UNORM ou DXGI_FORMAT_BC1_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferenças entre o Direct3D 9 e o Direct3D 10:<br /> Esse formato existe tanto no Direct3D 9 quanto no 10.<br /><ul><li>No Direct3D 9, o formato BC1 é chamado de D3DFMT_DXT1.</li><li>No Direct3D 10, o formato BC1 é representado por DXGI_FORMAT_BC1_UNORM ou DXGI_FORMAT_BC1_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -186,20 +175,9 @@ O formato BC2 armazena cores com o mesmo número de bits e dados de layout como 
 
 ![diagrama do layout da compactação BC2](images/d3d10-compression-bc2.png)
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Esse formato existe tanto no Direct3D 9 quanto no 10.<br/>
-<ul>
-<li>No Direct3D 9, o formato BC2 é chamado de D3DFMT_DXT2 e D3DFMT_DXT3.</li>
-<li>No Direct3D 10, o formato BC2 é representado por DXGI_FORMAT_BC2_UNORM ou DXGI_FORMAT_BC2_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferenças entre o Direct3D 9 e o Direct3D 10:<br /> Esse formato existe tanto no Direct3D 9 quanto no 10.<br /><ul><li>No Direct3D 9, o formato BC2 é chamado de D3DFMT_DXT2 e D3DFMT_DXT3.</li><li>No Direct3D 10, o formato BC2 é representado por DXGI_FORMAT_BC2_UNORM ou DXGI_FORMAT_BC2_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -247,20 +225,9 @@ else
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/>
-<ul>
-<li>No Direct3D 9, o formato BC3 é chamado de D3DFMT_DXT4 e D3DFMT_DXT5.</li>
-<li>No Direct3D 10, o formato BC3 é representado por DXGI_FORMAT_BC3_UNORM ou DXGI_FORMAT_BC3_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferenças entre o Direct3D 9 e o Direct3D 10:<br /><ul><li>No Direct3D 9, o formato BC3 é chamado de D3DFMT_DXT4 e D3DFMT_DXT5.</li><li>No Direct3D 10, o formato BC3 é representado por DXGI_FORMAT_BC3_UNORM ou DXGI_FORMAT_BC3_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -474,9 +441,9 @@ A tabela a seguir lista os formatos de destino e origem permitidos que você pod
 
 | Largura de bit | Recurso não compactado                                                                                                                                               | Recurso compactado em bloco                                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 32        | \_Formato dxgi \_ R32 \_ uint<br/> \_Formato dxgi \_ R32 \_ Santo<br/>                                                                                               | \_Formato dxgi \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                   |
-| 64        | \_Formato dxgi \_ R16G16B16A16 \_ uint<br/> \_Formato dxgi \_ R16G16B16A16 \_ Santo<br/> \_Formato dxgi \_ R32G32 \_ uint<br/> \_Formato dxgi \_ R32G32 \_ Santo<br/> | \_Formato dxgi \_ BC1 \_ UNORM \[ \_ sRGB\]<br/> \_Formato dxgi \_ BC4 \_ UNORM<br/> \_Formato dxgi \_ BC4 \_ SNORM<br/>                                               |
-| 128       | \_Formato dxgi \_ R32G32B32A32 \_ uint<br/> \_Formato dxgi \_ R32G32B32A32 \_ Santo<br/>                                                                             | \_Formato dxgi \_ BC2 \_ UNORM \[ \_ sRGB\]<br/> \_Formato dxgi \_ BC3 \_ UNORM \[ \_ sRGB\]<br/> \_Formato dxgi \_ BC5 \_ UNORM<br/> \_Formato dxgi \_ BC5 \_ SNORM<br/> |
+| 32        | FORMATO DXGI \_ \_ R32 \_ UINT<br/> DXGI \_ FORMAT \_ R32 \_ SINT<br/>                                                                                               | DXGI \_ FORMAT \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                   |
+| 64        | FORMATO DXGI \_ \_ R16G16B16A16 \_ UINT<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ SINT<br/> FORMATO DXGI \_ \_ R32G32 \_ UINT<br/> DXGI \_ FORMAT \_ R32G32 \_ SINT<br/> | FORMATO DXGI \_ \_ BC1 \_ UNORM \[ \_ SRGB\]<br/> FORMATO DXGI \_ \_ BC4 \_ UNORM<br/> FORMATO DXGI \_ \_ BC4 \_ SNORM<br/>                                               |
+| 128       | FORMATO DXGI \_ \_ R32G32B32A32 \_ UINT<br/> DXGI \_ FORMAT \_ R32G32B32A32 \_ SINT<br/>                                                                             | FORMATO DXGI \_ \_ BC2 \_ UNORM \[ \_ SRGB\]<br/> FORMATO DXGI \_ \_ BC3 \_ UNORM \[ \_ SRGB\]<br/> FORMATO DXGI \_ \_ BC5 \_ UNORM<br/> FORMATO DXGI \_ \_ BC5 \_ SNORM<br/> |
 
 
 

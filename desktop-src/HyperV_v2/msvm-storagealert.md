@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 478b4617f56c73e425d833842b313767f85c385e9142314a7ca8978b5783f492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41af5f29f54dc0b5c7e63203c43160539bcaa870
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886583"
 ---
 # <a name="msvm_storagealert-class"></a>Classe Msvm \_ StorageAlert
 
@@ -83,7 +83,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **ModelCorrespondence** ("CIM \_ AlertIndication.AlertingManagedElement", "CIM \_ AlertIndication.OtherAlertingElementFormat")
 </dt> </dl>
 
-Especifica o formato da **propriedade AlertingManagedElement.** O formato é um CIMObjectPath, com o formato *<NamespacePath> : . " <ClassName> <Prop1> = \\ <Value1> \\ ", <Prop2> = \\ " " <Value2> \\ " ,* que especifica uma instância no esquema CIM.
+Especifica o formato da **propriedade AlertingManagedElement.** O formato é um CIMObjectPath, com o *&lt; formato NamespacePath &gt; : &lt; ClassName &gt; . &lt; Prop1 &gt; = \\ " &lt; Value1 &gt; \\ ", " &lt; Prop2 &gt; = \\ " &lt; Value2 &gt; \\ "*, que especifica uma instância no esquema CIM.
 
 Essa propriedade é herdada da **classe CIM \_ AlertIndication.**
 
@@ -183,7 +183,7 @@ Tipo de acesso: Somente leitura
 
 Identifica exclusivamente, dentro do escopo da **propriedade OwningEntity,** o formato da **propriedade** Message. Os valores possíveis para essa propriedade são:
 
-32930 ("mensagem de Armazenamento de QoS de pool insuficiente")
+32930 ("mensagem de Armazenamento de QoS insuficiente de QoS")
 
 </dd> <dt>
 
@@ -274,9 +274,9 @@ Uma descrição textual que corresponde ao valor da propriedade **ProbableCause.
 
 ## <a name="remarks"></a>Comentários
 
-O provedor WMI do Hyper-V não gera eventos para discos virtuais individuais para evitar inundar clientes com eventos em caso de mau funcionamento em grande escala dos sistemas de armazenamento subjacentes.
+O provedor WMI do Hyper-V não gera eventos para discos virtuais individuais a fim de evitar inundar clientes com eventos em caso de mau funcionamento em grande escala dos sistemas de armazenamento subjacentes.
 
-Quando um cliente recebe um evento **Msvm \_ StorageAlert,** se o valor da propriedade **ProbableCause** for 50 ( problema de capacidade do Armazenamento ), o cliente poderá descobrir quais discos virtuais estão operando fora de sua política de QoS usando um destes procedimentos:
+Quando um cliente recebe um evento **Msvm \_ StorageAlert,** se o valor da propriedade **ProbableCause** for 50 ( problema de capacidade Armazenamento ), o cliente poderá descobrir quais discos virtuais estão operando fora de sua política de QoS usando um destes procedimentos:
 
 -   Consulte todas as [**instâncias \_ logicalDisk do Msvm**](msvm-logicaldisk.md) que foram alocadas do pool de recursos para o qual o evento foi gerado. Essas **instâncias do Msvm \_ LogicalDisk** são associadas ao pool de recursos por meio da associação [**\_ ElementAllocatedFromPool do Msvm.**](msvm-elementallocatedfrompool.md)
 -   Filtre a lista de resultados selecionando instâncias cujo OperationalStatus contém Produtividade Insuficiente .

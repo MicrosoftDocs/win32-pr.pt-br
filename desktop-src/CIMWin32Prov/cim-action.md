@@ -23,12 +23,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 171912934b7161a763bac75ceeb06a7ece0c521b4cefb163d67a9e2f42c34302
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 346c3d0e0100c0c61040b047849a7a81e430e8c6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080990"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881195"
 ---
 # <a name="cim_action-class"></a>Classe de ação CIM \_
 
@@ -794,8 +794,8 @@ Versão da operação.
 
 A versão da operação deve estar em uma das seguintes formas:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundária. &lt; Revisão&gt;
+-   &lt;&gt;principal. &lt; revisão &gt; &lt; de letra &gt; &lt; secundária&gt;
 
 </dd> </dl>
 

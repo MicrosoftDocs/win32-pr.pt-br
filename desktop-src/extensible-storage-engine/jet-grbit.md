@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b54ed8a95d81c148b68727384dd76fba3d2dc8b1f9d6452c2105bc45f015646
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 92fa6dffd94d2a1790811881fcdba86665ebb880
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119362276"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482242"
 ---
 # <a name="jet_grbit"></a>JET_GRBIT
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_grbit"></a>JET_GRBIT
 
-O tipo de dados **JET_GRBIT** é um grupo de bits que contém constantes específicas para as funções e estruturas nas quais ele é usado.
+O **JET_GRBIT** de dados é um grupo de bits que contêm constantes específicas para as funções e estruturas nas quais ele é usado.
 
 ```cpp
 typedef unsigned long JET_GRBIT;
@@ -39,7 +39,7 @@ typedef unsigned long JET_GRBIT;
 
 JET_GRBIT
 
-Em geral, as constantes usadas como valores para esse tipo de dados refletem o nome do elemento de API no qual elas são usadas. Por exemplo, todas as constantes passadas para [JetRetrieveColumn](./jetretrievecolumn-function.md) começam com "JET_bitRetrieve". Da mesma forma, todas as constantes passadas para [JetSetColumn](./jetsetcolumn-function.md) começam com "JET_bitSet".
+Em geral, as constantes usadas como valores para esse tipo de dados refletem o nome do elemento de API no qual elas são usadas. Por exemplo, todas as constantes passadas [para JetRetrieveColumn](./jetretrievecolumn-function.md) começam com "JET_bitRetrieve". Da mesma forma, todas as constantes passadas [para JetSetColumn](./jetsetcolumn-function.md) começam com "JET_bitSet".
 
 Um valor de zero faz com que o parâmetro seja ignorado.
 
@@ -49,26 +49,9 @@ Para obter mais informações, consulte a função ou estrutura específica. As 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também
