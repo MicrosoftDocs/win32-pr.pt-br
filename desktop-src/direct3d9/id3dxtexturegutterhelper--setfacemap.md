@@ -1,7 +1,7 @@
 ---
-description: Define o índice do tipo de malha ao qual cada Texel pertence.
+description: Define o índice da face da malha à qual cada texel pertence.
 ms.assetid: 45d931bc-fb8b-48da-b30d-99d5dc183494
-title: 'Método ID3DXTextureGutterHelper:: SetFaceMap (D3DX9Mesh. h)'
+title: Método ID3DXTextureGutterHelper::SetFaceMap (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8ba0472052d5e2e06d759c83a404a197ecda148f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a7de812f5445d0d8d704aeba939cf8cbc4441d4ed542bf716371a7fc12a1ba6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747376"
 ---
-# <a name="id3dxtexturegutterhelpersetfacemap-method"></a>Método ID3DXTextureGutterHelper:: SetFaceMap
+# <a name="id3dxtexturegutterhelpersetfacemap-method"></a>Método ID3DXTextureGutterHelper::SetFaceMap
 
-Define o índice do tipo de malha ao qual cada Texel pertence.
+Define o índice da face da malha à qual cada texel pertence.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ HRESULT SetFaceMap(
 
 <dl> <dt>
 
-*pFaceData* \[ no\]
+*pFaceData* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o índice da face de malha à qual cada Texel pertence.
+Ponteiro para o índice da face da malha à qual cada texel pertence.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL
 
 ## <a name="remarks"></a>Comentários
 
-A entrada de dados de face de malha para esse método é válida somente para texels válidas (não classe 0). [**ID3DXTextureGutterHelper:: GetGutterMap**](id3dxtexturegutterhelper--getguttermap.md) retornará valores diferentes de zero para texels válidos.
+A entrada de dados de face da malha para esse método é válida somente para os texels válidos (não classe 0). [**ID3DXTextureGutterHelper::GetGutterMap**](id3dxtexturegutterhelper--getguttermap.md) retornará valores diferentes de zero para os texels válidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ A entrada de dados de face de malha para esse método é válida somente para te
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

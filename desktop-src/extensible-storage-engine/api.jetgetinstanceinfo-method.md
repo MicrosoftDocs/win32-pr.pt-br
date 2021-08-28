@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetInstanceInfo'
-title: Método API. JetGetInstanceInfo
+description: 'Saiba mais sobre: Método Api.JetGetInstanceInfo'
+title: Método Api.JetGetInstanceInfo
 TOCTitle: 'JetGetInstanceInfo method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetInstanceInfo(System.Int32@,Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO[]@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetinstanceinfo(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b618c0eb7bf6e861337ebb40a95cb75d4434038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4abe0878f0a63b8492135632c0fe8e771e1af98e509f7753eaf38e898621453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719140"
 ---
-# <a name="apijetgetinstanceinfo-method"></a>Método API. JetGetInstanceInfo
+# <a name="apijetgetinstanceinfo-method"></a>Método Api.JetGetInstanceInfo
 
 Recupera informações sobre as instâncias que estão em execução.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,14 +64,14 @@ public static void JetGetInstanceInfo(
 #### <a name="parameters"></a>Parâmetros
 
   - numInstances  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Retorna o número de instâncias.
 
 <!-- end list -->
 
   - instances  
-    Escreva \[\]  
+    Tipo: \[\]  
     
     Retorna uma matriz de objetos de informações de instância, um para cada instância em execução.
 
@@ -83,4 +83,4 @@ public static void JetGetInstanceInfo(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

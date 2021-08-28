@@ -1,32 +1,32 @@
 ---
-title: Convertendo texgen
-description: A função texgen do íris GL é convertida em glTexGen para OpenGL.
+title: Traduzindo o texgen
+description: A função IRIS GL é convertida em glTexGen para OpenGL.
 ms.assetid: ddf398ed-37d4-4fb6-97be-20fe0564cb77
 keywords:
-- Portabilidade do íris GL, textura
-- portando do íris GL, textura
-- portando para OpenGL do íris GL, textura
-- Portabilidade OpenGL do íris GL, textura
+- Portação IRIS GL, textura
+- portando de IRIS GL, textura
+- portando para OpenGL de IRIS GL, textura
+- Portação openGL de IRIS GL, textura
 - textura
-- Portabilidade do íris GL, texgen
-- portando do íris GL, texgen
-- portando para OpenGL do íris GL, texgen
-- Portabilidade OpenGL do íris GL, texgen
+- Portação IRIS GL, texgen
+- portando de IRIS GL, texgen
+- portando para OpenGL de IRIS GL, texgen
+- Portação openGL de IRIS GL, texgen
 - texgen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07654fc35e20096ed71c3fe74ff9279214eb45c8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 53d4280df245b4fce4a9128d4e409a6fbf407075bf7d98fc714314faecc1e242
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105757097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117980457"
 ---
-# <a name="translating-texgen"></a>Convertendo texgen
+# <a name="translating-texgen"></a>Traduzindo o texgen
 
-A função **texgen** do íris GL é convertida em [glTexGen](gltexgen-functions.md) para OpenGL.
+A função IRIS GL **é convertida** em [glTexGen](gltexgen-functions.md) para OpenGL.
 
-Com o íris GL, você chama **texgen** duas vezes: uma vez para definir o modo e a equação do plano simultaneamente, e uma vez para habilitar a geração da coordenada de textura. Por exemplo:
+Com IRIS GL, você chama **o texgen duas** vezes: uma vez para definir o modo e a equação do plano simultaneamente e uma vez para habilitar a geração de coordenadas de textura. Por exemplo:
 
 
 ```C++
@@ -36,7 +36,7 @@ texgen(TX_S, TG_ON, NULL);
 
 
 
-Com o OpenGL, você faz três chamadas: dois para **glTexGen** (uma vez para definir o modo e uma vez para definir a equação de plano) e um para [**glEnable**](glenable.md). Por exemplo, o OpenGL equivalente ao código de íris GL acima é:
+Com o OpenGL, você faz três chamadas: duas para **glTexGen** (uma para definir o modo e outra para definir a equação do plano) e uma para [**glEnable.**](glenable.md) Por exemplo, o equivalente do OpenGL ao código IRIS GL acima é:
 
 
 ```C++
@@ -47,38 +47,38 @@ glEnable(GL_TEXTURE_GEN_S);
 
 
 
-A tabela a seguir lista os nomes de coordenadas de textura do íris GL e seus equivalentes em OpenGL.
+A tabela a seguir lista os nomes das coordenadas de textura IRIS GL e seus equivalentes openGL.
 
 
 
-| Coordenada de textura do íris GL | Coordenada de textura OpenGL | argumento glEnable   |
+| Coordenada de textura IRIS GL | Coordenada de textura OpenGL | Argumento glEnable   |
 |----------------------------|---------------------------|---------------------|
-| \_S TX                      | \_S GL                     | S do GL \_ Texture \_ Gen \_ |
-| T de TX \_                      | GL \_ T                     | \_geração de textura de Texture GL \_ \_ |
-| \_R TX                      | GL \_ R                     | o GL de \_ Texture \_ Gen \_ R |
-| TX \_ Q                      | GL \_ Q                     | GL \_ Texture \_ Gen \_ Q |
+| TX \_ S                      | GL \_ S                     | GL \_ TEXTURE \_ GEN \_ S |
+| TX \_ T                      | GL \_ T                     | GL \_ TEXTURE \_ GEN \_ T |
+| TX \_ R                      | GL \_ R                     | GL \_ TEXTURE \_ GEN \_ R |
+| TX \_ Q                      | GL \_ Q                     | GL \_ TEXTURE \_ GEN \_ Q |
 
 
 
- 
+ 
 
-A tabela a seguir lista os modos de geração de textura do íris GL e seus modos de textura e nomes de plano do OpenGL equivalentes.
+A tabela a seguir lista os modos de geração de textura IRIS GL e seus modos de textura e nomes de plano equivalentes do OpenGL.
 
 
 
-| Modo de textura do íris GL | Modo de textura OpenGL | Nome do plano OpenGL |
+| Modo de textura IRIS GL | Modo de textura OpenGL | Nome do plano OpenGL |
 |----------------------|---------------------|-------------------|
-| TG \_ linear           | \_objeto GL \_ linear  | \_plano de objeto GL \_ |
-| delimitação de TG \_          | olho do GL \_ \_ linear     | \_plano de olho GL \_    |
-| TG \_ SPHEREMAP        | \_mapa de esfera GL \_     |                   |
+| TG \_ LINEAR           | OBJETO GL \_ \_ LINEAR  | PLANO \_ DE \_ OBJETO GL |
+| TG \_ VAIR          | GL \_ EYE \_ LINEAR     | PLANO \_ DE OLHO \_ GL    |
+| TG \_ SPHEREMAP        | MAPA GL \_ SPHERE \_     |                   |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

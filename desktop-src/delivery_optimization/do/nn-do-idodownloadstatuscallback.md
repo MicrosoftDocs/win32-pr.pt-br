@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 0917b73939535854469a1fe02ea89acc904cf055
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d91ff44e3b4f4247983ec81d53257347c8bcfa523f85855dcd0d37074f4b38fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498946"
 ---
 # <a name="idodownloadstatuscallback-interface"></a>Interface IDODownloadStatusCallback
 
@@ -31,12 +31,12 @@ A interface **IDODownloadStatusCallback** tem esses métodos.
 
 | Método | Descrição |
 | ---- |:---- |
-| [IDODownloadStatusCallback:: onstatuschanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | O chama sua implementação desse método sempre que um status de download for alterado. |
+| [IDODownloadStatusCallback::OnStatusChanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | O DO chama sua implementação desse método sempre que um status de download é alterado. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Somente aplicativos do Windows 10, versão 1809 \[ Win32\] |
-| **Servidor mínimo com suporte** | Somente aplicativos do Windows Server, versão 1809 \[ Win32\] |
-| **Cabeçalho** | Do. h |
+| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
+| **Cabeçalho** | Do.h |

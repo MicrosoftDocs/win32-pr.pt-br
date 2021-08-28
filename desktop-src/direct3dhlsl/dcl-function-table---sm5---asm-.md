@@ -4,12 +4,12 @@ description: Declare uma tabela de funções.
 ms.assetid: 3693A03F-5E4B-40E8-B436-2FE3462C8DB8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0710f53171ad2a86097dca96afb2756b1b067fef
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 549653ee7316a664b628d5cdc692c091bdf042ad24e89b983c0fd3aac8a67ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490886"
 ---
 # <a name="dcl_function_table-sm5---asm"></a>\_ \_ tabela de funções DCL (SM5-ASM)
 
@@ -48,7 +48,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

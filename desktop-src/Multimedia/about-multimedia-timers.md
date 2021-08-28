@@ -3,7 +3,7 @@ title: Sobre timers de multimídia
 description: Sobre timers de multimídia
 ms.assetid: 42101923-3f46-4234-bfcf-a0d06c382fa1
 keywords:
-- Multimídia do Windows, temporizadores
+- Windows multimídia, timers
 - multimídia, Timers
 - entrada de multimídia, temporizadores
 - Timers de multimídia, sobre
@@ -17,12 +17,12 @@ keywords:
 - WM_TIMER mensagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c36e5f19a92b6b47a3b1976bd85aadef88ab3ec
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 99b5d899c93f0f292d7ef45e8584ae9e2b5e0e001037c456dcc4900f1c0d3f26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498206"
 ---
 # <a name="about-multimedia-timers"></a>Sobre timers de multimídia
 
@@ -32,6 +32,6 @@ Esses serviços de timer são úteis para aplicativos que exigem tempo de alta r
 
 Os aplicativos que não usam o tempo de alta resolução devem usar a função [SetTimer](/windows/win32/api/winuser/nf-winuser-settimer) em vez de serviços de timer de multimídia. Os serviços de temporizador fornecidos por mensagens de [ \_ temporizador do WM](../winmsg/wm-timer.md) do **webtimer** post para uma fila de mensagens, enquanto os serviços de timer de multimídia chamam uma função de retorno de chamada. Os aplicativos que desejam um temporizador que pode ser aguardado devem usar a função [CreateWaitableTimer](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw) .
 
- 
+ 
 
- 
+ 

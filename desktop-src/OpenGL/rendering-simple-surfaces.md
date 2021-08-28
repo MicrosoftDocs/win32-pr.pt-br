@@ -17,12 +17,12 @@ keywords:
 - discos OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab766c661f89cbdec30b3295dfef8dc85b59f7fe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4010a9cc1c0cfac58f1a99572ebae43233dce552237c17f42d66cc1c50013986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776826"
 ---
 # <a name="rendering-simple-surfaces"></a>Renderizando superfícies simples
 
@@ -45,9 +45,9 @@ A biblioteca GLU inclui um conjunto de funções para desenhar várias superfíc
 
 Use os argumentos *\* RADIUS*, *Height* e similar, em vez da função [**glScale**](glscale.md) , para dimensionar o quadrics, para que você não precise renormalizar qualquer normal de comprimento de unidade gerado. Para forçar cálculos de iluminação com uma granularidade mais refinada, especialmente se a especulação de material for alta, defina os argumentos *loops* e *pilhas* para valores diferentes de 1.
 
- 
+ 
 
- 
+ 
 
 
 

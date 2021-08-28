@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb75467b35703420ce49fd99ea032b139d721505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4e55d5a1f529435f0cdf6db3dcf801e7f24dda1a69e0bc1cad393942b672d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513096"
 ---
 # <a name="imstscaxdesktopheight-property"></a>IMsTscAx: Propriedade esktopHeight de:D
 
@@ -102,7 +102,7 @@ Retornar **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-A definição da propriedade **DesktopHeight** é opcional, mas deve ser definida antes de chamar o método [**Connect**](imstscax-connect.md) . Se uma altura da área de trabalho não for especificada ou for definida como zero, a altura da área de trabalho será definida como a altura do controle. Os valores mínimo e máximo dependem da versão do sistema operacional do cliente de Área de Trabalho Remota.
+a definição da propriedade **DesktopHeight** é opcional, mas deve ser definida antes de chamar o método [**Conexão**](imstscax-connect.md) . Se uma altura da área de trabalho não for especificada ou for definida como zero, a altura da área de trabalho será definida como a altura do controle. Os valores mínimo e máximo dependem da versão do sistema operacional do cliente de Área de Trabalho Remota.
 
 <dl> <dt>
 

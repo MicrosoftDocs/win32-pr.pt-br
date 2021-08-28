@@ -4,12 +4,12 @@ ms.assetid: 9192ceb1-90c4-480e-9247-68d457976f42
 title: Jobinputbin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 929df4cb4871e5a8d2ebacfe533b5da3ad9babf3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cf0226979ed714380a85bb803cfcfba6703e2ba74770dc4ac725aae4408ed208
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112456"
 ---
 # <a name="jobinputbin"></a>Jobinputbin
 
@@ -25,7 +25,7 @@ Descreve o compartimento de entrada instalado em um dispositivo ou a lista compl
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de definição de scoping <br/> | Trabalho<br/>     |
@@ -101,7 +101,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Com suporte, Nenhum.<br/>                                                                                                                                                           | Especifica a funcionalidade de detecção automática do tipo de mídia do dispositivo.<br/>                |
 | \_MediaSheetCapacityValue\_<br/> | Número inteiro<br/> | Folhas<br/>     | Restrição de inteiro máxima permitida pelo dispositivo.<br/>                                                                                                                              | Especifica a capacidade de Mídia no número de páginas (nível completo) do compartimento.<br/> |
 | \_MediaPathValue\_<br/>          | string<br/>  | n/d<br/>        | Straight, Longine.<br/>                                                                                                                                                      | Especifica as características do caminho de mídia.<br/>                         |
-| \_FeedFaceValue\_<br/>           | string<br/>  | n/d<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Especifica se a mídia deve ser impressa com a face para cima ou com a face para baixo.<br/>           |
+| \_FeedFaceValue\_<br/>           | string<br/>  | n/d<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Especifica se a mídia deve ser impressa com a face para cima ou para baixo.<br/>           |
 | \_FeedDirectionValue\_<br/>      | string<br/>  | n/d<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica se a mídia é alimentada pela borda longa primeiro ou pela borda curta primeiro.<br/>      |
 
 
@@ -110,7 +110,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:JobInputBin">

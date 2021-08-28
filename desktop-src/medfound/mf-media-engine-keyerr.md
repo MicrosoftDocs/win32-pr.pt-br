@@ -1,7 +1,7 @@
 ---
 description: Define códigos de erro de chave de mídia para o mecanismo de mídia.
 ms.assetid: F6E13260-74A2-40D0-A704-4E1CDB16B8D8
-title: Enumeração de MF_MEDIA_ENGINE_KEYERR
+title: MF_MEDIA_ENGINE_KEYERR enumeração
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 22dd22a7771f5d1e9466709f0b0da9ee936ef2b9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5a3573f721f31ffbe3858c7d6fb3c713468bc347f04a1b5d85c5839a1e18511b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113926"
 ---
-# <a name="mf_media_engine_keyerr-enumeration"></a>\_ \_ Enumeração KEYERR do mecanismo de mídia MF \_
+# <a name="mf_media_engine_keyerr-enumeration"></a>\_ \_ Enumeração KEYERR do MECANISMO \_ DE MÍDIA MF
 
 Define códigos de erro de chave de mídia para o mecanismo de mídia.
 
@@ -44,28 +44,28 @@ typedef enum _MF_MEDIA_ENGINE_KEYERR {
 
 <dl> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ desconhecido**
+<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ UNKNOWN**
 </dt> <dd>
 
 Ocorreu um erro desconhecido.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**\_cliente MF MEDIAENGINE \_ KEYERR \_**
+<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**CLIENTE MF \_ MEDIAENGINE \_ KEYERR \_**
 </dt> <dd>
 
 Ocorreu um erro com o cliente.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**\_serviço MEDIAENGINE \_ KEYERR \_ MF**
+<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**SERVIÇO MF \_ MEDIAENGINE \_ KEYERR \_**
 </dt> <dd>
 
 Ocorreu um erro com o serviço.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**\_saída de \_ KEYERR \_ MEDIAENGINE MF**
+<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ OUTPUT**
 </dt> <dd>
 
 Ocorreu um erro com a saída.
@@ -79,7 +79,7 @@ Ocorreu um erro relacionado a uma alteração de hardware.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**\_MEDIAENGINE MF \_ KEYERR \_ domínio**
+<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**DOMÍNIO DO MF \_ MEDIAENGINE \_ KEYERR \_**
 </dt> <dd>
 
 Ocorreu um erro com o domínio.
@@ -88,7 +88,7 @@ Ocorreu um erro com o domínio.
 
 ## <a name="remarks"></a>Comentários
 
-**MF \_ O \_ mecanismo \_ de mídia KEYERR** é usado com o parâmetro de *código* de [**IMFMediaKeySessionNotify:: keyerror**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) e o valor de *código* retornado de [**IMFMediaKeySession:: GetError**](imfmediakeysession-geterror.md).
+**MF \_ MEDIA \_ ENGINE \_ KEYERR** é  usado com o parâmetro de código [**de IMFMediaKeySessionNotify::KeyError**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) e o valor *de* código retornado de [**IMFMediaKeySession::GetError**](imfmediakeysession-geterror.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,9 +96,9 @@ Ocorreu um erro com o domínio.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Ocorreu um erro com o domínio.
 
 <dl> <dt>
 
-[Enumerações de Media Foundation](media-foundation-enumerations.md)
+[enumerações Media Foundation dados](media-foundation-enumerations.md)
 </dt> </dl>
 
  

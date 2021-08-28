@@ -4,19 +4,19 @@ ms.assetid: bca00825-32a7-40b2-9ca9-23475e3218a8
 title: Capturando uma imagem ainda do streaming de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf43acdb1bd472a9d5a5dca2344b2f4ad37f474a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7af209ec0261418ab18d01414d040c9015a2436e055675a94608b1089f66fa58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772862"
 ---
 # <a name="capturing-a-still-image-from-streaming-video"></a>Capturando uma imagem ainda do streaming de vídeo
 
 O exemplo a seguir usa a interface [**IWiaVideo**](/windows/desktop/api/Wiavideo/nn-wiavideo-iwiavideo) para criar uma visualização de vídeo de streaming e obter uma imagem ainda desse vídeo de streaming. O exemplo supõe que você tenha um identificador válido para uma janela (HWND).
 
 > [!Note]  
-> A aquisição de imagens do Windows (WIA) não oferece suporte a dispositivos de vídeo no Windows Server 2003, Windows Vista ou posterior. Para essas versões do Windows, use o [DirectShow](/previous-versions//ms783323(v=vs.85)) para adquirir imagens do vídeo.
+> Windows a aquisição de imagem (WIA) não oferece suporte a dispositivos de vídeo no Windows Server 2003, Windows Vista ou posterior. para essas versões do Windows, use [DirectShow](/previous-versions//ms783323(v=vs.85)) para adquirir imagens do vídeo.
 
  
 

@@ -4,12 +4,12 @@ description: A chave para criar uma barra de ferramentas vertical é incluir CCS
 ms.assetid: C2EAB160-0D8D-4BB9-AD41-D5175FBE81AB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd32609e81196a94f4298197c33a4cc6e21d117
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: ea66c22461c3616a6b90fdb9fed65fc65fec751055c27d15170aab30e3531e96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103917086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504027"
 ---
 # <a name="how-to-create-vertical-toolbars"></a>Como criar barras de ferramentas verticais
 
@@ -19,12 +19,12 @@ A chave para criar uma barra de ferramentas vertical é incluir [**ccs \_ Vert**
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -83,12 +83,12 @@ HWND CreateVerticalToolbar(HWND hWndParent)
 [Usando controles da barra de ferramentas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

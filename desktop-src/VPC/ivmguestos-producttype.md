@@ -1,11 +1,11 @@
 ---
-title: Propriedade ProductType IVMGuestOS (VPCCOMInterfaces. h)
+title: Propriedade ProductType IVMGuestOS (VPCCOMInterfaces.h)
 description: Recupera o tipo de produto do sistema operacional convidado em execução na máquina virtual.
 ms.assetid: 426cd456-42a6-4bcd-a7a2-3aec258b02cb
 keywords:
-- Propriedade ProductType Virtual PC
-- Propriedade ProductType Virtual PC, interface IVMGuestOS
-- IVMGuestOS interface virtual PC, propriedade ProductType
+- Propriedade ProductType Pc Virtual
+- Propriedade ProductType Pc Virtual , interface IVMGuestOS
+- INTERFACE IVMGuestOS PC Virtual, propriedade ProductType
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bc79ffd0717ac0949103a05d1bcdaa96da48d7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c31b3b91cf75687d82e02e3b97c78dd0e40f724756b609a3e2b60c73812ee5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512306"
 ---
-# <a name="ivmguestosproducttype-property"></a>IVMGuestOS: Propriedade roductType de:P
+# <a name="ivmguestosproducttype-property"></a>Propriedade IVMGuestOS::P roductType
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o tipo de produto do sistema operacional convidado em execução na máquina virtual.
 
@@ -51,9 +51,9 @@ O tipo de produto. Há suporte para os valores de cadeia de caracteres a seguir.
 
 | Valor                                                                                  | Significado                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>"0x0000002"</dt> </dl> | O sistema é um controlador de domínio e o sistema operacional é o Windows Server 2008 R2, o Windows Server 2008, o Windows Server 2003 R2, o Windows Server 2003 ou o Windows 2000 Server.<br/>                                                                                                   |
-| <dl> <dt>"0x0000003"</dt> </dl> | O sistema operacional é o Windows Server 2008 R2, o Windows Server 2008, o Windows Server 2003 R2, o Windows Server 2003 ou o Windows 2000 Server.<br/> Observe que um servidor que também é um controlador de domínio é relatado **como \_ \_ \_ controlador de domínio do NT**, não ver o **\_ \_ servidor NT**.<br/> |
-| <dl> <dt>"0x0000001"</dt> </dl> | O sistema operacional é o Windows 7, o Windows Vista, o Windows XP ou o Windows 2000 Professional.<br/>                                                                                                                                                                                       |
+| <dl> <dt>"0x0000002"</dt> </dl> | O sistema é um controlador de domínio e o sistema operacional é Windows Server 2008 R2, Windows Server 2008, Windows Server 2003 R2, Windows Server 2003 ou Windows 2000 Server.<br/>                                                                                                   |
+| <dl> <dt>"0x0000003"</dt> </dl> | O sistema operacional é Windows Server 2008 R2, Windows Server 2008, Windows Server 2003 R2, Windows Server 2003 ou Windows 2000 Server.<br/> Observe que um servidor que também é um controlador de domínio é relatado como **VER \_ NT \_ DOMAIN \_ CONTROLLER,** não **VER \_ NT \_ SERVER.**<br/> |
+| <dl> <dt>"0x0000001"</dt> </dl> | O sistema operacional é Windows 7, Windows Vista, Windows XP ou Windows 2000 Professional.<br/>                                                                                                                                                                                       |
 
 
 
@@ -65,12 +65,12 @@ O tipo de produto. Há suporte para os valores de cadeia de caracteres a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS é definido como 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS é definido como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

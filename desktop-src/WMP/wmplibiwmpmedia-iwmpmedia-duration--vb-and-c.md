@@ -3,9 +3,9 @@ title: Propriedade Duration IWMPMedia
 description: A Propriedade Duration Obtém a duração em segundos do item de mídia atual.
 ms.assetid: f8a0bf3e-eeaf-46f5-90c8-d3b11ce4eb39
 keywords:
-- Propriedade Duration Windows Media Player
-- Propriedade Duration Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, Propriedade Duration
+- Windows Media Player da Propriedade Duration
+- propriedade duration Windows Media Player, interface IWMPMedia
+- Windows Media Player de interface IWMPMedia, propriedade duration
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f796cab042713082ce2066659f62736855e62787
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 38703c37e73ba6312970b8e5b929441c3c5c9ccd1f034ab244dc97c36c2d2162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506016"
 ---
 # <a name="iwmpmediaduration-property"></a>IWMPMedia: Propriedade uração de:d
 
@@ -55,7 +55,7 @@ Um **sistema. Double** que é a duração em segundos.
 
 Se essa propriedade for usada com um item de mídia diferente daquele especificado em AxWindowsMediaPlayer. currentMedia, ele não poderá conter um valor válido.
 
-Para recuperar a duração de arquivos que não estão na biblioteca do usuário, você deve aguardar que o Windows Media Player Abra o arquivo; ou seja, o **OpenState** atual deve ser igual a **MediaOpen**. Você pode verificar isso tratando o **AxWindowsMediaPlayer. \_ Evento WMPOCXEvents \_ OpenStateChange** ou verificando periodicamente o valor de **AxWindowsMediaPlayer. OpenState**.
+para recuperar a duração de arquivos que não estão na biblioteca do usuário, você deve aguardar a Windows Media Player abrir o arquivo; ou seja, o **OpenState** atual deve ser igual a **MediaOpen**. Você pode verificar isso tratando o **AxWindowsMediaPlayer. \_ Evento WMPOCXEvents \_ OpenStateChange** ou verificando periodicamente o valor de **AxWindowsMediaPlayer. OpenState**.
 
 Para listas de reprodução, a duração de cada item de mídia pode ser recuperada quando o item de mídia individual é aberto, em vez de quando a playlist é aberta.
 

@@ -1,41 +1,41 @@
 ---
-title: Portando viewports, Screenmasks e Scrboxes
-description: As seguintes funções do visor do íris GL não têm nenhum equivalente em OpenGL
+title: Portando Viewports, Screenmasks e Scrboxes
+description: As seguintes funções do viewport IRIS GL não têm equivalente a OpenGL
 ms.assetid: 223e9b5b-1ddd-45a6-8489-b262d0207a5a
 keywords:
-- Portabilidade do íris GL, funções do visor
-- portando do íris GL, funções do visor
-- portando para OpenGL do íris GL, funções do visor
-- Portabilidade do OpenGL do íris GL, funções do visor
-- funções do visor
+- Portação IRIS GL, funções de viewport
+- portating from IRIS GL,viewport functions
+- portando para OpenGL do IRIS GL, funções de viewport
+- Portação openGL de IRIS GL, funções de viewport
+- funções viewport
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b3429a0d154f4ef62a12d767c6497099ac09751
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb1a01cfb038faf87e48381856fe281bf2c935d13fedb78b79266e2af4fe15e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105757497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776906"
 ---
-# <a name="porting-viewports-screenmasks-and-scrboxes"></a>Portando viewports, Screenmasks e Scrboxes
+# <a name="porting-viewports-screenmasks-and-scrboxes"></a>Portando Viewports, Screenmasks e Scrboxes
 
-As seguintes funções do visor do íris GL não têm nenhum equivalente em OpenGL:
+As seguintes funções do viewport IRIS GL não têm equivalente a OpenGL:
 
 -   **reshapeviewport**
 -   **scrbox**
 -   **getscrbox**
 
-Com a função **viewport** GL do íris, você especifica as coordenadas x (em pixels) à esquerda e à direita de um retângulo do visor e as coordenadas y para as partes superior e inferior. No entanto, com a função OpenGL [**glViewport**](glviewport.md) , você especifica as coordenadas x e y (em pixels) do canto inferior esquerdo do retângulo do visor, juntamente com sua largura e altura.
+Com a função **de viewport** IRIS GL, você especifica as coordenadas x (em pixels) para a esquerda e a direita de um retângulo do viewport e as coordenadas y para as coordenadas superior e inferior. Com a função [**GlViewport**](glviewport.md) do OpenGL, no entanto, você especifica as coordenadas x e y (em pixels) do canto inferior esquerdo do retângulo do viewport junto com sua largura e altura.
 
-A tabela a seguir lista as funções do viewport GL do íris e suas funções OpenGL equivalentes.
+A tabela a seguir lista as funções do viewport IRIS GL e suas funções equivalentes do OpenGL.
 
 
 
-| Função GL de íris                          | Função OpenGL                                                                                         | Significado                      |
+| Função IRIS GL                          | Função OpenGL                                                                                         | Significado                      |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
-| **visor** (esquerda, direita, inferior, superior) | [**glViewport**](glviewport.md) (x, y, largura, altura)                                                | Define o visor.           |
-| **popviewportpushviewport**<br/>    | [**glPopAttrib**](glpopattrib.md)[**glPushAttrib**](glpushattrib.md) ( \_ bit GL \_ viewport)<br/> | Envia e exibe a pilha.   |
-| **getviewport**                           | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) (GL \_ viewport)               | Retorna dimensões do visor. |
+| **viewport** ( left, right, bottom, top ) | [**glViewport**](glviewport.md) ( x, y, width, height )                                                | Define o viewport.           |
+| **popviewportpushviewport**<br/>    | [**glPopAttrib**](glpopattrib.md)[**glPushAttrib**](glpushattrib.md) ( GL \_ VIEWPORT BIT \_ )<br/> | Es por push e a pilha é pop-pop.   |
+| **getviewport**                           | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ VIEWPORT )               | Retorna dimensões do viewport. |
 
 
 

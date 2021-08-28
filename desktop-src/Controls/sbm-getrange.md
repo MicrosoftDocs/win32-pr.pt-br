@@ -3,7 +3,7 @@ title: Mensagem de SBM_GETRANGE (WinUser. h)
 description: A \_ mensagem GETrange do SBM é enviada para recuperar os valores mínimo e máximo da posição para o controle da barra de rolagem.
 ms.assetid: 661a9491-3bf6-4685-aea0-c5e4126313af
 keywords:
-- Controles de SBM_GETRANGE de mensagens do Windows
+- controles de Windows de mensagem de SBM_GETRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8ca47e0474152a9771d2787c4a039fb2c868b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8e66c6e7bf79c270d66fdeac0ece1a1ce82ed813d1638be3587be7237ecd30e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770036"
 ---
 # <a name="sbm_getrange-message"></a>SBM \_ mensagem GETrange
 
@@ -45,7 +45,7 @@ Ponteiro para uma variável que recebe a posição de rolagem máxima.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -55,9 +55,9 @@ Essa mensagem não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

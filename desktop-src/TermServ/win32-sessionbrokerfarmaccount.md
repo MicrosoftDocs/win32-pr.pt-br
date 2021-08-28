@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerFarmAccount
-description: A \_ classe Win32 SessionBrokerFarmAccount não está mais disponível para uso a partir do Windows Server 2012. | Classe Win32_SessionBrokerFarmAccount
+title: Win32_SessionBrokerFarmAccount classe
+description: A classe SessionBrokerFarmAccount do Win32 não está mais disponível para uso \_ desde Windows Server 2012. | Win32_SessionBrokerFarmAccount classe
 ms.assetid: a76ade0f-cd94-438c-bc07-30dc4b4ee6c8
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionBrokerFarmAccount Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionBrokerFarmAccount classe, descrita
+- Win32_SessionBrokerFarmAccount classe Serviços de Área de Trabalho Remota
+- Win32_SessionBrokerFarmAccount classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a31f076ddc6f9361be12a57dc60ada24ed75e4bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b8b7d55f973dc19c03182a4199b64f91f9de5a0774cc8c8f9d77d67eeb715c24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422486"
 ---
-# <a name="win32_sessionbrokerfarmaccount-class"></a>\_Classe Win32 SessionBrokerFarmAccount
+# <a name="win32_sessionbrokerfarmaccount-class"></a>Classe \_ SessionBrokerFarmAccount do Win32
 
-\[A classe **Win32 \_ SessionBrokerFarmAccount** não está mais disponível para uso a partir do Windows Server 2012.\]
+\[A **classe \_ SessionBrokerFarmAccount do Win32** não está mais disponível para uso desde Windows Server 2012.\]
 
-Define uma conta do farm do agente de sessão.
+Define uma conta de farm do agente de sessão.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -58,14 +58,14 @@ class Win32_SessionBrokerFarmAccount
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionBrokerFarmAccount** tem estes tipos de membros:
+A **classe \_ SessionBrokerFarmAccount do Win32** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ SessionBrokerFarmAccount** tem esses métodos.
+A **classe \_ SessionBrokerFarmAccount do Win32** tem esses métodos.
 
 
 
@@ -79,7 +79,7 @@ A classe **Win32 \_ SessionBrokerFarmAccount** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionBrokerFarmAccount** tem essas propriedades.
+A **classe \_ SessionBrokerFarmAccount do Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -89,10 +89,10 @@ A classe **Win32 \_ SessionBrokerFarmAccount** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O nome do domínio ao qual a conta do farm pertence.
+O nome do domínio ao que a conta do farm pertence.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ O nome do domínio ao qual a conta do farm pertence.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O nome da conta do farm.
@@ -115,7 +115,7 @@ O nome da conta do farm.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 A senha da conta do farm.
@@ -154,14 +154,14 @@ O segundo SPN associado à conta do farm.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O nome DNS do computador associado à conta do farm.
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -180,10 +180,10 @@ O nome do farm do agente de sessão.
 **Manual**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Indica se a senha da conta é atualizada manualmente.
@@ -198,10 +198,10 @@ Indica se a senha da conta é atualizada manualmente.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                              |
-| Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                              |
+| Fim do suporte ao servidor<br/>    | Windows Server 2008 R2<br/>                                                      |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

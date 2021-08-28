@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3009501123673175c64d88acd838f94aa7e332aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a1233e5b27ea00fc553e88596088a9c208e7f56429e7a5f03a64d51f4ac52fad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955544"
 ---
 # <a name="systemmonitorhighlight-property"></a>Propriedade SystemMonitor. Highlight
 
@@ -46,7 +46,7 @@ Verdadeiro indica que os valores dos contadores selecionados são realçados no 
 
 Para selecionar um ou mais contadores, você pode definir [**MyItem. Selected**](counteritem-selected.md) como true ou o usuário pode selecionar os contadores na lista de contadores mostrados na legenda.
 
-**Antes do Windows Vista:** Não é possível selecionar contadores de forma programática e o usuário pode selecionar apenas um contador na lista de contadores mostrados na legenda.
+**antes do Windows Vista:** Não é possível selecionar contadores de forma programática e o usuário pode selecionar apenas um contador na lista de contadores mostrados na legenda.
 
 O realce pode ser preto ou branco, dependendo do valor da propriedade [**BackColor**](systemmonitor-backcolor.md) . O realce é definido automaticamente com a cor que fornecerá contraste suficiente entre a cor de realce e a cor do plano de fundo.
 

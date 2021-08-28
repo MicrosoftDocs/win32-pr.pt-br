@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3452f2b8e61fb72b1fd5f99a073b48afb26dafb0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dc780ec299c3249006085d348d983f8dab5b76a462c991a2d3665fed7d18f123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733796"
 ---
 # <a name="winrm-best-practices"></a>Práticas recomendadas do WinRM
 
@@ -27,10 +27,10 @@ Quando uma cota é atingida, o serviço WinRM retorna um erro para o cliente. Co
 
 ## <a name="event-subscriptions"></a>Assinaturas de evento
 
-Ao usar assinaturas iniciadas pelo coletor, limite o número de computadores remotos a 500 e isole o serviço [coletor de eventos do Windows](/windows/desktop/WEC/windows-event-collector) (Wecsvc) em um processo de host separado.
+Ao usar assinaturas iniciadas pelo coletor, limite o número de [](/windows/desktop/WEC/windows-event-collector) computadores remotos a 500 e isole o serviço coletor de eventos Windows (wecsvc) em um processo de host separado.
 
-Um erro de conexão manterá um thread até atingir o tempo limite. Um grande número de erros de conexão simultâneas pode causar esgotamento do pool de threads e renderizar o servidor sem resposta.
+Um erro de conexão conterá um thread até que o tempo passe. Um grande número de erros de conexão simultânea pode causar esgotamento do pool de threads e deixar o servidor sem resposta.
 
- 
+ 
 
- 
+ 

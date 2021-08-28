@@ -2,7 +2,7 @@
 description: Inicia o compartilhamento para um recurso de servidor.
 ms.assetid: 36530e1b-9109-4a6c-bba9-d9358101f5e2
 ms.tgt_platform: multiple
-title: Método Create da classe Win32_Share
+title: Criar método da classe Win32_Share classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d7a74838d9f6c532d3433240a5b8a70846b63776
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 582e255223b6eb971fd447c7884ff730662a1b344c107791b1a57a074c2c1354
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504766"
 ---
-# <a name="create-method-of-the-win32_share-class"></a>Criar método da classe de \_ compartilhamento do Win32
+# <a name="create-method-of-the-win32_share-class"></a>Criar método da classe Win32 \_ Share
 
-O método **Create**   [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) inicia o compartilhamento para um recurso de servidor.
+O **método criar**   [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) inicia o compartilhamento para um recurso de servidor.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,25 +48,25 @@ uint32 Create(
 
 <dl> <dt>
 
-*Caminho* \[ do no\]
+*Caminho* \[ Em\]
 </dt> <dd>
 
-Caminho local do compartilhamento do Windows.
+Caminho local do compartilhamento Windows dados.
 
-Exemplo, "C: \\ arquivos de programas".
+Exemplo, "C: \\ Arquivos de Programas".
 
 </dd> <dt>
 
-*Nome* \[ do no\]
+*Nome* \[ Em\]
 </dt> <dd>
 
-Passa o alias para um caminho configurado como um compartilhamento em um sistema de computador executando o Windows.
+Passa o alias para um caminho definido como um compartilhamento em um sistema de computador executando Windows.
 
-Exemplo, "público".
+Exemplo, "public".
 
 </dd> <dt>
 
-*Tipo* \[ de no\]
+*Tipo* \[ Em\]
 </dt> <dd>
 
 Passa o tipo de recurso que está sendo compartilhado. Os tipos incluem unidades de disco, filas de impressão, IPC (comunicações entre processos) e dispositivos gerais. Pode ser um dos valores a seguir.
@@ -82,7 +82,7 @@ Passa o tipo de recurso que está sendo compartilhado. Os tipos incluem unidades
 
 <span id="Print_Queue"></span><span id="print_queue"></span><span id="PRINT_QUEUE"></span>
 
-**Fila de impressão** (1)
+**Fila de Impressão** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -103,21 +103,21 @@ Passa o tipo de recurso que está sendo compartilhado. Os tipos incluem unidades
 
 <span id="Disk_Drive_Admin"></span><span id="disk_drive_admin"></span><span id="DISK_DRIVE_ADMIN"></span>
 
-**Administrador da unidade de disco** (2147483648)
+**Administrador de unidade de** disco (2147483648)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Print_Queue_Admin"></span><span id="print_queue_admin"></span><span id="PRINT_QUEUE_ADMIN"></span>
 
-**Administrador da fila de impressão** (2147483649)
+**Imprimir Administrador de Filas** (2147483649)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Device_Admin"></span><span id="device_admin"></span><span id="DEVICE_ADMIN"></span>
 
-**Administrador do dispositivo** (2147483650)
+**Administrador do** dispositivo (2147483650)
 
 
 </dt> <dd></dd> <dt>
@@ -129,39 +129,39 @@ Passa o tipo de recurso que está sendo compartilhado. Os tipos incluem unidades
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*MaximumAllowed* \[ em, opcional\]
+*MaximumAllowed* \[ in, opcional\]
 </dt> <dd>
 
-Limite do número máximo de usuários com permissão para usar este recurso simultaneamente.
+Limite o número máximo de usuários permitidos para usar esse recurso simultaneamente.
 
 Exemplo: 10. Esse parâmetro é opcional.
 
 </dd> <dt>
 
-*Descrição* \[ do em, opcional\]
+*Descrição* \[ in, opcional\]
 </dt> <dd>
 
 Comentário opcional para descrever o recurso que está sendo compartilhado. Esse parâmetro é opcional.
 
 </dd> <dt>
 
-*Senha* \[ do em, opcional\]
+*Senha* \[ in, opcional\]
 </dt> <dd>
 
-Senha (quando o servidor está sendo executado com segurança em nível de compartilhamento) para o recurso compartilhado. Se o servidor estiver sendo executado com segurança em nível de usuário, esse parâmetro será ignorado. Esse parâmetro é opcional.
+Senha (quando o servidor está em execução com segurança em nível de compartilhamento) para o recurso compartilhado. Se o servidor estiver em execução com segurança no nível do usuário, esse parâmetro será ignorado. Esse parâmetro é opcional.
 
 </dd> <dt>
 
-*Acesso* \[ ao em, opcional\]
+*Acesso* \[ in, opcional\]
 </dt> <dd>
 
-Descritor de segurança para permissões de nível de usuário. Um descritor de segurança contém informações sobre as permissões, o proprietário e os recursos de acesso do recurso. Se esse parâmetro não for fornecido ou for **nulo**, todos têm acesso de leitura ao compartilhamento. Para obter mais informações, consulte [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) e [alterando a segurança de acesso em objetos protegíveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+Descritor de segurança para permissões no nível do usuário. Um descritor de segurança contém informações sobre as permissões, o proprietário e os recursos de acesso do recurso. Se esse parâmetro não for fornecido ou for **NULL,** Todos terão acesso de leitura ao compartilhamento. Para obter mais informações, consulte [**Win32 \_ SecurityDescriptor e**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Alterando a segurança [de acesso em objetos securáveis.](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -186,27 +186,27 @@ Retorna um dos valores listados na lista a seguir ou qualquer outro valor para i
 **Compartilhamento duplicado** (22)
 </dt> <dt>
 
-**Caminho Redirecionado** (23)
+**Caminho redirecionado** (23)
 </dt> <dt>
 
 **Dispositivo ou diretório desconhecido** (24)
 </dt> <dt>
 
-**Nome de rede não encontrado** (25)
+**Nome líquido não encontrado** (25)
 </dt> <dt>
 
-**Outro** (26 4294967295)
+**Outros** (26 4294967295)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
 **Create** é um método estático.
 
-Somente os membros do grupo local Administradores ou operadores de contas, ou aqueles com associação de grupo de operador de servidor, impressão ou comunicação, podem executar a **criação** com êxito. O operador Print só pode adicionar filas de impressora. O operador de comunicação só pode adicionar filas de dispositivo de comunicação.
+Somente os membros do grupo local Administradores ou Operadores de Conta ou aqueles com associação ao grupo de operadores Comunicação, Impressão ou Servidor podem executar Criar com **êxito.** O operador Print só pode adicionar filas de impressora. O operador Comunicação só pode adicionar filas de dispositivo de comunicação.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de [exportar e importar fileshares](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) do PowerShell exporta e importa compartilhamentos de arquivos e define permissões de compartilhamento. Da mesma forma, o exemplo [criar um compartilhamento e definir permissões](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) também cria um novo compartilhamento e define as permissões de compartilhamento.
+O [exemplo Exportar e Importar Arquivos compartilha o](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) PowerShell exporta e importa compartilhamentos de arquivos e define permissões de compartilhamento. Da mesma forma, [o exemplo Criar um compartilhamento](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) e definir permissões também cria um novo compartilhamento e define as permissões de compartilhamento.
 
 O código do PowerShell a seguir cria um compartilhamento.
 
@@ -269,7 +269,7 @@ Path        : C:\Share
 Description : 
 ```
 
-O exemplo de código C a seguir \# descreve como chamar o método Create.
+O exemplo de código C \# a seguir descreve como chamar o método create.
 
 
 ```CSharp
@@ -314,8 +314,8 @@ catch (SystemException e)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -327,7 +327,7 @@ catch (SystemException e)
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Compartilhamento do Win32 \_**](win32-share.md)
+[**Compartilhamento \_ win32**](win32-share.md)
 </dt> </dl>
 
  

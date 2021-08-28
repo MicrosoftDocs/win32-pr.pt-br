@@ -5,7 +5,7 @@ ms.assetid: 1b04fe11-ec90-4374-9838-a0df313b722e
 ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows do método CreateResourceLocator
-- Método CreateResourceLocator Gerenciamento Remoto do Windows, objeto WSMan
+- método CreateResourceLocator Gerenciamento Remoto do Windows, objeto WSMan
 - Gerenciamento Remoto do Windows de objeto WSMan, método CreateResourceLocator
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6982d1ea0b257ca9276918931ce233e675fd3eb3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d78276f40ee6e2e1aff10f17bc9f41bb1d1e4aa32cde68a41842c5cee8b95bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742605"
 ---
 # <a name="wsmancreateresourcelocator-method"></a>Método WSMan. CreateResourceLocator
 
@@ -50,7 +50,7 @@ O URI de recurso para o recurso. Para obter mais informações sobre cadeias de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um objeto [**ResourceLocator**](resourcelocator.md) que pode ser usado para executar operações WinRM locais ou remotas.
 
@@ -91,7 +91,7 @@ WScript.Echo Xml
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -108,7 +108,7 @@ WScript.Echo Xml
 [**ConnectionOptions**](connectionoptions.md)
 </dt> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

@@ -3,19 +3,19 @@ title: Elemento BUTTON (WMP)
 description: Elemento BUTTON
 ms.assetid: 2818ff6a-4fc5-4150-9ff9-ff143feb9204
 keywords:
-- Aparência do Windows Media Player, elemento BUTTON
+- Windows Media Player aparências, elemento BUTTON
 - capas, elemento BUTTON
 - Elemento BUTTON
 - referência para capas, elemento BUTTON
 - elementos, botão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c069207e15be62e06b4d2b18f13c052026932dc
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: 13ca4e57dafdc01fc194c4cf4bc534e067297a58fcc2527939e3672f2d705628
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "103638937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736726"
 ---
 # <a name="button-element"></a>Elemento BUTTON
 
@@ -42,7 +42,7 @@ O elemento **Button** dá suporte aos seguintes atributos.
 
 
 
- 
+ 
 
 O elemento **Button** dá suporte aos atributos de ambiente e pode implementar os manipuladores de eventos de ambiente. Para obter mais informações, consulte [atributos de ambiente](ambient-attributes.md) e [manipuladores de eventos de ambiente](ambient-event-handlers.md).
 
@@ -50,7 +50,7 @@ Botões predefinidos são elementos de **botão** normal com várias configuraç
 
 
 
-| BOTÃO predefinido                    | Description                                                                        |
+| BOTÃO predefinido                    | Descrição                                                                        |
 |--------------------------------------|------------------------------------------------------------------------------------|
 | [BOTÃOFECHAR](closebutton.md)       | Um **botão** usado para fechar o Player.                                             |
 | [FFWDBUTTON](ffwdbutton.md)         | Um **botão** com uma chamada interna para **Player. Controls. Fastforward** quando clicado. |
@@ -62,14 +62,14 @@ Botões predefinidos são elementos de **botão** normal com várias configuraç
 | [PLAYBUTTON](playbutton.md)         | Um **botão** com uma chamada interna para **Player. Controls. Play** quando clicado.        |
 | [PREVBUTTON](prevbutton.md)         | Um **botão** com uma chamada interna para **Player. Controls. Previous** quando clicado.    |
 | [REPEATBUTTON](repeatbutton.md)     | Um **botão** que alterna a opção de repetição.                                       |
-| [RETURNBUTTON](returnbutton.md)     | Um **botão** que retorna o Windows Media Player para o Media Center.                |
+| [RETURNBUTTON](returnbutton.md)     | um **botão** que retorna Windows Media Player ao Media center.                |
 | [REWBUTTON](rewbutton.md)           | Um **botão** com uma chamada interna para **Player. Controls. fastReverse** quando clicado. |
 | [SHUFFLEBUTTON](shufflebutton.md)   | Um **botão** que alterna a opção de ordem aleatória.                                      |
 | [STOPBUTTON](stopbutton.md)         | Um **botão** com uma chamada interna para **Player. Controls. Stop** quando clicado.        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -78,9 +78,9 @@ Botões predefinidos são elementos de **botão** normal com várias configuraç
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

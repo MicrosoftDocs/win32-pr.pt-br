@@ -4,12 +4,12 @@ description: O pode ajudar os usuários a encontrar as causas raiz dos problemas
 ms.assetid: 5f401101-59aa-4ee8-825a-0b998489eed9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdee8a5516b218e51f0151e1964885789560d82
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: c638fa7f546028cd9cf66227cfe3c302d6599492d1cbbfcfdac6c2b428273db8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "104008640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086288"
 ---
 # <a name="enabling-eaphost-tracing"></a>Habilitando o rastreamento do EAPHost
 
@@ -40,7 +40,7 @@ Para habilitar o rastreamento no lado do cliente:
 
      
 
-## <a name="tracing-on-the-authenticator"></a>Rastreamento no autenticador
+## <a name="tracing-on-the-authenticator"></a>Rastreamento no Authenticator
 
 Para habilitar o rastreamento no lado do autenticador:
 
@@ -56,11 +56,11 @@ Para habilitar o rastreamento no lado do autenticador:
 
 ## <a name="event-tracing"></a>Rastreamento de eventos
 
-No Windows 7 e versões posteriores do Windows, o EapHost fornece rastreamento baseado em evento no autenticador e no par. A vantagem do rastreamento baseado em eventos é que nenhum arquivo de símbolo é necessário para exibir as mensagens de rastreamento. Para habilitar o rastreamento de eventos:
+no Windows 7 e versões posteriores do Windows, o EapHost fornece rastreamento baseado em evento no autenticador e no par. A vantagem do rastreamento baseado em eventos é que nenhum arquivo de símbolo é necessário para exibir as mensagens de rastreamento. Para habilitar o rastreamento de eventos:
 
 1.  Abra **Visualizador**.
 2.  As mensagens importantes do EapHost são registradas em: "eventos administrativos de exibições personalizadas \\ "
-3.  Mensagens não críticas são registradas em: "aplicativos e serviços \\ Microsoft \\ Windows \\ EapHost
+3.  mensagens não críticas são registradas em: "aplicativos e serviços \\ Microsoft \\ Windows \\ EapHost
 4.  As mensagens de evento "analítica" e "depurar" podem ser vistas no mesmo caminho selecionando **Mostrar logs analíticos e de depuração** no menu **Exibir** na barra de título.
 
 ## <a name="tracing-on-the-routing-and-remote-access-service"></a>Rastreamento no serviço de roteamento e acesso remoto

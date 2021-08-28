@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado de rasterização
-description: Variáveis de estado de rasterização
+title: Variáveis de Estado de Rasterização
+description: Variáveis de Estado de Rasterização
 ms.assetid: 57ce3dc0-3983-449a-bbe1-153232727ff8
 keywords:
 - Variáveis de estado de rasterização OpenGL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6210f93c23dc52f19f3e01ea01ebe8fc9d631c8c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 1586861eee26f93bca85b8c0f03e9f746e983046bbda755b67a792d65d660b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776886"
 ---
-# <a name="rasterization-state-variables"></a>Variáveis de estado de rasterização
+# <a name="rasterization-state-variables"></a>Variáveis de Estado de Rasterização
 
-<dl> <dt><span id="GL_POINT_SIZE"></span><span id="gl_point_size"></span>\_tamanho do ponto GL \_</dt> <dd> 
+<dl> <dt><span id="GL_POINT_SIZE"></span><span id="gl_point_size"></span>TAMANHO \_ DO PONTO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
@@ -34,20 +34,20 @@ ms.locfileid: "107909834"
 
  
 
-</dd> <dt><span id="GL_POINT_SMOOTH"></span><span id="gl_point_smooth"></span>\_simples ponto \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SMOOTH"></span><span id="gl_point_smooth"></span>GL \_ POINT \_ SMOOTH</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
 | Descrição:     | Alias de ponto em                  |
-| Grupo de atributos: | ponto/ativação                       |
-| Valor inicial:   | GL \_ falso                          |
+| Grupo de atributos: | point/enable                       |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_LINE_WIDTH"></span><span id="gl_line_width"></span>\_largura da linha gl \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_WIDTH"></span><span id="gl_line_width"></span>LARGURA \_ DA LINHA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
@@ -60,37 +60,37 @@ ms.locfileid: "107909834"
 
  
 
-</dd> <dt><span id="GL_LINE_SMOOTH"></span><span id="gl_line_smooth"></span>linha do GL \_ \_ Smooth</dt> <dd> 
+</dd> <dt><span id="GL_LINE_SMOOTH"></span><span id="gl_line_smooth"></span>GL \_ LINE \_ SMOOTH</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | Suavização de linha em               |
+| Descrição:     | Antialiação de linha em               |
 | Grupo de atributos: | linha/habilitar                        |
-| Valor inicial:   | GL \_ falso                          |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>\_padrão de \_ STIPPLE de linha gl \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>PADRÃO GL \_ \_ LINEPPLE \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Stipple de linha                                                                     |
+| Descrição:     | Linepple                                                                     |
 | Grupo de atributos: | line                                                                             |
-| Valor inicial:   | 1 ' s                                                                              |
+| Valor inicial:   | 1                                                                              |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_LINE_STIPPLE_REPEAT"></span><span id="gl_line_stipple_repeat"></span>\_STIPPLE de linha gl \_ \_ repetir</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_REPEAT"></span><span id="gl_line_stipple_repeat"></span>GL \_ \_ LINEPPLE \_ REPEAT</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Repetir Stipple de linha                                                              |
+| Descrição:     | Repetição da apple de linha                                                              |
 | Grupo de atributos: | line                                                                             |
 | Valor inicial:   | 1                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -99,37 +99,37 @@ ms.locfileid: "107909834"
 
  
 
-</dd> <dt><span id="GL_LINE_STIPPLE"></span><span id="gl_line_stipple"></span>\_STIPPLE de linha gl \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE"></span><span id="gl_line_stipple"></span>GL \_ \_ LINEPPLE</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | Habilitar Stipple de linha                |
+| Descrição:     | Habilitar a apple de linha                |
 | Grupo de atributos: | linha/habilitar                        |
-| Valor inicial:   | GL \_ falso                          |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_CULL_FACE"></span><span id="gl_cull_face"></span>\_face de seleção GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CULL_FACE"></span><span id="gl_cull_face"></span>ROSTO \_ DE REDUÇÃO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | Remoção de polígono habilitada            |
+| Descrição:     | Eliminação de polígono habilitada            |
 | Grupo de atributos: | polígono/habilitar                     |
-| Valor inicial:   | GL \_ falso                          |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_CULL_FACE_MODE"></span><span id="gl_cull_face_mode"></span>\_modo de seleção de \_ face GL \_</dt> <dd> 
+</dd> <dt><span id="GL_CULL_FACE_MODE"></span><span id="gl_cull_face_mode"></span>MODO \_ DE FACE DE REDUÇÃO \_ \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Selecionar polígonos front-face/verso                                           |
+| Descrição:     | Retração de polígonos voltados para a frente/para trás                                           |
 | Grupo de atributos: | polygon                                                                          |
 | Valor inicial:   | GL \_ regressivo                                                                         |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

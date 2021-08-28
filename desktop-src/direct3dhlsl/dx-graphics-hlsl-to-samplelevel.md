@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bc3a074641ce5b15a3d837e8bd91dfdae09fe627
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 4249d094f142af8a9015f4e8a3b32d4e39cd42fb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826680"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629549"
 ---
 # <a name="samplelevel-directx-hlsl-texture-object"></a>SampleLevel (objeto de textura HLSL do DirectX)
 
@@ -34,8 +34,8 @@ Essa função é semelhante a [Sample,](dx-graphics-hlsl-to-sample.md) exceto qu
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -86,7 +86,7 @@ Essa função é semelhante a [Sample,](dx-graphics-hlsl-to-sample.md) exceto qu
 <p>Se o objeto de textura for uma matriz, o último componente será o índice da matriz.</p></td>
 </tr>
 <tr class="even">
-<td><p><span id="LOD"></span><span id="lod"></span><em>Lod</em></p></td>
+<td><p><span id="LOD"></span><span id="lod"></span><em>LOD</em></p></td>
 <td><p>[in] Um número que especifica o nível de mipmap. Se o valor for = 0, o zero (maior mapa) será usado. O valor fracionado (se fornecido) é usado para interpolar entre dois níveis de mipmap.</p></td>
 </tr>
 <tr class="odd">

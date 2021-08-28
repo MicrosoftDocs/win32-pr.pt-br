@@ -1,5 +1,5 @@
 ---
-description: Interface IFeedbackHubAppInfo – essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+description: Interface IFeedbackHubAppInfo – essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 ms.assetid: 9A3D38AA-75AF-4719-AEDB-BDC31079F57B
 title: Interface IFeedbackHubAppInfo
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 4ebe6a1402a3d524b7f94b5febfdde7bbaf18dc0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1c8fe16de287523836f1cb7688c1c319567482c0336222944fd7fca40f03989
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750046"
 ---
 # <a name="ifeedbackhubappinfo-interface"></a>Interface IFeedbackHubAppInfo
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 ## <a name="members"></a>Membros
 
-A interface **IFeedbackHubAppInfo** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A interface **IFeedbackHubAppInfo** herda da interface [**IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,8 +33,8 @@ A interface **IFeedbackHubAppInfo** herda da interface [**IUnknown**](/windows/w
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>          |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/> |
 
 
 

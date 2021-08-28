@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_CAN_EJECT (VFW. h)
 description: A MCIWNDM \_ pode \_ ejetar a mensagem para determinar se um dispositivo MCI pode ejetar sua mídia. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanEject.
 ms.assetid: e9bd33c4-0ad8-4c0a-8b75-52011b58904d
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_CAN_EJECT
+- mensagem de MCIWNDM_CAN_EJECT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ba54c9263e23fdd9830be892e4559ae3755c07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fde4c9fec3972fe0e22b0a562454e1ef680e9ccae3851c272d28468fc2c91f74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429666"
 ---
 # <a name="mciwndm_can_eject-message"></a>MCIWNDM \_ pode \_ ejetar a mensagem
 

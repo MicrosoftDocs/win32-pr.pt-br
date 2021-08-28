@@ -5,18 +5,18 @@ ms.assetid: bb6b7676-7042-453f-83f9-b0dd2e377a13
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f241f2b8bb08248c0579c5c23d461b8c0acf1e01
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 59176315339e7458f332e2226f880b79afa10c5afc2c5089295866f6bf93939c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770626"
 ---
 # <a name="rootdse-adsi"></a>RootDSE (ADSI)
 
 Cada servidor de diretório tem uma entrada exclusiva chamada **RootDSE**. Ele fornece dados sobre o servidor, como seus recursos, a versão LDAP à qual ele dá suporte e os contextos de nomenclatura que ele usa.
 
-Por exemplo, para criar um script, ou aplicativo, que possa ser executado em qualquer ambiente de domínio do Windows. Você pode especificar o nome distinto, o nome do servidor ou o nome de domínio ao se conectar a Active Directory. Se você não tiver essas informações, poderá usar o objeto **RootDSE** para estabelecer uma conexão. O exemplo de código a seguir altera a descrição de domínio em qualquer domínio.
+por exemplo, para criar um script, ou aplicativo, que possa ser executado em qualquer ambiente de domínio Windows. Você pode especificar o nome distinto, o nome do servidor ou o nome de domínio ao se conectar a Active Directory. Se você não tiver essas informações, poderá usar o objeto **RootDSE** para estabelecer uma conexão. O exemplo de código a seguir altera a descrição de domínio em qualquer domínio.
 
 
 ```VB
@@ -34,6 +34,6 @@ Para enumerar as propriedades do **RootDSE**, use a interface [**IADsPropertyLis
 
 Para obter mais informações, consulte [associação sem servidor e RootDSE](/windows/desktop/AD/serverless-binding-and-rootdse).
 
- 
+ 
 
- 
+ 

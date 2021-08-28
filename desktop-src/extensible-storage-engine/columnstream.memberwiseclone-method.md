@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0aa0e8ecffe404589e9e07c2529668fcdcf86274
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca42a48103f35621f506469511ca49c25026030cb8d4c70e5d467970c6ffcd8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104552005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083865"
 ---
 # <a name="columnstreammemberwiseclone-method"></a>Método ColumnStream. MemberwiseClone
 

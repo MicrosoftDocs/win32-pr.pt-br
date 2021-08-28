@@ -1,27 +1,27 @@
 ---
-title: Descrição (SDK do Windows Media Player)
+title: Descrição (Windows Media Player SDK)
 description: Descrição
 ms.assetid: 940ef0bf-d651-411a-b36d-99dcc01d8508
 keywords:
-- Capas móveis do Windows Media Player, seção Descrição
-- capas, seção de descrição
-- referência para capas, seção de descrição
+- Windows Media Player Capas móveis, seção Descrição
+- skins, seção Descrição
+- referência para capas, seção Descrição
 - Seção de descrição em capas
-- arquivos de definição de capa, seção de descrição
+- arquivos de definição de capa, seção Descrição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4a1b714fb917f9d13ee710509cfc5bf696e3eef
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 486ca5235939352ffabb924aaf38a706b436d4c1358a92b9aef4996614c53623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749953"
 ---
-# <a name="description-windows-media-player-sdk"></a>Descrição (SDK do Windows Media Player)
+# <a name="description-windows-media-player-sdk"></a>Descrição (Windows Media Player SDK)
 
-Ao criar uma capa para o Windows Media Player 9 Series para Windows Mobile 2003 ou posterior, você deve incluir uma seção de descrição. A seção Descrição permite que você especifique a largura e a altura da exibição, a resolução de vídeo e a orientação de exibição para a qual a capa foi projetada. A seção descrição deve aparecer no arquivo de definição de capa antes de qualquer outra seção e logo após a declaração de versão inicial.
+Ao criar uma capa para o Windows Media Player Série 9 para Windows Mobile 2003 ou posterior, você deve incluir uma seção Descrição. A seção Descrição permite que você especifique a largura e a altura da exibição, a resolução de exibição e a orientação de exibição para a qual a capa foi projetada. A seção Descrição deve aparecer no arquivo de definição de capa antes de qualquer outra seção e logo após a declaração de versão inicial.
 
-A seção de descrição do arquivo de definição de capa deve começar com a seguinte linha:
+A seção Descrição do arquivo de definição de capa deve começar com a seguinte linha:
 
 
 ```C++
@@ -31,7 +31,7 @@ A seção de descrição do arquivo de definição de capa deve começar com a s
 
 
 
-Em seguida, você deve adicionar informações sobre as dimensões da capa e a resolução da tela. O exemplo a seguir mostra como especificar dimensões:
+Em seguida, você deve adicionar informações sobre as dimensões da capa e a resolução de exibição. O exemplo a seguir mostra como especificar dimensões:
 
 
 ```C++
@@ -45,9 +45,9 @@ Em seguida, você deve adicionar informações sobre as dimensões da capa e a r
 
 
 
-Isso especifica que você criou a capa a ser exibida em 240 pixels de largura, 320 pixels de altura e usando a resolução de vídeo de 96 DPI. Observe que isso implica em uma orientação de modo retrato.
+Isso especifica que você criou a capa para ser exibida com 240 pixels de largura, 320 pixels de altura e usando resolução de exibição de 96 DPI. Observe que isso implica uma orientação de modo retrato.
 
-Opcionalmente, você pode especificar o modo de orientação para o qual você criou a capa na seção Descrição. O exemplo a seguir mostra como especificar a orientação:
+Opcionalmente, você pode especificar o modo de orientação para o qual você criou a capa na seção de descrição. O exemplo a seguir mostra como especificar a orientação:
 
 
 ```C++
@@ -61,14 +61,14 @@ Opcionalmente, você pode especificar o modo de orientação para o qual você c
 
 
 
-A tabela a seguir lista os valores que você pode usar para orientação.
+A tabela a seguir lista os valores que você pode usar para Orientação.
 
 
 
 | Orientação | Descrição                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------|
 | Paisagem   | A largura da capa é maior que a altura da capa. A exibição é orientada de maneira horizontal.   |
-| Retrato    | A altura da capa é maior que a largura da capa. A exibição é orientada em uma maneira vertical. |
+| Retrato    | A altura da capa é maior que a largura da capa. A exibição é orientada de maneira vertical. |
 | Square      | A altura da capa é igual à largura da capa. A exibição não tem orientação.                    |
 
 
@@ -76,11 +76,11 @@ A tabela a seguir lista os valores que você pode usar para orientação.
  
 
 > [!Note]  
-> O Windows Media Player 9 Series para Windows Mobile 2003 exibirá apenas uma determinada capa quando a seção de descrição especificada no arquivo de definição de capa corresponder ao estado atual do dispositivo.
+> Windows Media Player Série 9 para Windows Mobile 2003 exibirá apenas uma capa específica quando a seção de descrição especificada no arquivo de definição de capa corresponde ao estado atual do dispositivo.
 
  
 
-Você deve ter cuidado para sempre especificar as dimensões, a resolução e a orientação corretas para as quais sua capa foi criada. Por exemplo, se as dimensões especificadas pela sua capa descreverem uma orientação paisagem, sua capa não estará disponível quando o dispositivo estiver no modo retrato, mesmo se você especificar retrato na linha de orientação.
+Você deve ter cuidado para sempre especificar as dimensões, a resolução e a orientação corretas para as quais sua capa foi autorada. Por exemplo, se as dimensões especificadas pela sua capa descreverem uma orientação paisagem, sua capa não estará disponível quando o dispositivo estiver no modo retrato, mesmo se você especificar Retrato na linha de orientação.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

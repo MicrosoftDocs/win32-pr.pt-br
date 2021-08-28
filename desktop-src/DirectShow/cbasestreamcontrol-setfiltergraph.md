@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1cf8b571ee5d017acd056e00a06af54cd90b943a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 304ec081ce7087d822ce3382bf4784c05cbc8782fadb3cdfee887f6bd8f0acfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502636"
 ---
 # <a name="cbasestreamcontrolsetfiltergraph-method"></a>Método CBaseStreamControl. SetFilterGraph
 
@@ -45,11 +45,11 @@ void SetFilterGraph(
 *pSink* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) do Gerenciador de gráfico de filtro ou **nulo** quando o filtro deixa o gráfico de filtro.
+ponteiro para o filtro Graph interface [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) do gerenciador ou **nulo** quando o filtro deixa o gráfico de filtro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -84,7 +84,7 @@ STDMETHODIMP CMyFilter::JoinFilterGraph(IFilterGraph * pGraph, LPCWSTR pName)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

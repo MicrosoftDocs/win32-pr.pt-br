@@ -1,12 +1,12 @@
 ---
-title: Implementar um provedor de automação de interface do usuário Server-Side
-description: Este tópico descreve como implementar um provedor de automação de interface do usuário da Microsoft no lado do servidor para um controle personalizado escrito em C++.
+title: Implementar um provedor Server-Side Automação da Interface do Usuário dados
+description: Este tópico descreve como implementar um provedor microsoft Automação da Interface do Usuário do lado do servidor para um controle personalizado escrito em C++.
 ms.assetid: c3a919b2-8b8c-4dde-ad71-587f3845a9f5
 keywords:
-- Automação da interface do usuário, implementação do provedor do lado do servidor
-- Automação da interface do usuário, implementação do provedor
-- Automação da interface do usuário, Implementando provedores do lado do servidor
-- Automação da interface do usuário, Implementando provedores
+- Automação da Interface do Usuário, implementação do provedor do lado do servidor
+- Automação da Interface do Usuário, implementação do provedor
+- Automação da Interface do Usuário, implementando provedores do lado do servidor
+- Automação da Interface do Usuário, implementando provedores
 - provedores do lado do servidor, implementando
 - provedores do lado do servidor, interfaces
 - provedores do lado do servidor, valores de propriedade
@@ -15,91 +15,91 @@ keywords:
 - eventos, provedores do lado do servidor
 - interfaces, provedores do lado do servidor
 - provedores, implementando
-- Implementando provedores do lado do servidor
+- implementando provedores do lado do servidor
 - Implementando provedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7fafbb9d03a25eb2e4713330c0622c25d17f9ff
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 583b9a5f91bb8be53a3e8b0e356ce558978b8ea28d5b726b56f52420cd7bff37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105759104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413436"
 ---
-# <a name="implement-a-server-side-ui-automation-provider"></a>Implementar um provedor de automação de interface do usuário Server-Side
+# <a name="implement-a-server-side-ui-automation-provider"></a>Implementar um provedor Server-Side Automação da Interface do Usuário dados
 
-Este tópico descreve como implementar um provedor de automação de interface do usuário da Microsoft no lado do servidor para um controle personalizado escrito em C++. Ele contém as seções a seguir:
+Este tópico descreve como implementar um provedor microsoft Automação da Interface do Usuário do lado do servidor para um controle personalizado escrito em C++. Ele contém as seções a seguir:
 
--   [Interfaces de provedor](#provider-interfaces)
--   [Funcionalidade necessária para provedores de automação de interface do usuário](#required-functionality-for-ui-automation-providers)
--   [Valores de propriedade](#property-values)
+-   [Interfaces do provedor](#provider-interfaces)
+-   [Funcionalidade necessária para provedores Automação da Interface do Usuário serviços](#required-functionality-for-ui-automation-providers)
+-   [Valores da propriedade](#property-values)
 -   [Eventos de provedores](#events-from-providers)
 -   [Navegação do provedor](#provider-navigation)
 -   [Atribuindo um novo pai](#assigning-a-new-parent)
--   [Reposicionamento do provedor](#provider-repositioning)
+-   [Reposicionamento de provedor](#provider-repositioning)
 -   [Desconectando provedores](#disconnecting-providers)
 -   [Tópicos relacionados](#related-topics)
 
-Para obter exemplos de código que mostram como implementar provedores do lado do servidor, consulte os [Tópicos de instruções para provedores de automação da interface do usuário](uiauto-howto-topics-for-uiautomation-providers.md).
+Para exemplos de código que mostram como implementar provedores do lado do servidor, consulte Tópicos de ida e Automação da Interface do Usuário [provedores](uiauto-howto-topics-for-uiautomation-providers.md).
 
-## <a name="provider-interfaces"></a>Interfaces de provedor
+## <a name="provider-interfaces"></a>Interfaces do provedor
 
-As seguintes interfaces de Component Object Model (COM) fornecem funcionalidade para controles personalizados. Para fornecer funcionalidade básica, cada provedor de automação de interface do usuário deve implementar pelo menos a interface [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) . As interfaces [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) e [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot) são opcionais, mas devem ser implementadas para elementos em um controle complexo para fornecer funcionalidade adicional.
+As interfaces COM (Component Object Model) a seguir fornecem funcionalidade para controles personalizados. Para fornecer funcionalidade básica, cada Automação da Interface do Usuário provedor deve implementar pelo menos a interface [**IRawElementProviderSimple.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) As interfaces [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) e [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot) são opcionais, mas devem ser implementadas para elementos em um controle complexo para fornecer funcionalidade adicional.
 
 
 
 | Interface                                                                         | Descrição                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)             | Fornece funcionalidade básica para um controle hospedado em uma janela, incluindo suporte para padrões de controle e propriedades.                                                         |
-| [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment)         | Adiciona a funcionalidade para um elemento em um controle complexo, incluindo navegar no fragmento, definir o foco e retornar o retângulo delimitador do elemento.             |
-| [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot) | Adiciona a funcionalidade para o elemento raiz em um controle complexo, incluindo a localização de um elemento filho em coordenadas especificadas e a definição do estado de foco para todo o controle. |
+| [**Irawelementprovidersimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)             | Fornece funcionalidade básica para um controle hospedado em uma janela, incluindo suporte para padrões de controle e propriedades.                                                         |
+| [**Irawelementproviderfragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment)         | Adiciona funcionalidade para um elemento em um controle complexo, incluindo a navegação no fragmento, a definição do foco e o retorno do retângulo delimitativo do elemento.             |
+| [**Irawelementproviderfragmentroot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot) | Adiciona funcionalidade para o elemento raiz em um controle complexo, incluindo localizar um elemento filho em coordenadas especificadas e definir o estado de foco para todo o controle. |
 
 
 
- 
+ 
 
 > [!Note]  
-> Na API de automação da interface do usuário para código gerenciado, essas interfaces formam uma hierarquia de herança. Esse não é o caso em C++, onde as interfaces são completamente separadas.
+> Na API Automação da Interface do Usuário para código gerenciado, essas interfaces formam uma hierarquia de herança. Esse não é o caso no C++, em que as interfaces são completamente separadas.
 
- 
+ 
 
-As interfaces a seguir fornecem funcionalidade adicional, mas a implementação é opcional.
+As interfaces a seguir fornecem funcionalidade adicionada, mas a implementação é opcional.
 
 
 
 | Interface                                                                         | Descrição                                                                             |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents) | Permite que o provedor rastreie solicitações de eventos.                                      |
-| [**IRawElementProviderHwndOverride**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderhwndoverride) | Habilita a reposicionamento de elementos baseados em janela na árvore de automação da interface do usuário de um fragmento. |
+| [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents) | Permite que o provedor acompanhe solicitações de eventos.                                      |
+| [**IRawElementProviderHwndOverride**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderhwndoverride) | Habilita o reposicionamento de elementos baseados em janela Automação da Interface do Usuário árvore de um fragmento. |
 
 
 
- 
+ 
 
-## <a name="required-functionality-for-ui-automation-providers"></a>Funcionalidade necessária para provedores de automação de interface do usuário
+## <a name="required-functionality-for-ui-automation-providers"></a>Funcionalidade necessária para provedores Automação da Interface do Usuário serviços
 
-Para se comunicar com a automação da interface do usuário, seu controle deve implementar as principais áreas de funcionalidade descritas na tabela a seguir.
+Para se comunicar com Automação da Interface do Usuário, seu controle deve implementar as principais áreas de funcionalidade descritas na tabela a seguir.
 
 
 
 | Funcionalidade                                              | Implementação                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Expor o provedor à automação da interface do usuário.                      | Em resposta a uma mensagem do [**WM \_ GetObject**](wm-getobject.md) enviada para a janela de controle, retorne o objeto que implementa [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple). Para fragmentos, esse deve ser o provedor para a raiz do fragmento.                                           |
-| Forneça valores de propriedade.                                   | Implemente [**IRawElementProviderSimple:: GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) para fornecer ou substituir valores.                                                                                                                                                             |
-| Habilite o cliente para interagir com o controle.            | Implemente interfaces que dão suporte a cada padrão de controle apropriado, como [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider). Retorne esses provedores de padrão de controle em sua implementação de [**IRawElementProviderSimple:: GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider). |
-| Gerar eventos.                                              | [**UiaRaiseAutomationEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationevent), métodos de [**IProxyProviderWinEventSink**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iproxyproviderwineventsink).                                                                                                                                                |
-| Habilitar navegação e foco em um fragmento.              | Implemente [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) para cada elemento dentro do fragmento. Não é necessário para elementos que não fazem parte de um fragmento.                                                                                                                         |
-| Habilitar foco e localização de elementos filho em um fragmento. | Implemente [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot). Não é necessário para elementos que não são raízes de fragmento.                                                                                                                                                          |
+| Expor o provedor ao Automação da Interface do Usuário.                      | Em resposta a [**uma mensagem \_ WM GETOBJECT**](wm-getobject.md) enviada para a janela de controle, retorne o objeto que implementa [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple). Para fragmentos, esse deve ser o provedor para a raiz do fragmento.                                           |
+| Forneça valores de propriedade.                                   | Implemente [**IRawElementProviderSimple::GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) para fornecer ou substituir valores.                                                                                                                                                             |
+| Permitir que o cliente interaja com o controle .            | Implemente interfaces que deem suporte a cada padrão de controle apropriado, [**como IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider). Retorne esses provedores de padrão de controle em sua implementação [**de IRawElementProviderSimple::GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider). |
+| Aumente eventos.                                              | [**UiaRaiseAutomationEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationevent), métodos de [**IProxyProviderWinEventSink**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iproxyproviderwineventsink).                                                                                                                                                |
+| Habilita a navegação e o foco em um fragmento.              | Implemente [**IRawElementProviderFragment para**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) cada elemento dentro do fragmento. Não é necessário para elementos que não fazem parte de um fragmento.                                                                                                                         |
+| Habilita o foco e a localização de elementos filho em um fragmento. | Implemente [**IRawElementProviderFragmentRoot.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot) Não é necessário para elementos que não são raízes de fragmento.                                                                                                                                                          |
 
 
 
- 
+ 
 
 ## <a name="property-values"></a>Valores da propriedade
 
-Provedores de automação de interface do usuário para controles personalizados devem dar suporte a determinadas propriedades que podem ser usadas pela automação da interface do usuário e por aplicativos cliente. Para elementos que são hospedados no Windows, a automação da interface do usuário pode recuperar algumas propriedades do provedor de janela padrão, mas deve obter outras do provedor personalizado.
+Automação da Interface do Usuário provedores para controles personalizados devem dar suporte a determinadas propriedades que podem ser usadas por Automação da Interface do Usuário e por aplicativos cliente. Para elementos hospedados no Windows, Automação da Interface do Usuário pode recuperar algumas propriedades do provedor de janela padrão, mas deve obter outras do provedor personalizado.
 
-Normalmente, os provedores de controles baseados em janela não precisam fornecer as seguintes propriedades que são identificadas por **PropertyId**:
+Normalmente, os provedores para controles baseados em janela não precisam fornecer as seguintes propriedades identificadas por **PROPERTYID**:
 
 -   [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)
 -   [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)
@@ -112,27 +112,27 @@ Normalmente, os provedores de controles baseados em janela não precisam fornece
 -   [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)
 -   [**UIA \_ RuntimeIdPropertyId**](uiauto-automation-element-propids.md)
 
-A propriedade runtimeId de um elemento simples ou raiz de fragmento hospedada em uma janela é obtida na janela. No entanto, os elementos de fragmento abaixo da raiz, como itens de lista em uma caixa de listagem, devem fornecer seus próprios identificadores. Para obter mais informações, consulte [**IRawElementProviderFragment:: GetRuntimeId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-getruntimeid).
+A propriedade RuntimeId de um elemento simples ou raiz de fragmento hospedada em uma janela é obtida da janela. No entanto, os elementos de fragmento abaixo da raiz, como itens de lista em uma caixa de listagem, devem fornecer seus próprios identificadores. Para obter mais informações, [**consulte IRawElementProviderFragment::GetRuntimeId**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-getruntimeid).
 
-A Propriedade IsKeyboardFocusable deve ser retornada para provedores hospedados em um controle de Windows Forms. Nesse caso, o provedor de janela padrão pode não conseguir recuperar o valor correto.
+A propriedade IsKeyboardFocusable deve ser retornada para provedores hospedados em um controle Windows Forms. Nesse caso, o provedor de janela padrão pode não conseguir recuperar o valor correto.
 
 A propriedade Name geralmente é fornecida pelo provedor de host.
 
 ## <a name="events-from-providers"></a>Eventos de provedores
 
-Os provedores de automação da interface do usuário devem gerar eventos para notificar aplicativos cliente sobre alterações no estado da interface do usuário. As funções a seguir são usadas para gerar eventos.
+Automação da Interface do Usuário provedores devem auar eventos para notificar os aplicativos cliente de alterações no estado da interface do usuário. As funções a seguir são usadas para auar eventos.
 
 
 
 | Função                                                                                   | Descrição                                                                                                              |
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [**UiaRaiseAutomationEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationevent)                  | Gera vários eventos, incluindo eventos disparados por padrões de controle.                                                   |
-| [**UiaRaiseAutomationPropertyChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationpropertychangedevent) | Gera um evento quando uma propriedade de automação da interface do usuário é alterada.                                                               |
+| [**UiaRaiseAutomationPropertyChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationpropertychangedevent) | Gera um evento quando uma propriedade Automação da Interface do Usuário é alterada.                                                               |
 | [**UiaRaiseStructureChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisestructurechangedevent)      | Gera um evento quando a estrutura da árvore de automação da interface do usuário é alterada, por exemplo, removendo ou adicionando um elemento. |
 
 
 
- 
+ 
 
 A finalidade de um evento é notificar o cliente sobre algo que está ocorrendo na interface do usuário. Os provedores devem gerar um evento independentemente se a alteração foi disparada pela entrada do usuário ou por um aplicativo cliente usando a automação da interface do usuário. Por exemplo, o evento identificado por [**UIA \_ Invoke \_ InvokedEventId**](uiauto-event-ids.md) deve ser gerado sempre que o controle é invocado, seja por meio de entrada direta do usuário ou pelo aplicativo cliente chamando [**IUIAutomationInvokePattern:: Invoke**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationinvokepattern-invoke).
 
@@ -147,12 +147,12 @@ Para otimizar o desempenho, um provedor poderá acionar eventos seletivamente ou
 
 
 
- 
+ 
 
 > [!Note]  
 > Semelhante à implementação da contagem de referência na programação COM, é importante que os provedores de automação da interface do usuário tratem os métodos [**IRawElementProviderAdviseEvents:: AdviseEventAdded**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventadded) e [**AdviseEventRemoved**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventremoved) como os métodos [**IUnknown:: AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) e [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . Desde que **AdviseEventAdded** tenha sido chamado mais vezes do que **AdviseEventRemoved** para um evento ou propriedade específica, o provedor deve continuar a gerar eventos correspondentes, pois alguns clientes ainda estão ouvindo. Como alternativa, os provedores de automação da interface do usuário podem usar a função [**UiaClientsAreListening**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaclientsarelistening) para determinar se pelo menos um cliente está ouvindo e, em caso afirmativo, gera todos os eventos apropriados.
 
- 
+ 
 
 ## <a name="provider-navigation"></a>Navegação do provedor
 
@@ -161,7 +161,7 @@ Provedores para controles simples, como um botão personalizado hospedado em uma
 > [!Note]  
 > Elementos de um fragmento diferente da raiz devem retornar **NULL** de [**HostRawElementProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-get_hostrawelementprovider), porque eles não são hospedados diretamente em uma janela, e nenhum provedor padrão pode dar suporte à navegação de e para eles.
 
- 
+ 
 
 A estrutura do fragmento é determinada pela implementação de [**IRawElementProviderFragment:: Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate). Para cada direção possível de cada fragmento, esse método retorna o objeto do provedor para o elemento nessa direção. Se não houver nenhum elemento nessa direção, o método retornará **NULL**.
 
@@ -205,6 +205,6 @@ Da mesma forma, um aplicativo deve usar a função [**UiaDisconnectAllProviders*
 [Guia do programador do provedor de automação de interface do usuário](uiauto-providerportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

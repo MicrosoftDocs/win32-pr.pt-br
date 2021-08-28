@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: dd6932801f3d4b079efa6f1ed2688505dbd7828b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dca2197a321efea6cf86ee0f38b1778935e5f4cb336b55b5d662e49a4465162a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105811259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493836"
 ---
 # <a name="id3dxfiledatagetchildren-method"></a>Método ID3DXFileData:: GetChildren
 
@@ -49,7 +49,7 @@ Endereço de um ponteiro para receber o número de filhos neste objeto de dados 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

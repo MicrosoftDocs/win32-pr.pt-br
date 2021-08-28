@@ -4,12 +4,12 @@ ms.assetid: 6b1917a8-8685-40c3-983d-6bd2fed95642
 title: Salvar e restaurar estado de blocos de estado (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9a56ed6490b0d81b7e643ef892e6a760f00b841531bd21dc69a4069f07b9aa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 104010f2ea057870b70e9887e5b325f1de68c463
+ms.sourcegitcommit: 8d7ce0c4827f8a4fd501cc6487f1a8360e944577
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118291723"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122767650"
 ---
 # <a name="state-blocks-save-and-restore-state-direct3d-9"></a>Salvar e restaurar estado de blocos de estado (Direct3D 9)
 
@@ -27,13 +27,13 @@ pd3dDevice->CreateStateBlock( D3DSBT_ALL, &pStateBlock );
 
 
 
-[**IDirect3DDevice9::CreateStateBlock**](/windows/desktop/api) cria um bloco de estado e captura automaticamente o estado do dispositivo. O estado do dispositivo é especificado pelo tipo de bloco de estado no primeiro argumento. Esse estado pode ser um dos seguintes: todo o estado do dispositivo (consulte Salvando todos os estados do dispositivo com um [StateBlock (Direct3D 9),](saving-all-device-states-with-a-stateblock.md)todo o estado de pixel (consulte Salvando estado de pixel com um [StateBlock (Direct3D 9) )](saving-pixel-states-with-a-stateblock.md)ou todo o estado de vértice (consulte Salvando estados de vértice com [um StateBlock (Direct3D 9)](saving-vertex-states-with-a-stateblock.md)).
+[**IDirect3DDevice9::CreateStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createstateblock) cria um bloco de estado e captura automaticamente o estado do dispositivo. O estado do dispositivo é especificado pelo tipo de bloco de estado no primeiro argumento. Esse estado pode ser um dos seguintes: todo o estado do dispositivo (consulte Salvando todos os estados do dispositivo com um [StateBlock (Direct3D 9),](saving-all-device-states-with-a-stateblock.md)todo o estado de pixel (consulte Salvando estado de pixel com um [StateBlock (Direct3D 9) )](saving-pixel-states-with-a-stateblock.md)ou todo o estado de vértice (consulte Salvando estados de vértice com [um StateBlock (Direct3D 9)](saving-vertex-states-with-a-stateblock.md)).
 
 O sistema de efeito usa um bloco de estado para salvar o estado. Depois [**que ID3DXEffect::Begin**](id3dxeffect--begin.md) é chamado, um bloco de estado é criado e o estado é capturado. Quando [**ID3DXEffect::End**](id3dxeffect--end.md) é chamado, o estado do bloco de estado é reaplicado ao dispositivo.
 
 ## <a name="capture-individual-states"></a>Capturar estados individuais
 
-Para salvar uma sequência de estado personalizada, envolva o estado que você deseja salvar em um par [**IDirect3DDevice9::BeginStateBlock**](/windows/desktop/api) [**e IDirect3DDevice9::EndStateBlock.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-endstateblock) BeginStateBlock informa ao dispositivo atual para configurar um bloco de estado e adicionar a ele todas as alterações de estado que ocorrem até que EndStateBlock seja chamado. Aqui está um exemplo:
+Para salvar uma sequência de estado personalizada, envolva o estado que você deseja salvar em um par [**IDirect3DDevice9::BeginStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-beginstateblock) [**e IDirect3DDevice9::EndStateBlock.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-endstateblock) BeginStateBlock informa ao dispositivo atual para configurar um bloco de estado e adicionar a ele todas as alterações de estado que ocorrem até que EndStateBlock seja chamado. Veja um exemplo:
 
 
 ```

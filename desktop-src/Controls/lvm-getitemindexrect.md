@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETITEMINDEXRECT (commctrl. h)
 description: Recupera o retângulo delimitador para todo ou parte de um subitem no modo de exibição atual de um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro GetItemIndexRect do ListView.
 ms.assetid: 17704d24-c029-4d41-b198-04d1e78698e0
 keywords:
-- Controles de LVM_GETITEMINDEXRECT de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETITEMINDEXRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31ccd114713326c4796ca69f56fc2c38daf145db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91aa3e6d0420bfddb974d13f210c84241cefc5d79f0ee5a82920bdc2961879dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770366"
 ---
 # <a name="lvm_getitemindexrect-message"></a>\_Mensagem GETITEMINDEXRECT LVM
 
@@ -55,7 +55,7 @@ Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -65,9 +65,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

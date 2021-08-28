@@ -1,48 +1,48 @@
 ---
-description: Você pode usar o exemplo de procedimento e de código neste tópico para concluir o aplicativo cliente WMI que executa inicialização COM, conecta-se ao WMI no computador local, recebe uma notificação de eventos e, em seguida, limpa.
+description: Você pode usar o procedimento e o exemplo de código neste tópico para concluir o aplicativo cliente WMI que executa a inicialização COM, conecta-se ao WMI no computador local, recebe uma notificação de evento e, em seguida, limpa.
 ms.assetid: 4d581965-e22a-4205-908c-661eeeec88cf
 ms.tgt_platform: multiple
 title: 'Exemplo: recebendo notificações de eventos por meio do WMI'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd6380d306783f8b547d0d93df0275fd36e17e2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 759ed91ed1f7892b622089fa64fe8e8421a8b3bd73bf77ba2f60fa4199d25434
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119411876"
 ---
 # <a name="example-receiving-event-notifications-through-wmi"></a>Exemplo: recebendo notificações de eventos por meio do WMI
 
-Você pode usar o exemplo de procedimento e de código neste tópico para concluir o aplicativo cliente WMI que executa inicialização COM, conecta-se ao WMI no computador local, recebe uma notificação de eventos e, em seguida, limpa. O exemplo notifica o usuário sobre um evento quando um novo processo é criado. Os eventos são recebidos de forma assíncrona.
+Você pode usar o procedimento e o exemplo de código neste tópico para concluir o aplicativo cliente WMI que executa a inicialização COM, conecta-se ao WMI no computador local, recebe uma notificação de evento e, em seguida, limpa. O exemplo notifica o usuário de um evento quando um novo processo é criado. Os eventos são recebidos de forma assíncrona.
 
-O procedimento a seguir é usado para executar o aplicativo WMI. As etapas de 1 a 5 contêm todas as etapas necessárias para configurar e conectar-se ao WMI, e a etapa 6 é onde as notificações de evento são recebidas.
+O procedimento a seguir é usado para executar o aplicativo WMI. As etapas 1 a 5 contêm todas as etapas necessárias para configurar e se conectar ao WMI e a etapa 6 é onde as notificações de evento são recebidas.
 
-**Para receber uma notificação de eventos por meio do WMI**
+**Para receber uma notificação de evento por meio do WMI**
 
-1.  Inicialize parâmetros COM com uma chamada para [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
+1.  Inicialize parâmetros COM com uma chamada para [**CoInitializeEx.**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
 
-    Para obter mais informações, consulte [Inicializando com para um aplicativo WMI](initializing-com-for-a-wmi-application.md).
+    Para obter mais informações, consulte [Inicializando COM para um aplicativo WMI](initializing-com-for-a-wmi-application.md).
 
 2.  Inicialize a segurança do processo COM chamando [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
-    Para obter mais informações, consulte [definindo o nível de segurança do processo padrão usando C++](setting-the-default-process-security-level-using-c-.md).
+    Para obter mais informações, consulte [Definindo o nível de segurança do processo padrão usando C++.](setting-the-default-process-security-level-using-c-.md)
 
-3.  Obtenha o localizador inicial para o WMI chamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+3.  Obtenha o localizador inicial para o WMI chamando [**CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 
-    Para obter mais informações, consulte [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
+    Para obter mais informações, consulte [Criando uma conexão com um namespace WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o \\ namespace raiz cimv2 no computador local chamando [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para se conectar a um computador remoto, consulte [exemplo: obtendo dados WMI de um computador remoto](example--getting-wmi-data-from-a-remote-computer.md).
+4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o namespace raiz cimv2 no computador local chamando \\ [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para se conectar a um computador remoto, consulte [Exemplo: Obter dados WMI de um computador remoto.](example--getting-wmi-data-from-a-remote-computer.md)
 
-    Para obter mais informações, consulte [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
+    Para obter mais informações, consulte [Criando uma conexão com um namespace WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-5.  Defina a segurança do proxy de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que o serviço WMI possa representar o cliente chamando [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+5.  De definir a segurança de proxy de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que o serviço WMI possa representar o cliente chamando [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-    Para obter mais informações, consulte [definindo os níveis de segurança em uma conexão WMI](setting-the-security-levels-on-a-wmi-connection.md).
+    Para obter mais informações, consulte [Definindo os níveis de segurança em uma conexão WMI](setting-the-security-levels-on-a-wmi-connection.md).
 
-6.  Use o ponteiro de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para fazer solicitações ao WMI. Este exemplo usa o método [**IWbemServices:: ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync) para receber eventos assíncronos. Ao receber eventos assíncronos, você deve fornecer uma implementação de [**IWbemObjectSink**](iwbemobjectsink.md). Este exemplo fornece a implementação na classe EventSink. O código de implementação e o código do arquivo de cabeçalho para essa classe são fornecidos abaixo do exemplo principal. O método **IWbemServices:: ExecNotificationQueryAsync** chama o método **EventSink:: indica** sempre que um evento é recebido. Para este exemplo, o método **EventSink:: indica** é chamado sempre que um processo é criado. Para testar este exemplo, execute o código e inicie um processo como Notepad.exe. Isso dispara uma notificação de evento.
+6.  Use o [**ponteiro IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para fazer solicitações ao WMI. Este exemplo usa o [**método IWbemServices::ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync) para receber eventos assíncronos. Ao receber eventos assíncronos, você deve fornecer uma implementação [**de IWbemObjectSink.**](iwbemobjectsink.md) Este exemplo fornece a implementação na classe EventSink. O código de implementação e o código de arquivo de header para essa classe são fornecidos abaixo do exemplo principal. O **método IWbemServices::ExecNotificationQueryAsync** chama o **método EventSink::Indicate** sempre que um evento é recebido. Para este exemplo, **o método EventSink::Indicate** é chamado sempre que um processo é criado. Para testar este exemplo, execute o código e inicie um processo como Notepad.exe. Isso dispara uma notificação de evento.
 
-    Para obter mais informações sobre como fazer solicitações do WMI, consulte [manipulando informações de classe e instância](manipulating-class-and-instance-information.md) e [chamando um método](calling-a-method.md).
+    Para obter mais informações sobre como fazer solicitações de WMI, consulte [Manipulando informações de classe e instância](manipulating-class-and-instance-information.md) e chamando um [método](calling-a-method.md).
 
 O código de exemplo a seguir recebe notificações de eventos por meio do WMI.
 
@@ -232,7 +232,7 @@ int main(int iArgCnt, char ** argv)
 
 
 
-O arquivo de cabeçalho a seguir é usado para a classe EventSink. A classe EventSink é usada no exemplo de código anterior.
+O arquivo de header a seguir é usado para a classe EventSink. A classe EventSink é usada no exemplo de código anterior.
 
 
 ```C++
