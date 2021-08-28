@@ -6,7 +6,7 @@ keywords:
 - Automação da Interface do Usuário, suporte para o tipo de controle ListItem
 - Automação da Interface do Usuário, tipo de controle ListItem
 - Automação da Interface do Usuário, estrutura de árvore para o tipo de controle ListItem
-- Automação da Interface do Usuário, propriedades para o tipo de controle ListItem
+- Automação da Interface do Usuário,propriedades para o tipo de controle ListItem
 - Automação da Interface do Usuário, padrões de controle para o tipo de controle ListItem
 - Automação da Interface do Usuário, eventos para o tipo de controle ListItem
 - estruturas de árvore, tipo de controle ListItem
@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, ListItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7fc7df30fc9aeebbabd5a5fdb9572c9f4b81bda4507eac751f283841a14054a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cf7275212d44b795f354cb895c2d64727e375ea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118825548"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122483192"
 ---
 # <a name="listitem-control-type"></a>Tipo de controle ListItem
 
@@ -34,7 +34,7 @@ Este tópico fornece informações sobre o suporte Automação da Interface do U
 
 Controles de item de lista são um exemplo de controles que implementam o **tipo de controle ListItem.**
 
-As seções a seguir definem a estrutura de árvore Automação da Interface do Usuário, as propriedades, os padrões de controle e os eventos necessários para o tipo de controle **ListItem.** Os Automação da Interface do Usuário se aplicam a todos os controles de item de lista em que a estrutura/plataforma da interface do usuário Automação da Interface do Usuário suporte para tipos de controle e padrões de controle.
+As seções a seguir definem a estrutura de árvore Automação da Interface do Usuário, as propriedades, os padrões de controle e os eventos necessários para o tipo de controle **ListItem.** Os Automação da Interface do Usuário requisitos se aplicam a todos os controles de item de lista em que a estrutura/plataforma da interface do usuário integra Automação da Interface do Usuário suporte para tipos de controle e padrões de controle.
 
 Este tópico inclui as seções a seguir.
 
@@ -51,33 +51,11 @@ A tabela a seguir ilustra uma exibição típica de controle e conteúdo da árv
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Listitem
-<ul>
-<li>Imagem (0 ou mais)</li>
-<li>Texto (0 ou mais)</li>
-<li>Editar (0 ou mais)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Listitem</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Listitem<ul><li>Imagem (0 ou mais)</li><li>Texto (0 ou mais)</li><li>Editar (0 ou mais)</li></ul></li></ul> | <ul><li>Listitem</li></ul> | 
+
 
 
 

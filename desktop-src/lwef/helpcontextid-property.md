@@ -1,19 +1,19 @@
 ---
 title: Propriedade HelpContextid (objeto de coleção de comandos)
-description: Saiba mais sobre a propriedade HelpContextid do objeto da coleção de comandos. O Microsoft Agent foi preterido a partir do Windows 7.
+description: Saiba mais sobre a propriedade HelpContextid do objeto da coleção de comandos. o Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 8b8ac1c6-1a34-45f1-a0a6-2ae14ad6adef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1ed6ccf40545e15b3603ce5abe80ef94ff4272a
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 5b0635f62350d0bea31afda09b04e6489fe7f0ccb33173adb6c2aeb69a814265
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725696"
 ---
 # <a name="helpcontextid-property-commands-collection-object"></a>Propriedade HelpContextid (objeto de coleção de comandos)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -43,12 +43,12 @@ Retorna ou define um número de contexto associado para o objeto [**Commands**](
 
 ## <a name="remarks"></a>Comentários
 
-Se você tiver criado um arquivo de ajuda do Windows para seu aplicativo e definir a propriedade [**HelpFile**](helpfile-property.md) do caractere, o Agent chamará automaticamente a ajuda quando [**HelpModeOn**](helpmodeon-property.md) estiver definido como **true** e o usuário selecionará o objeto [**Commands**](/windows/desktop/lwef/the-commands-collection-object) . Se você definir um número de contexto em **HelpContextId**, o Agent chamará ajuda e procurará o tópico identificado por esse número de contexto.
+se você tiver criado um arquivo de ajuda Windows para seu aplicativo e definir a propriedade [**HelpFile**](helpfile-property.md) do caractere, o Agent chamará automaticamente Help quando [**HelpModeOn**](helpmodeon-property.md) estiver definido como **True** e o usuário selecionará o objeto [**commands**](/windows/desktop/lwef/the-commands-collection-object) . Se você definir um número de contexto em **HelpContextId**, o Agent chamará ajuda e procurará o tópico identificado por esse número de contexto.
 
 Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
 
 > [!Note]  
-> A criação de um arquivo de ajuda requer o compilador de ajuda do Microsoft Windows.
+> a criação de um arquivo de ajuda requer o compilador de ajuda do Microsoft Windows.
 
  
 

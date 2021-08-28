@@ -4,12 +4,12 @@ ms.assetid: dfe44c8c-43ec-461f-952f-b87256b82ee6
 title: Funções de saída de depuração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 252e1020ca99bd5b4f2f46d7f2169fa6835dea83a25d599dba142f370bb794f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ee1bdbc9cce98ce1704b62a8354b81951df33c4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537736"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884239"
 ---
 # <a name="debug-output-functions"></a>Funções de saída de depuração
 
@@ -51,7 +51,7 @@ no Windows Vista ou posterior, eles estão localizados no seguinte caminho:
 
 para filtros de terceiros, o local depende de qual versão do [DirectShow Classes Base](directshow-base-classes.md) foi usada para criar o filtro. a versão incluída no SDK do Windows para Windows Vista usa o caminho mais recente. As versões anteriores usaram o caminho mais antigo.
 
-Nos comentários a seguir, o rótulo *<DebugRoot>* é usado para indicar esses dois caminhos. substitua o caminho correto, dependendo da versão do Windows ou da versão das classes base.
+Nos comentários a seguir, o rótulo *&lt; DebugRoot &gt;* é usado para indicar esses dois caminhos. substitua o caminho correto, dependendo da versão do Windows ou da versão das classes base.
 
 **Log de depuração**
 
@@ -82,7 +82,7 @@ DbgLog((LOG_TRACE, 3, TEXT("This is a debug message")));
 
 Cada módulo pode definir seu próprio nível de depuração para cada tipo de mensagem. (Um *módulo* é uma DLL ou um executável que pode ser carregado usando a função **LoadLibrary** .) Os níveis de depuração de um módulo aparecem no registro na seguinte chave:
 
-**\_máquina local \_ HKEY**\\**<DebugRoot>**\\**<ModuleName>**\\**<MessageType>**
+**HKEY \_ \_** \\ **&lt; MessageType &gt;** \\ **&lt; do módulo &gt;** DebugRoot do \\ **&lt; computador local &gt;**
 
 em que *<Message Type>* é o tipo de mensagem menos o "log \_ " inicial; por exemplo, **bloqueio** para mensagens de bloqueio de log \_ . Quando um módulo é carregado, a biblioteca de depuração localiza os níveis de log do módulo no registro. Se as chaves do registro não existirem, a biblioteca de depuração as criará.
 
@@ -103,7 +103,7 @@ A biblioteca de depuração usa qualquer nível que seja maior, o nível global 
 
 O local de saída de depuração é determinado por outra chave do registro:
 
-**HKEY \_ \_Máquina local** \\ **<DebugRoot>** \\ **<Modile Name>** \\ **LogToFile**
+**HKEY \_ \_Máquina local** \\ **&lt; DebugRoot &gt;** \\ **<Modile Name>** \\ **LogToFile**
 
 Se o valor dessa chave for `Console` , a saída vai para a janela do console. Se o valor for `Deb` , `Debug` , `Debugger` ou uma cadeia de caracteres vazia, a saída vai para a janela do depurador. Caso contrário, a saída será gravada em um arquivo especificado pela chave do registro.
 

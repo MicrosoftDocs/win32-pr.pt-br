@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dc5a71328681e1ce415b1a34e9c8f718b460e7f0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7155763f68a74333fc71db1054fb0ecffcca862e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471772"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983759"
 ---
 # <a name="jet_tuplelimits-structure"></a>estrutura JET_TUPLELIMITS dados
 
@@ -31,7 +31,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 A **JET_TUPLELIMITS** permite a personalização das características do índice de tupla por índice, em vez de uma base por instância, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
-**Windows Server 2003:** A **JET_TUPLELIMITS** é introduzida no Windows Server 2003.
+**Windows Server 2003:** A **estrutura JET_TUPLELIMITS** é introduzida no Windows Server 2003.
 
 ```cpp
     typedef struct tagJET_TUPLELIMITS {
@@ -61,7 +61,7 @@ O comprimento máximo de uma cadeia de caracteres a ser indexado. Por exemplo, s
 
 Isso permite que o passo a passo seja configurado por índice.
 
-**Windows Vista:** O **membro cchIncrement** é introduzido no Windows Vista. Antes de Windows Vista, o valor para deslocar a janela (o "stride") sempre era 1, como é mostrado no exemplo na seção de comentários.
+**Windows Vista:** O **membro cchIncrement** é introduzido no Windows Vista. Antes de Windows Vista, o valor para deslocar a janela (o "stride") era sempre 1, como é mostrado no exemplo na seção de comentários.
 
 **ichStart**
 
@@ -98,7 +98,11 @@ Observe que "IN" ocorre duas vezes e que a última entrada ("N ") é menor \! qu
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 

@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c432f8e09ad706b6632e4e5ca49a89a263a84dbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cdac49d766835a0d26a3b9d474b8759a552ed1d
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787760"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984899"
 ---
 # <a name="jetdeletetable-function"></a>Função JetDeleteTable
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetdeletetable-function"></a>Função JetDeleteTable
 
@@ -60,74 +60,30 @@ O nome da tabela a ser excluída.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTableInUse</p></td>
-<td><p>Foi feita uma tentativa de excluir uma tabela enquanto outra sessão tem uma ID de tabela aberta (<a href="gg269182(v=exchg.10).md">JET_TABLEID</a>) com <a href="gg294118(v=exchg.10).md">JetOpenTable</a> ou <a href="gg269193(v=exchg.10).md">JetDupCursor</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Tabela de JET_errCannotDeletetemporary</p></td>
-<td><p>Foi feita uma tentativa de excluir uma tabela temporária. Uma tabela temporária é excluída automaticamente quando fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errCannotDeleteTemplateTable</p></td>
-<td><p>Foi feita uma tentativa de excluir uma tabela de modelo, ou seja, uma tabela da qual o DDL pode ser herdado.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errTableInUse</p> | <p>Foi feita uma tentativa de excluir uma tabela enquanto outra sessão tem uma ID de tabela aberta (<a href="gg269182(v=exchg.10).md">JET_TABLEID</a>) com <a href="gg294118(v=exchg.10).md">JetOpenTable</a> ou <a href="gg269193(v=exchg.10).md">JetDupCursor</a>.</p> | 
+| <p>Tabela de JET_errCannotDeletetemporary</p> | <p>Foi feita uma tentativa de excluir uma tabela temporária. Uma tabela temporária é excluída automaticamente quando fechada com <a href="gg294087(v=exchg.10).md">JetCloseTable</a>.</p> | 
+| <p>JET_errCannotDeleteTemplateTable</p> | <p>Foi feita uma tentativa de excluir uma tabela de modelo, ou seja, uma tabela da qual o DDL pode ser herdado.</p> | 
+
 
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetDeleteTableW</strong> (Unicode) e <strong>JetDeleteTableA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetDeleteTableW</strong> (Unicode) e <strong>JetDeleteTableA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

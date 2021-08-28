@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb7af096a63880a88496631999ddbc26a975cac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 700cbb29fe34700da953df5a20aa94d5a2df4a06
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171618"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985659"
 ---
 # <a name="jetrestoreinstance-function"></a>Função JetRestoreInstance
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetrestoreinstance-function"></a>Função JetRestoreInstance
 
 A função **JetRestoreInstance** restaura e recupera um backup de streaming de uma instância do, incluindo todos os bancos de dados anexados. Ele foi projetado para funcionar com um backup criado com a função [JetBackupInstance](./jetbackupinstance-function.md) . Essa é a função de restauração mais simples e encapsulada.
 
-**Windows XP:** o **JetRestoreInstance** é introduzido no Windows XP.  
+**Windows xp:** o **JetRestoreInstance** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetRestoreInstance(
@@ -53,7 +53,7 @@ A função **JetRestoreInstance** restaura e recupera um backup de streaming de 
 
 Especifica a instância a ser usada para esta chamada.
 
-Para o Windows XP e versões posteriores, o uso desse parâmetro depende do modo de operação do mecanismo. Se o mecanismo estiver operando no modo herdado (modo de compatibilidade do Windows 2000) em que apenas uma instância tem suporte, esse parâmetro poderá ser nulo ou poderá ser definido como um buffer de saída válido contendo NULL ou JET_instanceNil que retornará o identificador de instância global criado como um efeito colateral da inicialização. Esse identificador de instância pode então ser passado para qualquer outra API que usa uma instância. Se o mecanismo estiver operando no modo de várias instâncias, esse parâmetro deverá ser definido como um buffer de entrada válido que contenha o identificador de instância retornado por [JetCreateInstance](./jetcreateinstance-function.md) que está sendo inicializado.
+para o Windows XP e versões posteriores, o uso desse parâmetro depende do modo de operação do mecanismo. se o mecanismo estiver operando no modo herdado (Windows modo de compatibilidade 2000) em que apenas uma instância tem suporte, esse parâmetro poderá ser nulo ou poderá ser definido como um buffer de saída válido contendo nulo ou JET_instanceNil que retornará o identificador de instância global criado como um efeito colateral da inicialização. Esse identificador de instância pode então ser passado para qualquer outra API que usa uma instância. Se o mecanismo estiver operando no modo de várias instâncias, esse parâmetro deverá ser definido como um buffer de entrada válido que contenha o identificador de instância retornado por [JetCreateInstance](./jetcreateinstance-function.md) que está sendo inicializado.
 
 *sz*
 
@@ -69,50 +69,19 @@ O ponteiro opcional para a função que será chamada como informações de noti
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errAlreadyInitialized</p></td>
-<td><p>A operação falhou porque o mecanismo já foi inicializado para esta instância.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidLogSequence</p></td>
-<td><p>O conjunto de arquivos de log do conjunto de backup e do caminho de log atual não coincidem.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Esse erro será retornado por <strong>JetRestoreInstance</strong> quando o mecanismo estiver no modo de várias instâncias e pinstance se referir a uma instância inválida do Windows XP e versões posteriores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>A operação falhou porque alguns caminhos fornecidos são inválidos (o caminho de backup, o caminho de destino, o log ou o caminho do sistema para a instância).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errPageSizeMismatch</p></td>
-<td><p>A operação falhou porque o mecanismo está configurado para usar um tamanho de página de banco de dados (usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> para <a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>) que não corresponde ao tamanho da página do banco de dados usado para criar os arquivos de log de transações ou os bancos de dados associados aos arquivos de log de transações.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque o modo de instância única implícito de parâmetros (modo de compatibilidade do Windows 2000) e o mecanismo já estão no modo de várias instâncias.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errAlreadyInitialized</p> | <p>A operação falhou porque o mecanismo já foi inicializado para esta instância.</p> | 
+| <p>JET_errInvalidLogSequence</p> | <p>O conjunto de arquivos de log do conjunto de backup e do caminho de log atual não coincidem.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. esse erro será retornado por <strong>JetRestoreInstance</strong> quando o mecanismo estiver no modo de várias instâncias e pinstance se referir a uma instância inválida Windows XP e versões posteriores.</p> | 
+| <p>JET_errInvalidPath</p> | <p>A operação falhou porque alguns caminhos fornecidos são inválidos (o caminho de backup, o caminho de destino, o log ou o caminho do sistema para a instância).</p> | 
+| <p>JET_errPageSizeMismatch</p> | <p>A operação falhou porque o mecanismo está configurado para usar um tamanho de página de banco de dados (usando <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> para <a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>) que não corresponde ao tamanho da página do banco de dados usado para criar os arquivos de log de transações ou os bancos de dados associados aos arquivos de log de transações.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>a operação falhou porque o modo de instância única implícito de parâmetros (modo de compatibilidade de Windows 2000) e o mecanismo já estão no modo de várias instâncias.</p> | 
+
 
 
 Em caso de êxito, os arquivos de banco de dados do conjunto de backup serão restaurados para seu local e a recuperação será executada de modo que os bancos estejam em um estado de consistência transacional limpo. A recuperação reproduzirá os arquivos de log do conjunto de backup e dos arquivos de log do caminho de log, se esses arquivos existirem. Essa recuperação resultará em alterações no arquivo de ponto de verificação, nos arquivos de log de transações e em qualquer banco de dados referenciado por esses arquivos de log de transações.
@@ -131,38 +100,16 @@ As diferentes etapas da recuperação terão entradas de log de eventos geradas,
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetRestoreInstanceW</strong> (Unicode) e <strong>JetRestoreInstanceA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetRestoreInstanceW</strong> (Unicode) e <strong>JetRestoreInstanceA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

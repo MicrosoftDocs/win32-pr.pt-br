@@ -1,47 +1,47 @@
 ---
-description: 'Cryptography API: próxima geração (CNG) fornece funções que consultam, adicionam, removem e priorizam os conjuntos de codificação aos quais um provedor dá suporte. As alterações feitas usando essas funções entram em vigor imediatamente e não exigem a reinicialização de um servidor ativo.'
+description: 'API de criptografia: A CNG (Próxima Geração) fornece funções que consultam, adicionam, removem e priorizam os suites de criptografia compatíveis com um provedor. As alterações feitas usando essas funções funcionam imediatamente e não exigem a reinicialização de um servidor ativo.'
 ms.assetid: e919be5c-ac2c-446c-a422-971805b1f672
-title: Priorizando conjuntos de codificação Schannel
+title: Priorizando os Schannel Cipher Suites
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f885c4d51006233be252a02c7cc3bebd26a4e6c3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4436d2f72ebaa1f8d551d935ea9f16d2c03cd7c75fc7d40a73f1a27c7406ad6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104172559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920765"
 ---
-# <a name="prioritizing-schannel-cipher-suites"></a>Priorizando conjuntos de codificação Schannel
+# <a name="prioritizing-schannel-cipher-suites"></a>Priorizando os Schannel Cipher Suites
 
-[CRYPTOGRAPHY API: próxima geração](../seccng/cng-portal.md) (CNG) fornece funções que consultam, adicionam, removem e priorizam os conjuntos de codificação aos quais um provedor dá suporte. As alterações feitas usando essas funções entram em vigor imediatamente e não exigem a reinicialização de um servidor ativo.
+[API de criptografia:](../seccng/cng-portal.md) A CNG (Próxima Geração) fornece funções que consultam, adicionam, removem e priorizam os suites de criptografia compatíveis com um provedor. As alterações feitas usando essas funções funcionam imediatamente e não exigem a reinicialização de um servidor ativo.
 
 > [!Note]
-> Você também pode modificar a lista de conjuntos de codificação configurando as configurações da política de grupo do **conjunto de codificação SSL** usando o snap-in de objeto política de grupo no console de gerenciamento Microsoft.
+> Você também pode modificar a lista de conjunto de codificação definindo as configurações de política do grupo ordem de criptografia **SSL usando** o snap-in de objeto Política de Grupo no Console de Gerenciamento Microsoft.
 > 
-> **Para definir a configuração da política de grupo **SSL Cipher Suite Order****
+> **Para definir a **configuração de política de grupo de pedido do Pacote de Criptografia SSL****
 > 
-> 1.  Em um prompt de comando, digite **gpedit. msc**. O **Editor de objeto de política de grupo** é exibido.
-> 2.  Expanda **configuração do computador**, **modelos administrativos**, **rede** e clique em definições de **configuração de SSL**.
-> 3.  Em **definições de configuração de SSL**, clique na configuração de **ordem do conjunto de codificação SSL** .
-> 4.  No painel **ordem do conjunto de criptografia SSL** , role até a parte inferior do painel.
-> 5.  Siga as instruções rotuladas **como modificar essa configuração**.
+> 1.  Em um prompt de comando, **insira gpedit.msc**. A **Editor de Objeto de Política de Grupo** é exibida.
+> 2.  Expanda **Configuração do** **Computador, Modelos Administrativos,** **Redee** clique em **Configuração SSL Configurações**.
+> 3.  Em **Configuração SSL Configurações**, clique na configuração Ordem do Conjunto de Criptografia **SSL.**
+> 4.  No painel **Ordem do Conjunto de Criptografia SSL,** role até a parte inferior do painel.
+> 5.  Siga as instruções rotuladas **Como modificar essa configuração.**
 > 
-> É necessário reiniciar o computador depois de modificar essa configuração para que as alterações entrem em vigor.
+> É necessário reiniciar o computador depois de modificar essa configuração para que as alterações entre em vigor.
 
  
 
-A lista de conjuntos de codificação é limitada a 1023 caracteres.
+A lista de conjunto de criptografias é limitada a 1023 caracteres.
 
-Para priorizar os conjuntos de codificação Schannel, consulte os exemplos a seguir.
+Para priorizar os suites de criptografia Schannel, consulte os exemplos a seguir.
 
--   [Listando conjuntos de codificação com suporte](#listing-supported-cipher-suites)
--   [Adicionando, removendo e priorizando conjuntos de codificação](#adding-removing-and-prioritizing-cipher-suites)
+-   [Listando os conjunto de criptografias com suporte](#listing-supported-cipher-suites)
+-   [Adicionando, removendo e priorizando os cipher suites](#adding-removing-and-prioritizing-cipher-suites)
 
-## <a name="listing-supported-cipher-suites"></a>Listando conjuntos de codificação com suporte
+## <a name="listing-supported-cipher-suites"></a>Listando os conjunto de criptografias com suporte
 
-Chame a função [**BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) para listar os conjuntos de codificação que um provedor suporta em ordem de prioridade.
+Chame a [**função BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) para listar os suites de criptografia que um provedor dá suporte em ordem de prioridade.
 
-O exemplo a seguir demonstra como usar a função [**BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) para listar os conjuntos de criptografia com suporte.
+O exemplo a seguir demonstra como usar a [**função BCryptEnumContextFunctions**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptenumcontextfunctions) para listar os pacote de criptografia com suporte.
 
 
 ```C++
@@ -93,15 +93,15 @@ Cleanup:
 
 
 
-## <a name="adding-removing-and-prioritizing-cipher-suites"></a>Adicionando, removendo e priorizando conjuntos de codificação
+## <a name="adding-removing-and-prioritizing-cipher-suites"></a>Adicionando, removendo e priorizando os cipher suites
 
-Chame as funções [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) e [**BCryptRemoveContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptremovecontextfunction) para adicionar e remover conjuntos de codificação da lista de conjuntos de codificação com suporte.
+Chame as funções [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) e [**BCryptRemoveContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptremovecontextfunction) para adicionar e remover os suites de criptografia da lista de conjunto de criptografia com suporte.
 
-Ao adicionar um conjunto de codificação, defina o valor do parâmetro *dwPosition* da função [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) para a **\_ \_ parte superior de cript** . para adicioná-lo à parte superior da lista de prioridades ou **à \_ \_ parte inferior da prioridade criptografada** para adicioná-lo à parte inferior da lista.
+Ao adicionar um conjunto de criptografias, de definido o valor do parâmetro *dwPosition* da função [**BCryptAddContextFunction**](/windows/win32/api/bcrypt/nf-bcrypt-bcryptaddcontextfunction) como **CRYPT PRIORITY \_ \_ TOP** para adicioná-lo à parte superior da lista priorizada ou para **CRYPT PRIORITY \_ \_ BOTTOM** para adicioná-lo à parte inferior da lista.
 
-Para priorizar a lista de conjuntos de codificação, remova todos os conjuntos de codificação da lista e, em seguida, adicione pacotes de codificação à lista na ordem desejada.
+Para priorizar a lista de conjunto de criptografias, remova todos os conjunto de criptografias da lista e adicione os pacote de criptografia à lista na ordem que você deseja.
 
-O exemplo a seguir mostra como adicionar um conjunto de codificação na parte superior da lista de prioridades para o provedor padrão do Microsoft Schannel.
+O exemplo a seguir mostra como adicionar um conjunto de criptografias à parte superior da lista priorizada para o Provedor Schannel padrão da Microsoft.
 
 
 ```C++
@@ -129,7 +129,7 @@ void main()
 
 
 
-O exemplo a seguir mostra como remover um conjunto de codificação da lista de prioridades para o provedor padrão do Microsoft Schannel.
+O exemplo a seguir mostra como remover um conjunto de criptografias da lista priorizada para o Provedor Microsoft Schannel padrão.
 
 
 ```C++

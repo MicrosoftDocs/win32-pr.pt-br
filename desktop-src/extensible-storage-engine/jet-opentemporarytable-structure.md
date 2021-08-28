@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: estrutura JET_OPENTEMPORARYTABLE dados'
-title: estrutura JET_OPENTEMPORARYTABLE de dados
+title: Estrutura JET_OPENTEMPORARYTABLE dados
 TOCTitle: JET_OPENTEMPORARYTABLE Structure
 ms:assetid: 23f4fb0f-ca60-498b-9b8e-14de6188eb87
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269206(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2f2ab2fca7a849f889d46badcc86a8a5438fa8
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 625de51bf265be02fa48beb2872797cd5bd6ba26
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478502"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986909"
 ---
-# <a name="jet_opentemporarytable-structure"></a>estrutura JET_OPENTEMPORARYTABLE de dados
+# <a name="jet_opentemporarytable-structure"></a>Estrutura JET_OPENTEMPORARYTABLE dados
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_opentemporarytable-structure"></a>estrutura JET_OPENTEMPORARYTABLE de dados
+## <a name="jet_opentemporarytable-structure"></a>Estrutura JET_OPENTEMPORARYTABLE dados
 
-A **estrutura JET_OPENTEMPORARYTABLE** contém uma coleção extensível de parâmetros facilmente para a função **JET_OPENTEMPORARYTABLE.** Essa estrutura é o equivalente de tabela temporária da [estrutura JET_TABLECREATE](./jet-tablecreate-structure.md) dados.
+A **estrutura JET_OPENTEMPORARYTABLE** contém uma coleção extensível de parâmetros facilmente para a função **JET_OPENTEMPORARYTABLE** configuração. Essa estrutura é o equivalente de tabela temporária da [estrutura JET_TABLECREATE](./jet-tablecreate-structure.md) dados.
 
 **Windows Vista:** A **estrutura JET_OPENTEMPORARYTABLE** é introduzida no Windows Vista.
 
@@ -126,7 +126,11 @@ O handle de tabela para a tabela temporária criada como resultado de uma chamad
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
 
 
 
@@ -139,4 +143,4 @@ O handle de tabela para a tabela temporária criada como resultado de uma chamad
 [JET_COLUMNID](./jet-columnid.md)  
 [JET_TABLEID](./jet-tableid.md)  
 [JetOpenTemporaryTable](./jetopentemporarytable-function.md)  
-[parâmetros do sistema do mecanismo de Armazenamento extensível](./extensible-storage-engine-system-parameters.md)
+[Parâmetros do sistema Armazenamento mecanismo extensível](./extensible-storage-engine-system-parameters.md)

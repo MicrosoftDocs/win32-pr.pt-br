@@ -4,12 +4,12 @@ description: As bibliotecas de tempo de execução RPC iniciam automaticamente o
 ms.assetid: 06b50a9f-b640-45b2-86e2-2bcea6c16c5c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 433ffdb11e86b06ee53d9b01f7f7755758538f22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e281419bc2a869d43863f946c1fcb172da2f86c04186ba775766233d4caa65c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017546"
 ---
 # <a name="starting-and-stopping-microsoft-locator"></a>Iniciando e parando o Microsoft Locator
 
@@ -29,9 +29,9 @@ Você também pode iniciar e parar o localizador da Microsoft na linha de comand
 
 Somente um administrador pode iniciar o Microsoft Locator quando ele for interrompido. Se for interrompido, ele será reiniciado conforme necessário pelas bibliotecas de tempo de execução RPC.
 
- 
+ 
 
- 
+ 
 
 
 

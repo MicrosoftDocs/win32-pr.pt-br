@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af21d3f885a979ac81fef502a64281ea5445046983f652033566c689991a70ac
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d61c42897da6d55dc96f2e59847fcf727424d60e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119720306"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986119"
 ---
 # <a name="jet_objectinfo-structure"></a>Estrutura JET_OBJECTINFO
 
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_objectinfo-structure"></a>Estrutura JET_OBJECTINFO
 
-A **JET_OBJECTINFO** contém informações sobre um objeto . As tabelas são os únicos tipos de objeto com suporte no momento.
+A **JET_OBJECTINFO** estrutura contém informações sobre um objeto . As tabelas são os únicos tipos de objeto com suporte no momento.
 
 ```cpp
     typedef struct {
@@ -66,73 +66,28 @@ Obsoleto. Não use.
 
 Um grupo de bits que contém as opções disponíveis para essa chamada, que incluem zero ou mais dos seguintes.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitTableInfoBookmark</p></td>
-<td><p>A tabela pode ter indicadores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitTableInfoRollback</p></td>
-<td><p>A tabela pode ser relembolsada.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitTableInfoUpdatable</p></td>
-<td><p>A tabela pode ser atualizada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitTableInfoBookmark</p> | <p>A tabela pode ter indicadores.</p> | 
+| <p>JET_bitTableInfoRollback</p> | <p>A tabela pode ser relembolsada.</p> | 
+| <p>JET_bitTableInfoUpdatable</p> | <p>A tabela pode ser atualizada.</p> | 
+
 
 
 **sinalizadores**
 
 Um campo de bits que contém zero ou mais dos sinalizadores a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitObjectSystem</p></td>
-<td><p>A tabela é uma Tabela do Sistema e é somente para uso interno.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitObjectTableDerived</p></td>
-<td><p>A DDL herdada da tabela de uma tabela de modelo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitObjectTableFixedDDL</p></td>
-<td><p>A DDL da tabela não pode ser modificada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitObjectTableNoFixedVarColumnsInDerivedTables</p></td>
-<td><p>Usado em conjunto com JET_bitObjectTableTemplate para não permitir colunas fixas ou variáveis em tabelas derivadas (para que colunas fixas ou variáveis possam ser adicionadas ao modelo no futuro).</p>
-<p><strong>Windows XP:</strong> Esse valor é introduzido no Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitObjectTableTemplate</p></td>
-<td><p>A tabela é uma tabela de modelo.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitObjectSystem</p> | <p>A tabela é uma Tabela do Sistema e é somente para uso interno.</p> | 
+| <p>JET_bitObjectTableDerived</p> | <p>A DDL herdada da tabela de uma tabela de modelo.</p> | 
+| <p>JET_bitObjectTableFixedDDL</p> | <p>A DDL da tabela não pode ser modificada.</p> | 
+| <p>JET_bitObjectTableNoFixedVarColumnsInDerivedTables</p> | <p>Usado em conjunto com JET_bitObjectTableTemplate para não permitir colunas fixas ou variáveis em tabelas derivadas (para que colunas fixas ou variáveis possam ser adicionadas ao modelo no futuro).</p><p><strong>Windows XP:</strong> Esse valor é introduzido no Windows XP.</p> | 
+| <p>JET_bitObjectTableTemplate</p> | <p>A tabela é uma tabela de modelo.</p> | 
+
 
 
 **cRecord**
@@ -149,32 +104,19 @@ Esse valor será recuperado somente se **JET_OBJECTINFO** foi passado para [JetG
 
 ### <a name="remarks"></a>Comentários
 
-Uma **JET_OBJECTINFO** é populada por uma chamada para [JetGetObjectInfo](./jetgetobjectinfo-function.md) ou [JetGetTableInfo](./jetgettableinfo-function.md). Se a chamada à API não for bem-sucedida, o conteúdo da estrutura será indefinido.
+Uma **JET_OBJECTINFO** é populada por uma chamada para [JetGetObjectInfo](./jetgetobjectinfo-function.md) ou [JetGetTableInfo.](./jetgettableinfo-function.md) Se a chamada à API não for bem-sucedida, o conteúdo da estrutura será indefinido.
 
 Se aplicável, as estatísticas de tabela incluem o número de registros e o número de páginas que estão no índice cluster (ou seja, o índice que contém os dados do registro). As estatísticas de índice são acessadas separadamente por nome, [usando JetGetIndexInfo](./jetgetindexinfo-function.md) ou [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

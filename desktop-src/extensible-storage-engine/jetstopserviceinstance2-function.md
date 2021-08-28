@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a28439932d9c0eb76675ed4e88d5595c64b5ace
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1b5446306bd4035c68f33db2966b1cfadd0b6d82
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470762"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987229"
 ---
 # <a name="jetstopserviceinstance2-function"></a>Função JetStopServiceInstance2
 
@@ -64,7 +64,7 @@ Um grupo de bits que especifica um ou mais dos valores listados e definidos na t
 
 ### <a name="return-value"></a>Valor retornado
 
-Essa função retorna o [tipo JET_ERR](./jet-err.md) dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
 | <p>Código de retorno</p> | <p>Descrição</p> | 
@@ -88,11 +88,17 @@ Quando retomado: JET_ERR JET_API JetStopServiceInstance2( instância, JET_bitSto
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 
-#### <a name="see-also"></a>Confira também
+#### <a name="see-also"></a>Consulte também
 
 [JET_ERR](./jet-err.md)  
 [JET_INSTANCE](./jet-instance.md)  

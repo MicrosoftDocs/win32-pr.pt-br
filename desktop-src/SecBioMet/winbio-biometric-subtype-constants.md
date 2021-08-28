@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_BIOMETRIC_SUBTYPE (WinBio \_ Types. h)
-description: Forneça informações sobre uma medição biométrica.
+title: WINBIO_BIOMETRIC_SUBTYPE constantes (tipos \_ Winbio.h)
+description: Forneça informações sobre uma medida biométrica.
 ms.assetid: 019569A9-6184-4E75-9B82-C98F4F45F61A
 topic_type:
 - apiref
@@ -13,41 +13,41 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba1bc25337bf49a48b54b6b2426673daf8a15bd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 07e6dc285e1a19fab8e0363391fbd81429e931cd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918671"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630835"
 ---
-# <a name="winbio_biometric_subtype-constants"></a>\_Constantes de SUBtipo de biometria WINBIO \_
+# <a name="winbio_biometric_subtype-constants"></a>Constantes \_ DE \_ SUBTIPO BIOMÉTRICO WINBIO
 
-**WINBIO \_ As constantes de \_ SUBtipo biométrica** são usadas em todo o Windows Biometric Framework para fornecer informações adicionais sobre uma medição biométrica. As constantes a seguir podem ser usadas quando nenhum subtipo é necessário ou quando qualquer subtipo é necessário.
+**WINBIO \_ Constantes \_ BIOMETRIC SUBTYPE** são usadas em todo o Windows Biometric Framework para fornecer informações adicionais sobre uma medida biométrica. As constantes a seguir podem ser usadas quando nenhum subtipo é necessário ou quando qualquer subtipo é necessário.
 
 
 
 | Constante/valor                                                                                                                                                                                                                                                            | Descrição                        |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------|
-| <span id="WINBIO_SUBTYPE_NO_INFORMATION"></span><span id="winbio_subtype_no_information"></span><dl> <dt>**WINBIO \_ Subtipo \_ nenhuma \_ informação**</dt> <dt>0x00</dt> </dl> | Nenhuma informação de subtipo.<br/> |
-| <span id="WINBIO_SUBTYPE_ANY"></span><span id="winbio_subtype_any"></span><dl> <dt>**WINBIO \_ Subtipo \_ qualquer**</dt> <dt>0xFF</dt> </dl>                                   | Qualquer subtipo.<br/>            |
+| <span id="WINBIO_SUBTYPE_NO_INFORMATION"></span><span id="winbio_subtype_no_information"></span><dl> <dt>**WINBIO \_ SUBTIPO \_ SEM \_ INFORMAÇÕES**</dt> <dt>0X00</dt> </dl> | Nenhuma informação de subtipo.<br/> |
+| <span id="WINBIO_SUBTYPE_ANY"></span><span id="winbio_subtype_any"></span><dl> <dt>**WINBIO \_ SUBTIPO \_ QUALQUER**</dt> <dt>0xFF</dt> </dl>                                   | Qualquer subtipo.<br/>            |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para localizar os subtipos de biometria disponíveis para um tipo biométrico específico, use a seguinte tabela:
+Para encontrar os subtipos biométricos disponíveis para um tipo biométrico específico, use a tabela a seguir:
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor <strong>WINBIO_BIOMETRIC_TYPE</strong></th>
-<th>Tópico (s) para localizar <strong>WINBIO_BIOMETRIC_SUBTYPE</strong> valores</th>
+<th><strong>WINBIO_BIOMETRIC_TYPE</strong> valor</th>
+<th>Tópicos para encontrar valores <strong>WINBIO_BIOMETRIC_SUBTYPE</strong> dados</th>
 </tr>
 </thead>
 <tbody>
@@ -56,7 +56,7 @@ Para localizar os subtipos de biometria disponíveis para um tipo biométrico es
 <td><a href="winbio-ansi-385-face-constants.md"><strong>WINBIO_ANSI_385_FACE constantes</strong></a>
 <blockquote>
 [!Note]<br />
-Esses valores se aplicam somente ao Windows 10 e posterior.
+Esses valores se aplicam somente a Windows 10 e posteriores.
 </blockquote>
 <br/></td>
 </tr>
@@ -78,7 +78,7 @@ Esses valores se aplicam somente ao Windows 10 e posterior.
 <td><a href="winbio-iris-constants.md"><strong>WINBIO_IRIS constantes</strong></a>
 <blockquote>
 [!Note]<br />
-Esses valores se aplicam somente ao Windows 10 e posterior.
+Esses valores se aplicam somente a Windows 10 e posteriores.
 </blockquote>
 <br/></td>
 </tr>
@@ -87,7 +87,7 @@ Esses valores se aplicam somente ao Windows 10 e posterior.
 <td><a href="https://www.bing.com/search?q=<strong>WINBIO_VOICE+Constants</strong>"><strong>WINBIO_VOICE constantes</strong></a>
 <blockquote>
 [!Note]<br />
-Esses valores se aplicam somente ao Windows 10 e posterior.
+Esses valores se aplicam somente a Windows 10 e posteriores.
 </blockquote>
 <br/></td>
 </tr>
@@ -98,7 +98,7 @@ Esses valores se aplicam somente ao Windows 10 e posterior.
 
  
 
-Para obter mais informações, consulte [constantes do aplicativo cliente](client-application-constants.md).
+Para obter mais informações, consulte [Constantes de aplicativo cliente](client-application-constants.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,9 +106,9 @@ Para obter mais informações, consulte [constantes do aplicativo cliente](clien
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 

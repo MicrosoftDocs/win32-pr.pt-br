@@ -1,8 +1,8 @@
 ---
-description: As tarefas WMI para serviços obtém informações sobre serviços, incluindo serviços dependentes ou antecessores. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: As tarefas do WMI para serviços obtêm informações sobre serviços, incluindo serviços dependentes ou antecedentes. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: 1cd92981-c074-4ff7-a32c-ce492e6d6aa5
 ms.tgt_platform: multiple
-title: 'Tarefas WMI: Serviços'
+title: 'Tarefas do WMI: serviços'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1e96080dfde59ac5ca910082b764700b9ce51149dce82d87e8a716cfdcf73027
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a5de08eccb501288697cee77eaa28a087e07d96
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738825"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631424"
 ---
-# <a name="wmi-tasks-services"></a>Tarefas WMI: Serviços
+# <a name="wmi-tasks-services"></a>Tarefas do WMI: serviços
 
-As tarefas WMI para serviços obtém informações sobre serviços, incluindo serviços dependentes ou antecessores. Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+As tarefas do WMI para serviços obtêm informações sobre serviços, incluindo serviços dependentes ou antecedentes. Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
+Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
-2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
+2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
+4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,10 +56,10 @@ A tabela a seguir lista exemplos de script que podem ser usados para obter vári
 <tbody>
 <tr class="odd">
 <td>... determinar quais serviços estão em execução e quais não estão?</td>
-<td>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> para verificar o estado de todos os serviços. A propriedade state permite que você saiba se um serviço está parado ou em execução.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> para verificar o estado de todos os serviços. A propriedade State permite que você saiba se um serviço está parado ou em execução.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -80,7 +80,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -96,13 +96,13 @@ Next</code></pre></td>
 </td>
 </tr>
 <tr class="even">
-<td>... impedir que o Power Users insisse determinados serviços?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>método ChangeStartMode</strong></a> para definir a <strong>propriedade StartMode</strong> como Disabled. Os serviços desabilitados não podem ser iniciados e, por padrão, o Power Users não pode alterar o modo de início de um serviço.</p>
+<td>... impedir que usuários avançados iniciem determinados serviços?</td>
+<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>ChangeStartMode</strong></a> para definir a propriedade <strong>startMode</strong> como desabilitada. Os serviços desabilitados não podem ser iniciados e, por padrão, os usuários avançados não podem alterar o modo de início de um serviço.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,7 +124,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -142,13 +142,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... iniciar e parar serviços?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e os <a href="/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service"><strong>métodos StopService</strong></a> e <a href="/windows/desktop/CIMWin32Prov/startservice-method-in-class-win32-service"><strong>StartService.</strong></a></p>
+<td>... Iniciar e parar os serviços?</td>
+<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e os métodos <a href="/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service"><strong>StopService</strong></a> e <a href="/windows/desktop/CIMWin32Prov/startservice-method-in-class-win32-service"><strong>StartService</strong></a> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,7 +171,7 @@ Next
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -189,13 +189,13 @@ Next
 </div></td>
 </tr>
 <tr class="even">
-<td>... alterar senhas da conta de serviço usando um script?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>método</strong></a> Change.</p>
+<td>... alterar as senhas de conta de serviço usando um script?</td>
+<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>Change</strong></a> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -219,13 +219,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>.. determinar quais serviços posso parar?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> classe e verifique o valor da <strong>propriedade AcceptStop.</strong></p>
+<td>.. determinar quais serviços eu posso parar?</td>
+<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e verifique o valor da propriedade <strong>AcceptStop</strong> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,7 +246,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -264,13 +264,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... encontrar os serviços que devem estar em execução antes que eu possa iniciar o serviço DHCP?</td>
-<td><p>Consulte <a href="associators-of-statement.md">ASSOCIATORS OF da</a> <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>classe Win32_Service</strong></a> chamada DHCP que estão na classe Win32_DependentService e têm Dependent na propriedade &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Função</strong> significa a função do serviço DHCP: nesse caso, depende dos outros serviços que estão sendo iniciados.</p>
+<td>... localizar os serviços que devem estar em execução antes que eu possa iniciar o serviço DHCP?</td>
+<td><p>Consulte os <a href="associators-of-statement.md">ASSOCIADORES da</a> classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> denominada &quot; DHCP &quot; que estão na classe <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong>Win32_DependentService</strong></a> e que &quot; dependem da &quot; propriedade <strong>role</strong> . <strong>Função</strong> significa a função do serviço DHCP: nesse caso, ele depende dos outros serviços que estão sendo iniciados.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -294,7 +294,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,13 +312,13 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Disp
 </div></td>
 </tr>
 <tr class="odd">
-<td>... encontrar os serviços que exigem que o serviço WMI (Winmgmt) seja executado antes que eles possam iniciar?</td>
-<td><p>Consulte <a href="associators-of-statement.md">ASSOCIATORS OF da</a> <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>classe Win32_Service</strong></a> chamada DHCP que estão na classe Win32_DependentService e têm &quot; o &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; Antecendent &quot; na propriedade <strong>Role.</strong> <strong>Função</strong> significa a função do serviço rasman: nesse caso, ela é anterior a deve ser iniciada antes dos serviços dependentes.</p>
+<td>... localizar os serviços que exigem que o serviço de serviço WMI (Winmgmt) esteja em execução antes que eles possam ser iniciados?</td>
+<td><p>Consulte os <a href="associators-of-statement.md">ASSOCIADORES da</a> classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> denominada &quot; DHCP &quot; que estão na classe <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong>Win32_DependentService</strong></a> e têm &quot; Antecendent &quot; na propriedade <strong>role</strong> . <strong>Função</strong> significa a função do serviço RASMAN: nesse caso, o antecessor deve ser iniciado antes dos serviços dependentes.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -343,7 +343,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -371,13 +371,13 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Name
 
 <dl> <dt>
 
-[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
+[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

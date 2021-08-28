@@ -4,12 +4,12 @@ ms.assetid: 36307589-de0e-4eaf-b439-e7ba3cd96fb3
 title: Diretrizes de mensagens ICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0951f8573fce1b9dbe81b107fba2f2beb674ed063fae53182a7d2694ded35abb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d603175dbecc12b0b9524db1a02d9ca677f61c87
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821666"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887444"
 ---
 # <a name="ice-message-guidelines"></a>Diretrizes de mensagens ICE
 
@@ -17,7 +17,7 @@ As ações personalizadas do ICE se comunicam chamando [**MsiProcessMessage**](/
 
 Ao criar uma cadeia de caracteres de mensagem para uma ação personalizada de ICE, formate a cadeia de caracteres da seguinte maneira.
 
-*Nome do Ice* <tab> *Tipo* <tab> de mensagem *Descrição* <tab> do *URL de ajuda ou local* <tab> *Nome* <tab> da tabela *Nome* <tab> da coluna *Chave primária* <tab> *Chave primária* <tab> *Chave primária* . . . (repita para quantas chaves primárias forem necessárias)
+*Nome do Ice* &lt; guia &gt; *tipo de mensagem* guia Descrição da guia &lt; &gt;  &lt; &gt; *URL ou localização* da guia nome da tabela guia nome da coluna guia chave primária Guia chave principal &lt; &gt;  &lt; &gt;  &lt; &gt;  &lt; &gt;  &lt; &gt; *chave primária* . . . (repita para quantas chaves primárias forem necessárias)
 
 Os três primeiros campos da cadeia de caracteres são necessários em cada mensagem.
 

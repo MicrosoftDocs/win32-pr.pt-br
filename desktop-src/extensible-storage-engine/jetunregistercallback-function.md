@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5cb60d8b0d06ff6af9d950c53d8bdf8f4eedb774
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 87c308f4895eb3e78a35338fe39afb3d775da095
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986489"
 ---
 # <a name="jetunregistercallback-function"></a>Função JetUnregisterCallback
 
@@ -59,7 +59,7 @@ O cursor a ser usado para essa chamada.
 
 Um bitmask composto pelos motivos de retorno de chamada que o aplicativo não deseja mais receber notificações.
 
-Para criar essa máscara de bits, basta ou em conjunto motivos válidos de retorno de chamada [da enumeração JET_CBTYP](./jet-cbtyp.md) dados.
+Para criar essa máscara de bits, basta ou em conjunto motivos válidos de retorno de chamada da [enumeração JET_CBTYP](./jet-cbtyp.md) dados.
 
 *hCallbackId*
 
@@ -93,7 +93,13 @@ O bitmask especificado deve corresponder exatamente ao bitmask especificado ao r
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requer Windows Vista ou Windows XP.</p> | 
+| <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008 ou Windows Server 2003.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

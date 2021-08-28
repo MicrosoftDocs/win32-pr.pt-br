@@ -7,12 +7,12 @@ MSHAttr:
 title: AutoConnectOnInternet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da1e62713d664d821282fdcf13b016a574bda8ab
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: e277b544a03b1c37aaa7f58123cbe8d0928bebf0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880520"
+ms.locfileid: "122985479"
 ---
 # <a name="span-idwwan_profile_v4element_autoconnectoninternetspanautoconnectoninternet"></a><span id="WWAN_profile_v4.element_AutoConnectOnInternet"></span>AutoConnectOnInternet
 
@@ -48,7 +48,7 @@ Nenhum.
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
 
-| Elemento pai | Description | 
+| Elemento pai | Descrição | 
 |----------------|-------------|
 | <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>O <strong>elemento MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de Banda Larga Móvel com um conjunto mais avançado de opções do que o elemento MBNProfile.</p><p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um conjunto específico de condições operacionais. Use o <a href="element-profileconditionedon.md"><strong>elemento filho ProfileConditionedOn</strong></a> <strong>de MBNProfileExt</strong> para especificar quais condições operacionais fazem de um perfil específico o perfil ativo.</p> | 
 
@@ -58,7 +58,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

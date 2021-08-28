@@ -1,5 +1,5 @@
 ---
-description: O <iconReference> elemento especifica um ícone personalizado para esta biblioteca. Esse elemento é opcional e não tem atributos ou elementos filho.
+description: O &lt; elemento iconReference &gt; especifica um ícone personalizado para essa biblioteca. Esse elemento é opcional e não tem atributos ou elementos filho.
 title: Elemento iconReference (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 84e200fa4969dc376661bd32851296d80c74120939afc995754cb2937ea04be3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db34a387200f3078da08747191242ae7414be410
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820226"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884262"
 ---
 # <a name="iconreference-element-library-schema"></a>Elemento iconReference (esquema de biblioteca)
 
-O <iconReference> elemento especifica um ícone personalizado para esta biblioteca. Esse elemento é opcional e não tem atributos ou elementos filho.
+O &lt; elemento iconReference &gt; especifica um ícone personalizado para essa biblioteca. Esse elemento é opcional e não tem atributos ou elementos filho.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,13 +44,13 @@ O <iconReference> elemento especifica um ícone personalizado para esta bibliote
 
 ## <a name="remarks"></a>Comentários
 
-A referência do ícone deve ser especificada em um formato adequado para a função [**PathParseIconLocation**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) . Por exemplo: `ModuleFileName,IconResourceIndex`.
+A referência de ícone deve ser especificada em um formulário adequado para a [**função PathParseIconLocation.**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) Por exemplo: `ModuleFileName,IconResourceIndex`.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Elemento FolderType (esquema de biblioteca)](schema-library-foldertype.md)
+[Elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)
 </dt> <dt>
 
 [Elemento isLibraryPinned (esquema de biblioteca)](schema-library-islibrarypinned.md)
@@ -59,10 +59,10 @@ A referência do ícone deve ser especificada em um formato adequado para a fun�
 [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
-[Elemento Name (esquema de biblioteca)](schema-library-name.md)
+[Elemento name (esquema de biblioteca)](schema-library-name.md)
 </dt> <dt>
 
-[Elemento OwnerId (esquema de biblioteca)](schema-library-ownersid.md)
+[Elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
 </dt> <dt>
 
 [Elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
@@ -77,7 +77,7 @@ A referência do ícone deve ser especificada em um formato adequado para a fun�
 [Elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[Elemento Version (esquema de biblioteca)](schema-library-version.md)
+[Elemento version (esquema de biblioteca)](schema-library-version.md)
 </dt> </dl>
 
  

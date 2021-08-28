@@ -1,26 +1,36 @@
 ---
-description: Filtro de renderizador de fluxo de arquivo
+description: Filtro do renderdor de fluxo de arquivos
 ms.assetid: e26462bb-e67f-4522-bec2-88378c4ff442
-title: Filtro de renderizador de fluxo de arquivo
+title: Filtro do renderdor de fluxo de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3da8651d61559a9b22b722f91563426cb067f7a3
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d438d77b4f402cefed2e80f2c32d061d1652710f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987859"
 ---
-# <a name="file-stream-renderer-filter"></a>Filtro de renderizador de fluxo de arquivo
+# <a name="file-stream-renderer-filter"></a>Filtro do renderdor de fluxo de arquivos
 
-O filtro de renderizador de fluxo de arquivo processa nomes de arquivo analisados pelo filtro [analisador de vários arquivos](multi-file-parser-filter.md) . Para obter mais informações, consulte a documentação para esse filtro.
+O filtro Renderização de Fluxo de Arquivos renderiza os nomes de arquivo que são analisados pelo filtro [Analisador de](multi-file-parser-filter.md) Vários Arquivos. Para obter mais informações, consulte a documentação desse filtro.
 
-O uso desse filtro foi preterido. Para renderizar vários arquivos dentro do mesmo grafo de filtro, o aplicativo deve simplesmente chamar **ProcessFile** ou **AddSourceFilter** várias vezes.
-
-
+O uso desse filtro foi preterido. Para renderizar vários arquivos no mesmo grafo de filtro, o aplicativo deve simplesmente chamar **RenderFile** ou **AddSourceFilter** várias vezes.
 
 
-| | | Filtrar interfaces | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | | Tipos de mídia de pino de entrada | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | | Interfaces de pino de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de mídia de pino de saída | Nenhum | | Interfaces de pino de saída | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a> | | CLSID de filtro | CLSID_FileRend | | Executável | Quartz.dll | | <a href="merit.md">Mérito</a> | MERIT_UNLIKELY | | <a href="filter-categories.md">Categoria do filtro</a> | CLSID_LegacyAmFilterCategory | 
+
+
+| Rótulo | Valor |
+|--------|-------|
+| Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>Ibasefilter</strong></a> | 
+| Tipos de mídia de pino de entrada | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | 
+| Interfaces de pino de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a> | 
+| Tipos de mídia de pino de saída | Nenhum | 
+| Interfaces de pino de saída | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a> | 
+| Filtrar CLSID | CLSID_FileRend | 
+| Executável | Quartz.dll | 
+| <a href="merit.md">Mérito</a> | MERIT_UNLIKELY | 
+| <a href="filter-categories.md">Categoria de filtro</a> | CLSID_LegacyAmFilterCategory | 
 
 
 
@@ -29,7 +39,7 @@ O uso desse filtro foi preterido. Para renderizar vários arquivos dentro do mes
 
 ## <a name="remarks"></a>Comentários
 
-O CLSID do filtro não está definido em UUIDs. h. Use esta macro em seu próprio arquivo de cabeçalho:
+O CLSID do filtro não está definido em Uuids.h. Use essa macro em seu próprio arquivo de header:
 
 
 ```C++
@@ -44,7 +54,7 @@ DEFINE_GUID(CLSID_FileRend,
 
 <dl> <dt>
 
-[DirectShow Filter](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

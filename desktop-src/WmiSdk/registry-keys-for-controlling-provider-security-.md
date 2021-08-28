@@ -1,20 +1,20 @@
 ---
-description: Para aprimorar a segurança do wmiprvse.exe processo de host do provedor compartilhado Instrumentação de Gerenciamento do Windows (WMI), foram feitas alterações nas plataformas do Windows que protegem o processo de host do provedor com um SID (identificador de segurança do serviço).
+description: para aprimorar a segurança do wmiprvse.exe processo de host do provedor compartilhado Instrumentação de Gerenciamento do Windows (WMI), foram feitas alterações em Windows plataformas que protegem o processo de host do provedor com um SID (identificador de segurança do serviço).
 ms.assetid: f93ac155-512c-4efa-8168-ca2d56fe6f01
 ms.tgt_platform: multiple
 title: Chaves e valores do registro para controlar a segurança do provedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a2c7dd990c1a9ebbc1242af5ce4601ce6eb22a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 916a5910a6ad21e9f9dfdcfc0992de10ae30da82
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782646"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884358"
 ---
 # <a name="registry-keys-and-values-for-controlling-provider-security"></a>Chaves e valores do registro para controlar a segurança do provedor
 
-Para aprimorar a segurança do wmiprvse.exe processo de host do provedor compartilhado Instrumentação de Gerenciamento do Windows (WMI), foram feitas alterações nas plataformas do Windows que protegem o processo de host do provedor com um [*Sid (identificador de segurança do serviço)*](gloss-s.md). Essas alterações apresentam os seguintes modos de execução para o host compartilhado do WMI: seguro e compatível.
+para aprimorar a segurança do wmiprvse.exe processo de host do provedor compartilhado Instrumentação de Gerenciamento do Windows (WMI), foram feitas alterações em Windows plataformas que protegem o processo de host do provedor com um [*SID (identificador de segurança do serviço)*](gloss-s.md). Essas alterações apresentam os seguintes modos de execução para o host compartilhado do WMI: seguro e compatível.
 
 As seções a seguir são abordadas neste tópico:
 
@@ -24,7 +24,7 @@ As seções a seguir são abordadas neste tópico:
 
 ## <a name="secure-and-compatible-modes"></a>Modos seguros e compatíveis
 
-A partir do Windows 7, os dois modos de execução a seguir para o processo de host compartilhado WMI foram adicionados:
+a partir do Windows 7, os dois modos de execução a seguir para o processo de host compartilhado WMI foram adicionados:
 
 <dl> <dt>
 
@@ -55,7 +55,7 @@ As seguintes chaves do registro e o valor **DWORD** descritos na lista a seguir 
 <span id="SecuredHostProviders"></span><span id="securedhostproviders"></span><span id="SECUREDHOSTPROVIDERS"></span>**SecuredHostProviders**
 </dt> <dd>
 
-Essa chave controla o comportamento de provedores individuais. Todos os provedores listados nessa chave sempre são executados no modo de segurança. Todos os provedores de caixa de entrada fornecidos com o Windows são listados sob essa chave e são executados no modo de segurança por padrão.
+Essa chave controla o comportamento de provedores individuais. Todos os provedores listados nessa chave sempre são executados no modo de segurança. todos os provedores de caixa de entrada fornecidos com Windows são listados nessa chave e são executados no modo de segurança por padrão.
 
 Essa chave tem precedência sobre os provedores listados na chave **CompatibleHostProviders** .
 
@@ -112,7 +112,7 @@ A lista a seguir lista as configurações de registro possíveis e os modos de e
 | Não                                | Não                                   | 0                          | Compatível |
 | Não                                | Sim                                  | 0                          | Compatível |
 | Sim                               | Não                                   | 0                          | Seguro     |
-| Sim                               | Sim                                  | 0                          | Seguro     |
+| Sim                               | Yes                                  | 0                          | Seguro     |
 | Não                                | Não                                   | 1                          | Seguro     |
 | Não                                | Sim                                  | 1                          | Compatível |
 | Sim                               | Não                                   | 1                          | Seguro     |
@@ -133,7 +133,7 @@ Os procedimentos a seguir ilustram como gerenciar configurações de modo seguro
 1.  Abra o GPMC.
 2.  Crie um objeto de Política de Grupo (GPO).
 3.  Edite o GPO.
-4.  Navegue até preferências/configurações do Windows/registro.
+4.  navegue até preferências/Windows Configurações/Registry.
 5.  Clique com o botão direito do mouse e selecione **novo... Registro**. Essa ação apresenta uma interface do usuário na qual você pode inserir informações do registro.
 6.  Selecione o comando **criar** .
 7.  Selecione o seguinte caminho de chave do registro:
@@ -142,7 +142,7 @@ Os procedimentos a seguir ilustram como gerenciar configurações de modo seguro
 
     **Modo compatível: hKey \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **CompatibleHostProviders**
 
-8.  No campo **nome** , insira o nome do provedor que você deseja adicionar a essa chave. O nome do provedor deve estar no seguinte formato: <namespace> : <\_ \_ RelPath>. Por exemplo, raiz \\ cimv2: \_ \_ Win32Provider. nome = "myfornecedor".
+8.  No campo **nome** , insira o nome do provedor que você deseja adicionar a essa chave. O nome do provedor deve estar no seguinte formato: &lt; namespace &gt; : <\_ \_ RelPath>. Por exemplo, raiz \\ cimv2: \_ \_ Win32Provider. nome = "myfornecedor".
 9.  No campo de **dados** , digite 0.
 10. Clique em OK.
 
@@ -151,7 +151,7 @@ Os procedimentos a seguir ilustram como gerenciar configurações de modo seguro
 1.  Abra o GPMC.
 2.  Crie um GPO.
 3.  Edite o GPO.
-4.  Navegue até preferências/configurações do Windows/registro.
+4.  navegue até preferências/Windows Configurações/Registry.
 5.  Clique com o botão direito do mouse e selecione **novo... Registro**. Essa ação apresenta uma interface do usuário na qual você pode inserir informações do registro.
 6.  Selecione o comando **remover** .
 7.  Selecione o seguinte caminho de chave do registro:
@@ -171,7 +171,7 @@ O procedimento a seguir fornece detalhes sobre como modificar o comportamento de
 1.  Abra o GPMC.
 2.  Crie um GPO.
 3.  Edite o GPO.
-4.  Navegue até preferências/configurações do Windows/registro.
+4.  navegue até preferências/Windows Configurações/Registry.
 5.  Clique com o botão direito do mouse e selecione **novo... Registro**. Essa ação apresenta uma interface do usuário na qual você pode inserir informações do registro.
 6.  Selecione o comando **Atualizar** .
 7.  Selecione o seguinte caminho de chave do registro: **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM**.

@@ -1,20 +1,20 @@
 ---
-description: Referência de classe de janela
+description: Referência da classe Window
 ms.assetid: 3a96ed1b-7340-4661-ae98-4e0cb0debd41
-title: Referência de classe de janela
+title: Referência da classe Window
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09229905628525f66a0e8ca810a4ca7533bccf6f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 727de649aca542a4b33d79d0f8183cabda28f682e838e65fc9fcf75136bfdaf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118031176"
 ---
-# <a name="window-class-reference"></a>Referência de classe de janela
+# <a name="window-class-reference"></a>Referência da classe Window
 
--   [Funções de classe de janela](window-class-functions.md)
--   [Estruturas de classe de janela](window-class-structures.md)
+-   [Funções de classe window](window-class-functions.md)
+-   [Estruturas de classe window](window-class-structures.md)
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 2719aaa5-bdcb-4326-8767-7e890bb5df0e
 title: DisablePatch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4df2a74f6212ffc5de71bd2de0b03fb7e910bd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f3a4232ba5d41e4c72f4a171a747521af7d8a4aca5f54eb1e9097806bd2ab54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143117"
 ---
 # <a name="disablepatch"></a>DisablePatch
 
@@ -17,7 +17,7 @@ Se essa [política do sistema](system-policy.md) por máquina for definida como 
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ \_** Políticas de \\ **software** do computador local \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ \_** \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer** de políticas de Software de computador LOCAL
 
 ## <a name="data-type"></a>Tipo de Dados
 

@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 861741de07093be29f84d4e2ae0364d5132251ec
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 36aadb42cdf942c802a65f92b5c450535575793b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986649"
 ---
 # <a name="jetsetcurrentindex3-function"></a>Função JetSetCurrentIndex3
 
@@ -113,12 +113,19 @@ Em caso de falha, o índice atual e a posição atual do cursor estão em um est
 
 #### <a name="remarks"></a>Comentários
 
-Se a dica de ID de índice estiver desleilada, a API simplesmente falhará. Não há nenhum fallback para o nome de texto do índice, nesse caso, como se pode esperar. Esse fallback deve ser feito manualmente pelo chamador da API.
+Se a dica de ID de índice estiver obsoleta, a API simplesmente falhará. Não há nenhum fallback para o nome de texto do índice nesse caso, como pode esperar. Esse fallback deve ser feito manualmente pelo chamador da API.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetSetCurrentIndex3W</strong> (Unicode) e <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
+| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
+| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
+| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetSetCurrentIndex3W</strong> (Unicode) e <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
 
 
 

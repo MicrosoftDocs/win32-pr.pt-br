@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d410adb592c3d56d2f9880ec809749396318258a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d0e47a117c044899a8b078290be622cfecdae91
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766933"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482902"
 ---
 # <a name="jetbeginexternalbackup-function"></a>Função JetBeginExternalBackup
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetbeginexternalbackup-function"></a>Função JetBeginExternalBackup
 
@@ -50,121 +50,40 @@ O backup será difuso, pois o backup será consistente para um único ponto no h
 
 Um grupo de bits que especifica zero ou mais das opções a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitBackupAtomic</p></td>
-<td><p>Esse sinalizador foi preterido. O uso desse bit resultará na JET_errInvalidgrbit retornando.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitBackupIncremental</p></td>
-<td><p>Cria um backup incremental em oposição a um backup completo. Isso significa que somente os arquivos de log desde o último backup completo ou incremental serão submetidos a backup.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitBackupSnapshot</p></td>
-<td><p>Reservado para uso futuro. Definido para o Windows XP.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitBackupAtomic</p> | <p>Esse sinalizador foi preterido. O uso desse bit resultará na JET_errInvalidgrbit retornando.</p> | 
+| <p>JET_bitBackupIncremental</p> | <p>Cria um backup incremental em oposição a um backup completo. Isso significa que somente os arquivos de log desde o último backup completo ou incremental serão submetidos a backup.</p> | 
+| <p>JET_bitBackupSnapshot</p> | <p>Reservado para uso futuro. definido para Windows XP.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupInProgress</p></td>
-<td><p>Se um backup externo ou backup de instantâneo já estiver em andamento, esse erro será retornado, até que <strong>JetBeginExternalBackup</strong> (ou uma das variantes de ti) seja chamado. O ESE permite apenas um backup online de cada vez.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errBackupNotAllowedYet</p></td>
-<td><p>A instância ou o mecanismo de banco de dados está em recuperação ou em uma fase de desligamento ou término.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errCheckpointCorrupt</p></td>
-<td><p>Em um backup completo, o arquivo de ponto de verificação não pôde ser lido ou o arquivo não pôde ser verificado.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errCheckpointFileNotFound</p></td>
-<td><p>Em um backup completo, o arquivo de ponto de verificação não pôde ser encontrado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>A operação não pode ser concluída porque toda a atividade da instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que requer que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p><strong>Windows XP:  </strong> Esse valor de retorno é introduzido no Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidBackup</p></td>
-<td><p>O log circular está habilitado e o tipo de backup especificado é JET_bitBackupIncremental. Consulte <a href="gg269235(v=exchg.10).md">JET_paramCircularLog</a> nos <strong>erros do log de transações</strong> para obter informações sobre como controlar o registro em log circular ou não circular.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Um ou mais dos membros do <em>grbit</em> eram inválidos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errLoggingDisabled</p></td>
-<td><p>A recuperação ou o log está desabilitado. Você não poderá fazer um backup online se o log estiver desabilitado. Para obter mais informações sobre log e recuperação, consulte <a href="gg269235(v=exchg.10).md">JET_paramRecovery</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errLogWriteFail</p></td>
-<td><p>O mecanismo parou de gravar na unidade de log devido ao log estar cheio ou erros de e/s de disco.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errMissingFullBackup</p></td>
-<td><p>O backup incremental foi especificado (com JET_bitBackupIncremental) e nunca foi feito um backup completo para um dos bancos de dados anexados para o conjunto de logs.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão ainda não foi inicializada.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>A operação falhou porque não foi possível alocar memória suficiente para concluí-la.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade do Windows 2000) em que apenas uma instância tem suporte quando, na verdade, várias instâncias já existem.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão está sendo desligada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errBackupInProgress</p> | <p>Se um backup externo ou backup de instantâneo já estiver em andamento, esse erro será retornado, até que <strong>JetBeginExternalBackup</strong> (ou uma das variantes de ti) seja chamado. O ESE permite apenas um backup online de cada vez.</p> | 
+| <p>JET_errBackupNotAllowedYet</p> | <p>A instância ou o mecanismo de banco de dados está em recuperação ou em uma fase de desligamento ou término.</p> | 
+| <p>JET_errCheckpointCorrupt</p> | <p>Em um backup completo, o arquivo de ponto de verificação não pôde ser lido ou o arquivo não pôde ser verificado.</p> | 
+| <p>JET_errCheckpointFileNotFound</p> | <p>Em um backup completo, o arquivo de ponto de verificação não pôde ser encontrado.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>A operação não pode ser concluída porque toda a atividade da instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>A operação não pode ser concluída porque a instância associada à sessão encontrou um erro fatal que requer que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p><p><strong>Windows XP:</strong> esse valor de retorno é introduzido no Windows XP.</p> | 
+| <p>JET_errInvalidBackup</p> | <p>O log circular está habilitado e o tipo de backup especificado é JET_bitBackupIncremental. Consulte <a href="gg269235(v=exchg.10).md">JET_paramCircularLog</a> nos <strong>erros do log de transações</strong> para obter informações sobre como controlar o registro em log circular ou não circular.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Um ou mais dos membros do <em>grbit</em> eram inválidos.</p> | 
+| <p>JET_errLoggingDisabled</p> | <p>A recuperação ou o log está desabilitado. Você não poderá fazer um backup online se o log estiver desabilitado. Para obter mais informações sobre log e recuperação, consulte <a href="gg269235(v=exchg.10).md">JET_paramRecovery</a>.</p> | 
+| <p>JET_errLogWriteFail</p> | <p>O mecanismo parou de gravar na unidade de log devido ao log estar cheio ou erros de e/s de disco.</p> | 
+| <p>JET_errMissingFullBackup</p> | <p>O backup incremental foi especificado (com JET_bitBackupIncremental) e nunca foi feito um backup completo para um dos bancos de dados anexados para o conjunto de logs.</p> | 
+| <p>JET_errNotInitialized</p> | <p>A operação não pode ser concluída porque a instância associada à sessão ainda não foi inicializada.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>A operação falhou porque não foi possível alocar memória suficiente para concluí-la.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>A operação não pode ser concluída porque uma operação de restauração está em andamento na instância associada à sessão.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em que há suporte para apenas uma instância quando, na verdade, várias instâncias já existem.</p> | 
+| <p>JET_errTermInProgress</p> | <p>A operação não pode ser concluída porque a instância associada à sessão está sendo desligada.</p> | 
+
 
 
 Se a função for realizada com sucesso, um backup externo será iniciado e o mecanismo de estado de backup será inicializado. As APIs subsequentes agora podem ser chamadas para concluir a sequência de backup externo e transmitir ou ler o arquivo de banco de dados, o arquivo de patch de banco de dados (se houver suporte) e o arquivo de log. Um evento pode ser registrado em log que um backup externo foi iniciado.
@@ -181,38 +100,13 @@ Também é possível modificar esse conjunto de etapas para executar um backup i
 
 Também é possível modificar esse conjunto de etapas para permitir backups diferenciais subsequentes da instância a ser executada. Para executar um backup diferencial, não chame [JetTruncateLog](./jettruncatelog-function.md) no backup completo ou incremental anterior. Ao não chamar [JetTruncateLog](./jettruncatelog-function.md), você permite que os backups subsequentes sejam diferenciais em relação ao último backup completo ou incremental. Os backups diferenciais só serão possíveis se o registro em log circular não estiver habilitado.
 
-O arquivo de patch de banco de dados é um arquivo auxiliar especial que é usado para armazenar imagens de página de banco de dados em determinadas circunstâncias durante o backup. Esse arquivo deve estar presente no mesmo local que seu banco de dados associado durante uma operação de restauração. Esse arquivo só é usado no Windows 2000. Como resultado, qualquer aplicativo escrito para funcionar no Windows 2000 e em outras versões deve dar suporte a arquivos de patch de banco de dados, se estiverem presentes, mas também não deverá falhar se não estiverem presentes.
+O arquivo de patch de banco de dados é um arquivo auxiliar especial que é usado para armazenar imagens de página de banco de dados em determinadas circunstâncias durante o backup. Esse arquivo deve estar presente no mesmo local que seu banco de dados associado durante uma operação de restauração. este arquivo só é usado no Windows 2000. como resultado, qualquer aplicativo escrito para funcionar em Windows 2000 e outras versões deve dar suporte a arquivos de patch de banco de dados, se estiverem presentes, mas também não deverá falhar se não estiverem presentes.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

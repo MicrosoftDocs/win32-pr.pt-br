@@ -4,16 +4,16 @@ description: IAgentCommands GetCommand
 ms.assetid: 0f4a9152-d5dc-4045-b469-8a03f0369e34
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e81043bb8dbe8a6d050f226d09f03b396d0f8f9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 05ae5e8a92ce8d4a8e04ff049569195e5a2baa21ec3bc398f5fa6ba6ef3c1e3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609686"
 ---
 # <a name="iagentcommandsgetcommand"></a>IAgentCommands:: GetCommand
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetCommand(
@@ -47,6 +47,6 @@ O endereço da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iu
 [**IAgentCommand**](iagentcommand.md)
 
 
- 
+ 
 
- 
+ 
