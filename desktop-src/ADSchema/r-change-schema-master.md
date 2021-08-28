@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b6fe28065e3c47b145c6aa7f608560417ee710f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7ffc13a158c8a9264118015020d07284d744f0657324fa399ea3c97e665249ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702956"
 ---
 # <a name="change-schema-master-extended-right"></a>Alterar-esquema-mestre estendido à direita
 

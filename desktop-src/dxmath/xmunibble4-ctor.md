@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 92a300f292633e3d54264349e79491360c7017c38c62da60a953d36371189791
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 499b18d4ab8f94e9dc6636c4fa06439da425dd63
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118499507"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478692"
 ---
 # <a name="xmunibble4-constructors"></a>Construtores XMUNIBBLE4
 
@@ -33,74 +33,16 @@ Constrói instâncias da [**estrutura XMUNIBBLE4.**](/windows/win32/api/directxp
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Construtor</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMUNIBBLE4</code><br/> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"> <strong>XMUNIBBLE4</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Isso só está disponível para desenvolvimento baseado em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de uma <code>XMUNIBBLE</code> <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma variável que contém dados de componente <code>uint16_t</code> em um formato empacotado. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float*)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMUNIBBLE4</code> argumento de matriz de quatro <code>float</code> elementos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de <code>float</code> quatro elementos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const uint8_t*)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMUNIBBLE4</code> argumento de matriz de quatro <code>uint8_t</code> elementos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de <code>uint8_t</code> quatro elementos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float, float, float,float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de <code>XMUNIBBLE4</code> quatro <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>float</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (uint8_t,uint8_t,uint8_t,uint8_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de <code>XMUNIBBLE4</code> quatro <code>uint8_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>uint8_t</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Esse construtor só está disponível em C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Construtor | Descrição | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a> | Construtor padrão para <code>XMUNIBBLE4</code><br /> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"> <strong>XMUNIBBLE4</strong></a><br /><blockquote>[!Note]<br />Isso só está disponível para desenvolvimento baseado em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a> | Inicializa uma nova instância de de uma <code>XMUNIBBLE</code> <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma variável que contém dados de componente <code>uint16_t</code> em um formato empacotado. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float*)</strong></a> | Inicializa uma nova instância de de um <code>XMUNIBBLE4</code> argumento de matriz de quatro <code>float</code> elementos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de <code>float</code> quatro elementos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const uint8_t*)</strong></a> | Inicializa uma nova instância de de um <code>XMUNIBBLE4</code> argumento de matriz de quatro <code>uint8_t</code> elementos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de <code>uint8_t</code> quatro elementos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float, float, float,float)</strong></a> | Inicializa uma nova instância de de <code>XMUNIBBLE4</code> quatro <code>float</code> argumentos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>float</code> argumentos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (uint8_t,uint8_t, uint8_t,uint8_t)</strong></a> | Inicializa uma nova instância de de <code>XMUNIBBLE4</code> quatro <code>uint8_t</code> argumentos. <br /> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>uint8_t</code> argumentos. <br /><blockquote>[!Note]<br />Esse construtor só está disponível em C++.</blockquote><br /> | 
+
 
 
 

@@ -1,22 +1,22 @@
 ---
-Description: Enviado a uma janela após a alteração de seu tamanho.
+Description: Enviado para uma janela depois que seu tamanho foi alterado.
 ms.assetid: e3e14dcd-9236-48bd-a692-6985d8146f81
-title: Mensagem de WM_SIZE (WinUser. h)
+title: WM_SIZE mensagem (Winuser.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 04afafd3faafc4ea8c400472254dcf4ec4afa050
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 473e4e63523c7b97968e54349e5882b7e589fc7238d717ccf96563b5ce93388e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548216"
 ---
-# <a name="wm_size-message"></a>Mensagem de tamanho do WM \_
+# <a name="wm_size-message"></a>Mensagem WM \_ SIZE
 
-Enviado a uma janela após a alteração de seu tamanho.
+Enviado para uma janela depois que seu tamanho foi alterado.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 
 ```C++
@@ -32,17 +32,17 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/windo
 *wParam* 
 </dt> <dd>
 
-O tipo de redimensionamento solicitado. Esse parâmetro pode usar um dos valores a seguir.
+O tipo de reizing solicitado. Esse parâmetro pode usar um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                   | Significado                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="SIZE_MAXHIDE"></span><span id="size_maxhide"></span><dl> <dt>**Tamanho \_ MAXHIDE**</dt> <dt>4</dt> </dl>       | A mensagem é enviada para todas as janelas pop-up quando alguma outra janela é maximizada.<br/>                              |
-| <span id="SIZE_MAXIMIZED"></span><span id="size_maximized"></span><dl> <dt>**Tamanho \_ MAXIMIZAdo**</dt> <dt>2</dt> </dl> | A janela foi maximizada.<br/>                                                                          |
-| <span id="SIZE_MAXSHOW"></span><span id="size_maxshow"></span><dl> <dt>**Tamanho \_ MAXSHOW**</dt> <dt>3</dt> </dl>       | A mensagem é enviada para todas as janelas pop-up quando alguma outra janela é restaurada para seu tamanho anterior.<br/>      |
-| <span id="SIZE_MINIMIZED"></span><span id="size_minimized"></span><dl> <dt>**Tamanho \_ MINIMIZAdo**</dt> <dt>1</dt> </dl> | A janela foi minimizada.<br/>                                                                          |
-| <span id="SIZE_RESTORED"></span><span id="size_restored"></span><dl> <dt>**Tamanho \_ RESTAURAdo**</dt> <dt>0</dt> </dl>    | A janela foi redimensionada, mas nem o valor de **tamanho \_ minimizado** nem de **tamanho \_ maximizado** se aplica.<br/> |
+| <span id="SIZE_MAXHIDE"></span><span id="size_maxhide"></span><dl> <dt>**TAMANHO \_ MAXHIDE**</dt> <dt>4</dt> </dl>       | A mensagem é enviada para todas as janelas pop-up quando alguma outra janela é maximizada.<br/>                              |
+| <span id="SIZE_MAXIMIZED"></span><span id="size_maximized"></span><dl> <dt>**TAMANHO \_ MAXIMIZADA**</dt> <dt>2</dt> </dl> | A janela foi maximizada.<br/>                                                                          |
+| <span id="SIZE_MAXSHOW"></span><span id="size_maxshow"></span><dl> <dt>**TAMANHO \_ MAXSHOW**</dt> <dt>3</dt> </dl>       | A mensagem é enviada para todas as janelas pop-up quando alguma outra janela foi restaurada para seu tamanho anterior.<br/>      |
+| <span id="SIZE_MINIMIZED"></span><span id="size_minimized"></span><dl> <dt>**TAMANHO \_ MINIMIZADO**</dt> <dt>1</dt> </dl> | A janela foi minimizada.<br/>                                                                          |
+| <span id="SIZE_RESTORED"></span><span id="size_restored"></span><dl> <dt>**TAMANHO \_ RESTAURADO**</dt> <dt>0</dt> </dl>    | A janela foi ressada, mas nem **o valor SIZE \_ MINIMIZED** nem **SIZE \_ MAXIMIZED** se aplica.<br/> |
 
 
 
@@ -53,17 +53,17 @@ O tipo de redimensionamento solicitado. Esse parâmetro pode usar um dos valores
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem inferior de *lParam* especifica a nova largura da área do cliente.
+A palavra de ordem baixa *de lParam* especifica a nova largura da área do cliente.
 
-A palavra de ordem superior do *lParam* especifica a nova altura da área do cliente.
+A palavra de ordem alta *de lParam* especifica a nova altura da área do cliente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="example"></a>Exemplo
 
@@ -110,16 +110,16 @@ LRESULT CALLBACK SimpleText::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPA
 
 ```
 
-Exemplo de [exemplos clássicos do Windows](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/DirectWrite/HelloWorld/SimpleText.cpp) no github.
+Exemplo de [Windows exemplos clássicos](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/Win7Samples/multimedia/DirectWrite/HelloWorld/SimpleText.cpp) em GitHub.
 
 ## <a name="remarks"></a>Comentários
 
-Se a função [**SetScrollPos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx) ou [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) for chamada para uma janela filho como resultado da mensagem de **\_ tamanho do WM** , o parâmetro *bRedraw* ou *bRepaint* deverá ser diferente de zero para fazer com que a janela seja repintada.
+Se a função [**SetScrollPos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx) ou [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) for chamada para uma janela filho como resultado da mensagem **WM \_ SIZE,** o parâmetro *bRedraw* ou *bRepaint* deverá ser não zero para fazer com que a janela seja pintada.
 
-Embora a largura e a altura de uma janela sejam valores de 32 bits, o parâmetro *lParam* contém apenas os 16 bits de ordem inferior de cada um.
+Embora a largura e a altura de uma janela sejam valores de 32 bits, o parâmetro *lParam* contém apenas os 16 bits de ordem baixa de cada um.
 
-A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envia o **\_ tamanho do WM** e as mensagens de **\_ movimentação do WM** quando processa a mensagem do [**WM \_ WINDOWPOSCHANGED**](wm-windowposchanged.md) .
-O **\_ tamanho do WM** e as mensagens de **\_ movimentação do WM** não serão enviadas se um aplicativo manipular a mensagem do **WM \_ WINDOWPOSCHANGED** sem chamar **DefWindowProc**.
+A [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envia as **mensagens WM \_ SIZE** e **WM \_ MOVE** quando processa a mensagem [**WM \_ WINDOWPOSCHANGED.**](wm-windowposchanged.md)
+As **mensagens WM \_ SIZE** e **WM \_ MOVE** não serão enviadas se um aplicativo manipular a mensagem **WM \_ WINDOWPOSCHANGED** sem chamar **DefWindowProc**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -129,7 +129,7 @@ O **\_ tamanho do WM** e as mensagens de **\_ movimentação do WM** não serão
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -140,19 +140,19 @@ O **\_ tamanho do WM** e as mensagens de **\_ movimentação do WM** não serão
 **Referência**
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
+[**Movewindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
 </dt> <dt>
 
-[**WINDOWPOSCHANGED do WM \_**](wm-windowposchanged.md)
+[**WM \_ WINDOWPOSCHANGED**](wm-windowposchanged.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Windows](windows.md)
@@ -161,7 +161,7 @@ O **\_ tamanho do WM** e as mensagens de **\_ movimentação do WM** não serão
 **Outros recursos**
 </dt> <dt>
 
-[**SetScrollPos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx)
+[**Setscrollpos**](https://msdn.microsoft.com/library/Cc411085(v=MSDN.10).aspx)
 </dt> </dl>
 
  

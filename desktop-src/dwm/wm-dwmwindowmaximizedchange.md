@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DWMWINDOWMAXIMIZEDCHANGE (WinUser. h)
-description: Enviado quando uma janela composta de Gerenciador de Janelas da Área de Trabalho (DWM) é maximizada.
+title: WM_DWMWINDOWMAXIMIZEDCHANGE mensagem (Winuser.h)
+description: Enviado quando uma Gerenciador de Janelas da Área de Trabalho (DWM) composta é maximizada.
 ms.assetid: db8cd104-388e-4211-9e4e-f169aef9651c
 keywords:
-- Mensagem de WM_DWMWINDOWMAXIMIZEDCHANGE Gerenciador de Janelas da Área de Trabalho
+- WM_DWMWINDOWMAXIMIZEDCHANGE mensagem Gerenciador de Janelas da Área de Trabalho
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc49af267ea826eb9e35a627e14f6fc8b381df0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93cfa4ac380b6ff439fb2bf4805846c0b774a90bcfdcd83673ead2334a3c7094
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117746"
 ---
-# <a name="wm_dwmwindowmaximizedchange-message"></a>Mensagem do WM \_ DWMWINDOWMAXIMIZEDCHANGE
+# <a name="wm_dwmwindowmaximizedchange-message"></a>Mensagem WM \_ DWMWINDOWMAXIMIZEDCHANGE
 
-Enviado quando uma janela composta de Gerenciador de Janelas da Área de Trabalho (DWM) é maximizada.
+Enviado quando uma Gerenciador de Janelas da Área de Trabalho (DWM) composta é maximizada.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Enviado quando uma janela composta de Gerenciador de Janelas da Área de Trabalh
 *wParam* 
 </dt> <dd>
 
-Defina como true para especificar que a janela foi maximizada.
+Definido como true para especificar que a janela foi maximizada.
 
 </dd> <dt>
 
@@ -43,13 +43,13 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

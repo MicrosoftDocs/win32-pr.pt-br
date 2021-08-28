@@ -1,10 +1,10 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ Accessstring (v4)
+description: ModemDMConfigProfile... \/ \/ AccessString (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_AccessString
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Accessstring (v4)
+title: AccessString (v4)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: d3dc9d56-23cf-4af6-b220-0ec09eceebaa
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5ca8a917dacadd68a2727006471ea1277acc2462
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 536ef31df9bbd60bfbb6a48c3f6de07718c5ce31
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469433"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982149"
 ---
-# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>ModemDMConfigProfile \/ ... \/ Accessstring (v4)
+# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>ModemDMConfigProfile... \/ \/ AccessString (v4)
 
-Identifica a cadeia de caracteres de APN ou de discagem a ser usada para estabelecer uma conexão de dados.
+Identifica o APN ou a cadeia de caracteres discar a ser usada para estabelecer uma conexão de dados.
 
-Para obter mais informações, consulte a documentação do elemento v1 [**accessstring**](./schema-accessstring-contexttype-element.md) .
+Para obter mais informações, consulte a documentação do [**elemento AccessString**](./schema-accessstring-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento v1 [**acces
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AccessString\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <AccessString>
@@ -72,7 +72,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

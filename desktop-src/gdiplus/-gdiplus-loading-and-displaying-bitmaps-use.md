@@ -5,16 +5,16 @@ title: Carregando e exibindo bitmaps
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: ab2405462db5017215893d50d93dc0b228633cfb
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: db3ec9e1d586a585380123aa01d9553ad1f57f60efb93c28d2d974f54d56b249
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104968764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114996"
 ---
 # <a name="loading-and-displaying-bitmaps"></a>Carregando e exibindo bitmaps
 
-Consulte também o [aplicativo de exemplo do WIC Viewer GDI+](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicviewergdiplus).
+consulte também o [visualizador de WIC GDI+ aplicativo de exemplo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicviewergdiplus).
 
 Para exibir uma imagem rasterizada (bitmap) na tela, você precisa de um objeto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) e de um objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Passe o nome de um arquivo (ou um ponteiro para um fluxo) para um construtor de **imagem** . Depois de criar um objeto **Image** , passe o endereço desse objeto **Image** para o método **DrawImage** de um objeto **Graphics** .
 
@@ -41,4 +41,4 @@ graphics.DrawImage(&bitmap, 10, 10);
 
 ## <a name="see-also"></a>Confira também
 
-[Aplicativo de exemplo do Visualizador de WIC GDI+](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicviewergdiplus)
+[visualizador de WIC GDI+ aplicativo de exemplo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicviewergdiplus)

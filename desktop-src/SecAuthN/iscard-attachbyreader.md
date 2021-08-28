@@ -1,7 +1,7 @@
 ---
 description: O método AttachByReader abre o cartão inteligente no leitor nomeado.
 ms.assetid: a92f3281-5018-4e90-bfa0-f03eb9373bb1
-title: 'Método iscard:: AttachByReader (Scardmgr. h)'
+title: Método ISCard::AttachByReader (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 2607ea2e13be2dcccc3c1b6beebd40c86822d0a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1227c94edbf5816a8f1e867436462a743e6961e3ca70bb7b8a521c289312f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015676"
 ---
-# <a name="iscardattachbyreader-method"></a>Método iscard:: AttachByReader
+# <a name="iscardattachbyreader-method"></a>Método ISCard::AttachByReader
 
-\[O método **AttachByReader** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O **método AttachByReader** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [Módulos de Cartão Inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
-O método **AttachByReader** abre o [*cartão inteligente*](../secgloss/s-gly.md) no [*leitor*](../secgloss/r-gly.md)nomeado.
+O **método AttachByReader** abre o [*cartão inteligente*](../secgloss/s-gly.md) no leitor [*nomeado.*](../secgloss/r-gly.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ HRESULT AttachByReader(
 
 <dl> <dt>
 
-*bstrReaderName* \[ no\]
+*bstrReaderName* \[ Em\]
 </dt> <dd>
 
 Um **BSTR** que contém o nome do leitor de cartão inteligente.
 
 </dd> <dt>
 
-*ShareMode* \[ no\]
+*ShareMode* \[ Em\]
 </dt> <dd>
 
 Modo no qual solicitar acesso ao cartão inteligente.
@@ -59,8 +59,8 @@ Modo no qual solicitar acesso ao cartão inteligente.
 
 | Valor                                                                                                                                            | Significado                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Exclude**</dt> </dl> | Ninguém mais usa essa conexão com o cartão inteligente.<br/> |
-| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**COMPARTILHADO**</dt> </dl>          | Outros aplicativos podem usar essa conexão.<br/>        |
+| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Exclusivo**</dt> </dl> | Ninguém mais usa essa conexão com o cartão inteligente.<br/> |
+| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**Compartilhado**</dt> </dl>          | Outros aplicativos podem usar essa conexão.<br/>        |
 
 
 
@@ -68,7 +68,7 @@ Modo no qual solicitar acesso ao cartão inteligente.
 
 </dd> <dt>
 
-*PrefProtocol* \[ no\]
+*PrefProtocol* \[ Em\]
 </dt> <dd>
 
 Valor de protocolo preferencial.
@@ -87,7 +87,7 @@ Valor de protocolo preferencial.
 **T0 \| T1**
 </dt> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -95,7 +95,7 @@ O método retorna um dos seguintes valores possíveis.
 
 | Código de retorno                                                                                  | Descrição                                                                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | A abertura no cartão inteligente no leitor nomeado foi concluída com êxito.<br/>           |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Abrir no cartão inteligente no leitor nomeado foi concluído com êxito.<br/>           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Há algo errado com um ou mais dos parâmetros passados para a função.<br/> |
 
 
@@ -104,9 +104,9 @@ O método retorna um dos seguintes valores possíveis.
 
 ## <a name="remarks"></a>Comentários
 
-Além dos códigos de erro COM listados acima, essa interface pode retornar um código de erro de [*cartão inteligente*](../secgloss/s-gly.md) se uma função de cartão inteligente foi chamada para concluir a solicitação. Para obter mais informações, consulte [valores de retorno de cartão inteligente](authentication-return-values.md).
+Além dos códigos de erro COM listados acima, essa interface poderá retornar um código de erro de cartão inteligente se uma função de cartão inteligente tiver sido chamada para concluir [*a*](../secgloss/s-gly.md) solicitação. Para obter mais informações, consulte [Valores de retorno de cartão inteligente](authentication-return-values.md).
 
-Quando terminar de usar o leitor, libere o anexo chamando o método [**iscard::D Etach**](iscard-detach.md) .
+Quando terminar de usar o leitor, libere o anexo chamando o [**método ISCard::D etach.**](iscard-detach.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -159,14 +159,14 @@ void main()
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                   |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | \_O IID iscard é definido como 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID ISCard é definido como \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -180,10 +180,10 @@ void main()
 [**Detach**](iscard-detach.md)
 </dt> <dt>
 
-[**Iscard**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
-[**Anexar novamente**](iscard-reattach.md)
+[**Reanexar**](iscard-reattach.md)
 </dt> </dl>
 
  

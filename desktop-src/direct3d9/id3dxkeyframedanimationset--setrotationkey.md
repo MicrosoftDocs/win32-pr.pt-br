@@ -1,7 +1,7 @@
 ---
-description: Defina informações de rotação para um quadro-chave específico no conjunto de animações.
+description: Definir informações de rotação para um quadro-chave específico no conjunto de animação.
 ms.assetid: b31edc88-0d77-49f3-b4c4-39cd866e1379
-title: 'Método ID3DXKeyframedAnimationSet:: SetRotationKey (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::SetRotationKey (D3dx9rotam.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b03a6818a6a59904c3db5b4819775d9e58d4f8ec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2375167b9c848c0ccec10853f04c2f1aa7b59992d3198164df46c0ba7c08b68c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856596"
 ---
-# <a name="id3dxkeyframedanimationsetsetrotationkey-method"></a>Método ID3DXKeyframedAnimationSet:: SetRotationKey
+# <a name="id3dxkeyframedanimationsetsetrotationkey-method"></a>Método ID3DXKeyframedAnimationSet::SetRotationKey
 
-Defina informações de rotação para um quadro-chave específico no conjunto de animações.
+Definir informações de rotação para um quadro-chave específico no conjunto de animação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,25 +42,25 @@ HRESULT SetRotationKey(
 
 <dl> <dt>
 
-*Animação* \[ no\]
+*Animação* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animação.
 
 </dd> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Quadro-chave.
 
 </dd> <dt>
 
-*pRotationKeys* \[ no\]
+*pRotationKeys* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)**
@@ -69,11 +69,11 @@ Ponteiro para os dados de rotação. Consulte [**D3DXKEY \_ VECTOR3**](d3dxkey-v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: O método CompressEx compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método compress.
+description: O método CompressEx compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Compress.
 ms.assetid: 7d119865-c246-4cb5-9de4-48a4c42efd90
 ms.tgt_platform: multiple
-title: Método CompressEx da classe CIM_LogicalFile
+title: Método CompressEx da classe CIM_LogicalFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7570cbe3ebc00708023a18da42ef35ff3306d3b0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3bd055f6cfbb2294c6a761a0019eab7e9102e77361a1267b2d9b7255ea7d00a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547706"
 ---
-# <a name="compressex-method-of-the-cim_logicalfile-class"></a>Método CompressEx da classe de \_ LogicalFile CIM
+# <a name="compressex-method-of-the-cim_logicalfile-class"></a>Método CompressEx da classe \_ LogicalFile CIM
 
-O método **CompressEx** compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método [**compress**](compress-method-in-class-cim-logicalfile.md) .
+O **método CompressEx** compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do [**método Compress.**](compress-method-in-class-cim-logicalfile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,28 +49,28 @@ uint32 CompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será nulo se o método tiver sucesso.
+Nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será nulo se o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ em, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Arquivo filho (ou diretório) a ser usado como ponto de partida para o método. Normalmente, esse parâmetro é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for nulo, a operação será executada no arquivo (ou diretório) especificado na chamada de [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Arquivo filho (ou diretório) a ser usado como um ponto de partida para o método . Normalmente, esse parâmetro é o *parâmetro StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for nulo, a operação será executada no arquivo (ou diretório) especificado na [**chamada ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ em, opcional\]
+*Recursivo* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela instância de [**\_ LogicalFile do CIM**](cim-logicalfile.md) . Para instâncias de arquivo, esse parâmetro é ignorado.
+Se **TRUE**, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela [**instância de \_ LogicalFile cim.**](cim-logicalfile.md) Para instâncias de arquivo, esse parâmetro é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -90,7 +90,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Violação de compartilhamento.
 
 </dd> <dt>
 
-**Arquivo de início inválido**
+**Arquivo inicial inválido**
 </dt> <dd>
 
 16
@@ -195,7 +195,7 @@ Parâmetro inválido.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -205,8 +205,8 @@ Este método não está implementado no momento pelo WMI. Para usar esse método
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

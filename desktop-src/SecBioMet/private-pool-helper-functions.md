@@ -4,12 +4,12 @@ description: Contém funções auxiliares para os projetos de console de instala
 ms.assetid: 90FED859-0DCD-43D5-9940-675127232968
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dab289c5e97c9d19e088b2ec195a83eacb37ef3a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 187079da11436cdb3ab0ab360ca8473563c72fbc1fd1ff40ff4f23e0c579f940
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977026"
 ---
 # <a name="private-pool-helper-functions"></a>Funções auxiliares de pool privado
 
@@ -23,7 +23,7 @@ As seções a seguir contêm o código necessário para dar suporte aos projetos
 
 ## <a name="targetverh"></a>Targetver. h
 
-Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.
+este exemplo foi criado para os sistemas operacionais Windows 7 e posteriores.
 
 
 ```C++
@@ -1521,9 +1521,9 @@ ConvertRejectDetailToString(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

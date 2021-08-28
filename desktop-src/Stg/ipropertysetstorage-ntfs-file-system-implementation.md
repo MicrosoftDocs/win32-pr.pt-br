@@ -6,12 +6,12 @@ keywords:
 - IPropertySetStorage Strctd STG, implementações, sistema de arquivos NTFS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b0d647b9cb804376a9efeb687b1524585ee938d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0794e2905cd9e8bd06804decb756b3f1f639c75e837b2d5f3181bb73939717f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105753082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683036"
 ---
 # <a name="ipropertysetstorage-ntfs-file-system-implementation"></a>IPropertySetStorage-implementação do sistema de arquivos NTFS
 
@@ -32,19 +32,19 @@ Chame os métodos [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-prop
 
 ## <a name="compatibility"></a>Compatibilidade
 
-As implementações de NTFS do [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) e do [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) estão disponíveis a partir do Windows 2000. As versões anteriores não podem acessar esses conjuntos de propriedades.
+as implementações NTFS de [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) e [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) estão disponíveis a partir do Windows 2000. As versões anteriores não podem acessar esses conjuntos de propriedades.
 
 A implementação do NTFS armazena conjuntos de propriedades em fluxos alternativos de um arquivo NTFS. Os fluxos alternativos devem ser copiados quando o arquivo principal é copiado.
 
 > [!Caution]  
 > Nem todos os sistemas de arquivos dão suporte a esses fluxos. Se um arquivo NTFS com conjuntos de Propriedades for copiado para um volume FAT, somente os dados no arquivo serão copiados; o conjunto de propriedades é perdido. A função [**CopyFile**](/windows/desktop/api/winbase/nf-winbase-copyfile) não retorna um erro nesse caso.
 
- 
+ 
 
 > [!Caution]  
-> Se o computador que executa a cópia do arquivo não for um computador executando no Windows 2000 ou posterior, os conjuntos de propriedades poderão ser perdidos. Por exemplo, se um computador executando no sistema operacional Windows 95 copiar um arquivo NTFS, o conjunto de propriedades será perdido mesmo que o arquivo de destino também esteja em um volume NTFS.
+> se o computador que executa a cópia do arquivo não for um computador que executa o Windows 2000 ou posterior, os conjuntos de propriedades poderão ser perdidos. por exemplo, se um computador executando no Windows sistema operacional 95 copiar um arquivo ntfs, o conjunto de propriedades será perdido mesmo que o arquivo de destino também esteja em um volume ntfs.
 
- 
+ 
 
 ## <a name="methods"></a>Métodos
 
@@ -88,7 +88,7 @@ A implementação NTFS do [**IPropertySetStorage**](/windows/desktop/api/Propidl
 
 A implementação NTFS do [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) difere da implementação do arquivo composto das seguintes maneiras:
 
--   Uma estrutura [**STATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) obtida da interface [**IEnumSTATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) contém um membro **CLSID** cujo valor é sempre zero (**CLSID \_ NULL**). Com a implementação do arquivo composto, o membro **CLSID** correto é retornado para conjuntos de propriedades não simples (consulte [armazenamento e fluxo de objetos para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md)).
+-   Uma estrutura [**STATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) obtida da interface [**IEnumSTATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) contém um membro **CLSID** cujo valor é sempre zero (**CLSID \_ NULL**). com a implementação do arquivo composto, o membro **clsid** correto é retornado para conjuntos de propriedades não simples (consulte [Armazenamento e fluxo de objetos para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md)).
 -   Ao obter uma implementação NTFS do ponteiro de interface [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) usando a função [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) ou [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) , o parâmetro *grfMode* deve seguir as mesmas regras que para a implementação do arquivo composto.
 
     Além disso, os seguintes sinalizadores não podem ser usados:
@@ -125,6 +125,6 @@ A implementação NTFS do [**IPropertySetStorage**](/windows/desktop/api/Propidl
 [**STATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

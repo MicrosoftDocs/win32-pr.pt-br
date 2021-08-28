@@ -4,19 +4,19 @@ ms.assetid: 9c536c4e-fbf8-4c16-932f-e5863b7652fe
 title: Criando topologias de reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6d34e9237278766ccb1ee174ba6c09bf953933
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 563fcef0c9ba8b1a4a33aefc17c5cea744f051470bb04df0ab4699ed4af6fa8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600816"
 ---
 # <a name="creating-playback-topologies"></a>Criando topologias de reprodução
 
 Este tópico descreve como criar uma topologia para reprodução de áudio ou vídeo. Para a reprodução básica, você pode criar uma topologia parcial, na qual os nós de origem estão conectados diretamente aos nós de saída. Você não precisa inserir nenhum nó para as transformações intermediárias, como decodificadores ou conversores de cor. A sessão de mídia usará o carregador de topologia para resolver a topologia e o carregador de topologia irá inserir as transformações necessárias.
 
 -   [Criando a topologia](#creating-the-topology)
--   [Conectando fluxos a coletores de mídia](#connecting-streams-to-media-sinks)
+-   [conectando Fluxos a coletores de mídia](#connecting-streams-to-media-sinks)
 -   [Criando o coletor de mídia](#creating-the-media-sink)
 -   [Próximas etapas](#next-steps)
 -   [Tópicos relacionados](#related-topics)
@@ -33,7 +33,7 @@ Aqui estão as etapas gerais para criar uma topologia de reprodução parcial de
     2.  Verifique se o fluxo está selecionado no momento. (Opcionalmente, você pode selecionar ou desmarcar um fluxo, com base no tipo de mídia.)
     3.  Se o fluxo for selecionado, crie um objeto de ativação para o coletor de mídia, com base no tipo de mídia do fluxo.
     4.  Adicione um nó de origem para o fluxo e um nó de saída para o coletor de mídia.
-    5.  Conecte o nó de origem ao nó de saída.
+    5.  Conexão o nó de origem para o nó de saída.
 
 Para facilitar o acompanhamento desse processo, o código de exemplo neste tópico é organizado em várias funções. A função de nível superior é denominada `CreatePlaybackTopology` . São necessários três parâmetros:
 
@@ -100,7 +100,7 @@ Esta função realiza as seguintes etapas:
 2.  Chame [**IMFPresentationDescriptor:: GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount) para obter o número de fluxos na apresentação.
 3.  Para cada fluxo, chame a função definida pelo aplicativo `AddBranchToPartialTopology` para uma ramificação na topologia. Essa função é mostrada na próxima seção.
 
-## <a name="connecting-streams-to-media-sinks"></a>Conectando fluxos a coletores de mídia
+## <a name="connecting-streams-to-media-sinks"></a>conectando Fluxos a coletores de mídia
 
 Para cada fluxo selecionado, adicione um nó de origem e um nó de saída e conecte os dois nós. O nó de origem representa o fluxo. O nó de saída representa o [processador de vídeo avançado](enhanced-video-renderer.md) (EVR) ou o [renderizador de áudio de streaming](streaming-audio-renderer.md) (SAR).
 

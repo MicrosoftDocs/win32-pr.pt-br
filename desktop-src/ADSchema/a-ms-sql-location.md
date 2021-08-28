@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Location
+title: atributo MS-SQL-Location
 description: Uma cadeia de caracteres definida pelo usuário. O padrão é definido como local.
 ms.assetid: e0d8a83f-a979-49a8-a92d-842c18c8f9fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Location
-- Esquema de AD do atributo mS-SQL-Location
+- esquema de AD do atributo MS-SQL-Location
+- esquema de AD do atributo mS-SQL-Location
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ffa71a40e7deff12385e0e45eb16d8dcc998269
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 003da9f90c77d3ee79a77c8132ab8afa4a6e1431018405cc07f67bbf607f41ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705266"
 ---
-# <a name="ms-sql-location-attribute"></a>Atributo MS-SQL-Location
+# <a name="ms-sql-location-attribute"></a>atributo MS-SQL-Location
 
 Uma cadeia de caracteres definida pelo usuário. O padrão é definido como local.
 
@@ -58,7 +58,7 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,10 +121,10 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -142,10 +142,10 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -163,10 +163,10 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como loca
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

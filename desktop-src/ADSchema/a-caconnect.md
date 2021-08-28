@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c59dc7bda256230810a20a3b78a224e6b4655ce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0aab7ad32b5db84ddc6a85df36ef4cf1ae70cb5ef16bec3ac12d426aa3cfb632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553076"
 ---
 # <a name="ca-connect-attribute"></a>CA-Connect atributo
 
@@ -58,7 +58,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -79,7 +79,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -100,7 +100,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -121,7 +121,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -142,7 +142,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -163,7 +163,7 @@ A cadeia de conexão para associação a uma autoridade de certificação.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |

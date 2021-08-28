@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102706
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bf0d5a16916764a3fd957eb83138d92ac2b1cf23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bde8dcc7d6088e10a0703377a3e6de9806a25f4b3d22c5bfe7b82035d8c09b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104551476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851256"
 ---
 # <a name="esentsessioncontextnotsetbythisthreadexception-methods"></a>Métodos EsentSessionContextNotSetByThisThreadException 
 

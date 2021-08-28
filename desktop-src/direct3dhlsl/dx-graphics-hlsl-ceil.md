@@ -1,5 +1,5 @@
 ---
-title: ceil (Corecrt \_ Math. h)
+title: ceil (Corecrt \_ math.h)
 description: Retorna o menor valor inteiro que é maior ou igual ao valor especificado.
 ms.assetid: 9823f321-14c3-4b27-9a4b-7a885cece39b
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec86db320119b7f162ed48a748c1d1ff4335b6f3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 87e898de0e638e93b4eea5d1f70f89ab7de125909a97f7bbbf058f6581c44c3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854946"
 ---
 # <a name="ceil"></a>ceil
 
@@ -27,7 +27,7 @@ Retorna o menor valor inteiro que é maior ou igual ao valor especificado.
 
 
 
-| *RET* ceil (*x*) |
+| *ret* ceil(*x*) |
 |-----------------|
 
 
@@ -40,7 +40,7 @@ Retorna o menor valor inteiro que é maior ou igual ao valor especificado.
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
 
 
 
@@ -48,30 +48,30 @@ Retorna o menor valor inteiro que é maior ou igual ao valor especificado.
 
 ## <a name="return-value"></a>Valor Retornado
 
-O menor valor inteiro (retornado como um tipo de ponto flutuante) que é maior ou igual ao parâmetro *x* .
+O menor valor inteiro (retornado como um tipo de ponto flutuante) maior ou igual ao *parâmetro x.*
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim       |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
@@ -84,7 +84,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

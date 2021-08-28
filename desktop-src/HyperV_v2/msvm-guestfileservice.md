@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0ee0f235d7549428ecf02e9c758c83bcea33efe3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa307a55963f6773682e81a08bf7d45e064c9a5bd7213f5d2d426a8d44be70b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789886"
 ---
 # <a name="msvm_guestfileservice-class"></a>\_Classe Msvm GuestFileService
 
@@ -72,7 +72,7 @@ A classe **Msvm \_ GuestFileService** tem esses métodos.
 
 | Método                                                             | Descrição                                                                                                                                                                  |
 |:-------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CopyFilesToGuest**](copyfilestoguest-msvm-guestfileservice.md) | Copia arquivos do host Hyper-V para a máquina virtual.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/> |
+| [**CopyFilesToGuest**](copyfilestoguest-msvm-guestfileservice.md) | Copia arquivos do host Hyper-V para a máquina virtual.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/> |
 | **StartService**                                                   | Não há suporte para o método.<br/>                                                                                                                                     |
 | **StopService**                                                    | Não há suporte para o método.<br/>                                                                                                                                     |
 
@@ -272,8 +272,8 @@ Nome do sistema que hospeda o serviço.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                                 |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

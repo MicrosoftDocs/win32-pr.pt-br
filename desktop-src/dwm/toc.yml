@@ -1,18 +1,18 @@
 - name: Gerenciador de Janelas da Área de Trabalho (DWM)
   href: dwm-overview.md
   items:
-    - name: Visões gerais do DWM
+    - name: Visão geral do DWM
       href: desktop-window-manager-overviews.md
       items:
-        - name: Habilitar e controlar a composição do DWM
+        - name: Habilitar e controlar a composição DWM
           href: composition-ovw.md
-        - name: Desfoque do DWM por trás da visão geral
+        - name: Visão geral do desfoque por trás da DWM
           href: blur-ovw.md
-        - name: Visão geral da miniatura do DWM
+        - name: Visão geral da miniatura DWM
           href: thumbnail-ovw.md
-        - name: Acessando e controlando dados do quadro DWM
+        - name: Acessando e controlando dados de quadro DWM
           href: frametiming-ovw.md
-        - name: Considerações sobre desempenho e práticas recomendadas
+        - name: Considerações de desempenho e práticas recomendadas
           href: bestpractices-ovw.md
         - name: Quadro de janela personalizado usando DWM
           href: customframe.md
@@ -21,15 +21,15 @@
       items:
         - name: Personalizar uma miniatura icônica e um bitmap de versão prévia dinâmica
           href: dwm-sample-customizethumbnail.md
-    - name: Referência do DWM
+    - name: Referência de DWM
       href: reference.md
       items:
-        - name: Constantes e enumerações do DWM
+        - name: Constantes e enumerações DWM
           href: enums.md
           items:
-            - name: Desfoque de DWM por trás de constantes
+            - name: Desfoque de DWM atrás de constantes
               href: dwm-bb-constants.md
-            - name: Constantes de composição do DWM Enable
+            - name: Habilitar constantes de composição do DWM
               href: dwm-ec-constants.md
             - name: DWM_SOURCE_FRAME_SAMPLING
               href: /windows/desktop/api/Dwmapi/ne-dwmapi-dwm_source_frame_sampling
@@ -47,7 +47,7 @@
               href: /windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute
             - name: GESTURE_TYPE
               href: /windows/desktop/api/Dwmapi/ne-dwmapi-gesture_type
-        - name: Funções do DWM
+        - name: Funções DWM
           href: functions.md
           items:
             - name: DwmAttachMilContent
@@ -86,7 +86,7 @@
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetwindowattribute
             - name: DwmInvalidateIconicBitmaps
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwminvalidateiconicbitmaps
-            - name: DwmIsCompositionEnabled
+            - name: Dwmiscompositionenabled
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmiscompositionenabled
             - name: DwmModifyPreviousDxFrameDuration
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmmodifypreviousdxframeduration
@@ -116,7 +116,7 @@
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmunregisterthumbnail
             - name: DwmUpdateThumbnailProperties
               href: /windows/desktop/api/Dwmapi/nf-dwmapi-dwmupdatethumbnailproperties
-        - name: Mensagens do DWM
+        - name: Mensagens DWM
           href: dwm-messages.md
           items:
             - name: WM_DWMCOLORIZATIONCOLORCHANGED
@@ -131,7 +131,7 @@
               href: wm-dwmsendiconicthumbnail.md
             - name: WM_DWMWINDOWMAXIMIZEDCHANGE
               href: wm-dwmwindowmaximizedchange.md
-        - name: Estruturas do DWM
+        - name: Estruturas DWM
           href: structs.md
           items:
             - name: DWM_BLURBEHIND

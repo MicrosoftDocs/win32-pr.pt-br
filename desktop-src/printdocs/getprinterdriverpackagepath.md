@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: ea355782df6cce7910f92a46af3cde320536106e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5058d57a0275019c5e603673d260c9969cc0b5d5641dea15e09ffe242addff10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600796"
 ---
 # <a name="getprinterdriverpackagepath-function"></a>Função GetPrinterDriverPackagePath
 
@@ -57,14 +57,14 @@ Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que espec
 *pszEnvironment* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
+um ponteiro para uma constante, cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
 
 </dd> <dt>
 
 *pszLanguage* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica o idioma da [interface do usuário multilíngüe](/windows/desktop/Intl/mui-resource-management) para o driver que está sendo instalado. Isso pode ser **nulo**.
+um ponteiro para uma constante, cadeia de caracteres terminada em nulo que especifica o idioma [Interface de Usuário Multilíngue](/windows/desktop/Intl/mui-resource-management) para o driver que está sendo instalado. Isso pode ser **nulo**.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Um ponteiro para o tamanho necessário do buffer *pszDriverPackageCab* .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será S \_ OK, caso contrário, o **HRESULT** conterá um código de erro.
 
@@ -119,9 +119,9 @@ O *pszPackageID* normalmente é obtido de uma chamada para [**GetCorePrinterDriv
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomes Unicode e ANSI<br/>   | **GetPrinterDriverPackagePathW** (Unicode) e **GetPrinterDriverPackagePathA** (ANSI)<br/>         |

@@ -1,9 +1,9 @@
 ---
-title: função gluEndSurface (Glu. h)
-description: As funções gluBeginSurface e gluEndSurface delimitam uma definição de superfície de B-spline racional não uniforme (NURBS). | função gluEndSurface (Glu. h)
+title: Função gluEndSurface (Glu.h)
+description: As funções gluBeginSurface e gluEndSurface delimitam uma definição de superfície NRITOS (Racional B-Spline) não uniforme. | Função gluEndSurface (Glu.h)
 ms.assetid: beaa0340-c67d-4376-bedd-7f73c5c6d742
 keywords:
-- função gluEndSurface OpenGL
+- Função gluEndSurface OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54631d5c4ef752cffd989f8fa02f8cb512c67da3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 32c8fb5165be78032429dce7957cd0975753515d55969b04415c61be2a7dc5ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675366"
 ---
-# <a name="gluendsurface-function"></a>função gluEndSurface
+# <a name="gluendsurface-function"></a>Função gluEndSurface
 
-As funções [**gluBeginSurface**](glubeginsurface.md) e **gluEndSurface** delimitam uma definição de superfície de B-spline racional não uniforme ([NURBS](using-nurbs-curves-and-surfaces.md)).
+As [**funções gluBeginSurface**](glubeginsurface.md) e **gluEndSurface** delimitam uma definição de superfície [NALTERS](using-nurbs-curves-and-surfaces.md)(Rational B-Spline ) não uniforme.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void WINAPI gluEndSurface(
 *nobj* 
 </dt> <dd>
 
-O objeto NURBS (criado com [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+O objeto N LTDA (criado com [**gluNewNheisRenderer**](glunewnurbsrenderer.md)).
 
 </dd> </dl>
 
@@ -53,22 +53,22 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-As funções [**gluBeginSurface**](glubeginsurface.md) e **gluEndSurface** marcam o início e o fim das definições de superfície NURBS, que são definidas com chamadas para **gluNurbsSurface**.
+As [**funções gluBeginSurface**](glubeginsurface.md) e **gluEndSurface** marcam o início e o fim das definições de superfície NFACES, que são definidas com chamadas **para gluNfaceSurface.**
 
-1.  Chame **gluBeginSurface** para marcar o início de uma definição de superfície NURBS.
-2.  Faça uma ou mais chamadas para **gluNurbsSurface** para definir os atributos da superfície.
+1.  Chame **gluBeginSurface** para marcar o início de uma definição de superfície NFACES.
+2.  Faça uma ou mais chamadas para **gluNfaceSurface** para definir os atributos da superfície.
 
-    Exatamente uma dessas chamadas para **gluNurbsSurface** deve ter um tipo de superfície de GL \_ map2 \_ Vertex \_ 3 ou GL \_ map2 \_ vértice \_ 4.
+    Exatamente uma dessas chamadas para **gluNfaceSurface** deve ter um tipo de superfície GL \_ MAP2 \_ VERTEX 3 ou \_ GL \_ MAP2 \_ VERTEX \_ 4.
 
-3.  Para marcar o final da definição da superfície NURBS, chame **gluEndSurface**.
+3.  Para marcar o final da definição da superfície NFACES, chame **gluEndSurface**.
 
-As funções [**gluBeginTrim**](glubegintrim.md), [**gluPwlCurve**](glupwlcurve.md), [**gluNurbsCurve**](glunurbscurve.md)e **GLUENDTRIM** dão suporte à remoção de superfícies NURBS.
+As [**funções gluBeginTrim**](glubegintrim.md), [**gluPwlCurve,**](glupwlcurve.md) [**gluNagisCurve**](glunurbscurve.md)e **gluEndTrim** suportam o corte de superfícies NRECS.
 
-Use avaliadores OpenGL para renderizar a superfície NURBS como um conjunto de polígonos. Preserve o estado do avaliador durante a renderização com [**glPushAttrib**](glpushattrib.md) ( \_ bit de avaliação GL \_ ) e [**glPopAttrib**](glpopattrib.md).
+Use avaliadores OpenGL para renderizar a superfície N LTDA como um conjunto de polígonos. Preservar o estado do avaliador durante a renderização [**com glPushAttrib**](glpushattrib.md) (GL \_ EVAL \_ BIT) e [**glPopAttrib.**](glpopattrib.md)
 
 ## <a name="examples"></a>Exemplos
 
-As funções a seguir renderizam uma superfície NURBS texturizada com Normals; as coordenadas de textura e normais também são descritas como superfícies NURBS:
+As funções a seguir renderizarão uma superfície N LTDA texturizada com normais; as coordenadas de textura e as normais também são descritas como superfícies NALTERS:
 
 ``` syntax
 gluBeginSurface(nobj); 
@@ -86,8 +86,8 @@ gluEndSurface(nobj);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -102,13 +102,13 @@ gluEndSurface(nobj);
 [**gluBeginTrim**](glubegintrim.md)
 </dt> <dt>
 
-[**gluNewNurbsRenderer**](glunewnurbsrenderer.md)
+[**gluNewNagisRenderer**](glunewnurbsrenderer.md)
 </dt> <dt>
 
-[**gluNurbsCurve**](glunurbscurve.md)
+[**gluNagisCurve**](glunurbscurve.md)
 </dt> <dt>
 
-[**gluNurbsSurface**](glunurbssurface.md)
+[**gluNagisSurface**](glunurbssurface.md)
 </dt> <dt>
 
 [**gluPwlCurve**](glupwlcurve.md)

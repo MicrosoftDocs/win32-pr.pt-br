@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 5571fb19786e19a61c85741bcf6d4acb5231e977
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2c6fdcdd2a404e4122a0c8c66995fdabaf1284dfa67ebade888d2964c0c1fb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105751342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852796"
 ---
 # <a name="d3dxvec4transformarray-function-d3dx10mathh"></a>Função D3DXVec4TransformArray (D3DX10Math. h)
 
@@ -98,7 +98,7 @@ Número de elementos na matriz.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 

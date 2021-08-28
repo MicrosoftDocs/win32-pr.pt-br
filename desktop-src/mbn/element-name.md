@@ -4,7 +4,7 @@ MS-HAID: WWAN\_profile\_v4.element\_Name
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Nome
+title: Name
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 260ae6ea-2386-4473-9376-74c53addd8f3
@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bbf9c3452d98f669dbee49a1e773b52bccc05d62
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 728b819b267e17b4624135298554ebaabc9efc65
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988699"
 ---
 # <a name="span-idwwan_profile_v4element_namespanmbnprofileextname-v4"></a><span id="WWAN_profile_v4.element_Name"></span>\/Nome do MBNProfileExt (v4)
 
@@ -35,7 +35,7 @@ O nome do perfil. Para obter mais informações, consulte a documentação do el
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<Name\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Name>
@@ -69,7 +69,9 @@ Nenhum.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Valor |
+|------------|----------|
+| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

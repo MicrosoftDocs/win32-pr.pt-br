@@ -24,7 +24,7 @@
               href: recovery-processing.md
             - name: Considerações de programação para escrever gerenciadores de recursos
               href: programming-considerations.md
-        - name: Interoperabilidade com outros recursos do Windows
+        - name: interoperabilidade com outros recursos de Windows
           href: interoperability-with-other-windows-features.md
         - name: Segurança de KTM e direitos de acesso
           href: ktm-security-and-access-rights.md

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c8bf502cca48701a7d71a083e515f9988cafe303
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29f0ae90c8a6fee1f675a6128fce1b2b8276490f61e93e707e5471f734449b94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853386"
 ---
 # <a name="d3dxintersecttri-function-d3dx10mathh"></a>Função D3DXIntersectTri (D3DX10math. h)
 
@@ -144,7 +144,7 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

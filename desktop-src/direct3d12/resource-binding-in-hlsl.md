@@ -5,12 +5,12 @@ ms.assetid: 3CD4BDAD-8AE3-4DE0-B3F8-9C9F9E83BBE9
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 08/27/2019
-ms.openlocfilehash: 711ccdee71ff916445be68d03b84b7621aa04cf3
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: fca134e19adac2ed8f580940c275cb78bf0e7a777fd5fb6ca2cbede1243f06e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912250"
 ---
 # <a name="resource-binding-in-hlsl"></a>Associação de recursos em HLSL
 
@@ -24,7 +24,7 @@ A sintaxe de recurso do Modelo de Sombreador 5 (SM5.0) usa a palavra-chave para 
 Texture2D<float4> tex1[4] : register(t3)
 ```
 
-A sintaxe de recurso do Modelo de Sombreador 5.1 (SM5.1) no HLSL é baseada na sintaxe de recurso de registro existente, para permitir a portação mais fácil. Os recursos do Direct3D 12 no HLSL estão vinculados a registros virtuais em espaços de registro lógicos:
+A sintaxe de recurso do Modelo de Sombreador 5.1 (SM5.1) no HLSL baseia-se na sintaxe de recurso de registro existente para permitir a portação mais fácil. Os recursos do Direct3D 12 no HLSL estão vinculados a registros virtuais em espaços de registro lógicos:
 
 -   t – para SRV (exibições de recurso de sombreador)
 -   s – para amostras
@@ -45,32 +45,32 @@ Texture2D<float4> tex2[4] : register(t10)
 Texture2D<float4> tex3[7][5][3] : register(t20, space1)
 ```
 
-O SM5.1 usa os mesmos tipos de recursos e tipos de elemento que o SM5.0. Os limites de declaração SM5.1 são mais flexíveis e restritos somente pelos limites de runtime/hardware. A `space` palavra-chave especifica a qual espaço de registro lógico a variável declarada está associada. Se a `space` palavra-chave for omitida, o índice de espaço padrão 0 será atribuído implicitamente ao intervalo (de modo que o `tex2` intervalo acima resida `space0` ). `register(t3,  space0)` Nunca entrará em conflito com `register(t3,  space1)` , nem com nenhuma matriz em outro espaço que possa incluir T3.
+O SM5.1 usa os mesmos tipos de recursos e tipos de elemento que o SM5.0. Os limites de declaração SM5.1 são mais flexíveis e restritos somente pelos limites de runtime/hardware. A `space` palavra-chave especifica a qual espaço de registro lógico a variável declarada está vinculada. Se a `space` palavra-chave for omitida, o índice de espaço padrão de 0 será atribuído implicitamente ao intervalo (para que o intervalo `tex2` acima resida em `space0` ). `register(t3,  space0)` nunca entrará em conflito com `register(t3,  space1)` , nem com nenhuma matriz em outro espaço que possa incluir t3.
 
-Um recurso de matriz pode ter um tamanho não associado, que é declarado especificando a primeira dimensão como vazia ou 0:
+Um recurso de matriz pode ter um tamanho ilimitado, que é declarado especificando a primeira dimensão vazia ou 0:
 
 ``` syntax
 Texture2D<float4> tex1[] : register(t0)
 ```
 
-A tabela de descritores de correspondência pode ser:
+A tabela de descritor correspondente pode ser:
 
 ``` syntax
 DescriptorTable( CBV(b1), UAV(u0, numDescriptors = 4), SRV(t0, numDescriptors=unbounded)
 ```
 
-Uma matriz não associada em HLSL corresponde a um número fixo definido com `numDescriptors` na tabela de descritores e um tamanho fixo em HLSL corresponde a uma declaração não associada na tabela de descritores.
+Uma matriz não unidas em HLSL faz a combinação de um número fixo definido com na tabela de descritor, e um tamanho fixo no HLSL corresponderá a uma declaração não unidas na tabela `numDescriptors` do descritor.
 
-Matrizes multidimensionais são permitidas, incluindo um tamanho não associado. Essas matrizes multidimensionais são achatadas no espaço de registro.
+Matrizes multidimensionais são permitidas, incluindo de um tamanho nãobound. Essas matrizes multidimensionais são niveladas no espaço de registro.
 
 ``` syntax
 Texture2D<float4> tex2[3000][10] : register(t0, space0); // t0-t29999 in space0
 Texture2D<float4> tex3[0][5][3] : register(t5, space1)
 ```
 
-Não é permitido alias de intervalos de recursos. Em outras palavras, para cada tipo de recurso (t, s, u, b), os intervalos de registro declarados não deve se sobrepõem. Isso também inclui intervalos não associados. Intervalos declarados em espaços de registro diferentes nunca se sobrepõem. Observe que o não associado `tex2` (acima) reside no `space0` , embora `tex3` não esteja associado `space1` , de modo que eles não se sobreponham.
+O alias de intervalos de recursos não é permitido. Em outras palavras, para cada tipo de recurso (t, s, u, b), os intervalos de registro declarados não devem se sobrepor. Isso também inclui intervalos nãobounded. Intervalos declarados em espaços de registro diferentes nunca se sobrepõem. Observe que unbounded (acima) reside em , enquanto unbounded reside em , de forma que eles `tex2` `space0` não se `tex3` `space1` sobreponham.
 
-O acesso a recursos que foram declarados como matrizes é tão simples quanto indexá-los.
+Acessar recursos que foram declarados como matrizes é tão simples quanto indexá-los.
 
 ``` syntax
 Texture2D<float4> tex1[400] : register(t3);
@@ -78,17 +78,17 @@ sampler samp[7] : register(s0);
 tex1[myMaterialID].Sample(samp[samplerID], texCoords);
 ```
 
-Há uma restrição padrão importante no uso dos índices ( `myMaterialID` e `samplerID` no código acima), pois eles não têm permissão para variar em uma [onda](../direct3dhlsl/hlsl-shader-model-6-0-features-for-direct3d-12.md#terminology). Mesmo alterando o índice com base em contagens de instâncias como variáveis.
+Há uma restrição padrão importante sobre o uso dos índices ( e no código acima), em que eles não têm permissão para variar dentro de `myMaterialID` `samplerID` uma [onda](../direct3dhlsl/hlsl-shader-model-6-0-features-for-direct3d-12.md#terminology). Até mesmo alterar o índice com base em contagens de instanciamento como variáveis.
 
-Se a variação do índice for necessária, especifique o `NonUniformResourceIndex` qualificador no índice, por exemplo:
+Se for necessário variar o índice, especifique o `NonUniformResourceIndex` qualificador no índice, por exemplo:
 
 ``` syntax
 tex1[NonUniformResourceIndex(myMaterialID)].Sample(samp[NonUniformResourceIndex(samplerID)], texCoords);
 ```
 
-Em alguns hardwares, o uso desse qualificador gera código adicional para impor a exatidão (incluindo entre threads), mas com um custo de desempenho secundário. Se um índice for alterado sem esse qualificador e dentro de um empate/expedição, os resultados serão indefinidos.
+Em alguns hardwares, o uso desse qualificador gera código adicional para impor a correção (incluindo entre threads), mas a um custo de desempenho menor. Se um índice for alterado sem esse qualificador e dentro de um desenho/expedição, os resultados serão indefinido.
 
-## <a name="descriptor-arrays-and-texture-arrays"></a>Matrizes de descritores e matrizes de textura
+## <a name="descriptor-arrays-and-texture-arrays"></a>Matrizes de descritor e matrizes de textura
 
 As matrizes de textura estão disponíveis desde o DirectX 10. As matrizes de textura exigem um descritor, no entanto, todas as fatias de matriz devem compartilhar o mesmo formato, largura, altura e contagem de mip. Além disso, a matriz deve ocupar um intervalo contíguo no espaço de endereço virtual. O código a seguir mostra um exemplo de acesso a uma matriz de textura de um sombreador.
 
@@ -116,7 +116,7 @@ Observe que o uso estranho de um float para o índice de matriz é substituído 
 Texture2DArray<float4> myArrayOfTex2DArrays[2] : register(t0);
 ```
 
-Não é legítimo declarar uma matriz de estruturas, cada estrutura que contém descritores, por exemplo, não há suporte para o código a seguir.
+Não é legítimo declarar uma matriz de estruturas, cada estrutura que contém descritores, por exemplo, o código a seguir não tem suporte.
 
 ``` syntax
 struct myStruct {
@@ -139,22 +139,22 @@ Para obter o layout **de memória abcabcabc....** , use uma tabela de descritor 
 
 ## <a name="resource-aliasing"></a>Alias de recurso
 
-Os intervalos de recursos especificados nos sombreadores HLSL são intervalos lógicos. Eles são vinculados a intervalos de heap concretos em runtime por meio do mecanismo de assinatura raiz. Normalmente, um intervalo lógico é mapeado para um intervalo de heap que não se sobrepõe a outros intervalos de heap. No entanto, o mecanismo de assinatura raiz possibilita o alias (sobreposição) de intervalos de heap de tipos compatíveis. Por exemplo, e os intervalos do exemplo acima podem ser mapeados para o mesmo intervalo de heap (ou sobreposição), que tem o efeito de suavizar texturas no programa `tex2` `tex3` HLSL. Se tal alias for desejado, o sombreador deverá ser compilado com \_ \_ a opção de alias d3d10 Shader Resources \_ \_ , que é definida usando a opção */res de \_ \_ alias de maio* para a ferramenta de compilador de [efeito](../direct3dtools/fxc.md) (FXC). A opção faz com que o compilador produza o código correto impedindo determinadas otimizações de carga/armazenamento sob a suposição de que os recursos podem ser alias.
+Os intervalos de recursos especificados nos sombreadores HLSL são intervalos lógicos. Eles são vinculados a intervalos de heap concretos em runtime por meio do mecanismo de assinatura raiz. Normalmente, um intervalo lógico é mapeado para um intervalo de heap que não se sobrepõe a outros intervalos de heap. No entanto, o mecanismo de assinatura raiz possibilita que o alias (sobreponha) intervalos de heap de tipos compatíveis. Por exemplo, e os intervalos do exemplo acima podem ser mapeados para o mesmo intervalo de heap (ou sobreposição), que tem o efeito de suavizar texturas no programa `tex2` `tex3` HLSL. Se esse alias for desejado, o sombreador deverá ser compilado com a opção D3D10 SHADER RESOURCES MAY ALIAS, que é definida usando a opção /res pode alias para a \_ \_ \_ \_ FXC *\_ \_* (Ferramenta de [Compilador](../direct3dtools/fxc.md) de Efeito). A opção faz com que o compilador produza código correto, impedindo determinadas otimizações de carregamento/armazenamento com a suposição de que os recursos podem ser alias.
 
-## <a name="divergence-and-derivatives"></a>Divergência e derivações
+## <a name="divergence-and-derivatives"></a>Divergente e derivados
 
-O SM 5.1 não impõe limitações no índice de recursos; ou seja, ` tex2[idx].Sample(…)` – o índice Idx pode ser uma constante literal, uma constante CBuffer ou um valor interpolado. Embora o modelo de programação ofereça uma grande flexibilidade, há problemas a serem considerados:
+O SM5.1 não impõe limitações no índice de recursos; Ou seja, o idx do índice pode ser uma constante literal, uma constante ` tex2[idx].Sample(…)` cbuffer ou um valor interpolado. Embora o modelo de programação tenha uma flexibilidade tão grande, há problemas a serem abordados:
 
--   Se o índice divergir em um quad, as quantidades derivadas e derivados de hardware computadas, como LOD, poderão ser indefinidas. O compilador HLSL também faz o melhor esforço para emitir um aviso nesse caso, mas não impedirá que um sombreador seja compilado. Esse comportamento é semelhante à computação de derivações no fluxo de controle divergente.
--   Se o índice de recursos for divergente, o desempenho será reduzido em comparação com o caso de um índice uniforme, pois o hardware precisa executar operações em vários recursos. Os índices de recursos que podem ser divergentes devem ser marcados com a `NonUniformResourceIndex` função no código HLSL. Caso contrário, os resultados serão indefinidos.
+-   Se o índice diverge em um quádruplo, as quantidades derivadas e derivadas calculadas por hardware, como LOD, podem ser indefinidas. O compilador HLSL faz o melhor esforço para emitir um aviso nesse caso, mas não impedirá que um sombreador seja compilado. Esse comportamento é semelhante à computação de derivados no fluxo de controle divergente.
+-   Se o índice de recursos for divergente, o desempenho será reduzido em comparação com o caso de um índice uniforme, pois o hardware precisa executar operações em vários recursos. Índices de recursos que podem ser divergentes devem ser marcados com a `NonUniformResourceIndex` função no código HLSL. Caso contrário, os resultados serão indefinido.
 
 ## <a name="uavs-in-pixel-shaders"></a>UAVs em sombreadores de pixel
 
-O SM 5.1 não impõe restrições em intervalos de UAV em sombreadores de pixel como foi o caso do SM 5.0.
+O SM5.1 não impõe restrições em intervalos UAV em sombreadores de pixel, como era o caso do SM5.0.
 
-## <a name="constant-buffers"></a>Buffers de constantes
+## <a name="constant-buffers"></a>Buffers constantes
 
-A sintaxe de CBuffer (buffers de constantes) do SM 5.1 foi alterada do SM 5.0 para permitir que os desenvolvedores indexem buffers constantes. Para habilitar buffers constantes indexáveis, o SM 5.1 apresenta a `ConstantBuffer` construção "template":
+A sintaxe de buffers constantes SM5.1 (cbuffer) foi alterada de SM5.0 para permitir que os desenvolvedores indexem buffers constantes. Para habilitar buffers constantes indexáveis, o SM5.1 introduz o `ConstantBuffer` constructo de "modelo":
 
 ``` syntax
 struct Foo
@@ -166,14 +166,14 @@ ConstantBuffer<Foo> myCB1[2][3] : register(b2, space1);
 ConstantBuffer<Foo> myCB2 : register(b0, space1);
 ```
 
-O código anterior declara a variável de buffer constante `myCB1` do tipo `Foo` e do tamanho 6, e uma variável de buffer escalar e constante `myCB2` . Uma variável de buffer constante agora pode ser indexada no sombreador como:
+O código anterior declara a variável de buffer constante do tipo e tamanho 6 e uma `myCB1` `Foo` variável de buffer constante `myCB2` escalar. Uma variável de buffer constante agora pode ser indexada no sombreador como:
 
 ``` syntax
 myCB1[i][j].a.xyzw
 myCB2.b.yy
 ```
 
-Os campos ' a ' e ' b ' não se tornam variáveis globais, mas, em vez disso, devem ser tratados como campos. Para compatibilidade com versões anteriores, o SM 5.1 dá suporte ao conceito antigo de CBuffer para cbuffers escalar. A instrução a seguir torna 'a' e 'b' variáveis globais somente leitura, como no SM5.0. No entanto, um cbuffer de estilo antigo não pode ser indexável.
+Os campos 'a' e 'b' não se tornam variáveis globais, mas devem ser tratados como campos. Para compatibilidade com backward, o SM5.1 dá suporte ao conceito cbuffer antigo para cbuffers escalares. A instrução a seguir torna 'a' e 'b' variáveis globais somente leitura, como no SM5.0. No entanto, um cbuffer de estilo antigo não pode ser indexável.
 
 ``` syntax
 cbuffer : register(b1)
@@ -258,7 +258,7 @@ ret
 // Approximately 12 instruction slots are used.
 ```
 
-Cada intervalo de recursos do sombreador agora tem uma ID (um nome) que é exclusiva para o código de byte do sombreador. Por exemplo, a matriz de textura tex1 (t10) torna-se 'T1' no código de byte do sombreador. A aplicação de IDs exclusivas para cada intervalo de recursos permite duas coisas:
+Cada intervalo de recursos do sombreador agora tem uma ID (um nome) que é exclusiva para o código de byte do sombreador. Por exemplo, a matriz de textura tex1 (t10) torna-se 'T1' no código de byte do sombreador. A entrega de IDs exclusivas para cada intervalo de recursos permite duas coisas:
 
 -   Identifique sem ambígua qual intervalo de recursos (consulte dcl resource texture2d) está sendo indexado em uma instrução \_ \_ (consulte a instrução de exemplo).
 -   Anexar um conjunto de atributos à declaração, por exemplo, o tipo de elemento, o tamanho do stride, o modo de operação de raster etc.
@@ -279,7 +279,7 @@ Um operando de recurso para CBVs é um operando 3D, contendo: ID literal do inte
 
 Os programas HLSL não precisam saber nada sobre assinaturas raiz. Eles podem atribuir associações ao espaço de associação virtual "Register", t \# para SRVs, u \# para UAVs, b \# para CBVs, s \# para amostragens ou dependem do compilador para selecionar atribuições (e consultar os mapeamentos resultantes usando a reflexão do sombreador posteriormente). As tabelas de descritores de mapeamentos de assinatura raiz e as constantes raiz para esse espaço de registro virtual.
 
-A seguir estão alguns exemplos de declarações que um sombreador HLSL pode ter. Observe que não há referências a assinaturas raiz ou tabelas de descritor.
+Veja a seguir algumas declarações de exemplo que um sombreador HLSL pode ter. Observe que não há referências a assinaturas raiz ou tabelas de descritores.
 
 ``` syntax
 Texture2D foo[5] : register(t2);
@@ -316,11 +316,11 @@ ConstantBuffer<Stuff> myStuff[][3][8]  : register(b2, space3)
 ## <a name="related-topics"></a>Tópicos relacionados
 
 * [Indexação dinâmica usando HLSL 5.1](dynamic-indexing-using-hlsl-5-1.md)
-* [Ferramenta Effect-Compiler](../direct3dtools/fxc.md)
-* [Recursos do HLSL Shader Model 5.1 para Direct3D 12](../direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12.md)
+* [Efeito-ferramenta do compilador](../direct3dtools/fxc.md)
+* [Recursos do HLSL Shader Model 5,1 para Direct3D 12](../direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12.md)
 * [Modos de exibição ordenados do rasterizador](rasterizer-order-views.md)
 * [Associação de recursos](resource-binding.md)
 * [Assinaturas raiz](root-signatures.md)
-* [Modelo de sombreador 5.1](../direct3dhlsl/shader-model-5-1.md)
+* [Modelo do sombreador 5,1](../direct3dhlsl/shader-model-5-1.md)
 * [Valor de referência de estêncil especificado pelo sombreador](shader-specified-stencil-reference-value.md)
 * [Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)

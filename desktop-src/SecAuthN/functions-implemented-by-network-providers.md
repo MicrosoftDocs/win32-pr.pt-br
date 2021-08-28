@@ -4,12 +4,12 @@ ms.assetid: ebdaec3d-6335-4bdf-b150-91e538068f2b
 title: Funções implementadas por provedores de rede
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8122d8e06e92f66958f597c8fbe26f8e1c7abdd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 892bcb5c19f54e5de667eb72119f6b9e5fc9b183b8d5038ce37b7e556ae5d3a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016316"
 ---
 # <a name="functions-implemented-by-network-providers"></a>Funções implementadas por provedores de rede
 

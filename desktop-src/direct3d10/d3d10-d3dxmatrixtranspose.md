@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixTranspose (D3DX10Math. h) – retorna a transpoção de matriz de uma matriz.
+description: Função D3DXMatrixTranspose (D3DX10Math.h) – retorna a transposição de matriz de uma matriz.
 ms.assetid: 934b17cc-39c4-425c-839b-69e080f0efd7
-title: Função D3DXMatrixTranspose (D3DX10Math. h)
+title: Função D3DXMatrixTranspose (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e20fd8a29ba3f9adec7134a011f8f470c60f7011
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d192064c550630cfe84350a1903ba66989519e66ee1e13bc8850cfe11d8520e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120306"
 ---
-# <a name="d3dxmatrixtranspose-function-d3dx10mathh"></a>Função D3DXMatrixTranspose (D3DX10Math. h)
+# <a name="d3dxmatrixtranspose-function-d3dx10mathh"></a>Função D3DXMatrixTranspose (D3DX10Math.h)
 
-Retorna a transpoção de matriz de uma matriz.
+Retorna a transposição de matriz de uma matriz.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ D3DXMATRIX* D3DXMatrixTranspose(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de D3DXMATRIX de origem.
+Ponteiro para a estrutura D3DXMATRIX de origem.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Ponteiro para a estrutura de D3DXMATRIX de origem.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para a estrutura D3DXMATRIX que é a transpoção de matriz da matriz.
+Ponteiro para a estrutura D3DXMATRIX que é a matriz transposição da matriz.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixTranspose pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixTranspose pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

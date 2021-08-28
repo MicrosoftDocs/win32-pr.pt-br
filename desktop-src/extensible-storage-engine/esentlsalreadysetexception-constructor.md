@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 05b91285b381b866f30c8c166666b6aa57e60c0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c3c829605ce68b72a5f8244dd9f253cb8b52e828c2d344c02b65d1393dc72ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851986"
 ---
 # <a name="esentlsalreadysetexception-constructor"></a>Construtor EsentLSAlreadySetException
 
 Inicializa uma nova instância da classe EsentLSAlreadySetException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLSAlreadySetException()
 
 [Classe EsentLSAlreadySetException](./esentlsalreadysetexception-class.md)
 
-[Membros do EsentLSAlreadySetException](./esentlsalreadysetexception-members.md)
+[Membros EsentLSAlreadySetException](./esentlsalreadysetexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

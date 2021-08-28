@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: 'CHString:: Operator + = (ChString. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 683ca6b6264169cd156e89c3447c63fa59f03585
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 316f5272c7b5a4ef5b59e93dd480ade215e3279ea754f1da5432448d46fcce17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119679872"
 ---
 # <a name="chstringoperator"></a>CHString:: Operator + =
 
@@ -85,7 +85,7 @@ assert( ( s += L"def" ) == L"abcdef" );
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 

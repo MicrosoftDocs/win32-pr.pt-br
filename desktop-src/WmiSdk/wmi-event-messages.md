@@ -1,20 +1,20 @@
 ---
-description: A lista a seguir lista os eventos com suporte nos logs WMI no Windows Vista e sistemas operacionais posteriores.
+description: a lista a seguir lista os eventos com suporte nos logs do WMI no Windows Vista e sistemas operacionais posteriores.
 ms.assetid: ad8891cc-0b76-404d-81fc-961bcdbfae32
 ms.tgt_platform: multiple
 title: Mensagens de evento WMI
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 543e7131ac0c73a9f1e0f111dafe90197989a33d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7bb2b0a732d79c8b8c11e8bd14a217ef1ee81eb29bead4a885003ea98f82898
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120706"
 ---
 # <a name="wmi-event-messages"></a>Mensagens de evento WMI
 
-A lista a seguir lista os eventos com suporte nos logs WMI no Windows Vista e sistemas operacionais posteriores.
+a lista a seguir lista os eventos com suporte nos logs do WMI no Windows Vista e sistemas operacionais posteriores.
 
 > [!Note]  
 > A documentação a seguir foi projetada para desenvolvedores e administradores de ti. Se você estiver tentando resolver uma mensagem de erro WMI em seu sistema doméstico, consulte o site [suporte da Microsoft](https://support.microsoft.com/) .
@@ -31,7 +31,7 @@ A lista a seguir lista os eventos com suporte nos logs WMI no Windows Vista e si
 
 
 
-O serviço de Instrumentação de Gerenciamento do Windows detectou uma inconsistência com o repositório WMI no diretório *% windir% \\ System32 \\ WBEM \\ Repository* e não pôde recuperá-lo. O repositório WMI será excluído agora, um novo repositório será criado com base no mecanismo de recuperação automática.
+o serviço de Instrumentação de Gerenciamento do Windows detectou uma inconsistência com o repositório WMI no diretório *% windir% \\ system32 \\ wbem \\ repository* e não pôde recuperá-lo. O repositório WMI será excluído agora, um novo repositório será criado com base no mecanismo de recuperação automática.
 
 
 </dt> </dl> </dd> <dt>
@@ -44,7 +44,7 @@ O serviço de Instrumentação de Gerenciamento do Windows detectou uma inconsis
 
 
 
-Um provedor, %1, foi registrado no namespace Instrumentação de Gerenciamento do Windows %2 para usar a conta LocalSystem. Essa conta é privilegiada e o provedor pode causar uma violação de segurança se não representar corretamente as solicitações do usuário.
+um provedor, %1, foi registrado no namespace Instrumentação de Gerenciamento do Windows %2 para usar a conta LocalSystem. Essa conta é privilegiada e o provedor pode causar uma violação de segurança se não representar corretamente as solicitações do usuário.
 
 
 </dt> </dl> </dd> <dt>
@@ -161,7 +161,7 @@ Falha ao inicializar o núcleo do WMI ou o subsistema do provedor ou o subsistem
 
 
 
-Falha do ADAP Instrumentação de Gerenciamento do Windows ao se conectar ao namespace %1 com o seguinte erro %2.
+Windows Falha do ADAP Instrumentação de gerenciamento ao se conectar ao namespace %1 com o seguinte erro %2.
 
 
 </dt> </dl> </dd> <dt>
@@ -174,7 +174,7 @@ Falha do ADAP Instrumentação de Gerenciamento do Windows ao se conectar ao nam
 
 
 
-Instrumentação de Gerenciamento do Windows ADAP não pôde salvar o objeto %1 no namespace %2 devido ao seguinte erro %3.
+Windows O ADAP de instrumentação de gerenciamento não pôde salvar o objeto %1 no namespace %2 devido ao seguinte erro %3.
 
 
 </dt> </dl> </dd> <dt>
@@ -187,7 +187,7 @@ Instrumentação de Gerenciamento do Windows ADAP não pôde salvar o objeto %1 
 
 
 
-Instrumentação de Gerenciamento do Windows ADAP não pôde criar a \_ classe base de desempenho Win32 em %1: resultado = %2.
+Windows A instrumentação de gerenciamento do ADAP não pôde criar a \_ classe base de desempenho Win32 em %1: resultado = %2.
 
 
 </dt> </dl> </dd> <dt>
@@ -200,7 +200,7 @@ Instrumentação de Gerenciamento do Windows ADAP não pôde criar a \_ classe b
 
 
 
-Instrumentação de Gerenciamento do Windows ADAP não pôde criar a classe de \_ base PerfRawData do Win32% 1.
+Windows O ADAP de instrumentação de gerenciamento não pôde criar a \_ classe de base PerfRawData do Win32% 1.
 
 
 </dt> </dl> </dd> <dt>
@@ -213,7 +213,7 @@ Instrumentação de Gerenciamento do Windows ADAP não pôde criar a classe de \
 
 
 
-O serviço de Instrumentação de Gerenciamento do Windows falhou ao carregar os arquivos de repositório no diretório *% windir% \\ System32 \\ WBEM \\ Repository*. Isso pode ser causado por um dano nos arquivos do repositório, configurações de segurança nesse diretório, falta de espaço em disco ou outros problemas de recursos do sistema, como a falta de memória. Se esse erro ocorrer toda vez que o computador for reiniciado, o administrador neste computador poderá precisar parar o serviço WMI, examinar a configuração de segurança nessa pasta e nos arquivos dessa pasta e executar WMIDiag para validar a integridade do Instrumentação de Gerenciamento do Windows.
+o serviço de Instrumentação de Gerenciamento do Windows falhou ao carregar os arquivos de repositório no diretório *% windir% \\ system32 \\ wbem \\ repository*. Isso pode ser causado por um dano nos arquivos do repositório, configurações de segurança nesse diretório, falta de espaço em disco ou outros problemas de recursos do sistema, como a falta de memória. se esse erro ocorrer toda vez que o computador for reiniciado, o administrador neste computador poderá precisar parar o serviço WMI, examinar a configuração de segurança nessa pasta e nos arquivos dessa pasta e executar WMIDiag para validar a integridade do Instrumentação de Gerenciamento do Windows.
 
 
 </dt> </dl> </dd> <dt>
@@ -239,7 +239,7 @@ O acesso ao namespace %1 foi negado porque o namespace está marcado com Require
 
 
 
-O serviço de Instrumentação de Gerenciamento do Windows não pôde entregar resultados de forma assíncrona para o namespace %1. O namespace é marcado com RequiresEncryption, mas WinMgmt não pôde estabelecer uma conexão segura de volta para o computador cliente. Verifique se há uma relação de confiança entre os computadores cliente e servidor para que o cliente reconheça a conta de computador do servidor.
+Windows O serviço de instrumentação de gerenciamento não pôde entregar resultados de forma assíncrona para o namespace %1. O namespace é marcado com RequiresEncryption, mas WinMgmt não pôde estabelecer uma conexão segura de volta para o computador cliente. Verifique se há uma relação de confiança entre os computadores cliente e servidor para que o cliente reconheça a conta de computador do servidor.
 
 
 </dt> </dl> </dd> <dt>
@@ -252,7 +252,7 @@ O serviço de Instrumentação de Gerenciamento do Windows não pôde entregar r
 
 
 
-Instrumentação de Gerenciamento do Windows parou WMIPRVSE.EXE porque uma cota atingiu um valor de aviso. Cota: %1 valor: %2 valor máximo: %3 PID do WMIPRVSE: %4.
+Windows A instrumentação de gerenciamento parou WMIPRVSE.EXE porque uma cota atingiu um valor de aviso. Cota: %1 valor: %2 valor máximo: %3 PID do WMIPRVSE: %4.
 
 
 </dt> </dl> </dd> <dt>
@@ -265,7 +265,7 @@ Instrumentação de Gerenciamento do Windows parou WMIPRVSE.EXE porque uma cota 
 
 
 
-Durante a inicialização do serviço, o serviço de Instrumentação de Gerenciamento do Windows não pôde localizar os arquivos do repositório. Um novo repositório será criado com base no mecanismo de recuperação automática.
+durante a inicialização do serviço, o serviço de Instrumentação de Gerenciamento do Windows não pôde localizar os arquivos do repositório. Um novo repositório será criado com base no mecanismo de recuperação automática.
 
 
 </dt> </dl> </dd> <dt>
@@ -278,7 +278,7 @@ Durante a inicialização do serviço, o serviço de Instrumentação de Gerenci
 
 
 
-Instrumentação de Gerenciamento do Windows serviço foi iniciado com êxito.
+Windows Serviço de instrumentação de gerenciamento iniciado com êxito.
 
 
 </dt> </dl> </dd> <dt>
@@ -291,7 +291,7 @@ Instrumentação de Gerenciamento do Windows serviço foi iniciado com êxito.
 
 
 
-Instrumentação de Gerenciamento do Windows subsistemas de serviço inicializados com êxito.
+Windows Subsistemas de serviço de instrumentação de gerenciamento inicializados com êxito.
 
 
 </dt> </dl> </dd> <dt>
@@ -304,7 +304,7 @@ Instrumentação de Gerenciamento do Windows subsistemas de serviço inicializad
 
 
 
-O número de erro %1 foi retornado ao tentar inicializar o serviço de Instrumentação de Gerenciamento do Windows. Isso pode ser devido a uma versão mal instalada do WMI, falha na atualização do repositório WMI, espaço em disco insuficiente ou memória insuficiente.
+o número de erro %1 foi retornado ao tentar inicializar o serviço de Instrumentação de Gerenciamento do Windows. Isso pode ser devido a uma versão mal instalada do WMI, falha na atualização do repositório WMI, espaço em disco insuficiente ou memória insuficiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -317,7 +317,7 @@ O número de erro %1 foi retornado ao tentar inicializar o serviço de Instrumen
 
 
 
-O repositório de Instrumentação de Gerenciamento do Windows recriou com êxito usando o mecanismo de recuperação automatizada.
+Windows O repositório de instrumentação de gerenciamento recriou com êxito usando o mecanismo de recuperação automatizada.
 
 
 </dt> </dl> </dd> </dl>

@@ -1,7 +1,7 @@
 ---
 description: Cria uma textura de volume vazia, ajustando os parâmetros de chamada conforme necessário.
 ms.assetid: 8fc515cd-2fb3-40c7-8192-a41d93ac1e99
-title: Função D3DXCreateVolumeTexture (D3dx9tex. h)
+title: Função D3DXCreateVolumeTexture (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 50baf125d2e5375bddb63a41a0d10ae063a57b78
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fa3e7b701649b07a9a6da9c0faeed6e0594d1c0e145126c533f87e06249fb8c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119272"
 ---
 # <a name="d3dxcreatevolumetexture-function"></a>Função D3DXCreateVolumeTexture
 
@@ -48,96 +48,96 @@ HRESULT D3DXCreateVolumeTexture(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , representando o dispositivo a ser associado à textura do volume.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o dispositivo a ser associado à textura do volume.
 
 </dd> <dt>
 
-*Largura* \[ no\]
+*Largura* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Largura em pixels. Esse valor deve ser diferente de zero. A dimensão máxima à qual um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Largura em pixels. Esse valor deve ser não zero. A dimensão máxima que um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
 
 </dd> <dt>
 
-*Altura* \[ no\]
+*Altura* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Altura em pixels. Esse valor deve ser diferente de zero. A dimensão máxima à qual um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Altura em pixels. Esse valor deve ser não zero. A dimensão máxima que um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
 
 </dd> <dt>
 
-*Profundidade* \[ no\]
+*Profundidade* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Profundidade em pixels. Esse valor deve ser diferente de zero. A dimensão máxima à qual um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
+Profundidade em pixels. Esse valor deve ser não zero. A dimensão máxima que um driver dá suporte (para largura, altura e profundidade) pode ser encontrada em MaxVolumeExtent em [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
 
 </dd> <dt>
 
-*MipLevels* \[ no\]
+*MipLevels* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de níveis de MIP solicitados. Se esse valor for zero ou D3DX \_ padrão, uma cadeia de mipmap completa será criada.
+Número de níveis de mip solicitados. Se esse valor for zero ou D3DX \_ DEFAULT, uma cadeia de mipmap completa será criada.
 
 </dd> <dt>
 
-*Uso* \[ do no\]
+*Uso* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-0 ou D3DUSAGE \_ dinâmico. Para obter mais informações sobre como usar texturas dinâmicas, consulte [usando texturas dinâmicas](performance-optimizations.md).
+0 ou D3DUSAGE \_ DYNAMIC. Para obter mais informações sobre como usar texturas dinâmicas, consulte [Usando texturas dinâmicas.](performance-optimizations.md)
 
 </dd> <dt>
 
-*Formato* \[ no\]
+*Formato* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DFORMAT](d3dformat.md)**
 
-Membro do tipo enumerado [D3DFORMAT](d3dformat.md) , que descreve o formato de pixel solicitado para a textura do volume. A textura do volume retornado pode ter um formato diferente daquele especificado pelo formato. Os aplicativos devem verificar o formato da textura de volume retornada.
+Membro do tipo [enumerado D3DFORMAT,](d3dformat.md) que descreve o formato de pixel solicitado para a textura do volume. A textura de volume retornada pode ter um formato diferente do especificado por Format. Os aplicativos devem verificar o formato da textura de volume retornada.
 
 </dd> <dt>
 
-*Pool* \[ de no\]
+*Pool* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
-Membro do tipo enumerado [**D3DPOOL**](./d3dpool.md) , descrevendo a classe de memória na qual a textura de volume deve ser colocada.
+Membro do tipo [**enumerado D3DPOOL,**](./d3dpool.md) que descreve a classe de memória na qual a textura do volume deve ser colocada.
 
 </dd> <dt>
 
-*ppVolumeTexture* \[ fora\]
+*ppVolumeTexture* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVOLUMETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9)\***
 
-Endereço de um ponteiro para uma interface [**IDirect3DVolumeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) , que representa o objeto de textura de volume criado.
+Endereço de um ponteiro para uma interface [**IDirect3DVolumeTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9) representando o objeto de textura de volume criado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ não disponível, D3DERR \_ OUTOFVIDEOMEMORY, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ NOTAVAILABLE, D3DERR \_ OUTOFVIDEOMEMORY, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY .
 
 ## <a name="remarks"></a>Comentários
 
-Internamente, o D3DXCreateVolumeTexture usa [**D3DXCheckVolumeTextureRequirements**](d3dxcheckvolumetexturerequirements.md) para ajustar os parâmetros de chamada. Portanto, as chamadas para D3DXCreateVolumeTexture geralmente terão êxito onde as chamadas para [**CreateVolumeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvolumetexture) falharão.
+Internamente, D3DXCreateVolumeTexture usa [**D3DXCheckVolumeTextureRequirements**](d3dxcheckvolumetexturerequirements.md) para ajustar os parâmetros de chamada. Portanto, chamadas para D3DXCreateVolumeTexture geralmente terão êxito em que as chamadas para [**CreateVolumeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvolumetexture) falhariam.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,8 +145,8 @@ Internamente, o D3DXCreateVolumeTexture usa [**D3DXCheckVolumeTextureRequirement
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

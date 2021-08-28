@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b0535a4fcd66a1872b5eaa9ec97c292de710b48c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b77d2bb63655a83716d74621a5ece097259b0a90461f902801c375a079f118f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853776"
 ---
 # <a name="ret---ps"></a>RET-PS
 
@@ -29,7 +29,7 @@ Pega o endereço de uma instrução da pilha de endereços de retorno e continua
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -41,7 +41,7 @@ Pega o endereço de uma instrução da pilha de endereços de retorno e continua
 
 
 
- 
+ 
 
 Essa instrução usa o endereço de uma instrução da pilha de endereços de retorno e continua a execução a partir dela. No caso da função main, essa instrução interrompe a execução do sombreador.
 
@@ -58,9 +58,9 @@ Várias instruções de retorno não são permitidas no programa principal ou em
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

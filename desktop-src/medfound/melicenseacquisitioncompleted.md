@@ -4,12 +4,12 @@ ms.assetid: f577131b-887a-4912-8278-1165a801c2b3
 title: Evento MELicenseAcquisitionCompleted (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 545fa012f974637f5d268a7d8257daaf9b393f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22ac7d24f99083153223614e7421dd8bd83468991c4d9a63fbb8e5933963f1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013606"
 ---
 # <a name="melicenseacquisitioncompleted-event"></a>Evento MELicenseAcquisitionCompleted
 
@@ -33,9 +33,9 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 
