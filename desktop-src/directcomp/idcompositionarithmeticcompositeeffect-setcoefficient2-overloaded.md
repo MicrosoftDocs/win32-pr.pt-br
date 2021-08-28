@@ -1,9 +1,9 @@
 ---
-title: métodos idcompositionarithmeticcompositeeffect setcoefficient2 (DCOMP. h)
+title: Métodos idcompositionarithmeticcompositeeffect setcoefficient2 (Dcomp.h)
 description: Define o segundo coeficiente para a equação usada para compor as duas imagens de entrada.
 ms.assetid: 58ecefbe-ca31-3c13-7bea-e97fb73753e2
 keywords:
-- métodos setcoefficient2 DirectComposition
+- Métodos setcoefficient2 DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d411ba2a79bd651c8e044776dab8353e29f006d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7bcf83de94297bc9e88eb0f3e62ca966bc781c596821e61a776b4c7239a70a13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726646"
 ---
-# <a name="idcompositionarithmeticcompositeeffectsetcoefficient2-methods"></a>métodos idcompositionarithmeticcompositeeffect:: setcoefficient2
+# <a name="idcompositionarithmeticcompositeeffectsetcoefficient2-methods"></a>Métodos idcompositionarithmeticcompositeeffect::setcoefficient2
 
 Define o segundo coeficiente para a equação usada para compor as duas imagens de entrada.
 
@@ -40,7 +40,7 @@ Define o segundo coeficiente para a equação usada para compor as duas imagens 
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DCOMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

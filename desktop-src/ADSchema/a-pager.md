@@ -1,10 +1,10 @@
 ---
-title: O atributo Phone-pager-primário
+title: atributo Telefone-Pager-primário
 description: O número do pager principal.
 ms.assetid: e5230e09-f76b-4d2a-b56b-d989d315f9bb
 ms.tgt_platform: multiple
 keywords:
-- Telefone-pager-esquema do AD do atributo primário
+- Telefone-Pager-esquema de AD do atributo primário
 - Esquema de AD do atributo do pager
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 883e0d519b0fabc14afbdd78fd8eb93bd29a9824
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1ebfa52809d53ebf42679b303ebd03fb1f4056f725f08624269c3bdcca8683a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647866"
 ---
-# <a name="phone-pager-primary-attribute"></a>O atributo Phone-pager-primário
+# <a name="phone-pager-primary-attribute"></a>atributo Telefone-Pager-primário
 
 O número do pager principal.
 
@@ -29,7 +29,7 @@ O número do pager principal.
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-pager-primário                                                              |
+| CN                | Telefone-Pager-primário                                                              |
 | LDAP-Display-Name | pager                                                                            |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
@@ -58,7 +58,7 @@ O número do pager principal.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A21                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ O número do pager principal.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
 | No catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
@@ -100,7 +100,7 @@ O número do pager principal.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
 | No catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
@@ -121,10 +121,10 @@ O número do pager principal.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
@@ -142,10 +142,10 @@ O número do pager principal.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
@@ -163,10 +163,10 @@ O número do pager principal.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |

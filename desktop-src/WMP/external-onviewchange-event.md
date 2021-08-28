@@ -3,7 +3,7 @@ title: Evento external. OnViewChange
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O evento OnViewChange ocorre quando a exibição é alterada no Windows Media Player.
 ms.assetid: aa1378ad-8b84-4592-85c5-5e284be05ea6
 keywords:
-- Evento external. OnViewChange do Windows Media Player
+- Windows Media Player de evento external. OnViewChange
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c7144e03955fb67ed90cad4a4336bf782ca1566
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c01db02ef1bfd194330483c8dd7e71eba7ed09d9b347aee4b4813f413950c65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648676"
 ---
 # <a name="externalonviewchange-event"></a>Evento external. OnViewChange
 
@@ -36,7 +36,7 @@ window.external.OnViewChange = FunctionName
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa é uma propriedade somente gravação que especifica o nome da função no script que o Windows Media Player chama quando o evento ocorre.
+essa é uma propriedade somente gravação que especifica o nome da função no script que Windows Media Player chama quando o evento ocorre.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -44,13 +44,13 @@ A função que manipula esse evento não usa parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-O modo de exibição no Windows Media Player pode ser alterado por qualquer um dos seguintes motivos:
+a exibição no Windows Media Player pode ser alterada por qualquer um dos seguintes motivos:
 
--   O usuário interage com a interface do usuário do Windows Media Player.
+-   o usuário interage com a interface do usuário do Windows Media Player.
 -   O usuário interage com uma página de descoberta e o script na página de descoberta chama [external. changeView](external-changeview.md).
 -   O usuário interage com uma página de descoberta e o script na página de descoberta chama [external. changeViewOnlineList](external-changeviewonlinelist.md).
 
-Quando a exibição é alterada no Windows Media Player, o Player chama [IWMPContentPartner:: GetTemplate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-gettemplate) para obter a URL da próxima página de descoberta a ser exibida. No entanto, antes de o Player exibir a página nova descoberta, ele gera o evento **OnViewChange** . Se o manipulador de eventos **OnViewChange** chamar [external. cancelNavigate](external-cancelnavigate.md), o Windows Media Player não exibirá a página nova descoberta. Em vez disso, ele continua a exibir a página de descoberta atual.
+quando a exibição é alterada no Windows Media Player, o Player chama [IWMPContentPartner:: gettemplate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-gettemplate) para obter a URL da próxima página de descoberta a ser exibida. No entanto, antes de o Player exibir a página nova descoberta, ele gera o evento **OnViewChange** . se o manipulador de eventos **OnViewChange** chamar [External. cancelNavigate](external-cancelnavigate.md), Windows Media Player não exibirá a página nova descoberta. Em vez disso, ele continua a exibir a página de descoberta atual.
 
 ## <a name="requirements"></a>Requisitos
 

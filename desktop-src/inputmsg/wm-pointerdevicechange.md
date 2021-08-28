@@ -1,9 +1,9 @@
 ---
 title: WM_POINTERDEVICECHANGE mensagem
-description: Enviado a uma janela quando há uma alteração nas configurações de um monitor que tem um digitalizador anexado a ele. Esta mensagem contém informações sobre o dimensionamento do modo de exibição.
+description: Enviado para uma janela quando há uma alteração nas configurações de um monitor que tem um digitalizador anexado a ela. Esta mensagem contém informações sobre o dimensionamento do modo de exibição.
 ms.assetid: 9ED01D4C-58B4-4A21-B510-784281F9A909
 keywords:
-- Mensagens de entrada e notificações de WM_POINTERDEVICECHANGE mensagem
+- WM_POINTERDEVICECHANGE mensagens de entrada e notificações
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 38f570059f374f64e393e960a8458e605983d6c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d75a5afa245303952c5c6b1814b2f1ce77cd03da7c789d34bda2500c6bffee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105794016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829576"
 ---
 # <a name="wm_pointerdevicechange-message"></a>WM_POINTERDEVICECHANGE mensagem
 
-Enviado a uma janela quando há uma alteração nas configurações de um monitor que tem um digitalizador anexado a ele. Esta mensagem contém informações sobre o dimensionamento do modo de exibição.
+Enviado para uma janela quando há uma alteração nas configurações de um monitor que tem um digitalizador anexado a ela. Esta mensagem contém informações sobre o dimensionamento do modo de exibição.
 
-> \[! Fundamental\]  
-> Os aplicativos da área de trabalho devem ter reconhecimento de DPI. Se seu aplicativo não tiver reconhecimento de DPI, as coordenadas de tela contidas nas mensagens de ponteiro e estruturas relacionadas poderão parecer imprecisas devido à virtualização de DPI. A virtualização de DPI fornece suporte de dimensionamento automático para aplicativos que não têm reconhecimento de DPI e está ativo por padrão (os usuários podem desativá-lo). Para obter mais informações, consulte [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Os aplicativos da área de trabalho devem estar cientes de DPI. Se o aplicativo não estiver ciente de DPI, as coordenadas de tela contidas em mensagens de ponteiro e estruturas relacionadas poderão aparecer imprecisas devido à virtualização de DPI. A virtualização de DPI oferece suporte de dimensionamento automático para aplicativos que não têm conhecimento de DPI e estão ativos por padrão (os usuários podem desativar). Para obter mais informações, consulte [Escrevendo aplicativos Win32 de alto DPI.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -44,7 +44,7 @@ Enviado a uma janela quando há uma alteração nas configurações de um monito
 *wParam* 
 </dt> <dd>
 
-Contém um valor das [**constantes de alteração de dispositivo ponteiro**](pointer-device-change-constants.md).
+Contém um valor de [**Constantes de Alteração de Dispositivo de Ponteiro**](pointer-device-change-constants.md).
 
 </dd> <dt>
 
@@ -55,9 +55,9 @@ Obter informações adicionais específicas de mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o aplicativo processar essa mensagem, ele deverá retornar zero.
+Se o aplicativo processa essa mensagem, ele deve retornar zero.
 
 Se o aplicativo não processar essa mensagem, ele deverá chamar [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
@@ -67,9 +67,9 @@ Se o aplicativo não processar essa mensagem, ele deverá chamar [**DefWindowPro
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

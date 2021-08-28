@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a37f15e80d470c0662036745f285aea87e79391
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7e8080ffa24c9b2a147e6e3ec76f586a92fba3456aa1f80d2875c1292940232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705766"
 ---
 # <a name="location-attribute-ad-schema"></a>Atributo Location (esquema do AD)
 
@@ -29,7 +29,7 @@ A localização do usuário, como o número do escritório.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Local                                    |
+| CN                | Localização                                    |
 | LDAP-Display-Name | local                                    |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
@@ -59,15 +59,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                             |
-| É indexado             | True                                                                                                                                                             |
-| No catálogo global      | True                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                             |
+| É indexado             | Verdadeiro                                                                                                                                                             |
+| No catálogo global      | Verdadeiro                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                     |
 | Range-Lower            | 0                                                                                                                                                                |
 | Range-Upper            | 1024                                                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                       |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -80,15 +80,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| É de valor único       | True                                                                                                                                                                                               |
-| É indexado             | True                                                                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                                                               |
+| É de valor único       | Verdadeiro                                                                                                                                                                                               |
+| É indexado             | Verdadeiro                                                                                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -101,15 +101,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
-| É indexado             | True                                                                    |
-| No catálogo global      | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
+| É indexado             | Verdadeiro                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | 0                                                                       |
 | Range-Upper            | 1024                                                                    |
 | Search-Flags           | 0x00000001                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| É de valor único       | True                                                                                                                                                                                               |
-| É indexado             | True                                                                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                                                               |
+| É de valor único       | Verdadeiro                                                                                                                                                                                               |
+| É indexado             | Verdadeiro                                                                                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| É de valor único       | True                                                                                                                                                                                               |
-| É indexado             | True                                                                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                                                               |
+| É de valor único       | Verdadeiro                                                                                                                                                                                               |
+| É indexado             | Verdadeiro                                                                                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| É de valor único       | True                                                                                                                                                                                               |
-| É indexado             | True                                                                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                                                               |
+| É de valor único       | Verdadeiro                                                                                                                                                                                               |
+| É indexado             | Verdadeiro                                                                                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**espaço**](c-room.md)<br/> [**Site**](c-site.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -185,9 +185,9 @@ A localização do usuário, como o número do escritório.
 | ID do link                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
 | System-Only            | Falso                                                                                                                                                                                              |
-| É de valor único       | True                                                                                                                                                                                               |
-| É indexado             | True                                                                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                                                               |
+| É de valor único       | Verdadeiro                                                                                                                                                                                               |
+| É indexado             | Verdadeiro                                                                                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |

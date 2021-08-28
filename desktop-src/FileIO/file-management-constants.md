@@ -4,12 +4,12 @@ ms.assetid: 9c8d8ff9-4027-4198-950b-54d985c55e1e
 title: Constantes de gerenciamento de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 184592bdc468a048288aacef9e0dbae31b02cc0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8e2f15a764442a7730a75f731b2fc8980f7239a1d580867b8583858eed6525b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696266"
 ---
 # <a name="file-management-constants"></a>Constantes de gerenciamento de arquivo
 

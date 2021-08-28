@@ -1,7 +1,7 @@
 ---
 description: O mesmo que um D3DXVECTOR3, mas usa valores de ponto flutuante de 16 bits para x, y e z.
 ms.assetid: b21676f1-5cff-4eef-bd60-5c09882283dc
-title: Estrutura de D3DXVECTOR3_16F (D3DX10Math. h)
+title: D3DXVECTOR3_16F (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: b7143e864eddf37842e19d7554150beaf50c0b53
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: afb5e12d19655ddf6f2d31d23a21cbac2347ba05a9d7900c1bc2a90977a9fd88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729856"
 ---
-# <a name="d3dxvector3_16f-structure"></a>\_Estrutura D3DXVECTOR3 16F
+# <a name="d3dxvector3_16f-structure"></a>Estrutura D3DXVECTOR3 \_ 16F
 
-O mesmo que um [**D3DXVECTOR3**](d3d10-d3dxvector3.md), mas usa valores de ponto flutuante de 16 bits para x, y e z.
+O mesmo que [**um D3DXVECTOR3**](d3d10-d3dxvector3.md), mas usa valores de ponto flutuante de 16 bits para x, y e z.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ typedef struct D3DXVECTOR3_16F {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -55,7 +55,7 @@ O componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -63,10 +63,10 @@ O componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -76,9 +76,9 @@ O componente z.
 
 ## <a name="remarks"></a>Comentários
 
-**D3DXVECTOR3 \_ 16F** tem as seguintes extensões de C++.
+**D3DXVECTOR3 \_ 16F** tem as seguintes extensões C++.
 
-### <a name="d3dxvector3_16f-extensions"></a>\_Extensões D3DXVECTOR3 16F
+### <a name="d3dxvector3_16f-extensions"></a>Extensões D3DXVECTOR3 \_ 16F
 
 
 ```
@@ -116,7 +116,7 @@ public:
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 

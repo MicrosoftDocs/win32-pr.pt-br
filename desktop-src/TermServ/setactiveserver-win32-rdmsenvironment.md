@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f11b378b15e271200c730691c3654fd10e80f3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b68a8f9c6661e78932893ef25278234fb4c944d22297cb87cc95aebe9bc8d8ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865486"
 ---
 # <a name="setactiveserver-method-of-the-win32_rdmsenvironment-class"></a>Método SetActiveServer da classe Win32 \_ RDMSEnvironment
 
@@ -41,7 +41,7 @@ uint32 SetActiveServer();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 

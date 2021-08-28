@@ -4,21 +4,21 @@ ms.assetid: 74e4e4b2-6ceb-4044-84df-2fff0788267a
 title: Como a plataforma Tablet PC usa o contexto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcd991a2ad8e76bb0a96ea5e41977b158cc30f5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c586bf3ffcff8fc92b02bc0b4f5aff79c6bd0bbd66e6f048eab35a78d3be9676
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709276"
 ---
 # <a name="how-the-tablet-pc-platform-uses-context"></a>Como a plataforma Tablet PC usa o contexto
 
-Os desenvolvedores que criam aplicativos para o Tablet PC podem tirar proveito das informações de escopo e contexto de entrada. As melhores soluções possíveis para definir informações de contexto sobre controles em aplicativos dependem de se o controle está habilitado para tinta e se o aplicativo foi lançado no mercado. Um controle habilitado para tinta é aquele criado especificamente para entrada à tinta e na qual os dados de tinta são coletados principalmente e mantidos como tinta. Exemplos de aplicativos habilitados para tinta são o diário do Microsoft Windows ou um programa de esboços. Em um controle que não está habilitado para tinta, os dados de entrada são coletados e mantidos como texto, normalmente usando o painel de entrada do Tablet PC quando o aplicativo é executado em um Tablet PC. As soluções para habilitar informações de contexto dentro de controles são:
+Os desenvolvedores que criam aplicativos para o Tablet PC podem tirar proveito das informações de escopo e contexto de entrada. As melhores soluções possíveis para definir informações de contexto sobre controles em aplicativos dependem de se o controle está habilitado para tinta e se o aplicativo foi lançado no mercado. Um controle habilitado para tinta é aquele criado especificamente para entrada à tinta e na qual os dados de tinta são coletados principalmente e mantidos como tinta. exemplos de aplicativos habilitados para tinta são o Microsoft Windows Journal ou um programa de esboços. Em um controle que não está habilitado para tinta, os dados de entrada são coletados e mantidos como texto, normalmente usando o painel de entrada do Tablet PC quando o aplicativo é executado em um Tablet PC. As soluções para habilitar informações de contexto dentro de controles são:
 
 -   As APIs [SetInputScope](/windows/win32/api/inputscope/nf-inputscope-setinputscope) : uma solução programática de baixo nível para aplicativos e controles não habilitados para tinta. Os binários do aplicativo são afetados e devem ser redistribuídos.
 -   As propriedades de [**facto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) e lista de [**palavras**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist) do objeto [**RecognizerContext**](inkrecognizercontext-class.md) : uma solução programática para aplicativos com controles que são habilitados para tinta. Os binários do aplicativo são afetados e devem ser redistribuídos.
 
-O painel de entrada do Tablet PC foi atualizado a partir do Windows Vista para aproveitar as informações de contexto que você fornece ao usar as APIs [SetInputScope](/windows/win32/api/inputscope/nf-inputscope-setinputscope) . A tabela a seguir fornece detalhes sobre quais mecanismos de reconhecimento da Microsoft dão suporte a quais escopos de entrada. Um "X" na linha de um escopo de entrada indica que o reconhecedor nessa coluna dá suporte ao escopo de entrada.
+o painel de entrada do Tablet PC foi atualizado a partir do Windows Vista para aproveitar as informações de contexto que você fornece ao usar as APIs [SetInputScope](/windows/win32/api/inputscope/nf-inputscope-setinputscope) . A tabela a seguir fornece detalhes sobre quais mecanismos de reconhecimento da Microsoft dão suporte a quais escopos de entrada. Um "X" na linha de um escopo de entrada indica que o reconhecedor nessa coluna dá suporte ao escopo de entrada.
 
 
 

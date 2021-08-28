@@ -1,7 +1,7 @@
 ---
 description: Contém o tamanho do item.
 ms.assetid: 0eda405e-d54f-48d2-a060-a1fdcdb23785
-title: Propriedade FolderItem. Size (shldisp. h)
+title: Propriedade FolderItem.Size (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5d44d1c1ddd9b46f768f218250802562f9a36312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 576da1ef42768fe8574fab5f965270134cad50d96f4b4e3fe0aaa7234af6d365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715436"
 ---
-# <a name="folderitemsize-property"></a>Propriedade FolderItem. Size
+# <a name="folderitemsize-property"></a>Propriedade FolderItem.Size
 
 Contém o tamanho do item.
 
@@ -37,13 +37,13 @@ iSize = FolderItem.Size
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **inteiro** que recebe o tamanho do item.
+Um **Inteiro** que recebe o tamanho do item.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **tamanho** para recuperar o tamanho do arquivo executável do bloco de notas. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa Size** para recuperar o tamanho do arquivo Bloco de notas executável. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

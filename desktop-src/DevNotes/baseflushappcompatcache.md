@@ -16,12 +16,12 @@ api_location:
 - API-MS-Win-Core-appcompat-l1-1-0.dll
 - KernelBase.dll
 - API-MS-Win-Core-appcompat-l1-1-1.dll
-ms.openlocfilehash: 6118c78784bb96b9f25e008cd2221112eeb646f3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 44ea71a28ff85b00c72dc7b0255144381a2d8f01ead0901ee30ff216e17e20d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768746"
 ---
 # <a name="baseflushappcompatcache-function"></a>Função BaseFlushAppcompatCache
 
@@ -54,8 +54,8 @@ O chamador deve ser um administrador.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl> |
 
 

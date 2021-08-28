@@ -1,117 +1,117 @@
 ---
-title: Extensões de nome de arquivo monitorado
-description: As extensões são monitoradas pela restauração do sistema no Windows Vista e versões posteriores.
+title: Extensões de nome de arquivo monitoradas
+description: As extensões são monitoradas por Restauração do Sistema no Windows Vista e posterior.
 ms.assetid: 19e509fa-58b2-48bb-ac23-269818482e6f
 keywords:
-- Restauração do sistema, referência, extensões de nome de arquivo monitorado
+- Restauração do Sistema, referência, extensões de nome de arquivo monitorado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6999d421f7c08b4369ddbf81a4d370ebf507021
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c12530fb48dba4c3f0cd3c26631682e065f14fb85dc302269a6337f5eff2ede7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774146"
 ---
-# <a name="monitored-file-name-extensions"></a>Extensões de nome de arquivo monitorado
+# <a name="monitored-file-name-extensions"></a>Extensões de nome de arquivo monitoradas
 
-Veja a seguir uma lista de extensões de nome de arquivo monitoradas. Os arquivos com essas extensões são monitorados pela restauração do sistema no Windows Vista e versões posteriores. Os arquivos monitorados ou excluídos do monitoramento no Windows XP são especificados no arquivo% windir% \\ System32 \\ restore \\Filelist.xml. O arquivo Filelist.xml não existe no Windows Vista e posterior.
+Veja a seguir uma lista de extensões de nome de arquivo monitorada. Os arquivos com essas extensões são monitorados por Restauração do Sistema no Windows Vista e posterior. Os arquivos monitorados ou excluídos do monitoramento no Windows XP são especificados no arquivo %windir% \\ system32 \\ restore \\Filelist.xml. O arquivo Filelist.xml não existe no Windows Vista e posterior.
 
 
 
 <table>
 <tbody>
 <tr class="odd">
-<td><dl> ~ ~ C<br />
-~ ~ D<br />
+<td><dl> ~~C<br />
+~~D<br />
 12A<br />
 1PA<br />
-PRIMEIRO<br />
+1ST<br />
 386<br />
 8BA<br />
 8BY<br />
 8LI<br />
-A2A<br />
-AAS<br />
+A2a<br />
+Aas<br />
 AAX<br />
-ABM<br />
+Abm<br />
 ABR<br />
-ACF<br />
-ACG<br />
-ACO<br />
+Acf<br />
+Acg<br />
+Aco<br />
 ACS<br />
 ADK<br />
-ADW<br />
-ADX<br />
-AFM<br />
-AUXILIÁ<br />
+Adw<br />
+Adx<br />
+Afm<br />
+Ajuda<br />
 AIP<br />
 ALT<br />
 AM<br />
 AMB<br />
-GRÁFICA<br />
-ENERGIA<br />
+Apl<br />
+Apm<br />
 APP<br />
 APV<br />
 AR<br />
-ARX<br />
+Arx<br />
 AS<br />
 AT<br />
-ATC<br />
+Atc<br />
 ATL<br />
 ATM<br />
-ATN<br />
+Atn<br />
 AW<br />
 AWE<br />
 AWX<br />
 AX<br />
 B0<br />
-BAT<br />
-BCF<br />
+Morcego<br />
+Bcf<br />
 BD<br />
-BDR<br />
+Bdr<br />
 BE<br />
-BGB<br />
+Bgb<br />
 BGR<br />
-OFERECER<br />
+Oferta<br />
 BIT<br />
 BK1<br />
-BLD<br />
+Bld<br />
 BM<br />
 BMA<br />
-BND<br />
+Bnd<br />
 BNF<br />
-BOF<br />
+Bof<br />
 BPP<br />
-BPT<br />
-BPX<br />
+Bpt<br />
+Bpx<br />
 BT<br />
-BTN<br />
-BUC<br />
-CAG<br />
-CAO<br />
-CAT<br />
-CBS<br />
+Btn<br />
+Buc<br />
+Cag<br />
+Cao<br />
+Gato<br />
+Cbs<br />
 CC<br />
 CF<br />
-CFG<br />
+Cfg<br />
 CHA<br />
-CIK<br />
+Cik<br />
 CL<br />
-CLW<br />
-CLX<br />
-CLY<br />
+Clw<br />
+Clx<br />
+Cly<br />
 CMD<br />
-CNT<br />
-CNV<br />
-COLUNAS<br />
+Cnt<br />
+Cnv<br />
+Col<br />
 COM<br />
-CPB<br />
+Cec<br />
 CPL<br />
 CQM<br />
 CR<br />
 CRL<br />
-CRS<br />
+Crs<br />
 CRV<br />
 CS<br />
 CSB<br />
@@ -338,7 +338,7 @@ MPD<br />
 FUTUR<br />
 MSB<br />
 MSC<br />
-DESSE<br />
+MSE<br />
 MSI<br />
 MST<br />
 MSK<br />
@@ -420,104 +420,104 @@ Q32<br />
 Q3X<br />
 QDAT<br />
 QJF<br />
-QRS<br />
+Qrs<br />
 QTC<br />
 QTD<br />
 QTW<br />
-DESIGNE<br />
+QUE<br />
 QUF<br />
 QUT<br />
 R0<br />
 R98<br />
 RAD<br />
-TAXA<br />
+Rato<br />
 RC2<br />
 RCP<br />
-RCT<br />
-RDB<br />
-RDC<br />
+Rct<br />
+Rdb<br />
+Rdc<br />
 REF<br />
-REG<br />
-RGS<br />
+Reg<br />
+Rgs<br />
 RH<br />
 RI<br />
 RJS<br />
 RO<br />
-LHE<br />
-RPR<br />
-RPS<br />
+Rob<br />
+Rpr<br />
+Rps<br />
 RSD<br />
 RSP<br />
-RSRC<br />
-RTA<br />
-RTR<br />
+Rsrc<br />
+Rta<br />
+Rtr<br />
 RU<br />
 S98<br />
 SAM<br />
 {1&gt;SAX&lt;1}<br />
 SCK<br />
-SCR<br />
-SCS<br />
+Scr<br />
+Scs<br />
 SEGURANÇA<br />
 SELFREG<br />
-SFP<br />
+Sfp<br />
 SG<br />
 SG0<br />
 GS1<br />
-COMPARTILHADO<br />
-SHR<br />
-SHX<br />
-SIF<br />
+Compartilhado<br />
+Shr<br />
+Shx<br />
+Sif<br />
 SK<br />
-SLL<br />
-SMC<br />
-SMM<br />
-PADRÕES<br />
-VERS<br />
+Sll<br />
+Smc<br />
+Smm<br />
+Snp<br />
+SOF<br />
 SPC<br />
-SPE<br />
-SPM<br />
-SPT<br />
+Spe<br />
+Spm<br />
+Spt<br />
 SPX<br />
 SR<br />
-ORIG<br />
-SRG<br />
+Src<br />
+Srg<br />
 SRT<br />
-SSM<br />
+Ssm<br />
 SST<br />
 </dl></td>
 <td><dl> ST4<br />
-STB<br />
-PADRÃO<br />
-STF<br />
-STP<br />
-SWB<br />
+Stb<br />
+Std<br />
+Stf<br />
+Stp<br />
+Swb<br />
 SYM<br />
 SYN<br />
-SISTEMA<br />
+Sys<br />
 T32<br />
 TAG<br />
 TB<br />
-TDF<br />
+Tdf<br />
 TH<br />
-DOS<br />
-THK<br />
-DESSE<br />
+O<br />
+Thk<br />
+Ths<br />
 TID<br />
-Associe<br />
+Gravata<br />
 DICA<br />
-TLB<br />
-TLD<br />
+Tlb<br />
+Tld<br />
 TLF<br />
-TLT<br />
-TLU<br />
+Tlt<br />
+Uat<br />
 TLX<br />
-TMC<br />
-TNL<br />
-A<br />
-TPA<br />
+Tmc<br />
+Tnl<br />
+Tol<br />
+Tpa<br />
 TR<br />
-TRE<br />
+Tre<br />
 TRG<br />
 TRO<br />
 TSK<br />
@@ -607,11 +607,11 @@ ZRW<br />
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

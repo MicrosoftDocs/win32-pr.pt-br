@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 90d979754a3d6f034c353229dbaa1b1dbaedea79
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1c8c055c260f4983622010ced5de652cf673391b7ae02a75b40fd28427a78827
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751876"
 ---
 # <a name="stopservice-method-of-the-win32_service-class-sdoiash"></a>Método StopService da classe Win32_Service (Sdoias. h)
 
@@ -40,7 +40,7 @@ uint32 StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -179,7 +179,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Um serviço está sendo executado com o mesmo nome.
@@ -345,7 +345,7 @@ WScript.Echo "Return value: " & Return
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Sdoias. h</dt> </dl>     |
+| Cabeçalho<br/>                   | <dl> <dt>Sdoias. h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

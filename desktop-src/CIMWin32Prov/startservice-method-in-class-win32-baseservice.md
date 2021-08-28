@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9fbfad47899193a25be08292aff97f9d8e211ba7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e82aadee8d2ff339e8561d35818e169d42ce8f364417fa03957518b2b090bc2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752366"
 ---
 # <a name="startservice-method-of-the-win32_baseservice-class"></a>Método StartService da classe Win32 \_ BaseService
 
@@ -40,7 +40,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro.
 
@@ -299,7 +299,7 @@ O serviço está pausado atualmente no sistema.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> </dl>
 
  

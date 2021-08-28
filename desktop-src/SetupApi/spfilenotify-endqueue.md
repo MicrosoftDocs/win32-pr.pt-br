@@ -1,19 +1,19 @@
 ---
-description: A \_ notificação endqueue do SPFILENOTIFY é enviada para a rotina de retorno de chamada quando todas as operações em fila foram concluídas.
+description: A notificação SPFILENOTIFY ENDQUEUE é enviada para a rotina de retorno de chamada quando todas as operações na fila \_ foram concluídas.
 ms.assetid: f4540ab6-edea-4f84-b7eb-4ab3f774068b
-title: Mensagem de SPFILENOTIFY_ENDQUEUE (Setupapi. h)
+title: SPFILENOTIFY_ENDQUEUE mensagem (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f3ed2ca896f91ec09cb49f89731b41c5d099465
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6192ac867b47b3e5cf9d06806bfb6eb42743aee4d97a935035fd7b44ea0e79b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665136"
 ---
-# <a name="spfilenotify_endqueue-message"></a>Mensagem do SPFILENOTIFY \_ ENDqueue
+# <a name="spfilenotify_endqueue-message"></a>Mensagem SPFILENOTIFY \_ ENDQUEUE
 
-A **notificação \_ Endqueue do SPFILENOTIFY** é enviada para a rotina de retorno de chamada quando todas as operações em fila foram concluídas.
+A **notificação SPFILENOTIFY \_ ENDQUEUE** é enviada para a rotina de retorno de chamada quando todas as operações na fila foram concluídas.
 
 
 ```C++
@@ -32,7 +32,7 @@ SPFILENOTIFY_ENDQUEUE
 *Param1* 
 </dt> <dd>
 
-**True** se a fila tiver sido processada com êxito; caso contrário, **false** .
+**TRUE** se a fila foi processada com êxito; caso **contrário, FALSE.**
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Não utilizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -53,9 +53,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

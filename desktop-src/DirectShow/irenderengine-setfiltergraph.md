@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 72c93ef6610fd301c497589858a8941e2b8f71b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4472d1152d45ee160885a4cdbc898a55ece24b6795a9880a5eeb958e05330287
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767096"
 ---
 # <a name="irenderenginesetfiltergraph-method"></a>Método IRenderEngine:: SetFilterGraph
 
@@ -52,7 +52,7 @@ Ponteiro para a interface [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-str
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes valores de **HRESULT** :
 
@@ -76,7 +76,7 @@ Esse método falhará se o mecanismo de processamento já tiver um grafo de filt
 
 Nunca recupere um ponteiro para um grafo de filtro criado por um mecanismo de renderização e, em seguida, use-o como o parâmetro para esse método em outro mecanismo de renderização. Isso causará resultados imprevisíveis.
 
-O método **ConnectFrontEnd** destrói qualquer grafo de filtro existente, mas mantém a mesma instância de Gerenciador de gráfico de filtros.
+o método **ConnectFrontEnd** destrói qualquer grafo de filtro existente, mas mantém o mesmo filtro Graph instância do gerenciador.
 
 > [!Note]  
 > O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
@@ -84,7 +84,7 @@ O método **ConnectFrontEnd** destrói qualquer grafo de filtro existente, mas m
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

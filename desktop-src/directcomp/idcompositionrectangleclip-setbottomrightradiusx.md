@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e98bcc78bdcc79d3e709f58620c49bc8b47e5ad5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4098ac987dac706c28e4137caa60b3b3e54b1183cbe80eb3b01ea0031694e37d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670746"
 ---
 # <a name="idcompositionrectangleclipsetbottomrightradiusx-methods"></a>Métodos IDCompositionRectangleClip:: SetBottomRightRadiusX
 
@@ -40,9 +40,9 @@ Altera ou anima o valor da propriedade BottomRightRadiusX deste clipe. A proprie
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[apenas aplicativos de área de trabalho Windows 8\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2012\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 

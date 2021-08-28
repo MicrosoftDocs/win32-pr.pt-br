@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6cc14e24bad22210f08e33fcff3dfaeb4e282ed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 75a7a0f72482304e4075c713c715d048d17f42a611dbc1b4fbd93678f712a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789907"
 ---
 # <a name="requeststatechange-method-of-the-msvm_externalfcport-class"></a>Método RequestStateChange da classe Msvm \_ ExternalFcPort
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

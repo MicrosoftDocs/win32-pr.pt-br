@@ -4,16 +4,16 @@ description: IAgentBalloon getnomedafonte
 ms.assetid: 7d057571-bb6e-4b79-bc4a-5691779ace51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73f29ad981fb4b10249b17e55c92fb286552eedc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 08cb0bceae040f9261d2530b19d074df937dbdaf80d91a27f57b5cf9c1fd8f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725307"
 ---
 # <a name="iagentballoongetfontname"></a>IAgentBalloon:: getnomedafonte
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetFontName(
@@ -36,9 +36,9 @@ O endereço de um BSTR que recebe o nome da fonte exibido em um balão de palavr
 
 A fonte padrão usada em um balão de palavras de caracteres é definida no editor de caracteres do Microsoft Agent. Você pode alterá-lo com [**IAgentBalloon:: setnomedafonte**](https://www.bing.com/search?q=**IAgentBalloon::SetFontName**). O usuário pode substituir a configuração de fonte para todos os caracteres usando a folha de propriedades do Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

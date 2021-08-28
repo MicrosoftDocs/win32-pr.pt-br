@@ -4,12 +4,12 @@ ms.assetid: d1243303-d26c-45ce-b97b-d554daeeb462
 title: SENSOR_CATEGORY_MECHANICAL (sensores. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2446559820141b65a70bc75d25680da79563388c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbac9a00895b08bd99106af7f0b6986118b4645dac690fd190f734e1499940dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666706"
 ---
 # <a name="sensor_category_mechanical"></a>\_mecânica da categoria de sensor \_
 
@@ -21,7 +21,7 @@ Essa categoria inclui os seguintes tipos de sensor definidos pela plataforma.
 
 
 
-| Tipo de sensor                                                                                                                                                                                                                                                                                                           | Description                                         |
+| Tipo de sensor                                                                                                                                                                                                                                                                                                           | Descrição                                         |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------|
 | <span id="SENSOR_TYPE_BOOLEAN_SWITCH"></span><span id="sensor_type_boolean_switch"></span><dl> <dt>**Sensor \_ Digite \_ a \_ opção booliana**</dt> <dt>{9C7E371F-1041-460B-8D5C-71E4752E350C}</dt> </dl>                    | Opções de dois Estados (desativado ou ativado).<br/>          |
 | <span id="SENSOR_TYPE_BOOLEAN_SWITCH_ARRAY"></span><span id="sensor_type_boolean_switch_array"></span><dl> <dt>**Sensor \_ Digite \_ a \_ \_ matriz de opção booliana**</dt> <dt>{545C8BA5-B143-4545-868F-CA7FD986B4F6}</dt> </dl> | Matriz de opções de dois Estados (desativado ou ativado).<br/> |
@@ -43,7 +43,7 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 
 
-| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                         | Description                                                                        |
+| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                         | Descrição                                                                        |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
 | <span id="SENSOR_DATA_TYPE_ABSOLUTE_PRESSURE_PASCAL"></span><span id="sensor_data_type_absolute_pressure_pascal"></span><dl> <dt>**Sensor \_ Tipo de dados de \_ \_ \_ pressão absoluta \_ Pascal**</dt> <dt> (PID = 5)</dt> </dl>          | **R8 de VT \_**<br/> Pressão absoluta, em pascals.<br/>                    |
 | <span id="SENSOR_DATA_TYPE_BOOLEAN_SWITCH_ARRAY_STATES"></span><span id="sensor_data_type_boolean_switch_array_states"></span><dl> <dt>**Sensor \_ Tipo de dados \_ \_ switch booliano \_ \_ \_ Estados da matriz**</dt> <dt>(PID = 10)</dt> </dl> | **\_UI4 VT**<br/> Campos de estado para uma matriz de opções boolianas.<br/>   |
@@ -62,9 +62,9 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
 
 
 

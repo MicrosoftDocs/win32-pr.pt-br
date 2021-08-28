@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: d21686be0398a84a57a303ad816b8a25f50aa611
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0b142da988143d7304a6b9b01bc5163e741fdaff77d7e0d796882607fc73044
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683766"
 ---
 # <a name="pdhvbisgoodstatus-function"></a>Função PdhVbIsGoodStatus
 
@@ -40,7 +40,7 @@ Valor de status retornado por outra função PDH a ser testada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retornará zero se o código de status for um código de status de falha. Ele retornará diferente de zero se o código de status for um código de status de êxito.
 
@@ -50,8 +50,8 @@ A função retornará zero se o código de status for um código de status de fa
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
 | Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 

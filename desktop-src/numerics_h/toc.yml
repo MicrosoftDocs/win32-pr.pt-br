@@ -15,5 +15,5 @@
       href: plane-structure.md
     - name: estrutura de Quaternion
       href: quaternion-structure.md
-    - name: APIs de interoperabilidade DirectXMath e numéricas do Windows
+    - name: Windows numéricos e APIs de interoperabilidade DirectXMath
       href: windows-numerics-and-directxmath-interop-apis.md

@@ -3,7 +3,7 @@ title: Mensagem de LVM_CANCELEDITLABEL (commctrl. h)
 description: Cancela uma operação de edição de texto de item.
 ms.assetid: 73e9c922-3223-4c49-a33c-df7c09443ccc
 keywords:
-- Controles de LVM_CANCELEDITLABEL de mensagens do Windows
+- controles de Windows de mensagem de LVM_CANCELEDITLABEL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edfed26fb3c38d91f7a5b07683079d29ecd4597d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da0b105c1082457c2cafd14e7a36361100f8e82197db7e5d76ae51447f945897
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698796"
 ---
 # <a name="lvm_canceleditlabel-message"></a>\_Mensagem CANCELEDITLABEL LVM
 
@@ -50,9 +50,9 @@ Essa mensagem faz com que uma notificação [LVN \_ ENDLABELEDIT](lvn-endlabeled
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

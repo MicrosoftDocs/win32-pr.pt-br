@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7a101617fcb56d349795335fb118fe40fca406
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9a3fa9ff7af57e15f10141b6b63d4e8ecd19169ab6c5448399b586aa7a013fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705666"
 ---
 # <a name="machine-password-change-interval-attribute"></a>Computador-senha-atributo de mudança de intervalo
 
@@ -58,7 +58,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -79,7 +79,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -100,7 +100,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -121,7 +121,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -142,7 +142,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -163,7 +163,7 @@ O atributo **computador-senha-alteração-intervalo** não está sendo usado no 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |

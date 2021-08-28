@@ -1,6 +1,6 @@
 ---
 title: Serialização de modo misto de identificadores de contexto
-description: No Microsoft Windows XP, uma única interface pode acomodar identificadores de contexto serializados e não serializados, que é chamado de serialização de modo misto.
+description: no Microsoft Windows XP, uma única interface pode acomodar identificadores de contexto serializados e não serializados, que é chamado de serialização de modo misto.
 ms.assetid: b52c1d6f-cdc5-4597-a36e-bb957e4aab01
 keywords:
 - MIDL de referência de linguagem MIDL, serialização de modo misto de identificadores de contexto
@@ -8,16 +8,16 @@ keywords:
 - MIDL de serialização de modo misto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0922b53bfc7ba2e30ad8df0764e3cf9a36f0f723
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0aaa35f02a939a50e2484ace29630783ee219d6313d7538cba54b1f54cd83007
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787426"
 ---
 # <a name="mixed-mode-serialization-of-context-handles"></a>Serialização de modo misto de identificadores de contexto
 
-A partir do Windows XP, uma única interface pode acomodar identificadores de contexto serializados e não serializados, permitindo que um método em uma interface acesse um identificador de contexto exclusivamente (serializado), enquanto outros métodos acessam esse identificador de contexto no modo compartilhado (não serializado). Para obter mais informações sobre identificadores de contexto, consulte os seguintes atributos:
+a partir do Windows XP, uma única interface pode acomodar identificadores de contexto serializados e não serializados, permitindo que um método em uma interface acesse um identificador de contexto exclusivamente (serializado), enquanto outros métodos acessam esse identificador de contexto no modo compartilhado (não serializado). Para obter mais informações sobre identificadores de contexto, consulte os seguintes atributos:
 
 -   [**identificador de contexto \_**](context-handle.md)
 -   [**\_serializar identificador de contexto \_**](context-handle-serialize.md)
@@ -36,7 +36,7 @@ Identificadores de contexto que são \[ \] normalmente são usados por métodos 
 > [!Note]  
 > Os métodos de criação são serializados implicitamente.
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -80,9 +80,9 @@ typedef [context_handle_noserialize] TestContextHandleShared;
 [**identificador de contexto \_ \_ noserializeize**](context-handle-noserialize.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

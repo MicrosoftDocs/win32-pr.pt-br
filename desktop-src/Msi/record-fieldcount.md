@@ -1,7 +1,7 @@
 ---
-description: A propriedade FieldCount do objeto Record é uma propriedade somente leitura que retorna o número de campos no registro. O acesso de leitura a campos além dessa contagem retorna valores nulos. Falha no acesso de gravação.
+description: A propriedade FieldCount do objeto Record é uma propriedade somente leitura que retorna o número de campos no registro. O acesso de leitura a campos além dessa contagem retorna valores Nulos. Falha no acesso de gravação.
 ms.assetid: 50be848a-2d38-4768-aeb4-25cbaedade01
-title: Propriedade Record. FieldCount
+title: Propriedade Record.FieldCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 548c1da4c2a0106cbcd667b5ce3c915ec17bf1ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 603b19ec3470587bb27733b8f0cd92b7d430cd773ad3ddd8a3a49b03d51a9a01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828416"
 ---
-# <a name="recordfieldcount-property"></a>Propriedade Record. FieldCount
+# <a name="recordfieldcount-property"></a>Propriedade Record.FieldCount
 
-A propriedade **FieldCount** do objeto [**Record**](record-object.md) é uma propriedade somente leitura que retorna o número de campos no registro. O acesso de leitura a campos além dessa contagem retorna valores nulos. Falha no acesso de gravação.
+A **propriedade FieldCount** do [**objeto Record**](record-object.md) é uma propriedade somente leitura que retorna o número de campos no registro. O acesso de leitura a campos além dessa contagem retorna valores Nulos. Falha no acesso de gravação.
 
 Esta propriedade é somente para leitura.
 
@@ -43,9 +43,9 @@ propVal = Record.FieldCount
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IRecord é definido como 000C1093-0000-0000-C000-000000000046<br/>                                                                                                                                                                              |
+| IID<br/>     | IID \_ IRecord é definido como 000C1093-0000-0000-C000-00000000046<br/>                                                                                                                                                                              |
 
 
 

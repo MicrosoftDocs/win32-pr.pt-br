@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a346596b094b60456af8e2b63865bec1171d99ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 398c4ae9d9d8ad89f7188ecbfe19e1b687bd694f7e716e88bd5231e79a38a665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694267"
 ---
-# <a name="migratevirtualsystemtosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método MigrateVirtualSystemToSystem da \_ classe VirtualSystemMigrationService Msvm
+# <a name="migratevirtualsystemtosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método MigrateVirtualSystemToSystem da classe Msvm \_ VirtualSystemMigrationService
 
 Move, migra ou realoca um sistema virtual para um sistema de destino.
 
@@ -45,56 +45,56 @@ uint32 MigrateVirtualSystemToSystem(
 
 <dl> <dt>
 
-*ComputerSystem* \[ no\]
+*ComputerSystem* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema de computador virtual a ser migrado.
+Uma referência a uma instância da [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema de computador virtual a ser migrado.
 
 </dd> <dt>
 
-*DestinationSystem* \[ no\]
+*DestinationSystem* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema a ser migrado para o.
+Uma referência a uma instância da [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema para o que será migrado.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ no\]
+*MigrationSettingData* \[ Em\]
 </dt> <dd>
 
-Uma instância inserida da classe [**Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa as configurações da operação de migração.
+Uma instância inserida da [**classe Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa as configurações para a operação de migração.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ no\]
+*NewSystemSettingData* \[ Em\]
 </dt> <dd>
 
-Uma instância inserida da classe [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa as novas propriedades aplicáveis ao sistema virtual depois que ele é migrado.
+Uma instância inserida da [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa novas propriedades aplicáveis ao sistema virtual depois que ele é migrado.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ no\]
+*NewResourceSettingData* \[ Em\]
 </dt> <dd>
 
-Uma matriz de cadeias de caracteres que contém uma instância incorporada da classe [**Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) que representa as novas propriedades aplicáveis aos recursos virtuais do sistema virtual depois que ele é migrado.
+Uma matriz de cadeias de caracteres que contém uma instância inserida da classe [**Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) que representa as novas propriedades aplicáveis aos recursos virtuais do sistema virtual depois que ele é migrado.
 
 </dd> <dt>
 
-*NewComputerSystem* \[ fora\]
+*NewComputerSystem* \[ out\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o novo sistema migrado.
+Uma referência a uma instância da [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o novo sistema migrado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -109,7 +109,7 @@ Esse método retorna um dos valores a seguir.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -121,16 +121,16 @@ Esse método retorna um dos valores a seguir.
 **Parâmetros incompatíveis** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535 )
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -139,10 +139,10 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

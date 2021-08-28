@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a27b2224a64eadf1637f3d2f7f44973f4614536
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 569b69cdfaf43cbb38382529e55565f19f0e398a2a7adb69d4d2860b36839b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767326"
 ---
 # <a name="maxsize-channelloggingtype-element"></a>Elemento maxSize (ChannelLoggingType)
 
@@ -38,8 +38,8 @@ O elemento **MaxSize** é definido pelo tipo complexo [**ChannelLoggingType**](e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

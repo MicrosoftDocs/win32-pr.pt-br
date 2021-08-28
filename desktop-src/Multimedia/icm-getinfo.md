@@ -1,9 +1,9 @@
 ---
-title: Mensagem de ICM_GETINFO (VFW. h)
-description: A \_ mensagem ICM GetInfo consulta um driver de compactação de vídeo para retornar uma descrição de si mesmo em uma estrutura ICINFO.
+title: ICM_GETINFO mensagem (Vfw.h)
+description: A ICM GETINFO consulta um driver de compactação de vídeo para retornar uma \_ descrição de si mesmo em uma estrutura ICINFO.
 ms.assetid: 8029f247-9777-4a34-9e84-908482094493
 keywords:
-- Multimídia do Windows de mensagem ICM_GETINFO
+- ICM_GETINFO mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 634803b7dd9a3b8900c35fabedcadb99908c2b31
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 173f510642b807a0e4c4a8c5c84d6d4de2aa7ce55cc0707eccabf5421cf98a44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690806"
 ---
-# <a name="icm_getinfo-message"></a>\_Mensagem ICM GETinfo
+# <a name="icm_getinfo-message"></a>\_ICM Mensagem GETINFO
 
-A mensagem **ICM \_ GetInfo** consulta um driver de compactação de vídeo para retornar uma descrição de si mesmo em uma estrutura [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) .
+A **ICM \_ GETINFO** consulta um driver de compactação de vídeo para retornar uma descrição de si mesmo em uma [**estrutura ICINFO.**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
 
 
 ```C++
@@ -41,26 +41,26 @@ lParam = sizeof(ICINFO);
 <span id="lpicinfo"></span><span id="LPICINFO"></span>*lpicinfo*
 </dt> <dd>
 
-Ponteiro para uma estrutura **ICINFO** para conter informações.
+Ponteiro para uma **estrutura ICINFO** para conter informações.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Tamanho, em bytes, de **ICINFO**.
+Tamanho, em bytes, de **ICINFO.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna o tamanho, em bytes, de [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) ou zero se ocorrer um erro.
+Retorna o tamanho, em bytes, de [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) ou zero se ocorrer um erro..
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, os aplicativos enviam essa mensagem para exibir uma lista dos compactadores instalados.
+Normalmente, os aplicativos enviam essa mensagem para exibir uma lista dos nós instalados.
 
-O driver deve preencher todos os membros da estrutura [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo) , exceto **szDriver**.
+O driver deve preencher todos os membros da estrutura [**ICINFO,**](/windows/desktop/api/Vfw/ns-vfw-icinfo) exceto **szDriver**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ O driver deve preencher todos os membros da estrutura [**ICINFO**](/windows/desk
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ O driver deve preencher todos os membros da estrutura [**ICINFO**](/windows/desk
 
 <dl> <dt>
 
-[Gerenciador de compactação de vídeo](video-compression-manager.md)
+[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

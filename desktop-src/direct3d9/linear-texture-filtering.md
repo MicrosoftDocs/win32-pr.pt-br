@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\linear_texture_filtering.htm
 title: Filtragem de textura linear (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7940bd693ec42ef4f48920a5a362fad5f5b0bf02
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9bf5177af653c74383ef87468dbb43167fa2962cd093410a6a63f85da2233e3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628526"
 ---
 # <a name="linear-texture-filtering-direct3d-9"></a>Filtragem de textura linear (Direct3D 9)
 

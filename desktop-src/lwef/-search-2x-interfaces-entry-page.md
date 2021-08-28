@@ -1,20 +1,20 @@
 ---
-title: Interfaces do WDS 2. x
-description: Interfaces do WDS 2. x
+title: WDS 2.x Interfaces
+description: WDS 2.x Interfaces
 ms.assetid: 9cfd81b1-36fa-4d06-97a5-ef4be286d12d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b8371d007d1d0ba351e442ddf520a17f3605bd9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7a568dc32ad48d54e292da95f52046625cadaa58df369e68a65bd59b2c87eb6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829176"
 ---
-# <a name="wds-2x-interfaces"></a>Interfaces do WDS 2. x
+# <a name="wds-2x-interfaces"></a>WDS 2.x Interfaces
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use [Windows Search.](../search/-search-3x-wds-overview.md)
 
 
 [**IGatherNotify**](/previous-versions//aa965731(v=vs.85))

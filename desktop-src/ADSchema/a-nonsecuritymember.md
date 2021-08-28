@@ -1,11 +1,11 @@
 ---
-title: Atributo de não-segurança-membro
-description: Membros de não segurança de um grupo. Usado para listas de distribuição do Exchange.
+title: Atributo não membro de segurança
+description: Membros não de segurança de um grupo. Usado para Exchange listas de distribuição.
 ms.assetid: 0db135e4-dcba-4afb-a174-3c7b2b40688e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de não segurança-membro
-- Esquema de AD do atributo nonSecurityMember
+- Esquema do AD do atributo não membro de segurança
+- Esquema do AD do atributo nonSecurityMember
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a04919d9d538ff4da97d73e79d14e9a2706032b8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dba59e37e4d4be5549e9ab5f36747f1cfd0046a9fb01ca91e2a9e79f353f148a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648376"
 ---
-# <a name="non-security-member-attribute"></a>Atributo de não-segurança-membro
+# <a name="non-security-member-attribute"></a>Atributo não membro de segurança
 
-Membros de não segurança de um grupo. Usado para listas de distribuição do Exchange.
+Membros não de segurança de um grupo. Usado para Exchange listas de distribuição.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------------------|
-| CN                | Não-segurança-membro                              |
-| LDAP-Display-Name | nonSecurityMember                                |
+| CN                | Não membro de segurança                              |
+| Ldap-Display-Name | nonSecurityMember                                |
 | Tamanho              | \-                                               |
 | Privilégio de atualização  | Administrador de domínio                             |
 | Frequência de atualização  | Sempre que um usuário é adicionado ou removido da DL. |
 | Attribute-Id      | 1.2.840.113556.1.4.530                           |
-| System-ID-GUID    | 52458018-ca6a-11D0-afff-0000f80367c1             |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md)          |
+| System-Id-Guid    | 52458018-ca6a-11d0-afff-0000f80367c1             |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
 
 
 
@@ -58,15 +58,15 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | ID do link                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | Falso                               |
+| Tem valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | ID do link                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | Falso                               |
+| Tem valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | ID do link                | 50                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | Falso                               |
+| Tem valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Membros de não segurança de um grupo. Usado para listas de distribuição do E
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
 | System-Flags           | 0x00000010                          |
-| Classes usadas em        | [**Group**](c-group.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> |
 
 
 

@@ -4,22 +4,22 @@ description: Os aplicativos do servidor devem ser capazes de executar sem o shel
 ms.assetid: 8F531497-B64D-4E79-AD7A-790EFDC6ADFE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae2a3002fc2395faba3e07d90a2322c770fe3ee9
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 1742b87d0cb4ece4ac05b38b0ac2644967eee256931df5dfc8ec838574db33ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773177"
 ---
 # <a name="server-apps-must-be-able-to-run-without-the-server-graphical-shell"></a>Os aplicativos do servidor devem ser capazes de executar sem o shell gráfico do servidor
 
 ## <a name="platform"></a>Plataforma
 
-**Servidores** – Windows Server 2012 
+**servidores** – Windows Server 2012 
 
 ## <a name="description"></a>Descrição
 
-O shell gráfico do servidor, o recurso que inclui o Windows Explorer e o Internet Explorer, é instalado por padrão nas instalações "servidor com uma GUI" do Windows Server 2012. O recurso de shell gráfico do servidor pode ser desinstalado para reduzir o potencial de manutenção e de serviço, limitando assim o número de reinicializações que o servidor pode incorrer e, ao mesmo tempo, permitindo que as ferramentas de gerenciamento sejam executadas localmente no servidor.
+o Shell gráfico do servidor, o recurso que inclui o Windows explorer e o Internet explorer, é instalado por padrão nas instalações "servidor com uma GUI" do Windows Server 2012. O recurso de shell gráfico do servidor pode ser desinstalado para reduzir o potencial de manutenção e de serviço, limitando assim o número de reinicializações que o servidor pode incorrer e, ao mesmo tempo, permitindo que as ferramentas de gerenciamento sejam executadas localmente no servidor.
 
 Depois que um administrador desinstala o shell gráfico do servidor, o servidor está na configuração mínima da interface do servidor:
 
@@ -31,7 +31,7 @@ Os administradores poderão reinstalar o shell gráfico do servidor posteriormen
 
 Os aplicativos de servidor devem ser capazes de executar na configuração mínima da interface do servidor para aproveitar a redução da utilização de recursos e da superfície de manutenção. Esse recurso pode ser obtido permitindo que o administrador opte por não instalar partes do aplicativo que precise do shell gráfico do servidor ou detectando a presença do shell gráfico do servidor e desabilitando alguns aspectos do aplicativo.
 
-A interface mínima do servidor tem um espaço reduzido de recursos e manutenção, pois muitas APIs e binários incluídos no shell gráfico do servidor não estão disponíveis nessa configuração. Quando apropriado, os aplicativos de servidor também devem permitir a administração remota (preferencialmente por meio da comunicação remota do Windows PowerShell) de outra instalação do Windows Server ou do cliente Windows. Isso permite uma melhor administração centralizada de um ou mais computadores na configuração mínima da interface do servidor ou de computadores em uma configuração de superfície ainda menor, como Server Core.
+A interface mínima do servidor tem um espaço reduzido de recursos e manutenção, pois muitas APIs e binários incluídos no shell gráfico do servidor não estão disponíveis nessa configuração. quando apropriado, os aplicativos de servidor também devem permitir a administração remota (preferencialmente via Windows PowerShell comunicação remota) de outro servidor Windows ou Windows instalação do cliente. Isso permite uma melhor administração centralizada de um ou mais computadores na configuração mínima da interface do servidor ou de computadores em uma configuração de superfície ainda menor, como Server Core.
 
 ## <a name="manifestation"></a>Manifestação
 
@@ -56,9 +56,9 @@ Os desenvolvedores de aplicativos também devem garantir que os aplicativos de s
 
 ## <a name="detecting-minimal-server-interface-and-server-core"></a>Detectando a interface mínima do servidor e o Server Core
 
-O Windows Server instalará um valor de registro correspondente para cada nível de servidor instalado. Você pode consultar a existência dessas chaves para determinar se o shell gráfico do servidor ou os recursos de interface mínima do servidor estão instalados e habilitados.
+Windows O servidor instalará um valor de registro correspondente para cada nível de servidor instalado. Você pode consultar a existência dessas chaves para determinar se o shell gráfico do servidor ou os recursos de interface mínima do servidor estão instalados e habilitados.
 
-HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Server \\ ServerLevels:
+HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ servidor \\ ServerLevels:
 
 
 

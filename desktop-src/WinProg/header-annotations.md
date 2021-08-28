@@ -1,12 +1,12 @@
 ---
-title: Anotações de cabeçalho
-description: As anotações de cabeçalho descrevem como uma função usa seus parâmetros e valor de retorno.
+title: Anotações de header
+description: As anotações de cabeça descrevem como uma função usa seus parâmetros e o valor de retorno.
 ms.assetid: 4f9e42b1-2fe4-4173-946e-ab1805a96b9e
 keywords:
-- API do Windows, anotações de arquivo de cabeçalho
-- anotações de arquivo de cabeçalho
-- Specstrings. h
-- idioma de anotação padrão (SAL)
+- Windows API, anotações de arquivo de header
+- anotações de arquivo de header
+- Specstrings.h
+- SAL (linguagem de anotação padrão)
 - _bcount
 - _deref
 - _deref_opt
@@ -19,33 +19,33 @@ keywords:
 - _part
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8535118383a97d6c48f19246ad24ce324e8bb528
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 12ad560d00c45714d0feaa9ab2fa58ff4c985730fd563d4943ff028f561f2793
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105802092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643626"
 ---
-# <a name="header-annotations"></a>Anotações de cabeçalho
+# <a name="header-annotations"></a>Anotações de header
 
-\[Este tópico descreve as anotações com suporte nos cabeçalhos do Windows por meio do Windows 7. Se você estiver desenvolvendo para o Windows 8, deverá usar as anotações descritas em [anotações sal]( /previous-versions/visualstudio/visual-studio-2013/ms182032(v=vs.120)).\]
+\[Este tópico descreve as anotações com suporte nos Windows por meio Windows 7. Se você estiver desenvolvendo para Windows 8, deverá usar as anotações descritas em [Anotações sal]( /previous-versions/visualstudio/visual-studio-2013/ms182032(v=vs.120)).\]
 
-As anotações de cabeçalho descrevem como uma função usa seus parâmetros e valor de retorno. Essas anotações foram adicionadas a muitos dos arquivos de cabeçalho do Windows para ajudá-lo a garantir que você está chamando a API do Windows corretamente. Se você habilitar a análise de código, que está disponível a partir do Visual Studio 2005, o compilador produzirá avisos de nível 6000 se você não estiver chamando essas funções de acordo com o uso descrito por meio das anotações. Você também pode adicionar essas anotações em seu próprio código para garantir que ele esteja sendo chamado corretamente. Para habilitar a análise de código no Visual Studio, consulte a documentação da sua versão do Visual Studio.
+As anotações de cabeça descrevem como uma função usa seus parâmetros e o valor de retorno. Essas anotações foram adicionadas a muitos dos arquivos de Windows para ajudá-lo a garantir que você está chamando a API Windows corretamente. Se você habilitar a análise de código, que está disponível a partir do Visual Studio 2005, o compilador produzirá avisos de nível 6000 se você não estiver chamando essas funções de acordo com o uso descrito por meio das anotações. Você também pode adicionar essas anotações em seu próprio código para garantir que ela está sendo chamada corretamente. Para habilitar a análise de código Visual Studio, consulte a documentação da sua versão do Visual Studio.
 
-Essas anotações são definidas em Specstrings. h. Eles são criados em primitivos que fazem parte da linguagem de anotação padrão (SAL) e implementados usando o `_declspec("SAL_*")` .
+Essas anotações são definidas em Specstrings.h. Eles são construídos em primitivos que fazem parte da SAL (Linguagem de Anotação Padrão) e implementados usando `_declspec("SAL_*")` .
 
 Há duas classes de anotações: anotações de buffer e anotações avançadas.
 
 ## <a name="buffer-annotations"></a>Anotações de buffer
 
-As anotações de buffer descrevem como as funções usam seus ponteiros e podem ser usadas para detectar saturações de buffer. Cada parâmetro pode usar uma anotação de buffer ou zero. Uma anotação de buffer é construída com um sublinhado à esquerda e os componentes descritos nas seções a seguir.
+As anotações de buffer descrevem como as funções usam seus ponteiros e podem ser usadas para detectar estouros de buffer. Cada parâmetro pode usar zero ou uma anotação de buffer. Uma anotação de buffer é construída com um sublinhado à frente e os componentes descritos nas seções a seguir.
 
 
 
-| Tamanho do buffer                                                                                  | Description                                                                                                                                                                             |
+| Tamanho do buffer                                                                                  | Descrição                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="_size_"></span><span id="_SIZE_"></span>(*tamanho*)<br/>                        | Especifica o tamanho total do buffer. Use with \_ bcount e \_ ecount; não use with \_ Part. Esse valor é o espaço acessível; pode ser menor do que o espaço alocado.<br/> |
-| <span id="_size_length_"></span><span id="_SIZE_LENGTH_"></span>(*tamanho*,*comprimento*)<br/> | Especifica o tamanho total e o tamanho inicializado do buffer. Use with \_ bcount \_ Part e \_ ecount \_ Part. O tamanho total pode ser menor do que o espaço alocado.<br/>              |
+| <span id="_size_"></span><span id="_SIZE_"></span>(*size*)<br/>                        | Especifica o tamanho total do buffer. Use com \_ bcount \_ e ecount; não use com \_ parte. Esse valor é o espaço acessível; pode ser menor que o espaço alocado.<br/> |
+| <span id="_size_length_"></span><span id="_SIZE_LENGTH_"></span>(*tamanho*,*comprimento*)<br/> | Especifica o tamanho total e o comprimento inicializado do buffer. Use com \_ a parte bcount \_ e a \_ parte \_ ecount. O tamanho total pode ser menor que o espaço alocado.<br/>              |
 
 
 
@@ -53,10 +53,10 @@ As anotações de buffer descrevem como as funções usam seus ponteiros e podem
 
 
 
-| Unidades de tamanho do buffer                                                       | Description                                |
+| Unidades de tamanho do buffer                                                       | Descrição                                |
 |-------------------------------------------------------------------------|--------------------------------------------|
-| <span id="_bcount"></span><span id="_BCOUNT"></span>\_bcount<br/> | O tamanho do buffer está em bytes.<br/>    |
-| <span id="_ecount"></span><span id="_ECOUNT"></span>\_ecount<br/> | O tamanho do buffer está em elementos.<br/> |
+| <span id="_bcount"></span><span id="_BCOUNT"></span>\_bcount<br/> | O tamanho do buffer é em bytes.<br/>    |
+| <span id="_ecount"></span><span id="_ECOUNT"></span>\_ecount<br/> | O tamanho do buffer está em elementos .<br/> |
 
 
 
@@ -66,9 +66,9 @@ As anotações de buffer descrevem como as funções usam seus ponteiros e podem
 
 | Direção                                                            | Descrição                                                                                                                                                                                                                |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="_in"></span><span id="_IN"></span>\_no<br/>          | A função lê do buffer. O chamador fornece o buffer e o inicializa.<br/>                                                                                                                          |
-| <span id="_inout"></span><span id="_INOUT"></span>\_InOut<br/> | A função lê e grava no buffer. O chamador fornece o buffer e o inicializa. Se usado com \_ Deref, o buffer pode ser realocado pela função.<br/>                                      |
-| <span id="_out"></span><span id="_OUT"></span>\_fora<br/>       | A função grava no buffer. Se usado no valor de retorno ou com \_ Deref, a função fornece o buffer e o inicializa. Caso contrário, o chamador fornecerá o buffer e a função o inicializará.<br/> |
+| <span id="_in"></span><span id="_IN"></span>\_Em<br/>          | A função lê do buffer. O chamador fornece o buffer e o inicializa.<br/>                                                                                                                          |
+| <span id="_inout"></span><span id="_INOUT"></span>\_Inout<br/> | A função lê e grava no buffer. O chamador fornece o buffer e o inicializa. Se usado com \_ deref, o buffer pode ser realocado pela função .<br/>                                      |
+| <span id="_out"></span><span id="_OUT"></span>\_out<br/>       | A função grava no buffer. Se usado no valor de retorno ou \_ com deref, a função fornece o buffer e o inicializa. Caso contrário, o chamador fornece o buffer e a função o inicializa.<br/> |
 
 
 
@@ -76,10 +76,10 @@ As anotações de buffer descrevem como as funções usam seus ponteiros e podem
 
 
 
-| Indireção                                                                       | Description                                                                                            |
+| Indireção                                                                       | Descrição                                                                                            |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <span id="_deref"></span><span id="_DEREF"></span>\_Deref<br/>              | Desfaça referência ao parâmetro para obter o ponteiro do buffer. Este parâmetro não pode ser **nulo**.<br/> |
-| <span id="_deref_opt"></span><span id="_DEREF_OPT"></span>\_Deref \_ aceitar<br/> | Desfaça referência ao parâmetro para obter o ponteiro do buffer. Este parâmetro pode ser **NULL**.<br/>     |
+| <span id="_deref"></span><span id="_DEREF"></span>\_Deref<br/>              | Desreferenciar o parâmetro para obter o ponteiro do buffer. Esse parâmetro pode não ser **NULL.**<br/> |
+| <span id="_deref_opt"></span><span id="_DEREF_OPT"></span>\_deref \_ opt<br/> | Desreferenciar o parâmetro para obter o ponteiro do buffer. Este parâmetro pode ser **NULL**.<br/>     |
 
 
 
@@ -87,10 +87,10 @@ As anotações de buffer descrevem como as funções usam seus ponteiros e podem
 
 
 
-| Inicialização                                                    | Description                                                                                                              |
+| Inicialização                                                    | Descrição                                                                                                              |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| <span id="_full"></span><span id="_FULL"></span>\_completo<br/> | A função inicializa todo o buffer. Use somente com buffers de saída.<br/>                                     |
-| <span id="_part"></span><span id="_PART"></span>\_parte<br/> | A função inicializa parte do buffer e indica explicitamente o quanto. Use somente com buffers de saída.<br/> |
+| <span id="_full"></span><span id="_FULL"></span>\_Cheio<br/> | A função inicializa todo o buffer. Use somente com buffers de saída.<br/>                                     |
+| <span id="_part"></span><span id="_PART"></span>\_Parte<br/> | A função inicializa parte do buffer e indica explicitamente quanto. Use somente com buffers de saída.<br/> |
 
 
 
@@ -98,15 +98,15 @@ As anotações de buffer descrevem como as funções usam seus ponteiros e podem
 
 
 
-| Buffer necessário ou opcional                                    | Description                                |
+| Buffer obrigatório ou opcional                                    | Descrição                                |
 |----------------------------------------------------------------|--------------------------------------------|
-| <span id="_opt"></span><span id="_OPT"></span>\_opt<br/> | Este parâmetro pode ser **NULL**.<br/> |
+| <span id="_opt"></span><span id="_OPT"></span>\_Optar<br/> | Este parâmetro pode ser **NULL**.<br/> |
 
 
 
  
 
-O exemplo a seguir mostra as anotações da função **GetModuleFileName** . O parâmetro *HMODULE* é um parâmetro de entrada opcional. O parâmetro *lpFileName* é um parâmetro de saída; seu tamanho em caracteres é especificado pelo parâmetro *nSize* e seu comprimento inclui o caractere de terminação **nula**. O parâmetro *nSize* é um parâmetro de entrada.
+O exemplo a seguir mostra as anotações para a **função GetModuleFileName.** O *parâmetro hModule* é um parâmetro de entrada opcional . O *parâmetro lpFilename* é um parâmetro de saída; seu tamanho em caracteres é especificado pelo *parâmetro nSize* e seu comprimento inclui o **caractere de** terminação nula. O *parâmetro nSize* é um parâmetro de entrada.
 
 
 ```C++
@@ -121,22 +121,22 @@ GetModuleFileName(
 
 
 
-A seguir estão as anotações definidas em Specstrings. h. Use as informações nas tabelas acima para interpretar seu significado.
+A seguir estão as anotações definidas em Specstrings.h. Use as informações nas tabelas acima para interpretar seu significado.
 
-__bcount (*tamanho*)  
-__bcount_opt (*tamanho*)  
-__deref_bcount (*tamanho*)  
-__deref_bcount_opt (*tamanho*)  
-__deref_ecount (*tamanho*)  
-__deref_ecount_opt (*tamanho*)  
+__bcount(*tamanho*)  
+__bcount_opt(*tamanho*)  
+__deref_bcount(*tamanho*)  
+__deref_bcount_opt(*tamanho*)  
+__deref_ecount(*tamanho*)  
+__deref_ecount_opt(*tamanho*)  
 __deref_in  
-__deref_in_bcount (*tamanho*)  
-__deref_in_bcount_opt (*tamanho*)  
-__deref_in_ecount (*tamanho*)  
-__deref_in_ecount_opt (*tamanho*)  
+__deref_in_bcount(*tamanho*)  
+__deref_in_bcount_opt(*tamanho*)  
+__deref_in_ecount(*tamanho*)  
+__deref_in_ecount_opt(*tamanho*)  
 __deref_in_opt  
 __deref_inout  
-__deref_inout_bcount (*tamanho*)  
+__deref_inout_bcount(*tamanho*)  
 __deref_inout_bcount_full (*tamanho*)  
 __deref_inout_bcount_full_opt (*tamanho*)  
 __deref_inout_bcount_opt (*tamanho*)  
@@ -244,7 +244,7 @@ As anotações avançadas fornecem informações adicionais sobre o parâmetro o
 
 
 
-| Annotation                                                                                                                                               | Description                                                                                                                                                                                                                                                                     |
+| Annotation                                                                                                                                               | Descrição                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="__blocksOn_resource_"></span><span id="__blockson_resource_"></span><span id="__BLOCKSON_RESOURCE_"></span>\_\_blocos (*recurso*)<br/> | As funções são bloqueadas no recurso especificado.<br/>                                                                                                                                                                                                                      |
 | <span id="__callback"></span><span id="__CALLBACK"></span>\_\_retorno<br/>                                                                        | A função pode ser usada como um ponteiro de função.<br/>                                                                                                                                                                                                                      |

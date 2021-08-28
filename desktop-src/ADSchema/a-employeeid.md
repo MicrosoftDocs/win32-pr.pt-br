@@ -1,11 +1,11 @@
 ---
-title: Atributo Employee-ID
+title: Atributo employee-ID
 description: A ID de um funcionário.
 ms.assetid: 5f19773f-ef4c-433a-a9b9-f8499a52b45e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo Employee-ID
-- Esquema de AD do atributo employeeID
+- Esquema do AD do atributo employee-ID
+- Esquema do AD do atributo employeeID
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7865ca7949301c5deec169667354bb9dce194135
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f4ef4e7333bd63ad23da496f6e8edb702e019414bcdccc22b5021c2b4b313ada
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828106"
 ---
-# <a name="employee-id-attribute"></a>Atributo Employee-ID
+# <a name="employee-id-attribute"></a>Atributo employee-ID
 
 A ID de um funcionário.
 
@@ -30,13 +30,13 @@ A ID de um funcionário.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ID do funcionário                                 |
-| LDAP-Display-Name | employeeID                                  |
+| Ldap-Display-Name | employeeID                                  |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.35                       |
-| System-ID-GUID    | bf967962-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967962-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -121,10 +121,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -142,10 +142,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -163,10 +163,10 @@ A ID de um funcionário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |

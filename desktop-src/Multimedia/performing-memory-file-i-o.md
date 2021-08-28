@@ -11,12 +11,12 @@ keywords:
 - função mmioOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82c3e98bbd3636fb88c834957ba2c3fb856406a8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 90a2b1e2e47ffccc21b2684dcb6bd285b7e55470776fb57eb382a969091a19e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104453973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805886"
 ---
 # <a name="performing-memory-file-io"></a>Executando e/s de arquivo de memória
 
@@ -35,6 +35,6 @@ Para abrir um arquivo de memória, use a função [**mmioOpen**](/windows/win32/
 
 Não há restrições para a alocação de memória para uso como um arquivo de memória não expansível.
 
- 
+ 
 
- 
+ 

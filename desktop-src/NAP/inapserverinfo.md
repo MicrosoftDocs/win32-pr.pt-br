@@ -1,10 +1,10 @@
 ---
-title: Interface INapServerInfo (NapServerManagement. h)
-description: Os clientes de gerenciamento (por exemplo, provedores WMI ou ferramentas de linha de comando) usam para consultar o status do sistema de servidor NAP.
+title: Interface INapServerInfo (NapServerManagement.h)
+description: Os clientes de gerenciamento (por exemplo, provedores WMI ou ferramentas de linha de comando) usam para consultar o status do sistema de servidores NAP.
 ms.assetid: 3c6d3f76-ea63-4cb2-bac7-e5668e50b7a7
 keywords:
-- INapServerInfo da interface NAP
-- INapServerInfo interface NAP, descrita
+- INapServerInfo interface NAP
+- NAP da interface INapServerInfo, descrita
 topic_type:
 - apiref
 api_name:
@@ -15,25 +15,25 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec17e3303fe4af4d359279de6c5fa7aa5f34d409
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 556c2a5b7e7545038995d5091d46931352f9ee32bddfa31b91237dfa54d69620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626096"
 ---
 # <a name="inapserverinfo-interface"></a>Interface INapServerInfo
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O **INapServerInfo** fornece métodos que os clientes de gerenciamento (por exemplo, provedores WMI ou ferramentas de linha de comando) usam para consultar o status do sistema de servidor NAP.
+O **INapServerInfo** fornece métodos que os clientes de Gerenciamento (por exemplo, provedores WMI ou ferramentas de linha de comando) usam para consultar o status do sistema de servidor NAP.
 
 ## <a name="members"></a>Membros
 
-A interface **INapServerInfo** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapServerInfo** também tem estes tipos de membros:
+A interface **INapServerInfo** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapServerInfo** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -64,9 +64,9 @@ Esses métodos fornecem apenas informações estáticas sobre o servidor NAP e s
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 
@@ -75,10 +75,10 @@ Esses métodos fornecem apenas informações estáticas sobre o servidor NAP e s
 
 <dl> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
-[Referência de NAP](nap-reference.md)
+[Referência nap](nap-reference.md)
 </dt> </dl>
 
  

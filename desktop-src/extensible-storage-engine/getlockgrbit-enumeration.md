@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2cfcad088fa93d73910a0333d3aca9a700e97996
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4a77ca293fc39504c0e78e25150ae12ba46b8317daa8e00c59b6dc3dca3f1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732166"
 ---
 # <a name="getlockgrbit-enumeration"></a>Enumeração GetLockGrbit
 
@@ -41,8 +41,8 @@ Opções para JetGetLock.
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -73,12 +73,12 @@ public enum GetLockGrbit
 <tr class="odd">
 <td></td>
 <td>Ler</td>
-<td>Adquirir um bloqueio de leitura no registro atual. Os bloqueios de leitura são incompatíveis com os bloqueios de gravação já mantidos por outras sessões, mas são compatíveis com bloqueios de leitura mantidos por outras sessões.</td>
+<td>Adquira um bloqueio de leitura no registro atual. Bloqueios de leitura são incompatíveis com bloqueios de gravação já mantidos por outras sessões, mas são compatíveis com bloqueios de leitura mantidos por outras sessões.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Gravar</td>
-<td>Adquirir um bloqueio de gravação no registro atual. Os bloqueios de gravação não são compatíveis com bloqueios de gravação ou leitura mantidos por outras sessões, mas são compatíveis com bloqueios de leitura mantidos pela mesma sessão.</td>
+<td>Adquira um bloqueio de gravação no registro atual. Bloqueios de gravação não são compatíveis com bloqueios de gravação ou leitura mantidos por outras sessões, mas são compatíveis com bloqueios de leitura mantidos pela mesma sessão.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum GetLockGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

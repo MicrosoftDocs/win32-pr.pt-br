@@ -4,12 +4,12 @@ ms.assetid: ed08b4c8-fdd9-46fb-a2be-c2fb15af2dc6
 title: Arquitetura do Direct3D (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e557b7a36aadcaa8b96899047a721741ecef2156
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9d288cbf7896b276824f358364bede519e778375d1d3f8c9915108cbfadf8486
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791477"
 ---
 # <a name="direct3d-architecture-direct3d-9"></a>Arquitetura do Direct3D (Direct3D 9)
 

@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_FILE_SET_CAPTURE_FILE (VFW. h)
 description: A mensagem do arquivo de captura do conjunto de arquivos do WM \_ Cap \_ \_ \_ \_ nomeia o arquivo usado para captura de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro capFileSetCaptureFile.
 ms.assetid: d96e498b-6322-4d48-a5d7-156e95f23740
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_FILE_SET_CAPTURE_FILE
+- mensagem de WM_CAP_FILE_SET_CAPTURE_FILE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b3f59edfc9bf01f6bd2af3b9028f8e3315e2de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9435a7f0790c8ffe88f6b7ea6228bb2f442b23f5dcb15e2722e59b75c671588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687016"
 ---
 # <a name="wm_cap_file_set_capture_file-message"></a>\_Mensagem do \_ \_ arquivo de captura do conjunto de arquivos do \_ WM Cap \_
 

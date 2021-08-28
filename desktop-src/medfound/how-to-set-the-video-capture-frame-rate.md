@@ -1,26 +1,26 @@
 ---
-description: Um dispositivo de captura de vídeo pode dar suporte a um intervalo de taxas de quadros.
+description: Um dispositivo de captura de vídeo pode dar suporte a uma variedade de taxas de quadros.
 ms.assetid: 9578e60d-0339-4382-b798-2d31d2ddbe76
 title: Como definir a taxa de quadros de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44e105965f5449cb7f4cab59f49410ecfb40221c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b0e80c26c5a53a89cbc87ca509f25db1ebccf4571b4dda2e83ea63717c7d91a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827966"
 ---
 # <a name="how-to-set-the-video-capture-frame-rate"></a>Como definir a taxa de quadros de captura de vídeo
 
-Um dispositivo de captura de vídeo pode dar suporte a um intervalo de taxas de quadros. Se essas informações estiverem disponíveis, as taxas de quadros mínima e máxima serão armazenadas como atributos de tipo de mídia:
+Um dispositivo de captura de vídeo pode dar suporte a uma variedade de taxas de quadros. Se essas informações estão disponíveis, as taxas mínima e máxima de quadros são armazenadas como atributos de tipo de mídia:
 
 
 
 | Atributo                                                         | Descrição         |
 |-------------------------------------------------------------------|---------------------|
-| [intervalo de taxa de quadros do MF \_ MT \_ \_ \_ \_ máx.](mf-mt-frame-rate-range-max.md) | Taxa máxima de quadros. |
-| [intervalo de taxa de quadros do MF \_ MT \_ \_ \_ \_ min](mf-mt-frame-rate-range-min.md) | Taxa mínima de quadros. |
+| [MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MAX](mf-mt-frame-rate-range-max.md) | Taxa máxima de quadros. |
+| [MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MIN](mf-mt-frame-rate-range-min.md) | Taxa mínima de quadros. |
 
 
 
@@ -30,17 +30,17 @@ O intervalo pode variar dependendo do formato de captura. Por exemplo, em tamanh
 
 Para definir a taxa de quadros:
 
-1.  Crie a origem de mídia para o dispositivo de captura. Consulte [enumerando dispositivos de captura de vídeo](enumerating-video-capture-devices.md).
-2.  Chame [**IMFMediaSource:: CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) na origem da mídia para obter o descritor de apresentação.
-3.  Chame [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) para obter o descritor de fluxo para o fluxo de vídeo.
-4.  Chame [**IMFStreamDescriptor:: GetMediaTypeHandler**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) no descritor de fluxo.
-5.  Enumere os formatos de captura, conforme descrito em [como definir o formato de captura de vídeo](how-to-set-the-video-capture-format.md).
+1.  Crie a fonte de mídia para o dispositivo de captura. Consulte [Enumerando dispositivos de captura de vídeo](enumerating-video-capture-devices.md).
+2.  Chame [**IMFMediaSource::CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) na fonte de mídia para obter o descritor de apresentação.
+3.  Chame [**IMFPresentationDescriptor::GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) para obter o descritor de fluxo para o fluxo de vídeo.
+4.  Chame [**IMFStreamDescriptor::GetMediaTypeHandler**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) no descritor de fluxo.
+5.  Enumerar os formatos de captura, conforme descrito [em Como definir o formato de captura de vídeo.](how-to-set-the-video-capture-format.md)
 6.  Selecione o formato de saída desejado na lista.
-7.  Consulte o tipo de mídia para o intervalo de taxa de quadros do [MF \_ MT \_ \_ \_ \_ máximo](mf-mt-frame-rate-range-max.md) e o [intervalo de taxa de quadro do MF \_ MT \_ \_ \_ \_ ](mf-mt-frame-rate-range-min.md) . Esses valores fornecem o intervalo de taxas de quadros com suporte. O dispositivo pode dar suporte a outras taxas de quadros dentro desse intervalo.
-8.  Defina o atributo de [**\_ \_ quadro MF MT**](mf-mt-frame-rate-attribute.md) no tipo de mídia para especificar a taxa de quadros desejada.
-9.  Chame [**IMFMediaTypeHandler:: SetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype) com o tipo de mídia modificado.
+7.  Consulte o tipo de mídia para os atributos [ \_ MF MT \_ FRAME RATE RANGE \_ \_ \_ MAX](mf-mt-frame-rate-range-max.md) e [MF \_ MT FRAME RATE RANGE \_ \_ \_ \_ MIN.](mf-mt-frame-rate-range-min.md) Esses valores dão o intervalo de taxas de quadros com suporte. O dispositivo pode dar suporte a outras taxas de quadros dentro desse intervalo.
+8.  De definir o [**atributo \_ MT \_ FRAME do MF**](mf-mt-frame-rate-attribute.md) no tipo de mídia para especificar a taxa de quadros desejada.
+9.  Chame [**IMFMediaTypeHandler::SetCurrentMediaType com**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype) o tipo de mídia modificado.
 
-O exemplo a seguir define a taxa de quadros igual à taxa máxima de quadros que o dispositivo dá suporte:
+O exemplo a seguir define a taxa de quadros igual à taxa máxima de quadros compatível com o dispositivo:
 
 
 ```C++

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c30ef0b27185b5300ac5cec877ed4e4b38685c12
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21549ec6427b82c6d229d2e3962689bc8879815429f3a68fd32d54283c30d6a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639766"
 ---
 # <a name="ec_dvd_subpicture_stream_change"></a>\_alteração de \_ fluxo de subimagem do DVD do \_ EC \_
 

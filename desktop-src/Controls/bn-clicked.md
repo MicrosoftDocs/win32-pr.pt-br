@@ -3,7 +3,7 @@ title: Código de notificação BN_CLICKED (WinUser. h)
 description: Enviado quando o usuário clica em um botão. A janela pai do botão recebe esse código de notificação por meio da \_ mensagem de comando do WM.
 ms.assetid: 74847549-b92f-4981-a979-d0b2a8a5539a
 keywords:
-- BN_CLICKED de código de notificação controles do Windows
+- BN_CLICKED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 894837c9a930c6a5f6d124b6b9e983465ef3beac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd18c5a4a83b70150a1372cff1adc20c42c574ebbd009d7518f6cc243a9c87a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827626"
 ---
 # <a name="bn_clicked-notification-code"></a>\_Código de notificação clicado em bilhão
 
@@ -65,9 +65,9 @@ Um botão desabilitado não envia um \_ código de notificação clicado bilhão
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

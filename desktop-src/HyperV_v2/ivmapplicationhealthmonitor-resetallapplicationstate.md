@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: b13781d26c256e41ea6685b19a3097236ebbdb91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e97d5d16200501d77acf8b0b02cc5562d51706fcc46298421ad7f7e8fc0dfac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694346"
 ---
 # <a name="ivmapplicationhealthmonitorresetallapplicationstate-method"></a>Método IVmApplicationHealthMonitor:: ResetAllApplicationState
 
@@ -37,13 +37,13 @@ HRESULT ResetAllApplicationState();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse elemento de programação, os componentes de integração do Windows 8 devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
+para usar esse elemento de programação, os componentes de integração do Windows 8 devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Para usar esse elemento de programação, os componentes de integração do Wind
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                      |
-| Versão<br/>                  | Componentes de integração do Windows 8<br/>                                                           |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                      |
+| Versão<br/>                  | Componentes de integração para Windows 8<br/>                                                           |
 | INSERI<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
 
 

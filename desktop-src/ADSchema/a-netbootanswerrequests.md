@@ -1,11 +1,11 @@
 ---
-title: atributo netboot – answer-requests
-description: Permite que o servidor RIS aceite quaisquer solicitações RIS.
+title: atributo netboot-Answer-Requests
+description: Permite que o servidor RIS aceite todas as solicitações de RIS.
 ms.assetid: fb57762f-d7af-45ae-80f2-5dd52b5688a9
 ms.tgt_platform: multiple
 keywords:
-- atributo netboot-answer-requests do AD Schema
-- Esquema de AD do atributo netbootAnswerRequests
+- Esquema do AD do atributo netboot-Answer-Requests
+- Esquema do AD do atributo netbootAnswerRequests
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e3552517189635da9c2ed464e286c06bb3c8d19
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8580c3ff7cacda36fc63430f615ad9615c7ff8aa3b0354d725b97a5e9896c61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648696"
 ---
-# <a name="netboot-answer-requests-attribute"></a>atributo netboot – answer-requests
+# <a name="netboot-answer-requests-attribute"></a>atributo netboot-Answer-Requests
 
-Permite que o servidor RIS aceite quaisquer solicitações RIS.
+Permite que o servidor RIS aceite todas as solicitações de RIS.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | netboot-resposta-solicitações              |
-| LDAP-Display-Name | netbootAnswerRequests                |
+| CN                | netboot-Answer-Requests              |
+| Ldap-Display-Name | netbootAnswerRequests                |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.853               |
-| System-ID-GUID    | 0738307a-91df-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 0738307a-91df-11d1-aebc-0000f80367c1 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ Permite que o servidor RIS aceite quaisquer solicitações RIS.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

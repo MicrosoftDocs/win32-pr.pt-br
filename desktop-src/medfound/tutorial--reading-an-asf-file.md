@@ -4,12 +4,12 @@ ms.assetid: e3a55275-e8f0-4ab7-98db-a2f2c54d5a51
 title: 'Tutorial: lendo um arquivo ASF usando objetos WMContainer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0225f434f650f0423771122e6fc345022e69ec1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e456f9e0061be97198623c2422801b5fd9fc196874cd8aa1a467692277319c9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713286"
 ---
 # <a name="tutorial-reading-an-asf-file-by-using-wmcontainer-objects"></a>Tutorial: lendo um arquivo ASF usando objetos WMContainer
 
@@ -18,7 +18,7 @@ Este tutorial mostra como obter pacotes de dados de um arquivo ASF (Advanced Sys
 Este tutorial contém as seguintes etapas:
 
 -   [Pré-requisitos](#prerequisites)
--   [1. configurar o projeto](#1-set-up-the-project)
+-   [1. configurar o Project](#1-set-up-the-project)
 -   [2. abrir um arquivo ASF](#2-open-an-asf-file)
 -   [3. ler o objeto de cabeçalho ASF](#3-read-the-asf-header-object)
 -   [4. criar o divisor de ASF](#4-create-the-asf-splitter)
@@ -37,7 +37,7 @@ Este tutorial pressupõe o seguinte:
 -   Você está familiarizado com a estrutura de um arquivo ASF e os componentes fornecidos pelo Media Foundation para trabalhar com objetos ASF. Esses componentes incluem o objeto ContentInfo, o Splitter, o multiplexador e o perfil. Para obter mais informações, consulte [componentes ASF do WMContainer](wmcontainer-asf-components.md).
 -   Você está familiarizado com [buffers de mídia](media-buffers.md) e fluxos de bytes: especificamente, operações de arquivo usando um fluxo de bytes, lendo de um fluxo de bytes em um buffer de mídia e gravando o conteúdo de um buffer de mídia em um fluxo de bytes.
 
-## <a name="1-set-up-the-project"></a>1. configurar o projeto
+## <a name="1-set-up-the-project"></a>1. configurar o Project
 
 Inclua os seguintes cabeçalhos no arquivo de origem:
 
@@ -367,7 +367,7 @@ Para gerar amostras de mídia compactadas:
     -   O parâmetro *ppISample* recebe o valor **NULL**.
     -   O parâmetro *pdwStatusFlags* não recebe o sinalizador **ASF \_ STATUSFLAGS \_ incompleto** .
 
-Repita essas etapas até chegar ao final do arquivo. O código a seguir mostra estas etapas:
+Repita essas etapas até chegar ao final do arquivo. O código a seguir mostra essas etapas:
 
 
 ```C++

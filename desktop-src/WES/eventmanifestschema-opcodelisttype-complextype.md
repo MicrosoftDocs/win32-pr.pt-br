@@ -3,7 +3,7 @@ title: Tipo complexo OpcodeListType
 description: Define uma lista de opcodes que são usados para identificar as operações de um componente do aplicativo.
 ms.assetid: 0cbca036-b32e-4fc4-96ee-1dd5bee019bf
 keywords:
-- Log de eventos do tipo complexo OpcodeListType
+- Tipo complexo OpcodeListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dce0942ef0268f50b25987a6be0fd4fffeebd614
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c44a2c2fa38957f302dfe3861a89f57dbe51d44ca737268a8988f8c138be8b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767296"
 ---
 # <a name="opcodelisttype-complex-type"></a>Tipo complexo OpcodeListType
 
@@ -42,7 +42,7 @@ Define uma lista de opcodes que são usados para identificar as operações de u
 
 | Elemento                                                             | Type                                                             | Descrição                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**opcode**](eventmanifestschema-opcode-opcodelisttype-element.md) | [**OpCodeType**](eventmanifestschema-opcodetype-complextype.md) | Define uma operação dentro de um componente do aplicativo.<br/> |
+| [**Opcode**](eventmanifestschema-opcode-opcodelisttype-element.md) | [**Opcodetype**](eventmanifestschema-opcodetype-complextype.md) | Define uma operação dentro de um componente do aplicativo.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define uma lista de opcodes que são usados para identificar as operações de u
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
