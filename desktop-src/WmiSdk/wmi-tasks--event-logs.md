@@ -1,5 +1,5 @@
 ---
-description: As tarefas do WMI para logs de eventos obtêm dados de eventos de arquivos de log de eventos e executam operações como backup ou limpeza de arquivos de log. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: As tarefas WMI para logs de eventos obtém dados de evento de arquivos de log de eventos e executam operações como fazer o back-up ou limpar arquivos de log. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: f6d4e68e-d757-44aa-be74-3b26168626b8
 ms.tgt_platform: multiple
 title: 'Tarefas WMI: logs de eventos '
@@ -10,42 +10,42 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ffdb05bd92a7e02c710fd91d73f947f980fc8a170e91871da5cc4284b6910c79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d4b52f0ac021bb8ce2087c6aa8afbb5539e6b69
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118815574"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624692"
 ---
 # <a name="wmi-tasks-event-logs"></a>Tarefas WMI: logs de eventos 
 
-As tarefas do WMI para logs de eventos obtêm dados de eventos de arquivos de log de eventos e executam operações como backup ou limpeza de arquivos de log. Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+As tarefas WMI para logs de eventos obtém dados de evento de arquivos de log de eventos e executam operações como fazer o back-up ou limpar arquivos de log. Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
+Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
-2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
+2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
+4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,10 +56,10 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 <tbody>
 <tr class="odd">
 <td>... recuperar informações sobre o log de eventos de segurança?</td>
-<td>Inclua o privilégio de <a href="privilege-constants.md">segurança</a> ao se conectar à classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> . Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">executando operações privilegiadas usando o VBScript</a>.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Inclua o <a href="privilege-constants.md">privilégio</a> Segurança ao se conectar à <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>classe Win32_NTEventlogFile</strong></a> segurança. Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">Executando operações privilegiadas usando o VBScript.</a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -86,7 +86,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -108,13 +108,13 @@ foreach ($objLogFile in $colLogFiles)
 </td>
 </tr>
 <tr class="even">
-<td>... fazer backup de um log de eventos?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o método <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>BackupEventLog</strong></a> . Talvez seja necessário incluir o privilégio de <a href="privilege-constants.md">backup</a> ao conectar-se ao WMI. Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">executando operações privilegiadas usando o VBScript</a>.</p>
+<td>... fazer o back up de um log de eventos?</td>
+<td><p>Use a <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>método BackupEventLog.</strong></a> Talvez seja necessário incluir o <a href="privilege-constants.md">privilégio backup</a> ao se conectar ao WMI. Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">Executando operações privilegiadas usando o VBScript.</a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -136,7 +136,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -160,13 +160,13 @@ foreach ($objLogFile in $colLogFiles)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... fazer backup de um log de eventos mais de uma vez?</td>
-<td><p>Verifique se o arquivo de backup tem um nome exclusivo antes de usar o <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o método <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>BackupEventLog</strong></a> . O sistema operacional não permite que você substitua um arquivo de backup existente; Você deve mover o arquivo de backup ou renomeá-lo antes de poder executar o script novamente. Talvez seja necessário incluir o privilégio de <a href="privilege-constants.md">backup</a> ao conectar-se ao WMI. Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">executando operações privilegiadas usando o VBScript</a>.</p>
+<td>... fazer o back up de um log de eventos mais de uma vez?</td>
+<td><p>Verifique se o arquivo de backup tem um nome exclusivo antes de usar o <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>método BackupEventLog.</strong></a> O sistema operacional não permite substituir um arquivo de backup existente; você deve mover o arquivo de backup ou renomeá-lo antes de executar o script novamente. Talvez seja necessário incluir o <a href="privilege-constants.md">privilégio backup</a> ao se conectar ao WMI. Para obter mais informações, consulte <a href="executing-privileged-operations-using-vbscript.md">Executando operações privilegiadas usando o VBScript.</a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -193,7 +193,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -220,12 +220,12 @@ foreach ($objLogFile in $colLogFiles)
 </tr>
 <tr class="even">
 <td>... determinar o número de registros em um log de eventos?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e verifique o valor da propriedade <strong>NumberOfRecords</strong> .</p>
+<td><p>Use a <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> classe e verifique o valor da <strong>propriedade NumberOfRecords.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,7 +246,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -270,12 +270,12 @@ foreach ($objLogFile in $colLogFiles)
 </tr>
 <tr class="odd">
 <td>... limpar meus logs de eventos?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o método <a href="/previous-versions/windows/desktop/eventlogprov/cleareventlog-method-in-class-win32-nteventlogfile"><strong>ClearEventLog</strong></a> .</p>
+<td><p>Use a <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e o <a href="/previous-versions/windows/desktop/eventlogprov/cleareventlog-method-in-class-win32-nteventlogfile"><strong>método ClearEventLog.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -297,7 +297,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -322,12 +322,12 @@ foreach ($objLogFile in $colLogFiles)
 </tr>
 <tr class="even">
 <td>... ler eventos dos logs de eventos?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent"><strong>Win32_NTLogEvent</strong></a> .</p>
+<td><p>Use a <a href="/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent"><strong>classe Win32_NTLogEvent.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -360,7 +360,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -401,12 +401,12 @@ foreach ($objEvent in $colLoggedEvents)
 
 <dl> <dt>
 
-[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 

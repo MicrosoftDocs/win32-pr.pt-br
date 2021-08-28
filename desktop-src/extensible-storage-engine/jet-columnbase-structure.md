@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 603025166eed7c92d98148a43d26046308235777
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: eb9ac3377e97079794a8d4c81d4f8be59587870c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983589"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468643"
 ---
 # <a name="jet_columnbase-structure"></a>Estrutura JET_COLUMNBASE
 
@@ -102,13 +102,13 @@ Opções para a coluna, incluindo zero ou mais dos valores a seguir.
 | <p>JET_bitColumnMaybeNull</p> | <p>Reservado para uso futuro.</p><p>JET_bitColumnMaybeNull não pode ser combinado com JET_bitColumnUserDefinedDefault.</p> | 
 | <p>JET_bitColumnFinalize</p> | <p>Não use. Em vez disso, use JET_bitColumnDeleteOnZero.</p><p>A coluna pode ser finalizada. Uma coluna que pode ser finalizada é uma coluna de atualização de caução que faz com que a linha seja excluída quando a coluna chega a zero. Versões futuras podem invocar uma função de retorno de chamada em vez disso (consulte <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>). Uma coluna que pode ser finalizada deve ser uma coluna de atualização de caução. JET_bitColumnFinalize não pode ser combinado com JET_bitColumnUserDefinedDefault.</p> | 
 | <p>JET_bitColumnUserDefinedDefault</p> | <p>O valor padrão de uma coluna será fornecido por uma função de retorno de chamada. Consulte <a href="gg294098(v=exchg.10).md">JET_CALLBACK</a>. Uma coluna que tem um padrão definido pelo usuário deve ser uma coluna marcada. Se JET_bitColumnUserDefinedDefault for especificado, o <strong>pvDefault</strong> deverá apontar para uma estrutura de <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> e <strong>cbDefault</strong> deverá ser definido como sizeof (JET_USERDEFINEDDEFAULT).</p><p>JET_bitColumnUserDefinedDefault não pode ser combinado com JET_bitColumnFixed, JET_bitColumnNotNULL, JET_bitColumnVersion, JET_bitColumnAutoincrement, JET_bitColumnUpdatable, JET_bitColumnEscrowUpdate, JET_bitColumnFinalize, JET_bitColumnDeleteOnZero ou JET_bitColumnMaybeNull.</p> | 
-| <p>JET_bitColumnDeleteOnZero</p> | <p>A coluna é uma coluna de atualização de caução e, quando chega a zero, o registro será excluído. Um uso comum para colunas Delete-on-zero é como campos de contagem de referência. Quando o número de referências cair em zero, o registro será excluído. Uma coluna Delete-on-zero deve ser uma coluna de atualização de caução.</p><p>JET_bitColumnDeleteOnZero substitui JET_bitColumnFinalize.</p><p>JET_bitColumnDeleteOnZero não pode ser combinada com JET_bitColumnFinalize ou JET_bitColumnUserDefinedDefault e não pode ser usada com colunas padrão definidas pelo usuário.</p> | 
+| <p>JET_bitColumnDeleteOnZero</p> | <p>A coluna é uma coluna de atualização de caução e, quando chega a zero, o registro será excluído. Um uso comum para colunas Delete-on-zero é como campos de contagem de referência. Quando o número de referências cair para zero, o registro será excluído. Uma coluna delete-on-zero deve ser uma coluna de atualização de escrow.</p><p>JET_bitColumnDeleteOnZero substitui JET_bitColumnFinalize.</p><p>JET_bitColumnDeleteOnZero pode ser combinado com JET_bitColumnFinalize ou JET_bitColumnUserDefinedDefault e não pode ser usado com colunas padrão definidas pelo usuário.</p> | 
 
 
 
 **szBaseTableName**
 
-A tabela da qual a tabela atual herda seu DDL.
+A tabela da qual a tabela atual herda sua DDL.
 
 **szBaseColumnName**
 
@@ -116,17 +116,12 @@ O nome da coluna na tabela de modelo.
 
 ### <a name="remarks"></a>Comentários
 
-**JET_COLUMNBASE** contém grande parte das mesmas informações que [JET_COLUMNDEF](./jet-columndef-structure.md), mas adiciona campos de cadeia de caracteres para descrever a tabela base (se um DDL hierárquico foi usado).
+**JET_COLUMNBASE** contém grande parte das mesmas informações que [JET_COLUMNDEF](./jet-columndef-structure.md), mas adiciona campos de cadeia de caracteres para descrever a tabela base (se uma DDL hierárquica foi usada).
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_COLUMNBASE_W</strong> (Unicode) e <strong>JET_COLUMNBASE_A</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JET_COLUMNBASE_W</strong> (Unicode) <strong>e JET_COLUMNBASE_A</strong> (ANSI).</p> | 
 
 
 

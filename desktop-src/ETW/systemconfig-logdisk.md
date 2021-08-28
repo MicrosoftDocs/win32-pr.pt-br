@@ -1,7 +1,7 @@
 ---
-description: Classe SystemConfig_LogDisk-essa classe é a classe de tipo de evento para eventos de configuração de disco lógico.
+description: SystemConfig_LogDisk classe - essa classe é a classe de tipo de evento para eventos de configuração de disco lógico.
 ms.assetid: a11a8245-8ace-4061-b6c7-938002d8b9fc
-title: Classe SystemConfig_LogDisk
+title: SystemConfig_LogDisk classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,14 +28,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c24ce209c51e0ac2d6167ae76d3f8289d73aa0fffa9ce607e51c8566cbb37c36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 326509ea080b052c0ff435e0a6e573bf54ac298c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119582226"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880752"
 ---
-# <a name="systemconfig_logdisk-class"></a>\_Classe SystemConfig LogDisk
+# <a name="systemconfig_logdisk-class"></a>Classe SystemConfig \_ LogDisk
 
 Essa classe é a classe de tipo de evento para eventos de configuração de disco lógico.
 
@@ -68,20 +68,20 @@ class SystemConfig_LogDisk : SystemConfig
 
 ## <a name="members"></a>Membros
 
-A classe **SystemConfig \_ LogDisk** tem estes tipos de membros:
+A **classe SystemConfig \_ LogDisk** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **SystemConfig \_ LogDisk** tem essas propriedades.
+A **classe SystemConfig \_ LogDisk** tem essas propriedades.
 
 <dl> <dt>
 
 **BytesPerSector**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -97,7 +97,7 @@ Número de bytes em cada setor para a unidade de disco físico.
 **DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -106,30 +106,30 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (3)
 </dt> </dl>
 
-Número de índice do disco que contém esta partição.
+Número de índice do disco que contém essa partição.
 
 </dd> <dt>
 
 **DriveLetterString**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (6), **Max** (4), **Format ("s")**
+Qualificadores: **WmiDataId** (6), **Max** (4), **Format("s")**
 </dt> </dl>
 
-Letra da unidade do disco no formato " <letter> :".
+Letra da unidade do disco no formato " &lt; letra &gt; :".
 
 </dd> <dt>
 
 **DriveType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -144,7 +144,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 | Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partição<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volume<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partição estendida em vários discos<br/> |
 
@@ -163,7 +163,7 @@ Tipo de dados: **char16**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (14), **Max** (16), **Format ("s")**
+Qualificadores: **WmiDataId** (14), **Max** (16), **Format("s")**
 </dt> </dl>
 
 Sistema de arquivos no disco lógico, por exemplo, NTFS.
@@ -189,7 +189,7 @@ Número de clusters livres no volume especificado.
 **Pad1**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -205,7 +205,7 @@ Não usado.
 **Pad2**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -221,7 +221,7 @@ Não usado.
 **Pad3**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -237,7 +237,7 @@ Não usado.
 **PartitionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -253,7 +253,7 @@ Número de índice da partição.
 **PartitionSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -269,7 +269,7 @@ Tamanho total da partição, em bytes.
 **SectorsPerCluster**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -285,7 +285,7 @@ Número de setores no volume.
 **Tamanho**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -298,10 +298,10 @@ Tamanho da unidade de disco, em bytes.
 
 </dd> <dt>
 
-**StartOffset**
+**Startoffset**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -310,7 +310,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (1)
 </dt> </dl>
 
-Deslocamento inicial (em bytes) da partição desde o início do disco.
+Deslocamento inicial (em bytes) da partição do início do disco.
 
 </dd> <dt>
 
@@ -333,7 +333,7 @@ Número de clusters usados e livres no volume.
 **VolumeExt**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -352,8 +352,8 @@ Reservado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

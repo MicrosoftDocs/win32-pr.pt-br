@@ -32,12 +32,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54e54576dfb1023ec4e3bc55ddd198a77f0ddf25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8280bf4abfbc9eb5818d1aab460a17298db7b0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761197"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477452"
 ---
 # <a name="stopservicegrbit-enumeration"></a>Enumeração StopServiceGrbit
 
@@ -65,43 +65,14 @@ public enum StopServiceGrbit
 
 ## <a name="members"></a>Membros
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nome do membro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Tudo</td>
-<td>Interrompe todos os serviços ESE para a instância especificada.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>BackgroundUserTasks</td>
-<td>Interrompe tarefas de manutenção em segundo plano específicas do cliente reiniciáveis (desfragmentação da árvore B +).</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>QuiesceCaches</td>
-<td>Quiesces todos os caches sujos em disco. Assíncrono. O fechamento em pausa será cancelado se o bit de retomação for chamado posteriormente.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Retomar</td>
-<td>Retoma as operações StopService emitidas anteriormente, ou seja, &quot; reinicia o serviço &quot; . Pode ser combinado com grbits acima para retomar serviços específicos ou com 0x0 retoma todos os serviços interrompidos anteriormente.
-<p>Aviso: esse bit só pode ser usado para retomar JET_bitStopServiceBackground e JET_bitStopServiceQuiesceCaches, se você fez uma JET_bitStopServiceAll ou JET_bitStopServiceAPI, a tentativa de usar JET_bitStopServiceResume falhará.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nome do membro | Descrição | 
+|--|-------------|-------------|
+|  | Tudo | Interrompe todos os serviços ESE para a instância especificada. | 
+|  | BackgroundUserTasks | Interrompe tarefas de manutenção em segundo plano específicas do cliente reiniciáveis (desfragmentação da árvore B +). | 
+|  | QuiesceCaches | Quiesces todos os caches sujos em disco. Assíncrono. O fechamento em pausa será cancelado se o bit de retomação for chamado posteriormente. | 
+|  | Retomar | Retoma as operações StopService emitidas anteriormente, ou seja, "reinicia o serviço". Pode ser combinado com grbits acima para retomar serviços específicos ou com 0x0 retoma todos os serviços interrompidos anteriormente.<p>Aviso: esse bit só pode ser usado para retomar JET_bitStopServiceBackground e JET_bitStopServiceQuiesceCaches, se você fez uma JET_bitStopServiceAll ou JET_bitStopServiceAPI, a tentativa de usar JET_bitStopServiceResume falhará.</p> | 
+
 
 
 ## <a name="see-also"></a>Confira também

@@ -4,104 +4,36 @@ ms.assetid: a7d774c1-93c0-47d8-a8a7-e66e394726a3
 title: D3DPRESENT (D3d9.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f3fd05609e86682b4524e68e985f03abac59f1dbd4537d1ffd683990ca371fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f71c89304a82344b6217a44f3d625200b03a286
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118527586"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472775"
 ---
 # <a name="d3dpresent"></a>D3DPRESENT
 
 Descreve a relação entre a taxa de atualização do adaptador e a taxa na qual as operações [**Present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-present) ou [**Present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-present) são concluídas. Esses valores também servem como valores de sinalizador para o campo PresentationIntervals [**de D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante</th>
-<th style="text-align: left;">Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_DONOTFLIP"></span><span id="d3dpresent_donotflip"></span><dl> <dt><strong>D3DPRESENT_DONOTFLIP</strong></dt> </dl></td>
-<td style="text-align: left;">Use o buffer frontal como a superfície de origem e de destino durante a renderização. Uma sincronização de quadro é agendada, mas a superfície exibida não é alterada. Esse sinalizador só está disponível quando o aplicativo está no modo de tela inteira e D3DSWAPEFFECT_FLIPEX foi especificado. <br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_DONOTWAIT"></span><span id="d3dpresent_donotwait"></span><dl> <dt><strong>D3DPRESENT_DONOTWAIT</strong></dt> </dl></td>
-<td style="text-align: left;">Uma apresentação não pode ser agendada por um dispositivo de metade. Se esse sinalizador for definido em uma chamada para Present <a href="/windows/desktop/api"><strong>e</strong></a>o hardware estiver ocupado processando ou aguardando um intervalo de sincronização vertical, Present retornará D3DERR_WASSTILLDRAWING para indicar que a operação blit está incompleta.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_FLIPRESTART"></span><span id="d3dpresent_fliprestart"></span><dl> <dt><strong>D3DPRESENT_FLIPRESTART</strong></dt> </dl></td>
-<td style="text-align: left;">Reservado.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_FORCEIMMEDIATE"></span><span id="d3dpresent_forceimmediate"></span><dl> <dt><strong>D3DPRESENT_FORCEIMMEDIATE</strong></dt> </dl></td>
-<td style="text-align: left;">D3DPRESENT_INTERVAL_IMMEDIATE é imposto nessa <a href="/windows/desktop/api"><strong>chamada</strong></a> atual. Esse sinalizador só pode ser especificado ao usar D3DSWAPEFFECT_FLIPEX. Os comportamentos de apresentação em janelas e em tela inteira são os mesmos. Isso é especialmente útil para aplicativos de mídia que querem descartar quadros que foram detectados com atraso e apresentar quadros subsequentes no momento da composição. Um erro de parâmetro inválido será retornado se esse sinalizador for especificado incorretamente. Quando vários quadros consecutivos com D3DPRESENT_FORCEIMMEDIATEs estão na fila, somente o último quadro é exibido, para apresentação em janelas e em tela inteira.<br/> Esse sinalizador está disponível no Direct3D 9Ex Windows 7 ou sistemas operacionais posteriores.<br/> Ao usar D3DSWAPEFFECT_FLIPEX, cada quadro apresentado usando D3DPRESENT_INTERVAL_IMMEDIATE ou D3DPRESENT_INTERVAL_FORCEIMMEDIATE substituirá o intervalo presente do quadro anterior. Por exemplo, se você enfilfilar os seguintes quadros usando os seguintes efeitos de permuta: quadro A (D3DPRESENT_INTERVAL_ONE), quadro B(D3DPRESENT_INTERVAL_ONE), quadro C(D3DPRESENT_INTERVAL_ONE), quadro D(D3DPRESENT_INTERVAL_FORCEIMMEDIATE), o quadro D substituirá o intervalo presente do quadro C. Os quadros exibidos por intervalo atual são o quadro A, o quadro B, (quadro C substituído por) quadro D.<br/> Consulte Observações.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_DEFAULT"></span><span id="d3dpresent_interval_default"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_DEFAULT</strong></dt> </dl></td>
-<td style="text-align: left;">Isso é quase equivalente a D3DPRESENT_INTERVAL_ONE. Consulte Observações.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_ONE"></span><span id="d3dpresent_interval_one"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_ONE</strong></dt> </dl></td>
-<td style="text-align: left;">O driver aguardará o período de retração vertical (o runtime será &quot; seguido para evitar a &quot; retração). <a href="/windows/desktop/api"><strong>As</strong></a> operações presentes não serão afetadas com mais frequência do que a atualização da tela; O runtime será concluído no máximo uma operação Presente por período de atualização do adaptador. Isso é equivalente a usar D3DSWAPEFFECT_COPYVSYNC no DirectX 8.1. Essa opção está sempre disponível para cadeias de permuta em janelas e em tela inteira. Consulte Observações.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_TWO"></span><span id="d3dpresent_interval_two"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_TWO</strong></dt> </dl></td>
-<td style="text-align: left;">O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada atualização de tela de segundo. Verifique o limite PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_TWO é suportado pelo driver.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_THREE"></span><span id="d3dpresent_interval_three"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_THREE</strong></dt> </dl></td>
-<td style="text-align: left;">O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada terceira atualização de tela. Verifique o limite PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_THREE há suporte para o driver.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_FOUR"></span><span id="d3dpresent_interval_four"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_FOUR</strong></dt> </dl></td>
-<td style="text-align: left;">O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada quarta atualização de tela. Verifique o membro PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_FOUR é suportado pelo driver.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_IMMEDIATE"></span><span id="d3dpresent_interval_immediate"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_IMMEDIATE</strong></dt> </dl></td>
-<td style="text-align: left;">O runtime atualiza a área de cliente da janela imediatamente e pode fazer isso mais de uma vez durante o período de atualização do adaptador. Isso é equivalente a usar D3DSWAPEFFECT_COPY no DirectX 8. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais podem ser afetadas imediatamente. Essa opção está sempre disponível para cadeias de permuta em janelas e em tela inteira. Consulte Observações.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_LINEAR_CONTENT"></span><span id="d3dpresent_linear_content"></span><dl> <dt><strong>D3DPRESENT_LINEAR_CONTENT</strong></dt> </dl></td>
-<td style="text-align: left;">O conteúdo do buffer de fundo a ser apresentado está no espaço de cores linear. <br/>
-<ul>
-<li>A apresentação converterá implicitamente de espaço linear em sRGB (gama = 2,2). Essa é a única conversão com suporte.</li>
-<li>Como esse sinalizador representa uma propriedade do conteúdo do buffer de fundo, o sinalizador pode ser especificado durante uma <a href="/windows/desktop/api"><strong>chamada</strong></a> Present. Em outras palavras, um aplicativo pode apresentar conteúdo linear em um quadro e, em seguida, alternar para o conteúdo corrigido no próximo.</li>
-<li>Esse sinalizador é ignorado quando a cadeia de permuta é de tela inteira. (Observe que esse sinalizador está disponível apenas na versão explícita da cadeia de permuta <a href="/windows/desktop/api"><strong>do Present.</strong></a> O <a href="/windows/desktop/api"><strong>método Present</strong></a> não recebe um parâmetro flags.)</li>
-<li>Esse sinalizador sempre é aceito, mas só terá efeito quando o driver expor >D3DCAPS3_LINEAR_TO_SRGB_PresentATION.</li>
-<li>O único formato de buffer de fundo com suporte <a href="d3dformat.md">é X8R8G8B8</a>.</li>
-</ul>
-Consulte <a href="gamma.md">Cadeias de permuta em janelas.</a><br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR"></span><span id="d3dpresent_video_restrict_to_monitor"></span><dl> <dt><strong>D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR</strong></dt> </dl></td>
-<td style="text-align: left;">Clipes do conteúdo renderizado para o monitor/dispositivo que o adaptador está direcionando, mostra miniaturas para o conteúdo na exibição Flip3D e miniaturas da barra de tarefas em outros monitores. <br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/> Consulte <a href="/windows/desktop/dwm/dwm-overview">Gerenciador de Janelas da Área de Trabalho</a> para obter mais detalhes sobre esse recurso do Windows Vista. Se você não estiver executando no modo de composição da área de trabalho, o sinalizador dará o mesmo comportamento que <a href="d3dpresentflag.md">D3DPRESENTFLAG_DEVICECLIP</a>.<br/>
-<blockquote>
-[!Note]<br />
-Esse sinalizador só deve ser usado com o efeito de permuta D3DSWAPEFFECT_FLIPEX. O uso desse sinalizador com <em>outros efeitos</em> de troca está sendo preterido e pode não funcionar em versões futuras do Windows.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_UPDATEOVERLAYONLY"></span><span id="d3dpresent_updateoverlayonly"></span><dl> <dt><strong>D3DPRESENT_UPDATEOVERLAYONLY</strong></dt> </dl></td>
-<td style="text-align: left;">Atualiza a posição de sobreposição ou os dados de colorkey sem causar uma in flip real e sem alterar a duração com a qual a imagem é exibida.<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="D3DPRESENT_HIDEOVERLAY"></span><span id="d3dpresent_hideoverlay"></span><dl> <dt><strong>D3DPRESENT_HIDEOVERLAY</strong></dt> </dl></td>
-<td style="text-align: left;">Desliga o hardware de sobreposição.<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="D3DPRESENT_UPDATECOLORKEY"></span><span id="d3dpresent_updatecolorkey"></span><dl> <dt><strong>D3DPRESENT_UPDATECOLORKEY</strong></dt> </dl></td>
-<td style="text-align: left;">Redesenha os dados de colorkey.<br/> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante | Descrição | 
+|----------|-------------|
+| <span id="D3DPRESENT_DONOTFLIP"></span><span id="d3dpresent_donotflip"></span><dl><dt><strong>D3DPRESENT_DONOTFLIP</strong></dt></dl> | Use o buffer frontal como a superfície de origem e de destino durante a renderização. Uma sincronização de quadro é agendada, mas a superfície exibida não é alterada. Esse sinalizador só estará disponível quando o aplicativo estiver no modo de tela inteira e D3DSWAPEFFECT_FLIPEX tiver sido especificado. <br /> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br /> | 
+| <span id="D3DPRESENT_DONOTWAIT"></span><span id="d3dpresent_donotwait"></span><dl><dt><strong>D3DPRESENT_DONOTWAIT</strong></dt></dl> | Uma apresentação não pode ser agendada por um dispositivo de metade. Se esse sinalizador for definido em uma chamada para Present <a href="/windows/desktop/api"><strong>e</strong></a>o hardware estiver ocupado processando ou aguardando um intervalo de sincronização vertical, Present retornará D3DERR_WASSTILLDRAWING para indicar que a operação blit está incompleta.<br /> | 
+| <span id="D3DPRESENT_FLIPRESTART"></span><span id="d3dpresent_fliprestart"></span><dl><dt><strong>D3DPRESENT_FLIPRESTART</strong></dt></dl> | Reservado.<br /> | 
+| <span id="D3DPRESENT_FORCEIMMEDIATE"></span><span id="d3dpresent_forceimmediate"></span><dl><dt><strong>D3DPRESENT_FORCEIMMEDIATE</strong></dt></dl> | D3DPRESENT_INTERVAL_IMMEDIATE é imposto nessa <a href="/windows/desktop/api"><strong>chamada</strong></a> Atual. Esse sinalizador só pode ser especificado ao usar D3DSWAPEFFECT_FLIPEX. Os comportamentos de apresentação em janelas e em tela inteira são os mesmos. Isso é especialmente útil para aplicativos de mídia que querem descartar quadros que foram detectados com atraso e apresentar quadros subsequentes no momento da composição. Um erro de parâmetro inválido será retornado se esse sinalizador for especificado incorretamente. Quando vários quadros consecutivos com D3DPRESENT_FORCEIMMEDIATEs estão na fila, somente o último quadro é exibido, para apresentação em janelas e em tela inteira.<br /> Esse sinalizador está disponível no Direct3D 9Ex Windows 7 ou sistemas operacionais posteriores.<br /> Ao usar D3DSWAPEFFECT_FLIPEX, cada quadro apresentado usando D3DPRESENT_INTERVAL_IMMEDIATE ou D3DPRESENT_INTERVAL_FORCEIMMEDIATE substituirá o intervalo presente do quadro anterior. Por exemplo, se você enfilar os seguintes quadros usando os seguintes efeitos de permuta: quadro A (D3DPRESENT_INTERVAL_ONE), quadro B(D3DPRESENT_INTERVAL_ONE), quadro C(D3DPRESENT_INTERVAL_ONE), quadro D(D3DPRESENT_INTERVAL_FORCEIMMEDIATE), o quadro D substituirá o intervalo presente do quadro C. Os quadros exibidos por intervalo atual são o quadro A, o quadro B, (quadro C substituído por) quadro D.<br /> Consulte Observações.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_DEFAULT"></span><span id="d3dpresent_interval_default"></span><dl><dt><strong>D3DPRESENT_INTERVAL_DEFAULT</strong></dt></dl> | Isso é quase equivalente a D3DPRESENT_INTERVAL_ONE. Consulte Observações.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_ONE"></span><span id="d3dpresent_interval_one"></span><dl><dt><strong>D3DPRESENT_INTERVAL_ONE</strong></dt></dl> | O driver aguardará o período de retração vertical (o runtime "seguirá o sinal" para evitar a retração). <a href="/windows/desktop/api"><strong>As</strong></a> operações presentes não serão afetadas com mais frequência do que a atualização da tela; O runtime será concluído no máximo uma operação Presente por período de atualização do adaptador. Isso é equivalente a usar D3DSWAPEFFECT_COPYVSYNC no DirectX 8.1. Essa opção está sempre disponível para cadeias de permuta em janelas e em tela inteira. Consulte Observações.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_TWO"></span><span id="d3dpresent_interval_two"></span><dl><dt><strong>D3DPRESENT_INTERVAL_TWO</strong></dt></dl> | O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada atualização de tela de segundo. Verifique o limite PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_TWO é suportado pelo driver.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_THREE"></span><span id="d3dpresent_interval_three"></span><dl><dt><strong>D3DPRESENT_INTERVAL_THREE</strong></dt></dl> | O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada terceira atualização de tela. Verifique o limite PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_THREE é suportado pelo driver.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_FOUR"></span><span id="d3dpresent_interval_four"></span><dl><dt><strong>D3DPRESENT_INTERVAL_FOUR</strong></dt></dl> | O driver aguardará o período de retração vertical. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais não serão afetadas com mais frequência do que cada quarta atualização de tela. Verifique o membro PresentationIntervals (consulte <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>) para ver se D3DPRESENT_INTERVAL_FOUR é suportado pelo driver.<br /> | 
+| <span id="D3DPRESENT_INTERVAL_IMMEDIATE"></span><span id="d3dpresent_interval_immediate"></span><dl><dt><strong>D3DPRESENT_INTERVAL_IMMEDIATE</strong></dt></dl> | O runtime atualiza a área de cliente da janela imediatamente e pode fazer isso mais de uma vez durante o período de atualização do adaptador. Isso é equivalente a usar D3DSWAPEFFECT_COPY no DirectX 8. <a href="/windows/desktop/api"><strong>As</strong></a> operações atuais podem ser afetadas imediatamente. Essa opção está sempre disponível para cadeias de permuta em janelas e em tela inteira. Consulte Observações.<br /> | 
+| <span id="D3DPRESENT_LINEAR_CONTENT"></span><span id="d3dpresent_linear_content"></span><dl><dt><strong>D3DPRESENT_LINEAR_CONTENT</strong></dt></dl> | O conteúdo do buffer de fundo a ser apresentado está no espaço de cores linear. <br /><ul><li>A apresentação converterá implicitamente de espaço linear em sRGB (gama = 2,2). Essa é a única conversão com suporte.</li><li>Como esse sinalizador representa uma propriedade do conteúdo do buffer de fundo, o sinalizador pode ser especificado durante uma <a href="/windows/desktop/api"><strong>chamada</strong></a> Present. Em outras palavras, um aplicativo pode apresentar conteúdo linear em um quadro e, em seguida, alternar para o conteúdo corrigido no próximo.</li><li>Esse sinalizador é ignorado quando a cadeia de permuta é de tela inteira. (Observe que esse sinalizador está disponível apenas na versão explícita da cadeia de permuta <a href="/windows/desktop/api"><strong>do Present.</strong></a> O <a href="/windows/desktop/api"><strong>método Present</strong></a> não recebe um parâmetro flags.)</li><li>Esse sinalizador sempre é aceito, mas só terá efeito quando o driver expor &gt; D3DCAPS3_LINEAR_TO_SRGB_PresentATION.</li><li>O único formato de buffer de fundo com suporte <a href="d3dformat.md">é X8R8G8B8</a>.</li></ul>Consulte <a href="gamma.md">Cadeias de permuta em janelas.</a><br /> | 
+| <span id="D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR"></span><span id="d3dpresent_video_restrict_to_monitor"></span><dl><dt><strong>D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR</strong></dt></dl> | Clipes do conteúdo renderizado para o monitor/dispositivo que o adaptador está direcionando, mostra miniaturas para o conteúdo na exibição Flip3D e miniaturas da barra de tarefas em outros monitores. <br /> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br /> Consulte <a href="/windows/desktop/dwm/dwm-overview">Gerenciador de Janelas da Área de Trabalho</a> para obter mais detalhes sobre esse recurso do Windows Vista. Se você não estiver executando no modo de composição da área de trabalho, o sinalizador dará o mesmo comportamento que <a href="d3dpresentflag.md">D3DPRESENTFLAG_DEVICECLIP</a>.<br /><blockquote>[!Note]<br />Esse sinalizador só deve ser usado com o efeito de permuta D3DSWAPEFFECT_FLIPEX. O uso desse sinalizador com <em>outros efeitos</em> de troca está sendo preterido e pode não funcionar em versões futuras do Windows.</blockquote><br /> | 
+| <span id="D3DPRESENT_UPDATEOVERLAYONLY"></span><span id="d3dpresent_updateoverlayonly"></span><dl><dt><strong>D3DPRESENT_UPDATEOVERLAYONLY</strong></dt></dl> | Atualiza a posição de sobreposição ou os dados de colorkey sem causar uma in flip real e sem alterar a duração com a qual a imagem é exibida.<br /> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br /> | 
+| <span id="D3DPRESENT_HIDEOVERLAY"></span><span id="d3dpresent_hideoverlay"></span><dl><dt><strong>D3DPRESENT_HIDEOVERLAY</strong></dt></dl> | Desliga o hardware de sobreposição.<br /> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br /> | 
+| <span id="D3DPRESENT_UPDATECOLORKEY"></span><span id="d3dpresent_updatecolorkey"></span><dl><dt><strong>D3DPRESENT_UPDATECOLORKEY</strong></dt></dl> | Redesenha os dados de colorkey.<br /> Esse sinalizador está disponível apenas no Direct3D 9Ex.<br /> | 
+
 
 ## <a name="remarks"></a>Comentários
 

@@ -1,25 +1,25 @@
 ---
-description: Especifica o controle a ser usado ao editar a propriedade.
+description: Especifica qual controle usar ao editar a propriedade.
 ms.assetid: cef6d76f-664a-4808-a224-e82a5adb2d70
 title: editControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bdb47a3866c156ff10dba8eed4584f814793b863e8f615ae5e1a10b8d687ed4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 213d6fba3f03f90e0d5a2702226dd8596462b289
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118055986"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626802"
 ---
 # <a name="editcontrol"></a>editControl
 
-Especifica o controle a ser usado ao editar a propriedade. Deve haver apenas um elemento [editControl]() para cada elemento [DisplayInfo](./propdesc-schema-displayinfo.md) .
+Especifica qual controle usar ao editar a propriedade. Deve haver apenas um [elemento editControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se houver vários elementos, o último será usado. Se nenhum elemento [editControl]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
+Se houver vários elementos, o último será usado. Se nenhum [elemento editControl]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propriedade inato não pode ser editada.
+Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propriedade inata não pode ser editada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -65,8 +65,8 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -77,11 +77,11 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 <tbody>
 <tr class="odd">
 <td>controle</td>
-<td>Público. Opcional. O padrão é &quot; Default &quot; . Os seguintes valores são válidos: 
+<td>Público. Opcional. O padrão é &quot; &quot; Padrão. Os seguintes valores são válidos: 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -92,11 +92,11 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 <tbody>
 <tr class="odd">
 <td>Padrão</td>
-<td>Padrão. Usa o controle padrão, com base no <typeInfo type=&quot;&quot;> atributo. Os tipos padrão são listados abaixo. Qualquer outro tipo resulta no uso do &quot; controle de texto &quot; . 
+<td>Padrão. Usa o controle padrão, com base no <typeInfo type=&quot;&quot;> atributo . Os tipos padrão são listados abaixo. Qualquer outro tipo resulta no uso do &quot; controle &quot; Texto. 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo</th>
+<th>Type</th>
 <th>Control</th>
 </tr>
 </thead>
@@ -106,7 +106,7 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 <td>Texto</td>
 </tr>
 <tr class="even">
-<td>Cadeia de caracteres (valores múltiplos)</td>
+<td>Cadeia de caracteres (vários valores)</td>
 <td>MultiValueText</td>
 </tr>
 <tr class="odd">
@@ -120,15 +120,15 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 </tr>
 <tr class="even">
 <td>Calendário</td>
-<td>Usa o controle Calendar.</td>
+<td>Usa o controle de calendário.</td>
 </tr>
 <tr class="odd">
 <td>CheckboxDropList</td>
 <td>Usa o controle de lista com caixas de seleção.</td>
 </tr>
 <tr class="even">
-<td>Lista suspensa</td>
-<td>Usa o controle lista suspensa.</td>
+<td>DropList</td>
+<td>Usa o controle de lista suspenso.</td>
 </tr>
 <tr class="odd">
 <td>MultiLineText</td>
@@ -136,7 +136,7 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 </tr>
 <tr class="even">
 <td>MultiValueText</td>
-<td>Usa o controle de edição de texto de valores múltiplos.</td>
+<td>Usa o controle de edição de texto de vários valores.</td>
 </tr>
 <tr class="odd">
 <td>Classificação</td>
@@ -147,7 +147,7 @@ Se <typeInfo isInnate="true"> , esse elemento será ignorado porque uma propried
 <td>Usa o controle de edição de texto.</td>
 </tr>
 <tr class="odd">
-<td>Íconelist</td>
+<td>IconList</td>
 <td><strong>Windows 7 e posterior.</strong></td>
 </tr>
 </tbody>

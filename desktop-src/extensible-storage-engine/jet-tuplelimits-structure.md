@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_TUPLELIMITS'
-title: Estrutura de JET_TUPLELIMITS
+description: 'Saiba mais sobre: estrutura JET_TUPLELIMITS dados'
+title: estrutura JET_TUPLELIMITS dados
 TOCTitle: JET_TUPLELIMITS Structure
 ms:assetid: 2610e2e5-5883-4aec-bc66-e6160b76c264
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269207(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4e2c118b7b42dce82ec0a95c53853ec501a7152c08ad088bbddde251edadf3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc5a71328681e1ce415b1a34e9c8f718b460e7f0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119472686"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471772"
 ---
-# <a name="jet_tuplelimits-structure"></a>Estrutura de JET_TUPLELIMITS
+# <a name="jet_tuplelimits-structure"></a>estrutura JET_TUPLELIMITS dados
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_tuplelimits-structure"></a>Estrutura de JET_TUPLELIMITS
+## <a name="jet_tuplelimits-structure"></a>estrutura JET_TUPLELIMITS dados
 
-A estrutura de **JET_TUPLELIMITS** permite a personalização das características de índice de tupla em uma base por índice, em vez de uma base por instância, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+A **JET_TUPLELIMITS** permite a personalização das características do índice de tupla por índice, em vez de uma base por instância, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
-**Windows Server 2003:** a estrutura de **JET_TUPLELIMITS** é introduzida no Windows Server 2003.
+**Windows Server 2003:** A **JET_TUPLELIMITS** é introduzida no Windows Server 2003.
 
 ```cpp
     typedef struct tagJET_TUPLELIMITS {
@@ -55,68 +55,51 @@ O comprimento máximo de uma tupla. O valor padrão é 10.
 
 **chToIndexMax**
 
-O comprimento máximo de uma cadeia de caracteres a ser indexada. Por exemplo, se uma coluna tiver 100 caracteres de comprimento e **chToIndexMax** for definido como 60, somente os primeiros 60 caracteres da coluna serão indexados. O valor padrão é 32767.
+O comprimento máximo de uma cadeia de caracteres a ser indexado. Por exemplo, se uma coluna tiver 100 caracteres e **chToIndexMax** estiver definida como 60, somente os primeiros 60 caracteres da coluna serão indexados. O valor padrão é 32767.
 
 **cchIncrement**
 
-Isso permite que o stride seja configurado em uma base por índice.
+Isso permite que o passo a passo seja configurado por índice.
 
-**Windows Vista:** o membro **cchIncrement** é introduzido no Windows Vista. antes do Windows Vista, o valor para deslocar a janela (o "stride") era sempre 1, como é mostrado no exemplo na seção comentários.
+**Windows Vista:** O **membro cchIncrement** é introduzido no Windows Vista. Antes de Windows Vista, o valor para deslocar a janela (o "stride") sempre era 1, como é mostrado no exemplo na seção de comentários.
 
 **ichStart**
 
 O deslocamento no valor para começar a recuperar tuplas do valor.
 
-**Windows Vista:** o membro **ichStart** é introduzido no Windows Vista.
+**Windows Vista:** O **membro ichStart** é introduzido no Windows Vista.
 
 ### <a name="remarks"></a>Comentários
 
-Um índice de tupla percorre uma cadeia de caracteres e indexa todas as subcadeias de caracteres possíveis de **chLengthMax**. No final da cadeia de caracteres (ou na posição **chToIndexMax**, o que ocorrer primeiro), as subcadeias de pelo menos **chLengthMin** serão indexadas.
+Um índice de tupla percorre uma cadeia de caracteres e indexa todas as suas substrings possíveis **de chLengthMax.** No final da cadeia de caracteres (ou na posição **chToIndexMax**, o que ocorrer primeiro), as substrings de pelo menos **chLengthMin** serão indexadas.
 
-Um índice de tupla pode ser usado para pesquisar cadeias de caracteres com curingas à esquerda e à direita.
+Um índice de tupla pode ser usado para pesquisar cadeias de caracteres com curingas à frente e à frente.
 
-Supondo uma linha com um campo de texto de "chuva na Espanha \! ", se um índice de tupla for criado com os parâmetros **chLengthMin**= 2 e **chLengthMax**= 3, as seguintes entradas serão criadas no índice:
+Supondo uma linha com um campo de texto "RAIN IN SPAIN", se um índice de tupla for criado com os \! parâmetros **chLengthMin**=2 e **chLengthMax**=3, as seguintes entradas serão criadas no índice:
 
-"RAI"  
-Ain  
-NO  
+"RG"  
+"VOU"  
+"IN"  
 "N I"  
-NO  
-NO  
+"IN"  
+"IN"  
 "N S"  
-SP3  
-AUTENTICAÇÃO  
+" SP"  
+"SPA"  
 "PAI"  
-Ain  
-"IN \! "  
-"N \! "
+"VOU"  
+\!"IN"  
+\!"N"
 
-Observe que "IN" ocorre duas vezes e que a última entrada ("N \! ") é menor que 3 (**chLengthMax**). Observe também que o algoritmo de divisão não está ciente de espaços ou palavras e trata todos os caracteres de forma idêntica.
+Observe que "IN" ocorre duas vezes e que a última entrada ("N ") é menor \! que 3 (**chLengthMax**). Observe também que o algoritmo de divisão não está ciente de espaços ou palavras e trata todos os caracteres de forma idêntica.
 
-**Windows xp:** o Windows xp oferece suporte a índices de tupla, mas não tem **JET_TUPLELIMITS**. O mecanismo de banco de dados usará os valores padrão (**chLengthMin**= 3, **chLengthMax**= 10, **chToIndexMax**= 32767). Ainda é possível alterar esses valores, mas eles são definidos em uma base por instância usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) com [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
+**Windows XP:** Windows XP dá suporte a índices de tupla, mas não tem **JET_TUPLELIMITS**. O mecanismo de banco de dados utilizará os valores padrão (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). Ainda é possível alterar esses valores, mas eles são definidos por instância usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) com [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008, Windows Server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte Também

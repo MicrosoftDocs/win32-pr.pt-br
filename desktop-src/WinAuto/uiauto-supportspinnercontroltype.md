@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, controle giratório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9681160bf82c9a541412bb6dde8958c603fcfe22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1472fe400c189b6e5a1e894e1097395e8521e757
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636635"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478532"
 ---
 # <a name="spinner-control-type"></a>Tipo de controle Spinner
 
@@ -52,75 +52,29 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Controle giratório
-<ul>
-<li>Editar (0 ou 1)</li>
-<li>Botão (2)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Controle giratório</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Controle giratório<ul><li>Editar (0 ou 1)</li><li>Botão (2)</li></ul></li></ul> | <ul><li>Controle giratório</li></ul> | 
 
 
 
- 
+
+ 
 
 **padrão de controle Seleção**
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Controle giratório
-<ul>
-<li>Editar (0 ou 1)</li>
-<li>Botão (2)</li>
-<li>Item de lista (0 ou mais)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Controle giratório
-<ul>
-<li>ListItem (0 ou mais)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Controle giratório<ul><li>Editar (0 ou 1)</li><li>Botão (2)</li><li>Item de lista (0 ou mais)</li></ul></li></ul> | <ul><li>Controle giratório<ul><li>ListItem (0 ou mais)</li></ul></li></ul> | 
 
 
 
- 
+
+ 
 
 Para garantir que os dois botões na subárvore de exibição de controle possam ser diferenciados por ferramentas de teste automatizadas, atribua o valor **ScrollAmount \_ SmallIncrement** ou [**ScrollAmount \_ SmallDecrement**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-scrollamount) à propriedade **AutomationId** , conforme apropriado. Para algumas implementações, o controle de edição associado pode ser um par do controle Spinner.
 
@@ -145,7 +99,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -156,40 +110,40 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 | Propriedade padrão de controle/padrão                                         | Suporte/valor | Observações                                                                                                                                     |
 |--------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)                | Depende       | Os controles Spinner que abrangem um intervalo numérico podem dar suporte ao padrão de controle [RangeValue](uiauto-implementingrangevalue.md) .               |
-| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                  | Depende       | Controles Spinner que têm uma lista de itens a serem selecionados devem oferecer suporte ao padrão de controle [Selection](uiauto-implementingselection.md) . |
-| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple) | FALSE         | Os controles Spinner são sempre contêineres de seleção única.                                                                                  |
-| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)                          | Depende       | Controles Spinner que abrangem um conjunto descrete de opções ou números podem dar suporte ao padrão de controle de [valor](uiauto-implementingvalue.md) .    |
+| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                  | Depende       | Controles de rotação que têm uma lista de itens a serem selecionados devem dar suporte ao [padrão de controle](uiauto-implementingselection.md) Seleção. |
+| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple) | FALSE         | Controles de rotação são sempre contêineres de seleção única.                                                                                  |
+| [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)                          | Depende       | Controles de rotação que abrangem um conjunto de opções ou números decrete podem dar suporte ao [padrão de controle](uiauto-implementingvalue.md) Valor.    |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário que são necessários para dar suporte a controles Spinner. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que os controles de rotação são necessários para dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                   | Observações                                                                                                                      |
+| Automação da Interface do Usuário evento                                                                                                                   | Observações                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                 | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade RangeValueValuePropertyId.        | Se o controle der suporte ao padrão de controle [RangeValue](uiauto-implementingrangevalue.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_ Propriedade \_ InvalidatedEventId de seleção**](uiauto-event-ids.md) – evento alterado.               | Se o controle der suporte ao padrão de controle [Selection](uiauto-implementingselection.md) , ele deverá dar suporte a esse evento.     |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade. |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                 | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.             | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento de alteração de propriedade RangeValueValuePropertyId.**](uiauto-control-pattern-propids.md)        | Se o controle for compatível com o padrão de controle [RangeValue,](uiauto-implementingrangevalue.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento \_ de alteração de propriedade Selection InvalidatedEventId.**](uiauto-event-ids.md)               | Se o controle for compatível [com o padrão de](uiauto-implementingselection.md) controle Seleção, ele deverá dar suporte a esse evento.     |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade ValueValuePropertyId.                  | Se o controle der suporte ao padrão de controle de [valor](uiauto-implementingvalue.md) , ele deverá dar suporte a esse evento.             |
+| [**UIA \_ Evento de propriedade ValueValuePropertyId**](uiauto-control-pattern-propids.md) alterado.                  | Se o controle for compatível [com o padrão de](uiauto-implementingvalue.md) controle Valor, ele deverá dar suporte a esse evento.             |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -198,9 +152,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

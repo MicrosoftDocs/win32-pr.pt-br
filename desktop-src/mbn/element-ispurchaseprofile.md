@@ -7,16 +7,16 @@ MSHAttr:
 title: IsPurchaseProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba087f024a37da6999baf905629befa0452c9950
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 899a1d42dc48ea63b5f3723ff35eca67d0a14fd6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987899"
+ms.locfileid: "122880745"
 ---
 # <a name="span-idwwan_profile_v2element_ispurchaseprofilespanispurchaseprofile"></a><span id="WWAN_profile_v2.element_IsPurchaseProfile"></span>IsPurchaseProfile
 
-O elemento **IsPurchaseProfile** contém um **booliano** que será **true** se for um perfil comprado e **false**, caso contrário. O padrão é **false**.
+O **elemento IsPurchaseProfile** contém um **booliana** que será **true** se este for um perfil comprado e **false;** caso contrário, . O padrão é **false**.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -44,14 +44,12 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-Esse elemento mais externo (documento) pode não estar contido em outros elementos.
+Esse elemento mais externo (documento) pode não estar contido por outros elementos.
 
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
+| | | <p>Namespace</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
 
 
  

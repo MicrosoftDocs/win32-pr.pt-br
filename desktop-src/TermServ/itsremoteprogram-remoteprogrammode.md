@@ -1,6 +1,6 @@
 ---
 title: Propriedade ITSRemoteProgram RemoteProgramMode
-description: O modo RemoteApp do Windows Server 2008 R2.
+description: o modo do RemoteApp do Windows Server 2008 R2.
 ms.assetid: 9ebdf966-db9c-4a14-8469-f8b153c6ea78
 ms.tgt_platform: multiple
 keywords:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8582824e2f6349e37b125ffd974847b602ad6fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c36f450e6cbfec3922a56a42bc2f1f61466774eeff46c0987b6fad4ca9dc9731
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124816"
 ---
 # <a name="itsremoteprogramremoteprogrammode-property"></a>Propriedade ITSRemoteProgram:: RemoteProgramMode
 
-O modo RemoteApp do Windows Server 2008 R2.
+o modo do RemoteApp do Windows Server 2008 R2.
 
 Esta propriedade é de leitura/gravação.
 

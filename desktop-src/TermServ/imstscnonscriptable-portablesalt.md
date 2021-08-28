@@ -1,24 +1,24 @@
 ---
-title: Propriedade IMsTscNonScriptable PortableSalt
+title: Propriedade PortableSalt IMsTscNonScriptable
 description: Esta propriedade não é mais suportada.
 ms.assetid: 1f123ec8-27b6-4637-9c57-fe32a224be8a
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsTscNonScriptable
-- Serviços de Área de Trabalho Remota de interface IMsTscNonScriptable, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, objeto MsTscAx
-- Objeto MsTscAx Serviços de Área de Trabalho Remota, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable2, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade PortableSalt
-- Propriedade PortableSalt Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade PortableSalt
+- Propriedade PortableSalt Serviços de Área de Trabalho Remota
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsTscNonScriptable
+- Interface IMsTscNonScriptable Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- Propriedade PortableSalt Serviços de Área de Trabalho Remota objeto , MsTscAx
+- Objeto MsTscAx Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable
+- Interface IMsRdpClientNonScriptable Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable2
+- Interface IMsRdpClientNonScriptable2 Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade PortableSalt
+- A propriedade PortableSalt Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade PortableSalt
 topic_type:
 - apiref
 api_name:
@@ -47,18 +47,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0162073b8361cc89f7ab2e33f60406c0db935bdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 724f9b394d6e70354b39036df90386a823da2e5874f9ecb0fc0b81f130e3571e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125036"
 ---
-# <a name="imstscnonscriptableportablesalt-property"></a>IMsTscNonScriptable: Propriedade ortableSalt de:P
+# <a name="imstscnonscriptableportablesalt-property"></a>Propriedade IMsTscNonScriptable::P ortableSalt
 
 Esta propriedade não é mais suportada.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -77,11 +77,11 @@ HRESULT get_PortableSalt(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-A nova parte de Salt portátil para uma senha codificada portátil.
+A nova parte de sal portátil para uma senha codificada portátil.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **E \_ NOTIMPL**.
+Retorna **E \_ NOTIMPL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,11 +91,11 @@ Retorna **E \_ NOTIMPL**.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                              |
-| Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                              |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                              |
+| Fim do suporte ao servidor<br/>    | Nenhum compatível<br/>                                                              |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable é definido como c1e6743a-41c1-4a74-832A-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable é definido como c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 
@@ -118,7 +118,7 @@ Retorna **E \_ NOTIMPL**.
 [**IMsRdpClientNonScriptable5**](imsrdpclientnonscriptable5.md)
 </dt> <dt>
 
-[**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
+[**Imstscnonscriptable**](imstscnonscriptable-interface.md)
 </dt> <dt>
 
 [**PortablePassword**](imstscnonscriptable-portablepassword.md)

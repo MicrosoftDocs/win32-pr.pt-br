@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 009b84837895ce13f63cc37e4b5b152f4274ee62
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: a96f93357bc3df143fa63ed690295e40980cfc94
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985879"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472652"
 ---
 # <a name="jetdupcursor-function"></a>Função JetDupCursor
 
@@ -94,13 +94,7 @@ O número de tabelas que podem ser abertas simultaneamente é afetado diretament
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Valor |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | 
-| <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | 
-| <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | 
-| <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
 
 
 

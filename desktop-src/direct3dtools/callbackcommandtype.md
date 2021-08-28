@@ -1,5 +1,5 @@
 ---
-description: <span id="vspixengine.callbackcommandtype"></span>Enumeração CallbackCommandType-uma enumeração usada para comunicação entre o mecanismo de captura e um host (como o Visual Studio Diagnóstico de Gráficos).
+description: <span id="vspixengine.callbackcommandtype"></span>Enumeração CallbackCommandType – uma enumeração usada para se comunicar entre o mecanismo de captura e um host (como Visual Studio Diagnóstico de Gráficos).
 MS-HAID: vspixengine.CallbackCommandType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 85e1b7d396d125add00824e9b7c94086e0da6be2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c71e3c7b45bdd84b2e335c47d46e90a3130c8912
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090124"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626712"
 ---
 # <a name="span-idvspixenginecallbackcommandtypespancallbackcommandtype-enumeration"></a><span id="vspixengine.callbackcommandtype"></span>Enumeração CallbackCommandType
 
-Uma enumeração usada para se comunicar entre o mecanismo de captura e um host (como o Visual Studio Diagnóstico de Gráficos).
+Uma enum usada para se comunicar entre o mecanismo de captura e um host (como Visual Studio Diagnóstico de Gráficos).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,17 +56,17 @@ Resultado de RunExperiment.
 Resultado de RunAction.
 
 <span id="NewFramesCallback"></span><span id="newframescallback"></span><span id="NEWFRAMESCALLBACK"></span>**NewFramesCallback**  
-Um valor que indica um retorno de chamada a ser chamado quando novos quadros tiverem sido capturados e estiverem prontos para serem exibidos.
+Um valor que indica um retorno de chamada a ser chamado quando novos quadros foram capturados e prontos para exibição.
 
 <span id="BeginCommunicationCallbackLegacy"></span><span id="begincommunicationcallbacklegacy"></span><span id="BEGINCOMMUNICATIONCALLBACKLEGACY"></span>**BeginCommunicationCallbackLegacy**  
-Resultados de uma versão mais antiga do BeginCommunication usado no Windows 7 e no Windows 8.
+Resultados de uma versão mais antiga do BeginCommunication usada Windows 7 e Windows 8.
 
 <span id="RunExperimentStatusCallback"></span><span id="runexperimentstatuscallback"></span><span id="RUNEXPERIMENTSTATUSCALLBACK"></span>**RunExperimentStatusCallback**  
 Resultado de RunExperiementProgress.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

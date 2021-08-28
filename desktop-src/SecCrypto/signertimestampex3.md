@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 538b92160ddbbb9ca9515a65575fdea67990de5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7eb5c19292b451b1a3d0265da4bb178eafcc6f00
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089841"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468553"
 ---
 # <a name="signertimestampex3-function"></a>Função SignerTimeStampEx3
 
@@ -60,33 +60,12 @@ Sinalizador que especifica o tipo de carimbo de data/hora a ser gerado. Esse par
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl> <dt><strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong></dt> </dl></td>
-<td>Especifica um carimbo de data/hora Authenticode.<br/>
-<blockquote>
-[!Note]<br />
-O Authenticode não é mais o tipo preferencial de carimbo de data/hora. O suporte para carimbos de data/hora Authenticode pode ser removido no futuro. É recomendável usar a RFC 3161 em vez disso.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl> <dt><strong>SIGNER_TIMESTAMP_RFC3161</strong></dt> </dl></td>
-<td>Especifica um carimbo de data/hora compatível com RFC 3161.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl><dt><strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong></dt></dl> | Especifica um carimbo de data/hora Authenticode.<br /><blockquote>[!Note]<br />O Authenticode não é mais o tipo preferencial de carimbo de data/hora. O suporte para carimbos de data/hora Authenticode pode ser removido no futuro. É recomendável usar a RFC 3161 em vez disso.</blockquote><br /> | 
+| <span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl><dt><strong>SIGNER_TIMESTAMP_RFC3161</strong></dt></dl> | Especifica um carimbo de data/hora compatível com RFC 3161.<br /> | 
+
 
 
 
@@ -161,7 +140,7 @@ Reservado. Esse valor deve ser **nulo**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará S \_ OK.
 
@@ -169,29 +148,11 @@ Se a função falhar, ela retornará um valor **HRESULT** que indica o erro. Os 
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código de retorno</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>E_INVALIDARG</strong></dt> </dl></td>
-<td>Esse erro pode ser retornado para as seguintes condições:<br/>
-<ul>
-<li>Você deve definir <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> ou <strong>SIGNER_TIMESTAMP_RFC3161</strong> para o parâmetro <em>dwFlags</em> .</li>
-<li>O parâmetro <em>preservado</em> deve ser <strong>nulo</strong>.</li>
-<li>Se você definir o sinalizador <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> no parâmetro <em>dwFlags</em> , deverá definir o parâmetro <em>dwIndex</em> como zero.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Código de retorno | Descrição | 
+|-------------|-------------|
+| <dl><dt><strong>E_INVALIDARG</strong></dt></dl> | Esse erro pode ser retornado para as seguintes condições:<br /><ul><li>Você deve definir <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> ou <strong>SIGNER_TIMESTAMP_RFC3161</strong> para o parâmetro <em>dwFlags</em> .</li><li>O parâmetro <em>preservado</em> deve ser <strong>nulo</strong>.</li><li>Se você definir o sinalizador <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> no parâmetro <em>dwFlags</em> , deverá definir o parâmetro <em>dwIndex</em> como zero.</li></ul> | 
+
 
 
 
@@ -203,8 +164,8 @@ Se a função falhar, ela retornará um valor **HRESULT** que indica o erro. Os 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 
