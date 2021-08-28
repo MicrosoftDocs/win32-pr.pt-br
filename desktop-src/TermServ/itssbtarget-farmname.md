@@ -24,12 +24,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fecf452bd6f879773a3fe200f721afbda5d29f1c41ae816846c261608d38ddca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0b1c36a1a44f38dac11a7e474d7fefb80a09948
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119138289"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988289"
 ---
 # <a name="itssbtargetfarmname-property"></a>Propriedade ITsSbTarget:: Farmname
 
@@ -60,38 +60,18 @@ Uma variável **BSTR** que contém o nome do farm.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Cliente mínimo com suporte<br/></td>
-<td>Nenhum compatível<br/></td>
-</tr>
-<tr class="even">
-<td>Servidor mínimo com suporte<br/></td>
-<td>Windows Server 2012<br/></td>
-</tr>
-<tr class="odd">
-<td>INSERI<br/></td>
-<td><dl> <dt>Sbtsv. idl</dt> </dl></td>
-</tr>
-<tr class="even">
-<td>IID<br/></td>
-<td>IID_ITsSbTarget é definido como:
-<ul>
-<li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 no servidor Windows 2008 R2</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Valor |
+|--------|-------|
+| Cliente mínimo com suporte<br /> | Nenhum compatível<br /> | 
+| Servidor mínimo com suporte<br /> | Windows Server 2012<br /> | 
+| INSERI<br /> | <dl><dt>Sbtsv. idl</dt></dl> | 
+| IID<br /> | IID_ITsSbTarget é definido como:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 no servidor Windows 2008 R2</li></ul> | 
 
 
 
-## <a name="see-also"></a>Confira também
+
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

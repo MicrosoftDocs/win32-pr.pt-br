@@ -7,12 +7,12 @@ keywords:
 - ADSI de rastreamento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b2db3775c8c578ad361667a2d89c36240caf4b3bbb4bcd5cdd2798011514b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50ff881a408e2f6d7a6b661e7556c8d39366f726
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119023974"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469193"
 ---
 # <a name="event-tracing-in-adsi"></a>Rastreamento de eventos no ADSI
 
@@ -63,71 +63,9 @@ Esses sinalizadores determinam quais métodos [ADSI](active-directory-service-in
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>DEBUG_SCHEMA</strong><br/></td>
-<td><ul>
-<li>LdapGetSchema</li>
-<li>GetSchemaInfoTime</li>
-<li>LdapReadSchemaInfoFromServer</li>
-<li>ProcessSchemaInfo</li>
-<li>HelperReadLdapSchemaInfo</li>
-<li>ProcessClassInfoArray</li>
-<li>ReadSchemaInfoFromRegistry</li>
-<li>StoreSchemaInfoFromRegistry</li>
-<li>AttributeTypeDescription</li>
-<li>ObjectClassDescription</li>
-<li>DITContentRuleDescription</li>
-<li>Directorystring</li>
-<li>DirectoryStrings</li>
-<li>DITContentRuleDescription</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_CHANGEPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser:: ChangePassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>DEBUG_SETPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser:: SetPassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_BINDCACHE</strong><br/></td>
-<td><ul>
-<li>GetServerBasedObject</li>
-<li>GetServerLessBasedObject</li>
-<li>GetGCDomainName</li>
-<li>GetDefaultDomainName</li>
-<li>GetUserDomainFlatName</li>
-<li>BindCacheLookup</li>
-<li>EquivalentPortNumbers</li>
-<li>CanCredentialsBeReused</li>
-<li>BindCacheAdd</li>
-<li>BindCacheAddRef</li>
-<li>AddReferralLink</li>
-<li>CommonRemoveEntry</li>
-<li>BindCacheDerefHelper</li>
-<li>NotifyNewConnection</li>
-<li>QueryForConnection</li>
-<li>LdapOpenBindWithCredentials</li>
-<li>LdapOpenBindWithDefaultCredentials</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | <strong>DEBUG_SCHEMA</strong><br /> | <ul><li>LdapGetSchema</li><li>GetSchemaInfoTime</li><li>LdapReadSchemaInfoFromServer</li><li>ProcessSchemaInfo</li><li>HelperReadLdapSchemaInfo</li><li>ProcessClassInfoArray</li><li>ReadSchemaInfoFromRegistry</li><li>StoreSchemaInfoFromRegistry</li><li>AttributeTypeDescription</li><li>ObjectClassDescription</li><li>DITContentRuleDescription</li><li>Directorystring</li><li>DirectoryStrings</li><li>DITContentRuleDescription</li></ul><br /> | | <strong>DEBUG_CHANGEPWD</strong><br /> | <ul><li>CADsUser:: ChangePassword</li></ul><br /> | | <strong>DEBUG_SETPWD</strong><br /> | <ul><li>CADsUser:: SetPassword</li></ul><br /> | | <strong>DEBUG_BINDCACHE</strong><br /> | <ul><li>GetServerBasedObject</li><li>GetServerLessBasedObject</li><li>GetGCDomainName</li><li>GetDefaultDomainName</li><li>GetUserDomainFlatName</li><li>BindCacheLookup</li><li>EquivalentPortNumbers</li><li>CanCredentialsBeReused</li><li>BindCacheAdd</li><li>BindCacheAddRef</li><li>AddReferralLink</li><li>CommonRemoveEntry</li><li>BindCacheDerefHelper</li><li>NotifyNewConnection</li><li>QueryForConnection</li><li>LdapOpenBindWithCredentials</li><li>LdapOpenBindWithDefaultCredentials</li></ul><br /> | 
+
 
 
 
@@ -158,57 +96,57 @@ No exemplo anterior, *SessionName* é o mesmo nome que aquele fornecido com o co
 
 ## <a name="remarks"></a>Comentários
 
-É mais eficaz rastrear apenas processos específicos especificando um PID específico do que rastrear todos os processos em um computador. Se você precisar rastrear vários aplicativos no mesmo computador, pode haver um impacto no desempenho; Há uma saída substancial de depuração nas seções orientadas a desempenho do código. Além disso, os administradores devem ter cuidado para definir corretamente as permissões dos arquivos de log ao rastrear vários processos; caso contrário, qualquer usuário poderá ler os logs de rastreamento, e outros usuários poderão rastrear os processos que contêm informações seguras.
+É mais eficaz rastrear apenas processos específicos especificando um PID específico do que rastrear todos os processos em um computador. Se você precisar rastrear vários aplicativos no mesmo computador, poderá haver um impacto no desempenho; há uma saída substancial de depuração nas seções orientadas ao desempenho do código. Além disso, os administradores devem ter cuidado para definir corretamente as permissões dos arquivos de log ao rastrear vários processos; caso contrário, qualquer usuário poderá ler os logs de rastreamento e outros usuários poderão rastrear processos que contêm informações seguras.
 
-Por exemplo, suponha que o administrador configure o rastreamento para um aplicativo "Test.exe" e não especifique um PID no registro para rastrear várias instâncias do processo. Agora, outro usuário deseja rastrear o aplicativo "Secure.exe". Se os arquivos de log de rastreamento não forem corretamente restritos, tudo o que o usuário precisará fazer é renomear "Secure.exe" como "Test.exe" e ele será rastreado. Em geral, é melhor rastrear apenas processos específicos durante a solução de problemas e remover a chave do registro de rastreamento assim que a solução de problemas é feita.
+Por exemplo, presume-se que o administrador configura o rastreamento para um aplicativo "Test.exe" e não especifica um PID no Registro para rastrear várias instâncias do processo. Agora, outro usuário deseja rastrear o aplicativo "Secure.exe". Se os arquivos de log de rastreamento não estão restritos corretamente, tudo o que o usuário precisa fazer é renomear "Secure.exe" como "Test.exe" e ele será rastreado. Em geral, é melhor rastrear apenas processos específicos durante a solução de problemas e remover a chave do Registro de rastreamento assim que a solução de problemas for feita.
 
-Como habilitar o rastreamento de eventos produzirá arquivos de log adicionais, os administradores devem monitorar atentamente os tamanhos dos arquivos de log; a falta de espaço em disco no computador local pode causar uma negação de serviço.
+Como a habilitação do Rastreamento de Eventos produzirá arquivos de log extras, os administradores devem monitorar cuidadosamente os tamanhos dos arquivos de log; a falta de espaço em disco no computador local pode causar uma negação de serviço.
 
 ## <a name="example-scenarios"></a>Cenários de Exemplo
 
-Cenário 1: o administrador vê um erro inesperado em um aplicativo que define senhas para contas de usuário, para que elas executem as etapas a seguir para corrigir o problema usando o rastreamento de eventos.
+Cenário 1: o administrador vê um erro inesperado em um aplicativo que define senhas para contas de usuário, portanto, ele seguiria as etapas a seguir para corrigir o problema usando o Rastreamento de Eventos.
 
-1.  Escreva um script que reproduza o problema e crie a chave do registro
+1.  Escrever um script que reproduz o problema e criar a chave do Registro
 
-    **HKEY \_ \_** cscript.exede \\  \\  \\  \\  \\ **rastreamento** \\ **** ADSI dos serviços do sistema de computador local CurrentControlSet
+    **HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
-2.  Inicie uma sessão de rastreamento, configurando *sinalizadores* para 0X2 (**debug \_ CHANGEPASSWD**) e *traceLevel* para 0x4 (**informações de \_ nível \_ de rastreamento**), usando o seguinte comando:
+2.  Inicie uma sessão de rastreamento, definindo *traceFlags* como 0x2 (**DEBUG \_ CHANGEPASSWD**) e *traceLevel* como 0x4 (**TRACE LEVEL \_ \_ INFORMATION**), usando o seguinte comando:
 
-    **tracelog.exe-Start scripttrace-GUID \# 7288c9f8-D63C-4932-a345-89d6b060174d-f. \\ ADSI. etl-flag 0x2-nível 0x4**
+    **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
-3.  Execute cscript.exe com o script de teste para reproduzir o problema e, em seguida, encerre a sessão de rastreamento:
+3.  Execute cscript.exe com o script de teste para reproduzir o problema e, em seguida, encerrar a sessão de rastreamento:
 
-    **tracelog.exe-parar scripttrace**
+    **tracelog.exe -stop scripttrace**
 
-4.  Excluir a chave do registro
+4.  Excluir a chave do Registro
 
-    **HKEY \_ \_** cscript.exede \\  \\  \\  \\  \\ **rastreamento** \\ **** ADSI dos serviços do sistema de computador local CurrentControlSet
+    **HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
 5.  Execute a ferramenta ETW Tracerpt.exe para analisar as informações de rastreamento do log:
 
-    **tracelog.exe-Start scripttrace-GUID \# 7288c9f8-D63C-4932-a345-89d6b060174d-f. \\ ADSI. etl-flag 0x2-nível 0x4**
+    **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
-Cenário 2: o administrador deseja rastrear a análise de esquema e as operações de download em um aplicativo [ASP](https://msdn.microsoft.com/asp.net/default.aspx) chamado w3wp.exe que já está em execução. Para fazer isso, o administrador executaria as seguintes etapas:
+Cenário 2: o administrador deseja rastrear as operações de análise e download de esquema em um aplicativo [ASP](https://msdn.microsoft.com/asp.net/default.aspx) chamado w3wp.exe que já está em execução. Para fazer isso, o administrador seguiria as seguintes etapas:
 
-1.  Criar a chave do registro
+1.  Criar a chave do Registro
 
-    **HKEY \_ \_** w3wp.exede \\  \\  \\  \\  \\ **rastreamento** \\ **** ADSI dos serviços do sistema de computador local CurrentControlSet
+    **HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
 
-    e dentro dessa chave, crie um valor do tipo DWORD chamado PID e defina-o como a ID do processo da instância do w3wp.exe que está em execução no computador local.
+    e dentro dessa chave, crie um valor do tipo DWORD chamado PID e de definido como a ID de processo da instância do w3wp.exe que está sendo executado no computador local.
 
-2.  Em seguida, eles criam uma sessão de rastreamento, definindo *sinalizadores* como 0x1 (**\_ esquema de depuração**) e *traceLevel* para 0x4 (**\_ \_ informações de nível de rastreamento**):
+2.  Em seguida, eles criam uma sessão de rastreamento, definindo *traceFlags* como 0x1 (**DEBUG \_ SCHEMA**) e *traceLevel* como 0x4 (**TRACE LEVEL \_ \_ INFORMATION**):
 
-    **tracelog.exe-Start w3wptrace-GUID \# 7288c9f8-D63C-4932-a345-89d6b060174d-f. \\ w3wp. etl-flag 0x1-nível 0x4**
+    **tracelog.exe -start w3wptrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ w3wp.etl -flag 0x1 -level 0x4**
 
 3.  Reproduza a operação que precisa de solução de problemas.
 4.  Encerrar a sessão de rastreamento:
 
-    **tracelog.exe-parar w3wptrace**
+    **tracelog.exe -stop w3wptrace**
 
-5.  Exclua a chave do registro **HKEY \_ local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **ADSI** \\  \\ **w3wp.exe**.
+5.  Exclua a chave do Registro **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**.
 6.  Execute a ferramenta ETW tracerpt.exe para analisar as informações de rastreamento do log:
 
-    **tracerpt.exe. \\ w3wp. etl-o-relatório**
+    **tracerpt.exe . \\ w3wp.etl -o -report**
 
  
 

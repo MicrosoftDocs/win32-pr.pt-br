@@ -4,12 +4,12 @@ ms.assetid: 2c5ab425-6959-418a-8d9a-c8155257fc7e
 title: Formato de consulta de pesquisa de registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23457cfde6955927b3efdcce5ae2dff94480c7cf56849b418547fe2503a36830
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f26a130d937177d4f903bfe52b121b2d67f8720d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119517956"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887007"
 ---
 # <a name="record-search-query-format"></a>Formato de consulta de pesquisa de registro
 
@@ -82,7 +82,7 @@ Uma chamada para a [**função PeerGroupSearchRecords**](/windows/desktop/api/P2
 
 ### <a name="elements-to-use-for-a-record-search"></a>Elementos a usar para uma pesquisa de registro
 
-O elemento principal em uma pesquisa de registro é **peersearch**, que contém o URI (Uniform Resource Identifier) do esquema associado no **atributo xmlns.** Quando **peersearch** é usado como um elemento filho, você pode **usar** e , **cláusula** e **ou** como elementos filho.
+O elemento principal em uma pesquisa de registro é **peersearch**, que contém o Uniform Resource Identifier (URI) do esquema associado no **atributo xmlns.** Quando **peersearch** é usado como um elemento filho, você pode **usar** e , **cláusula** e **ou** como elementos filho.
 
 -   **e** - O **elemento e** executa uma operação AND lógica em uma ou mais cláusulas contidas entre as marcas de abertura e fechamento. Outras **marcas** e **e ou** podem ser filhos e os resultados recursivos de suas cláusulas filho são incluídos na operação.
 
@@ -191,11 +191,11 @@ A Infraestrutura par reserva os seguintes nomes de atributo:
 
 Determinados caracteres podem ser usados para expressar padrões de correspondência ou para escapar outros caracteres especiais. Esses caracteres são descritos na tabela abaixo. 
 
-| Padrão de caractere | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Padrão de caractere | Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \*                | O caractere curinga. Quando esse caractere é encontrado em um valor de cláusula, ele corresponde a 0 n caracteres de qualquer valor, incluindo espaços em branco e caracteres não aninhados. Por exemplo:<br/> "<clause attrib="peercreatorid" type="string" compare="equal">James \* P</clause>"<br/> Essa cláusula corresponde a todos **os valores peercreatorid** com um nome de "James" e um sobrenome começando com "P".<br/> |
+| \*                | O caractere curinga. Quando esse caractere é encontrado em um valor de cláusula, ele corresponde a 0 n caracteres de qualquer valor, incluindo espaços em branco e caracteres não aninhados. Por exemplo:<br/> " <clause attrib="peercreatorid" type="string" compare="equal"> James P \* &lt; /clause &gt; "<br/> Essa cláusula corresponde a todos **os valores peercreatorid** com um nome de "James" e um sobrenome começando com "P".<br/> |
 | \\\*              | Um asterisco de escape. Essa sequência corresponde a um caractere asterisco.                                                                                                                                                                                                                                                                                                                                                                       |
-| ?                 | O caractere curinga de caractere único. Quando esse caractere é encontrado em um valor de cláusula, ele corresponde a qualquer caractere único, incluindo espaços em branco e caracteres nãoumeéricos. Por exemplo:<br/> "<clause attrib="filename" type="string" compare="equal">data-0?.xml</clause>"<br/> Essa cláusula corresponde **a valores de nome** de arquivo como "data-01.xml" e "data-0B.xml".<br/>                              |
+| ?                 | O caractere curinga de caractere único. Quando esse caractere é encontrado em um valor de cláusula, ele corresponde a qualquer caractere único, incluindo espaços em branco e caracteres nãoumeéricos. Por exemplo:<br/> " <clause attrib="filename" type="string" compare="equal"> data-0?.xml&lt; /clause &gt; "<br/> Essa cláusula corresponde **a valores de nome** de arquivo como "data-01.xml" e "data-0B.xml".<br/>                              |
 | \\?               | Um ponto de interrogação de escape. Essa sequência corresponde a um caractere de ponto de interrogação.                                                                                                                                                                                                                                                                                                                                                              |
 | \\\\              | Uma faixa invertida com escape. Essa sequência corresponde a um único caractere de faixa invertida.                                                                                                                                                                                                                                                                                                                                                               |
 

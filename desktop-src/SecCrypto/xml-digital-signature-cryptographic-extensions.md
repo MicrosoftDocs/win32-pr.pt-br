@@ -4,12 +4,12 @@ ms.assetid: b0625481-660a-4fd5-ba15-d532998f95a6
 title: Extensões criptográficas de assinatura digital XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8747521913ca1d551f1a2d4fd5b1c79d80065832
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 41bf0f2d99b34d59e9817f8568b03be20e72dda1
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "103837544"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474932"
 ---
 # <a name="xml-digital-signature-cryptographic-extensions"></a>Extensões criptográficas de assinatura digital XML
 
@@ -84,52 +84,15 @@ Cada chave contém as configurações a seguir.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome</th>
-<th>Tipo</th>
-<th>Dados</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DLL<br/></td>
-<td>Cadeia de caracteres expansível<br/></td>
-<td>Obrigatórios.<br/>O caminho absoluto para a DLL do provedor criptográfico XML.
-<blockquote>
-<p><b>Observação: </b> Recomendamos que as DLLs de extensão criptográficas estejam localizadas em diretórios que só possam ser gravados por aplicativos com privilégio administrativo.</p>
-<p><a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya"><strong>LoadLibrary</strong></a> é usado para carregar a DLL de extensão criptográfica.<br/></p>
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>Nome<br/></td>
-<td><strong>Cadeia de caracteres</strong></td>
-<td>Opcional.<br/> O nome de exibição associado a esse URI.<br/></td>
-</tr>
-<tr class="odd">
-<td>GroupId<br/></td>
-<td><strong>DWORD</strong></td>
-<td>Obrigatórios.<br/> O identificador de grupo associado a este algoritmo criptográfico. Os valores possíveis incluem o seguinte:<strong>CRYPT_XML_GROUP_ID_HASH</strong> \ <strong></strong> = 1<br/><strong></strong> \ CRYPT_XML_GROUP_ID_SIGN <strong></strong> = 2<br/></td>
-</tr>
-<tr class="even">
-<td>CNGAlgid<br/></td>
-<td><strong>Cadeia de caracteres</strong></td>
-<td>Obrigatórios.<br/> O nome do algoritmo CNG a ser passado para as funções BCrypt ou NCrypt.<br/></td>
-</tr>
-<tr class="odd">
-<td>CNGExtraAlgid<br/></td>
-<td><strong>Cadeia de caracteres</strong></td>
-<td>Opcional.<br/> Uma cadeia de caracteres de algoritmo extra, diferente da cadeia de caracteres no membro CNGAlgid, que pode ser passada para as funções CNG.<br/> Para os algoritmos de assinatura (CRYPT_XML_GROUP_ID_SIGN), esse membro é a cadeia de caracteres de algoritmo de chave pública a ser passada para as funções CNG.<br/> Para os outros valores de GroupId, defina o membro <strong>pwszCNGExtraAlgid</strong> como a cadeia de caracteres vazia, L &quot; &quot; . <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Nome | Type | Dados | 
+|------|------|------|
+| DLL<br /> | Cadeia de caracteres expansível<br /> | Obrigatórios.<br />O caminho absoluto para a DLL do provedor criptográfico XML.<blockquote><p><b>Observação: </b> Recomendamos que as DLLs de extensão criptográficas estejam localizadas em diretórios que só possam ser gravados por aplicativos com privilégio administrativo.</p><p><a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya"><strong>LoadLibrary</strong></a> é usado para carregar a DLL de extensão criptográfica.<br /></p></blockquote><br /> | 
+| Nome<br /> | <strong>Cadeia de caracteres</strong> | Opcional.<br /> O nome de exibição associado a esse URI.<br /> | 
+| GroupId<br /> | <strong>DWORD</strong> | Obrigatórios.<br /> O identificador de grupo associado a este algoritmo criptográfico. Os valores possíveis incluem o seguinte:<strong>CRYPT_XML_GROUP_ID_HASH</strong> \<strong> </strong> = 1<br /><strong></strong> \<strong> CRYPT_XML_GROUP_ID_SIGN </strong> = 2<br /> | 
+| CNGAlgid<br /> | <strong>Cadeia de caracteres</strong> | Obrigatórios.<br /> O nome do algoritmo CNG a ser passado para as funções BCrypt ou NCrypt.<br /> | 
+| CNGExtraAlgid<br /> | <strong>Cadeia de caracteres</strong> | Opcional.<br /> Uma cadeia de caracteres de algoritmo extra, diferente da cadeia de caracteres no membro CNGAlgid, que pode ser passada para as funções CNG.<br /> Para os algoritmos de assinatura (CRYPT_XML_GROUP_ID_SIGN), esse membro é a cadeia de caracteres de algoritmo de chave pública a ser passada para as funções CNG.<br /> Para os outros valores de GroupId, defina o membro <strong>pwszCNGExtraAlgid</strong> como a cadeia de caracteres vazia, L "". <br /> | 
+
 
 
 

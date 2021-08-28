@@ -4,12 +4,12 @@ description: Este documento discute o formato dos arquivos de tema (. Theme). um
 ms.assetid: 0b7b0ff7-f55a-4215-a2fd-6c3ea117d6e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c67fc2d73e54e4f9c319108c2b29ed62fb58266f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 584e6d9785cf7660e017cadfb2a39d6bce6c2a87
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472293"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886636"
 ---
 # <a name="theme-file-format"></a>Formato de arquivo de tema
 
@@ -239,9 +239,9 @@ O plano de fundo de seu tema pode ser uma apresentação de slides de imagens ar
 
 | Atributo | Descrição | 
 |-----------|-------------|
-| Intervalo = número de milissegundos | Obrigatórios. Interval é um número que determina com que frequência o plano de fundo é alterado. É medido em milissegundos. | 
-| Ordem aleatória = 0 ou 1 | Obrigatórios. Ordem aleatória identifica se a ordem aleatória do plano de fundo.<br /> 0 = Desabilitado<br /> 1 = Habilitado<br /> | 
-| RSSFeed=URL para RSS feed | Necessário se ImagesRootPath não for especificado. RSSFeed especifica um RSS feed a ser usado como a apresentação de slides em segundo plano. Para que o feed funcione, é necessário referenciar imagens de alta resolução aderindo ao padrão de "compartimentos" usado pelo <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">Windows RSS Platform</a>. Devido a essa limitação, os arquivos .theme que incluem um RSS feed devem ser criados manualmente. <br /><blockquote>[!Note]<br />Não é possível especificar um RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
+| Intervalo = número de milissegundos | Obrigatório. Interval é um número que determina com que frequência o plano de fundo é alterado. É medido em milissegundos. | 
+| Ordem aleatória = 0 ou 1 | Obrigatório. Ordem aleatória identifica se a ordem aleatória do plano de fundo.<br /> 0 = Desabilitado<br /> 1 = Habilitado<br /> | 
+| RSSFeed=URL para RSS feed | Necessário se ImagesRootPath não for especificado. RSSFeed especifica um RSS feed a ser usado como a apresentação de slides em segundo plano. Para que o feed funcione, você precisa referenciar imagens de alta resolução aderindo ao padrão de "compartimentos" usado pelo <a href="/previous-versions/windows/desktop/ms684701(v=vs.85)">Windows RSS Platform</a>. Devido a essa limitação, os arquivos .theme que incluem um RSS feed devem ser criados manualmente. <br /><blockquote>[!Note]<br />Não é possível especificar um RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
 | ImagesRootPath=path to image folder | Necessário se RSSFeed não for especificado. ImagesRootPath especifica um caminho para um conjunto de imagens que você deseja usar como a apresentação de slides em segundo plano. As imagens em subpastas não estão incluídas na apresentação de slides.<br /> ImagesRootPath dá suporte a substituições de Variável de Ambiente no caminho.<br /><blockquote>[!Note]<br />Não é possível especificar um RSSFeed e ImagesRootPath.</blockquote><br /><br /> | 
 | Item<em>N</em>Path=path(s) para imagens específicas | Para uso com ImagesRootPath. <br /> O<em>Caminho N</em>do Item especifica caminhos para imagens específicas, para que você possa limitar a apresentação de slides a imagens específicas em vez de todas as imagens em uma pasta. Se nenhum caminho for especificado, todas as imagens no caminho ImagesRootPath serão usadas na apresentação de slides, incluindo imagens adicionadas depois de criar e instalar o tema.<br /> O<em>Caminho N</em>do Item dá suporte a substituições de Variável de Ambiente no caminho. <em>N</em> é 0, 1, 2 e assim por diante. <br /> | 
 
@@ -278,7 +278,7 @@ Item2Path=%ProgramFiles%\fabrikam\wallpaper\river.jpg
 O exemplo a seguir é um modelo para um arquivo .theme que cria uma apresentação de slides da tela de fundo da área de trabalho usando imagens de um RSS feed. Siga estas etapas para personalizar o modelo:
 
 1.  Copie o exemplo a seguir e copie-o em um editor de texto.
-2.  Substitua {themename} pelo nome que você deseja que apareça na galeria de Painel de Controle temas personalizados.
+2.  Substitua {themename} pelo nome que você deseja que apareça na galeria de Painel de Controle de personalização.
 3.  Substitua {rssfeedurl} pelo caminho completo para um RSS feed.
 4.  Salve as alterações como um arquivo com a extensão ".theme".
 
@@ -386,7 +386,7 @@ Size=NormalSize
 
 
 
-Adicionar um elemento Path a um arquivo .msstyles é opcional. Se você fornecer um caminho, deverá remover as seções de métricas e cores do arquivo .theme. Quando essas seções são removidas, as cores, as fontes e os tamanhos de um tema vêm do arquivo .msstyles e corresponderem à intenção do autor .msstyles. A falha na remoção das seções de métrica e cor pode fazer com que Windows aplicativos tenham problemas de desenho.
+Adicionar um elemento Path a um arquivo .msstyles é opcional. Se você fornecer um caminho, deverá remover as seções de métricas e cores do arquivo .theme. Quando essas seções são removidas, as cores, as fontes e os tamanhos de um tema vêm do arquivo .msstyles e corresponderem à intenção do autor .msstyles. A falha na remoção das seções de métrica e cor pode fazer com que Windows ou aplicativos tenham problemas de desenho.
 
 **Windows Vista/Windows 7:** Quando o caminho aponta para Aero.msstyles, você pode especificar a Cor de Vidro desejada, conforme mostrado no exemplo a seguir.
 
@@ -434,7 +434,7 @@ Transparency=0
 
 
 
-O exemplo a seguir mostra uma seção VisualStyles para um Alto Contraste tema Preto.
+O exemplo a seguir mostra uma seção VisualStyles para um Alto Contraste preto.
 
 
 ```
@@ -479,7 +479,7 @@ DefaultValue=%WinDir%\media\ding.wav
 
 
 
-**Windows 7 e posteriores:** Um nome de esquema de som pode ser especificado em vez de listar cada som separadamente.
+**Windows 7 e posterior:** Um nome de esquema de som pode ser especificado em vez de listar cada som separadamente.
 
 
 ```
@@ -495,7 +495,7 @@ O valor SchemeName especifica o nome do esquema de som ou o nome do esquema de s
 ### <a name="boot-section"></a>\[Seção \] inicialização
 
 > [!Note]  
-> **Os protetores de tela foram preterido na Atualização de Windows 10 aniversário e além.**
+> **Os Protetores de Tela foram preterido na Atualização de Windows 10 de Aniversário e além.**
 
  
 
@@ -669,9 +669,9 @@ Transparency=1
 
 ## <a name="installing-theme-files"></a>Instalando arquivos de tema
 
-Quando Windows inicializado, o sistema operacional enumera os subdireários de primeiro nível de %WinDir% Resources para identificar \\ \\ os temas disponíveis. Os arquivos de tema padrão do sistema estão localizados em %WinDir% \\ Temas \\ de Recursos. Os arquivos de tema do usuário são armazenados em %WinDir% \\ Usuários \\ <username> \\ AppData \\ Local microsoft Windows \\ \\ \\ Temas.
+Quando Windows inicializado, o sistema operacional enumera os subdireários de primeiro nível de %WinDir% Recursos para identificar \\ \\ os temas disponíveis. Os arquivos de tema padrão do sistema estão localizados em %WinDir% \\ Temas \\ de Recursos. Os arquivos de tema do usuário são armazenados em %WinDir% nome de usuário usuários \\ \\ &lt; &gt; \\ AppData \\ Local Microsoft Windows \\ \\ \\ Temas.
 
-Um arquivo .theme tem associações de arquivo; portanto, os aplicativos instalador de tema podem chamar [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) em um arquivo .theme para abrir a janela Personalização no Painel de Controle para o tema especificado. 
+Um arquivo .theme tem associações de arquivo; portanto, os aplicativos instalador de tema podem chamar [**ShellExecute**](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) em um arquivo .theme para abrir a janela **Personalização** no Painel de Controle para o tema especificado.
 
 ## <a name="theme-packs"></a>Pacotes de tema
 

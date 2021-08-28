@@ -4,12 +4,12 @@ ms.assetid: 58228dfd-1d4b-41e5-b423-a54525021c22
 title: elemento dealocador
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e9a27f768d0c9d854d13bd58c0c797234a0526c4abb95a0c5f4fb553466a6ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba2617ce92dcd0c2763f77b0bc6f0fb5c1beea1c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991746"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881052"
 ---
 # <a name="deallocator-element"></a>elemento dealocador
 
@@ -41,7 +41,7 @@ Não há elementos filho.
 
 ## <a name="remarks"></a>Comentários
 
-O tipo de desalocação deve ser colocado em um par de <deallocator></deallocator> marcas. As cadeias de caracteres a seguir são valores válidos de dealocador:
+O tipo de desalocador deve ser incluído em um par de &lt; marcas de desalocação &gt; </deallocator> . As cadeias de caracteres a seguir são valores válidos de dealocador:
 
 -   nenhum
 -   WSDFreeLinkedMemory

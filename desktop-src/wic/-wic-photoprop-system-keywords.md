@@ -4,12 +4,12 @@ ms.assetid: bc9de56f-444c-45a2-9822-fba2fe618d38
 title: Política de metadados de foto System. Keywords
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5d25e7f1919527d474395397d6df62863f7b78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2aa5387bfb8cca7fffe83f7615a979d8e23ae890
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171318"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886645"
 ---
 # <a name="systemkeywords-photo-metadata-policy"></a>Política de metadados de foto System. Keywords
 
@@ -45,9 +45,9 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                              | Formato de disco    |
+| Order | Caminho                              | Formato de disco    |
 |-------|-----------------------------------|----------------|
-| 1     | /XMP/ <xmpbag> DC: subject     | Unicode        |
+| 1     | /XMP/ &lt; xmpbag &gt; DC: subject     | Unicode        |
 | 2     | /app13/irb/8bimiptc/iptc/keywords |                |
 | 3     | /App1/IFD/{UShort = 18247}          | \_bytes Unicode |
 | 4     | /App1/IFD/{UShort = 40094}          | \_bytes Unicode |
@@ -60,14 +60,14 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                                              | Formato de disco    |
+| Order | Caminho                                              | Formato de disco    |
 |-------|---------------------------------------------------|----------------|
-| 1     | /XMP/ <xmpbag> DC: subject                     | Unicode        |
+| 1     | /XMP/ &lt; xmpbag &gt; DC: subject                     | Unicode        |
 | 2     | /app13/irb/8bimiptc/iptc/keywords                 |                |
 | 3     | /App1/IFD/{UShort = 18247}                          | \_bytes Unicode |
 | 4     | /App1/IFD/{UShort = 40094}                          | \_bytes Unicode |
-| 5     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP  | Unicode        |
-| 6     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC | Unicode        |
+| 5     | /XMP/ &lt; xmpbag &gt; MicrosoftPhoto: LastKeywordXMP  | Unicode        |
+| 6     | /XMP/ &lt; xmpbag &gt; MicrosoftPhoto: LastKeywordIPTC | Unicode        |
 
 
 
@@ -77,14 +77,14 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                                              |
+| Order | Caminho                                              |
 |-------|---------------------------------------------------|
 | 1     | /XMP/DC: assunto                                   |
 | 2     | /app13/irb/8bimiptc/iptc/keywords                 |
 | 3     | /App1/IFD/{UShort = 18247}                          |
 | 4     | /App1/IFD/{UShort = 40094}                          |
-| 5     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP  |
-| 6     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC |
+| 5     | /XMP/ &lt; xmpbag &gt; MicrosoftPhoto: LastKeywordXMP  |
+| 6     | /XMP/ &lt; xmpbag &gt; MicrosoftPhoto: LastKeywordIPTC |
 
 
 
@@ -96,9 +96,9 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                              | Formato de disco    |
+| Order | Caminho                              | Formato de disco    |
 |-------|-----------------------------------|----------------|
-| 1     | /IFD/XMP/ <xmpbag> DC: subject | Unicode        |
+| 1     | /IFD/XMP/ &lt; xmpbag &gt; DC: subject | Unicode        |
 | 2     | /ifd/iptc/keywords                |                |
 | 3     | /IFD/{UShort = 18247}               | \_bytes Unicode |
 | 4     | /IFD/{UShort = 40094}               | \_bytes Unicode |
@@ -112,16 +112,16 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                                                             | Formato de disco    |
+| Order | Caminho                                                             | Formato de disco    |
 |-------|------------------------------------------------------------------|----------------|
-| 1     | /IFD/XMP/ <xmpbag> DC: subject                                | Unicode        |
+| 1     | /IFD/XMP/ &lt; xmpbag &gt; DC: subject                                | Unicode        |
 | 2     | /ifd/iptc/keywords                                               |                |
 | 3     | /ifd/irb/8bimiptc/iptc/keywords                                  |                |
-| 4     | /IFD/{UShort = 18247}                                              | \_bytes Unicode |
-| 5     | /IFD/{UShort = 40094}                                              | \_bytes Unicode |
-| 6     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP             | Unicode        |
-| 7     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC            | Unicode        |
-| 8     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC \_ TIFF \_ IRB | Unicode        |
+| 4     | /IFD/{UShort = 18247}                                              | Bytes \_ unicode |
+| 5     | /ifd/{ushort=40094}                                              | Bytes \_ unicode |
+| 6     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP             | Unicode        |
+| 7     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC            | Unicode        |
+| 8     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC \_ TIFF \_ IRB | Unicode        |
 
 
 
@@ -131,16 +131,16 @@ Valores de esquemas diferentes são mesclados.
 
 
 
-| Ordem | Caminho                                                             |
+| Order | Caminho                                                             |
 |-------|------------------------------------------------------------------|
-| 1     | /IFD/XMP/DC: assunto                                              |
+| 1     | /ifd/xmp/dc:subject                                              |
 | 2     | /ifd/iptc/keywords                                               |
 | 3     | /ifd/irb/8bimiptc/iptc/keywords                                  |
-| 4     | /IFD/{UShort = 18247}                                              |
-| 5     | /IFD/{UShort = 40094}                                              |
-| 6     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP             |
-| 7     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC            |
-| 8     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC \_ TIFF \_ IRB |
+| 4     | /ifd/{ushort=18247}                                              |
+| 5     | /ifd/{ushort=40094}                                              |
+| 6     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP             |
+| 7     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC            |
+| 8     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC \_ TIFF \_ IRB |
 
 
 

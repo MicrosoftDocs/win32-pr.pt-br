@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, RadioButton
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 358a71f74b40d8465c910f8afe258183c8ea4d5c322fb70e6b6ea946ef7d44ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a854eec792943a6fc094796de1e3ea6849c6a5e2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118825472"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480632"
 ---
 # <a name="radiobutton-control-type"></a>Tipo de controle RadioButton
 
@@ -56,28 +56,11 @@ A tabela a seguir ilustra uma exibição típica de controle e conteúdo da árv
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>RadioButton</li>
-</ul></td>
-<td><ul>
-<li>RadioButton</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>RadioButton</li></ul> | <ul><li>RadioButton</li></ul> | 
+
 
 
 
@@ -87,7 +70,7 @@ Não há filhos na exibição de controle ou na exibição de conteúdo.
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
-A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou definição é especialmente relevante para os controles que implementam o tipo de controle **RadioButton** (como controles de botão). Para obter mais informações sobre Automação da Interface do Usuário propriedades, consulte [Recuperando propriedades de Automação da Interface do Usuário Elements](uiauto-propertiesforclients.md).
+A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou definição é especialmente relevante para os controles que implementam o tipo de controle **RadioButton** (como controles de botão). Para obter mais informações sobre Automação da Interface do Usuário propriedades, consulte Recuperando propriedades [de Automação da Interface do Usuário Elements](uiauto-propertiesforclients.md).
 
 
 
@@ -97,7 +80,7 @@ A tabela a seguir lista as Automação da Interface do Usuário cujo valor ou de
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Consulte observações.      | O retângulo mais externo que contém o controle inteiro.                                                                                      |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Consulte observações.      | O ponto clicável deve ser um ponto que, quando clicado, seleciona o botão de opção.                                                             |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **RadioButton** |                                                                                                                                               |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE            | O controle de botão de rádio sempre é incluído na exibição de conteúdo da árvore Automação da Interface do Usuário.                                                    |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE            | O controle de botão de rádio sempre é incluído na exibição de conteúdo da Automação da Interface do Usuário de comando.                                                    |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE            | O controle de botão de rádio sempre é incluído na exibição de controle da Automação da Interface do Usuário de comando.                                                    |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Consulte observações.      | Se o controle puder receber o foco do teclado, ele deverá dar suporte a essa propriedade.                                                                     |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULO            | Os controles de botão de rádio são rotulados por seu conteúdo.                                                                                     |

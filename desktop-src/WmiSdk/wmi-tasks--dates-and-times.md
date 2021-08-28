@@ -1,8 +1,8 @@
 ---
-description: Há várias classes WMI e um objeto de script para analisar ou converter o formato datetime cim. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: Há várias classes WMI e um objeto de script para analisar ou converter o formato de data e hora CIM. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: dd01a732-5c88-4c24-a551-4d5452e712cc
 ms.tgt_platform: multiple
-title: 'Tarefas WMI: datas e horas'
+title: 'Tarefas do WMI: datas e horas'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,41 +10,41 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 46e8c850ffd04fe4ac5bc9af1b130632338b61ec79c92d154f5769ffd54cb2fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 458a75303ffa82963ad60c682f70a7385617cc70
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117739441"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627422"
 ---
-# <a name="wmi-tasks-dates-and-times"></a>Tarefas WMI: datas e horas
+# <a name="wmi-tasks-dates-and-times"></a>Tarefas do WMI: datas e horas
 
-Há várias classes WMI e um objeto de script para analisar ou converter o [formato datetime cim.](date-and-time-format.md) Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Há várias classes WMI e um objeto de script para analisar ou converter o formato de [data e hora CIM](date-and-time-format.md) . Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
+Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 ## <a name="to-run-a-script"></a>Para executar um script
 
 O procedimento a seguir descreve como executar um script.
 
-1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
-2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
+2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
+4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -54,11 +54,11 @@ A tabela a seguir lista exemplos de script que podem ser usados para obter vári
 </thead>
 <tbody>
 <tr class="odd">
-<td>... converter datas WMI em datas e horas padrão?<br/></td>
-<td>Use o <a href="swbemdatetime.md"><strong>objeto SWbemDateTime</strong></a> para convertê-los em datas e horas regulares.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... converter datas do WMI em datas e horários padrão?<br/></td>
+<td>Use o objeto <a href="swbemdatetime.md"><strong>SWbemDateTime</strong></a> para convertê-los em datas e horas regulares.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -79,12 +79,12 @@ Next</code></pre></td>
 </tbody>
 </table>
 
-<p>Ou faça com que seu código faça a tarefa manualmente.</p>
+<p>Ou fazer com que seu código faça a tarefa manualmente.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,13 +105,13 @@ End Function </code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td><p>... determinar a hora atualmente configurada em um computador?</p></td>
-<td><p>Use a <a href="/previous-versions/windows/desktop/wmitimepprov/win32-localtime"><strong>classe Win32_LocalTime</strong></a> dados.</p>
+<td><p>... determinar o tempo configurado atualmente em um computador?</p></td>
+<td><p>Use a classe <a href="/previous-versions/windows/desktop/wmitimepprov/win32-localtime"><strong>Win32_LocalTime</strong></a> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -143,7 +143,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -176,13 +176,13 @@ Foreach ($time in $times) {
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>... determinar o nome do fuso horário no qual um computador está em execução?</p></td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> classe e verifique o valor da propriedade <strong>Description.</strong></p>
+<td><p>... determinar o nome do fuso horário em que um computador está em execução?</p></td>
+<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> e verifique o valor da propriedade <strong>Description</strong> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -209,7 +209,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -234,17 +234,17 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 </div></td>
 </tr>
 <tr class="even">
-<td><p>... garantir que &quot; 02/10/2000 seja interpretado como 2 de outubro de &quot; 2000, não &quot; 10 de fevereiro de 2000? &quot;</p></td>
-<td><p>Gerencie datas no formato <a href="gloss-c.md"><em>CIM</em></a> <a href="datetime.md">DATETIME</a> e use <a href="swbemdatetime.md"><strong>métodos SWbemDateTime,</strong></a> como <a href="swbemdatetime-getvardate.md"><strong>GetVarDate,</strong></a> para convertê-las em formatos <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a> ou <strong>VT_Date.</strong> Como o formato DATETIME é independente de localidade, você pode escrever um script que é executado em qualquer computador. Use o <strong>objeto SWbemDateTime</strong> para convertê-los em datas e horas regulares. Consulte <a href="date-and-time-format.md">Formato de data e hora para</a> obter mais informações sobre como converter datas e horas.</p></td>
+<td><p>... Verifique se &quot; 10/02/2000 &quot; está interpretado como Oct. 2, 2000, não &quot; 10 de fevereiro de 2000 &quot; ?</p></td>
+<td><p>Gerencie datas no formato de <a href="datetime.md">data e hora</a> <a href="gloss-c.md"><em>CIM</em></a> e use métodos <a href="swbemdatetime.md"><strong>SWbemDateTime</strong></a> , como <a href="swbemdatetime-getvardate.md"><strong>GetVarDate</strong></a> para converter para e de formatos <a href="/windows/desktop/api/minwinbase/ns-minwinbase-filetime"><strong>FILETIME</strong></a> ou <strong>VT_Date</strong> . Como o formato DATETIME é independente da localidade, você pode gravar um script que é executado em qualquer computador. Use o objeto <strong>SWbemDateTime</strong> para convertê-los em datas e horas regulares. Consulte <a href="date-and-time-format.md">formato de data e hora</a> para obter mais informações sobre como converter datas e horas.</p></td>
 </tr>
 <tr class="odd">
-<td><p>... converter um datetime WMI em um valor dateTime do .NET?</p></td>
-<td><p>Analisar manualmente a cadeia de caracteres e colocar os valores recuperados em um <a href="/dotnet/api/system.datetime">objeto DateTime.</a></p>
+<td><p>... converter um DateTime WMI em um valor DateTime .NET?</p></td>
+<td><p>Analise manualmente a cadeia de caracteres e coloque os valores recuperados em um objeto <a href="/dotnet/api/system.datetime">DateTime</a> .</p>
 <div class="code">
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -296,16 +296,16 @@ if ($computer -eq &quot;.&quot;) {$computer = Hostname}
 
 <dl> <dt>
 
-[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
 [Formato de data e hora](date-and-time-format.md)
 </dt> <dt>
 
-[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
+[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

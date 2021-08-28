@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: 7c61816fa140a6126d020285d80a71fb59cc1808ae6888f12dc0e4340447060e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8defc6cc3b35ca88038ca3818b56024dfb18699
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192244"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881456"
 ---
 # <a name="using-a-domain-user-account-as-a-service-logon-account"></a>Usando uma conta de usuário de domínio como uma conta de logon de serviço
 
@@ -26,7 +26,7 @@ A conta de usuário de um serviço não deve ser membro de nenhum grupo de admin
 
 Uma instância de serviço que usa uma conta de usuário de domínio requer uma ação administrativa periódica para manter a senha da conta. O SCM (gerenciador de controle de serviço) no computador host de uma instância de serviço armazena em cache a senha da conta para uso no registro em log no serviço. Ao alterar a senha da conta, você também deve atualizar a senha armazenada em cache no computador host em que o serviço está instalado. Para obter mais informações e um exemplo de código, consulte [Alterando a senha na conta de usuário de um serviço](changing-the-password-on-a-serviceampaposs-user-account.md). Você pode evitar a manutenção regular deixando a senha inalterada, mas isso aumentaria a probabilidade de um ataque de senha na conta de serviço. Esteja ciente de que, embora o SCM armazene a senha em uma parte segura do Registro, ela está, no entanto, sujeita a ataques.
 
-Uma conta de usuário de domínio tem dois formatos de nome: o nome diferenciado do objeto de usuário no diretório e o formato " " usado pelo gerenciador de controle <domain> \\ <username> de serviço local. Para obter mais informações e um exemplo de código que converte de um formato para outro, consulte [Convertendo formatos](converting-domain-account-name-formats.md)de nome de conta de domínio .
+Uma conta de usuário de domínio tem dois formatos de nome: o nome diferenciado do objeto de usuário no diretório e o formato " nome de usuário de domínio " usado pelo gerenciador de controle &lt; &gt; \\ &lt; de serviço &gt; local. Para obter mais informações e um exemplo de código que converte de um formato para outro, consulte [Convertendo formatos](converting-domain-account-name-formats.md)de nome de conta de domínio .
 
  
 

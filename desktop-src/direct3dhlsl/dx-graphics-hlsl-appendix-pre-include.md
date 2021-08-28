@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a844459234200ca99233eb3f64a2a1c30449cdcc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 079ae2680a2610993c3cd54ac64afdfcbafa25c9
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988672"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627462"
 ---
 # <a name="include-directive"></a>\#Diretiva include
 
@@ -33,7 +33,7 @@ Diretiva de pré-processador que insere o conteúdo do arquivo especificado no p
 
 | Item | Descrição |
 |------|-------------|
-| *filename* | Nome do arquivo a ser incluído, opcionalmente precedido por uma especificação de diretório. O filename deve especificar um arquivo existente. |
+| *nome do arquivo* | Nome do arquivo a ser incluído, opcionalmente precedido por uma especificação de diretório. O filename deve especificar um arquivo existente. |
 
 ## <a name="remarks"></a>Comentários
 
@@ -46,8 +46,8 @@ A diferença entre as duas formas de sintaxe é a ordem na qual o pré-processad
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

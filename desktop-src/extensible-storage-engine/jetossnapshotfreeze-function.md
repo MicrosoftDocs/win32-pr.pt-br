@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cb6ea9a4a3145c0c4b3c3caeb3214b299ea1be85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 854e38f91b894b1f7cc486a15afcfe857aaa31d6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170723"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473962"
 ---
 # <a name="jetossnapshotfreeze-function"></a>Função JetOSSnapshotFreeze
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetossnapshotfreeze-function"></a>Função JetOSSnapshotFreeze
 
 A função **JetOSSnapshotFreeze** inicia um instantâneo. Enquanto o instantâneo está em andamento, nenhuma atividade de gravação em disco pelo mecanismo pode ocorrer.
 
-**Windows XP:** o **JetOSSnapshotFreeze** é introduzido no Windows XP.  
+**Windows xp:** o **JetOSSnapshotFreeze** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotFreeze(
@@ -67,50 +67,19 @@ As opções para esta chamada. Esse parâmetro é reservado para uso futuro e o 
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Os ponteiros fornecidos para os parâmetros de saída são nulos, a sessão de instantâneo é inválida ou o parâmetro <em>grbit</em> é inválido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>A sessão de instantâneo não está no estado apropriado para iniciar um congelamento (por exemplo, um congelamento anterior falhou nesta sessão antes).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotNotAllowed</p></td>
-<td><p>O mecanismo não está em um estado no qual um instantâneo pode ser executado. Um ou mais backups de streaming já estão em andamento ou uma ou mais instâncias estão passando por etapas de recuperação ou terminando.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>O identificador da sessão de instantâneo não é válido.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>A função falhou devido a uma condição de memória insuficiente.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfThreads</p></td>
-<td><p>A função falhou porque um novo thread que está fazendo a congelamento falhou ao iniciar.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Os ponteiros fornecidos para os parâmetros de saída são nulos, a sessão de instantâneo é inválida ou o parâmetro <em>grbit</em> é inválido.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>A sessão de instantâneo não está no estado apropriado para iniciar um congelamento (por exemplo, um congelamento anterior falhou nesta sessão antes).</p> | 
+| <p>JET_errOSSnapshotNotAllowed</p> | <p>O mecanismo não está em um estado no qual um instantâneo pode ser executado. Um ou mais backups de streaming já estão em andamento ou uma ou mais instâncias estão passando por etapas de recuperação ou terminando.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>O identificador da sessão de instantâneo não é válido.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>A função falhou devido a uma condição de memória insuficiente.</p> | 
+| <p>JET_errOutOfThreads</p> | <p>A função falhou porque um novo thread que está fazendo a congelamento falhou ao iniciar.</p> | 
+
 
 
 Se essa função for realizada com sucesso, não haverá nenhum IOs de gravação emitido para os arquivos de banco de dados ou para os arquivos de log que fazem parte das instâncias que estão congeladas. Além disso, as informações da instância serão preenchidas corretamente e deverão ser liberadas posteriormente chamando [JetFreeBuffer](./jetfreebuffer-function.md) com o ponteiro para a matriz de informações da instância que foi retornada.
@@ -129,38 +98,9 @@ Devido aos possíveis efeitos descritos acima, há um tempo limite interno após
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JetOSSnapshotFreezeW</strong> (Unicode) e <strong>JetOSSnapshotFreezeA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>requer o Windows Vista ou Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>requer o Windows server 2008 ou Windows server 2003.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Implementado como <strong>JetOSSnapshotFreezeW</strong> (Unicode) e <strong>JetOSSnapshotFreezeA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte Também

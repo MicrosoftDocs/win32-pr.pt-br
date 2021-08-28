@@ -1,19 +1,19 @@
 ---
-description: O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são Incluir e Excluir. Esse elemento não tem nenhum elemento filho e nenhum atributos.
+description: O &lt; elemento mode especifica se a URL deve ser incluída ou excluída do escopo do conector de &gt; pesquisa. Os valores permitidos são Incluir e Excluir. Esse elemento não tem nenhum elemento filho e nenhum atributos.
 ms.assetid: 7654c04a-31c4-4260-a51c-0600804e62a9
 title: Elemento mode (Esquema do Conector de Pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32a210abf5c9c2bbc4cd5d53978866a729d834928cf39e54bfb6e6fcc9c42c7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8e096bb21d634da6107359c014b82f1b367aba1
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119944316"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886746"
 ---
 # <a name="mode-element-search-connector-schema"></a>Elemento mode (Esquema do Conector de Pesquisa)
 
-O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são `Include` e `Exclude` . Esse elemento não tem nenhum elemento filho e nenhum atributos.
+O &lt; elemento mode especifica se a URL deve ser incluída ou excluída do escopo do conector de &gt; pesquisa. Os valores permitidos são `Include` e `Exclude` . Esse elemento não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 

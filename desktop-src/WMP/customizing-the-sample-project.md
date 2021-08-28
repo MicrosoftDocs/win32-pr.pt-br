@@ -13,12 +13,12 @@ keywords:
 - samples,type 2 online stores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdb57327904d81ac85114af0df9037d6c2c054938f16048f6ca72e711063cc4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0e83d6384529ea9b67c5132ec9cc1846da5e438
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881803"
 ---
 # <a name="customizing-the-sample-project"></a>Personalização do exemplo de Project
 
@@ -31,7 +31,7 @@ Ao criar sua própria loja online, você deseja alterar as implementações dos 
 -   **CYourProject::d eviceAvailable.** Use essa função para iniciar todas as tarefas relacionadas a um dispositivo conectado.
 -   **CYourProject::p repareForSync**. Use essa função para executar as tarefas necessárias logo antes de sincronizar a mídia digital com o dispositivo.
 -   **CYourProject::serviceEvent.** Use essa função para iniciar e encerrar tarefas que você deseja executar quando sua loja online for a ativa.
--   **CYourProject::stopBackgroundProcessing.** Use essa função para interromper todas as tarefas de processamento em segundo plano iniciadas Windows Media Player chamada **CYourProject::startBackgroundProcessing**.
+-   **CYourProject::stopBackgroundProcessing.** Use essa função para interromper todas as tarefas de processamento em segundo plano iniciadas Windows Media Player chamada **CYourProject::startBackgroundProcessing.**
 
 ## <a name="working-with-media-and-playlist-objects"></a>Trabalhando com objetos de mídia e playlist
 
@@ -39,7 +39,7 @@ O **método allowPlay** fornece um ponteiro para a interface **IWMPMedia** como 
 
 Os **métodos allowCDEar** e **allowPDATransfer** fornecem um ponteiro para a interface **IWMPPlaylist** como um parâmetro. Essa interface é a interface Windows Media Player que representa objetos de playlist. Ao chamar os métodos nessa interface, você pode trabalhar com os atributos e propriedades de uma playlist, adicionar itens a uma playlist ou remover itens de uma playlist.
 
-Para saber como remover um item de uma playlist programaticamente, consulte a implementação **de CAllowBaseDialog <T> ::OnRemoveMediaFromPlaylist**. Para saber mais sobre como trabalhar com objetos de mídia e playlist, consulte [Modelo de objeto de player para linguagens de script.](player-object-model-for-scripting-languages.md)
+Para saber como remover um item de uma playlist programaticamente, consulte a implementação **de CAllowBaseDialog &lt; T &gt; ::OnRemoveMediaFromPlaylist**. Para saber mais sobre como trabalhar com objetos de mídia e playlist, consulte [Modelo de objeto de player para linguagens de script.](player-object-model-for-scripting-languages.md)
 
 ## <a name="code-that-can-be-removed"></a>Código que pode ser removido
 
@@ -51,8 +51,8 @@ Para saber como remover um item de uma playlist programaticamente, consulte a im
 
 Em YourProject.cpp, remova o seguinte código:
 
--   A implementação de **CAllowBaseDialog <T> ::OnInitDialog**.
--   A implementação de **CAllowBaseDialog <T> ::OnRemoveMediaFromPlaylist**.
+-   A implementação de **CAllowBaseDialog &lt; T &gt; ::OnInitDialog**.
+-   A implementação de **CAllowBaseDialog &lt; T &gt; ::OnRemoveMediaFromPlaylist**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

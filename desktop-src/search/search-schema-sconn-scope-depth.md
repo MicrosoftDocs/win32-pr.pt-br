@@ -1,19 +1,19 @@
 ---
-description: O <depth> elemento especifica se o escopo do conector de pesquisa deve incluir URLs filho. Os valores permitidos são Deep e Shallow. Esse elemento não tem nenhum elemento filho e nenhum atributos.
+description: O &lt; &gt; elemento Depth especifica se o escopo do conector de pesquisa deve incluir URLs filho. Os valores permitidos são Deep e superficial. Este elemento não tem elementos filho e nenhum atributo.
 ms.assetid: 859decab-cbe3-4cec-b37c-6d0e7c353876
-title: Elemento depth (esquema do conector de pesquisa)
+title: Elemento Depth (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 245156088cd68fcf67103c18b987a9b459b0b760b3a04a1ced817badd25aada8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 430ad3d047331a4bb3ffc58bd134d2364aaa0838
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862521"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886765"
 ---
-# <a name="depth-element-search-connector-schema"></a>Elemento depth (esquema do conector de pesquisa)
+# <a name="depth-element-search-connector-schema"></a>Elemento Depth (esquema do conector de pesquisa)
 
-O <depth> elemento especifica se o escopo do conector de pesquisa deve incluir URLs filho. Os valores permitidos são `Deep` e `Shallow` . Esse elemento não tem nenhum elemento filho e nenhum atributos.
+O &lt; &gt; elemento Depth especifica se o escopo do conector de pesquisa deve incluir URLs filho. Os valores permitidos são `Deep` e `Shallow` . Este elemento não tem elementos filho e nenhum atributo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -68,11 +68,11 @@ O <depth> elemento especifica se o escopo do conector de pesquisa deve incluir U
 
 ## <a name="remarks"></a>Comentários
 
-Se a profundidade for profunda, os usuários poderão procurar ou pesquisar itens no nível da URL do scopeItem ou em qualquer URL filho.
+Se a profundidade for profunda, os usuários poderão procurar ou pesquisar itens no nível da URL do scopeItem ou em quaisquer URLs filho.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um escopo de pesquisa que inclui C: FolderA e todas as suas pastas filho e C: FolderB, mas nenhuma \\ de suas pastas \\ filho.
+O exemplo a seguir mostra um escopo de pesquisa que inclui C: \\ FolderA e todas as suas pastas filho e C: \\ FolderB, mas nenhuma de suas pastas filhas.
 
 
 ```

@@ -1,27 +1,27 @@
 ---
-description: O moniker da fila é usado para ativar um componente enfileirado programaticamente.
+description: O moniker de fila é usado para ativar um componente enfileirado programaticamente.
 ms.assetid: d3d22ae6-7d16-4f25-9f15-21b2163cb0f5
-title: Usando o moniker da fila
+title: Usando o Moniker de Fila
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e83d720478064f1427966de69d98ef06ac82f1da98cc50aa1ec3d3b3ac4c4d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 938b4c0c8afc19e953d7f62f17f95bbd63f387e6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118305153"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473682"
 ---
-# <a name="using-the-queue-moniker"></a>Usando o moniker da fila
+# <a name="using-the-queue-moniker"></a>Usando o Moniker de Fila
 
-O moniker da fila é usado para ativar um componente enfileirado programaticamente. O moniker da fila requer que ele receba a ID da classe (CLSID) do objeto a ser invocado do novo moniker diretamente à direita dele. Quando prefixado à esquerda, o novo moniker passa o CLSID para o moniker à esquerda dele.
+O moniker de fila é usado para ativar um componente enfileirado programaticamente. O moniker de fila exige que ele receba a CLSID (ID de classe) do objeto a ser invocado do novo moniker diretamente à direita dele. Quando prefixado à esquerda, o novo moniker passa o CLSID para o moniker à esquerda dele.
 
-## <a name="component-services-administrative-tool"></a>Ferramenta administrativa serviços de componentes
+## <a name="component-services-administrative-tool"></a>Ferramenta Administrativa dos Serviços de Componentes
 
 Não se aplica.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-O parâmetro de nome de exibição GetObject é "Queue:/novo:", seguido da ID do programa ou do GUID do formato de cadeia de caracteres, com ou sem chaves, do objeto de servidor a ser instanciado. Os exemplos a seguir mostram três ativações válidas de um componente com o moniker da fila:
+O parâmetro de nome de exibição GetObject é "queue:/new:", seguido pela ID do programa ou GUID de formulário de cadeia de caracteres, com ou sem chaves, do objeto de servidor a ser instalá-lo. Os exemplos a seguir mostram três ativações válidas de um componente com o moniker de fila:
 
 1.  ``` syntax
     Set objMyQC = GetObject ("queue:/new:QCShip.Ship")
@@ -37,7 +37,7 @@ O parâmetro de nome de exibição GetObject é "Queue:/novo:", seguido da ID do
 
 ## <a name="cc"></a>C/C++
 
-O parâmetro nome de exibição do [**CoGetObject**](https://docs.microsoft.com/windows/desktop/api/objbase/nf-objbase-cogetobject) é "fila:/novo:", seguido da ID do programa ou do GUID do formato de cadeia de caracteres, com ou sem chaves, do objeto de servidor a ser instanciado. Os exemplos a seguir mostram três ativações válidas de um componente com o moniker da fila:
+O parâmetro de nome de exibição [**CoGetObject**](https://docs.microsoft.com/windows/desktop/api/objbase/nf-objbase-cogetobject) é "queue:/new:", seguido pela ID do programa ou GUID de formulário de cadeia de caracteres, com ou sem chaves, do objeto de servidor a ser instalá-lo. Os exemplos a seguir mostram três ativações válidas de um componente com o moniker de fila:
 
 1.  ``` syntax
     hr = CoGetObject (
@@ -59,7 +59,7 @@ O parâmetro nome de exibição do [**CoGetObject**](https://docs.microsoft.com/
 
 ## <a name="remarks"></a>Comentários
 
-O moniker da fila aceita parâmetros opcionais que alteram as propriedades da mensagem enviada ao enfileiramento de mensagens. Por exemplo, para fazer com que a mensagem de enfileiramento de mensagens seja enviada com uma prioridade 6, o componente em fila seria ativado da seguinte maneira:
+O moniker de fila aceita parâmetros opcionais que alteram as propriedades da mensagem enviada ao Enfileiramento de Mensagens. Por exemplo, para fazer com que a mensagem de Enluamento de Mensagens seja enviada com uma prioridade 6, o componente na fila será ativado da seguinte forma:
 
 ``` syntax
 hr = CoGetObject (
@@ -67,179 +67,59 @@ hr = CoGetObject (
   NULL, IID_IShip, (void**)&pShip);
 ```
 
-A tabela a seguir lista os parâmetros de moniker da fila que afetam a fila de destino.
+A tabela a seguir lista os parâmetros de moniker de fila que afetam a fila de destino.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>ComputerName</em><br/></td>
-<td>Especifica a parte do nome do computador de um nome de caminho da fila do enfileiramento de mensagens. O nome do caminho da fila do enfileiramento de mensagens é formatado como <em>ComputerName</em> \ <em>QueueName</em>. Se não for especificado, o nome do computador associado ao aplicativo configurado será usado.<br/></td>
-</tr>
-<tr class="even">
-<td><em>QueueName</em><br/></td>
-<td>Especifica o nome da fila do serviço de enfileiramento de mensagens. O nome do caminho da fila do enfileiramento de mensagens é formatado como <em>ComputerName</em> \ <em>QueueName</em>. Se não for especificado, o nome da fila associado ao aplicativo configurado será usado.<br/> Para obter uma fila não transacional, você pode especificar o nome da fila primeiro e, em seguida, criar um aplicativo COM+ com o mesmo nome.<br/></td>
-</tr>
-<tr class="odd">
-<td><em>PathName</em><br/></td>
-<td>Especifica o nome completo do caminho da fila do enfileiramento de mensagens. Se não for especificado, o nome do caminho da fila do enfileiramento de mensagens associado ao aplicativo configurado será usado. Para substituir o nome de destino, o caminho pode ser especificado no seguinte formato para uma instalação de grupo de trabalho do enfileiramento de mensagens:<br/> Queue:<em>PathName</em> = <em>ComputerName</em>\Bytes privados $ \ AppName/New: MyProject. CMyClass<br/>
-<blockquote>
-[!Note]<br />
-as linguagens de programação C e Microsoft Visual C++ exigem duas barras invertidas para representar uma barra invertida em literais de cadeia de caracteres, por exemplo, folha de pagamento de chicago \\ .
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><em>FormatName</em><br/></td>
-<td>Quando você marca um aplicativo COM+ como enfileirado, o COM+ cria uma fila de enfileiramento de mensagens cujo nome é o mesmo que o aplicativo. O nome do formato de enfileiramento de mensagens dessa fila está no catálogo COM+, associado ao aplicativo COM+. Para substituir o nome de destino, o nome do formato pode ser especificado no seguinte formato para uma instalação do grupo de trabalho do enfileiramento de mensagens:<br/> Fila:<em>FormatName</em>= Direct = os:<em>ComputerName</em>\Bytes privados $ \ AppName/New: ProgID<br/> Em uma configuração de Active Directory, &quot; Private $ &quot; não é especificado como parte do nome da fila. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Descrição | 
+|-----------|-------------|
+| <em>ComputerName</em><br /> | Especifica a parte do nome do computador de um nome de caminho da fila de Enfilagem de Mensagens. O nome do caminho da fila do Enfilamento de Mensagens é formatado como <em>ComputerName</em> \<em> </em> QueueName. Se não for especificado, o nome do computador associado ao aplicativo configurado será usado.<br /> | 
+| <em>QueueName</em><br /> | Especifica o nome da fila do Enfilão de Mensagens. O nome do caminho da fila do Enfilamento de Mensagens é formatado como <em>ComputerName</em> \<em> </em> QueueName. Se não for especificado, o nome da fila associado ao aplicativo configurado será usado.<br /> Para obter uma fila não transacional, você pode especificar o nome da fila primeiro e, em seguida, criar um aplicativo COM+ com o mesmo nome.<br /> | 
+| <em>PathName</em><br /> | Especifica o nome completo do caminho da fila do Enfilamento de Mensagens. Se não for especificado, o nome do caminho da fila de Enfilagem de Mensagens associado ao aplicativo configurado será usado. Para substituir o nome de destino, o caminho pode ser especificado no seguinte formulário para uma instalação de grupo de trabalho do En en enroscamento de mensagens:<br /> Fila:<em>PathName</em> = <em>ComputerName</em>\PRIVATE$\AppName/new:Myproject.CMyClass<br /><blockquote>[!Note]<br />As linguagens de programação C e Microsoft Visual C++ exigem duas malhas invertida para representar uma faixa invertida em literais de cadeia de caracteres, por exemplo, folha de pagamento \\ de Chicago.</blockquote><br /> | 
+| <em>Formatname</em><br /> | Quando você marca um aplicativo COM+ como na fila, o COM+ cria uma fila de Enfilagem de Mensagens cujo nome é o mesmo que o aplicativo. O nome do formato de Enfilagem de Mensagens dessa fila está no catálogo COM+, associado ao aplicativo COM+. Para substituir o nome de destino, o nome do formato pode ser especificado no seguinte formulário para uma instalação de grupo de trabalho do En en enrosamento de mensagens:<br /> Fila:<em>FormatName</em>=DIRECT=OS:<em>ComputerName</em>\PRIVATE$\AppName/new:ProgId<br /> Em uma configuração do Active Directory, "PRIVATE$" não é especificado como parte do nome da fila. <br /> | 
+
 
 
 
  
 
 > [!Note]  
-> Os parâmetros de moniker de fila opcionais são processados da esquerda para a direita. Especifique cada palavra-chave apenas uma vez. A especificação do parâmetro *PathName* substitui os parâmetros *ComputerName* e *QueueName*. Um parâmetro *FormatName* específico exclui o conhecimento prévio de um parâmetro *ComputerName*, *QueueName* e *PathName* .
+> Parâmetros opcionais de moniker de fila são processados da esquerda para a direita. Especifique cada palavra-chave apenas uma vez. Especificar o *parâmetro PathName* substitui os parâmetros *ComputerName* e *QueueName.* Um parâmetro *FormatName* específico exclui o conhecimento prévio de um parâmetro *ComputerName,* *QueueName* e *PathName.*
 
  
 
-## <a name="associating-the-queued-components-listener-with-a-specific-private-queue"></a>Associando o ouvinte de componentes na fila a uma fila particular específica
+## <a name="associating-the-queued-components-listener-with-a-specific-private-queue"></a>Associando o ouvinte de componentes na fila a uma fila privada específica
 
-O ouvinte de componentes na fila COM+ recebe somente de filas associadas ao aplicativo COM+ marcado como enfileirado. Quando você marca um aplicativo COM+ como enfileirado, o COM+ cria uma fila de enfileiramento de mensagens cujo nome é o mesmo que o aplicativo. O nome do formato de enfileiramento de mensagens dessa fila está no catálogo COM+, associado ao aplicativo COM+. Quando o aplicativo COM+ é iniciado e marcado como escuta, um ouvinte no processo do aplicativo COM+ é iniciado e a fila é aberta. A tabela a seguir lista os parâmetros de moniker da fila que afetam a mensagem do serviço de enfileiramento de mensagens.
+O ouvinte componentes em fila COM+ recebe somente de filas associadas ao aplicativo COM+ marcado na fila. Quando você marca um aplicativo COM+ como na fila, o COM+ cria uma fila de Enfilagem de Mensagens cujo nome é o mesmo que o aplicativo. O nome do formato de Enfilagem de Mensagens dessa fila está no catálogo COM+, associado ao aplicativo COM+. Quando o aplicativo COM+ é iniciado e marcado como escuta, um ouvinte no processo de aplicativo COM+ é iniciado e a fila é aberta. A tabela a seguir lista os parâmetros de moniker de fila que afetam a mensagem de Enfileiramento de Mensagens.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parâmetro</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>AppSpecific</em><br/></td>
-<td>Especifica um inteiro sem sinal, por exemplo, AppSpecific = 12345.<br/></td>
-</tr>
-<tr class="even">
-<td><em>AuthLevel</em><br/></td>
-<td>Especifica o nível de autenticação da mensagem. Uma mensagem autenticada é assinada digitalmente e requer um certificado para o usuário que está enviando a mensagem. Valores aceitáveis:<br/>
-<ul>
-<li>MQMSG_AUTH_LEVEL_NONE, 0</li>
-<li>MQMSG_AUTH_LEVEL_ALWAYS, 1</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><em>Entrega</em><br/></td>
-<td>Especifica a opção de entrega de mensagem. Esse valor é ignorado para filas transacionais. Valores aceitáveis:<br/>
-<ul>
-<li>MQMSG_DELIVERY_EXPRESS, 0</li>
-<li>MQMSG_DELIVERY_RECOVERABLE, 1</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><em>EncryptAlgorithm</em><br/></td>
-<td>Especifica o algoritmo de criptografia a ser usado pelo enfileiramento de mensagens para criptografar e descriptografar a mensagem. Valores aceitáveis:<br/>
-<ul>
-<li>CALG_RC2, CALG_RC4</li>
-<li>Qualquer valor inteiro aceitável para o enfileiramento de mensagens para um <em>EncryptAlgorithm</em>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><em>HashAlgorithm</em><br/></td>
-<td>Especifica uma função de hash criptográfico. Valores aceitáveis:<br/>
-<ul>
-<li>CALG_MD2, CALG_MD4, CALG_MD5, CALG_SHA, CALG_SHA1, CALG_MAC, CALG_SSL3_SHAMD5, CALG_HMAC, CALG_TLS1PRF</li>
-<li>Qualquer valor inteiro aceitável para o enfileiramento de mensagens para um <em>HashAlgorithm</em>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Diário<br/></td>
-<td>Especifica a opção de diário de mensagens do enfileiramento de mensagens. Valores aceitáveis:<br/>
-<ul>
-<li>MQMSG_JOURNAL_NONE, 0</li>
-<li>MQMSG_DEADLETTER, 1</li>
-<li>MQMSG_JOURNAL, 2</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><em>Rótulo</em><br/></td>
-<td>Especifica uma cadeia de caracteres de rótulo de mensagem com até MQ_MAX_MSG_LABEL_LEN caracteres. <br/></td>
-</tr>
-<tr class="even">
-<td><em>MaxTimeToReachQueue</em><br/></td>
-<td>Especifica um tempo máximo, em segundos, para a mensagem chegar à fila. <br/> Valores aceitáveis:<br/>
-<ul>
-<li>INFINITE</li>
-<li>LONG_LIVED</li>
-<li>Número de segundos</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><em>MaxTimeToReceive</em><br/></td>
-<td>Especifica um tempo máximo, em segundos, para a mensagem a ser recebida pelo aplicativo de destino. Valores aceitáveis:<br/>
-<ul>
-<li>INFINITE</li>
-<li>LONG_LIVED</li>
-<li>Número de segundos</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><em>Prioridade</em><br/></td>
-<td>Especifica um nível de prioridade de mensagem, dentro dos valores de enfileiramento de mensagens permitidos.<br/> Valores aceitáveis:<br/>
-<ul>
-<li>MQ_MIN_PRIORITY,0</li>
-<li>MQ_MAX_PRIORITY,7</li>
-<li>MQ_DEFAULT_PRIORITY,3</li>
-<li>Número entre 0 e 7</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><em>Privlevel</em><br/></td>
-<td>Especifica um nível de privacidade, usado para criptografar mensagens.<br/> Valores aceitáveis:<br/>
-<ul>
-<li>MQMSG_PRIV_LEVEL_NONE, NONE, 0</li>
-<li>MQMSG_PRIV_LEVEL_BODY, BODY,</li>
-<li>MQMSG_PRIV_LEVEL_BODY_BASE, BODY_BASE, 1</li>
-<li>MQMSG_PRIV_LEVEL_BODY_ENHANCED, BODY_ENHANCED, 3</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><em>Rastreamento</em><br/></td>
-<td>Especifica as opções de rastreamento, usadas no rastreamento de roteamento de En en enroscar mensagens.<br/> Valores aceitáveis:<br/>
-<ul>
-<li>MQMSG_TRACE_NONE,0</li>
-<li>MQMSG_SEND_ROUTE_TO_REPORT_QUEUE,1</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parâmetro | Descrição | 
+|-----------|-------------|
+| <em>Appspecific</em><br /> | Especifica um inteiro sem sinal, por exemplo, AppSpecific=12345.<br /> | 
+| <em>AuthLevel</em><br /> | Especifica o nível de autenticação de mensagem. Uma mensagem autenticada é assinada digitalmente e requer um certificado para o usuário que está enviando a mensagem. Valores aceitáveis:<br /><ul><li>MQMSG_AUTH_LEVEL_NONE,0</li><li>MQMSG_AUTH_LEVEL_ALWAYS,1</li></ul> | 
+| <em>Entrega</em><br /> | Especifica a opção de entrega de mensagem. Esse valor é ignorado para filas transacionais. Valores aceitáveis:<br /><ul><li>MQMSG_DELIVERY_EXPRESS,0</li><li>MQMSG_DELIVERY_RECOVERABLE,1</li></ul> | 
+| <em>EncryptAlgorithm</em><br /> | Especifica o algoritmo de criptografia a ser usado pelo En en fila de mensagens para criptografar e descriptografar a mensagem. Valores aceitáveis:<br /><ul><li>CALG_RC2, CALG_RC4</li><li>Qualquer valor inteiro que seja aceitável para o En envelhamento de mensagens para <em>um EncryptAlgorithm.</em></li></ul> | 
+| <em>Hashalgorithm</em><br /> | Especifica uma função de hash criptográfico. Valores aceitáveis:<br /><ul><li>CALG_MD2, CALG_MD4, CALG_MD5, CALG_SHA, CALG_SHA1, CALG_MAC, CALG_SSL3_SHAMD5, CALG_HMAC, CALG_TLS1PRF</li><li>Qualquer valor inteiro que seja aceitável para o En envelhamento de mensagens para <em>um HashAlgorithm</em>.</li></ul> | 
+| Diário<br /> | Especifica a opção de diário de mensagem do En en enrosamento de mensagens. Valores aceitáveis:<br /><ul><li>MQMSG_JOURNAL_NONE,0</li><li>MQMSG_DEADLETTER,1</li><li>MQMSG_JOURNAL,2</li></ul> | 
+| <em>Rótulo</em><br /> | Especifica uma cadeia de caracteres de rótulo de mensagem até MQ_MAX_MSG_LABEL_LEN caracteres. <br /> | 
+| <em>MaxTimeToReachQueue</em><br /> | Especifica um tempo máximo, em segundos, para que a mensagem alcance a fila. <br /> Valores aceitáveis:<br /><ul><li>INFINITE</li><li>LONG_LIVED</li><li>Número de segundos</li></ul> | 
+| <em>MaxTimeToReceive</em><br /> | Especifica um tempo máximo, em segundos, para que a mensagem seja recebida pelo aplicativo de destino. Valores aceitáveis:<br /><ul><li>INFINITE</li><li>LONG_LIVED</li><li>Número de segundos</li></ul> | 
+| <em>Prioridade</em><br /> | Especifica um nível de prioridade de mensagem, dentro dos valores permitidos do En enroscamento de mensagens.<br /> Valores aceitáveis:<br /><ul><li>MQ_MIN_PRIORITY, 0</li><li>MQ_MAX_PRIORITY, 7</li><li>MQ_DEFAULT_PRIORITY, 3</li><li>Número entre 0 e 7</li></ul> | 
+| <em>PrivLevel</em><br /> | Especifica um nível de privacidade, usado para criptografar mensagens.<br /> Valores aceitáveis:<br /><ul><li>MQMSG_PRIV_LEVEL_NONE, NENHUM, 0</li><li>MQMSG_PRIV_LEVEL_BODY, CORPO,</li><li>MQMSG_PRIV_LEVEL_BODY_BASE, BODY_BASE, 1</li><li>MQMSG_PRIV_LEVEL_BODY_ENHANCED, BODY_ENHANCED, 3</li></ul> | 
+| <em>Trace</em><br /> | Especifica as opções de rastreamento, usadas no rastreamento do roteamento de enfileiramento de mensagens.<br /> Valores aceitáveis:<br /><ul><li>MQMSG_TRACE_NONE, 0</li><li>MQMSG_SEND_ROUTE_TO_REPORT_QUEUE, 1</li></ul> | 
+
 
 
 
  
 
-O conjunto completo de funções do SDK Administrativo COM+ está disponível usando objetos COM. Isso permite que qualquer programa inicie e pare aplicativos COM+, conforme necessário.
+O conjunto completo de funções SDK administrativas do COM+ está disponível usando objetos COM. Isso permite que qualquer programa inicie e interrompa aplicativos COM+ conforme necessário.
 
 > [!Note]  
-> Quando um aplicativo COM+ é iniciado, ele é o aplicativo que está em execução, não os componentes individuais dentro do aplicativo. Se um aplicativo chamar um componente que não está na fila, o aplicativo COM+ que contém o componente será iniciado. Se a caixa de seleção do ouvinte estiver habilitada, o ouvinte também iniciará e iniciará o processamento de mensagens para componentes na fila. Embora o serviço de componentes na fila possa ser iniciado dessa forma, se você empacotar componentes na fila e que não estão na fila em um único aplicativo COM+, certifique-se de que você realmente deseja que os componentes na fila sejam iniciados se um componente que não está na fila for executado. Se esse não for o caso, empacote os componentes na fila em um aplicativo COM+ separado dos outros componentes.
+> Quando um aplicativo COM+ é iniciado, ele é o aplicativo em execução, e não os componentes individuais dentro do aplicativo. Se um aplicativo chamar um componente não enfileirado, o aplicativo COM+ que contém o componente será iniciado. Se a caixa de seleção ouvinte estiver habilitada, o ouvinte também será iniciado e começará a processar mensagens para componentes enfileirados. Embora o serviço de componentes na fila possa ser iniciado dessa forma, se você empacotar componentes enfileirados e não enfileirados em um único aplicativo COM+, certifique-se de que você realmente deseja que os componentes na fila sejam iniciados se um componente não enfileirado for executado. Se esse não for o caso, empacote os componentes na fila em um aplicativo COM+ separado dos outros componentes.
 
  
 

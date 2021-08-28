@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f0463a38623baa427a6ddaf3ea19b47704b90e3ef36cf91dea2469e0cd2baa00
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc6715a63c86913d5a525805e6178b3230505d0b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119884766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879532"
 ---
 # <a name="about-user-profiles"></a>Sobre perfis de usuário
 
@@ -50,7 +50,7 @@ no Windows 7 ou posterior, cada perfil de usuário tem uma imagem associada apre
 -   % ProgramData% \\ de \\ imagens da conta de usuário da Microsoft \\Guest.bmp
 -   % ProgramData% \\ de \\ imagens da conta de usuário da Microsoft \\User.bmp
 
-A imagem do bloco do usuário é armazenada na \\ pasta Temp local% systemdrive% Users \\ <username> \\ AppData \\ \\ como <username>.bmp. Quaisquer caracteres de barra ( \\ ) são convertidos em caracteres de sinal de adição (+). Por exemplo, o domínio \\ usuário é convertido em domínio + usuário.
+A imagem do bloco do usuário é armazenada na pasta Temp local de usuários do% SystemDrive% \\ Users \\ &lt; &gt; \\ AppData \\ \\ como &lt; nome de usuário &gt;.bmp. Quaisquer caracteres de barra ( \\ ) são convertidos em caracteres de sinal de adição (+). Por exemplo, o domínio \\ usuário é convertido em domínio + usuário.
 
 O arquivo de imagem aparece na pasta **Temp** do usuário:
 
