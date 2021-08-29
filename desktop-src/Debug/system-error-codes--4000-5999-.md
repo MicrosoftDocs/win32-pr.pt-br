@@ -4,17 +4,17 @@ ms.assetid: 1d2f7160-6322-4c75-abbc-4a882bbdf7ce
 title: Códigos de erro do sistema (4000-5999) (WinError. h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: bfd39042489f2a92ff2eb13df92a22e392c5405e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ada3f091671fd865f76faa830b89393ecc80176021a4990a71d4715886a3ffea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956925"
 ---
 # <a name="system-error-codes-4000-5999"></a>Códigos de erro do sistema (4000-5999)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. Para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
 
 A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) para erros 4000 a 5999. Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
 
@@ -839,7 +839,7 @@ A mídia não está montada ou pronta para uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_NOT_AVAILABLE"></span><span id="error_device_not_available"></span>**dispositivo de erro \_ \_ não \_ disponível**
+<span id="ERROR_DEVICE_NOT_AVAILABLE"></span><span id="error_device_not_available"></span>**DISPOSITIVO \_ DE ERRO NÃO \_ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 4319 (0x10DF)
@@ -852,7 +852,7 @@ O dispositivo não está pronto para uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REQUEST_REFUSED"></span><span id="error_request_refused"></span>**solicitação de erro \_ \_ recusada**
+<span id="ERROR_REQUEST_REFUSED"></span><span id="error_request_refused"></span>**SOLICITAÇÃO \_ DE \_ ERRO RECUSADA**
 </dt> <dd> <dl> <dt>
 
 4320 (0x10E0)
@@ -860,12 +860,12 @@ O dispositivo não está pronto para uso.
 
 
 
-O operador ou o administrador recusou a solicitação.
+O operador ou administrador recusou a solicitação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_DRIVE_OBJECT"></span><span id="error_invalid_drive_object"></span>**ERRO \_ de \_ objeto de unidade inválido \_**
+<span id="ERROR_INVALID_DRIVE_OBJECT"></span><span id="error_invalid_drive_object"></span>**ERRO \_ OBJETO DE UNIDADE \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 4321 (0x10E1)
@@ -873,12 +873,12 @@ O operador ou o administrador recusou a solicitação.
 
 
 
-O identificador da unidade não representa uma unidade válida.
+O identificador de unidade não representa uma unidade válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LIBRARY_FULL"></span><span id="error_library_full"></span>**biblioteca de erros \_ \_ completa**
+<span id="ERROR_LIBRARY_FULL"></span><span id="error_library_full"></span>**BIBLIOTECA \_ DE ERROS \_ COMPLETA**
 </dt> <dd> <dl> <dt>
 
 4322 (0x10E2)
@@ -891,7 +891,7 @@ A biblioteca está cheia. Nenhum slot está disponível para uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MEDIUM_NOT_ACCESSIBLE"></span><span id="error_medium_not_accessible"></span>**ERRO \_ médio \_ não \_ acessível**
+<span id="ERROR_MEDIUM_NOT_ACCESSIBLE"></span><span id="error_medium_not_accessible"></span>**MEIO \_ DE ERRO NÃO \_ \_ ACESSÍVEL**
 </dt> <dd> <dl> <dt>
 
 4323 (0x10E3)
@@ -904,7 +904,7 @@ O transporte não pode acessar a mídia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNABLE_TO_LOAD_MEDIUM"></span><span id="error_unable_to_load_medium"></span>**ERRO \_ não é possível \_ \_ carregar \_ médio**
+<span id="ERROR_UNABLE_TO_LOAD_MEDIUM"></span><span id="error_unable_to_load_medium"></span>**ERRO \_ NÃO É POSSÍVEL CARREGAR \_ \_ MÉDIO \_**
 </dt> <dd> <dl> <dt>
 
 4324 (0x10E4)
@@ -912,12 +912,12 @@ O transporte não pode acessar a mídia.
 
 
 
-Não é possível carregar a mídia na unidade.
+Não é possível carregar o meio na unidade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNABLE_TO_INVENTORY_DRIVE"></span><span id="error_unable_to_inventory_drive"></span>**ERRO \_ não é possível \_ \_ inventariar a \_ unidade**
+<span id="ERROR_UNABLE_TO_INVENTORY_DRIVE"></span><span id="error_unable_to_inventory_drive"></span>**ERRO \_ NÃO É POSSÍVEL PARA A UNIDADE DE \_ \_ \_ INVENTÁRIO**
 </dt> <dd> <dl> <dt>
 
 4325 (0x10E5)
@@ -930,7 +930,7 @@ Não é possível recuperar o status da unidade.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNABLE_TO_INVENTORY_SLOT"></span><span id="error_unable_to_inventory_slot"></span>**ERRO \_ não é possível \_ \_ inventariar o \_ slot**
+<span id="ERROR_UNABLE_TO_INVENTORY_SLOT"></span><span id="error_unable_to_inventory_slot"></span>**ERRO \_ NÃO É POSSÍVEL PARA O SLOT DE \_ \_ \_ INVENTÁRIO**
 </dt> <dd> <dl> <dt>
 
 4326 (0x10E6)
@@ -943,7 +943,7 @@ Não é possível recuperar o status do slot.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNABLE_TO_INVENTORY_TRANSPORT"></span><span id="error_unable_to_inventory_transport"></span>**ERRO \_ não é possível \_ \_ inventariar o \_ transporte**
+<span id="ERROR_UNABLE_TO_INVENTORY_TRANSPORT"></span><span id="error_unable_to_inventory_transport"></span>**ERRO \_ NÃO É POSSÍVEL \_ \_ \_ INVENTARIAR TRANSPORTE**
 </dt> <dd> <dl> <dt>
 
 4327 (0x10E7)
@@ -951,12 +951,12 @@ Não é possível recuperar o status do slot.
 
 
 
-Não é possível recuperar o status do transporte.
+Não é possível recuperar o status sobre o transporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSPORT_FULL"></span><span id="error_transport_full"></span>**transporte de erro \_ \_ completo**
+<span id="ERROR_TRANSPORT_FULL"></span><span id="error_transport_full"></span>**ERRO \_ TRANSPORTE \_ COMPLETO**
 </dt> <dd> <dl> <dt>
 
 4328 (0x10E8)
@@ -969,7 +969,7 @@ Não é possível usar o transporte porque ele já está em uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONTROLLING_IEPORT"></span><span id="error_controlling_ieport"></span>**ERRO ao \_ controlar \_ IEPORT**
+<span id="ERROR_CONTROLLING_IEPORT"></span><span id="error_controlling_ieport"></span>**ERRO \_ AO CONTROLAR O \_ IEPORT**
 </dt> <dd> <dl> <dt>
 
 4329 (0x10E9)
@@ -977,12 +977,12 @@ Não é possível usar o transporte porque ele já está em uso.
 
 
 
-Não é possível abrir ou fechar a porta de inserção/ejeção.
+Não é possível abrir ou fechar a porta de injeção/ejetamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNABLE_TO_EJECT_MOUNTED_MEDIA"></span><span id="error_unable_to_eject_mounted_media"></span>**ERRO \_ não é possível \_ \_ ejetar \_ mídia montada \_**
+<span id="ERROR_UNABLE_TO_EJECT_MOUNTED_MEDIA"></span><span id="error_unable_to_eject_mounted_media"></span>**ERRO \_ NÃO É POSSÍVEL \_ \_ \_ EJETAR A MÍDIA \_ MONTADA**
 </dt> <dd> <dl> <dt>
 
 4330 (0x10EA)
@@ -995,7 +995,7 @@ Não é possível ejetar a mídia porque ela está em uma unidade.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLEANER_SLOT_SET"></span><span id="error_cleaner_slot_set"></span>**\_conjunto de slots do limpador de erros \_ \_**
+<span id="ERROR_CLEANER_SLOT_SET"></span><span id="error_cleaner_slot_set"></span>**CONJUNTO DE \_ \_ SLOTS DE LIMPEZA \_ DE ERROS**
 </dt> <dd> <dl> <dt>
 
 4331 (0x10EB)
@@ -1008,7 +1008,7 @@ Um slot de limpeza já está reservado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLEANER_SLOT_NOT_SET"></span><span id="error_cleaner_slot_not_set"></span>**ERRO \_ de \_ slot de limpeza \_ não \_ definido**
+<span id="ERROR_CLEANER_SLOT_NOT_SET"></span><span id="error_cleaner_slot_not_set"></span>**SLOT \_ DE LIMPEZA DE ERRO NÃO \_ \_ \_ DEFINIDO**
 </dt> <dd> <dl> <dt>
 
 4332 (0x10EC)
@@ -1016,12 +1016,12 @@ Um slot de limpeza já está reservado.
 
 
 
-Um slot de limpeza não está reservado.
+Um slot de limpeza não é reservado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLEANER_CARTRIDGE_SPENT"></span><span id="error_cleaner_cartridge_spent"></span>**cartucho de limpeza de erro \_ \_ \_ gasto**
+<span id="ERROR_CLEANER_CARTRIDGE_SPENT"></span><span id="error_cleaner_cartridge_spent"></span>**LIMPEZA \_ DE ERRO LIMPEZA \_ GASTO \_**
 </dt> <dd> <dl> <dt>
 
 4333 (0x10ED)
@@ -1029,12 +1029,12 @@ Um slot de limpeza não está reservado.
 
 
 
-O cartucho de limpeza realizou o número máximo de limpezas de unidade.
+A limpeza de limpeza realizou o número máximo de limpezas de unidade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNEXPECTED_OMID"></span><span id="error_unexpected_omid"></span>**ERRO \_ inesperado \_ Omid**
+<span id="ERROR_UNEXPECTED_OMID"></span><span id="error_unexpected_omid"></span>**ERRO \_ \_ OMID INESPERADO**
 </dt> <dd> <dl> <dt>
 
 4334 (0x10EE)
@@ -1042,12 +1042,12 @@ O cartucho de limpeza realizou o número máximo de limpezas de unidade.
 
 
 
-Identificador em-média inesperado.
+Identificador em média inesperado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_DELETE_LAST_ITEM"></span><span id="error_cant_delete_last_item"></span>**ERRO não é possível \_ \_ excluir o \_ último \_ Item**
+<span id="ERROR_CANT_DELETE_LAST_ITEM"></span><span id="error_cant_delete_last_item"></span>**ERRO \_ NÃO PODE EXCLUIR O ÚLTIMO \_ \_ \_ ITEM**
 </dt> <dd> <dl> <dt>
 
 4335 (0x10EF)
@@ -1060,7 +1060,7 @@ O último item restante neste grupo ou recurso não pode ser excluído.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MESSAGE_EXCEEDS_MAX_SIZE"></span><span id="error_message_exceeds_max_size"></span>**a \_ mensagem de erro \_ excede o \_ \_ tamanho máximo**
+<span id="ERROR_MESSAGE_EXCEEDS_MAX_SIZE"></span><span id="error_message_exceeds_max_size"></span>**MENSAGEM \_ DE ERRO EXCEDE O TAMANHO \_ \_ \_ MÁXIMO**
 </dt> <dd> <dl> <dt>
 
 4336 (0x10F0)
@@ -1073,7 +1073,7 @@ A mensagem fornecida excede o tamanho máximo permitido para esse parâmetro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_CONTAINS_SYS_FILES"></span><span id="error_volume_contains_sys_files"></span>**o \_ volume de erros \_ contém \_ \_ arquivos sys**
+<span id="ERROR_VOLUME_CONTAINS_SYS_FILES"></span><span id="error_volume_contains_sys_files"></span>**VOLUME \_ DE ERRO CONTÉM ARQUIVOS \_ \_ \_ SYS**
 </dt> <dd> <dl> <dt>
 
 4337 (0x10F1)
@@ -1081,12 +1081,12 @@ A mensagem fornecida excede o tamanho máximo permitido para esse parâmetro.
 
 
 
-O volume contém arquivos de sistema ou de paginação.
+O volume contém arquivos de sistema ou paging.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INDIGENOUS_TYPE"></span><span id="error_indigenous_type"></span>**\_tipo de nativos de erro \_**
+<span id="ERROR_INDIGENOUS_TYPE"></span><span id="error_indigenous_type"></span>**TIPO \_ ERROR DIGITS \_**
 </dt> <dd> <dl> <dt>
 
 4338 (0x10F2)
@@ -1094,12 +1094,12 @@ O volume contém arquivos de sistema ou de paginação.
 
 
 
-O tipo de mídia não pode ser removido desta biblioteca, pois pelo menos uma unidade na biblioteca relata que pode dar suporte a esse tipo de mídia.
+O tipo de mídia não pode ser removido dessa biblioteca, pois pelo menos uma unidade nos relatórios da biblioteca pode dar suporte a esse tipo de mídia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SUPPORTING_DRIVES"></span><span id="error_no_supporting_drives"></span>**ERRO \_ sem \_ unidades de suporte \_**
+<span id="ERROR_NO_SUPPORTING_DRIVES"></span><span id="error_no_supporting_drives"></span>**ERRO \_ SEM UNIDADES DE \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 4339 (0x10F3)
@@ -1107,12 +1107,12 @@ O tipo de mídia não pode ser removido desta biblioteca, pois pelo menos uma un
 
 
 
-Esta mídia offline não pode ser montada neste sistema porque não há unidades habilitadas presentes que possam ser usadas.
+Essa mídia offline não pode ser montada nesse sistema, pois não há unidades habilitadas que possam ser usadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLEANER_CARTRIDGE_INSTALLED"></span><span id="error_cleaner_cartridge_installed"></span>**cartucho de limpeza de erro \_ \_ \_ instalado**
+<span id="ERROR_CLEANER_CARTRIDGE_INSTALLED"></span><span id="error_cleaner_cartridge_installed"></span>**LIMPEZA \_ DE ERROS DE LIMPEZA \_ \_ INSTALADA**
 </dt> <dd> <dl> <dt>
 
 4340 (0x10F4)
@@ -1120,12 +1120,12 @@ Esta mídia offline não pode ser montada neste sistema porque não há unidades
 
 
 
-Um cartucho de limpeza está presente na biblioteca de fitas.
+Um produto de limpeza está presente na biblioteca de fitas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IEPORT_FULL"></span><span id="error_ieport_full"></span>**ERRO \_ IEPORT \_ completo**
+<span id="ERROR_IEPORT_FULL"></span><span id="error_ieport_full"></span>**\_ERRO IEPORT \_ FULL**
 </dt> <dd> <dl> <dt>
 
 4341 (0x10F5)
@@ -1133,12 +1133,12 @@ Um cartucho de limpeza está presente na biblioteca de fitas.
 
 
 
-Não é possível usar a porta de inserção/ejeção porque ela não está vazia.
+Não é possível usar a porta de injeção/ejetamento porque ela não está vazia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_OFFLINE"></span><span id="error_file_offline"></span>**arquivo de erro \_ \_ offline**
+<span id="ERROR_FILE_OFFLINE"></span><span id="error_file_offline"></span>**ARQUIVO \_ DE ERRO \_ OFFLINE**
 </dt> <dd> <dl> <dt>
 
 4350 (0x10FE)
@@ -1146,12 +1146,12 @@ Não é possível usar a porta de inserção/ejeção porque ela não está vazi
 
 
 
-Este arquivo não está disponível no momento para uso neste computador.
+Atualmente, esse arquivo não está disponível para uso neste computador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REMOTE_STORAGE_NOT_ACTIVE"></span><span id="error_remote_storage_not_active"></span>**ERRO \_ o \_ Armazenamento remoto \_ não está \_ ativo**
+<span id="ERROR_REMOTE_STORAGE_NOT_ACTIVE"></span><span id="error_remote_storage_not_active"></span>**ERRO \_ ARMAZENAMENTO REMOTO NÃO \_ \_ \_ ATIVO**
 </dt> <dd> <dl> <dt>
 
 4351 (0x10FF)
@@ -1164,7 +1164,7 @@ O serviço de armazenamento remoto não está operacional no momento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REMOTE_STORAGE_MEDIA_ERROR"></span><span id="error_remote_storage_media_error"></span>**ERRO \_ de \_ mídia de armazenamento remoto \_ \_**
+<span id="ERROR_REMOTE_STORAGE_MEDIA_ERROR"></span><span id="error_remote_storage_media_error"></span>**ERRO DE \_ MÍDIA \_ DE ARMAZENAMENTO \_ \_ REMOTO**
 </dt> <dd> <dl> <dt>
 
 4352 (0x1100)
@@ -1177,7 +1177,7 @@ O serviço de armazenamento remoto encontrou um erro de mídia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_A_REPARSE_POINT"></span><span id="error_not_a_reparse_point"></span>**ERRO \_ não é \_ um ponto de \_ nova análise \_**
+<span id="ERROR_NOT_A_REPARSE_POINT"></span><span id="error_not_a_reparse_point"></span>**ERRO \_ NÃO É UM PONTO DE NOVA \_ \_ \_ PESQUISA**
 </dt> <dd> <dl> <dt>
 
 4390 (0x1126)
@@ -1185,12 +1185,12 @@ O serviço de armazenamento remoto encontrou um erro de mídia.
 
 
 
-O arquivo ou diretório não é um ponto de nova análise.
+O arquivo ou diretório não é um ponto de novaparção.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPARSE_ATTRIBUTE_CONFLICT"></span><span id="error_reparse_attribute_conflict"></span>**ERRO ao \_ analisar \_ conflito de atributo \_**
+<span id="ERROR_REPARSE_ATTRIBUTE_CONFLICT"></span><span id="error_reparse_attribute_conflict"></span>**ERRO \_ REPARSE \_ ATTRIBUTE \_ CONFLICT**
 </dt> <dd> <dl> <dt>
 
 4391 (0x1127)
@@ -1198,12 +1198,12 @@ O arquivo ou diretório não é um ponto de nova análise.
 
 
 
-O atributo de ponto de nova análise não pode ser definido porque está em conflito com um atributo existente.
+O atributo de ponto de reparse não pode ser definido porque está em conflito com um atributo existente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_REPARSE_DATA"></span><span id="error_invalid_reparse_data"></span>**ERRO \_ de \_ dados de nova análise inválidos \_**
+<span id="ERROR_INVALID_REPARSE_DATA"></span><span id="error_invalid_reparse_data"></span>**ERRO \_ DADOS \_ DE REPARSE \_ INVÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 4392 (0x1128)
@@ -1211,12 +1211,12 @@ O atributo de ponto de nova análise não pode ser definido porque está em conf
 
 
 
-Os dados presentes no buffer de ponto de nova análise são inválidos.
+Os dados presentes no buffer de ponto de análise são inválidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPARSE_TAG_INVALID"></span><span id="error_reparse_tag_invalid"></span>**ERRO na \_ marca de nova análise \_ \_ inválida**
+<span id="ERROR_REPARSE_TAG_INVALID"></span><span id="error_reparse_tag_invalid"></span>**ERRO \_ MARCA DE REPARSE \_ \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 4393 (0x1129)
@@ -1224,12 +1224,12 @@ Os dados presentes no buffer de ponto de nova análise são inválidos.
 
 
 
-A marca presente no buffer do ponto de nova análise é inválida.
+A marca presente no buffer de ponto de reparse é inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPARSE_TAG_MISMATCH"></span><span id="error_reparse_tag_mismatch"></span>**ERRO de \_ \_ incompatibilidade de marca de nova análise \_**
+<span id="ERROR_REPARSE_TAG_MISMATCH"></span><span id="error_reparse_tag_mismatch"></span>**ERRO \_ REPARSE \_ TAG \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 4394 (0x112A)
@@ -1237,12 +1237,12 @@ A marca presente no buffer do ponto de nova análise é inválida.
 
 
 
-Há uma incompatibilidade entre a marca especificada na solicitação e a marca presentes no ponto de nova análise.
+Há uma incompatibilidade entre a marca especificada na solicitação e a marca presente no ponto de nova consulta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_DATA_NOT_FOUND"></span><span id="error_app_data_not_found"></span>**dados do aplicativo de erro \_ \_ \_ não \_ encontrados**
+<span id="ERROR_APP_DATA_NOT_FOUND"></span><span id="error_app_data_not_found"></span>**DADOS \_ DO APLICATIVO DE ERRO NÃO \_ \_ \_ ENCONTRADOS**
 </dt> <dd> <dl> <dt>
 
 4400 (0x1130)
@@ -1250,12 +1250,12 @@ Há uma incompatibilidade entre a marca especificada na solicitação e a marca 
 
 
 
-Dados de cache rápidos não encontrados.
+Dados de Cache Rápido não encontrados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_DATA_EXPIRED"></span><span id="error_app_data_expired"></span>**ERRO \_ dados do aplicativo \_ \_ expirados**
+<span id="ERROR_APP_DATA_EXPIRED"></span><span id="error_app_data_expired"></span>**DADOS \_ DO APLICATIVO DE ERRO \_ \_ EXPIRADOS**
 </dt> <dd> <dl> <dt>
 
 4401 (0x1131)
@@ -1263,12 +1263,12 @@ Dados de cache rápidos não encontrados.
 
 
 
-Dados de cache rápido expirados.
+Os dados do Cache Rápido expiraram.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_DATA_CORRUPT"></span><span id="error_app_data_corrupt"></span>**dados do aplicativo de erro \_ \_ \_ corrompidos**
+<span id="ERROR_APP_DATA_CORRUPT"></span><span id="error_app_data_corrupt"></span>**ERROS \_ DE DADOS DO APLICATIVO \_ \_ CORROMPIDOS**
 </dt> <dd> <dl> <dt>
 
 4402 (0x1132)
@@ -1276,12 +1276,12 @@ Dados de cache rápido expirados.
 
 
 
-Dados de cache rápidos corrompidos.
+Dados de Cache Rápido corrompidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_DATA_LIMIT_EXCEEDED"></span><span id="error_app_data_limit_exceeded"></span>**limite de dados de aplicativo de erro \_ \_ \_ \_ excedido**
+<span id="ERROR_APP_DATA_LIMIT_EXCEEDED"></span><span id="error_app_data_limit_exceeded"></span>**ERRO \_ LIMITE DE DADOS DO APLICATIVO \_ \_ \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 4403 (0x1133)
@@ -1289,12 +1289,12 @@ Dados de cache rápidos corrompidos.
 
 
 
-Os dados de cache rápido excederam seu tamanho máximo e não podem ser atualizados.
+Os dados de Cache Rápido excederam seu tamanho máximo e não podem ser atualizados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_DATA_REBOOT_REQUIRED"></span><span id="error_app_data_reboot_required"></span>**ERRO \_ ao \_ \_ reinicializar dados do aplicativo \_ necessário**
+<span id="ERROR_APP_DATA_REBOOT_REQUIRED"></span><span id="error_app_data_reboot_required"></span>**REINICIALIZAÇÃO \_ DE DADOS DO APLICATIVO DE ERRO \_ \_ \_ NECESSÁRIA**
 </dt> <dd> <dl> <dt>
 
 4404 (0x1134)
@@ -1302,12 +1302,12 @@ Os dados de cache rápido excederam seu tamanho máximo e não podem ser atualiz
 
 
 
-O cache rápido foi rearmado e requer uma reinicialização até que possa ser atualizado.
+O Cache Rápido foi ReEso e requer uma reinicialização até que possa ser atualizado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_ROLLBACK_DETECTED"></span><span id="error_secureboot_rollback_detected"></span>**reversão de SECUREBOOT de erro \_ \_ \_ detectada**
+<span id="ERROR_SECUREBOOT_ROLLBACK_DETECTED"></span><span id="error_secureboot_rollback_detected"></span>**ERRO \_ SECUREBOOT \_ ROLLBACK \_ DETECTADO**
 </dt> <dd> <dl> <dt>
 
 4420 (0x1144)
@@ -1315,12 +1315,12 @@ O cache rápido foi rearmado e requer uma reinicialização até que possa ser a
 
 
 
-A inicialização segura detectou que a reversão de dados protegidos foi tentada.
+A inicialização segura detectou que foi tentada a reação de dados protegidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_POLICY_VIOLATION"></span><span id="error_secureboot_policy_violation"></span>**ERRO \_ de \_ violação de política de SECUREBOOT \_**
+<span id="ERROR_SECUREBOOT_POLICY_VIOLATION"></span><span id="error_secureboot_policy_violation"></span>**ERRO \_ SECUREBOOT \_ POLICY \_ VIOLATION**
 </dt> <dd> <dl> <dt>
 
 4421 (0x1145)
@@ -1328,12 +1328,12 @@ A inicialização segura detectou que a reversão de dados protegidos foi tentad
 
 
 
-O valor é protegido pela política de inicialização segura e não pode ser modificado ou excluído.
+O valor é protegido pela política de Inicialização Segura e não pode ser modificado ou excluído.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_INVALID_POLICY"></span><span id="error_secureboot_invalid_policy"></span>**ERRO ao \_ SECUREBOOT da \_ política inválida \_**
+<span id="ERROR_SECUREBOOT_INVALID_POLICY"></span><span id="error_secureboot_invalid_policy"></span>**ERRO \_ SECUREBOOT \_ INVALID \_ POLICY**
 </dt> <dd> <dl> <dt>
 
 4422 (0x1146)
@@ -1341,12 +1341,12 @@ O valor é protegido pela política de inicialização segura e não pode ser mo
 
 
 
-A política de inicialização segura é inválida.
+A política inicialização segura é inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_POLICY_PUBLISHER_NOT_FOUND"></span><span id="error_secureboot_policy_publisher_not_found"></span>**Editor de política de SECUREBOOT de erro \_ \_ \_ \_ não \_ encontrado**
+<span id="ERROR_SECUREBOOT_POLICY_PUBLISHER_NOT_FOUND"></span><span id="error_secureboot_policy_publisher_not_found"></span>**ERRO \_ SECUREBOOT \_ POLICY PUBLISHER NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 4423 (0x1147)
@@ -1354,12 +1354,12 @@ A política de inicialização segura é inválida.
 
 
 
-Uma nova política de inicialização segura não continha o Publicador atual em sua lista de atualizações.
+Uma nova política de Inicialização Segura não continha o publicador atual em sua lista de atualizações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_POLICY_NOT_SIGNED"></span><span id="error_secureboot_policy_not_signed"></span>**política de SECUREBOOT de erro \_ \_ \_ não \_ assinada**
+<span id="ERROR_SECUREBOOT_POLICY_NOT_SIGNED"></span><span id="error_secureboot_policy_not_signed"></span>**ERRO \_ SECUREBOOT \_ POLICY NÃO \_ \_ ASSINADO**
 </dt> <dd> <dl> <dt>
 
 4424 (0x1148)
@@ -1367,12 +1367,12 @@ Uma nova política de inicialização segura não continha o Publicador atual em
 
 
 
-A política de inicialização segura não está assinada ou assinada por um assinante não confiável.
+A política inicialização segura não está assinada ou é assinada por um signante não confiável.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_NOT_ENABLED"></span><span id="error_secureboot_not_enabled"></span>**ERRO \_ SECUREBOOT \_ não \_ habilitado**
+<span id="ERROR_SECUREBOOT_NOT_ENABLED"></span><span id="error_secureboot_not_enabled"></span>**ERRO \_ SECUREBOOT \_ NÃO \_ HABILITADO**
 </dt> <dd> <dl> <dt>
 
 4425 (0x1149)
@@ -1380,12 +1380,12 @@ A política de inicialização segura não está assinada ou assinada por um ass
 
 
 
-A inicialização segura não está habilitada neste computador.
+A Inicialização Segura não está habilitada neste computador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECUREBOOT_FILE_REPLACED"></span><span id="error_secureboot_file_replaced"></span>**ERRO \_ do \_ arquivo SECUREBOOT \_ substituído**
+<span id="ERROR_SECUREBOOT_FILE_REPLACED"></span><span id="error_secureboot_file_replaced"></span>**ERRO \_ SECUREBOOT \_ FILE \_ REPLACED**
 </dt> <dd> <dl> <dt>
 
 4426 (0x114A)
@@ -1393,12 +1393,12 @@ A inicialização segura não está habilitada neste computador.
 
 
 
-A inicialização segura exige que determinados arquivos e drivers não sejam substituídos por outros arquivos ou drivers.
+A Inicialização Segura requer que determinados arquivos e drivers não sejam substituídos por outros arquivos ou drivers.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OFFLOAD_READ_FLT_NOT_SUPPORTED"></span><span id="error_offload_read_flt_not_supported"></span>**descarregamento de erro de \_ \_ leitura \_ FLT \_ não \_ suportado**
+<span id="ERROR_OFFLOAD_READ_FLT_NOT_SUPPORTED"></span><span id="error_offload_read_flt_not_supported"></span>**ERRO \_ AO \_ DESCARREGAR \_ FLT DE LEITURA SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 4440 (0x1158)
@@ -1406,12 +1406,12 @@ A inicialização segura exige que determinados arquivos e drivers não sejam su
 
 
 
-A operação de leitura de descarregamento de cópia não é suportada por um filtro.
+A operação de leitura de descarregar cópia não é suportada por um filtro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OFFLOAD_WRITE_FLT_NOT_SUPPORTED"></span><span id="error_offload_write_flt_not_supported"></span>**descarregamento de erro de \_ \_ gravação \_ FLT \_ não \_ suportado**
+<span id="ERROR_OFFLOAD_WRITE_FLT_NOT_SUPPORTED"></span><span id="error_offload_write_flt_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA ERRO AO \_ \_ DESCARREGAR FLT \_ DE \_ GRAVAÇÃO**
 </dt> <dd> <dl> <dt>
 
 4441 (0x1159)
@@ -1419,12 +1419,12 @@ A operação de leitura de descarregamento de cópia não é suportada por um fi
 
 
 
-A operação de gravação de descarregamento de cópia não é suportada por um filtro.
+Não há suporte para a operação de gravação de descarregador de cópia por um filtro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OFFLOAD_READ_FILE_NOT_SUPPORTED"></span><span id="error_offload_read_file_not_supported"></span>**ERRO de \_ descarregamento de \_ \_ arquivo lido \_ não \_ suportado**
+<span id="ERROR_OFFLOAD_READ_FILE_NOT_SUPPORTED"></span><span id="error_offload_read_file_not_supported"></span>**ERRO \_ AO DESCARREGAR \_ O ARQUIVO DE LEITURA SEM \_ \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 4442 (0x115A)
@@ -1432,12 +1432,12 @@ A operação de gravação de descarregamento de cópia não é suportada por um
 
 
 
-A operação de leitura de descarregamento de cópia não tem suporte para o arquivo.
+Não há suporte para a operação de leitura de descarregar cópia para o arquivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OFFLOAD_WRITE_FILE_NOT_SUPPORTED"></span><span id="error_offload_write_file_not_supported"></span>**\_arquivo de gravação de descarregamento de erro \_ \_ \_ não \_ suportado**
+<span id="ERROR_OFFLOAD_WRITE_FILE_NOT_SUPPORTED"></span><span id="error_offload_write_file_not_supported"></span>**ERRO \_ AO \_ DESCARREGAR O ARQUIVO DE GRAVAÇÃO \_ SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 4443 (0x115B)
@@ -1445,12 +1445,12 @@ A operação de leitura de descarregamento de cópia não tem suporte para o arq
 
 
 
-A operação de gravação de descarregamento de cópia não tem suporte para o arquivo.
+Não há suporte para a operação de gravação de descarregador de cópia para o arquivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_NOT_SIS_ENABLED"></span><span id="error_volume_not_sis_enabled"></span>**VOLUME de erro \_ \_ não \_ habilitado para SIS \_**
+<span id="ERROR_VOLUME_NOT_SIS_ENABLED"></span><span id="error_volume_not_sis_enabled"></span>**VOLUME \_ DE ERRO NÃO \_ \_ SIS \_ HABILITADO**
 </dt> <dd> <dl> <dt>
 
 4500 (0x1194)
@@ -1458,12 +1458,12 @@ A operação de gravação de descarregamento de cópia não tem suporte para o 
 
 
 
-O armazenamento de instância única não está disponível neste volume.
+O Armazenamento instância única não está disponível neste volume.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEPENDENT_RESOURCE_EXISTS"></span><span id="error_dependent_resource_exists"></span>**\_existe um \_ recurso \_ dependente de erro**
+<span id="ERROR_DEPENDENT_RESOURCE_EXISTS"></span><span id="error_dependent_resource_exists"></span>**O RECURSO \_ DEPENDENTE \_ DE ERRO \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 5001 (0x1389)
@@ -1476,7 +1476,7 @@ A operação não pode ser concluída porque outros recursos dependem desse recu
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEPENDENCY_NOT_FOUND"></span><span id="error_dependency_not_found"></span>**dependência de erro \_ \_ não \_ encontrada**
+<span id="ERROR_DEPENDENCY_NOT_FOUND"></span><span id="error_dependency_not_found"></span>**DEPENDÊNCIA \_ DE ERRO NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 5002 (0x138A)
@@ -1484,12 +1484,12 @@ A operação não pode ser concluída porque outros recursos dependem desse recu
 
 
 
-Não é possível encontrar a dependência de recurso de cluster.
+A dependência de recurso de cluster não pode ser encontrada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEPENDENCY_ALREADY_EXISTS"></span><span id="error_dependency_already_exists"></span>**a \_ dependência de erro \_ já \_ existe**
+<span id="ERROR_DEPENDENCY_ALREADY_EXISTS"></span><span id="error_dependency_already_exists"></span>**A \_ DEPENDÊNCIA DE ERRO JÁ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 5003 (0x138B)
@@ -1497,12 +1497,12 @@ Não é possível encontrar a dependência de recurso de cluster.
 
 
 
-Não é possível tornar o recurso de cluster dependente do recurso especificado porque ele já é dependente.
+O recurso de cluster não pode ser dependente do recurso especificado porque ele já é dependente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_NOT_ONLINE"></span><span id="error_resource_not_online"></span>**recurso de erro \_ \_ não \_ online**
+<span id="ERROR_RESOURCE_NOT_ONLINE"></span><span id="error_resource_not_online"></span>**RECURSO \_ DE ERRO NÃO \_ \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 5004 (0x138C)
@@ -1515,7 +1515,7 @@ O recurso de cluster não está online.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HOST_NODE_NOT_AVAILABLE"></span><span id="error_host_node_not_available"></span>**nó de host de erro \_ \_ \_ não \_ disponível**
+<span id="ERROR_HOST_NODE_NOT_AVAILABLE"></span><span id="error_host_node_not_available"></span>**NÓ \_ DE HOST DE ERRO NÃO \_ \_ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 5005 (0x138D)
@@ -1523,12 +1523,12 @@ O recurso de cluster não está online.
 
 
 
-Um nó de cluster não está disponível para esta operação.
+Um nó de cluster não está disponível para essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_NOT_AVAILABLE"></span><span id="error_resource_not_available"></span>**recurso de erro \_ \_ não \_ disponível**
+<span id="ERROR_RESOURCE_NOT_AVAILABLE"></span><span id="error_resource_not_available"></span>**RECURSO \_ DE ERRO NÃO \_ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 5006 (0x138E)
@@ -1541,7 +1541,7 @@ O recurso de cluster não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_NOT_FOUND"></span><span id="error_resource_not_found"></span>**recurso de erro \_ \_ não \_ encontrado**
+<span id="ERROR_RESOURCE_NOT_FOUND"></span><span id="error_resource_not_found"></span>**RECURSO \_ DE ERRO NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5007 (0x138F)
@@ -1554,7 +1554,7 @@ Não foi possível encontrar o recurso de cluster.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHUTDOWN_CLUSTER"></span><span id="error_shutdown_cluster"></span>**ERRO ao \_ desligar o \_ cluster**
+<span id="ERROR_SHUTDOWN_CLUSTER"></span><span id="error_shutdown_cluster"></span>**CLUSTER DE \_ DESLIGAMENTO \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 5008 (0x1390)
@@ -1567,7 +1567,7 @@ O cluster está sendo desligado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_EVICT_ACTIVE_NODE"></span><span id="error_cant_evict_active_node"></span>**ERRO não é possível \_ \_ remover o \_ \_ nó ativo**
+<span id="ERROR_CANT_EVICT_ACTIVE_NODE"></span><span id="error_cant_evict_active_node"></span>**ERRO \_ NÃO É POSSÍVEL \_ \_ REATIVAR O NÓ \_ ATIVO**
 </dt> <dd> <dl> <dt>
 
 5009 (0x1391)
@@ -1575,12 +1575,12 @@ O cluster está sendo desligado.
 
 
 
-Um nó de cluster não pode ser removido do cluster, a menos que o nó esteja inoperante ou seja o último nó.
+Um nó de cluster não pode ser despejado do cluster, a menos que o nó esteja inoado ou seja o último nó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OBJECT_ALREADY_EXISTS"></span><span id="error_object_already_exists"></span>**o \_ objeto de erro \_ já \_ existe**
+<span id="ERROR_OBJECT_ALREADY_EXISTS"></span><span id="error_object_already_exists"></span>**O \_ OBJETO ERROR JÁ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 5010 (0x1392)
@@ -1593,7 +1593,7 @@ O objeto já existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OBJECT_IN_LIST"></span><span id="error_object_in_list"></span>**\_objeto \_ de erro na \_ lista**
+<span id="ERROR_OBJECT_IN_LIST"></span><span id="error_object_in_list"></span>**OBJETO \_ ERROR \_ IN \_ LIST**
 </dt> <dd> <dl> <dt>
 
 5011 (0x1393)
@@ -1606,7 +1606,7 @@ O objeto já está na lista.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GROUP_NOT_AVAILABLE"></span><span id="error_group_not_available"></span>**grupo de erros \_ \_ não \_ disponível**
+<span id="ERROR_GROUP_NOT_AVAILABLE"></span><span id="error_group_not_available"></span>**GRUPO \_ DE ERROS NÃO \_ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 5012 (0x1394)
@@ -1619,7 +1619,7 @@ O grupo de clusters não está disponível para novas solicitações.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GROUP_NOT_FOUND"></span><span id="error_group_not_found"></span>**grupo de erros \_ \_ não \_ encontrado**
+<span id="ERROR_GROUP_NOT_FOUND"></span><span id="error_group_not_found"></span>**GRUPO \_ DE ERROS NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5013 (0x1395)
@@ -1627,12 +1627,12 @@ O grupo de clusters não está disponível para novas solicitações.
 
 
 
-O grupo de clusters não foi encontrado.
+Não foi possível encontrar o grupo de clusters.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GROUP_NOT_ONLINE"></span><span id="error_group_not_online"></span>**grupo de erros \_ \_ não \_ online**
+<span id="ERROR_GROUP_NOT_ONLINE"></span><span id="error_group_not_online"></span>**GRUPO \_ DE ERROS NÃO \_ \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 5014 (0x1396)
@@ -1640,12 +1640,12 @@ O grupo de clusters não foi encontrado.
 
 
 
-A operação não pôde ser concluída porque o grupo de clusters não está online.
+Não foi possível concluir a operação porque o grupo de clusters não está online.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HOST_NODE_NOT_RESOURCE_OWNER"></span><span id="error_host_node_not_resource_owner"></span>**ERRO \_ nó de host \_ \_ não \_ proprietário do recurso \_**
+<span id="ERROR_HOST_NODE_NOT_RESOURCE_OWNER"></span><span id="error_host_node_not_resource_owner"></span>**NÓ \_ DE HOST DE ERRO NÃO PROPRIETÁRIO DO \_ \_ \_ \_ RECURSO**
 </dt> <dd> <dl> <dt>
 
 5015 (0x1397)
@@ -1658,7 +1658,7 @@ A operação falhou porque o nó de cluster especificado não é o proprietário
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HOST_NODE_NOT_GROUP_OWNER"></span><span id="error_host_node_not_group_owner"></span>**ERRO \_ de \_ nó de host \_ não \_ proprietário do grupo \_**
+<span id="ERROR_HOST_NODE_NOT_GROUP_OWNER"></span><span id="error_host_node_not_group_owner"></span>**NÓ \_ DE HOST DE ERRO NÃO PROPRIETÁRIO DO \_ \_ \_ \_ GRUPO**
 </dt> <dd> <dl> <dt>
 
 5016 (0x1398)
@@ -1671,7 +1671,7 @@ A operação falhou porque o nó do cluster especificado não é o proprietário
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESMON_CREATE_FAILED"></span><span id="error_resmon_create_failed"></span>**ERRO \_ \_ ao criar \_ resmon**
+<span id="ERROR_RESMON_CREATE_FAILED"></span><span id="error_resmon_create_failed"></span>**ERRO \_ FALHA AO CRIAR RESMON \_ \_**
 </dt> <dd> <dl> <dt>
 
 5017 (0x1399)
@@ -1684,7 +1684,7 @@ Não foi possível criar o recurso de cluster no monitor de recursos especificad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESMON_ONLINE_FAILED"></span><span id="error_resmon_online_failed"></span>**ERRO \_ resmon \_ online \_ falhou**
+<span id="ERROR_RESMON_ONLINE_FAILED"></span><span id="error_resmon_online_failed"></span>**ERRO \_ FALHA NO RESMON \_ ONLINE \_**
 </dt> <dd> <dl> <dt>
 
 5018 (0x139A)
@@ -1692,12 +1692,12 @@ Não foi possível criar o recurso de cluster no monitor de recursos especificad
 
 
 
-O recurso de cluster não pôde ser colocado online pelo monitor de recursos.
+O recurso de cluster não pôde ser online pelo monitor de recursos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_ONLINE"></span><span id="error_resource_online"></span>**recurso de erro \_ \_ online**
+<span id="ERROR_RESOURCE_ONLINE"></span><span id="error_resource_online"></span>**RECURSO \_ DE ERRO \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 5019 (0x139B)
@@ -2134,12 +2134,12 @@ O nó do cluster não está acessível.
 
 
 
-O nó do cluster não é um membro do cluster.
+O nó de cluster não é um membro do cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_JOIN_NOT_IN_PROGRESS"></span><span id="error_cluster_join_not_in_progress"></span>**ERRO \_ ao \_ ingressar \_ no cluster não está \_ em \_ andamento**
+<span id="ERROR_CLUSTER_JOIN_NOT_IN_PROGRESS"></span><span id="error_cluster_join_not_in_progress"></span>**JUNÇÃO \_ DE CLUSTER DE ERROS NÃO EM \_ \_ \_ \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 5053 (0x13BD)
@@ -2147,12 +2147,12 @@ O nó do cluster não é um membro do cluster.
 
 
 
-Uma operação de ingresso no cluster não está em andamento.
+Uma operação de junção de cluster não está em andamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_INVALID_NETWORK"></span><span id="error_cluster_invalid_network"></span>**ERRO \_ de \_ rede inválida do cluster \_**
+<span id="ERROR_CLUSTER_INVALID_NETWORK"></span><span id="error_cluster_invalid_network"></span>**REDE \_ INVÁLIDA DO CLUSTER DE \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5054 (0x13BE)
@@ -2160,12 +2160,12 @@ Uma operação de ingresso no cluster não está em andamento.
 
 
 
-A rede do cluster não é válida.
+A rede de cluster não é válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_UP"></span><span id="error_cluster_node_up"></span>**ERRO \_ no \_ nó do cluster \_**
+<span id="ERROR_CLUSTER_NODE_UP"></span><span id="error_cluster_node_up"></span>**NÓ \_ DE CLUSTER DE ERRO PARA \_ \_ CIMA**
 </dt> <dd> <dl> <dt>
 
 5056 (0x13C0)
@@ -2178,7 +2178,7 @@ O nó do cluster está ativo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_IPADDR_IN_USE"></span><span id="error_cluster_ipaddr_in_use"></span>**ERRO \_ \_ de IPAddr \_ de cluster em \_ uso**
+<span id="ERROR_CLUSTER_IPADDR_IN_USE"></span><span id="error_cluster_ipaddr_in_use"></span>**ERRO \_ DE \_ CLUSTER IPADDR \_ EM \_ USO**
 </dt> <dd> <dl> <dt>
 
 5057 (0x13C1)
@@ -2191,7 +2191,7 @@ O endereço IP do cluster já está em uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_NOT_PAUSED"></span><span id="error_cluster_node_not_paused"></span>**o \_ nó de cluster de erros não está em \_ \_ \_ pausa**
+<span id="ERROR_CLUSTER_NODE_NOT_PAUSED"></span><span id="error_cluster_node_not_paused"></span>**NÓ \_ DE CLUSTER DE ERRO NÃO \_ \_ \_ PAUSADO**
 </dt> <dd> <dl> <dt>
 
 5058 (0x13C2)
@@ -2199,12 +2199,12 @@ O endereço IP do cluster já está em uso.
 
 
 
-O nó do cluster não está em pausa.
+O nó de cluster não está em pausa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NO_SECURITY_CONTEXT"></span><span id="error_cluster_no_security_context"></span>**ERRO \_ de \_ cluster \_ sem \_ contexto de segurança**
+<span id="ERROR_CLUSTER_NO_SECURITY_CONTEXT"></span><span id="error_cluster_no_security_context"></span>**CLUSTER DE \_ ERRO SEM CONTEXTO DE \_ \_ \_ SEGURANÇA**
 </dt> <dd> <dl> <dt>
 
 5059 (0x13C3)
@@ -2212,12 +2212,12 @@ O nó do cluster não está em pausa.
 
 
 
-Nenhum contexto de segurança do cluster está disponível.
+Nenhum contexto de segurança de cluster está disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NETWORK_NOT_INTERNAL"></span><span id="error_cluster_network_not_internal"></span>**ERRO \_ de \_ rede de cluster \_ não \_ interna**
+<span id="ERROR_CLUSTER_NETWORK_NOT_INTERNAL"></span><span id="error_cluster_network_not_internal"></span>**REDE \_ DE CLUSTER DE ERRO NÃO \_ \_ \_ INTERNA**
 </dt> <dd> <dl> <dt>
 
 5060 (0x13C4)
@@ -2225,12 +2225,12 @@ Nenhum contexto de segurança do cluster está disponível.
 
 
 
-A rede de cluster não está configurada para comunicação de cluster interno.
+A rede de cluster não está configurada para comunicação interna do cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_ALREADY_UP"></span><span id="error_cluster_node_already_up"></span>**o \_ \_ nó \_ de cluster de erros já está \_ ativo**
+<span id="ERROR_CLUSTER_NODE_ALREADY_UP"></span><span id="error_cluster_node_already_up"></span>**NÓ \_ DE CLUSTER DE ERROS JÁ \_ \_ \_ ATIVO**
 </dt> <dd> <dl> <dt>
 
 5061 (0x13C5)
@@ -2238,12 +2238,12 @@ A rede de cluster não está configurada para comunicação de cluster interno.
 
 
 
-O nó do cluster já está ativo.
+O nó de cluster já está ativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_ALREADY_DOWN"></span><span id="error_cluster_node_already_down"></span>**o \_ nó de cluster de erros \_ \_ já está \_ inoperante**
+<span id="ERROR_CLUSTER_NODE_ALREADY_DOWN"></span><span id="error_cluster_node_already_down"></span>**NÓ \_ DE CLUSTER DE ERROS JÁ \_ \_ \_ INOBADO**
 </dt> <dd> <dl> <dt>
 
 5062 (0x13C6)
@@ -2251,12 +2251,12 @@ O nó do cluster já está ativo.
 
 
 
-O nó de cluster já está inoperante.
+O nó de cluster já está inoado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NETWORK_ALREADY_ONLINE"></span><span id="error_cluster_network_already_online"></span>**a \_ rede de cluster de erros \_ \_ já está \_ online**
+<span id="ERROR_CLUSTER_NETWORK_ALREADY_ONLINE"></span><span id="error_cluster_network_already_online"></span>**REDE \_ DE CLUSTER DE ERROS JÁ \_ \_ \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 5063 (0x13C7)
@@ -2269,7 +2269,7 @@ A rede de cluster já está online.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NETWORK_ALREADY_OFFLINE"></span><span id="error_cluster_network_already_offline"></span>**a \_ rede de cluster de erros \_ \_ já está \_ offline**
+<span id="ERROR_CLUSTER_NETWORK_ALREADY_OFFLINE"></span><span id="error_cluster_network_already_offline"></span>**REDE \_ DE CLUSTER DE ERROS JÁ \_ \_ \_ OFFLINE**
 </dt> <dd> <dl> <dt>
 
 5064 (0x13C8)
@@ -2282,7 +2282,7 @@ A rede de cluster já está offline.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_ALREADY_MEMBER"></span><span id="error_cluster_node_already_member"></span>**ERRO \_ nó de cluster \_ \_ já \_ membro**
+<span id="ERROR_CLUSTER_NODE_ALREADY_MEMBER"></span><span id="error_cluster_node_already_member"></span>**NÓ \_ DO CLUSTER DE ERROS JÁ \_ \_ \_ MEMBRO**
 </dt> <dd> <dl> <dt>
 
 5065 (0x13C9)
@@ -2290,12 +2290,12 @@ A rede de cluster já está offline.
 
 
 
-O nó de cluster já é um membro do cluster.
+O nó de cluster já é membro do cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_LAST_INTERNAL_NETWORK"></span><span id="error_cluster_last_internal_network"></span>**ERRO \_ na \_ última \_ rede interna do cluster \_**
+<span id="ERROR_CLUSTER_LAST_INTERNAL_NETWORK"></span><span id="error_cluster_last_internal_network"></span>**CLUSTER DE \_ ERRO \_ ÚLTIMA REDE \_ \_ INTERNA**
 </dt> <dd> <dl> <dt>
 
 5066 (0x13CA)
@@ -2303,12 +2303,12 @@ O nó de cluster já é um membro do cluster.
 
 
 
-A rede de cluster é a única configurada para comunicação de cluster interno entre dois ou mais nós de cluster ativos. A funcionalidade de comunicação interna não pode ser removida da rede.
+A rede de cluster é a única configurada para comunicação interna de cluster entre dois ou mais nós de cluster ativos. A funcionalidade de comunicação interna não pode ser removida da rede.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NETWORK_HAS_DEPENDENTS"></span><span id="error_cluster_network_has_dependents"></span>**ERRO \_ rede de cluster \_ \_ \_ depende de**
+<span id="ERROR_CLUSTER_NETWORK_HAS_DEPENDENTS"></span><span id="error_cluster_network_has_dependents"></span>**A \_ REDE DE CLUSTER DE ERROS TEM \_ \_ \_ DEPENDENTES**
 </dt> <dd> <dl> <dt>
 
 5067 (0x13CB)
@@ -2316,12 +2316,12 @@ A rede de cluster é a única configurada para comunicação de cluster interno 
 
 
 
-Um ou mais recursos de cluster dependem da rede para fornecer serviço aos clientes. A funcionalidade de acesso para cliente não pode ser removida da rede.
+Um ou mais recursos de cluster dependem da rede para fornecer serviço aos clientes. A funcionalidade de acesso do cliente não pode ser removida da rede.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_OPERATION_ON_QUORUM"></span><span id="error_invalid_operation_on_quorum"></span>**ERRO \_ \_ de operação inválida \_ no \_ Quorum**
+<span id="ERROR_INVALID_OPERATION_ON_QUORUM"></span><span id="error_invalid_operation_on_quorum"></span>**ERRO \_ OPERAÇÃO INVÁLIDA NO \_ \_ \_ QUORUM**
 </dt> <dd> <dl> <dt>
 
 5068 (0x13CC)
@@ -2329,12 +2329,12 @@ Um ou mais recursos de cluster dependem da rede para fornecer serviço aos clien
 
 
 
-Esta operação não pode ser executada no recurso de cluster como ele é o recurso de quorum. Você não pode colocar o recurso de quorum offline ou modificar sua lista de possíveis proprietários.
+Essa operação não pode ser executada no recurso de cluster, pois ele é o recurso de quorum. Você não pode colocar o recurso de quorum offline ou modificar sua lista de possíveis proprietários.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEPENDENCY_NOT_ALLOWED"></span><span id="error_dependency_not_allowed"></span>**dependência de erro \_ \_ não \_ permitida**
+<span id="ERROR_DEPENDENCY_NOT_ALLOWED"></span><span id="error_dependency_not_allowed"></span>**DEPENDÊNCIA \_ DE ERRO NÃO \_ \_ PERMITIDA**
 </dt> <dd> <dl> <dt>
 
 5069 (0x13CD)
@@ -2342,12 +2342,12 @@ Esta operação não pode ser executada no recurso de cluster como ele é o recu
 
 
 
-O recurso de quorum do cluster não tem permissão para ter nenhuma dependência.
+O recurso de quorum do cluster não tem permissão para ter dependências.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_PAUSED"></span><span id="error_cluster_node_paused"></span>**ERRO no \_ nó de cluster em \_ \_ pausa**
+<span id="ERROR_CLUSTER_NODE_PAUSED"></span><span id="error_cluster_node_paused"></span>**NÓ \_ DO CLUSTER DE ERROS EM \_ \_ PAUSA**
 </dt> <dd> <dl> <dt>
 
 5070 (0x13CE)
@@ -2360,7 +2360,7 @@ O nó do cluster está em pausa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NODE_CANT_HOST_RESOURCE"></span><span id="error_node_cant_host_resource"></span>**o nó de erro não \_ \_ consegue \_ hospedar \_ recurso**
+<span id="ERROR_NODE_CANT_HOST_RESOURCE"></span><span id="error_node_cant_host_resource"></span>**RECURSO \_ DE HOST DO NÓ DE ERRO NÃO \_ \_ \_ PODE**
 </dt> <dd> <dl> <dt>
 
 5071 (0x13CF)
@@ -2368,12 +2368,12 @@ O nó do cluster está em pausa.
 
 
 
-O recurso de cluster não pode ser colocado online. O nó proprietário não pode executar este recurso.
+O recurso de cluster não pode ser online. O nó proprietário não pode executar esse recurso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_NOT_READY"></span><span id="error_cluster_node_not_ready"></span>**o \_ nó de cluster de erros \_ \_ não \_ está pronto**
+<span id="ERROR_CLUSTER_NODE_NOT_READY"></span><span id="error_cluster_node_not_ready"></span>**NÓ \_ DE CLUSTER DE ERRO NÃO \_ \_ \_ PRONTO**
 </dt> <dd> <dl> <dt>
 
 5072 (0x13D0)
@@ -2381,12 +2381,12 @@ O recurso de cluster não pode ser colocado online. O nó proprietário não pod
 
 
 
-O nó do cluster não está pronto para executar a operação solicitada.
+O nó de cluster não está pronto para executar a operação solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_SHUTTING_DOWN"></span><span id="error_cluster_node_shutting_down"></span>**ERRO \_ ao \_ desligar o nó do cluster \_ \_**
+<span id="ERROR_CLUSTER_NODE_SHUTTING_DOWN"></span><span id="error_cluster_node_shutting_down"></span>**ERRO \_ AO DESLIGAR O NÓ DO \_ \_ \_ CLUSTER**
 </dt> <dd> <dl> <dt>
 
 5073 (0x13D1)
@@ -2399,7 +2399,7 @@ O nó do cluster está sendo desligado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_JOIN_ABORTED"></span><span id="error_cluster_join_aborted"></span>**ERRO \_ de \_ ingresso no cluster \_ anulado**
+<span id="ERROR_CLUSTER_JOIN_ABORTED"></span><span id="error_cluster_join_aborted"></span>**ERRO DE \_ \_ JUNÇÃO DE CLUSTER \_ ANULADA**
 </dt> <dd> <dl> <dt>
 
 5074 (0x13D2)
@@ -2407,12 +2407,12 @@ O nó do cluster está sendo desligado.
 
 
 
-A operação de ingresso no cluster foi anulada.
+A operação de junção de cluster foi anulada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_INCOMPATIBLE_VERSIONS"></span><span id="error_cluster_incompatible_versions"></span>**ERRO \_ de \_ versões incompatíveis do cluster \_**
+<span id="ERROR_CLUSTER_INCOMPATIBLE_VERSIONS"></span><span id="error_cluster_incompatible_versions"></span>**VERSÕES \_ INCOMPATÍVEIS DO CLUSTER \_ DE \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5075 (0x13D3)
@@ -2420,12 +2420,12 @@ A operação de ingresso no cluster foi anulada.
 
 
 
-A operação de ingresso no cluster falhou devido a versões de software incompatíveis entre o nó de junção e seu patrocinador.
+A operação de junção de cluster falhou devido a versões de software incompatíveis entre o nó de junção e seu responsável.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_MAXNUM_OF_RESOURCES_EXCEEDED"></span><span id="error_cluster_maxnum_of_resources_exceeded"></span>**ERRO \_ \_ de MAXNUM \_ do cluster de \_ recursos \_ excedido**
+<span id="ERROR_CLUSTER_MAXNUM_OF_RESOURCES_EXCEEDED"></span><span id="error_cluster_maxnum_of_resources_exceeded"></span>**ERRO \_ CLUSTER \_ MAXNUM DE RECURSOS \_ \_ \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 5076 (0x13D4)
@@ -2433,12 +2433,12 @@ A operação de ingresso no cluster falhou devido a versões de software incompa
 
 
 
-Este recurso não pode ser criado porque o cluster atingiu o limite do número de recursos que ele pode monitorar.
+Esse recurso não pode ser criado porque o cluster atingiu o limite do número de recursos que ele pode monitorar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_SYSTEM_CONFIG_CHANGED"></span><span id="error_cluster_system_config_changed"></span>**ERRO \_ de \_ configuração do sistema de cluster \_ \_ alterado**
+<span id="ERROR_CLUSTER_SYSTEM_CONFIG_CHANGED"></span><span id="error_cluster_system_config_changed"></span>**CONFIGURAÇÃO \_ DO SISTEMA DE CLUSTER DE ERROS \_ \_ \_ ALTERADA**
 </dt> <dd> <dl> <dt>
 
 5077 (0x13D5)
@@ -2446,12 +2446,12 @@ Este recurso não pode ser criado porque o cluster atingiu o limite do número d
 
 
 
-A configuração do sistema foi alterada durante a operação de ingresso ou formulário do cluster. A operação de ingresso ou formulário foi anulada.
+A configuração do sistema foi alterada durante a operação de junção ou formulário do cluster. A operação de junção ou formulário foi anulada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_RESOURCE_TYPE_NOT_FOUND"></span><span id="error_cluster_resource_type_not_found"></span>**ERRO de \_ tipo de recurso de cluster \_ \_ \_ não \_ encontrado**
+<span id="ERROR_CLUSTER_RESOURCE_TYPE_NOT_FOUND"></span><span id="error_cluster_resource_type_not_found"></span>**TIPO \_ DE RECURSO DE CLUSTER DE ERRO NÃO \_ \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5078 (0x13D6)
@@ -2464,7 +2464,7 @@ O tipo de recurso especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_RESTYPE_NOT_SUPPORTED"></span><span id="error_cluster_restype_not_supported"></span>**ERRO \_ RESTYPE de cluster \_ \_ não \_ suportado**
+<span id="ERROR_CLUSTER_RESTYPE_NOT_SUPPORTED"></span><span id="error_cluster_restype_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA \_ RESTYPE DE CLUSTER \_ DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 5079 (0x13D7)
@@ -2472,12 +2472,12 @@ O tipo de recurso especificado não foi encontrado.
 
 
 
-O nó especificado não oferece suporte a um recurso desse tipo. Isso pode ser devido a inconsistências de versão ou devido à ausência da DLL de recurso neste nó.
+O nó especificado não dá suporte a um recurso desse tipo. Isso pode ser devido a inconsistências de versão ou à ausência da DLL de recurso neste nó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_RESNAME_NOT_FOUND"></span><span id="error_cluster_resname_not_found"></span>**ERRO \_ RESNAME do cluster \_ \_ não \_ encontrado**
+<span id="ERROR_CLUSTER_RESNAME_NOT_FOUND"></span><span id="error_cluster_resname_not_found"></span>**ERRO \_ NOME DO CLUSTER NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5080 (0x13D8)
@@ -2485,12 +2485,12 @@ O nó especificado não oferece suporte a um recurso desse tipo. Isso pode ser d
 
 
 
-Não há suporte para o nome de recurso especificado nesta DLL de recurso. Isso pode ser devido a um nome (ou alterado) inadequado fornecido à DLL de recurso.
+Não há suporte para o nome do recurso especificado por essa DLL de recurso. Isso pode ser devido a um nome ruim (ou alterado) fornecido para a DLL do recurso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NO_RPC_PACKAGES_REGISTERED"></span><span id="error_cluster_no_rpc_packages_registered"></span>**ERRO \_ de \_ cluster \_ sem \_ pacotes RPC \_ registrados**
+<span id="ERROR_CLUSTER_NO_RPC_PACKAGES_REGISTERED"></span><span id="error_cluster_no_rpc_packages_registered"></span>**CLUSTER \_ DE ERRO NENHUM PACOTE \_ \_ RPC \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 5081 (0x13D9)
@@ -2498,12 +2498,12 @@ Não há suporte para o nome de recurso especificado nesta DLL de recurso. Isso 
 
 
 
-Nenhum pacote de autenticação pôde ser registrado com o servidor RPC.
+Nenhum pacote de autenticação pode ser registrado com o servidor RPC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_OWNER_NOT_IN_PREFLIST"></span><span id="error_cluster_owner_not_in_preflist"></span>**ERRO \_ o \_ proprietário \_ do cluster não está \_ em \_ preflist**
+<span id="ERROR_CLUSTER_OWNER_NOT_IN_PREFLIST"></span><span id="error_cluster_owner_not_in_preflist"></span>**PROPRIETÁRIO \_ DO CLUSTER DE ERROS NÃO EM \_ \_ \_ \_ PREFLIST**
 </dt> <dd> <dl> <dt>
 
 5082 (0x13DA)
@@ -2511,12 +2511,12 @@ Nenhum pacote de autenticação pôde ser registrado com o servidor RPC.
 
 
 
-Não é possível colocar o grupo online porque o proprietário do grupo não está na lista de preferenciais do grupo. Para alterar o nó proprietário do grupo, mova o grupo.
+Não é possível colocar o grupo online porque o proprietário do grupo não está na lista preferencial para o grupo. Para alterar o nó proprietário do grupo, mova o grupo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_DATABASE_SEQMISMATCH"></span><span id="error_cluster_database_seqmismatch"></span>**ERRO \_ de \_ banco de dados de cluster \_ SEQMISMATCH**
+<span id="ERROR_CLUSTER_DATABASE_SEQMISMATCH"></span><span id="error_cluster_database_seqmismatch"></span>**\_SEQMISMATCH DO BANCO DE DADOS DE CLUSTER \_ \_ DE ERROS**
 </dt> <dd> <dl> <dt>
 
 5083 (0x13DB)
@@ -2524,12 +2524,12 @@ Não é possível colocar o grupo online porque o proprietário do grupo não es
 
 
 
-A operação de junção falhou porque o número de sequência do banco de dados do cluster foi alterado ou é incompatível com o nó do armário. Isso pode ocorrer durante uma operação de junção se o banco de dados do cluster fosse alterado durante a junção.
+A operação de junção falhou porque o número da sequência de banco de dados do cluster foi alterado ou é incompatível com o nó do cofre. Isso pode acontecer durante uma operação de junção se o banco de dados de cluster foi sendo mudado durante a junção.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESMON_INVALID_STATE"></span><span id="error_resmon_invalid_state"></span>**ERRO \_ resmon \_ \_ estado inválido**
+<span id="ERROR_RESMON_INVALID_STATE"></span><span id="error_resmon_invalid_state"></span>**ERRO \_ ESTADO INVÁLIDO DE RESMON \_ \_**
 </dt> <dd> <dl> <dt>
 
 5084 (0x13DC)
@@ -2542,7 +2542,7 @@ O monitor de recursos não permitirá que a operação de falha seja executada e
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_GUM_NOT_LOCKER"></span><span id="error_cluster_gum_not_locker"></span>**ERRO de \_ cluster \_ triz \_ não \_ bloqueador**
+<span id="ERROR_CLUSTER_GUM_NOT_LOCKER"></span><span id="error_cluster_gum_not_locker"></span>**ERRO \_ CLUSTER \_ NÃO COFRE \_ \_**
 </dt> <dd> <dl> <dt>
 
 5085 (0x13DD)
@@ -2550,12 +2550,12 @@ O monitor de recursos não permitirá que a operação de falha seja executada e
 
 
 
-Um código não bloqueador recebeu uma solicitação para reservar o bloqueio para fazer atualizações globais.
+Um código não cofre recebeu uma solicitação para reservar o bloqueio para fazer atualizações globais.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_QUORUM_DISK_NOT_FOUND"></span><span id="error_quorum_disk_not_found"></span>**ERRO \_ de \_ disco de quorum \_ não \_ encontrado**
+<span id="ERROR_QUORUM_DISK_NOT_FOUND"></span><span id="error_quorum_disk_not_found"></span>**DISCO \_ DE QUORUM \_ DE ERRO \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5086 (0x13DE)
@@ -2568,7 +2568,7 @@ O disco de quorum não pôde ser localizado pelo serviço de cluster.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DATABASE_BACKUP_CORRUPT"></span><span id="error_database_backup_corrupt"></span>**ERRO de \_ backup do banco de dados \_ \_ corrompido**
+<span id="ERROR_DATABASE_BACKUP_CORRUPT"></span><span id="error_database_backup_corrupt"></span>**ERRO BACKUP \_ DO BANCO DE DADOS \_ \_ CORROMPIDO**
 </dt> <dd> <dl> <dt>
 
 5087 (0x13DF)
@@ -2576,12 +2576,12 @@ O disco de quorum não pôde ser localizado pelo serviço de cluster.
 
 
 
-O banco de dados de cluster de backup é possivelmente corrompido.
+O banco de dados de cluster com backup possivelmente está corrompido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NODE_ALREADY_HAS_DFS_ROOT"></span><span id="error_cluster_node_already_has_dfs_root"></span>**o \_ nó de cluster de erros \_ \_ já \_ tem a \_ \_ raiz DFS**
+<span id="ERROR_CLUSTER_NODE_ALREADY_HAS_DFS_ROOT"></span><span id="error_cluster_node_already_has_dfs_root"></span>**O \_ NÓ DO CLUSTER DE ERROS JÁ TEM A RAIZ DO \_ \_ \_ \_ \_ DFS**
 </dt> <dd> <dl> <dt>
 
 5088 (0x13E0)
@@ -2589,12 +2589,12 @@ O banco de dados de cluster de backup é possivelmente corrompido.
 
 
 
-Já existe uma raiz DFS neste nó de cluster.
+Uma raiz dfs já existe nesse nó de cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_PROPERTY_UNCHANGEABLE"></span><span id="error_resource_property_unchangeable"></span>**Propriedade de recurso de erro \_ \_ \_ inalterável**
+<span id="ERROR_RESOURCE_PROPERTY_UNCHANGEABLE"></span><span id="error_resource_property_unchangeable"></span>**PROPRIEDADE \_ DE RECURSO DE ERRO \_ \_ INALTERÁVEL**
 </dt> <dd> <dl> <dt>
 
 5089 (0x13E1)
@@ -2607,7 +2607,7 @@ Falha ao tentar modificar uma propriedade de recurso porque ela está em conflit
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_MEMBERSHIP_INVALID_STATE"></span><span id="error_cluster_membership_invalid_state"></span>**ERRO \_ \_ estado inválido de associação de cluster \_ \_**
+<span id="ERROR_CLUSTER_MEMBERSHIP_INVALID_STATE"></span><span id="error_cluster_membership_invalid_state"></span>**ESTADO \_ INVÁLIDO DE ASSOCIAÇÃO DE CLUSTER DE \_ \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 5890 (0x1702)
@@ -2615,12 +2615,12 @@ Falha ao tentar modificar uma propriedade de recurso porque ela está em conflit
 
 
 
-Foi tentada uma operação que é incompatível com o estado de associação atual do nó.
+Foi tentada uma operação incompatível com o estado de associação atual do nó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_QUORUMLOG_NOT_FOUND"></span><span id="error_cluster_quorumlog_not_found"></span>**ERRO \_ QUORUMLOG do cluster \_ \_ não \_ encontrado**
+<span id="ERROR_CLUSTER_QUORUMLOG_NOT_FOUND"></span><span id="error_cluster_quorumlog_not_found"></span>**ERRO \_ \_ QUORUMLOG DO CLUSTER \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 5891 (0x1703)
@@ -2633,7 +2633,7 @@ O recurso de quorum não contém o log de quorum.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_MEMBERSHIP_HALT"></span><span id="error_cluster_membership_halt"></span>**ERRO \_ ao \_ interromper a associação do cluster \_**
+<span id="ERROR_CLUSTER_MEMBERSHIP_HALT"></span><span id="error_cluster_membership_halt"></span>**PARADA DE \_ ASSOCIAÇÃO DO CLUSTER DE \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5892 (0x1704)
@@ -2646,7 +2646,7 @@ O mecanismo de associação solicitou o desligamento do serviço de cluster nest
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_INSTANCE_ID_MISMATCH"></span><span id="error_cluster_instance_id_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de ID de instância de cluster \_**
+<span id="ERROR_CLUSTER_INSTANCE_ID_MISMATCH"></span><span id="error_cluster_instance_id_mismatch"></span>**INCOMPATIBILIDADE \_ \_ DE ID DA INSTÂNCIA DE CLUSTER \_ DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 5893 (0x1705)
@@ -2654,12 +2654,12 @@ O mecanismo de associação solicitou o desligamento do serviço de cluster nest
 
 
 
-Falha na operação de junção porque a ID de instância de cluster do nó de junção não corresponde à ID de instância de cluster do nó patrocinador.
+A operação de junção falhou porque a ID da instância de cluster do nó de junção não é correspondente à ID da instância de cluster do nó do responsável.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NETWORK_NOT_FOUND_FOR_IP"></span><span id="error_cluster_network_not_found_for_ip"></span>**ERRO \_ \_ de rede \_ de cluster não \_ encontrada \_ para \_ IP**
+<span id="ERROR_CLUSTER_NETWORK_NOT_FOUND_FOR_IP"></span><span id="error_cluster_network_not_found_for_ip"></span>**REDE \_ DE CLUSTER DE ERROS NÃO ENCONTRADA PARA \_ \_ \_ \_ \_ IP**
 </dt> <dd> <dl> <dt>
 
 5894 (0x1706)
@@ -2672,7 +2672,7 @@ Não foi possível encontrar uma rede de cluster correspondente para o endereço
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_PROPERTY_DATA_TYPE_MISMATCH"></span><span id="error_cluster_property_data_type_mismatch"></span>**ERRO de \_ tipo de dados de Propriedade do cluster \_ \_ \_ \_ incompatível**
+<span id="ERROR_CLUSTER_PROPERTY_DATA_TYPE_MISMATCH"></span><span id="error_cluster_property_data_type_mismatch"></span>**INCOMPATIBILIDADE \_ DO TIPO DE DADOS DE PROPRIEDADE DO CLUSTER DE \_ \_ \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5895 (0x1707)
@@ -2680,12 +2680,12 @@ Não foi possível encontrar uma rede de cluster correspondente para o endereço
 
 
 
-O tipo de dados real da propriedade não correspondeu ao tipo de dados esperado da propriedade.
+O tipo de dados real da propriedade não corresponder ao tipo de dados esperado da propriedade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_EVICT_WITHOUT_CLEANUP"></span><span id="error_cluster_evict_without_cleanup"></span>**remoção de cluster de erros \_ \_ \_ sem \_ limpeza**
+<span id="ERROR_CLUSTER_EVICT_WITHOUT_CLEANUP"></span><span id="error_cluster_evict_without_cleanup"></span>**ERRO \_ DE \_ RESSALÇÃO \_ DO CLUSTER SEM \_ LIMPEZA**
 </dt> <dd> <dl> <dt>
 
 5896 (0x1708)
@@ -2693,12 +2693,12 @@ O tipo de dados real da propriedade não correspondeu ao tipo de dados esperado 
 
 
 
-O nó de cluster foi removido do cluster com êxito, mas o nó não foi limpo. Para determinar quais etapas de limpeza falharam e como recuperar, consulte o log de eventos do aplicativo clustering de failover usando Visualizador de Eventos.
+O nó de cluster foi despejado do cluster com êxito, mas o nó não foi limpo. Para determinar quais etapas de limpeza falharam e como recuperar, consulte o log de eventos do aplicativo clustering de failover usando Visualizador de Eventos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_PARAMETER_MISMATCH"></span><span id="error_cluster_parameter_mismatch"></span>**ERRO \_ de \_ incompatibilidade de parâmetro de cluster \_**
+<span id="ERROR_CLUSTER_PARAMETER_MISMATCH"></span><span id="error_cluster_parameter_mismatch"></span>**INCOMPATIBILIDADE \_ DE PARÂMETRO DE CLUSTER DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 5897 (0x1709)
@@ -2711,7 +2711,7 @@ Dois ou mais valores de parâmetro especificados para as propriedades de um recu
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NODE_CANNOT_BE_CLUSTERED"></span><span id="error_node_cannot_be_clustered"></span>**o \_ nó de erro \_ não pode \_ ser \_ clusterizado**
+<span id="ERROR_NODE_CANNOT_BE_CLUSTERED"></span><span id="error_node_cannot_be_clustered"></span>**O \_ NÓ DE ERRO NÃO PODE SER \_ \_ \_ CLUSTERADO**
 </dt> <dd> <dl> <dt>
 
 5898 (0x170A)
@@ -2719,12 +2719,12 @@ Dois ou mais valores de parâmetro especificados para as propriedades de um recu
 
 
 
-Este computador não pode se tornar membro de um cluster.
+Esse computador não pode ser membro de um cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_WRONG_OS_VERSION"></span><span id="error_cluster_wrong_os_version"></span>**ERRO \_ na \_ \_ versão do so incorreta do cluster \_**
+<span id="ERROR_CLUSTER_WRONG_OS_VERSION"></span><span id="error_cluster_wrong_os_version"></span>**VERSÃO DO \_ SISTEMA OPERACIONAL ERRADA DO CLUSTER DE \_ \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5899 (0x170B)
@@ -2732,12 +2732,12 @@ Este computador não pode se tornar membro de um cluster.
 
 
 
-Este computador não pode se tornar membro de um cluster porque ele não tem a versão correta do Windows instalada.
+Esse computador não pode se fazer membro de um cluster porque não tem a versão correta do Windows instalado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_CANT_CREATE_DUP_CLUSTER_NAME"></span><span id="error_cluster_cant_create_dup_cluster_name"></span>**ERRO o \_ cluster não \_ consegue criar o nome do \_ \_ \_ cluster dup \_**
+<span id="ERROR_CLUSTER_CANT_CREATE_DUP_CLUSTER_NAME"></span><span id="error_cluster_cant_create_dup_cluster_name"></span>**O \_ CLUSTER DE ERROS NÃO PODE CRIAR O NOME DO CLUSTER \_ \_ \_ \_ \_ DUP**
 </dt> <dd> <dl> <dt>
 
 5900 (0x170C)
@@ -2745,12 +2745,12 @@ Este computador não pode se tornar membro de um cluster porque ele não tem a v
 
 
 
-Um cluster não pode ser criado com o nome de cluster especificado porque o nome do cluster já está em uso. Especifique um nome diferente para o cluster.
+Um cluster não pode ser criado com o nome do cluster especificado porque esse nome de cluster já está em uso. Especifique um nome diferente para o cluster.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSCFG_ALREADY_COMMITTED"></span><span id="error_cluscfg_already_committed"></span>**ERRO \_ CLUSCFG \_ já \_ confirmado**
+<span id="ERROR_CLUSCFG_ALREADY_COMMITTED"></span><span id="error_cluscfg_already_committed"></span>**ERRO \_ CLUSCFG \_ JÁ FOI \_ COMPROMETIDO**
 </dt> <dd> <dl> <dt>
 
 5901 (0x170D)
@@ -2758,12 +2758,12 @@ Um cluster não pode ser criado com o nome de cluster especificado porque o nome
 
 
 
-A ação de configuração de cluster já foi confirmada.
+A ação de configuração de cluster já foi comprometida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSCFG_ROLLBACK_FAILED"></span><span id="error_cluscfg_rollback_failed"></span>**ERRO \_ CLUSCFG \_ \_ falha na reversão**
+<span id="ERROR_CLUSCFG_ROLLBACK_FAILED"></span><span id="error_cluscfg_rollback_failed"></span>**ERRO \_ FALHA NA RE \_ ROLLBACK DO CLUSCFG \_**
 </dt> <dd> <dl> <dt>
 
 5902 (0x170E)
@@ -2776,7 +2776,7 @@ Não foi possível reverter a ação de configuração do cluster.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSCFG_SYSTEM_DISK_DRIVE_LETTER_CONFLICT"></span><span id="error_cluscfg_system_disk_drive_letter_conflict"></span>**ERRO \_ CLUSCFG \_ \_ conflito de \_ letra da unidade de disco do \_ sistema \_**
+<span id="ERROR_CLUSCFG_SYSTEM_DISK_DRIVE_LETTER_CONFLICT"></span><span id="error_cluscfg_system_disk_drive_letter_conflict"></span>**ERRO \_ CONFLITO DE LETRA DA UNIDADE DE DISCO \_ DO SISTEMA CLUSCFG \_ \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 5903 (0x170F)
@@ -2784,12 +2784,12 @@ Não foi possível reverter a ação de configuração do cluster.
 
 
 
-A letra da unidade atribuída a um disco do sistema em um nó está em conflito com a letra da unidade atribuída a um disco em outro nó.
+A letra da unidade atribuída a um disco do sistema em um nó entrou em conflito com a letra da unidade atribuída a um disco em outro nó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_OLD_VERSION"></span><span id="error_cluster_old_version"></span>**ERRO \_ de \_ versão antiga do cluster \_**
+<span id="ERROR_CLUSTER_OLD_VERSION"></span><span id="error_cluster_old_version"></span>**VERSÃO \_ ANTIGA DO CLUSTER DE \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5904 (0x1710)
@@ -2797,12 +2797,12 @@ A letra da unidade atribuída a um disco do sistema em um nó está em conflito 
 
 
 
-Um ou mais nós no cluster estão executando uma versão do Windows que não oferece suporte a essa operação.
+Um ou mais nós no cluster estão executando uma versão do Windows que não dá suporte a essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_MISMATCHED_COMPUTER_ACCT_NAME"></span><span id="error_cluster_mismatched_computer_acct_name"></span>**ERRO \_ de \_ nome de conta do computador incompatível do cluster \_ \_ \_**
+<span id="ERROR_CLUSTER_MISMATCHED_COMPUTER_ACCT_NAME"></span><span id="error_cluster_mismatched_computer_acct_name"></span>**NOME DE ACCT DO \_ \_ COMPUTADOR COM \_ \_ INCOMPATIBILIDADE DO CLUSTER DE \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5905 (0x1711)
@@ -2810,12 +2810,12 @@ Um ou mais nós no cluster estão executando uma versão do Windows que não ofe
 
 
 
-O nome da conta de computador correspondente não corresponde ao nome de rede deste recurso.
+O nome da conta de computador correspondente não corresponde ao Nome da Rede desse recurso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_NO_NET_ADAPTERS"></span><span id="error_cluster_no_net_adapters"></span>**CLUSTER de erros \_ \_ sem \_ \_ adaptadores de rede**
+<span id="ERROR_CLUSTER_NO_NET_ADAPTERS"></span><span id="error_cluster_no_net_adapters"></span>**CLUSTER \_ DE ERRO SEM \_ \_ \_ ADAPTADORES NET**
 </dt> <dd> <dl> <dt>
 
 5906 (0x1712)
@@ -2823,12 +2823,12 @@ O nome da conta de computador correspondente não corresponde ao nome de rede de
 
 
 
-Não há adaptadores de rede disponíveis.
+Nenhum adaptador de rede está disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_POISONED"></span><span id="error_cluster_poisoned"></span>**ERRO de \_ cluster \_ inviabilizada**
+<span id="ERROR_CLUSTER_POISONED"></span><span id="error_cluster_poisoned"></span>**CLUSTER \_ DE ERRO \_ SUSPEITO**
 </dt> <dd> <dl> <dt>
 
 5907 (0x1713)
@@ -2836,12 +2836,12 @@ Não há adaptadores de rede disponíveis.
 
 
 
-O nó do cluster foi inviabilizada.
+O nó do cluster foi suspeito.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_GROUP_MOVING"></span><span id="error_cluster_group_moving"></span>**ERRO \_ ao \_ mover grupo de cluster \_**
+<span id="ERROR_CLUSTER_GROUP_MOVING"></span><span id="error_cluster_group_moving"></span>**ERRO DE \_ \_ MOVIMENTAÇÃO DO GRUPO DE \_ CLUSTERS**
 </dt> <dd> <dl> <dt>
 
 5908 (0x1714)
@@ -2849,12 +2849,12 @@ O nó do cluster foi inviabilizada.
 
 
 
-O grupo não pode aceitar a solicitação porque está se movendo para outro nó.
+O grupo não pode aceitar a solicitação, pois está mudando para outro nó.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_RESOURCE_TYPE_BUSY"></span><span id="error_cluster_resource_type_busy"></span>**ERRO \_ tipo de recurso de cluster \_ \_ \_ ocupado**
+<span id="ERROR_CLUSTER_RESOURCE_TYPE_BUSY"></span><span id="error_cluster_resource_type_busy"></span>**TIPO DE \_ RECURSO DE CLUSTER DE ERRO \_ \_ \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 5909 (0x1715)
@@ -2867,7 +2867,7 @@ O tipo de recurso não pode aceitar a solicitação, pois está muito ocupado ex
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_CALL_TIMED_OUT"></span><span id="error_resource_call_timed_out"></span>**a \_ chamada de recurso de erro \_ atingiu o \_ tempo \_ limite**
+<span id="ERROR_RESOURCE_CALL_TIMED_OUT"></span><span id="error_resource_call_timed_out"></span>**A \_ CHAMADA DE RECURSO DE ERRO FOI \_ \_ \_ ESGOTADA**
 </dt> <dd> <dl> <dt>
 
 5910 (0x1716)
@@ -2875,12 +2875,12 @@ O tipo de recurso não pode aceitar a solicitação, pois está muito ocupado ex
 
 
 
-A chamada para a DLL de recurso de cluster atingiu o tempo limite.
+A chamada para a DLL de recurso de cluster foi esgotada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CLUSTER_IPV6_ADDRESS"></span><span id="error_invalid_cluster_ipv6_address"></span>**ERRO \_ \_ endereço IPv6 do cluster inválido \_ \_**
+<span id="ERROR_INVALID_CLUSTER_IPV6_ADDRESS"></span><span id="error_invalid_cluster_ipv6_address"></span>**ERRO \_ ENDEREÇO \_ IPV6 DE CLUSTER \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 5911 (0x1717)
@@ -2888,12 +2888,12 @@ A chamada para a DLL de recurso de cluster atingiu o tempo limite.
 
 
 
-O endereço não é válido para um recurso de endereço IPv6. Um endereço IPv6 global é necessário e deve corresponder a uma rede de cluster. Os endereços de compatibilidade não são permitidos.
+O endereço não é válido para um recurso de Endereço IPv6. Um endereço IPv6 global é necessário e deve corresponder a uma rede de cluster. Endereços de compatibilidade não são permitidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_INTERNAL_INVALID_FUNCTION"></span><span id="error_cluster_internal_invalid_function"></span>**ERRO \_ de \_ \_ função interna inválida do cluster \_**
+<span id="ERROR_CLUSTER_INTERNAL_INVALID_FUNCTION"></span><span id="error_cluster_internal_invalid_function"></span>**FUNÇÃO \_ INVÁLIDA INTERNA DO CLUSTER DE \_ \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5912 (0x1718)
@@ -2901,12 +2901,12 @@ O endereço não é válido para um recurso de endereço IPv6. Um endereço IPv6
 
 
 
-Ocorreu um erro de cluster interno. Uma chamada para uma função inválida foi tentada.
+Ocorreu um erro de cluster interno. Foi tentada uma chamada para uma função inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_PARAMETER_OUT_OF_BOUNDS"></span><span id="error_cluster_parameter_out_of_bounds"></span>**ERRO \_ \_ de parâmetro \_ de cluster fora \_ dos \_ limites**
+<span id="ERROR_CLUSTER_PARAMETER_OUT_OF_BOUNDS"></span><span id="error_cluster_parameter_out_of_bounds"></span>**PARÂMETRO \_ DE CLUSTER DE ERRO FORA DOS \_ \_ \_ \_ LIMITES**
 </dt> <dd> <dl> <dt>
 
 5913 (0x1719)
@@ -2919,7 +2919,7 @@ Um valor de parâmetro está fora do intervalo aceitável.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLUSTER_PARTIAL_SEND"></span><span id="error_cluster_partial_send"></span>**ERRO \_ de \_ envio parcial do cluster \_**
+<span id="ERROR_CLUSTER_PARTIAL_SEND"></span><span id="error_cluster_partial_send"></span>**ENVIO \_ PARCIAL DO CLUSTER DE \_ \_ ERROS**
 </dt> <dd> <dl> <dt>
 
 5914 (0x171A)
@@ -2927,7 +2927,7 @@ Um valor de parâmetro está fora do intervalo aceitável.
 
 
 
-Ocorreu um erro de rede ao enviar dados para outro nó no cluster. O número de bytes transmitidos era menor que o necessário.
+Ocorreu um erro de rede ao enviar dados para outro nó no cluster. O número de bytes transmitidos foi menor que o necessário.
 
 
 </dt> </dl> </dd> <dt>
@@ -3096,7 +3096,7 @@ A rede de cluster não é válida para um recurso de endereço IPv6 ou não corr
 
 
 
-A rede de cluster não é válida para um recurso de túnel IPv6. Verifique a configuração do recurso de endereço IP do qual o recurso de túnel IPv6 depende.
+a rede de cluster não é válida para um recurso de Tunnel IPv6. verifique a configuração do recurso de endereço IP no qual o recurso de Tunnel IPv6 depende.
 
 
 </dt> </dl> </dd> <dt>
@@ -3109,7 +3109,7 @@ A rede de cluster não é válida para um recurso de túnel IPv6. Verifique a co
 
 
 
-O recurso de quorum não pode residir no grupo de armazenamento disponível.
+o recurso de Quorum não pode residir no grupo de Armazenamento disponível.
 
 
 </dt> </dl> </dd> <dt>
@@ -3592,7 +3592,7 @@ O disco não está configurado de forma a ser usado com CSV. Os discos CSV devem
 
 
 
-O recurso deve fazer parte do grupo de armazenamento disponível para concluir esta ação.
+o recurso deve fazer parte do grupo de Armazenamento disponível para concluir esta ação.
 
 
 </dt> </dl> </dd> <dt>
@@ -3695,9 +3695,9 @@ A operação não pode ser concluída porque o recurso é uma máquina virtual d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 
 

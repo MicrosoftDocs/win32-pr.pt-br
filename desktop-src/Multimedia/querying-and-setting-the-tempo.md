@@ -11,12 +11,12 @@ keywords:
 - golpe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3927d2f04e1b073b25c262437620325dc5cd040
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c5db1c703272a477b36399335b68a81ce1e8711618acf205e702045704b24974
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805716"
 ---
 # <a name="querying-and-setting-the-tempo"></a>Consultando e definindo o tempo
 
@@ -26,9 +26,9 @@ Para alterar o tempo, use o comando [**MCI \_ set**](mci-set.md) com a estrutura
 
 A maneira como o tempo é representado depende do tipo de divisão da sequência. Se o tipo de divisão for PPQN, o tempo será representado em batidas por minuto. Se o tipo de divisão for um dos tipos de divisão SMPTE, o tempo será representado em quadros por segundo. Para obter informações sobre como determinar o tipo de divisão de uma sequência, consulte [recuperando o tipo de divisão de sequência](retrieving-the-sequence-division-type.md).
 
- 
+ 
 
- 
+ 
 
 
 

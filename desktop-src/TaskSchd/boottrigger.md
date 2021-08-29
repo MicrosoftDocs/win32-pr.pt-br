@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 346a4bc7b20606f59c26b131590b92593d40d07e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ede15265a0ff492ddb062687c1ca45af77c32fd6319821b1c214b82dce002a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118860166"
 ---
 # <a name="boottrigger-object"></a>Objeto BootTrigger
 
@@ -41,7 +41,7 @@ O objeto **BootTrigger** tem essas propriedades.
 
 | Propriedade                                                            | Tipo de acesso           | Descrição                                                                                                                                                                                 |
 |:--------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Retardo**](boottrigger-delay.md)<br/>                       |                       | Obtém ou define um valor que indica a quantidade de tempo entre o momento em que o sistema é inicializado e quando a tarefa é iniciada.<br/>                                                           |
+| [**Atrasar**](boottrigger-delay.md)<br/>                       |                       | Obtém ou define um valor que indica a quantidade de tempo entre o momento em que o sistema é inicializado e quando a tarefa é iniciada.<br/>                                                           |
 | [**habilitado**](trigger-enabled.md)<br/>                       | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define um valor booliano que indica se o gatilho está habilitado.<br/>                                                |
 | [**Limite de fim**](trigger-endboundary.md)<br/>               | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define a data e a hora em que o gatilho é desativado. O gatilho não pode iniciar a tarefa depois que ela é desativada.<br/> |
 | [**ExecutionTimeLimit**](trigger-executiontimelimit.md)<br/> | Leitura/gravação<br/> | Herdado do objeto de [**gatilho**](trigger.md) . Obtém ou define a quantidade máxima de tempo que a tarefa iniciada pelo gatilho tem permissão para ser executada.<br/>                           |
@@ -72,8 +72,8 @@ Para obter mais informações e código de exemplo para esse objeto de script, c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

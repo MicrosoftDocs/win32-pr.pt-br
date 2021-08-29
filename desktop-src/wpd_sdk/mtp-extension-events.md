@@ -4,22 +4,22 @@ ms.assetid: c04554cd-d68d-455e-afa3-29d4186dad65
 title: Eventos de extensão MTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10389df9105615befa9ba0f32824615977cc3cb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a95999557e67ee8929fddc56dd7fd8eb43e6831af9f81f884303a2089bbe3fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105816021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806706"
 ---
 # <a name="mtp-extension-events"></a>Eventos de extensão MTP
 
-Os eventos notificam um aplicativo de que as alterações ocorreram em, ou com, um dispositivo. Por exemplo, um aplicativo pode se registrar para receber notificações de que um dispositivo foi removido.
+Os eventos notificam um aplicativo de que ocorreram alterações em ou com um dispositivo. Por exemplo, um aplicativo pode se registrar para receber notficações de que um dispositivo foi removido.
 
-## <a name="vendor-extended-event-codes"></a>Fornecedor-códigos de eventos estendidos
+## <a name="vendor-extended-event-codes"></a>Códigos de evento estendidos pelo fornecedor
 
-Quando um fabricante de dispositivo dá suporte a um evento estendido pelo fornecedor, o driver combina o código de evento do fornecedor (UINT16) com os 16 bits mais altos do GUID de **\_ \_ \_ \_ \_ eventos estendidos do fornecedor do evento do WPD** .
+Quando um fabricante de dispositivo dá suporte a um evento estendido pelo fornecedor, o driver combina o código de evento do fornecedor (UINT16) com os 16 bits mais altos do GUID de EVENTOS ESTENDIDOs do FORNECEDOR de **\_ EVENTOS \_ WPD MTP. \_ \_ \_**
 
-Por exemplo, se o código estendido pelo fornecedor for 0xC001, o GUID resultante será como mostrado no exemplo a seguir:
+Por exemplo, se o código estendido pelo fornecedor for 0xC001, o GUID resultante será conforme mostrado no exemplo a seguir:
 
 
 ```C++
@@ -28,9 +28,9 @@ Por exemplo, se o código estendido pelo fornecedor for 0xC001, o GUID resultant
 
 
 
-## <a name="vendor-extended-event-parameters"></a>Fornecedor-parâmetros de evento estendido
+## <a name="vendor-extended-event-parameters"></a>Parâmetros de evento estendidos pelo fornecedor
 
-Os parâmetros para um evento estendido de fornecedor são relatados pelo GUID de eventos de **\_ parâmetro de evento \_ \_ \_ WPD** e pelos **\_ \_ \_ parâmetros de \_ evento \_ MTP ext de propriedade WPD**, que é uma coleção de **PROPVARIANTS**. Esses **PROPVARIANTS** correspondem aos parâmetros do evento. Se não houver parâmetros, essa coleção estará vazia.
+Os parâmetros para um evento estendido pelo fornecedor são relatados pelo GUID da **\_ \_ \_ \_ ID** DE EVENTO DE PARÂMETRO DE EVENTO WPD e pela PROPRIEDADE **WPD \_ \_ MTP \_ EXT EVENT \_ \_ PARAMS**, que é uma coleção **de PROPVARIANTS**. Esses **PROPVARIANTS** correspondem aos parâmetros de evento. Se não houver parâmetros, essa coleção será vazia.
 
 
 ```C++
@@ -43,7 +43,7 @@ Os parâmetros para um evento estendido de fornecedor são relatados pelo GUID d
 
 <dl> <dt>
 
-[Suporte a extensões de MTP](supporting-mtp-extensions.md)
+[Suporte a extensões MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

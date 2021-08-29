@@ -3,7 +3,7 @@ title: Atributo WM/MediaOriginalChannel
 description: O atributo WM/MediaOriginalChannel especifica o canal no qual uma determinada apresentação foi transmitida pela primeira vez.
 ms.assetid: b183312d-bd48-46e4-832c-724c9770a9c9
 keywords:
-- Atributo WM/MediaOriginalChannel do Windows Media Player
+- Windows Media Player do atributo WM/MediaOriginalChannel
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd3a8f6fb860f5256d21bb0b9842855b55f1a748
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1c66f8808ea22e8c8efa5d43e2cd68b9dd0ea2a46a941046b9681089ba665790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053864"
 ---
 # <a name="wmmediaoriginalchannel-attribute"></a>Atributo WM/MediaOriginalChannel
 
@@ -29,7 +29,7 @@ O atributo **WM/MediaOriginalChannel** especifica o canal no qual uma determinad
 
 ## <a name="remarks"></a>Comentários
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMMediaOriginalChannel.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMMediaOriginalChannel.
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 

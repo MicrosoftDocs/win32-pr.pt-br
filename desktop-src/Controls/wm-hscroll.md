@@ -3,7 +3,7 @@ title: Mensagem de WM_HSCROLL (WinUser. h)
 description: A mensagem do WM \_ HSCROLL é enviada para uma janela quando um evento de rolagem ocorre na barra de rolagem horizontal padrão da janela.
 ms.assetid: 197e522f-defd-4356-8521-5b5dfda596da
 keywords:
-- Controles de WM_HSCROLL de mensagens do Windows
+- controles de Windows de mensagem de WM_HSCROLL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f26eec697e91ee8862912c0f93bcd6e8c4e5c56e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 965ac6841149934142fc4624ad14e327d4b524288c78e9f22fbf1e935c0a1e77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957495"
 ---
 # <a name="wm_hscroll-message"></a>Mensagem do WM \_ HSCROLL
 
@@ -75,7 +75,7 @@ Se a mensagem for enviada por um controle de barra de rolagem, esse parâmetro s
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -95,9 +95,9 @@ No entanto, como as funções [**SetScrollInfo**](/windows/desktop/api/Winuser/n
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

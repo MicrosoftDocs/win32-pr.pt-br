@@ -1,11 +1,11 @@
 ---
 title: Propriedade currentItem IWMPControls
-description: A propriedade currentItem Obtém ou define o item de mídia atual em uma lista de reprodução.
+description: A propriedade currentItem obtém ou define o item de mídia atual em uma playlist.
 ms.assetid: 0a331b1f-95bd-48ea-b951-1ca35cc96865
 keywords:
-- Propriedade currentItem Windows Media Player
-- Propriedade currentItem Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, Propriedade currentItem
+- propriedade currentItem Windows Media Player
+- propriedade currentItem Windows Media Player , interface IWMPControls
+- Interface IWMPControls Windows Media Player propriedade , currentItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aae04eb333e2fd347fa6f88b33ec2482a4dd8fd7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d8193dc349524495e021dc048ac4be3673d38ec7da30aa1bb72d94960a0989f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053654"
 ---
-# <a name="iwmpcontrolscurrentitem-property"></a>Propriedade IWMPControls:: currentItem
+# <a name="iwmpcontrolscurrentitem-property"></a>Propriedade IWMPControls::currentItem
 
-A propriedade **currentItem** Obtém ou define o item de mídia atual em uma lista de reprodução.
+A **propriedade currentItem** obtém ou define o item de mídia atual em uma playlist.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,15 +46,15 @@ Public Property currentItem As IWMPMedia
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma interface **WMPLib. IWMPMedia** que representa o item de mídia.
+Uma interface **WMPLib.IWMPMedia** que representa o item de mídia.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade funciona apenas com itens na lista de reprodução atual. Não há suporte para a configuração **currentItem** para a interface de um item de mídia salvo.
+Essa propriedade funciona apenas com itens na playlist atual. Não **há suporte para a configuração currentItem** na interface de um item de mídia salvo.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **currentItem** para definir o item de mídia atual do jogador como um item selecionado em uma caixa de listagem. A caixa de listagem foi preenchida com todos os itens na lista de reprodução atual. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa currentItem** para definir o item de mídia atual do player como um item selecionado em uma caixa de listagem. A caixa de listagem foi preenchida com todos os itens na playlist atual. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -103,7 +103,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -119,7 +119,7 @@ End Sub
 [**IWMPMediaInterface (VB e C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName(VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

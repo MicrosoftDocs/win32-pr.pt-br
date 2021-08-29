@@ -1,40 +1,40 @@
 ---
-title: Atributo StartArrow de VML
-description: Atributo StartArrow de VML
+title: Atributo StartArrow do VML
+description: Atributo StartArrow do VML
 ms.assetid: 484dfcdb-f68d-40f9-9a83-18abb054d1c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca2c17569750c1e655a5538ca5bf233e49f827e4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 97b0d1ce8d352ef119e2745d0f7768332ad074d134877b03433aa788f1bb2e49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754478"
 ---
-# <a name="vml-startarrow-attribute"></a>Atributo StartArrow de VML
+# <a name="vml-startarrow-attribute"></a>Atributo StartArrow do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a ponta de seta para o início de uma linha. Leitura/gravação. **Cadeia de caracteres**.
+Define a seta para o início de uma linha. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
-[Pincel](msdn-online-vml-stroke-element.md)
+[Curso](msdn-online-vml-stroke-element.md)
 
 **Sintaxe de marca**
 
-<v: *Element* startarrow = " *expressão* " >
+<v: *elemento* startarrow=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . startarrow = "*expressão*"
+*expressão element* .startarrow=""
 
-*expressão* = de *elemento*. startarrow
+*expressão* = *elemento*.startarrow
 
 **Comentários**
 
@@ -47,11 +47,11 @@ Os valores são:
 -   Oval
 -   Aberto
 
-Atributo padrão da VML
+Atributo padrão VML
 
 **Exemplo**
 
-Uma linha é desenhada com uma ponta de seta clássica no início do traço.
+Uma linha é desenhada com uma seta clássica no início do traço.
 
 
 ```HTML
@@ -63,6 +63,6 @@ Uma linha é desenhada com uma ponta de seta clássica no início do traço.
 
 
 
- 
+ 
 
- 
+ 

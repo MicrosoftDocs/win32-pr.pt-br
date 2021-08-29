@@ -6,12 +6,12 @@ keywords:
 - Valor do registro RunAs COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3139d12864eb92cc153b919dc4b9b9a4059379d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 14a8a0ab70c48354a44781cbade8299d0a7769e80dc6ca8219898d8f543330ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105812151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918387"
 ---
 # <a name="runas"></a>RunAs
 
@@ -21,18 +21,18 @@ Configura uma classe para ser executada em uma conta de usuário específica qua
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      RunAs = value
+   {AppID_GUID}
+      RunAs = value
 ```
 
 ## <a name="remarks"></a>Comentários
 
-O valor especifica o nome de usuário e deve ser um dos formulários *username*, *Domain ***\\*** username* ou da cadeia de caracteres "Interactive User". Você também pode especificar as cadeias de caracteres "NT Authority \\ LocalService" (para o serviço local) e "NT Authority \\ NetworkService" (para serviço de rede). Você também pode especificar a cadeia de caracteres "NT Authority \\ System" quando {*AppID \_ GUID*} se refere a um servidor com que já foi iniciado ou que tem uma entrada na tabela de classes. No entanto, não é possível usar "NT Authority \\ System" com um servidor com que ainda não tenha sido iniciado. A senha padrão para "NT Authority \\ LocalService", "NT Authority \\ NetworkService" e "NT Authority \\ System" é "" (cadeia de caracteres vazia).
+O valor especifica o nome de usuário e deve ser um dos formulários *username*, *Domain * **\\** _username_ ou da cadeia de caracteres "Interactive User". Você também pode especificar as cadeias de caracteres "NT Authority \\ LocalService" (para o serviço local) e "NT Authority \\ NetworkService" (para serviço de rede). Você também pode especificar a cadeia de caracteres "NT Authority \\ System" quando {* AppID \_ GUID *} se refere a um servidor com que já foi iniciado ou que tem uma entrada na tabela de classes. No entanto, não é possível usar "NT Authority \\ System" com um servidor com que ainda não tenha sido iniciado. A senha padrão para "NT Authority \\ LocalService", "NT Authority \\ NetworkService" e "NT Authority \\ System" é "" (cadeia de caracteres vazia).
 
 > [!Note]  
-> A partir do Windows Vista, uma senha vazia não é mais necessária para configurar as configurações de runas "NT Authority \\ LocalService", "NT Authority \\ NetworkService" e "NT Authority \\ System". 
+> a partir do Windows Vista, uma senha vazia não é mais necessária para configurar as configurações RunAs "nt authority \\ localservice", "nt authority \\ networkservice" e "nt authority \\ system". 
 
- 
+ 
 
 As classes configuradas para execução como um usuário específico não podem ser registradas em nenhuma outra identidade, portanto, as chamadas para [**CoRegisterClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-coregisterclassobject) com esse CLSID falham, a menos que o processo tenha sido iniciado pelo com em nome de uma solicitação de ativação real.
 
@@ -47,9 +47,9 @@ Para identidades **runas** usadas pelos servidores DCOM, a conta de usuário esp
 O valor **runas** não é usado para servidores configurados para serem executados como serviços. Os serviços COM que precisam ser executados com uma identidade diferente do LocalSystem devem definir o nome de usuário e a senha apropriados usando o miniaplicativo serviços do painel de controle ou as funções do controlador de serviço. (Para obter mais informações sobre essas funções, consulte [Serviços](/windows/desktop/Services/services).)
 
 > [!Note]  
-> A partir do Microsoft Windows Server 2003, a classe AppID é lida explicitamente a partir do **HKEY \_ local \_ Machine \\ software \\ classes \\ AppID**, que, ao contrário da maioria das chaves do registro, não é intercambiável com a **\_ \_ \\ AppID raiz das classes hKey**.
+> a partir do Microsoft Windows Server 2003, a classe AppID é lida explicitamente a partir do **HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Classes \\ appid**, que, ao contrário da maioria das chaves do registro, não é intercambiável com a **\_ \_ \\ appid raiz das classes hkey**.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -58,6 +58,6 @@ O valor **runas** não é usado para servidores configurados para serem executad
 [Registrando servidores COM](registering-com-servers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

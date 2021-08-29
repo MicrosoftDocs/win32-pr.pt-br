@@ -1,11 +1,11 @@
 ---
-title: atributo ms-SPP-Installation-ID
-description: ID de instalação (IID) usada para ativação por telefone da floresta Active Directory
+title: Atributo ms-SPP-Installation-Id
+description: ID de instalação (IID) usada para ativação por telefone da floresta do Active Directory
 ms.assetid: 885a54f2-140a-4fd8-b745-739ca7070c09
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-SPP-Installation-ID
-- msSPP-esquema de AD do atributo de InstallationID
+- Esquema do AD do atributo ms-SPP-Installation-Id
+- Esquema do AD do atributo msSPP-InstallationId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6357576eaa3dbbdad480cf8b8bb43f8a3a64c533
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 86590bbc63dc37284c97f16d05ac017ec7859736f90048946c33268c072b8327
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960305"
 ---
-# <a name="ms-spp-installation-id-attribute"></a>atributo ms-SPP-Installation-ID
+# <a name="ms-spp-installation-id-attribute"></a>Atributo ms-SPP-Installation-Id
 
-ID de instalação (IID) usada para ativação por telefone da floresta Active Directory
+ID de instalação (IID) usada para ativação por telefone da floresta do Active Directory
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-SPP-Installation-ID                      |
-| LDAP-Display-Name | msSPP-InstallationID                        |
+| CN                | ms-SPP-Installation-Id                      |
+| Ldap-Display-Name | msSPP-InstallationId                        |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2083                     |
-| System-ID-GUID    | 69bfb114-407B-4739-A213-c663802b3e37        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 69bfb114-407b-4739-a213-c663802b3e37        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ ID de instalação (IID) usada para ativação por telefone da floresta Active D
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classes usadas em        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

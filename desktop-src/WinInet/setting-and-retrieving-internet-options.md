@@ -6,24 +6,24 @@ keywords:
 - Configurando e recuperando opções da Internet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 418bf21620cf7b7c4426844c95a39ef1fde04e11
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c72d32fa1f0ac7856301777d9ccb82eae510e36ea623dcf79d96984163bd6153
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121846"
 ---
 # <a name="setting-and-retrieving-internet-options"></a>Configurando e recuperando opções da Internet
 
-Este tópico descreve como definir e recuperar opções da Internet usando as funções [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) e [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) .
+Este tópico descreve como definir e recuperar opções da Internet usando as funções [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) e [**InternetQueryOption.**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona)
 
-As opções da Internet podem ser definidas em ou recuperadas de um identificador [**HINTERNET**](appendix-a-hinternet-handles.md) especificado ou as configurações atuais no Microsoft Internet Explorer.
+As opções da Internet podem ser definidas ou recuperadas de um handle [**HINTERNET**](appendix-a-hinternet-handles.md) especificado ou das configurações atuais no Microsoft Internet Explorer.
 
 -   [Etapas de implementação](#implementation-steps)
-    -   [Escolhendo Opções da Internet](#choosing-internet-options)
-    -   [Escolhendo o identificador HINTERNET](#choosing-the-hinternet-handle)
+    -   [Escolhendo opções da Internet](#choosing-internet-options)
+    -   [Escolhendo o handle HINTERNET](#choosing-the-hinternet-handle)
     -   [Configurando ou recuperando as opções](#setting-or-retrieving-the-options)
--   [Escopo do identificador de HINTERNET](#scope-of-hinternet-handle)
+-   [Escopo do handle HINTERNET](#scope-of-hinternet-handle)
 -   [Definindo opções individuais](#setting-individual-options)
 -   [Recuperando opções individuais](#retrieving-individual-options)
     -   [Exemplo completo](#complete-sample)
@@ -33,49 +33,49 @@ As opções da Internet podem ser definidas em ou recuperadas de um identificado
 
 ## <a name="implementation-steps"></a>Etapas de implementação
 
-Para definir ou recuperar as opções da Internet, conclua o seguinte:
+Para definir ou recuperar opções de Internet, conclua o seguinte:
 
--   [Escolhendo Opções da Internet](#choosing-internet-options)
--   [Escolhendo o identificador HINTERNET](#choosing-the-hinternet-handle)
+-   [Escolhendo opções da Internet](#choosing-internet-options)
+-   [Escolhendo o handle HINTERNET](#choosing-the-hinternet-handle)
 -   [Configurando ou recuperando as opções](#setting-or-retrieving-the-options)
 
-### <a name="choosing-internet-options"></a>Escolhendo Opções da Internet
+### <a name="choosing-internet-options"></a>Escolhendo opções da Internet
 
-Como há tantas opções da Internet, a escolha das opções corretas é importante. Muitas opções da Internet afetam o comportamento das funções WinINet e do Internet Explorer:
+Como há muitas opções de Internet, escolher as opções certas é importante. Muitas opções de Internet afetam o comportamento das funções WinINet e Internet Explorer:
 
 Por exemplo, você pode:
 
--   Manipule a autenticação básica de servidor e proxy definindo nomes de usuário e senhas.
--   Defina ou recupere a cadeia de caracteres do agente do usuário usada pelos servidores para identificar os recursos do aplicativo cliente ou do navegador.
+-   Manipular a autenticação básica de servidor e proxy definindo nomes de usuário e senhas.
+-   Definir ou recuperar a cadeia de caracteres do agente do usuário usada pelos servidores para identificar os recursos do aplicativo cliente ou navegador.
 -   Recupere o tipo de identificador do identificador [**HINTERNET**](appendix-a-hinternet-handles.md) especificado.
 
-Para obter mais informações e uma lista das opções da Internet, consulte [**sinalizadores de opção**](option-flags.md).
+Para obter mais informações e uma lista das opções da Internet, consulte [**Sinalizadores de opção**](option-flags.md).
 
-No Internet Explorer 5 e posterior, algumas opções podem ser definidas ou recuperadas de uma conexão de Internet específica usando a lista de opções [**Internet \_ por \_ \_ \_ Conn**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_option_lista) e as estruturas de [**opção de Internet \_ por \_ Conn \_**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_optiona) . Para obter mais informações e uma lista de opções que podem ser definidas ou recuperadas de uma conexão de Internet específica, consulte o membro **dwOptions** da estrutura da [**\_ opção Internet por \_ Conn \_**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_optiona) .
+No Internet Explorer 5 e posterior, algumas opções podem ser definidas ou recuperadas de uma conexão de Internet específica usando as estruturas [**INTERNET PER CONN OPTION \_ \_ \_ \_ LIST**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_option_lista) e [**INTERNET PER CONN \_ \_ \_ OPTION.**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_optiona) Para obter mais informações e uma lista de opções que podem ser definidas ou recuperadas de uma conexão de Internet específica, consulte o **membro dwOptions** da estrutura [**INTERNET PER CONN \_ \_ \_ OPTION.**](/windows/desktop/api/Wininet/ns-wininet-internet_per_conn_optiona)
 
-### <a name="choosing-the-hinternet-handle"></a>Escolhendo o identificador HINTERNET
+### <a name="choosing-the-hinternet-handle"></a>Escolhendo o handle HINTERNET
 
-O identificador [**HINTERNET**](appendix-a-hinternet-handles.md) usado para definir ou recuperar as opções da Internet determina o escopo da operação. Todos os identificadores criados por meio desse identificador herdarão as opções definidas nesse identificador.
+O [**handle HINTERNET**](appendix-a-hinternet-handles.md) usado para definir ou recuperar opções de Internet determina o escopo da operação. Todos os alças criados por meio desse handle herdarão as opções definidas nesse handle.
 
-Por exemplo, aplicativos cliente que exigem um proxy com autenticação, provavelmente não exigem a configuração do nome de usuário e da senha do proxy sempre que o aplicativo tentar acessar um recurso da Internet. Se todas as solicitações em uma determinada conexão forem tratadas pelo mesmo proxy, definir o nome de usuário e a senha do proxy em um tipo de conexão [**HINTERNET**](appendix-a-hinternet-handles.md) identificador, ou seja, um identificador criado por uma chamada para [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta), permitiria que qualquer chamada derivada desse identificador **HINTERNET** use o mesmo nome de usuário e senha do proxy. Definir o nome de usuário e a senha do proxy sempre que um identificador de **HINTERNET** é criado pelo [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) exigiria sobrecarga extra e desnecessária. Lembre-se de que, se o aplicativo usar um proxy que requer autenticação, ele deverá definir as credenciais de proxy em cada nova conexão.
+Por exemplo, aplicativos cliente que exigem um proxy com autenticação, provavelmente não exigem a definição do nome de usuário proxy e senha sempre que o aplicativo tenta acessar um recurso da Internet. Se todas as solicitações em uma determinada conexão são tratadas pelo mesmo proxy, definir o nome de usuário proxy e a senha em um identificador [**HINTERNET**](appendix-a-hinternet-handles.md) do tipo de conexão, ou seja, um identificador criado por uma chamada para [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta)permitirá que todas as chamadas derivadas desse identificador **HINTERNET** usem o mesmo nome de usuário e senha de proxy. Definir o nome de usuário proxy e a senha sempre que um handle **HINTERNET** for criado por [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) exigiria sobrecarga extra e desnecessária. Esteja ciente de que se o aplicativo usar um proxy que requer autenticação, ele deverá definir as credenciais de proxy em cada nova conexão.
 
 ### <a name="setting-or-retrieving-the-options"></a>Configurando ou recuperando as opções
 
-Quando você tiver determinado o que as opções da Internet e o identificador [**HINTERNET**](appendix-a-hinternet-handles.md) para usar, recupere essas opções da Internet. Para definir ou recuperar opções, chame [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) ou [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona).
+Quando você tiver determinado quais opções de Internet e [**hinternet**](appendix-a-hinternet-handles.md) manipular para usar, recupere essas opções de Internet. Para definir ou recuperar opções, chame [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) ou [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona).
 
-## <a name="scope-of-hinternet-handle"></a>Escopo do identificador de HINTERNET
+## <a name="scope-of-hinternet-handle"></a>Escopo do handle HINTERNET
 
-O identificador [**HINTERNET**](appendix-a-hinternet-handles.md) usado para definir ou recuperar as opções da Internet determina as ações para as quais as opções são válidas.
+O [**handle HINTERNET**](appendix-a-hinternet-handles.md) usado para definir ou recuperar opções de Internet determina as ações para as quais as opções são válidas.
 
-Esses identificadores têm três níveis:
+Esses alças têm três níveis:
 
--   O identificador [**HINTERNET**](appendix-a-hinternet-handles.md) raiz (criado por uma chamada para [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena)) conterá todas as opções da Internet que afetam essa instância do Wininet.
--   [**HINTERNET**](appendix-a-hinternet-handles.md) identificadores que se conectam a um servidor (criado por uma chamada para [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta))
--   Identificadores [**HINTERNET**](appendix-a-hinternet-handles.md) associados a um recurso ou enumeração de recursos em um servidor específico.
+-   O handle [**HINTERNET**](appendix-a-hinternet-handles.md) raiz (criado por uma chamada para [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena)) conteria todas as opções de Internet que afetam essa instância do WinINet.
+-   [**Alças HINTERNET**](appendix-a-hinternet-handles.md) que se conectam a um servidor (criadas por uma chamada para [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta))
+-   [**HINTERNET**](appendix-a-hinternet-handles.md) lida com um recurso ou enumeração de recursos em um servidor específico.
 
-Além dos vários identificadores de [**HINTERNET**](appendix-a-hinternet-handles.md) , um aplicativo também pode usar **NULL** para definir ou recuperar os valores padrão das opções da Internet usadas pelo Internet Explorer e as funções do Wininet. Definir opções da Internet ao usar **NULL** como o identificador altera os valores padrão das opções, que atualmente estão armazenadas no registro. Os aplicativos cliente não devem usar funções de registro para alterar os valores padrão das opções da Internet, pois a implementação de como as opções são armazenadas pode ser alterada no futuro.
+Além dos vários alças [**HINTERNET,**](appendix-a-hinternet-handles.md) um aplicativo também pode usar **NULL** para definir ou recuperar os valores padrão das opções de Internet usadas pelas funções Internet Explorer e WinINet. Definir opções de Internet ao usar **NULL** como o handle altera os valores padrão das opções, que atualmente são armazenadas no Registro. Os aplicativos cliente não devem usar funções do Registro para alterar os valores padrão das opções da Internet, pois a implementação de como as opções são armazenadas pode ser alterada no futuro.
 
-A tabela a seguir lista o tipo de identificadores [**HINTERNET**](appendix-a-hinternet-handles.md) e o escopo das opções da Internet associadas a eles.
+A tabela a seguir lista o tipo de [**identificador HINTERNET**](appendix-a-hinternet-handles.md) e o escopo das opções de Internet associadas a eles.
 
 
 
@@ -93,24 +93,24 @@ A tabela a seguir lista o tipo de identificadores [**HINTERNET**](appendix-a-hin
 <tbody>
 <tr class="odd">
 <td><strong>NULL</strong></td>
-<td>As configurações de opção padrão para o Internet Explorer.</td>
+<td>As configurações de opção padrão para Internet Explorer.</td>
 </tr>
 <tr class="even">
 <td>INTERNET_HANDLE_TYPE_CONNECT_FTP</td>
-<td>As configurações de opção para essa conexão com um servidor FTP. Essas opções afetam as operações iniciadas a partir desse identificador de <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET</strong></a> , como downloads de arquivos.</td>
+<td>As configurações de opção para essa conexão com um servidor FTP. Essas opções afetam todas as operações iniciadas por esse handle <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET,</strong></a> como downloads de arquivos.</td>
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_CONNECT_GOPHER</td>
-<td>As configurações de opção para essa conexão com um servidor gopher. Essas opções afetam as operações iniciadas a partir desse identificador de <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET</strong></a> , como downloads de arquivos.
+<td>As configurações de opção para essa conexão com um servidor Gopher. Essas opções afetam todas as operações iniciadas por esse handle <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET,</strong></a> como downloads de arquivos.
 <blockquote>
 [!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+Windows XP e Windows Server 2003 R2 e anteriores apenas.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>INTERNET_HANDLE_TYPE_CONNECT_HTTP</td>
-<td>As configurações de opção para essa conexão com um servidor HTTP. Essas opções afetam as operações iniciadas a partir desse identificador de <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET</strong></a> , como downloads de arquivos.</td>
+<td>As configurações de opção para essa conexão com um servidor HTTP. Essas opções afetam todas as operações iniciadas por esse handle <a href="appendix-a-hinternet-handles.md"><strong>HINTERNET,</strong></a> como downloads de arquivos.</td>
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_FILE_REQUEST</td>
@@ -122,49 +122,49 @@ Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_FTP_FILE_HTML</td>
-<td>As configurações de opção associadas a este download de recurso de FTP são formatadas em HTML.</td>
+<td>As configurações de opção associadas a este download de recurso de FTP formatadas em HTML.</td>
 </tr>
 <tr class="even">
 <td>INTERNET_HANDLE_TYPE_FTP_FIND</td>
-<td>As configurações de opção associadas a esta pesquisa de arquivos em um servidor FTP.</td>
+<td>As configurações de opção associadas a essa pesquisa de arquivos em um servidor FTP.</td>
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_FTP_FIND_HTML</td>
-<td>As configurações de opção associadas a esta pesquisa de arquivos em um servidor FTP formatado em HTML.</td>
+<td>As configurações de opção associadas a essa pesquisa de arquivos em um servidor FTP formatado em HTML.</td>
 </tr>
 <tr class="even">
 <td>INTERNET_HANDLE_TYPE_GOPHER_FILE</td>
 <td>As configurações de opção associadas a este download de recurso do Gopher.
 <blockquote>
 [!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+Windows XP e Windows Server 2003 R2 e anteriores apenas.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_GOPHER_FILE_HTML</td>
-<td>As configurações de opção associadas a este download de recurso do Gopher são formatadas em HTML.
+<td>As configurações de opção associadas a esse download de recurso do Gopher formatados em HTML.
 <blockquote>
 [!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+Windows XP e Windows Server 2003 R2 e anteriores apenas.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>INTERNET_HANDLE_TYPE_GOPHER_FIND</td>
-<td>As configurações de opção associadas a esta pesquisa de arquivos em um servidor gopher.
+<td>As configurações de opção associadas a essa pesquisa de arquivos em um servidor Gopher.
 <blockquote>
 [!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+Windows XP e Windows Server 2003 R2 e anteriores apenas.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td>INTERNET_HANDLE_TYPE_GOPHER_FIND_HTML</td>
-<td>As configurações de opção associadas a esta pesquisa de arquivos em um servidor gopher formatado em HTML.
+<td>As configurações de opção associadas a essa pesquisa de arquivos em um servidor Gopher formatado em HTML.
 <blockquote>
 [!Note]<br />
-Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+Windows XP e Windows Server 2003 R2 e anteriores apenas.
 </blockquote>
 <br/></td>
 </tr>
@@ -185,9 +185,9 @@ Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
 
 ## <a name="setting-individual-options"></a>Definindo opções individuais
 
-Depois de determinar as opções da Internet que você deseja definir e o escopo que você deseja que sejam afetados por essas opções, a definição de opções da Internet não é complicada. Tudo o que você precisa fazer é chamar a função [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) com o identificador [**HINTERNET**](appendix-a-hinternet-handles.md) desejado, o sinalizador de opção da Internet e um buffer que contém as informações que você deseja definir.
+Depois de determinar as opções de Internet que você deseja definir e o escopo que você deseja que seja afetado por essas opções, definir opções da Internet não será complicado. Tudo o que você precisa fazer é chamar a função [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) com o handle [**HINTERNET**](appendix-a-hinternet-handles.md) desejado, o sinalizador de opção da Internet e um buffer que contém as informações que você deseja definir.
 
-O exemplo a seguir mostra como definir o nome de usuário e a senha do proxy em um identificador [**HINTERNET**](appendix-a-hinternet-handles.md) especificado.
+O exemplo a seguir mostra como definir o nome de usuário proxy e a senha em um [**alçal HINTERNET**](appendix-a-hinternet-handles.md) especificado.
 
 
 ```C++
@@ -219,9 +219,9 @@ InternetSetOption(hOpen, INTERNET_OPTION_PROXY_PASSWORD,
 
 ## <a name="retrieving-individual-options"></a>Recuperando opções individuais
 
-As opções da Internet podem ser recuperadas usando a função [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) . Para recuperar as opções da Internet:
+As opções da Internet podem ser recuperadas usando a [**função InternetQueryOption.**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) Para recuperar opções da Internet:
 
-1.  Determine o tamanho do buffer necessário para recuperar as informações da opção da Internet.
+1.  Determine o tamanho do buffer necessário para recuperar as informações de opção da Internet.
 
     O tamanho do buffer pode ser determinado usando **NULL** para o endereço do buffer e passando um tamanho de buffer igual a zero.
 
@@ -359,7 +359,7 @@ No Internet Explorer 5 e posterior, as opções da Internet podem ser recuperada
 6.  Libere a memória, alocada para conter os dados da opção, usando a função [**GlobalFree**](/windows/desktop/api/winbase/nf-winbase-globalfree) .
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

@@ -3,9 +3,9 @@ title: Propriedade IWMPSettings mudo
 description: A propriedade MUTE Obtém ou define um valor que indica se o áudio está mudo.
 ms.assetid: d99e47db-70cc-41e0-aca9-b765b075e7b4
 keywords:
-- Propriedade sem áudio Windows Media Player
-- Propriedade sem áudio Windows Media Player, interface IWMPSettings
-- Interface IWMPSettings Windows Media Player, Propriedade mudo
+- Windows Media Player de propriedade sem áudio
+- Windows Media Player de propriedade sem áudio, interface IWMPSettings
+- Windows Media Player de interface IWMPSettings, propriedade mute
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67518bb9a6eccee13e4cc262f37341d30689439e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6d4cb13fd8884df7779b2780fd7014d058f32086d67ace286d9d8a9fd57cb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053404"
 ---
 # <a name="iwmpsettingsmute-property"></a>Propriedade IWMPSettings:: MUTE
 

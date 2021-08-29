@@ -21,12 +21,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: ea2a765225145ce3d44e0aff89aeaca0a7563e0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad6713cea39f02e59b49b69e2fa2a8a060cb7a6f78d3b6143bc2c2dbc0de1965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051104"
 ---
 # <a name="__ace-class"></a>\_\_Classe ACE
 

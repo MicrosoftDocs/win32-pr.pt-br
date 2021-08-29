@@ -1,34 +1,34 @@
 ---
-description: SPI (interface do provedor de serviços) do Windows Sockets (Winsock).
+description: Windows Spi (Interface do Provedor de Serviços) sockets (Winsock).
 ms.assetid: 59ac7ce6-10e7-40ac-bdce-dc01251b0bc5
-title: SPI do Winsock
+title: Winsock SPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ecf63a45f5175a86b8f5eb2a77ef0293182e38f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec29ad26d97b62c884d2944b31d54c94ea1f61b02f74de28c6ff4c84acc6a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051324"
 ---
-# <a name="winsock-spi"></a>SPI do Winsock
+# <a name="winsock-spi"></a>Winsock SPI
 
-A interface do provedor de serviço do Winsock ou SPI do Winsock é uma disciplina especializada do Winsock usada para criar provedores; provedores de transporte, como as pilhas de protocolo TCP/IP ou IPX/SPX, usam a SPI do Winsock, como os provedores de namespace, como o DNS (sistema de cadastramento de domínio) da Internet.
+A Interface do Provedor de Serviços Winsock, ou SPI winsock, é uma disciplina especializada do Winsock usada para criar provedores; provedores de transporte, como pilhas de protocolo TCP/IP ou IPX/SPX, usam a SPI winsock, assim como provedores de namespace, como o DNS (Sistema de Nomenal de Domínio) da Internet.
 
-Programação de rede tradicional, como permitir que aplicativos se comuniquem pela rede, não requer o uso de interfaces do Winsock SPI; em vez disso, use as interfaces padrão do [Winsock](winsock-reference.md) .
+A programação de rede tradicional, como permitir que aplicativos se comuniquem pela rede, não exige o uso de interfaces spi winsock; em vez disso, use interfaces [Winsock](winsock-reference.md) padrão.
 
  
 
-A SPI do Winsock usa a seguinte convenção de nomenclatura de prefixo de função.
+A SPI winsock usa a seguinte convenção de nomen por prefixo de função.
 
 
 
 | Prefixo | Significado                          | Descrição                                       |
 |--------|----------------------------------|---------------------------------------------------|
-| WSP    | Provedor de serviços do Windows Sockets | Pontos de entrada do provedor de serviço de transporte           |
-| WPU    | Upchamada do provedor do Windows Sockets  | Ws2 \_ pontos de entrada de32.dll para provedores de serviço    |
-| WSC    | Configuração do Windows Sockets    | WS2 \_ pontos de entrada de32.dll para miniaplicativos de instalação |
-| NSP    | Provedor de namespace               | Pontos de entrada do provedor de namespace                   |
+| Wsp    | Windows Provedor de Serviços de Soquetes | Pontos de entrada do provedor de serviços de transporte           |
+| WPU    | Windows Chamada de upcall do provedor de soquetes  | Ws2 \_32.dll de entrada para provedores de serviços    |
+| Wsc    | Windows Configuração de soquetes    | Pontos de entrada \_32.dll WS2 para applets de instalação |
+| Nsp    | Provedor de namespace               | Pontos de entrada do provedor de namespace                   |
 
 
 

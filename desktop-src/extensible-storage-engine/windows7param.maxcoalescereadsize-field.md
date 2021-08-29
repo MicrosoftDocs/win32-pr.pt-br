@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6e477ec3a6d4afbc6fd5ea8e751da907937b3719
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b25db813542f8c384df7fafbd3b77d712d1d88e52a2b6b511a15d9c3ad210848
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117700890"
 ---
 # <a name="windows7parammaxcoalescereadsize-field"></a>Campo Windows7Param. MaxCoalesceReadSize
 

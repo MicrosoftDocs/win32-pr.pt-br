@@ -4,12 +4,12 @@ description: Anotação de mapa de valor
 ms.assetid: f7c9304a-0eed-4a73-ab06-56723f3cfa5d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d21b04374344475689989c2570af6975dc97c13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 32f378742ce01458d930ee510baf4c6317f2e182cdd41642c4d22928d9777fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104551083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052224"
 ---
 # <a name="value-map-annotation"></a>Anotação de mapa de valor
 
@@ -37,9 +37,9 @@ Com a anotação de mapa de valor, uma cadeia de caracteres de mapeamento indica
 
 Como o conhecimento específico do controle é necessário para dar suporte ao mapeamento de valor, há um número limitado de controles e propriedades que dão suporte à anotação de mapa de valor, incluindo mapas de valor do controle deslizante, exibições de lista e exibições de árvore.
 
-## <a name="slider-value-map&quot;></a>Mapa do valor do controle deslizante
+## <a name="slider-value-map"></a>Mapa do valor do controle deslizante
 
-**Propid \_ A ACC \_ VALUEMAP** contém um mapeamento de posições de controle deslizante internas para cadeias de caracteres legíveis. Essa propriedade tem suporte pelo proxy de controle deslizante Oleacc.dll. Se o valor do controle deslizante atual for encontrado no mapa de valores, a cadeia de caracteres correspondente será exposta como o valor em vez da cadeia de caracteres percentual padrão (por exemplo, &quot;50").
+**Propid \_ A ACC \_ VALUEMAP** contém um mapeamento de posições de controle deslizante internas para cadeias de caracteres legíveis. Essa propriedade tem suporte pelo proxy de controle deslizante Oleacc.dll. Se o valor do controle deslizante atual for encontrado no mapa de valores, a cadeia de caracteres correspondente será exposta como o valor em vez da cadeia de caracteres percentual padrão (por exemplo, "50").
 
 ## <a name="list-view-and-tree-view"></a>Exibição de lista e exibição de árvore
 
@@ -68,7 +68,7 @@ A tabela a seguir descreve os campos que são incluídos em um mapa de anotaçã
 
 
 
- 
+ 
 
 Por exemplo, um mapa pode ser semelhante ao seguinte:
 
@@ -81,9 +81,9 @@ A:0:0:Cold:1:Warm:3:Hot:
 
 Quando esse mapa de valor é aplicado a um controle deslizante, um valor de "quente" será exposto quando o controle deslizante estiver na posição 1. Como o valor 2 não está incluído neste exemplo, o valor padrão dessa posição será exposto. Para um controle deslizante, o padrão seria um valor percentual, como 33.
 
- 
+ 
 
- 
+ 
 
 
 

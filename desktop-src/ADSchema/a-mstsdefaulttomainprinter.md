@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bce24afc715ec838ec0e4a5bd559cef4ff3658a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 758d088429549d4e79ba05ff46d4baa81c64e19dbc6bae072c1b08553cdbb5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802736"
 ---
 # <a name="ms-ts-default-to-main-printer-attribute"></a>MS-TS-default-to-Main-atributo Printer
 
@@ -55,7 +55,7 @@ O padrão dos serviços de terminal para a impressora principal especifica se a 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -76,7 +76,7 @@ O padrão dos serviços de terminal para a impressora principal especifica se a 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -97,7 +97,7 @@ O padrão dos serviços de terminal para a impressora principal especifica se a 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

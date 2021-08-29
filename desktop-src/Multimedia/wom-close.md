@@ -3,7 +3,7 @@ title: Mensagem de WOM_CLOSE (mmsystem. h)
 description: A \_ mensagem de fechamento wom é enviada para uma função de retorno de chamada de saída de áudio de forma de onda quando um dispositivo de saída de wave-áudio é fechado. O identificador do dispositivo não é mais válido depois que essa mensagem é enviada.
 ms.assetid: ac20216a-6a60-4e62-8241-3ca6f33567f1
 keywords:
-- Multimídia do Windows de mensagem WOM_CLOSE
+- mensagem de WOM_CLOSE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a802d6eceed018fa0c25591ee9e4b38708e1787e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90ba0187638ec4bc0406066c9a50ee4ce53ca150e4dabc918a829cfaa08733b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803476"
 ---
 # <a name="wom_close-message"></a>WOM \_ fechar mensagem
 

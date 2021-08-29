@@ -19,12 +19,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6462a4f9d884244f460c4bf7714b45d3e17600c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa66013700dc1ad6b091ccf4738f2af456cb29384fd2d48b2d17a0a244019a0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394494"
 ---
 # <a name="http_auth_enable_-constants"></a>\_Constantes http auth \_ Enable \_
 
@@ -124,9 +124,9 @@ Todos os esquemas de autenticação estão habilitados.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Http. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Http. h</dt> </dl> |
 
 
 

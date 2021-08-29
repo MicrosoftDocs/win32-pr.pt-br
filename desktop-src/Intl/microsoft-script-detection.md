@@ -4,12 +4,12 @@ ms.assetid: daf9f549-1eff-4666-b777-227ec31fba30
 title: Detecção de script da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd38b36cb409c1f03d84b9fc21f2fe4439b8152
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 222578ceab7f476c59293bae8343a2d2809a6b0e90c65eb10957e9e7b9313894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147179"
 ---
 # <a name="microsoft-script-detection"></a>Detecção de script da Microsoft
 

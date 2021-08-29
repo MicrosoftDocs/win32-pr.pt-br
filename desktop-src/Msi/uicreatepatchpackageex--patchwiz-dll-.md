@@ -1,19 +1,19 @@
 ---
-description: A função UiCreatePatchPackageEx usa um arquivo de criação de pacote (arquivo. PCP) e gera um pacote de patches Windows Installer (pacote. msp). Chamar Msimsp.exe é o método recomendado para usar Patchwiz.dll.
+description: a função UiCreatePatchPackageEx usa um arquivo de criação de pacote (arquivo. pcp) e gera um pacote de patches Windows Installer (pacote. msp). Chamar Msimsp.exe é o método recomendado para usar Patchwiz.dll.
 ms.assetid: 76d9a21d-73bc-41fc-8ed0-7d7d7deff815
 title: UiCreatePatchPackageEx (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac61371d1e7bf1809880c8f10a403d1730adc8e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e9c610aa6b03990eb4bb9fb34ce84568c9164a88ff2455b9c649436b3d327c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039388"
 ---
 # <a name="uicreatepatchpackageex-patchwizdll"></a>UiCreatePatchPackageEx (Patchwiz.dll)
 
-A função UiCreatePatchPackageEx usa um arquivo de criação de pacote (arquivo. PCP) e gera um pacote de patches Windows Installer (pacote. msp). Chamar [Msimsp.exe](msimsp-exe.md) é o método recomendado para usar [Patchwiz.dll](patchwiz-dll.md).
+a função UiCreatePatchPackageEx usa um arquivo de criação de pacote (arquivo. pcp) e gera um pacote de patches Windows Installer (pacote. msp). Chamar [Msimsp.exe](msimsp-exe.md) é o método recomendado para usar [Patchwiz.dll](patchwiz-dll.md).
 
 A função UiCreatePatchPackageEx está disponível começando com Patchwiz.dll versão 4,0 e estende a funcionalidade da função [UiCreatePatchPackage](uicreatepatchpackage-patchwiz-dll-.md) .
 
@@ -44,7 +44,7 @@ Caminho completo do arquivo de propriedades de criação de patch (arquivo. PCP)
 <span id="szPatchPath"></span><span id="szpatchpath"></span><span id="SZPATCHPATH"></span>*szPatchPath*
 </dt> <dd>
 
-Caminho completo do pacote de patches Windows Installer (arquivo. msp) a ser criado. Esse parâmetro pode ser **nulo** ou uma cadeia de caracteres vazia, mas não pode ser omitido. Se for **nulo** ou uma cadeia de caracteres vazia, a função usará o valor de PatchOutputPath na [tabela de Propriedades (Patchwiz.dll)](properties-table-patchwiz-dll-.md).
+caminho completo do pacote de patches Windows Installer (arquivo. msp) a ser criado. Esse parâmetro pode ser **nulo** ou uma cadeia de caracteres vazia, mas não pode ser omitido. Se for **nulo** ou uma cadeia de caracteres vazia, a função usará o valor de PatchOutputPath na [tabela de Propriedades (Patchwiz.dll)](properties-table-patchwiz-dll-.md).
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Consulte a tabela em [valores de retorno para UiCreatePatchPackage](return-value
 
 ## <a name="remarks"></a>Comentários
 
-Para obter um exemplo de como criar um arquivo. PCP e usar o [UiCreatePatchPackage](uicreatepatchpackage-patchwiz-dll-.md) para gerar um pacote de patches Windows Installer, consulte a seção [um exemplo de aplicação de patch de atualização pequena](a-small-update-patching-example.md).
+para obter um exemplo de como criar um arquivo. pcp e usar o [UiCreatePatchPackage](uicreatepatchpackage-patchwiz-dll-.md) para gerar um pacote de patches Windows Installer, consulte a seção [um exemplo de aplicação de patch de atualização pequena](a-small-update-patching-example.md).
 
 A criação de um patch requer uma imagem de instalação descompactada, como uma imagem administrativa ou uma imagem de instalação descompactada de um CD-ROM. [UiCreatePatchPackage](uicreatepatchpackage-patchwiz-dll-.md) não gera patches binários para arquivos em gabinetes.
 

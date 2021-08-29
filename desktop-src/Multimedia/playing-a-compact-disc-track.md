@@ -6,12 +6,12 @@ keywords:
 - função mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aba8e54337dc6a47db81fad125222a33e24cca7b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 48764ad0a79921ceb65e89d5adeaf22606d74103c853f7257f937c9919c32a10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038006"
 ---
 # <a name="playing-a-compact-disc-track"></a>Reproduzindo uma faixa de CD
 
@@ -79,6 +79,6 @@ DWORD playCDTrack(HWND hWndNotify, BYTE bTrack)
 
 Para especificar uma posição relativa a uma faixa em um CD, você deve usar o formato de hora Track/minuto/segundo/quadro (TMSF).
 
- 
+ 
 
- 
+ 

@@ -1,29 +1,29 @@
-- name: Comunicação entre processos
+- name: Comunicações entre processos
   href: interprocess-communications.md
   items:
-    - name: Processadores
+    - name: Emailslots
       href: mailslots.md
       items:
-        - name: Sobre processadores de informações
+        - name: Sobre Emailslots
           href: about-mailslots.md
           items:
-            - name: Nomes de processador de processadores
+            - name: Nomes do Maillot
               href: mailslot-names.md
-            - name: Operações de processador de processadores
+            - name: Operações do Maillot
               href: mailslot-operations.md
-        - name: Usando processadores
+        - name: Usando Emailslots
           href: using-mailslots.md
           items:
-            - name: Criando um processador de mala
+            - name: Criando um Maillot
               href: creating-a-mailslot.md
-            - name: Gravando em um processador de texto
+            - name: Escrevendo em um Maillot
               href: writing-to-a-mailslot.md
-            - name: Leitura de um processador de processadores
+            - name: Lendo de um Maillot
               href: reading-from-a-mailslot.md
-        - name: Referência do processador de processadores
+        - name: Referência de Maillot
           href: mailslot-reference.md
           items:
-            - name: Funções do processador de processadores
+            - name: Funções Maillot
               href: mailslot-functions.md
               items:
                 - name: CreateMailslot
@@ -32,7 +32,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-getmailslotinfo
                 - name: SetMailslotInfo
                   href: /windows/desktop/api/Winbase/nf-winbase-setmailslotinfo
-    - name: troca dinâmica de dados de rede
+    - name: Rede Dados Dinâmicos Exchange
       href: network-dynamic-data-exchange.md
       items:
         - name: Sobre o DDE de rede
@@ -42,11 +42,11 @@
               href: network-dde-agent.md
             - name: Compartilhamentos DDE
               href: dde-shares.md
-            - name: Compartilhamentos e segurança confiáveis
+            - name: Compartilhamentos confiáveis e segurança
               href: trusted-shares-and-security.md
             - name: Gerenciando compartilhamentos DDE
               href: managing-dde-shares.md
-        - name: Referência DDE de rede
+        - name: Referência de DDE de rede
           href: network-dde-reference.md
           items:
             - name: Funções DDE de rede
@@ -81,7 +81,7 @@
             - name: Estruturas DDE de rede
               href: network-dde-structures.md
               items:
-                - name: NDDESHAREINFO
+                - name: NDINFOAREINFO
                   href: nddeshareinfo-str.md
     - name: Pipes
       href: pipes.md
@@ -94,7 +94,7 @@
               items:
                 - name: Operações de pipe anônimo
                   href: anonymous-pipe-operations.md
-                - name: Herança de identificador de pipe
+                - name: Herança do pipe handle
                   href: pipe-handle-inheritance.md
                 - name: Segurança de pipe anônimo e direitos de acesso
                   href: anonymous-pipe-security-and-access-rights.md
@@ -103,15 +103,15 @@
               items:
                 - name: Nomes de pipe
                   href: pipe-names.md
-                - name: Modos abertos do pipe nomeado
+                - name: Modos abertos de pipe nomeados
                   href: named-pipe-open-modes.md
-                - name: 'Modos de tipo de pipe nomeado, leitura e espera'
+                - name: 'Tipos de pipe nomeados, modos de leitura e espera'
                   href: named-pipe-type-read-and-wait-modes.md
-                - name: Instâncias de pipe nomeado
+                - name: Instâncias de pipe nomeadas
                   href: named-pipe-instances.md
-                - name: Operações de pipe nomeado
+                - name: Operações de pipe nomeadas
                   href: named-pipe-operations.md
-                - name: E/s de pipe síncrono e sobreposto
+                - name: E/S de pipe síncrono e sobrecodado
                   href: synchronous-and-overlapped-input-and-output.md
                 - name: Segurança de pipe nomeado e direitos de acesso
                   href: named-pipe-security-and-access-rights.md
@@ -122,11 +122,11 @@
           items:
             - name: Servidor de pipe multithread
               href: multithreaded-pipe-server.md
-            - name: Servidor de pipe nomeado usando e/s sobreposta
+            - name: Servidor de pipe nomeado usando E/S sobressalvada
               href: named-pipe-server-using-overlapped-i-o.md
             - name: Servidor de pipe nomeado usando rotinas de conclusão
               href: named-pipe-server-using-completion-routines.md
-            - name: Cliente de pipe nomeado
+            - name: Cliente pipe nomeado
               href: named-pipe-client.md
             - name: Transações em pipes nomeados
               href: transactions-on-named-pipes.md

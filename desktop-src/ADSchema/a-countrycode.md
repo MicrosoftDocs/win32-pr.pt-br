@@ -1,6 +1,6 @@
 ---
 title: Country-Code atributo
-description: Especifica o código de país/região para o idioma de escolha do usuário. Esse valor não é usado pelo Windows 2000.
+description: Especifica o código de país/região para o idioma de escolha do usuário. esse valor não é usado pelo Windows 2000.
 ms.assetid: 7011cb76-aa86-4203-bcc4-0136bb11c403
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9523a5aab21e81c2b0a5479def8ed8923751daed
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7843a2724043e504538ad6388e92dfc205463e76e082c266b5ee1f4f095207ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961775"
 ---
 # <a name="country-code-attribute"></a>Country-Code atributo
 
-Especifica o código de país/região para o idioma de escolha do usuário. Esse valor não é usado pelo Windows 2000.
+Especifica o código de país/região para o idioma de escolha do usuário. esse valor não é usado pelo Windows 2000.
 
 
 
@@ -59,7 +59,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
@@ -80,7 +80,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
@@ -101,7 +101,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -122,7 +122,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
@@ -143,7 +143,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
@@ -164,7 +164,7 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
@@ -185,10 +185,10 @@ Especifica o código de país/região para o idioma de escolha do usuário. Esse
 | ID do link                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
 | System-Only            | Falso                                                                                                                             |
-| É de valor único       | True                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                              |
 | É indexado             | Falso                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                 |
 | Range-Upper            | 65535                                                                                                                             |
 | Search-Flags           | 0x00000010                                                                                                                        |

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab986be1b8f8da3e1697575d2fd36d0686857cdc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18382589a289acc3f967318227b427f9411f72c9d018ed1c86c8da0c670d3fec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118771851"
 ---
 # <a name="esentslvreadverifyfailureexception-constructor"></a>Construtor EsentSLVReadVerifyFailureException
 

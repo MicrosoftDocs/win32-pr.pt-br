@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8c724368619a619c3fe337b90661b60ccc2c5c26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ff2854e25af7f55f357ed2831f32d20efb889ccb0006b44312ba445753cc0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763143"
 ---
 # <a name="jet_rstinfocontentequals-method"></a>JET_RSTINFO. Método ContentEquals
 
 Retorna um valor que indica se essa instância é igual a outra instância.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,25 +62,25 @@ public bool ContentEquals(
 #### <a name="parameters"></a>Parâmetros
 
   - outros  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
     
-    Uma instância para comparar com esta instância.
+    Uma instância a ser comparada com essa instância.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias são iguais.  
 
 #### <a name="implements"></a>Implementações
 
-[IContentEquatable \<T\> . ContentEquals (T)](./icontentequatable-t-.contentequals-method.md)  
+[IContentEquatable. \<T\> ContentEquals(T)](./icontentequatable-t-.contentequals-method.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RSTINFO](./jet-rstinfo-class.md)
+[JET_RSTINFO classe](./jet-rstinfo-class.md)
 
-[Membros do JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO membros](./jet-rstinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

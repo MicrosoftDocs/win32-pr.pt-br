@@ -1,5 +1,5 @@
 ---
-description: Indica se o \_ \_ bloco try de um manipulador de encerramento foi encerrado normalmente. A função pode ser chamada somente de dentro do \_ \_ bloco finally de um manipulador de encerramento.
+description: Indica se o bloco \_ \_ try de um manipulador de encerramento terminou normalmente. A função pode ser chamada somente de dentro do bloco \_ \_ finally de um manipulador de encerramento.
 ms.assetid: 0ddaef1f-03f0-45fc-9c5e-8d6a26a73245
 title: Macro AbnormalTermination
 ms.topic: reference
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7c4869f36d8ba70c8dcd8ca526949d489f455e8c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 137d6667c993d4a107be057e46c4ee469a513ec95d358b6d3cc50654a5bba520
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957125"
 ---
 # <a name="abnormaltermination-macro"></a>Macro AbnormalTermination
 
-Indica se o bloco **\_ \_ try** de um manipulador de encerramento foi encerrado normalmente. A função pode ser chamada somente de dentro do bloco **\_ \_ finally** de um manipulador de encerramento.
+Indica se o bloco **\_ \_ try** de um manipulador de encerramento terminou normalmente. A função pode ser chamada somente de dentro do bloco **\_ \_ finally** de um manipulador de encerramento.
 
 > [!Note]  
-> O compilador de otimização do Microsoft C/C++ interpreta essa função como uma palavra-chave e seu uso fora da sintaxe apropriada de tratamento de exceção gera um erro de compilador.
+> O Compilador de Otimização do Microsoft C/C++ interpreta essa função como uma palavra-chave e seu uso fora da sintaxe de tratamento de exceção apropriada gera um erro do compilador.
 
  
 
@@ -39,21 +39,21 @@ BOOL AbnormalTermination(void);
 
 ## <a name="parameters"></a>Parâmetros
 
-Esta macro não tem parâmetros.
+Essa macro não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o bloco **\_ \_ try** for encerrado de forma anormal, o valor de retorno será diferente de zero.
+Se o **\_ \_ bloco try** for encerrado de forma anormal, o valor de retorno será diferente de zero.
 
-Se o bloco **\_ \_ try** for encerrado normalmente, o valor de retorno será zero.
+Se o **\_ \_ bloco try** for encerrado normalmente, o valor de retorno será zero.
 
 ## <a name="remarks"></a>Comentários
 
-O bloco **\_ \_ try** será encerrado normalmente somente se a execução deixar o bloco sequencialmente após a execução da última instrução no bloco. Instruções (como **Return**, **goto**, **continue** ou **Break**) que causam a execução para deixar o bloco **\_ \_ try** resultam em finalização anormal do bloco. Esse é o caso, mesmo se essa instrução for a última instrução no bloco **\_ \_ try** .
+O **\_ \_ bloco** try será encerrado normalmente somente se a execução deixar o bloco sequencialmente depois de executar a última instrução no bloco. Instruções (como **return**, **goto**, **continue** ou **break** **\_ \_** ) que causam a execução deixar o bloco try resultam em encerramento anormal do bloco. Esse é o caso, mesmo que essa instrução seja a última instrução no **\_ \_ bloco try.**
 
-A finalização anormal de um bloco **\_ \_ try** faz com que o sistema pesquise retroativamente por todos os quadros de pilha para determinar se os manipuladores de encerramento devem ser chamados. Isso pode resultar na execução de centenas de instruções, portanto, é importante evitar a finalização anormal de um bloco **\_ \_ try** devido a uma instrução **Return**, **goto**, **continue** ou **Break** . Observe que essas instruções não geram uma exceção, embora o encerramento seja anormal.
+A terminação anormal de um **\_ \_ bloco try** faz com que o sistema pesquise para trás em todos os quadros de pilha para determinar se algum manipulador de encerramento deve ser chamado. Isso pode resultar na execução de centenas de instruções, portanto, é importante evitar o encerramento anormal de um bloco **\_ \_ try** devido **a** uma instrução return , **goto**, **continue** ou **break.** Observe que essas instruções não geram uma exceção, mesmo que a terminação seja anormal.
 
-Para evitar a finalização anormal, a execução deve continuar no final do bloco. Você também pode executar a instrução **\_ \_ Leave** . A instrução **\_ \_ Leave** permite o encerramento imediato do bloco **\_ \_ try** sem causar um encerramento anormal e sua penalidade de desempenho. Verifique a documentação do compilador para determinar se a instrução **\_ \_ Leave** tem suporte.
+Para evitar o encerramento anormal, a execução deve continuar até o final do bloco. Você também pode executar a **\_ \_ instrução leave.** A **\_ \_ instrução leave** permite o encerramento imediato do bloco **\_ \_ try** sem causar encerramento anormal e sua penalidade de desempenho. Verifique a documentação do compilador para determinar se há suporte **\_ \_ para a instrução leave.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Para evitar a finalização anormal, a execução deve continuar no final do blo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
@@ -70,10 +70,10 @@ Para evitar a finalização anormal, a execução deve continuar no final do blo
 
 <dl> <dt>
 
-[Funções de manipulação de exceção estruturada](structured-exception-handling-functions.md)
+[Funções de tratamento de exceção estruturadas](structured-exception-handling-functions.md)
 </dt> <dt>
 
-[Visão geral da manipulação de exceção estruturada](structured-exception-handling.md)
+[Visão geral do tratamento de exceções estruturadas](structured-exception-handling.md)
 </dt> </dl>
 
  

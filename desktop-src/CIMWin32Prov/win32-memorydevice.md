@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI MemoryDevice do Win32 representa as propriedades de um dispositivo de memória do sistema de computador e seus endereços mapeados associados.
+description: A classe WMI MemoryDevice do Win32 representa as propriedades de um dispositivo de memória do sistema de computador e seus \_ endereços mapeados associados.
 ms.assetid: d609dca5-2f5f-4f23-8fcc-bcc197d6c24b
 ms.tgt_platform: multiple
-title: Classe Win32_MemoryDevice
+title: Win32_MemoryDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -55,16 +55,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 277b868f1b92b9f7c6a0c520c77ab76fac6b544d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f0034eadf00819ab5e31d066d585425ca9902ec5e17ec83b973783f5109283ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020254"
 ---
-# <a name="win32_memorydevice-class"></a>\_Classe Win32 MemoryDevice
+# <a name="win32_memorydevice-class"></a>Classe Win32 \_ MemoryDevice
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ MemoryDevice do Win32** representa as propriedades de um dispositivo de memória do sistema de computador e seus endereços mapeados associados.
+A **classe WMI \_ MemoryDevice** [do](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa as propriedades de um dispositivo de memória do sistema de computador e seus endereços mapeados associados.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -118,21 +118,21 @@ class Win32_MemoryDevice : Win32_SMBIOSMemory
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ MemoryDevice** tem estes tipos de membros:
+A **classe Win32 \_ MemoryDevice** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ MemoryDevice** tem esses métodos.
+A **classe \_ MemoryDevice do Win32** tem esses métodos.
 
 
 
 | Método            | Descrição                                                                                                                                                                                      |
 |:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Redefinir**         | Não implementado. Para implementar esse método, consulte o método [**Reset**](reset-method-in-class-cim-controller.md) no [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).<br/>                 |
-| **SetPowerState** | Não implementado. Para implementar esse método, consulte o método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) no [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).<br/> |
+| **Redefinir**         | Não implementado. Para implementar esse método, consulte o [**método Reset**](reset-method-in-class-cim-controller.md) em [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).<br/>                 |
+| **SetPowerState** | Não implementado. Para implementar esse método, consulte o [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) em [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).<br/> |
 
 
 
@@ -140,14 +140,14 @@ A classe **Win32 \_ MemoryDevice** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ MemoryDevice** tem essas propriedades.
+A **classe \_ MemoryDevice do Win32** tem essas propriedades.
 
 <dl> <dt>
 
 **Acesso**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -155,7 +155,7 @@ Tipo de acesso: Somente leitura
 
 Acesso à mídia disponível.
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](cim-storageextent.md).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](cim-storageextent.md)
 
 <dt>
 
@@ -168,14 +168,14 @@ Essa propriedade é herdada do [**CIM \_ StorageExtent**](cim-storageextent.md).
 
 <span id="Readable"></span><span id="readable"></span><span id="READABLE"></span>
 
-<span id="Readable"></span><span id="readable"></span><span id="READABLE"></span>**Legível** (1)
+<span id="Readable"></span><span id="readable"></span><span id="READABLE"></span>**Acessível** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Writeable"></span><span id="writeable"></span><span id="WRITEABLE"></span>
 
-<span id="Writeable"></span><span id="writeable"></span><span id="WRITEABLE"></span>**Gravável** (2)
+<span id="Writeable"></span><span id="writeable"></span><span id="WRITEABLE"></span>**Writeable** (2)
 
 
 </dt> <dd>
@@ -186,7 +186,7 @@ Gravável
 
 <span id="Read_Write_Supported"></span><span id="read_write_supported"></span><span id="READ_WRITE_SUPPORTED"></span>
 
-<span id="Read_Write_Supported"></span><span id="read_write_supported"></span><span id="READ_WRITE_SUPPORTED"></span>**Suporte de leitura/gravação** (3)
+<span id="Read_Write_Supported"></span><span id="read_write_supported"></span><span id="READ_WRITE_SUPPORTED"></span>**Leitura/gravação com suporte** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -203,42 +203,42 @@ Gravável
 **AdditionalErrorData**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 18 \| 32-bit de informação de erro de memória- \| síndrome do fornecedor"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type \| 18 32-bit Memory Information \| Vendor Vendor"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Matriz de informações de erro adicionais. Um exemplo é a verificação de erros e a síndrome de correção (ECC) ou o retorno dos bits de verificação se uma metodologia de erro baseada em CRC (verificação de redundância cíclica) for usada. No último caso, se um erro de bit único for reconhecido e o algoritmo CRC for conhecido, será possível determinar o bit exato que falhou. Esse tipo de dados (síndrome de ECC, bit de verificação, dados de bits de paridade ou outras informações fornecidas pelo fornecedor) está incluído neste campo. Essa propriedade é usada somente quando a propriedade **errorInfo** não é igual a 3.
+Matriz de informações de erro adicionais. Um exemplo é eCC (verificação de erros e correção) Decodagem ou o retorno dos bits de verificação se uma metodologia de erro baseada em CRC (verificação de redundância cíclica) for usada. No último caso, se um erro de bit único for reconhecido e o algoritmo CRC for conhecido, será possível determinar o bit exato que falhou. Esse tipo de dados (ECC Desastecido, Bit de Verificação, Dados de Bit de Paridade ou outras informações fornecidas pelo fornecedor) está incluído neste campo. Essa propriedade é usada somente quando a **propriedade ErrorInfo** não é igual a 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operacional da DMTF \| 3,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado Operacional DMTF \| \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidade e status do dispositivo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -252,12 +252,12 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Execução/energia completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Executando/energia completa** (3)
 
 
 </dt> <dd>
 
-Energia completa ou em execução
+Executando ou energia total
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Energia completa ou em execução
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em teste** (5)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em Teste** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -284,21 +284,21 @@ Energia completa ou em execução
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desligar (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desligar** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off line** (8)
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fora do imposto** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fora de** serviço (9)
 
 
 </dt> <dd></dd> <dt>
@@ -326,7 +326,7 @@ Energia completa ou em execução
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>Economia **de energia-desconhecido** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Power Save – Desconhecido** (13)
 
 
 </dt> <dd>
@@ -337,47 +337,47 @@ O dispositivo é conhecido por estar em um modo de economia de energia, mas seu 
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>Economia **de energia-modo de baixa energia** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Economia de energia – modo de energia baixa** (14)
 
 
 </dt> <dd>
 
-O dispositivo está em um estado de economia de energia, mas ainda está funcionando e pode exibir o desempenho degradado.
+O dispositivo está em um estado de economia de energia, mas ainda está funcionando e pode apresentar desempenho degradado.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Power Save-em espera** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Economia de energia – espera** (15)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando, mas pode ser levado a uma potência completa rapidamente.
+O dispositivo não está funcionando, mas pode ser levado ao máximo rapidamente.
 
 </dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de energia** (16)
+<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Power Cycle** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>Economia **de energia-aviso** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Power Save – Aviso** (17)
 
 
 </dt> <dd>
 
-O dispositivo está em um estado de aviso, embora também esteja em um modo de economia de energia.
+O dispositivo está em um estado de aviso, embora também em um modo de economia de energia.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>Em **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**Pausado** (18)
 
 
 </dt> <dd>
@@ -410,7 +410,7 @@ O dispositivo não está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Desativado** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
@@ -421,23 +421,23 @@ O dispositivo está silencioso.
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrStorageAllocationUnits "), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Tamanho em bytes dos blocos que formam esta extensão de armazenamento. Se for desconhecido ou se um conceito de bloco não for válido (por exemplo, para extensões de agregação, memória ou discos lógicos), insira um 1.
+Tamanho em bytes dos blocos que formam essa extensão de armazenamento. Se desconhecido ou se um conceito de bloco não for válido (por exemplo, para extensão de agregação, memória ou discos lógicos), insira um 1.
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](cim-storageextent.md).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](cim-storageextent.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -450,19 +450,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição do objeto de uma cadeia de caracteres de uma linha.
+Descrição curta do objeto uma cadeia de caracteres de uma linha.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -471,9 +471,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Código de erro do Windows Configuration Manager.
+Windows Gerenciador de Configurações código de erro.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -501,7 +501,7 @@ O dispositivo não está configurado corretamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**O Windows não pode carregar o driver para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows não pode carregar o driver para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -530,12 +530,12 @@ O dispositivo não está funcionando corretamente. Um de seus drivers ou o regis
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**O driver para este dispositivo precisa de um recurso que o Windows não possa gerenciar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**o driver para este dispositivo precisa de um recurso que Windows não pode gerenciar.** (5)
 
 
 </dt> <dd>
 
-O driver para o dispositivo requer um recurso que o Windows não pode gerenciar.
+o Driver para o dispositivo requer um recurso que Windows não pode gerenciar.
 
 </dd> <dt>
 
@@ -614,12 +614,12 @@ O dispositivo não pode encontrar recursos livres suficientes para usar.
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**O Windows não pode verificar os recursos deste dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows não pode verificar os recursos desse dispositivo.** (13)
 
 
 </dt> <dd>
 
-O Windows não pode verificar os recursos do dispositivo.
+Windows não pode verificar os recursos do dispositivo.
 
 </dd> <dt>
 
@@ -647,12 +647,12 @@ O dispositivo não está funcionando corretamente devido a um possível problema
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**O Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
 
 
 </dt> <dd>
 
-O Windows não pode identificar todos os recursos que o dispositivo usa.
+Windows não pode identificar todos os recursos que o dispositivo usa.
 
 </dd> <dt>
 
@@ -698,12 +698,12 @@ O registro pode estar corrompido.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. O Windows está removendo este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. Windows está removendo este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. O Windows está removendo o dispositivo.
+Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. Windows está removendo o dispositivo.
 
 </dd> <dt>
 
@@ -742,23 +742,23 @@ O dispositivo não está presente, não está funcionando corretamente ou não t
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (25)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (26)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
@@ -808,12 +808,12 @@ O dispositivo está usando um recurso de IRQ que outro dispositivo está usando.
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo não está funcionando corretamente porque o Windows não pode carregar os drivers necessários para este dispositivo.** (31)
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**este dispositivo não está funcionando corretamente porque Windows não pode carregar os drivers necessários para este dispositivo.** (31)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando corretamente. O Windows não pode carregar os drivers de dispositivo necessários.
+O dispositivo não está funcionando corretamente. Windows não pode carregar os drivers de dispositivo necessários.
 
 </dd> </dl>
 
@@ -822,7 +822,7 @@ O dispositivo não está funcionando corretamente. O Windows não pode carregar 
 **ConfigManagerUserConfig**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -831,27 +831,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Se for **true**, o dispositivo estará usando uma configuração definida pelo usuário.
+Se **True**, o dispositivo está usando uma configuração definida pelo usuário.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **CorrectableError**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 18 \| 32-bit de erro informações de erro de memória \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo SMBIOS Tipo de Erro de Memória \| de \| 18 32 bits Tipo de \| Erro")
 </dt> </dl>
 
-Se **for true**, o erro mais recente era corrigível. Essa propriedade não será usada se **errorInfo** estiver definida como 3.
+Se **True**, o erro mais recente foi corrigida. Essa propriedade não será usada se **ErrorInfo** estiver definido como 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
@@ -864,12 +864,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usado com as outras propriedades de chave da classe, a propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
+Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usada com as outras propriedades de chave da classe , a propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -887,11 +887,11 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -900,58 +900,58 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceId"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
 Identificador exclusivo do dispositivo de memória.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Exemplo: "dispositivo de memória 1"
+Exemplo: "Dispositivo de memória 1"
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 19 \| endereços mapeados de dispositivo de memória \| endereço final")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Endereço final mapeado do dispositivo de memória do tipo SMBIOS \| 19") \| \|
 </dt> </dl>
 
-Endereço final referenciado por um aplicativo ou sistema operacional. Esse endereço de memória é mapeado por um controlador de memória para este objeto de memória.
+Endereço final referenciado por um aplicativo ou sistema operacional. Esse endereço de memória é mapeado por um controlador de memória para esse objeto de memória.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ErrorAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 18 \| 32-operação de erro de informações de erro de memória \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Operação de erro de informações de erro de memória do tipo SMBIOS \| de \| 18 32 \| bits")
 </dt> </dl>
 
-Tipo de operação de acesso à memória que causou o último erro. Essa propriedade é válida somente quando **errorInfo** não está definida como 3.
+Tipo de operação de acesso à memória que causou o último erro. Essa propriedade é válida somente quando **ErrorInfo** não está definido como 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -989,60 +989,60 @@ Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md
 **ErrorAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 18 \| 32-bit erro de memória informações de erro \| endereço")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 18 \| 32-bit Memory Error Information \| Error Address")
 </dt> </dl>
 
-Endereço do último erro de memória. Essa propriedade é usada somente quando **errorInfo** não está definida como 3.
+Endereço do último erro de memória. Essa propriedade é usada somente quando **ErrorInfo** não está definido como 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o erro relatado em **LastErrorCode** agora será limpo.
+Se **True**, o erro relatado em **LastErrorCode** agora será limpo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**ErrorData**
+**Errordata**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Matriz de dados capturada do último acesso à memória com um erro. Os dados ocupam os primeiros *n* octetos da matriz necessários para manter o número de bits especificado pela propriedade **ErrorTransferSize** . Se **ErrorTransferSize** for 0 (zero), essa propriedade não será usada.
+Matriz de dados capturados do último acesso à memória com um erro. Os dados ocupam os *primeiros n* octetos da matriz necessários para manter o número de bits especificado pela **propriedade ErrorTransferSize.** Se **ErrorTransferSize** for 0 (zero), essa propriedade não será usada.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
 **ErrorDataOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1051,9 +1051,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
-Ordenação de dados armazenados na propriedade **ErrorData** . Essa propriedade é usada somente quando **ErrorTransferSize** é 0 (zero).
+Ordenação de dados armazenados na **propriedade ErrorData.** Essa propriedade é usada somente quando **ErrorTransferSize** é 0 (zero).
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 <dt>
 
@@ -1089,22 +1089,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Mais informações sobre o erro registrado em **LastErrorCode** e informações sobre as ações corretivas que podem ser executadas.
+Mais informações sobre o erro registrado em **LastErrorCode** e informações sobre as ações corretivas que podem ser tomadas.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorGranularity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| tipo SMBIOS 18 \| granularidade de erro")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Granularidade de erro do tipo SMBIOS \| 18") \|
 </dt> </dl>
 
 Nível em que o erro pode ser resolvido.
@@ -1113,7 +1113,7 @@ Nível em que o erro pode ser resolvido.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1127,14 +1127,14 @@ Nível em que o erro pode ser resolvido.
 
 <span id="Device_level"></span><span id="device_level"></span><span id="DEVICE_LEVEL"></span>
 
-**Nível do dispositivo** (3)
+**Nível do** dispositivo (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Memory_partition_level"></span><span id="memory_partition_level"></span><span id="MEMORY_PARTITION_LEVEL"></span>
 
-**Nível de partição de memória** (4)
+**Nível de partição de** memória (4)
 
 
 </dt> <dd></dd> </dl>
@@ -1144,24 +1144,24 @@ Nível em que o erro pode ser resolvido.
 **ErrorInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ memória CIM**](cim-memory.md).**OtherErrorDescription**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" tipo de SMBIOS \| 18 \| 32-bit memória erro Information \| Type ")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**MEMÓRIA CIM \_**](cim-memory.md).**OtherErrorDescription**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo SMBIOS Tipo de Erro de Memória \| de \| 18 32 bits Tipo \| de Erro")
 </dt> </dl>
 
-Tipo de erro que ocorreu mais recentemente. Os valores 12-14, indicando se um erro é corrigível, não são usados com essa propriedade, mas essas informações são encontradas na propriedade **CorrectableError** .
+Tipo de erro que ocorreu mais recentemente. Os valores 12-14, indicando se um erro é corretamente, não são usados com essa propriedade, mas essas informações são encontradas na **propriedade CorrectableError.**
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1182,7 +1182,7 @@ Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md
 
 <span id="Bad_Read"></span><span id="bad_read"></span><span id="BAD_READ"></span>
 
-**Leitura inadequada** (4)
+**Leitura ruim** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -1217,21 +1217,21 @@ Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md
 
 <span id="Nibble_Error"></span><span id="nibble_error"></span><span id="NIBBLE_ERROR"></span>
 
-**Erro de Nibble** (9)
+**Erro de nibble** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checksum_Error"></span><span id="checksum_error"></span><span id="CHECKSUM_ERROR"></span>
 
-**Erro de soma de verificação** (10)
+**Erro de verificação** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CRC_Error"></span><span id="crc_error"></span><span id="CRC_ERROR"></span>
 
-**Erro de CRC** (11)
+**Erro CRC** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -1252,7 +1252,7 @@ Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md
 
 <span id="Uncorrectable_error"></span><span id="uncorrectable_error"></span><span id="UNCORRECTABLE_ERROR"></span>
 
-**Erro não corrigível** (14)
+**Erro incorretável** (14)
 
 
 </dt> <dd></dd> </dl>
@@ -1268,12 +1268,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo do SMBIOS \| 16 \| correção de erro de memória da matriz de memória física \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 16 \| Physical Memory Memory Error \| Correction")
 </dt> </dl>
 
-Tipos de verificação de erros usados pelo hardware de memória.
+Tipos de verificação de erro usados pelo hardware de memória.
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](cim-storageextent.md).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](cim-storageextent.md)
 
 Os valores são:
 
@@ -1281,14 +1281,14 @@ Os valores são:
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** ("outro")
+**Outros** ("Outros")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
@@ -1300,21 +1300,21 @@ Os valores são:
 
 <span id="Parity"></span><span id="parity"></span><span id="PARITY"></span>
 
-**Paridade** ("paridade")
+**Paridade** ("Paridade")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Single-bit_ECC"></span><span id="single-bit_ecc"></span><span id="SINGLE-BIT_ECC"></span>
 
-**ECC de bit único** ("ECC de bit único")
+**ECC de bit** único ("ECC de bit único")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Multi-bit_ECC"></span><span id="multi-bit_ecc"></span><span id="MULTI-BIT_ECC"></span>
 
-**ECC de vários bits** ("ECC de múltiplos bits")
+**ECC de vários bits** ("ECC de vários bits")
 
 
 </dt> <dd></dd> <dt>
@@ -1326,7 +1326,7 @@ Os valores são:
 
 <span id="None"></span><span id="none"></span><span id="NONE"></span>
 
-**Nenhum** ("nenhum")
+**Nenhum** ("Nenhum")
 
 
 </dt> <dd></dd> <dt>
@@ -1343,27 +1343,27 @@ Os valores são:
 **ErrorResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| tipo SMBIOS 18 \| 32-bit de erro de memória informações de \| resolução de erro"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 18 \| 32-bit Memory Error Information \| Error Resolution"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Quantidade de dados realmente determinados para causar o erro. Essa propriedade não é usada quando a propriedade **errorInfo** está definida como 3.
+Quantidade de dados realmente determinada para causar o erro. Essa propriedade não éusada quando a **propriedade ErrorInfo** é definida como 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ErrorTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1372,60 +1372,60 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
-Hora em que ocorreu o último erro de memória. Essa propriedade é válida somente quando **errorInfo** não está definida como 3.
+Hora em que ocorreu o último erro de memória. Essa propriedade é válida somente quando **ErrorInfo** não está definido como 3.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
 **ErrorTransferSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Tamanho dos dados (que contém o último erro) que estão sendo transferidos. Essa propriedade será definida como 0 (zero) se não houver erro.
+Tamanho dos dados (que contêm o último erro) que estão sendo transferidos. Essa propriedade será definida como 0 (zero) se não houver nenhum erro.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Código do último erro relatado pelo dispositivo lógico.
+Último código de erro relatado pelo dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1438,32 +1438,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, a propriedade pode ser substituída para ser uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, a propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrStorageSize ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Número total de blocos consecutivos, cada um deles bloqueando o tamanho do valor contido na propriedade **BlockSize** , que formam essa extensão de armazenamento. O tamanho total da extensão de armazenamento pode ser calculado multiplicando o valor da propriedade **BlockSize** pelo valor dessa propriedade. Se o valor de **BlockSize** for 1, essa propriedade será o tamanho total da extensão de armazenamento.
+Número total de blocos consecutivos, cada um bloqueia o tamanho do valor contido na propriedade **BlockSize,** que formam essa extensão de armazenamento. O tamanho total da extensão de armazenamento pode ser calculado multiplicando o valor da propriedade **BlockSize** pelo valor dessa propriedade. Se o valor de **BlockSize** for 1, essa propriedade será o tamanho total da extensão de armazenamento.
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](cim-storageextent.md).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](cim-storageextent.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -1476,12 +1476,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ memória CIM**](cim-memory.md).**ErrorInfo**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" SMBIOS ")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**MEMÓRIA CIM \_**](cim-memory.md).**ErrorInfo**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS")
 </dt> </dl>
 
-Mais informações quando a propriedade **errorInfo** é definida como 1.
+Mais informações quando a **propriedade ErrorInfo** é definida como 1.
 
-Esta propriedade é herdada do [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md).
+Essa propriedade é herdada [**de Win32 \_ SMBIOSMemory.**](win32-smbiosmemory.md)
 
 </dd> <dt>
 
@@ -1497,9 +1497,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Identificador de dispositivo do Windows Plug and Play do dispositivo lógico.
+Windows Plug and Play identificador de dispositivo lógico do dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 Exemplo: " \* PNP030b"
 
@@ -1508,13 +1508,13 @@ Exemplo: " \* PNP030b"
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de recursos específicos relacionados à energia de um dispositivo lógico.
+Matriz das funcionalidades específicas relacionadas a energia de um dispositivo lógico.
 
 Essa propriedade é herdada **de \_ LogicalDevice CIM**.
 
